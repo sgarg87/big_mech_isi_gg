@@ -2,7 +2,11 @@
 
 #-m cProfile
 
-python ./label_extracted_features_chicago_data.py 50
+python ./label_extracted_features_chicago_data.py 30
+
+
+
+
 
 
 
