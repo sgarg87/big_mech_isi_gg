@@ -552,6 +552,10 @@ class Interaction_to_JSON:
             if debug:
                 print '***********************************'
                 print 'curr_obj is ', curr_obj
+                print curr_obj.other_source_id
+                print curr_obj.pmc_id
+                print curr_obj.text_sentence
+            #
             curr_json_map = {}
             curr_json_map[cdjf.submitter] = cdjf.ISI_USC
             curr_json_map[cdjf.reader_type] = cdjf.machine

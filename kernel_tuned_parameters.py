@@ -123,6 +123,6 @@ tuned_lambda_fr_joint = 0.99
 # SD adjusted rand score for test  0.0123015538828#
 #
 
-tuned_cs_fr_protein_state = 0.4
+tuned_cs_fr_protein_state = 0.6
 tuned_lambda_fr_protein_state = 0.99
 

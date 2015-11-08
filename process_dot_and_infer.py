@@ -11,6 +11,7 @@ import interactions_to_json_or_amrs as ija
 import ntpath
 from config_console_output import *
 import config_processing as cp
+import glob, os
 
 
 is_biopax_model = True
@@ -25,7 +26,7 @@ reload(gpm)
 
 # in seconds
 computation_time_to_parse_per_amr_frm_text = 11
-is_preprocess = True
+is_preprocess = False
 
 
 def save_json_objs_as_index_cards(json_objs_list, joint_file_path):
@@ -67,6 +68,15 @@ def extract_pmc_id(amr_dot_file, passage_or_pmc):
         return pmc_id_list[0]
 
 
+def extract_PMC(amr_dot_file):
+    print 'amr_dot_file', amr_dot_file
+    pmc_id_list = re.findall(r'PMC\d+', amr_dot_file)
+    if pmc_id_list is not None and pmc_id_list:
+        if len(pmc_id_list) > 1:
+            raise AssertionError
+        return pmc_id_list[0]
+
+
 def get_model():
     return bmo.bm_obj.json_objs, bmo.bm_obj.protein_identifier_list_map
 
@@ -84,7 +94,8 @@ def run(amr_dot_file=None, start_amr=None, end_amr=None, model_file=None, passag
     else:
         name_identifier_map_amrs = None
     #
-    pmc_id = extract_pmc_id(amr_dot_file, passage_or_pmc)
+    # pmc_id = extract_pmc_id(amr_dot_file, passage_or_pmc)
+    pmc_id = extract_PMC(amr_dot_file)
     print 'extracted pmc_id is ', pmc_id
     #
     amr_parsing_frm_txt_compute_time = (end_amr-start_amr)*computation_time_to_parse_per_amr_frm_text
@@ -92,16 +103,26 @@ def run(amr_dot_file=None, start_amr=None, end_amr=None, model_file=None, passag
     #
     joint_file_path = amr_dot_file + '_' + str(start_amr) + '_' + str(end_amr)
     #
-    amr_dot_files = []
+    # amr_dot_files = []
     interaction_objs_map = {}
     interaction_objs_map['state_change'] = []
     interaction_objs_map['complex'] = []
     interaction_objs_map['compute_time'] = None
     json_objs_list = []
     count = 0
-    for i in range(start_amr, end_amr+1):
+    #
+    if start_amr == 0 and end_amr == 0:
+        amr_dot_files_list = glob.glob(amr_dot_file+".*.dot")
+    else:
+        amr_dot_files_list = []
+        for i in range(start_amr, end_amr+1):
+            curr_amr_dot_file = amr_dot_file + '.' + str(i) + '.dot'
+            amr_dot_files_list.append(curr_amr_dot_file)
+    print 'amr_dot_files_list', amr_dot_files_list
+    #
+    for curr_amr_dot_file in amr_dot_files_list:
         count += 1
-        curr_amr_dot_file = amr_dot_file + '.' + str(i) + '.dot'
+        # curr_amr_dot_file = amr_dot_file + '.' + str(i) + '.dot'
         print 'curr_amr_dot_file:', curr_amr_dot_file
         #
         curr_interaction_objs_map = gik.gen_data_features_fr_pathway_modeling(curr_amr_dot_file, protein_name_idlist_map=protein_name_idlist_map)
@@ -121,7 +142,7 @@ def run(amr_dot_file=None, start_amr=None, end_amr=None, model_file=None, passag
             pickle_interaction_objs(interaction_objs_map, joint_file_path)
             save_json_objs_as_index_cards(json_objs_list, joint_file_path)
         #
-        amr_dot_files.append(curr_amr_dot_file)
+        # amr_dot_files.append(curr_amr_dot_file)
     #
     pickle_interaction_objs(interaction_objs_map, joint_file_path)
     save_json_objs_as_index_cards(json_objs_list, joint_file_path)

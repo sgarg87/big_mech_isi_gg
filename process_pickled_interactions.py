@@ -25,7 +25,7 @@ reload(gpm)
 computation_time_to_parse_per_amr_frm_text = 11
 
 # in seconds
-compute_time_to_extract_per_amr = 260
+compute_time_to_extract_per_amr = 20
 #
 is_preprocess = False
 
@@ -52,7 +52,8 @@ def run(amr_dot_file=None, start_amr=None, end_amr=None, model_file=None, passag
         name_identifier_map_amrs = None
     print 'Time to preprocess the AMRs was ', time.time()-start_time
     #
-    pmc_id = pdi.extract_pmc_id(amr_dot_file, passage_or_pmc)
+    # pmc_id = pdi.extract_pmc_id(amr_dot_file, passage_or_pmc)
+    pmc_id = pdi.extract_PMC(amr_dot_file)
     print 'extracted pmc_id is ', pmc_id
     #
     amr_parsing_frm_txt_compute_time = (end_amr-start_amr)*computation_time_to_parse_per_amr_frm_text
@@ -62,6 +63,7 @@ def run(amr_dot_file=None, start_amr=None, end_amr=None, model_file=None, passag
     #
     start_time = time.time()
     interaction_objs_map = load_pickled_interaction_objs(joint_file_path)
+    print 'interaction_objs_map', interaction_objs_map
     #
     if 'compute_time' in interaction_objs_map:
         extraction_compute_time = interaction_objs_map['compute_time']
@@ -74,9 +76,12 @@ def run(amr_dot_file=None, start_amr=None, end_amr=None, model_file=None, passag
     #
     # post process json objects
     ppjd_obj = ppjd.PostProcessJSONDARPA(json_objs_list=json_objs_list)
-    json_objs_list = ppjd_obj.filter_out_duplicates_fr_evidence()
-    json_objs_list = ppjd_obj.swap_catalyst_protein()
-    json_objs_list = ppjd_obj.filter_top_fr_interaction_type_in_amr()
+    ppjd_obj.remove_identifier_prob_list()
+    ppjd_obj.filter_out_symmetric_duplicates_fr_evidence()
+    ppjd_obj.filter_out_increase_decrease_wd_no_catalyst()
+    ppjd_obj.filter_out_duplicates_fr_evidence(is_set=True)
+    # ppjd_obj.swap_catalyst_protein()
+    # json_objs_list = ppjd_obj.filter_top_fr_interaction_type_in_amr()
     #
     pdi.save_json_objs_as_index_cards(json_objs_list, joint_file_path)
     #

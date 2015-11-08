@@ -3,9 +3,10 @@ import multiprocessing as mp
 import numpy as np
 import constants_absolute_path as cap
 import time
-from config_parallel_processing import *
+import config_parallel_processing as cpp
 import parallel_computing as pc
 from config_console_output import *
+import scipy.sparse as ss
 
 
 def save_kernel_matrix(K, lam, cs):
@@ -21,11 +22,11 @@ def save_kernel_matrix(K, lam, cs):
     print 'Time to save the matrix was ', time.time()-start_time
 
 
-def eval_kernel_parallel(amr_graphs1, amr_graphs2, lam, cosine_threshold):
+def eval_kernel_parallel(amr_graphs1, amr_graphs2, lam, cosine_threshold, num_cores=cpp.num_cores, is_save=False):
     kernel_matrix_queue = [mp.Queue() for d in range(num_cores)]
     n1 = amr_graphs1.shape[0]
     n2 = amr_graphs2.shape[0]
-    K = -1*np.ones(shape=(n1, n2))
+    K = ss.dok_matrix((n1, n2), dtype=np.float16)
     idx_range_parallel = pc.uniform_distribute_tasks_across_cores(n1, num_cores)
     processes = [
         mp.Process(
@@ -63,7 +64,10 @@ def eval_kernel_parallel(amr_graphs1, amr_graphs2, lam, cosine_threshold):
     for process in processes:
         process.join()
     assert np.all(K >= 0)
-    save_kernel_matrix(K, lam, cosine_threshold)
+    #
+    if is_save:
+        save_kernel_matrix(K, lam, cosine_threshold)
+    #
     return K
 
 

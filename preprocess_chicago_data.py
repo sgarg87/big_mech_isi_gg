@@ -53,6 +53,9 @@ def read_data_file():
     interaction_tuples_map = {}
     proteins_list_map = {}
     interaction_types_list = []
+    id_sentences_map = {}
+    sentences_list = []
+    #
     annotators_list = ['lata', 'aditi', 'monali', 'singh']
     with open('../chicago_data/stats_dataout.csv', 'r') as f:
         reader = csv.reader(f, delimiter=':')
@@ -120,6 +123,11 @@ def read_data_file():
                 if not curr_sentence:
                     continue
             #
+            id_sentences_map[curr_id] = curr_sentence
+            #
+            if curr_sentence not in sentences_list:
+                sentences_list.append(curr_sentence)
+            #
             if curr_id not in interaction_tuples_map:
                 interaction_tuples_map[curr_id] = []
             #
@@ -151,6 +159,14 @@ def read_data_file():
     #
     json_f = open('../chicago_data/stats_interaction_types.json', 'w')
     json.dump(interaction_types_list, json_f, indent=4)
+    json_f.close()
+    #
+    json_f = open('../chicago_data/stats_id_sentences_map.json', 'w')
+    json.dump(id_sentences_map, json_f, indent=4)
+    json_f.close()
+    #
+    json_f = open('../chicago_data/stats_sentences_list.json', 'w')
+    json.dump(sentences_list, json_f, indent=4)
     json_f.close()
 
 

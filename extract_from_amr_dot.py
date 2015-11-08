@@ -572,7 +572,7 @@ def simplify_nodes_tree_identifiers(nodes_map):
                     raise AssertionError
                 return curr_identifier_prefix+':'+m[0].strip()
 
-        for curr_identifier_prefix in ['Uniprot', 'CHEBI', 'HGNC', 'PubChem-Compound', 'GO']:
+        for curr_identifier_prefix in ['Uniprot', 'CHEBI', 'HGNC', 'PubChem-Compound', 'PubChem', 'GO']:
             new_identifier_str = get_identifier_fr_prefix(curr_identifier_prefix, identifier_str)
             if new_identifier_str is not None:
                 return new_identifier_str
@@ -1719,6 +1719,24 @@ def is_valid_protein_node(protein_node):
         is_valid = False
     elif ']' in protein_name:
         is_valid = False
+    elif '(' in protein_name:
+        is_valid = False
+    elif ')' in protein_name:
+        is_valid = False
+    elif '=' in protein_name:
+        is_valid = False
+    elif '%' in protein_name:
+        is_valid = False
+    elif '&' in protein_name:
+        is_valid = False
+    elif ',' in protein_name:
+        is_valid = False
+    elif ';' in protein_name:
+        is_valid = False
+    elif '.' in protein_name:
+        is_valid = False
+    elif len(protein_name) > 20:
+        is_valid = False
     elif 'tyros' in protein_name.lower():
         is_valid = False
     elif 'serin' in protein_name.lower():
@@ -1958,12 +1976,12 @@ def gen_catalyst_domain_paths_frm_amr_concept_nd_wr_dot_pdf(amr_dot_file_path, i
                 is_add_protein_node = False
                 if is_word_similar(curr_node.type, protein_labels)[0]:
                     is_add_protein_node = True
-                elif is_word_similar(curr_node.name, protein_labels)[0]:
-                    is_add_protein_node = True
-                else:
-                    if cvp.is_protein_name_wordvec_similar_proteins_in_model \
-                            and is_word_similar(curr_node.name, bmo.bm_obj.protein_identifier_list_map.keys())[0]:
-                        is_add_protein_node = True
+                # elif is_word_similar(curr_node.name, protein_labels)[0]:
+                #     is_add_protein_node = True
+                # else:
+                #     if cvp.is_protein_name_wordvec_similar_proteins_in_model \
+                #             and is_word_similar(curr_node.name, bmo.bm_obj.protein_identifier_list_map.keys())[0]:
+                #         is_add_protein_node = True
                 if is_add_protein_node:
                     if debug:
                         print 'adding node for protein ', curr_node.name
@@ -2029,7 +2047,13 @@ def gen_catalyst_domain_paths_frm_amr_concept_nd_wr_dot_pdf(amr_dot_file_path, i
         for curr_concept_node in concept_nodes:
             if debug:
                 print 'curr_concept_node', curr_concept_node
-            for curr_catalyst_node in protein_nodes+[None]:
+            #
+            if curr_concept_node in complex_form_concept_nodes and ce.is_complex_type_wd_no_catalyst:
+                catalyst_node_candidates = [None]
+            else:
+                catalyst_node_candidates = protein_nodes+[None]
+            #
+            for curr_catalyst_node in catalyst_node_candidates:
                 if debug:
                     print 'curr_catalyst_node', curr_catalyst_node
                 curr_catalyst_path_nodes = None
@@ -2052,6 +2076,9 @@ def gen_catalyst_domain_paths_frm_amr_concept_nd_wr_dot_pdf(amr_dot_file_path, i
                         else:
                             catalyst_prob_vec = None
                         # todo: see probabilty vec and if above threshold for catalyst case, then only consider it as potential candidate
+                else:
+                    catalyst_prob_vec = None
+                #
                 for curr_domain_node in protein_nodes:
                     if debug:
                         print 'curr_domain_node', curr_domain_node
@@ -2482,7 +2509,7 @@ def gen_concept_state_paths_frm_amr_protein_nd_wr_dot_pdf(amr_dot_file_path, org
     prob_min = 0.15
     temp_path_file_name = './temp/temp_state_path'+str(r.randint(1, 1000000))
     protein_state_list = []
-    if kernel_non_joint_trained_model_obj is None:
+    if kernel_non_joint_trained_model_obj is None and ce.is_protein_path_lkl_screening:
         kernel_non_joint_trained_model_obj = ie.KernelClassifier(is_joint=False)
     for curr_concept_node in concept_nodes:
         assert (curr_concept_node is not None)

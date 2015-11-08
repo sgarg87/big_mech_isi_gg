@@ -32,6 +32,8 @@ def get_map_frm_list(nodes_list):
 
 
 class KernelClassifier:
+    # recently, joint and protein state classifiers are switched from SVM to Gaussian processes.
+    # file names may still be old (using "SVM" in it)
     def __init__(self, is_joint, is_protein_state=False):
         self.is_joint = is_joint
         self.is_protein_state = is_protein_state
@@ -49,9 +51,14 @@ class KernelClassifier:
             self.trained_clf = p.load(h)
         print 'Time to load the trained svm model (and training samples) was ', time.time()-start_time
         self.svm_clf = self.trained_clf['model']
+        assert self.svm_clf == 'gp'
+        self.gp_weights = self.trained_clf['gp_weights']
+        self.kernel_normalization = self.trained_clf['kernel_normalization']
         self.lmbda = self.trained_clf['parameters']['lambda']
         self.cs = self.trained_clf['parameters']['cs']
-        # self.cs = 0.7
+        self.gp_c = self.trained_clf['parameters']['gp_c']
+        self.gp_bias = self.trained_clf['parameters']['gp_bias']
+        #
         if 'is_root_kernel_default' in self.trained_clf['parameters']:
             self.is_root_kernel_default = self.trained_clf['parameters']['is_root_kernel_default']
         else:
@@ -147,9 +154,34 @@ class KernelClassifier:
             test_amr_graph_arr[0, 0] = test_amr_graph #assuming only one test sample
             test_amr_graph = test_amr_graph_arr
             test_amr_graph_arr = None
-            K_train_test = gk.eval_graph_kernel_matrix(test_amr_graph, self.train_amr_graphs, lam=self.lmbda, cosine_threshold=self.cs, is_root_kernel=self.is_root_kernel_default)
-            test_prob = self.svm_clf.predict_proba(K_train_test)
-            return test_prob[0]
+            #
+            K_test \
+                = gk.eval_graph_kernel_matrix(test_amr_graph,
+                                              self.train_amr_graphs,
+                                              lam=self.lmbda,
+                                              cosine_threshold=self.cs,
+                                              is_root_kernel=self.is_root_kernel_default,
+                                              is_sparse=False,
+                                              is_normalize=False)
+            test_norm = gk.graph_kernel_wrapper(nodes1=test_amr_graph[0, 0]['nodes'],
+                                          nodes2=test_amr_graph[0, 0]['nodes'],
+                                          lam=self.lmbda,
+                                          cosine_threshold=self.cs,
+                                          is_root_kernel=self.is_root_kernel_default)
+            K_test /= np.sqrt(self.kernel_normalization*test_norm)
+            #
+            score_test_pred = K_test.dot(self.gp_weights) + self.gp_bias
+            K_test = None
+            test_prob = 1/(1+np.exp(-score_test_pred))
+            score_test_pred = None
+            assert test_prob.size == 1
+            test_prob = test_prob[0]
+            print 'test_prob', test_prob
+            test_prob_vec = np.zeros(3)
+            test_prob_vec[1] = test_prob
+            test_prob_vec[0] = 1-test_prob
+            test_prob = None
+            return test_prob_vec
         else:
             return None
 

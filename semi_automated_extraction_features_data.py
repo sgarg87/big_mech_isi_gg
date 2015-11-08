@@ -145,10 +145,10 @@ def load_aimed_pickled_filtered_labeled_sdg_data_joint():
 
 def load_chicago_data_joint():
     print 'loading ...'
-    file_name = 'labeled_chicago_concept_domain_catalyst_data.pickle'
+    file_name = 'chicago_concept_domain_catalyst_data_positive_labels_only.pickle'
     with open(cap.absolute_path+file_name, 'rb') as f:
         data = p.load(f)
-    print 'done.'
+    print 'loaded.'
     return data
 
 

@@ -739,6 +739,35 @@ class ValidatePaperSets:
             plt.savefig('./validation_plots_nd_text_output/summary/train_test_amr_mmd_divergence.pdf', dpi=300, format='pdf')
             plt.close()
 
+    def sample_train_test_interaction_chicago(self):
+        curr_paper_set = 'chicago'
+        #
+        # we are explicitly considering interaction level indices here
+        test_amr_idx = get_idx_fr_paper_set(self.amr_graphs, curr_paper_set, is_list=False)
+        j = test_amr_idx
+        test_interaction_idx = self.get_idx_interaction_frm_kernel_idx_list(test_amr_idx)
+        test_interaction_idx = self.filter_interaction_idx(test_interaction_idx)
+        print '({},{})'.format(curr_paper_set, len(test_amr_idx))
+        print '({},{})'.format(curr_paper_set, len(test_interaction_idx))
+        #
+        train_interaction_idx = np.setdiff1d(np.arange(0, self.num_interactions), test_interaction_idx)
+        train_interaction_idx = self.filter_interaction_idx(train_interaction_idx)
+        train_amr_idx = self.get_amr_idx_frm_interaction_idx_list(train_interaction_idx)
+        i = train_amr_idx
+        #
+        Kii = self.K[np.meshgrid(i.astype(np.int32), i.astype(np.int32), indexing='ij', sparse=True, copy=False)]
+        Kjj = self.K[np.meshgrid(j.astype(np.int32), j.astype(np.int32), indexing='ij', sparse=True, copy=False)]
+        Kij = self.K[np.meshgrid(i.astype(np.int32), j.astype(np.int32), indexing='ij', sparse=True, copy=False)]
+        #
+        train_test_amr_mmd_divergence = edk.eval_max_mean_discrepancy(Kii=Kii, Kjj=Kjj, Kij=Kij)
+        #
+        print '(ttd: {})'.format(train_test_amr_mmd_divergence)
+        #
+        self.train_test_amr_mmd_divergence = train_test_amr_mmd_divergence
+        #
+        if not ch.is_hpcc:
+            print train_test_amr_mmd_divergence
+
     def choose_train_amr_sets(self):
         # assuming three types of labels in order: 0-false, 1-true, 2-swap (close to truth)
         num_amr_sets = len(self.amr_sets_fr_test)

@@ -26,6 +26,11 @@ import pydot as pd
 import file_paths_extraction as fpe
 import stanford_dependencies as sd
 import semi_automated_extraction_features_data as saefd
+import config_processing as cp
+import file_paths_train_data as fptd
+import config_gp_classifier_parameters as cgcp
+import scipy.sparse.linalg as ssl
+import compute_parallel_graph_kernel_matrix_joint_train_data as cpgkmjtd
 
 
 def is_amr_cyclic_undirected(nodes_list):
@@ -486,7 +491,12 @@ def process_pickled_data(data,
         is_joint_amr_synthetic_edge=ck.is_joint_amr_synthetic_edge,
         is_joint_amr_synthetic_role=ck.is_joint_amr_synthetic_role,
         is_inverse_centralize_amr=ck.is_inverse_centralize_amr,
-        is_word_vectors=ck.is_word_vectors):
+        is_word_vectors=ck.is_word_vectors,
+        is_labels=True):
+    #
+    if is_word_vectors:
+        assert cp.is_processing_amrs
+    #
     start_time = time.time()
     #
     graph_keys = data['paths_map'].keys()
@@ -500,12 +510,13 @@ def process_pickled_data(data,
         print len(data['paths_map'])
         print 'There are some paths for which labels are not available. cleaning of data is required. do after the evaluation ...'
         # raise AssertionError
-    labels = []
+    if is_labels:
+        labels = []
     org_amr_sentences_map = {}
     for i in range(n):
         curr_graph_key = graph_keys[i]
         #
-        if curr_graph_key not in data['joint_labels_map']:
+        if curr_graph_key not in data['joint_labels_map'] and is_labels:
             continue
         #
         if debug:
@@ -519,13 +530,15 @@ def process_pickled_data(data,
         if is_cyclic_curr_graph_key:
             continue
         curr_nodes_list = data['paths_map'][curr_graph_key]
-        if cd.is_darpa:
+        #
+        if cd.is_darpa and cd.is_darpa_entity_type:
             ead.map_entity_types_to_darpa_types(curr_nodes_list)
         #
         if curr_graph_key not in data['interaction_tuples_map']:
             curr_triplet_nodes_tuple = get_triplet_nodes_tuple_frm_joint_subgraph(curr_nodes_list_graph=curr_nodes_list)
         else:
             curr_triplet_nodes_tuple = data['interaction_tuples_map'][curr_graph_key]
+        #
         if curr_graph_key not in data[gtd.const_sentences_map]:
             curr_org_amr_dot_file_path = fpe.extract_original_amr_dot_file_name(curr_graph_key)
             if curr_org_amr_dot_file_path in org_amr_sentences_map:
@@ -565,21 +578,25 @@ def process_pickled_data(data,
                     'tuple': curr_triplet_nodes_tuple,
                     'text': curr_sentence
                 })
-            labels.append(data['joint_labels_map'][curr_graph_key])
+            if is_labels:
+                labels.append(data['joint_labels_map'][curr_graph_key])
         else:
             print 'Graph {} is cyclic'.format(curr_graph_key)
     n = len(amr_graphs)
     print 'Number of graphs after filtering of cyclic ones : ', n
     amr_graphs = np.array(amr_graphs, dtype=np.object).reshape((n, 1))
-    # np.save(cap.absolute_path+'./temp_amr_graphs', amr_graphs)
-    labels = np.array(labels)
+    if is_labels:
+        labels = np.array(labels)
     if is_word_vectors:
-        print 'Preprocessing AMR graphs for assigning word vectors ...'
+        print 'Pre-processing AMR graphs for assigning word vectors ...'
         start_time = time.time()
         for i in range(n):
             gk.preprocess_amr_fr_assign_wordvector(amr_graphs[i, 0])
         print 'Execution time to assign vectors for each node in AMR graphs was ', time.time()-start_time
-    return amr_graphs, labels
+    if is_labels:
+        return amr_graphs, labels
+    else:
+        return amr_graphs
 
 
 def get_data_joint(
@@ -593,20 +610,28 @@ def get_data_joint(
         is_neighbor_kernel=ck.is_neighbor_kernel,
         is_word_vectors=ck.is_word_vectors,
         is_dependencies=cte.is_dependencies,
+        load_sentence_frm_dot_if_required=True,
         is_alternative_data=False,
         is_chicago_data=cte.is_chicago_data):
+    #
+    if is_word_vectors:
+        assert cp.is_processing_amrs
+    #
     start_time = time.time()
     if is_alternative_data:
         assert is_train is None
         assert is_chicago_data is None
         data = saefd.load_aimed_pickled_filtered_labeled_data_joint()
-        print '*********paths_map keys *********'
-        print data['paths_map'].keys()
-        print '*********joint labels keys ************'
-        print data['joint_labels_map'].keys()
-        print '*******joint labels map ************'
-        print data['joint_labels_map']
-        print '**********************'
+        #
+        if coarse_debug:
+            print '*********paths_map keys *********'
+            print data['paths_map'].keys()
+            print '*********joint labels keys ************'
+            print data['joint_labels_map'].keys()
+            print '*******joint labels map ************'
+            print data['joint_labels_map']
+            print '**********************'
+        #
         if is_dependencies:
             dependencies_data = saefd.load_aimed_pickled_filtered_labeled_sdg_data_joint()
             merge_joint_model_data_to_train_data(data, dependencies_data)
@@ -617,13 +642,14 @@ def get_data_joint(
                 data = gtd.load_pickled_joint_data_model(is_synthetic=False)
             else:
                 data = gtd.load_pickled_merged_data(is_train=True)
-                print '*********paths_map keys *********'
-                print data['paths_map'].keys()
-                print '*********joint labels keys ************'
-                print data['joint_labels_map'].keys()
-                print '*******joint labels map ************'
-                print data['joint_labels_map']
-                print '**********************'
+                if coarse_debug:
+                    print '*********paths_map keys *********'
+                    print data['paths_map'].keys()
+                    print '*********joint labels keys ************'
+                    print data['joint_labels_map'].keys()
+                    print '*******joint labels map ************'
+                    print data['joint_labels_map']
+                    print '**********************'
                 #
                 if is_chicago_data:
                     chicago_data = saefd.load_chicago_data_joint()
@@ -666,11 +692,12 @@ def get_data_joint(
     for i in range(n):
         curr_graph_key = graph_keys[i]
         #
-        if curr_graph_key not in data['joint_labels_map']:
-            continue
-        #
-        if debug:
+        if coarse_debug:
             print 'curr_graph_key ', curr_graph_key
+        #
+        if curr_graph_key not in data['joint_labels_map']:
+            print 'skipping this one since it does not have a label'
+            continue
         if not is_neighbor_kernel:
             is_cyclic_curr_graph_key = False
             for curr_cyclic_amr_path in cate.cyclic_amr_list:
@@ -688,17 +715,21 @@ def get_data_joint(
         else:
             curr_triplet_nodes_tuple = data['interaction_tuples_map'][curr_graph_key]
         if curr_graph_key not in data[gtd.const_sentences_map]:
-            curr_org_amr_dot_file_path = fpe.extract_original_amr_dot_file_name(curr_graph_key)
-            if curr_org_amr_dot_file_path in org_amr_sentences_map:
-                curr_sentence = org_amr_sentences_map[curr_org_amr_dot_file_path]
+            if load_sentence_frm_dot_if_required:
+                curr_org_amr_dot_file_path = fpe.extract_original_amr_dot_file_name(curr_graph_key)
+                if curr_org_amr_dot_file_path in org_amr_sentences_map:
+                    curr_sentence = org_amr_sentences_map[curr_org_amr_dot_file_path]
+                else:
+                    curr_sentence = get_sentence_frm_amr_dot_file(curr_org_amr_dot_file_path)
+                    org_amr_sentences_map[curr_org_amr_dot_file_path] = curr_sentence
             else:
-                curr_sentence = get_sentence_frm_amr_dot_file(curr_org_amr_dot_file_path)
-                org_amr_sentences_map[curr_org_amr_dot_file_path] = curr_sentence
+                curr_sentence = None
         else:
             curr_sentence = data[gtd.const_sentences_map][curr_graph_key]
         #
         if is_joint_amr_synthetic_edge or is_joint_amr_synthetic_role:
-            print 'curr_graph_key', curr_graph_key
+            if coarse_debug:
+                print 'curr_graph_key', curr_graph_key
             if is_joint_amr_synthetic_role:
                 set_default_role_fr_all_nodes(curr_nodes_list)
             # if curr_graph_key in data['interaction_tuples_map']:
@@ -889,6 +920,16 @@ def tune_classification(amr_graphs, labels):
     return opt_ct, opt_lam, opt_lam_ars
 
 
+def get_processed_train_joint_data():
+    with open(cap.absolute_path+fptd.processed_amr_graphs_lables_joint_train, 'rb') as f_processed_amr_graphs_lables_joint_train:
+        data = p.load(f_processed_amr_graphs_lables_joint_train)
+        amr_graphs = data['amr']
+        labels = data['label']
+        data = None
+    #
+    return amr_graphs, labels
+
+
 def build_extraction_classifier(is_tuning_clf=True):
     def save_nd_plot(K, matrix_name):
         if ck.is_sparse:
@@ -951,53 +992,55 @@ def build_extraction_classifier(is_tuning_clf=True):
                 print 'SD adjusted rand score for optimal lambda is ', opt_lam_ars['std']
                 return K, opt_ct, opt_lam
             else:
-                # getting data
-                amr_graphs, labels_train = get_data_joint(is_train=True)
-                # n1 = amr_graphs.shape[0]
-                # assert n1 == labels_train.shape[0]
-                # # synthetic edge
-                # amr_graphs_se, labels_train_se = get_data_joint(
-                #     is_train=True,
-                #     is_model_data=True,
-                #     is_model_interactions_graph_in_joint_train=True,
-                #     is_joint_amr_synthetic_edge=True
-                # )
-                # n2 = amr_graphs_se.shape[0]
-                # assert n2 == labels_train_se.shape[0]
-                # #merging data
-                # amr_graphs_mix = np.empty(dtype=np.object, shape=(n1+n2, 1))
-                # labels_train_mix = np.empty(dtype=np.object, shape=(n1+n2))
-                # amr_graphs_mix[np.arange(n1)] = amr_graphs
-                # amr_graphs_mix[n1+np.arange(n2)] = amr_graphs_se
-                # amr_graphs = None
-                # amr_graphs_se = None
-                # labels_train_mix[np.arange(n1)] = labels_train
-                # labels_train_mix[n1+np.arange(n2)] = labels_train_se
-                # labels_train = None
-                # labels_train_se = None
-                # amr_graphs = amr_graphs_mix
-                # amr_graphs_mix = None
-                # labels_train = labels_train_mix
-                # labels_train_mix = None
+                amr_graphs, labels = get_processed_train_joint_data()
+                # calculating kernel normalization for training points
+                print 'computing normalization constant for the training points'
+                num_amr = amr_graphs.shape[0]
+                assert amr_graphs.shape[1] == 1
+                kernel_normalization = -1*np.ones(num_amr)
+                for i in range(num_amr):
+                    start_time = time.time()
+                    kernel_normalization[i] \
+                        = gk.graph_kernel_wrapper(nodes1=amr_graphs[i, 0]['nodes'],
+                                                  nodes2=amr_graphs[i, 0]['nodes'],
+                                                  lam=tuned_lambda_fr_joint,
+                                                  cosine_threshold=tuned_cs_fr_joint,
+                                                  is_root_kernel=ck.is_root_kernel_default)
+                    print 'kernel_normalization[i]', kernel_normalization[i]
+                    print 'computed the normalization in ', time.time()-start_time
+                assert np.all(kernel_normalization >= 0)
                 #
-                n = labels_train.size
-                if cte.is_parallel_kernel_eval:
-                    K = pke.eval_kernel_parallel(amr_graphs, amr_graphs, lam=tuned_lambda_fr_joint, cosine_threshold=tuned_cs_fr_joint)
-                else:
-                    K = gk.eval_graph_kernel_matrix(amr_graphs, amr_graphs, lam=tuned_lambda_fr_joint, cosine_threshold=tuned_cs_fr_joint)
-                print 'Training ...'
-                svm_clf = skl_svm.SVC(kernel='precomputed', probability=True, verbose=False, class_weight='auto')
-                svm_clf.fit(K, labels_train)
+                K = cpgkmjtd.join_parallel_computed_kernel_matrices_sparse(160)
+                print 'Learning Gaussian process classifier weights ...'
+                assert np.all(labels == 1), 'all labels are positive'
+                score = cgcp.c*np.ones(labels.shape)
+                print 'score', score
+                labels = None
+                start_time = time.time()
+                print 'computing the least squares'
+                assert K.shape[0] == K.shape[1]
+                # todo: this lsqr algorithm is parallelizable, so do the needful
+                # see the classical paper LSQR An algrithm for sparse linear equations and sparse least squares.pdf
+                gp_weights = ssl.lsqr(K, (score-cgcp.bias), show=True)[0]
+                K = None
+                print 'gp_weights', gp_weights
+                print 'Time to compute the least square solution was ', time.time()-start_time
+                #
                 trained_clf = {}
-                trained_clf['model'] = svm_clf
+                trained_clf['model'] = 'gp'
+                trained_clf['gp_weights'] = gp_weights
+                trained_clf['kernel_normalization'] = kernel_normalization
                 trained_clf['train_amrs'] = amr_graphs
                 trained_clf['parameters'] = {}
                 trained_clf['parameters']['lambda'] = tuned_lambda_fr_joint
                 trained_clf['parameters']['cs'] = tuned_cs_fr_joint
+                trained_clf['parameters']['gp_c'] = cgcp.c
+                trained_clf['parameters']['gp_bias'] = cgcp.bias
                 trained_clf['parameters']['is_root_kernel_default'] = ck.is_root_kernel_default
                 trained_clf['parameters']['is_inverse_centralize_amr'] = ck.is_inverse_centralize_amr
                 trained_clf['parameters']['is_joint_amr_synthetic_edge'] = ck.is_joint_amr_synthetic_edge
                 trained_clf['parameters']['is_joint_amr_synthetic_role'] = ck.is_joint_amr_synthetic_role
+                print 'trained_clf', trained_clf
                 with open(cap.absolute_path+ctskfp.file_name_svm_classifier_multiclass_joint + '.pickle', 'wb') as h:
                     p.dump(trained_clf, h)
         else:
@@ -1041,18 +1084,50 @@ def build_extraction_classifier(is_tuning_clf=True):
 
 def build_protein_state_extraction_classifier(is_tuning_clf=True):
     def lrn_nd_save_classifier(K, labels, amr_graphs, lam, cs, is_root, is_inverse):
-        svm_clf = skl_svm.SVC(kernel='precomputed', probability=True, verbose=False, class_weight='auto')
-        print 'Training protein state svm classifier ...'
-        print K
+        # calculating kernel normalization for training points
+        print 'computing normalization constant for the training points'
+        num_amr = amr_graphs.shape[0]
+        assert amr_graphs.shape[1] == 1
+        kernel_normalization = -1*np.ones(num_amr)
+        for i in range(num_amr):
+            start_time = time.time()
+            kernel_normalization[i] \
+                = gk.graph_kernel_wrapper(nodes1=amr_graphs[i, 0]['nodes'],
+                                          nodes2=amr_graphs[i, 0]['nodes'],
+                                          lam=tuned_lambda_fr_joint,
+                                          cosine_threshold=tuned_cs_fr_joint,
+                                          is_root_kernel=ck.is_root_kernel_default)
+            print 'kernel_normalization[i]', kernel_normalization[i]
+            print 'computed the normalization in ', time.time()-start_time
+        assert np.all(kernel_normalization >= 0)
+        #
+        print 'Learning Gaussian process classifier weights ...'
+        assert np.all(labels == 1), 'all labels are positive'
+        score = cgcp.c*np.ones(labels.shape)
+        print 'score', score
+        labels = None
+        #
         start_time = time.time()
-        svm_clf.fit(K, labels)
-        print 'learned the model in time ', time.time()-start_time
+        print 'computing the least squares'
+        assert K.shape[0] == K.shape[1]
+        #
+        # todo: this lsqr algorithm is parallelizable, so do the needful
+        # see the classical paper LSQR An algrithm for sparse linear equations and sparse least squares.pdf
+        weights = ssl.lsqr(K, (score-cgcp.bias), show=True)[0]
+        print 'weights', weights
+        print 'Time to compute the least square solution was ', time.time()-start_time
+        K = None
+        #
         trained_clf = {}
-        trained_clf['model'] = svm_clf
+        trained_clf['model'] = 'gp'
+        trained_clf['gp_weights'] = weights
+        trained_clf['kernel_normalization'] = kernel_normalization
         trained_clf['train_amrs'] = amr_graphs
         trained_clf['parameters'] = {}
         trained_clf['parameters']['lambda'] = lam
         trained_clf['parameters']['cs'] = cs
+        trained_clf['parameters']['gp_c'] = cgcp.c
+        trained_clf['parameters']['gp_bias'] = cgcp.bias
         trained_clf['parameters']['is_root_kernel_default'] = is_root
         trained_clf['parameters']['is_inverse_centralize_amr'] = is_inverse
         trained_clf['parameters']['is_protein_state_subgraph_rooted_at_concept_node'] =\
@@ -1076,7 +1151,24 @@ def build_protein_state_extraction_classifier(is_tuning_clf=True):
 
     amr_graphs, labels = get_protein_state_data(is_train=True)
     #
+    # binary classification only
+    print 'binary classification only'
+    label2_idx = np.where(labels == 2)
+    labels[label2_idx] = 0
+    label2_idx = None
+    #
+    # filter the positive only labels
+    print 'filtering positive only'
+    positive_idx = np.where(labels == 1)[0]
+    amr_graphs = amr_graphs[positive_idx, :]
+    labels = labels[positive_idx]
+    positive_idx = None
+    print 'filtered'
+    print 'amr_graphs.shape', amr_graphs.shape
+    print 'labels.shape', labels.shape
+    #
     if is_tuning_clf:
+        raise NotImplementedError, 'classifier changed from svm to GP. Rewrite code for tuning with GP'
         opt_ct, opt_lam, opt_lam_ars = tune_classification(amr_graphs, labels)
         K = gk.eval_graph_kernel_matrix(amr_graphs, amr_graphs, lam=opt_lam, cosine_threshold=opt_ct)
         save_nd_plot(K, 'K_state')
@@ -1094,7 +1186,7 @@ def build_protein_state_extraction_classifier(is_tuning_clf=True):
         if cte.is_parallel_kernel_eval:
             K = pke.eval_kernel_parallel(amr_graphs, amr_graphs, lam=tuned_lambda_fr_protein_state, cosine_threshold=tuned_cs_fr_protein_state)
         else:
-            K = gk.eval_graph_kernel_matrix(amr_graphs, amr_graphs, lam=tuned_lambda_fr_protein_state, cosine_threshold=tuned_cs_fr_protein_state)
+            K = gk.eval_graph_kernel_matrix(amr_graphs, amr_graphs, lam=tuned_lambda_fr_protein_state, cosine_threshold=tuned_cs_fr_protein_state, is_sparse=False)
         lrn_nd_save_classifier(K, labels, amr_graphs, tuned_lambda_fr_protein_state, tuned_cs_fr_protein_state, ck.is_root_kernel_default, ck.is_inverse_centralize_amr)
 
 

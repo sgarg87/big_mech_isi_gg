@@ -17,6 +17,7 @@ import math
 import kernel_extraction_cutoff_tuned as kect
 from config_console_output import *
 import file_paths_extraction as fpe
+import config_extraction as ce
 
 
 is_random_state_selection = False
@@ -26,21 +27,25 @@ const_state_change = 'state_change'
 const_complex_form = 'complex'
 kernel_joint_trained_model_obj = ie.KernelClassifier(is_joint=True, is_protein_state=False)
 kernel_protein_state_trained_model_obj = ie.KernelClassifier(is_protein_state=True, is_joint=None)
-kernel_non_joint_trained_model_obj = ie.KernelClassifier(is_joint=False)
+#
+if ce.is_protein_path_lkl_screening:
+    kernel_non_joint_trained_model_obj = ie.KernelClassifier(is_joint=False)
+else:
+    kernel_non_joint_trained_model_obj = None
 #
 # filtering
 is_filter = True
-const_min_threshold_interaction__kernel_inferred_lkl = 0.25
-const_min_threshold_protein_state_lkl = 0.25
+const_min_threshold_interaction__kernel_inferred_lkl = 0.5
+const_min_threshold_protein_state_lkl = 0.5
 #
 if kect.top_ratio is not None:
     top_ratio = kect.top_ratio
 else:
     # tuned value should be some where between 0.25 - 0.35
     if ch.is_hpcc:
-        top_ratio = 0.3
+        top_ratio = 1
     else:
-        top_ratio = 0.3
+        top_ratio = 1
 print 'selected top ratio is {}'.format(top_ratio)
 
 

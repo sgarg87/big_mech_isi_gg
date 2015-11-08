@@ -17,6 +17,7 @@ import numpy.random as rnd
 import math
 from wordvec import *
 import scipy.signal as ss
+import scipy.sparse as sparse
 import constants_absolute_path as cap
 from config_console_output import *
 import config_hpcc as ch
@@ -791,131 +792,102 @@ def preprocess_amr_fr_assign_wordvector(amr_graph):
                 node.type_wordvec = get_wordvec_local(node.type)
 
 
-def eval_graph_kernel_matrix(amr_graphs1, amr_graphs2, lam=None, cosine_threshold=None, is_root_kernel=is_root_kernel_default):
+def eval_graph_kernel_matrix(amr_graphs1,
+                             amr_graphs2,
+                             lam=None,
+                             cosine_threshold=None,
+                             is_root_kernel=is_root_kernel_default,
+                             is_sparse=False,
+                             is_normalize=is_normalize_each_kernel):
     n1 = amr_graphs1.shape[0]
     n2 = amr_graphs2.shape[0]
-    # if n1 != n2:
-    #     raise NotImplementedError
+    #
     start_time = time.time()
-    K = -float('Inf')*np.ones((n1, n2)) #negative represents unassigned similarity
-    # if not self_fr_test:
+    #
+    if not is_sparse:
+        K = -float('Inf')*np.ones((n1, n2))
+    else:
+        K = sparse.dok_matrix((n1, n2), dtype=np.float16)
+    #
     is_error=False
     num_kernel_errors = 0
     #
-    if is_normalize_each_kernel:
+    if is_normalize:
         self_k_i = -float('Inf')*np.ones(n1)
         self_k_j = -float('Inf')*np.ones(n2)
     #
+    # note: do not exploit symmetry of kernel matrix since the this function may be called from a parallel computing
+    #  module for computing sub-matrices
+    #
     for i in range(n1):
         for j in range(n2):
-            if K[i, j] == -float('Inf'):
-                if coarse_debug:
-                    print 'amr_dot_files[i]', amr_graphs1[i, 0]['path']
-                    print 'amr_dot_files[j]', amr_graphs2[j, 0]['path']
-                if not is_normalize_each_kernel:
-                    raise AssertionError
-                try:
-                    # todo: self similarity computations are beings repeated for each pair. This should be avoided and should save computational cost significantly.
-                    # todo: also deep copy operations may be very expensive. See if it can be avoided some how. Anyways, it would be reduced if we reduce
-                    # todo: duplicate self similarity computations
-                    start_time_local = time.time()
-                    Kij = graph_kernel_wrapper(nodes1=amr_graphs1[i, 0]['nodes'], nodes2=amr_graphs2[j, 0]['nodes'], lam=lam, cosine_threshold=cosine_threshold, is_root_kernel=is_root_kernel)
+            if coarse_debug:
+                print 'amr_dot_files[i]', amr_graphs1[i, 0]['path']
+                print 'amr_dot_files[j]', amr_graphs2[j, 0]['path']
+            # if not is_normalize:
+            #     raise AssertionError
+            try:
+                # todo: self similarity computations are beings repeated for each pair. This should be avoided and should save computational cost significantly.
+                # todo: also deep copy operations may be very expensive. See if it can be avoided some how. Anyways, it would be reduced if we reduce
+                # todo: duplicate self similarity computations
+                start_time_local = time.time()
+                Kij = graph_kernel_wrapper(nodes1=amr_graphs1[i, 0]['nodes'], nodes2=amr_graphs2[j, 0]['nodes'], lam=lam, cosine_threshold=cosine_threshold, is_root_kernel=is_root_kernel)
+                if debug:
+                    print 'Kij ', Kij
+                if is_normalize:
+                    # assuming that computations are saved in a global map so that we don't have to bother about same calls from here
+                    if self_k_i[i] == -float('Inf'):
+                        Kii = graph_kernel_wrapper(nodes1=amr_graphs1[i, 0]['nodes'], nodes2=copy.deepcopy(amr_graphs1[i, 0]['nodes']), lam=lam, cosine_threshold=cosine_threshold, is_root_kernel=is_root_kernel)
+                        self_k_i[i] = Kii
+                    else:
+                        Kii = self_k_i[i]
                     if debug:
-                        print 'Kij ', Kij
-                    if is_normalize_each_kernel:
-                        # assuming that computations are saved in a global map so that we don't have to bother about same calls from here
-                        if self_k_i[i] == -float('Inf'):
-                            Kii = graph_kernel_wrapper(nodes1=amr_graphs1[i, 0]['nodes'], nodes2=copy.deepcopy(amr_graphs1[i, 0]['nodes']), lam=lam, cosine_threshold=cosine_threshold, is_root_kernel=is_root_kernel)
-                            self_k_i[i] = Kii
-                        else:
-                            Kii = self_k_i[i]
-                        if debug:
-                            print 'Kii ', Kii
-                        #
-                        if self_k_j[j] == -float('Inf'):
-                            Kjj = graph_kernel_wrapper(nodes1=amr_graphs2[j, 0]['nodes'], nodes2=copy.deepcopy(amr_graphs2[j, 0]['nodes']), lam=lam, cosine_threshold=cosine_threshold, is_root_kernel=is_root_kernel)
-                            self_k_j[j] = Kjj
-                        else:
-                            Kjj = self_k_j[j]
-                        if debug:
-                            print 'Kjj ', Kjj
-                        #
-                        K[i, j] = Kij/math.sqrt(Kii*Kjj)
-                        if debug:
-                            print 'normalized K[i, j] is ', K[i, j]
-                        if not ((0-1e-2) <= K[i,j] <= (1+1e-2)):
-                            print '******************************************'
-                            print 'unexpected value of K[i,j] ', K[i,j]
-                            print 'Kij is ', Kij
-                            print 'Kii is ', Kii
-                            print 'Kjj is ', Kjj
-                            print 'amr_dot_files[i]', amr_graphs1[i, 0]['path']
-                            print 'amr_dot_files[j]', amr_graphs2[j, 0]['path']
-                            print '******************************************'
-                            raise AssertionError
-                    if coarse_debug:
-                        print 'time to computer current kernel was ', time.time()-start_time_local
-                except:
-                        print 'error computing kernel between '
+                        print 'Kii ', Kii
+                    #
+                    if self_k_j[j] == -float('Inf'):
+                        Kjj = graph_kernel_wrapper(nodes1=amr_graphs2[j, 0]['nodes'], nodes2=copy.deepcopy(amr_graphs2[j, 0]['nodes']), lam=lam, cosine_threshold=cosine_threshold, is_root_kernel=is_root_kernel)
+                        self_k_j[j] = Kjj
+                    else:
+                        Kjj = self_k_j[j]
+                    if debug:
+                        print 'Kjj ', Kjj
+                    #normalized K
+                    K[i, j] = Kij/math.sqrt(Kii*Kjj)
+                    #truncation for memory savings and computations
+                    if K[i, j] < 1e-2:
+                        K[i, j] = 0
+                    #
+                    if debug:
+                        print 'normalized K[i, j] is ', K[i, j]
+                    if not ((0-1e-2) <= K[i,j] <= (1+1e-2)):
+                        print '******************************************'
+                        print 'unexpected value of K[i,j] ', K[i,j]
+                        print 'Kij is ', Kij
+                        print 'Kii is ', Kii
+                        print 'Kjj is ', Kjj
                         print 'amr_dot_files[i]', amr_graphs1[i, 0]['path']
                         print 'amr_dot_files[j]', amr_graphs2[j, 0]['path']
-                        is_error = True
-                        num_kernel_errors += 1
-                        raise
-                if debug:
-                    print 'K[i, j] ', K[i, j]
+                        print '******************************************'
+                        raise AssertionError
+                else:
+                    K[i, j] = Kij
+                if coarse_debug:
+                    print 'time to computer current kernel was ', time.time()-start_time_local
+            except:
+                    print 'error computing kernel between '
+                    print 'amr_dot_files[i]', amr_graphs1[i, 0]['path']
+                    print 'amr_dot_files[j]', amr_graphs2[j, 0]['path']
+                    is_error = True
+                    num_kernel_errors += 1
+                    raise
+            if debug:
+                print 'K[i, j] ', K[i, j]
     if is_error:
         print 'Number of kernel computation errors ', num_kernel_errors
         raise AssertionError
     if debug:
         print 'Kernel Matrix is ', K
-    #todo: normalize the matrix
-    K_un_norm = np.copy(K)
-    if not is_normalize_each_kernel:
-        # normalization should not be at matrix level (fundamentally wrong if the two arrays of graphs amr_graphs1, amr_graphs2 are different sources)
-        raise DeprecationWarning
-        if n1 == n2:
-            norm = np.sqrt(K.diagonal().repeat(n1).reshape((n1, n1)))
-            K /= norm*norm.transpose()
-            print 'Kernel Matrix after normalization is ', K
-        else:
-            raise NotImplementedError
-    if is_laplace_kernel: #this seems to give very bad results though
-        raise DeprecationWarning
-        K = get_laplace_transform(K)
-    if is_nonlinear_kernel:
-        raise DeprecationWarning
-        K = nonlinear_func_on_kernel_matrix(K)
-    if is_reg_kernel:
-        K += reg_lambda*np.eye(n1)
-    if is_pos_def_test:
-        if not is_semi_pos_def(K):
-            raise AssertionError
-    #todo: also write normalization code for other cases on relationship between n1 and n2
     print 'Time to compute the kernel matrix is ', time.time()-start_time
-    matrix_name = './gen_kernel_matrices/'
-    if is_sparse:
-        matrix_name += 'graph_kernel_sparse_K_'
-    else:
-        matrix_name += 'graph_kernel_K_'
-    matrix_name += str(n1)+'_'+str(n2)+'_lambda'+str(lam)
-    if is_word_vectors:
-        matrix_name += '_ct'+str(cosine_threshold)
-    if is_save_matrix:
-        if not ch.is_hpcc:
-            start_time = time.time()
-            np.save(cap.absolute_path+matrix_name, K)
-            np.save(cap.absolute_path+matrix_name+'_unnorm', K_un_norm)
-            print 'Time to save the matrix was ', time.time()-start_time
-    if is_save_matrix_img:
-        if not ch.is_hpcc:
-            start_time = time.time()
-            #plotting
-            plt.pcolor(K)
-            plt.colorbar()
-            plt.savefig(cap.absolute_path+matrix_name+'.pdf', dpi=80)
-            plt.close()
-            print 'Time to save the matrix image was ', time.time()-start_time
     return K
 
 

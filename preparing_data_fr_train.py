@@ -1,5 +1,4 @@
 import numpy as np
-import validate_on_chicago_data as vcd
 import file_paths_train_data as fptd
 import pickle as p
 import train_extractor as te
@@ -22,7 +21,7 @@ if __name__ == '__main__':
     labels[idx_label2] = 0
     #
     print 'filtering out data containing only positive labels'
-    positive_label_idx = np.where(labels == 1)
+    positive_label_idx = np.where(labels == 1)[0]
     labels = labels[positive_label_idx]
     print 'labels.shape', labels.shape
     amr_graphs = amr_graphs[positive_label_idx, :]

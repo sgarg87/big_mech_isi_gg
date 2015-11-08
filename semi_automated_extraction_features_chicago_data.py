@@ -12,9 +12,12 @@ import numpy as np
 import copy
 import subprocess as sp
 import os
+import eval_divergence_frm_kernel as edk
+import constants as c
 
 
 path = '../../chicago/'
+filtered_sentence_ids_path = 'filtered_sentence_ids.json'
 
 # activate
 # transactivate
@@ -104,24 +107,73 @@ path = '../../chicago/'
 #
 
 
+symmetric_types_list = \
+    [
+    'bind', 'interact', 'associate', 'dissociate', 'dissociate from',
+    'colocalize', 'synergy', ' synergistic interaction',
+     'synergistic action', 'act synergistically', 'break',
+    'form a complex', 'disassemble', 'combine', 'tie', 'attach',
+    'assemble', 'form', 'couple', 'unpair', 'coexpress', 'connect',
+    'pair', 'synergistic cooperation', 'work synergistically',
+    'function synergistically', 'bond', 'disengage', 'synergistic association',
+    'dissociate', 'dissociate from', 'copurify', 'join', 'independence',
+    'synergistic integration']
+
+
+def load_json_obj(file_path):
+    with open(file_path, 'r') as f:
+        obj = json.load(f)
+    return obj
+
+
+def filter_sentence_ids_list_frm_interactions():
+    interaction_types_fr_filter = c.interaction_labels+c.complex_labels
+    #
+    sentence_interactions_list_map = load_json_obj('../chicago_data/stats_dataout.json')
+    #
+    filtered_sentence_ids = []
+    filtered_sentence_ids_positive = []
+    #
+    for curr_sentence_id in sentence_interactions_list_map:
+        print 'curr_sentence_id', curr_sentence_id
+        for curr_interaction in sentence_interactions_list_map[curr_sentence_id]:
+            curr_interaction_type = curr_interaction[0][0]
+            if match_protein_name_with_gold_list(curr_interaction_type, interaction_types_fr_filter):
+                if curr_sentence_id not in filtered_sentence_ids:
+                    filtered_sentence_ids.append(curr_sentence_id)
+                #
+                if curr_interaction[1] == 1:
+                    if curr_sentence_id not in filtered_sentence_ids_positive:
+                        filtered_sentence_ids_positive.append(curr_sentence_id)
+    #
+    print len(filtered_sentence_ids)
+    print len(filtered_sentence_ids_positive)
+    #
+    with open(filtered_sentence_ids_path, 'w') as f:
+        json.dump(filtered_sentence_ids_positive, f, indent=4)
+
+
 def match_protein_name(protein, protein_gold, min_ratio=0.75):
     is_match = False
-    if protein == protein_gold:
-        is_match = True
-    elif protein.lower() == protein_gold.lower():
-        is_match = True
-    else:
-        if protein in protein_gold or protein_gold in protein:
+    try:
+        if protein == protein_gold:
             is_match = True
-        elif protein.lower() in protein_gold.lower() or protein_gold.lower() in protein.lower():
+        elif protein.lower() == protein_gold.lower():
             is_match = True
         else:
-            dl_obj = dl.SequenceMatcher(None, protein, protein_gold)
-            curr_ratio = dl_obj.quick_ratio()
-            if curr_ratio > min_ratio:
+            if protein in protein_gold or protein_gold in protein:
                 is_match = True
-    #
-    return is_match
+            elif protein.lower() in protein_gold.lower() or protein_gold.lower() in protein.lower():
+                is_match = True
+            else:
+                dl_obj = dl.SequenceMatcher(None, protein, protein_gold)
+                curr_ratio = dl_obj.quick_ratio()
+                if curr_ratio > min_ratio:
+                    is_match = True
+        return is_match
+    except BaseException as e:
+        print e
+        return is_match
 
 
 def match_protein_name_with_gold_list(protein, proteins_gold_list):
@@ -161,13 +213,16 @@ def get_all_files():
     return dot_files_list
 
 
-def generate_subgraphs_nd_dump(num_cores, curr_core):
-    gold_proteins_list_map = load_proteins_list_map()
+def generate_subgraphs_nd_dump(num_cores, curr_core, is_filter_sentence_ids=False):
+    # gold_proteins_list_map = load_proteins_list_map()
     #
     paths_map = {}
     interaction_tuples_map = {}
     sentences_map = {}
     labels_map = {}
+    #
+    if is_filter_sentence_ids:
+        filtered_sentence_ids_list = load_json_obj(filtered_sentence_ids_path)
     #
     f = open(cap.absolute_path+'./list_of_chicago_dot_files_not_processed_{}_{}.txt'.format(num_cores, curr_core), 'w')
     #
@@ -183,30 +238,31 @@ def generate_subgraphs_nd_dump(num_cores, curr_core):
     #
     for curr_file in dot_files_list_curr_core:
         try:
-            print 'curr_file', curr_file
+            # print 'curr_file', curr_file
             prefix = path+'stat_ID'
             suffix = '.dot'
             assert curr_file.startswith(cap.absolute_path+prefix)
             curr_file_sub = curr_file[len(cap.absolute_path+prefix):]
-            print 'curr_file_sub', curr_file_sub
+            # print 'curr_file_sub', curr_file_sub
             assert curr_file_sub.endswith(suffix)
             curr_file_sub = curr_file_sub[:-len(suffix)]
-            print 'curr_file_sub', curr_file_sub
+            # print 'curr_file_sub', curr_file_sub
             #
             curr_id = 'ID'+curr_file_sub
             curr_sentence_id = int(curr_file_sub)
-            print 'curr_sentence_id', curr_sentence_id
+            # print 'curr_sentence_id', curr_sentence_id
             #
+            if is_filter_sentence_ids:
+                if curr_id not in filtered_sentence_ids_list:
+                    continue
             #
             start_amr = curr_sentence_id
             end_amr = curr_sentence_id
             amr_dot_file = prefix
             print 'amr_dot_file', amr_dot_file
             #
-            curr_gold_proteins_list = gold_proteins_list_map[curr_id]
-            #
             curr_paths_map, curr_interaction_tuples_map, curr_sentences_map =\
-                gtd.gen_concept_domain_catalyst_data_features(amr_dot_file, start_amr, end_amr, proteins_filter_list=curr_gold_proteins_list)
+                gtd.gen_concept_domain_catalyst_data_features(amr_dot_file, start_amr, end_amr)
             print curr_paths_map.keys()
             #
             paths_map.update(curr_paths_map)
@@ -219,6 +275,7 @@ def generate_subgraphs_nd_dump(num_cores, curr_core):
         except:
             print 'failed to process {}'.format(curr_file)
             f.write(curr_file+'\n')
+            # raise
     #
     f.close()
     labels_map = {}
@@ -253,16 +310,19 @@ def load_pickled_data_joint(num_cores):
     for curr_core in range(num_cores):
         file_name = get_file_path(num_cores, curr_core)
         print file_name
-        with open(cap.absolute_path+file_name, 'rb') as f:
-            curr_data = p.load(f)
-            paths_map.update(curr_data[gtd.const_paths_map])
-            print len(paths_map)
-            interaction_tuples_map.update(curr_data[gtd.const_interaction_tuples_map])
-            print len(interaction_tuples_map)
-            sentences_map.update(curr_data[gtd.const_sentences_map])
-            print len(sentences_map)
-            labels_map.update(curr_data[gtd.const_joint_labels_map])
-            print len(labels_map)
+        try:
+            with open(cap.absolute_path+file_name, 'rb') as f:
+                curr_data = p.load(f)
+                paths_map.update(curr_data[gtd.const_paths_map])
+                print len(paths_map)
+                interaction_tuples_map.update(curr_data[gtd.const_interaction_tuples_map])
+                print len(interaction_tuples_map)
+                sentences_map.update(curr_data[gtd.const_sentences_map])
+                print len(sentences_map)
+                labels_map.update(curr_data[gtd.const_joint_labels_map])
+                print len(labels_map)
+        except BaseException as e:
+            print e
     #
     data = {}
     data[gtd.const_paths_map] = paths_map
@@ -306,7 +366,7 @@ def get_passage_sentence_id_frm_joint_graph_path(joint_graph_path):
     return passage_sentence_id
 
 
-def preprocess_extracted_interactions(data):
+def preprocess_extracted_interactions(data, is_dump_pickled_data=False):
     paths_map = data[gtd.const_paths_map]
     assert paths_map is not None and paths_map
     #
@@ -325,7 +385,7 @@ def preprocess_extracted_interactions(data):
     print len(list_of_paths)
     for curr_path in list_of_paths:
         curr_interaction_tuple = interaction_tuples_map[curr_path]
-        # #
+        #
         curr_interaction_str_tuple =\
             edk.get_triplet_str_tuple(curr_interaction_tuple, is_concept_mapped_to_interaction=False)
         #
@@ -349,6 +409,9 @@ def preprocess_extracted_interactions(data):
     print len(paths_map)
     print len(interaction_tuples_map)
     print len(sentences_map)
+    #
+    if is_dump_pickled_data:
+        dump_pickle_data_joint(None, None, paths_map, interaction_tuples_map, sentences_map, labels_map, is_labeled=True)
 
 
 def get_matched_ids_list():
@@ -462,7 +525,34 @@ def filter_proteins_list():
     save_proteins_valid_map(proteins_valid_map)
 
 
-def label_subgraphs_nd_dump(num_cores):
+def is_match_interactions(interaction_str_tuple1_extracted, interaction_str_tuple2_chicago, min_ratio=0.75):
+    curr_interaction_type1 = interaction_str_tuple1_extracted[0]
+    #
+    curr_interaction_proteins1 = list(interaction_str_tuple1_extracted[1:])
+    assert None not in curr_interaction_proteins1
+    assert len(curr_interaction_proteins1) == 2
+    #
+    curr_label = 0
+    #
+    curr_interaction_type2 = interaction_str_tuple2_chicago[0]
+    curr_interaction_proteins2 = interaction_str_tuple2_chicago[1:]
+    #
+    if match_protein_name(curr_interaction_type1, curr_interaction_type2, min_ratio=min_ratio):
+        assert len(curr_interaction_proteins2) == 2
+        if match_protein_name(curr_interaction_proteins1[0], curr_interaction_proteins2[0], min_ratio=min_ratio)\
+                and match_protein_name(curr_interaction_proteins1[1], curr_interaction_proteins2[1], min_ratio=min_ratio):
+            curr_label = 1
+        elif match_protein_name(curr_interaction_proteins1[0], curr_interaction_proteins2[1], min_ratio=min_ratio) \
+                and match_protein_name(curr_interaction_proteins1[1], curr_interaction_proteins2[0], min_ratio=min_ratio):
+            if curr_interaction_type2 in symmetric_types_list:
+                curr_label = 1
+            else:
+                curr_label = 2
+    #
+    return curr_label
+
+
+def label_subgraphs_nd_dump(num_cores, is_dump_pickled_data):
     data = load_pickled_data_joint(num_cores)
     preprocess_extracted_interactions(data)
     #
@@ -490,24 +580,24 @@ def label_subgraphs_nd_dump(num_cores):
     #
     positive_interaction_types_list = []
     #
-    for curr_id in sentence_relations_map:
-        list_gold_relations = sentence_relations_map[curr_id]
+    for curr_sentence_id in sentence_relations_map:
+        list_gold_relations = sentence_relations_map[curr_sentence_id]
         #
-        for curr_relation in list_gold_relations:
-            curr_relation_label = curr_relation[1]
-            curr_relation_tuple = curr_relation[0]
+        for curr_relation_frm_chicago in list_gold_relations:
+            curr_relation_label_frm_chicago = curr_relation_frm_chicago[1]
+            curr_relation_tuple = curr_relation_frm_chicago[0]
             curr_relation_type = curr_relation_tuple[0]
             #
-            if curr_relation_label == 1:
+            if curr_relation_label_frm_chicago == 1:
+                num_org_positive_labels += 1
                 if curr_relation_type not in positive_interaction_types_list:
                     positive_interaction_types_list.append(curr_relation_type)
                 if curr_relation_tuple not in positive_label_org_interactions_list:
                     positive_label_org_interactions_list.append(curr_relation_tuple)
-                    num_org_positive_labels += 1
-            elif curr_relation_label == 0:
+            elif curr_relation_label_frm_chicago == 0:
+                num_org_negative_labels += 1
                 if curr_relation_tuple not in negative_label_org_interactions_list:
                     negative_label_org_interactions_list.append(curr_relation_tuple)
-                    num_org_negative_labels += 1
             else:
                 raise AssertionError
     #
@@ -519,135 +609,155 @@ def label_subgraphs_nd_dump(num_cores):
     positive_label_interactions_list = []
     negative_label_interactions_list = []
     #
+    matched_org_positive_sentence_id_interaction_list_map = {}
+    count_matched_org_positive_sentence_id_interaction_list_map = 0
+    #
     is_global_compare = False
     if is_global_compare:
+        raise NotImplementedError
         list_gold_relations = positive_label_org_interactions_list
     #
-    symmetric_types_list = \
-        [
-        'bind', 'interact', 'associate', 'dissociate', 'dissociate from',
-        'colocalize', 'synergy', ' synergistic interaction',
-         'synergistic action', 'act synergistically', 'break',
-        'form a complex', 'disassemble', 'combine', 'tie', 'attach',
-        'assemble', 'form', 'couple', 'unpair', 'coexpress', 'connect',
-        'pair', 'synergistic cooperation', 'work synergistically',
-        'function synergistically', 'bond', 'disengage', 'synergistic association',
-        'dissociate', 'dissociate from', 'copurify', 'join', 'independence',
-        'synergistic integration']
+    sentences_id_not_found_list = []
     #
     for curr_path in interaction_tuples_map:
         curr_sentence = sentences_map[curr_path]
         #
-        curr_interaction_tuple = interaction_tuples_map[curr_path]
+        curr_interaction_tuple_extracted = interaction_tuples_map[curr_path]
         #
-        curr_interaction_str_tuple =\
-            edk.get_triplet_str_tuple(curr_interaction_tuple, is_concept_mapped_to_interaction=False)
-        curr_interaction_tuple = None
-        #
-        curr_interaction_type = curr_interaction_str_tuple[0]
-        #
-        list_of_proteins = list(curr_interaction_str_tuple[1:])
-        assert None not in list_of_proteins
-        assert len(list_of_proteins) == 2
+        curr_interaction_str_tuple_extracted =\
+            edk.get_triplet_str_tuple(
+                curr_interaction_tuple_extracted,
+                is_concept_mapped_to_interaction=False)
+        curr_interaction_tuple_extracted = None
         #
         curr_sentence_id = get_passage_sentence_id_frm_joint_graph_path(curr_path)
-        curr_id = 'ID'+str(curr_sentence_id)
-        assert curr_id in sentence_relations_map
-        if not is_global_compare:
-            list_gold_relations = sentence_relations_map[curr_id]
+        curr_sentence_id = 'ID'+str(curr_sentence_id)
+        print 'curr_sentence_id', curr_sentence_id
         #
-        curr_label = 0
-        for curr_relation in list_gold_relations:
+        if curr_sentence_id not in sentence_relations_map:
+            if curr_sentence_id not in sentences_id_not_found_list:
+                sentences_id_not_found_list.append(curr_sentence_id)
+            if len(sentences_id_not_found_list) > 100:
+                raise AssertionError
+        #
+        if not is_global_compare:
+            list_gold_relations = sentence_relations_map[curr_sentence_id]
+        #
+        curr_label = None
+        curr_matched_relation_str_tuple_frm_chicago = None
+        for curr_relation_frm_chicago in list_gold_relations:
             if is_global_compare:
-                curr_relation_proteins = curr_relation[1:]
-                curr_relation_interaction_type = curr_relation[0]
-                curr_relation_label = 1
-                curr_relation_str_tuple = curr_relation
+                curr_relation_label_frm_chicago = 1
+                curr_relation_str_tuple_frm_chicago = curr_relation_frm_chicago
             else:
-                curr_relation_proteins = curr_relation[0][1:]
-                curr_relation_interaction_type = curr_relation[0][0]
-                curr_relation_label = curr_relation[1]
-                curr_relation_str_tuple = curr_relation[0]
+                curr_relation_label_frm_chicago = curr_relation_frm_chicago[1]
+                curr_relation_str_tuple_frm_chicago = curr_relation_frm_chicago[0]
             #
-            if match_protein_name(curr_interaction_type, curr_relation_interaction_type) and curr_relation_label == 1:
-                assert len(curr_relation_proteins) == 2
-                if match_protein_name(list_of_proteins[0], curr_relation_proteins[0]) and match_protein_name(list_of_proteins[1], curr_relation_proteins[1]):
-                    curr_label = 1
+            if curr_relation_label_frm_chicago == 1:
+                curr_label_temp = is_match_interactions(
+                    interaction_str_tuple2_chicago=curr_relation_str_tuple_frm_chicago,
+                    interaction_str_tuple1_extracted=curr_interaction_str_tuple_extracted)
+                if curr_label_temp == 1:
+                    curr_label = curr_label_temp
+                    curr_matched_relation_str_tuple_frm_chicago = curr_relation_str_tuple_frm_chicago
                     break
-                elif match_protein_name(list_of_proteins[0], curr_relation_proteins[1]) and match_protein_name(list_of_proteins[1], curr_relation_proteins[0]):
-                    if curr_relation_interaction_type in symmetric_types_list:
-                        curr_label = 1
-                        break
-                    else:
-                        curr_label = 2
+                elif curr_label_temp == 2:
+                    if curr_label == 0:
+                        curr_label = curr_label_temp
+                elif curr_label_temp == 0:
+                    if curr_label is None:
+                        curr_label = curr_label_temp
+                else:
+                    raise AssertionError
         #
         labels_map[curr_path] = curr_label
         if curr_label == 1:
-            if curr_interaction_str_tuple not in positive_label_interactions_list:
-                positive_label_interactions_list.append(curr_interaction_str_tuple)
-                num_positive_labels += 1
+            num_positive_labels += 1
+            if curr_interaction_str_tuple_extracted not in positive_label_interactions_list:
+                positive_label_interactions_list.append(curr_interaction_str_tuple_extracted)
+            #
+            assert curr_matched_relation_str_tuple_frm_chicago is not None
+            if curr_sentence_id not in matched_org_positive_sentence_id_interaction_list_map:
+                matched_org_positive_sentence_id_interaction_list_map[curr_sentence_id] = []
+            #
+            if curr_matched_relation_str_tuple_frm_chicago not in matched_org_positive_sentence_id_interaction_list_map[curr_sentence_id]:
+                matched_org_positive_sentence_id_interaction_list_map[curr_sentence_id].append(curr_matched_relation_str_tuple_frm_chicago)
+                count_matched_org_positive_sentence_id_interaction_list_map += 1
+            else:
+                print 'duplicate ignored.'
         else:
-            if curr_interaction_str_tuple not in negative_label_interactions_list:
-                negative_label_interactions_list.append(curr_interaction_str_tuple)
-                # print '**************************'
-                # print curr_sentence
-                # print curr_interaction_str_tuple
-                num_negative_labels += 1
+            assert curr_matched_relation_str_tuple_frm_chicago is None
+            #
+            num_negative_labels += 1
+            if curr_interaction_str_tuple_extracted not in negative_label_interactions_list:
+                negative_label_interactions_list.append(curr_interaction_str_tuple_extracted)
     #
-    # matched_org_positive_interactions_count = 0
-    not_matched_org_positive_interactions_list = []
-    matched_org_positive_interactions_list = []
-    matched_ids_list = []
-    for curr_id in sentence_relations_map:
-        curr_gold_relations_list = sentence_relations_map[curr_id]
-        for curr_org_interaction in curr_gold_relations_list:
-            if curr_org_interaction[1] == 1:
-                curr_org_interaction = curr_org_interaction[0]
-                is_matched = False
-                for curr_interaction in positive_label_interactions_list:
-                    if match_protein_name(curr_org_interaction[0], curr_interaction[0]):
-                        if match_protein_name(curr_org_interaction[1], curr_interaction[1]) \
-                                and match_protein_name(curr_org_interaction[2], curr_interaction[2]):
-                            is_matched = True
-                            break
-                        elif match_protein_name(curr_org_interaction[1], curr_interaction[2]) \
-                                and match_protein_name(curr_org_interaction[2], curr_interaction[1]):
-                            if curr_org_interaction[0] in symmetric_types_list:
-                                is_matched = True
-                                break
-                #
-                if is_matched:
-                    if curr_id not in matched_ids_list:
-                        matched_ids_list.append(curr_id)
-                    #
-                    if curr_org_interaction not in matched_org_positive_interactions_list:
-                        matched_org_positive_interactions_list.append(curr_org_interaction)
-                else:
-                    # curr_unmatched_tuple = tuple([curr_id, curr_org_interaction])
-                    # print curr_unmatched_tuple
-                    if curr_org_interaction not in not_matched_org_positive_interactions_list:
-                        not_matched_org_positive_interactions_list.append(curr_org_interaction)
+    # not_matched_org_positive_interactions_list = []
+    # matched_org_positive_interactions_list = []
+    # matched_ids_list = []
+    # matched_org_positive_interaction_sentence_id_pair_list = []
+    # for curr_sentence_id in sentence_relations_map:
+    #     curr_gold_relations_list = sentence_relations_map[curr_sentence_id]
+    #     for curr_org_interaction_frm_chicago in curr_gold_relations_list:
+    #         if curr_org_interaction_frm_chicago[1] == 1:
+    #             curr_org_interaction_frm_chicago = curr_org_interaction_frm_chicago[0]
+    #             #
+    #             is_matched = False
+    #             for curr_interaction_extracted in positive_label_interactions_list:
+    #                 curr_match_label \
+    #                     = is_match_interactions(interaction_str_tuple2_chicago=curr_org_interaction_frm_chicago,
+    #                                             interaction_str_tuple1_extracted=curr_interaction_extracted)
+    #                 if curr_match_label == 1:
+    #                     is_matched = True
+    #                 else:
+    #                     is_matched = False
+    #             #
+    #             if is_matched:
+    #                 if curr_sentence_id not in matched_ids_list:
+    #                     matched_ids_list.append(curr_sentence_id)
+    #                 #
+    #                 if curr_org_interaction_frm_chicago not in matched_org_positive_interactions_list:
+    #                     matched_org_positive_interactions_list.append(curr_org_interaction_frm_chicago)
+    #                 #
+    #                 curr_org_interaction_sentence_id_pair_tuple = tuple([curr_org_interaction_frm_chicago, curr_sentence_id])
+    #                 if curr_org_interaction_sentence_id_pair_tuple not in matched_org_positive_interaction_sentence_id_pair_list:
+    #                     matched_org_positive_interaction_sentence_id_pair_list.append(curr_org_interaction_sentence_id_pair_tuple)
+    #                 else:
+    #                     print 'duplicate curr_org_interaction_sentence_id_pair_tuple'
+    #             else:
+    #                 if curr_org_interaction_frm_chicago not in not_matched_org_positive_interactions_list:
+    #                     not_matched_org_positive_interactions_list.append(curr_org_interaction_frm_chicago)
     #
-    print 'matched_ids_list', len(matched_ids_list)
-    with open('./chicago_matched_ids_list.json', 'w') as f:
-        json.dump(matched_ids_list, f, indent=4)
+    # print 'matched_ids_list', len(matched_ids_list)
+    # with open('./chicago_matched_ids_list.json', 'w') as f:
+    #     json.dump(matched_ids_list, f, indent=4)
+    # #
+    # print 'matched_org_positive_interactions_list', len(matched_org_positive_interactions_list)
+    # with open('./chicago_matched_org_positive_interactions_list.json', 'w') as f:
+    #     json.dump(matched_org_positive_interactions_list, f, indent=4)
+    # #
+    # print 'not_matched_org_positive_interactions_list', len(not_matched_org_positive_interactions_list)
+    # with open('./chicago_not_matched_org_positive_interactions_list.json', 'w') as f:
+    #     json.dump(not_matched_org_positive_interactions_list, f, indent=4)
+    # #
+    print 'matched_org_positive_sentence_id_interaction_list_map', count_matched_org_positive_sentence_id_interaction_list_map
+    with open(get_file_path_matched_org_positive_sentence_id_interaction_list_map(), 'w') as f:
+        json.dump(matched_org_positive_sentence_id_interaction_list_map, f, indent=4)
     #
-    print 'matched_org_positive_interactions_list', len(matched_org_positive_interactions_list)
-    with open('./chicago_matched_org_positive_interactions_list.json', 'w') as f:
-        json.dump(matched_org_positive_interactions_list, f, indent=4)
-    #
-    print 'not_matched_org_positive_interactions_list', len(not_matched_org_positive_interactions_list)
-    with open('./chicago_not_matched_org_positive_interactions_list.json', 'w') as f:
-        json.dump(not_matched_org_positive_interactions_list, f, indent=4)
+    print 'original positive labels was: ', num_org_positive_labels
+    print 'original negative labels was: ', num_org_negative_labels
     #
     print 'number of positive labeled graphs: ', num_positive_labels
     print 'number of negative labeled graphs: ', num_negative_labels
     print 'total no. of labels: ', num_positive_labels+num_negative_labels
     #
-    print 'original positive labels was: ', num_org_positive_labels
-    print 'original negative labels was: ', num_org_negative_labels
-    #
-    dump_pickle_data_joint(None, None, paths_map, interaction_tuples_map, sentences_map, labels_map, is_labeled=True)
+    if is_dump_pickled_data:
+        dump_pickle_data_joint(None, None, paths_map, interaction_tuples_map, sentences_map, labels_map, is_labeled=True)
+
+
+def get_file_path_matched_org_positive_sentence_id_interaction_list_map():
+    file_path = 'matched_org_positive_sentence_id_interaction_list_map.json'
+    return file_path
 
 
 def get_file_path(num_cores, curr_core):
@@ -669,6 +779,8 @@ if __name__ == '__main__':
     else:
         num_cores = 1
         curr_core = 1
+    #
+    # filter_sentence_ids_list_frm_interactions()
     #
     generate_subgraphs_nd_dump(num_cores, curr_core)
 

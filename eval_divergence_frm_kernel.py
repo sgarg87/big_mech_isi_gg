@@ -22,27 +22,29 @@ import json
 import amr_sets_aimed
 
 
-is_filter_interactions_with_invalid_proteins = True
+is_filter_interactions_with_invalid_proteins = False
 #
-is_compute_mmd = False
+is_compute_mmd = True
 is_compute_mig = False
 is_compute_kld_kd = False
 is_compute_kld_knn = False
 is_compute_dist_kernel = False
 #
-is_validate_mmd = False
+is_validate_mmd = True
 is_validate_mig = False
 is_validate_kld_kd = False
 is_validate_kld_knn = False
-is_validate_dist_kernel = True
+is_validate_dist_kernel = False
 #
-is_validate_org_kernel = False
+is_validate_org_kernel = True
 #
 is_concept_mapped_to_interaction_default = False
 #
-is_random_validation = False
-is_random_test = False
-assert not(is_random_validation and is_random_test)
+is_chicago_test = True
+if not is_chicago_test:
+    is_random_validation = False
+    is_random_test = False
+    assert not(is_random_validation and is_random_test)
 #
 activate = 'activate'
 signal = 'signal'
@@ -821,13 +823,19 @@ def eval_divergence_matrix(amr_graphs, labels, K, is_amr_only=False, is_dep_only
     vps_obj = v.ValidatePaperSets(K, amr_graphs, interaction_idx_list_map,
                                   filtered_interaction_idx_list=filtered_interaction_idx_list,
                                   is_alternative_data=is_alternative_data)
-    if not is_random_validation and not is_random_test:
-        vps_obj.sample_train_test_interaction_random_subset_at_paper_level()
-    elif is_random_test:
-        vps_obj.sample_train_test_random_subset()
-    elif is_random_validation:
-        vps_obj.sample_test_random_subset_rest_train()
+    if is_chicago_test:
+        vps_obj.sample_train_test_interaction_chicago()
+    else:
+        if not is_random_validation and not is_random_test:
+            vps_obj.sample_train_test_interaction_random_subset_at_paper_level()
+        elif is_random_test:
+            vps_obj.sample_train_test_random_subset()
+        elif is_random_validation:
+            vps_obj.sample_test_random_subset_rest_train()
     #
+    if is_validate_org_kernel:
+        print 'validating on original kernel (also with maximum likely inferred) ...'
+        vps_obj.validate_at_paper_level(K, labels, 'original_kernel', is_divergence=False)
     if is_validate_mmd:
         print 'validating on maximum mean discrepancy ...'
         vps_obj.validate_at_paper_level(np.exp(-Dmmd), labels_fr_sets, 'maximum_mean_discrepancy', is_divergence=True)
@@ -844,9 +852,6 @@ def eval_divergence_matrix(amr_graphs, labels, K, is_amr_only=False, is_dep_only
         for curr_nn in nn_list:
             print 'validating on kl divergence {}-nn'.format(curr_nn)
             vps_obj.validate_at_paper_level(np.exp(-Dkld_knn[curr_nn]), labels_fr_sets, 'kl_divergence__{}nn'.format(curr_nn), is_divergence=True)
-    if is_validate_org_kernel:
-        print 'validating on original kernel (also with maximum likely inferred) ...'
-        vps_obj.validate_at_paper_level(K, labels, 'original_kernel', is_divergence=False)
 
 
 def eval_divergence(Kii, Kjj, Kij, algo, nn=None):
@@ -1136,7 +1141,7 @@ if __name__ == '__main__':
     assert not (is_amr_only and is_dep_only)
     #
     is_load_amr_data = True
-    has_data_only_amrs = False
+    has_data_only_amrs = True
     amr_pickle_file_path = './amr_data_temp.pickle'
     if not is_load_amr_data:
         import train_extractor as te
@@ -1157,13 +1162,18 @@ if __name__ == '__main__':
     n = labels.size
     print 'labels.size', labels.size
     #
+    is_sparse_join = True
     import compute_parallel_graph_kernel_matrix_joint_train_data as cpgkmjtd
-    K = cpgkmjtd.join_parallel_computed_kernel_matrices(217)
+    if not is_sparse_join:
+        K = cpgkmjtd.join_parallel_computed_kernel_matrices(100)
+    else:
+        K = cpgkmjtd.join_parallel_computed_kernel_matrices_sparse(100)
     print 'K.shape', K.shape
     #
-    import config_kernel_matrices_format as ckmf
-    if ckmf.is_kernel_dtype_lower_precision:
-        K = K.astype(ckmf.kernel_dtype_np, copy=False)
+    # import config_kernel_matrices_format as ckmf
+    # if ckmf.is_kernel_dtype_lower_precision:
+    #     K = K.astype(ckmf.kernel_dtype_np, copy=False)
+    #
     #
     eval_divergence_matrix(amr_graphs, labels, K, is_amr_only=is_amr_only, is_dep_only=is_dep_only, has_data_only_amrs=has_data_only_amrs)
 
