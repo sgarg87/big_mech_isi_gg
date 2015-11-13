@@ -25,7 +25,7 @@ reload(gpm)
 computation_time_to_parse_per_amr_frm_text = 11
 
 # in seconds
-compute_time_to_extract_per_amr = 20
+compute_time_to_extract_per_amr = 30
 #
 is_preprocess = False
 

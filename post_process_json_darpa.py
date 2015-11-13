@@ -52,9 +52,24 @@ class PostProcessJSONDARPA:
                 return False, None
 
     def filter_out_duplicates_fr_evidence(self, is_set=False):
-        #
+        def find_match_key(key, json_objs_map):
+            if not is_set:
+                if key in json_objs_map:
+                    return key
+                else:
+                    return None
+            else:
+                match_key_list = []
+                for curr_key in json_objs_map:
+                    if set(key) == set(curr_key):
+                        match_key_list.append(curr_key)
+                #
+                assert len(match_key_list) in [0, 1]
+                #
+                if match_key_list:
+                    return match_key_list[0]
+
         # is_set True means that the most likely of all interactions involving same set of proteins and interaction is chosen
-        #
         print 'Number of original json objs is ', len(self.json_objs_list)
         json_objs_map = {}
         for curr_json_obj in self.json_objs_list:
@@ -91,17 +106,16 @@ class PostProcessJSONDARPA:
             # set corresponds to all interactions with same of proteins and interactions being duplicates to each other
             # whereas tuple does not
             #
-            if is_set:
-                curr_tuple_key = set(curr_tuple_key)
-            else:
-                curr_tuple_key = tuple(curr_tuple_key)
+            curr_tuple_key = tuple(curr_tuple_key)
             #
-            if curr_tuple_key not in json_objs_map:
+            curr_match_tuple_key = find_match_key(curr_tuple_key, json_objs_map)
+            if curr_match_tuple_key is None:
                 json_objs_map[curr_tuple_key] = curr_json_obj
             else:
-                print 'duplicate is ', json.dumps(curr_json_obj, ensure_ascii=True, sort_keys=True, indent=5)
-                if json_objs_map[curr_tuple_key][cdjf.weight] < curr_json_obj[cdjf.weight]:
+                print 'duplicate is ', json.dumps(curr_json_obj, ensure_ascii=True, sort_keys=True, indent=4)
+                if json_objs_map[curr_match_tuple_key][cdjf.weight] < curr_json_obj[cdjf.weight]:
                     json_objs_map[curr_tuple_key] = curr_json_obj
+                    json_objs_map.pop(curr_match_tuple_key, None)
             #
         self.json_objs_list = json_objs_map.values()
         print 'Number of json objects after filtering is ', len(self.json_objs_list)

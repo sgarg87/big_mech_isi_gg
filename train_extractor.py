@@ -922,7 +922,10 @@ def tune_classification(amr_graphs, labels):
 
 def get_processed_train_joint_data():
     with open(cap.absolute_path+fptd.processed_amr_graphs_lables_joint_train, 'rb') as f_processed_amr_graphs_lables_joint_train:
+        start_time = time.time()
+        print 'loading ...'
         data = p.load(f_processed_amr_graphs_lables_joint_train)
+        print 'loaded in time ', time.time()-start_time
         amr_graphs = data['amr']
         labels = data['label']
         data = None

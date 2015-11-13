@@ -518,9 +518,26 @@ if __name__ == '__main__':
         is_load_data = True
         is_positive_labels_only_fr_train = True
         #
-        if not is_load_classifier:
-            if not is_load_data:
-                K_train = cpgkmjtd.join_parallel_computed_kernel_matrices_sparse(1)
+        if not is_load_classifier or algo == gp:
+            if not is_load_data or algo == gp:
+                amr_graphs, _ = vcd.get_amr_data()
+                n = amr_graphs.shape[0]
+                test = vcd.get_chicago_test_data_idx(amr_graphs)
+                amr_graphs = None
+                train = np.setdiff1d(np.arange(0, n), test)
+                n = None
+                test = None
+                k_path = './graph_kernel_matrix_joint_train_data_parallel/num_cores_100.npz'
+                K = sssm.load_sparse_csr(cap.absolute_path+k_path)
+                print 'K.shape', K.shape
+                K_train = K[train, :]
+                K = None
+                K_train = K_train.tocsc()
+                K_train = K_train[:, train]
+                train = None
+                K_train = K_train.tocsr()
+                print 'K_train.shape', K_train.shape
+                print 'K_train.nnz', K_train.nnz
                 sssm.save_sparse_csr(cap.absolute_path+'./K_train', K_train)
             else:
                 K_train = sssm.load_sparse_csr(cap.absolute_path+'./K_train.npz')
@@ -572,8 +589,14 @@ if __name__ == '__main__':
             labels_test_pred_prob, labels_test_pred = vcd.classify_wd_svm(K_train, labels_train, K_test, is_load_classifier=True)
         elif algo == gp:
             print 'Gaussian process ...'
-            labels_test_pred_prob \
-                = vcd.classify_wd_gaussian_process(K_train, labels_train, K_test, is_load_classifier=True)
+            labels_test_pred_prob = vcd.classify_wd_gaussian_process(
+                K_train,
+                labels_train,
+                K_test,
+                is_load_classifier=True,
+                is_mcmc_train_cond_test=True,
+                is_coupling=True
+            )
             #
             labels_test_pred = np.zeros(labels_test_pred_prob.shape)
             labels_test_pred[np.where(labels_test_pred_prob > 0.5)] = 1

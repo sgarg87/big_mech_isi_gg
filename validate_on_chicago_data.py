@@ -1,12 +1,9 @@
 import constants_absolute_path as cap
 import pickle
-import save_sparse_scipy_matrices as sssm
 import numpy as np
 import time
 import sklearn.svm as skl_svm
 import config_kernel as ck
-import random as r
-r.seed(871227)
 import eval_divergence_frm_kernel as edk
 import json
 import semi_automated_extraction_features_chicago_data as saefcd
@@ -14,6 +11,12 @@ import scipy.sparse.linalg as ssl
 import parallel_computing as pk
 import corex_topic.corex_topic as ct
 import matplotlib.pyplot as plt
+import scipy.linalg as sl
+import random
+random.seed(871227)
+import numpy.random as npr
+import save_sparse_scipy_matrices as sssm
+import math
 
 
 is_opposite = False
@@ -30,7 +33,7 @@ def get_inference_file_path():
 def random_subset_indices(org_idx, fraction_subset_default=0.5):
     n = len(org_idx)
     num_subset = int(round(n*fraction_subset_default))
-    subset_idx = r.sample(org_idx, num_subset)
+    subset_idx = random.sample(org_idx, num_subset)
     org_idx = None
     subset_idx = np.array(subset_idx)
     # subset_idx.sort()
@@ -46,6 +49,7 @@ def get_chicago_test_data_idx(amr_graphs_org):
         curr_amr_graph_map = amr_graphs_org[curr_idx, 0]
         #
         curr_path = curr_amr_graph_map['path']
+        # print 'curr_path', curr_path
         #
         if 'chicago' in curr_path:
             chicago_idx_list.append(curr_idx)
@@ -233,6 +237,42 @@ def classify_wd_corex(K_test):
     return labels
 
 
+def classify_wd_corex_test_as_samples_in_chunks(labels_train, K_test_train, K_tt):
+    m = K_test_train.shape[0]
+    assert m == K_tt.shape[0]
+    assert m == K_tt.shape[1]
+    #
+    num_chunks = 1
+    #
+    test_labels_infer = -1*np.ones(m)
+    #
+    start_idx = np.arange(0, m, m/num_chunks)
+    #
+    for curr_idx in range(num_chunks):
+        curr_start_idx = start_idx[curr_idx]
+        if curr_idx == num_chunks-1:
+            curr_end_idx = m
+        else:
+            curr_end_idx = start_idx[curr_idx+1]
+        #
+        curr_chunk_idx \
+            = np.arange(curr_start_idx, curr_end_idx)
+        #
+        curr_K_test_train = K_test_train[curr_chunk_idx, :]
+        #
+        curr_K_tt = K_tt[curr_chunk_idx, :]
+        curr_K_tt = curr_K_tt.tocsc()
+        curr_K_tt = curr_K_tt[:, curr_chunk_idx]
+        curr_K_tt = curr_K_tt.tocsr()
+        #
+        test_labels_infer[curr_chunk_idx] \
+            = classify_wd_corex_test_as_samples(labels_train, curr_K_test_train, curr_K_tt)
+    #
+    assert np.all(test_labels_infer != -1)
+    #
+    return test_labels_infer
+
+
 def classify_wd_corex_test_as_samples(labels_train, K_test_train, K_tt):
     n = K_tt.shape[0]
     assert n == K_tt.shape[1]
@@ -245,23 +285,24 @@ def classify_wd_corex_test_as_samples(labels_train, K_test_train, K_tt):
     start_time = time.time()
     print 'Learning labels for the test samples with corex clustering itself ...'
     # assuming that K_test_train is a csr format matrix
-    crx_obj_pos = ct.Corex(n_hidden=2, verbose=True)
+    num_var = 2
+    crx_obj_pos = ct.Corex(n_hidden=num_var, verbose=True)
     crx_obj_pos.fit(K_test_train.transpose()[train_pos, :])
     _, log_z_pos = crx_obj_pos.transform(K_tt, details=True)
     print 'crx_obj_pos.tcs', crx_obj_pos.tcs
     crx_obj_pos = None
     print 'log_z_pos.shape', log_z_pos.shape
-    assert log_z_pos.shape[1] == 2
+    assert log_z_pos.shape[1] == num_var
     assert log_z_pos.shape[0] == K_tt.shape[0]
     print 'log_z_pos.shape', log_z_pos.shape
     #
-    crx_obj_neg = ct.Corex(n_hidden=2, verbose=True)
+    crx_obj_neg = ct.Corex(n_hidden=num_var, verbose=True)
     crx_obj_neg.fit(K_test_train.transpose()[train_neg, :])
     _, log_z_neg = crx_obj_neg.transform(K_tt, details=True)
     print 'crx_obj_neg.tcs', crx_obj_neg.tcs
     crx_obj_neg = None
     print 'log_z_neg.shape', log_z_neg.shape
-    assert log_z_neg.shape[1] == 2
+    assert log_z_neg.shape[1] == num_var
     assert log_z_neg.shape[0] == K_tt.shape[0]
     print 'log_z_neg.shape', log_z_neg.shape
     #
@@ -294,7 +335,255 @@ def classify_wd_corex_test_as_samples(labels_train, K_test_train, K_tt):
     return labels
 
 
-def classify_wd_gaussian_process(K_train, labels_train, K_test, is_load_classifier=False):
+def classify_wd_corex_lrn_train(labels_train, K_train, K_test_train):
+    n = K_train.shape[0]
+    assert n == K_train.shape[1]
+    assert n == labels_train.size
+    m = K_test_train.shape[0]
+    assert n == K_test_train.shape[1]
+    #
+    train_pos = np.where(labels_train == 1)[0]
+    train_neg = np.where(labels_train == 0)[0]
+    assert (train_pos.size+train_neg.size) == labels_train.size
+    #
+    start_time = time.time()
+    print 'Learning labels for the test samples with corex clustering itself ...'
+    # assuming that K_test_train is a csr format matrix
+    num_var = 2
+    crx_obj_pos = ct.Corex(n_hidden=num_var, verbose=True)
+    crx_obj_pos.fit(K_train[train_pos, :])
+    _, log_z_pos = crx_obj_pos.transform(K_test_train, details=True)
+    print 'crx_obj_pos.tcs', crx_obj_pos.tcs
+    crx_obj_pos = None
+    print 'log_z_pos.shape', log_z_pos.shape
+    assert log_z_pos.shape[1] == num_var
+    assert log_z_pos.shape[0] == K_test_train.shape[0]
+    print 'log_z_pos.shape', log_z_pos.shape
+    #
+    crx_obj_neg = ct.Corex(n_hidden=num_var, verbose=True)
+    crx_obj_neg.fit(K_train[train_neg, :])
+    K_train = None
+    _, log_z_neg = crx_obj_neg.transform(K_test_train, details=True)
+    print 'crx_obj_neg.tcs', crx_obj_neg.tcs
+    crx_obj_neg = None
+    print 'log_z_neg.shape', log_z_neg.shape
+    assert log_z_neg.shape[1] == num_var
+    assert log_z_neg.shape[0] == K_test_train.shape[0]
+    K_test_train=None
+    print 'log_z_neg.shape', log_z_neg.shape
+    #
+    print 'Learned in time: ', time.time()-start_time
+    #
+    labels = np.zeros(m)
+    #
+    log_z_pos = log_z_pos.sum(1)
+    print 'log_z_pos.shape', log_z_pos.shape
+    print 'log_z_pos.sum()', log_z_pos.sum()
+    log_z_neg = log_z_neg.sum(1)
+    print 'log_z_neg.shape', log_z_neg.shape
+    print 'log_z_neg.sum()', log_z_neg.sum()
+    #
+    plt.plot(log_z_pos, log_z_neg, 'kx')
+    plt.savefig('./log_z_pos_neg.pdf', dpi=300, format='pdf')
+    #
+    np.save('./log_z_pos', log_z_pos)
+    np.save('./log_z_neg', log_z_neg)
+    #
+    labels[np.where(log_z_neg > log_z_pos)[0]] = 1
+    #
+    positive_labels = labels.sum()
+    print 'positive_labels', positive_labels
+    negative_labels = labels.size - positive_labels
+    print 'negative_labels', negative_labels
+    if positive_labels > negative_labels:
+        labels = 1-labels
+    #
+    return labels
+
+
+def infer_gp_score_mcmc(K_test_train, train_weights, K_train, bias, is_multinomial=False, is_coupling=False):
+    #
+    # todo: couple all of chain for test samples by sampling random selection (random nodes are selected in each MCMC step, and also random value)
+    # todo: note that number so such random trials can be more than mcmc samples. So, sample more in advance and then use in sequence while MCMC sampling
+    # todo: benefit of this techniques would be that all test samples would have correlated set of training samples.
+    # todo: The uncorrelation would be only due to difference in their test graphs.
+    # todo: So, in that sense, all test samples would have similar classifer since classifer depends on selected training points.
+    # todo: such correlated classifer would be useful when doing assembly, and also when comparing regression values using positive samples and negatives samples
+    # todo: also, it should help ensure that some test samples should not do too bad on train conditional test samples just because of bad random sampling.
+    # todo: computational time and memory bottleneck can be reduced because of correlation in training set for sentences in a single document.
+    # todo: This can help significantly for large scale learning where number of training points for the complete set are in millions. We can plan to have such a large
+    # todo: data set for good evaluation of this methods. For obtaining large number of training samples, we can look on previous datasets which have only protein-protein interactions.
+    # todo: For identifying interaction-type given protein-protein interactions, our system should give 80% accuracy as per the Chicago results.
+    # todo: Along those lines, we can identify interaction types for all available data in public domain. And then, retrain our models.
+    # todo: since training sets for different documents will turn out to be different despite the coupling.
+    # todo: This information can be used to classify documents from analysis perspective.
+    # todo: also, assuming that sentences from same document have natural overlap on training samples, we can run MCMC
+    # todo: for shorter no. of steps and use union of all training subset from different sentences. This should reduce
+    # todo: computational cost for MCMC.
+    # todo: in general, it seems that primary cost in MCMC should be coin toss. So, coupling at large scale should
+    # todo: save that cost.
+    #
+    m = K_test_train.shape[0]
+    n = K_test_train.shape[1]
+    assert n == train_weights.size
+    assert n == K_train.shape[0]
+    assert K_train.shape[0] == K_train.shape[1]
+    #
+    num_mcmc_trials = 1.2*(math.log(n, 2)**3)
+    #
+    start_time = time.time()
+    transition_matrix = np.exp(-np.asarray(K_train.todense()))
+    print 'Time to compute the transition matrix ', time.time()-start_time
+    #
+    K_train = None
+    if is_multinomial:
+        if is_coupling:
+            raise NotImplementedError
+        else:
+            random_node_sel = None
+            uniform_rnd_coins = None
+            uniform_rnd_coins_fr_accept = None
+        #
+        norm = transition_matrix.sum(1)
+        norm = norm.reshape(n, 1)
+        norm = np.tile(norm, n)
+        transition_matrix /= norm
+    else:
+        start_time_coin_toss = time.time()
+        random_node_sel = npr.randint(0, n-1, num_mcmc_trials)
+        uniform_rnd_coins = npr.random(size=num_mcmc_trials)
+        uniform_rnd_coins_fr_accept = npr.random(size=num_mcmc_trials)
+        print 'time to toss the coins is ', time.time()-start_time_coin_toss
+    #
+    test_idx = range(m)
+    test_score_pred = np.zeros(m)
+    for curr_idx in test_idx:
+        print '**********************************************'
+        start_time = time.time()
+        curr_k = np.asarray(K_test_train[curr_idx].todense()).flatten()
+        print 'curr_k', curr_k.shape
+        #
+        curr_train_idx = sample_train_cond_test_mcmc(
+            transition_matrix,
+            curr_k,
+            train_weights,
+            is_multinomial=is_multinomial,
+            is_coupling=is_coupling,
+            random_node_sel=random_node_sel,
+            uniform_rnd_coins=uniform_rnd_coins,
+            uniform_rnd_coins_fr_accept=uniform_rnd_coins_fr_accept)
+        #
+        print 'len(curr_train_idx)', len(curr_train_idx)
+        print 'time to get train samples condition on test is ', time.time()-start_time
+        #
+        curr_train_idx = np.array(curr_train_idx)
+        #
+        curr_k_sel = curr_k[curr_train_idx]
+        train_weights_sel = train_weights[curr_train_idx]
+        curr_score_pred = curr_k_sel.dot(train_weights_sel)
+        test_score_pred[curr_idx] = curr_score_pred
+    test_score_pred += bias
+    return test_score_pred
+
+
+def sample_train_cond_test_mcmc(
+        transition_matrix,
+        K_train_test,
+        train_weights,
+        is_multinomial,
+        is_coupling=False,
+        random_node_sel=None,
+        uniform_rnd_coins=None,
+        uniform_rnd_coins_fr_accept=None):
+    #
+    # todo: coupling using same seed is not as efficient as coupling with prior sampling
+    # todo: you may also decide on number of MCMC steps on based on convergence
+    if is_coupling:
+        assert random_node_sel is not None
+        assert uniform_rnd_coins is not None
+        assert uniform_rnd_coins_fr_accept is not None
+        num_mcmc_steps = random_node_sel.size
+        assert num_mcmc_steps == uniform_rnd_coins.size
+        assert num_mcmc_steps == uniform_rnd_coins_fr_accept.size
+    else:
+        raise NotImplementedError
+    #
+    print transition_matrix.shape
+    print K_train_test.shape
+    print train_weights.shape
+    #
+    n = transition_matrix.shape[0]
+    assert n == transition_matrix.shape[1]
+    assert n == K_train_test.shape[0]
+    assert n == train_weights.shape[0]
+    #
+    start_time = time.time()
+    lkl_train_nodes = K_train_test*np.absolute(train_weights)
+    print 'Time to compute the likelihood is ', time.time()-start_time
+    #
+    train_weights = None
+    K_train_test = None
+    #
+    #mcmc sampling
+    #
+    eval_train_idx_list = []
+    mcmc_train_idx_list = []
+    #
+    count_mcmc_steps = 0
+    curr_idx = random_node_sel[count_mcmc_steps]
+    #
+    while count_mcmc_steps < num_mcmc_steps-1:
+        curr_node_lkl = lkl_train_nodes[curr_idx]
+        #
+        if is_multinomial:
+            # sample new node as per transition probability
+            curr_prob = transition_matrix[curr_idx]
+            new_node_idx = None
+            while True:
+                curr_z = npr.multinomial(1, curr_prob)
+                curr_candidate_new_idx = np.where(curr_z == 1)[0][0]
+                curr_z = None
+                if curr_candidate_new_idx in eval_train_idx_list:
+                    continue
+                else:
+                    new_node_idx = curr_candidate_new_idx
+                    curr_prob = None
+                    break
+            assert new_node_idx is not None
+        else:
+            # importance sampling like approximation to the multinomial
+            new_node_idx = None
+            while True:
+                count_mcmc_steps += 1
+                curr_candidate_new_idx = random_node_sel[count_mcmc_steps]
+                if curr_candidate_new_idx in eval_train_idx_list:
+                    continue
+                if uniform_rnd_coins[count_mcmc_steps] < transition_matrix[curr_idx, curr_candidate_new_idx]:
+                    new_node_idx = curr_candidate_new_idx
+                    break
+            assert new_node_idx is not None
+        #
+        new_node_lkl = lkl_train_nodes[new_node_idx]
+        eval_train_idx_list.append(new_node_idx)
+        #
+        prob_transition \
+            = min(
+                1,
+                (
+                    (new_node_lkl*transition_matrix[new_node_idx, curr_idx])
+                    /
+                    float(curr_node_lkl*transition_matrix[curr_idx, new_node_idx])
+                )
+        )
+        #
+        if uniform_rnd_coins_fr_accept[count_mcmc_steps] < prob_transition:
+            curr_idx = new_node_idx
+            mcmc_train_idx_list.append(new_node_idx)
+    #
+    return eval_train_idx_list
+
+
+def classify_wd_gaussian_process(K_train, labels_train, K_test, is_load_classifier=False, is_mcmc_train_cond_test=False, is_coupling=False):
     file_path = './lst_sqr_kernel_Kinv_mul_Y'
     #
     c = 3
@@ -328,7 +617,11 @@ def classify_wd_gaussian_process(K_train, labels_train, K_test, is_load_classifi
     else:
         x = np.load(file_path+'.npz')['arr_0']
     #
-    score_test_pred = K_test.dot(x[0]) + bias
+    if not is_mcmc_train_cond_test:
+        score_test_pred = K_test.dot(x[0]) + bias
+    else:
+        assert K_train is not None
+        score_test_pred = infer_gp_score_mcmc(K_test, x[0], K_train, bias, is_multinomial=False, is_coupling=is_coupling)
     #
     x = None
     K_test = None
@@ -344,8 +637,108 @@ def classify_wd_gaussian_process(K_train, labels_train, K_test, is_load_classifi
     return labels_test_pred_prob
 
 
+def classify_wd_gaussian_process_pos_neg(K_train, labels_train, K_test, is_load_classifier=False, is_mcmc_train_cond_test=False, is_coupling=False):
+    file_path_pos = './lst_sqr_kernel_Kinv_mul_Y_pos'
+    file_path_neg = './lst_sqr_kernel_Kinv_mul_Y_neg'
+    #
+    c = 3
+    assert c >= 3, 'c decides probability values for train positives and negative values.' \
+                   ' Any value less than 3 gives not so appropriate probabilities.'
+    #
+    bias_pos = -0.9*c
+    bias_neg = 0.9*c
+    #
+    train_pos = np.where(labels_train == 1)[0]
+    train_neg = np.where(labels_train == 0)[0]
+    assert (train_pos.size+train_neg.size) == labels_train.size
+    #
+    if not is_load_classifier:
+        print 'Learning Gaussian process regressors ...'
+        score_train = c*np.ones(labels_train.shape)
+        print 'score_train', score_train
+        labels_train = None
+        #
+        assert K_train.shape[0] == K_train.shape[1]
+        #
+        start_time = time.time()
+        print 'computing the least squares for positive'
+        # todo: this lsqr algorithm is parallelizable, so do the needful
+        # see the classical paper LSQR An algrithm for sparse linear equations and sparse least squares.pdf
+        curr_K = K_train[train_pos]
+        curr_K = curr_K.tocsc()
+        curr_K = curr_K[:, train_pos]
+        curr_K = curr_K.tocsr()
+        x_pos = ssl.lsqr(curr_K, (score_train[train_pos]-bias_pos), show=True)
+        np.savez_compressed(file_path_pos, x_pos)
+        print 'Time to compute the positive least square solution was ', time.time()-start_time
+        #
+        start_time = time.time()
+        print 'computing the least squares for negatives'
+        # todo: this lsqr algorithm is parallelizable, so do the needful
+        # see the classical paper LSQR An algrithm for sparse linear equations and sparse least squares.pdf
+        curr_K = K_train[train_neg]
+        curr_K = curr_K.tocsc()
+        curr_K = curr_K[:, train_neg]
+        curr_K = curr_K.tocsr()
+        x_neg = ssl.lsqr(curr_K, (score_train[train_neg]-bias_neg), show=True)
+        np.savez_compressed(file_path_neg, x_neg)
+        print 'Time to compute the negative least square solution was ', time.time()-start_time
+        #
+        K_train = None
+    #
+    else:
+        x_pos = np.load(file_path_pos+'.npz')['arr_0']
+        x_neg = np.load(file_path_neg+'.npz')['arr_0']
+    #
+    if not is_mcmc_train_cond_test:
+        score_test_pred_pos = K_test.tocsc()[:, train_pos].dot(x_pos[0]) + bias_pos
+        x_pos = None
+        score_test_pred_neg = K_test.tocsc()[:, train_neg].dot(x_neg[0]) + bias_neg
+        x_neg = None
+    else:
+        assert K_train is not None
+        curr_K = K_train[train_pos]
+        curr_K = curr_K.tocsc()
+        curr_K = curr_K[:, train_pos]
+        curr_K = curr_K.tocsr()
+        score_test_pred_pos \
+            = infer_gp_score_mcmc(K_test.tocsc()[:, train_pos].tocsr(), x_pos[0], curr_K, bias=bias_pos, is_multinomial=False, is_coupling=is_coupling)
+        x_pos = None
+        #
+        curr_K = K_train[train_neg]
+        curr_K = curr_K.tocsc()
+        curr_K = curr_K[:, train_neg]
+        curr_K = curr_K.tocsr()
+        score_test_pred_neg \
+            = infer_gp_score_mcmc(K_test.tocsc()[:, train_neg].tocsr(), x_neg[0], curr_K, bias=bias_neg, is_multinomial=False, is_coupling=is_coupling)
+        x_neg = None
+    #
+    K_test = None
+    np.savez_compressed('./score_test_pred_pos', score_test_pred_pos)
+    np.savez_compressed('./score_test_pred_neg', score_test_pred_neg)
+    #
+    print 'score_test_pred_pos', score_test_pred_pos
+    print 'score_test_pred_neg', score_test_pred_neg
+    #
+    assert score_test_pred_pos.size == score_test_pred_neg.size
+    labels_test_pred = np.zeros(score_test_pred_pos.size)
+    labels_test_pred[score_test_pred_neg < 2.4] = 1
+    labels_test_pred[score_test_pred_pos > 0] = 1
+    print 'labels_test_pred', labels_test_pred
+    score_test_pred_pos = None
+    score_test_pred_neg = None
+    #
+    return labels_test_pred
+
+
 def classify_linear_least_square(K_train, labels_train, K_test, is_load_classifier=False):
-    assert K_train.shape[0] == K_train.shape[1]
+    if is_load_classifier:
+        assert K_train is None
+    else:
+        assert K_train is not None
+    #
+    if not is_load_classifier:
+        assert K_train.shape[0] == K_train.shape[1]
     #
     train_pos = np.where(labels_train == 1)[0]
     train_neg = np.where(labels_train == 0)[0]
@@ -355,52 +748,212 @@ def classify_linear_least_square(K_train, labels_train, K_test, is_load_classifi
     file_path_pos = './lst_sqr_pos_Kinv'
     file_path_neg = './lst_sqr_neg_Kinv'
     #
-    print 'Learning linear least square classifications ...'
-    start_time = time.time()
-    print 'computing the least squares'
-    #
-    K_train_pos = K_train[train_pos, :]
-    K_train_pos = K_train_pos.tocsc()
-    K_train_pos = K_train_pos[:, train_pos]
-    K_train_pos = K_train_pos.tocsr()
-    #
-    K_train_pos_inv = 
-    #
     K_train_test_pos = K_test.transpose()[train_pos, :]
-    print K_train_pos.shape
     print K_train_test_pos.shape
+    #
+    if not is_load_classifier:
+        K_train_pos = K_train[train_pos, :]
+        K_train_pos = K_train_pos.tocsc()
+        K_train_pos = K_train_pos[:, train_pos]
+        K_train_pos = K_train_pos.tocsr()
+        print K_train_pos.shape
+        #
+        start_time = time.time()
+        print 'Learning pseudo inverse of K_train_pos ...'
+        K_train_pos_inv = sl.pinvh(K_train_pos.todense(), check_finite=False)
+        print 'Time to learn the inverse was ', time.time()-start_time
+        #
+        K_train_pos = None
+        np.savez_compressed(file_path_pos, K_train_pos_inv)
+    else:
+        K_train_pos_inv = np.load(file_path_pos+'.npz')['arr_0']
+    #
+    start_time = time.time()
+    print 'computing dot product for positives ...'
+    x_pos = K_train_test_pos.transpose().dot(K_train_pos_inv)
+    K_train_pos_inv = None
+    x_pos = x_pos.dot(K_train_test_pos)
     K_train_test_pos = None
-    K_train_pos = None
-    x_pos = K_test.dot(x_pos)
-    # np.savez_compressed(file_path_pos, x_pos)
-    #
-    K_train_neg = K_train[train_neg, :]
-    K_train_neg = K_train_neg.tocsc()
-    K_train_neg = K_train_neg[:, train_neg]
-    K_train_neg = K_train_neg.tocsr()
-    #
-    K_train_test_neg = K_test.transpose()[train_neg, :]
-    print K_train_neg.shape
-    print K_train_test_neg.shape
-    x_neg = ssl.lsqr(K_train_neg, K_train_test_neg.todense(), show=True)
-    K_train_neg = None
-    x_neg = K_test.dot(x_neg)
-    np.savez_compressed(file_path_neg, x_neg)
-    #
-    print 'Time to compute the least square solution was ', time.time()-start_time
-    #
-    x_diff = x_pos-x_neg
+    x_pos_sum = x_pos.sum(1)
+    x_pos_diag = x_pos.diagonal()
     x_pos = None
+    print 'computation time was ', time.time()-start_time
+    #
+    # training using negative examples
+    K_train_test_neg = K_test.transpose()[train_neg, :]
+    print K_train_test_neg.shape
+    #
+    if not is_load_classifier:
+        K_train_neg = K_train[train_neg, :]
+        K_train_neg = K_train_neg.tocsc()
+        K_train_neg = K_train_neg[:, train_neg]
+        K_train_neg = K_train_neg.tocsr()
+        print K_train_neg.shape
+        #
+        start_time = time.time()
+        print 'Learning pseudo inverse of K_train_neg ...'
+        K_train_neg_inv = sl.pinvh(K_train_neg.todense(), check_finite=False)
+        print 'Time to learn the inverse was ', time.time()-start_time
+        #
+        K_train_neg = None
+        np.savez_compressed(file_path_neg, K_train_neg_inv)
+    else:
+        K_train_neg_inv = np.load(file_path_neg+'.npz')['arr_0']
+    #
+    start_time = time.time()
+    print 'computing dot product for negatives ...'
+    x_neg = K_train_test_neg.transpose().dot(K_train_neg_inv)
+    K_train_neg_inv = None
+    x_neg = x_neg.dot(K_train_test_neg)
+    K_train_test_neg = None
+    x_neg_diag = x_neg.diagonal()
+    x_neg_sum = x_neg.sum(1)
     x_neg = None
+    print 'computation time was ', time.time()-start_time
+    #
+    x_sum = x_neg_sum-x_pos_sum
+    x_neg_sum = None
+    x_pos_sum = None
+    np.save('./x_sum', x_sum)
+    #
+    x_diag = x_neg_diag - x_pos_diag
+    x_neg_diag = None
+    x_pos_diag = None
+    np.save('./x_diag', x_diag)
     #
     # todo: entropy maximization would be more optimal though computationally expensive test set is large
     # (at sentence level, it should be fine though)
     # todo: better option would be to select a subset matrix so that entropy is positive (not required to be matrix) on subselection
-    x = x_diff.diagonal()
-    x_diff = None
-    n = x.size
+    #
+    n = x_sum.size
+    assert n == x_diag.size
     labels = np.zeros(n)
-    labels[x > 0] = 1
+    labels[np.abs(2*x_diag) >= np.abs(x_sum)] = 1
+    x_sum = None
+    labels[x_diag < 0] = 0
+    #
+    positive_labels = labels.sum()
+    print 'positive_labels', positive_labels
+    negative_labels = labels.size - positive_labels
+    print 'negative_labels', negative_labels
+    if positive_labels > negative_labels:
+        labels = 1-labels
+    return labels
+
+
+def classify_lsqr_sparse(K_train, labels_train, K_test, is_load_classifier=False):
+    if is_load_classifier:
+        assert K_train is None
+    else:
+        assert K_train is not None
+    #
+    if not is_load_classifier:
+        assert K_train.shape[0] == K_train.shape[1]
+    #
+    train_pos = np.where(labels_train == 1)[0]
+    train_neg = np.where(labels_train == 0)[0]
+    assert (train_pos.size+train_neg.size) == labels_train.size
+    labels_train = None
+    #
+    file_path_pos = './lsqr_sparse_pos'
+    file_path_neg = './lsqr_sparse_neg'
+    #
+    K_train_test_pos = K_test.transpose()[train_pos, :]
+    print K_train_test_pos.shape
+    #
+    if not is_load_classifier:
+        K_train_pos = K_train[train_pos, :]
+        K_train_pos = K_train_pos.tocsc()
+        K_train_pos = K_train_pos[:, train_pos]
+        K_train_pos = K_train_pos.tocsr()
+        print K_train_pos.shape
+        #
+        start_time = time.time()
+        print 'Learning sparse linear program for positives ...'
+        K_train_pos_inv_mul_K_train_test = ssl.spsolve(K_train_pos.tocsc(), K_train_test_pos.tocsc())
+        K_train_pos = None
+        if K_train_pos_inv_mul_K_train_test.getformat() == 'csr':
+            # do nothing
+            pass
+        elif K_train_pos_inv_mul_K_train_test.getformat() == 'csc':
+            K_train_pos_inv_mul_K_train_test = K_train_pos_inv_mul_K_train_test.tocsr()
+        else:
+            raise AssertionError, K_train_pos_inv_mul_K_train_test.getformat()
+        #
+        print 'Time to learn was ', time.time()-start_time
+        sssm.save_sparse_csr(file_path_pos, K_train_pos_inv_mul_K_train_test)
+    else:
+        K_train_pos_inv_mul_K_train_test = sssm.load_sparse_csr(file_path_pos+'.npz')
+    #
+    start_time = time.time()
+    print 'computing dot product for positives ...'
+    x_pos = K_train_test_pos.transpose().dot(K_train_pos_inv_mul_K_train_test)
+    K_train_pos_inv_mul_K_train_test = None
+    K_train_test_pos = None
+    x_pos_sum = x_pos.sum(1)
+    x_pos_diag = x_pos.diagonal()
+    x_pos = None
+    print 'computation time was ', time.time()-start_time
+    #
+    # training using negative examples
+    K_train_test_neg = K_test.transpose()[train_neg, :]
+    print K_train_test_neg.shape
+    #
+    if not is_load_classifier:
+        K_train_neg = K_train[train_neg, :]
+        K_train_neg = K_train_neg.tocsc()
+        K_train_neg = K_train_neg[:, train_neg]
+        K_train_neg = K_train_neg.tocsr()
+        print K_train_neg.shape
+        #
+        start_time = time.time()
+        print 'Learning pseudo inverse of K_train_neg ...'
+        K_train_neg_inv_mul_K_train_test = ssl.spsolve(K_train_neg.tocsc(), K_train_test_neg.tocsc())
+        K_train_neg = None
+        if K_train_neg_inv_mul_K_train_test.getformat() == 'csr':
+            print 'do nothing'
+            pass
+        elif K_train_neg_inv_mul_K_train_test.getformat() == 'csc':
+            K_train_neg_inv_mul_K_train_test = K_train_neg_inv_mul_K_train_test.tocsr()
+        else:
+            raise AssertionError, K_train_neg_inv_mul_K_train_test.getformat()
+        #
+        print 'Time to learn the inverse was ', time.time()-start_time
+        #
+        sssm.save_sparse_csr(file_path_neg, K_train_neg_inv_mul_K_train_test)
+    else:
+        K_train_neg_inv_mul_K_train_test = sssm.load_sparse_csr(file_path_neg+'.npz')
+    #
+    start_time = time.time()
+    print 'computing dot product for negatives ...'
+    x_neg = K_train_test_neg.transpose().dot(K_train_neg_inv_mul_K_train_test)
+    K_train_neg_inv_mul_K_train_test = None
+    K_train_test_neg = None
+    x_neg_sum = x_neg.sum(1)
+    x_neg_diag = x_neg.diagonal()
+    x_neg = None
+    print 'computation time was ', time.time()-start_time
+    #
+    x_sum = x_neg_sum-x_pos_sum
+    x_neg_sum = None
+    x_pos_sum = None
+    np.save('./x_sum', x_sum)
+    #
+    x_diag = x_neg_diag - x_pos_diag
+    x_neg_diag = None
+    x_pos_diag = None
+    np.save('./x_diag', x_diag)
+    #
+    # todo: entropy maximization would be more optimal though computationally expensive test set is large
+    # (at sentence level, it should be fine though)
+    # todo: better option would be to select a subset matrix so that entropy is positive (not required to be matrix) on subselection
+    #
+    n = x_sum.size
+    assert n == x_diag.size
+    labels = np.zeros(n)
+    labels[np.abs(2*x_diag) >= np.abs(x_sum)] = 1
+    x_sum = None
+    labels[x_diag < 0] = 0
     #
     positive_labels = labels.sum()
     print 'positive_labels', positive_labels
@@ -430,13 +983,25 @@ if __name__ == '__main__':
     gp = 'gp'
     svm = 'svm'
     corex = 'corex'
+    lst_sqr = 'lst_sqr'
+    gpr = 'gpr'
     #
-    algo_options = [gp, svm, corex]
-    algo = gp
+    # using training data only, gives terrible performance, so use False for best results
+    corex_train_data_only = False
+    #
+    algo_options = [gp, svm, corex, lst_sqr, gpr]
+    algo = corex
     assert algo in algo_options
     #
-    is_load_classifier = True
-    is_positive_labels_only_fr_train = True
+    if algo in [gp, gpr]:
+        is_mcmc_train_cond_test = True
+        is_mcmc_coupling = True
+    else:
+        is_mcmc_train_cond_test = None
+        is_mcmc_coupling = None
+    #
+    is_load_classifier = False
+    is_positive_labels_only_fr_train = False
     #
     amr_graphs, labels = get_amr_data()
     #
@@ -454,26 +1019,26 @@ if __name__ == '__main__':
     train = np.setdiff1d(np.arange(0, n), test)
     print 'train.shape', train.shape
     #
-    if (not is_load_classifier) or is_positive_labels_only_fr_train:
-        labels_train = labels[train]
-        print 'labels_train.shape', labels_train.shape
-    else:
-        labels_train = None
+    # if (not is_load_classifier) or is_positive_labels_only_fr_train:
+    labels_train = labels[train]
+    print 'labels_train.shape', labels_train.shape
+    # else:
+    #     labels_train = None
     #
     if is_positive_labels_only_fr_train:
         positive_label_train_idx = np.where(labels_train == 1)
         train = train[positive_label_train_idx]
         #
-        if is_load_classifier:
-            labels_train = None
-        else:
-            labels_train = labels_train[positive_label_train_idx]
+        # if is_load_classifier:
+        #     labels_train = None
+        # else:
+        labels_train = labels_train[positive_label_train_idx]
     #
     k_path = './graph_kernel_matrix_joint_train_data_parallel/num_cores_100.npz'
     K = sssm.load_sparse_csr(cap.absolute_path+k_path)
     print 'K.shape', K.shape
     #
-    if not is_load_classifier:
+    if not is_load_classifier or algo in [gp]:
         K_train = K[train, :]
         K_train = K_train.tocsc()
         K_train = K_train[:, train]
@@ -491,13 +1056,16 @@ if __name__ == '__main__':
     print 'K_test.shape', K_test.shape
     print 'K_test.nnz', K_test.nnz
     #
-    print 'getting the test-test matrix'
-    K_tt = K[test, :]
-    K_tt = K_tt.tocsc()
-    K_tt = K_tt[:, test]
-    K_tt = K_tt.tocsr()
-    print 'K_tt.shape', K_tt.shape
-    print 'K_tt.nnz', K_tt.nnz
+    if algo == corex and not corex_train_data_only:
+        print 'getting the test-test matrix'
+        K_tt = K[test, :]
+        K_tt = K_tt.tocsc()
+        K_tt = K_tt[:, test]
+        K_tt = K_tt.tocsr()
+        print 'K_tt.shape', K_tt.shape
+        print 'K_tt.nnz', K_tt.nnz
+    else:
+        K_tt = None
     #
     train = None
     K = None
@@ -510,15 +1078,42 @@ if __name__ == '__main__':
         _, labels_test_pred = classify_wd_svm(K_train, labels_train, K_test, is_load_classifier=is_load_classifier)
     elif algo == gp:
         print 'Gaussian process ...'
-        labels_test_pred_prob = classify_wd_gaussian_process(K_train, labels_train, K_test, is_load_classifier=is_load_classifier)
+        labels_test_pred_prob \
+            = classify_wd_gaussian_process(
+                K_train,
+                labels_train,
+                K_test,
+                is_load_classifier=is_load_classifier,
+                is_mcmc_train_cond_test=is_mcmc_train_cond_test,
+                is_coupling=is_mcmc_coupling
+        )
         labels_test_pred = np.zeros(labels_test_pred_prob.shape)
         labels_test_pred[np.where(labels_test_pred_prob > 0.5)] = 1
         labels_test_pred_prob = None
-        # labels_test_pred = classify_linear_least_square(K_train, labels_train, K_test)
+    elif algo == gpr:
+        print 'Gaussian process regression using positive vs negatives ...'
+        labels_test_pred \
+            = classify_wd_gaussian_process_pos_neg(
+                K_train,
+                labels_train,
+                K_test,
+                is_load_classifier=is_load_classifier,
+                is_mcmc_train_cond_test=is_mcmc_train_cond_test,
+                is_coupling=is_mcmc_coupling
+        )
+    elif algo == lst_sqr:
+        print 'Least square ...'
+        labels_test_pred = classify_linear_least_square(K_train, labels_train, K_test, is_load_classifier=is_load_classifier)
+        # labels_test_pred = classify_lsqr_sparse(K_train, labels_train, K_test, is_load_classifier=is_load_classifier)
     elif algo == corex:
-        labels_test_pred = classify_wd_corex_test_as_samples(labels_train, K_test, K_tt)
+        if not corex_train_data_only:
+            # labels_test_pred = classify_wd_corex_test_as_samples(labels_train, K_test, K_tt)
+            labels_test_pred = classify_wd_corex_test_as_samples_in_chunks(labels_train, K_test, K_tt)
+        else:
+            labels_test_pred = classify_wd_corex_lrn_train(labels_train, K_train, K_test)
     else:
         raise AssertionError, 'No such classification algorithm.'
     #
     precision, recall = eval_inferred_labels(labels_test_pred, test, chicago_sentence_id__interactions_list_map)
     print 'precision: {}, recall: {}'.format(precision, recall)
+
