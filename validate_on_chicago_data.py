@@ -782,7 +782,7 @@ def bayesian_optimization(K_tt, K_test_train, train_weights, bias, transition_ma
             curr_score_surrogate = curr_K_test_prv_tests.dot(curr_weights)
             print 'curr_score_surrogate', curr_score_surrogate
             curr_score_surrogate += bias
-            if abs(curr_score_surrogate) > 0.5:
+            if abs(curr_score_surrogate) > 1:
                 is_surrogate_score_use = True
                 test_score_pred[curr_idx] = curr_score_surrogate
                 num_computations_saved += 1
@@ -841,7 +841,8 @@ def bayesian_optimization(K_tt, K_test_train, train_weights, bias, transition_ma
         #
         # actual score prediction using all training points
         if not is_surrogate_score_use:
-            num_train_total_used += sel_train_idx.size
+            if curr_idx > min_iterations:
+                num_train_total_used += sel_train_idx.size
             #
             curr_score_pred = curr_k.dot(train_weights)
             assert curr_score_pred.size == 1
@@ -876,7 +877,7 @@ def bayesian_optimization(K_tt, K_test_train, train_weights, bias, transition_ma
                 next_weights_pi = np.vstack([curr_weights_pi, np.zeros(num_train)])
     #
     print 'num_computations_saved', num_computations_saved
-    print 'avg training sampled used', num_train_total_used/float(num_test - num_computations_saved)
+    print 'avg training sampled used', num_train_total_used/float(num_test - num_computations_saved - min_iterations)
     return test_score_pred
 
 
