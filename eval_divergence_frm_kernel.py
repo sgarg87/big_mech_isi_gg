@@ -22,9 +22,9 @@ import json
 import amr_sets_aimed
 
 
-is_filter_interactions_with_invalid_proteins = False
+is_filter_interactions_with_invalid_proteins = True
 #
-is_compute_mmd = True
+is_compute_mmd = False
 is_compute_mig = False
 is_compute_kld_kd = False
 is_compute_kld_knn = False
@@ -36,11 +36,11 @@ is_validate_kld_kd = False
 is_validate_kld_knn = False
 is_validate_dist_kernel = False
 #
-is_validate_org_kernel = True
+is_validate_org_kernel = False
 #
 is_concept_mapped_to_interaction_default = False
 #
-is_chicago_test = True
+is_chicago_test = False
 if not is_chicago_test:
     is_random_validation = False
     is_random_test = False
@@ -126,7 +126,7 @@ div_tol = 1e-2
 
 nn_list = [2, 3, 4, 5]
 
-is_parallel = True
+is_parallel = False
 
 is_alternative_data = False
 
@@ -592,7 +592,14 @@ def compute_divergence(K, interaction_idx_list_map, interaction_keys_list1, inte
     n1 = len(interaction_keys_list1)
     n2 = len(interaction_keys_list2)
     #
+    #
     D = initialize_divergence(divergence_algo, n1, n2)
+    if divergence_algo == 'mi_gaussian':
+        if is_parallel:
+            raise NotImplementedError, 'some recent changes for efficient computation of Mi may need some additional changes if parallel computation call'
+        else:
+            assert n1 == n2
+            E = -1*np.ones(n1)
     #
     start_time = time.time()
     print 'Computing divergence matrices ... \n'
@@ -620,9 +627,43 @@ def compute_divergence(K, interaction_idx_list_map, interaction_keys_list1, inte
                 if not is_parallel:
                     D[j,i] = D[i,j]
             elif divergence_algo == 'mi_gaussian':
-                D[i, j] = eval_divergence(Kii, Kjj, Kij, algo=divergence_algo)
+                # for mutual information case, to avoid redundant computations, we directly call the method here
+                start_time = time.time()
+                joint_entropy_ij = eval_joint_entropy_multivariate_gaussian(Kii, Kjj, Kij)
+                if E[i] == -1:
+                    entropy_i = eval_entropy_multivariate_gaussian(Kii)
+                    assert entropy_i >= 0
+                    E[i] = entropy_i
+                else:
+                    entropy_i = E[i]
+                #
+                if E[j] == -1:
+                    entropy_j = eval_entropy_multivariate_gaussian(Kjj)
+                    assert entropy_j >= 0
+                    E[j] = entropy_j
+                else:
+                    entropy_j = E[j]
+                #
+                mutual_info_ij = entropy_i + entropy_j - joint_entropy_ij
+                #
+                print 'mutual_info_ij', mutual_info_ij
+                #
+                if mutual_info_ij < 0:
+                    if mutual_info_ij < 0 and mutual_info_ij > -div_tol:
+                        mutual_info_ij = 0
+                    else:
+                        print 'entropy_i', entropy_i
+                        print 'entropy_j', entropy_j
+                        print 'joint_entropy_ij', joint_entropy_ij
+                        raise AssertionError
+                #
+                print 'mutual_info_ij', mutual_info_ij
+                #
+                if coarse_debug:
+                    print 'time to compute mutual information with gaussian process was {}'.format(time.time()-start_time)
+                D[i, j] = mutual_info_ij
                 if not is_parallel:
-                    D[j,i] = D[i,j]
+                    D[j, i] = D[i, j]
             elif divergence_algo == 'kl_kd':
                 D[i, j] = eval_divergence(Kii, Kjj, Kij, algo=divergence_algo)
                 if not is_parallel:
@@ -847,7 +888,7 @@ def eval_divergence_matrix(amr_graphs, labels, K, is_amr_only=False, is_dep_only
         vps_obj.validate_at_paper_level(np.exp(-Dkld_kd), labels_fr_sets, 'kl_divergence__kernel_density', is_divergence=True)
     if is_validate_mig:
         print 'validating on mutual information Gaussian ...'
-        vps_obj.validate_at_paper_level(Dmig, labels_fr_sets, 'mutual_information_gaussian_process', is_divergence=True)
+        vps_obj.validate_at_paper_level(1-np.exp(-Dmig), labels_fr_sets, 'mutual_information_gaussian_process', is_divergence=True)
     if is_validate_kld_knn:
         for curr_nn in nn_list:
             print 'validating on kl divergence {}-nn'.format(curr_nn)
@@ -890,7 +931,15 @@ def eval_divergence(Kii, Kjj, Kij, algo, nn=None):
 
 def eval_max_mean_discrepancy(Kii, Kjj, Kij):
     start_time = time.time()
+    print Kii
+    print Kjj
+    print Kij
     maximum_mean_discrepancy = Kii.mean() + Kjj.mean() - 2*Kij.mean()
+    #
+    print 'Kii.mean()', Kii.mean()
+    print 'Kjj.mean()', Kjj.mean()
+    print 'Kij.mean()', Kij.mean()
+    #
     if maximum_mean_discrepancy < 0:
         if -div_tol < maximum_mean_discrepancy < 0:
             maximum_mean_discrepancy = 0
@@ -910,6 +959,9 @@ def eval_distribution_kernel(Kij):
 
 
 def eval_mutual_information_multivariate_gaussian(Kii, Kjj, Kij):
+    raise DeprecationWarning
+    # todo: entropy for i and j is currently computed in redundant manner
+    #
     start_time = time.time()
     if debug:
         print Kij
@@ -975,6 +1027,68 @@ def eval_mutual_information_multivariate_gaussian(Kii, Kjj, Kij):
     if coarse_debug:
         print 'time to compute mutual information with gaussian process was {}'.format(time.time()-start_time)
     return mutual_information
+
+
+def eval_entropy_multivariate_gaussian(Kii):
+    # todo: entropy for i and j is currently computed in redundant manner
+    #
+    m = Kii.shape[0]
+    assert m == Kii.shape[1]
+    #
+    start_time = time.time()
+    const_epsilon = 1e-320
+    det_Kii = np.linalg.det(Kii)
+    if debug:
+        print det_Kii
+    if det_Kii <= 0:
+        entropy_Kii = 0
+    else:
+        entropy_Kii = float(m)/2 + (float(m)*math.log(2*math.pi))/2 + math.log(det_Kii)
+    if entropy_Kii < 0:
+        entropy_Kii = 0
+    #
+    entropy = entropy_Kii
+    entropy_Kii = None
+    if entropy < 0:
+        if entropy < 0 and entropy > -div_tol:
+            entropy = 0
+        else:
+            print 'det_Kii', det_Kii
+            print 'entropy_Kii', entropy_Kii
+            raise AssertionError
+    #
+    if coarse_debug:
+        print 'time to compute entropy with gaussian process was {}'.format(time.time()-start_time)
+    return entropy
+
+
+def eval_joint_entropy_multivariate_gaussian(Kii, Kjj, Kij):
+    # todo: entropy for i and j is currently computed in redundant manner
+    #
+    start_time = time.time()
+    if debug:
+        print Kij
+        print Kij.shape
+    m1 = Kij.shape[0]
+    if debug:
+        print m1
+    m2 = Kij.shape[1]
+    if debug:
+        print m2
+    n = m1+m2
+    if debug:
+        print n
+    K = -1*np.ones(shape=(n, n))
+    K[np.meshgrid(range(m1), range(m1), indexing='ij', sparse=True)] = Kii
+    K[np.meshgrid(range(m1), range(m1, n), indexing='ij', sparse=True)] = Kij
+    K[np.meshgrid(range(m1, n), range(m1), indexing='ij', sparse=True)] = Kij.transpose()
+    K[np.meshgrid(range(m1, n), range(m1, n), indexing='ij', sparse=True)] = Kjj
+    #
+    joint_entropy = eval_entropy_multivariate_gaussian(K)
+    #
+    if coarse_debug:
+        print 'time to compute joint entropy with gaussian process was {}'.format(time.time()-start_time)
+    return joint_entropy
 
 
 def eval_kl_div_kernel_density(Kii, Kjj, Kij):
@@ -1149,7 +1263,14 @@ if __name__ == '__main__':
             amr_graphs, labels = \
                 te.get_data_joint(is_train=None, is_word_vectors=False, is_dependencies=(not has_data_only_amrs), is_alternative_data=True)
         else:
-            amr_graphs, labels = te.get_data_joint(is_train=True, is_word_vectors=False, is_dependencies=(not has_data_only_amrs))
+            amr_graphs, labels = te.get_data_joint(
+                                    is_train=True,
+                                    is_word_vectors=False,
+                                    is_dependencies=(not has_data_only_amrs),
+                                    is_model_data=False,
+                                    load_sentence_frm_dot_if_required=False,
+                                    is_chicago_data=False
+            )
         with open(cap.absolute_path+amr_pickle_file_path, 'wb') as f_p:
             amr_data = {'amr': amr_graphs, 'label': labels}
             pickle.dump(amr_data, f_p)
@@ -1162,18 +1283,17 @@ if __name__ == '__main__':
     n = labels.size
     print 'labels.size', labels.size
     #
-    is_sparse_join = True
+    is_sparse_join = False
     import compute_parallel_graph_kernel_matrix_joint_train_data as cpgkmjtd
     if not is_sparse_join:
-        K = cpgkmjtd.join_parallel_computed_kernel_matrices(100)
+        K = cpgkmjtd.join_parallel_computed_kernel_matrices(155)
     else:
-        K = cpgkmjtd.join_parallel_computed_kernel_matrices_sparse(100)
+        K = cpgkmjtd.join_parallel_computed_kernel_matrices_sparse(155)
     print 'K.shape', K.shape
     #
-    # import config_kernel_matrices_format as ckmf
-    # if ckmf.is_kernel_dtype_lower_precision:
-    #     K = K.astype(ckmf.kernel_dtype_np, copy=False)
-    #
+    import config_kernel_matrices_format as ckmf
+    if ckmf.is_kernel_dtype_lower_precision:
+        K = K.astype(ckmf.kernel_dtype_np, copy=False)
     #
     eval_divergence_matrix(amr_graphs, labels, K, is_amr_only=is_amr_only, is_dep_only=is_dep_only, has_data_only_amrs=has_data_only_amrs)
 

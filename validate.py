@@ -991,29 +991,18 @@ class ValidatePaperSets:
                 labels_train = labels[curr_trial_train]
                 labels_test = labels[curr_trial_test]
                 #
+                labels_train[labels_train == 2] = 0
+                labels_test[labels_test == 2] = 0
+                #
                 print 'labels_train', labels_train
                 print 'labels_test', labels_test
                 #
                 K_train = K[np.meshgrid(curr_trial_train.astype(np.int32), curr_trial_train.astype(np.int32), indexing='ij', sparse=True, copy=False)]
-                print 'Learning SVM classifier ...'
+                print 'Learning SVM classifier (non probability)...'
                 start_time = time.time()
-                svm_clf = skl_svm.SVC(kernel='precomputed', probability=True, verbose=ck.is_svm_verbose, class_weight='auto')
+                svm_clf = skl_svm.SVC(kernel='precomputed', probability=False, verbose=ck.is_svm_verbose, class_weight='balanced')
                 svm_clf.fit(K_train, labels_train)
                 print 'Learning time was ', time.time()-start_time
-                print svm_clf.n_support_
-                print svm_clf.support_
-                print svm_clf.support_vectors_
-                #
-                print K_train.shape
-                curr_trial_train = curr_trial_train[svm_clf.support_]
-                labels_train = labels_train[svm_clf.support_]
-                K_train = K_train[np.meshgrid(svm_clf.support_.astype(np.int32), svm_clf.support_.astype(np.int32), indexing='ij', sparse=True, copy=False)]
-                print 'Re-learning SVM classifier ...'
-                start_time = time.time()
-                svm_clf = skl_svm.SVC(kernel='precomputed', probability=True, verbose=ck.is_svm_verbose, class_weight='auto')
-                svm_clf.fit(K_train, labels_train)
-                print 'Re-learning time was ', time.time()-start_time
-                print K_train.shape
                 print svm_clf.n_support_
                 print svm_clf.support_
                 print svm_clf.support_vectors_

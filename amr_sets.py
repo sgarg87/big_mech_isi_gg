@@ -225,19 +225,20 @@ amr_sets_list_gold = [
     'pmid-24651010_pmid_2465_1010'
 ]
 
-amr_sets_list_canonical = [
-    'triplet_joint_subgraphs'
-]
+# amr_sets_list_canonical = [
+#     'triplet_joint_subgraphs'
+# ]
 
-amr_sets_list_chicago = [
-    'chicago'
-]
+# amr_sets_list_chicago = [
+#     'chicago'
+# ]
 
 amr_sets_list_auto_merged = []
 for curr_auto_list in amr_sets_list_auto:
     amr_sets_list_auto_merged += curr_auto_list
 
-amr_sets_list_all = amr_sets_list_auto_merged + amr_sets_list_canonical + amr_sets_list_gold + amr_sets_list_chicago
+amr_sets_list_all = amr_sets_list_auto_merged + amr_sets_list_gold
+                    # + amr_sets_list_chicago
 
 
 

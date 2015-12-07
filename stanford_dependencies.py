@@ -185,6 +185,7 @@ class StanfordDependencies():
         file_name = const_global_joint_train_dependencies+'.pickle'
         with open(cap.absolute_path+file_name, 'r') as h:
             data = pickle.load(h)
+        assert data is not None
         return data
 
     def load_stanford_dependency_graphs_frm_text_nd_gen_subgraphs(self, file_path, const_global_joint_train_dependencies=None):

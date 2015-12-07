@@ -988,6 +988,11 @@ if __name__ == '__main__':
     print 'train_test_div.mean()', train_test_div.mean()
     print 'train_test_div.std()', train_test_div.std()
     #
+    plt.rcParams['text.usetex'] = True #Let TeX do the typsetting
+    plt.rcParams['text.latex.preamble'] = [r'\usepackage{sansmath}', r'\sansmath'] #Force sans-serif math mode (for axes labels)
+    plt.rcParams['font.family'] = 'sans-serif' # ... for regular text
+    plt.rcParams['font.sans-serif'] = 'Helvetica, Avant Garde, Computer Modern Sans serif' # Choose a nice font here
+    #
     n = org_max_lkl.shape[0]
     x = 3*np.arange(n)
     width = 0.8
@@ -1011,8 +1016,8 @@ if __name__ == '__main__':
     # shift += width
     # curr_plot = plt.bar(x+shift, positive_label_perc.mean(1), color='brown', width=width, label='Positive labels ratio', yerr=positive_label_perc.std(1))
     # plots_list.append(curr_plot)
-    plt.ylabel('F1 Score', fontsize=font_size)
-    plt.xlabel('AIMed Papers Abstract Sets', fontsize=font_size)
+    plt.ylabel('F1 Score', fontsize=font_size, fontname='Times New Roman')
+    plt.xlabel('AIMed Papers Abstract Sets', fontsize=font_size, fontname='Times New Roman')
     # plt.title('F1 Score Comparison for Our Algorithm')
     sets_list = range(1,11)
     plt.xticks(x, sets_list, size=font_size)

@@ -665,6 +665,8 @@ def get_data_joint(
             if is_dependencies:
                 sd_obj = sd.StanfordDependencies()
                 dependencies_data = sd_obj.load_stanford_dependencies_train_data()
+                assert dependencies_data is not None
+                print 'dependencies_data', dependencies_data
                 merge_joint_model_data_to_train_data(data, dependencies_data)
                 #
                 if is_chicago_data:

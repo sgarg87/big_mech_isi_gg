@@ -25,8 +25,13 @@ def get_file_path(num_cores, curr_core=None):
     return curr_core_kernel_file_path
 
 
+# def get_train_data():
+#     amr_graphs, _ = te.get_processed_train_joint_data()
+#     return amr_graphs
+
+
 def get_train_data():
-    amr_graphs, _ = te.get_processed_train_joint_data()
+    amr_graphs, _ = te.get_data_joint(is_train=True, load_sentence_frm_dot_if_required=False)
     return amr_graphs
 
 
@@ -221,6 +226,7 @@ def join_parallel_computed_kernel_matrices_sparse(num_cores):
 
 
 def join_parallel_computed_kernel_matrices_sparse_wd_dok(num_cores):
+    raise DeprecationWarning
     print 'No. of cores are ', num_cores
     print 'cores start from index 0 ...'
     #

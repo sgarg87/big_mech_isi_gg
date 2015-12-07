@@ -4412,6 +4412,12 @@ if __name__ == '__main__':
     plt.savefig('./validation_plots_nd_text_output/summary/mmd_amr_vs_sdg_f1.pdf', dpi=300, format='pdf')
     plt.close()
     #
+    #
+    plt.rcParams['text.usetex'] = True #Let TeX do the typsetting
+    plt.rcParams['text.latex.preamble'] = [r'\usepackage{sansmath}', r'\sansmath'] #Force sans-serif math mode (for axes labels)
+    plt.rcParams['font.family'] = 'sans-serif' # ... for regular text
+    plt.rcParams['font.sans-serif'] = 'Helvetica, Avant Garde, Computer Modern Sans serif' # Choose a nice font here
+    #
     font_size = 18
     plots_list = []
     shift = 0

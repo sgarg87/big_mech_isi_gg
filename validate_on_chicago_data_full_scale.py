@@ -10,6 +10,11 @@ import eval_divergence_frm_kernel as edk
 import constants_absolute_path as cap
 import chicago_data as cd
 import json
+import time
+import sklearn.svm as skl_svm
+import config_kernel as ck
+import parallel_computing as pk
+import scipy.sparse.linalg as ssl
 
 
 def get_train_kernel_matrix():
@@ -122,7 +127,10 @@ def merge_chicago_nd_inferred(inferred_interactions_list, labels_test_pred_prob,
         #
         curr_idx += 1
         #
-        curr_prob = labels_test_pred_prob[curr_idx]
+        if labels_test_pred_prob is not None:
+            curr_prob = labels_test_pred_prob[curr_idx]
+        else:
+            curr_prob = 1
         #
         curr_inferred_interaction = curr_inferred_interaction_tuple[0]
         curr_inferred_interaction = [curr_inferred_interaction, curr_prob]
@@ -426,15 +434,131 @@ def get_list_of_interaction_types_in_chicago_map(chicago_sentence_id__interactio
     return interaction_types
 
 
+def classify_wd_svm(K_train, labels_train, K_test, is_load_classifier=False):
+    raise DeprecationWarning
+    probability = False
+    print 'Learning SVM classifier ...'
+    start_time = time.time()
+    svm_clf = skl_svm.SVC(kernel='precomputed', probability=probability, verbose=ck.is_svm_verbose, class_weight='auto')
+    K_train = K_train.todense()
+    svm_clf.fit(K_train, labels_train)
+    #
+    K_train = None
+    labels_train = None
+    print 'Learning time was ', time.time()-start_time
+    print svm_clf.n_support_
+    print svm_clf.support_
+    print svm_clf.support_vectors_
+    #
+    print 'K_test.shape', K_test.shape
+    m = K_test.shape[0]
+    num_divisions = 100
+    #
+    labels_test_pred = np.zeros(m)
+    if probability:
+        labels_test_pred_prob = np.zeros(m)
+    else:
+        labels_test_pred_prob = None
+    #
+    test_idx_list = pk.uniform_distribute_tasks_across_cores(m, num_divisions)
+    #
+    for curr_division in range(num_divisions):
+        curr_test_idx = test_idx_list[curr_division]
+        curr_K_test = K_test[curr_test_idx, :]
+        curr_K_test = curr_K_test.todense()
+        labels_test_pred[curr_test_idx] = svm_clf.predict(curr_K_test)
+        #
+        if probability:
+            labels_test_pred_prob[curr_test_idx] = svm_clf.predict_proba(curr_K_test)
+    #
+    K_test = None
+    return labels_test_pred_prob, labels_test_pred
+
+
+def classify_wd_gaussian_process(K_train, labels_train, K_test, is_load_classifier=False, is_mcmc_train_cond_test=False, is_coupling=False):
+    raise DeprecationWarning
+    #
+    file_path = './lst_sqr_kernel_Kinv_mul_Y_full_scale'
+    #
+    c = 3
+    assert c >= 3, 'c decides probability values for train positives and negative values.' \
+                   ' Any value less than 3 gives not so appropriate probabilities.'
+    # bias (mean)
+    # 20% positives
+    bias = -0.9*c
+    #
+    if not is_load_classifier:
+        print 'Learning Gaussian process classifications ...'
+        score_train = -c*np.ones(labels_train.shape)
+        score_train[np.where(labels_train == 1)] = c
+        print 'score_train', score_train
+        labels_train = None
+        #
+        start_time = time.time()
+        print 'computing the least squares'
+        assert K_train.shape[0] == K_train.shape[1]
+        #
+        # todo: this lsqr algorithm is parallelizable, so do the needful
+        # see the classical paper LSQR An algrithm for sparse linear equations and sparse least squares.pdf
+        x = ssl.lsqr(K_train, (score_train-bias), show=True)
+        np.savez_compressed(file_path, x)
+        print 'Time to compute the least square solution was ', time.time()-start_time
+        K_train = None
+    else:
+        x = np.load(file_path+'.npz')['arr_0']
+    #
+    if not is_mcmc_train_cond_test:
+        score_test_pred = K_test.dot(x[0]) + bias
+    else:
+        assert K_train is not None
+        score_test_pred = vcd.infer_gp_score_mcmc(K_test, x[0], K_train, bias, is_multinomial=False, is_coupling=is_coupling)
+    #
+    x = None
+    K_test = None
+    np.savez_compressed('./score_test_pred', score_test_pred)
+    #
+    print 'score_test_pred', score_test_pred
+    #
+    beta = 1
+    labels_test_pred_prob = 1/(1+np.exp(-beta*score_test_pred))
+    print 'labels_test_pred_prob', labels_test_pred_prob
+    score_test_pred = None
+    #
+    return labels_test_pred_prob
+
+
 if __name__ == '__main__':
-    is_evaluate_inferred = False
+    #
+    # with removal duplicates from the canonical, we get results as following
+    #
+    # corex using train+ vs train - while not using test x test
+    # precision 0.289205149671
+    # recall 0.424606462303
+    # f1 score 0.35
+    #
+    # using svm (regularized appropriately C=0.2)
+    # precision: 0.24
+    # recall: 0.44
+    # f1: 0.32
+    #
+    # gp using positives and negatives both
+    # precision 0.562973883741
+    # recall 0.130281690141
+    # f1: 0.21
+    #
+    # gp with positives only (regularized)
+    # precision 0.326877409406
+    # recall 0.361588649544
+    # f1: 0.34
+    #
+    is_evaluate_inferred = True
     #
     gp = 'gp'
     svm = 'svm'
     corex = 'corex'
     #
     algo_options = [gp, svm, corex]
-    algo = gp
+    algo = svm
     assert algo in algo_options
     #
     is_filter_chicago_interactions_on_proteins_in_extracted = True
@@ -514,30 +638,14 @@ if __name__ == '__main__':
         print json.dumps(chicago_interaction_types, indent=4)
         #
     else:
-        is_load_classifier = True
+        is_load_classifier = False
         is_load_data = True
-        is_positive_labels_only_fr_train = True
+        is_positive_labels_only_fr_train = False
+        is_no_duplicate_canonical = True
         #
-        if not is_load_classifier or algo == gp:
-            if not is_load_data or algo == gp:
-                amr_graphs, _ = vcd.get_amr_data()
-                n = amr_graphs.shape[0]
-                test = vcd.get_chicago_test_data_idx(amr_graphs)
-                amr_graphs = None
-                train = np.setdiff1d(np.arange(0, n), test)
-                n = None
-                test = None
-                k_path = './graph_kernel_matrix_joint_train_data_parallel/num_cores_100.npz'
-                K = sssm.load_sparse_csr(cap.absolute_path+k_path)
-                print 'K.shape', K.shape
-                K_train = K[train, :]
-                K = None
-                K_train = K_train.tocsc()
-                K_train = K_train[:, train]
-                train = None
-                K_train = K_train.tocsr()
-                print 'K_train.shape', K_train.shape
-                print 'K_train.nnz', K_train.nnz
+        if not is_load_classifier or algo in [gp, corex]:
+            if not is_load_data:
+                K_train = cpgkmjtd.join_parallel_computed_kernel_matrices_sparse(120)
                 sssm.save_sparse_csr(cap.absolute_path+'./K_train', K_train)
             else:
                 K_train = sssm.load_sparse_csr(cap.absolute_path+'./K_train.npz')
@@ -555,18 +663,53 @@ if __name__ == '__main__':
         print 'K_test.shape', K_test.shape
         print 'K_test.nnz', K_test.nnz
         #
-        if (not is_load_classifier) or is_positive_labels_only_fr_train:
-            if not is_load_data:
-                _, labels_train \
-                    = te.get_data_joint(is_train=True, load_sentence_frm_dot_if_required=False, is_word_vectors=False)
-                np.savez_compressed(cap.absolute_path+'./labels_train', labels_train)
-            else:
-                labels_train = np.load(cap.absolute_path+'./labels_train.npz')['arr_0']
-            #
+        if (not is_load_classifier) or is_positive_labels_only_fr_train or is_no_duplicate_canonical:
+            amr_graphs, labels = vcd.get_amr_data()
+            test = vcd.get_chicago_test_data_idx(amr_graphs)
+            train = np.setdiff1d(np.arange(0, amr_graphs.size), test)
+            test = None
+            amr_graphs_train = amr_graphs[train, :]
+            amr_graphs = None
+            labels_train = labels[train]
+            labels = None
             idx_label2 = np.where(labels_train == 2)
             labels_train[idx_label2] = 0
         else:
             labels_train = None
+        #
+        #
+        #
+        if is_no_duplicate_canonical:
+            assert amr_graphs_train is not None
+            train = np.arange(labels_train.size)
+            train_model = vcd.get_model_data_idx(amr_graphs_train)
+            train_model = train[train_model]
+            amr_graphs_train_model = amr_graphs_train[train_model, :]
+            amr_graphs_train = None
+            train_model_canonical = vcd.get_canonical_unique_model(amr_graphs_train_model)
+            amr_graphs_train_model = None
+            train_model_canonical = train_model[train_model_canonical]
+            train_model = np.setdiff1d(train_model, train_model_canonical)
+            train_not_model = np.setdiff1d(train, train_model)
+            train_model = None
+            train = train_not_model
+            print 'train.shape', train.shape
+            if labels_train is not None:
+                labels_train = labels_train[train]
+            #
+            if K_train is not None:
+                K_train = K_train[train, :]
+                K_train = K_train.tocsc()
+                K_train = K_train[:, train]
+                K_train = K_train.tocsr()
+            #
+            K_test = K_test.tocsc()
+            K_test = K_test[:, train]
+            K_test = K_test.tocsr()
+            #
+            train = None
+        #
+        #
         #
         if is_positive_labels_only_fr_train:
             positive_label_train_idx = np.where(labels_train == 1)[0]
@@ -586,23 +729,28 @@ if __name__ == '__main__':
         #
         if algo == svm:
             print 'SVM ...'
-            labels_test_pred_prob, labels_test_pred = vcd.classify_wd_svm(K_train, labels_train, K_test, is_load_classifier=True)
+            _, labels_test_pred = vcd.classify_wd_svm(K_train, labels_train, K_test, is_load_classifier=is_load_classifier)
+            labels_test_pred_prob = None
         elif algo == gp:
             print 'Gaussian process ...'
-            labels_test_pred_prob = vcd.classify_wd_gaussian_process(
-                K_train,
-                labels_train,
-                K_test,
-                is_load_classifier=True,
-                is_mcmc_train_cond_test=True,
-                is_coupling=True
+            labels_test_pred_prob \
+                = vcd.classify_wd_gaussian_process(
+                    K_train,
+                    labels_train,
+                    K_test,
+                    is_load_classifier=False,
+                    is_mcmc_train_cond_test=False,
+                    is_coupling=False,
+                    is_pure_random=False,
+                    curr_seed=None,
+                    bias_coeff=0.9
             )
             #
             labels_test_pred = np.zeros(labels_test_pred_prob.shape)
             labels_test_pred[np.where(labels_test_pred_prob > 0.5)] = 1
         elif algo == corex:
             print 'Corex ...'
-            labels_test_pred = vcd.classify_wd_corex(K_test)
+            labels_test_pred = vcd.classify_wd_corex_lrn_train(labels_train, K_train, K_test)
             labels_test_pred_prob = None
         else:
             raise AssertionError
