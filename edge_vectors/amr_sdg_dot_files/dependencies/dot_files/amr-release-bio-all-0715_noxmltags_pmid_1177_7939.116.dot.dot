@@ -1,0 +1,36 @@
+digraph "Purified and nucleotide depleted ,  GST-Rac and GST-Cdc42 proteins were therefore used to test their ability to interact with Sos-1 ." {
+label="Purified and nucleotide depleted ,  GST-Rac and GST-Cdc42 proteins were
+therefore used to test their ability to interact with Sos-1 .";
+depleted4 [style=filled, fillcolor=white, label=depleted];
+Purified1 [style=filled, fillcolor=white, label=Purified];
+depleted4 -> Purified1  [label=amod];
+nucleotide3 [style=filled, fillcolor=white, label=nucleotide];
+Purified1 -> nucleotide3  [label=conj_and];
+used12 [style=filled, fillcolor=white, label=used];
+used12 -> depleted4  [label=nsubjpass];
+proteins9 [style=filled, fillcolor=white, label=proteins];
+"GST-Rac6" [style=filled, fillcolor=white, label="GST-Rac"];
+proteins9 -> "GST-Rac6"  [label=amod];
+"GST-Cdc428" [style=filled, fillcolor=white, label="GST-Cdc42"];
+"GST-Rac6" -> "GST-Cdc428"  [label=conj_and];
+depleted4 -> proteins9  [label=appos];
+were10 [style=filled, fillcolor=white, label=were];
+used12 -> were10  [label=auxpass];
+therefore11 [style=filled, fillcolor=white, label=therefore];
+used12 -> therefore11  [label=advmod];
+used12 -> used12  [label=root];
+test14 [style=filled, fillcolor=white, label=test];
+to13 [style=filled, fillcolor=white, label=to];
+test14 -> to13  [label=aux];
+used12 -> test14  [label=xcomp];
+ability16 [style=filled, fillcolor=white, label=ability];
+their15 [style=filled, fillcolor=white, label=their];
+ability16 -> their15  [label=poss];
+test14 -> ability16  [label=dobj];
+interact18 [style=filled, fillcolor=white, label=interact];
+to17 [style=filled, fillcolor=white, label=to];
+interact18 -> to17  [label=aux];
+ability16 -> interact18  [label=vmod];
+"Sos-120" [style=filled, fillcolor=white, label="Sos-1"];
+interact18 -> "Sos-120"  [label=prep_with];
+}

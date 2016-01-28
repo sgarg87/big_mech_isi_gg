@@ -1,0 +1,40 @@
+digraph "In the case of Th2-type cytokines ,  enhanced production of IL-4 and IL-6 was reduced by treatment with anti-TGF - / 3 or anti-IL - IO ( Fig. 5B ) ." {
+label="In the case of Th2-type cytokines ,  enhanced production of IL-4 and IL-6 was
+reduced by treatment with anti-TGF - / 3 or anti-IL - IO ( Fig. 5B ) .";
+case3 [style=filled, fillcolor=white, label=case];
+the2 [style=filled, fillcolor=white, label=the];
+case3 -> the2  [label=det];
+reduced15 [style=filled, fillcolor=white, label=reduced];
+reduced15 -> case3  [label=prep_in];
+cytokines6 [style=filled, fillcolor=white, label=cytokines];
+"Th2-type5" [style=filled, fillcolor=white, label="Th2-type"];
+cytokines6 -> "Th2-type5"  [label=nn];
+case3 -> cytokines6  [label=prep_of];
+production9 [style=filled, fillcolor=white, label=production];
+enhanced8 [style=filled, fillcolor=white, label=enhanced];
+production9 -> enhanced8  [label=amod];
+reduced15 -> production9  [label=nsubjpass];
+"IL-411" [style=filled, fillcolor=white, label="IL-4"];
+production9 -> "IL-411"  [label=prep_of];
+"IL-613" [style=filled, fillcolor=white, label="IL-6"];
+"IL-411" -> "IL-613"  [label=conj_and];
+was14 [style=filled, fillcolor=white, label=was];
+reduced15 -> was14  [label=auxpass];
+reduced15 -> reduced15  [label=root];
+treatment17 [style=filled, fillcolor=white, label=treatment];
+reduced15 -> treatment17  [label=agent];
+IO26 [style=filled, fillcolor=white, label=IO];
+"anti-TGF19" [style=filled, fillcolor=white, label="anti-TGF"];
+IO26 -> "anti-TGF19"  [label=nn];
+322 [style=filled, fillcolor=white, label=3];
+"/21" [style=filled, fillcolor=white, label="/"];
+322 -> "/21"  [label=punct];
+IO26 -> 322  [label=dep];
+"anti-IL24" [style=filled, fillcolor=white, label="anti-IL"];
+322 -> "anti-IL24"  [label=conj_or];
+reduced15 -> IO26  [label=prep_with];
+"5B29" [style=filled, fillcolor=white, label="5B"];
+"Fig.28" [style=filled, fillcolor=white, label="Fig."];
+"5B29" -> "Fig.28"  [label=number];
+IO26 -> "5B29"  [label=dep];
+}

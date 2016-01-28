@@ -1,0 +1,57 @@
+digraph "Interestingly ,  in both sequences in the combination there is a reduction in pHH3 compared with the docetaxel alone group at that timepoint ( PD2 and PD7 ) ( 3.8 - and 2.5-fold change ,  respectively ; P < 0.0005 ) ." {
+label="Interestingly ,  in both sequences in the combination there is a reduction in
+pHH3 compared with the docetaxel alone group at that timepoint ( PD2 and PD7 ) (
+3.8 - and 2.5-fold change ,  respectively ; P < 0.0005 ) .";
+is10 [style=filled, fillcolor=white, label=is];
+Interestingly1 [style=filled, fillcolor=white, label=Interestingly];
+is10 -> Interestingly1  [label=advmod];
+sequences5 [style=filled, fillcolor=white, label=sequences];
+both4 [style=filled, fillcolor=white, label=both];
+sequences5 -> both4  [label=det];
+is10 -> sequences5  [label=prep_in];
+combination8 [style=filled, fillcolor=white, label=combination];
+the7 [style=filled, fillcolor=white, label=the];
+combination8 -> the7  [label=det];
+sequences5 -> combination8  [label=prep_in];
+there9 [style=filled, fillcolor=white, label=there];
+is10 -> there9  [label=expl];
+is10 -> is10  [label=root];
+reduction12 [style=filled, fillcolor=white, label=reduction];
+a11 [style=filled, fillcolor=white, label=a];
+reduction12 -> a11  [label=det];
+is10 -> reduction12  [label=nsubj];
+pHH314 [style=filled, fillcolor=white, label=pHH3];
+reduction12 -> pHH314  [label=prep_in];
+with16 [style=filled, fillcolor=white, label=with];
+pHH314 -> with16  [label=prepc_compared_with];
+group20 [style=filled, fillcolor=white, label=group];
+the17 [style=filled, fillcolor=white, label=the];
+group20 -> the17  [label=det];
+docetaxel18 [style=filled, fillcolor=white, label=docetaxel];
+group20 -> docetaxel18  [label=amod];
+alone19 [style=filled, fillcolor=white, label=alone];
+group20 -> alone19  [label=amod];
+pHH314 -> group20  [label=pobj];
+timepoint23 [style=filled, fillcolor=white, label=timepoint];
+that22 [style=filled, fillcolor=white, label=that];
+timepoint23 -> that22  [label=det];
+group20 -> timepoint23  [label=prep_at];
+PD225 [style=filled, fillcolor=white, label=PD2];
+timepoint23 -> PD225  [label=appos];
+PD72 [style=filled, fillcolor=white, label=PD7];
+PD225 -> PD72  [label=conj_and];
+"3.830" [style=filled, fillcolor=white, label="3.8"];
+timepoint23 -> "3.830"  [label=dep];
+change34 [style=filled, fillcolor=white, label=change];
+"2.5-fold33" [style=filled, fillcolor=white, label="2.5-fold"];
+change34 -> "2.5-fold33"  [label=amod];
+"3.830" -> change34  [label=conj_and];
+respectively36 [style=filled, fillcolor=white, label=respectively];
+change34 -> respectively36  [label=advmod];
+"<39" [style=filled, fillcolor=white, label="<"];
+P38 [style=filled, fillcolor=white, label=P];
+"<39" -> P38  [label=nn];
+change34 -> "<39"  [label=dep];
+"0.00054" [style=filled, fillcolor=white, label="0.0005"];
+"3.830" -> "0.00054"  [label=dep];
+}

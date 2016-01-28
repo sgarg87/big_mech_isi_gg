@@ -1,0 +1,36 @@
+digraph "Phospho-specific antibodies confirmed that treatment with AZD6244 inhibited phosphorylation of T669 of EGFR and the analogous T677 of HER2 ( Figure 5A ) ." {
+label="Phospho-specific antibodies confirmed that treatment with AZD6244 inhibited
+phosphorylation of T669 of EGFR and the analogous T677 of HER2 ( Figure 5A ) .";
+antibodies2 [style=filled, fillcolor=white, label=antibodies];
+"Phospho-specific1" [style=filled, fillcolor=white, label="Phospho-specific"];
+antibodies2 -> "Phospho-specific1"  [label=nn];
+confirmed3 [style=filled, fillcolor=white, label=confirmed];
+confirmed3 -> antibodies2  [label=nsubj];
+confirmed3 -> confirmed3  [label=root];
+inhibited8 [style=filled, fillcolor=white, label=inhibited];
+that4 [style=filled, fillcolor=white, label=that];
+inhibited8 -> that4  [label=mark];
+treatment5 [style=filled, fillcolor=white, label=treatment];
+inhibited8 -> treatment5  [label=nsubj];
+AZD62447 [style=filled, fillcolor=white, label=AZD6244];
+treatment5 -> AZD62447  [label=prep_with];
+confirmed3 -> inhibited8  [label=ccomp];
+phosphorylation9 [style=filled, fillcolor=white, label=phosphorylation];
+inhibited8 -> phosphorylation9  [label=dobj];
+T66911 [style=filled, fillcolor=white, label=T669];
+phosphorylation9 -> T66911  [label=prep_of];
+EGFR13 [style=filled, fillcolor=white, label=EGFR];
+T66911 -> EGFR13  [label=prep_of];
+T6771 [style=filled, fillcolor=white, label=T677];
+the15 [style=filled, fillcolor=white, label=the];
+T6771 -> the15  [label=det];
+analogous16 [style=filled, fillcolor=white, label=analogous];
+T6771 -> analogous16  [label=amod];
+T66911 -> T6771  [label=conj_and];
+HER219 [style=filled, fillcolor=white, label=HER2];
+T6771 -> HER219  [label=prep_of];
+Figure21 [style=filled, fillcolor=white, label=Figure];
+HER219 -> Figure21  [label=appos];
+"5A22" [style=filled, fillcolor=white, label="5A"];
+Figure21 -> "5A22"  [label=num];
+}

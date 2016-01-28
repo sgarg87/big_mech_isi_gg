@@ -1,0 +1,34 @@
+digraph "Previous studies have found that both the C-Raf and B-Raf proteins are targets of ERK-dependent feedback phosphorylation" {
+label="Previous studies have found that both the C-Raf and B-Raf proteins are targets
+of ERK-dependent feedback phosphorylation";
+studies2 [style=filled, fillcolor=white, label=studies];
+Previous1 [style=filled, fillcolor=white, label=Previous];
+studies2 -> Previous1  [label=amod];
+found4 [style=filled, fillcolor=white, label=found];
+found4 -> studies2  [label=nsubj];
+have3 [style=filled, fillcolor=white, label=have];
+found4 -> have3  [label=aux];
+found4 -> found4  [label=root];
+targets13 [style=filled, fillcolor=white, label=targets];
+that5 [style=filled, fillcolor=white, label=that];
+targets13 -> that5  [label=mark];
+"C-Raf8" [style=filled, fillcolor=white, label="C-Raf"];
+both6 [style=filled, fillcolor=white, label=both];
+"C-Raf8" -> both6  [label=preconj];
+the7 [style=filled, fillcolor=white, label=the];
+"C-Raf8" -> the7  [label=det];
+targets13 -> "C-Raf8"  [label=nsubj];
+proteins11 [style=filled, fillcolor=white, label=proteins];
+"B-Raf10" [style=filled, fillcolor=white, label="B-Raf"];
+proteins11 -> "B-Raf10"  [label=nn];
+"C-Raf8" -> proteins11  [label=conj_and];
+are12 [style=filled, fillcolor=white, label=are];
+targets13 -> are12  [label=cop];
+found4 -> targets13  [label=ccomp];
+phosphorylation17 [style=filled, fillcolor=white, label=phosphorylation];
+"ERK-dependent15" [style=filled, fillcolor=white, label="ERK-dependent"];
+phosphorylation17 -> "ERK-dependent15"  [label=amod];
+feedback16 [style=filled, fillcolor=white, label=feedback];
+phosphorylation17 -> feedback16  [label=nn];
+targets13 -> phosphorylation17  [label=prep_of];
+}

@@ -1,0 +1,45 @@
+digraph "We and others have shown that activation of IL-4 ( 23 ) and IFN - -LCB- alpha -RCB- receptors stimulates tyrosyl phosphorylation of IRS docking proteins ,  which depends upon Jak ," {
+label="We and others have shown that activation of IL-4 ( 23 ) and IFN - -LCB- alpha
+-RCB- receptors stimulates tyrosyl phosphorylation of IRS docking proteins ,
+which depends upon Jak ,";
+shown5 [style=filled, fillcolor=white, label=shown];
+We1 [style=filled, fillcolor=white, label=We];
+shown5 -> We1  [label=nsubj];
+others3 [style=filled, fillcolor=white, label=others];
+We1 -> others3  [label=conj_and];
+have4 [style=filled, fillcolor=white, label=have];
+shown5 -> have4  [label=aux];
+shown5 -> shown5  [label=root];
+activation7 [style=filled, fillcolor=white, label=activation];
+that6 [style=filled, fillcolor=white, label=that];
+activation7 -> that6  [label=det];
+shown5 -> activation7  [label=dobj];
+"IL-49" [style=filled, fillcolor=white, label="IL-4"];
+activation7 -> "IL-49"  [label=prep_of];
+2311 [style=filled, fillcolor=white, label=23];
+"IL-49" -> 2311  [label=appos];
+IFN14 [style=filled, fillcolor=white, label=IFN];
+"IL-49" -> IFN14  [label=conj_and];
+receptors19 [style=filled, fillcolor=white, label=receptors];
+alpha17 [style=filled, fillcolor=white, label=alpha];
+receptors19 -> alpha17  [label=nn];
+stimulates20 [style=filled, fillcolor=white, label=stimulates];
+stimulates20 -> receptors19  [label=nsubj];
+shown5 -> stimulates20  [label=parataxis];
+phosphorylation22 [style=filled, fillcolor=white, label=phosphorylation];
+tyrosyl21 [style=filled, fillcolor=white, label=tyrosyl];
+phosphorylation22 -> tyrosyl21  [label=amod];
+stimulates20 -> phosphorylation22  [label=dobj];
+proteins26 [style=filled, fillcolor=white, label=proteins];
+IRS24 [style=filled, fillcolor=white, label=IRS];
+proteins26 -> IRS24  [label=nn];
+docking25 [style=filled, fillcolor=white, label=docking];
+proteins26 -> docking25  [label=nn];
+phosphorylation22 -> proteins26  [label=prep_of];
+depends29 [style=filled, fillcolor=white, label=depends];
+which28 [style=filled, fillcolor=white, label=which];
+depends29 -> which28  [label=nsubj];
+proteins26 -> depends29  [label=rcmod];
+Jak31 [style=filled, fillcolor=white, label=Jak];
+depends29 -> Jak31  [label=prep_upon];
+}

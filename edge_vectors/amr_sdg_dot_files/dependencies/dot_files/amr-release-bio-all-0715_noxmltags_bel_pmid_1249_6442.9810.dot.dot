@@ -1,0 +1,34 @@
+digraph "Recombinant murine OSM stimulated eotaxin protein production and mRNA levels in the NIH 3T3 fibroblast cell line" {
+label="Recombinant murine OSM stimulated eotaxin protein production and mRNA levels in
+the NIH 3T3 fibroblast cell line";
+OSM3 [style=filled, fillcolor=white, label=OSM];
+Recombinant1 [style=filled, fillcolor=white, label=Recombinant];
+OSM3 -> Recombinant1  [label=nn];
+murine2 [style=filled, fillcolor=white, label=murine];
+OSM3 -> murine2  [label=nn];
+stimulated4 [style=filled, fillcolor=white, label=stimulated];
+stimulated4 -> OSM3  [label=nsubj];
+stimulated4 -> stimulated4  [label=root];
+production7 [style=filled, fillcolor=white, label=production];
+eotaxin5 [style=filled, fillcolor=white, label=eotaxin];
+production7 -> eotaxin5  [label=amod];
+protein6 [style=filled, fillcolor=white, label=protein];
+production7 -> protein6  [label=nn];
+stimulated4 -> production7  [label=dobj];
+levels10 [style=filled, fillcolor=white, label=levels];
+mRNA9 [style=filled, fillcolor=white, label=mRNA];
+levels10 -> mRNA9  [label=nn];
+production7 -> levels10  [label=conj_and];
+line17 [style=filled, fillcolor=white, label=line];
+the12 [style=filled, fillcolor=white, label=the];
+line17 -> the12  [label=det];
+NIH13 [style=filled, fillcolor=white, label=NIH];
+line17 -> NIH13  [label=nn];
+"3T314" [style=filled, fillcolor=white, label="3T3"];
+line17 -> "3T314"  [label=num];
+fibroblast15 [style=filled, fillcolor=white, label=fibroblast];
+line17 -> fibroblast15  [label=nn];
+cell16 [style=filled, fillcolor=white, label=cell];
+line17 -> cell16  [label=nn];
+production7 -> line17  [label=prep_in];
+}

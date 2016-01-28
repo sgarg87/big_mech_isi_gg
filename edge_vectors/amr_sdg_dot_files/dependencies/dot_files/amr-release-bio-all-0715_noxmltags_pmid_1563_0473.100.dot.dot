@@ -1,0 +1,43 @@
+digraph "Interestingly ,  however ,  despite appreciable immunofluorescence ,  localization of β-catenin and Ajuba appeared to be largely cytoplasmic rather than at cell-cell borders ( Figure 4A insets ) ." {
+label="Interestingly ,  however ,  despite appreciable immunofluorescence ,
+localization of β-catenin and Ajuba appeared to be largely cytoplasmic rather
+than at cell-cell borders ( Figure 4A insets ) .";
+appeared14 [style=filled, fillcolor=white, label=appeared];
+Interestingly1 [style=filled, fillcolor=white, label=Interestingly];
+appeared14 -> Interestingly1  [label=advmod];
+however3 [style=filled, fillcolor=white, label=however];
+appeared14 -> however3  [label=advmod];
+immunofluorescence7 [style=filled, fillcolor=white, label=immunofluorescence];
+appreciable6 [style=filled, fillcolor=white, label=appreciable];
+immunofluorescence7 -> appreciable6  [label=amod];
+appeared14 -> immunofluorescence7  [label=prep_despite];
+localization9 [style=filled, fillcolor=white, label=localization];
+appeared14 -> localization9  [label=nsubj];
+"β-catenin11" [style=filled, fillcolor=white, label="β-catenin"];
+localization9 -> "β-catenin11"  [label=prep_of];
+Ajuba13 [style=filled, fillcolor=white, label=Ajuba];
+"β-catenin11" -> Ajuba13  [label=conj_and];
+appeared14 -> appeared14  [label=root];
+cytoplasmic18 [style=filled, fillcolor=white, label=cytoplasmic];
+to15 [style=filled, fillcolor=white, label=to];
+cytoplasmic18 -> to15  [label=aux];
+be16 [style=filled, fillcolor=white, label=be];
+cytoplasmic18 -> be16  [label=cop];
+largely17 [style=filled, fillcolor=white, label=largely];
+cytoplasmic18 -> largely17  [label=advmod];
+appeared14 -> cytoplasmic18  [label=xcomp];
+rather19 [style=filled, fillcolor=white, label=rather];
+cytoplasmic18 -> rather19  [label=advmod];
+than20 [style=filled, fillcolor=white, label=than];
+cytoplasmic18 -> than20  [label=dep];
+borders23 [style=filled, fillcolor=white, label=borders];
+"cell-cell22" [style=filled, fillcolor=white, label="cell-cell"];
+borders23 -> "cell-cell22"  [label=amod];
+cytoplasmic18 -> borders23  [label=prep_at];
+"4A26" [style=filled, fillcolor=white, label="4A"];
+Figure25 [style=filled, fillcolor=white, label=Figure];
+"4A26" -> Figure25  [label=number];
+insets27 [style=filled, fillcolor=white, label=insets];
+insets27 -> "4A26"  [label=num];
+borders23 -> insets27  [label=appos];
+}

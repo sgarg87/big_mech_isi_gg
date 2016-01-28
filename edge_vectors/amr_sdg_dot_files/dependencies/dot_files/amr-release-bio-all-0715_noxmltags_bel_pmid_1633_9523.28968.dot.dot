@@ -1,0 +1,36 @@
+digraph "The 33-fold up-regulation of sphingosine kinase 1 in Ag-stimulated Lyn -- / -- BMMCs may also contribute to increased chemokine production" {
+label="The 33-fold up-regulation of sphingosine kinase 1 in Ag-stimulated Lyn -- / --
+BMMCs may also contribute to increased chemokine production";
+"up-regulation3" [style=filled, fillcolor=white, label="up-regulation"];
+The1 [style=filled, fillcolor=white, label=The];
+"up-regulation3" -> The1  [label=det];
+"33-fold2" [style=filled, fillcolor=white, label="33-fold"];
+"up-regulation3" -> "33-fold2"  [label=amod];
+contribute17 [style=filled, fillcolor=white, label=contribute];
+contribute17 -> "up-regulation3"  [label=nsubj];
+kinase6 [style=filled, fillcolor=white, label=kinase];
+sphingosine5 [style=filled, fillcolor=white, label=sphingosine];
+kinase6 -> sphingosine5  [label=amod];
+"up-regulation3" -> kinase6  [label=prep_of];
+17 [style=filled, fillcolor=white, label=1];
+kinase6 -> 17  [label=num];
+BMMCs14 [style=filled, fillcolor=white, label=BMMCs];
+"Ag-stimulated9" [style=filled, fillcolor=white, label="Ag-stimulated"];
+BMMCs14 -> "Ag-stimulated9"  [label=amod];
+Lyn10 [style=filled, fillcolor=white, label=Lyn];
+BMMCs14 -> Lyn10  [label=nn];
+"/12" [style=filled, fillcolor=white, label="/"];
+BMMCs14 -> "/12"  [label=dep];
+kinase6 -> BMMCs14  [label=prep_in];
+may15 [style=filled, fillcolor=white, label=may];
+contribute17 -> may15  [label=aux];
+also16 [style=filled, fillcolor=white, label=also];
+contribute17 -> also16  [label=advmod];
+contribute17 -> contribute17  [label=root];
+production21 [style=filled, fillcolor=white, label=production];
+increased19 [style=filled, fillcolor=white, label=increased];
+production21 -> increased19  [label=amod];
+chemokine20 [style=filled, fillcolor=white, label=chemokine];
+production21 -> chemokine20  [label=nn];
+contribute17 -> production21  [label=prep_to];
+}

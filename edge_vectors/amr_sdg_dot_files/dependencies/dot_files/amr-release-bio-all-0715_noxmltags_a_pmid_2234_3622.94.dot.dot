@@ -1,0 +1,57 @@
+digraph "Levels of the apoptotic marker cleaved caspase 3 ,  in tumour tissue taken from the docetaxel followed by selumetinib group ,  increased in this combination group ( 16.8-fold change from the control ; PFigure 4Aiii PD2 ) ." {
+label="Levels of the apoptotic marker cleaved caspase 3 ,  in tumour tissue taken from
+the docetaxel followed by selumetinib group ,  increased in this combination
+group ( 16.8-fold change from the control ; PFigure 4Aiii PD2 ) .";
+cleaved6 [style=filled, fillcolor=white, label=cleaved];
+Levels1 [style=filled, fillcolor=white, label=Levels];
+cleaved6 -> Levels1  [label=nsubj];
+marker5 [style=filled, fillcolor=white, label=marker];
+the3 [style=filled, fillcolor=white, label=the];
+marker5 -> the3  [label=det];
+apoptotic4 [style=filled, fillcolor=white, label=apoptotic];
+marker5 -> apoptotic4  [label=amod];
+Levels1 -> marker5  [label=prep_of];
+cleaved6 -> cleaved6  [label=root];
+increased22 [style=filled, fillcolor=white, label=increased];
+caspase7 [style=filled, fillcolor=white, label=caspase];
+increased22 -> caspase7  [label=nsubj];
+38 [style=filled, fillcolor=white, label=3];
+caspase7 -> 38  [label=num];
+tissue12 [style=filled, fillcolor=white, label=tissue];
+tumour11 [style=filled, fillcolor=white, label=tumour];
+tissue12 -> tumour11  [label=nn];
+caspase7 -> tissue12  [label=prep_in];
+taken13 [style=filled, fillcolor=white, label=taken];
+tissue12 -> taken13  [label=vmod];
+docetaxel16 [style=filled, fillcolor=white, label=docetaxel];
+the15 [style=filled, fillcolor=white, label=the];
+docetaxel16 -> the15  [label=det];
+taken13 -> docetaxel16  [label=prep_from];
+followed17 [style=filled, fillcolor=white, label=followed];
+docetaxel16 -> followed17  [label=vmod];
+group20 [style=filled, fillcolor=white, label=group];
+selumetinib19 [style=filled, fillcolor=white, label=selumetinib];
+group20 -> selumetinib19  [label=amod];
+followed17 -> group20  [label=agent];
+cleaved6 -> increased22  [label=ccomp];
+group26 [style=filled, fillcolor=white, label=group];
+this24 [style=filled, fillcolor=white, label=this];
+group26 -> this24  [label=det];
+combination25 [style=filled, fillcolor=white, label=combination];
+group26 -> combination25  [label=nn];
+increased22 -> group26  [label=prep_in];
+change29 [style=filled, fillcolor=white, label=change];
+"16.8-fold2" [style=filled, fillcolor=white, label="16.8-fold"];
+change29 -> "16.8-fold2"  [label=amod];
+group26 -> change29  [label=dep];
+control32 [style=filled, fillcolor=white, label=control];
+the31 [style=filled, fillcolor=white, label=the];
+control32 -> the31  [label=det];
+change29 -> control32  [label=prep_from];
+PD236 [style=filled, fillcolor=white, label=PD2];
+PFigure34 [style=filled, fillcolor=white, label=PFigure];
+PD236 -> PFigure34  [label=nn];
+"4Aiii35" [style=filled, fillcolor=white, label="4Aiii"];
+PD236 -> "4Aiii35"  [label=nn];
+control32 -> PD236  [label=dep];
+}

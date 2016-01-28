@@ -1,0 +1,40 @@
+digraph "Assessment of Ras dependency in 3D culture systems suggests that this assay system is a more stringent measure of Ras dependency ." {
+label="Assessment of Ras dependency in 3D culture systems suggests that this assay
+system is a more stringent measure of Ras dependency .";
+suggests9 [style=filled, fillcolor=white, label=suggests];
+Assessment1 [style=filled, fillcolor=white, label=Assessment];
+suggests9 -> Assessment1  [label=nsubj];
+dependency4 [style=filled, fillcolor=white, label=dependency];
+Ras3 [style=filled, fillcolor=white, label=Ras];
+dependency4 -> Ras3  [label=nn];
+Assessment1 -> dependency4  [label=prep_of];
+systems8 [style=filled, fillcolor=white, label=systems];
+"3D6" [style=filled, fillcolor=white, label="3D"];
+systems8 -> "3D6"  [label=num];
+culture7 [style=filled, fillcolor=white, label=culture];
+systems8 -> culture7  [label=nn];
+dependency4 -> systems8  [label=prep_in];
+suggests9 -> suggests9  [label=root];
+measure18 [style=filled, fillcolor=white, label=measure];
+that10 [style=filled, fillcolor=white, label=that];
+measure18 -> that10  [label=mark];
+system13 [style=filled, fillcolor=white, label=system];
+this11 [style=filled, fillcolor=white, label=this];
+system13 -> this11  [label=det];
+assay12 [style=filled, fillcolor=white, label=assay];
+system13 -> assay12  [label=amod];
+measure18 -> system13  [label=nsubj];
+is14 [style=filled, fillcolor=white, label=is];
+measure18 -> is14  [label=cop];
+a15 [style=filled, fillcolor=white, label=a];
+measure18 -> a15  [label=det];
+stringent17 [style=filled, fillcolor=white, label=stringent];
+more16 [style=filled, fillcolor=white, label=more];
+stringent17 -> more16  [label=advmod];
+measure18 -> stringent17  [label=amod];
+suggests9 -> measure18  [label=ccomp];
+dependency21 [style=filled, fillcolor=white, label=dependency];
+Ras20 [style=filled, fillcolor=white, label=Ras];
+dependency21 -> Ras20  [label=nn];
+measure18 -> dependency21  [label=prep_of];
+}

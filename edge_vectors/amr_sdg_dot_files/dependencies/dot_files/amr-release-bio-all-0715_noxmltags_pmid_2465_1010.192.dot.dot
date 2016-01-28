@@ -1,0 +1,40 @@
+digraph "However ,  for example ,  preventing binding using peptides or by indirect allosteric approaches has been considered ( see Wu et al. ,  2013 ) ." {
+label="However ,  for example ,  preventing binding using peptides or by indirect
+allosteric approaches has been considered ( see Wu et al. ,  2013 ) .";
+considered17 [style=filled, fillcolor=white, label=considered];
+However1 [style=filled, fillcolor=white, label=However];
+considered17 -> However1  [label=advmod];
+for3 [style=filled, fillcolor=white, label=for];
+considered17 -> for3  [label=csubjpass];
+example4 [style=filled, fillcolor=white, label=example];
+for3 -> example4  [label=pobj];
+preventing6 [style=filled, fillcolor=white, label=preventing];
+for3 -> preventing6  [label=conj_or];
+peptides9 [style=filled, fillcolor=white, label=peptides];
+binding7 [style=filled, fillcolor=white, label=binding];
+peptides9 -> binding7  [label=amod];
+using8 [style=filled, fillcolor=white, label=using];
+peptides9 -> using8  [label=amod];
+preventing6 -> peptides9  [label=dobj];
+by11 [style=filled, fillcolor=white, label=by];
+for3 -> by11  [label=conj_or];
+approaches14 [style=filled, fillcolor=white, label=approaches];
+indirect12 [style=filled, fillcolor=white, label=indirect];
+approaches14 -> indirect12  [label=amod];
+allosteric13 [style=filled, fillcolor=white, label=allosteric];
+approaches14 -> allosteric13  [label=amod];
+by11 -> approaches14  [label=pobj];
+has15 [style=filled, fillcolor=white, label=has];
+considered17 -> has15  [label=aux];
+been16 [style=filled, fillcolor=white, label=been];
+considered17 -> been16  [label=auxpass];
+considered17 -> considered17  [label=root];
+see19 [style=filled, fillcolor=white, label=see];
+considered17 -> see19  [label=parataxis];
+Wu20 [style=filled, fillcolor=white, label=Wu];
+see19 -> Wu20  [label=dobj];
+"al.22" [style=filled, fillcolor=white, label="al."];
+Wu20 -> "al.22"  [label=conj_et];
+201324 [style=filled, fillcolor=white, label=2013];
+Wu20 -> 201324  [label=amod];
+}

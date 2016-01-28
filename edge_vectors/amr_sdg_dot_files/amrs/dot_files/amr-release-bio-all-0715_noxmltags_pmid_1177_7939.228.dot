@@ -1,0 +1,26 @@
+digraph  {
+	graph [label="Figure 3."];
+	node [label="\N"];
+	a0	 [color=black,
+		gold_ind=0,
+		gold_label=figure,
+		label=figure,
+		test_ind=0,
+		test_label=figure];
+	a0 -> a0 [key=0,
+	color=black,
+	gold_label=TOP,
+	label=TOP,
+	test_label=TOP];
+"a0 3" [color=black,
+	gold_ind=-1,
+	gold_label=3,
+	label=3,
+	test_ind=-1,
+	test_label=3];
+a0 -> "a0 3" [key=0,
+color=black,
+gold_label=mod,
+label=mod,
+test_label=mod];
+}

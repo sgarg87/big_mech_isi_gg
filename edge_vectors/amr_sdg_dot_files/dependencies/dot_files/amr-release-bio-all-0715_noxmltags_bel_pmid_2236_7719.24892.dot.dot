@@ -1,0 +1,64 @@
+digraph "Cytokine determination within BAL fluid revealed that LPS challenged Tie2-adam17 - / - mice showed reduced release of IL-6 ( Fig 7A ,  3.9-fold ) and TNF-a ( Fig 7B ,  1.6-fold ) ,  whereas no effect was observed in PBS-challenged mice ." {
+label="Cytokine determination within BAL fluid revealed that LPS challenged
+Tie2-adam17 - / - mice showed reduced release of IL-6 ( Fig 7A ,  3.9-fold ) and
+TNF-a ( Fig 7B ,  1.6-fold ) ,  whereas no effect was observed in PBS-challenged
+mice .";
+determination2 [style=filled, fillcolor=white, label=determination];
+Cytokine1 [style=filled, fillcolor=white, label=Cytokine];
+determination2 -> Cytokine1  [label=amod];
+revealed6 [style=filled, fillcolor=white, label=revealed];
+revealed6 -> determination2  [label=nsubj];
+fluid5 [style=filled, fillcolor=white, label=fluid];
+BAL4 [style=filled, fillcolor=white, label=BAL];
+fluid5 -> BAL4  [label=nn];
+determination2 -> fluid5  [label=prep_within];
+revealed6 -> revealed6  [label=root];
+challenged9 [style=filled, fillcolor=white, label=challenged];
+that7 [style=filled, fillcolor=white, label=that];
+challenged9 -> that7  [label=mark];
+LPS8 [style=filled, fillcolor=white, label=LPS];
+challenged9 -> LPS8  [label=nsubj];
+revealed6 -> challenged9  [label=ccomp];
+"Tie2-adam170" [style=filled, fillcolor=white, label="Tie2-adam17"];
+challenged9 -> "Tie2-adam170"  [label=acomp];
+"/12" [style=filled, fillcolor=white, label="/"];
+"Tie2-adam170" -> "/12"  [label=dep];
+showed15 [style=filled, fillcolor=white, label=showed];
+mice14 [style=filled, fillcolor=white, label=mice];
+showed15 -> mice14  [label=nsubj];
+challenged9 -> showed15  [label=parataxis];
+release17 [style=filled, fillcolor=white, label=release];
+reduced16 [style=filled, fillcolor=white, label=reduced];
+release17 -> reduced16  [label=amod];
+showed15 -> release17  [label=dobj];
+"IL-619" [style=filled, fillcolor=white, label="IL-6"];
+release17 -> "IL-619"  [label=prep_of];
+"7A22" [style=filled, fillcolor=white, label="7A"];
+Fig21 [style=filled, fillcolor=white, label=Fig];
+"7A22" -> Fig21  [label=nn];
+"IL-619" -> "7A22"  [label=dep];
+"3.9-fold24" [style=filled, fillcolor=white, label="3.9-fold"];
+"7A22" -> "3.9-fold24"  [label=dep];
+"TNF-a27" [style=filled, fillcolor=white, label="TNF-a"];
+"IL-619" -> "TNF-a27"  [label=conj_and];
+"7B30" [style=filled, fillcolor=white, label="7B"];
+Fig29 [style=filled, fillcolor=white, label=Fig];
+"7B30" -> Fig29  [label=nn];
+"IL-619" -> "7B30"  [label=dep];
+"1.6-fold32" [style=filled, fillcolor=white, label="1.6-fold"];
+"7B30" -> "1.6-fold32"  [label=dep];
+observed39 [style=filled, fillcolor=white, label=observed];
+whereas35 [style=filled, fillcolor=white, label=whereas];
+observed39 -> whereas35  [label=mark];
+effect37 [style=filled, fillcolor=white, label=effect];
+no36 [style=filled, fillcolor=white, label=no];
+effect37 -> no36  [label=neg];
+observed39 -> effect37  [label=nsubjpass];
+was38 [style=filled, fillcolor=white, label=was];
+observed39 -> was38  [label=auxpass];
+challenged9 -> observed39  [label=advcl];
+mice42 [style=filled, fillcolor=white, label=mice];
+"PBS-challenged41" [style=filled, fillcolor=white, label="PBS-challenged"];
+mice42 -> "PBS-challenged41"  [label=amod];
+observed39 -> mice42  [label=prep_in];
+}

@@ -1,0 +1,57 @@
+digraph "Although inhibitors of PKC had no effect on this suppression ,  MAPK inhibitors completely prevented the TPA effect . RasGRP1 activates the MAPK pathway through activation of the small G protein H-Ras ." {
+label="Although inhibitors of PKC had no effect on this suppression ,  MAPK inhibitors
+completely prevented the TPA effect . RasGRP1 activates the MAPK pathway through
+activation of the small G protein H-Ras .";
+had5 [style=filled, fillcolor=white, label=had];
+Although1 [style=filled, fillcolor=white, label=Although];
+had5 -> Although1  [label=mark];
+inhibitors2 [style=filled, fillcolor=white, label=inhibitors];
+had5 -> inhibitors2  [label=nsubj];
+PKC4 [style=filled, fillcolor=white, label=PKC];
+inhibitors2 -> PKC4  [label=prep_of];
+activates21 [style=filled, fillcolor=white, label=activates];
+activates21 -> had5  [label=advcl];
+effect7 [style=filled, fillcolor=white, label=effect];
+no6 [style=filled, fillcolor=white, label=no];
+effect7 -> no6  [label=neg];
+had5 -> effect7  [label=dobj];
+suppression10 [style=filled, fillcolor=white, label=suppression];
+this9 [style=filled, fillcolor=white, label=this];
+suppression10 -> this9  [label=det];
+effect7 -> suppression10  [label=prep_on];
+inhibitors13 [style=filled, fillcolor=white, label=inhibitors];
+MAPK12 [style=filled, fillcolor=white, label=MAPK];
+inhibitors13 -> MAPK12  [label=nsubj];
+prevented15 [style=filled, fillcolor=white, label=prevented];
+prevented15 -> inhibitors13  [label=dep];
+completely14 [style=filled, fillcolor=white, label=completely];
+inhibitors13 -> completely14  [label=advmod];
+activates21 -> prevented15  [label=parataxis];
+effect18 [style=filled, fillcolor=white, label=effect];
+the16 [style=filled, fillcolor=white, label=the];
+effect18 -> the16  [label=det];
+TPA17 [style=filled, fillcolor=white, label=TPA];
+effect18 -> TPA17  [label=nn];
+prevented15 -> effect18  [label=nsubj];
+RasGRP120 [style=filled, fillcolor=white, label=RasGRP1];
+activates21 -> RasGRP120  [label=nsubj];
+activates21 -> activates21  [label=root];
+pathway24 [style=filled, fillcolor=white, label=pathway];
+the22 [style=filled, fillcolor=white, label=the];
+pathway24 -> the22  [label=det];
+MAPK23 [style=filled, fillcolor=white, label=MAPK];
+pathway24 -> MAPK23  [label=nn];
+activates21 -> pathway24  [label=dobj];
+activation26 [style=filled, fillcolor=white, label=activation];
+activates21 -> activation26  [label=prep_through];
+"H-Ras32" [style=filled, fillcolor=white, label="H-Ras"];
+the28 [style=filled, fillcolor=white, label=the];
+"H-Ras32" -> the28  [label=det];
+small29 [style=filled, fillcolor=white, label=small];
+"H-Ras32" -> small29  [label=amod];
+G30 [style=filled, fillcolor=white, label=G];
+"H-Ras32" -> G30  [label=nn];
+protein31 [style=filled, fillcolor=white, label=protein];
+"H-Ras32" -> protein31  [label=nn];
+activation26 -> "H-Ras32"  [label=prep_of];
+}

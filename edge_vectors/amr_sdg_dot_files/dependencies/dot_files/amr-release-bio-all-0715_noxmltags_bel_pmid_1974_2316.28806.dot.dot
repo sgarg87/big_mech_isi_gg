@@ -1,0 +1,40 @@
+digraph "An approximately 2.5-fold increase of Smad2 phosphorylation at Ser 465/467 was also detected in LDLR expressing ,  LRP1-deficient SMCs ( Figure 6B ,  C ) ." {
+label="An approximately 2.5-fold increase of Smad2 phosphorylation at Ser 465/467 was
+also detected in LDLR expressing ,  LRP1-deficient SMCs ( Figure 6B ,  C ) .";
+increase4 [style=filled, fillcolor=white, label=increase];
+An1 [style=filled, fillcolor=white, label=An];
+increase4 -> An1  [label=det];
+"2.5-fold3" [style=filled, fillcolor=white, label="2.5-fold"];
+approximately2 [style=filled, fillcolor=white, label=approximately];
+"2.5-fold3" -> approximately2  [label=advmod];
+increase4 -> "2.5-fold3"  [label=amod];
+detected13 [style=filled, fillcolor=white, label=detected];
+detected13 -> increase4  [label=nsubjpass];
+phosphorylation7 [style=filled, fillcolor=white, label=phosphorylation];
+Smad26 [style=filled, fillcolor=white, label=Smad2];
+phosphorylation7 -> Smad26  [label=amod];
+increase4 -> phosphorylation7  [label=prep_of];
+Ser9 [style=filled, fillcolor=white, label=Ser];
+phosphorylation7 -> Ser9  [label=prep_at];
+"465/46710" [style=filled, fillcolor=white, label="465/467"];
+Ser9 -> "465/46710"  [label=num];
+was11 [style=filled, fillcolor=white, label=was];
+detected13 -> was11  [label=auxpass];
+also12 [style=filled, fillcolor=white, label=also];
+detected13 -> also12  [label=advmod];
+detected13 -> detected13  [label=root];
+expressing16 [style=filled, fillcolor=white, label=expressing];
+LDLR15 [style=filled, fillcolor=white, label=LDLR];
+expressing16 -> LDLR15  [label=nn];
+detected13 -> expressing16  [label=prep_in];
+SMCs19 [style=filled, fillcolor=white, label=SMCs];
+"LRP1-deficient8" [style=filled, fillcolor=white, label="LRP1-deficient"];
+SMCs19 -> "LRP1-deficient8"  [label=nn];
+expressing16 -> SMCs19  [label=appos];
+Figure21 [style=filled, fillcolor=white, label=Figure];
+SMCs19 -> Figure21  [label=appos];
+"6B22" [style=filled, fillcolor=white, label="6B"];
+Figure21 -> "6B22"  [label=num];
+C24 [style=filled, fillcolor=white, label=C];
+Figure21 -> C24  [label=dep];
+}

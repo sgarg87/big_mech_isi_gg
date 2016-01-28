@@ -1,0 +1,47 @@
+digraph "IL-4 stimulated naïve and tumor-educated MØCM significantly augmented LM2 proliferation ( Figure 6C ,  green bars ) ,  with IL-4 treated tumor-educated MØCM being the most potent ." {
+label="IL-4 stimulated naïve and tumor-educated MØCM significantly augmented LM2
+proliferation ( Figure 6C ,  green bars ) ,  with IL-4 treated tumor-educated
+MØCM being the most potent .";
+"MØCM6" [style=filled, fillcolor=white, label="MØCM"];
+"IL-41" [style=filled, fillcolor=white, label="IL-4"];
+"MØCM6" -> "IL-41"  [label=nsubj];
+stimulated2 [style=filled, fillcolor=white, label=stimulated];
+"IL-41" -> stimulated2  [label=vmod];
+"naïve3" [style=filled, fillcolor=white, label="naïve"];
+stimulated2 -> "naïve3"  [label=acomp];
+"tumor-educated5" [style=filled, fillcolor=white, label="tumor-educated"];
+"naïve3" -> "tumor-educated5"  [label=conj_and];
+"MØCM6" -> "MØCM6"  [label=root];
+augmented8 [style=filled, fillcolor=white, label=augmented];
+significantly7 [style=filled, fillcolor=white, label=significantly];
+augmented8 -> significantly7  [label=advmod];
+proliferation10 [style=filled, fillcolor=white, label=proliferation];
+proliferation10 -> augmented8  [label=amod];
+LM29 [style=filled, fillcolor=white, label=LM2];
+proliferation10 -> LM29  [label=nn];
+"MØCM6" -> proliferation10  [label=dobj];
+Figure12 [style=filled, fillcolor=white, label=Figure];
+proliferation10 -> Figure12  [label=appos];
+"6C13" [style=filled, fillcolor=white, label="6C"];
+Figure12 -> "6C13"  [label=num];
+bars16 [style=filled, fillcolor=white, label=bars];
+green15 [style=filled, fillcolor=white, label=green];
+bars16 -> green15  [label=amod];
+Figure12 -> bars16  [label=dep];
+"IL-420" [style=filled, fillcolor=white, label="IL-4"];
+"MØCM6" -> "IL-420"  [label=prep_with];
+treated21 [style=filled, fillcolor=white, label=treated];
+"IL-420" -> treated21  [label=vmod];
+"MØCM23" [style=filled, fillcolor=white, label="MØCM"];
+"tumor-educated22" [style=filled, fillcolor=white, label="tumor-educated"];
+"MØCM23" -> "tumor-educated22"  [label=amod];
+treated21 -> "MØCM23"  [label=dobj];
+potent27 [style=filled, fillcolor=white, label=potent];
+being24 [style=filled, fillcolor=white, label=being];
+potent27 -> being24  [label=cop];
+the25 [style=filled, fillcolor=white, label=the];
+potent27 -> the25  [label=det];
+most26 [style=filled, fillcolor=white, label=most];
+potent27 -> most26  [label=advmod];
+treated21 -> potent27  [label=xcomp];
+}

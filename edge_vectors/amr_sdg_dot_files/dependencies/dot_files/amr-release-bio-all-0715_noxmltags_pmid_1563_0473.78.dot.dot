@@ -1,0 +1,28 @@
+digraph "Mice that integrated the transgene at the single-cell stage died at or shortly after birth ." {
+label="Mice that integrated the transgene at the single-cell stage died at or shortly
+after birth .";
+died10 [style=filled, fillcolor=white, label=died];
+Mice1 [style=filled, fillcolor=white, label=Mice];
+died10 -> Mice1  [label=nsubj];
+integrated3 [style=filled, fillcolor=white, label=integrated];
+that2 [style=filled, fillcolor=white, label=that];
+integrated3 -> that2  [label=nsubj];
+Mice1 -> integrated3  [label=rcmod];
+transgene5 [style=filled, fillcolor=white, label=transgene];
+the4 [style=filled, fillcolor=white, label=the];
+transgene5 -> the4  [label=det];
+integrated3 -> transgene5  [label=dobj];
+stage9 [style=filled, fillcolor=white, label=stage];
+the7 [style=filled, fillcolor=white, label=the];
+stage9 -> the7  [label=det];
+"single-cell8" [style=filled, fillcolor=white, label="single-cell"];
+stage9 -> "single-cell8"  [label=amod];
+transgene5 -> stage9  [label=prep_at];
+died10 -> died10  [label=root];
+at11 [style=filled, fillcolor=white, label=at];
+died10 -> at11  [label=advmod];
+shortly13 [style=filled, fillcolor=white, label=shortly];
+at11 -> shortly13  [label=conj_or];
+birth15 [style=filled, fillcolor=white, label=birth];
+died10 -> birth15  [label=prep_after];
+}

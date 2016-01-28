@@ -1,0 +1,49 @@
+digraph "In conclusion ,  the results suggest that ROS generation ,  through COX-2 up-regulation ,  may contribute to the active oncogenicity of mutant K-ras in the lung as a result of DNA damage" {
+label="In conclusion ,  the results suggest that ROS generation ,  through COX-2 up-
+regulation ,  may contribute to the active oncogenicity of mutant K-ras in the
+lung as a result of DNA damage";
+suggest6 [style=filled, fillcolor=white, label=suggest];
+conclusion2 [style=filled, fillcolor=white, label=conclusion];
+suggest6 -> conclusion2  [label=prep_in];
+results5 [style=filled, fillcolor=white, label=results];
+the4 [style=filled, fillcolor=white, label=the];
+results5 -> the4  [label=det];
+suggest6 -> results5  [label=nsubj];
+suggest6 -> suggest6  [label=root];
+contribute16 [style=filled, fillcolor=white, label=contribute];
+that7 [style=filled, fillcolor=white, label=that];
+contribute16 -> that7  [label=mark];
+generation9 [style=filled, fillcolor=white, label=generation];
+ROS8 [style=filled, fillcolor=white, label=ROS];
+generation9 -> ROS8  [label=nn];
+contribute16 -> generation9  [label=nsubj];
+"up-regulation13" [style=filled, fillcolor=white, label="up-regulation"];
+"COX-21" [style=filled, fillcolor=white, label="COX-2"];
+"up-regulation13" -> "COX-21"  [label=nn];
+contribute16 -> "up-regulation13"  [label=prep_through];
+may15 [style=filled, fillcolor=white, label=may];
+contribute16 -> may15  [label=aux];
+suggest6 -> contribute16  [label=ccomp];
+oncogenicity20 [style=filled, fillcolor=white, label=oncogenicity];
+the18 [style=filled, fillcolor=white, label=the];
+oncogenicity20 -> the18  [label=det];
+active19 [style=filled, fillcolor=white, label=active];
+oncogenicity20 -> active19  [label=amod];
+contribute16 -> oncogenicity20  [label=prep_to];
+"K-ras23" [style=filled, fillcolor=white, label="K-ras"];
+mutant22 [style=filled, fillcolor=white, label=mutant];
+"K-ras23" -> mutant22  [label=amod];
+oncogenicity20 -> "K-ras23"  [label=prep_of];
+lung26 [style=filled, fillcolor=white, label=lung];
+the25 [style=filled, fillcolor=white, label=the];
+lung26 -> the25  [label=det];
+contribute16 -> lung26  [label=prep_in];
+result29 [style=filled, fillcolor=white, label=result];
+a28 [style=filled, fillcolor=white, label=a];
+result29 -> a28  [label=det];
+lung26 -> result29  [label=prep_as];
+damage32 [style=filled, fillcolor=white, label=damage];
+DNA31 [style=filled, fillcolor=white, label=DNA];
+damage32 -> DNA31  [label=nn];
+result29 -> damage32  [label=prep_of];
+}

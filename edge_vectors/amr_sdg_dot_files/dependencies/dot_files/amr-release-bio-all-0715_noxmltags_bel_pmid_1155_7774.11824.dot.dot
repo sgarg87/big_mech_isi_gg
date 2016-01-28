@@ -1,0 +1,30 @@
+digraph "PPARalpha ( NR1C1 ) controls lipid oxidation and clearance in hepatocytes and PPARgamma ( NR1C3 ) promotes preadipocyte differentiation and lipogenesis ." {
+label="PPARalpha ( NR1C1 ) controls lipid oxidation and clearance in hepatocytes and
+PPARgamma ( NR1C3 ) promotes preadipocyte differentiation and lipogenesis .";
+controls5 [style=filled, fillcolor=white, label=controls];
+PPARalpha1 [style=filled, fillcolor=white, label=PPARalpha];
+controls5 -> PPARalpha1  [label=nsubj];
+NR1C13 [style=filled, fillcolor=white, label=NR1C1];
+PPARalpha1 -> NR1C13  [label=appos];
+controls5 -> controls5  [label=root];
+oxidation7 [style=filled, fillcolor=white, label=oxidation];
+lipid6 [style=filled, fillcolor=white, label=lipid];
+oxidation7 -> lipid6  [label=nn];
+controls5 -> oxidation7  [label=dobj];
+clearance9 [style=filled, fillcolor=white, label=clearance];
+oxidation7 -> clearance9  [label=conj_and];
+hepatocytes11 [style=filled, fillcolor=white, label=hepatocytes];
+oxidation7 -> hepatocytes11  [label=prep_in];
+promotes17 [style=filled, fillcolor=white, label=promotes];
+PPARgamma13 [style=filled, fillcolor=white, label=PPARgamma];
+promotes17 -> PPARgamma13  [label=nsubj];
+NR1C315 [style=filled, fillcolor=white, label=NR1C3];
+PPARgamma13 -> NR1C315  [label=appos];
+controls5 -> promotes17  [label=conj_and];
+differentiation19 [style=filled, fillcolor=white, label=differentiation];
+preadipocyte18 [style=filled, fillcolor=white, label=preadipocyte];
+differentiation19 -> preadipocyte18  [label=amod];
+promotes17 -> differentiation19  [label=dobj];
+lipogenesis21 [style=filled, fillcolor=white, label=lipogenesis];
+promotes17 -> lipogenesis21  [label=conj_and];
+}

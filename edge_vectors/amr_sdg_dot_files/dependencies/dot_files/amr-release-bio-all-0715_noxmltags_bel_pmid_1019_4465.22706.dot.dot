@@ -1,0 +1,51 @@
+digraph "c-Cbl associated protein ( CAP ) that has three sequential SH3 domains is specifically expressed in insulin-responsive cell types and associates with both c - Cbl and the insulin receptor" {
+label="c-Cbl associated protein ( CAP ) that has three sequential SH3 domains is
+specifically expressed in insulin-responsive cell types and associates with both
+c - Cbl and the insulin receptor";
+"c-Cbl1" [style=filled, fillcolor=white, label="c-Cbl"];
+"c-Cbl1" -> "c-Cbl1"  [label=root];
+associated2 [style=filled, fillcolor=white, label=associated];
+"c-Cbl1" -> associated2  [label=vmod];
+protein3 [style=filled, fillcolor=white, label=protein];
+associated2 -> protein3  [label=dobj];
+CAP5 [style=filled, fillcolor=white, label=CAP];
+protein3 -> CAP5  [label=appos];
+has8 [style=filled, fillcolor=white, label=has];
+that7 [style=filled, fillcolor=white, label=that];
+has8 -> that7  [label=nsubj];
+protein3 -> has8  [label=rcmod];
+domains12 [style=filled, fillcolor=white, label=domains];
+three9 [style=filled, fillcolor=white, label=three];
+domains12 -> three9  [label=num];
+sequential10 [style=filled, fillcolor=white, label=sequential];
+domains12 -> sequential10  [label=amod];
+SH311 [style=filled, fillcolor=white, label=SH3];
+domains12 -> SH311  [label=nn];
+has8 -> domains12  [label=dobj];
+expressed15 [style=filled, fillcolor=white, label=expressed];
+is13 [style=filled, fillcolor=white, label=is];
+expressed15 -> is13  [label=auxpass];
+specifically14 [style=filled, fillcolor=white, label=specifically];
+expressed15 -> specifically14  [label=advmod];
+domains12 -> expressed15  [label=rcmod];
+types19 [style=filled, fillcolor=white, label=types];
+"insulin-responsive17" [style=filled, fillcolor=white, label="insulin-responsive"];
+types19 -> "insulin-responsive17"  [label=amod];
+cell18 [style=filled, fillcolor=white, label=cell];
+types19 -> cell18  [label=nn];
+expressed15 -> types19  [label=prep_in];
+associates21 [style=filled, fillcolor=white, label=associates];
+types19 -> associates21  [label=conj_and];
+c24 [style=filled, fillcolor=white, label=c];
+both23 [style=filled, fillcolor=white, label=both];
+c24 -> both23  [label=det];
+types19 -> c24  [label=prep_with];
+Cbl26 [style=filled, fillcolor=white, label=Cbl];
+"c-Cbl1" -> Cbl26  [label=dep];
+receptor30 [style=filled, fillcolor=white, label=receptor];
+the28 [style=filled, fillcolor=white, label=the];
+receptor30 -> the28  [label=det];
+insulin29 [style=filled, fillcolor=white, label=insulin];
+receptor30 -> insulin29  [label=nn];
+Cbl26 -> receptor30  [label=conj_and];
+}

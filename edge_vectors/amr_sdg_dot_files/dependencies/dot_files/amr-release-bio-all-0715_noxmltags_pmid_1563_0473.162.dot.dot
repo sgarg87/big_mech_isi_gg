@@ -1,0 +1,58 @@
+digraph "Taken together ,  these results suggested that in keratinocytes ,  TGF-β2 signaling results in a pSMAD2-dependent transient activation of the Snail gene ,  and that maintenance of Snail protein relies ,  in part ,  upon sustained promoter activity ." {
+label="Taken together ,  these results suggested that in keratinocytes ,  TGF-β2
+signaling results in a pSMAD2-dependent transient activation of the Snail gene ,
+and that maintenance of Snail protein relies ,  in part ,  upon sustained
+promoter activity .";
+suggested6 [style=filled, fillcolor=white, label=suggested];
+Taken1 [style=filled, fillcolor=white, label=Taken];
+suggested6 -> Taken1  [label=vmod];
+together2 [style=filled, fillcolor=white, label=together];
+Taken1 -> together2  [label=advmod];
+results5 [style=filled, fillcolor=white, label=results];
+these4 [style=filled, fillcolor=white, label=these];
+results5 -> these4  [label=det];
+suggested6 -> results5  [label=nsubj];
+suggested6 -> suggested6  [label=root];
+signaling12 [style=filled, fillcolor=white, label=signaling];
+that7 [style=filled, fillcolor=white, label=that];
+signaling12 -> that7  [label=nsubj];
+keratinocytes9 [style=filled, fillcolor=white, label=keratinocytes];
+signaling12 -> keratinocytes9  [label=prep_in];
+"TGF-β211" [style=filled, fillcolor=white, label="TGF-β2"];
+keratinocytes9 -> "TGF-β211"  [label=appos];
+suggested6 -> signaling12  [label=ccomp];
+results13 [style=filled, fillcolor=white, label=results];
+signaling12 -> results13  [label=dobj];
+activation18 [style=filled, fillcolor=white, label=activation];
+a15 [style=filled, fillcolor=white, label=a];
+activation18 -> a15  [label=det];
+"pSMAD2-dependent16" [style=filled, fillcolor=white, label="pSMAD2-dependent"];
+activation18 -> "pSMAD2-dependent16"  [label=amod];
+transient17 [style=filled, fillcolor=white, label=transient];
+activation18 -> transient17  [label=amod];
+signaling12 -> activation18  [label=prep_in];
+gene22 [style=filled, fillcolor=white, label=gene];
+the20 [style=filled, fillcolor=white, label=the];
+gene22 -> the20  [label=det];
+Snail21 [style=filled, fillcolor=white, label=Snail];
+gene22 -> Snail21  [label=nn];
+activation18 -> gene22  [label=prep_of];
+relies30 [style=filled, fillcolor=white, label=relies];
+that25 [style=filled, fillcolor=white, label=that];
+relies30 -> that25  [label=mark];
+maintenance26 [style=filled, fillcolor=white, label=maintenance];
+relies30 -> maintenance26  [label=nsubj];
+protein29 [style=filled, fillcolor=white, label=protein];
+Snail28 [style=filled, fillcolor=white, label=Snail];
+protein29 -> Snail28  [label=nn];
+maintenance26 -> protein29  [label=prep_of];
+signaling12 -> relies30  [label=conj_and];
+part33 [style=filled, fillcolor=white, label=part];
+relies30 -> part33  [label=prep_in];
+activity38 [style=filled, fillcolor=white, label=activity];
+sustained36 [style=filled, fillcolor=white, label=sustained];
+activity38 -> sustained36  [label=amod];
+promoter37 [style=filled, fillcolor=white, label=promoter];
+activity38 -> promoter37  [label=nn];
+relies30 -> activity38  [label=prep_upon];
+}

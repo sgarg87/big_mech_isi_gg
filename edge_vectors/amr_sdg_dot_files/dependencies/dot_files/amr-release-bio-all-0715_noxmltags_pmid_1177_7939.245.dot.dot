@@ -1,0 +1,53 @@
+digraph "( C ) Quiescent NIH-3T3 fibroblasts were microinjected with an empty vector together with rabbit IgG ( left ) or with an HA-tagged E3b1 expression vector ( right ) followed by treatment with 10 % serum ." {
+label="( C ) Quiescent NIH-3T3 fibroblasts were microinjected with an empty vector
+together with rabbit IgG ( left ) or with an HA-tagged E3b1 expression vector (
+right ) followed by treatment with 10 % serum .";
+"NIH-3T35" [style=filled, fillcolor=white, label="NIH-3T3"];
+C2 [style=filled, fillcolor=white, label=C];
+"NIH-3T35" -> C2  [label=appos];
+Quiescent4 [style=filled, fillcolor=white, label=Quiescent];
+"NIH-3T35" -> Quiescent4  [label=nn];
+fibroblasts6 [style=filled, fillcolor=white, label=fibroblasts];
+fibroblasts6 -> "NIH-3T35"  [label=nn];
+microinjected8 [style=filled, fillcolor=white, label=microinjected];
+microinjected8 -> fibroblasts6  [label=nsubjpass];
+were7 [style=filled, fillcolor=white, label=were];
+microinjected8 -> were7  [label=auxpass];
+microinjected8 -> microinjected8  [label=root];
+vector12 [style=filled, fillcolor=white, label=vector];
+an10 [style=filled, fillcolor=white, label=an];
+vector12 -> an10  [label=det];
+empty11 [style=filled, fillcolor=white, label=empty];
+vector12 -> empty11  [label=amod];
+microinjected8 -> vector12  [label=prep_with];
+IgG16 [style=filled, fillcolor=white, label=IgG];
+rabbit15 [style=filled, fillcolor=white, label=rabbit];
+IgG16 -> rabbit15  [label=nn];
+vector12 -> IgG16  [label=prep_together_with];
+left18 [style=filled, fillcolor=white, label=left];
+vector12 -> left18  [label=dep];
+with21 [style=filled, fillcolor=white, label=with];
+vector12 -> with21  [label=conj_or];
+vector26 [style=filled, fillcolor=white, label=vector];
+an22 [style=filled, fillcolor=white, label=an];
+vector26 -> an22  [label=det];
+"HA-tagged23" [style=filled, fillcolor=white, label="HA-tagged"];
+vector26 -> "HA-tagged23"  [label=amod];
+E3b124 [style=filled, fillcolor=white, label=E3b1];
+vector26 -> E3b124  [label=amod];
+expression25 [style=filled, fillcolor=white, label=expression];
+vector26 -> expression25  [label=nn];
+with21 -> vector26  [label=pobj];
+right28 [style=filled, fillcolor=white, label=right];
+vector26 -> right28  [label=appos];
+followed30 [style=filled, fillcolor=white, label=followed];
+vector26 -> followed30  [label=vmod];
+treatment32 [style=filled, fillcolor=white, label=treatment];
+followed30 -> treatment32  [label=agent];
+"%35" [style=filled, fillcolor=white, label="%"];
+1034 [style=filled, fillcolor=white, label=10];
+"%35" -> 1034  [label=number];
+serum36 [style=filled, fillcolor=white, label=serum];
+serum36 -> "%35"  [label=amod];
+followed30 -> serum36  [label=prep_with];
+}

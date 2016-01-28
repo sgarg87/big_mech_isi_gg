@@ -1,0 +1,51 @@
+digraph "Indeed ,  serpinE2 expression was significantly induced by more that 28-fold ( p < 0.05 ) in cells overexpressing activated MEK1 in comparison to cells expressing wtMEK ( data not shown ) ." {
+label="Indeed ,  serpinE2 expression was significantly induced by more that 28-fold (
+p < 0.05 ) in cells overexpressing activated MEK1 in comparison to cells
+expressing wtMEK ( data not shown ) .";
+induced7 [style=filled, fillcolor=white, label=induced];
+Indeed1 [style=filled, fillcolor=white, label=Indeed];
+induced7 -> Indeed1  [label=advmod];
+expression4 [style=filled, fillcolor=white, label=expression];
+serpinE23 [style=filled, fillcolor=white, label=serpinE2];
+expression4 -> serpinE23  [label=amod];
+induced7 -> expression4  [label=nsubjpass];
+was5 [style=filled, fillcolor=white, label=was];
+induced7 -> was5  [label=auxpass];
+significantly6 [style=filled, fillcolor=white, label=significantly];
+induced7 -> significantly6  [label=advmod];
+induced7 -> induced7  [label=root];
+"28-fold11" [style=filled, fillcolor=white, label="28-fold"];
+more9 [style=filled, fillcolor=white, label=more];
+"28-fold11" -> more9  [label=advmod];
+that10 [style=filled, fillcolor=white, label=that];
+"28-fold11" -> that10  [label=advmod];
+induced7 -> "28-fold11"  [label=agent];
+"<14" [style=filled, fillcolor=white, label="<"];
+p13 [style=filled, fillcolor=white, label=p];
+"<14" -> p13  [label=dep];
+"28-fold11" -> "<14"  [label=dep];
+"0.051" [style=filled, fillcolor=white, label="0.05"];
+"<14" -> "0.051"  [label=dep];
+cells18 [style=filled, fillcolor=white, label=cells];
+"28-fold11" -> cells18  [label=prep_in];
+overexpressing19 [style=filled, fillcolor=white, label=overexpressing];
+cells18 -> overexpressing19  [label=vmod];
+MEK12 [style=filled, fillcolor=white, label=MEK1];
+activated20 [style=filled, fillcolor=white, label=activated];
+MEK12 -> activated20  [label=nn];
+overexpressing19 -> MEK12  [label=dobj];
+comparison23 [style=filled, fillcolor=white, label=comparison];
+MEK12 -> comparison23  [label=prep_in];
+cells25 [style=filled, fillcolor=white, label=cells];
+overexpressing19 -> cells25  [label=prep_to];
+expressing26 [style=filled, fillcolor=white, label=expressing];
+overexpressing19 -> expressing26  [label=vmod];
+wtMEK27 [style=filled, fillcolor=white, label=wtMEK];
+expressing26 -> wtMEK27  [label=dobj];
+data29 [style=filled, fillcolor=white, label=data];
+cells18 -> data29  [label=dep];
+shown31 [style=filled, fillcolor=white, label=shown];
+not30 [style=filled, fillcolor=white, label=not];
+shown31 -> not30  [label=neg];
+data29 -> shown31  [label=vmod];
+}

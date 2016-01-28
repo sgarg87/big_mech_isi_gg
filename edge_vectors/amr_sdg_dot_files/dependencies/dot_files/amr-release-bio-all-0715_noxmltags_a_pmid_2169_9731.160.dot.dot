@@ -1,0 +1,34 @@
+digraph "Taken together ,  these experiments demonstrate that IGF-1 is responsible for the majority of neoplastic growth stimulated by MØCM ." {
+label="Taken together ,  these experiments demonstrate that IGF-1 is responsible for
+the majority of neoplastic growth stimulated by MØCM .";
+demonstrate6 [style=filled, fillcolor=white, label=demonstrate];
+Taken1 [style=filled, fillcolor=white, label=Taken];
+demonstrate6 -> Taken1  [label=vmod];
+together2 [style=filled, fillcolor=white, label=together];
+Taken1 -> together2  [label=advmod];
+experiments5 [style=filled, fillcolor=white, label=experiments];
+these4 [style=filled, fillcolor=white, label=these];
+experiments5 -> these4  [label=det];
+demonstrate6 -> experiments5  [label=nsubj];
+demonstrate6 -> demonstrate6  [label=root];
+responsible10 [style=filled, fillcolor=white, label=responsible];
+that7 [style=filled, fillcolor=white, label=that];
+responsible10 -> that7  [label=mark];
+"IGF-18" [style=filled, fillcolor=white, label="IGF-1"];
+responsible10 -> "IGF-18"  [label=nsubj];
+is9 [style=filled, fillcolor=white, label=is];
+responsible10 -> is9  [label=cop];
+demonstrate6 -> responsible10  [label=ccomp];
+majority13 [style=filled, fillcolor=white, label=majority];
+the12 [style=filled, fillcolor=white, label=the];
+majority13 -> the12  [label=det];
+responsible10 -> majority13  [label=prep_for];
+growth16 [style=filled, fillcolor=white, label=growth];
+neoplastic15 [style=filled, fillcolor=white, label=neoplastic];
+growth16 -> neoplastic15  [label=amod];
+majority13 -> growth16  [label=prep_of];
+stimulated17 [style=filled, fillcolor=white, label=stimulated];
+growth16 -> stimulated17  [label=vmod];
+"MØCM19" [style=filled, fillcolor=white, label="MØCM"];
+stimulated17 -> "MØCM19"  [label=agent];
+}

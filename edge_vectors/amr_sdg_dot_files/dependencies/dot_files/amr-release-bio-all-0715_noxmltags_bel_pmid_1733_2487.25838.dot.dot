@@ -1,0 +1,28 @@
+digraph "Exposure of CD40L enhanced the constitutive production of IL-6 and MCP-1 protein ( Figure 4A and 4B ) ." {
+label="Exposure of CD40L enhanced the constitutive production of IL-6 and MCP-1
+protein ( Figure 4A and 4B ) .";
+enhanced4 [style=filled, fillcolor=white, label=enhanced];
+Exposure1 [style=filled, fillcolor=white, label=Exposure];
+enhanced4 -> Exposure1  [label=nsubj];
+CD40L3 [style=filled, fillcolor=white, label=CD40L];
+Exposure1 -> CD40L3  [label=prep_of];
+enhanced4 -> enhanced4  [label=root];
+production7 [style=filled, fillcolor=white, label=production];
+the5 [style=filled, fillcolor=white, label=the];
+production7 -> the5  [label=det];
+constitutive6 [style=filled, fillcolor=white, label=constitutive];
+production7 -> constitutive6  [label=amod];
+enhanced4 -> production7  [label=dobj];
+protein12 [style=filled, fillcolor=white, label=protein];
+"IL-69" [style=filled, fillcolor=white, label="IL-6"];
+protein12 -> "IL-69"  [label=amod];
+"MCP-1" [style=filled, fillcolor=white, label="MCP-1"];
+"IL-69" -> "MCP-1"  [label=conj_and];
+production7 -> protein12  [label=prep_of];
+Figure14 [style=filled, fillcolor=white, label=Figure];
+protein12 -> Figure14  [label=appos];
+"4A15" [style=filled, fillcolor=white, label="4A"];
+Figure14 -> "4A15"  [label=num];
+"4B17" [style=filled, fillcolor=white, label="4B"];
+"4A15" -> "4B17"  [label=conj_and];
+}

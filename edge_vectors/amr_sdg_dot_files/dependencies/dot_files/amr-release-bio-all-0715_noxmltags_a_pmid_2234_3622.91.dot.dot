@@ -1,0 +1,34 @@
+digraph "In schedule 2 ,  pHH3 levels were seen to increase following docetaxel ( PD7 ) ( 3.4-fold ; PFigure 4Aii and 4Bii ) ." {
+label="In schedule 2 ,  pHH3 levels were seen to increase following docetaxel ( PD7 )
+( 3.4-fold ; PFigure 4Aii and 4Bii ) .";
+seen8 [style=filled, fillcolor=white, label=seen];
+schedule2 [style=filled, fillcolor=white, label=schedule];
+seen8 -> schedule2  [label=prep_in];
+23 [style=filled, fillcolor=white, label=2];
+schedule2 -> 23  [label=num];
+levels6 [style=filled, fillcolor=white, label=levels];
+pHH35 [style=filled, fillcolor=white, label=pHH3];
+levels6 -> pHH35  [label=amod];
+seen8 -> levels6  [label=nsubjpass];
+were7 [style=filled, fillcolor=white, label=were];
+seen8 -> were7  [label=auxpass];
+seen8 -> seen8  [label=root];
+increase10 [style=filled, fillcolor=white, label=increase];
+to9 [style=filled, fillcolor=white, label=to];
+increase10 -> to9  [label=aux];
+seen8 -> increase10  [label=xcomp];
+docetaxel12 [style=filled, fillcolor=white, label=docetaxel];
+following11 [style=filled, fillcolor=white, label=following];
+docetaxel12 -> following11  [label=amod];
+increase10 -> docetaxel12  [label=dobj];
+PD714 [style=filled, fillcolor=white, label=PD7];
+docetaxel12 -> PD714  [label=appos];
+"3.4-fold17" [style=filled, fillcolor=white, label="3.4-fold"];
+docetaxel12 -> "3.4-fold17"  [label=dep];
+"4Aii20" [style=filled, fillcolor=white, label="4Aii"];
+PFigure19 [style=filled, fillcolor=white, label=PFigure];
+"4Aii20" -> PFigure19  [label=nn];
+"3.4-fold17" -> "4Aii20"  [label=dep];
+"4Bii22" [style=filled, fillcolor=white, label="4Bii"];
+"4Aii20" -> "4Bii22"  [label=conj_and];
+}

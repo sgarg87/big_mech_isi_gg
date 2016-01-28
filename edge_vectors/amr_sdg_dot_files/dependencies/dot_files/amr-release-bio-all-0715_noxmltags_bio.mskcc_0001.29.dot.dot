@@ -1,0 +1,40 @@
+digraph "For these studies ,  FBm or S729A mutations were incorporated into a number of oncogenic B-Raf proteins that exhibit various levels of kinase activity ." {
+label="For these studies ,  FBm or S729A mutations were incorporated into a number of
+oncogenic B-Raf proteins that exhibit various levels of kinase activity .";
+studies3 [style=filled, fillcolor=white, label=studies];
+these2 [style=filled, fillcolor=white, label=these];
+studies3 -> these2  [label=det];
+incorporated10 [style=filled, fillcolor=white, label=incorporated];
+incorporated10 -> studies3  [label=prep_for];
+mutations8 [style=filled, fillcolor=white, label=mutations];
+FBm5 [style=filled, fillcolor=white, label=FBm];
+mutations8 -> FBm5  [label=nn];
+S729A [style=filled, fillcolor=white, label=S729A];
+FBm5 -> S729A  [label=conj_or];
+incorporated10 -> mutations8  [label=nsubjpass];
+were9 [style=filled, fillcolor=white, label=were];
+incorporated10 -> were9  [label=auxpass];
+incorporated10 -> incorporated10  [label=root];
+number13 [style=filled, fillcolor=white, label=number];
+a12 [style=filled, fillcolor=white, label=a];
+number13 -> a12  [label=det];
+incorporated10 -> number13  [label=prep_into];
+proteins17 [style=filled, fillcolor=white, label=proteins];
+oncogenic15 [style=filled, fillcolor=white, label=oncogenic];
+proteins17 -> oncogenic15  [label=amod];
+"B-Raf16" [style=filled, fillcolor=white, label="B-Raf"];
+proteins17 -> "B-Raf16"  [label=amod];
+number13 -> proteins17  [label=prep_of];
+exhibit19 [style=filled, fillcolor=white, label=exhibit];
+that18 [style=filled, fillcolor=white, label=that];
+exhibit19 -> that18  [label=nsubj];
+proteins17 -> exhibit19  [label=rcmod];
+levels21 [style=filled, fillcolor=white, label=levels];
+various20 [style=filled, fillcolor=white, label=various];
+levels21 -> various20  [label=amod];
+exhibit19 -> levels21  [label=dobj];
+activity24 [style=filled, fillcolor=white, label=activity];
+kinase23 [style=filled, fillcolor=white, label=kinase];
+activity24 -> kinase23  [label=amod];
+levels21 -> activity24  [label=prep_of];
+}

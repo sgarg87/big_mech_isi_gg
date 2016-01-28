@@ -1,0 +1,28 @@
+digraph "Results are expressed as a percentage of injected cells incorporating BrdU respect to uninjected ones ." {
+label="Results are expressed as a percentage of injected cells incorporating BrdU
+respect to uninjected ones .";
+expressed3 [style=filled, fillcolor=white, label=expressed];
+Results1 [style=filled, fillcolor=white, label=Results];
+expressed3 -> Results1  [label=nsubjpass];
+are2 [style=filled, fillcolor=white, label=are];
+expressed3 -> are2  [label=auxpass];
+expressed3 -> expressed3  [label=root];
+percentage6 [style=filled, fillcolor=white, label=percentage];
+a5 [style=filled, fillcolor=white, label=a];
+percentage6 -> a5  [label=det];
+expressed3 -> percentage6  [label=prep_as];
+cells9 [style=filled, fillcolor=white, label=cells];
+injected8 [style=filled, fillcolor=white, label=injected];
+cells9 -> injected8  [label=amod];
+percentage6 -> cells9  [label=prep_of];
+incorporating10 [style=filled, fillcolor=white, label=incorporating];
+expressed3 -> incorporating10  [label=xcomp];
+respect12 [style=filled, fillcolor=white, label=respect];
+BrdU11 [style=filled, fillcolor=white, label=BrdU];
+respect12 -> BrdU11  [label=nn];
+incorporating10 -> respect12  [label=dobj];
+ones15 [style=filled, fillcolor=white, label=ones];
+uninjected14 [style=filled, fillcolor=white, label=uninjected];
+ones15 -> uninjected14  [label=amod];
+incorporating10 -> ones15  [label=prep_to];
+}

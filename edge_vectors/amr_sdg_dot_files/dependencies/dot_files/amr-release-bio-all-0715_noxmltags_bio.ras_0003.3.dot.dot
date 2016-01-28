@@ -1,0 +1,32 @@
+digraph "His - ubiquitinated proteins were purified by Co2 + metal affinity chromatography in 8M urea denaturing conditions ." {
+label="His - ubiquitinated proteins were purified by Co2 + metal affinity
+chromatography in 8M urea denaturing conditions .";
+proteins4 [style=filled, fillcolor=white, label=proteins];
+His1 [style=filled, fillcolor=white, label=His];
+proteins4 -> His1  [label=poss];
+ubiquitinated3 [style=filled, fillcolor=white, label=ubiquitinated];
+proteins4 -> ubiquitinated3  [label=amod];
+purified6 [style=filled, fillcolor=white, label=purified];
+purified6 -> proteins4  [label=nsubjpass];
+were5 [style=filled, fillcolor=white, label=were];
+purified6 -> were5  [label=auxpass];
+purified6 -> purified6  [label=root];
+metal10 [style=filled, fillcolor=white, label=metal];
+Co28 [style=filled, fillcolor=white, label=Co2];
+metal10 -> Co28  [label=amod];
+"+9" [style=filled, fillcolor=white, label="+"];
+metal10 -> "+9"  [label=amod];
+purified6 -> metal10  [label=agent];
+chromatography12 [style=filled, fillcolor=white, label=chromatography];
+affinity11 [style=filled, fillcolor=white, label=affinity];
+chromatography12 -> affinity11  [label=advmod];
+metal10 -> chromatography12  [label=amod];
+conditions17 [style=filled, fillcolor=white, label=conditions];
+"8M14" [style=filled, fillcolor=white, label="8M"];
+conditions17 -> "8M14"  [label=num];
+urea15 [style=filled, fillcolor=white, label=urea];
+conditions17 -> urea15  [label=nn];
+denaturing16 [style=filled, fillcolor=white, label=denaturing];
+conditions17 -> denaturing16  [label=nn];
+purified6 -> conditions17  [label=prep_in];
+}

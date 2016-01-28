@@ -1,0 +1,47 @@
+digraph "Equally important ,  they find that K-Ras-4A ,  not K-Ras-4B ,  is necessary for lung tumor initiation ,  although K-Ras-4B is much more highly expressed during progression ." {
+label="Equally important ,  they find that K-Ras-4A ,  not K-Ras-4B ,  is necessary
+for lung tumor initiation ,  although K-Ras-4B is much more highly expressed
+during progression .";
+important2 [style=filled, fillcolor=white, label=important];
+Equally1 [style=filled, fillcolor=white, label=Equally];
+important2 -> Equally1  [label=advmod];
+find5 [style=filled, fillcolor=white, label=find];
+find5 -> important2  [label=ccomp];
+they4 [style=filled, fillcolor=white, label=they];
+find5 -> they4  [label=nsubj];
+find5 -> find5  [label=root];
+necessary13 [style=filled, fillcolor=white, label=necessary];
+that6 [style=filled, fillcolor=white, label=that];
+necessary13 -> that6  [label=mark];
+"K-Ras-4A7" [style=filled, fillcolor=white, label="K-Ras-4A"];
+necessary13 -> "K-Ras-4A7"  [label=nsubj];
+"K-Ras-4B10" [style=filled, fillcolor=white, label="K-Ras-4B"];
+not9 [style=filled, fillcolor=white, label=not];
+"K-Ras-4B10" -> not9  [label=neg];
+"K-Ras-4A7" -> "K-Ras-4B10"  [label=amod];
+is12 [style=filled, fillcolor=white, label=is];
+necessary13 -> is12  [label=cop];
+find5 -> necessary13  [label=ccomp];
+initiation17 [style=filled, fillcolor=white, label=initiation];
+lung15 [style=filled, fillcolor=white, label=lung];
+initiation17 -> lung15  [label=nn];
+tumor16 [style=filled, fillcolor=white, label=tumor];
+initiation17 -> tumor16  [label=nn];
+necessary13 -> initiation17  [label=prep_for];
+expressed25 [style=filled, fillcolor=white, label=expressed];
+although19 [style=filled, fillcolor=white, label=although];
+expressed25 -> although19  [label=mark];
+"K-Ras-4B20" [style=filled, fillcolor=white, label="K-Ras-4B"];
+expressed25 -> "K-Ras-4B20"  [label=nsubjpass];
+is21 [style=filled, fillcolor=white, label=is];
+expressed25 -> is21  [label=auxpass];
+more23 [style=filled, fillcolor=white, label=more];
+much22 [style=filled, fillcolor=white, label=much];
+more23 -> much22  [label=advmod];
+expressed25 -> more23  [label=advmod];
+highly24 [style=filled, fillcolor=white, label=highly];
+expressed25 -> highly24  [label=advmod];
+necessary13 -> expressed25  [label=advcl];
+progression27 [style=filled, fillcolor=white, label=progression];
+expressed25 -> progression27  [label=prep_during];
+}

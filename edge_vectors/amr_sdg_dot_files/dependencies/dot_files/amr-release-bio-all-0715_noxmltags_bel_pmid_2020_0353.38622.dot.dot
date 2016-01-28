@@ -1,0 +1,21 @@
+digraph "Y721-c-Kit is autophosphorylated in response to stem cell factor ( SCF ) ." {
+label="Y721-c-Kit is autophosphorylated in response to stem cell factor ( SCF ) .";
+autophosphorylated3 [style=filled, fillcolor=white, label=autophosphorylated];
+"Y721-c-Kit" [style=filled, fillcolor=white, label="Y721-c-Kit"];
+autophosphorylated3 -> "Y721-c-Kit"  [label=nsubjpass];
+is2 [style=filled, fillcolor=white, label=is];
+autophosphorylated3 -> is2  [label=auxpass];
+autophosphorylated3 -> autophosphorylated3  [label=root];
+response5 [style=filled, fillcolor=white, label=response];
+autophosphorylated3 -> response5  [label=prep_in];
+stem7 [style=filled, fillcolor=white, label=stem];
+to6 [style=filled, fillcolor=white, label=to];
+stem7 -> to6  [label=aux];
+autophosphorylated3 -> stem7  [label=xcomp];
+factor9 [style=filled, fillcolor=white, label=factor];
+cell8 [style=filled, fillcolor=white, label=cell];
+factor9 -> cell8  [label=nn];
+stem7 -> factor9  [label=dobj];
+SCF11 [style=filled, fillcolor=white, label=SCF];
+factor9 -> SCF11  [label=appos];
+}

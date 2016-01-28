@@ -1,0 +1,17 @@
+digraph "These residues are phosphorylated by activated ERK in vitro ," {
+label="These residues are phosphorylated by activated ERK in vitro ,";
+residues2 [style=filled, fillcolor=white, label=residues];
+These1 [style=filled, fillcolor=white, label=These];
+residues2 -> These1  [label=det];
+phosphorylated4 [style=filled, fillcolor=white, label=phosphorylated];
+phosphorylated4 -> residues2  [label=nsubjpass];
+are3 [style=filled, fillcolor=white, label=are];
+phosphorylated4 -> are3  [label=auxpass];
+phosphorylated4 -> phosphorylated4  [label=root];
+ERK7 [style=filled, fillcolor=white, label=ERK];
+activated6 [style=filled, fillcolor=white, label=activated];
+ERK7 -> activated6  [label=nn];
+phosphorylated4 -> ERK7  [label=agent];
+vitro9 [style=filled, fillcolor=white, label=vitro];
+ERK7 -> vitro9  [label=prep_in];
+}

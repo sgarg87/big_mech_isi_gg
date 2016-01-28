@@ -1,0 +1,43 @@
+digraph "In response to hepatocyte cell death ,  MyD88 signalling was responsible for the activation of NF - ? B and for the production of factors such as IL-6 ( ReF . 122 ) ." {
+label="In response to hepatocyte cell death ,  MyD88 signalling was responsible for
+the activation of NF - ? B and for the production of factors such as IL-6 ( ReF
+. 122 ) .";
+responsible11 [style=filled, fillcolor=white, label=responsible];
+response2 [style=filled, fillcolor=white, label=response];
+responsible11 -> response2  [label=prep_in];
+hepatocyte4 [style=filled, fillcolor=white, label=hepatocyte];
+to3 [style=filled, fillcolor=white, label=to];
+hepatocyte4 -> to3  [label=aux];
+response2 -> hepatocyte4  [label=vmod];
+death6 [style=filled, fillcolor=white, label=death];
+cell5 [style=filled, fillcolor=white, label=cell];
+death6 -> cell5  [label=nn];
+hepatocyte4 -> death6  [label=dobj];
+signalling9 [style=filled, fillcolor=white, label=signalling];
+MyD88 [style=filled, fillcolor=white, label=MyD88];
+signalling9 -> MyD88  [label=amod];
+responsible11 -> signalling9  [label=nsubj];
+was10 [style=filled, fillcolor=white, label=was];
+responsible11 -> was10  [label=cop];
+responsible11 -> responsible11  [label=root];
+activation14 [style=filled, fillcolor=white, label=activation];
+the13 [style=filled, fillcolor=white, label=the];
+activation14 -> the13  [label=det];
+responsible11 -> activation14  [label=prep_for];
+B19 [style=filled, fillcolor=white, label=B];
+NF16 [style=filled, fillcolor=white, label=NF];
+B19 -> NF16  [label=nn];
+activation14 -> B19  [label=prep_of];
+production23 [style=filled, fillcolor=white, label=production];
+the22 [style=filled, fillcolor=white, label=the];
+production23 -> the22  [label=det];
+activation14 -> production23  [label=conj_and];
+factors25 [style=filled, fillcolor=white, label=factors];
+production23 -> factors25  [label=prep_of];
+"IL-628" [style=filled, fillcolor=white, label="IL-6"];
+factors25 -> "IL-628"  [label=prep_such_as];
+ReF30 [style=filled, fillcolor=white, label=ReF];
+"IL-628" -> ReF30  [label=dep];
+1223 [style=filled, fillcolor=white, label=122];
+ReF30 -> 1223  [label=dep];
+}

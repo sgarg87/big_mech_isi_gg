@@ -1,0 +1,49 @@
+digraph "The wild-type Ki-ras transfectants lack functional TGF-beta receptors ,  whereas all three Ki-ras ( G12V ) transfectants expressed functional TGF-beta receptors that bound ( 125 ) I-TGF-beta1 ." {
+label="The wild-type Ki-ras transfectants lack functional TGF-beta receptors ,
+whereas all three Ki-ras ( G12V ) transfectants expressed functional TGF-beta
+receptors that bound ( 125 ) I-TGF-beta1 .";
+transfectants4 [style=filled, fillcolor=white, label=transfectants];
+The1 [style=filled, fillcolor=white, label=The];
+transfectants4 -> The1  [label=det];
+"wild-type2" [style=filled, fillcolor=white, label="wild-type"];
+transfectants4 -> "wild-type2"  [label=amod];
+"Ki-ras3" [style=filled, fillcolor=white, label="Ki-ras"];
+transfectants4 -> "Ki-ras3"  [label=nn];
+lack5 [style=filled, fillcolor=white, label=lack];
+lack5 -> transfectants4  [label=nsubj];
+lack5 -> lack5  [label=root];
+receptors8 [style=filled, fillcolor=white, label=receptors];
+functional6 [style=filled, fillcolor=white, label=functional];
+receptors8 -> functional6  [label=amod];
+"TGF-beta7" [style=filled, fillcolor=white, label="TGF-beta"];
+receptors8 -> "TGF-beta7"  [label=amod];
+lack5 -> receptors8  [label=dobj];
+expressed18 [style=filled, fillcolor=white, label=expressed];
+whereas10 [style=filled, fillcolor=white, label=whereas];
+expressed18 -> whereas10  [label=mark];
+"Ki-ras13" [style=filled, fillcolor=white, label="Ki-ras"];
+all11 [style=filled, fillcolor=white, label=all];
+"Ki-ras13" -> all11  [label=det];
+three12 [style=filled, fillcolor=white, label=three];
+"Ki-ras13" -> three12  [label=num];
+transfectants17 [style=filled, fillcolor=white, label=transfectants];
+transfectants17 -> "Ki-ras13"  [label=nn];
+G12V15 [style=filled, fillcolor=white, label=G12V];
+transfectants17 -> G12V15  [label=appos];
+expressed18 -> transfectants17  [label=nsubj];
+lack5 -> expressed18  [label=advcl];
+functional19 [style=filled, fillcolor=white, label=functional];
+expressed18 -> functional19  [label=acomp];
+receptors21 [style=filled, fillcolor=white, label=receptors];
+"TGF-beta20" [style=filled, fillcolor=white, label="TGF-beta"];
+receptors21 -> "TGF-beta20"  [label=amod];
+expressed18 -> receptors21  [label=dobj];
+bound23 [style=filled, fillcolor=white, label=bound];
+that22 [style=filled, fillcolor=white, label=that];
+bound23 -> that22  [label=nsubj];
+receptors21 -> bound23  [label=rcmod];
+"I-TGF-beta127" [style=filled, fillcolor=white, label="I-TGF-beta1"];
+125 [style=filled, fillcolor=white, label=125];
+"I-TGF-beta127" -> 125  [label=appos];
+bound23 -> "I-TGF-beta127"  [label=dobj];
+}

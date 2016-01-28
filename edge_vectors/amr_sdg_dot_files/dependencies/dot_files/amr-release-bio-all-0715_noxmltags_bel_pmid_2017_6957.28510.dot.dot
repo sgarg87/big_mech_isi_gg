@@ -1,0 +1,49 @@
+digraph "However ,  on stimulation with R848 or CpG DNA ,  B cells from both young and old Irf5 - / - mice produced lower levels of IL-6 than the B cells from C57BL/6 mice ." {
+label="However ,  on stimulation with R848 or CpG DNA ,  B cells from both young and
+old Irf5 - / - mice produced lower levels of IL-6 than the B cells from C57BL/6
+mice .";
+produced23 [style=filled, fillcolor=white, label=produced];
+However1 [style=filled, fillcolor=white, label=However];
+produced23 -> However1  [label=advmod];
+stimulation4 [style=filled, fillcolor=white, label=stimulation];
+produced23 -> stimulation4  [label=prep_on];
+DNA9 [style=filled, fillcolor=white, label=DNA];
+R8486 [style=filled, fillcolor=white, label=R848];
+DNA9 -> R8486  [label=nn];
+CpG8 [style=filled, fillcolor=white, label=CpG];
+R8486 -> CpG8  [label=conj_or];
+stimulation4 -> DNA9  [label=prep_with];
+cells12 [style=filled, fillcolor=white, label=cells];
+B11 [style=filled, fillcolor=white, label=B];
+cells12 -> B11  [label=nn];
+produced23 -> cells12  [label=nsubj];
+mice22 [style=filled, fillcolor=white, label=mice];
+both14 [style=filled, fillcolor=white, label=both];
+mice22 -> both14  [label=det];
+young15 [style=filled, fillcolor=white, label=young];
+mice22 -> young15  [label=amod];
+old17 [style=filled, fillcolor=white, label=old];
+young15 -> old17  [label=conj_and];
+Irf518 [style=filled, fillcolor=white, label=Irf5];
+mice22 -> Irf518  [label=amod];
+"/20" [style=filled, fillcolor=white, label="/"];
+mice22 -> "/20"  [label=dep];
+cells12 -> mice22  [label=prep_from];
+produced23 -> produced23  [label=root];
+levels25 [style=filled, fillcolor=white, label=levels];
+lower24 [style=filled, fillcolor=white, label=lower];
+levels25 -> lower24  [label=amod];
+produced23 -> levels25  [label=dobj];
+"IL-627" [style=filled, fillcolor=white, label="IL-6"];
+levels25 -> "IL-627"  [label=prep_of];
+cells31 [style=filled, fillcolor=white, label=cells];
+the29 [style=filled, fillcolor=white, label=the];
+cells31 -> the29  [label=det];
+B30 [style=filled, fillcolor=white, label=B];
+cells31 -> B30  [label=nn];
+produced23 -> cells31  [label=prep_than];
+mice34 [style=filled, fillcolor=white, label=mice];
+"C57BL/633" [style=filled, fillcolor=white, label="C57BL/6"];
+mice34 -> "C57BL/633"  [label=num];
+produced23 -> mice34  [label=prep_from];
+}

@@ -1,0 +1,38 @@
+digraph "The net effect of serpinE2 knockdown was also determined on invasion by using BD Biocoat Matrigel invasion chambers ,  in presence of hydroxyurea ." {
+label="The net effect of serpinE2 knockdown was also determined on invasion by using
+BD Biocoat Matrigel invasion chambers ,  in presence of hydroxyurea .";
+effect3 [style=filled, fillcolor=white, label=effect];
+The1 [style=filled, fillcolor=white, label=The];
+effect3 -> The1  [label=det];
+net2 [style=filled, fillcolor=white, label=net];
+effect3 -> net2  [label=amod];
+determined9 [style=filled, fillcolor=white, label=determined];
+determined9 -> effect3  [label=nsubjpass];
+knockdown6 [style=filled, fillcolor=white, label=knockdown];
+serpinE25 [style=filled, fillcolor=white, label=serpinE2];
+knockdown6 -> serpinE25  [label=amod];
+effect3 -> knockdown6  [label=prep_of];
+was7 [style=filled, fillcolor=white, label=was];
+determined9 -> was7  [label=auxpass];
+also8 [style=filled, fillcolor=white, label=also];
+determined9 -> also8  [label=advmod];
+determined9 -> determined9  [label=root];
+invasion11 [style=filled, fillcolor=white, label=invasion];
+determined9 -> invasion11  [label=prep_on];
+using13 [style=filled, fillcolor=white, label=using];
+determined9 -> using13  [label=agent];
+chambers18 [style=filled, fillcolor=white, label=chambers];
+BD14 [style=filled, fillcolor=white, label=BD];
+chambers18 -> BD14  [label=nn];
+Biocoat15 [style=filled, fillcolor=white, label=Biocoat];
+chambers18 -> Biocoat15  [label=nn];
+Matrigel16 [style=filled, fillcolor=white, label=Matrigel];
+chambers18 -> Matrigel16  [label=nn];
+invasion17 [style=filled, fillcolor=white, label=invasion];
+chambers18 -> invasion17  [label=nn];
+using13 -> chambers18  [label=dobj];
+presence21 [style=filled, fillcolor=white, label=presence];
+chambers18 -> presence21  [label=prep_in];
+hydroxyurea23 [style=filled, fillcolor=white, label=hydroxyurea];
+presence21 -> hydroxyurea23  [label=prep_of];
+}

@@ -1,0 +1,51 @@
+digraph "A convergence of urgent unmet clinical needs and advances in drug discovery has energized new efforts to target Ras cancers within academic centers and in the biopharmaceutical industry ." {
+label="A convergence of urgent unmet clinical needs and advances in drug discovery has
+energized new efforts to target Ras cancers within academic centers and in the
+biopharmaceutical industry .";
+convergence2 [style=filled, fillcolor=white, label=convergence];
+A1 [style=filled, fillcolor=white, label=A];
+convergence2 -> A1  [label=det];
+energized14 [style=filled, fillcolor=white, label=energized];
+energized14 -> convergence2  [label=nsubj];
+needs7 [style=filled, fillcolor=white, label=needs];
+urgent4 [style=filled, fillcolor=white, label=urgent];
+needs7 -> urgent4  [label=amod];
+unmet5 [style=filled, fillcolor=white, label=unmet];
+needs7 -> unmet5  [label=amod];
+clinical6 [style=filled, fillcolor=white, label=clinical];
+needs7 -> clinical6  [label=amod];
+convergence2 -> needs7  [label=prep_of];
+advances9 [style=filled, fillcolor=white, label=advances];
+needs7 -> advances9  [label=conj_and];
+discovery12 [style=filled, fillcolor=white, label=discovery];
+drug11 [style=filled, fillcolor=white, label=drug];
+discovery12 -> drug11  [label=nn];
+advances9 -> discovery12  [label=prep_in];
+has13 [style=filled, fillcolor=white, label=has];
+energized14 -> has13  [label=aux];
+energized14 -> energized14  [label=root];
+efforts16 [style=filled, fillcolor=white, label=efforts];
+new15 [style=filled, fillcolor=white, label=new];
+efforts16 -> new15  [label=amod];
+energized14 -> efforts16  [label=dobj];
+target18 [style=filled, fillcolor=white, label=target];
+to17 [style=filled, fillcolor=white, label=to];
+target18 -> to17  [label=aux];
+energized14 -> target18  [label=vmod];
+"target18'" [style=filled, fillcolor=white, label=target];
+target18 -> "target18'"  [label=conj_and];
+cancers20 [style=filled, fillcolor=white, label=cancers];
+Ras19 [style=filled, fillcolor=white, label=Ras];
+cancers20 -> Ras19  [label=nn];
+target18 -> cancers20  [label=dobj];
+centers23 [style=filled, fillcolor=white, label=centers];
+academic22 [style=filled, fillcolor=white, label=academic];
+centers23 -> academic22  [label=amod];
+target18 -> centers23  [label=prep_within];
+industry28 [style=filled, fillcolor=white, label=industry];
+the26 [style=filled, fillcolor=white, label=the];
+industry28 -> the26  [label=det];
+biopharmaceutical27 [style=filled, fillcolor=white, label=biopharmaceutical];
+industry28 -> biopharmaceutical27  [label=amod];
+"target18'" -> industry28  [label=prep_in];
+}

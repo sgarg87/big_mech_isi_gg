@@ -1,0 +1,36 @@
+digraph "Of 20 K14-Snail -LSB- HA -RSB- Tg animals generated ,  three expressed the transgene and all exhibited analogous phenotypes ." {
+label="Of 20 K14-Snail -LSB- HA -RSB- Tg animals generated ,  three expressed the
+transgene and all exhibited analogous phenotypes .";
+animals8 [style=filled, fillcolor=white, label=animals];
+20 [style=filled, fillcolor=white, label=20];
+animals8 -> 20  [label=num];
+"K14-Snail3" [style=filled, fillcolor=white, label="K14-Snail"];
+animals8 -> "K14-Snail3"  [label=amod];
+"-LSB-4" [style=filled, fillcolor=white, label="-LSB-"];
+animals8 -> "-LSB-4"  [label=nn];
+HA5 [style=filled, fillcolor=white, label=HA];
+animals8 -> HA5  [label=nn];
+"-RSB-6" [style=filled, fillcolor=white, label="-RSB-"];
+animals8 -> "-RSB-6"  [label=nn];
+Tg7 [style=filled, fillcolor=white, label=Tg];
+animals8 -> Tg7  [label=nn];
+expressed12 [style=filled, fillcolor=white, label=expressed];
+expressed12 -> animals8  [label=prep_of];
+generated9 [style=filled, fillcolor=white, label=generated];
+animals8 -> generated9  [label=vmod];
+three11 [style=filled, fillcolor=white, label=three];
+expressed12 -> three11  [label=nsubj];
+expressed12 -> expressed12  [label=root];
+transgene14 [style=filled, fillcolor=white, label=transgene];
+the13 [style=filled, fillcolor=white, label=the];
+transgene14 -> the13  [label=det];
+expressed12 -> transgene14  [label=dobj];
+phenotypes19 [style=filled, fillcolor=white, label=phenotypes];
+all16 [style=filled, fillcolor=white, label=all];
+phenotypes19 -> all16  [label=det];
+analogous18 [style=filled, fillcolor=white, label=analogous];
+exhibited17 [style=filled, fillcolor=white, label=exhibited];
+analogous18 -> exhibited17  [label=amod];
+phenotypes19 -> analogous18  [label=amod];
+transgene14 -> phenotypes19  [label=conj_and];
+}

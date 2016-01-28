@@ -1,0 +1,36 @@
+digraph "These studies were mostly based on G12V mutations because these were the most widely used at that time ." {
+label="These studies were mostly based on G12V mutations because these were the most
+widely used at that time .";
+studies2 [style=filled, fillcolor=white, label=studies];
+These1 [style=filled, fillcolor=white, label=These];
+studies2 -> These1  [label=det];
+based5 [style=filled, fillcolor=white, label=based];
+based5 -> studies2  [label=nsubjpass];
+were3 [style=filled, fillcolor=white, label=were];
+based5 -> were3  [label=auxpass];
+mostly4 [style=filled, fillcolor=white, label=mostly];
+based5 -> mostly4  [label=advmod];
+based5 -> based5  [label=root];
+mutations8 [style=filled, fillcolor=white, label=mutations];
+G12V7 [style=filled, fillcolor=white, label=G12V];
+mutations8 -> G12V7  [label=num];
+based5 -> mutations8  [label=prep_on];
+most13 [style=filled, fillcolor=white, label=most];
+because9 [style=filled, fillcolor=white, label=because];
+most13 -> because9  [label=mark];
+these10 [style=filled, fillcolor=white, label=these];
+most13 -> these10  [label=nsubj];
+were11 [style=filled, fillcolor=white, label=were];
+most13 -> were11  [label=cop];
+the12 [style=filled, fillcolor=white, label=the];
+most13 -> the12  [label=det];
+based5 -> most13  [label=advcl];
+used15 [style=filled, fillcolor=white, label=used];
+widely14 [style=filled, fillcolor=white, label=widely];
+used15 -> widely14  [label=advmod];
+most13 -> used15  [label=vmod];
+time18 [style=filled, fillcolor=white, label=time];
+that17 [style=filled, fillcolor=white, label=that];
+time18 -> that17  [label=det];
+used15 -> time18  [label=prep_at];
+}

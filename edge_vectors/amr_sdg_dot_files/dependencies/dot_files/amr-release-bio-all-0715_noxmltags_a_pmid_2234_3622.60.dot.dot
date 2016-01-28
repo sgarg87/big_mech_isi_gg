@@ -1,0 +1,24 @@
+digraph "Combined treatment of selumetinib and standard of care agents results in enhanced anti-tumour efficacy" {
+label="Combined treatment of selumetinib and standard of care agents results in
+enhanced anti-tumour efficacy";
+treatment2 [style=filled, fillcolor=white, label=treatment];
+Combined1 [style=filled, fillcolor=white, label=Combined];
+treatment2 -> Combined1  [label=amod];
+treatment2 -> treatment2  [label=root];
+selumetinib4 [style=filled, fillcolor=white, label=selumetinib];
+treatment2 -> selumetinib4  [label=prep_of];
+standard6 [style=filled, fillcolor=white, label=standard];
+selumetinib4 -> standard6  [label=conj_and];
+agents9 [style=filled, fillcolor=white, label=agents];
+care8 [style=filled, fillcolor=white, label=care];
+agents9 -> care8  [label=nn];
+treatment2 -> agents9  [label=prep_of];
+results10 [style=filled, fillcolor=white, label=results];
+treatment2 -> results10  [label=dep];
+efficacy14 [style=filled, fillcolor=white, label=efficacy];
+enhanced12 [style=filled, fillcolor=white, label=enhanced];
+efficacy14 -> enhanced12  [label=amod];
+"anti-tumour13" [style=filled, fillcolor=white, label="anti-tumour"];
+efficacy14 -> "anti-tumour13"  [label=amod];
+results10 -> efficacy14  [label=prep_in];
+}

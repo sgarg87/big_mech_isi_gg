@@ -1,0 +1,45 @@
+digraph "JNK1 knockout mice gain less weight and are protected against diet-induced insulin resistance or insulin resistance associated with a genetic model of obesity ( ob/ob ) ( 86 ) ." {
+label="JNK1 knockout mice gain less weight and are protected against diet-induced
+insulin resistance or insulin resistance associated with a genetic model of
+obesity ( ob/ob ) ( 86 ) .";
+mice3 [style=filled, fillcolor=white, label=mice];
+JNK1 [style=filled, fillcolor=white, label=JNK1];
+mice3 -> JNK1  [label=nn];
+knockout2 [style=filled, fillcolor=white, label=knockout];
+mice3 -> knockout2  [label=nn];
+gain4 [style=filled, fillcolor=white, label=gain];
+gain4 -> mice3  [label=nsubj];
+gain4 -> gain4  [label=root];
+weight6 [style=filled, fillcolor=white, label=weight];
+less5 [style=filled, fillcolor=white, label=less];
+weight6 -> less5  [label=amod];
+gain4 -> weight6  [label=dobj];
+protected9 [style=filled, fillcolor=white, label=protected];
+are8 [style=filled, fillcolor=white, label=are];
+protected9 -> are8  [label=auxpass];
+gain4 -> protected9  [label=conj_and];
+resistance13 [style=filled, fillcolor=white, label=resistance];
+"diet-induced11" [style=filled, fillcolor=white, label="diet-induced"];
+resistance13 -> "diet-induced11"  [label=amod];
+insulin12 [style=filled, fillcolor=white, label=insulin];
+resistance13 -> insulin12  [label=nn];
+protected9 -> resistance13  [label=prep_against];
+resistance16 [style=filled, fillcolor=white, label=resistance];
+insulin15 [style=filled, fillcolor=white, label=insulin];
+resistance16 -> insulin15  [label=nn];
+resistance13 -> resistance16  [label=conj_or];
+associated17 [style=filled, fillcolor=white, label=associated];
+resistance13 -> associated17  [label=vmod];
+model21 [style=filled, fillcolor=white, label=model];
+a19 [style=filled, fillcolor=white, label=a];
+model21 -> a19  [label=det];
+genetic20 [style=filled, fillcolor=white, label=genetic];
+model21 -> genetic20  [label=amod];
+associated17 -> model21  [label=prep_with];
+obesity23 [style=filled, fillcolor=white, label=obesity];
+model21 -> obesity23  [label=prep_of];
+"ob/ob25" [style=filled, fillcolor=white, label="ob/ob"];
+obesity23 -> "ob/ob25"  [label=appos];
+862 [style=filled, fillcolor=white, label=86];
+obesity23 -> 862  [label=appos];
+}

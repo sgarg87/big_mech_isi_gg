@@ -1,0 +1,34 @@
+digraph "In addition ,  the anti-CD154 mAb treatment suppressed the up-regulated expression of COL1A1 ,  RANTES ,  and MCP-1 mRNA ( Figure 5g ) ." {
+label="In addition ,  the anti-CD154 mAb treatment suppressed the up-regulated
+expression of COL1A1 ,  RANTES ,  and MCP-1 mRNA ( Figure 5g ) .";
+suppressed8 [style=filled, fillcolor=white, label=suppressed];
+addition2 [style=filled, fillcolor=white, label=addition];
+suppressed8 -> addition2  [label=prep_in];
+treatment7 [style=filled, fillcolor=white, label=treatment];
+the4 [style=filled, fillcolor=white, label=the];
+treatment7 -> the4  [label=det];
+"anti-CD154" [style=filled, fillcolor=white, label="anti-CD154"];
+treatment7 -> "anti-CD154"  [label=amod];
+mAb6 [style=filled, fillcolor=white, label=mAb];
+treatment7 -> mAb6  [label=nn];
+suppressed8 -> treatment7  [label=nsubj];
+suppressed8 -> suppressed8  [label=root];
+expression11 [style=filled, fillcolor=white, label=expression];
+the9 [style=filled, fillcolor=white, label=the];
+expression11 -> the9  [label=det];
+"up-regulated10" [style=filled, fillcolor=white, label="up-regulated"];
+expression11 -> "up-regulated10"  [label=amod];
+suppressed8 -> expression11  [label=dobj];
+RANTES15 [style=filled, fillcolor=white, label=RANTES];
+COL1A113 [style=filled, fillcolor=white, label=COL1A1];
+RANTES15 -> COL1A113  [label=nn];
+expression11 -> RANTES15  [label=prep_of];
+mRNA19 [style=filled, fillcolor=white, label=mRNA];
+"MCP-18" [style=filled, fillcolor=white, label="MCP-1"];
+mRNA19 -> "MCP-18"  [label=nn];
+RANTES15 -> mRNA19  [label=conj_and];
+Figure21 [style=filled, fillcolor=white, label=Figure];
+RANTES15 -> Figure21  [label=appos];
+"5g22" [style=filled, fillcolor=white, label="5g"];
+Figure21 -> "5g22"  [label=num];
+}

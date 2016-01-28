@@ -1,0 +1,24 @@
+digraph "However ,  the precise consequences of losing neurofibromin are not entirely clear ." {
+label="However ,  the precise consequences of losing neurofibromin are not entirely
+clear .";
+clear12 [style=filled, fillcolor=white, label=clear];
+However1 [style=filled, fillcolor=white, label=However];
+clear12 -> However1  [label=advmod];
+consequences5 [style=filled, fillcolor=white, label=consequences];
+the3 [style=filled, fillcolor=white, label=the];
+consequences5 -> the3  [label=det];
+precise4 [style=filled, fillcolor=white, label=precise];
+consequences5 -> precise4  [label=amod];
+clear12 -> consequences5  [label=nsubj];
+neurofibromin8 [style=filled, fillcolor=white, label=neurofibromin];
+losing7 [style=filled, fillcolor=white, label=losing];
+neurofibromin8 -> losing7  [label=amod];
+consequences5 -> neurofibromin8  [label=prep_of];
+are9 [style=filled, fillcolor=white, label=are];
+clear12 -> are9  [label=cop];
+not10 [style=filled, fillcolor=white, label=not];
+clear12 -> not10  [label=neg];
+entirely11 [style=filled, fillcolor=white, label=entirely];
+clear12 -> entirely11  [label=advmod];
+clear12 -> clear12  [label=root];
+}

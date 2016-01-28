@@ -1,0 +1,26 @@
+digraph "Western blot signals were developed using the enhanced chemiluminescence kit from Amersham" {
+label="Western blot signals were developed using the enhanced chemiluminescence kit
+from Amersham";
+signals3 [style=filled, fillcolor=white, label=signals];
+Western1 [style=filled, fillcolor=white, label=Western];
+signals3 -> Western1  [label=amod];
+blot2 [style=filled, fillcolor=white, label=blot];
+signals3 -> blot2  [label=nn];
+developed5 [style=filled, fillcolor=white, label=developed];
+developed5 -> signals3  [label=nsubjpass];
+were4 [style=filled, fillcolor=white, label=were];
+developed5 -> were4  [label=auxpass];
+developed5 -> developed5  [label=root];
+using6 [style=filled, fillcolor=white, label=using];
+developed5 -> using6  [label=xcomp];
+kit10 [style=filled, fillcolor=white, label=kit];
+the7 [style=filled, fillcolor=white, label=the];
+kit10 -> the7  [label=det];
+enhanced8 [style=filled, fillcolor=white, label=enhanced];
+kit10 -> enhanced8  [label=amod];
+chemiluminescence9 [style=filled, fillcolor=white, label=chemiluminescence];
+kit10 -> chemiluminescence9  [label=nn];
+using6 -> kit10  [label=dobj];
+Amersham12 [style=filled, fillcolor=white, label=Amersham];
+using6 -> Amersham12  [label=prep_from];
+}

@@ -1,0 +1,42 @@
+digraph "Insets in I and J are magnified views of the boxed areas ,  illustrating the absence ( Wt ) or presence ( Tg ) of nuclear anti-cyclin D staining ." {
+label="Insets in I and J are magnified views of the boxed areas ,  illustrating the
+absence ( Wt ) or presence ( Tg ) of nuclear anti-cyclin D staining .";
+magnified7 [style=filled, fillcolor=white, label=magnified];
+Insets1 [style=filled, fillcolor=white, label=Insets];
+magnified7 -> Insets1  [label=nsubjpass];
+I3 [style=filled, fillcolor=white, label=I];
+Insets1 -> I3  [label=prep_in];
+J5 [style=filled, fillcolor=white, label=J];
+I3 -> J5  [label=conj_and];
+are6 [style=filled, fillcolor=white, label=are];
+magnified7 -> are6  [label=auxpass];
+magnified7 -> magnified7  [label=root];
+views8 [style=filled, fillcolor=white, label=views];
+magnified7 -> views8  [label=dobj];
+areas12 [style=filled, fillcolor=white, label=areas];
+the10 [style=filled, fillcolor=white, label=the];
+areas12 -> the10  [label=det];
+boxed11 [style=filled, fillcolor=white, label=boxed];
+areas12 -> boxed11  [label=amod];
+views8 -> areas12  [label=prep_of];
+illustrating14 [style=filled, fillcolor=white, label=illustrating];
+magnified7 -> illustrating14  [label=vmod];
+absence16 [style=filled, fillcolor=white, label=absence];
+the15 [style=filled, fillcolor=white, label=the];
+absence16 -> the15  [label=det];
+illustrating14 -> absence16  [label=dobj];
+Wt18 [style=filled, fillcolor=white, label=Wt];
+absence16 -> Wt18  [label=appos];
+presence21 [style=filled, fillcolor=white, label=presence];
+absence16 -> presence21  [label=conj_or];
+Tg23 [style=filled, fillcolor=white, label=Tg];
+presence21 -> Tg23  [label=appos];
+staining29 [style=filled, fillcolor=white, label=staining];
+nuclear26 [style=filled, fillcolor=white, label=nuclear];
+staining29 -> nuclear26  [label=amod];
+"anti-cyclin27" [style=filled, fillcolor=white, label="anti-cyclin"];
+staining29 -> "anti-cyclin27"  [label=nn];
+D28 [style=filled, fillcolor=white, label=D];
+staining29 -> D28  [label=nn];
+presence21 -> staining29  [label=prep_of];
+}

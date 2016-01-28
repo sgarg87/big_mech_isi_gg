@@ -1,0 +1,58 @@
+digraph "Nomiyama et al ,  who reported that peroxynitrite inhibited insulin-stimulated glucose uptake in preadipocyte-derived 3T3-L1 cells by reducing insulin receptor substrate-1 ( IRS-1 ) protein levels and associated PI3K activity ,  upstream of Akt/PKB ( 122 ) ." {
+label="Nomiyama et al ,  who reported that peroxynitrite inhibited insulin-stimulated
+glucose uptake in preadipocyte-derived 3T3-L1 cells by reducing insulin receptor
+substrate-1 ( IRS-1 ) protein levels and associated PI3K activity ,  upstream of
+Akt/PKB ( 122 ) .";
+upstream32 [style=filled, fillcolor=white, label=upstream];
+Nomiyama1 [style=filled, fillcolor=white, label=Nomiyama];
+upstream32 -> Nomiyama1  [label=nsubj];
+al3 [style=filled, fillcolor=white, label=al];
+Nomiyama1 -> al3  [label=conj_et];
+reported6 [style=filled, fillcolor=white, label=reported];
+who5 [style=filled, fillcolor=white, label=who];
+reported6 -> who5  [label=nsubj];
+Nomiyama1 -> reported6  [label=rcmod];
+inhibited9 [style=filled, fillcolor=white, label=inhibited];
+that7 [style=filled, fillcolor=white, label=that];
+inhibited9 -> that7  [label=mark];
+peroxynitrite8 [style=filled, fillcolor=white, label=peroxynitrite];
+inhibited9 -> peroxynitrite8  [label=nsubj];
+reported6 -> inhibited9  [label=ccomp];
+uptake12 [style=filled, fillcolor=white, label=uptake];
+"insulin-stimulated10" [style=filled, fillcolor=white, label="insulin-stimulated"];
+uptake12 -> "insulin-stimulated10"  [label=amod];
+glucose11 [style=filled, fillcolor=white, label=glucose];
+uptake12 -> glucose11  [label=nn];
+inhibited9 -> uptake12  [label=dobj];
+cells16 [style=filled, fillcolor=white, label=cells];
+"preadipocyte-derived14" [style=filled, fillcolor=white, label="preadipocyte-derived"];
+cells16 -> "preadipocyte-derived14"  [label=amod];
+"3T3-L15" [style=filled, fillcolor=white, label="3T3-L1"];
+cells16 -> "3T3-L15"  [label=amod];
+inhibited9 -> cells16  [label=prep_in];
+reducing18 [style=filled, fillcolor=white, label=reducing];
+inhibited9 -> reducing18  [label=prepc_by];
+"substrate-12" [style=filled, fillcolor=white, label="substrate-1"];
+insulin19 [style=filled, fillcolor=white, label=insulin];
+"substrate-12" -> insulin19  [label=nn];
+receptor20 [style=filled, fillcolor=white, label=receptor];
+"substrate-12" -> receptor20  [label=nn];
+reducing18 -> "substrate-12"  [label=dobj];
+"IRS-123" [style=filled, fillcolor=white, label="IRS-1"];
+"substrate-12" -> "IRS-123"  [label=appos];
+levels26 [style=filled, fillcolor=white, label=levels];
+protein25 [style=filled, fillcolor=white, label=protein];
+levels26 -> protein25  [label=nn];
+"substrate-12" -> levels26  [label=dep];
+activity30 [style=filled, fillcolor=white, label=activity];
+associated28 [style=filled, fillcolor=white, label=associated];
+activity30 -> associated28  [label=amod];
+PI3K29 [style=filled, fillcolor=white, label=PI3K];
+activity30 -> PI3K29  [label=nn];
+levels26 -> activity30  [label=conj_and];
+upstream32 -> upstream32  [label=root];
+"Akt/PKB34" [style=filled, fillcolor=white, label="Akt/PKB"];
+upstream32 -> "Akt/PKB34"  [label=prep_of];
+12236 [style=filled, fillcolor=white, label=122];
+"Akt/PKB34" -> 12236  [label=appos];
+}

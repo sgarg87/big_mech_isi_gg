@@ -1,0 +1,34 @@
+digraph "Thus ,  the data indicate that two pools of Sos-1 ,  associated with different adaptors ,  exist simultaneously in the cell ." {
+label="Thus ,  the data indicate that two pools of Sos-1 ,  associated with different
+adaptors ,  exist simultaneously in the cell .";
+indicate5 [style=filled, fillcolor=white, label=indicate];
+Thus1 [style=filled, fillcolor=white, label=Thus];
+indicate5 -> Thus1  [label=advmod];
+data4 [style=filled, fillcolor=white, label=data];
+the3 [style=filled, fillcolor=white, label=the];
+data4 -> the3  [label=det];
+indicate5 -> data4  [label=nsubj];
+indicate5 -> indicate5  [label=root];
+exist17 [style=filled, fillcolor=white, label=exist];
+that6 [style=filled, fillcolor=white, label=that];
+exist17 -> that6  [label=mark];
+pools8 [style=filled, fillcolor=white, label=pools];
+two7 [style=filled, fillcolor=white, label=two];
+pools8 -> two7  [label=num];
+exist17 -> pools8  [label=nsubj];
+"Sos-10" [style=filled, fillcolor=white, label="Sos-1"];
+pools8 -> "Sos-10"  [label=prep_of];
+associated12 [style=filled, fillcolor=white, label=associated];
+pools8 -> associated12  [label=vmod];
+adaptors15 [style=filled, fillcolor=white, label=adaptors];
+different14 [style=filled, fillcolor=white, label=different];
+adaptors15 -> different14  [label=amod];
+associated12 -> adaptors15  [label=prep_with];
+indicate5 -> exist17  [label=ccomp];
+simultaneously18 [style=filled, fillcolor=white, label=simultaneously];
+exist17 -> simultaneously18  [label=advmod];
+cell21 [style=filled, fillcolor=white, label=cell];
+the20 [style=filled, fillcolor=white, label=the];
+cell21 -> the20  [label=det];
+exist17 -> cell21  [label=prep_in];
+}

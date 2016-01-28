@@ -1,0 +1,21 @@
+digraph "Other abbreviations are as noted in the legend to Figure 2 ." {
+label="Other abbreviations are as noted in the legend to Figure 2 .";
+abbreviations2 [style=filled, fillcolor=white, label=abbreviations];
+Other1 [style=filled, fillcolor=white, label=Other];
+abbreviations2 -> Other1  [label=amod];
+noted5 [style=filled, fillcolor=white, label=noted];
+noted5 -> abbreviations2  [label=nsubjpass];
+are3 [style=filled, fillcolor=white, label=are];
+noted5 -> are3  [label=auxpass];
+as4 [style=filled, fillcolor=white, label=as];
+noted5 -> as4  [label=advmod];
+noted5 -> noted5  [label=root];
+legend8 [style=filled, fillcolor=white, label=legend];
+the7 [style=filled, fillcolor=white, label=the];
+legend8 -> the7  [label=det];
+noted5 -> legend8  [label=prep_in];
+Figure10 [style=filled, fillcolor=white, label=Figure];
+noted5 -> Figure10  [label=prep_to];
+211 [style=filled, fillcolor=white, label=2];
+Figure10 -> 211  [label=num];
+}

@@ -1,0 +1,44 @@
+digraph "This is roughly 500-times the reported EC50 for growth stimulation and 20-times higher than levels found in the BALF from tumor-bearing animals ( Figure 6A ) ." {
+label="This is roughly 500-times the reported EC50 for growth stimulation and 20-times
+higher than levels found in the BALF from tumor-bearing animals ( Figure 6A ) .";
+"500-times4" [style=filled, fillcolor=white, label="500-times"];
+This1 [style=filled, fillcolor=white, label=This];
+"500-times4" -> This1  [label=nsubj];
+is2 [style=filled, fillcolor=white, label=is];
+"500-times4" -> is2  [label=cop];
+roughly3 [style=filled, fillcolor=white, label=roughly];
+"500-times4" -> roughly3  [label=advmod];
+"500-times4" -> "500-times4"  [label=root];
+EC507 [style=filled, fillcolor=white, label=EC50];
+the5 [style=filled, fillcolor=white, label=the];
+EC507 -> the5  [label=det];
+reported6 [style=filled, fillcolor=white, label=reported];
+EC507 -> reported6  [label=amod];
+higher13 [style=filled, fillcolor=white, label=higher];
+higher13 -> EC507  [label=npadvmod];
+stimulation10 [style=filled, fillcolor=white, label=stimulation];
+growth9 [style=filled, fillcolor=white, label=growth];
+stimulation10 -> growth9  [label=nn];
+EC507 -> stimulation10  [label=prep_for];
+"20-times1" [style=filled, fillcolor=white, label="20-times"];
+stimulation10 -> "20-times1"  [label=conj_and];
+"500-times4" -> higher13  [label=advmod];
+found16 [style=filled, fillcolor=white, label=found];
+than14 [style=filled, fillcolor=white, label=than];
+found16 -> than14  [label=mark];
+levels15 [style=filled, fillcolor=white, label=levels];
+found16 -> levels15  [label=nsubj];
+higher13 -> found16  [label=advcl];
+BALF19 [style=filled, fillcolor=white, label=BALF];
+the18 [style=filled, fillcolor=white, label=the];
+BALF19 -> the18  [label=det];
+found16 -> BALF19  [label=prep_in];
+animals22 [style=filled, fillcolor=white, label=animals];
+"tumor-bearing21" [style=filled, fillcolor=white, label="tumor-bearing"];
+animals22 -> "tumor-bearing21"  [label=amod];
+found16 -> animals22  [label=prep_from];
+Figure24 [style=filled, fillcolor=white, label=Figure];
+animals22 -> Figure24  [label=appos];
+"6A25" [style=filled, fillcolor=white, label="6A"];
+Figure24 -> "6A25"  [label=num];
+}

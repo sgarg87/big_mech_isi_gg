@@ -1,0 +1,13 @@
+digraph "Nuclei were counterstained with Dapi ( bottom ) ." {
+label="Nuclei were counterstained with Dapi ( bottom ) .";
+counterstained3 [style=filled, fillcolor=white, label=counterstained];
+Nuclei1 [style=filled, fillcolor=white, label=Nuclei];
+counterstained3 -> Nuclei1  [label=nsubjpass];
+were2 [style=filled, fillcolor=white, label=were];
+counterstained3 -> were2  [label=auxpass];
+counterstained3 -> counterstained3  [label=root];
+Dapi5 [style=filled, fillcolor=white, label=Dapi];
+counterstained3 -> Dapi5  [label=prep_with];
+bottom7 [style=filled, fillcolor=white, label=bottom];
+Dapi5 -> bottom7  [label=appos];
+}

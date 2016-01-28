@@ -1,0 +1,62 @@
+digraph "By contrast ,  although TGF-β receptor activation remained elevated during the duration of the experiment ( as measured by the sustained phosphorylation of the downstream effector SMAD2 ) Snail expression could not be maintained ( Figure 5B ) ." {
+label="By contrast ,  although TGF-β receptor activation remained elevated during the
+duration of the experiment ( as measured by the sustained phosphorylation of the
+downstream effector SMAD2 ) Snail expression could not be maintained ( Figure 5B
+) .";
+maintained34 [style=filled, fillcolor=white, label=maintained];
+contrast2 [style=filled, fillcolor=white, label=contrast];
+maintained34 -> contrast2  [label=agent];
+remained8 [style=filled, fillcolor=white, label=remained];
+although4 [style=filled, fillcolor=white, label=although];
+remained8 -> although4  [label=mark];
+activation7 [style=filled, fillcolor=white, label=activation];
+"TGF-β5" [style=filled, fillcolor=white, label="TGF-β"];
+activation7 -> "TGF-β5"  [label=amod];
+receptor6 [style=filled, fillcolor=white, label=receptor];
+activation7 -> receptor6  [label=nn];
+remained8 -> activation7  [label=nsubj];
+maintained34 -> remained8  [label=advcl];
+elevated9 [style=filled, fillcolor=white, label=elevated];
+remained8 -> elevated9  [label=ccomp];
+duration12 [style=filled, fillcolor=white, label=duration];
+the11 [style=filled, fillcolor=white, label=the];
+duration12 -> the11  [label=det];
+elevated9 -> duration12  [label=prep_during];
+experiment15 [style=filled, fillcolor=white, label=experiment];
+the14 [style=filled, fillcolor=white, label=the];
+experiment15 -> the14  [label=det];
+duration12 -> experiment15  [label=prep_of];
+measured18 [style=filled, fillcolor=white, label=measured];
+as17 [style=filled, fillcolor=white, label=as];
+measured18 -> as17  [label=mark];
+maintained34 -> measured18  [label=parataxis];
+phosphorylation22 [style=filled, fillcolor=white, label=phosphorylation];
+the20 [style=filled, fillcolor=white, label=the];
+phosphorylation22 -> the20  [label=det];
+sustained21 [style=filled, fillcolor=white, label=sustained];
+phosphorylation22 -> sustained21  [label=amod];
+measured18 -> phosphorylation22  [label=prep_by];
+SMAD227 [style=filled, fillcolor=white, label=SMAD2];
+the24 [style=filled, fillcolor=white, label=the];
+SMAD227 -> the24  [label=det];
+downstream25 [style=filled, fillcolor=white, label=downstream];
+SMAD227 -> downstream25  [label=amod];
+effector26 [style=filled, fillcolor=white, label=effector];
+SMAD227 -> effector26  [label=nn];
+phosphorylation22 -> SMAD227  [label=prep_of];
+expression30 [style=filled, fillcolor=white, label=expression];
+Snail29 [style=filled, fillcolor=white, label=Snail];
+expression30 -> Snail29  [label=nn];
+maintained34 -> expression30  [label=nsubjpass];
+could31 [style=filled, fillcolor=white, label=could];
+maintained34 -> could31  [label=aux];
+not32 [style=filled, fillcolor=white, label=not];
+maintained34 -> not32  [label=neg];
+be33 [style=filled, fillcolor=white, label=be];
+maintained34 -> be33  [label=auxpass];
+maintained34 -> maintained34  [label=root];
+Figure36 [style=filled, fillcolor=white, label=Figure];
+maintained34 -> Figure36  [label=dep];
+"5B37" [style=filled, fillcolor=white, label="5B"];
+Figure36 -> "5B37"  [label=num];
+}

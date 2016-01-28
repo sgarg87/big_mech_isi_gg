@@ -1,0 +1,43 @@
+digraph "Consistent with these data ,  we found that B-Raf interacted with C-Raf in an inducible and transient manner following growth factor treatment ( Fig. 3B and C ) ." {
+label="Consistent with these data ,  we found that B-Raf interacted with C-Raf in an
+inducible and transient manner following growth factor treatment ( Fig. 3B and C
+) .";
+found7 [style=filled, fillcolor=white, label=found];
+Consistent1 [style=filled, fillcolor=white, label=Consistent];
+found7 -> Consistent1  [label=ccomp];
+data4 [style=filled, fillcolor=white, label=data];
+these3 [style=filled, fillcolor=white, label=these];
+data4 -> these3  [label=det];
+Consistent1 -> data4  [label=prep_with];
+we6 [style=filled, fillcolor=white, label=we];
+found7 -> we6  [label=nsubj];
+found7 -> found7  [label=root];
+interacted10 [style=filled, fillcolor=white, label=interacted];
+that8 [style=filled, fillcolor=white, label=that];
+interacted10 -> that8  [label=mark];
+"B-Raf9" [style=filled, fillcolor=white, label="B-Raf"];
+interacted10 -> "B-Raf9"  [label=nsubj];
+found7 -> interacted10  [label=ccomp];
+"C-Raf12" [style=filled, fillcolor=white, label="C-Raf"];
+interacted10 -> "C-Raf12"  [label=prep_with];
+manner18 [style=filled, fillcolor=white, label=manner];
+an14 [style=filled, fillcolor=white, label=an];
+manner18 -> an14  [label=det];
+inducible15 [style=filled, fillcolor=white, label=inducible];
+manner18 -> inducible15  [label=amod];
+transient17 [style=filled, fillcolor=white, label=transient];
+inducible15 -> transient17  [label=conj_and];
+interacted10 -> manner18  [label=prep_in];
+treatment22 [style=filled, fillcolor=white, label=treatment];
+growth20 [style=filled, fillcolor=white, label=growth];
+treatment22 -> growth20  [label=nn];
+factor21 [style=filled, fillcolor=white, label=factor];
+treatment22 -> factor21  [label=nn];
+manner18 -> treatment22  [label=prep_following];
+"Fig.24" [style=filled, fillcolor=white, label="Fig."];
+treatment22 -> "Fig.24"  [label=dep];
+"3B25" [style=filled, fillcolor=white, label="3B"];
+"Fig.24" -> "3B25"  [label=num];
+C27 [style=filled, fillcolor=white, label=C];
+"Fig.24" -> C27  [label=conj_and];
+}

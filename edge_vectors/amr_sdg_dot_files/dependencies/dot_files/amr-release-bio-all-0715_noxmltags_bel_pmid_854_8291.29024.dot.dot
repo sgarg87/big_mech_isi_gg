@@ -1,0 +1,43 @@
+digraph "Co-transfection of 1.25 ug MEKK1 expression vector elicited a 24-fold activation of Gal-Elk-dependent reporter expression in serum-starved NIH3T3 cells ( Fig. 6c ,  d ) ." {
+label="Co-transfection of 1.25 ug MEKK1 expression vector elicited a 24-fold
+activation of Gal-Elk-dependent reporter expression in serum-starved NIH3T3
+cells ( Fig. 6c ,  d ) .";
+elicited8 [style=filled, fillcolor=white, label=elicited];
+"Co-transfection1" [style=filled, fillcolor=white, label="Co-transfection"];
+elicited8 -> "Co-transfection1"  [label=nsubj];
+vector7 [style=filled, fillcolor=white, label=vector];
+"1.253" [style=filled, fillcolor=white, label="1.25"];
+vector7 -> "1.253"  [label=num];
+ug4 [style=filled, fillcolor=white, label=ug];
+vector7 -> ug4  [label=amod];
+MEKK15 [style=filled, fillcolor=white, label=MEKK1];
+vector7 -> MEKK15  [label=nn];
+expression6 [style=filled, fillcolor=white, label=expression];
+vector7 -> expression6  [label=nn];
+"Co-transfection1" -> vector7  [label=prep_of];
+elicited8 -> elicited8  [label=root];
+activation11 [style=filled, fillcolor=white, label=activation];
+a9 [style=filled, fillcolor=white, label=a];
+activation11 -> a9  [label=det];
+"24-fold10" [style=filled, fillcolor=white, label="24-fold"];
+activation11 -> "24-fold10"  [label=amod];
+elicited8 -> activation11  [label=dobj];
+expression15 [style=filled, fillcolor=white, label=expression];
+"Gal-Elk-dependent13" [style=filled, fillcolor=white, label="Gal-Elk-dependent"];
+expression15 -> "Gal-Elk-dependent13"  [label=amod];
+reporter14 [style=filled, fillcolor=white, label=reporter];
+expression15 -> reporter14  [label=nn];
+activation11 -> expression15  [label=prep_of];
+cells19 [style=filled, fillcolor=white, label=cells];
+"serum-starved17" [style=filled, fillcolor=white, label="serum-starved"];
+cells19 -> "serum-starved17"  [label=amod];
+NIH3T318 [style=filled, fillcolor=white, label=NIH3T3];
+cells19 -> NIH3T318  [label=nn];
+elicited8 -> cells19  [label=prep_in];
+"6c22" [style=filled, fillcolor=white, label="6c"];
+"Fig.21" [style=filled, fillcolor=white, label="Fig."];
+"6c22" -> "Fig.21"  [label=nn];
+cells19 -> "6c22"  [label=dep];
+d24 [style=filled, fillcolor=white, label=d];
+"6c22" -> d24  [label=appos];
+}

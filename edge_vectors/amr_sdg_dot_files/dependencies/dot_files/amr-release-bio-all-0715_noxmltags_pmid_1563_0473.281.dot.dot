@@ -1,0 +1,51 @@
+digraph "The PCR product was purified with the Gel Extraction Kit ( Qiagen ,  Valencia ,  California ,  United States ) and ligated into pCRII-TOPO TA vector ( Invitrogen ,  Carlsbad ,  California ,  United States ) ." {
+label="The PCR product was purified with the Gel Extraction Kit ( Qiagen ,  Valencia ,
+California ,  United States ) and ligated into pCRII-TOPO TA vector ( Invitrogen
+,  Carlsbad ,  California ,  United States ) .";
+product3 [style=filled, fillcolor=white, label=product];
+The1 [style=filled, fillcolor=white, label=The];
+product3 -> The1  [label=det];
+PCR2 [style=filled, fillcolor=white, label=PCR];
+product3 -> PCR2  [label=nn];
+purified5 [style=filled, fillcolor=white, label=purified];
+purified5 -> product3  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+purified5 -> was4  [label=auxpass];
+purified5 -> purified5  [label=root];
+Kit10 [style=filled, fillcolor=white, label=Kit];
+the7 [style=filled, fillcolor=white, label=the];
+Kit10 -> the7  [label=det];
+Gel8 [style=filled, fillcolor=white, label=Gel];
+Kit10 -> Gel8  [label=nn];
+Extraction9 [style=filled, fillcolor=white, label=Extraction];
+Kit10 -> Extraction9  [label=nn];
+purified5 -> Kit10  [label=prep_with];
+Qiagen12 [style=filled, fillcolor=white, label=Qiagen];
+Kit10 -> Qiagen12  [label=appos];
+California16 [style=filled, fillcolor=white, label=California];
+Valencia14 [style=filled, fillcolor=white, label=Valencia];
+California16 -> Valencia14  [label=nn];
+Qiagen12 -> California16  [label=dep];
+States19 [style=filled, fillcolor=white, label=States];
+United18 [style=filled, fillcolor=white, label=United];
+States19 -> United18  [label=nn];
+Qiagen12 -> States19  [label=dep];
+ligated22 [style=filled, fillcolor=white, label=ligated];
+purified5 -> ligated22  [label=conj_and];
+vector26 [style=filled, fillcolor=white, label=vector];
+"pCRII-TOPO24" [style=filled, fillcolor=white, label="pCRII-TOPO"];
+vector26 -> "pCRII-TOPO24"  [label=amod];
+TA25 [style=filled, fillcolor=white, label=TA];
+vector26 -> TA25  [label=amod];
+ligated22 -> vector26  [label=prep_into];
+Invitrogen28 [style=filled, fillcolor=white, label=Invitrogen];
+vector26 -> Invitrogen28  [label=appos];
+California32 [style=filled, fillcolor=white, label=California];
+Carlsbad30 [style=filled, fillcolor=white, label=Carlsbad];
+California32 -> Carlsbad30  [label=nn];
+Invitrogen28 -> California32  [label=dep];
+States35 [style=filled, fillcolor=white, label=States];
+United34 [style=filled, fillcolor=white, label=United];
+States35 -> United34  [label=nn];
+Invitrogen28 -> States35  [label=dep];
+}

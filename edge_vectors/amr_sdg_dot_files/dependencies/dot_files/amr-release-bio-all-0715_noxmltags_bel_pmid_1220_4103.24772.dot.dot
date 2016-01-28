@@ -1,0 +1,34 @@
+digraph "Jak1 phosphorylation was reduced in wildtype indivduals after Il13 treatement ,  implying that SHP-2 is responsible for this effect ." {
+label="Jak1 phosphorylation was reduced in wildtype indivduals after Il13 treatement ,
+implying that SHP-2 is responsible for this effect .";
+phosphorylation2 [style=filled, fillcolor=white, label=phosphorylation];
+Jak1 [style=filled, fillcolor=white, label=Jak1];
+phosphorylation2 -> Jak1  [label=amod];
+reduced4 [style=filled, fillcolor=white, label=reduced];
+reduced4 -> phosphorylation2  [label=nsubjpass];
+was3 [style=filled, fillcolor=white, label=was];
+reduced4 -> was3  [label=auxpass];
+reduced4 -> reduced4  [label=root];
+indivduals7 [style=filled, fillcolor=white, label=indivduals];
+wildtype6 [style=filled, fillcolor=white, label=wildtype];
+indivduals7 -> wildtype6  [label=amod];
+reduced4 -> indivduals7  [label=prep_in];
+treatement10 [style=filled, fillcolor=white, label=treatement];
+Il139 [style=filled, fillcolor=white, label=Il13];
+treatement10 -> Il139  [label=amod];
+reduced4 -> treatement10  [label=prep_after];
+implying12 [style=filled, fillcolor=white, label=implying];
+reduced4 -> implying12  [label=xcomp];
+responsible16 [style=filled, fillcolor=white, label=responsible];
+that13 [style=filled, fillcolor=white, label=that];
+responsible16 -> that13  [label=mark];
+"SHP-214" [style=filled, fillcolor=white, label="SHP-2"];
+responsible16 -> "SHP-214"  [label=nsubj];
+is15 [style=filled, fillcolor=white, label=is];
+responsible16 -> is15  [label=cop];
+implying12 -> responsible16  [label=ccomp];
+effect19 [style=filled, fillcolor=white, label=effect];
+this18 [style=filled, fillcolor=white, label=this];
+effect19 -> this18  [label=det];
+responsible16 -> effect19  [label=prep_for];
+}

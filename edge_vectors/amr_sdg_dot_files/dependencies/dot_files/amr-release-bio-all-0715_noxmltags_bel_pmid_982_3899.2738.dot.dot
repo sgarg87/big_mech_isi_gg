@@ -1,0 +1,43 @@
+digraph "Pak3 phosphorylates Raf-1 on serine 338 in vitro and in vivo . The p21-activated protein kinases are regulated by the Rho-family GTPases Rac and Cdc42 ." {
+label="Pak3 phosphorylates Raf-1 on serine 338 in vitro and in vivo . The
+p21-activated protein kinases are regulated by the Rho-family GTPases Rac and
+Cdc42 .";
+"Raf-13" [style=filled, fillcolor=white, label="Raf-1"];
+Pak31 [style=filled, fillcolor=white, label=Pak3];
+"Raf-13" -> Pak31  [label=amod];
+phosphorylates2 [style=filled, fillcolor=white, label=phosphorylates];
+"Raf-13" -> phosphorylates2  [label=nn];
+regulated18 [style=filled, fillcolor=white, label=regulated];
+regulated18 -> "Raf-13"  [label=nsubjpass];
+serine5 [style=filled, fillcolor=white, label=serine];
+"Raf-13" -> serine5  [label=prep_on];
+3386 [style=filled, fillcolor=white, label=338];
+serine5 -> 3386  [label=num];
+kinases16 [style=filled, fillcolor=white, label=kinases];
+vitro8 [style=filled, fillcolor=white, label=vitro];
+kinases16 -> vitro8  [label=amod];
+in10 [style=filled, fillcolor=white, label=in];
+vitro8 -> in10  [label=conj_and];
+vivo11 [style=filled, fillcolor=white, label=vivo];
+in10 -> vivo11  [label=pobj];
+protein15 [style=filled, fillcolor=white, label=protein];
+The13 [style=filled, fillcolor=white, label=The];
+protein15 -> The13  [label=det];
+"p21-activated4" [style=filled, fillcolor=white, label="p21-activated"];
+protein15 -> "p21-activated4"  [label=amod];
+vivo11 -> protein15  [label=dep];
+serine5 -> kinases16  [label=prep_in];
+are17 [style=filled, fillcolor=white, label=are];
+regulated18 -> are17  [label=auxpass];
+regulated18 -> regulated18  [label=root];
+Rac23 [style=filled, fillcolor=white, label=Rac];
+the20 [style=filled, fillcolor=white, label=the];
+Rac23 -> the20  [label=det];
+"Rho-family21" [style=filled, fillcolor=white, label="Rho-family"];
+Rac23 -> "Rho-family21"  [label=nn];
+GTPases22 [style=filled, fillcolor=white, label=GTPases];
+Rac23 -> GTPases22  [label=nn];
+regulated18 -> Rac23  [label=agent];
+Cdc4225 [style=filled, fillcolor=white, label=Cdc42];
+Rac23 -> Cdc4225  [label=conj_and];
+}

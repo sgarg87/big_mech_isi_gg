@@ -1,0 +1,57 @@
+digraph "The association was ,  however ,  preserved when a control peptide ,  bearing a Y → A substitution and unable to bind to Eps8 ( Mongiovi et al. ,  1999 ) ,  was used ( Fig. 1 C ) ." {
+label="The association was ,  however ,  preserved when a control peptide ,  bearing a
+Y → A substitution and unable to bind to Eps8 ( Mongiovi et al. ,  1999 ) ,  was
+used ( Fig. 1 C ) .";
+association2 [style=filled, fillcolor=white, label=association];
+The1 [style=filled, fillcolor=white, label=The];
+association2 -> The1  [label=det];
+preserved7 [style=filled, fillcolor=white, label=preserved];
+preserved7 -> association2  [label=nsubj];
+was3 [style=filled, fillcolor=white, label=was];
+association2 -> was3  [label=vmod];
+however5 [style=filled, fillcolor=white, label=however];
+preserved7 -> however5  [label=advmod];
+preserved7 -> preserved7  [label=root];
+used34 [style=filled, fillcolor=white, label=used];
+when8 [style=filled, fillcolor=white, label=when];
+used34 -> when8  [label=advmod];
+peptide11 [style=filled, fillcolor=white, label=peptide];
+a9 [style=filled, fillcolor=white, label=a];
+peptide11 -> a9  [label=det];
+control10 [style=filled, fillcolor=white, label=control];
+peptide11 -> control10  [label=nn];
+used34 -> peptide11  [label=nsubjpass];
+bearing13 [style=filled, fillcolor=white, label=bearing];
+used34 -> bearing13  [label=vmod];
+"→16" [style=filled, fillcolor=white, label="→"];
+a14 [style=filled, fillcolor=white, label=a];
+"→16" -> a14  [label=det];
+Y15 [style=filled, fillcolor=white, label=Y];
+"→16" -> Y15  [label=nn];
+bearing13 -> "→16"  [label=dobj];
+substitution18 [style=filled, fillcolor=white, label=substitution];
+A17 [style=filled, fillcolor=white, label=A];
+substitution18 -> A17  [label=det];
+"→16" -> substitution18  [label=dep];
+unable20 [style=filled, fillcolor=white, label=unable];
+substitution18 -> unable20  [label=conj_and];
+bind22 [style=filled, fillcolor=white, label=bind];
+unable20 -> bind22  [label=prep_to];
+Eps824 [style=filled, fillcolor=white, label=Eps8];
+bearing13 -> Eps824  [label=prep_to];
+Mongiovi26 [style=filled, fillcolor=white, label=Mongiovi];
+Eps824 -> Mongiovi26  [label=appos];
+"al.28" [style=filled, fillcolor=white, label="al."];
+Mongiovi26 -> "al.28"  [label=conj_et];
+199930 [style=filled, fillcolor=white, label=1999];
+Mongiovi26 -> 199930  [label=dep];
+was33 [style=filled, fillcolor=white, label=was];
+used34 -> was33  [label=auxpass];
+preserved7 -> used34  [label=advcl];
+"Fig.36" [style=filled, fillcolor=white, label="Fig."];
+used34 -> "Fig.36"  [label=dep];
+C38 [style=filled, fillcolor=white, label=C];
+137 [style=filled, fillcolor=white, label=1];
+C38 -> 137  [label=number];
+"Fig.36" -> C38  [label=num];
+}

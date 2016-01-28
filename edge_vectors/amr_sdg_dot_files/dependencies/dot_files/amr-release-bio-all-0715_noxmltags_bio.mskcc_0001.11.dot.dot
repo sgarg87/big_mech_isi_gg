@@ -1,0 +1,58 @@
+digraph "The Pin1 prolyl-isomerase binds specifically to phosphorylated S/TP ( pS/TP ) motifs ( 33 ) ,  and isomerization of the pS/TP bond is required for PP2A to efficiently dephosphorylate certain proteins ,  such as cdc25C ,  Myc ,  and C-Raf ( 16 ) ." {
+label="The Pin1 prolyl-isomerase binds specifically to phosphorylated S/TP ( pS/TP )
+motifs ( 33 ) ,  and isomerization of the pS/TP bond is required for PP2A to
+efficiently dephosphorylate certain proteins ,  such as cdc25C ,  Myc ,  and
+C-Raf ( 16 ) .";
+"prolyl-isomerase3" [style=filled, fillcolor=white, label="prolyl-isomerase"];
+The1 [style=filled, fillcolor=white, label=The];
+"prolyl-isomerase3" -> The1  [label=det];
+Pin12 [style=filled, fillcolor=white, label=Pin1];
+"prolyl-isomerase3" -> Pin12  [label=amod];
+binds4 [style=filled, fillcolor=white, label=binds];
+binds4 -> "prolyl-isomerase3"  [label=nsubj];
+binds4 -> binds4  [label=root];
+specifically5 [style=filled, fillcolor=white, label=specifically];
+binds4 -> specifically5  [label=advmod];
+motifs12 [style=filled, fillcolor=white, label=motifs];
+phosphorylated7 [style=filled, fillcolor=white, label=phosphorylated];
+motifs12 -> phosphorylated7  [label=amod];
+"S/TP8" [style=filled, fillcolor=white, label="S/TP"];
+motifs12 -> "S/TP8"  [label=nn];
+"pS/TP10" [style=filled, fillcolor=white, label="pS/TP"];
+motifs12 -> "pS/TP10"  [label=appos];
+binds4 -> motifs12  [label=prep_to];
+3314 [style=filled, fillcolor=white, label=33];
+motifs12 -> 3314  [label=appos];
+required24 [style=filled, fillcolor=white, label=required];
+isomerization18 [style=filled, fillcolor=white, label=isomerization];
+required24 -> isomerization18  [label=nsubjpass];
+bond22 [style=filled, fillcolor=white, label=bond];
+the20 [style=filled, fillcolor=white, label=the];
+bond22 -> the20  [label=det];
+"pS/TP21" [style=filled, fillcolor=white, label="pS/TP"];
+bond22 -> "pS/TP21"  [label=nn];
+isomerization18 -> bond22  [label=prep_of];
+is23 [style=filled, fillcolor=white, label=is];
+required24 -> is23  [label=auxpass];
+binds4 -> required24  [label=conj_and];
+efficiently28 [style=filled, fillcolor=white, label=efficiently];
+PP2A26 [style=filled, fillcolor=white, label=PP2A];
+efficiently28 -> PP2A26  [label=number];
+to27 [style=filled, fillcolor=white, label=to];
+efficiently28 -> to27  [label=dep];
+proteins31 [style=filled, fillcolor=white, label=proteins];
+proteins31 -> efficiently28  [label=num];
+dephosphorylate29 [style=filled, fillcolor=white, label=dephosphorylate];
+proteins31 -> dephosphorylate29  [label=amod];
+certain30 [style=filled, fillcolor=white, label=certain];
+proteins31 -> certain30  [label=amod];
+required24 -> proteins31  [label=prep_for];
+cdc25C3 [style=filled, fillcolor=white, label=cdc25C];
+proteins31 -> cdc25C3  [label=prep_such_as];
+Myc37 [style=filled, fillcolor=white, label=Myc];
+cdc25C3 -> Myc37  [label=conj_and];
+"C-Raf40" [style=filled, fillcolor=white, label="C-Raf"];
+cdc25C3 -> "C-Raf40"  [label=conj_and];
+1642 [style=filled, fillcolor=white, label=16];
+proteins31 -> 1642  [label=appos];
+}

@@ -1,0 +1,34 @@
+digraph "In conclusion ,  our data show that two pools of Sos-1 exist in the cell ,  coupled respectively to Grb2 or E3b1 ." {
+label="In conclusion ,  our data show that two pools of Sos-1 exist in the cell ,
+coupled respectively to Grb2 or E3b1 .";
+show6 [style=filled, fillcolor=white, label=show];
+conclusion2 [style=filled, fillcolor=white, label=conclusion];
+show6 -> conclusion2  [label=prep_in];
+data5 [style=filled, fillcolor=white, label=data];
+our4 [style=filled, fillcolor=white, label=our];
+data5 -> our4  [label=poss];
+show6 -> data5  [label=nsubj];
+show6 -> show6  [label=root];
+exist12 [style=filled, fillcolor=white, label=exist];
+that7 [style=filled, fillcolor=white, label=that];
+exist12 -> that7  [label=mark];
+pools9 [style=filled, fillcolor=white, label=pools];
+two8 [style=filled, fillcolor=white, label=two];
+pools9 -> two8  [label=num];
+exist12 -> pools9  [label=nsubj];
+"Sos-1" [style=filled, fillcolor=white, label="Sos-1"];
+pools9 -> "Sos-1"  [label=prep_of];
+show6 -> exist12  [label=ccomp];
+cell15 [style=filled, fillcolor=white, label=cell];
+the14 [style=filled, fillcolor=white, label=the];
+cell15 -> the14  [label=det];
+exist12 -> cell15  [label=prep_in];
+coupled17 [style=filled, fillcolor=white, label=coupled];
+cell15 -> coupled17  [label=vmod];
+respectively18 [style=filled, fillcolor=white, label=respectively];
+coupled17 -> respectively18  [label=advmod];
+Grb220 [style=filled, fillcolor=white, label=Grb2];
+coupled17 -> Grb220  [label=prep_to];
+E3b122 [style=filled, fillcolor=white, label=E3b1];
+Grb220 -> E3b122  [label=conj_or];
+}

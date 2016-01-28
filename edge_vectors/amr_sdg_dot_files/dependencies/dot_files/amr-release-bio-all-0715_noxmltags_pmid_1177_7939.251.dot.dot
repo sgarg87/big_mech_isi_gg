@@ -1,0 +1,25 @@
+digraph "Serum treatment induces BrdU incorporation in > 95 % of not injected cells ." {
+label="Serum treatment induces BrdU incorporation in > 95 % of not injected cells .";
+treatment2 [style=filled, fillcolor=white, label=treatment];
+Serum1 [style=filled, fillcolor=white, label=Serum];
+treatment2 -> Serum1  [label=amod];
+induces3 [style=filled, fillcolor=white, label=induces];
+induces3 -> treatment2  [label=nsubj];
+induces3 -> induces3  [label=root];
+incorporation5 [style=filled, fillcolor=white, label=incorporation];
+BrdU4 [style=filled, fillcolor=white, label=BrdU];
+incorporation5 -> BrdU4  [label=nn];
+induces3 -> incorporation5  [label=dobj];
+958 [style=filled, fillcolor=white, label=95];
+">7" [style=filled, fillcolor=white, label=">"];
+958 -> ">7"  [label=number];
+"%9" [style=filled, fillcolor=white, label="%"];
+"%9" -> 958  [label=num];
+incorporation5 -> "%9"  [label=prep_in];
+cells13 [style=filled, fillcolor=white, label=cells];
+not11 [style=filled, fillcolor=white, label=not];
+cells13 -> not11  [label=neg];
+injected12 [style=filled, fillcolor=white, label=injected];
+cells13 -> injected12  [label=num];
+"%9" -> cells13  [label=prep_of];
+}

@@ -1,0 +1,32 @@
+digraph "STAP-2 mRNA was strongly induced in the liver in response to lipopolysaccharide and in isolated hepatocytes in response to interleukin-6 ." {
+label="STAP-2 mRNA was strongly induced in the liver in response to lipopolysaccharide
+and in isolated hepatocytes in response to interleukin-6 .";
+mRNA2 [style=filled, fillcolor=white, label=mRNA];
+"STAP-21" [style=filled, fillcolor=white, label="STAP-2"];
+mRNA2 -> "STAP-21"  [label=nn];
+induced5 [style=filled, fillcolor=white, label=induced];
+induced5 -> mRNA2  [label=nsubjpass];
+was3 [style=filled, fillcolor=white, label=was];
+induced5 -> was3  [label=auxpass];
+strongly4 [style=filled, fillcolor=white, label=strongly];
+induced5 -> strongly4  [label=advmod];
+induced5 -> induced5  [label=root];
+"induced5'" [style=filled, fillcolor=white, label=induced];
+induced5 -> "induced5'"  [label=conj_and];
+liver8 [style=filled, fillcolor=white, label=liver];
+the7 [style=filled, fillcolor=white, label=the];
+liver8 -> the7  [label=det];
+induced5 -> liver8  [label=prep_in];
+response10 [style=filled, fillcolor=white, label=response];
+liver8 -> response10  [label=prep_in];
+lipopolysaccharide12 [style=filled, fillcolor=white, label=lipopolysaccharide];
+induced5 -> lipopolysaccharide12  [label=prep_to];
+hepatocytes16 [style=filled, fillcolor=white, label=hepatocytes];
+isolated15 [style=filled, fillcolor=white, label=isolated];
+hepatocytes16 -> isolated15  [label=amod];
+"induced5'" -> hepatocytes16  [label=prep_in];
+response18 [style=filled, fillcolor=white, label=response];
+hepatocytes16 -> response18  [label=prep_in];
+"interleukin-620" [style=filled, fillcolor=white, label="interleukin-6"];
+response18 -> "interleukin-620"  [label=prep_to];
+}

@@ -1,0 +1,47 @@
+digraph "Bud formation differs from an EMT in that E-cadherin activity needs to be down-regulated but not prevented ,  so that adhesive junctions are remodeled rather than quantitatively impaired ." {
+label="Bud formation differs from an EMT in that E-cadherin activity needs to be down-
+regulated but not prevented ,  so that adhesive junctions are remodeled rather
+than quantitatively impaired .";
+formation2 [style=filled, fillcolor=white, label=formation];
+Bud1 [style=filled, fillcolor=white, label=Bud];
+formation2 -> Bud1  [label=nn];
+differs3 [style=filled, fillcolor=white, label=differs];
+differs3 -> formation2  [label=nsubj];
+differs3 -> differs3  [label=root];
+EMT6 [style=filled, fillcolor=white, label=EMT];
+an5 [style=filled, fillcolor=white, label=an];
+EMT6 -> an5  [label=det];
+differs3 -> EMT6  [label=prep_from];
+needs11 [style=filled, fillcolor=white, label=needs];
+that8 [style=filled, fillcolor=white, label=that];
+needs11 -> that8  [label=prep_in];
+activity10 [style=filled, fillcolor=white, label=activity];
+"E-cadherin9" [style=filled, fillcolor=white, label="E-cadherin"];
+activity10 -> "E-cadherin9"  [label=amod];
+needs11 -> activity10  [label=nsubj];
+differs3 -> needs11  [label=ccomp];
+"down-regulated14" [style=filled, fillcolor=white, label="down-regulated"];
+to12 [style=filled, fillcolor=white, label=to];
+"down-regulated14" -> to12  [label=aux];
+be13 [style=filled, fillcolor=white, label=be];
+"down-regulated14" -> be13  [label=auxpass];
+needs11 -> "down-regulated14"  [label=xcomp];
+prevented17 [style=filled, fillcolor=white, label=prevented];
+"down-regulated14" -> prevented17  [label=conj_negcc];
+remodeled24 [style=filled, fillcolor=white, label=remodeled];
+that20 [style=filled, fillcolor=white, label=that];
+remodeled24 -> that20  [label=mark];
+junctions22 [style=filled, fillcolor=white, label=junctions];
+adhesive21 [style=filled, fillcolor=white, label=adhesive];
+junctions22 -> adhesive21  [label=amod];
+remodeled24 -> junctions22  [label=nsubj];
+are23 [style=filled, fillcolor=white, label=are];
+remodeled24 -> are23  [label=cop];
+needs11 -> remodeled24  [label=conj_so];
+rather25 [style=filled, fillcolor=white, label=rather];
+remodeled24 -> rather25  [label=advmod];
+impaired28 [style=filled, fillcolor=white, label=impaired];
+quantitatively27 [style=filled, fillcolor=white, label=quantitatively];
+impaired28 -> quantitatively27  [label=advmod];
+remodeled24 -> impaired28  [label=prep_than];
+}

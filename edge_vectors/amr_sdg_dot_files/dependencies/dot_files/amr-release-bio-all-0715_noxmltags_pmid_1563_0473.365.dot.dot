@@ -1,0 +1,38 @@
+digraph "2 d after transfection ,  cells were switched from low-calcium growth medium to high-calcium medium for 6 h to induce AJ formation ." {
+label="2 d after transfection ,  cells were switched from low-calcium growth medium to
+high-calcium medium for 6 h to induce AJ formation .";
+d2 [style=filled, fillcolor=white, label=d];
+21 [style=filled, fillcolor=white, label=2];
+d2 -> 21  [label=npadvmod];
+switched8 [style=filled, fillcolor=white, label=switched];
+switched8 -> d2  [label=advmod];
+transfection4 [style=filled, fillcolor=white, label=transfection];
+switched8 -> transfection4  [label=prep_after];
+cells6 [style=filled, fillcolor=white, label=cells];
+switched8 -> cells6  [label=nsubjpass];
+were7 [style=filled, fillcolor=white, label=were];
+switched8 -> were7  [label=auxpass];
+switched8 -> switched8  [label=root];
+medium12 [style=filled, fillcolor=white, label=medium];
+"low-calcium10" [style=filled, fillcolor=white, label="low-calcium"];
+medium12 -> "low-calcium10"  [label=amod];
+growth11 [style=filled, fillcolor=white, label=growth];
+medium12 -> growth11  [label=nn];
+switched8 -> medium12  [label=prep_from];
+medium15 [style=filled, fillcolor=white, label=medium];
+"high-calcium14" [style=filled, fillcolor=white, label="high-calcium"];
+medium15 -> "high-calcium14"  [label=amod];
+switched8 -> medium15  [label=prep_to];
+h18 [style=filled, fillcolor=white, label=h];
+617 [style=filled, fillcolor=white, label=6];
+h18 -> 617  [label=num];
+medium15 -> h18  [label=prep_for];
+induce20 [style=filled, fillcolor=white, label=induce];
+to19 [style=filled, fillcolor=white, label=to];
+induce20 -> to19  [label=aux];
+switched8 -> induce20  [label=xcomp];
+formation22 [style=filled, fillcolor=white, label=formation];
+AJ21 [style=filled, fillcolor=white, label=AJ];
+formation22 -> AJ21  [label=nn];
+induce20 -> formation22  [label=dobj];
+}

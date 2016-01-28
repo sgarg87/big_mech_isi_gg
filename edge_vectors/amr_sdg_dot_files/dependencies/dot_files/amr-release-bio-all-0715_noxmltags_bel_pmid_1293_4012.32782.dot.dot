@@ -1,0 +1,45 @@
+digraph "from full text - However ,  in Clock mutant ( Clock/Clock ) mice ( 26 ) ,  which carry dominantnegative Clock mutations ( 27 ) ,  wee1 expression was low at both ZTs" {
+label="from full text - However ,  in Clock mutant ( Clock/Clock ) mice ( 26 ) ,
+which carry dominantnegative Clock mutations ( 27 ) ,  wee1 expression was low
+at both ZTs";
+text3 [style=filled, fillcolor=white, label=text];
+full2 [style=filled, fillcolor=white, label=full];
+text3 -> full2  [label=amod];
+low30 [style=filled, fillcolor=white, label=low];
+low30 -> text3  [label=prep_from];
+However5 [style=filled, fillcolor=white, label=However];
+text3 -> However5  [label=advmod];
+Clock8 [style=filled, fillcolor=white, label=Clock];
+text3 -> Clock8  [label=prepc_in];
+mice13 [style=filled, fillcolor=white, label=mice];
+mutant9 [style=filled, fillcolor=white, label=mutant];
+mice13 -> mutant9  [label=amod];
+"Clock/Clock11" [style=filled, fillcolor=white, label="Clock/Clock"];
+mice13 -> "Clock/Clock11"  [label=appos];
+Clock8 -> mice13  [label=dobj];
+2615 [style=filled, fillcolor=white, label=26];
+Clock8 -> 2615  [label=dep];
+carry19 [style=filled, fillcolor=white, label=carry];
+which18 [style=filled, fillcolor=white, label=which];
+carry19 -> which18  [label=nsubj];
+text3 -> carry19  [label=rcmod];
+mutations22 [style=filled, fillcolor=white, label=mutations];
+dominantnegative20 [style=filled, fillcolor=white, label=dominantnegative];
+mutations22 -> dominantnegative20  [label=amod];
+Clock21 [style=filled, fillcolor=white, label=Clock];
+mutations22 -> Clock21  [label=nn];
+carry19 -> mutations22  [label=dobj];
+2724 [style=filled, fillcolor=white, label=27];
+mutations22 -> 2724  [label=appos];
+expression28 [style=filled, fillcolor=white, label=expression];
+wee127 [style=filled, fillcolor=white, label=wee1];
+expression28 -> wee127  [label=amod];
+low30 -> expression28  [label=nsubj];
+was29 [style=filled, fillcolor=white, label=was];
+low30 -> was29  [label=cop];
+low30 -> low30  [label=root];
+ZTs33 [style=filled, fillcolor=white, label=ZTs];
+both32 [style=filled, fillcolor=white, label=both];
+ZTs33 -> both32  [label=det];
+low30 -> ZTs33  [label=prep_at];
+}

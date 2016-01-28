@@ -1,0 +1,21 @@
+digraph "( A -- H ) Immunofluorescence of skin sections from P3 WT and Tg mice ." {
+label="( A -- H ) Immunofluorescence of skin sections from P3 WT and Tg mice .";
+Immunofluorescence6 [style=filled, fillcolor=white, label=Immunofluorescence];
+A2 [style=filled, fillcolor=white, label=A];
+Immunofluorescence6 -> A2  [label=nsubj];
+H4 [style=filled, fillcolor=white, label=H];
+A2 -> H4  [label=dep];
+Immunofluorescence6 -> Immunofluorescence6  [label=root];
+sections9 [style=filled, fillcolor=white, label=sections];
+skin8 [style=filled, fillcolor=white, label=skin];
+sections9 -> skin8  [label=nn];
+Immunofluorescence6 -> sections9  [label=prep_of];
+WT12 [style=filled, fillcolor=white, label=WT];
+P311 [style=filled, fillcolor=white, label=P3];
+WT12 -> P311  [label=nn];
+Immunofluorescence6 -> WT12  [label=prep_from];
+mice15 [style=filled, fillcolor=white, label=mice];
+Tg14 [style=filled, fillcolor=white, label=Tg];
+mice15 -> Tg14  [label=nn];
+WT12 -> mice15  [label=conj_and];
+}

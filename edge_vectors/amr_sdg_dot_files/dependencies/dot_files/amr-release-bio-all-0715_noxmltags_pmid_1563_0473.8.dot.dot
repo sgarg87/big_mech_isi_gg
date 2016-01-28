@@ -1,0 +1,49 @@
+digraph "This novel signaling pathway further weaves together the web of different morphogens and downstream transcriptional events that guide hair bud formation within the developing skin ." {
+label="This novel signaling pathway further weaves together the web of different
+morphogens and downstream transcriptional events that guide hair bud formation
+within the developing skin .";
+novel2 [style=filled, fillcolor=white, label=novel];
+This1 [style=filled, fillcolor=white, label=This];
+novel2 -> This1  [label=det];
+weaves6 [style=filled, fillcolor=white, label=weaves];
+weaves6 -> novel2  [label=nsubj];
+signaling3 [style=filled, fillcolor=white, label=signaling];
+novel2 -> signaling3  [label=vmod];
+pathway4 [style=filled, fillcolor=white, label=pathway];
+signaling3 -> pathway4  [label=advmod];
+further5 [style=filled, fillcolor=white, label=further];
+weaves6 -> further5  [label=advmod];
+weaves6 -> weaves6  [label=root];
+together7 [style=filled, fillcolor=white, label=together];
+weaves6 -> together7  [label=prt];
+web9 [style=filled, fillcolor=white, label=web];
+the8 [style=filled, fillcolor=white, label=the];
+web9 -> the8  [label=det];
+weaves6 -> web9  [label=dobj];
+morphogens12 [style=filled, fillcolor=white, label=morphogens];
+different11 [style=filled, fillcolor=white, label=different];
+morphogens12 -> different11  [label=amod];
+web9 -> morphogens12  [label=prep_of];
+events16 [style=filled, fillcolor=white, label=events];
+downstream14 [style=filled, fillcolor=white, label=downstream];
+events16 -> downstream14  [label=amod];
+transcriptional15 [style=filled, fillcolor=white, label=transcriptional];
+events16 -> transcriptional15  [label=amod];
+web9 -> events16  [label=conj_and];
+guide18 [style=filled, fillcolor=white, label=guide];
+that17 [style=filled, fillcolor=white, label=that];
+guide18 -> that17  [label=nsubj];
+events16 -> guide18  [label=rcmod];
+formation21 [style=filled, fillcolor=white, label=formation];
+hair19 [style=filled, fillcolor=white, label=hair];
+formation21 -> hair19  [label=nn];
+bud20 [style=filled, fillcolor=white, label=bud];
+formation21 -> bud20  [label=nn];
+guide18 -> formation21  [label=dobj];
+skin25 [style=filled, fillcolor=white, label=skin];
+the23 [style=filled, fillcolor=white, label=the];
+skin25 -> the23  [label=det];
+developing24 [style=filled, fillcolor=white, label=developing];
+skin25 -> developing24  [label=amod];
+formation21 -> skin25  [label=prep_within];
+}

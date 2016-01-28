@@ -1,0 +1,52 @@
+digraph "Equal amounts of protein extracts were treated with anti-Grb-2 antibody ( + ) or control isotype antibody ( -- ) ,  and following centrifugation ,  immunoprecipitates were subjected to SDS-PAGE and Western blot analysis with anti-Ajuba and anti-Grb-2 antibodies ." {
+label="Equal amounts of protein extracts were treated with anti-Grb-2 antibody ( + )
+or control isotype antibody ( -- ) ,  and following centrifugation ,
+immunoprecipitates were subjected to SDS-PAGE and Western blot analysis with
+anti-Ajuba and anti-Grb-2 antibodies .";
+amounts2 [style=filled, fillcolor=white, label=amounts];
+Equal1 [style=filled, fillcolor=white, label=Equal];
+amounts2 -> Equal1  [label=nn];
+treated7 [style=filled, fillcolor=white, label=treated];
+treated7 -> amounts2  [label=nsubjpass];
+extracts5 [style=filled, fillcolor=white, label=extracts];
+protein4 [style=filled, fillcolor=white, label=protein];
+extracts5 -> protein4  [label=nn];
+amounts2 -> extracts5  [label=prep_of];
+were6 [style=filled, fillcolor=white, label=were];
+treated7 -> were6  [label=auxpass];
+treated7 -> treated7  [label=root];
+antibody10 [style=filled, fillcolor=white, label=antibody];
+"anti-Grb-29" [style=filled, fillcolor=white, label="anti-Grb-2"];
+antibody10 -> "anti-Grb-29"  [label=amod];
+treated7 -> antibody10  [label=prep_with];
+"+12" [style=filled, fillcolor=white, label="+"];
+antibody10 -> "+12"  [label=dep];
+antibody17 [style=filled, fillcolor=white, label=antibody];
+control15 [style=filled, fillcolor=white, label=control];
+antibody17 -> control15  [label=nn];
+isotype16 [style=filled, fillcolor=white, label=isotype];
+antibody17 -> isotype16  [label=nn];
+antibody10 -> antibody17  [label=conj_or];
+subjected28 [style=filled, fillcolor=white, label=subjected];
+centrifugation24 [style=filled, fillcolor=white, label=centrifugation];
+subjected28 -> centrifugation24  [label=prep_following];
+immunoprecipitates26 [style=filled, fillcolor=white, label=immunoprecipitates];
+subjected28 -> immunoprecipitates26  [label=nsubjpass];
+were27 [style=filled, fillcolor=white, label=were];
+subjected28 -> were27  [label=auxpass];
+treated7 -> subjected28  [label=conj_and];
+analysis34 [style=filled, fillcolor=white, label=analysis];
+"SDS-PAGE30" [style=filled, fillcolor=white, label="SDS-PAGE"];
+analysis34 -> "SDS-PAGE30"  [label=nn];
+Western32 [style=filled, fillcolor=white, label=Western];
+"SDS-PAGE30" -> Western32  [label=conj_and];
+blot33 [style=filled, fillcolor=white, label=blot];
+analysis34 -> blot33  [label=nn];
+subjected28 -> analysis34  [label=prep_to];
+antibodies39 [style=filled, fillcolor=white, label=antibodies];
+"anti-Ajuba36" [style=filled, fillcolor=white, label="anti-Ajuba"];
+antibodies39 -> "anti-Ajuba36"  [label=amod];
+"anti-Grb-238" [style=filled, fillcolor=white, label="anti-Grb-2"];
+"anti-Ajuba36" -> "anti-Grb-238"  [label=conj_and];
+analysis34 -> antibodies39  [label=prep_with];
+}

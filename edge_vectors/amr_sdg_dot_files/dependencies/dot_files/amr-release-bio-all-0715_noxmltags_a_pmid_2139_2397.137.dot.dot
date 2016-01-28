@@ -1,0 +1,36 @@
+digraph "As shown in Figure 2A ,  K-RAS siRNA led to a strong reduction in P-ERK1 / 2 and P-YB-1 ( Figure 2A ) ." {
+label="As shown in Figure 2A ,  K-RAS siRNA led to a strong reduction in P-ERK1 / 2
+and P-YB-1 ( Figure 2A ) .";
+shown2 [style=filled, fillcolor=white, label=shown];
+As1 [style=filled, fillcolor=white, label=As];
+shown2 -> As1  [label=mark];
+led9 [style=filled, fillcolor=white, label=led];
+led9 -> shown2  [label=advcl];
+Figure4 [style=filled, fillcolor=white, label=Figure];
+shown2 -> Figure4  [label=prep_in];
+"2A5" [style=filled, fillcolor=white, label="2A"];
+Figure4 -> "2A5"  [label=num];
+siRNA8 [style=filled, fillcolor=white, label=siRNA];
+"K-RAS7" [style=filled, fillcolor=white, label="K-RAS"];
+siRNA8 -> "K-RAS7"  [label=nn];
+led9 -> siRNA8  [label=nsubj];
+led9 -> led9  [label=root];
+reduction13 [style=filled, fillcolor=white, label=reduction];
+a11 [style=filled, fillcolor=white, label=a];
+reduction13 -> a11  [label=det];
+strong12 [style=filled, fillcolor=white, label=strong];
+reduction13 -> strong12  [label=amod];
+led9 -> reduction13  [label=prep_to];
+"P-ERK15" [style=filled, fillcolor=white, label="P-ERK1"];
+led9 -> "P-ERK15"  [label=prep_in];
+217 [style=filled, fillcolor=white, label=2];
+"/16" [style=filled, fillcolor=white, label="/"];
+217 -> "/16"  [label=punct];
+"P-ERK15" -> 217  [label=dep];
+"P-YB-19" [style=filled, fillcolor=white, label="P-YB-1"];
+217 -> "P-YB-19"  [label=conj_and];
+Figure21 [style=filled, fillcolor=white, label=Figure];
+"P-ERK15" -> Figure21  [label=appos];
+"2A" [style=filled, fillcolor=white, label="2A"];
+Figure21 -> "2A"  [label=num];
+}

@@ -1,0 +1,49 @@
+digraph "Both early passage and immortalized MEF cells from GSTpi ( - / - ) animals expressed significantly elevated activity of extracellular signal-regulated kinases ERK1/ERK2 ,  kinases linked to cell proliferation pathways" {
+label="Both early passage and immortalized MEF cells from GSTpi ( - / - ) animals
+expressed significantly elevated activity of extracellular signal-regulated
+kinases ERK1/ERK2 ,  kinases linked to cell proliferation pathways";
+passage3 [style=filled, fillcolor=white, label=passage];
+Both1 [style=filled, fillcolor=white, label=Both];
+passage3 -> Both1  [label=det];
+early2 [style=filled, fillcolor=white, label=early];
+passage3 -> early2  [label=amod];
+expressed16 [style=filled, fillcolor=white, label=expressed];
+expressed16 -> passage3  [label=nsubj];
+cells7 [style=filled, fillcolor=white, label=cells];
+immortalized5 [style=filled, fillcolor=white, label=immortalized];
+cells7 -> immortalized5  [label=amod];
+MEF6 [style=filled, fillcolor=white, label=MEF];
+cells7 -> MEF6  [label=nn];
+passage3 -> cells7  [label=conj_and];
+animals15 [style=filled, fillcolor=white, label=animals];
+GSTpi9 [style=filled, fillcolor=white, label=GSTpi];
+animals15 -> GSTpi9  [label=amod];
+"/12" [style=filled, fillcolor=white, label="/"];
+animals15 -> "/12"  [label=dep];
+cells7 -> animals15  [label=prep_from];
+expressed16 -> expressed16  [label=root];
+elevated18 [style=filled, fillcolor=white, label=elevated];
+significantly17 [style=filled, fillcolor=white, label=significantly];
+elevated18 -> significantly17  [label=advmod];
+expressed16 -> elevated18  [label=dep];
+activity19 [style=filled, fillcolor=white, label=activity];
+elevated18 -> activity19  [label=dobj];
+kinases23 [style=filled, fillcolor=white, label=kinases];
+extracellular21 [style=filled, fillcolor=white, label=extracellular];
+kinases23 -> extracellular21  [label=amod];
+"signal-regulated22" [style=filled, fillcolor=white, label="signal-regulated"];
+kinases23 -> "signal-regulated22"  [label=amod];
+activity19 -> kinases23  [label=prep_of];
+"ERK1/ERK224" [style=filled, fillcolor=white, label="ERK1/ERK2"];
+elevated18 -> "ERK1/ERK224"  [label=nsubj];
+kinases26 [style=filled, fillcolor=white, label=kinases];
+"ERK1/ERK224" -> kinases26  [label=appos];
+linked27 [style=filled, fillcolor=white, label=linked];
+kinases26 -> linked27  [label=vmod];
+pathways31 [style=filled, fillcolor=white, label=pathways];
+cell29 [style=filled, fillcolor=white, label=cell];
+pathways31 -> cell29  [label=nn];
+proliferation30 [style=filled, fillcolor=white, label=proliferation];
+pathways31 -> proliferation30  [label=nn];
+linked27 -> pathways31  [label=prep_to];
+}

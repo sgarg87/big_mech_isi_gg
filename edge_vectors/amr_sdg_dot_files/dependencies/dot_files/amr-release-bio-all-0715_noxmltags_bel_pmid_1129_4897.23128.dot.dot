@@ -1,0 +1,36 @@
+digraph "We also found that Y770 may function as a negative regulatory site for FGFR3-stimulated transformation and PI 3-kinase activation ." {
+label="We also found that Y770 may function as a negative regulatory site for
+FGFR3-stimulated transformation and PI 3-kinase activation .";
+found3 [style=filled, fillcolor=white, label=found];
+We1 [style=filled, fillcolor=white, label=We];
+found3 -> We1  [label=nsubj];
+also2 [style=filled, fillcolor=white, label=also];
+found3 -> also2  [label=advmod];
+found3 -> found3  [label=root];
+function7 [style=filled, fillcolor=white, label=function];
+that4 [style=filled, fillcolor=white, label=that];
+function7 -> that4  [label=mark];
+Y7705 [style=filled, fillcolor=white, label=Y770];
+function7 -> Y7705  [label=nsubj];
+may6 [style=filled, fillcolor=white, label=may];
+function7 -> may6  [label=aux];
+found3 -> function7  [label=ccomp];
+site12 [style=filled, fillcolor=white, label=site];
+a9 [style=filled, fillcolor=white, label=a];
+site12 -> a9  [label=det];
+negative10 [style=filled, fillcolor=white, label=negative];
+site12 -> negative10  [label=amod];
+regulatory11 [style=filled, fillcolor=white, label=regulatory];
+site12 -> regulatory11  [label=amod];
+function7 -> site12  [label=prep_as];
+transformation15 [style=filled, fillcolor=white, label=transformation];
+"FGFR3-stimulated14" [style=filled, fillcolor=white, label="FGFR3-stimulated"];
+transformation15 -> "FGFR3-stimulated14"  [label=nn];
+site12 -> transformation15  [label=prep_for];
+PI17 [style=filled, fillcolor=white, label=PI];
+function7 -> PI17  [label=conj_and];
+activation19 [style=filled, fillcolor=white, label=activation];
+"3-kinase18" [style=filled, fillcolor=white, label="3-kinase"];
+activation19 -> "3-kinase18"  [label=amod];
+PI17 -> activation19  [label=dobj];
+}

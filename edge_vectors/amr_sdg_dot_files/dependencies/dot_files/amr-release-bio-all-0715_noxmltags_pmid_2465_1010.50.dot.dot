@@ -1,0 +1,75 @@
+digraph "Different frequencies of K-Ras ,  N-Ras ,  and H-Ras mutations in human tumors may also reflect differences in gene expression resulting from differential codon usage ; rare codons limit K-Ras expression and thus allow more efficient oncogenesis by preventing oncogene-induced senescence ( Lampson et al. ,  2013 ) ." {
+label="Different frequencies of K-Ras ,  N-Ras ,  and H-Ras mutations in human tumors
+may also reflect differences in gene expression resulting from differential
+codon usage ; rare codons limit K-Ras expression and thus allow more efficient
+oncogenesis by preventing oncogene-induced senescence ( Lampson et al. ,  2013 )
+.";
+frequencies2 [style=filled, fillcolor=white, label=frequencies];
+Different1 [style=filled, fillcolor=white, label=Different];
+frequencies2 -> Different1  [label=amod];
+reflect16 [style=filled, fillcolor=white, label=reflect];
+reflect16 -> frequencies2  [label=nsubj];
+"N-Ras6" [style=filled, fillcolor=white, label="N-Ras"];
+"K-Ras4" [style=filled, fillcolor=white, label="K-Ras"];
+"N-Ras6" -> "K-Ras4"  [label=nn];
+frequencies2 -> "N-Ras6"  [label=prep_of];
+mutations10 [style=filled, fillcolor=white, label=mutations];
+"H-Ras9" [style=filled, fillcolor=white, label="H-Ras"];
+mutations10 -> "H-Ras9"  [label=nn];
+"N-Ras6" -> mutations10  [label=conj_and];
+tumors13 [style=filled, fillcolor=white, label=tumors];
+human12 [style=filled, fillcolor=white, label=human];
+tumors13 -> human12  [label=amod];
+"N-Ras6" -> tumors13  [label=prep_in];
+may14 [style=filled, fillcolor=white, label=may];
+reflect16 -> may14  [label=aux];
+also15 [style=filled, fillcolor=white, label=also];
+reflect16 -> also15  [label=advmod];
+reflect16 -> reflect16  [label=root];
+differences17 [style=filled, fillcolor=white, label=differences];
+reflect16 -> differences17  [label=dobj];
+expression20 [style=filled, fillcolor=white, label=expression];
+gene19 [style=filled, fillcolor=white, label=gene];
+expression20 -> gene19  [label=nn];
+reflect16 -> expression20  [label=prep_in];
+resulting21 [style=filled, fillcolor=white, label=resulting];
+expression20 -> resulting21  [label=vmod];
+usage25 [style=filled, fillcolor=white, label=usage];
+differential23 [style=filled, fillcolor=white, label=differential];
+usage25 -> differential23  [label=nn];
+codon24 [style=filled, fillcolor=white, label=codon];
+usage25 -> codon24  [label=nn];
+resulting21 -> usage25  [label=prep_from];
+codons28 [style=filled, fillcolor=white, label=codons];
+rare27 [style=filled, fillcolor=white, label=rare];
+codons28 -> rare27  [label=amod];
+limit29 [style=filled, fillcolor=white, label=limit];
+limit29 -> codons28  [label=nsubj];
+reflect16 -> limit29  [label=parataxis];
+expression31 [style=filled, fillcolor=white, label=expression];
+"K-Ras30" [style=filled, fillcolor=white, label="K-Ras"];
+expression31 -> "K-Ras30"  [label=nn];
+limit29 -> expression31  [label=dobj];
+allow34 [style=filled, fillcolor=white, label=allow];
+thus33 [style=filled, fillcolor=white, label=thus];
+allow34 -> thus33  [label=advmod];
+limit29 -> allow34  [label=conj_and];
+efficient36 [style=filled, fillcolor=white, label=efficient];
+more35 [style=filled, fillcolor=white, label=more];
+efficient36 -> more35  [label=advmod];
+oncogenesis37 [style=filled, fillcolor=white, label=oncogenesis];
+oncogenesis37 -> efficient36  [label=amod];
+allow34 -> oncogenesis37  [label=dobj];
+preventing39 [style=filled, fillcolor=white, label=preventing];
+allow34 -> preventing39  [label=prepc_by];
+senescence41 [style=filled, fillcolor=white, label=senescence];
+"oncogene-induced40" [style=filled, fillcolor=white, label="oncogene-induced"];
+senescence41 -> "oncogene-induced40"  [label=amod];
+preventing39 -> senescence41  [label=dobj];
+Lampson43 [style=filled, fillcolor=white, label=Lampson];
+senescence41 -> Lampson43  [label=appos];
+"al.45" [style=filled, fillcolor=white, label="al."];
+Lampson43 -> "al.45"  [label=conj_et];
+201347 [style=filled, fillcolor=white, label=2013];
+Lampson43 -> 201347  [label=dep];
+}

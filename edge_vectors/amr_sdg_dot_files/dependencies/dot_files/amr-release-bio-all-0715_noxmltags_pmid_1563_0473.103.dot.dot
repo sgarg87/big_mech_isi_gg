@@ -1,0 +1,49 @@
+digraph "In both back skin and ear skin ,  overall levels of E-cadherin and α-catenin were reduced ,  under conditions where β-catenin and Ajuba levels remained unchanged relative to controls ( Figure 4B ) ." {
+label="In both back skin and ear skin ,  overall levels of E-cadherin and α-catenin
+were reduced ,  under conditions where β-catenin and Ajuba levels remained
+unchanged relative to controls ( Figure 4B ) .";
+skin4 [style=filled, fillcolor=white, label=skin];
+both2 [style=filled, fillcolor=white, label=both];
+skin4 -> both2  [label=preconj];
+back3 [style=filled, fillcolor=white, label=back];
+skin4 -> back3  [label=amod];
+reduced16 [style=filled, fillcolor=white, label=reduced];
+reduced16 -> skin4  [label=prep_in];
+skin7 [style=filled, fillcolor=white, label=skin];
+ear6 [style=filled, fillcolor=white, label=ear];
+skin7 -> ear6  [label=nn];
+skin4 -> skin7  [label=conj_and];
+levels10 [style=filled, fillcolor=white, label=levels];
+overall9 [style=filled, fillcolor=white, label=overall];
+levels10 -> overall9  [label=amod];
+reduced16 -> levels10  [label=nsubjpass];
+"E-cadherin12" [style=filled, fillcolor=white, label="E-cadherin"];
+levels10 -> "E-cadherin12"  [label=prep_of];
+"α-catenin14" [style=filled, fillcolor=white, label="α-catenin"];
+"E-cadherin12" -> "α-catenin14"  [label=conj_and];
+were15 [style=filled, fillcolor=white, label=were];
+reduced16 -> were15  [label=auxpass];
+reduced16 -> reduced16  [label=root];
+conditions19 [style=filled, fillcolor=white, label=conditions];
+reduced16 -> conditions19  [label=prep_under];
+remained25 [style=filled, fillcolor=white, label=remained];
+where20 [style=filled, fillcolor=white, label=where];
+remained25 -> where20  [label=advmod];
+levels24 [style=filled, fillcolor=white, label=levels];
+"β-catenin21" [style=filled, fillcolor=white, label="β-catenin"];
+levels24 -> "β-catenin21"  [label=nn];
+Ajuba23 [style=filled, fillcolor=white, label=Ajuba];
+"β-catenin21" -> Ajuba23  [label=conj_and];
+remained25 -> levels24  [label=nsubj];
+conditions19 -> remained25  [label=rcmod];
+unchanged26 [style=filled, fillcolor=white, label=unchanged];
+remained25 -> unchanged26  [label=acomp];
+relative27 [style=filled, fillcolor=white, label=relative];
+remained25 -> relative27  [label=advmod];
+controls29 [style=filled, fillcolor=white, label=controls];
+remained25 -> controls29  [label=prep_to];
+Figure31 [style=filled, fillcolor=white, label=Figure];
+controls29 -> Figure31  [label=appos];
+"4B32" [style=filled, fillcolor=white, label="4B"];
+Figure31 -> "4B32"  [label=num];
+}

@@ -1,0 +1,44 @@
+digraph "PAFR promoter 2 contained AP-2 and Sp-1 binding sites we demonstrated that PAF activates p44ERK1/p42ERK2 in CHO cells stably expressing PAF receptor" {
+label="PAFR promoter 2 contained AP-2 and Sp-1 binding sites we demonstrated that PAF
+activates p44ERK1/p42ERK2 in CHO cells stably expressing PAF receptor";
+promoter2 [style=filled, fillcolor=white, label=promoter];
+PAFR1 [style=filled, fillcolor=white, label=PAFR];
+promoter2 -> PAFR1  [label=nn];
+contained4 [style=filled, fillcolor=white, label=contained];
+contained4 -> promoter2  [label=nsubj];
+23 [style=filled, fillcolor=white, label=2];
+promoter2 -> 23  [label=num];
+contained4 -> contained4  [label=root];
+sites9 [style=filled, fillcolor=white, label=sites];
+"AP-25" [style=filled, fillcolor=white, label="AP-2"];
+sites9 -> "AP-25"  [label=amod];
+"Sp-17" [style=filled, fillcolor=white, label="Sp-1"];
+"AP-25" -> "Sp-17"  [label=conj_and];
+binding8 [style=filled, fillcolor=white, label=binding];
+sites9 -> binding8  [label=amod];
+contained4 -> sites9  [label=dobj];
+demonstrated11 [style=filled, fillcolor=white, label=demonstrated];
+we10 [style=filled, fillcolor=white, label=we];
+demonstrated11 -> we10  [label=nsubj];
+sites9 -> demonstrated11  [label=rcmod];
+activates14 [style=filled, fillcolor=white, label=activates];
+that12 [style=filled, fillcolor=white, label=that];
+activates14 -> that12  [label=mark];
+PAF13 [style=filled, fillcolor=white, label=PAF];
+activates14 -> PAF13  [label=nsubj];
+demonstrated11 -> activates14  [label=ccomp];
+"p44ERK1/p42ERK215" [style=filled, fillcolor=white, label="p44ERK1/p42ERK2"];
+activates14 -> "p44ERK1/p42ERK215"  [label=dobj];
+cells18 [style=filled, fillcolor=white, label=cells];
+CHO17 [style=filled, fillcolor=white, label=CHO];
+cells18 -> CHO17  [label=nn];
+expressing20 [style=filled, fillcolor=white, label=expressing];
+expressing20 -> cells18  [label=nsubj];
+stably19 [style=filled, fillcolor=white, label=stably];
+expressing20 -> stably19  [label=advmod];
+activates14 -> expressing20  [label=prepc_in];
+receptor22 [style=filled, fillcolor=white, label=receptor];
+PAF21 [style=filled, fillcolor=white, label=PAF];
+receptor22 -> PAF21  [label=nn];
+expressing20 -> receptor22  [label=dobj];
+}

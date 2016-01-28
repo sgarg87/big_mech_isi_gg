@@ -1,0 +1,24 @@
+digraph "Strikingly ,  the Raf proteins themselves are also substrates of activated ERK ." {
+label="Strikingly ,  the Raf proteins themselves are also substrates of activated ERK
+.";
+substrates9 [style=filled, fillcolor=white, label=substrates];
+Strikingly1 [style=filled, fillcolor=white, label=Strikingly];
+substrates9 -> Strikingly1  [label=advmod];
+proteins5 [style=filled, fillcolor=white, label=proteins];
+the3 [style=filled, fillcolor=white, label=the];
+proteins5 -> the3  [label=det];
+Raf4 [style=filled, fillcolor=white, label=Raf];
+proteins5 -> Raf4  [label=nn];
+substrates9 -> proteins5  [label=nsubj];
+themselves6 [style=filled, fillcolor=white, label=themselves];
+substrates9 -> themselves6  [label=advmod];
+are7 [style=filled, fillcolor=white, label=are];
+substrates9 -> are7  [label=cop];
+also8 [style=filled, fillcolor=white, label=also];
+substrates9 -> also8  [label=advmod];
+substrates9 -> substrates9  [label=root];
+ERK12 [style=filled, fillcolor=white, label=ERK];
+activated11 [style=filled, fillcolor=white, label=activated];
+ERK12 -> activated11  [label=amod];
+substrates9 -> ERK12  [label=prep_of];
+}

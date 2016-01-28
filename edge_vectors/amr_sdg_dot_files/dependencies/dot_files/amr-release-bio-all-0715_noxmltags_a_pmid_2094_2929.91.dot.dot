@@ -1,0 +1,34 @@
+digraph "The tumorigenicity of colorectal cell lines was next assessed after subcutaneous ( s.c. ) injection into the flank of nude mice ." {
+label="The tumorigenicity of colorectal cell lines was next assessed after
+subcutaneous ( s.c. ) injection into the flank of nude mice .";
+tumorigenicity2 [style=filled, fillcolor=white, label=tumorigenicity];
+The1 [style=filled, fillcolor=white, label=The];
+tumorigenicity2 -> The1  [label=det];
+assessed9 [style=filled, fillcolor=white, label=assessed];
+assessed9 -> tumorigenicity2  [label=nsubjpass];
+lines6 [style=filled, fillcolor=white, label=lines];
+colorectal4 [style=filled, fillcolor=white, label=colorectal];
+lines6 -> colorectal4  [label=amod];
+cell5 [style=filled, fillcolor=white, label=cell];
+lines6 -> cell5  [label=nn];
+tumorigenicity2 -> lines6  [label=prep_of];
+was7 [style=filled, fillcolor=white, label=was];
+assessed9 -> was7  [label=auxpass];
+next8 [style=filled, fillcolor=white, label=next];
+assessed9 -> next8  [label=advmod];
+assessed9 -> assessed9  [label=root];
+injection15 [style=filled, fillcolor=white, label=injection];
+subcutaneous11 [style=filled, fillcolor=white, label=subcutaneous];
+injection15 -> subcutaneous11  [label=amod];
+"s.c.13" [style=filled, fillcolor=white, label="s.c."];
+injection15 -> "s.c.13"  [label=appos];
+assessed9 -> injection15  [label=prep_after];
+flank18 [style=filled, fillcolor=white, label=flank];
+the17 [style=filled, fillcolor=white, label=the];
+flank18 -> the17  [label=det];
+injection15 -> flank18  [label=prep_into];
+mice21 [style=filled, fillcolor=white, label=mice];
+nude20 [style=filled, fillcolor=white, label=nude];
+mice21 -> nude20  [label=amod];
+flank18 -> mice21  [label=prep_of];
+}

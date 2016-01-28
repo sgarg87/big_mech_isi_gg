@@ -1,0 +1,26 @@
+digraph "Accordingly ,  knockdown of CTBPs acutely induced HER3 expression and phosphorylation in thyroid cancer cells ." {
+label="Accordingly ,  knockdown of CTBPs acutely induced HER3 expression and
+phosphorylation in thyroid cancer cells .";
+induced7 [style=filled, fillcolor=white, label=induced];
+Accordingly1 [style=filled, fillcolor=white, label=Accordingly];
+induced7 -> Accordingly1  [label=advmod];
+knockdown3 [style=filled, fillcolor=white, label=knockdown];
+induced7 -> knockdown3  [label=nsubj];
+CTBPs5 [style=filled, fillcolor=white, label=CTBPs];
+knockdown3 -> CTBPs5  [label=prep_of];
+acutely6 [style=filled, fillcolor=white, label=acutely];
+induced7 -> acutely6  [label=advmod];
+induced7 -> induced7  [label=root];
+expression9 [style=filled, fillcolor=white, label=expression];
+HER38 [style=filled, fillcolor=white, label=HER3];
+expression9 -> HER38  [label=nn];
+induced7 -> expression9  [label=dobj];
+phosphorylation11 [style=filled, fillcolor=white, label=phosphorylation];
+expression9 -> phosphorylation11  [label=conj_and];
+cells15 [style=filled, fillcolor=white, label=cells];
+thyroid13 [style=filled, fillcolor=white, label=thyroid];
+cells15 -> thyroid13  [label=nn];
+cancer14 [style=filled, fillcolor=white, label=cancer];
+cells15 -> cancer14  [label=nn];
+expression9 -> cells15  [label=prep_in];
+}

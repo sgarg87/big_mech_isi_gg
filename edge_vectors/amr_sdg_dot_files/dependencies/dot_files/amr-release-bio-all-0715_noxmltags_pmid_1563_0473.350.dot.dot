@@ -1,0 +1,53 @@
+digraph "With age ,  affected areas of the Tg epidermis also displayed perturbations within the basement membrane ,  as judged by antibody labeling against either basement membrane ( K and L ) or hemidesmosomal ( M and N ) components ." {
+label="With age ,  affected areas of the Tg epidermis also displayed perturbations
+within the basement membrane ,  as judged by antibody labeling against either
+basement membrane ( K and L ) or hemidesmosomal ( M and N ) components .";
+displayed11 [style=filled, fillcolor=white, label=displayed];
+age2 [style=filled, fillcolor=white, label=age];
+displayed11 -> age2  [label=prep_with];
+areas5 [style=filled, fillcolor=white, label=areas];
+affected4 [style=filled, fillcolor=white, label=affected];
+areas5 -> affected4  [label=amod];
+displayed11 -> areas5  [label=nsubj];
+epidermis9 [style=filled, fillcolor=white, label=epidermis];
+the7 [style=filled, fillcolor=white, label=the];
+epidermis9 -> the7  [label=det];
+Tg8 [style=filled, fillcolor=white, label=Tg];
+epidermis9 -> Tg8  [label=nn];
+areas5 -> epidermis9  [label=prep_of];
+also10 [style=filled, fillcolor=white, label=also];
+displayed11 -> also10  [label=advmod];
+displayed11 -> displayed11  [label=root];
+perturbations12 [style=filled, fillcolor=white, label=perturbations];
+displayed11 -> perturbations12  [label=dobj];
+membrane16 [style=filled, fillcolor=white, label=membrane];
+the14 [style=filled, fillcolor=white, label=the];
+membrane16 -> the14  [label=det];
+basement15 [style=filled, fillcolor=white, label=basement];
+membrane16 -> basement15  [label=nn];
+displayed11 -> membrane16  [label=prep_within];
+components39 [style=filled, fillcolor=white, label=components];
+judged19 [style=filled, fillcolor=white, label=judged];
+components39 -> judged19  [label=amod];
+antibody21 [style=filled, fillcolor=white, label=antibody];
+judged19 -> antibody21  [label=prep_by];
+labeling22 [style=filled, fillcolor=white, label=labeling];
+antibody21 -> labeling22  [label=vmod];
+membrane26 [style=filled, fillcolor=white, label=membrane];
+either24 [style=filled, fillcolor=white, label=either];
+membrane26 -> either24  [label=det];
+basement25 [style=filled, fillcolor=white, label=basement];
+membrane26 -> basement25  [label=nn];
+labeling22 -> membrane26  [label=prep_against];
+K28 [style=filled, fillcolor=white, label=K];
+membrane26 -> K28  [label=appos];
+L30 [style=filled, fillcolor=white, label=L];
+K28 -> L30  [label=conj_and];
+hemidesmosomal33 [style=filled, fillcolor=white, label=hemidesmosomal];
+membrane26 -> hemidesmosomal33  [label=conj_or];
+M35 [style=filled, fillcolor=white, label=M];
+membrane26 -> M35  [label=appos];
+N37 [style=filled, fillcolor=white, label=N];
+M35 -> N37  [label=conj_and];
+displayed11 -> components39  [label=prep_as];
+}

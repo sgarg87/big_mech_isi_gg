@@ -1,0 +1,36 @@
+digraph "Unlike WT B-Raf ,  oncogenic B-Raf proteins have been shown to heterodimerize constitutively with C-Raf in a Ras-independent manner ( 11 ) ." {
+label="Unlike WT B-Raf ,  oncogenic B-Raf proteins have been shown to heterodimerize
+constitutively with C-Raf in a Ras-independent manner ( 11 ) .";
+"B-Raf3" [style=filled, fillcolor=white, label="B-Raf"];
+WT2 [style=filled, fillcolor=white, label=WT];
+"B-Raf3" -> WT2  [label=nn];
+shown10 [style=filled, fillcolor=white, label=shown];
+shown10 -> "B-Raf3"  [label=prep_unlike];
+proteins7 [style=filled, fillcolor=white, label=proteins];
+oncogenic5 [style=filled, fillcolor=white, label=oncogenic];
+proteins7 -> oncogenic5  [label=amod];
+"B-Raf6" [style=filled, fillcolor=white, label="B-Raf"];
+proteins7 -> "B-Raf6"  [label=nn];
+shown10 -> proteins7  [label=nsubjpass];
+have8 [style=filled, fillcolor=white, label=have];
+shown10 -> have8  [label=aux];
+been9 [style=filled, fillcolor=white, label=been];
+shown10 -> been9  [label=auxpass];
+shown10 -> shown10  [label=root];
+heterodimerize12 [style=filled, fillcolor=white, label=heterodimerize];
+to11 [style=filled, fillcolor=white, label=to];
+heterodimerize12 -> to11  [label=aux];
+shown10 -> heterodimerize12  [label=xcomp];
+constitutively13 [style=filled, fillcolor=white, label=constitutively];
+heterodimerize12 -> constitutively13  [label=advmod];
+"C-Raf15" [style=filled, fillcolor=white, label="C-Raf"];
+heterodimerize12 -> "C-Raf15"  [label=prep_with];
+manner19 [style=filled, fillcolor=white, label=manner];
+a17 [style=filled, fillcolor=white, label=a];
+manner19 -> a17  [label=det];
+"Ras-independent18" [style=filled, fillcolor=white, label="Ras-independent"];
+manner19 -> "Ras-independent18"  [label=amod];
+"C-Raf15" -> manner19  [label=prep_in];
+112 [style=filled, fillcolor=white, label=11];
+manner19 -> 112  [label=appos];
+}

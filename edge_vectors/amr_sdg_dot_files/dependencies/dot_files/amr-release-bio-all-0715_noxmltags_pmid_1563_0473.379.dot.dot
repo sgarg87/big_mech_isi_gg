@@ -1,0 +1,24 @@
+digraph "( A ) Failure of Wnt and noggin signaling to induce Snail in cultured keratinocytes ." {
+label="( A ) Failure of Wnt and noggin signaling to induce Snail in cultured
+keratinocytes .";
+Failure4 [style=filled, fillcolor=white, label=Failure];
+A2 [style=filled, fillcolor=white, label=A];
+Failure4 -> A2  [label=appos];
+Failure4 -> Failure4  [label=root];
+Wnt6 [style=filled, fillcolor=white, label=Wnt];
+Failure4 -> Wnt6  [label=prep_of];
+noggin8 [style=filled, fillcolor=white, label=noggin];
+Wnt6 -> noggin8  [label=conj_and];
+signaling9 [style=filled, fillcolor=white, label=signaling];
+Failure4 -> signaling9  [label=vmod];
+induce11 [style=filled, fillcolor=white, label=induce];
+to10 [style=filled, fillcolor=white, label=to];
+induce11 -> to10  [label=aux];
+signaling9 -> induce11  [label=xcomp];
+Snail12 [style=filled, fillcolor=white, label=Snail];
+induce11 -> Snail12  [label=dobj];
+keratinocytes15 [style=filled, fillcolor=white, label=keratinocytes];
+cultured14 [style=filled, fillcolor=white, label=cultured];
+keratinocytes15 -> cultured14  [label=amod];
+Snail12 -> keratinocytes15  [label=prep_in];
+}

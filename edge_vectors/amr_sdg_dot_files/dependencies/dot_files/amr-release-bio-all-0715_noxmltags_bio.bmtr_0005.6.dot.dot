@@ -1,0 +1,28 @@
+digraph "One of the most studied downstream pathways of RAS signalling is the Raf-MAPK pathway ." {
+label="One of the most studied downstream pathways of RAS signalling is the Raf-MAPK
+pathway .";
+studied5 [style=filled, fillcolor=white, label=studied];
+One1 [style=filled, fillcolor=white, label=One];
+studied5 -> One1  [label=nsubj];
+most4 [style=filled, fillcolor=white, label=most];
+the3 [style=filled, fillcolor=white, label=the];
+most4 -> the3  [label=det];
+One1 -> most4  [label=prep_of];
+studied5 -> studied5  [label=root];
+pathways7 [style=filled, fillcolor=white, label=pathways];
+downstream6 [style=filled, fillcolor=white, label=downstream];
+pathways7 -> downstream6  [label=amod];
+pathway14 [style=filled, fillcolor=white, label=pathway];
+pathway14 -> pathways7  [label=nsubj];
+signalling10 [style=filled, fillcolor=white, label=signalling];
+RAS9 [style=filled, fillcolor=white, label=RAS];
+signalling10 -> RAS9  [label=nn];
+pathways7 -> signalling10  [label=prep_of];
+is11 [style=filled, fillcolor=white, label=is];
+pathway14 -> is11  [label=cop];
+the12 [style=filled, fillcolor=white, label=the];
+pathway14 -> the12  [label=det];
+"Raf-MAPK13" [style=filled, fillcolor=white, label="Raf-MAPK"];
+pathway14 -> "Raf-MAPK13"  [label=nn];
+studied5 -> pathway14  [label=ccomp];
+}

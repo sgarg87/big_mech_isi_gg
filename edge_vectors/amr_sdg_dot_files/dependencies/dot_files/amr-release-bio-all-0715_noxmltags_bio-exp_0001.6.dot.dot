@@ -1,0 +1,46 @@
+digraph "RAF or MEK inhibitors induced luciferase activity of a HER3 promoter construct spanning ~ 1 kb upstream of the transcriptional start site in 8505C cells ." {
+label="RAF or MEK inhibitors induced luciferase activity of a HER3 promoter construct
+spanning ~ 1 kb upstream of the transcriptional start site in 8505C cells .";
+inhibitors4 [style=filled, fillcolor=white, label=inhibitors];
+RAF1 [style=filled, fillcolor=white, label=RAF];
+inhibitors4 -> RAF1  [label=nsubj];
+MEK3 [style=filled, fillcolor=white, label=MEK];
+RAF1 -> MEK3  [label=conj_or];
+inhibitors4 -> inhibitors4  [label=root];
+activity7 [style=filled, fillcolor=white, label=activity];
+induced5 [style=filled, fillcolor=white, label=induced];
+activity7 -> induced5  [label=amod];
+luciferase6 [style=filled, fillcolor=white, label=luciferase];
+activity7 -> luciferase6  [label=nn];
+construct12 [style=filled, fillcolor=white, label=construct];
+construct12 -> activity7  [label=nsubj];
+promoter11 [style=filled, fillcolor=white, label=promoter];
+a9 [style=filled, fillcolor=white, label=a];
+promoter11 -> a9  [label=det];
+HER310 [style=filled, fillcolor=white, label=HER3];
+promoter11 -> HER310  [label=nn];
+activity7 -> promoter11  [label=prep_of];
+inhibitors4 -> construct12  [label=ccomp];
+spanning13 [style=filled, fillcolor=white, label=spanning];
+construct12 -> spanning13  [label=xcomp];
+115 [style=filled, fillcolor=white, label=1];
+"~14" [style=filled, fillcolor=white, label="~"];
+115 -> "~14"  [label=number];
+kb16 [style=filled, fillcolor=white, label=kb];
+kb16 -> 115  [label=num];
+upstream17 [style=filled, fillcolor=white, label=upstream];
+upstream17 -> kb16  [label=npadvmod];
+spanning13 -> upstream17  [label=advmod];
+site22 [style=filled, fillcolor=white, label=site];
+the19 [style=filled, fillcolor=white, label=the];
+site22 -> the19  [label=det];
+transcriptional20 [style=filled, fillcolor=white, label=transcriptional];
+site22 -> transcriptional20  [label=amod];
+start21 [style=filled, fillcolor=white, label=start];
+site22 -> start21  [label=nn];
+spanning13 -> site22  [label=prep_of];
+cells25 [style=filled, fillcolor=white, label=cells];
+"8505C24" [style=filled, fillcolor=white, label="8505C"];
+cells25 -> "8505C24"  [label=num];
+site22 -> cells25  [label=prep_in];
+}

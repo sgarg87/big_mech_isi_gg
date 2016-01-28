@@ -1,0 +1,53 @@
+digraph "Of the three Raf kinases ,  only B-Raf is able to function as an allosteric activator in the context of the Raf heterodimers ,  a role independent of B-Raf kinase activity ." {
+label="Of the three Raf kinases ,  only B-Raf is able to function as an allosteric
+activator in the context of the Raf heterodimers ,  a role independent of B-Raf
+kinase activity .";
+kinases5 [style=filled, fillcolor=white, label=kinases];
+the2 [style=filled, fillcolor=white, label=the];
+kinases5 -> the2  [label=det];
+three3 [style=filled, fillcolor=white, label=three];
+kinases5 -> three3  [label=num];
+Raf4 [style=filled, fillcolor=white, label=Raf];
+kinases5 -> Raf4  [label=nn];
+able10 [style=filled, fillcolor=white, label=able];
+able10 -> kinases5  [label=prep_of];
+"B-Raf8" [style=filled, fillcolor=white, label="B-Raf"];
+only7 [style=filled, fillcolor=white, label=only];
+"B-Raf8" -> only7  [label=advmod];
+able10 -> "B-Raf8"  [label=nsubj];
+is9 [style=filled, fillcolor=white, label=is];
+able10 -> is9  [label=cop];
+able10 -> able10  [label=root];
+function12 [style=filled, fillcolor=white, label=function];
+to11 [style=filled, fillcolor=white, label=to];
+function12 -> to11  [label=aux];
+able10 -> function12  [label=xcomp];
+activator16 [style=filled, fillcolor=white, label=activator];
+an14 [style=filled, fillcolor=white, label=an];
+activator16 -> an14  [label=det];
+allosteric15 [style=filled, fillcolor=white, label=allosteric];
+activator16 -> allosteric15  [label=amod];
+function12 -> activator16  [label=prep_as];
+context19 [style=filled, fillcolor=white, label=context];
+the18 [style=filled, fillcolor=white, label=the];
+context19 -> the18  [label=det];
+activator16 -> context19  [label=prep_in];
+heterodimers23 [style=filled, fillcolor=white, label=heterodimers];
+the21 [style=filled, fillcolor=white, label=the];
+heterodimers23 -> the21  [label=det];
+Raf22 [style=filled, fillcolor=white, label=Raf];
+heterodimers23 -> Raf22  [label=nn];
+context19 -> heterodimers23  [label=prep_of];
+independent27 [style=filled, fillcolor=white, label=independent];
+a25 [style=filled, fillcolor=white, label=a];
+independent27 -> a25  [label=det];
+role26 [style=filled, fillcolor=white, label=role];
+independent27 -> role26  [label=nn];
+heterodimers23 -> independent27  [label=appos];
+activity31 [style=filled, fillcolor=white, label=activity];
+"B-Raf29" [style=filled, fillcolor=white, label="B-Raf"];
+activity31 -> "B-Raf29"  [label=amod];
+kinase30 [style=filled, fillcolor=white, label=kinase];
+activity31 -> kinase30  [label=nn];
+independent27 -> activity31  [label=prep_of];
+}

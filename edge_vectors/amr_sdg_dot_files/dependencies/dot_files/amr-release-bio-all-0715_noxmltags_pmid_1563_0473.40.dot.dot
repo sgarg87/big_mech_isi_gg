@@ -1,0 +1,22 @@
+digraph "Thereafter ,  Snail disappears and remains absent during subsequent follicle down-growth and maturation ." {
+label="Thereafter ,  Snail disappears and remains absent during subsequent follicle
+down-growth and maturation .";
+disappears4 [style=filled, fillcolor=white, label=disappears];
+Thereafter1 [style=filled, fillcolor=white, label=Thereafter];
+disappears4 -> Thereafter1  [label=advmod];
+Snail3 [style=filled, fillcolor=white, label=Snail];
+disappears4 -> Snail3  [label=nsubj];
+disappears4 -> disappears4  [label=root];
+remains6 [style=filled, fillcolor=white, label=remains];
+disappears4 -> remains6  [label=conj_and];
+"down-growth11" [style=filled, fillcolor=white, label="down-growth"];
+absent7 [style=filled, fillcolor=white, label=absent];
+"down-growth11" -> absent7  [label=amod];
+follicle10 [style=filled, fillcolor=white, label=follicle];
+subsequent9 [style=filled, fillcolor=white, label=subsequent];
+follicle10 -> subsequent9  [label=amod];
+absent7 -> follicle10  [label=prep_during];
+disappears4 -> "down-growth11"  [label=xcomp];
+maturation13 [style=filled, fillcolor=white, label=maturation];
+"down-growth11" -> maturation13  [label=conj_and];
+}

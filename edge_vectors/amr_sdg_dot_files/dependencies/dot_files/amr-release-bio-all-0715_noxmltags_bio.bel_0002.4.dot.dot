@@ -1,0 +1,34 @@
+digraph "The homologous site on B-Raf ,  S445 ,  is constitutively phosphorylated ,  accounting for the higher basal activity of B-Raf ." {
+label="The homologous site on B-Raf ,  S445 ,  is constitutively phosphorylated ,
+accounting for the higher basal activity of B-Raf .";
+site3 [style=filled, fillcolor=white, label=site];
+The1 [style=filled, fillcolor=white, label=The];
+site3 -> The1  [label=det];
+homologous2 [style=filled, fillcolor=white, label=homologous];
+site3 -> homologous2  [label=amod];
+phosphorylated11 [style=filled, fillcolor=white, label=phosphorylated];
+phosphorylated11 -> site3  [label=nsubj];
+S4457 [style=filled, fillcolor=white, label=S445];
+"B-Raf5" [style=filled, fillcolor=white, label="B-Raf"];
+S4457 -> "B-Raf5"  [label=nn];
+site3 -> S4457  [label=prep_on];
+is9 [style=filled, fillcolor=white, label=is];
+phosphorylated11 -> is9  [label=cop];
+constitutively10 [style=filled, fillcolor=white, label=constitutively];
+phosphorylated11 -> constitutively10  [label=advmod];
+phosphorylated11 -> phosphorylated11  [label=root];
+accounting13 [style=filled, fillcolor=white, label=accounting];
+phosphorylated11 -> accounting13  [label=prep];
+for14 [style=filled, fillcolor=white, label=for];
+accounting13 -> for14  [label=pcomp];
+activity18 [style=filled, fillcolor=white, label=activity];
+the15 [style=filled, fillcolor=white, label=the];
+activity18 -> the15  [label=det];
+higher16 [style=filled, fillcolor=white, label=higher];
+activity18 -> higher16  [label=amod];
+basal17 [style=filled, fillcolor=white, label=basal];
+activity18 -> basal17  [label=nn];
+for14 -> activity18  [label=pobj];
+"B-Raf20" [style=filled, fillcolor=white, label="B-Raf"];
+activity18 -> "B-Raf20"  [label=prep_of];
+}

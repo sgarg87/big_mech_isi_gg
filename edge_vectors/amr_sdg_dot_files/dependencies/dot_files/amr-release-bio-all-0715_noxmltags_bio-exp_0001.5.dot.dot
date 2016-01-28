@@ -1,0 +1,47 @@
+digraph "The effects of the MEK inhibitor on total HER2 ,  HER3 protein and on pHER3 were dose dependent ,  and inversely associated with the degree of inhibition of pERK ( Fig. 5B ) ." {
+label="The effects of the MEK inhibitor on total HER2 ,  HER3 protein and on pHER3
+were dose dependent ,  and inversely associated with the degree of inhibition of
+pERK ( Fig. 5B ) .";
+effects2 [style=filled, fillcolor=white, label=effects];
+The1 [style=filled, fillcolor=white, label=The];
+effects2 -> The1  [label=det];
+dependent18 [style=filled, fillcolor=white, label=dependent];
+dependent18 -> effects2  [label=nsubj];
+inhibitor6 [style=filled, fillcolor=white, label=inhibitor];
+the4 [style=filled, fillcolor=white, label=the];
+inhibitor6 -> the4  [label=det];
+MEK5 [style=filled, fillcolor=white, label=MEK];
+inhibitor6 -> MEK5  [label=nn];
+effects2 -> inhibitor6  [label=prep_of];
+HER29 [style=filled, fillcolor=white, label=HER2];
+total8 [style=filled, fillcolor=white, label=total];
+HER29 -> total8  [label=amod];
+inhibitor6 -> HER29  [label=prep_on];
+protein12 [style=filled, fillcolor=white, label=protein];
+HER311 [style=filled, fillcolor=white, label=HER3];
+protein12 -> HER311  [label=num];
+HER29 -> protein12  [label=appos];
+pHER315 [style=filled, fillcolor=white, label=pHER3];
+HER29 -> pHER315  [label=conj_and];
+were16 [style=filled, fillcolor=white, label=were];
+dependent18 -> were16  [label=cop];
+dose17 [style=filled, fillcolor=white, label=dose];
+dependent18 -> dose17  [label=advmod];
+dependent18 -> dependent18  [label=root];
+associated22 [style=filled, fillcolor=white, label=associated];
+inversely21 [style=filled, fillcolor=white, label=inversely];
+associated22 -> inversely21  [label=advmod];
+dependent18 -> associated22  [label=conj_and];
+degree25 [style=filled, fillcolor=white, label=degree];
+the24 [style=filled, fillcolor=white, label=the];
+degree25 -> the24  [label=det];
+associated22 -> degree25  [label=prep_with];
+inhibition27 [style=filled, fillcolor=white, label=inhibition];
+degree25 -> inhibition27  [label=prep_of];
+pERK29 [style=filled, fillcolor=white, label=pERK];
+inhibition27 -> pERK29  [label=prep_of];
+"5B32" [style=filled, fillcolor=white, label="5B"];
+"Fig.31" [style=filled, fillcolor=white, label="Fig."];
+"5B32" -> "Fig.31"  [label=number];
+pERK29 -> "5B32"  [label=dep];
+}

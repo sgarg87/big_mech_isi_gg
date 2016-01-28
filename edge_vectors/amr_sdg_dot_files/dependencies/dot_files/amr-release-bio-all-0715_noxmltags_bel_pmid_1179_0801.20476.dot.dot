@@ -1,0 +1,36 @@
+digraph "Further work revealed that TGF-R signaling ( Massague and Wotton ,  2000 ) was required for EMT ,  invasion in vitro ,  and metastasis in vivo ," {
+label="Further work revealed that TGF-R signaling ( Massague and Wotton ,  2000 ) was
+required for EMT ,  invasion in vitro ,  and metastasis in vivo ,";
+work2 [style=filled, fillcolor=white, label=work];
+Further1 [style=filled, fillcolor=white, label=Further];
+work2 -> Further1  [label=amod];
+revealed3 [style=filled, fillcolor=white, label=revealed];
+revealed3 -> work2  [label=nsubj];
+revealed3 -> revealed3  [label=root];
+required15 [style=filled, fillcolor=white, label=required];
+that4 [style=filled, fillcolor=white, label=that];
+required15 -> that4  [label=mark];
+signaling6 [style=filled, fillcolor=white, label=signaling];
+"TGF-R5" [style=filled, fillcolor=white, label="TGF-R"];
+signaling6 -> "TGF-R5"  [label=nn];
+required15 -> signaling6  [label=nsubjpass];
+Massague8 [style=filled, fillcolor=white, label=Massague];
+signaling6 -> Massague8  [label=appos];
+Wotton10 [style=filled, fillcolor=white, label=Wotton];
+Massague8 -> Wotton10  [label=conj_and];
+20001 [style=filled, fillcolor=white, label=2000];
+Massague8 -> 20001  [label=dep];
+was14 [style=filled, fillcolor=white, label=was];
+required15 -> was14  [label=auxpass];
+revealed3 -> required15  [label=ccomp];
+EMT17 [style=filled, fillcolor=white, label=EMT];
+required15 -> EMT17  [label=prep_for];
+invasion19 [style=filled, fillcolor=white, label=invasion];
+EMT17 -> invasion19  [label=appos];
+vitro21 [style=filled, fillcolor=white, label=vitro];
+invasion19 -> vitro21  [label=prep_in];
+metastasis24 [style=filled, fillcolor=white, label=metastasis];
+vitro21 -> metastasis24  [label=conj_and];
+vivo26 [style=filled, fillcolor=white, label=vivo];
+metastasis24 -> vivo26  [label=prep_in];
+}

@@ -1,0 +1,9 @@
+digraph "In situ hybridization" {
+label="In situ hybridization";
+In1 [style=filled, fillcolor=white, label=In];
+In1 -> In1  [label=root];
+hybridization3 [style=filled, fillcolor=white, label=hybridization];
+situ2 [style=filled, fillcolor=white, label=situ];
+hybridization3 -> situ2  [label=amod];
+In1 -> hybridization3  [label=pobj];
+}

@@ -1,0 +1,47 @@
+digraph "overexpression of Osm in lungs of mice resulted in a vigorous inflammatory response strongly supports a role of Osm in lung inflammatory responses that involve eosinophil infiltration" {
+label="overexpression of Osm in lungs of mice resulted in a vigorous inflammatory
+response strongly supports a role of Osm in lung inflammatory responses that
+involve eosinophil infiltration";
+overexpression1 [style=filled, fillcolor=white, label=overexpression];
+overexpression1 -> overexpression1  [label=root];
+Osm3 [style=filled, fillcolor=white, label=Osm];
+overexpression1 -> Osm3  [label=prep_of];
+lungs5 [style=filled, fillcolor=white, label=lungs];
+overexpression1 -> lungs5  [label=prep_in];
+mice7 [style=filled, fillcolor=white, label=mice];
+lungs5 -> mice7  [label=prep_of];
+resulted8 [style=filled, fillcolor=white, label=resulted];
+mice7 -> resulted8  [label=vmod];
+response13 [style=filled, fillcolor=white, label=response];
+a10 [style=filled, fillcolor=white, label=a];
+response13 -> a10  [label=det];
+vigorous11 [style=filled, fillcolor=white, label=vigorous];
+response13 -> vigorous11  [label=amod];
+inflammatory12 [style=filled, fillcolor=white, label=inflammatory];
+response13 -> inflammatory12  [label=amod];
+resulted8 -> response13  [label=prep_in];
+supports15 [style=filled, fillcolor=white, label=supports];
+strongly14 [style=filled, fillcolor=white, label=strongly];
+supports15 -> strongly14  [label=advmod];
+overexpression1 -> supports15  [label=dep];
+role17 [style=filled, fillcolor=white, label=role];
+a16 [style=filled, fillcolor=white, label=a];
+role17 -> a16  [label=det];
+supports15 -> role17  [label=dobj];
+Osm19 [style=filled, fillcolor=white, label=Osm];
+role17 -> Osm19  [label=prep_of];
+lung21 [style=filled, fillcolor=white, label=lung];
+Osm19 -> lung21  [label=prep_in];
+responses23 [style=filled, fillcolor=white, label=responses];
+inflammatory22 [style=filled, fillcolor=white, label=inflammatory];
+responses23 -> inflammatory22  [label=amod];
+overexpression1 -> responses23  [label=nsubj];
+involve25 [style=filled, fillcolor=white, label=involve];
+that24 [style=filled, fillcolor=white, label=that];
+involve25 -> that24  [label=nsubj];
+responses23 -> involve25  [label=rcmod];
+infiltration27 [style=filled, fillcolor=white, label=infiltration];
+eosinophil26 [style=filled, fillcolor=white, label=eosinophil];
+infiltration27 -> eosinophil26  [label=amod];
+involve25 -> infiltration27  [label=dobj];
+}

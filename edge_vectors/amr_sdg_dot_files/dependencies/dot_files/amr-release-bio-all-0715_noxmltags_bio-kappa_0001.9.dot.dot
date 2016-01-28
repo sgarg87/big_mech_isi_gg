@@ -1,0 +1,13 @@
+digraph "PSPs dephosphorylate phosphoserine and phosphothreonine residues ." {
+label="PSPs dephosphorylate phosphoserine and phosphothreonine residues .";
+dephosphorylate2 [style=filled, fillcolor=white, label=dephosphorylate];
+PSPs1 [style=filled, fillcolor=white, label=PSPs];
+dephosphorylate2 -> PSPs1  [label=nsubj];
+dephosphorylate2 -> dephosphorylate2  [label=root];
+residues6 [style=filled, fillcolor=white, label=residues];
+phosphoserine3 [style=filled, fillcolor=white, label=phosphoserine];
+residues6 -> phosphoserine3  [label=amod];
+phosphothreonine5 [style=filled, fillcolor=white, label=phosphothreonine];
+phosphoserine3 -> phosphothreonine5  [label=conj_and];
+dephosphorylate2 -> residues6  [label=dobj];
+}

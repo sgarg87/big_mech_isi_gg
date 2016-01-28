@@ -1,0 +1,59 @@
+digraph "Silencing of DUOX1 attenuated the ATP - and ? - ASGM1-induced TGF - ? production observed in the presence of EGFR mAb ( Fig. 5B ) ,  indicating the involvement of DUOX1 activation in ATP-induced TGF - ? production and EGFR activation ." {
+label="Silencing of DUOX1 attenuated the ATP - and ? - ASGM1-induced TGF - ?
+production observed in the presence of EGFR mAb ( Fig. 5B ) ,  indicating the
+involvement of DUOX1 activation in ATP-induced TGF - ? production and EGFR
+activation .";
+attenuated4 [style=filled, fillcolor=white, label=attenuated];
+Silencing1 [style=filled, fillcolor=white, label=Silencing];
+attenuated4 -> Silencing1  [label=nsubj];
+DUOX13 [style=filled, fillcolor=white, label=DUOX1];
+Silencing1 -> DUOX13  [label=prep_of];
+attenuated4 -> attenuated4  [label=root];
+ATP6 [style=filled, fillcolor=white, label=ATP];
+the5 [style=filled, fillcolor=white, label=the];
+ATP6 -> the5  [label=dep];
+and8 [style=filled, fillcolor=white, label=and];
+and8 -> ATP6  [label=dep];
+"-13" [style=filled, fillcolor=white, label="-"];
+"-13" -> and8  [label=dep];
+"ASGM1-induced" [style=filled, fillcolor=white, label="ASGM1-induced"];
+"-13" -> "ASGM1-induced"  [label=nn];
+TGF12 [style=filled, fillcolor=white, label=TGF];
+"-13" -> TGF12  [label=nn];
+production15 [style=filled, fillcolor=white, label=production];
+attenuated4 -> production15  [label=dep];
+observed16 [style=filled, fillcolor=white, label=observed];
+production15 -> observed16  [label=rcmod];
+presence19 [style=filled, fillcolor=white, label=presence];
+the18 [style=filled, fillcolor=white, label=the];
+presence19 -> the18  [label=det];
+observed16 -> presence19  [label=prep_in];
+mAb22 [style=filled, fillcolor=white, label=mAb];
+EGFR21 [style=filled, fillcolor=white, label=EGFR];
+mAb22 -> EGFR21  [label=amod];
+presence19 -> mAb22  [label=prep_of];
+"5B2" [style=filled, fillcolor=white, label="5B"];
+"Fig.24" [style=filled, fillcolor=white, label="Fig."];
+"5B2" -> "Fig.24"  [label=number];
+mAb22 -> "5B2"  [label=dep];
+indicating28 [style=filled, fillcolor=white, label=indicating];
+observed16 -> indicating28  [label=xcomp];
+involvement30 [style=filled, fillcolor=white, label=involvement];
+the29 [style=filled, fillcolor=white, label=the];
+involvement30 -> the29  [label=det];
+indicating28 -> involvement30  [label=dobj];
+activation33 [style=filled, fillcolor=white, label=activation];
+DUOX132 [style=filled, fillcolor=white, label=DUOX1];
+activation33 -> DUOX132  [label=nn];
+involvement30 -> activation33  [label=prep_of];
+production39 [style=filled, fillcolor=white, label=production];
+"ATP-induced35" [style=filled, fillcolor=white, label="ATP-induced"];
+production39 -> "ATP-induced35"  [label=nn];
+TGF36 [style=filled, fillcolor=white, label=TGF];
+production39 -> TGF36  [label=nn];
+production15 -> production39  [label=prep_in];
+activation42 [style=filled, fillcolor=white, label=activation];
+EGFR41 [style=filled, fillcolor=white, label=EGFR];
+activation42 -> EGFR41  [label=nn];
+production39 -> activation42  [label=conj_and];
+}

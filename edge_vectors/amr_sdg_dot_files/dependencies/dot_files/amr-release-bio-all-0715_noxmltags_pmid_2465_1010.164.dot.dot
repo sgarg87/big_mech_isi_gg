@@ -1,0 +1,28 @@
+digraph "These reactions are not only essential for plasma membrane localization but also for Raf kinase activation ." {
+label="These reactions are not only essential for plasma membrane localization but
+also for Raf kinase activation .";
+reactions2 [style=filled, fillcolor=white, label=reactions];
+These1 [style=filled, fillcolor=white, label=These];
+reactions2 -> These1  [label=det];
+essential6 [style=filled, fillcolor=white, label=essential];
+essential6 -> reactions2  [label=nsubj];
+are3 [style=filled, fillcolor=white, label=are];
+essential6 -> are3  [label=cop];
+not4 [style=filled, fillcolor=white, label=not];
+essential6 -> not4  [label=neg];
+only5 [style=filled, fillcolor=white, label=only];
+essential6 -> only5  [label=advmod];
+essential6 -> essential6  [label=root];
+localization10 [style=filled, fillcolor=white, label=localization];
+plasma8 [style=filled, fillcolor=white, label=plasma];
+localization10 -> plasma8  [label=nn];
+membrane9 [style=filled, fillcolor=white, label=membrane];
+localization10 -> membrane9  [label=nn];
+essential6 -> localization10  [label=prep_for];
+activation16 [style=filled, fillcolor=white, label=activation];
+Raf14 [style=filled, fillcolor=white, label=Raf];
+activation16 -> Raf14  [label=nn];
+kinase15 [style=filled, fillcolor=white, label=kinase];
+activation16 -> kinase15  [label=amod];
+localization10 -> activation16  [label=conj_and];
+}

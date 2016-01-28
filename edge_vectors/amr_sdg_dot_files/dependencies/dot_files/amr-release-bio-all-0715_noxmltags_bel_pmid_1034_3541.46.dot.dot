@@ -1,0 +1,45 @@
+digraph "Thrombin receptor mediated signal transduction could induce the expressions of IL6 and G-CSF ,  and increase inflammatory events in the cavum articulare via NF-kappa B activation" {
+label="Thrombin receptor mediated signal transduction could induce the expressions of
+IL6 and G-CSF ,  and increase inflammatory events in the cavum articulare via
+NF-kappa B activation";
+receptor2 [style=filled, fillcolor=white, label=receptor];
+Thrombin1 [style=filled, fillcolor=white, label=Thrombin];
+receptor2 -> Thrombin1  [label=nn];
+mediated3 [style=filled, fillcolor=white, label=mediated];
+mediated3 -> receptor2  [label=nsubj];
+mediated3 -> mediated3  [label=root];
+transduction5 [style=filled, fillcolor=white, label=transduction];
+signal4 [style=filled, fillcolor=white, label=signal];
+transduction5 -> signal4  [label=nn];
+induce7 [style=filled, fillcolor=white, label=induce];
+induce7 -> transduction5  [label=nsubj];
+could6 [style=filled, fillcolor=white, label=could];
+induce7 -> could6  [label=aux];
+mediated3 -> induce7  [label=ccomp];
+expressions9 [style=filled, fillcolor=white, label=expressions];
+the8 [style=filled, fillcolor=white, label=the];
+expressions9 -> the8  [label=det];
+induce7 -> expressions9  [label=dobj];
+IL611 [style=filled, fillcolor=white, label=IL6];
+expressions9 -> IL611  [label=prep_of];
+"G-CSF13" [style=filled, fillcolor=white, label="G-CSF"];
+IL611 -> "G-CSF13"  [label=conj_and];
+increase16 [style=filled, fillcolor=white, label=increase];
+induce7 -> increase16  [label=conj_and];
+events18 [style=filled, fillcolor=white, label=events];
+inflammatory17 [style=filled, fillcolor=white, label=inflammatory];
+events18 -> inflammatory17  [label=amod];
+increase16 -> events18  [label=dobj];
+articulare22 [style=filled, fillcolor=white, label=articulare];
+the20 [style=filled, fillcolor=white, label=the];
+articulare22 -> the20  [label=det];
+cavum21 [style=filled, fillcolor=white, label=cavum];
+articulare22 -> cavum21  [label=nn];
+increase16 -> articulare22  [label=prep_in];
+activation26 [style=filled, fillcolor=white, label=activation];
+"NF-kappa24" [style=filled, fillcolor=white, label="NF-kappa"];
+activation26 -> "NF-kappa24"  [label=nn];
+B25 [style=filled, fillcolor=white, label=B];
+activation26 -> B25  [label=nn];
+articulare22 -> activation26  [label=prep_via];
+}

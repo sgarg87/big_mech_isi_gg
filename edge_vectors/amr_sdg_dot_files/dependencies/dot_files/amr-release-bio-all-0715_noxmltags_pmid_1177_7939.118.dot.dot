@@ -1,0 +1,30 @@
+digraph "Conversely ,  no Sos-1 could be recovered with GST-Rac from lysates of eps8 − / − cells ." {
+label="Conversely ,  no Sos-1 could be recovered with GST-Rac from lysates of eps8 − /
+− cells .";
+recovered7 [style=filled, fillcolor=white, label=recovered];
+Conversely1 [style=filled, fillcolor=white, label=Conversely];
+recovered7 -> Conversely1  [label=advmod];
+"Sos-14" [style=filled, fillcolor=white, label="Sos-1"];
+no3 [style=filled, fillcolor=white, label=no];
+"Sos-14" -> no3  [label=neg];
+recovered7 -> "Sos-14"  [label=nsubjpass];
+could5 [style=filled, fillcolor=white, label=could];
+recovered7 -> could5  [label=aux];
+be6 [style=filled, fillcolor=white, label=be];
+recovered7 -> be6  [label=auxpass];
+recovered7 -> recovered7  [label=root];
+"GST-Rac9" [style=filled, fillcolor=white, label="GST-Rac"];
+recovered7 -> "GST-Rac9"  [label=prep_with];
+lysates11 [style=filled, fillcolor=white, label=lysates];
+recovered7 -> lysates11  [label=prep_from];
+cells17 [style=filled, fillcolor=white, label=cells];
+eps813 [style=filled, fillcolor=white, label=eps8];
+cells17 -> eps813  [label=amod];
+"−14" [style=filled, fillcolor=white, label="−"];
+cells17 -> "−14"  [label=nn];
+"/15" [style=filled, fillcolor=white, label="/"];
+cells17 -> "/15"  [label=nn];
+"−16" [style=filled, fillcolor=white, label="−"];
+cells17 -> "−16"  [label=nn];
+lysates11 -> cells17  [label=prep_of];
+}

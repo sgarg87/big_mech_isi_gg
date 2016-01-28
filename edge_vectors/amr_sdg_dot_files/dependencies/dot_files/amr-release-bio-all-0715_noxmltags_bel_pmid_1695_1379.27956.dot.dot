@@ -1,0 +1,47 @@
+digraph "PDGF-CC immunostaining was strongly expressed in the lungs of IL-13 transgene-positive mice and localized to airway epithelium ,  type II pneumocytes ,  alveolar macrophages ,  and fibroblasts ( Fig. 1G ) ." {
+label="PDGF-CC immunostaining was strongly expressed in the lungs of IL-13 transgene-
+positive mice and localized to airway epithelium ,  type II pneumocytes ,
+alveolar macrophages ,  and fibroblasts ( Fig. 1G ) .";
+immunostaining2 [style=filled, fillcolor=white, label=immunostaining];
+"PDGF-CC1" [style=filled, fillcolor=white, label="PDGF-CC"];
+immunostaining2 -> "PDGF-CC1"  [label=amod];
+expressed5 [style=filled, fillcolor=white, label=expressed];
+expressed5 -> immunostaining2  [label=nsubjpass];
+was3 [style=filled, fillcolor=white, label=was];
+expressed5 -> was3  [label=auxpass];
+strongly4 [style=filled, fillcolor=white, label=strongly];
+expressed5 -> strongly4  [label=advmod];
+expressed5 -> expressed5  [label=root];
+lungs8 [style=filled, fillcolor=white, label=lungs];
+the7 [style=filled, fillcolor=white, label=the];
+lungs8 -> the7  [label=det];
+expressed5 -> lungs8  [label=prep_in];
+"transgene-positive11" [style=filled, fillcolor=white, label="transgene-positive"];
+"IL-130" [style=filled, fillcolor=white, label="IL-13"];
+"transgene-positive11" -> "IL-130"  [label=amod];
+mice12 [style=filled, fillcolor=white, label=mice];
+mice12 -> "transgene-positive11"  [label=amod];
+lungs8 -> mice12  [label=prep_of];
+macrophages24 [style=filled, fillcolor=white, label=macrophages];
+localized14 [style=filled, fillcolor=white, label=localized];
+macrophages24 -> localized14  [label=amod];
+epithelium17 [style=filled, fillcolor=white, label=epithelium];
+airway16 [style=filled, fillcolor=white, label=airway];
+epithelium17 -> airway16  [label=amod];
+localized14 -> epithelium17  [label=prep_to];
+pneumocytes21 [style=filled, fillcolor=white, label=pneumocytes];
+type19 [style=filled, fillcolor=white, label=type];
+pneumocytes21 -> type19  [label=nn];
+II20 [style=filled, fillcolor=white, label=II];
+pneumocytes21 -> II20  [label=nn];
+epithelium17 -> pneumocytes21  [label=appos];
+alveolar23 [style=filled, fillcolor=white, label=alveolar];
+macrophages24 -> alveolar23  [label=nn];
+mice12 -> macrophages24  [label=conj_and];
+fibroblasts27 [style=filled, fillcolor=white, label=fibroblasts];
+mice12 -> fibroblasts27  [label=conj_and];
+"1G30" [style=filled, fillcolor=white, label="1G"];
+"Fig.29" [style=filled, fillcolor=white, label="Fig."];
+"1G30" -> "Fig.29"  [label=number];
+fibroblasts27 -> "1G30"  [label=dep];
+}

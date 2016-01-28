@@ -1,0 +1,28 @@
+digraph "( Top ,  left ) Ras-GTP was recovered with the GST-RBD of Raf-1 followed by immunodetection with anti-myc antibodies ." {
+label="( Top ,  left ) Ras-GTP was recovered with the GST-RBD of Raf-1 followed by
+immunodetection with anti-myc antibodies .";
+"Ras-GTP6" [style=filled, fillcolor=white, label="Ras-GTP"];
+Top2 [style=filled, fillcolor=white, label=Top];
+"Ras-GTP6" -> Top2  [label=amod];
+left4 [style=filled, fillcolor=white, label=left];
+"Ras-GTP6" -> left4  [label=dep];
+recovered8 [style=filled, fillcolor=white, label=recovered];
+recovered8 -> "Ras-GTP6"  [label=nsubjpass];
+was7 [style=filled, fillcolor=white, label=was];
+recovered8 -> was7  [label=auxpass];
+recovered8 -> recovered8  [label=root];
+"GST-RBD11" [style=filled, fillcolor=white, label="GST-RBD"];
+the10 [style=filled, fillcolor=white, label=the];
+"GST-RBD11" -> the10  [label=det];
+recovered8 -> "GST-RBD11"  [label=prep_with];
+"Raf-13" [style=filled, fillcolor=white, label="Raf-1"];
+"GST-RBD11" -> "Raf-13"  [label=prep_of];
+followed14 [style=filled, fillcolor=white, label=followed];
+"Raf-13" -> followed14  [label=vmod];
+immunodetection16 [style=filled, fillcolor=white, label=immunodetection];
+followed14 -> immunodetection16  [label=agent];
+antibodies19 [style=filled, fillcolor=white, label=antibodies];
+"anti-myc18" [style=filled, fillcolor=white, label="anti-myc"];
+antibodies19 -> "anti-myc18"  [label=amod];
+followed14 -> antibodies19  [label=prep_with];
+}

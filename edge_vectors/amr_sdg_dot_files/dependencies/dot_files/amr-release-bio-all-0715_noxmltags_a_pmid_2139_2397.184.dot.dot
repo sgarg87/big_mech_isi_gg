@@ -1,0 +1,17 @@
+digraph "YB-1 regulates repair of IR-induced DNA-DSB and postirradiation survival" {
+label="YB-1 regulates repair of IR-induced DNA-DSB and postirradiation survival";
+regulates2 [style=filled, fillcolor=white, label=regulates];
+"YB-1" [style=filled, fillcolor=white, label="YB-1"];
+regulates2 -> "YB-1"  [label=nsubj];
+regulates2 -> regulates2  [label=root];
+repair3 [style=filled, fillcolor=white, label=repair];
+regulates2 -> repair3  [label=dobj];
+"DNA-DSB6" [style=filled, fillcolor=white, label="DNA-DSB"];
+"IR-induced5" [style=filled, fillcolor=white, label="IR-induced"];
+"DNA-DSB6" -> "IR-induced5"  [label=amod];
+repair3 -> "DNA-DSB6"  [label=prep_of];
+survival9 [style=filled, fillcolor=white, label=survival];
+postirradiation8 [style=filled, fillcolor=white, label=postirradiation];
+survival9 -> postirradiation8  [label=nn];
+"DNA-DSB6" -> survival9  [label=conj_and];
+}

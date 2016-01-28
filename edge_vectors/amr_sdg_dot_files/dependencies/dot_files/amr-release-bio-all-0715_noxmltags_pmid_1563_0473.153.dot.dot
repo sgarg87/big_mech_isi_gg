@@ -1,0 +1,38 @@
+digraph "Thus ,  although Snail expression correlated with phosphorylated SMAD2 ( pSMAD2 ) induction ,  its decline seemed to rely on secondary downstream events ." {
+label="Thus ,  although Snail expression correlated with phosphorylated SMAD2 ( pSMAD2
+) induction ,  its decline seemed to rely on secondary downstream events .";
+seemed17 [style=filled, fillcolor=white, label=seemed];
+Thus1 [style=filled, fillcolor=white, label=Thus];
+seemed17 -> Thus1  [label=advmod];
+correlated6 [style=filled, fillcolor=white, label=correlated];
+although3 [style=filled, fillcolor=white, label=although];
+correlated6 -> although3  [label=mark];
+expression5 [style=filled, fillcolor=white, label=expression];
+Snail4 [style=filled, fillcolor=white, label=Snail];
+expression5 -> Snail4  [label=nn];
+correlated6 -> expression5  [label=nsubj];
+seemed17 -> correlated6  [label=advcl];
+induction13 [style=filled, fillcolor=white, label=induction];
+phosphorylated8 [style=filled, fillcolor=white, label=phosphorylated];
+induction13 -> phosphorylated8  [label=amod];
+SMAD29 [style=filled, fillcolor=white, label=SMAD2];
+induction13 -> SMAD29  [label=nn];
+pSMAD211 [style=filled, fillcolor=white, label=pSMAD2];
+induction13 -> pSMAD211  [label=appos];
+correlated6 -> induction13  [label=prep_with];
+decline16 [style=filled, fillcolor=white, label=decline];
+its15 [style=filled, fillcolor=white, label=its];
+decline16 -> its15  [label=poss];
+seemed17 -> decline16  [label=nsubj];
+seemed17 -> seemed17  [label=root];
+rely19 [style=filled, fillcolor=white, label=rely];
+to18 [style=filled, fillcolor=white, label=to];
+rely19 -> to18  [label=aux];
+seemed17 -> rely19  [label=xcomp];
+events23 [style=filled, fillcolor=white, label=events];
+secondary21 [style=filled, fillcolor=white, label=secondary];
+events23 -> secondary21  [label=amod];
+downstream22 [style=filled, fillcolor=white, label=downstream];
+events23 -> downstream22  [label=amod];
+rely19 -> events23  [label=prep_on];
+}

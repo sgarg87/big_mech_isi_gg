@@ -1,0 +1,34 @@
+digraph "Cells were transfected with either Sos-1 alone ( SosTfx ) or a combination of S/E/E8 ( Triple Tfx ) ( Fig. 7 A ) ." {
+label="Cells were transfected with either Sos-1 alone ( SosTfx ) or a combination of
+S/E/E8 ( Triple Tfx ) ( Fig. 7 A ) .";
+transfected3 [style=filled, fillcolor=white, label=transfected];
+Cells1 [style=filled, fillcolor=white, label=Cells];
+transfected3 -> Cells1  [label=nsubjpass];
+were2 [style=filled, fillcolor=white, label=were];
+transfected3 -> were2  [label=auxpass];
+transfected3 -> transfected3  [label=root];
+"Sos-16" [style=filled, fillcolor=white, label="Sos-1"];
+either5 [style=filled, fillcolor=white, label=either];
+"Sos-16" -> either5  [label=det];
+transfected3 -> "Sos-16"  [label=prep_with];
+alone7 [style=filled, fillcolor=white, label=alone];
+"Sos-16" -> alone7  [label=advmod];
+SosTfx9 [style=filled, fillcolor=white, label=SosTfx];
+"Sos-16" -> SosTfx9  [label=appos];
+combination13 [style=filled, fillcolor=white, label=combination];
+a12 [style=filled, fillcolor=white, label=a];
+combination13 -> a12  [label=det];
+"Sos-16" -> combination13  [label=conj_or];
+"S/E/E815" [style=filled, fillcolor=white, label="S/E/E8"];
+combination13 -> "S/E/E815"  [label=prep_of];
+Tfx18 [style=filled, fillcolor=white, label=Tfx];
+Triple17 [style=filled, fillcolor=white, label=Triple];
+Tfx18 -> Triple17  [label=nn];
+"S/E/E815" -> Tfx18  [label=appos];
+"Fig.21" [style=filled, fillcolor=white, label="Fig."];
+"S/E/E815" -> "Fig.21"  [label=dep];
+722 [style=filled, fillcolor=white, label=7];
+"Fig.21" -> 722  [label=num];
+A23 [style=filled, fillcolor=white, label=A];
+"Fig.21" -> A23  [label=appos];
+}

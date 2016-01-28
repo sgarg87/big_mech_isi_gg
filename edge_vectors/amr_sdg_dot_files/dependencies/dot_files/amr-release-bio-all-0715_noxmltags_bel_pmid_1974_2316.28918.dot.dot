@@ -1,0 +1,34 @@
+digraph "Studies from our laboratory have shown that LRP1 suppresses PDGF receptor b ( PDGFRb ) activation and protects against atherosclerosis ." {
+label="Studies from our laboratory have shown that LRP1 suppresses PDGF receptor b (
+PDGFRb ) activation and protects against atherosclerosis .";
+shown6 [style=filled, fillcolor=white, label=shown];
+Studies1 [style=filled, fillcolor=white, label=Studies];
+shown6 -> Studies1  [label=nsubj];
+laboratory4 [style=filled, fillcolor=white, label=laboratory];
+our3 [style=filled, fillcolor=white, label=our];
+laboratory4 -> our3  [label=poss];
+Studies1 -> laboratory4  [label=prep_from];
+have5 [style=filled, fillcolor=white, label=have];
+shown6 -> have5  [label=aux];
+shown6 -> shown6  [label=root];
+suppresses9 [style=filled, fillcolor=white, label=suppresses];
+that7 [style=filled, fillcolor=white, label=that];
+suppresses9 -> that7  [label=mark];
+LRP18 [style=filled, fillcolor=white, label=LRP1];
+suppresses9 -> LRP18  [label=nsubj];
+shown6 -> suppresses9  [label=ccomp];
+b12 [style=filled, fillcolor=white, label=b];
+PDGF10 [style=filled, fillcolor=white, label=PDGF];
+b12 -> PDGF10  [label=nn];
+receptor11 [style=filled, fillcolor=white, label=receptor];
+b12 -> receptor11  [label=nn];
+activation16 [style=filled, fillcolor=white, label=activation];
+activation16 -> b12  [label=nsubj];
+PDGFRb14 [style=filled, fillcolor=white, label=PDGFRb];
+b12 -> PDGFRb14  [label=appos];
+suppresses9 -> activation16  [label=xcomp];
+protects18 [style=filled, fillcolor=white, label=protects];
+suppresses9 -> protects18  [label=conj_and];
+atherosclerosis20 [style=filled, fillcolor=white, label=atherosclerosis];
+protects18 -> atherosclerosis20  [label=prep_against];
+}

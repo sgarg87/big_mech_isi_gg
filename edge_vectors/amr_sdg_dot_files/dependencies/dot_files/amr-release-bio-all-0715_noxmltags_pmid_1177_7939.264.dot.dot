@@ -1,0 +1,24 @@
+digraph "After washing ,  bound proteins were resolved by SDS-PAGE and immunoblotted with anti-Rac antibodies ( Rac-GTP ) ." {
+label="After washing ,  bound proteins were resolved by SDS-PAGE and immunoblotted
+with anti-Rac antibodies ( Rac-GTP ) .";
+resolved7 [style=filled, fillcolor=white, label=resolved];
+washing2 [style=filled, fillcolor=white, label=washing];
+resolved7 -> washing2  [label=prepc_after];
+proteins5 [style=filled, fillcolor=white, label=proteins];
+bound4 [style=filled, fillcolor=white, label=bound];
+proteins5 -> bound4  [label=amod];
+resolved7 -> proteins5  [label=nsubjpass];
+were6 [style=filled, fillcolor=white, label=were];
+resolved7 -> were6  [label=auxpass];
+resolved7 -> resolved7  [label=root];
+"SDS-PAGE9" [style=filled, fillcolor=white, label="SDS-PAGE"];
+resolved7 -> "SDS-PAGE9"  [label=agent];
+immunoblotted11 [style=filled, fillcolor=white, label=immunoblotted];
+resolved7 -> immunoblotted11  [label=conj_and];
+antibodies14 [style=filled, fillcolor=white, label=antibodies];
+"anti-Rac13" [style=filled, fillcolor=white, label="anti-Rac"];
+antibodies14 -> "anti-Rac13"  [label=amod];
+immunoblotted11 -> antibodies14  [label=prep_with];
+"Rac-GTP16" [style=filled, fillcolor=white, label="Rac-GTP"];
+antibodies14 -> "Rac-GTP16"  [label=appos];
+}

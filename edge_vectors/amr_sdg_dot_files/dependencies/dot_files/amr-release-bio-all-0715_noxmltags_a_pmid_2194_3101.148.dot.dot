@@ -1,0 +1,43 @@
+digraph "In the case of Caco-H2 cells ,  no typical spheroids were formed ,  instead large masses with non-canonical shape were observed ,  typical of cancer cells ." {
+label="In the case of Caco-H2 cells ,  no typical spheroids were formed ,  instead
+large masses with non-canonical shape were observed ,  typical of cancer cells
+.";
+case3 [style=filled, fillcolor=white, label=case];
+the2 [style=filled, fillcolor=white, label=the];
+case3 -> the2  [label=det];
+formed12 [style=filled, fillcolor=white, label=formed];
+formed12 -> case3  [label=prep_in];
+cells6 [style=filled, fillcolor=white, label=cells];
+"Caco-H25" [style=filled, fillcolor=white, label="Caco-H2"];
+cells6 -> "Caco-H25"  [label=nn];
+case3 -> cells6  [label=prep_of];
+spheroids10 [style=filled, fillcolor=white, label=spheroids];
+no8 [style=filled, fillcolor=white, label=no];
+spheroids10 -> no8  [label=neg];
+typical9 [style=filled, fillcolor=white, label=typical];
+spheroids10 -> typical9  [label=amod];
+formed12 -> spheroids10  [label=nsubjpass];
+were11 [style=filled, fillcolor=white, label=were];
+formed12 -> were11  [label=auxpass];
+formed12 -> formed12  [label=root];
+observed21 [style=filled, fillcolor=white, label=observed];
+instead14 [style=filled, fillcolor=white, label=instead];
+observed21 -> instead14  [label=advmod];
+masses16 [style=filled, fillcolor=white, label=masses];
+large15 [style=filled, fillcolor=white, label=large];
+masses16 -> large15  [label=amod];
+observed21 -> masses16  [label=nsubj];
+shape19 [style=filled, fillcolor=white, label=shape];
+"non-canonical18" [style=filled, fillcolor=white, label="non-canonical"];
+shape19 -> "non-canonical18"  [label=amod];
+masses16 -> shape19  [label=prep_with];
+were20 [style=filled, fillcolor=white, label=were];
+observed21 -> were20  [label=cop];
+formed12 -> observed21  [label=parataxis];
+typical23 [style=filled, fillcolor=white, label=typical];
+observed21 -> typical23  [label=dep];
+cells26 [style=filled, fillcolor=white, label=cells];
+cancer25 [style=filled, fillcolor=white, label=cancer];
+cells26 -> cancer25  [label=nn];
+typical23 -> cells26  [label=prep_of];
+}

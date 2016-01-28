@@ -1,0 +1,56 @@
+digraph "We have identified that the 120 kDa complex consists of the SHP-2 substrate-1 ( SHPS-1 ) and the Grb2-associated binder-1 ( Gab-1 ) . SHPS-1 ,  but not Gab-1 ,  undergoes tyrosyl phosphorylation and association with SHP-2 during myogenesis ," {
+label="We have identified that the 120 kDa complex consists of the SHP-2 substrate-1 (
+SHPS-1 ) and the Grb2-associated binder-1 ( Gab-1 ) . SHPS-1 ,  but not Gab-1 ,
+undergoes tyrosyl phosphorylation and association with SHP-2 during myogenesis
+,";
+identified3 [style=filled, fillcolor=white, label=identified];
+We1 [style=filled, fillcolor=white, label=We];
+identified3 -> We1  [label=nsubj];
+have2 [style=filled, fillcolor=white, label=have];
+identified3 -> have2  [label=aux];
+identified3 -> identified3  [label=root];
+undergoes31 [style=filled, fillcolor=white, label=undergoes];
+that4 [style=filled, fillcolor=white, label=that];
+undergoes31 -> that4  [label=mark];
+"SHPS-125" [style=filled, fillcolor=white, label="SHPS-1"];
+the5 [style=filled, fillcolor=white, label=the];
+"SHPS-125" -> the5  [label=det];
+kDa7 [style=filled, fillcolor=white, label=kDa];
+1206 [style=filled, fillcolor=white, label=120];
+kDa7 -> 1206  [label=number];
+"SHPS-125" -> kDa7  [label=num];
+complex8 [style=filled, fillcolor=white, label=complex];
+"SHPS-125" -> complex8  [label=amod];
+consists9 [style=filled, fillcolor=white, label=consists];
+"SHPS-125" -> consists9  [label=dep];
+"substrate-13" [style=filled, fillcolor=white, label="substrate-1"];
+the11 [style=filled, fillcolor=white, label=the];
+"substrate-13" -> the11  [label=det];
+"SHP-21" [style=filled, fillcolor=white, label="SHP-2"];
+"substrate-13" -> "SHP-21"  [label=nn];
+consists9 -> "substrate-13"  [label=prep_of];
+"SHPS-15" [style=filled, fillcolor=white, label="SHPS-1"];
+"substrate-13" -> "SHPS-15"  [label=appos];
+"binder-120" [style=filled, fillcolor=white, label="binder-1"];
+the18 [style=filled, fillcolor=white, label=the];
+"binder-120" -> the18  [label=det];
+"Grb2-associated19" [style=filled, fillcolor=white, label="Grb2-associated"];
+"binder-120" -> "Grb2-associated19"  [label=nn];
+"substrate-13" -> "binder-120"  [label=conj_and];
+"Gab-122" [style=filled, fillcolor=white, label="Gab-1"];
+"binder-120" -> "Gab-122"  [label=appos];
+undergoes31 -> "SHPS-125"  [label=nsubj];
+"Gab-129" [style=filled, fillcolor=white, label="Gab-1"];
+"SHPS-125" -> "Gab-129"  [label=conj_negcc];
+identified3 -> undergoes31  [label=ccomp];
+phosphorylation33 [style=filled, fillcolor=white, label=phosphorylation];
+tyrosyl32 [style=filled, fillcolor=white, label=tyrosyl];
+phosphorylation33 -> tyrosyl32  [label=amod];
+undergoes31 -> phosphorylation33  [label=dobj];
+association35 [style=filled, fillcolor=white, label=association];
+phosphorylation33 -> association35  [label=conj_and];
+"SHP-237" [style=filled, fillcolor=white, label="SHP-2"];
+undergoes31 -> "SHP-237"  [label=prep_with];
+myogenesis39 [style=filled, fillcolor=white, label=myogenesis];
+undergoes31 -> myogenesis39  [label=prep_during];
+}

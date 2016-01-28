@@ -1,0 +1,39 @@
+digraph "To distinguish between these possibilities ,  we tested whether α-catenin levels could be restored by exogenous expression of E-cadherin in Snail-expressing keratinocytes ." {
+label="To distinguish between these possibilities ,  we tested whether α-catenin
+levels could be restored by exogenous expression of E-cadherin in Snail-
+expressing keratinocytes .";
+distinguish2 [style=filled, fillcolor=white, label=distinguish];
+To1 [style=filled, fillcolor=white, label=To];
+distinguish2 -> To1  [label=aux];
+tested8 [style=filled, fillcolor=white, label=tested];
+tested8 -> distinguish2  [label=advcl];
+possibilities5 [style=filled, fillcolor=white, label=possibilities];
+these4 [style=filled, fillcolor=white, label=these];
+possibilities5 -> these4  [label=det];
+distinguish2 -> possibilities5  [label=prep_between];
+we7 [style=filled, fillcolor=white, label=we];
+tested8 -> we7  [label=nsubj];
+tested8 -> tested8  [label=root];
+restored14 [style=filled, fillcolor=white, label=restored];
+whether9 [style=filled, fillcolor=white, label=whether];
+restored14 -> whether9  [label=mark];
+levels11 [style=filled, fillcolor=white, label=levels];
+"α-catenin10" [style=filled, fillcolor=white, label="α-catenin"];
+levels11 -> "α-catenin10"  [label=amod];
+restored14 -> levels11  [label=nsubjpass];
+could12 [style=filled, fillcolor=white, label=could];
+restored14 -> could12  [label=aux];
+be13 [style=filled, fillcolor=white, label=be];
+restored14 -> be13  [label=auxpass];
+tested8 -> restored14  [label=ccomp];
+expression17 [style=filled, fillcolor=white, label=expression];
+exogenous16 [style=filled, fillcolor=white, label=exogenous];
+expression17 -> exogenous16  [label=amod];
+restored14 -> expression17  [label=agent];
+"E-cadherin19" [style=filled, fillcolor=white, label="E-cadherin"];
+expression17 -> "E-cadherin19"  [label=prep_of];
+keratinocytes22 [style=filled, fillcolor=white, label=keratinocytes];
+"Snail-expressing21" [style=filled, fillcolor=white, label="Snail-expressing"];
+keratinocytes22 -> "Snail-expressing21"  [label=amod];
+restored14 -> keratinocytes22  [label=prep_in];
+}

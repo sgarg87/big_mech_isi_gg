@@ -1,0 +1,55 @@
+digraph "Following purification ,  mono - and di - ubiquitinated K-Ras appeared to be the major ubiquitination forms ,  which is consistent with the endogenous K-Ras ubiquitination pattern ( Fig. 1 ,  A and B ) ." {
+label="Following purification ,  mono - and di - ubiquitinated K-Ras appeared to be
+the major ubiquitination forms ,  which is consistent with the endogenous K-Ras
+ubiquitination pattern ( Fig. 1 ,  A and B ) .";
+appeared11 [style=filled, fillcolor=white, label=appeared];
+purification2 [style=filled, fillcolor=white, label=purification];
+appeared11 -> purification2  [label=prep_following];
+"K-Ras10" [style=filled, fillcolor=white, label="K-Ras"];
+mono4 [style=filled, fillcolor=white, label=mono];
+"K-Ras10" -> mono4  [label=amod];
+di7 [style=filled, fillcolor=white, label=di];
+and6 [style=filled, fillcolor=white, label=and];
+di7 -> and6  [label=cc];
+"K-Ras10" -> di7  [label=dep];
+ubiquitinated9 [style=filled, fillcolor=white, label=ubiquitinated];
+"K-Ras10" -> ubiquitinated9  [label=amod];
+appeared11 -> "K-Ras10"  [label=nsubj];
+appeared11 -> appeared11  [label=root];
+forms17 [style=filled, fillcolor=white, label=forms];
+to12 [style=filled, fillcolor=white, label=to];
+forms17 -> to12  [label=aux];
+be13 [style=filled, fillcolor=white, label=be];
+forms17 -> be13  [label=cop];
+the14 [style=filled, fillcolor=white, label=the];
+forms17 -> the14  [label=det];
+major15 [style=filled, fillcolor=white, label=major];
+forms17 -> major15  [label=amod];
+ubiquitination16 [style=filled, fillcolor=white, label=ubiquitination];
+forms17 -> ubiquitination16  [label=nn];
+appeared11 -> forms17  [label=xcomp];
+consistent21 [style=filled, fillcolor=white, label=consistent];
+which19 [style=filled, fillcolor=white, label=which];
+consistent21 -> which19  [label=nsubj];
+is20 [style=filled, fillcolor=white, label=is];
+consistent21 -> is20  [label=cop];
+forms17 -> consistent21  [label=rcmod];
+pattern27 [style=filled, fillcolor=white, label=pattern];
+the23 [style=filled, fillcolor=white, label=the];
+pattern27 -> the23  [label=det];
+endogenous24 [style=filled, fillcolor=white, label=endogenous];
+pattern27 -> endogenous24  [label=amod];
+"K-Ras25" [style=filled, fillcolor=white, label="K-Ras"];
+pattern27 -> "K-Ras25"  [label=nn];
+ubiquitination26 [style=filled, fillcolor=white, label=ubiquitination];
+pattern27 -> ubiquitination26  [label=nn];
+consistent21 -> pattern27  [label=prep_with];
+"Fig.29" [style=filled, fillcolor=white, label="Fig."];
+pattern27 -> "Fig.29"  [label=appos];
+130 [style=filled, fillcolor=white, label=1];
+"Fig.29" -> 130  [label=num];
+A32 [style=filled, fillcolor=white, label=A];
+"Fig.29" -> A32  [label=dep];
+B34 [style=filled, fillcolor=white, label=B];
+A32 -> B34  [label=conj_and];
+}

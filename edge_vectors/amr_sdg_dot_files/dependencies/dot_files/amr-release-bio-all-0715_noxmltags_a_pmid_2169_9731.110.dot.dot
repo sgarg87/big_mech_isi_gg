@@ -1,0 +1,42 @@
+digraph "When size-fractionated MØCM was added to LM2 cells ,  molecules between 3 and 10 kDa stimulated LM2 growth to the greatest extent ( Figure 5 ) ." {
+label="When size-fractionated MØCM was added to LM2 cells ,  molecules between 3 and
+10 kDa stimulated LM2 growth to the greatest extent ( Figure 5 ) .";
+added5 [style=filled, fillcolor=white, label=added];
+When1 [style=filled, fillcolor=white, label=When];
+added5 -> When1  [label=advmod];
+"MØCM3" [style=filled, fillcolor=white, label="MØCM"];
+"size-fractionated2" [style=filled, fillcolor=white, label="size-fractionated"];
+"MØCM3" -> "size-fractionated2"  [label=amod];
+added5 -> "MØCM3"  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+added5 -> was4  [label=auxpass];
+stimulated16 [style=filled, fillcolor=white, label=stimulated];
+stimulated16 -> added5  [label=advcl];
+cells8 [style=filled, fillcolor=white, label=cells];
+LM27 [style=filled, fillcolor=white, label=LM2];
+cells8 -> LM27  [label=num];
+added5 -> cells8  [label=prep_to];
+molecules10 [style=filled, fillcolor=white, label=molecules];
+stimulated16 -> molecules10  [label=nsubj];
+312 [style=filled, fillcolor=white, label=3];
+molecules10 -> 312  [label=prep_between];
+1014 [style=filled, fillcolor=white, label=10];
+312 -> 1014  [label=conj_and];
+kDa15 [style=filled, fillcolor=white, label=kDa];
+stimulated16 -> kDa15  [label=advmod];
+stimulated16 -> stimulated16  [label=root];
+growth18 [style=filled, fillcolor=white, label=growth];
+LM217 [style=filled, fillcolor=white, label=LM2];
+growth18 -> LM217  [label=nn];
+stimulated16 -> growth18  [label=dobj];
+extent22 [style=filled, fillcolor=white, label=extent];
+the20 [style=filled, fillcolor=white, label=the];
+extent22 -> the20  [label=det];
+greatest21 [style=filled, fillcolor=white, label=greatest];
+extent22 -> greatest21  [label=amod];
+stimulated16 -> extent22  [label=prep_to];
+Figure24 [style=filled, fillcolor=white, label=Figure];
+extent22 -> Figure24  [label=appos];
+52 [style=filled, fillcolor=white, label=5];
+Figure24 -> 52  [label=num];
+}

@@ -1,0 +1,36 @@
+digraph "Second ,  mice deficient for both STAT5A and STAT5B are thrombocytopenic ,  likely due to a reduction in functional hematopoietic progenitors ( 18 ) ." {
+label="Second ,  mice deficient for both STAT5A and STAT5B are thrombocytopenic ,
+likely due to a reduction in functional hematopoietic progenitors ( 18 ) .";
+thrombocytopenic11 [style=filled, fillcolor=white, label=thrombocytopenic];
+Second1 [style=filled, fillcolor=white, label=Second];
+thrombocytopenic11 -> Second1  [label=advmod];
+deficient4 [style=filled, fillcolor=white, label=deficient];
+mice3 [style=filled, fillcolor=white, label=mice];
+deficient4 -> mice3  [label=nn];
+thrombocytopenic11 -> deficient4  [label=nsubj];
+STAT5A7 [style=filled, fillcolor=white, label=STAT5A];
+both6 [style=filled, fillcolor=white, label=both];
+STAT5A7 -> both6  [label=preconj];
+deficient4 -> STAT5A7  [label=prep_for];
+STAT5B9 [style=filled, fillcolor=white, label=STAT5B];
+STAT5A7 -> STAT5B9  [label=conj_and];
+are10 [style=filled, fillcolor=white, label=are];
+thrombocytopenic11 -> are10  [label=cop];
+thrombocytopenic11 -> thrombocytopenic11  [label=root];
+due14 [style=filled, fillcolor=white, label=due];
+likely13 [style=filled, fillcolor=white, label=likely];
+due14 -> likely13  [label=advmod];
+thrombocytopenic11 -> due14  [label=acomp];
+reduction17 [style=filled, fillcolor=white, label=reduction];
+a16 [style=filled, fillcolor=white, label=a];
+reduction17 -> a16  [label=det];
+due14 -> reduction17  [label=prep_to];
+hematopoietic20 [style=filled, fillcolor=white, label=hematopoietic];
+functional19 [style=filled, fillcolor=white, label=functional];
+hematopoietic20 -> functional19  [label=amod];
+progenitors21 [style=filled, fillcolor=white, label=progenitors];
+progenitors21 -> hematopoietic20  [label=amod];
+reduction17 -> progenitors21  [label=prep_in];
+1823 [style=filled, fillcolor=white, label=18];
+progenitors21 -> 1823  [label=appos];
+}

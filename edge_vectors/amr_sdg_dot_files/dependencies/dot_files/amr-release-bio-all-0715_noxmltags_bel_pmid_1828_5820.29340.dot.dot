@@ -1,0 +1,34 @@
+digraph "( McPherson et al ,  2004a ) . Heterozygous and homozygous Mus81 mutants show cancer predisposition ,  particularly to T - and B-cell lymphomas ." {
+label="( McPherson et al ,  2004a ) . Heterozygous and homozygous Mus81 mutants show
+cancer predisposition ,  particularly to T - and B-cell lymphomas .";
+mutants13 [style=filled, fillcolor=white, label=mutants];
+McPherson2 [style=filled, fillcolor=white, label=McPherson];
+mutants13 -> McPherson2  [label=dep];
+al4 [style=filled, fillcolor=white, label=al];
+et3 [style=filled, fillcolor=white, label=et];
+al4 -> et3  [label=nn];
+McPherson2 -> al4  [label=dep];
+"2004a6" [style=filled, fillcolor=white, label="2004a"];
+al4 -> "2004a6"  [label=appos];
+Mus8112 [style=filled, fillcolor=white, label=Mus81];
+Heterozygous9 [style=filled, fillcolor=white, label=Heterozygous];
+Mus8112 -> Heterozygous9  [label=nn];
+homozygous11 [style=filled, fillcolor=white, label=homozygous];
+Heterozygous9 -> homozygous11  [label=conj_and];
+mutants13 -> Mus8112  [label=nsubj];
+mutants13 -> mutants13  [label=root];
+predisposition16 [style=filled, fillcolor=white, label=predisposition];
+show14 [style=filled, fillcolor=white, label=show];
+predisposition16 -> show14  [label=nn];
+cancer15 [style=filled, fillcolor=white, label=cancer];
+predisposition16 -> cancer15  [label=nn];
+mutants13 -> predisposition16  [label=dobj];
+particularly18 [style=filled, fillcolor=white, label=particularly];
+predisposition16 -> particularly18  [label=advmod];
+T20 [style=filled, fillcolor=white, label=T];
+particularly18 -> T20  [label=prep_to];
+lymphomas24 [style=filled, fillcolor=white, label=lymphomas];
+"B-cell23" [style=filled, fillcolor=white, label="B-cell"];
+lymphomas24 -> "B-cell23"  [label=amod];
+predisposition16 -> lymphomas24  [label=conj_and];
+}

@@ -1,0 +1,36 @@
+digraph "As shown in Figure 6B ,  the capacity of LoVo cells to invade Matrigel was also altered by serpinE2 silencing" {
+label="As shown in Figure 6B ,  the capacity of LoVo cells to invade Matrigel was also
+altered by serpinE2 silencing";
+shown2 [style=filled, fillcolor=white, label=shown];
+As1 [style=filled, fillcolor=white, label=As];
+shown2 -> As1  [label=mark];
+altered17 [style=filled, fillcolor=white, label=altered];
+altered17 -> shown2  [label=advcl];
+Figure4 [style=filled, fillcolor=white, label=Figure];
+shown2 -> Figure4  [label=prep_in];
+"6B5" [style=filled, fillcolor=white, label="6B"];
+Figure4 -> "6B5"  [label=num];
+capacity8 [style=filled, fillcolor=white, label=capacity];
+the7 [style=filled, fillcolor=white, label=the];
+capacity8 -> the7  [label=det];
+altered17 -> capacity8  [label=nsubjpass];
+cells11 [style=filled, fillcolor=white, label=cells];
+LoVo10 [style=filled, fillcolor=white, label=LoVo];
+cells11 -> LoVo10  [label=nn];
+capacity8 -> cells11  [label=prep_of];
+invade13 [style=filled, fillcolor=white, label=invade];
+to12 [style=filled, fillcolor=white, label=to];
+invade13 -> to12  [label=aux];
+cells11 -> invade13  [label=vmod];
+Matrigel14 [style=filled, fillcolor=white, label=Matrigel];
+invade13 -> Matrigel14  [label=dobj];
+was15 [style=filled, fillcolor=white, label=was];
+altered17 -> was15  [label=auxpass];
+also16 [style=filled, fillcolor=white, label=also];
+altered17 -> also16  [label=advmod];
+altered17 -> altered17  [label=root];
+silencing20 [style=filled, fillcolor=white, label=silencing];
+serpinE219 [style=filled, fillcolor=white, label=serpinE2];
+silencing20 -> serpinE219  [label=amod];
+altered17 -> silencing20  [label=agent];
+}

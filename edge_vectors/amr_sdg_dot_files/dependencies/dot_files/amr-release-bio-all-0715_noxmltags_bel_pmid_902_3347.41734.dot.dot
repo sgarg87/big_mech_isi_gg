@@ -1,0 +1,56 @@
+digraph "Cells with activated ras demonstrated high level of expression of 72-kDa metalloproteinase ( MMP-2 ,  gelatinase A ) ,  and 92-kDa metalloproteinase ( MMP-9 ,  gelatinase B ) compared with cells containing SV40 large T antigen alone ." {
+label="Cells with activated ras demonstrated high level of expression of 72-kDa
+metalloproteinase ( MMP-2 ,  gelatinase A ) ,  and 92-kDa metalloproteinase (
+MMP-9 ,  gelatinase B ) compared with cells containing SV40 large T antigen
+alone .";
+demonstrated5 [style=filled, fillcolor=white, label=demonstrated];
+Cells1 [style=filled, fillcolor=white, label=Cells];
+demonstrated5 -> Cells1  [label=nsubj];
+ras4 [style=filled, fillcolor=white, label=ras];
+activated3 [style=filled, fillcolor=white, label=activated];
+ras4 -> activated3  [label=amod];
+Cells1 -> ras4  [label=prep_with];
+demonstrated5 -> demonstrated5  [label=root];
+level7 [style=filled, fillcolor=white, label=level];
+high6 [style=filled, fillcolor=white, label=high];
+level7 -> high6  [label=amod];
+demonstrated5 -> level7  [label=dobj];
+expression9 [style=filled, fillcolor=white, label=expression];
+level7 -> expression9  [label=prep_of];
+metalloproteinase12 [style=filled, fillcolor=white, label=metalloproteinase];
+"72-kDa11" [style=filled, fillcolor=white, label="72-kDa"];
+metalloproteinase12 -> "72-kDa11"  [label=amod];
+expression9 -> metalloproteinase12  [label=prep_of];
+"MMP-214" [style=filled, fillcolor=white, label="MMP-2"];
+metalloproteinase12 -> "MMP-214"  [label=appos];
+A17 [style=filled, fillcolor=white, label=A];
+gelatinase16 [style=filled, fillcolor=white, label=gelatinase];
+A17 -> gelatinase16  [label=nn];
+"MMP-214" -> A17  [label=dep];
+metalloproteinase22 [style=filled, fillcolor=white, label=metalloproteinase];
+"92-kDa1" [style=filled, fillcolor=white, label="92-kDa"];
+metalloproteinase22 -> "92-kDa1"  [label=amod];
+expression9 -> metalloproteinase22  [label=conj_and];
+"MMP-924" [style=filled, fillcolor=white, label="MMP-9"];
+metalloproteinase22 -> "MMP-924"  [label=appos];
+B27 [style=filled, fillcolor=white, label=B];
+gelatinase26 [style=filled, fillcolor=white, label=gelatinase];
+B27 -> gelatinase26  [label=nn];
+"MMP-924" -> B27  [label=dep];
+with30 [style=filled, fillcolor=white, label=with];
+demonstrated5 -> with30  [label=prepc_compared_with];
+cells31 [style=filled, fillcolor=white, label=cells];
+demonstrated5 -> cells31  [label=pobj];
+containing32 [style=filled, fillcolor=white, label=containing];
+cells31 -> containing32  [label=vmod];
+antigen36 [style=filled, fillcolor=white, label=antigen];
+SV4033 [style=filled, fillcolor=white, label=SV40];
+antigen36 -> SV4033  [label=num];
+large34 [style=filled, fillcolor=white, label=large];
+antigen36 -> large34  [label=amod];
+T35 [style=filled, fillcolor=white, label=T];
+antigen36 -> T35  [label=nn];
+containing32 -> antigen36  [label=dobj];
+alone37 [style=filled, fillcolor=white, label=alone];
+containing32 -> alone37  [label=advmod];
+}

@@ -1,0 +1,55 @@
+digraph "However ,  replacement with the EGFR ( exon19 del ) T669A mutant led to increased tyrosine phosphorylation of both EGFR and ERBB3 ,  and activation of PI3K/AKT signaling ,  mimicking the effect of MEK inhibition ( Figure 6C ) ." {
+label="However ,  replacement with the EGFR ( exon19 del ) T669A mutant led to
+increased tyrosine phosphorylation of both EGFR and ERBB3 ,  and activation of
+PI3K/AKT signaling ,  mimicking the effect of MEK inhibition ( Figure 6C ) .";
+led13 [style=filled, fillcolor=white, label=led];
+However1 [style=filled, fillcolor=white, label=However];
+led13 -> However1  [label=advmod];
+replacement3 [style=filled, fillcolor=white, label=replacement];
+led13 -> replacement3  [label=nsubj];
+T669A11 [style=filled, fillcolor=white, label=T669A];
+the5 [style=filled, fillcolor=white, label=the];
+T669A11 -> the5  [label=det];
+EGFR6 [style=filled, fillcolor=white, label=EGFR];
+T669A11 -> EGFR6  [label=nn];
+del9 [style=filled, fillcolor=white, label=del];
+exon198 [style=filled, fillcolor=white, label=exon19];
+del9 -> exon198  [label=nn];
+T669A11 -> del9  [label=appos];
+replacement3 -> T669A11  [label=prep_with];
+mutant12 [style=filled, fillcolor=white, label=mutant];
+led13 -> mutant12  [label=advmod];
+led13 -> led13  [label=root];
+phosphorylation17 [style=filled, fillcolor=white, label=phosphorylation];
+increased15 [style=filled, fillcolor=white, label=increased];
+phosphorylation17 -> increased15  [label=amod];
+tyrosine16 [style=filled, fillcolor=white, label=tyrosine];
+phosphorylation17 -> tyrosine16  [label=amod];
+led13 -> phosphorylation17  [label=prep_to];
+EGFR20 [style=filled, fillcolor=white, label=EGFR];
+both19 [style=filled, fillcolor=white, label=both];
+EGFR20 -> both19  [label=preconj];
+phosphorylation17 -> EGFR20  [label=prep_of];
+ERBB322 [style=filled, fillcolor=white, label=ERBB3];
+EGFR20 -> ERBB322  [label=conj_and];
+activation25 [style=filled, fillcolor=white, label=activation];
+phosphorylation17 -> activation25  [label=conj_and];
+signaling28 [style=filled, fillcolor=white, label=signaling];
+"PI3K/AKT27" [style=filled, fillcolor=white, label="PI3K/AKT"];
+signaling28 -> "PI3K/AKT27"  [label=nsubj];
+activation25 -> signaling28  [label=prepc_of];
+mimicking30 [style=filled, fillcolor=white, label=mimicking];
+signaling28 -> mimicking30  [label=dep];
+effect32 [style=filled, fillcolor=white, label=effect];
+the31 [style=filled, fillcolor=white, label=the];
+effect32 -> the31  [label=det];
+signaling28 -> effect32  [label=dobj];
+inhibition35 [style=filled, fillcolor=white, label=inhibition];
+MEK34 [style=filled, fillcolor=white, label=MEK];
+inhibition35 -> MEK34  [label=nn];
+effect32 -> inhibition35  [label=prep_of];
+Figure37 [style=filled, fillcolor=white, label=Figure];
+inhibition35 -> Figure37  [label=appos];
+"6C38" [style=filled, fillcolor=white, label="6C"];
+Figure37 -> "6C38"  [label=num];
+}

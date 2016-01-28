@@ -1,0 +1,32 @@
+digraph "However ,  we failed to detect the existence of an endogenous S/E/E8 complex ( Scita et al. ,  1999 ) ." {
+label="However ,  we failed to detect the existence of an endogenous S/E/E8 complex (
+Scita et al. ,  1999 ) .";
+failed4 [style=filled, fillcolor=white, label=failed];
+However1 [style=filled, fillcolor=white, label=However];
+failed4 -> However1  [label=advmod];
+we3 [style=filled, fillcolor=white, label=we];
+failed4 -> we3  [label=nsubj];
+failed4 -> failed4  [label=root];
+detect6 [style=filled, fillcolor=white, label=detect];
+to5 [style=filled, fillcolor=white, label=to];
+detect6 -> to5  [label=aux];
+failed4 -> detect6  [label=xcomp];
+existence8 [style=filled, fillcolor=white, label=existence];
+the7 [style=filled, fillcolor=white, label=the];
+existence8 -> the7  [label=det];
+detect6 -> existence8  [label=dobj];
+complex13 [style=filled, fillcolor=white, label=complex];
+an10 [style=filled, fillcolor=white, label=an];
+complex13 -> an10  [label=det];
+endogenous11 [style=filled, fillcolor=white, label=endogenous];
+complex13 -> endogenous11  [label=amod];
+"S/E/E812" [style=filled, fillcolor=white, label="S/E/E8"];
+endogenous11 -> "S/E/E812"  [label=dep];
+existence8 -> complex13  [label=prep_of];
+Scita15 [style=filled, fillcolor=white, label=Scita];
+complex13 -> Scita15  [label=appos];
+"al.17" [style=filled, fillcolor=white, label="al."];
+Scita15 -> "al.17"  [label=conj_et];
+1999 [style=filled, fillcolor=white, label=1999];
+Scita15 -> 1999  [label=dep];
+}

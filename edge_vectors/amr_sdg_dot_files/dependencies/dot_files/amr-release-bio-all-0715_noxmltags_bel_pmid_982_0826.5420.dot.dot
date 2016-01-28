@@ -1,0 +1,60 @@
+digraph "formation of the hCAF-1 / BTG1 complex is driven by phosphorylation at BTG1 ( Ser-159 ) and implicates this complex in the signalling events of cell division that lead to changes in cellular proliferation associated with cell-cell contact ." {
+label="formation of the hCAF-1 / BTG1 complex is driven by phosphorylation at BTG1 (
+Ser-159 ) and implicates this complex in the signalling events of cell division
+that lead to changes in cellular proliferation associated with cell-cell contact
+.";
+driven9 [style=filled, fillcolor=white, label=driven];
+formation1 [style=filled, fillcolor=white, label=formation];
+driven9 -> formation1  [label=nsubjpass];
+complex7 [style=filled, fillcolor=white, label=complex];
+the3 [style=filled, fillcolor=white, label=the];
+complex7 -> the3  [label=det];
+"hCAF-14" [style=filled, fillcolor=white, label="hCAF-1"];
+complex7 -> "hCAF-14"  [label=amod];
+"/5" [style=filled, fillcolor=white, label="/"];
+complex7 -> "/5"  [label=nn];
+BTG16 [style=filled, fillcolor=white, label=BTG1];
+complex7 -> BTG16  [label=nn];
+formation1 -> complex7  [label=prep_of];
+is8 [style=filled, fillcolor=white, label=is];
+driven9 -> is8  [label=auxpass];
+driven9 -> driven9  [label=root];
+phosphorylation11 [style=filled, fillcolor=white, label=phosphorylation];
+driven9 -> phosphorylation11  [label=agent];
+BTG113 [style=filled, fillcolor=white, label=BTG1];
+driven9 -> BTG113  [label=prep_at];
+"Ser-159" [style=filled, fillcolor=white, label="Ser-159"];
+BTG113 -> "Ser-159"  [label=appos];
+implicates18 [style=filled, fillcolor=white, label=implicates];
+driven9 -> implicates18  [label=conj_and];
+complex20 [style=filled, fillcolor=white, label=complex];
+this19 [style=filled, fillcolor=white, label=this];
+complex20 -> this19  [label=det];
+implicates18 -> complex20  [label=dobj];
+events24 [style=filled, fillcolor=white, label=events];
+the22 [style=filled, fillcolor=white, label=the];
+events24 -> the22  [label=det];
+signalling23 [style=filled, fillcolor=white, label=signalling];
+events24 -> signalling23  [label=amod];
+implicates18 -> events24  [label=prep_in];
+division27 [style=filled, fillcolor=white, label=division];
+cell26 [style=filled, fillcolor=white, label=cell];
+division27 -> cell26  [label=nn];
+events24 -> division27  [label=prep_of];
+lead29 [style=filled, fillcolor=white, label=lead];
+that28 [style=filled, fillcolor=white, label=that];
+lead29 -> that28  [label=nsubj];
+events24 -> lead29  [label=rcmod];
+changes31 [style=filled, fillcolor=white, label=changes];
+lead29 -> changes31  [label=prep_to];
+proliferation34 [style=filled, fillcolor=white, label=proliferation];
+cellular33 [style=filled, fillcolor=white, label=cellular];
+proliferation34 -> cellular33  [label=amod];
+changes31 -> proliferation34  [label=prep_in];
+associated35 [style=filled, fillcolor=white, label=associated];
+proliferation34 -> associated35  [label=vmod];
+contact38 [style=filled, fillcolor=white, label=contact];
+"cell-cell37" [style=filled, fillcolor=white, label="cell-cell"];
+contact38 -> "cell-cell37"  [label=amod];
+associated35 -> contact38  [label=prep_with];
+}

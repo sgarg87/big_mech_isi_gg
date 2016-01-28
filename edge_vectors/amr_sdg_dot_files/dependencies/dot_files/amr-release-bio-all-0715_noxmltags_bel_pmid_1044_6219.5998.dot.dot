@@ -1,0 +1,40 @@
+digraph "Finally ,  we showed that the phosphorylation of Stat3 by PKC delta led to a negative regulation of Stat3 DNA binding and transcriptional activity ." {
+label="Finally ,  we showed that the phosphorylation of Stat3 by PKC delta led to a
+negative regulation of Stat3 DNA binding and transcriptional activity .";
+showed4 [style=filled, fillcolor=white, label=showed];
+Finally1 [style=filled, fillcolor=white, label=Finally];
+showed4 -> Finally1  [label=advmod];
+we3 [style=filled, fillcolor=white, label=we];
+showed4 -> we3  [label=nsubj];
+showed4 -> showed4  [label=root];
+led13 [style=filled, fillcolor=white, label=led];
+that5 [style=filled, fillcolor=white, label=that];
+led13 -> that5  [label=mark];
+phosphorylation7 [style=filled, fillcolor=white, label=phosphorylation];
+the6 [style=filled, fillcolor=white, label=the];
+phosphorylation7 -> the6  [label=det];
+led13 -> phosphorylation7  [label=nsubj];
+Stat39 [style=filled, fillcolor=white, label=Stat3];
+phosphorylation7 -> Stat39  [label=prep_of];
+delta12 [style=filled, fillcolor=white, label=delta];
+PKC11 [style=filled, fillcolor=white, label=PKC];
+delta12 -> PKC11  [label=nn];
+Stat39 -> delta12  [label=prep_by];
+showed4 -> led13  [label=ccomp];
+regulation17 [style=filled, fillcolor=white, label=regulation];
+a15 [style=filled, fillcolor=white, label=a];
+regulation17 -> a15  [label=det];
+negative16 [style=filled, fillcolor=white, label=negative];
+regulation17 -> negative16  [label=amod];
+led13 -> regulation17  [label=prep_to];
+binding21 [style=filled, fillcolor=white, label=binding];
+Stat319 [style=filled, fillcolor=white, label=Stat3];
+binding21 -> Stat319  [label=amod];
+DNA20 [style=filled, fillcolor=white, label=DNA];
+binding21 -> DNA20  [label=amod];
+regulation17 -> binding21  [label=prep_of];
+activity24 [style=filled, fillcolor=white, label=activity];
+transcriptional23 [style=filled, fillcolor=white, label=transcriptional];
+activity24 -> transcriptional23  [label=amod];
+binding21 -> activity24  [label=conj_and];
+}

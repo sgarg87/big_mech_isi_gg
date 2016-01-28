@@ -1,0 +1,30 @@
+digraph "KRASG12V induces Cdc42-dependent migration ability and filopodia formation in Caco-2 cells ,  partially dependent on PI3K pathway" {
+label="KRASG12V induces Cdc42-dependent migration ability and filopodia formation in
+Caco-2 cells ,  partially dependent on PI3K pathway";
+induces2 [style=filled, fillcolor=white, label=induces];
+KRASG12V [style=filled, fillcolor=white, label=KRASG12V];
+induces2 -> KRASG12V  [label=nsubj];
+induces2 -> induces2  [label=root];
+ability5 [style=filled, fillcolor=white, label=ability];
+"Cdc42-dependent3" [style=filled, fillcolor=white, label="Cdc42-dependent"];
+ability5 -> "Cdc42-dependent3"  [label=amod];
+migration4 [style=filled, fillcolor=white, label=migration];
+ability5 -> migration4  [label=nn];
+induces2 -> ability5  [label=dobj];
+formation8 [style=filled, fillcolor=white, label=formation];
+filopodia7 [style=filled, fillcolor=white, label=filopodia];
+formation8 -> filopodia7  [label=nn];
+ability5 -> formation8  [label=conj_and];
+cells11 [style=filled, fillcolor=white, label=cells];
+"Caco-210" [style=filled, fillcolor=white, label="Caco-2"];
+cells11 -> "Caco-210"  [label=nn];
+induces2 -> cells11  [label=prep_in];
+dependent14 [style=filled, fillcolor=white, label=dependent];
+partially13 [style=filled, fillcolor=white, label=partially];
+dependent14 -> partially13  [label=advmod];
+induces2 -> dependent14  [label=acomp];
+pathway17 [style=filled, fillcolor=white, label=pathway];
+PI3K16 [style=filled, fillcolor=white, label=PI3K];
+pathway17 -> PI3K16  [label=nn];
+dependent14 -> pathway17  [label=prep_on];
+}

@@ -1,0 +1,49 @@
+digraph "Il6 promotes the growth arrest and differentiation of M1 cells through gp130-mediated Stat3 activation ,  whereas the Y759/SHP -2 - mediated cascade by gp130 stimulation has growth-enhancing effects" {
+label="Il6 promotes the growth arrest and differentiation of M1 cells through
+gp130-mediated Stat3 activation ,  whereas the Y759/SHP -2 - mediated cascade by
+gp130 stimulation has growth-enhancing effects";
+promotes2 [style=filled, fillcolor=white, label=promotes];
+Il61 [style=filled, fillcolor=white, label=Il6];
+promotes2 -> Il61  [label=advmod];
+promotes2 -> promotes2  [label=root];
+arrest5 [style=filled, fillcolor=white, label=arrest];
+the3 [style=filled, fillcolor=white, label=the];
+arrest5 -> the3  [label=det];
+growth4 [style=filled, fillcolor=white, label=growth];
+arrest5 -> growth4  [label=nn];
+promotes2 -> arrest5  [label=dobj];
+differentiation7 [style=filled, fillcolor=white, label=differentiation];
+arrest5 -> differentiation7  [label=conj_and];
+cells10 [style=filled, fillcolor=white, label=cells];
+M19 [style=filled, fillcolor=white, label=M1];
+cells10 -> M19  [label=num];
+arrest5 -> cells10  [label=prep_of];
+Stat31 [style=filled, fillcolor=white, label=Stat3];
+"gp130-mediated2" [style=filled, fillcolor=white, label="gp130-mediated"];
+Stat31 -> "gp130-mediated2"  [label=amod];
+promotes2 -> Stat31  [label=prep_through];
+activation14 [style=filled, fillcolor=white, label=activation];
+promotes2 -> activation14  [label=nsubj];
+mediated21 [style=filled, fillcolor=white, label=mediated];
+whereas16 [style=filled, fillcolor=white, label=whereas];
+mediated21 -> whereas16  [label=mark];
+"Y759/SHP18" [style=filled, fillcolor=white, label="Y759/SHP"];
+the17 [style=filled, fillcolor=white, label=the];
+"Y759/SHP18" -> the17  [label=det];
+mediated21 -> "Y759/SHP18"  [label=nsubj];
+"-219" [style=filled, fillcolor=white, label="-2"];
+"Y759/SHP18" -> "-219"  [label=num];
+activation14 -> mediated21  [label=dep];
+has26 [style=filled, fillcolor=white, label=has];
+cascade22 [style=filled, fillcolor=white, label=cascade];
+has26 -> cascade22  [label=nsubj];
+stimulation25 [style=filled, fillcolor=white, label=stimulation];
+gp13024 [style=filled, fillcolor=white, label=gp130];
+stimulation25 -> gp13024  [label=amod];
+cascade22 -> stimulation25  [label=prep_by];
+mediated21 -> has26  [label=ccomp];
+effects28 [style=filled, fillcolor=white, label=effects];
+"growth-enhancing27" [style=filled, fillcolor=white, label="growth-enhancing"];
+effects28 -> "growth-enhancing27"  [label=amod];
+has26 -> effects28  [label=dobj];
+}

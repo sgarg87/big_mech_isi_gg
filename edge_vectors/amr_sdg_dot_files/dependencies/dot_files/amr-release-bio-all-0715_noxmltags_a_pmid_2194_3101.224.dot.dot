@@ -1,0 +1,43 @@
+digraph "As described earlier ,  HRASG12V-transfected Caco-2 cells ( Caco-H2 ) have undergone EMT ,  followed by the dramatic reduction of E-cadherin expression -LSB- 16 -RSB- ." {
+label="As described earlier ,  HRASG12V-transfected Caco-2 cells ( Caco-H2 ) have
+undergone EMT ,  followed by the dramatic reduction of E-cadherin expression
+-LSB- 16 -RSB- .";
+described2 [style=filled, fillcolor=white, label=described];
+As1 [style=filled, fillcolor=white, label=As];
+described2 -> As1  [label=mark];
+undergone12 [style=filled, fillcolor=white, label=undergone];
+undergone12 -> described2  [label=advcl];
+earlier3 [style=filled, fillcolor=white, label=earlier];
+described2 -> earlier3  [label=advmod];
+"Caco-26" [style=filled, fillcolor=white, label="Caco-2"];
+"HRASG12V-transfected5" [style=filled, fillcolor=white, label="HRASG12V-transfected"];
+"Caco-26" -> "HRASG12V-transfected5"  [label=amod];
+cells7 [style=filled, fillcolor=white, label=cells];
+cells7 -> "Caco-26"  [label=amod];
+undergone12 -> cells7  [label=nsubj];
+"Caco-H29" [style=filled, fillcolor=white, label="Caco-H2"];
+cells7 -> "Caco-H29"  [label=appos];
+have11 [style=filled, fillcolor=white, label=have];
+undergone12 -> have11  [label=aux];
+followed15 [style=filled, fillcolor=white, label=followed];
+followed15 -> undergone12  [label=ccomp];
+EMT13 [style=filled, fillcolor=white, label=EMT];
+undergone12 -> EMT13  [label=dobj];
+followed15 -> followed15  [label=root];
+reduction19 [style=filled, fillcolor=white, label=reduction];
+the17 [style=filled, fillcolor=white, label=the];
+reduction19 -> the17  [label=det];
+dramatic18 [style=filled, fillcolor=white, label=dramatic];
+reduction19 -> dramatic18  [label=amod];
+followed15 -> reduction19  [label=prep_by];
+"-LSB-23" [style=filled, fillcolor=white, label="-LSB-"];
+"E-cadherin21" [style=filled, fillcolor=white, label="E-cadherin"];
+"-LSB-23" -> "E-cadherin21"  [label=amod];
+expression22 [style=filled, fillcolor=white, label=expression];
+"-LSB-23" -> expression22  [label=nn];
+reduction19 -> "-LSB-23"  [label=prep_of];
+"-RSB-25" [style=filled, fillcolor=white, label="-RSB-"];
+1624 [style=filled, fillcolor=white, label=16];
+"-RSB-25" -> 1624  [label=num];
+followed15 -> "-RSB-25"  [label=nsubj];
+}

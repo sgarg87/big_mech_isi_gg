@@ -1,0 +1,77 @@
+digraph "The present study demonstrates that erythropoietin ( Epo ) and IL-3 induce tyrosine phosphorylation of the SH2/SH3-containing adapter protein CrkL and its transient association with tyrosine-phosphorylated SHP-2 ,  Shc ,  and Cbl in a murine IL-3-dependent cell line ,  32D ,  expressing the Epo receptor ( EpoR ) ." {
+label="The present study demonstrates that erythropoietin ( Epo ) and IL-3 induce
+tyrosine phosphorylation of the SH2/SH3-containing adapter protein CrkL and its
+transient association with tyrosine-phosphorylated SHP-2 ,  Shc ,  and Cbl in a
+murine IL-3-dependent cell line ,  32D ,  expressing the Epo receptor ( EpoR )
+.";
+study3 [style=filled, fillcolor=white, label=study];
+The1 [style=filled, fillcolor=white, label=The];
+study3 -> The1  [label=det];
+present2 [style=filled, fillcolor=white, label=present];
+study3 -> present2  [label=amod];
+demonstrates4 [style=filled, fillcolor=white, label=demonstrates];
+demonstrates4 -> study3  [label=nsubj];
+demonstrates4 -> demonstrates4  [label=root];
+induce12 [style=filled, fillcolor=white, label=induce];
+that5 [style=filled, fillcolor=white, label=that];
+induce12 -> that5  [label=mark];
+erythropoietin6 [style=filled, fillcolor=white, label=erythropoietin];
+induce12 -> erythropoietin6  [label=nsubj];
+Epo8 [style=filled, fillcolor=white, label=Epo];
+erythropoietin6 -> Epo8  [label=appos];
+"IL-311" [style=filled, fillcolor=white, label="IL-3"];
+erythropoietin6 -> "IL-311"  [label=conj_and];
+demonstrates4 -> induce12  [label=ccomp];
+phosphorylation14 [style=filled, fillcolor=white, label=phosphorylation];
+tyrosine13 [style=filled, fillcolor=white, label=tyrosine];
+phosphorylation14 -> tyrosine13  [label=amod];
+induce12 -> phosphorylation14  [label=dobj];
+CrkL20 [style=filled, fillcolor=white, label=CrkL];
+the16 [style=filled, fillcolor=white, label=the];
+CrkL20 -> the16  [label=det];
+"SH2/SH3-containing17" [style=filled, fillcolor=white, label="SH2/SH3-containing"];
+CrkL20 -> "SH2/SH3-containing17"  [label=nn];
+adapter18 [style=filled, fillcolor=white, label=adapter];
+CrkL20 -> adapter18  [label=nn];
+protein19 [style=filled, fillcolor=white, label=protein];
+CrkL20 -> protein19  [label=nn];
+phosphorylation14 -> CrkL20  [label=prep_of];
+association24 [style=filled, fillcolor=white, label=association];
+its22 [style=filled, fillcolor=white, label=its];
+association24 -> its22  [label=poss];
+transient23 [style=filled, fillcolor=white, label=transient];
+association24 -> transient23  [label=amod];
+demonstrates4 -> association24  [label=conj_and];
+"SHP-27" [style=filled, fillcolor=white, label="SHP-2"];
+"tyrosine-phosphorylated26" [style=filled, fillcolor=white, label="tyrosine-phosphorylated"];
+"SHP-27" -> "tyrosine-phosphorylated26"  [label=amod];
+association24 -> "SHP-27"  [label=prep_with];
+Shc29 [style=filled, fillcolor=white, label=Shc];
+"SHP-27" -> Shc29  [label=conj_and];
+Cbl32 [style=filled, fillcolor=white, label=Cbl];
+"SHP-27" -> Cbl32  [label=conj_and];
+in33 [style=filled, fillcolor=white, label=in];
+association24 -> in33  [label=dep];
+line38 [style=filled, fillcolor=white, label=line];
+a34 [style=filled, fillcolor=white, label=a];
+line38 -> a34  [label=det];
+"IL-3-dependent6" [style=filled, fillcolor=white, label="IL-3-dependent"];
+murine35 [style=filled, fillcolor=white, label=murine];
+"IL-3-dependent6" -> murine35  [label=amod];
+line38 -> "IL-3-dependent6"  [label=amod];
+cell37 [style=filled, fillcolor=white, label=cell];
+line38 -> cell37  [label=nn];
+expressing42 [style=filled, fillcolor=white, label=expressing];
+expressing42 -> line38  [label=nsubj];
+"32D40" [style=filled, fillcolor=white, label="32D"];
+line38 -> "32D40"  [label=amod];
+in33 -> expressing42  [label=pcomp];
+receptor45 [style=filled, fillcolor=white, label=receptor];
+the43 [style=filled, fillcolor=white, label=the];
+receptor45 -> the43  [label=det];
+Epo44 [style=filled, fillcolor=white, label=Epo];
+receptor45 -> Epo44  [label=nn];
+expressing42 -> receptor45  [label=dobj];
+EpoR47 [style=filled, fillcolor=white, label=EpoR];
+association24 -> EpoR47  [label=dep];
+}

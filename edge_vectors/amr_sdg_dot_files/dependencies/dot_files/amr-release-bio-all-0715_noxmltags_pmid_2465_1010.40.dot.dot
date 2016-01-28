@@ -1,0 +1,32 @@
+digraph "Although fully activating alleles of H-Ras can be tolerated ,  fully activated alleles of K-Ras may not ." {
+label="Although fully activating alleles of H-Ras can be tolerated ,  fully activated
+alleles of K-Ras may not .";
+tolerated9 [style=filled, fillcolor=white, label=tolerated];
+Although1 [style=filled, fillcolor=white, label=Although];
+tolerated9 -> Although1  [label=mark];
+activating3 [style=filled, fillcolor=white, label=activating];
+fully2 [style=filled, fillcolor=white, label=fully];
+activating3 -> fully2  [label=advmod];
+alleles4 [style=filled, fillcolor=white, label=alleles];
+alleles4 -> activating3  [label=amod];
+tolerated9 -> alleles4  [label=nsubjpass];
+"H-Ras6" [style=filled, fillcolor=white, label="H-Ras"];
+alleles4 -> "H-Ras6"  [label=prep_of];
+can7 [style=filled, fillcolor=white, label=can];
+tolerated9 -> can7  [label=aux];
+be8 [style=filled, fillcolor=white, label=be];
+tolerated9 -> be8  [label=auxpass];
+may16 [style=filled, fillcolor=white, label=may];
+may16 -> tolerated9  [label=advcl];
+alleles13 [style=filled, fillcolor=white, label=alleles];
+fully11 [style=filled, fillcolor=white, label=fully];
+alleles13 -> fully11  [label=advmod];
+activated12 [style=filled, fillcolor=white, label=activated];
+alleles13 -> activated12  [label=amod];
+may16 -> alleles13  [label=nsubj];
+"K-Ras15" [style=filled, fillcolor=white, label="K-Ras"];
+alleles13 -> "K-Ras15"  [label=prep_of];
+may16 -> may16  [label=root];
+not17 [style=filled, fillcolor=white, label=not];
+may16 -> not17  [label=neg];
+}

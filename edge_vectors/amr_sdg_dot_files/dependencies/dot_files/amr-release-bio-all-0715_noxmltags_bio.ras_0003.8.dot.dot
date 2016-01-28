@@ -1,0 +1,53 @@
+digraph "The tryptic peptide with ubiquitination at Lys147 ( K147 ) was the most frequently observed peptide for both K-Ras and H-Ras ,  while Lys117 appeared as a secondary major ubiquitination site in H-Ras ." {
+label="The tryptic peptide with ubiquitination at Lys147 ( K147 ) was the most
+frequently observed peptide for both K-Ras and H-Ras ,  while Lys117 appeared as
+a secondary major ubiquitination site in H-Ras .";
+peptide3 [style=filled, fillcolor=white, label=peptide];
+The1 [style=filled, fillcolor=white, label=The];
+peptide3 -> The1  [label=det];
+tryptic2 [style=filled, fillcolor=white, label=tryptic];
+peptide3 -> tryptic2  [label=amod];
+peptide16 [style=filled, fillcolor=white, label=peptide];
+peptide16 -> peptide3  [label=nsubj];
+ubiquitination5 [style=filled, fillcolor=white, label=ubiquitination];
+peptide3 -> ubiquitination5  [label=prep_with];
+Lys147 [style=filled, fillcolor=white, label=Lys147];
+ubiquitination5 -> Lys147  [label=prep_at];
+K1479 [style=filled, fillcolor=white, label=K147];
+Lys147 -> K1479  [label=appos];
+was11 [style=filled, fillcolor=white, label=was];
+peptide16 -> was11  [label=cop];
+the12 [style=filled, fillcolor=white, label=the];
+peptide16 -> the12  [label=det];
+frequently14 [style=filled, fillcolor=white, label=frequently];
+most13 [style=filled, fillcolor=white, label=most];
+frequently14 -> most13  [label=advmod];
+observed15 [style=filled, fillcolor=white, label=observed];
+observed15 -> frequently14  [label=advmod];
+peptide16 -> observed15  [label=amod];
+peptide16 -> peptide16  [label=root];
+"K-Ras19" [style=filled, fillcolor=white, label="K-Ras"];
+both18 [style=filled, fillcolor=white, label=both];
+"K-Ras19" -> both18  [label=preconj];
+peptide16 -> "K-Ras19"  [label=prep_for];
+"H-Ras21" [style=filled, fillcolor=white, label="H-Ras"];
+"K-Ras19" -> "H-Ras21"  [label=conj_and];
+appeared25 [style=filled, fillcolor=white, label=appeared];
+while23 [style=filled, fillcolor=white, label=while];
+appeared25 -> while23  [label=mark];
+Lys11724 [style=filled, fillcolor=white, label=Lys117];
+appeared25 -> Lys11724  [label=nsubj];
+peptide16 -> appeared25  [label=advcl];
+site31 [style=filled, fillcolor=white, label=site];
+a27 [style=filled, fillcolor=white, label=a];
+site31 -> a27  [label=det];
+secondary28 [style=filled, fillcolor=white, label=secondary];
+site31 -> secondary28  [label=amod];
+major29 [style=filled, fillcolor=white, label=major];
+site31 -> major29  [label=amod];
+ubiquitination30 [style=filled, fillcolor=white, label=ubiquitination];
+site31 -> ubiquitination30  [label=nn];
+appeared25 -> site31  [label=prep_as];
+"H-Ras33" [style=filled, fillcolor=white, label="H-Ras"];
+site31 -> "H-Ras33"  [label=prep_in];
+}

@@ -1,0 +1,51 @@
+digraph "other SH2 proteins ,  such as Crk ( adaptor ) ,  Nck ( adaptor ) ,  Fyn ( tyrosine kinase ) ,  and Csk ( tyrosine kinase ) ,  bind to tyrosine residues on IRS proteins through their specific SH2 domains ." {
+label="other SH2 proteins ,  such as Crk ( adaptor ) ,  Nck ( adaptor ) ,  Fyn (
+tyrosine kinase ) ,  and Csk ( tyrosine kinase ) ,  bind to tyrosine residues on
+IRS proteins through their specific SH2 domains .";
+proteins3 [style=filled, fillcolor=white, label=proteins];
+other1 [style=filled, fillcolor=white, label=other];
+proteins3 -> other1  [label=amod];
+SH2 [style=filled, fillcolor=white, label=SH2];
+proteins3 -> SH2  [label=nn];
+bind30 [style=filled, fillcolor=white, label=bind];
+bind30 -> proteins3  [label=nsubj];
+Crk7 [style=filled, fillcolor=white, label=Crk];
+proteins3 -> Crk7  [label=prep_such_as];
+adaptor9 [style=filled, fillcolor=white, label=adaptor];
+Crk7 -> adaptor9  [label=appos];
+Nck12 [style=filled, fillcolor=white, label=Nck];
+Crk7 -> Nck12  [label=conj_and];
+adaptor14 [style=filled, fillcolor=white, label=adaptor];
+Nck12 -> adaptor14  [label=appos];
+Fyn17 [style=filled, fillcolor=white, label=Fyn];
+Crk7 -> Fyn17  [label=conj_and];
+kinase20 [style=filled, fillcolor=white, label=kinase];
+tyrosine19 [style=filled, fillcolor=white, label=tyrosine];
+kinase20 -> tyrosine19  [label=amod];
+Fyn17 -> kinase20  [label=appos];
+Csk24 [style=filled, fillcolor=white, label=Csk];
+Crk7 -> Csk24  [label=conj_and];
+kinase27 [style=filled, fillcolor=white, label=kinase];
+tyrosine26 [style=filled, fillcolor=white, label=tyrosine];
+kinase27 -> tyrosine26  [label=amod];
+Csk24 -> kinase27  [label=appos];
+bind30 -> bind30  [label=root];
+tyrosine32 [style=filled, fillcolor=white, label=tyrosine];
+to31 [style=filled, fillcolor=white, label=to];
+tyrosine32 -> to31  [label=aux];
+bind30 -> tyrosine32  [label=xcomp];
+residues33 [style=filled, fillcolor=white, label=residues];
+tyrosine32 -> residues33  [label=dobj];
+proteins36 [style=filled, fillcolor=white, label=proteins];
+IRS35 [style=filled, fillcolor=white, label=IRS];
+proteins36 -> IRS35  [label=nn];
+residues33 -> proteins36  [label=prep_on];
+domains41 [style=filled, fillcolor=white, label=domains];
+their38 [style=filled, fillcolor=white, label=their];
+domains41 -> their38  [label=poss];
+specific39 [style=filled, fillcolor=white, label=specific];
+domains41 -> specific39  [label=amod];
+SH240 [style=filled, fillcolor=white, label=SH2];
+domains41 -> SH240  [label=nn];
+tyrosine32 -> domains41  [label=prep_through];
+}

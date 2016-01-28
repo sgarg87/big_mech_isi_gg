@@ -1,0 +1,42 @@
+digraph "Forced expression of wild-type mouse Foxp3 inhibited IL-6 / IL-21-induced Il23r expression ,  whereas Foxp3DeltaEx2 had less inhibitory activity ( Fig. 4a )" {
+label="Forced expression of wild-type mouse Foxp3 inhibited IL-6 / IL-21-induced Il23r
+expression ,  whereas Foxp3DeltaEx2 had less inhibitory activity ( Fig. 4a )";
+Forced1 [style=filled, fillcolor=white, label=Forced];
+Forced1 -> Forced1  [label=root];
+expression2 [style=filled, fillcolor=white, label=expression];
+Forced1 -> expression2  [label=dobj];
+Foxp36 [style=filled, fillcolor=white, label=Foxp3];
+"wild-type4" [style=filled, fillcolor=white, label="wild-type"];
+Foxp36 -> "wild-type4"  [label=amod];
+mouse5 [style=filled, fillcolor=white, label=mouse];
+Foxp36 -> mouse5  [label=nn];
+expression2 -> Foxp36  [label=prep_of];
+inhibited7 [style=filled, fillcolor=white, label=inhibited];
+Forced1 -> inhibited7  [label=dep];
+"/9" [style=filled, fillcolor=white, label="/"];
+"IL-68" [style=filled, fillcolor=white, label="IL-6"];
+"/9" -> "IL-68"  [label=nn];
+"IL-21-induced0" [style=filled, fillcolor=white, label="IL-21-induced"];
+"IL-21-induced0" -> "/9"  [label=nsubj];
+inhibited7 -> "IL-21-induced0"  [label=xcomp];
+expression12 [style=filled, fillcolor=white, label=expression];
+Il23r11 [style=filled, fillcolor=white, label=Il23r];
+expression12 -> Il23r11  [label=amod];
+Forced1 -> expression12  [label=nsubj];
+had16 [style=filled, fillcolor=white, label=had];
+whereas14 [style=filled, fillcolor=white, label=whereas];
+had16 -> whereas14  [label=mark];
+Foxp3DeltaEx215 [style=filled, fillcolor=white, label=Foxp3DeltaEx2];
+had16 -> Foxp3DeltaEx215  [label=nsubj];
+expression12 -> had16  [label=dep];
+inhibitory18 [style=filled, fillcolor=white, label=inhibitory];
+less17 [style=filled, fillcolor=white, label=less];
+inhibitory18 -> less17  [label=advmod];
+activity19 [style=filled, fillcolor=white, label=activity];
+activity19 -> inhibitory18  [label=amod];
+had16 -> activity19  [label=dobj];
+"4a22" [style=filled, fillcolor=white, label="4a"];
+"Fig.21" [style=filled, fillcolor=white, label="Fig."];
+"4a22" -> "Fig.21"  [label=nn];
+activity19 -> "4a22"  [label=appos];
+}

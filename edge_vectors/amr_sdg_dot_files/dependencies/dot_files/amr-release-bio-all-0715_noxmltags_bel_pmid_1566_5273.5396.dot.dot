@@ -1,0 +1,28 @@
+digraph "CDK2-cyclin A1/E1 and CDK1-cyclin B1 phosphorylate BARD1 on its NH ( 2 ) terminus in vivo and in vitro ." {
+label="CDK2-cyclin A1/E1 and CDK1-cyclin B1 phosphorylate BARD1 on its NH ( 2 )
+terminus in vivo and in vitro .";
+"A1/E12" [style=filled, fillcolor=white, label="A1/E1"];
+"CDK2-cyclin1" [style=filled, fillcolor=white, label="CDK2-cyclin"];
+"A1/E12" -> "CDK2-cyclin1"  [label=nn];
+terminus14 [style=filled, fillcolor=white, label=terminus];
+terminus14 -> "A1/E12"  [label=nsubj];
+BARD17 [style=filled, fillcolor=white, label=BARD1];
+"CDK1-cyclin4" [style=filled, fillcolor=white, label="CDK1-cyclin"];
+BARD17 -> "CDK1-cyclin4"  [label=nn];
+B15 [style=filled, fillcolor=white, label=B1];
+BARD17 -> B15  [label=nn];
+phosphorylate6 [style=filled, fillcolor=white, label=phosphorylate];
+BARD17 -> phosphorylate6  [label=nn];
+"A1/E12" -> BARD17  [label=conj_and];
+NH10 [style=filled, fillcolor=white, label=NH];
+its9 [style=filled, fillcolor=white, label=its];
+NH10 -> its9  [label=poss];
+"A1/E12" -> NH10  [label=prep_on];
+21 [style=filled, fillcolor=white, label=2];
+"A1/E12" -> 21  [label=appos];
+terminus14 -> terminus14  [label=root];
+vivo16 [style=filled, fillcolor=white, label=vivo];
+terminus14 -> vivo16  [label=prep_in];
+vitro19 [style=filled, fillcolor=white, label=vitro];
+vivo16 -> vitro19  [label=conj_and];
+}

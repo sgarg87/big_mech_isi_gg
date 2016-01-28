@@ -1,0 +1,26 @@
+digraph "On the other hand ,  overexpression of Sos-1 did not lead to increased PAK65 activity ." {
+label="On the other hand ,  overexpression of Sos-1 did not lead to increased PAK65
+activity .";
+hand4 [style=filled, fillcolor=white, label=hand];
+the2 [style=filled, fillcolor=white, label=the];
+hand4 -> the2  [label=det];
+other3 [style=filled, fillcolor=white, label=other];
+hand4 -> other3  [label=amod];
+lead11 [style=filled, fillcolor=white, label=lead];
+lead11 -> hand4  [label=prep_on];
+overexpression6 [style=filled, fillcolor=white, label=overexpression];
+lead11 -> overexpression6  [label=nsubj];
+"Sos-18" [style=filled, fillcolor=white, label="Sos-1"];
+overexpression6 -> "Sos-18"  [label=prep_of];
+did9 [style=filled, fillcolor=white, label=did];
+lead11 -> did9  [label=aux];
+not10 [style=filled, fillcolor=white, label=not];
+lead11 -> not10  [label=neg];
+lead11 -> lead11  [label=root];
+activity15 [style=filled, fillcolor=white, label=activity];
+increased13 [style=filled, fillcolor=white, label=increased];
+activity15 -> increased13  [label=amod];
+PAK6514 [style=filled, fillcolor=white, label=PAK65];
+activity15 -> PAK6514  [label=nn];
+lead11 -> activity15  [label=prep_to];
+}

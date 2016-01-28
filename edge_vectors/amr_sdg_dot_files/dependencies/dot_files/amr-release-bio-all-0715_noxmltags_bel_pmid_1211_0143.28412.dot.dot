@@ -1,0 +1,38 @@
+digraph "tyrosine phosphorylation of SHP2 ,  a phosphotyrosine phosphatase ,  and that of STAT3 depend on the second tyrosine residue Y2 from the membrane in gp130" {
+label="tyrosine phosphorylation of SHP2 ,  a phosphotyrosine phosphatase ,  and that
+of STAT3 depend on the second tyrosine residue Y2 from the membrane in gp130";
+phosphorylation2 [style=filled, fillcolor=white, label=phosphorylation];
+tyrosine1 [style=filled, fillcolor=white, label=tyrosine];
+phosphorylation2 -> tyrosine1  [label=amod];
+depend14 [style=filled, fillcolor=white, label=depend];
+depend14 -> phosphorylation2  [label=nsubj];
+SHP24 [style=filled, fillcolor=white, label=SHP2];
+phosphorylation2 -> SHP24  [label=prep_of];
+phosphatase8 [style=filled, fillcolor=white, label=phosphatase];
+a6 [style=filled, fillcolor=white, label=a];
+phosphatase8 -> a6  [label=det];
+phosphotyrosine7 [style=filled, fillcolor=white, label=phosphotyrosine];
+phosphatase8 -> phosphotyrosine7  [label=amod];
+SHP24 -> phosphatase8  [label=conj_and];
+that11 [style=filled, fillcolor=white, label=that];
+SHP24 -> that11  [label=conj_and];
+STAT31 [style=filled, fillcolor=white, label=STAT3];
+that11 -> STAT31  [label=prep_of];
+depend14 -> depend14  [label=root];
+Y220 [style=filled, fillcolor=white, label=Y2];
+the16 [style=filled, fillcolor=white, label=the];
+Y220 -> the16  [label=det];
+second17 [style=filled, fillcolor=white, label=second];
+Y220 -> second17  [label=amod];
+tyrosine18 [style=filled, fillcolor=white, label=tyrosine];
+Y220 -> tyrosine18  [label=amod];
+residue19 [style=filled, fillcolor=white, label=residue];
+Y220 -> residue19  [label=nn];
+depend14 -> Y220  [label=prep_on];
+membrane23 [style=filled, fillcolor=white, label=membrane];
+the22 [style=filled, fillcolor=white, label=the];
+membrane23 -> the22  [label=det];
+Y220 -> membrane23  [label=prep_from];
+gp13025 [style=filled, fillcolor=white, label=gp130];
+membrane23 -> gp13025  [label=prep_in];
+}

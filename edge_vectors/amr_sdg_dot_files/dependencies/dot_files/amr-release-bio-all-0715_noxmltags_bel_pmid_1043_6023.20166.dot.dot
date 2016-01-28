@@ -1,0 +1,51 @@
+digraph "Ser392 phosphorylation of P53 increases 10-fold the association constant for tetramerization ,  but this effect is reversed by Ser315 phosphorylation . The tetramerization activates P53 for specific DNA binding and transcription" {
+label="Ser392 phosphorylation of P53 increases 10-fold the association constant for
+tetramerization ,  but this effect is reversed by Ser315 phosphorylation . The
+tetramerization activates P53 for specific DNA binding and transcription";
+Ser3921 [style=filled, fillcolor=white, label=Ser392];
+Ser3921 -> Ser3921  [label=root];
+"10-fold6" [style=filled, fillcolor=white, label="10-fold"];
+phosphorylation2 [style=filled, fillcolor=white, label=phosphorylation];
+"10-fold6" -> phosphorylation2  [label=nsubj];
+increases5 [style=filled, fillcolor=white, label=increases];
+P534 [style=filled, fillcolor=white, label=P53];
+increases5 -> P534  [label=num];
+phosphorylation2 -> increases5  [label=prep_of];
+Ser3921 -> "10-fold6"  [label=dep];
+association8 [style=filled, fillcolor=white, label=association];
+the7 [style=filled, fillcolor=white, label=the];
+association8 -> the7  [label=det];
+constant9 [style=filled, fillcolor=white, label=constant];
+constant9 -> association8  [label=nsubj];
+"10-fold6" -> constant9  [label=xcomp];
+tetramerization11 [style=filled, fillcolor=white, label=tetramerization];
+constant9 -> tetramerization11  [label=prep_for];
+effect15 [style=filled, fillcolor=white, label=effect];
+this14 [style=filled, fillcolor=white, label=this];
+effect15 -> this14  [label=det];
+reversed17 [style=filled, fillcolor=white, label=reversed];
+reversed17 -> effect15  [label=nsubjpass];
+is16 [style=filled, fillcolor=white, label=is];
+reversed17 -> is16  [label=auxpass];
+"10-fold6" -> reversed17  [label=conj_but];
+phosphorylation20 [style=filled, fillcolor=white, label=phosphorylation];
+Ser31519 [style=filled, fillcolor=white, label=Ser315];
+phosphorylation20 -> Ser31519  [label=amod];
+reversed17 -> phosphorylation20  [label=agent];
+tetramerization23 [style=filled, fillcolor=white, label=tetramerization];
+The22 [style=filled, fillcolor=white, label=The];
+tetramerization23 -> The22  [label=det];
+Ser3921 -> tetramerization23  [label=nsubj];
+P532 [style=filled, fillcolor=white, label=P53];
+activates24 [style=filled, fillcolor=white, label=activates];
+P532 -> activates24  [label=nn];
+Ser3921 -> P532  [label=dep];
+DNA28 [style=filled, fillcolor=white, label=DNA];
+specific27 [style=filled, fillcolor=white, label=specific];
+DNA28 -> specific27  [label=amod];
+Ser3921 -> DNA28  [label=prep_for];
+binding29 [style=filled, fillcolor=white, label=binding];
+DNA28 -> binding29  [label=amod];
+transcription31 [style=filled, fillcolor=white, label=transcription];
+binding29 -> transcription31  [label=conj_and];
+}

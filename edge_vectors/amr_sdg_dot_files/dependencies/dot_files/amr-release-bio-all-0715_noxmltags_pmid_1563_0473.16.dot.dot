@@ -1,0 +1,54 @@
+digraph "Through activation of cell surface transmembrane receptors ,  these external signaling molecules trigger distinct cascades of intracellular events that culminate in changes in gene expression ,  growth ,  and differentiation -LSB- 2 -RSB- ." {
+label="Through activation of cell surface transmembrane receptors ,  these external
+signaling molecules trigger distinct cascades of intracellular events that
+culminate in changes in gene expression ,  growth ,  and differentiation -LSB- 2
+-RSB- .";
+trigger13 [style=filled, fillcolor=white, label=trigger];
+activation2 [style=filled, fillcolor=white, label=activation];
+trigger13 -> activation2  [label=prep_through];
+receptors7 [style=filled, fillcolor=white, label=receptors];
+cell4 [style=filled, fillcolor=white, label=cell];
+receptors7 -> cell4  [label=nn];
+surface5 [style=filled, fillcolor=white, label=surface];
+receptors7 -> surface5  [label=nn];
+transmembrane6 [style=filled, fillcolor=white, label=transmembrane];
+receptors7 -> transmembrane6  [label=nn];
+activation2 -> receptors7  [label=prep_of];
+molecules12 [style=filled, fillcolor=white, label=molecules];
+these9 [style=filled, fillcolor=white, label=these];
+molecules12 -> these9  [label=det];
+external10 [style=filled, fillcolor=white, label=external];
+molecules12 -> external10  [label=amod];
+signaling11 [style=filled, fillcolor=white, label=signaling];
+molecules12 -> signaling11  [label=amod];
+trigger13 -> molecules12  [label=nsubj];
+trigger13 -> trigger13  [label=root];
+cascades15 [style=filled, fillcolor=white, label=cascades];
+distinct14 [style=filled, fillcolor=white, label=distinct];
+cascades15 -> distinct14  [label=amod];
+trigger13 -> cascades15  [label=dobj];
+events18 [style=filled, fillcolor=white, label=events];
+intracellular17 [style=filled, fillcolor=white, label=intracellular];
+events18 -> intracellular17  [label=nn];
+cascades15 -> events18  [label=prep_of];
+"-LSB-31" [style=filled, fillcolor=white, label="-LSB-"];
+that19 [style=filled, fillcolor=white, label=that];
+"-LSB-31" -> that19  [label=mark];
+culminate20 [style=filled, fillcolor=white, label=culminate];
+"-LSB-31" -> culminate20  [label=nsubj];
+changes22 [style=filled, fillcolor=white, label=changes];
+culminate20 -> changes22  [label=prep_in];
+expression25 [style=filled, fillcolor=white, label=expression];
+gene24 [style=filled, fillcolor=white, label=gene];
+expression25 -> gene24  [label=nn];
+changes22 -> expression25  [label=prep_in];
+growth27 [style=filled, fillcolor=white, label=growth];
+expression25 -> growth27  [label=conj_and];
+differentiation30 [style=filled, fillcolor=white, label=differentiation];
+expression25 -> differentiation30  [label=conj_and];
+trigger13 -> "-LSB-31"  [label=ccomp];
+"-RSB-33" [style=filled, fillcolor=white, label="-RSB-"];
+23 [style=filled, fillcolor=white, label=2];
+"-RSB-33" -> 23  [label=num];
+"-LSB-31" -> "-RSB-33"  [label=dobj];
+}

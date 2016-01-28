@@ -1,0 +1,13 @@
+digraph "hyperoxia stimulated ERK-1 and ERK-2 phosphorylation" {
+label="hyperoxia stimulated ERK-1 and ERK-2 phosphorylation";
+stimulated2 [style=filled, fillcolor=white, label=stimulated];
+hyperoxia1 [style=filled, fillcolor=white, label=hyperoxia];
+stimulated2 -> hyperoxia1  [label=nsubj];
+stimulated2 -> stimulated2  [label=root];
+phosphorylation6 [style=filled, fillcolor=white, label=phosphorylation];
+"ERK-13" [style=filled, fillcolor=white, label="ERK-1"];
+phosphorylation6 -> "ERK-13"  [label=amod];
+"ERK-25" [style=filled, fillcolor=white, label="ERK-2"];
+"ERK-13" -> "ERK-25"  [label=conj_and];
+stimulated2 -> phosphorylation6  [label=dobj];
+}

@@ -1,0 +1,32 @@
+digraph "These studies started with the observation that Pparg up-regulates CD36 ( savenger receptor calss-B ) expression in macrophages ." {
+label="These studies started with the observation that Pparg up-regulates CD36 (
+savenger receptor calss-B ) expression in macrophages .";
+studies2 [style=filled, fillcolor=white, label=studies];
+These1 [style=filled, fillcolor=white, label=These];
+studies2 -> These1  [label=det];
+started3 [style=filled, fillcolor=white, label=started];
+started3 -> studies2  [label=nsubj];
+started3 -> started3  [label=root];
+observation6 [style=filled, fillcolor=white, label=observation];
+the5 [style=filled, fillcolor=white, label=the];
+observation6 -> the5  [label=det];
+started3 -> observation6  [label=prep_with];
+"up-regulates9" [style=filled, fillcolor=white, label="up-regulates"];
+that7 [style=filled, fillcolor=white, label=that];
+"up-regulates9" -> that7  [label=mark];
+Pparg8 [style=filled, fillcolor=white, label=Pparg];
+"up-regulates9" -> Pparg8  [label=nsubj];
+started3 -> "up-regulates9"  [label=ccomp];
+expression16 [style=filled, fillcolor=white, label=expression];
+CD3610 [style=filled, fillcolor=white, label=CD36];
+expression16 -> CD3610  [label=amod];
+"calss-B14" [style=filled, fillcolor=white, label="calss-B"];
+savenger12 [style=filled, fillcolor=white, label=savenger];
+"calss-B14" -> savenger12  [label=nn];
+receptor13 [style=filled, fillcolor=white, label=receptor];
+"calss-B14" -> receptor13  [label=nn];
+expression16 -> "calss-B14"  [label=appos];
+"up-regulates9" -> expression16  [label=dobj];
+macrophages18 [style=filled, fillcolor=white, label=macrophages];
+expression16 -> macrophages18  [label=prep_in];
+}

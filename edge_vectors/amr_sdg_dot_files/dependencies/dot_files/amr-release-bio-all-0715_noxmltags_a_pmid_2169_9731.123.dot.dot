@@ -1,0 +1,36 @@
+digraph "Alternative macrophage polarization is associated with tumorigenesis -LSB- 6 -RSB- and increased macrophage IGF-1 production -LSB- 39 -RSB- ." {
+label="Alternative macrophage polarization is associated with tumorigenesis -LSB- 6
+-RSB- and increased macrophage IGF-1 production -LSB- 39 -RSB- .";
+polarization3 [style=filled, fillcolor=white, label=polarization];
+Alternative1 [style=filled, fillcolor=white, label=Alternative];
+polarization3 -> Alternative1  [label=nn];
+macrophage2 [style=filled, fillcolor=white, label=macrophage];
+polarization3 -> macrophage2  [label=nn];
+associated5 [style=filled, fillcolor=white, label=associated];
+associated5 -> polarization3  [label=nsubjpass];
+is4 [style=filled, fillcolor=white, label=is];
+associated5 -> is4  [label=auxpass];
+associated5 -> associated5  [label=root];
+tumorigenesis7 [style=filled, fillcolor=white, label=tumorigenesis];
+associated5 -> tumorigenesis7  [label=prep_with];
+69 [style=filled, fillcolor=white, label=6];
+"-LSB-8" [style=filled, fillcolor=white, label="-LSB-"];
+69 -> "-LSB-8"  [label=number];
+"-RSB-10" [style=filled, fillcolor=white, label="-RSB-"];
+"-RSB-10" -> 69  [label=num];
+tumorigenesis7 -> "-RSB-10"  [label=dep];
+production15 [style=filled, fillcolor=white, label=production];
+increased12 [style=filled, fillcolor=white, label=increased];
+production15 -> increased12  [label=amod];
+macrophage13 [style=filled, fillcolor=white, label=macrophage];
+production15 -> macrophage13  [label=amod];
+"IGF-14" [style=filled, fillcolor=white, label="IGF-1"];
+production15 -> "IGF-14"  [label=nn];
+tumorigenesis7 -> production15  [label=conj_and];
+"-LSB-16" [style=filled, fillcolor=white, label="-LSB-"];
+production15 -> "-LSB-16"  [label=vmod];
+"-RSB-18" [style=filled, fillcolor=white, label="-RSB-"];
+3917 [style=filled, fillcolor=white, label=39];
+"-RSB-18" -> 3917  [label=num];
+"-LSB-16" -> "-RSB-18"  [label=dobj];
+}

@@ -1,0 +1,41 @@
+digraph "We obtained similar results using K-Ras ( Supplementary Figure 6 ) ,  indicating that the effects of monoubiquitination on Ras are not isoform-specific ." {
+label="We obtained similar results using K-Ras ( Supplementary Figure 6 ) ,
+indicating that the effects of monoubiquitination on Ras are not isoform-
+specific .";
+obtained2 [style=filled, fillcolor=white, label=obtained];
+We1 [style=filled, fillcolor=white, label=We];
+obtained2 -> We1  [label=nsubj];
+obtained2 -> obtained2  [label=root];
+results4 [style=filled, fillcolor=white, label=results];
+similar3 [style=filled, fillcolor=white, label=similar];
+results4 -> similar3  [label=amod];
+obtained2 -> results4  [label=dobj];
+using5 [style=filled, fillcolor=white, label=using];
+results4 -> using5  [label=vmod];
+"K-Ras6" [style=filled, fillcolor=white, label="K-Ras"];
+using5 -> "K-Ras6"  [label=dobj];
+Supplementary8 [style=filled, fillcolor=white, label=Supplementary];
+"K-Ras6" -> Supplementary8  [label=appos];
+610 [style=filled, fillcolor=white, label=6];
+Figure9 [style=filled, fillcolor=white, label=Figure];
+610 -> Figure9  [label=number];
+Supplementary8 -> 610  [label=num];
+indicating13 [style=filled, fillcolor=white, label=indicating];
+obtained2 -> indicating13  [label=vmod];
+"isoform-specific23" [style=filled, fillcolor=white, label="isoform-specific"];
+that14 [style=filled, fillcolor=white, label=that];
+"isoform-specific23" -> that14  [label=mark];
+effects16 [style=filled, fillcolor=white, label=effects];
+the15 [style=filled, fillcolor=white, label=the];
+effects16 -> the15  [label=det];
+"isoform-specific23" -> effects16  [label=nsubj];
+monoubiquitination18 [style=filled, fillcolor=white, label=monoubiquitination];
+effects16 -> monoubiquitination18  [label=prep_of];
+Ras20 [style=filled, fillcolor=white, label=Ras];
+monoubiquitination18 -> Ras20  [label=prep_on];
+are21 [style=filled, fillcolor=white, label=are];
+"isoform-specific23" -> are21  [label=cop];
+not22 [style=filled, fillcolor=white, label=not];
+"isoform-specific23" -> not22  [label=neg];
+indicating13 -> "isoform-specific23"  [label=ccomp];
+}

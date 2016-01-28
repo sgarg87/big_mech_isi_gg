@@ -1,0 +1,53 @@
+digraph "Conditional gene targeting studies will be necessary to establish whether Snail family members also contribute to the down-regulation in E-cadherin gene expression that occurs during follicle formation ." {
+label="Conditional gene targeting studies will be necessary to establish whether Snail
+family members also contribute to the down-regulation in E-cadherin gene
+expression that occurs during follicle formation .";
+gene2 [style=filled, fillcolor=white, label=gene];
+Conditional1 [style=filled, fillcolor=white, label=Conditional];
+gene2 -> Conditional1  [label=amod];
+necessary7 [style=filled, fillcolor=white, label=necessary];
+necessary7 -> gene2  [label=nsubj];
+targeting3 [style=filled, fillcolor=white, label=targeting];
+gene2 -> targeting3  [label=vmod];
+studies4 [style=filled, fillcolor=white, label=studies];
+targeting3 -> studies4  [label=dobj];
+will5 [style=filled, fillcolor=white, label=will];
+necessary7 -> will5  [label=aux];
+be6 [style=filled, fillcolor=white, label=be];
+necessary7 -> be6  [label=cop];
+necessary7 -> necessary7  [label=root];
+establish9 [style=filled, fillcolor=white, label=establish];
+to8 [style=filled, fillcolor=white, label=to];
+establish9 -> to8  [label=aux];
+necessary7 -> establish9  [label=xcomp];
+contribute15 [style=filled, fillcolor=white, label=contribute];
+whether10 [style=filled, fillcolor=white, label=whether];
+contribute15 -> whether10  [label=mark];
+members13 [style=filled, fillcolor=white, label=members];
+Snail11 [style=filled, fillcolor=white, label=Snail];
+members13 -> Snail11  [label=nn];
+family12 [style=filled, fillcolor=white, label=family];
+members13 -> family12  [label=nn];
+contribute15 -> members13  [label=nsubj];
+also14 [style=filled, fillcolor=white, label=also];
+contribute15 -> also14  [label=advmod];
+establish9 -> contribute15  [label=ccomp];
+"down-regulation18" [style=filled, fillcolor=white, label="down-regulation"];
+the17 [style=filled, fillcolor=white, label=the];
+"down-regulation18" -> the17  [label=det];
+contribute15 -> "down-regulation18"  [label=prep_to];
+expression22 [style=filled, fillcolor=white, label=expression];
+"E-cadherin20" [style=filled, fillcolor=white, label="E-cadherin"];
+expression22 -> "E-cadherin20"  [label=amod];
+gene21 [style=filled, fillcolor=white, label=gene];
+expression22 -> gene21  [label=nn];
+"down-regulation18" -> expression22  [label=prep_in];
+occurs24 [style=filled, fillcolor=white, label=occurs];
+that23 [style=filled, fillcolor=white, label=that];
+occurs24 -> that23  [label=nsubj];
+expression22 -> occurs24  [label=rcmod];
+formation27 [style=filled, fillcolor=white, label=formation];
+follicle26 [style=filled, fillcolor=white, label=follicle];
+formation27 -> follicle26  [label=amod];
+occurs24 -> formation27  [label=prep_during];
+}

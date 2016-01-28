@@ -1,0 +1,30 @@
+digraph "Overexpression of mutant FGFR3 resulted in IL-6 independence ,  decreased apoptosis ,  and an enhanced proliferative response to IL-6 ." {
+label="Overexpression of mutant FGFR3 resulted in IL-6 independence ,  decreased
+apoptosis ,  and an enhanced proliferative response to IL-6 .";
+resulted5 [style=filled, fillcolor=white, label=resulted];
+Overexpression1 [style=filled, fillcolor=white, label=Overexpression];
+resulted5 -> Overexpression1  [label=nsubj];
+FGFR34 [style=filled, fillcolor=white, label=FGFR3];
+mutant3 [style=filled, fillcolor=white, label=mutant];
+FGFR34 -> mutant3  [label=amod];
+Overexpression1 -> FGFR34  [label=prep_of];
+resulted5 -> resulted5  [label=root];
+independence8 [style=filled, fillcolor=white, label=independence];
+"IL-67" [style=filled, fillcolor=white, label="IL-6"];
+independence8 -> "IL-67"  [label=nn];
+resulted5 -> independence8  [label=prep_in];
+apoptosis11 [style=filled, fillcolor=white, label=apoptosis];
+decreased10 [style=filled, fillcolor=white, label=decreased];
+apoptosis11 -> decreased10  [label=amod];
+independence8 -> apoptosis11  [label=conj_and];
+response17 [style=filled, fillcolor=white, label=response];
+an14 [style=filled, fillcolor=white, label=an];
+response17 -> an14  [label=det];
+enhanced15 [style=filled, fillcolor=white, label=enhanced];
+response17 -> enhanced15  [label=amod];
+proliferative16 [style=filled, fillcolor=white, label=proliferative];
+response17 -> proliferative16  [label=nn];
+independence8 -> response17  [label=conj_and];
+"IL-619" [style=filled, fillcolor=white, label="IL-6"];
+response17 -> "IL-619"  [label=prep_to];
+}

@@ -1,0 +1,24 @@
+digraph "TGFβ-1 was also investigated for its potential effect on cell migration and invasion ." {
+label="TGFβ-1 was also investigated for its potential effect on cell migration and
+invasion .";
+investigated4 [style=filled, fillcolor=white, label=investigated];
+"TGFβ-1" [style=filled, fillcolor=white, label="TGFβ-1"];
+investigated4 -> "TGFβ-1"  [label=nsubjpass];
+was2 [style=filled, fillcolor=white, label=was];
+investigated4 -> was2  [label=auxpass];
+also3 [style=filled, fillcolor=white, label=also];
+investigated4 -> also3  [label=advmod];
+investigated4 -> investigated4  [label=root];
+effect8 [style=filled, fillcolor=white, label=effect];
+its6 [style=filled, fillcolor=white, label=its];
+effect8 -> its6  [label=poss];
+potential7 [style=filled, fillcolor=white, label=potential];
+effect8 -> potential7  [label=amod];
+investigated4 -> effect8  [label=prep_for];
+migration11 [style=filled, fillcolor=white, label=migration];
+cell10 [style=filled, fillcolor=white, label=cell];
+migration11 -> cell10  [label=nn];
+effect8 -> migration11  [label=prep_on];
+invasion13 [style=filled, fillcolor=white, label=invasion];
+migration11 -> invasion13  [label=conj_and];
+}

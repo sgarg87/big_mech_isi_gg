@@ -1,0 +1,41 @@
+digraph "The levels of Ras-GTP and Rac-GTP in total cellular lysates were determined by affinity precipitation using GST-RBD and GST-CRIB ,  as described in Materials and methods ." {
+label="The levels of Ras-GTP and Rac-GTP in total cellular lysates were determined by
+affinity precipitation using GST-RBD and GST-CRIB ,  as described in Materials
+and methods .";
+levels2 [style=filled, fillcolor=white, label=levels];
+The1 [style=filled, fillcolor=white, label=The];
+levels2 -> The1  [label=det];
+determined12 [style=filled, fillcolor=white, label=determined];
+determined12 -> levels2  [label=nsubjpass];
+"Ras-GTP4" [style=filled, fillcolor=white, label="Ras-GTP"];
+levels2 -> "Ras-GTP4"  [label=prep_of];
+"Rac-GTP6" [style=filled, fillcolor=white, label="Rac-GTP"];
+"Ras-GTP4" -> "Rac-GTP6"  [label=conj_and];
+lysates10 [style=filled, fillcolor=white, label=lysates];
+total8 [style=filled, fillcolor=white, label=total];
+lysates10 -> total8  [label=amod];
+cellular9 [style=filled, fillcolor=white, label=cellular];
+lysates10 -> cellular9  [label=amod];
+"Ras-GTP4" -> lysates10  [label=prep_in];
+were11 [style=filled, fillcolor=white, label=were];
+determined12 -> were11  [label=auxpass];
+determined12 -> determined12  [label=root];
+precipitation15 [style=filled, fillcolor=white, label=precipitation];
+affinity14 [style=filled, fillcolor=white, label=affinity];
+precipitation15 -> affinity14  [label=amod];
+determined12 -> precipitation15  [label=agent];
+using16 [style=filled, fillcolor=white, label=using];
+precipitation15 -> using16  [label=vmod];
+"GST-RBD17" [style=filled, fillcolor=white, label="GST-RBD"];
+using16 -> "GST-RBD17"  [label=dobj];
+"GST-CRIB19" [style=filled, fillcolor=white, label="GST-CRIB"];
+"GST-RBD17" -> "GST-CRIB19"  [label=conj_and];
+described22 [style=filled, fillcolor=white, label=described];
+as21 [style=filled, fillcolor=white, label=as];
+described22 -> as21  [label=mark];
+determined12 -> described22  [label=advcl];
+Materials24 [style=filled, fillcolor=white, label=Materials];
+described22 -> Materials24  [label=prep_in];
+methods26 [style=filled, fillcolor=white, label=methods];
+Materials24 -> methods26  [label=conj_and];
+}

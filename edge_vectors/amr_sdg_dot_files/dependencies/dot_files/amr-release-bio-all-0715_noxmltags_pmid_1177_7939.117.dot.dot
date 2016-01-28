@@ -1,0 +1,55 @@
+digraph "Native Sos-1 ,  present in lysates of − / − -LSB- Eps8myc -RSB- fibroblasts ,  could be specifically recovered with nucleotide-depleted immobilized GST-Rac ,  but not with GST-Cdc42 or GST alone ( Fig. 7 C ) ." {
+label="Native Sos-1 ,  present in lysates of − / − -LSB- Eps8myc -RSB- fibroblasts ,
+could be specifically recovered with nucleotide-depleted immobilized GST-Rac ,
+but not with GST-Cdc42 or GST alone ( Fig. 7 C ) .";
+"Sos-12" [style=filled, fillcolor=white, label="Sos-1"];
+Native1 [style=filled, fillcolor=white, label=Native];
+"Sos-12" -> Native1  [label=amod];
+recovered19 [style=filled, fillcolor=white, label=recovered];
+recovered19 -> "Sos-12"  [label=nsubjpass];
+fibroblasts14 [style=filled, fillcolor=white, label=fibroblasts];
+present4 [style=filled, fillcolor=white, label=present];
+fibroblasts14 -> present4  [label=amod];
+lysates6 [style=filled, fillcolor=white, label=lysates];
+present4 -> lysates6  [label=prep_in];
+"-LSB-11" [style=filled, fillcolor=white, label="-LSB-"];
+"−8" [style=filled, fillcolor=white, label="−"];
+"-LSB-11" -> "−8"  [label=nn];
+"/9" [style=filled, fillcolor=white, label="/"];
+"-LSB-11" -> "/9"  [label=nn];
+"−10" [style=filled, fillcolor=white, label="−"];
+"-LSB-11" -> "−10"  [label=nn];
+lysates6 -> "-LSB-11"  [label=prep_of];
+Eps8myc12 [style=filled, fillcolor=white, label=Eps8myc];
+fibroblasts14 -> Eps8myc12  [label=amod];
+"-RSB-13" [style=filled, fillcolor=white, label="-RSB-"];
+fibroblasts14 -> "-RSB-13"  [label=amod];
+"Sos-12" -> fibroblasts14  [label=appos];
+could16 [style=filled, fillcolor=white, label=could];
+recovered19 -> could16  [label=aux];
+be17 [style=filled, fillcolor=white, label=be];
+recovered19 -> be17  [label=auxpass];
+specifically18 [style=filled, fillcolor=white, label=specifically];
+recovered19 -> specifically18  [label=advmod];
+recovered19 -> recovered19  [label=root];
+"GST-Rac23" [style=filled, fillcolor=white, label="GST-Rac"];
+"nucleotide-depleted21" [style=filled, fillcolor=white, label="nucleotide-depleted"];
+"GST-Rac23" -> "nucleotide-depleted21"  [label=amod];
+immobilized22 [style=filled, fillcolor=white, label=immobilized];
+"GST-Rac23" -> immobilized22  [label=amod];
+recovered19 -> "GST-Rac23"  [label=prep_with];
+not26 [style=filled, fillcolor=white, label=not];
+recovered19 -> not26  [label=neg];
+"GST-Cdc428" [style=filled, fillcolor=white, label="GST-Cdc42"];
+"GST-Rac23" -> "GST-Cdc428"  [label=conj_but];
+GST30 [style=filled, fillcolor=white, label=GST];
+"GST-Cdc428" -> GST30  [label=conj_or];
+alone31 [style=filled, fillcolor=white, label=alone];
+"GST-Cdc428" -> alone31  [label=advmod];
+"Fig.33" [style=filled, fillcolor=white, label="Fig."];
+"GST-Cdc428" -> "Fig.33"  [label=appos];
+C35 [style=filled, fillcolor=white, label=C];
+734 [style=filled, fillcolor=white, label=7];
+C35 -> 734  [label=number];
+"Fig.33" -> C35  [label=num];
+}

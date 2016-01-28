@@ -1,0 +1,49 @@
+digraph "rmEP reduced IL-18 expression in WT - and EP -- / -- - derived keratinocytes at 8 h after stimulation ,  and there was no obvious difference between WT and EP -- / -- ( Fig. 3D ) ." {
+label="rmEP reduced IL-18 expression in WT - and EP -- / -- - derived keratinocytes at
+8 h after stimulation ,  and there was no obvious difference between WT and EP
+-- / -- ( Fig. 3D ) .";
+expression4 [style=filled, fillcolor=white, label=expression];
+rmEP1 [style=filled, fillcolor=white, label=rmEP];
+expression4 -> rmEP1  [label=amod];
+reduced2 [style=filled, fillcolor=white, label=reduced];
+expression4 -> reduced2  [label=amod];
+"IL-183" [style=filled, fillcolor=white, label="IL-18"];
+expression4 -> "IL-183"  [label=nn];
+derived14 [style=filled, fillcolor=white, label=derived];
+derived14 -> expression4  [label=nsubj];
+WT6 [style=filled, fillcolor=white, label=WT];
+expression4 -> WT6  [label=prep_in];
+EP9 [style=filled, fillcolor=white, label=EP];
+WT6 -> EP9  [label=conj_and];
+"/11" [style=filled, fillcolor=white, label="/"];
+WT6 -> "/11"  [label=dep];
+derived14 -> derived14  [label=root];
+keratinocytes15 [style=filled, fillcolor=white, label=keratinocytes];
+derived14 -> keratinocytes15  [label=dobj];
+h18 [style=filled, fillcolor=white, label=h];
+817 [style=filled, fillcolor=white, label=8];
+h18 -> 817  [label=num];
+derived14 -> h18  [label=prep_at];
+stimulation20 [style=filled, fillcolor=white, label=stimulation];
+derived14 -> stimulation20  [label=prep_after];
+was24 [style=filled, fillcolor=white, label=was];
+there23 [style=filled, fillcolor=white, label=there];
+was24 -> there23  [label=expl];
+derived14 -> was24  [label=conj_and];
+difference27 [style=filled, fillcolor=white, label=difference];
+no25 [style=filled, fillcolor=white, label=no];
+difference27 -> no25  [label=neg];
+obvious26 [style=filled, fillcolor=white, label=obvious];
+difference27 -> obvious26  [label=amod];
+was24 -> difference27  [label=nsubj];
+WT29 [style=filled, fillcolor=white, label=WT];
+difference27 -> WT29  [label=prep_between];
+EP31 [style=filled, fillcolor=white, label=EP];
+WT29 -> EP31  [label=conj_and];
+"/33" [style=filled, fillcolor=white, label="/"];
+WT29 -> "/33"  [label=dep];
+"3D37" [style=filled, fillcolor=white, label="3D"];
+"Fig.36" [style=filled, fillcolor=white, label="Fig."];
+"3D37" -> "Fig.36"  [label=number];
+WT29 -> "3D37"  [label=dep];
+}

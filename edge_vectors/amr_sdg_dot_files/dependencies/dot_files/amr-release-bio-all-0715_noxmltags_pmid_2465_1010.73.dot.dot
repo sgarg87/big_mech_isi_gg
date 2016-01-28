@@ -1,0 +1,42 @@
+digraph "Activating mutations in Ras genes ,  coupled with a long history of Ras biology ,  implicate these mutant Ras proteins as major drivers in many cancers ." {
+label="Activating mutations in Ras genes ,  coupled with a long history of Ras biology
+,  implicate these mutant Ras proteins as major drivers in many cancers .";
+mutations2 [style=filled, fillcolor=white, label=mutations];
+Activating1 [style=filled, fillcolor=white, label=Activating];
+mutations2 -> Activating1  [label=amod];
+implicate16 [style=filled, fillcolor=white, label=implicate];
+implicate16 -> mutations2  [label=nsubj];
+genes5 [style=filled, fillcolor=white, label=genes];
+Ras4 [style=filled, fillcolor=white, label=Ras];
+genes5 -> Ras4  [label=nn];
+mutations2 -> genes5  [label=prep_in];
+coupled7 [style=filled, fillcolor=white, label=coupled];
+mutations2 -> coupled7  [label=vmod];
+history11 [style=filled, fillcolor=white, label=history];
+a9 [style=filled, fillcolor=white, label=a];
+history11 -> a9  [label=det];
+long10 [style=filled, fillcolor=white, label=long];
+history11 -> long10  [label=amod];
+coupled7 -> history11  [label=prep_with];
+biology14 [style=filled, fillcolor=white, label=biology];
+Ras13 [style=filled, fillcolor=white, label=Ras];
+biology14 -> Ras13  [label=nn];
+history11 -> biology14  [label=prep_of];
+implicate16 -> implicate16  [label=root];
+proteins20 [style=filled, fillcolor=white, label=proteins];
+these17 [style=filled, fillcolor=white, label=these];
+proteins20 -> these17  [label=det];
+mutant18 [style=filled, fillcolor=white, label=mutant];
+proteins20 -> mutant18  [label=amod];
+Ras19 [style=filled, fillcolor=white, label=Ras];
+proteins20 -> Ras19  [label=nn];
+implicate16 -> proteins20  [label=dobj];
+drivers23 [style=filled, fillcolor=white, label=drivers];
+major22 [style=filled, fillcolor=white, label=major];
+drivers23 -> major22  [label=amod];
+implicate16 -> drivers23  [label=prep_as];
+cancers26 [style=filled, fillcolor=white, label=cancers];
+many25 [style=filled, fillcolor=white, label=many];
+cancers26 -> many25  [label=amod];
+drivers23 -> cancers26  [label=prep_in];
+}

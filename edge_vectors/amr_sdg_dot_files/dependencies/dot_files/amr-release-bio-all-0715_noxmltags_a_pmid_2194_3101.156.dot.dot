@@ -1,0 +1,54 @@
+digraph "Nevertheless ,  immunostaining with E-cadherin revealed a significant impairment of its distribution at the cell-cell boundaries since staining appeared discontinuous at the adherent junctions ( Figure 2B ,  upper panel magnification ) ." {
+label="Nevertheless ,  immunostaining with E-cadherin revealed a significant
+impairment of its distribution at the cell-cell boundaries since staining
+appeared discontinuous at the adherent junctions ( Figure 2B ,  upper panel
+magnification ) .";
+revealed6 [style=filled, fillcolor=white, label=revealed];
+Nevertheless1 [style=filled, fillcolor=white, label=Nevertheless];
+revealed6 -> Nevertheless1  [label=advmod];
+immunostaining3 [style=filled, fillcolor=white, label=immunostaining];
+revealed6 -> immunostaining3  [label=nsubj];
+"E-cadherin5" [style=filled, fillcolor=white, label="E-cadherin"];
+immunostaining3 -> "E-cadherin5"  [label=prep_with];
+revealed6 -> revealed6  [label=root];
+impairment9 [style=filled, fillcolor=white, label=impairment];
+a7 [style=filled, fillcolor=white, label=a];
+impairment9 -> a7  [label=det];
+significant8 [style=filled, fillcolor=white, label=significant];
+impairment9 -> significant8  [label=amod];
+revealed6 -> impairment9  [label=dobj];
+distribution12 [style=filled, fillcolor=white, label=distribution];
+its11 [style=filled, fillcolor=white, label=its];
+distribution12 -> its11  [label=poss];
+impairment9 -> distribution12  [label=prep_of];
+boundaries16 [style=filled, fillcolor=white, label=boundaries];
+the14 [style=filled, fillcolor=white, label=the];
+boundaries16 -> the14  [label=det];
+"cell-cell15" [style=filled, fillcolor=white, label="cell-cell"];
+boundaries16 -> "cell-cell15"  [label=amod];
+revealed6 -> boundaries16  [label=prep_at];
+appeared19 [style=filled, fillcolor=white, label=appeared];
+since17 [style=filled, fillcolor=white, label=since];
+appeared19 -> since17  [label=mark];
+staining18 [style=filled, fillcolor=white, label=staining];
+appeared19 -> staining18  [label=nsubj];
+revealed6 -> appeared19  [label=advcl];
+discontinuous20 [style=filled, fillcolor=white, label=discontinuous];
+appeared19 -> discontinuous20  [label=dobj];
+junctions24 [style=filled, fillcolor=white, label=junctions];
+the22 [style=filled, fillcolor=white, label=the];
+junctions24 -> the22  [label=det];
+adherent23 [style=filled, fillcolor=white, label=adherent];
+junctions24 -> adherent23  [label=amod];
+appeared19 -> junctions24  [label=prep_at];
+Figure26 [style=filled, fillcolor=white, label=Figure];
+junctions24 -> Figure26  [label=appos];
+"2B27" [style=filled, fillcolor=white, label="2B"];
+Figure26 -> "2B27"  [label=num];
+magnification31 [style=filled, fillcolor=white, label=magnification];
+upper29 [style=filled, fillcolor=white, label=upper];
+magnification31 -> upper29  [label=amod];
+panel30 [style=filled, fillcolor=white, label=panel];
+magnification31 -> panel30  [label=nn];
+Figure26 -> magnification31  [label=dep];
+}

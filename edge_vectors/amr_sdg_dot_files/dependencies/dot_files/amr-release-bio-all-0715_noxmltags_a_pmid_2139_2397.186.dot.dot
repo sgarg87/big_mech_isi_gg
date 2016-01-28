@@ -1,0 +1,41 @@
+digraph "In line with this function ,  it has been demonstrated that YB-1 binds to double-stranded ,  single-stranded and DNA-containing abasic sites -LSB- 40 -RSB- ." {
+label="In line with this function ,  it has been demonstrated that YB-1 binds to
+double-stranded ,  single-stranded and DNA-containing abasic sites -LSB- 40
+-RSB- .";
+demonstrated10 [style=filled, fillcolor=white, label=demonstrated];
+line2 [style=filled, fillcolor=white, label=line];
+demonstrated10 -> line2  [label=prep_in];
+function5 [style=filled, fillcolor=white, label=function];
+this4 [style=filled, fillcolor=white, label=this];
+function5 -> this4  [label=det];
+line2 -> function5  [label=prep_with];
+it7 [style=filled, fillcolor=white, label=it];
+demonstrated10 -> it7  [label=nsubjpass];
+has8 [style=filled, fillcolor=white, label=has];
+demonstrated10 -> has8  [label=aux];
+been9 [style=filled, fillcolor=white, label=been];
+demonstrated10 -> been9  [label=auxpass];
+demonstrated10 -> demonstrated10  [label=root];
+"-LSB-22" [style=filled, fillcolor=white, label="-LSB-"];
+that11 [style=filled, fillcolor=white, label=that];
+"-LSB-22" -> that11  [label=mark];
+binds13 [style=filled, fillcolor=white, label=binds];
+"YB-12" [style=filled, fillcolor=white, label="YB-1"];
+binds13 -> "YB-12"  [label=nn];
+"-LSB-22" -> binds13  [label=nsubj];
+sites21 [style=filled, fillcolor=white, label=sites];
+"double-stranded15" [style=filled, fillcolor=white, label="double-stranded"];
+sites21 -> "double-stranded15"  [label=amod];
+"single-stranded17" [style=filled, fillcolor=white, label="single-stranded"];
+"double-stranded15" -> "single-stranded17"  [label=conj_and];
+"DNA-containing19" [style=filled, fillcolor=white, label="DNA-containing"];
+"double-stranded15" -> "DNA-containing19"  [label=conj_and];
+abasic20 [style=filled, fillcolor=white, label=abasic];
+sites21 -> abasic20  [label=amod];
+binds13 -> sites21  [label=prep_to];
+demonstrated10 -> "-LSB-22"  [label=ccomp];
+"-RSB-24" [style=filled, fillcolor=white, label="-RSB-"];
+4023 [style=filled, fillcolor=white, label=40];
+"-RSB-24" -> 4023  [label=num];
+"-LSB-22" -> "-RSB-24"  [label=dobj];
+}

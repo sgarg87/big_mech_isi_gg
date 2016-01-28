@@ -1,0 +1,47 @@
+digraph "These experiments were ,  essentially ,  unbiased screens for genes that cause cancer ; the nature of the proteins that the genes encoded was completely unknown ." {
+label="These experiments were ,  essentially ,  unbiased screens for genes that cause
+cancer ; the nature of the proteins that the genes encoded was completely
+unknown .";
+experiments2 [style=filled, fillcolor=white, label=experiments];
+These1 [style=filled, fillcolor=white, label=These];
+experiments2 -> These1  [label=det];
+screens8 [style=filled, fillcolor=white, label=screens];
+screens8 -> experiments2  [label=nsubj];
+were3 [style=filled, fillcolor=white, label=were];
+screens8 -> were3  [label=cop];
+essentially5 [style=filled, fillcolor=white, label=essentially];
+screens8 -> essentially5  [label=advmod];
+unbiased7 [style=filled, fillcolor=white, label=unbiased];
+screens8 -> unbiased7  [label=amod];
+screens8 -> screens8  [label=root];
+genes10 [style=filled, fillcolor=white, label=genes];
+screens8 -> genes10  [label=prep_for];
+cause12 [style=filled, fillcolor=white, label=cause];
+that11 [style=filled, fillcolor=white, label=that];
+cause12 -> that11  [label=nsubj];
+genes10 -> cause12  [label=rcmod];
+cancer13 [style=filled, fillcolor=white, label=cancer];
+cause12 -> cancer13  [label=dobj];
+nature16 [style=filled, fillcolor=white, label=nature];
+the15 [style=filled, fillcolor=white, label=the];
+nature16 -> the15  [label=det];
+unknown26 [style=filled, fillcolor=white, label=unknown];
+unknown26 -> nature16  [label=nsubj];
+proteins19 [style=filled, fillcolor=white, label=proteins];
+the18 [style=filled, fillcolor=white, label=the];
+proteins19 -> the18  [label=det];
+nature16 -> proteins19  [label=prep_of];
+encoded23 [style=filled, fillcolor=white, label=encoded];
+that20 [style=filled, fillcolor=white, label=that];
+encoded23 -> that20  [label=mark];
+genes22 [style=filled, fillcolor=white, label=genes];
+the21 [style=filled, fillcolor=white, label=the];
+genes22 -> the21  [label=det];
+encoded23 -> genes22  [label=nsubj];
+proteins19 -> encoded23  [label=dep];
+was24 [style=filled, fillcolor=white, label=was];
+unknown26 -> was24  [label=cop];
+completely25 [style=filled, fillcolor=white, label=completely];
+unknown26 -> completely25  [label=advmod];
+screens8 -> unknown26  [label=parataxis];
+}

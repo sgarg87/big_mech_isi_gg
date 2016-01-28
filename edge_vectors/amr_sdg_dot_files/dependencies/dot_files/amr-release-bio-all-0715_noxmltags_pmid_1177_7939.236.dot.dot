@@ -1,0 +1,19 @@
+digraph "The S/G and the S/E complexes are functionally distinct ." {
+label="The S/G and the S/E complexes are functionally distinct .";
+"S/G2" [style=filled, fillcolor=white, label="S/G"];
+The1 [style=filled, fillcolor=white, label=The];
+"S/G2" -> The1  [label=det];
+distinct9 [style=filled, fillcolor=white, label=distinct];
+distinct9 -> "S/G2"  [label=nsubj];
+complexes6 [style=filled, fillcolor=white, label=complexes];
+the4 [style=filled, fillcolor=white, label=the];
+complexes6 -> the4  [label=det];
+"S/E5" [style=filled, fillcolor=white, label="S/E"];
+complexes6 -> "S/E5"  [label=nn];
+"S/G2" -> complexes6  [label=conj_and];
+are7 [style=filled, fillcolor=white, label=are];
+distinct9 -> are7  [label=cop];
+functionally8 [style=filled, fillcolor=white, label=functionally];
+distinct9 -> functionally8  [label=advmod];
+distinct9 -> distinct9  [label=root];
+}

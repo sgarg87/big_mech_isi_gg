@@ -1,0 +1,43 @@
+digraph "The observation that Elk-1 is phosphorylated directly and activated by p46SAPK and p54SAPK further implicates it in the stress-response induction of the c-fos gene ." {
+label="The observation that Elk-1 is phosphorylated directly and activated by p46SAPK
+and p54SAPK further implicates it in the stress-response induction of the c-fos
+gene .";
+observation2 [style=filled, fillcolor=white, label=observation];
+The1 [style=filled, fillcolor=white, label=The];
+observation2 -> The1  [label=det];
+implicates15 [style=filled, fillcolor=white, label=implicates];
+implicates15 -> observation2  [label=nsubj];
+phosphorylated6 [style=filled, fillcolor=white, label=phosphorylated];
+that3 [style=filled, fillcolor=white, label=that];
+phosphorylated6 -> that3  [label=mark];
+"Elk-14" [style=filled, fillcolor=white, label="Elk-1"];
+phosphorylated6 -> "Elk-14"  [label=nsubjpass];
+is5 [style=filled, fillcolor=white, label=is];
+phosphorylated6 -> is5  [label=auxpass];
+observation2 -> phosphorylated6  [label=dep];
+directly7 [style=filled, fillcolor=white, label=directly];
+phosphorylated6 -> directly7  [label=advmod];
+activated9 [style=filled, fillcolor=white, label=activated];
+phosphorylated6 -> activated9  [label=conj_and];
+p46SAPK11 [style=filled, fillcolor=white, label=p46SAPK];
+activated9 -> p46SAPK11  [label=prep_by];
+p54SAPK13 [style=filled, fillcolor=white, label=p54SAPK];
+p46SAPK11 -> p54SAPK13  [label=conj_and];
+further14 [style=filled, fillcolor=white, label=further];
+implicates15 -> further14  [label=advmod];
+implicates15 -> implicates15  [label=root];
+it16 [style=filled, fillcolor=white, label=it];
+implicates15 -> it16  [label=dobj];
+induction20 [style=filled, fillcolor=white, label=induction];
+the18 [style=filled, fillcolor=white, label=the];
+induction20 -> the18  [label=det];
+"stress-response19" [style=filled, fillcolor=white, label="stress-response"];
+induction20 -> "stress-response19"  [label=amod];
+implicates15 -> induction20  [label=prep_in];
+gene24 [style=filled, fillcolor=white, label=gene];
+the22 [style=filled, fillcolor=white, label=the];
+gene24 -> the22  [label=det];
+"c-fos23" [style=filled, fillcolor=white, label="c-fos"];
+gene24 -> "c-fos23"  [label=amod];
+induction20 -> gene24  [label=prep_of];
+}

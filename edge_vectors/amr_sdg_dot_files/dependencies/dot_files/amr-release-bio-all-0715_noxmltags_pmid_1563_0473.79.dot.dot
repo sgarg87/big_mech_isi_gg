@@ -1,0 +1,42 @@
+digraph "The three surviving full-Tg founder mice harbored transgene integrations that gave stable transmission of mosaic Snail gene expression through the germline ." {
+label="The three surviving full-Tg founder mice harbored transgene integrations that
+gave stable transmission of mosaic Snail gene expression through the germline .";
+mice6 [style=filled, fillcolor=white, label=mice];
+The1 [style=filled, fillcolor=white, label=The];
+mice6 -> The1  [label=det];
+three2 [style=filled, fillcolor=white, label=three];
+mice6 -> three2  [label=num];
+surviving3 [style=filled, fillcolor=white, label=surviving];
+mice6 -> surviving3  [label=amod];
+"full-Tg4" [style=filled, fillcolor=white, label="full-Tg"];
+mice6 -> "full-Tg4"  [label=nn];
+founder5 [style=filled, fillcolor=white, label=founder];
+mice6 -> founder5  [label=nn];
+harbored7 [style=filled, fillcolor=white, label=harbored];
+harbored7 -> mice6  [label=nsubj];
+harbored7 -> harbored7  [label=root];
+integrations9 [style=filled, fillcolor=white, label=integrations];
+transgene8 [style=filled, fillcolor=white, label=transgene];
+integrations9 -> transgene8  [label=amod];
+harbored7 -> integrations9  [label=dobj];
+gave11 [style=filled, fillcolor=white, label=gave];
+that10 [style=filled, fillcolor=white, label=that];
+gave11 -> that10  [label=nsubj];
+integrations9 -> gave11  [label=rcmod];
+transmission13 [style=filled, fillcolor=white, label=transmission];
+stable12 [style=filled, fillcolor=white, label=stable];
+transmission13 -> stable12  [label=amod];
+gave11 -> transmission13  [label=dobj];
+expression18 [style=filled, fillcolor=white, label=expression];
+mosaic15 [style=filled, fillcolor=white, label=mosaic];
+expression18 -> mosaic15  [label=amod];
+Snail16 [style=filled, fillcolor=white, label=Snail];
+expression18 -> Snail16  [label=nn];
+gene17 [style=filled, fillcolor=white, label=gene];
+expression18 -> gene17  [label=nn];
+transmission13 -> expression18  [label=prep_of];
+germline21 [style=filled, fillcolor=white, label=germline];
+the20 [style=filled, fillcolor=white, label=the];
+germline21 -> the20  [label=det];
+gave11 -> germline21  [label=prep_through];
+}

@@ -1,0 +1,49 @@
+digraph "For B-Raf ,  two ERK-dependent feedback sites ,  S750 and T753 ,  have been identified ,  and phosphorylation of these sites has been reported to have a negative regulatory effect" {
+label="For B-Raf ,  two ERK-dependent feedback sites ,  S750 and T753 ,  have been
+identified ,  and phosphorylation of these sites has been reported to have a
+negative regulatory effect";
+identified15 [style=filled, fillcolor=white, label=identified];
+"B-Raf2" [style=filled, fillcolor=white, label="B-Raf"];
+identified15 -> "B-Raf2"  [label=prep_for];
+sites7 [style=filled, fillcolor=white, label=sites];
+two4 [style=filled, fillcolor=white, label=two];
+sites7 -> two4  [label=num];
+"ERK-dependent5" [style=filled, fillcolor=white, label="ERK-dependent"];
+sites7 -> "ERK-dependent5"  [label=amod];
+feedback6 [style=filled, fillcolor=white, label=feedback];
+sites7 -> feedback6  [label=nn];
+identified15 -> sites7  [label=nsubjpass];
+S7509 [style=filled, fillcolor=white, label=S750];
+sites7 -> S7509  [label=appos];
+T75311 [style=filled, fillcolor=white, label=T753];
+S7509 -> T75311  [label=conj_and];
+have13 [style=filled, fillcolor=white, label=have];
+identified15 -> have13  [label=aux];
+been14 [style=filled, fillcolor=white, label=been];
+identified15 -> been14  [label=auxpass];
+identified15 -> identified15  [label=root];
+reported24 [style=filled, fillcolor=white, label=reported];
+phosphorylation18 [style=filled, fillcolor=white, label=phosphorylation];
+reported24 -> phosphorylation18  [label=nsubjpass];
+sites21 [style=filled, fillcolor=white, label=sites];
+these20 [style=filled, fillcolor=white, label=these];
+sites21 -> these20  [label=det];
+phosphorylation18 -> sites21  [label=prep_of];
+has22 [style=filled, fillcolor=white, label=has];
+reported24 -> has22  [label=aux];
+been23 [style=filled, fillcolor=white, label=been];
+reported24 -> been23  [label=auxpass];
+identified15 -> reported24  [label=conj_and];
+have26 [style=filled, fillcolor=white, label=have];
+to25 [style=filled, fillcolor=white, label=to];
+have26 -> to25  [label=aux];
+reported24 -> have26  [label=xcomp];
+effect30 [style=filled, fillcolor=white, label=effect];
+a27 [style=filled, fillcolor=white, label=a];
+effect30 -> a27  [label=det];
+negative28 [style=filled, fillcolor=white, label=negative];
+effect30 -> negative28  [label=amod];
+regulatory29 [style=filled, fillcolor=white, label=regulatory];
+effect30 -> regulatory29  [label=amod];
+have26 -> effect30  [label=dobj];
+}

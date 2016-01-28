@@ -1,0 +1,47 @@
+digraph "Knockdown of these factors modestly increased basal and PLX4032-induced HER2 levels ,  which likely contributes to the remarkable increase in pHER3 we observed ( Fig. 5D and 5E ) ." {
+label="Knockdown of these factors modestly increased basal and PLX4032-induced HER2
+levels ,  which likely contributes to the remarkable increase in pHER3 we
+observed ( Fig. 5D and 5E ) .";
+increased6 [style=filled, fillcolor=white, label=increased];
+Knockdown1 [style=filled, fillcolor=white, label=Knockdown];
+increased6 -> Knockdown1  [label=nsubj];
+factors4 [style=filled, fillcolor=white, label=factors];
+these3 [style=filled, fillcolor=white, label=these];
+factors4 -> these3  [label=det];
+Knockdown1 -> factors4  [label=prep_of];
+modestly5 [style=filled, fillcolor=white, label=modestly];
+increased6 -> modestly5  [label=advmod];
+increased6 -> increased6  [label=root];
+levels11 [style=filled, fillcolor=white, label=levels];
+basal7 [style=filled, fillcolor=white, label=basal];
+levels11 -> basal7  [label=amod];
+"PLX4032-induced9" [style=filled, fillcolor=white, label="PLX4032-induced"];
+basal7 -> "PLX4032-induced9"  [label=conj_and];
+HER210 [style=filled, fillcolor=white, label=HER2];
+levels11 -> HER210  [label=nn];
+increased6 -> levels11  [label=dobj];
+contributes15 [style=filled, fillcolor=white, label=contributes];
+which13 [style=filled, fillcolor=white, label=which];
+contributes15 -> which13  [label=nsubj];
+likely14 [style=filled, fillcolor=white, label=likely];
+contributes15 -> likely14  [label=advmod];
+levels11 -> contributes15  [label=rcmod];
+increase19 [style=filled, fillcolor=white, label=increase];
+the17 [style=filled, fillcolor=white, label=the];
+increase19 -> the17  [label=det];
+remarkable18 [style=filled, fillcolor=white, label=remarkable];
+increase19 -> remarkable18  [label=amod];
+contributes15 -> increase19  [label=prep_to];
+pHER321 [style=filled, fillcolor=white, label=pHER3];
+increase19 -> pHER321  [label=prep_in];
+observed23 [style=filled, fillcolor=white, label=observed];
+we22 [style=filled, fillcolor=white, label=we];
+observed23 -> we22  [label=nsubj];
+pHER321 -> observed23  [label=rcmod];
+"Fig.25" [style=filled, fillcolor=white, label="Fig."];
+observed23 -> "Fig.25"  [label=dep];
+"5D26" [style=filled, fillcolor=white, label="5D"];
+"Fig.25" -> "5D26"  [label=num];
+"5E28" [style=filled, fillcolor=white, label="5E"];
+"5D26" -> "5E28"  [label=conj_and];
+}

@@ -1,0 +1,36 @@
+digraph "However ,  our results provide the first direct evidence for a protein that may stabilize nucleotide-free Ras in vivo ." {
+label="However ,  our results provide the first direct evidence for a protein that may
+stabilize nucleotide-free Ras in vivo .";
+provide5 [style=filled, fillcolor=white, label=provide];
+However1 [style=filled, fillcolor=white, label=However];
+provide5 -> However1  [label=advmod];
+results4 [style=filled, fillcolor=white, label=results];
+our3 [style=filled, fillcolor=white, label=our];
+results4 -> our3  [label=poss];
+provide5 -> results4  [label=nsubj];
+provide5 -> provide5  [label=root];
+evidence9 [style=filled, fillcolor=white, label=evidence];
+the6 [style=filled, fillcolor=white, label=the];
+evidence9 -> the6  [label=det];
+first7 [style=filled, fillcolor=white, label=first];
+evidence9 -> first7  [label=amod];
+direct8 [style=filled, fillcolor=white, label=direct];
+evidence9 -> direct8  [label=amod];
+provide5 -> evidence9  [label=dobj];
+protein12 [style=filled, fillcolor=white, label=protein];
+a11 [style=filled, fillcolor=white, label=a];
+protein12 -> a11  [label=det];
+evidence9 -> protein12  [label=prep_for];
+stabilize15 [style=filled, fillcolor=white, label=stabilize];
+that13 [style=filled, fillcolor=white, label=that];
+stabilize15 -> that13  [label=nsubj];
+may14 [style=filled, fillcolor=white, label=may];
+stabilize15 -> may14  [label=aux];
+protein12 -> stabilize15  [label=rcmod];
+Ras17 [style=filled, fillcolor=white, label=Ras];
+"nucleotide-free16" [style=filled, fillcolor=white, label="nucleotide-free"];
+Ras17 -> "nucleotide-free16"  [label=amod];
+stabilize15 -> Ras17  [label=dobj];
+vivo19 [style=filled, fillcolor=white, label=vivo];
+stabilize15 -> vivo19  [label=prep_in];
+}

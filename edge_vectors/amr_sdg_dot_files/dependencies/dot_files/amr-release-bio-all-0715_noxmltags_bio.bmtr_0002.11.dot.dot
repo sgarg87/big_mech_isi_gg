@@ -1,0 +1,40 @@
+digraph "In contrast ,  the EGFR T669A mutant increased both basal EGFR and ERBB3 tyrosine phosphorylation that was not augmented by MEK inhibition ." {
+label="In contrast ,  the EGFR T669A mutant increased both basal EGFR and ERBB3
+tyrosine phosphorylation that was not augmented by MEK inhibition .";
+increased8 [style=filled, fillcolor=white, label=increased];
+contrast2 [style=filled, fillcolor=white, label=contrast];
+increased8 -> contrast2  [label=prep_in];
+mutant7 [style=filled, fillcolor=white, label=mutant];
+the4 [style=filled, fillcolor=white, label=the];
+mutant7 -> the4  [label=det];
+EGFR5 [style=filled, fillcolor=white, label=EGFR];
+mutant7 -> EGFR5  [label=nn];
+T669A [style=filled, fillcolor=white, label=T669A];
+mutant7 -> T669A  [label=nn];
+increased8 -> mutant7  [label=nsubj];
+increased8 -> increased8  [label=root];
+EGFR11 [style=filled, fillcolor=white, label=EGFR];
+both9 [style=filled, fillcolor=white, label=both];
+EGFR11 -> both9  [label=preconj];
+basal10 [style=filled, fillcolor=white, label=basal];
+EGFR11 -> basal10  [label=amod];
+increased8 -> EGFR11  [label=dobj];
+phosphorylation15 [style=filled, fillcolor=white, label=phosphorylation];
+ERBB31 [style=filled, fillcolor=white, label=ERBB3];
+phosphorylation15 -> ERBB31  [label=nn];
+tyrosine14 [style=filled, fillcolor=white, label=tyrosine];
+phosphorylation15 -> tyrosine14  [label=nn];
+EGFR11 -> phosphorylation15  [label=conj_and];
+augmented19 [style=filled, fillcolor=white, label=augmented];
+that16 [style=filled, fillcolor=white, label=that];
+augmented19 -> that16  [label=nsubjpass];
+was17 [style=filled, fillcolor=white, label=was];
+augmented19 -> was17  [label=auxpass];
+not18 [style=filled, fillcolor=white, label=not];
+augmented19 -> not18  [label=neg];
+EGFR11 -> augmented19  [label=rcmod];
+inhibition22 [style=filled, fillcolor=white, label=inhibition];
+MEK21 [style=filled, fillcolor=white, label=MEK];
+inhibition22 -> MEK21  [label=nn];
+augmented19 -> inhibition22  [label=agent];
+}

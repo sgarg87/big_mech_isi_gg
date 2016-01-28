@@ -1,0 +1,46 @@
+digraph "CDK2 is sequentially activated by the E-type cyclins cyclin E1 and E2 during the G1/S transition ,  and the A-type cyclins cyclin A1 and A2 during S phase" {
+label="CDK2 is sequentially activated by the E-type cyclins cyclin E1 and E2 during
+the G1/S transition ,  and the A-type cyclins cyclin A1 and A2 during S phase";
+activated4 [style=filled, fillcolor=white, label=activated];
+CDK21 [style=filled, fillcolor=white, label=CDK2];
+activated4 -> CDK21  [label=nsubjpass];
+is2 [style=filled, fillcolor=white, label=is];
+activated4 -> is2  [label=auxpass];
+sequentially3 [style=filled, fillcolor=white, label=sequentially];
+activated4 -> sequentially3  [label=advmod];
+activated4 -> activated4  [label=root];
+E110 [style=filled, fillcolor=white, label=E1];
+the6 [style=filled, fillcolor=white, label=the];
+E110 -> the6  [label=det];
+"E-type7" [style=filled, fillcolor=white, label="E-type"];
+E110 -> "E-type7"  [label=amod];
+cyclins8 [style=filled, fillcolor=white, label=cyclins];
+E110 -> cyclins8  [label=nn];
+cyclin9 [style=filled, fillcolor=white, label=cyclin];
+E110 -> cyclin9  [label=nn];
+activated4 -> E110  [label=agent];
+E21 [style=filled, fillcolor=white, label=E2];
+E110 -> E21  [label=conj_and];
+transition16 [style=filled, fillcolor=white, label=transition];
+the14 [style=filled, fillcolor=white, label=the];
+transition16 -> the14  [label=det];
+"G1/S15" [style=filled, fillcolor=white, label="G1/S"];
+transition16 -> "G1/S15"  [label=nn];
+activated4 -> transition16  [label=prep_during];
+"A-type20" [style=filled, fillcolor=white, label="A-type"];
+the19 [style=filled, fillcolor=white, label=the];
+"A-type20" -> the19  [label=det];
+cyclins21 [style=filled, fillcolor=white, label=cyclins];
+cyclins21 -> "A-type20"  [label=nsubj];
+activated4 -> cyclins21  [label=conj_and];
+A123 [style=filled, fillcolor=white, label=A1];
+cyclin22 [style=filled, fillcolor=white, label=cyclin];
+A123 -> cyclin22  [label=amod];
+cyclins21 -> A123  [label=dobj];
+A225 [style=filled, fillcolor=white, label=A2];
+A123 -> A225  [label=conj_and];
+phase28 [style=filled, fillcolor=white, label=phase];
+S27 [style=filled, fillcolor=white, label=S];
+phase28 -> S27  [label=nn];
+cyclins21 -> phase28  [label=prep_during];
+}

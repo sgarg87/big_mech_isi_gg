@@ -1,0 +1,22 @@
+digraph "In these regions ,  immunofluorescence staining of E-cadherin and α-catenin were markedly diminished ." {
+label="In these regions ,  immunofluorescence staining of E-cadherin and α-catenin
+were markedly diminished .";
+regions3 [style=filled, fillcolor=white, label=regions];
+these2 [style=filled, fillcolor=white, label=these];
+regions3 -> these2  [label=det];
+diminished13 [style=filled, fillcolor=white, label=diminished];
+diminished13 -> regions3  [label=prep_in];
+staining6 [style=filled, fillcolor=white, label=staining];
+immunofluorescence5 [style=filled, fillcolor=white, label=immunofluorescence];
+staining6 -> immunofluorescence5  [label=amod];
+diminished13 -> staining6  [label=nsubjpass];
+"E-cadherin8" [style=filled, fillcolor=white, label="E-cadherin"];
+staining6 -> "E-cadherin8"  [label=prep_of];
+"α-catenin10" [style=filled, fillcolor=white, label="α-catenin"];
+"E-cadherin8" -> "α-catenin10"  [label=conj_and];
+were11 [style=filled, fillcolor=white, label=were];
+diminished13 -> were11  [label=auxpass];
+markedly12 [style=filled, fillcolor=white, label=markedly];
+diminished13 -> markedly12  [label=advmod];
+diminished13 -> diminished13  [label=root];
+}

@@ -1,0 +1,36 @@
+digraph "As expected ,  addition of AZD6244 failed to further augment ERBB3 and AKT phosphorylation in cells expressing the 669A mutant ." {
+label="As expected ,  addition of AZD6244 failed to further augment ERBB3 and AKT
+phosphorylation in cells expressing the 669A mutant .";
+expected2 [style=filled, fillcolor=white, label=expected];
+As1 [style=filled, fillcolor=white, label=As];
+expected2 -> As1  [label=mark];
+failed7 [style=filled, fillcolor=white, label=failed];
+failed7 -> expected2  [label=advcl];
+addition4 [style=filled, fillcolor=white, label=addition];
+failed7 -> addition4  [label=nsubj];
+AZD6244 [style=filled, fillcolor=white, label=AZD6244];
+addition4 -> AZD6244  [label=prep_of];
+failed7 -> failed7  [label=root];
+augment10 [style=filled, fillcolor=white, label=augment];
+to8 [style=filled, fillcolor=white, label=to];
+augment10 -> to8  [label=aux];
+further9 [style=filled, fillcolor=white, label=further];
+augment10 -> further9  [label=advmod];
+failed7 -> augment10  [label=xcomp];
+phosphorylation14 [style=filled, fillcolor=white, label=phosphorylation];
+ERBB311 [style=filled, fillcolor=white, label=ERBB3];
+phosphorylation14 -> ERBB311  [label=nn];
+AKT13 [style=filled, fillcolor=white, label=AKT];
+ERBB311 -> AKT13  [label=conj_and];
+augment10 -> phosphorylation14  [label=dobj];
+cells16 [style=filled, fillcolor=white, label=cells];
+augment10 -> cells16  [label=prep_in];
+expressing17 [style=filled, fillcolor=white, label=expressing];
+cells16 -> expressing17  [label=vmod];
+mutant20 [style=filled, fillcolor=white, label=mutant];
+the18 [style=filled, fillcolor=white, label=the];
+mutant20 -> the18  [label=det];
+"669A1" [style=filled, fillcolor=white, label="669A"];
+mutant20 -> "669A1"  [label=num];
+expressing17 -> mutant20  [label=dobj];
+}

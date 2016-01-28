@@ -1,0 +1,24 @@
+digraph "In contrast ,  Snail expression was not induced by these conditions ( Figure 5A ) ." {
+label="In contrast ,  Snail expression was not induced by these conditions ( Figure 5A
+) .";
+induced8 [style=filled, fillcolor=white, label=induced];
+contrast2 [style=filled, fillcolor=white, label=contrast];
+induced8 -> contrast2  [label=prep_in];
+expression5 [style=filled, fillcolor=white, label=expression];
+Snail4 [style=filled, fillcolor=white, label=Snail];
+expression5 -> Snail4  [label=nn];
+induced8 -> expression5  [label=nsubjpass];
+was6 [style=filled, fillcolor=white, label=was];
+induced8 -> was6  [label=auxpass];
+not7 [style=filled, fillcolor=white, label=not];
+induced8 -> not7  [label=neg];
+induced8 -> induced8  [label=root];
+conditions11 [style=filled, fillcolor=white, label=conditions];
+these10 [style=filled, fillcolor=white, label=these];
+conditions11 -> these10  [label=det];
+induced8 -> conditions11  [label=agent];
+Figure13 [style=filled, fillcolor=white, label=Figure];
+conditions11 -> Figure13  [label=appos];
+"5A14" [style=filled, fillcolor=white, label="5A"];
+Figure13 -> "5A14"  [label=num];
+}

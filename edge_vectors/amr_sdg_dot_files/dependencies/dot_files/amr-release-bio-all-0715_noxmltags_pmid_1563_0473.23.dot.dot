@@ -1,0 +1,24 @@
+digraph "Mammalian skin epithelium begins as a single sheet of multipotent ectodermal cells ." {
+label="Mammalian skin epithelium begins as a single sheet of multipotent ectodermal
+cells .";
+epithelium3 [style=filled, fillcolor=white, label=epithelium];
+Mammalian1 [style=filled, fillcolor=white, label=Mammalian];
+epithelium3 -> Mammalian1  [label=nn];
+skin2 [style=filled, fillcolor=white, label=skin];
+epithelium3 -> skin2  [label=nn];
+begins4 [style=filled, fillcolor=white, label=begins];
+begins4 -> epithelium3  [label=nsubj];
+begins4 -> begins4  [label=root];
+sheet8 [style=filled, fillcolor=white, label=sheet];
+a6 [style=filled, fillcolor=white, label=a];
+sheet8 -> a6  [label=det];
+single7 [style=filled, fillcolor=white, label=single];
+sheet8 -> single7  [label=amod];
+begins4 -> sheet8  [label=prep_as];
+cells12 [style=filled, fillcolor=white, label=cells];
+multipotent10 [style=filled, fillcolor=white, label=multipotent];
+cells12 -> multipotent10  [label=amod];
+ectodermal11 [style=filled, fillcolor=white, label=ectodermal];
+cells12 -> ectodermal11  [label=amod];
+sheet8 -> cells12  [label=prep_of];
+}

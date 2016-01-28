@@ -1,0 +1,30 @@
+digraph "The induction of TNF-alpha production by NGF was blocked by K252a ,  an inhibitor of the TrkA receptor ." {
+label="The induction of TNF-alpha production by NGF was blocked by K252a ,  an
+inhibitor of the TrkA receptor .";
+induction2 [style=filled, fillcolor=white, label=induction];
+The1 [style=filled, fillcolor=white, label=The];
+induction2 -> The1  [label=det];
+blocked9 [style=filled, fillcolor=white, label=blocked];
+blocked9 -> induction2  [label=nsubjpass];
+production5 [style=filled, fillcolor=white, label=production];
+"TNF-alpha4" [style=filled, fillcolor=white, label="TNF-alpha"];
+production5 -> "TNF-alpha4"  [label=amod];
+induction2 -> production5  [label=prep_of];
+NGF7 [style=filled, fillcolor=white, label=NGF];
+production5 -> NGF7  [label=prep_by];
+was8 [style=filled, fillcolor=white, label=was];
+blocked9 -> was8  [label=auxpass];
+blocked9 -> blocked9  [label=root];
+K252a11 [style=filled, fillcolor=white, label=K252a];
+blocked9 -> K252a11  [label=agent];
+inhibitor14 [style=filled, fillcolor=white, label=inhibitor];
+an13 [style=filled, fillcolor=white, label=an];
+inhibitor14 -> an13  [label=det];
+K252a11 -> inhibitor14  [label=appos];
+receptor18 [style=filled, fillcolor=white, label=receptor];
+the16 [style=filled, fillcolor=white, label=the];
+receptor18 -> the16  [label=det];
+TrkA17 [style=filled, fillcolor=white, label=TrkA];
+receptor18 -> TrkA17  [label=nn];
+inhibitor14 -> receptor18  [label=prep_of];
+}

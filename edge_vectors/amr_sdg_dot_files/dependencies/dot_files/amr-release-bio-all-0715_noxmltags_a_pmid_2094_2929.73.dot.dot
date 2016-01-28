@@ -1,0 +1,39 @@
+digraph "Taken together ,  these results support a role of serpinE2 in MEK1-induced transformation whereby serpinE2 activates anchorage-independent growth and cell migration ." {
+label="Taken together ,  these results support a role of serpinE2 in MEK1-induced
+transformation whereby serpinE2 activates anchorage-independent growth and cell
+migration .";
+support6 [style=filled, fillcolor=white, label=support];
+Taken1 [style=filled, fillcolor=white, label=Taken];
+support6 -> Taken1  [label=vmod];
+together2 [style=filled, fillcolor=white, label=together];
+Taken1 -> together2  [label=advmod];
+results5 [style=filled, fillcolor=white, label=results];
+these4 [style=filled, fillcolor=white, label=these];
+results5 -> these4  [label=det];
+support6 -> results5  [label=nsubj];
+support6 -> support6  [label=root];
+role8 [style=filled, fillcolor=white, label=role];
+a7 [style=filled, fillcolor=white, label=a];
+role8 -> a7  [label=det];
+support6 -> role8  [label=dobj];
+serpinE210 [style=filled, fillcolor=white, label=serpinE2];
+role8 -> serpinE210  [label=prep_of];
+transformation13 [style=filled, fillcolor=white, label=transformation];
+"MEK1-induced2" [style=filled, fillcolor=white, label="MEK1-induced"];
+transformation13 -> "MEK1-induced2"  [label=nn];
+serpinE210 -> transformation13  [label=prep_in];
+activates16 [style=filled, fillcolor=white, label=activates];
+whereby14 [style=filled, fillcolor=white, label=whereby];
+activates16 -> whereby14  [label=advmod];
+serpinE215 [style=filled, fillcolor=white, label=serpinE2];
+activates16 -> serpinE215  [label=nsubj];
+support6 -> activates16  [label=advcl];
+growth18 [style=filled, fillcolor=white, label=growth];
+"anchorage-independent17" [style=filled, fillcolor=white, label="anchorage-independent"];
+growth18 -> "anchorage-independent17"  [label=amod];
+activates16 -> growth18  [label=dobj];
+migration21 [style=filled, fillcolor=white, label=migration];
+cell20 [style=filled, fillcolor=white, label=cell];
+migration21 -> cell20  [label=nn];
+growth18 -> migration21  [label=conj_and];
+}

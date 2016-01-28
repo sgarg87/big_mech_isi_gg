@@ -1,0 +1,27 @@
+digraph "YB-1 has been identified as a direct substrate of Akt -LSB- 12 ,  35 -RSB- ." {
+label="YB-1 has been identified as a direct substrate of Akt -LSB- 12 ,  35 -RSB- .";
+identified4 [style=filled, fillcolor=white, label=identified];
+"YB-1" [style=filled, fillcolor=white, label="YB-1"];
+identified4 -> "YB-1"  [label=nsubjpass];
+has2 [style=filled, fillcolor=white, label=has];
+identified4 -> has2  [label=aux];
+been3 [style=filled, fillcolor=white, label=been];
+identified4 -> been3  [label=auxpass];
+identified4 -> identified4  [label=root];
+substrate8 [style=filled, fillcolor=white, label=substrate];
+a6 [style=filled, fillcolor=white, label=a];
+substrate8 -> a6  [label=det];
+direct7 [style=filled, fillcolor=white, label=direct];
+substrate8 -> direct7  [label=amod];
+identified4 -> substrate8  [label=prep_as];
+"-LSB-11" [style=filled, fillcolor=white, label="-LSB-"];
+Akt10 [style=filled, fillcolor=white, label=Akt];
+"-LSB-11" -> Akt10  [label=nn];
+substrate8 -> "-LSB-11"  [label=prep_of];
+12 [style=filled, fillcolor=white, label=12];
+"-LSB-11" -> 12  [label=num];
+3514 [style=filled, fillcolor=white, label=35];
+"-LSB-11" -> 3514  [label=num];
+"-RSB-15" [style=filled, fillcolor=white, label="-RSB-"];
+"-LSB-11" -> "-RSB-15"  [label=vmod];
+}

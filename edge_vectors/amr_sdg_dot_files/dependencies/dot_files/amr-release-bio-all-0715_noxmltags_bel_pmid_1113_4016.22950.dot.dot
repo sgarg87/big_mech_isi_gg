@@ -1,0 +1,38 @@
+digraph "In vivo ,  low physiologic doses of EGF ( 0.001-0 .1 ng/ml ) stimulated KSR activation and induced Thr ( 269 ) phosphorylation and activation of c-Raf-1 ." {
+label="In vivo ,  low physiologic doses of EGF ( 0.001-0 .1 ng/ml ) stimulated KSR
+activation and induced Thr ( 269 ) phosphorylation and activation of c-Raf-1 .";
+stimulated14 [style=filled, fillcolor=white, label=stimulated];
+vivo2 [style=filled, fillcolor=white, label=vivo];
+stimulated14 -> vivo2  [label=prep_in];
+doses6 [style=filled, fillcolor=white, label=doses];
+low4 [style=filled, fillcolor=white, label=low];
+doses6 -> low4  [label=amod];
+physiologic5 [style=filled, fillcolor=white, label=physiologic];
+doses6 -> physiologic5  [label=amod];
+stimulated14 -> doses6  [label=nsubj];
+EGF8 [style=filled, fillcolor=white, label=EGF];
+doses6 -> EGF8  [label=prep_of];
+".1" [style=filled, fillcolor=white, label=".1"];
+"0.001-0" [style=filled, fillcolor=white, label="0.001-0"];
+".1" -> "0.001-0"  [label=num];
+"ng/ml12" [style=filled, fillcolor=white, label="ng/ml"];
+"ng/ml12" -> ".1"  [label=nsubj];
+stimulated14 -> "ng/ml12"  [label=parataxis];
+stimulated14 -> stimulated14  [label=root];
+activation16 [style=filled, fillcolor=white, label=activation];
+KSR15 [style=filled, fillcolor=white, label=KSR];
+activation16 -> KSR15  [label=nn];
+stimulated14 -> activation16  [label=dobj];
+induced18 [style=filled, fillcolor=white, label=induced];
+stimulated14 -> induced18  [label=conj_and];
+Thr19 [style=filled, fillcolor=white, label=Thr];
+induced18 -> Thr19  [label=dobj];
+26921 [style=filled, fillcolor=white, label=269];
+Thr19 -> 26921  [label=appos];
+phosphorylation23 [style=filled, fillcolor=white, label=phosphorylation];
+Thr19 -> phosphorylation23  [label=amod];
+activation25 [style=filled, fillcolor=white, label=activation];
+phosphorylation23 -> activation25  [label=conj_and];
+"c-Raf-127" [style=filled, fillcolor=white, label="c-Raf-1"];
+induced18 -> "c-Raf-127"  [label=prep_of];
+}

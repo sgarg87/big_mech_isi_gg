@@ -1,0 +1,51 @@
+digraph "Subsequent analysis of the migration and invasion properties showed that moderate RhoA activation induced a partial cell migration and cell invasion response ( Addition Figure 2A ,  B ) ." {
+label="Subsequent analysis of the migration and invasion properties showed that
+moderate RhoA activation induced a partial cell migration and cell invasion
+response ( Addition Figure 2A ,  B ) .";
+analysis2 [style=filled, fillcolor=white, label=analysis];
+Subsequent1 [style=filled, fillcolor=white, label=Subsequent];
+analysis2 -> Subsequent1  [label=amod];
+showed9 [style=filled, fillcolor=white, label=showed];
+showed9 -> analysis2  [label=nsubj];
+properties8 [style=filled, fillcolor=white, label=properties];
+the4 [style=filled, fillcolor=white, label=the];
+properties8 -> the4  [label=det];
+migration5 [style=filled, fillcolor=white, label=migration];
+properties8 -> migration5  [label=nn];
+invasion7 [style=filled, fillcolor=white, label=invasion];
+migration5 -> invasion7  [label=conj_and];
+analysis2 -> properties8  [label=prep_of];
+showed9 -> showed9  [label=root];
+activation13 [style=filled, fillcolor=white, label=activation];
+that10 [style=filled, fillcolor=white, label=that];
+activation13 -> that10  [label=det];
+moderate11 [style=filled, fillcolor=white, label=moderate];
+activation13 -> moderate11  [label=amod];
+RhoA12 [style=filled, fillcolor=white, label=RhoA];
+activation13 -> RhoA12  [label=nn];
+showed9 -> activation13  [label=dobj];
+induced14 [style=filled, fillcolor=white, label=induced];
+activation13 -> induced14  [label=vmod];
+migration18 [style=filled, fillcolor=white, label=migration];
+a15 [style=filled, fillcolor=white, label=a];
+migration18 -> a15  [label=det];
+partial16 [style=filled, fillcolor=white, label=partial];
+migration18 -> partial16  [label=amod];
+cell17 [style=filled, fillcolor=white, label=cell];
+migration18 -> cell17  [label=nn];
+induced14 -> migration18  [label=dobj];
+response22 [style=filled, fillcolor=white, label=response];
+cell20 [style=filled, fillcolor=white, label=cell];
+response22 -> cell20  [label=nn];
+invasion21 [style=filled, fillcolor=white, label=invasion];
+response22 -> invasion21  [label=nn];
+migration18 -> response22  [label=conj_and];
+"2A26" [style=filled, fillcolor=white, label="2A"];
+Addition24 [style=filled, fillcolor=white, label=Addition];
+"2A26" -> Addition24  [label=nn];
+Figure25 [style=filled, fillcolor=white, label=Figure];
+"2A26" -> Figure25  [label=nn];
+migration18 -> "2A26"  [label=appos];
+B28 [style=filled, fillcolor=white, label=B];
+"2A26" -> B28  [label=dep];
+}

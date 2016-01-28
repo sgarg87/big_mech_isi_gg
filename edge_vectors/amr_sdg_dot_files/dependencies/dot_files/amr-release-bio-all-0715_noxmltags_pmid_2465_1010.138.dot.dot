@@ -1,0 +1,34 @@
+digraph "However ,  targeting Sos or other GEFs for treating mutant Ras cancers does not appear an attractive proposition ." {
+label="However ,  targeting Sos or other GEFs for treating mutant Ras cancers does not
+appear an attractive proposition .";
+appear15 [style=filled, fillcolor=white, label=appear];
+However1 [style=filled, fillcolor=white, label=However];
+appear15 -> However1  [label=advmod];
+Sos4 [style=filled, fillcolor=white, label=Sos];
+targeting3 [style=filled, fillcolor=white, label=targeting];
+Sos4 -> targeting3  [label=amod];
+appear15 -> Sos4  [label=nsubj];
+GEFs7 [style=filled, fillcolor=white, label=GEFs];
+other6 [style=filled, fillcolor=white, label=other];
+GEFs7 -> other6  [label=amod];
+Sos4 -> GEFs7  [label=conj_or];
+treating9 [style=filled, fillcolor=white, label=treating];
+Sos4 -> treating9  [label=prepc_for];
+cancers12 [style=filled, fillcolor=white, label=cancers];
+mutant10 [style=filled, fillcolor=white, label=mutant];
+cancers12 -> mutant10  [label=amod];
+Ras11 [style=filled, fillcolor=white, label=Ras];
+cancers12 -> Ras11  [label=nn];
+treating9 -> cancers12  [label=dobj];
+does13 [style=filled, fillcolor=white, label=does];
+appear15 -> does13  [label=aux];
+not14 [style=filled, fillcolor=white, label=not];
+appear15 -> not14  [label=neg];
+appear15 -> appear15  [label=root];
+proposition18 [style=filled, fillcolor=white, label=proposition];
+an16 [style=filled, fillcolor=white, label=an];
+proposition18 -> an16  [label=det];
+attractive17 [style=filled, fillcolor=white, label=attractive];
+proposition18 -> attractive17  [label=amod];
+appear15 -> proposition18  [label=dobj];
+}

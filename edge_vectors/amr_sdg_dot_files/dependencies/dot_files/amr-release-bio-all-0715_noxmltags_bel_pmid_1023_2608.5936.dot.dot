@@ -1,0 +1,36 @@
+digraph "In support of these data ,  we also show that MEK1 is highly phosphorylated in vivo on Ser 217/221 in MLK3-transformed fibroblasts" {
+label="In support of these data ,  we also show that MEK1 is highly phosphorylated in
+vivo on Ser 217/221 in MLK3-transformed fibroblasts";
+show9 [style=filled, fillcolor=white, label=show];
+support2 [style=filled, fillcolor=white, label=support];
+show9 -> support2  [label=prep_in];
+data5 [style=filled, fillcolor=white, label=data];
+these4 [style=filled, fillcolor=white, label=these];
+data5 -> these4  [label=det];
+support2 -> data5  [label=prep_of];
+we7 [style=filled, fillcolor=white, label=we];
+show9 -> we7  [label=nsubj];
+also8 [style=filled, fillcolor=white, label=also];
+show9 -> also8  [label=advmod];
+show9 -> show9  [label=root];
+phosphorylated14 [style=filled, fillcolor=white, label=phosphorylated];
+that10 [style=filled, fillcolor=white, label=that];
+phosphorylated14 -> that10  [label=mark];
+MEK1 [style=filled, fillcolor=white, label=MEK1];
+phosphorylated14 -> MEK1  [label=nsubj];
+is12 [style=filled, fillcolor=white, label=is];
+phosphorylated14 -> is12  [label=cop];
+highly13 [style=filled, fillcolor=white, label=highly];
+phosphorylated14 -> highly13  [label=advmod];
+show9 -> phosphorylated14  [label=ccomp];
+vivo16 [style=filled, fillcolor=white, label=vivo];
+phosphorylated14 -> vivo16  [label=prep_in];
+Ser18 [style=filled, fillcolor=white, label=Ser];
+vivo16 -> Ser18  [label=prep_on];
+"217/22119" [style=filled, fillcolor=white, label="217/221"];
+Ser18 -> "217/22119"  [label=num];
+fibroblasts22 [style=filled, fillcolor=white, label=fibroblasts];
+"MLK3-transformed21" [style=filled, fillcolor=white, label="MLK3-transformed"];
+fibroblasts22 -> "MLK3-transformed21"  [label=nn];
+phosphorylated14 -> fibroblasts22  [label=prep_in];
+}

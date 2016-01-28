@@ -1,0 +1,36 @@
+digraph "However ,  specific therapies have not been developed for mutant Ras proteins themselves or for the cancers that they drive ." {
+label="However ,  specific therapies have not been developed for mutant Ras proteins
+themselves or for the cancers that they drive .";
+developed8 [style=filled, fillcolor=white, label=developed];
+However1 [style=filled, fillcolor=white, label=However];
+developed8 -> However1  [label=advmod];
+therapies4 [style=filled, fillcolor=white, label=therapies];
+specific3 [style=filled, fillcolor=white, label=specific];
+therapies4 -> specific3  [label=amod];
+developed8 -> therapies4  [label=nsubjpass];
+have5 [style=filled, fillcolor=white, label=have];
+developed8 -> have5  [label=aux];
+not6 [style=filled, fillcolor=white, label=not];
+developed8 -> not6  [label=neg];
+been7 [style=filled, fillcolor=white, label=been];
+developed8 -> been7  [label=auxpass];
+developed8 -> developed8  [label=root];
+proteins12 [style=filled, fillcolor=white, label=proteins];
+mutant10 [style=filled, fillcolor=white, label=mutant];
+proteins12 -> mutant10  [label=amod];
+Ras11 [style=filled, fillcolor=white, label=Ras];
+proteins12 -> Ras11  [label=nn];
+developed8 -> proteins12  [label=prep_for];
+themselves13 [style=filled, fillcolor=white, label=themselves];
+proteins12 -> themselves13  [label=advmod];
+cancers17 [style=filled, fillcolor=white, label=cancers];
+the16 [style=filled, fillcolor=white, label=the];
+cancers17 -> the16  [label=det];
+proteins12 -> cancers17  [label=conj_or];
+drive20 [style=filled, fillcolor=white, label=drive];
+that18 [style=filled, fillcolor=white, label=that];
+drive20 -> that18  [label=mark];
+they19 [style=filled, fillcolor=white, label=they];
+drive20 -> they19  [label=nsubj];
+developed8 -> drive20  [label=ccomp];
+}

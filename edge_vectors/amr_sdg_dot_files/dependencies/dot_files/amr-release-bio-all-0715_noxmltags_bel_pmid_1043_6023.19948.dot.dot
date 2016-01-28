@@ -1,0 +1,57 @@
+digraph "DPase a-primase may be regulated by phosphorylation of its p68 subunit by Cyclin A : Cdk2 ,  which reduces and Cyclin E : Cdk2 which increases its DNA initiation activity ( Voitenleitner et al. ,  1999 ) ." {
+label="DPase a-primase may be regulated by phosphorylation of its p68 subunit by
+Cyclin A : Cdk2 ,  which reduces and Cyclin E : Cdk2 which increases its DNA
+initiation activity ( Voitenleitner et al. ,  1999 ) .";
+"a-primase2" [style=filled, fillcolor=white, label="a-primase"];
+DPase1 [style=filled, fillcolor=white, label=DPase];
+"a-primase2" -> DPase1  [label=amod];
+regulated5 [style=filled, fillcolor=white, label=regulated];
+regulated5 -> "a-primase2"  [label=nsubjpass];
+may3 [style=filled, fillcolor=white, label=may];
+regulated5 -> may3  [label=aux];
+be4 [style=filled, fillcolor=white, label=be];
+regulated5 -> be4  [label=auxpass];
+regulated5 -> regulated5  [label=root];
+phosphorylation7 [style=filled, fillcolor=white, label=phosphorylation];
+regulated5 -> phosphorylation7  [label=agent];
+subunit11 [style=filled, fillcolor=white, label=subunit];
+its9 [style=filled, fillcolor=white, label=its];
+subunit11 -> its9  [label=poss];
+p6810 [style=filled, fillcolor=white, label=p68];
+subunit11 -> p6810  [label=amod];
+phosphorylation7 -> subunit11  [label=prep_of];
+A14 [style=filled, fillcolor=white, label=A];
+Cyclin13 [style=filled, fillcolor=white, label=Cyclin];
+A14 -> Cyclin13  [label=nn];
+regulated5 -> A14  [label=agent];
+Cdk216 [style=filled, fillcolor=white, label=Cdk2];
+A14 -> Cdk216  [label=conj_and];
+reduces19 [style=filled, fillcolor=white, label=reduces];
+which18 [style=filled, fillcolor=white, label=which];
+reduces19 -> which18  [label=nsubj];
+Cdk216 -> reduces19  [label=rcmod];
+E22 [style=filled, fillcolor=white, label=E];
+Cyclin21 [style=filled, fillcolor=white, label=Cyclin];
+E22 -> Cyclin21  [label=nn];
+A14 -> E22  [label=conj_and];
+Cdk224 [style=filled, fillcolor=white, label=Cdk2];
+A14 -> Cdk224  [label=dep];
+increases26 [style=filled, fillcolor=white, label=increases];
+which25 [style=filled, fillcolor=white, label=which];
+increases26 -> which25  [label=nsubj];
+Cdk224 -> increases26  [label=rcmod];
+activity30 [style=filled, fillcolor=white, label=activity];
+its27 [style=filled, fillcolor=white, label=its];
+activity30 -> its27  [label=poss];
+DNA28 [style=filled, fillcolor=white, label=DNA];
+activity30 -> DNA28  [label=nn];
+initiation29 [style=filled, fillcolor=white, label=initiation];
+activity30 -> initiation29  [label=nn];
+increases26 -> activity30  [label=dobj];
+Voitenleitner32 [style=filled, fillcolor=white, label=Voitenleitner];
+Cdk224 -> Voitenleitner32  [label=appos];
+"al.34" [style=filled, fillcolor=white, label="al."];
+Voitenleitner32 -> "al.34"  [label=conj_et];
+199936 [style=filled, fillcolor=white, label=1999];
+Voitenleitner32 -> 199936  [label=dep];
+}

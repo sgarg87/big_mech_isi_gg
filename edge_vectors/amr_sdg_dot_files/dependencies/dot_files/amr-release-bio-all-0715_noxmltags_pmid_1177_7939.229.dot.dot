@@ -1,0 +1,17 @@
+digraph "In vivo competition between E3b1 and Grb2 for binding to Sos-1 ." {
+label="In vivo competition between E3b1 and Grb2 for binding to Sos-1 .";
+In1 [style=filled, fillcolor=white, label=In];
+In1 -> In1  [label=root];
+competition3 [style=filled, fillcolor=white, label=competition];
+vivo2 [style=filled, fillcolor=white, label=vivo];
+competition3 -> vivo2  [label=nn];
+In1 -> competition3  [label=pobj];
+E3b15 [style=filled, fillcolor=white, label=E3b1];
+competition3 -> E3b15  [label=prep_between];
+Grb27 [style=filled, fillcolor=white, label=Grb2];
+E3b15 -> Grb27  [label=conj_and];
+binding9 [style=filled, fillcolor=white, label=binding];
+E3b15 -> binding9  [label=prep_for];
+"Sos-1" [style=filled, fillcolor=white, label="Sos-1"];
+binding9 -> "Sos-1"  [label=prep_to];
+}

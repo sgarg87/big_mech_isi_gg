@@ -1,0 +1,32 @@
+digraph "This enhanced invasive capacity of Caco-BR13 cells is independent of their cell proliferation ( Additional Figure 5 ) ." {
+label="This enhanced invasive capacity of Caco-BR13 cells is independent of their cell
+proliferation ( Additional Figure 5 ) .";
+capacity4 [style=filled, fillcolor=white, label=capacity];
+This1 [style=filled, fillcolor=white, label=This];
+capacity4 -> This1  [label=det];
+enhanced2 [style=filled, fillcolor=white, label=enhanced];
+capacity4 -> enhanced2  [label=amod];
+invasive3 [style=filled, fillcolor=white, label=invasive];
+capacity4 -> invasive3  [label=nn];
+independent9 [style=filled, fillcolor=white, label=independent];
+independent9 -> capacity4  [label=nsubj];
+cells7 [style=filled, fillcolor=white, label=cells];
+"Caco-BR136" [style=filled, fillcolor=white, label="Caco-BR13"];
+cells7 -> "Caco-BR136"  [label=nn];
+capacity4 -> cells7  [label=prep_of];
+is8 [style=filled, fillcolor=white, label=is];
+independent9 -> is8  [label=cop];
+independent9 -> independent9  [label=root];
+proliferation13 [style=filled, fillcolor=white, label=proliferation];
+their11 [style=filled, fillcolor=white, label=their];
+proliferation13 -> their11  [label=poss];
+cell12 [style=filled, fillcolor=white, label=cell];
+proliferation13 -> cell12  [label=nn];
+independent9 -> proliferation13  [label=prep_of];
+Figure16 [style=filled, fillcolor=white, label=Figure];
+Additional15 [style=filled, fillcolor=white, label=Additional];
+Figure16 -> Additional15  [label=amod];
+independent9 -> Figure16  [label=dep];
+517 [style=filled, fillcolor=white, label=5];
+Figure16 -> 517  [label=dep];
+}

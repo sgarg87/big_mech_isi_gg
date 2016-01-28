@@ -1,0 +1,47 @@
+digraph "the induction of Tnfa and Il-6 was severely impaired after 2 h of poly ( I : C ) stimulation and reduced after 6 h of stimulation in caspase-8-deficient cells ( Fig. 4B ) ." {
+label="the induction of Tnfa and Il-6 was severely impaired after 2 h of poly ( I : C
+) stimulation and reduced after 6 h of stimulation in caspase-8-deficient cells
+( Fig. 4B ) .";
+induction2 [style=filled, fillcolor=white, label=induction];
+the1 [style=filled, fillcolor=white, label=the];
+induction2 -> the1  [label=det];
+impaired9 [style=filled, fillcolor=white, label=impaired];
+impaired9 -> induction2  [label=nsubjpass];
+Tnfa4 [style=filled, fillcolor=white, label=Tnfa];
+induction2 -> Tnfa4  [label=prep_of];
+"Il-6" [style=filled, fillcolor=white, label="Il-6"];
+Tnfa4 -> "Il-6"  [label=conj_and];
+was7 [style=filled, fillcolor=white, label=was];
+impaired9 -> was7  [label=auxpass];
+severely8 [style=filled, fillcolor=white, label=severely];
+impaired9 -> severely8  [label=advmod];
+impaired9 -> impaired9  [label=root];
+h12 [style=filled, fillcolor=white, label=h];
+211 [style=filled, fillcolor=white, label=2];
+h12 -> 211  [label=num];
+impaired9 -> h12  [label=prep_after];
+stimulation20 [style=filled, fillcolor=white, label=stimulation];
+poly14 [style=filled, fillcolor=white, label=poly];
+stimulation20 -> poly14  [label=amod];
+I16 [style=filled, fillcolor=white, label=I];
+poly14 -> I16  [label=dep];
+C18 [style=filled, fillcolor=white, label=C];
+I16 -> C18  [label=dep];
+h12 -> stimulation20  [label=prep_of];
+reduced22 [style=filled, fillcolor=white, label=reduced];
+impaired9 -> reduced22  [label=conj_and];
+h25 [style=filled, fillcolor=white, label=h];
+624 [style=filled, fillcolor=white, label=6];
+h25 -> 624  [label=num];
+reduced22 -> h25  [label=prep_after];
+stimulation27 [style=filled, fillcolor=white, label=stimulation];
+h25 -> stimulation27  [label=prep_of];
+cells30 [style=filled, fillcolor=white, label=cells];
+"caspase-8-deficient29" [style=filled, fillcolor=white, label="caspase-8-deficient"];
+cells30 -> "caspase-8-deficient29"  [label=amod];
+stimulation27 -> cells30  [label=prep_in];
+"4B33" [style=filled, fillcolor=white, label="4B"];
+"Fig.32" [style=filled, fillcolor=white, label="Fig."];
+"4B33" -> "Fig.32"  [label=number];
+cells30 -> "4B33"  [label=dep];
+}

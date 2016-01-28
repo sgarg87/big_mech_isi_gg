@@ -1,0 +1,24 @@
+digraph "This up-regulation is dependent on signaling by phospho-Stat3 ( signal transducers and activators of transcription ) ." {
+label="This up-regulation is dependent on signaling by phospho-Stat3 ( signal
+transducers and activators of transcription ) .";
+"up-regulation2" [style=filled, fillcolor=white, label="up-regulation"];
+This1 [style=filled, fillcolor=white, label=This];
+"up-regulation2" -> This1  [label=det];
+dependent4 [style=filled, fillcolor=white, label=dependent];
+dependent4 -> "up-regulation2"  [label=nsubj];
+is3 [style=filled, fillcolor=white, label=is];
+dependent4 -> is3  [label=cop];
+dependent4 -> dependent4  [label=root];
+signaling6 [style=filled, fillcolor=white, label=signaling];
+dependent4 -> signaling6  [label=prepc_on];
+"phospho-Stat38" [style=filled, fillcolor=white, label="phospho-Stat3"];
+signaling6 -> "phospho-Stat38"  [label=prep_by];
+signal10 [style=filled, fillcolor=white, label=signal];
+dependent4 -> signal10  [label=parataxis];
+transducers11 [style=filled, fillcolor=white, label=transducers];
+signal10 -> transducers11  [label=dobj];
+activators13 [style=filled, fillcolor=white, label=activators];
+transducers11 -> activators13  [label=conj_and];
+transcription15 [style=filled, fillcolor=white, label=transcription];
+transducers11 -> transcription15  [label=prep_of];
+}

@@ -1,0 +1,26 @@
+digraph "New technologies and insights and fresh eyes are likely to solve this problem ." {
+label="New technologies and insights and fresh eyes are likely to solve this problem
+.";
+technologies2 [style=filled, fillcolor=white, label=technologies];
+New1 [style=filled, fillcolor=white, label=New];
+technologies2 -> New1  [label=amod];
+likely9 [style=filled, fillcolor=white, label=likely];
+likely9 -> technologies2  [label=nsubj];
+insights4 [style=filled, fillcolor=white, label=insights];
+technologies2 -> insights4  [label=conj_and];
+eyes7 [style=filled, fillcolor=white, label=eyes];
+fresh6 [style=filled, fillcolor=white, label=fresh];
+eyes7 -> fresh6  [label=amod];
+technologies2 -> eyes7  [label=conj_and];
+are8 [style=filled, fillcolor=white, label=are];
+likely9 -> are8  [label=cop];
+likely9 -> likely9  [label=root];
+solve11 [style=filled, fillcolor=white, label=solve];
+to10 [style=filled, fillcolor=white, label=to];
+solve11 -> to10  [label=aux];
+likely9 -> solve11  [label=xcomp];
+problem13 [style=filled, fillcolor=white, label=problem];
+this12 [style=filled, fillcolor=white, label=this];
+problem13 -> this12  [label=det];
+solve11 -> problem13  [label=dobj];
+}

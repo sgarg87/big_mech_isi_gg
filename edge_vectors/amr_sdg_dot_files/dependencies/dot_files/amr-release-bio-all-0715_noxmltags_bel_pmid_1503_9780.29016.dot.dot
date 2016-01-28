@@ -1,0 +1,53 @@
+digraph "Importantly ,  cyclin B1-associated CDC2 kinase activity was markedly reduced in mkk7 - / - MEFs ( Fig. 4d ) ,  indicating that reduced CDC2 expression correlates with impaired cyclin B1/CDC2 activity ." {
+label="Importantly ,  cyclin B1-associated CDC2 kinase activity was markedly reduced
+in mkk7 - / - MEFs ( Fig. 4d ) ,  indicating that reduced CDC2 expression
+correlates with impaired cyclin B1/CDC2 activity .";
+reduced10 [style=filled, fillcolor=white, label=reduced];
+Importantly1 [style=filled, fillcolor=white, label=Importantly];
+reduced10 -> Importantly1  [label=advmod];
+activity7 [style=filled, fillcolor=white, label=activity];
+cyclin3 [style=filled, fillcolor=white, label=cyclin];
+activity7 -> cyclin3  [label=amod];
+"B1-associated4" [style=filled, fillcolor=white, label="B1-associated"];
+activity7 -> "B1-associated4"  [label=nn];
+CDC25 [style=filled, fillcolor=white, label=CDC2];
+activity7 -> CDC25  [label=num];
+kinase6 [style=filled, fillcolor=white, label=kinase];
+activity7 -> kinase6  [label=nn];
+reduced10 -> activity7  [label=nsubj];
+was8 [style=filled, fillcolor=white, label=was];
+reduced10 -> was8  [label=cop];
+markedly9 [style=filled, fillcolor=white, label=markedly];
+reduced10 -> markedly9  [label=advmod];
+reduced10 -> reduced10  [label=root];
+MEFs16 [style=filled, fillcolor=white, label=MEFs];
+mkk712 [style=filled, fillcolor=white, label=mkk7];
+MEFs16 -> mkk712  [label=nn];
+"/14" [style=filled, fillcolor=white, label="/"];
+MEFs16 -> "/14"  [label=dep];
+reduced10 -> MEFs16  [label=prep_in];
+"4d19" [style=filled, fillcolor=white, label="4d"];
+"Fig.18" [style=filled, fillcolor=white, label="Fig."];
+"4d19" -> "Fig.18"  [label=nn];
+MEFs16 -> "4d19"  [label=appos];
+indicating22 [style=filled, fillcolor=white, label=indicating];
+reduced10 -> indicating22  [label=xcomp];
+correlates27 [style=filled, fillcolor=white, label=correlates];
+that23 [style=filled, fillcolor=white, label=that];
+correlates27 -> that23  [label=mark];
+expression26 [style=filled, fillcolor=white, label=expression];
+reduced24 [style=filled, fillcolor=white, label=reduced];
+expression26 -> reduced24  [label=amod];
+CDC225 [style=filled, fillcolor=white, label=CDC2];
+expression26 -> CDC225  [label=nn];
+correlates27 -> expression26  [label=nsubj];
+indicating22 -> correlates27  [label=ccomp];
+activity32 [style=filled, fillcolor=white, label=activity];
+impaired29 [style=filled, fillcolor=white, label=impaired];
+activity32 -> impaired29  [label=amod];
+cyclin30 [style=filled, fillcolor=white, label=cyclin];
+activity32 -> cyclin30  [label=nn];
+"B1/CDC23" [style=filled, fillcolor=white, label="B1/CDC2"];
+activity32 -> "B1/CDC23"  [label=nn];
+correlates27 -> activity32  [label=prep_with];
+}

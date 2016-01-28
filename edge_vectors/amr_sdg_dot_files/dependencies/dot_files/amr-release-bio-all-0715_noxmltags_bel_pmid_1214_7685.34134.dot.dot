@@ -1,0 +1,47 @@
+digraph "the down-regulation of D1 and D2 cyclins by OSM was mediated by STAT3 but not by SHP2/Ras STAT3 activation is necessary and sufficient for down-regulation of D1 and D2 cyclins in fetal hepatocytes" {
+label="the down-regulation of D1 and D2 cyclins by OSM was mediated by STAT3 but not
+by SHP2/Ras STAT3 activation is necessary and sufficient for down-regulation of
+D1 and D2 cyclins in fetal hepatocytes";
+"down-regulation2" [style=filled, fillcolor=white, label="down-regulation"];
+the1 [style=filled, fillcolor=white, label=the];
+"down-regulation2" -> the1  [label=det];
+necessary21 [style=filled, fillcolor=white, label=necessary];
+necessary21 -> "down-regulation2"  [label=nsubj];
+D14 [style=filled, fillcolor=white, label=D1];
+"down-regulation2" -> D14  [label=prep_of];
+D26 [style=filled, fillcolor=white, label=D2];
+D14 -> D26  [label=conj_and];
+mediated11 [style=filled, fillcolor=white, label=mediated];
+cyclins7 [style=filled, fillcolor=white, label=cyclins];
+mediated11 -> cyclins7  [label=nsubjpass];
+OSM9 [style=filled, fillcolor=white, label=OSM];
+cyclins7 -> OSM9  [label=prep_by];
+was10 [style=filled, fillcolor=white, label=was];
+mediated11 -> was10  [label=auxpass];
+"down-regulation2" -> mediated11  [label=rcmod];
+STAT31 [style=filled, fillcolor=white, label=STAT3];
+mediated11 -> STAT31  [label=agent];
+activation19 [style=filled, fillcolor=white, label=activation];
+"SHP2/Ras17" [style=filled, fillcolor=white, label="SHP2/Ras"];
+activation19 -> "SHP2/Ras17"  [label=amod];
+STAT318 [style=filled, fillcolor=white, label=STAT3];
+activation19 -> STAT318  [label=nn];
+STAT31 -> activation19  [label=conj_negcc];
+is20 [style=filled, fillcolor=white, label=is];
+necessary21 -> is20  [label=cop];
+necessary21 -> necessary21  [label=root];
+sufficient23 [style=filled, fillcolor=white, label=sufficient];
+necessary21 -> sufficient23  [label=conj_and];
+"down-regulation25" [style=filled, fillcolor=white, label="down-regulation"];
+necessary21 -> "down-regulation25"  [label=prep_for];
+D127 [style=filled, fillcolor=white, label=D1];
+"down-regulation25" -> D127  [label=prep_of];
+cyclins30 [style=filled, fillcolor=white, label=cyclins];
+D229 [style=filled, fillcolor=white, label=D2];
+cyclins30 -> D229  [label=num];
+"down-regulation25" -> cyclins30  [label=conj_and];
+hepatocytes33 [style=filled, fillcolor=white, label=hepatocytes];
+fetal32 [style=filled, fillcolor=white, label=fetal];
+hepatocytes33 -> fetal32  [label=amod];
+cyclins30 -> hepatocytes33  [label=prep_in];
+}

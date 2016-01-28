@@ -1,0 +1,77 @@
+digraph "In addition ,  when B-Raf feedback phosphorylation was prevented ,  either by U0126 treatment or by mutation of all the feedback sites ,  an increase in the basal level of heterodimerization with C-Raf was observed ,  and heterodimerization in response to growth factor treatment was increased and prolonged ( Fig. 3B and C ) ." {
+label="In addition ,  when B-Raf feedback phosphorylation was prevented ,  either by
+U0126 treatment or by mutation of all the feedback sites ,  an increase in the
+basal level of heterodimerization with C-Raf was observed ,  and
+heterodimerization in response to growth factor treatment was increased and
+prolonged ( Fig. 3B and C ) .";
+observed35 [style=filled, fillcolor=white, label=observed];
+addition2 [style=filled, fillcolor=white, label=addition];
+observed35 -> addition2  [label=prep_in];
+prevented9 [style=filled, fillcolor=white, label=prevented];
+when4 [style=filled, fillcolor=white, label=when];
+prevented9 -> when4  [label=advmod];
+phosphorylation7 [style=filled, fillcolor=white, label=phosphorylation];
+"B-Raf5" [style=filled, fillcolor=white, label="B-Raf"];
+phosphorylation7 -> "B-Raf5"  [label=nn];
+feedback6 [style=filled, fillcolor=white, label=feedback];
+phosphorylation7 -> feedback6  [label=nn];
+prevented9 -> phosphorylation7  [label=nsubjpass];
+was8 [style=filled, fillcolor=white, label=was];
+prevented9 -> was8  [label=auxpass];
+observed35 -> prevented9  [label=advcl];
+either11 [style=filled, fillcolor=white, label=either];
+prevented9 -> either11  [label=preconj];
+treatment14 [style=filled, fillcolor=white, label=treatment];
+U012613 [style=filled, fillcolor=white, label=U0126];
+treatment14 -> U012613  [label=nn];
+prevented9 -> treatment14  [label=agent];
+mutation17 [style=filled, fillcolor=white, label=mutation];
+treatment14 -> mutation17  [label=conj_or];
+sites22 [style=filled, fillcolor=white, label=sites];
+all19 [style=filled, fillcolor=white, label=all];
+sites22 -> all19  [label=predet];
+the20 [style=filled, fillcolor=white, label=the];
+sites22 -> the20  [label=det];
+feedback21 [style=filled, fillcolor=white, label=feedback];
+sites22 -> feedback21  [label=nn];
+mutation17 -> sites22  [label=prep_of];
+increase25 [style=filled, fillcolor=white, label=increase];
+an24 [style=filled, fillcolor=white, label=an];
+increase25 -> an24  [label=det];
+observed35 -> increase25  [label=nsubj];
+level29 [style=filled, fillcolor=white, label=level];
+the27 [style=filled, fillcolor=white, label=the];
+level29 -> the27  [label=det];
+basal28 [style=filled, fillcolor=white, label=basal];
+level29 -> basal28  [label=amod];
+increase25 -> level29  [label=prep_in];
+heterodimerization31 [style=filled, fillcolor=white, label=heterodimerization];
+level29 -> heterodimerization31  [label=prep_of];
+"C-Raf33" [style=filled, fillcolor=white, label="C-Raf"];
+heterodimerization31 -> "C-Raf33"  [label=prep_with];
+was34 [style=filled, fillcolor=white, label=was];
+observed35 -> was34  [label=cop];
+observed35 -> observed35  [label=root];
+increased46 [style=filled, fillcolor=white, label=increased];
+heterodimerization38 [style=filled, fillcolor=white, label=heterodimerization];
+increased46 -> heterodimerization38  [label=nsubj];
+response40 [style=filled, fillcolor=white, label=response];
+heterodimerization38 -> response40  [label=prep_in];
+treatment44 [style=filled, fillcolor=white, label=treatment];
+growth42 [style=filled, fillcolor=white, label=growth];
+treatment44 -> growth42  [label=nn];
+factor43 [style=filled, fillcolor=white, label=factor];
+treatment44 -> factor43  [label=nn];
+response40 -> treatment44  [label=prep_to];
+was45 [style=filled, fillcolor=white, label=was];
+increased46 -> was45  [label=cop];
+observed35 -> increased46  [label=conj_and];
+prolonged48 [style=filled, fillcolor=white, label=prolonged];
+increased46 -> prolonged48  [label=conj_and];
+"Fig.50" [style=filled, fillcolor=white, label="Fig."];
+increased46 -> "Fig.50"  [label=dep];
+"3B51" [style=filled, fillcolor=white, label="3B"];
+"Fig.50" -> "3B51"  [label=num];
+C53 [style=filled, fillcolor=white, label=C];
+"Fig.50" -> C53  [label=conj_and];
+}

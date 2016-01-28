@@ -1,0 +1,40 @@
+digraph "However ,  codon 12 mutants retain measurable intrinsic GTPase activity ,  even though they are all refractory to GAP-mediated GTPase stimulation ." {
+label="However ,  codon 12 mutants retain measurable intrinsic GTPase activity ,  even
+though they are all refractory to GAP-mediated GTPase stimulation .";
+retain6 [style=filled, fillcolor=white, label=retain];
+However1 [style=filled, fillcolor=white, label=However];
+retain6 -> However1  [label=advmod];
+mutants5 [style=filled, fillcolor=white, label=mutants];
+codon3 [style=filled, fillcolor=white, label=codon];
+mutants5 -> codon3  [label=amod];
+124 [style=filled, fillcolor=white, label=12];
+mutants5 -> 124  [label=num];
+retain6 -> mutants5  [label=nsubj];
+retain6 -> retain6  [label=root];
+intrinsic8 [style=filled, fillcolor=white, label=intrinsic];
+measurable7 [style=filled, fillcolor=white, label=measurable];
+intrinsic8 -> measurable7  [label=amod];
+activity10 [style=filled, fillcolor=white, label=activity];
+activity10 -> intrinsic8  [label=amod];
+GTPase9 [style=filled, fillcolor=white, label=GTPase];
+activity10 -> GTPase9  [label=amod];
+retain6 -> activity10  [label=dobj];
+refractory17 [style=filled, fillcolor=white, label=refractory];
+even12 [style=filled, fillcolor=white, label=even];
+refractory17 -> even12  [label=advmod];
+though13 [style=filled, fillcolor=white, label=though];
+refractory17 -> though13  [label=mark];
+they14 [style=filled, fillcolor=white, label=they];
+refractory17 -> they14  [label=nsubj];
+are15 [style=filled, fillcolor=white, label=are];
+refractory17 -> are15  [label=cop];
+all16 [style=filled, fillcolor=white, label=all];
+refractory17 -> all16  [label=advmod];
+retain6 -> refractory17  [label=advcl];
+stimulation21 [style=filled, fillcolor=white, label=stimulation];
+"GAP-mediated19" [style=filled, fillcolor=white, label="GAP-mediated"];
+stimulation21 -> "GAP-mediated19"  [label=amod];
+GTPase20 [style=filled, fillcolor=white, label=GTPase];
+stimulation21 -> GTPase20  [label=amod];
+refractory17 -> stimulation21  [label=prep_to];
+}

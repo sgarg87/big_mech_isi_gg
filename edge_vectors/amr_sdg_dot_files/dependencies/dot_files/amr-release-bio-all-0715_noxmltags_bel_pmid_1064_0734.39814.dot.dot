@@ -1,0 +1,53 @@
+digraph "Indeed ,  in vitro kinase assay showed that the activity of ERK2 in Ag-stimulated K46 ^ mA CD72 transfectants was lower than that of Ag-stimulated K46 ^ mA ( Fig. 3 ) ." {
+label="Indeed ,  in vitro kinase assay showed that the activity of ERK2 in Ag-
+stimulated K46 ^ mA CD72 transfectants was lower than that of Ag-stimulated K46
+^ mA ( Fig. 3 ) .";
+showed7 [style=filled, fillcolor=white, label=showed];
+Indeed1 [style=filled, fillcolor=white, label=Indeed];
+showed7 -> Indeed1  [label=advmod];
+kinase5 [style=filled, fillcolor=white, label=kinase];
+vitro4 [style=filled, fillcolor=white, label=vitro];
+kinase5 -> vitro4  [label=npadvmod];
+showed7 -> kinase5  [label=prep_in];
+assay6 [style=filled, fillcolor=white, label=assay];
+showed7 -> assay6  [label=advmod];
+showed7 -> showed7  [label=root];
+lower21 [style=filled, fillcolor=white, label=lower];
+that8 [style=filled, fillcolor=white, label=that];
+lower21 -> that8  [label=mark];
+activity10 [style=filled, fillcolor=white, label=activity];
+the9 [style=filled, fillcolor=white, label=the];
+activity10 -> the9  [label=det];
+lower21 -> activity10  [label=nsubj];
+ERK21 [style=filled, fillcolor=white, label=ERK2];
+activity10 -> ERK21  [label=prep_of];
+transfectants19 [style=filled, fillcolor=white, label=transfectants];
+"Ag-stimulated14" [style=filled, fillcolor=white, label="Ag-stimulated"];
+transfectants19 -> "Ag-stimulated14"  [label=amod];
+K4615 [style=filled, fillcolor=white, label=K46];
+transfectants19 -> K4615  [label=nn];
+"^16" [style=filled, fillcolor=white, label="^"];
+transfectants19 -> "^16"  [label=nn];
+mA17 [style=filled, fillcolor=white, label=mA];
+transfectants19 -> mA17  [label=nn];
+CD7218 [style=filled, fillcolor=white, label=CD72];
+transfectants19 -> CD7218  [label=nn];
+ERK21 -> transfectants19  [label=prep_in];
+was20 [style=filled, fillcolor=white, label=was];
+lower21 -> was20  [label=cop];
+showed7 -> lower21  [label=ccomp];
+that23 [style=filled, fillcolor=white, label=that];
+lower21 -> that23  [label=prep_than];
+K462 [style=filled, fillcolor=white, label=K46];
+"Ag-stimulated25" [style=filled, fillcolor=white, label="Ag-stimulated"];
+K462 -> "Ag-stimulated25"  [label=amod];
+that23 -> K462  [label=prep_of];
+mA28 [style=filled, fillcolor=white, label=mA];
+"^27" [style=filled, fillcolor=white, label="^"];
+mA28 -> "^27"  [label=amod];
+showed7 -> mA28  [label=nsubj];
+331 [style=filled, fillcolor=white, label=3];
+"Fig.30" [style=filled, fillcolor=white, label="Fig."];
+331 -> "Fig.30"  [label=number];
+mA28 -> 331  [label=dep];
+}

@@ -1,0 +1,42 @@
+digraph "It is also clear that knocking down activated Ras can lead to hyperactivation of upstream pathways ,  such as EGFR signaling ( Young et al. ,  2013 ) ." {
+label="It is also clear that knocking down activated Ras can lead to hyperactivation
+of upstream pathways ,  such as EGFR signaling ( Young et al. ,  2013 ) .";
+clear4 [style=filled, fillcolor=white, label=clear];
+It1 [style=filled, fillcolor=white, label=It];
+clear4 -> It1  [label=nsubj];
+is2 [style=filled, fillcolor=white, label=is];
+clear4 -> is2  [label=cop];
+also3 [style=filled, fillcolor=white, label=also];
+clear4 -> also3  [label=advmod];
+clear4 -> clear4  [label=root];
+lead11 [style=filled, fillcolor=white, label=lead];
+that5 [style=filled, fillcolor=white, label=that];
+lead11 -> that5  [label=mark];
+knocking6 [style=filled, fillcolor=white, label=knocking];
+lead11 -> knocking6  [label=csubj];
+down7 [style=filled, fillcolor=white, label=down];
+knocking6 -> down7  [label=prt];
+Ras9 [style=filled, fillcolor=white, label=Ras];
+activated8 [style=filled, fillcolor=white, label=activated];
+Ras9 -> activated8  [label=amod];
+knocking6 -> Ras9  [label=dobj];
+can10 [style=filled, fillcolor=white, label=can];
+lead11 -> can10  [label=aux];
+clear4 -> lead11  [label=ccomp];
+hyperactivation13 [style=filled, fillcolor=white, label=hyperactivation];
+lead11 -> hyperactivation13  [label=prep_to];
+pathways16 [style=filled, fillcolor=white, label=pathways];
+upstream15 [style=filled, fillcolor=white, label=upstream];
+pathways16 -> upstream15  [label=amod];
+hyperactivation13 -> pathways16  [label=prep_of];
+signaling21 [style=filled, fillcolor=white, label=signaling];
+EGFR20 [style=filled, fillcolor=white, label=EGFR];
+signaling21 -> EGFR20  [label=nn];
+hyperactivation13 -> signaling21  [label=prep_such_as];
+Young23 [style=filled, fillcolor=white, label=Young];
+signaling21 -> Young23  [label=appos];
+"al.25" [style=filled, fillcolor=white, label="al."];
+Young23 -> "al.25"  [label=conj_et];
+201327 [style=filled, fillcolor=white, label=2013];
+Young23 -> 201327  [label=dep];
+}

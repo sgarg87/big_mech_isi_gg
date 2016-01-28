@@ -1,0 +1,24 @@
+digraph "Conversely ,  Grb2 was readily recovered from the same immunoprecipitates ( unpublished data ) ." {
+label="Conversely ,  Grb2 was readily recovered from the same immunoprecipitates (
+unpublished data ) .";
+recovered6 [style=filled, fillcolor=white, label=recovered];
+Conversely1 [style=filled, fillcolor=white, label=Conversely];
+recovered6 -> Conversely1  [label=advmod];
+Grb23 [style=filled, fillcolor=white, label=Grb2];
+recovered6 -> Grb23  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+recovered6 -> was4  [label=auxpass];
+readily5 [style=filled, fillcolor=white, label=readily];
+recovered6 -> readily5  [label=advmod];
+recovered6 -> recovered6  [label=root];
+immunoprecipitates10 [style=filled, fillcolor=white, label=immunoprecipitates];
+the8 [style=filled, fillcolor=white, label=the];
+immunoprecipitates10 -> the8  [label=det];
+same9 [style=filled, fillcolor=white, label=same];
+immunoprecipitates10 -> same9  [label=amod];
+recovered6 -> immunoprecipitates10  [label=prep_from];
+data13 [style=filled, fillcolor=white, label=data];
+unpublished12 [style=filled, fillcolor=white, label=unpublished];
+data13 -> unpublished12  [label=amod];
+immunoprecipitates10 -> data13  [label=appos];
+}

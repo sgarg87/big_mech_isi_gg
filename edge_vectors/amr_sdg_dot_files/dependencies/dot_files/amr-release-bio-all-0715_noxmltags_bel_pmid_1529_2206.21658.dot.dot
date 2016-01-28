@@ -1,0 +1,34 @@
+digraph "Experiments in primary mammary epithelial cells and transfected COS-7 cells revealed a p44/42 MAPK and EGFR-dependent Stat3 activation ." {
+label="Experiments in primary mammary epithelial cells and transfected COS-7 cells
+revealed a p44/42 MAPK and EGFR-dependent Stat3 activation .";
+revealed11 [style=filled, fillcolor=white, label=revealed];
+Experiments1 [style=filled, fillcolor=white, label=Experiments];
+revealed11 -> Experiments1  [label=nsubj];
+cells6 [style=filled, fillcolor=white, label=cells];
+primary3 [style=filled, fillcolor=white, label=primary];
+cells6 -> primary3  [label=amod];
+mammary4 [style=filled, fillcolor=white, label=mammary];
+cells6 -> mammary4  [label=amod];
+epithelial5 [style=filled, fillcolor=white, label=epithelial];
+cells6 -> epithelial5  [label=amod];
+Experiments1 -> cells6  [label=prep_in];
+cells10 [style=filled, fillcolor=white, label=cells];
+transfected8 [style=filled, fillcolor=white, label=transfected];
+cells10 -> transfected8  [label=amod];
+"COS-79" [style=filled, fillcolor=white, label="COS-7"];
+cells10 -> "COS-79"  [label=nn];
+cells6 -> cells10  [label=conj_and];
+revealed11 -> revealed11  [label=root];
+MAPK14 [style=filled, fillcolor=white, label=MAPK];
+a12 [style=filled, fillcolor=white, label=a];
+MAPK14 -> a12  [label=det];
+"p44/4213" [style=filled, fillcolor=white, label="p44/42"];
+MAPK14 -> "p44/4213"  [label=amod];
+revealed11 -> MAPK14  [label=dobj];
+activation18 [style=filled, fillcolor=white, label=activation];
+"EGFR-dependent16" [style=filled, fillcolor=white, label="EGFR-dependent"];
+activation18 -> "EGFR-dependent16"  [label=amod];
+Stat317 [style=filled, fillcolor=white, label=Stat3];
+activation18 -> Stat317  [label=nn];
+MAPK14 -> activation18  [label=conj_and];
+}

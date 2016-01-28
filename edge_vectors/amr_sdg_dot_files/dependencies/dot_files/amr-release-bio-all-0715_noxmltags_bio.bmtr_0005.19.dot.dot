@@ -1,0 +1,44 @@
+digraph "We and others have recently shown that ASPP2 can potentiate RAS signaling by binding directly via the ASPP2 N-terminus -LSB- 2 ,  6 -RSB- ." {
+label="We and others have recently shown that ASPP2 can potentiate RAS signaling by
+binding directly via the ASPP2 N-terminus -LSB- 2 ,  6 -RSB- .";
+shown6 [style=filled, fillcolor=white, label=shown];
+We1 [style=filled, fillcolor=white, label=We];
+shown6 -> We1  [label=nsubj];
+others3 [style=filled, fillcolor=white, label=others];
+We1 -> others3  [label=conj_and];
+have4 [style=filled, fillcolor=white, label=have];
+shown6 -> have4  [label=aux];
+recently5 [style=filled, fillcolor=white, label=recently];
+shown6 -> recently5  [label=advmod];
+shown6 -> shown6  [label=root];
+potentiate10 [style=filled, fillcolor=white, label=potentiate];
+that7 [style=filled, fillcolor=white, label=that];
+potentiate10 -> that7  [label=mark];
+ASPP28 [style=filled, fillcolor=white, label=ASPP2];
+potentiate10 -> ASPP28  [label=nsubj];
+can9 [style=filled, fillcolor=white, label=can];
+potentiate10 -> can9  [label=aux];
+shown6 -> potentiate10  [label=ccomp];
+RAS11 [style=filled, fillcolor=white, label=RAS];
+potentiate10 -> RAS11  [label=dobj];
+signaling12 [style=filled, fillcolor=white, label=signaling];
+RAS11 -> signaling12  [label=vmod];
+binding14 [style=filled, fillcolor=white, label=binding];
+signaling12 -> binding14  [label=agent];
+directly15 [style=filled, fillcolor=white, label=directly];
+binding14 -> directly15  [label=advmod];
+"N-terminus19" [style=filled, fillcolor=white, label="N-terminus"];
+the17 [style=filled, fillcolor=white, label=the];
+"N-terminus19" -> the17  [label=det];
+ASPP218 [style=filled, fillcolor=white, label=ASPP2];
+"N-terminus19" -> ASPP218  [label=nn];
+binding14 -> "N-terminus19"  [label=prep_via];
+"-RSB-24" [style=filled, fillcolor=white, label="-RSB-"];
+"-LSB-20" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-24" -> "-LSB-20"  [label=dep];
+221 [style=filled, fillcolor=white, label=2];
+"-LSB-20" -> 221  [label=num];
+623 [style=filled, fillcolor=white, label=6];
+"-LSB-20" -> 623  [label=num];
+"N-terminus19" -> "-RSB-24"  [label=amod];
+}

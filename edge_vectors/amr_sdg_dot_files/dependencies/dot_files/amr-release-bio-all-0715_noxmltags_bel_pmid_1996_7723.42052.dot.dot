@@ -1,0 +1,55 @@
+digraph "Blood vessels associated with IDC showed a significant reduction in mean a6-integrin pixel intensity when compared with blood vessels from normal breast tissue ( ** p < 0.0001 ,  Figure 1b ) ." {
+label="Blood vessels associated with IDC showed a significant reduction in mean
+a6-integrin pixel intensity when compared with blood vessels from normal breast
+tissue ( ** p < 0.0001 ,  Figure 1b ) .";
+vessels2 [style=filled, fillcolor=white, label=vessels];
+Blood1 [style=filled, fillcolor=white, label=Blood];
+vessels2 -> Blood1  [label=nn];
+showed6 [style=filled, fillcolor=white, label=showed];
+showed6 -> vessels2  [label=nsubj];
+associated3 [style=filled, fillcolor=white, label=associated];
+vessels2 -> associated3  [label=vmod];
+IDC5 [style=filled, fillcolor=white, label=IDC];
+associated3 -> IDC5  [label=prep_with];
+showed6 -> showed6  [label=root];
+reduction9 [style=filled, fillcolor=white, label=reduction];
+a7 [style=filled, fillcolor=white, label=a];
+reduction9 -> a7  [label=det];
+significant8 [style=filled, fillcolor=white, label=significant];
+reduction9 -> significant8  [label=amod];
+showed6 -> reduction9  [label=dobj];
+intensity14 [style=filled, fillcolor=white, label=intensity];
+mean11 [style=filled, fillcolor=white, label=mean];
+intensity14 -> mean11  [label=amod];
+"a6-integrin12" [style=filled, fillcolor=white, label="a6-integrin"];
+intensity14 -> "a6-integrin12"  [label=amod];
+pixel13 [style=filled, fillcolor=white, label=pixel];
+intensity14 -> pixel13  [label=amod];
+showed6 -> intensity14  [label=prep_in];
+compared16 [style=filled, fillcolor=white, label=compared];
+when15 [style=filled, fillcolor=white, label=when];
+compared16 -> when15  [label=advmod];
+showed6 -> compared16  [label=advcl];
+vessels19 [style=filled, fillcolor=white, label=vessels];
+blood18 [style=filled, fillcolor=white, label=blood];
+vessels19 -> blood18  [label=nn];
+compared16 -> vessels19  [label=prep_with];
+tissue23 [style=filled, fillcolor=white, label=tissue];
+normal21 [style=filled, fillcolor=white, label=normal];
+tissue23 -> normal21  [label=amod];
+breast22 [style=filled, fillcolor=white, label=breast];
+tissue23 -> breast22  [label=nn];
+compared16 -> tissue23  [label=prep_from];
+"<27" [style=filled, fillcolor=white, label="<"];
+"**25" [style=filled, fillcolor=white, label="**"];
+"<27" -> "**25"  [label=dep];
+p26 [style=filled, fillcolor=white, label=p];
+"<27" -> p26  [label=nn];
+tissue23 -> "<27"  [label=dep];
+"0.000128" [style=filled, fillcolor=white, label="0.0001"];
+"<27" -> "0.000128"  [label=dep];
+"1b3" [style=filled, fillcolor=white, label="1b"];
+Figure30 [style=filled, fillcolor=white, label=Figure];
+"1b3" -> Figure30  [label=nn];
+"0.000128" -> "1b3"  [label=appos];
+}

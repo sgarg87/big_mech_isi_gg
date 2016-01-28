@@ -1,0 +1,51 @@
+digraph "Once activated ,  either by upstream signaling or by mutational events ,  all Raf proteins are capable of initiating the phosphorylation cascade that results in the sequential activation of MEK and ERK ." {
+label="Once activated ,  either by upstream signaling or by mutational events ,  all
+Raf proteins are capable of initiating the phosphorylation cascade that results
+in the sequential activation of MEK and ERK .";
+activated2 [style=filled, fillcolor=white, label=activated];
+Once1 [style=filled, fillcolor=white, label=Once];
+activated2 -> Once1  [label=mark];
+capable17 [style=filled, fillcolor=white, label=capable];
+capable17 -> activated2  [label=advcl];
+either4 [style=filled, fillcolor=white, label=either];
+activated2 -> either4  [label=preconj];
+signaling7 [style=filled, fillcolor=white, label=signaling];
+upstream6 [style=filled, fillcolor=white, label=upstream];
+signaling7 -> upstream6  [label=amod];
+activated2 -> signaling7  [label=prep_by];
+events11 [style=filled, fillcolor=white, label=events];
+mutational10 [style=filled, fillcolor=white, label=mutational];
+events11 -> mutational10  [label=amod];
+signaling7 -> events11  [label=conj_or];
+proteins15 [style=filled, fillcolor=white, label=proteins];
+all13 [style=filled, fillcolor=white, label=all];
+proteins15 -> all13  [label=det];
+Raf14 [style=filled, fillcolor=white, label=Raf];
+proteins15 -> Raf14  [label=nn];
+capable17 -> proteins15  [label=nsubj];
+are16 [style=filled, fillcolor=white, label=are];
+capable17 -> are16  [label=cop];
+capable17 -> capable17  [label=root];
+initiating19 [style=filled, fillcolor=white, label=initiating];
+capable17 -> initiating19  [label=prepc_of];
+cascade22 [style=filled, fillcolor=white, label=cascade];
+the20 [style=filled, fillcolor=white, label=the];
+cascade22 -> the20  [label=det];
+phosphorylation21 [style=filled, fillcolor=white, label=phosphorylation];
+cascade22 -> phosphorylation21  [label=nn];
+initiating19 -> cascade22  [label=dobj];
+results24 [style=filled, fillcolor=white, label=results];
+that23 [style=filled, fillcolor=white, label=that];
+results24 -> that23  [label=nsubj];
+cascade22 -> results24  [label=rcmod];
+activation28 [style=filled, fillcolor=white, label=activation];
+the26 [style=filled, fillcolor=white, label=the];
+activation28 -> the26  [label=det];
+sequential27 [style=filled, fillcolor=white, label=sequential];
+activation28 -> sequential27  [label=amod];
+results24 -> activation28  [label=prep_in];
+MEK30 [style=filled, fillcolor=white, label=MEK];
+activation28 -> MEK30  [label=prep_of];
+ERK32 [style=filled, fillcolor=white, label=ERK];
+MEK30 -> ERK32  [label=conj_and];
+}

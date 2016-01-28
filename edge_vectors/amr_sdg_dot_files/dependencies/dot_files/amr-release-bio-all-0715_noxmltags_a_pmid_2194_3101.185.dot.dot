@@ -1,0 +1,57 @@
+digraph "Moreover ,  following RhoA depletion in Caco-2 cells ,  the number and size of stress fibres were notably reduced as compared to Caco-BR cells ,  where no such alteration was observed ( data not shown ) ." {
+label="Moreover ,  following RhoA depletion in Caco-2 cells ,  the number and size of
+stress fibres were notably reduced as compared to Caco-BR cells ,  where no such
+alteration was observed ( data not shown ) .";
+reduced19 [style=filled, fillcolor=white, label=reduced];
+Moreover1 [style=filled, fillcolor=white, label=Moreover];
+reduced19 -> Moreover1  [label=advmod];
+depletion5 [style=filled, fillcolor=white, label=depletion];
+RhoA4 [style=filled, fillcolor=white, label=RhoA];
+depletion5 -> RhoA4  [label=nn];
+reduced19 -> depletion5  [label=prep_following];
+cells8 [style=filled, fillcolor=white, label=cells];
+"Caco-27" [style=filled, fillcolor=white, label="Caco-2"];
+cells8 -> "Caco-27"  [label=nn];
+depletion5 -> cells8  [label=prep_in];
+number11 [style=filled, fillcolor=white, label=number];
+the10 [style=filled, fillcolor=white, label=the];
+number11 -> the10  [label=det];
+reduced19 -> number11  [label=nsubjpass];
+size13 [style=filled, fillcolor=white, label=size];
+number11 -> size13  [label=conj_and];
+fibres16 [style=filled, fillcolor=white, label=fibres];
+stress15 [style=filled, fillcolor=white, label=stress];
+fibres16 -> stress15  [label=nn];
+number11 -> fibres16  [label=prep_of];
+were17 [style=filled, fillcolor=white, label=were];
+reduced19 -> were17  [label=auxpass];
+notably18 [style=filled, fillcolor=white, label=notably];
+reduced19 -> notably18  [label=advmod];
+reduced19 -> reduced19  [label=root];
+as20 [style=filled, fillcolor=white, label=as];
+reduced19 -> as20  [label=prep];
+to22 [style=filled, fillcolor=white, label=to];
+reduced19 -> to22  [label=prepc_compared_to];
+cells24 [style=filled, fillcolor=white, label=cells];
+"Caco-BR23" [style=filled, fillcolor=white, label="Caco-BR"];
+cells24 -> "Caco-BR23"  [label=amod];
+reduced19 -> cells24  [label=pobj];
+observed31 [style=filled, fillcolor=white, label=observed];
+where26 [style=filled, fillcolor=white, label=where];
+observed31 -> where26  [label=advmod];
+alteration29 [style=filled, fillcolor=white, label=alteration];
+no27 [style=filled, fillcolor=white, label=no];
+alteration29 -> no27  [label=neg];
+such28 [style=filled, fillcolor=white, label=such];
+alteration29 -> such28  [label=amod];
+observed31 -> alteration29  [label=nsubj];
+was30 [style=filled, fillcolor=white, label=was];
+observed31 -> was30  [label=cop];
+cells24 -> observed31  [label=rcmod];
+data33 [style=filled, fillcolor=white, label=data];
+observed31 -> data33  [label=dep];
+shown35 [style=filled, fillcolor=white, label=shown];
+not34 [style=filled, fillcolor=white, label=not];
+shown35 -> not34  [label=neg];
+data33 -> shown35  [label=vmod];
+}

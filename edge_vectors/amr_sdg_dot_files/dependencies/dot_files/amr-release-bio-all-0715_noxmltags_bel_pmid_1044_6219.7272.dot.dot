@@ -1,0 +1,38 @@
+digraph "Here ,  we report that Stat3 was specifically associated with PKC delta in vivo in an IL-6-dependent manner in several cell types ." {
+label="Here ,  we report that Stat3 was specifically associated with PKC delta in vivo
+in an IL-6-dependent manner in several cell types .";
+report4 [style=filled, fillcolor=white, label=report];
+Here1 [style=filled, fillcolor=white, label=Here];
+report4 -> Here1  [label=advmod];
+we3 [style=filled, fillcolor=white, label=we];
+report4 -> we3  [label=nsubj];
+report4 -> report4  [label=root];
+associated9 [style=filled, fillcolor=white, label=associated];
+that5 [style=filled, fillcolor=white, label=that];
+associated9 -> that5  [label=mark];
+Stat36 [style=filled, fillcolor=white, label=Stat3];
+associated9 -> Stat36  [label=nsubjpass];
+was7 [style=filled, fillcolor=white, label=was];
+associated9 -> was7  [label=auxpass];
+specifically8 [style=filled, fillcolor=white, label=specifically];
+associated9 -> specifically8  [label=advmod];
+report4 -> associated9  [label=ccomp];
+delta12 [style=filled, fillcolor=white, label=delta];
+PKC11 [style=filled, fillcolor=white, label=PKC];
+delta12 -> PKC11  [label=nn];
+associated9 -> delta12  [label=prep_with];
+vivo14 [style=filled, fillcolor=white, label=vivo];
+associated9 -> vivo14  [label=prep_in];
+manner18 [style=filled, fillcolor=white, label=manner];
+an16 [style=filled, fillcolor=white, label=an];
+manner18 -> an16  [label=det];
+"IL-6-dependent17" [style=filled, fillcolor=white, label="IL-6-dependent"];
+manner18 -> "IL-6-dependent17"  [label=nn];
+vivo14 -> manner18  [label=prep_in];
+types22 [style=filled, fillcolor=white, label=types];
+several20 [style=filled, fillcolor=white, label=several];
+types22 -> several20  [label=amod];
+cell21 [style=filled, fillcolor=white, label=cell];
+types22 -> cell21  [label=nn];
+manner18 -> types22  [label=prep_in];
+}

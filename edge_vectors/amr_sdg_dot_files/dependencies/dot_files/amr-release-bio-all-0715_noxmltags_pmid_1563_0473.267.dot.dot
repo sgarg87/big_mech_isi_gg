@@ -1,0 +1,49 @@
+digraph "Samples were washed three times for 5 min each in lysis buffer ,  and the Protein G Sepharose-antibody-antigen pellet was resuspended in Laemmli buffer and boiled for 10 min ." {
+label="Samples were washed three times for 5 min each in lysis buffer ,  and the
+Protein G Sepharose-antibody-antigen pellet was resuspended in Laemmli buffer
+and boiled for 10 min .";
+washed3 [style=filled, fillcolor=white, label=washed];
+Samples1 [style=filled, fillcolor=white, label=Samples];
+washed3 -> Samples1  [label=nsubjpass];
+were2 [style=filled, fillcolor=white, label=were];
+washed3 -> were2  [label=auxpass];
+washed3 -> washed3  [label=root];
+times5 [style=filled, fillcolor=white, label=times];
+three4 [style=filled, fillcolor=white, label=three];
+times5 -> three4  [label=number];
+washed3 -> times5  [label=dobj];
+min8 [style=filled, fillcolor=white, label=min];
+57 [style=filled, fillcolor=white, label=5];
+min8 -> 57  [label=num];
+washed3 -> min8  [label=prep_for];
+each9 [style=filled, fillcolor=white, label=each];
+washed3 -> each9  [label=dobj];
+buffer12 [style=filled, fillcolor=white, label=buffer];
+lysis11 [style=filled, fillcolor=white, label=lysis];
+buffer12 -> lysis11  [label=amod];
+each9 -> buffer12  [label=prep_in];
+pellet19 [style=filled, fillcolor=white, label=pellet];
+the15 [style=filled, fillcolor=white, label=the];
+pellet19 -> the15  [label=det];
+Protein16 [style=filled, fillcolor=white, label=Protein];
+pellet19 -> Protein16  [label=nn];
+G17 [style=filled, fillcolor=white, label=G];
+pellet19 -> G17  [label=nn];
+"Sepharose-antibody-antigen18" [style=filled, fillcolor=white, label="Sepharose-antibody-antigen"];
+pellet19 -> "Sepharose-antibody-antigen18"  [label=nn];
+resuspended21 [style=filled, fillcolor=white, label=resuspended];
+resuspended21 -> pellet19  [label=nsubjpass];
+was20 [style=filled, fillcolor=white, label=was];
+resuspended21 -> was20  [label=auxpass];
+washed3 -> resuspended21  [label=conj_and];
+buffer24 [style=filled, fillcolor=white, label=buffer];
+Laemmli23 [style=filled, fillcolor=white, label=Laemmli];
+buffer24 -> Laemmli23  [label=nn];
+resuspended21 -> buffer24  [label=prep_in];
+boiled26 [style=filled, fillcolor=white, label=boiled];
+resuspended21 -> boiled26  [label=conj_and];
+min29 [style=filled, fillcolor=white, label=min];
+1028 [style=filled, fillcolor=white, label=10];
+min29 -> 1028  [label=num];
+boiled26 -> min29  [label=prep_for];
+}

@@ -1,0 +1,21 @@
+digraph "A polyclonal antibody NGH.S4 was purified by affinity column purification ." {
+label="A polyclonal antibody NGH.S4 was purified by affinity column purification .";
+"NGH.S4" [style=filled, fillcolor=white, label="NGH.S4"];
+A1 [style=filled, fillcolor=white, label=A];
+"NGH.S4" -> A1  [label=det];
+polyclonal2 [style=filled, fillcolor=white, label=polyclonal];
+"NGH.S4" -> polyclonal2  [label=amod];
+antibody3 [style=filled, fillcolor=white, label=antibody];
+"NGH.S4" -> antibody3  [label=nn];
+purified6 [style=filled, fillcolor=white, label=purified];
+purified6 -> "NGH.S4"  [label=nsubjpass];
+was5 [style=filled, fillcolor=white, label=was];
+purified6 -> was5  [label=auxpass];
+purified6 -> purified6  [label=root];
+purification10 [style=filled, fillcolor=white, label=purification];
+affinity8 [style=filled, fillcolor=white, label=affinity];
+purification10 -> affinity8  [label=amod];
+column9 [style=filled, fillcolor=white, label=column];
+purification10 -> column9  [label=nn];
+purified6 -> purification10  [label=agent];
+}

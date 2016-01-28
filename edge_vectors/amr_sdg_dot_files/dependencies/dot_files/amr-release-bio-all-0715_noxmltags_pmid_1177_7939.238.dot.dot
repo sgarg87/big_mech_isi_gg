@@ -1,0 +1,35 @@
+digraph "Immunoprecipitates ( IP ) with anti-EGFR or preimmune sera ( ctr ) were analyzed by immunoblotting ( WB ) with anti -- EGFR or HA ( for Sos-1 detection ) ." {
+label="Immunoprecipitates ( IP ) with anti-EGFR or preimmune sera ( ctr ) were
+analyzed by immunoblotting ( WB ) with anti -- EGFR or HA ( for Sos-1 detection
+) .";
+analyzed14 [style=filled, fillcolor=white, label=analyzed];
+Immunoprecipitates1 [style=filled, fillcolor=white, label=Immunoprecipitates];
+analyzed14 -> Immunoprecipitates1  [label=nsubjpass];
+IP3 [style=filled, fillcolor=white, label=IP];
+Immunoprecipitates1 -> IP3  [label=appos];
+sera9 [style=filled, fillcolor=white, label=sera];
+"anti-EGFR6" [style=filled, fillcolor=white, label="anti-EGFR"];
+sera9 -> "anti-EGFR6"  [label=amod];
+preimmune8 [style=filled, fillcolor=white, label=preimmune];
+"anti-EGFR6" -> preimmune8  [label=conj_or];
+Immunoprecipitates1 -> sera9  [label=prep_with];
+ctr11 [style=filled, fillcolor=white, label=ctr];
+sera9 -> ctr11  [label=appos];
+were13 [style=filled, fillcolor=white, label=were];
+analyzed14 -> were13  [label=auxpass];
+analyzed14 -> analyzed14  [label=root];
+immunoblotting16 [style=filled, fillcolor=white, label=immunoblotting];
+analyzed14 -> immunoblotting16  [label=agent];
+WB18 [style=filled, fillcolor=white, label=WB];
+immunoblotting16 -> WB18  [label=dobj];
+anti21 [style=filled, fillcolor=white, label=anti];
+WB18 -> anti21  [label=prep_with];
+EGFR23 [style=filled, fillcolor=white, label=EGFR];
+anti21 -> EGFR23  [label=dep];
+HA25 [style=filled, fillcolor=white, label=HA];
+EGFR23 -> HA25  [label=conj_or];
+detection29 [style=filled, fillcolor=white, label=detection];
+"Sos-128" [style=filled, fillcolor=white, label="Sos-1"];
+detection29 -> "Sos-128"  [label=nn];
+anti21 -> detection29  [label=prep_for];
+}

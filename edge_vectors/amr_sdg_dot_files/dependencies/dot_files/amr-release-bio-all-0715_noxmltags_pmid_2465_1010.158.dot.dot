@@ -1,0 +1,34 @@
+digraph "A small molecule that provided this local charge might therefore trick mutant Ras into GTP hydrolysis ." {
+label="A small molecule that provided this local charge might therefore trick mutant
+Ras into GTP hydrolysis .";
+molecule3 [style=filled, fillcolor=white, label=molecule];
+A1 [style=filled, fillcolor=white, label=A];
+molecule3 -> A1  [label=det];
+small2 [style=filled, fillcolor=white, label=small];
+molecule3 -> small2  [label=amod];
+trick11 [style=filled, fillcolor=white, label=trick];
+trick11 -> molecule3  [label=nsubj];
+provided5 [style=filled, fillcolor=white, label=provided];
+that4 [style=filled, fillcolor=white, label=that];
+provided5 -> that4  [label=nsubj];
+molecule3 -> provided5  [label=rcmod];
+charge8 [style=filled, fillcolor=white, label=charge];
+this6 [style=filled, fillcolor=white, label=this];
+charge8 -> this6  [label=det];
+local7 [style=filled, fillcolor=white, label=local];
+charge8 -> local7  [label=amod];
+provided5 -> charge8  [label=dobj];
+might9 [style=filled, fillcolor=white, label=might];
+trick11 -> might9  [label=aux];
+therefore10 [style=filled, fillcolor=white, label=therefore];
+trick11 -> therefore10  [label=advmod];
+trick11 -> trick11  [label=root];
+Ras13 [style=filled, fillcolor=white, label=Ras];
+mutant12 [style=filled, fillcolor=white, label=mutant];
+Ras13 -> mutant12  [label=amod];
+trick11 -> Ras13  [label=dobj];
+hydrolysis16 [style=filled, fillcolor=white, label=hydrolysis];
+GTP15 [style=filled, fillcolor=white, label=GTP];
+hydrolysis16 -> GTP15  [label=nn];
+trick11 -> hydrolysis16  [label=prep_into];
+}

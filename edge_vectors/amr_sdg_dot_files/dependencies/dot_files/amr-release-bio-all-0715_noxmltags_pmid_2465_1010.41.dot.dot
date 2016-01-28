@@ -1,0 +1,51 @@
+digraph "Variant alleles of K-Ras that account for a small fraction of Noonan s syndrome and cardiofaciocutaneous syndrome are weakly activated relative to their sporadic oncogenic counterparts ( Schubbert et al. ,  2007 ) ." {
+label="Variant alleles of K-Ras that account for a small fraction of Noonan s syndrome
+and cardiofaciocutaneous syndrome are weakly activated relative to their
+sporadic oncogenic counterparts ( Schubbert et al. ,  2007 ) .";
+alleles2 [style=filled, fillcolor=white, label=alleles];
+Variant1 [style=filled, fillcolor=white, label=Variant];
+alleles2 -> Variant1  [label=amod];
+activated20 [style=filled, fillcolor=white, label=activated];
+activated20 -> alleles2  [label=nsubjpass];
+"K-Ras4" [style=filled, fillcolor=white, label="K-Ras"];
+alleles2 -> "K-Ras4"  [label=prep_of];
+account6 [style=filled, fillcolor=white, label=account];
+that5 [style=filled, fillcolor=white, label=that];
+account6 -> that5  [label=nsubj];
+"K-Ras4" -> account6  [label=rcmod];
+fraction10 [style=filled, fillcolor=white, label=fraction];
+a8 [style=filled, fillcolor=white, label=a];
+fraction10 -> a8  [label=det];
+small9 [style=filled, fillcolor=white, label=small];
+fraction10 -> small9  [label=amod];
+account6 -> fraction10  [label=prep_for];
+syndrome14 [style=filled, fillcolor=white, label=syndrome];
+Noonan12 [style=filled, fillcolor=white, label=Noonan];
+syndrome14 -> Noonan12  [label=poss];
+fraction10 -> syndrome14  [label=prep_of];
+syndrome17 [style=filled, fillcolor=white, label=syndrome];
+cardiofaciocutaneous16 [style=filled, fillcolor=white, label=cardiofaciocutaneous];
+syndrome17 -> cardiofaciocutaneous16  [label=nn];
+syndrome14 -> syndrome17  [label=conj_and];
+are18 [style=filled, fillcolor=white, label=are];
+activated20 -> are18  [label=auxpass];
+weakly19 [style=filled, fillcolor=white, label=weakly];
+activated20 -> weakly19  [label=advmod];
+activated20 -> activated20  [label=root];
+relative21 [style=filled, fillcolor=white, label=relative];
+activated20 -> relative21  [label=advmod];
+counterparts26 [style=filled, fillcolor=white, label=counterparts];
+their23 [style=filled, fillcolor=white, label=their];
+counterparts26 -> their23  [label=poss];
+oncogenic25 [style=filled, fillcolor=white, label=oncogenic];
+sporadic24 [style=filled, fillcolor=white, label=sporadic];
+oncogenic25 -> sporadic24  [label=amod];
+counterparts26 -> oncogenic25  [label=amod];
+activated20 -> counterparts26  [label=prep_to];
+Schubbert28 [style=filled, fillcolor=white, label=Schubbert];
+counterparts26 -> Schubbert28  [label=appos];
+"al.30" [style=filled, fillcolor=white, label="al."];
+Schubbert28 -> "al.30"  [label=conj_et];
+20073 [style=filled, fillcolor=white, label=2007];
+Schubbert28 -> 20073  [label=dep];
+}

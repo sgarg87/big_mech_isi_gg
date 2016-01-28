@@ -1,0 +1,53 @@
+digraph "Previously ,  we discovered that early during hair follicle morphogenesis ,  E-cadherin gene expression is down-regulated concomitantly with the invagination of developing bud cells into the skin -LSB- 4 -RSB- ." {
+label="Previously ,  we discovered that early during hair follicle morphogenesis ,
+E-cadherin gene expression is down-regulated concomitantly with the invagination
+of developing bud cells into the skin -LSB- 4 -RSB- .";
+discovered4 [style=filled, fillcolor=white, label=discovered];
+Previously1 [style=filled, fillcolor=white, label=Previously];
+discovered4 -> Previously1  [label=advmod];
+we3 [style=filled, fillcolor=white, label=we];
+discovered4 -> we3  [label=nsubj];
+discovered4 -> discovered4  [label=root];
+"down-regulated16" [style=filled, fillcolor=white, label="down-regulated"];
+that5 [style=filled, fillcolor=white, label=that];
+"down-regulated16" -> that5  [label=mark];
+early6 [style=filled, fillcolor=white, label=early];
+"down-regulated16" -> early6  [label=advmod];
+morphogenesis10 [style=filled, fillcolor=white, label=morphogenesis];
+hair8 [style=filled, fillcolor=white, label=hair];
+morphogenesis10 -> hair8  [label=nn];
+follicle9 [style=filled, fillcolor=white, label=follicle];
+morphogenesis10 -> follicle9  [label=nn];
+early6 -> morphogenesis10  [label=prep_during];
+expression14 [style=filled, fillcolor=white, label=expression];
+"E-cadherin12" [style=filled, fillcolor=white, label="E-cadherin"];
+expression14 -> "E-cadherin12"  [label=amod];
+gene13 [style=filled, fillcolor=white, label=gene];
+expression14 -> gene13  [label=nn];
+"down-regulated16" -> expression14  [label=nsubjpass];
+is15 [style=filled, fillcolor=white, label=is];
+"down-regulated16" -> is15  [label=auxpass];
+discovered4 -> "down-regulated16"  [label=ccomp];
+concomitantly17 [style=filled, fillcolor=white, label=concomitantly];
+"down-regulated16" -> concomitantly17  [label=advmod];
+invagination20 [style=filled, fillcolor=white, label=invagination];
+the19 [style=filled, fillcolor=white, label=the];
+invagination20 -> the19  [label=det];
+"down-regulated16" -> invagination20  [label=prep_with];
+developing22 [style=filled, fillcolor=white, label=developing];
+invagination20 -> developing22  [label=prepc_of];
+cells24 [style=filled, fillcolor=white, label=cells];
+bud23 [style=filled, fillcolor=white, label=bud];
+cells24 -> bud23  [label=nn];
+developing22 -> cells24  [label=dobj];
+skin27 [style=filled, fillcolor=white, label=skin];
+the26 [style=filled, fillcolor=white, label=the];
+skin27 -> the26  [label=det];
+developing22 -> skin27  [label=prep_into];
+"-LSB-28" [style=filled, fillcolor=white, label="-LSB-"];
+skin27 -> "-LSB-28"  [label=vmod];
+"-RSB-30" [style=filled, fillcolor=white, label="-RSB-"];
+429 [style=filled, fillcolor=white, label=4];
+"-RSB-30" -> 429  [label=num];
+"-LSB-28" -> "-RSB-30"  [label=dobj];
+}

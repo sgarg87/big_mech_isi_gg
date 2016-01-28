@@ -1,0 +1,47 @@
+digraph "Upon its activation downstream of PI ( 3 ) K ,  Akt phosphorylates and inactivates GSK-3 ,  decreasing the rate of phosphorylation of glycogen synthase ,  thus increasing its activity state59 ." {
+label="Upon its activation downstream of PI ( 3 ) K ,  Akt phosphorylates and
+inactivates GSK-3 ,  decreasing the rate of phosphorylation of glycogen synthase
+,  thus increasing its activity state59 .";
+activation3 [style=filled, fillcolor=white, label=activation];
+its2 [style=filled, fillcolor=white, label=its];
+activation3 -> its2  [label=poss];
+phosphorylates13 [style=filled, fillcolor=white, label=phosphorylates];
+phosphorylates13 -> activation3  [label=prep_upon];
+downstream4 [style=filled, fillcolor=white, label=downstream];
+activation3 -> downstream4  [label=amod];
+K10 [style=filled, fillcolor=white, label=K];
+PI6 [style=filled, fillcolor=white, label=PI];
+K10 -> PI6  [label=nn];
+38 [style=filled, fillcolor=white, label=3];
+K10 -> 38  [label=appos];
+activation3 -> K10  [label=prep_of];
+Akt12 [style=filled, fillcolor=white, label=Akt];
+phosphorylates13 -> Akt12  [label=nsubj];
+phosphorylates13 -> phosphorylates13  [label=root];
+inactivates15 [style=filled, fillcolor=white, label=inactivates];
+phosphorylates13 -> inactivates15  [label=conj_and];
+"GSK-316" [style=filled, fillcolor=white, label="GSK-3"];
+phosphorylates13 -> "GSK-316"  [label=dobj];
+decreasing18 [style=filled, fillcolor=white, label=decreasing];
+"GSK-316" -> decreasing18  [label=vmod];
+rate20 [style=filled, fillcolor=white, label=rate];
+the19 [style=filled, fillcolor=white, label=the];
+rate20 -> the19  [label=det];
+decreasing18 -> rate20  [label=dobj];
+phosphorylation22 [style=filled, fillcolor=white, label=phosphorylation];
+rate20 -> phosphorylation22  [label=prep_of];
+synthase25 [style=filled, fillcolor=white, label=synthase];
+glycogen24 [style=filled, fillcolor=white, label=glycogen];
+synthase25 -> glycogen24  [label=nn];
+phosphorylation22 -> synthase25  [label=prep_of];
+increasing28 [style=filled, fillcolor=white, label=increasing];
+thus27 [style=filled, fillcolor=white, label=thus];
+increasing28 -> thus27  [label=advmod];
+"GSK-316" -> increasing28  [label=vmod];
+state5931 [style=filled, fillcolor=white, label=state59];
+its29 [style=filled, fillcolor=white, label=its];
+state5931 -> its29  [label=poss];
+activity30 [style=filled, fillcolor=white, label=activity];
+state5931 -> activity30  [label=nn];
+increasing28 -> state5931  [label=dobj];
+}

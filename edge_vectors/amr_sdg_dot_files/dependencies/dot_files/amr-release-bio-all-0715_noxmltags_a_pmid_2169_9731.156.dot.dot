@@ -1,0 +1,30 @@
+digraph "The scr siRNA construct decreased macrophage IGF-1 secretion to a lesser extent ( Figure 8C ) ." {
+label="The scr siRNA construct decreased macrophage IGF-1 secretion to a lesser extent
+( Figure 8C ) .";
+construct4 [style=filled, fillcolor=white, label=construct];
+The1 [style=filled, fillcolor=white, label=The];
+construct4 -> The1  [label=det];
+scr2 [style=filled, fillcolor=white, label=scr];
+construct4 -> scr2  [label=nn];
+siRNA3 [style=filled, fillcolor=white, label=siRNA];
+construct4 -> siRNA3  [label=nn];
+decreased5 [style=filled, fillcolor=white, label=decreased];
+decreased5 -> construct4  [label=nsubj];
+decreased5 -> decreased5  [label=root];
+secretion8 [style=filled, fillcolor=white, label=secretion];
+macrophage6 [style=filled, fillcolor=white, label=macrophage];
+secretion8 -> macrophage6  [label=amod];
+"IGF-17" [style=filled, fillcolor=white, label="IGF-1"];
+secretion8 -> "IGF-17"  [label=nn];
+decreased5 -> secretion8  [label=dobj];
+extent12 [style=filled, fillcolor=white, label=extent];
+a10 [style=filled, fillcolor=white, label=a];
+extent12 -> a10  [label=det];
+lesser11 [style=filled, fillcolor=white, label=lesser];
+extent12 -> lesser11  [label=amod];
+decreased5 -> extent12  [label=prep_to];
+Figure14 [style=filled, fillcolor=white, label=Figure];
+extent12 -> Figure14  [label=appos];
+"8C15" [style=filled, fillcolor=white, label="8C"];
+Figure14 -> "8C15"  [label=num];
+}

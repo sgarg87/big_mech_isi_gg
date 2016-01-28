@@ -1,0 +1,49 @@
+digraph "( Middle ) Cos-7 cells were transfected ( Tfx ) with HA-tagged PAK65 ( all lanes ) together with the plasmids indicated on the top ( ctr ,  empty vector ) and serum starved for 24 h." {
+label="( Middle ) Cos-7 cells were transfected ( Tfx ) with HA-tagged PAK65 ( all
+lanes ) together with the plasmids indicated on the top ( ctr ,  empty vector )
+and serum starved for 24 h.";
+Middle2 [style=filled, fillcolor=white, label=Middle];
+Middle2 -> Middle2  [label=root];
+cells5 [style=filled, fillcolor=white, label=cells];
+"Cos-74" [style=filled, fillcolor=white, label="Cos-7"];
+cells5 -> "Cos-74"  [label=nn];
+transfected7 [style=filled, fillcolor=white, label=transfected];
+transfected7 -> cells5  [label=nsubjpass];
+were6 [style=filled, fillcolor=white, label=were];
+transfected7 -> were6  [label=auxpass];
+Middle2 -> transfected7  [label=rcmod];
+Tfx9 [style=filled, fillcolor=white, label=Tfx];
+Middle2 -> Tfx9  [label=appos];
+PAK6513 [style=filled, fillcolor=white, label=PAK65];
+"HA-tagged12" [style=filled, fillcolor=white, label="HA-tagged"];
+PAK6513 -> "HA-tagged12"  [label=amod];
+Middle2 -> PAK6513  [label=prep_with];
+lanes16 [style=filled, fillcolor=white, label=lanes];
+all15 [style=filled, fillcolor=white, label=all];
+lanes16 -> all15  [label=quantmod];
+PAK6513 -> lanes16  [label=dep];
+plasmids21 [style=filled, fillcolor=white, label=plasmids];
+the20 [style=filled, fillcolor=white, label=the];
+plasmids21 -> the20  [label=det];
+indicated22 [style=filled, fillcolor=white, label=indicated];
+indicated22 -> plasmids21  [label=prep_together_with];
+PAK6513 -> indicated22  [label=vmod];
+top25 [style=filled, fillcolor=white, label=top];
+the24 [style=filled, fillcolor=white, label=the];
+top25 -> the24  [label=det];
+indicated22 -> top25  [label=prep_on];
+ctr27 [style=filled, fillcolor=white, label=ctr];
+top25 -> ctr27  [label=dep];
+vector30 [style=filled, fillcolor=white, label=vector];
+empty29 [style=filled, fillcolor=white, label=empty];
+vector30 -> empty29  [label=amod];
+ctr27 -> vector30  [label=appos];
+serum33 [style=filled, fillcolor=white, label=serum];
+top25 -> serum33  [label=conj_and];
+starved34 [style=filled, fillcolor=white, label=starved];
+serum33 -> starved34  [label=vmod];
+"h.37" [style=filled, fillcolor=white, label="h."];
+2436 [style=filled, fillcolor=white, label=24];
+"h.37" -> 2436  [label=num];
+starved34 -> "h.37"  [label=prep_for];
+}

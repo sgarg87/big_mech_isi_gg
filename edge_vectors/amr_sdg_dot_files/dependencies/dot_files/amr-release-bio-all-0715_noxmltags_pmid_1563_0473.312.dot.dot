@@ -1,0 +1,57 @@
+digraph "Equal amounts of proteins were then resolved by SDS-PAGE through 12 % gels and subjected to Western blotting using either an affinity-purified Snail polyclonal antiserum ,  which we generated ,  or anti-tubulin ( loading control ) ." {
+label="Equal amounts of proteins were then resolved by SDS-PAGE through 12 % gels and
+subjected to Western blotting using either an affinity-purified Snail polyclonal
+antiserum ,  which we generated ,  or anti-tubulin ( loading control ) .";
+amounts2 [style=filled, fillcolor=white, label=amounts];
+Equal1 [style=filled, fillcolor=white, label=Equal];
+amounts2 -> Equal1  [label=nn];
+resolved7 [style=filled, fillcolor=white, label=resolved];
+resolved7 -> amounts2  [label=nsubjpass];
+proteins4 [style=filled, fillcolor=white, label=proteins];
+amounts2 -> proteins4  [label=prep_of];
+were5 [style=filled, fillcolor=white, label=were];
+resolved7 -> were5  [label=auxpass];
+then6 [style=filled, fillcolor=white, label=then];
+resolved7 -> then6  [label=advmod];
+resolved7 -> resolved7  [label=root];
+"SDS-PAGE9" [style=filled, fillcolor=white, label="SDS-PAGE"];
+resolved7 -> "SDS-PAGE9"  [label=agent];
+"%12" [style=filled, fillcolor=white, label="%"];
+12 [style=filled, fillcolor=white, label=12];
+"%12" -> 12  [label=number];
+gels13 [style=filled, fillcolor=white, label=gels];
+gels13 -> "%12"  [label=amod];
+resolved7 -> gels13  [label=prep_through];
+subjected15 [style=filled, fillcolor=white, label=subjected];
+resolved7 -> subjected15  [label=conj_and];
+Western17 [style=filled, fillcolor=white, label=Western];
+subjected15 -> Western17  [label=prep_to];
+blotting18 [style=filled, fillcolor=white, label=blotting];
+Western17 -> blotting18  [label=vmod];
+using19 [style=filled, fillcolor=white, label=using];
+blotting18 -> using19  [label=vmod];
+either20 [style=filled, fillcolor=white, label=either];
+using19 -> either20  [label=prep];
+antiserum25 [style=filled, fillcolor=white, label=antiserum];
+an21 [style=filled, fillcolor=white, label=an];
+antiserum25 -> an21  [label=det];
+"affinity-purified22" [style=filled, fillcolor=white, label="affinity-purified"];
+antiserum25 -> "affinity-purified22"  [label=amod];
+Snail23 [style=filled, fillcolor=white, label=Snail];
+antiserum25 -> Snail23  [label=nn];
+polyclonal24 [style=filled, fillcolor=white, label=polyclonal];
+antiserum25 -> polyclonal24  [label=nn];
+either20 -> antiserum25  [label=pobj];
+generated29 [style=filled, fillcolor=white, label=generated];
+which27 [style=filled, fillcolor=white, label=which];
+generated29 -> which27  [label=dobj];
+we28 [style=filled, fillcolor=white, label=we];
+generated29 -> we28  [label=nsubj];
+antiserum25 -> generated29  [label=rcmod];
+"anti-tubulin32" [style=filled, fillcolor=white, label="anti-tubulin"];
+Western17 -> "anti-tubulin32"  [label=conj_or];
+control35 [style=filled, fillcolor=white, label=control];
+loading34 [style=filled, fillcolor=white, label=loading];
+control35 -> loading34  [label=nn];
+"anti-tubulin32" -> control35  [label=appos];
+}

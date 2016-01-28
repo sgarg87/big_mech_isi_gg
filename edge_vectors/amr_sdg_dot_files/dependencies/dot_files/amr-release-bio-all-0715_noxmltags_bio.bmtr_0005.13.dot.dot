@@ -1,0 +1,34 @@
+digraph "The phosphorylated ASPP2 fragment by MAPK1 was digested by trypsin and fractioned on a high performance liquid chromatography ( HPLC ) ." {
+label="The phosphorylated ASPP2 fragment by MAPK1 was digested by trypsin and
+fractioned on a high performance liquid chromatography ( HPLC ) .";
+fragment4 [style=filled, fillcolor=white, label=fragment];
+The1 [style=filled, fillcolor=white, label=The];
+fragment4 -> The1  [label=det];
+phosphorylated2 [style=filled, fillcolor=white, label=phosphorylated];
+fragment4 -> phosphorylated2  [label=amod];
+ASPP23 [style=filled, fillcolor=white, label=ASPP2];
+fragment4 -> ASPP23  [label=nn];
+digested8 [style=filled, fillcolor=white, label=digested];
+digested8 -> fragment4  [label=nsubjpass];
+MAPK16 [style=filled, fillcolor=white, label=MAPK1];
+fragment4 -> MAPK16  [label=prep_by];
+was7 [style=filled, fillcolor=white, label=was];
+digested8 -> was7  [label=auxpass];
+digested8 -> digested8  [label=root];
+trypsin10 [style=filled, fillcolor=white, label=trypsin];
+digested8 -> trypsin10  [label=agent];
+fractioned12 [style=filled, fillcolor=white, label=fractioned];
+digested8 -> fractioned12  [label=conj_and];
+chromatography18 [style=filled, fillcolor=white, label=chromatography];
+a14 [style=filled, fillcolor=white, label=a];
+chromatography18 -> a14  [label=det];
+high15 [style=filled, fillcolor=white, label=high];
+chromatography18 -> high15  [label=amod];
+performance16 [style=filled, fillcolor=white, label=performance];
+chromatography18 -> performance16  [label=nn];
+liquid17 [style=filled, fillcolor=white, label=liquid];
+chromatography18 -> liquid17  [label=nn];
+fractioned12 -> chromatography18  [label=prep_on];
+HPLC20 [style=filled, fillcolor=white, label=HPLC];
+chromatography18 -> HPLC20  [label=appos];
+}

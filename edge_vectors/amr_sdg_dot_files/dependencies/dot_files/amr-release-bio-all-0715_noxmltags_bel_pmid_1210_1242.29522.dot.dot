@@ -1,0 +1,43 @@
+digraph "The levels of collagen alpha1 ( I ) ,  alpha1 ( III ) ,  and fibronectin mRNAs were reduced in 1-day wounds of Nrf2 knockout mice compared to control littermates ." {
+label="The levels of collagen alpha1 ( I ) ,  alpha1 ( III ) ,  and fibronectin mRNAs
+were reduced in 1-day wounds of Nrf2 knockout mice compared to control
+littermates .";
+levels2 [style=filled, fillcolor=white, label=levels];
+The1 [style=filled, fillcolor=white, label=The];
+levels2 -> The1  [label=det];
+reduced19 [style=filled, fillcolor=white, label=reduced];
+reduced19 -> levels2  [label=nsubjpass];
+alpha15 [style=filled, fillcolor=white, label=alpha1];
+collagen4 [style=filled, fillcolor=white, label=collagen];
+alpha15 -> collagen4  [label=nn];
+levels2 -> alpha15  [label=prep_of];
+I7 [style=filled, fillcolor=white, label=I];
+alpha15 -> I7  [label=dep];
+alpha110 [style=filled, fillcolor=white, label=alpha1];
+alpha15 -> alpha110  [label=conj_and];
+III12 [style=filled, fillcolor=white, label=III];
+alpha110 -> III12  [label=appos];
+mRNAs17 [style=filled, fillcolor=white, label=mRNAs];
+fibronectin16 [style=filled, fillcolor=white, label=fibronectin];
+mRNAs17 -> fibronectin16  [label=nn];
+alpha15 -> mRNAs17  [label=conj_and];
+were18 [style=filled, fillcolor=white, label=were];
+reduced19 -> were18  [label=auxpass];
+reduced19 -> reduced19  [label=root];
+wounds22 [style=filled, fillcolor=white, label=wounds];
+"1-day2" [style=filled, fillcolor=white, label="1-day"];
+wounds22 -> "1-day2"  [label=amod];
+reduced19 -> wounds22  [label=prep_in];
+mice26 [style=filled, fillcolor=white, label=mice];
+Nrf224 [style=filled, fillcolor=white, label=Nrf2];
+mice26 -> Nrf224  [label=amod];
+knockout25 [style=filled, fillcolor=white, label=knockout];
+mice26 -> knockout25  [label=nn];
+wounds22 -> mice26  [label=prep_of];
+to28 [style=filled, fillcolor=white, label=to];
+reduced19 -> to28  [label=prepc_compared_to];
+littermates30 [style=filled, fillcolor=white, label=littermates];
+control29 [style=filled, fillcolor=white, label=control];
+littermates30 -> control29  [label=nn];
+reduced19 -> littermates30  [label=pobj];
+}

@@ -1,0 +1,71 @@
+digraph "Taken together ,  MØCM-induced neoplastic Akt and Erk1/2 phosphorylation was magnified several-fold by inhibitor treatment ,  dissociating kinase activity from proliferation in drug-treated cells ; however ,  cyclin D1 levels were suppressed by either drug alone ,  which corresponded to decreased cell proliferation ." {
+label="Taken together ,  MØCM-induced neoplastic Akt and Erk1/2 phosphorylation was
+magnified several-fold by inhibitor treatment ,  dissociating kinase activity
+from proliferation in drug-treated cells ; however ,  cyclin D1 levels were
+suppressed by either drug alone ,  which corresponded to decreased cell
+proliferation .";
+magnified11 [style=filled, fillcolor=white, label=magnified];
+Taken1 [style=filled, fillcolor=white, label=Taken];
+magnified11 -> Taken1  [label=vmod];
+together2 [style=filled, fillcolor=white, label=together];
+Taken1 -> together2  [label=advmod];
+Akt6 [style=filled, fillcolor=white, label=Akt];
+"MØCM-induced4" [style=filled, fillcolor=white, label="MØCM-induced"];
+Akt6 -> "MØCM-induced4"  [label=amod];
+neoplastic5 [style=filled, fillcolor=white, label=neoplastic];
+Akt6 -> neoplastic5  [label=amod];
+magnified11 -> Akt6  [label=nsubjpass];
+phosphorylation9 [style=filled, fillcolor=white, label=phosphorylation];
+"Erk1/28" [style=filled, fillcolor=white, label="Erk1/2"];
+phosphorylation9 -> "Erk1/28"  [label=amod];
+Akt6 -> phosphorylation9  [label=conj_and];
+was10 [style=filled, fillcolor=white, label=was];
+magnified11 -> was10  [label=auxpass];
+magnified11 -> magnified11  [label=root];
+"several-fold12" [style=filled, fillcolor=white, label="several-fold"];
+magnified11 -> "several-fold12"  [label=xcomp];
+treatment15 [style=filled, fillcolor=white, label=treatment];
+inhibitor14 [style=filled, fillcolor=white, label=inhibitor];
+treatment15 -> inhibitor14  [label=nn];
+"several-fold12" -> treatment15  [label=prep_by];
+dissociating17 [style=filled, fillcolor=white, label=dissociating];
+magnified11 -> dissociating17  [label=xcomp];
+activity19 [style=filled, fillcolor=white, label=activity];
+kinase18 [style=filled, fillcolor=white, label=kinase];
+activity19 -> kinase18  [label=amod];
+dissociating17 -> activity19  [label=dobj];
+proliferation21 [style=filled, fillcolor=white, label=proliferation];
+dissociating17 -> proliferation21  [label=prep_from];
+cells24 [style=filled, fillcolor=white, label=cells];
+"drug-treated23" [style=filled, fillcolor=white, label="drug-treated"];
+cells24 -> "drug-treated23"  [label=amod];
+proliferation21 -> cells24  [label=prep_in];
+suppressed32 [style=filled, fillcolor=white, label=suppressed];
+however26 [style=filled, fillcolor=white, label=however];
+suppressed32 -> however26  [label=advmod];
+levels30 [style=filled, fillcolor=white, label=levels];
+cyclin28 [style=filled, fillcolor=white, label=cyclin];
+levels30 -> cyclin28  [label=nn];
+D129 [style=filled, fillcolor=white, label=D1];
+levels30 -> D129  [label=nn];
+suppressed32 -> levels30  [label=nsubjpass];
+were31 [style=filled, fillcolor=white, label=were];
+suppressed32 -> were31  [label=auxpass];
+magnified11 -> suppressed32  [label=parataxis];
+drug35 [style=filled, fillcolor=white, label=drug];
+either34 [style=filled, fillcolor=white, label=either];
+drug35 -> either34  [label=det];
+suppressed32 -> drug35  [label=agent];
+alone36 [style=filled, fillcolor=white, label=alone];
+drug35 -> alone36  [label=advmod];
+corresponded39 [style=filled, fillcolor=white, label=corresponded];
+which38 [style=filled, fillcolor=white, label=which];
+corresponded39 -> which38  [label=nsubj];
+drug35 -> corresponded39  [label=rcmod];
+proliferation43 [style=filled, fillcolor=white, label=proliferation];
+decreased41 [style=filled, fillcolor=white, label=decreased];
+proliferation43 -> decreased41  [label=amod];
+cell42 [style=filled, fillcolor=white, label=cell];
+proliferation43 -> cell42  [label=nn];
+corresponded39 -> proliferation43  [label=prep_to];
+}

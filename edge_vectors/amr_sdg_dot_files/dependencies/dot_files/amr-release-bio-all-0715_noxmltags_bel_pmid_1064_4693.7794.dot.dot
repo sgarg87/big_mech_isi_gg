@@ -1,0 +1,43 @@
+digraph "Furthermore ,  the hCdc14 phosphatases were found to dephosphorylate p53 specifically at the p34 ( Cdc2 ) / clb phosphorylation site ( p53-phosphor-Ser ( 315 ) ) ." {
+label="Furthermore ,  the hCdc14 phosphatases were found to dephosphorylate p53
+specifically at the p34 ( Cdc2 ) / clb phosphorylation site ( p53-phosphor-Ser (
+315 ) ) .";
+found7 [style=filled, fillcolor=white, label=found];
+Furthermore1 [style=filled, fillcolor=white, label=Furthermore];
+found7 -> Furthermore1  [label=advmod];
+phosphatases5 [style=filled, fillcolor=white, label=phosphatases];
+the3 [style=filled, fillcolor=white, label=the];
+phosphatases5 -> the3  [label=det];
+hCdc14 [style=filled, fillcolor=white, label=hCdc14];
+phosphatases5 -> hCdc14  [label=amod];
+found7 -> phosphatases5  [label=nsubjpass];
+were6 [style=filled, fillcolor=white, label=were];
+found7 -> were6  [label=auxpass];
+found7 -> found7  [label=root];
+dephosphorylate9 [style=filled, fillcolor=white, label=dephosphorylate];
+to8 [style=filled, fillcolor=white, label=to];
+dephosphorylate9 -> to8  [label=aux];
+found7 -> dephosphorylate9  [label=xcomp];
+p5310 [style=filled, fillcolor=white, label=p53];
+dephosphorylate9 -> p5310  [label=dobj];
+specifically11 [style=filled, fillcolor=white, label=specifically];
+dephosphorylate9 -> specifically11  [label=advmod];
+site21 [style=filled, fillcolor=white, label=site];
+the13 [style=filled, fillcolor=white, label=the];
+site21 -> the13  [label=det];
+p341 [style=filled, fillcolor=white, label=p34];
+site21 -> p341  [label=amod];
+Cdc216 [style=filled, fillcolor=white, label=Cdc2];
+site21 -> Cdc216  [label=appos];
+"/18" [style=filled, fillcolor=white, label="/"];
+site21 -> "/18"  [label=nn];
+clb19 [style=filled, fillcolor=white, label=clb];
+site21 -> clb19  [label=nn];
+phosphorylation20 [style=filled, fillcolor=white, label=phosphorylation];
+site21 -> phosphorylation20  [label=nn];
+dephosphorylate9 -> site21  [label=prep_at];
+"p53-phosphor-Ser2" [style=filled, fillcolor=white, label="p53-phosphor-Ser"];
+site21 -> "p53-phosphor-Ser2"  [label=dep];
+3152 [style=filled, fillcolor=white, label=315];
+"p53-phosphor-Ser2" -> 3152  [label=dep];
+}

@@ -1,0 +1,36 @@
+digraph "We found that both Tyr-627 and Tyr-659 of Gab1 were required for SHP2 binding to Gab1 and for ERK2 activation by EGF ." {
+label="We found that both Tyr-627 and Tyr-659 of Gab1 were required for SHP2 binding
+to Gab1 and for ERK2 activation by EGF .";
+found2 [style=filled, fillcolor=white, label=found];
+We1 [style=filled, fillcolor=white, label=We];
+found2 -> We1  [label=nsubj];
+found2 -> found2  [label=root];
+required11 [style=filled, fillcolor=white, label=required];
+that3 [style=filled, fillcolor=white, label=that];
+required11 -> that3  [label=mark];
+"Tyr-6275" [style=filled, fillcolor=white, label="Tyr-627"];
+both4 [style=filled, fillcolor=white, label=both];
+"Tyr-6275" -> both4  [label=preconj];
+required11 -> "Tyr-6275"  [label=nsubjpass];
+"Tyr-6597" [style=filled, fillcolor=white, label="Tyr-659"];
+"Tyr-6275" -> "Tyr-6597"  [label=conj_and];
+Gab19 [style=filled, fillcolor=white, label=Gab1];
+"Tyr-6275" -> Gab19  [label=prep_of];
+were10 [style=filled, fillcolor=white, label=were];
+required11 -> were10  [label=auxpass];
+found2 -> required11  [label=ccomp];
+activation20 [style=filled, fillcolor=white, label=activation];
+SHP213 [style=filled, fillcolor=white, label=SHP2];
+activation20 -> SHP213  [label=nn];
+binding14 [style=filled, fillcolor=white, label=binding];
+activation20 -> binding14  [label=amod];
+Gab116 [style=filled, fillcolor=white, label=Gab1];
+binding14 -> Gab116  [label=prep_to];
+for18 [style=filled, fillcolor=white, label=for];
+binding14 -> for18  [label=conj_and];
+ERK219 [style=filled, fillcolor=white, label=ERK2];
+for18 -> ERK219  [label=pobj];
+required11 -> activation20  [label=prep_for];
+EGF22 [style=filled, fillcolor=white, label=EGF];
+required11 -> EGF22  [label=agent];
+}

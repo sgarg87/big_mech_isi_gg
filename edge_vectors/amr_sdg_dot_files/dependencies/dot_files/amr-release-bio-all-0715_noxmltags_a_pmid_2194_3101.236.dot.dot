@@ -1,0 +1,30 @@
+digraph "Altered localization of E-cadherin is an important mechanism contributing to cell metastasis -LSB- 35 -RSB- ." {
+label="Altered localization of E-cadherin is an important mechanism contributing to
+cell metastasis -LSB- 35 -RSB- .";
+localization2 [style=filled, fillcolor=white, label=localization];
+Altered1 [style=filled, fillcolor=white, label=Altered];
+localization2 -> Altered1  [label=amod];
+mechanism8 [style=filled, fillcolor=white, label=mechanism];
+mechanism8 -> localization2  [label=nsubj];
+"E-cadherin4" [style=filled, fillcolor=white, label="E-cadherin"];
+localization2 -> "E-cadherin4"  [label=prep_of];
+is5 [style=filled, fillcolor=white, label=is];
+mechanism8 -> is5  [label=cop];
+an6 [style=filled, fillcolor=white, label=an];
+mechanism8 -> an6  [label=det];
+important7 [style=filled, fillcolor=white, label=important];
+mechanism8 -> important7  [label=amod];
+mechanism8 -> mechanism8  [label=root];
+contributing9 [style=filled, fillcolor=white, label=contributing];
+mechanism8 -> contributing9  [label=vmod];
+metastasis12 [style=filled, fillcolor=white, label=metastasis];
+cell11 [style=filled, fillcolor=white, label=cell];
+metastasis12 -> cell11  [label=nn];
+contributing9 -> metastasis12  [label=prep_to];
+"-LSB-13" [style=filled, fillcolor=white, label="-LSB-"];
+contributing9 -> "-LSB-13"  [label=vmod];
+"-RSB-15" [style=filled, fillcolor=white, label="-RSB-"];
+3514 [style=filled, fillcolor=white, label=35];
+"-RSB-15" -> 3514  [label=num];
+"-LSB-13" -> "-RSB-15"  [label=dobj];
+}

@@ -1,0 +1,36 @@
+digraph "It has recently been shown that oncogenic RAS can enhance the apoptotic function of p53 via ASPP1 and ASPP2 ." {
+label="It has recently been shown that oncogenic RAS can enhance the apoptotic
+function of p53 via ASPP1 and ASPP2 .";
+shown5 [style=filled, fillcolor=white, label=shown];
+It1 [style=filled, fillcolor=white, label=It];
+shown5 -> It1  [label=nsubjpass];
+has2 [style=filled, fillcolor=white, label=has];
+shown5 -> has2  [label=aux];
+recently3 [style=filled, fillcolor=white, label=recently];
+shown5 -> recently3  [label=advmod];
+been4 [style=filled, fillcolor=white, label=been];
+shown5 -> been4  [label=auxpass];
+shown5 -> shown5  [label=root];
+enhance10 [style=filled, fillcolor=white, label=enhance];
+that6 [style=filled, fillcolor=white, label=that];
+enhance10 -> that6  [label=mark];
+RAS8 [style=filled, fillcolor=white, label=RAS];
+oncogenic7 [style=filled, fillcolor=white, label=oncogenic];
+RAS8 -> oncogenic7  [label=amod];
+enhance10 -> RAS8  [label=nsubj];
+can9 [style=filled, fillcolor=white, label=can];
+enhance10 -> can9  [label=aux];
+shown5 -> enhance10  [label=ccomp];
+function13 [style=filled, fillcolor=white, label=function];
+the11 [style=filled, fillcolor=white, label=the];
+function13 -> the11  [label=det];
+apoptotic12 [style=filled, fillcolor=white, label=apoptotic];
+function13 -> apoptotic12  [label=amod];
+enhance10 -> function13  [label=dobj];
+p531 [style=filled, fillcolor=white, label=p53];
+function13 -> p531  [label=prep_of];
+ASPP117 [style=filled, fillcolor=white, label=ASPP1];
+p531 -> ASPP117  [label=prep_via];
+ASPP219 [style=filled, fillcolor=white, label=ASPP2];
+ASPP117 -> ASPP219  [label=conj_and];
+}

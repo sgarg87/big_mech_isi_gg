@@ -1,0 +1,55 @@
+digraph ": In CD4 + T cells from naive DBA/1 mice ,  IL-23 alone hardly induced retinoic acid-related orphan receptor gammat ( RORgammat ) ,  Th17 polarization ,  and Th17 cytokines ,  but it inhibited T-bet expression ." {
+label=": In CD4 + T cells from naive DBA/1 mice ,  IL-23 alone hardly induced retinoic
+acid-related orphan receptor gammat ( RORgammat ) ,  Th17 polarization ,  and
+Th17 cytokines ,  but it inhibited T-bet expression .";
+cells6 [style=filled, fillcolor=white, label=cells];
+CD43 [style=filled, fillcolor=white, label=CD4];
+cells6 -> CD43  [label=num];
+"+4" [style=filled, fillcolor=white, label="+"];
+cells6 -> "+4"  [label=nn];
+T5 [style=filled, fillcolor=white, label=T];
+cells6 -> T5  [label=nn];
+induced15 [style=filled, fillcolor=white, label=induced];
+induced15 -> cells6  [label=prep_in];
+mice10 [style=filled, fillcolor=white, label=mice];
+naive8 [style=filled, fillcolor=white, label=naive];
+mice10 -> naive8  [label=amod];
+"DBA/19" [style=filled, fillcolor=white, label="DBA/1"];
+naive8 -> "DBA/19"  [label=dep];
+cells6 -> mice10  [label=prep_from];
+"IL-231" [style=filled, fillcolor=white, label="IL-23"];
+induced15 -> "IL-231"  [label=nsubj];
+alone13 [style=filled, fillcolor=white, label=alone];
+induced15 -> alone13  [label=advmod];
+hardly14 [style=filled, fillcolor=white, label=hardly];
+induced15 -> hardly14  [label=advmod];
+induced15 -> induced15  [label=root];
+gammat20 [style=filled, fillcolor=white, label=gammat];
+retinoic16 [style=filled, fillcolor=white, label=retinoic];
+gammat20 -> retinoic16  [label=amod];
+"acid-related17" [style=filled, fillcolor=white, label="acid-related"];
+gammat20 -> "acid-related17"  [label=amod];
+orphan18 [style=filled, fillcolor=white, label=orphan];
+gammat20 -> orphan18  [label=amod];
+receptor19 [style=filled, fillcolor=white, label=receptor];
+gammat20 -> receptor19  [label=nn];
+induced15 -> gammat20  [label=dobj];
+RORgammat22 [style=filled, fillcolor=white, label=RORgammat];
+gammat20 -> RORgammat22  [label=appos];
+polarization26 [style=filled, fillcolor=white, label=polarization];
+Th1725 [style=filled, fillcolor=white, label=Th17];
+polarization26 -> Th1725  [label=amod];
+gammat20 -> polarization26  [label=conj_and];
+cytokines30 [style=filled, fillcolor=white, label=cytokines];
+Th1729 [style=filled, fillcolor=white, label=Th17];
+cytokines30 -> Th1729  [label=amod];
+gammat20 -> cytokines30  [label=conj_and];
+inhibited34 [style=filled, fillcolor=white, label=inhibited];
+it33 [style=filled, fillcolor=white, label=it];
+inhibited34 -> it33  [label=nsubj];
+induced15 -> inhibited34  [label=conj_but];
+expression36 [style=filled, fillcolor=white, label=expression];
+"T-bet35" [style=filled, fillcolor=white, label="T-bet"];
+expression36 -> "T-bet35"  [label=amod];
+inhibited34 -> expression36  [label=dobj];
+}

@@ -1,0 +1,64 @@
+digraph "This may drive a stronger signal through this effector pathway and account for higher frequency of N-Ras position 61 mutations in melanoma ,  a disease frequently driven by hyperactivation of Raf kinase through B-Raf mutations ( Buhrman et al. ,  2010 ) ." {
+label="This may drive a stronger signal through this effector pathway and account for
+higher frequency of N-Ras position 61 mutations in melanoma ,  a disease
+frequently driven by hyperactivation of Raf kinase through B-Raf mutations (
+Buhrman et al. ,  2010 ) .";
+drive3 [style=filled, fillcolor=white, label=drive];
+This1 [style=filled, fillcolor=white, label=This];
+drive3 -> This1  [label=nsubj];
+may2 [style=filled, fillcolor=white, label=may];
+drive3 -> may2  [label=aux];
+drive3 -> drive3  [label=root];
+signal6 [style=filled, fillcolor=white, label=signal];
+a4 [style=filled, fillcolor=white, label=a];
+signal6 -> a4  [label=det];
+stronger5 [style=filled, fillcolor=white, label=stronger];
+signal6 -> stronger5  [label=amod];
+drive3 -> signal6  [label=dobj];
+pathway10 [style=filled, fillcolor=white, label=pathway];
+this8 [style=filled, fillcolor=white, label=this];
+pathway10 -> this8  [label=det];
+effector9 [style=filled, fillcolor=white, label=effector];
+pathway10 -> effector9  [label=nn];
+drive3 -> pathway10  [label=prep_through];
+account12 [style=filled, fillcolor=white, label=account];
+drive3 -> account12  [label=conj_and];
+frequency15 [style=filled, fillcolor=white, label=frequency];
+higher14 [style=filled, fillcolor=white, label=higher];
+frequency15 -> higher14  [label=amod];
+account12 -> frequency15  [label=prep_for];
+position18 [style=filled, fillcolor=white, label=position];
+"N-Ras17" [style=filled, fillcolor=white, label="N-Ras"];
+position18 -> "N-Ras17"  [label=nn];
+frequency15 -> position18  [label=prep_of];
+mutations20 [style=filled, fillcolor=white, label=mutations];
+6119 [style=filled, fillcolor=white, label=61];
+mutations20 -> 6119  [label=num];
+account12 -> mutations20  [label=dobj];
+melanoma22 [style=filled, fillcolor=white, label=melanoma];
+mutations20 -> melanoma22  [label=prep_in];
+disease25 [style=filled, fillcolor=white, label=disease];
+a24 [style=filled, fillcolor=white, label=a];
+disease25 -> a24  [label=det];
+melanoma22 -> disease25  [label=appos];
+driven27 [style=filled, fillcolor=white, label=driven];
+frequently26 [style=filled, fillcolor=white, label=frequently];
+driven27 -> frequently26  [label=advmod];
+disease25 -> driven27  [label=vmod];
+hyperactivation29 [style=filled, fillcolor=white, label=hyperactivation];
+driven27 -> hyperactivation29  [label=agent];
+kinase32 [style=filled, fillcolor=white, label=kinase];
+Raf31 [style=filled, fillcolor=white, label=Raf];
+kinase32 -> Raf31  [label=nn];
+hyperactivation29 -> kinase32  [label=prep_of];
+mutations35 [style=filled, fillcolor=white, label=mutations];
+"B-Raf34" [style=filled, fillcolor=white, label="B-Raf"];
+mutations35 -> "B-Raf34"  [label=amod];
+driven27 -> mutations35  [label=prep_through];
+Buhrman37 [style=filled, fillcolor=white, label=Buhrman];
+mutations35 -> Buhrman37  [label=appos];
+"al.39" [style=filled, fillcolor=white, label="al."];
+Buhrman37 -> "al.39"  [label=conj_et];
+20104 [style=filled, fillcolor=white, label=2010];
+Buhrman37 -> 20104  [label=dep];
+}

@@ -1,0 +1,36 @@
+digraph "It was also assumed that MEK and extracellular signal-regulated kinase ( ERK ) inhibitors would have the same effect ." {
+label="It was also assumed that MEK and extracellular signal-regulated kinase ( ERK )
+inhibitors would have the same effect .";
+assumed4 [style=filled, fillcolor=white, label=assumed];
+It1 [style=filled, fillcolor=white, label=It];
+assumed4 -> It1  [label=nsubjpass];
+was2 [style=filled, fillcolor=white, label=was];
+assumed4 -> was2  [label=auxpass];
+also3 [style=filled, fillcolor=white, label=also];
+assumed4 -> also3  [label=advmod];
+assumed4 -> assumed4  [label=root];
+have16 [style=filled, fillcolor=white, label=have];
+that5 [style=filled, fillcolor=white, label=that];
+have16 -> that5  [label=mark];
+MEK6 [style=filled, fillcolor=white, label=MEK];
+have16 -> MEK6  [label=nsubj];
+inhibitors14 [style=filled, fillcolor=white, label=inhibitors];
+extracellular8 [style=filled, fillcolor=white, label=extracellular];
+inhibitors14 -> extracellular8  [label=amod];
+"signal-regulated9" [style=filled, fillcolor=white, label="signal-regulated"];
+inhibitors14 -> "signal-regulated9"  [label=amod];
+kinase10 [style=filled, fillcolor=white, label=kinase];
+inhibitors14 -> kinase10  [label=nn];
+ERK12 [style=filled, fillcolor=white, label=ERK];
+inhibitors14 -> ERK12  [label=appos];
+MEK6 -> inhibitors14  [label=conj_and];
+would15 [style=filled, fillcolor=white, label=would];
+have16 -> would15  [label=aux];
+assumed4 -> have16  [label=ccomp];
+effect19 [style=filled, fillcolor=white, label=effect];
+the17 [style=filled, fillcolor=white, label=the];
+effect19 -> the17  [label=det];
+same18 [style=filled, fillcolor=white, label=same];
+effect19 -> same18  [label=amod];
+have16 -> effect19  [label=dobj];
+}

@@ -1,0 +1,66 @@
+digraph "Mnk1 was also activated at lower levels in Mapk14-null mice ( Fig. 3b ) . This p38a-activated protein kinase phosphorylates and stabilizes Sprouty2 ( ref . 26 ) ,  which in turn can negatively regulate tyrosine kinase receptor signaling in lung cells27 ." {
+label="Mnk1 was also activated at lower levels in Mapk14-null mice ( Fig. 3b ) . This
+p38a-activated protein kinase phosphorylates and stabilizes Sprouty2 ( ref . 26
+) ,  which in turn can negatively regulate tyrosine kinase receptor signaling in
+lung cells27 .";
+activated4 [style=filled, fillcolor=white, label=activated];
+Mnk1 [style=filled, fillcolor=white, label=Mnk1];
+activated4 -> Mnk1  [label=nsubjpass];
+was2 [style=filled, fillcolor=white, label=was];
+activated4 -> was2  [label=auxpass];
+also3 [style=filled, fillcolor=white, label=also];
+activated4 -> also3  [label=advmod];
+phosphorylates20 [style=filled, fillcolor=white, label=phosphorylates];
+phosphorylates20 -> activated4  [label=dep];
+levels7 [style=filled, fillcolor=white, label=levels];
+lower6 [style=filled, fillcolor=white, label=lower];
+levels7 -> lower6  [label=amod];
+activated4 -> levels7  [label=prep_at];
+mice10 [style=filled, fillcolor=white, label=mice];
+"Mapk14-null9" [style=filled, fillcolor=white, label="Mapk14-null"];
+mice10 -> "Mapk14-null9"  [label=nn];
+activated4 -> mice10  [label=prep_in];
+"3b1" [style=filled, fillcolor=white, label="3b"];
+"Fig.12" [style=filled, fillcolor=white, label="Fig."];
+"3b1" -> "Fig.12"  [label=nn];
+mice10 -> "3b1"  [label=appos];
+kinase19 [style=filled, fillcolor=white, label=kinase];
+This16 [style=filled, fillcolor=white, label=This];
+kinase19 -> This16  [label=det];
+"p38a-activated17" [style=filled, fillcolor=white, label="p38a-activated"];
+kinase19 -> "p38a-activated17"  [label=amod];
+protein18 [style=filled, fillcolor=white, label=protein];
+kinase19 -> protein18  [label=nn];
+phosphorylates20 -> kinase19  [label=nsubj];
+phosphorylates20 -> phosphorylates20  [label=root];
+stabilizes22 [style=filled, fillcolor=white, label=stabilizes];
+phosphorylates20 -> stabilizes22  [label=conj_and];
+Sprouty223 [style=filled, fillcolor=white, label=Sprouty2];
+phosphorylates20 -> Sprouty223  [label=dobj];
+ref25 [style=filled, fillcolor=white, label=ref];
+Sprouty223 -> ref25  [label=dep];
+2627 [style=filled, fillcolor=white, label=26];
+ref25 -> 2627  [label=dep];
+regulate35 [style=filled, fillcolor=white, label=regulate];
+which30 [style=filled, fillcolor=white, label=which];
+regulate35 -> which30  [label=nsubj];
+turn32 [style=filled, fillcolor=white, label=turn];
+regulate35 -> turn32  [label=prep_in];
+can33 [style=filled, fillcolor=white, label=can];
+regulate35 -> can33  [label=aux];
+negatively34 [style=filled, fillcolor=white, label=negatively];
+regulate35 -> negatively34  [label=advmod];
+Sprouty223 -> regulate35  [label=rcmod];
+receptor38 [style=filled, fillcolor=white, label=receptor];
+tyrosine36 [style=filled, fillcolor=white, label=tyrosine];
+receptor38 -> tyrosine36  [label=amod];
+kinase37 [style=filled, fillcolor=white, label=kinase];
+receptor38 -> kinase37  [label=nn];
+regulate35 -> receptor38  [label=dobj];
+signaling39 [style=filled, fillcolor=white, label=signaling];
+receptor38 -> signaling39  [label=vmod];
+cells274 [style=filled, fillcolor=white, label=cells27];
+lung41 [style=filled, fillcolor=white, label=lung];
+cells274 -> lung41  [label=nn];
+signaling39 -> cells274  [label=prep_in];
+}

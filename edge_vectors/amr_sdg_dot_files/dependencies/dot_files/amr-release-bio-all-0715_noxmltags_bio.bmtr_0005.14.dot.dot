@@ -1,0 +1,28 @@
+digraph "Each eluted fraction was measured for its radioactivity content ( Figure 1B ,  right panel ) ." {
+label="Each eluted fraction was measured for its radioactivity content ( Figure 1B ,
+right panel ) .";
+fraction3 [style=filled, fillcolor=white, label=fraction];
+Each1 [style=filled, fillcolor=white, label=Each];
+fraction3 -> Each1  [label=det];
+eluted2 [style=filled, fillcolor=white, label=eluted];
+fraction3 -> eluted2  [label=amod];
+measured5 [style=filled, fillcolor=white, label=measured];
+measured5 -> fraction3  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+measured5 -> was4  [label=auxpass];
+measured5 -> measured5  [label=root];
+content9 [style=filled, fillcolor=white, label=content];
+its7 [style=filled, fillcolor=white, label=its];
+content9 -> its7  [label=poss];
+radioactivity8 [style=filled, fillcolor=white, label=radioactivity];
+content9 -> radioactivity8  [label=nn];
+measured5 -> content9  [label=prep_for];
+Figure11 [style=filled, fillcolor=white, label=Figure];
+content9 -> Figure11  [label=appos];
+"1B12" [style=filled, fillcolor=white, label="1B"];
+Figure11 -> "1B12"  [label=num];
+panel15 [style=filled, fillcolor=white, label=panel];
+right14 [style=filled, fillcolor=white, label=right];
+panel15 -> right14  [label=amod];
+Figure11 -> panel15  [label=dep];
+}

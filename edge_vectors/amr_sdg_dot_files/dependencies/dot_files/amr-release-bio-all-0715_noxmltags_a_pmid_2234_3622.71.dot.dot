@@ -1,0 +1,34 @@
+digraph "In the selumetinib and TMZ monotherapy-treated groups ,  tumour growth progressed rapidly once compound treatment had been removed ." {
+label="In the selumetinib and TMZ monotherapy-treated groups ,  tumour growth
+progressed rapidly once compound treatment had been removed .";
+selumetinib3 [style=filled, fillcolor=white, label=selumetinib];
+the2 [style=filled, fillcolor=white, label=the];
+selumetinib3 -> the2  [label=det];
+progressed11 [style=filled, fillcolor=white, label=progressed];
+progressed11 -> selumetinib3  [label=prep_in];
+groups7 [style=filled, fillcolor=white, label=groups];
+TMZ5 [style=filled, fillcolor=white, label=TMZ];
+groups7 -> TMZ5  [label=nn];
+"monotherapy-treated6" [style=filled, fillcolor=white, label="monotherapy-treated"];
+groups7 -> "monotherapy-treated6"  [label=amod];
+selumetinib3 -> groups7  [label=conj_and];
+growth10 [style=filled, fillcolor=white, label=growth];
+tumour9 [style=filled, fillcolor=white, label=tumour];
+growth10 -> tumour9  [label=nn];
+progressed11 -> growth10  [label=nsubj];
+progressed11 -> progressed11  [label=root];
+rapidly12 [style=filled, fillcolor=white, label=rapidly];
+progressed11 -> rapidly12  [label=advmod];
+removed18 [style=filled, fillcolor=white, label=removed];
+once13 [style=filled, fillcolor=white, label=once];
+removed18 -> once13  [label=mark];
+treatment15 [style=filled, fillcolor=white, label=treatment];
+compound14 [style=filled, fillcolor=white, label=compound];
+treatment15 -> compound14  [label=amod];
+removed18 -> treatment15  [label=nsubjpass];
+had16 [style=filled, fillcolor=white, label=had];
+removed18 -> had16  [label=aux];
+been17 [style=filled, fillcolor=white, label=been];
+removed18 -> been17  [label=auxpass];
+progressed11 -> removed18  [label=advcl];
+}

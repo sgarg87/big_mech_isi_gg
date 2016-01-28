@@ -1,0 +1,42 @@
+digraph "However ,  we have previously demonstrated ( Scita et al. ,  2001 ) that the three endogenous proteins also colocalize in vivo in dynamic actin structures ." {
+label="However ,  we have previously demonstrated ( Scita et al. ,  2001 ) that the
+three endogenous proteins also colocalize in vivo in dynamic actin structures .";
+demonstrated6 [style=filled, fillcolor=white, label=demonstrated];
+However1 [style=filled, fillcolor=white, label=However];
+demonstrated6 -> However1  [label=advmod];
+we3 [style=filled, fillcolor=white, label=we];
+demonstrated6 -> we3  [label=nsubj];
+have4 [style=filled, fillcolor=white, label=have];
+demonstrated6 -> have4  [label=aux];
+previously5 [style=filled, fillcolor=white, label=previously];
+demonstrated6 -> previously5  [label=advmod];
+demonstrated6 -> demonstrated6  [label=root];
+Scita8 [style=filled, fillcolor=white, label=Scita];
+demonstrated6 -> Scita8  [label=dep];
+"al.10" [style=filled, fillcolor=white, label="al."];
+Scita8 -> "al.10"  [label=conj_et];
+2001 [style=filled, fillcolor=white, label=2001];
+Scita8 -> 2001  [label=dep];
+colocalize20 [style=filled, fillcolor=white, label=colocalize];
+that14 [style=filled, fillcolor=white, label=that];
+colocalize20 -> that14  [label=mark];
+proteins18 [style=filled, fillcolor=white, label=proteins];
+the15 [style=filled, fillcolor=white, label=the];
+proteins18 -> the15  [label=det];
+three16 [style=filled, fillcolor=white, label=three];
+proteins18 -> three16  [label=num];
+endogenous17 [style=filled, fillcolor=white, label=endogenous];
+proteins18 -> endogenous17  [label=nn];
+colocalize20 -> proteins18  [label=nsubj];
+also19 [style=filled, fillcolor=white, label=also];
+colocalize20 -> also19  [label=advmod];
+demonstrated6 -> colocalize20  [label=ccomp];
+vivo22 [style=filled, fillcolor=white, label=vivo];
+colocalize20 -> vivo22  [label=prep_in];
+structures26 [style=filled, fillcolor=white, label=structures];
+dynamic24 [style=filled, fillcolor=white, label=dynamic];
+structures26 -> dynamic24  [label=amod];
+actin25 [style=filled, fillcolor=white, label=actin];
+structures26 -> actin25  [label=nn];
+vivo22 -> structures26  [label=prep_in];
+}

@@ -1,0 +1,40 @@
+digraph "Level of the apoptotic marker ,  cleaved caspase 3 ,  was comparable in the combination group compared with the TMZ monotherapy ( Figure 2B ) ." {
+label="Level of the apoptotic marker ,  cleaved caspase 3 ,  was comparable in the
+combination group compared with the TMZ monotherapy ( Figure 2B ) .";
+comparable12 [style=filled, fillcolor=white, label=comparable];
+Level1 [style=filled, fillcolor=white, label=Level];
+comparable12 -> Level1  [label=nsubj];
+marker5 [style=filled, fillcolor=white, label=marker];
+the3 [style=filled, fillcolor=white, label=the];
+marker5 -> the3  [label=det];
+apoptotic4 [style=filled, fillcolor=white, label=apoptotic];
+marker5 -> apoptotic4  [label=amod];
+Level1 -> marker5  [label=prep_of];
+cleaved7 [style=filled, fillcolor=white, label=cleaved];
+Level1 -> cleaved7  [label=vmod];
+caspase8 [style=filled, fillcolor=white, label=caspase];
+cleaved7 -> caspase8  [label=acomp];
+39 [style=filled, fillcolor=white, label=3];
+caspase8 -> 39  [label=dep];
+was11 [style=filled, fillcolor=white, label=was];
+comparable12 -> was11  [label=cop];
+comparable12 -> comparable12  [label=root];
+group16 [style=filled, fillcolor=white, label=group];
+the14 [style=filled, fillcolor=white, label=the];
+group16 -> the14  [label=det];
+combination15 [style=filled, fillcolor=white, label=combination];
+group16 -> combination15  [label=nn];
+comparable12 -> group16  [label=prep_in];
+with18 [style=filled, fillcolor=white, label=with];
+comparable12 -> with18  [label=prepc_compared_with];
+monotherapy21 [style=filled, fillcolor=white, label=monotherapy];
+the19 [style=filled, fillcolor=white, label=the];
+monotherapy21 -> the19  [label=det];
+TMZ20 [style=filled, fillcolor=white, label=TMZ];
+monotherapy21 -> TMZ20  [label=nn];
+comparable12 -> monotherapy21  [label=pobj];
+Figure23 [style=filled, fillcolor=white, label=Figure];
+monotherapy21 -> Figure23  [label=appos];
+"2B24" [style=filled, fillcolor=white, label="2B"];
+Figure23 -> "2B24"  [label=num];
+}

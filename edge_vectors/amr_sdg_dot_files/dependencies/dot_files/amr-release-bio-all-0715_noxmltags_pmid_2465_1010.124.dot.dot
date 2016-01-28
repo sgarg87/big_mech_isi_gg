@@ -1,0 +1,11 @@
+digraph "Targeting GDP/GTP Binding and Exchange" {
+label="Targeting GDP/GTP Binding and Exchange";
+Targeting1 [style=filled, fillcolor=white, label=Targeting];
+Targeting1 -> Targeting1  [label=root];
+Binding3 [style=filled, fillcolor=white, label=Binding];
+"GDP/GTP2" [style=filled, fillcolor=white, label="GDP/GTP"];
+Binding3 -> "GDP/GTP2"  [label=nn];
+Targeting1 -> Binding3  [label=dobj];
+Exchange5 [style=filled, fillcolor=white, label=Exchange];
+Binding3 -> Exchange5  [label=conj_and];
+}

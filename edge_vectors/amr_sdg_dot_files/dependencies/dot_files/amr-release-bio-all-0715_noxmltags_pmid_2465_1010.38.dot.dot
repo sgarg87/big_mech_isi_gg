@@ -1,0 +1,51 @@
+digraph "Costello syndrome ,  which is characterized by germline H-Ras mutations ,  is associated with a broad spectrum of developmental abnormalities and a high risk for rhabdomyosarcomas and neuroblastomas ( reviewed in Rauen ,  2013 ) ." {
+label="Costello syndrome ,  which is characterized by germline H-Ras mutations ,  is
+associated with a broad spectrum of developmental abnormalities and a high risk
+for rhabdomyosarcomas and neuroblastomas ( reviewed in Rauen ,  2013 ) .";
+syndrome2 [style=filled, fillcolor=white, label=syndrome];
+Costello1 [style=filled, fillcolor=white, label=Costello];
+syndrome2 -> Costello1  [label=amod];
+associated13 [style=filled, fillcolor=white, label=associated];
+associated13 -> syndrome2  [label=nsubjpass];
+characterized6 [style=filled, fillcolor=white, label=characterized];
+which4 [style=filled, fillcolor=white, label=which];
+characterized6 -> which4  [label=nsubjpass];
+is5 [style=filled, fillcolor=white, label=is];
+characterized6 -> is5  [label=auxpass];
+syndrome2 -> characterized6  [label=rcmod];
+mutations10 [style=filled, fillcolor=white, label=mutations];
+germline8 [style=filled, fillcolor=white, label=germline];
+mutations10 -> germline8  [label=amod];
+"H-Ras9" [style=filled, fillcolor=white, label="H-Ras"];
+mutations10 -> "H-Ras9"  [label=nn];
+characterized6 -> mutations10  [label=agent];
+is12 [style=filled, fillcolor=white, label=is];
+associated13 -> is12  [label=auxpass];
+associated13 -> associated13  [label=root];
+spectrum17 [style=filled, fillcolor=white, label=spectrum];
+a15 [style=filled, fillcolor=white, label=a];
+spectrum17 -> a15  [label=det];
+broad16 [style=filled, fillcolor=white, label=broad];
+spectrum17 -> broad16  [label=amod];
+associated13 -> spectrum17  [label=prep_with];
+abnormalities20 [style=filled, fillcolor=white, label=abnormalities];
+developmental19 [style=filled, fillcolor=white, label=developmental];
+abnormalities20 -> developmental19  [label=amod];
+spectrum17 -> abnormalities20  [label=prep_of];
+risk24 [style=filled, fillcolor=white, label=risk];
+a22 [style=filled, fillcolor=white, label=a];
+risk24 -> a22  [label=det];
+high23 [style=filled, fillcolor=white, label=high];
+risk24 -> high23  [label=amod];
+abnormalities20 -> risk24  [label=conj_and];
+rhabdomyosarcomas26 [style=filled, fillcolor=white, label=rhabdomyosarcomas];
+spectrum17 -> rhabdomyosarcomas26  [label=prep_for];
+neuroblastomas28 [style=filled, fillcolor=white, label=neuroblastomas];
+rhabdomyosarcomas26 -> neuroblastomas28  [label=conj_and];
+reviewed30 [style=filled, fillcolor=white, label=reviewed];
+spectrum17 -> reviewed30  [label=dep];
+Rauen32 [style=filled, fillcolor=white, label=Rauen];
+reviewed30 -> Rauen32  [label=prep_in];
+201334 [style=filled, fillcolor=white, label=2013];
+Rauen32 -> 201334  [label=amod];
+}

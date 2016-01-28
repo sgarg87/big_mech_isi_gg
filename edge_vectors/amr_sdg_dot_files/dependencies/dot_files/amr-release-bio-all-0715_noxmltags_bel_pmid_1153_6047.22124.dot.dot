@@ -1,0 +1,41 @@
+digraph "Overexpression of both MEN2A-RET and STAT3 strongly enhanced reporter activation ,  indicating that MEN2A-RET induces cyclin-D1 gene expression via STAT3 ( Figure 4a ) ." {
+label="Overexpression of both MEN2A-RET and STAT3 strongly enhanced reporter
+activation ,  indicating that MEN2A-RET induces cyclin-D1 gene expression via
+STAT3 ( Figure 4a ) .";
+enhanced8 [style=filled, fillcolor=white, label=enhanced];
+Overexpression1 [style=filled, fillcolor=white, label=Overexpression];
+enhanced8 -> Overexpression1  [label=nsubj];
+"MEN2A-RET4" [style=filled, fillcolor=white, label="MEN2A-RET"];
+both3 [style=filled, fillcolor=white, label=both];
+"MEN2A-RET4" -> both3  [label=preconj];
+Overexpression1 -> "MEN2A-RET4"  [label=prep_of];
+STAT36 [style=filled, fillcolor=white, label=STAT3];
+"MEN2A-RET4" -> STAT36  [label=conj_and];
+strongly7 [style=filled, fillcolor=white, label=strongly];
+enhanced8 -> strongly7  [label=advmod];
+enhanced8 -> enhanced8  [label=root];
+activation10 [style=filled, fillcolor=white, label=activation];
+reporter9 [style=filled, fillcolor=white, label=reporter];
+activation10 -> reporter9  [label=nn];
+enhanced8 -> activation10  [label=dobj];
+indicating12 [style=filled, fillcolor=white, label=indicating];
+enhanced8 -> indicating12  [label=vmod];
+induces15 [style=filled, fillcolor=white, label=induces];
+that13 [style=filled, fillcolor=white, label=that];
+induces15 -> that13  [label=mark];
+"MEN2A-RET14" [style=filled, fillcolor=white, label="MEN2A-RET"];
+induces15 -> "MEN2A-RET14"  [label=nsubj];
+indicating12 -> induces15  [label=ccomp];
+expression18 [style=filled, fillcolor=white, label=expression];
+"cyclin-D16" [style=filled, fillcolor=white, label="cyclin-D1"];
+expression18 -> "cyclin-D16"  [label=amod];
+gene17 [style=filled, fillcolor=white, label=gene];
+expression18 -> gene17  [label=nn];
+induces15 -> expression18  [label=dobj];
+STAT320 [style=filled, fillcolor=white, label=STAT3];
+expression18 -> STAT320  [label=prep_via];
+Figure22 [style=filled, fillcolor=white, label=Figure];
+STAT320 -> Figure22  [label=appos];
+"4a23" [style=filled, fillcolor=white, label="4a"];
+Figure22 -> "4a23"  [label=num];
+}

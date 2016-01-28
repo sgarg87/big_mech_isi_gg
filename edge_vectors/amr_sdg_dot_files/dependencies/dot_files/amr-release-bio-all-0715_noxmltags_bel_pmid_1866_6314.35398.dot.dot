@@ -1,0 +1,24 @@
+digraph "from full text - STAT-3 itself induces the anti-apoptotic factors Bcl-2 and Bcl-xL" {
+label="from full text - STAT-3 itself induces the anti-apoptotic factors Bcl-2 and
+Bcl-xL";
+text3 [style=filled, fillcolor=white, label=text];
+full2 [style=filled, fillcolor=white, label=full];
+text3 -> full2  [label=amod];
+"STAT-35" [style=filled, fillcolor=white, label="STAT-3"];
+"STAT-35" -> text3  [label=prep_from];
+"STAT-35" -> "STAT-35"  [label=root];
+induces7 [style=filled, fillcolor=white, label=induces];
+itself6 [style=filled, fillcolor=white, label=itself];
+induces7 -> itself6  [label=nsubj];
+"STAT-35" -> induces7  [label=ccomp];
+factors10 [style=filled, fillcolor=white, label=factors];
+the8 [style=filled, fillcolor=white, label=the];
+factors10 -> the8  [label=det];
+"anti-apoptotic9" [style=filled, fillcolor=white, label="anti-apoptotic"];
+factors10 -> "anti-apoptotic9"  [label=amod];
+induces7 -> factors10  [label=dobj];
+"Bcl-211" [style=filled, fillcolor=white, label="Bcl-2"];
+"STAT-35" -> "Bcl-211"  [label=nsubj];
+"Bcl-xL13" [style=filled, fillcolor=white, label="Bcl-xL"];
+"Bcl-211" -> "Bcl-xL13"  [label=conj_and];
+}

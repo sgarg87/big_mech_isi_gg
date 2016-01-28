@@ -1,0 +1,15 @@
+digraph "The guanine nucleotide-binding switch in three dimensions ." {
+label="The guanine nucleotide-binding switch in three dimensions .";
+"nucleotide-binding3" [style=filled, fillcolor=white, label="nucleotide-binding"];
+The1 [style=filled, fillcolor=white, label=The];
+"nucleotide-binding3" -> The1  [label=det];
+guanine2 [style=filled, fillcolor=white, label=guanine];
+"nucleotide-binding3" -> guanine2  [label=amod];
+switch4 [style=filled, fillcolor=white, label=switch];
+switch4 -> "nucleotide-binding3"  [label=nsubj];
+switch4 -> switch4  [label=root];
+dimensions7 [style=filled, fillcolor=white, label=dimensions];
+three6 [style=filled, fillcolor=white, label=three];
+dimensions7 -> three6  [label=num];
+switch4 -> dimensions7  [label=prep_in];
+}

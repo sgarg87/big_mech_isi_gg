@@ -1,0 +1,38 @@
+digraph "We next examined the mechanisms accounting for the increase in HER3 by MAPK pathway inhibitors in BRAF mutant thyroid cell lines ." {
+label="We next examined the mechanisms accounting for the increase in HER3 by MAPK
+pathway inhibitors in BRAF mutant thyroid cell lines .";
+examined3 [style=filled, fillcolor=white, label=examined];
+We1 [style=filled, fillcolor=white, label=We];
+examined3 -> We1  [label=nsubj];
+next2 [style=filled, fillcolor=white, label=next];
+examined3 -> next2  [label=advmod];
+examined3 -> examined3  [label=root];
+accounting6 [style=filled, fillcolor=white, label=accounting];
+the4 [style=filled, fillcolor=white, label=the];
+accounting6 -> the4  [label=det];
+mechanisms5 [style=filled, fillcolor=white, label=mechanisms];
+accounting6 -> mechanisms5  [label=amod];
+examined3 -> accounting6  [label=dobj];
+increase9 [style=filled, fillcolor=white, label=increase];
+the8 [style=filled, fillcolor=white, label=the];
+increase9 -> the8  [label=det];
+examined3 -> increase9  [label=prep_for];
+HER311 [style=filled, fillcolor=white, label=HER3];
+increase9 -> HER311  [label=prep_in];
+inhibitors15 [style=filled, fillcolor=white, label=inhibitors];
+MAPK13 [style=filled, fillcolor=white, label=MAPK];
+inhibitors15 -> MAPK13  [label=nn];
+pathway14 [style=filled, fillcolor=white, label=pathway];
+inhibitors15 -> pathway14  [label=nn];
+examined3 -> inhibitors15  [label=prep_by];
+lines21 [style=filled, fillcolor=white, label=lines];
+BRAF17 [style=filled, fillcolor=white, label=BRAF];
+lines21 -> BRAF17  [label=amod];
+mutant18 [style=filled, fillcolor=white, label=mutant];
+lines21 -> mutant18  [label=amod];
+thyroid19 [style=filled, fillcolor=white, label=thyroid];
+lines21 -> thyroid19  [label=nn];
+cell20 [style=filled, fillcolor=white, label=cell];
+lines21 -> cell20  [label=nn];
+inhibitors15 -> lines21  [label=prep_in];
+}

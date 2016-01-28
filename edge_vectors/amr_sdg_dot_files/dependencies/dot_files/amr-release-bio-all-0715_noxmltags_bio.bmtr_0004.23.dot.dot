@@ -1,0 +1,49 @@
+digraph "These results led us to examine the effect of monoubiquitination on the interaction of Ras with its cognate GEF and GAPs ,  which also target the switch domains ." {
+label="These results led us to examine the effect of monoubiquitination on the
+interaction of Ras with its cognate GEF and GAPs ,  which also target the switch
+domains .";
+results2 [style=filled, fillcolor=white, label=results];
+These1 [style=filled, fillcolor=white, label=These];
+results2 -> These1  [label=det];
+led3 [style=filled, fillcolor=white, label=led];
+led3 -> results2  [label=nsubj];
+led3 -> led3  [label=root];
+us4 [style=filled, fillcolor=white, label=us];
+led3 -> us4  [label=dobj];
+examine6 [style=filled, fillcolor=white, label=examine];
+to5 [style=filled, fillcolor=white, label=to];
+examine6 -> to5  [label=aux];
+led3 -> examine6  [label=vmod];
+effect8 [style=filled, fillcolor=white, label=effect];
+the7 [style=filled, fillcolor=white, label=the];
+effect8 -> the7  [label=det];
+examine6 -> effect8  [label=dobj];
+monoubiquitination10 [style=filled, fillcolor=white, label=monoubiquitination];
+effect8 -> monoubiquitination10  [label=prep_of];
+interaction13 [style=filled, fillcolor=white, label=interaction];
+the12 [style=filled, fillcolor=white, label=the];
+interaction13 -> the12  [label=det];
+examine6 -> interaction13  [label=prep_on];
+Ras15 [style=filled, fillcolor=white, label=Ras];
+interaction13 -> Ras15  [label=prep_of];
+cognate18 [style=filled, fillcolor=white, label=cognate];
+its17 [style=filled, fillcolor=white, label=its];
+cognate18 -> its17  [label=poss];
+examine6 -> cognate18  [label=prep_with];
+GEF19 [style=filled, fillcolor=white, label=GEF];
+led3 -> GEF19  [label=dobj];
+GAPs21 [style=filled, fillcolor=white, label=GAPs];
+GEF19 -> GAPs21  [label=conj_and];
+target25 [style=filled, fillcolor=white, label=target];
+which23 [style=filled, fillcolor=white, label=which];
+target25 -> which23  [label=nsubj];
+also24 [style=filled, fillcolor=white, label=also];
+target25 -> also24  [label=advmod];
+GEF19 -> target25  [label=rcmod];
+domains28 [style=filled, fillcolor=white, label=domains];
+the26 [style=filled, fillcolor=white, label=the];
+domains28 -> the26  [label=det];
+switch27 [style=filled, fillcolor=white, label=switch];
+domains28 -> switch27  [label=nn];
+target25 -> domains28  [label=dobj];
+}

@@ -1,0 +1,39 @@
+digraph "Down-regulation of serpinE2 expression in human colorectal cancer cells inhibits soft agarose colony formation ,  migration and tumor growth in nude mice" {
+label="Down-regulation of serpinE2 expression in human colorectal cancer cells
+inhibits soft agarose colony formation ,  migration and tumor growth in nude
+mice";
+inhibits10 [style=filled, fillcolor=white, label=inhibits];
+"Down-regulation1" [style=filled, fillcolor=white, label="Down-regulation"];
+inhibits10 -> "Down-regulation1"  [label=nsubj];
+expression4 [style=filled, fillcolor=white, label=expression];
+serpinE23 [style=filled, fillcolor=white, label=serpinE2];
+expression4 -> serpinE23  [label=amod];
+"Down-regulation1" -> expression4  [label=prep_of];
+cells9 [style=filled, fillcolor=white, label=cells];
+human6 [style=filled, fillcolor=white, label=human];
+cells9 -> human6  [label=amod];
+colorectal7 [style=filled, fillcolor=white, label=colorectal];
+cells9 -> colorectal7  [label=amod];
+cancer8 [style=filled, fillcolor=white, label=cancer];
+cells9 -> cancer8  [label=nn];
+expression4 -> cells9  [label=prep_in];
+inhibits10 -> inhibits10  [label=root];
+growth19 [style=filled, fillcolor=white, label=growth];
+soft11 [style=filled, fillcolor=white, label=soft];
+growth19 -> soft11  [label=amod];
+agarose12 [style=filled, fillcolor=white, label=agarose];
+growth19 -> agarose12  [label=nn];
+colony13 [style=filled, fillcolor=white, label=colony];
+growth19 -> colony13  [label=nn];
+formation14 [style=filled, fillcolor=white, label=formation];
+growth19 -> formation14  [label=nn];
+migration16 [style=filled, fillcolor=white, label=migration];
+formation14 -> migration16  [label=conj_and];
+tumor18 [style=filled, fillcolor=white, label=tumor];
+formation14 -> tumor18  [label=conj_and];
+inhibits10 -> growth19  [label=dobj];
+mice22 [style=filled, fillcolor=white, label=mice];
+nude21 [style=filled, fillcolor=white, label=nude];
+mice22 -> nude21  [label=amod];
+growth19 -> mice22  [label=prep_in];
+}

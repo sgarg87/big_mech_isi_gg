@@ -1,0 +1,49 @@
+digraph "The first example was recently published by Shokat and colleagues ,  who identified electrophilic compounds that react covalently with cysteine-12 in G12C mutant K-Ras ( Ostrem et al. ,  2013 ) ." {
+label="The first example was recently published by Shokat and colleagues ,  who
+identified electrophilic compounds that react covalently with cysteine-12 in
+G12C mutant K-Ras ( Ostrem et al. ,  2013 ) .";
+example3 [style=filled, fillcolor=white, label=example];
+The1 [style=filled, fillcolor=white, label=The];
+example3 -> The1  [label=det];
+first2 [style=filled, fillcolor=white, label=first];
+example3 -> first2  [label=amod];
+published6 [style=filled, fillcolor=white, label=published];
+published6 -> example3  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+published6 -> was4  [label=auxpass];
+recently5 [style=filled, fillcolor=white, label=recently];
+published6 -> recently5  [label=advmod];
+published6 -> published6  [label=root];
+Shokat8 [style=filled, fillcolor=white, label=Shokat];
+published6 -> Shokat8  [label=agent];
+colleagues10 [style=filled, fillcolor=white, label=colleagues];
+Shokat8 -> colleagues10  [label=conj_and];
+identified13 [style=filled, fillcolor=white, label=identified];
+who12 [style=filled, fillcolor=white, label=who];
+identified13 -> who12  [label=nsubj];
+colleagues10 -> identified13  [label=rcmod];
+compounds15 [style=filled, fillcolor=white, label=compounds];
+electrophilic14 [style=filled, fillcolor=white, label=electrophilic];
+compounds15 -> electrophilic14  [label=amod];
+identified13 -> compounds15  [label=dobj];
+react17 [style=filled, fillcolor=white, label=react];
+that16 [style=filled, fillcolor=white, label=that];
+react17 -> that16  [label=nsubj];
+compounds15 -> react17  [label=rcmod];
+covalently18 [style=filled, fillcolor=white, label=covalently];
+react17 -> covalently18  [label=advmod];
+"K-Ras24" [style=filled, fillcolor=white, label="K-Ras"];
+"cysteine-120" [style=filled, fillcolor=white, label="cysteine-12"];
+"K-Ras24" -> "cysteine-120"  [label=amod];
+G12C [style=filled, fillcolor=white, label=G12C];
+"cysteine-120" -> G12C  [label=prep_in];
+mutant23 [style=filled, fillcolor=white, label=mutant];
+"K-Ras24" -> mutant23  [label=amod];
+react17 -> "K-Ras24"  [label=prep_with];
+Ostrem26 [style=filled, fillcolor=white, label=Ostrem];
+"K-Ras24" -> Ostrem26  [label=appos];
+"al.28" [style=filled, fillcolor=white, label="al."];
+Ostrem26 -> "al.28"  [label=conj_et];
+2013 [style=filled, fillcolor=white, label=2013];
+Ostrem26 -> 2013  [label=dep];
+}

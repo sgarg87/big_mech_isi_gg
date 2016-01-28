@@ -1,0 +1,38 @@
+digraph "Consistently ,  the level of NIK in MDSCs started to decline at 1 h and was completely blocked at 8 h after JSI-124 treatment ." {
+label="Consistently ,  the level of NIK in MDSCs started to decline at 1 h and was
+completely blocked at 8 h after JSI-124 treatment .";
+started9 [style=filled, fillcolor=white, label=started];
+Consistently1 [style=filled, fillcolor=white, label=Consistently];
+started9 -> Consistently1  [label=advmod];
+level4 [style=filled, fillcolor=white, label=level];
+the3 [style=filled, fillcolor=white, label=the];
+level4 -> the3  [label=det];
+started9 -> level4  [label=nsubj];
+NIK6 [style=filled, fillcolor=white, label=NIK];
+level4 -> NIK6  [label=prep_of];
+MDSCs8 [style=filled, fillcolor=white, label=MDSCs];
+NIK6 -> MDSCs8  [label=prep_in];
+started9 -> started9  [label=root];
+decline11 [style=filled, fillcolor=white, label=decline];
+to10 [style=filled, fillcolor=white, label=to];
+decline11 -> to10  [label=aux];
+started9 -> decline11  [label=xcomp];
+h14 [style=filled, fillcolor=white, label=h];
+113 [style=filled, fillcolor=white, label=1];
+h14 -> 113  [label=num];
+decline11 -> h14  [label=prep_at];
+blocked18 [style=filled, fillcolor=white, label=blocked];
+was16 [style=filled, fillcolor=white, label=was];
+blocked18 -> was16  [label=auxpass];
+completely17 [style=filled, fillcolor=white, label=completely];
+blocked18 -> completely17  [label=advmod];
+started9 -> blocked18  [label=conj_and];
+h21 [style=filled, fillcolor=white, label=h];
+820 [style=filled, fillcolor=white, label=8];
+h21 -> 820  [label=num];
+blocked18 -> h21  [label=prep_at];
+treatment24 [style=filled, fillcolor=white, label=treatment];
+"JSI-1243" [style=filled, fillcolor=white, label="JSI-124"];
+treatment24 -> "JSI-1243"  [label=nn];
+blocked18 -> treatment24  [label=prep_after];
+}

@@ -1,0 +1,42 @@
+digraph "This supports the hypothesis that a dominant ERK feedback on ERBB3/PI3K/AKT is mediated though phosphorylation of T669 on EGFR ( or T677 HER2 ) ." {
+label="This supports the hypothesis that a dominant ERK feedback on ERBB3/PI3K/AKT is
+mediated though phosphorylation of T669 on EGFR ( or T677 HER2 ) .";
+supports2 [style=filled, fillcolor=white, label=supports];
+This1 [style=filled, fillcolor=white, label=This];
+supports2 -> This1  [label=nsubj];
+supports2 -> supports2  [label=root];
+hypothesis4 [style=filled, fillcolor=white, label=hypothesis];
+the3 [style=filled, fillcolor=white, label=the];
+hypothesis4 -> the3  [label=det];
+supports2 -> hypothesis4  [label=dobj];
+mediated13 [style=filled, fillcolor=white, label=mediated];
+that5 [style=filled, fillcolor=white, label=that];
+mediated13 -> that5  [label=mark];
+feedback9 [style=filled, fillcolor=white, label=feedback];
+a6 [style=filled, fillcolor=white, label=a];
+feedback9 -> a6  [label=det];
+dominant7 [style=filled, fillcolor=white, label=dominant];
+feedback9 -> dominant7  [label=amod];
+ERK8 [style=filled, fillcolor=white, label=ERK];
+feedback9 -> ERK8  [label=nn];
+mediated13 -> feedback9  [label=nsubjpass];
+"ERBB3/PI3K/AKT11" [style=filled, fillcolor=white, label="ERBB3/PI3K/AKT"];
+feedback9 -> "ERBB3/PI3K/AKT11"  [label=prep_on];
+is12 [style=filled, fillcolor=white, label=is];
+mediated13 -> is12  [label=auxpass];
+supports2 -> mediated13  [label=ccomp];
+though14 [style=filled, fillcolor=white, label=though];
+mediated13 -> though14  [label=advmod];
+phosphorylation15 [style=filled, fillcolor=white, label=phosphorylation];
+mediated13 -> phosphorylation15  [label=dobj];
+T66917 [style=filled, fillcolor=white, label=T669];
+phosphorylation15 -> T66917  [label=prep_of];
+EGFR19 [style=filled, fillcolor=white, label=EGFR];
+mediated13 -> EGFR19  [label=prep_on];
+T67722 [style=filled, fillcolor=white, label=T677];
+or21 [style=filled, fillcolor=white, label=or];
+T67722 -> or21  [label=cc];
+EGFR19 -> T67722  [label=dep];
+HER223 [style=filled, fillcolor=white, label=HER2];
+T67722 -> HER223  [label=dep];
+}

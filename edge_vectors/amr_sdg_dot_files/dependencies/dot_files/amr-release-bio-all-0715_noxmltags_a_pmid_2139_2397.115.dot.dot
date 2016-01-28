@@ -1,0 +1,24 @@
+digraph "Stimulation of YB-1 phosphorylation in breast cancer cells by IR and exposure to erbB1 ligands" {
+label="Stimulation of YB-1 phosphorylation in breast cancer cells by IR and exposure
+to erbB1 ligands";
+Stimulation1 [style=filled, fillcolor=white, label=Stimulation];
+Stimulation1 -> Stimulation1  [label=root];
+phosphorylation4 [style=filled, fillcolor=white, label=phosphorylation];
+"YB-13" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation4 -> "YB-13"  [label=nn];
+Stimulation1 -> phosphorylation4  [label=prep_of];
+cells8 [style=filled, fillcolor=white, label=cells];
+breast6 [style=filled, fillcolor=white, label=breast];
+cells8 -> breast6  [label=nn];
+cancer7 [style=filled, fillcolor=white, label=cancer];
+cells8 -> cancer7  [label=nn];
+Stimulation1 -> cells8  [label=prep_in];
+IR10 [style=filled, fillcolor=white, label=IR];
+Stimulation1 -> IR10  [label=prep_by];
+exposure12 [style=filled, fillcolor=white, label=exposure];
+IR10 -> exposure12  [label=conj_and];
+ligands15 [style=filled, fillcolor=white, label=ligands];
+erbB114 [style=filled, fillcolor=white, label=erbB1];
+ligands15 -> erbB114  [label=amod];
+Stimulation1 -> ligands15  [label=prep_to];
+}

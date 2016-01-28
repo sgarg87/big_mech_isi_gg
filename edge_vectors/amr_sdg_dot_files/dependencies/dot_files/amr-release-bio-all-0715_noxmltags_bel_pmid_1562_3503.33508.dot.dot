@@ -1,0 +1,66 @@
+digraph "Exogenous expression of a dominant negative version of mouse Rev-erbbeta decreases the expression of many genes involved in fatty acid/lipid absorption ( including Cd36 ,  and Fabp-3 and -4 ) . Interestingly ,  we observed a robust induction ( 15-fold ) in mRNA expression of interleukin-6" {
+label="Exogenous expression of a dominant negative version of mouse Rev-erbbeta
+decreases the expression of many genes involved in fatty acid/lipid absorption (
+including Cd36 ,  and Fabp-3 and -4 ) . Interestingly ,  we observed a robust
+induction ( 15-fold ) in mRNA expression of interleukin-6";
+observed35 [style=filled, fillcolor=white, label=observed];
+Exogenous1 [style=filled, fillcolor=white, label=Exogenous];
+observed35 -> Exogenous1  [label=dep];
+expression2 [style=filled, fillcolor=white, label=expression];
+Exogenous1 -> expression2  [label=dobj];
+version7 [style=filled, fillcolor=white, label=version];
+a4 [style=filled, fillcolor=white, label=a];
+version7 -> a4  [label=det];
+dominant5 [style=filled, fillcolor=white, label=dominant];
+version7 -> dominant5  [label=amod];
+negative6 [style=filled, fillcolor=white, label=negative];
+version7 -> negative6  [label=amod];
+expression2 -> version7  [label=prep_of];
+mouse9 [style=filled, fillcolor=white, label=mouse];
+version7 -> mouse9  [label=prep_of];
+decreases11 [style=filled, fillcolor=white, label=decreases];
+"Rev-erbbeta10" [style=filled, fillcolor=white, label="Rev-erbbeta"];
+decreases11 -> "Rev-erbbeta10"  [label=amod];
+Exogenous1 -> decreases11  [label=dep];
+expression13 [style=filled, fillcolor=white, label=expression];
+the12 [style=filled, fillcolor=white, label=the];
+expression13 -> the12  [label=det];
+Exogenous1 -> expression13  [label=dep];
+genes16 [style=filled, fillcolor=white, label=genes];
+many15 [style=filled, fillcolor=white, label=many];
+genes16 -> many15  [label=amod];
+expression13 -> genes16  [label=prep_of];
+involved17 [style=filled, fillcolor=white, label=involved];
+genes16 -> involved17  [label=vmod];
+"acid/lipid20" [style=filled, fillcolor=white, label="acid/lipid"];
+fatty19 [style=filled, fillcolor=white, label=fatty];
+"acid/lipid20" -> fatty19  [label=advmod];
+absorption21 [style=filled, fillcolor=white, label=absorption];
+absorption21 -> "acid/lipid20"  [label=amod];
+involved17 -> absorption21  [label=prep_in];
+Cd3624 [style=filled, fillcolor=white, label=Cd36];
+absorption21 -> Cd3624  [label=prep_including];
+"Fabp-327" [style=filled, fillcolor=white, label="Fabp-3"];
+Cd3624 -> "Fabp-327"  [label=conj_and];
+"-429" [style=filled, fillcolor=white, label="-4"];
+Cd3624 -> "-429"  [label=conj_and];
+Interestingly32 [style=filled, fillcolor=white, label=Interestingly];
+observed35 -> Interestingly32  [label=advmod];
+we34 [style=filled, fillcolor=white, label=we];
+observed35 -> we34  [label=nsubj];
+observed35 -> observed35  [label=root];
+induction38 [style=filled, fillcolor=white, label=induction];
+a36 [style=filled, fillcolor=white, label=a];
+induction38 -> a36  [label=det];
+robust37 [style=filled, fillcolor=white, label=robust];
+induction38 -> robust37  [label=amod];
+observed35 -> induction38  [label=dobj];
+"15-fold40" [style=filled, fillcolor=white, label="15-fold"];
+induction38 -> "15-fold40"  [label=appos];
+expression44 [style=filled, fillcolor=white, label=expression];
+mRNA43 [style=filled, fillcolor=white, label=mRNA];
+expression44 -> mRNA43  [label=nn];
+observed35 -> expression44  [label=prep_in];
+"interleukin-64" [style=filled, fillcolor=white, label="interleukin-6"];
+expression44 -> "interleukin-64"  [label=prep_of];
+}

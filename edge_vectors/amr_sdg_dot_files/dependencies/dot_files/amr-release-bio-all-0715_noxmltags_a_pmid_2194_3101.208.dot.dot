@@ -1,0 +1,36 @@
+digraph "Nevertheless ,  no changes in Fascin protein expression were recorded in the different cell lines ,  ( Figure 7B ,  lower panel ) ." {
+label="Nevertheless ,  no changes in Fascin protein expression were recorded in the
+different cell lines ,  ( Figure 7B ,  lower panel ) .";
+recorded10 [style=filled, fillcolor=white, label=recorded];
+Nevertheless1 [style=filled, fillcolor=white, label=Nevertheless];
+recorded10 -> Nevertheless1  [label=advmod];
+changes4 [style=filled, fillcolor=white, label=changes];
+no3 [style=filled, fillcolor=white, label=no];
+changes4 -> no3  [label=neg];
+recorded10 -> changes4  [label=nsubjpass];
+expression8 [style=filled, fillcolor=white, label=expression];
+Fascin6 [style=filled, fillcolor=white, label=Fascin];
+expression8 -> Fascin6  [label=nn];
+protein7 [style=filled, fillcolor=white, label=protein];
+expression8 -> protein7  [label=nn];
+changes4 -> expression8  [label=prep_in];
+were9 [style=filled, fillcolor=white, label=were];
+recorded10 -> were9  [label=auxpass];
+recorded10 -> recorded10  [label=root];
+lines15 [style=filled, fillcolor=white, label=lines];
+the12 [style=filled, fillcolor=white, label=the];
+lines15 -> the12  [label=det];
+different13 [style=filled, fillcolor=white, label=different];
+lines15 -> different13  [label=amod];
+cell14 [style=filled, fillcolor=white, label=cell];
+lines15 -> cell14  [label=nn];
+recorded10 -> lines15  [label=prep_in];
+"7B19" [style=filled, fillcolor=white, label="7B"];
+Figure18 [style=filled, fillcolor=white, label=Figure];
+"7B19" -> Figure18  [label=nn];
+lines15 -> "7B19"  [label=dep];
+panel22 [style=filled, fillcolor=white, label=panel];
+lower21 [style=filled, fillcolor=white, label=lower];
+panel22 -> lower21  [label=amod];
+"7B19" -> panel22  [label=appos];
+}

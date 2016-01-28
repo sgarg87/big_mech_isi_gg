@@ -1,0 +1,64 @@
+digraph "We found that levels of nitric oxide measured in either plasma or isolated macrophages from Ucp2 - / - mice are significantly elevated in response to bacterial lipopolysaccharide challenge compared with similarly treated Ucp2 + / + mice ." {
+label="We found that levels of nitric oxide measured in either plasma or isolated
+macrophages from Ucp2 - / - mice are significantly elevated in response to
+bacterial lipopolysaccharide challenge compared with similarly treated Ucp2 + /
++ mice .";
+found2 [style=filled, fillcolor=white, label=found];
+We1 [style=filled, fillcolor=white, label=We];
+found2 -> We1  [label=nsubj];
+found2 -> found2  [label=root];
+"/18" [style=filled, fillcolor=white, label="/"];
+that3 [style=filled, fillcolor=white, label=that];
+"/18" -> that3  [label=mark];
+levels4 [style=filled, fillcolor=white, label=levels];
+"/18" -> levels4  [label=nsubj];
+oxide7 [style=filled, fillcolor=white, label=oxide];
+nitric6 [style=filled, fillcolor=white, label=nitric];
+oxide7 -> nitric6  [label=amod];
+levels4 -> oxide7  [label=prep_of];
+measured8 [style=filled, fillcolor=white, label=measured];
+oxide7 -> measured8  [label=vmod];
+plasma11 [style=filled, fillcolor=white, label=plasma];
+either10 [style=filled, fillcolor=white, label=either];
+plasma11 -> either10  [label=det];
+measured8 -> plasma11  [label=prep_in];
+macrophages14 [style=filled, fillcolor=white, label=macrophages];
+isolated13 [style=filled, fillcolor=white, label=isolated];
+macrophages14 -> isolated13  [label=amod];
+plasma11 -> macrophages14  [label=conj_or];
+Ucp216 [style=filled, fillcolor=white, label=Ucp2];
+macrophages14 -> Ucp216  [label=prep_from];
+found2 -> "/18"  [label=ccomp];
+elevated23 [style=filled, fillcolor=white, label=elevated];
+mice20 [style=filled, fillcolor=white, label=mice];
+elevated23 -> mice20  [label=nsubj];
+are21 [style=filled, fillcolor=white, label=are];
+elevated23 -> are21  [label=cop];
+significantly22 [style=filled, fillcolor=white, label=significantly];
+elevated23 -> significantly22  [label=advmod];
+"/18" -> elevated23  [label=parataxis];
+response25 [style=filled, fillcolor=white, label=response];
+elevated23 -> response25  [label=prep_in];
+challenge29 [style=filled, fillcolor=white, label=challenge];
+bacterial27 [style=filled, fillcolor=white, label=bacterial];
+challenge29 -> bacterial27  [label=amod];
+lipopolysaccharide28 [style=filled, fillcolor=white, label=lipopolysaccharide];
+challenge29 -> lipopolysaccharide28  [label=nn];
+elevated23 -> challenge29  [label=prep_to];
+with31 [style=filled, fillcolor=white, label=with];
+elevated23 -> with31  [label=prepc_compared_with];
+treated33 [style=filled, fillcolor=white, label=treated];
+similarly32 [style=filled, fillcolor=white, label=similarly];
+treated33 -> similarly32  [label=advmod];
+"+35" [style=filled, fillcolor=white, label="+"];
+"+35" -> treated33  [label=amod];
+Ucp234 [style=filled, fillcolor=white, label=Ucp2];
+"+35" -> Ucp234  [label=amod];
+elevated23 -> "+35"  [label=pobj];
+"/36" [style=filled, fillcolor=white, label="/"];
+elevated23 -> "/36"  [label=punct];
+mice38 [style=filled, fillcolor=white, label=mice];
+"+37" [style=filled, fillcolor=white, label="+"];
+mice38 -> "+37"  [label=amod];
+"/18" -> mice38  [label=dobj];
+}

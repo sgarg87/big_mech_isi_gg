@@ -1,0 +1,17 @@
+digraph "Structure Showing Small Molecule-Directed Electrophilic Attack of K-Ras-G12C" {
+label="Structure Showing Small Molecule-Directed Electrophilic Attack of K-Ras-G12C";
+Structure1 [style=filled, fillcolor=white, label=Structure];
+Structure1 -> Structure1  [label=root];
+Showing2 [style=filled, fillcolor=white, label=Showing];
+Structure1 -> Showing2  [label=xcomp];
+Attack6 [style=filled, fillcolor=white, label=Attack];
+Small3 [style=filled, fillcolor=white, label=Small];
+Attack6 -> Small3  [label=nn];
+"Molecule-Directed4" [style=filled, fillcolor=white, label="Molecule-Directed"];
+Attack6 -> "Molecule-Directed4"  [label=nn];
+Electrophilic5 [style=filled, fillcolor=white, label=Electrophilic];
+Attack6 -> Electrophilic5  [label=nn];
+Showing2 -> Attack6  [label=dobj];
+"K-Ras-G12C8" [style=filled, fillcolor=white, label="K-Ras-G12C"];
+Attack6 -> "K-Ras-G12C8"  [label=prep_of];
+}

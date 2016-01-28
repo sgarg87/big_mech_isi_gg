@@ -1,0 +1,24 @@
+digraph "( C ) Immunofluorescence of Tg skin section labeled with antibodies as color-coded on frame ." {
+label="( C ) Immunofluorescence of Tg skin section labeled with antibodies as color-
+coded on frame .";
+Immunofluorescence4 [style=filled, fillcolor=white, label=Immunofluorescence];
+C2 [style=filled, fillcolor=white, label=C];
+Immunofluorescence4 -> C2  [label=nn];
+labeled9 [style=filled, fillcolor=white, label=labeled];
+labeled9 -> Immunofluorescence4  [label=nsubj];
+section8 [style=filled, fillcolor=white, label=section];
+Tg6 [style=filled, fillcolor=white, label=Tg];
+section8 -> Tg6  [label=nn];
+skin7 [style=filled, fillcolor=white, label=skin];
+section8 -> skin7  [label=nn];
+Immunofluorescence4 -> section8  [label=prep_of];
+labeled9 -> labeled9  [label=root];
+antibodies11 [style=filled, fillcolor=white, label=antibodies];
+labeled9 -> antibodies11  [label=prep_with];
+"color-coded13" [style=filled, fillcolor=white, label="color-coded"];
+as12 [style=filled, fillcolor=white, label=as];
+"color-coded13" -> as12  [label=mark];
+labeled9 -> "color-coded13"  [label=advcl];
+frame15 [style=filled, fillcolor=white, label=frame];
+"color-coded13" -> frame15  [label=prep_on];
+}

@@ -1,0 +1,51 @@
+digraph "Despite the correlation between lung macrophage content and lung tumor growth ,  the direct contribution of alveolar macrophages to lung tumor growth is unclear -LSB- 6 ,  7 ,  13 -RSB- ." {
+label="Despite the correlation between lung macrophage content and lung tumor growth ,
+the direct contribution of alveolar macrophages to lung tumor growth is unclear
+-LSB- 6 ,  7 ,  13 -RSB- .";
+correlation3 [style=filled, fillcolor=white, label=correlation];
+the2 [style=filled, fillcolor=white, label=the];
+correlation3 -> the2  [label=det];
+unclear24 [style=filled, fillcolor=white, label=unclear];
+unclear24 -> correlation3  [label=prep_despite];
+content7 [style=filled, fillcolor=white, label=content];
+lung5 [style=filled, fillcolor=white, label=lung];
+content7 -> lung5  [label=nn];
+macrophage6 [style=filled, fillcolor=white, label=macrophage];
+content7 -> macrophage6  [label=nn];
+correlation3 -> content7  [label=prep_between];
+growth11 [style=filled, fillcolor=white, label=growth];
+lung9 [style=filled, fillcolor=white, label=lung];
+growth11 -> lung9  [label=nn];
+tumor10 [style=filled, fillcolor=white, label=tumor];
+growth11 -> tumor10  [label=nn];
+content7 -> growth11  [label=conj_and];
+contribution15 [style=filled, fillcolor=white, label=contribution];
+the13 [style=filled, fillcolor=white, label=the];
+contribution15 -> the13  [label=det];
+direct14 [style=filled, fillcolor=white, label=direct];
+contribution15 -> direct14  [label=amod];
+unclear24 -> contribution15  [label=nsubj];
+macrophages18 [style=filled, fillcolor=white, label=macrophages];
+alveolar17 [style=filled, fillcolor=white, label=alveolar];
+macrophages18 -> alveolar17  [label=nn];
+contribution15 -> macrophages18  [label=prep_of];
+growth22 [style=filled, fillcolor=white, label=growth];
+lung20 [style=filled, fillcolor=white, label=lung];
+growth22 -> lung20  [label=nn];
+tumor21 [style=filled, fillcolor=white, label=tumor];
+growth22 -> tumor21  [label=nn];
+macrophages18 -> growth22  [label=prep_to];
+is23 [style=filled, fillcolor=white, label=is];
+unclear24 -> is23  [label=cop];
+unclear24 -> unclear24  [label=root];
+"-LSB-25" [style=filled, fillcolor=white, label="-LSB-"];
+unclear24 -> "-LSB-25"  [label=dep];
+62 [style=filled, fillcolor=white, label=6];
+"-LSB-25" -> 62  [label=num];
+728 [style=filled, fillcolor=white, label=7];
+"-LSB-25" -> 728  [label=num];
+"-RSB-31" [style=filled, fillcolor=white, label="-RSB-"];
+1330 [style=filled, fillcolor=white, label=13];
+"-RSB-31" -> 1330  [label=num];
+"-LSB-25" -> "-RSB-31"  [label=appos];
+}

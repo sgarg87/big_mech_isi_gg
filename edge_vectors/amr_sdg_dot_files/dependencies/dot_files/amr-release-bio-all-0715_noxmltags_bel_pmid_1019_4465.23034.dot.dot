@@ -1,0 +1,55 @@
+digraph "In the case of insulin ,  it is unclear whether SHIP associates with IRS proteins or the insulin receptor ,  although a recent report has demonstrated SHIP association with IRS-2 in response to erythropoietin" {
+label="In the case of insulin ,  it is unclear whether SHIP associates with IRS
+proteins or the insulin receptor ,  although a recent report has demonstrated
+SHIP association with IRS-2 in response to erythropoietin";
+case3 [style=filled, fillcolor=white, label=case];
+the2 [style=filled, fillcolor=white, label=the];
+case3 -> the2  [label=det];
+unclear9 [style=filled, fillcolor=white, label=unclear];
+unclear9 -> case3  [label=prep_in];
+insulin5 [style=filled, fillcolor=white, label=insulin];
+case3 -> insulin5  [label=prep_of];
+it7 [style=filled, fillcolor=white, label=it];
+unclear9 -> it7  [label=nsubj];
+is8 [style=filled, fillcolor=white, label=is];
+unclear9 -> is8  [label=cop];
+unclear9 -> unclear9  [label=root];
+SHIP11 [style=filled, fillcolor=white, label=SHIP];
+whether10 [style=filled, fillcolor=white, label=whether];
+SHIP11 -> whether10  [label=mark];
+unclear9 -> SHIP11  [label=ccomp];
+associates12 [style=filled, fillcolor=white, label=associates];
+SHIP11 -> associates12  [label=dobj];
+proteins15 [style=filled, fillcolor=white, label=proteins];
+IRS14 [style=filled, fillcolor=white, label=IRS];
+proteins15 -> IRS14  [label=nn];
+SHIP11 -> proteins15  [label=prep_with];
+receptor19 [style=filled, fillcolor=white, label=receptor];
+the17 [style=filled, fillcolor=white, label=the];
+receptor19 -> the17  [label=det];
+insulin18 [style=filled, fillcolor=white, label=insulin];
+receptor19 -> insulin18  [label=nn];
+proteins15 -> receptor19  [label=conj_or];
+demonstrated26 [style=filled, fillcolor=white, label=demonstrated];
+although21 [style=filled, fillcolor=white, label=although];
+demonstrated26 -> although21  [label=mark];
+report24 [style=filled, fillcolor=white, label=report];
+a22 [style=filled, fillcolor=white, label=a];
+report24 -> a22  [label=det];
+recent23 [style=filled, fillcolor=white, label=recent];
+report24 -> recent23  [label=amod];
+demonstrated26 -> report24  [label=nsubj];
+has25 [style=filled, fillcolor=white, label=has];
+demonstrated26 -> has25  [label=aux];
+SHIP11 -> demonstrated26  [label=advcl];
+association28 [style=filled, fillcolor=white, label=association];
+SHIP27 [style=filled, fillcolor=white, label=SHIP];
+association28 -> SHIP27  [label=nn];
+demonstrated26 -> association28  [label=dobj];
+"IRS-230" [style=filled, fillcolor=white, label="IRS-2"];
+demonstrated26 -> "IRS-230"  [label=prep_with];
+response32 [style=filled, fillcolor=white, label=response];
+"IRS-230" -> response32  [label=prep_in];
+erythropoietin34 [style=filled, fillcolor=white, label=erythropoietin];
+demonstrated26 -> erythropoietin34  [label=prep_to];
+}

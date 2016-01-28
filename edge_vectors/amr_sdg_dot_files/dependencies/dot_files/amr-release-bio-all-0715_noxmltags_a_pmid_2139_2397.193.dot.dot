@@ -1,0 +1,17 @@
+digraph "For this purpose ,  a siRNA approach was used ." {
+label="For this purpose ,  a siRNA approach was used .";
+purpose3 [style=filled, fillcolor=white, label=purpose];
+this2 [style=filled, fillcolor=white, label=this];
+purpose3 -> this2  [label=det];
+used9 [style=filled, fillcolor=white, label=used];
+used9 -> purpose3  [label=prep_for];
+approach7 [style=filled, fillcolor=white, label=approach];
+a5 [style=filled, fillcolor=white, label=a];
+approach7 -> a5  [label=det];
+siRNA6 [style=filled, fillcolor=white, label=siRNA];
+approach7 -> siRNA6  [label=nn];
+used9 -> approach7  [label=nsubjpass];
+was8 [style=filled, fillcolor=white, label=was];
+used9 -> was8  [label=auxpass];
+used9 -> used9  [label=root];
+}

@@ -1,0 +1,49 @@
+digraph "With age ,  however ,  epidermal folds and undulations developed in areas where Snail was expressed ,  and proliferative markers persisted in these regions ( Figure 3I and 3J ; anti-cyclin D staining ) ." {
+label="With age ,  however ,  epidermal folds and undulations developed in areas where
+Snail was expressed ,  and proliferative markers persisted in these regions (
+Figure 3I and 3J ; anti-cyclin D staining ) .";
+developed10 [style=filled, fillcolor=white, label=developed];
+age2 [style=filled, fillcolor=white, label=age];
+developed10 -> age2  [label=prep_with];
+however4 [style=filled, fillcolor=white, label=however];
+developed10 -> however4  [label=advmod];
+folds7 [style=filled, fillcolor=white, label=folds];
+epidermal6 [style=filled, fillcolor=white, label=epidermal];
+folds7 -> epidermal6  [label=amod];
+developed10 -> folds7  [label=nsubj];
+undulations9 [style=filled, fillcolor=white, label=undulations];
+folds7 -> undulations9  [label=conj_and];
+developed10 -> developed10  [label=root];
+areas12 [style=filled, fillcolor=white, label=areas];
+developed10 -> areas12  [label=prep_in];
+expressed16 [style=filled, fillcolor=white, label=expressed];
+where13 [style=filled, fillcolor=white, label=where];
+expressed16 -> where13  [label=advmod];
+Snail14 [style=filled, fillcolor=white, label=Snail];
+expressed16 -> Snail14  [label=nsubjpass];
+was15 [style=filled, fillcolor=white, label=was];
+expressed16 -> was15  [label=auxpass];
+developed10 -> expressed16  [label=advcl];
+markers20 [style=filled, fillcolor=white, label=markers];
+proliferative19 [style=filled, fillcolor=white, label=proliferative];
+markers20 -> proliferative19  [label=amod];
+persisted21 [style=filled, fillcolor=white, label=persisted];
+persisted21 -> markers20  [label=nsubj];
+developed10 -> persisted21  [label=conj_and];
+regions24 [style=filled, fillcolor=white, label=regions];
+these23 [style=filled, fillcolor=white, label=these];
+regions24 -> these23  [label=det];
+persisted21 -> regions24  [label=prep_in];
+Figure26 [style=filled, fillcolor=white, label=Figure];
+regions24 -> Figure26  [label=dep];
+"3I27" [style=filled, fillcolor=white, label="3I"];
+Figure26 -> "3I27"  [label=num];
+"3J29" [style=filled, fillcolor=white, label="3J"];
+Figure26 -> "3J29"  [label=conj_and];
+staining33 [style=filled, fillcolor=white, label=staining];
+"anti-cyclin31" [style=filled, fillcolor=white, label="anti-cyclin"];
+staining33 -> "anti-cyclin31"  [label=amod];
+D32 [style=filled, fillcolor=white, label=D];
+staining33 -> D32  [label=nn];
+Figure26 -> staining33  [label=dep];
+}

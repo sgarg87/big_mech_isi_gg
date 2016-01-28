@@ -1,0 +1,28 @@
+digraph "Arrowheads point to sites of intercellular contact between a Snail-transfected keratinocyte and its neighboring untransfected cell ." {
+label="Arrowheads point to sites of intercellular contact between a Snail-transfected
+keratinocyte and its neighboring untransfected cell .";
+point2 [style=filled, fillcolor=white, label=point];
+Arrowheads1 [style=filled, fillcolor=white, label=Arrowheads];
+point2 -> Arrowheads1  [label=nsubj];
+point2 -> point2  [label=root];
+sites4 [style=filled, fillcolor=white, label=sites];
+point2 -> sites4  [label=prep_to];
+contact7 [style=filled, fillcolor=white, label=contact];
+intercellular6 [style=filled, fillcolor=white, label=intercellular];
+contact7 -> intercellular6  [label=nn];
+sites4 -> contact7  [label=prep_of];
+keratinocyte11 [style=filled, fillcolor=white, label=keratinocyte];
+a9 [style=filled, fillcolor=white, label=a];
+keratinocyte11 -> a9  [label=det];
+"Snail-transfected10" [style=filled, fillcolor=white, label="Snail-transfected"];
+keratinocyte11 -> "Snail-transfected10"  [label=amod];
+contact7 -> keratinocyte11  [label=prep_between];
+cell16 [style=filled, fillcolor=white, label=cell];
+its13 [style=filled, fillcolor=white, label=its];
+cell16 -> its13  [label=poss];
+neighboring14 [style=filled, fillcolor=white, label=neighboring];
+cell16 -> neighboring14  [label=amod];
+untransfected15 [style=filled, fillcolor=white, label=untransfected];
+cell16 -> untransfected15  [label=amod];
+keratinocyte11 -> cell16  [label=conj_and];
+}

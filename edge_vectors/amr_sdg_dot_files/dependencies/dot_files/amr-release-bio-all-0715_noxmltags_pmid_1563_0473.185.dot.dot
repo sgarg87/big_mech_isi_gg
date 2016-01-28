@@ -1,0 +1,49 @@
+digraph "Moreover ,  through activation of Snail gene expression ,  TGF-β2 appears to work in tandem with these other morphogens to down-regulate E-cadherin levels ,  which contributes to the activation of proliferative circuitries ." {
+label="Moreover ,  through activation of Snail gene expression ,  TGF-β2 appears to
+work in tandem with these other morphogens to down-regulate E-cadherin levels ,
+which contributes to the activation of proliferative circuitries .";
+appears11 [style=filled, fillcolor=white, label=appears];
+Moreover1 [style=filled, fillcolor=white, label=Moreover];
+appears11 -> Moreover1  [label=advmod];
+activation4 [style=filled, fillcolor=white, label=activation];
+appears11 -> activation4  [label=prep_through];
+expression8 [style=filled, fillcolor=white, label=expression];
+Snail6 [style=filled, fillcolor=white, label=Snail];
+expression8 -> Snail6  [label=nn];
+gene7 [style=filled, fillcolor=white, label=gene];
+expression8 -> gene7  [label=nn];
+activation4 -> expression8  [label=prep_of];
+"TGF-β210" [style=filled, fillcolor=white, label="TGF-β2"];
+appears11 -> "TGF-β210"  [label=nsubj];
+appears11 -> appears11  [label=root];
+work13 [style=filled, fillcolor=white, label=work];
+to12 [style=filled, fillcolor=white, label=to];
+work13 -> to12  [label=aux];
+appears11 -> work13  [label=xcomp];
+tandem15 [style=filled, fillcolor=white, label=tandem];
+work13 -> tandem15  [label=prep_in];
+morphogens19 [style=filled, fillcolor=white, label=morphogens];
+these17 [style=filled, fillcolor=white, label=these];
+morphogens19 -> these17  [label=det];
+other18 [style=filled, fillcolor=white, label=other];
+morphogens19 -> other18  [label=amod];
+tandem15 -> morphogens19  [label=prep_with];
+levels23 [style=filled, fillcolor=white, label=levels];
+"down-regulate21" [style=filled, fillcolor=white, label="down-regulate"];
+levels23 -> "down-regulate21"  [label=amod];
+"E-cadherin22" [style=filled, fillcolor=white, label="E-cadherin"];
+levels23 -> "E-cadherin22"  [label=amod];
+work13 -> levels23  [label=prep_to];
+contributes26 [style=filled, fillcolor=white, label=contributes];
+which25 [style=filled, fillcolor=white, label=which];
+contributes26 -> which25  [label=nsubj];
+levels23 -> contributes26  [label=rcmod];
+activation29 [style=filled, fillcolor=white, label=activation];
+the28 [style=filled, fillcolor=white, label=the];
+activation29 -> the28  [label=det];
+contributes26 -> activation29  [label=prep_to];
+circuitries32 [style=filled, fillcolor=white, label=circuitries];
+proliferative31 [style=filled, fillcolor=white, label=proliferative];
+circuitries32 -> proliferative31  [label=amod];
+activation29 -> circuitries32  [label=prep_of];
+}

@@ -1,0 +1,34 @@
+digraph "The transition from the inactive to active state requires formation of nucleotide-free Ras through the action of exchange factors ." {
+label="The transition from the inactive to active state requires formation of
+nucleotide-free Ras through the action of exchange factors .";
+transition2 [style=filled, fillcolor=white, label=transition];
+The1 [style=filled, fillcolor=white, label=The];
+transition2 -> The1  [label=det];
+requires9 [style=filled, fillcolor=white, label=requires];
+requires9 -> transition2  [label=nsubj];
+state8 [style=filled, fillcolor=white, label=state];
+the4 [style=filled, fillcolor=white, label=the];
+state8 -> the4  [label=det];
+active7 [style=filled, fillcolor=white, label=active];
+inactive5 [style=filled, fillcolor=white, label=inactive];
+active7 -> inactive5  [label=amod];
+to6 [style=filled, fillcolor=white, label=to];
+active7 -> to6  [label=dep];
+state8 -> active7  [label=amod];
+transition2 -> state8  [label=prep_from];
+requires9 -> requires9  [label=root];
+formation10 [style=filled, fillcolor=white, label=formation];
+requires9 -> formation10  [label=dobj];
+Ras13 [style=filled, fillcolor=white, label=Ras];
+"nucleotide-free12" [style=filled, fillcolor=white, label="nucleotide-free"];
+Ras13 -> "nucleotide-free12"  [label=amod];
+formation10 -> Ras13  [label=prep_of];
+action16 [style=filled, fillcolor=white, label=action];
+the15 [style=filled, fillcolor=white, label=the];
+action16 -> the15  [label=det];
+requires9 -> action16  [label=prep_through];
+factors19 [style=filled, fillcolor=white, label=factors];
+exchange18 [style=filled, fillcolor=white, label=exchange];
+factors19 -> exchange18  [label=nn];
+action16 -> factors19  [label=prep_of];
+}

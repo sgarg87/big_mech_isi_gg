@@ -1,0 +1,49 @@
+digraph "IL-33 triggered the production of IL-13 and IL-6 and strongly increased the production of CCL17 and TGF-b from WT eosinophils ,  but not ST2 - / - eosinophils ,  in a dosedependent manner ( Fig. 5A ) ." {
+label="IL-33 triggered the production of IL-13 and IL-6 and strongly increased the
+production of CCL17 and TGF-b from WT eosinophils ,  but not ST2 - / -
+eosinophils ,  in a dosedependent manner ( Fig. 5A ) .";
+triggered2 [style=filled, fillcolor=white, label=triggered];
+"IL-331" [style=filled, fillcolor=white, label="IL-33"];
+triggered2 -> "IL-331"  [label=nsubj];
+triggered2 -> triggered2  [label=root];
+production4 [style=filled, fillcolor=white, label=production];
+the3 [style=filled, fillcolor=white, label=the];
+production4 -> the3  [label=det];
+triggered2 -> production4  [label=dobj];
+"IL-136" [style=filled, fillcolor=white, label="IL-13"];
+production4 -> "IL-136"  [label=prep_of];
+"IL-68" [style=filled, fillcolor=white, label="IL-6"];
+"IL-136" -> "IL-68"  [label=conj_and];
+increased11 [style=filled, fillcolor=white, label=increased];
+strongly10 [style=filled, fillcolor=white, label=strongly];
+increased11 -> strongly10  [label=advmod];
+triggered2 -> increased11  [label=conj_and];
+production13 [style=filled, fillcolor=white, label=production];
+the12 [style=filled, fillcolor=white, label=the];
+production13 -> the12  [label=det];
+increased11 -> production13  [label=dobj];
+CCL1715 [style=filled, fillcolor=white, label=CCL17];
+production13 -> CCL1715  [label=prep_of];
+"TGF-b17" [style=filled, fillcolor=white, label="TGF-b"];
+CCL1715 -> "TGF-b17"  [label=conj_and];
+eosinophils20 [style=filled, fillcolor=white, label=eosinophils];
+WT19 [style=filled, fillcolor=white, label=WT];
+eosinophils20 -> WT19  [label=nn];
+increased11 -> eosinophils20  [label=prep_from];
+ST224 [style=filled, fillcolor=white, label=ST2];
+eosinophils20 -> ST224  [label=conj_negcc];
+"/26" [style=filled, fillcolor=white, label="/"];
+eosinophils20 -> "/26"  [label=amod];
+eosinophils28 [style=filled, fillcolor=white, label=eosinophils];
+eosinophils20 -> eosinophils28  [label=dep];
+manner33 [style=filled, fillcolor=white, label=manner];
+a31 [style=filled, fillcolor=white, label=a];
+manner33 -> a31  [label=det];
+dosedependent32 [style=filled, fillcolor=white, label=dosedependent];
+manner33 -> dosedependent32  [label=amod];
+eosinophils20 -> manner33  [label=prep_in];
+"5A36" [style=filled, fillcolor=white, label="5A"];
+"Fig.35" [style=filled, fillcolor=white, label="Fig."];
+"5A36" -> "Fig.35"  [label=number];
+manner33 -> "5A36"  [label=dep];
+}

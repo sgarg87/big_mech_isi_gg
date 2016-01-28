@@ -1,0 +1,34 @@
+digraph "The most frequently mutated oncogenes in the deadliest cancers responsible for human mortality are KRAS ,  PIK3CA and BRAF ." {
+label="The most frequently mutated oncogenes in the deadliest cancers responsible for
+human mortality are KRAS ,  PIK3CA and BRAF .";
+oncogenes5 [style=filled, fillcolor=white, label=oncogenes];
+The1 [style=filled, fillcolor=white, label=The];
+oncogenes5 -> The1  [label=det];
+frequently3 [style=filled, fillcolor=white, label=frequently];
+most2 [style=filled, fillcolor=white, label=most];
+frequently3 -> most2  [label=advmod];
+mutated4 [style=filled, fillcolor=white, label=mutated];
+mutated4 -> frequently3  [label=advmod];
+oncogenes5 -> mutated4  [label=amod];
+KRAS15 [style=filled, fillcolor=white, label=KRAS];
+KRAS15 -> oncogenes5  [label=nsubj];
+cancers9 [style=filled, fillcolor=white, label=cancers];
+the7 [style=filled, fillcolor=white, label=the];
+cancers9 -> the7  [label=det];
+deadliest8 [style=filled, fillcolor=white, label=deadliest];
+cancers9 -> deadliest8  [label=amod];
+oncogenes5 -> cancers9  [label=prep_in];
+responsible10 [style=filled, fillcolor=white, label=responsible];
+cancers9 -> responsible10  [label=amod];
+mortality13 [style=filled, fillcolor=white, label=mortality];
+human12 [style=filled, fillcolor=white, label=human];
+mortality13 -> human12  [label=amod];
+responsible10 -> mortality13  [label=prep_for];
+are14 [style=filled, fillcolor=white, label=are];
+KRAS15 -> are14  [label=cop];
+KRAS15 -> KRAS15  [label=root];
+PIK3CA17 [style=filled, fillcolor=white, label=PIK3CA];
+KRAS15 -> PIK3CA17  [label=conj_and];
+BRAF19 [style=filled, fillcolor=white, label=BRAF];
+KRAS15 -> BRAF19  [label=conj_and];
+}

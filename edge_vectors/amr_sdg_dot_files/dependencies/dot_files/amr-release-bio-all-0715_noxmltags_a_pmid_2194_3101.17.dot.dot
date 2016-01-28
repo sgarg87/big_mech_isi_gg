@@ -1,0 +1,38 @@
+digraph "Moreover ,  BRAF and KRAS oncogenes are shown to cooperate with the TGFβ-1 pathway to provide cells with additional transforming properties ." {
+label="Moreover ,  BRAF and KRAS oncogenes are shown to cooperate with the TGFβ-1
+pathway to provide cells with additional transforming properties .";
+shown8 [style=filled, fillcolor=white, label=shown];
+Moreover1 [style=filled, fillcolor=white, label=Moreover];
+shown8 -> Moreover1  [label=advmod];
+oncogenes6 [style=filled, fillcolor=white, label=oncogenes];
+BRAF3 [style=filled, fillcolor=white, label=BRAF];
+oncogenes6 -> BRAF3  [label=nn];
+KRAS5 [style=filled, fillcolor=white, label=KRAS];
+BRAF3 -> KRAS5  [label=conj_and];
+shown8 -> oncogenes6  [label=nsubjpass];
+are7 [style=filled, fillcolor=white, label=are];
+shown8 -> are7  [label=auxpass];
+shown8 -> shown8  [label=root];
+cooperate10 [style=filled, fillcolor=white, label=cooperate];
+to9 [style=filled, fillcolor=white, label=to];
+cooperate10 -> to9  [label=aux];
+shown8 -> cooperate10  [label=xcomp];
+pathway14 [style=filled, fillcolor=white, label=pathway];
+the12 [style=filled, fillcolor=white, label=the];
+pathway14 -> the12  [label=det];
+"TGFβ-13" [style=filled, fillcolor=white, label="TGFβ-1"];
+pathway14 -> "TGFβ-13"  [label=nn];
+cooperate10 -> pathway14  [label=prep_with];
+provide16 [style=filled, fillcolor=white, label=provide];
+to15 [style=filled, fillcolor=white, label=to];
+provide16 -> to15  [label=aux];
+cooperate10 -> provide16  [label=xcomp];
+cells17 [style=filled, fillcolor=white, label=cells];
+provide16 -> cells17  [label=dobj];
+properties21 [style=filled, fillcolor=white, label=properties];
+additional19 [style=filled, fillcolor=white, label=additional];
+properties21 -> additional19  [label=amod];
+transforming20 [style=filled, fillcolor=white, label=transforming];
+properties21 -> transforming20  [label=amod];
+provide16 -> properties21  [label=prep_with];
+}

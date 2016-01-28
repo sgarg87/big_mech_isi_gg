@@ -1,0 +1,39 @@
+digraph "When either primary or OB1 osteoblasts are induced to differentiate ,  FGF signaling inhibits expression of alkaline phosphatase ,  and blocks mineralization ." {
+label="When either primary or OB1 osteoblasts are induced to differentiate ,  FGF
+signaling inhibits expression of alkaline phosphatase ,  and blocks
+mineralization .";
+induced8 [style=filled, fillcolor=white, label=induced];
+When1 [style=filled, fillcolor=white, label=When];
+induced8 -> When1  [label=advmod];
+osteoblasts6 [style=filled, fillcolor=white, label=osteoblasts];
+either2 [style=filled, fillcolor=white, label=either];
+osteoblasts6 -> either2  [label=det];
+primary3 [style=filled, fillcolor=white, label=primary];
+osteoblasts6 -> primary3  [label=amod];
+OB15 [style=filled, fillcolor=white, label=OB1];
+primary3 -> OB15  [label=conj_or];
+induced8 -> osteoblasts6  [label=nsubjpass];
+are7 [style=filled, fillcolor=white, label=are];
+induced8 -> are7  [label=auxpass];
+inhibits14 [style=filled, fillcolor=white, label=inhibits];
+inhibits14 -> induced8  [label=advcl];
+differentiate10 [style=filled, fillcolor=white, label=differentiate];
+to9 [style=filled, fillcolor=white, label=to];
+differentiate10 -> to9  [label=aux];
+induced8 -> differentiate10  [label=xcomp];
+signaling13 [style=filled, fillcolor=white, label=signaling];
+FGF12 [style=filled, fillcolor=white, label=FGF];
+signaling13 -> FGF12  [label=nn];
+inhibits14 -> signaling13  [label=nsubj];
+inhibits14 -> inhibits14  [label=root];
+expression15 [style=filled, fillcolor=white, label=expression];
+inhibits14 -> expression15  [label=dobj];
+phosphatase18 [style=filled, fillcolor=white, label=phosphatase];
+alkaline17 [style=filled, fillcolor=white, label=alkaline];
+phosphatase18 -> alkaline17  [label=amod];
+expression15 -> phosphatase18  [label=prep_of];
+blocks21 [style=filled, fillcolor=white, label=blocks];
+inhibits14 -> blocks21  [label=conj_and];
+mineralization22 [style=filled, fillcolor=white, label=mineralization];
+blocks21 -> mineralization22  [label=dobj];
+}

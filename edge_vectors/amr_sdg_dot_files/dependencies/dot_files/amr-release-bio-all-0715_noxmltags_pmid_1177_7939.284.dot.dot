@@ -1,0 +1,13 @@
+digraph "Bound proteins were resolved by SDS-PAGE ." {
+label="Bound proteins were resolved by SDS-PAGE .";
+proteins2 [style=filled, fillcolor=white, label=proteins];
+Bound1 [style=filled, fillcolor=white, label=Bound];
+proteins2 -> Bound1  [label=amod];
+resolved4 [style=filled, fillcolor=white, label=resolved];
+resolved4 -> proteins2  [label=nsubjpass];
+were3 [style=filled, fillcolor=white, label=were];
+resolved4 -> were3  [label=auxpass];
+resolved4 -> resolved4  [label=root];
+"SDS-PAGE6" [style=filled, fillcolor=white, label="SDS-PAGE"];
+resolved4 -> "SDS-PAGE6"  [label=agent];
+}

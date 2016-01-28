@@ -1,0 +1,36 @@
+digraph "However ,  in regions such as ear skin ,  where the highest levels of Snail protein were expressed ,  the effects were accentuated ." {
+label="However ,  in regions such as ear skin ,  where the highest levels of Snail
+protein were expressed ,  the effects were accentuated .";
+accentuated23 [style=filled, fillcolor=white, label=accentuated];
+However1 [style=filled, fillcolor=white, label=However];
+accentuated23 -> However1  [label=advmod];
+regions4 [style=filled, fillcolor=white, label=regions];
+accentuated23 -> regions4  [label=prep_in];
+skin8 [style=filled, fillcolor=white, label=skin];
+ear7 [style=filled, fillcolor=white, label=ear];
+skin8 -> ear7  [label=nn];
+regions4 -> skin8  [label=prep_such_as];
+expressed18 [style=filled, fillcolor=white, label=expressed];
+where10 [style=filled, fillcolor=white, label=where];
+expressed18 -> where10  [label=advmod];
+levels13 [style=filled, fillcolor=white, label=levels];
+the11 [style=filled, fillcolor=white, label=the];
+levels13 -> the11  [label=det];
+highest12 [style=filled, fillcolor=white, label=highest];
+levels13 -> highest12  [label=amod];
+expressed18 -> levels13  [label=nsubjpass];
+protein16 [style=filled, fillcolor=white, label=protein];
+Snail15 [style=filled, fillcolor=white, label=Snail];
+protein16 -> Snail15  [label=nn];
+levels13 -> protein16  [label=prep_of];
+were17 [style=filled, fillcolor=white, label=were];
+expressed18 -> were17  [label=auxpass];
+accentuated23 -> expressed18  [label=advcl];
+effects21 [style=filled, fillcolor=white, label=effects];
+the20 [style=filled, fillcolor=white, label=the];
+effects21 -> the20  [label=det];
+accentuated23 -> effects21  [label=nsubjpass];
+were22 [style=filled, fillcolor=white, label=were];
+accentuated23 -> were22  [label=auxpass];
+accentuated23 -> accentuated23  [label=root];
+}

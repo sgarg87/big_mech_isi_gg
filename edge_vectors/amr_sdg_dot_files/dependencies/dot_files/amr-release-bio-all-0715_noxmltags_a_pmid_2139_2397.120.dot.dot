@@ -1,0 +1,32 @@
+digraph "As previously reported ,  IR can activate the Akt ligand independently -LSB- 30 ,  36 -RSB- ." {
+label="As previously reported ,  IR can activate the Akt ligand independently -LSB- 30
+,  36 -RSB- .";
+reported3 [style=filled, fillcolor=white, label=reported];
+As1 [style=filled, fillcolor=white, label=As];
+reported3 -> As1  [label=mark];
+previously2 [style=filled, fillcolor=white, label=previously];
+reported3 -> previously2  [label=advmod];
+activate7 [style=filled, fillcolor=white, label=activate];
+activate7 -> reported3  [label=advcl];
+IR5 [style=filled, fillcolor=white, label=IR];
+activate7 -> IR5  [label=nsubj];
+can6 [style=filled, fillcolor=white, label=can];
+activate7 -> can6  [label=aux];
+activate7 -> activate7  [label=root];
+ligand10 [style=filled, fillcolor=white, label=ligand];
+the8 [style=filled, fillcolor=white, label=the];
+ligand10 -> the8  [label=det];
+Akt9 [style=filled, fillcolor=white, label=Akt];
+ligand10 -> Akt9  [label=nn];
+"-RSB-16" [style=filled, fillcolor=white, label="-RSB-"];
+"-RSB-16" -> ligand10  [label=dep];
+independently11 [style=filled, fillcolor=white, label=independently];
+"-RSB-16" -> independently11  [label=advmod];
+"-LSB-12" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-16" -> "-LSB-12"  [label=dep];
+301 [style=filled, fillcolor=white, label=30];
+"-LSB-12" -> 301  [label=num];
+3615 [style=filled, fillcolor=white, label=36];
+"-LSB-12" -> 3615  [label=num];
+activate7 -> "-RSB-16"  [label=dep];
+}

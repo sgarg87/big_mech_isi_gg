@@ -1,0 +1,51 @@
+digraph "As a positive regulator ,  PP2A associates with C-Raf and Ksr1 and dephosphorylates negative regulatory sites on both proteins ,  allowing their recruitment to the membrane and leading to Mek and Erk activation ." {
+label="As a positive regulator ,  PP2A associates with C-Raf and Ksr1 and
+dephosphorylates negative regulatory sites on both proteins ,  allowing their
+recruitment to the membrane and leading to Mek and Erk activation .";
+regulator4 [style=filled, fillcolor=white, label=regulator];
+a2 [style=filled, fillcolor=white, label=a];
+regulator4 -> a2  [label=det];
+positive3 [style=filled, fillcolor=white, label=positive];
+regulator4 -> positive3  [label=amod];
+associates7 [style=filled, fillcolor=white, label=associates];
+associates7 -> regulator4  [label=prep_as];
+PP2A6 [style=filled, fillcolor=white, label=PP2A];
+associates7 -> PP2A6  [label=nsubj];
+associates7 -> associates7  [label=root];
+"C-Raf9" [style=filled, fillcolor=white, label="C-Raf"];
+associates7 -> "C-Raf9"  [label=prep_with];
+Ksr1 [style=filled, fillcolor=white, label=Ksr1];
+"C-Raf9" -> Ksr1  [label=conj_and];
+dephosphorylates13 [style=filled, fillcolor=white, label=dephosphorylates];
+associates7 -> dephosphorylates13  [label=conj_and];
+sites16 [style=filled, fillcolor=white, label=sites];
+negative14 [style=filled, fillcolor=white, label=negative];
+sites16 -> negative14  [label=amod];
+regulatory15 [style=filled, fillcolor=white, label=regulatory];
+sites16 -> regulatory15  [label=amod];
+dephosphorylates13 -> sites16  [label=dobj];
+proteins19 [style=filled, fillcolor=white, label=proteins];
+both18 [style=filled, fillcolor=white, label=both];
+proteins19 -> both18  [label=det];
+dephosphorylates13 -> proteins19  [label=prep_on];
+allowing21 [style=filled, fillcolor=white, label=allowing];
+dephosphorylates13 -> allowing21  [label=dep];
+recruitment23 [style=filled, fillcolor=white, label=recruitment];
+their22 [style=filled, fillcolor=white, label=their];
+recruitment23 -> their22  [label=poss];
+allowing21 -> recruitment23  [label=dobj];
+membrane26 [style=filled, fillcolor=white, label=membrane];
+the25 [style=filled, fillcolor=white, label=the];
+membrane26 -> the25  [label=det];
+allowing21 -> membrane26  [label=prep_to];
+leading28 [style=filled, fillcolor=white, label=leading];
+allowing21 -> leading28  [label=conj_and];
+Mek30 [style=filled, fillcolor=white, label=Mek];
+to29 [style=filled, fillcolor=white, label=to];
+Mek30 -> to29  [label=aux];
+leading28 -> Mek30  [label=xcomp];
+Erk32 [style=filled, fillcolor=white, label=Erk];
+Mek30 -> Erk32  [label=conj_and];
+activation33 [style=filled, fillcolor=white, label=activation];
+Mek30 -> activation33  [label=dobj];
+}

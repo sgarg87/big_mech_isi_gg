@@ -1,0 +1,51 @@
+digraph "Inhibition of MEK1 also led to reduced expression of alpha-enolase ,  phosphoglycerate kinase ,  elongation factor 2 and heterogeneous nuclear ribonucleoprotein A3 ,  the latter two being detected as truncated proteins ." {
+label="Inhibition of MEK1 also led to reduced expression of alpha-enolase ,
+phosphoglycerate kinase ,  elongation factor 2 and heterogeneous nuclear
+ribonucleoprotein A3 ,  the latter two being detected as truncated proteins .";
+led5 [style=filled, fillcolor=white, label=led];
+Inhibition1 [style=filled, fillcolor=white, label=Inhibition];
+led5 -> Inhibition1  [label=nsubj];
+MEK13 [style=filled, fillcolor=white, label=MEK1];
+Inhibition1 -> MEK13  [label=prep_of];
+also4 [style=filled, fillcolor=white, label=also];
+led5 -> also4  [label=advmod];
+led5 -> led5  [label=root];
+expression8 [style=filled, fillcolor=white, label=expression];
+reduced7 [style=filled, fillcolor=white, label=reduced];
+expression8 -> reduced7  [label=amod];
+led5 -> expression8  [label=prep_to];
+kinase13 [style=filled, fillcolor=white, label=kinase];
+"alpha-enolase10" [style=filled, fillcolor=white, label="alpha-enolase"];
+kinase13 -> "alpha-enolase10"  [label=amod];
+phosphoglycerate12 [style=filled, fillcolor=white, label=phosphoglycerate];
+kinase13 -> phosphoglycerate12  [label=amod];
+expression8 -> kinase13  [label=prep_of];
+factor16 [style=filled, fillcolor=white, label=factor];
+elongation15 [style=filled, fillcolor=white, label=elongation];
+factor16 -> elongation15  [label=nn];
+expression8 -> factor16  [label=conj_and];
+217 [style=filled, fillcolor=white, label=2];
+factor16 -> 217  [label=dep];
+A322 [style=filled, fillcolor=white, label=A3];
+heterogeneous19 [style=filled, fillcolor=white, label=heterogeneous];
+A322 -> heterogeneous19  [label=amod];
+nuclear20 [style=filled, fillcolor=white, label=nuclear];
+A322 -> nuclear20  [label=amod];
+ribonucleoprotein21 [style=filled, fillcolor=white, label=ribonucleoprotein];
+A322 -> ribonucleoprotein21  [label=nn];
+expression8 -> A322  [label=conj_and];
+two26 [style=filled, fillcolor=white, label=two];
+the24 [style=filled, fillcolor=white, label=the];
+two26 -> the24  [label=det];
+latter25 [style=filled, fillcolor=white, label=latter];
+two26 -> latter25  [label=amod];
+A322 -> two26  [label=appos];
+detected28 [style=filled, fillcolor=white, label=detected];
+being27 [style=filled, fillcolor=white, label=being];
+detected28 -> being27  [label=auxpass];
+two26 -> detected28  [label=vmod];
+proteins31 [style=filled, fillcolor=white, label=proteins];
+truncated30 [style=filled, fillcolor=white, label=truncated];
+proteins31 -> truncated30  [label=amod];
+detected28 -> proteins31  [label=prep_as];
+}

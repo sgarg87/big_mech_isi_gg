@@ -1,0 +1,49 @@
+digraph "e show here that oncogenic forms of Ha-Ras activate NF-kappaB ,  not through induced nuclear translocation ,  but rather through the activation of the transcriptional function of the NF-kappaB RelA/p65 subunit ." {
+label="e show here that oncogenic forms of Ha-Ras activate NF-kappaB ,  not through
+induced nuclear translocation ,  but rather through the activation of the
+transcriptional function of the NF-kappaB RelA/p65 subunit .";
+show2 [style=filled, fillcolor=white, label=show];
+e1 [style=filled, fillcolor=white, label=e];
+show2 -> e1  [label=dep];
+show2 -> show2  [label=root];
+here3 [style=filled, fillcolor=white, label=here];
+show2 -> here3  [label=advmod];
+activate9 [style=filled, fillcolor=white, label=activate];
+that4 [style=filled, fillcolor=white, label=that];
+activate9 -> that4  [label=mark];
+forms6 [style=filled, fillcolor=white, label=forms];
+oncogenic5 [style=filled, fillcolor=white, label=oncogenic];
+forms6 -> oncogenic5  [label=amod];
+activate9 -> forms6  [label=nsubj];
+"Ha-Ras8" [style=filled, fillcolor=white, label="Ha-Ras"];
+forms6 -> "Ha-Ras8"  [label=prep_of];
+show2 -> activate9  [label=ccomp];
+"NF-kappaB10" [style=filled, fillcolor=white, label="NF-kappaB"];
+activate9 -> "NF-kappaB10"  [label=acomp];
+not12 [style=filled, fillcolor=white, label=not];
+activate9 -> not12  [label=neg];
+translocation16 [style=filled, fillcolor=white, label=translocation];
+induced14 [style=filled, fillcolor=white, label=induced];
+translocation16 -> induced14  [label=amod];
+nuclear15 [style=filled, fillcolor=white, label=nuclear];
+translocation16 -> nuclear15  [label=amod];
+activate9 -> translocation16  [label=prep_through];
+activation22 [style=filled, fillcolor=white, label=activation];
+the21 [style=filled, fillcolor=white, label=the];
+activation22 -> the21  [label=det];
+translocation16 -> activation22  [label=conj_negcc];
+function26 [style=filled, fillcolor=white, label=function];
+the24 [style=filled, fillcolor=white, label=the];
+function26 -> the24  [label=det];
+transcriptional25 [style=filled, fillcolor=white, label=transcriptional];
+function26 -> transcriptional25  [label=amod];
+activation22 -> function26  [label=prep_of];
+subunit31 [style=filled, fillcolor=white, label=subunit];
+the28 [style=filled, fillcolor=white, label=the];
+subunit31 -> the28  [label=det];
+"NF-kappaB29" [style=filled, fillcolor=white, label="NF-kappaB"];
+subunit31 -> "NF-kappaB29"  [label=amod];
+"RelA/p6530" [style=filled, fillcolor=white, label="RelA/p65"];
+subunit31 -> "RelA/p6530"  [label=amod];
+function26 -> subunit31  [label=prep_of];
+}

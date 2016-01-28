@@ -1,0 +1,40 @@
+digraph "Interestingly ,  treatment of cultured keratinocytes with as little as 5 ng/ml of TGF-β2 caused a rapid and transient induction of Snail ( Figure 5B ) ." {
+label="Interestingly ,  treatment of cultured keratinocytes with as little as 5 ng/ml
+of TGF-β2 caused a rapid and transient induction of Snail ( Figure 5B ) .";
+caused15 [style=filled, fillcolor=white, label=caused];
+Interestingly1 [style=filled, fillcolor=white, label=Interestingly];
+caused15 -> Interestingly1  [label=advmod];
+treatment3 [style=filled, fillcolor=white, label=treatment];
+caused15 -> treatment3  [label=nsubj];
+keratinocytes6 [style=filled, fillcolor=white, label=keratinocytes];
+cultured5 [style=filled, fillcolor=white, label=cultured];
+keratinocytes6 -> cultured5  [label=amod];
+treatment3 -> keratinocytes6  [label=prep_of];
+as10 [style=filled, fillcolor=white, label=as];
+as8 [style=filled, fillcolor=white, label=as];
+as10 -> as8  [label=advmod];
+little9 [style=filled, fillcolor=white, label=little];
+as10 -> little9  [label=advmod];
+511 [style=filled, fillcolor=white, label=5];
+511 -> as10  [label=quantmod];
+"ng/ml12" [style=filled, fillcolor=white, label="ng/ml"];
+"ng/ml12" -> 511  [label=num];
+keratinocytes6 -> "ng/ml12"  [label=prep_with];
+"TGF-β214" [style=filled, fillcolor=white, label="TGF-β2"];
+"ng/ml12" -> "TGF-β214"  [label=prep_of];
+caused15 -> caused15  [label=root];
+induction20 [style=filled, fillcolor=white, label=induction];
+a16 [style=filled, fillcolor=white, label=a];
+induction20 -> a16  [label=det];
+rapid17 [style=filled, fillcolor=white, label=rapid];
+induction20 -> rapid17  [label=amod];
+transient19 [style=filled, fillcolor=white, label=transient];
+rapid17 -> transient19  [label=conj_and];
+caused15 -> induction20  [label=dobj];
+Snail22 [style=filled, fillcolor=white, label=Snail];
+induction20 -> Snail22  [label=prep_of];
+Figure24 [style=filled, fillcolor=white, label=Figure];
+Snail22 -> Figure24  [label=appos];
+"5B2" [style=filled, fillcolor=white, label="5B"];
+Figure24 -> "5B2"  [label=num];
+}

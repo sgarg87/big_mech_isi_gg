@@ -1,0 +1,49 @@
+digraph "activation of ERK depended on EGFR ,  Src tyrosine kinase and calcium calmodulin in PC12 cells ( 31 ) ,  while requiring ras/Raf -1 / MEK activation in human neutrophils ( 58 ) ." {
+label="activation of ERK depended on EGFR ,  Src tyrosine kinase and calcium
+calmodulin in PC12 cells ( 31 ) ,  while requiring ras/Raf -1 / MEK activation
+in human neutrophils ( 58 ) .";
+depended4 [style=filled, fillcolor=white, label=depended];
+activation1 [style=filled, fillcolor=white, label=activation];
+depended4 -> activation1  [label=nsubj];
+ERK3 [style=filled, fillcolor=white, label=ERK];
+activation1 -> ERK3  [label=prep_of];
+depended4 -> depended4  [label=root];
+kinase10 [style=filled, fillcolor=white, label=kinase];
+EGFR6 [style=filled, fillcolor=white, label=EGFR];
+kinase10 -> EGFR6  [label=amod];
+Src8 [style=filled, fillcolor=white, label=Src];
+kinase10 -> Src8  [label=amod];
+tyrosine9 [style=filled, fillcolor=white, label=tyrosine];
+kinase10 -> tyrosine9  [label=amod];
+depended4 -> kinase10  [label=prep_on];
+calmodulin13 [style=filled, fillcolor=white, label=calmodulin];
+calcium12 [style=filled, fillcolor=white, label=calcium];
+calmodulin13 -> calcium12  [label=nn];
+kinase10 -> calmodulin13  [label=conj_and];
+cells16 [style=filled, fillcolor=white, label=cells];
+PC1215 [style=filled, fillcolor=white, label=PC12];
+cells16 -> PC1215  [label=num];
+depended4 -> cells16  [label=prep_in];
+3118 [style=filled, fillcolor=white, label=31];
+cells16 -> 3118  [label=appos];
+requiring22 [style=filled, fillcolor=white, label=requiring];
+while21 [style=filled, fillcolor=white, label=while];
+requiring22 -> while21  [label=dep];
+depended4 -> requiring22  [label=parataxis];
+"ras/Raf23" [style=filled, fillcolor=white, label="ras/Raf"];
+requiring22 -> "ras/Raf23"  [label=dobj];
+activation27 [style=filled, fillcolor=white, label=activation];
+"-124" [style=filled, fillcolor=white, label="-1"];
+activation27 -> "-124"  [label=num];
+"/25" [style=filled, fillcolor=white, label="/"];
+activation27 -> "/25"  [label=amod];
+MEK26 [style=filled, fillcolor=white, label=MEK];
+activation27 -> MEK26  [label=nn];
+depended4 -> activation27  [label=dobj];
+neutrophils30 [style=filled, fillcolor=white, label=neutrophils];
+human29 [style=filled, fillcolor=white, label=human];
+neutrophils30 -> human29  [label=amod];
+activation27 -> neutrophils30  [label=prep_in];
+5832 [style=filled, fillcolor=white, label=58];
+neutrophils30 -> 5832  [label=appos];
+}

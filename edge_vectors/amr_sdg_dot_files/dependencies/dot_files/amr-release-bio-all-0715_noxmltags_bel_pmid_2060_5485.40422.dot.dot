@@ -1,0 +1,38 @@
+digraph "Despite the increased IL-4Ra expression following G-CSF treatment ,  this cytokine did not induce any appreciable imunosuppressive function in BM cells ." {
+label="Despite the increased IL-4Ra expression following G-CSF treatment ,  this
+cytokine did not induce any appreciable imunosuppressive function in BM cells .";
+expression5 [style=filled, fillcolor=white, label=expression];
+the2 [style=filled, fillcolor=white, label=the];
+expression5 -> the2  [label=det];
+increased3 [style=filled, fillcolor=white, label=increased];
+expression5 -> increased3  [label=amod];
+"IL-4Ra" [style=filled, fillcolor=white, label="IL-4Ra"];
+expression5 -> "IL-4Ra"  [label=nn];
+induce14 [style=filled, fillcolor=white, label=induce];
+induce14 -> expression5  [label=prep_despite];
+treatment8 [style=filled, fillcolor=white, label=treatment];
+"G-CSF7" [style=filled, fillcolor=white, label="G-CSF"];
+treatment8 -> "G-CSF7"  [label=amod];
+expression5 -> treatment8  [label=prep_following];
+cytokine11 [style=filled, fillcolor=white, label=cytokine];
+this10 [style=filled, fillcolor=white, label=this];
+cytokine11 -> this10  [label=det];
+induce14 -> cytokine11  [label=nsubj];
+did12 [style=filled, fillcolor=white, label=did];
+induce14 -> did12  [label=aux];
+not13 [style=filled, fillcolor=white, label=not];
+induce14 -> not13  [label=neg];
+induce14 -> induce14  [label=root];
+function18 [style=filled, fillcolor=white, label=function];
+any15 [style=filled, fillcolor=white, label=any];
+function18 -> any15  [label=det];
+appreciable16 [style=filled, fillcolor=white, label=appreciable];
+function18 -> appreciable16  [label=amod];
+imunosuppressive17 [style=filled, fillcolor=white, label=imunosuppressive];
+function18 -> imunosuppressive17  [label=nn];
+induce14 -> function18  [label=dobj];
+cells21 [style=filled, fillcolor=white, label=cells];
+BM20 [style=filled, fillcolor=white, label=BM];
+cells21 -> BM20  [label=nn];
+induce14 -> cells21  [label=prep_in];
+}

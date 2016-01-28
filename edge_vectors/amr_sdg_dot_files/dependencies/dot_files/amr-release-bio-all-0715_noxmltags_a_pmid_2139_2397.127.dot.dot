@@ -1,0 +1,57 @@
+digraph "To prove whether the high basal phosphorylation status of YB-1 was due to stimulation by growth factors in the culture medium ,  P-YB-1 was compared under serum supplementation and serum depletion in MCF-7 cells ." {
+label="To prove whether the high basal phosphorylation status of YB-1 was due to
+stimulation by growth factors in the culture medium ,  P-YB-1 was compared under
+serum supplementation and serum depletion in MCF-7 cells .";
+prove2 [style=filled, fillcolor=white, label=prove];
+To1 [style=filled, fillcolor=white, label=To];
+prove2 -> To1  [label=aux];
+compared25 [style=filled, fillcolor=white, label=compared];
+compared25 -> prove2  [label=advcl];
+due12 [style=filled, fillcolor=white, label=due];
+whether3 [style=filled, fillcolor=white, label=whether];
+due12 -> whether3  [label=mark];
+status8 [style=filled, fillcolor=white, label=status];
+the4 [style=filled, fillcolor=white, label=the];
+status8 -> the4  [label=det];
+high5 [style=filled, fillcolor=white, label=high];
+status8 -> high5  [label=amod];
+basal6 [style=filled, fillcolor=white, label=basal];
+status8 -> basal6  [label=amod];
+phosphorylation7 [style=filled, fillcolor=white, label=phosphorylation];
+status8 -> phosphorylation7  [label=nn];
+due12 -> status8  [label=nsubj];
+"YB-10" [style=filled, fillcolor=white, label="YB-1"];
+status8 -> "YB-10"  [label=prep_of];
+was11 [style=filled, fillcolor=white, label=was];
+due12 -> was11  [label=cop];
+prove2 -> due12  [label=ccomp];
+stimulation14 [style=filled, fillcolor=white, label=stimulation];
+due12 -> stimulation14  [label=prep_to];
+factors17 [style=filled, fillcolor=white, label=factors];
+growth16 [style=filled, fillcolor=white, label=growth];
+factors17 -> growth16  [label=nn];
+due12 -> factors17  [label=prep_by];
+medium21 [style=filled, fillcolor=white, label=medium];
+the19 [style=filled, fillcolor=white, label=the];
+medium21 -> the19  [label=det];
+culture20 [style=filled, fillcolor=white, label=culture];
+medium21 -> culture20  [label=nn];
+factors17 -> medium21  [label=prep_in];
+"P-YB-123" [style=filled, fillcolor=white, label="P-YB-1"];
+compared25 -> "P-YB-123"  [label=nsubjpass];
+was24 [style=filled, fillcolor=white, label=was];
+compared25 -> was24  [label=auxpass];
+compared25 -> compared25  [label=root];
+supplementation28 [style=filled, fillcolor=white, label=supplementation];
+serum27 [style=filled, fillcolor=white, label=serum];
+supplementation28 -> serum27  [label=nn];
+compared25 -> supplementation28  [label=prep_under];
+depletion31 [style=filled, fillcolor=white, label=depletion];
+serum30 [style=filled, fillcolor=white, label=serum];
+depletion31 -> serum30  [label=nn];
+supplementation28 -> depletion31  [label=conj_and];
+cells34 [style=filled, fillcolor=white, label=cells];
+"MCF-733" [style=filled, fillcolor=white, label="MCF-7"];
+cells34 -> "MCF-733"  [label=nn];
+supplementation28 -> cells34  [label=prep_in];
+}

@@ -1,0 +1,62 @@
+digraph "Not surprisingly ,  given that mutation of the S365 14-3-3 binding site enhances the membrane localization of B-Raf ( 2 ) ,  increased heterodimerization with C-Raf was observed for S365A B-Raf compared to WT B-Raf ( Fig. 3F ) ." {
+label="Not surprisingly ,  given that mutation of the S365 14-3-3 binding site
+enhances the membrane localization of B-Raf ( 2 ) ,  increased
+heterodimerization with C-Raf was observed for S365A B-Raf compared to WT B-Raf
+( Fig. 3F ) .";
+surprisingly2 [style=filled, fillcolor=white, label=surprisingly];
+Not1 [style=filled, fillcolor=white, label=Not];
+surprisingly2 -> Not1  [label=dep];
+observed28 [style=filled, fillcolor=white, label=observed];
+observed28 -> surprisingly2  [label=advmod];
+given4 [style=filled, fillcolor=white, label=given];
+observed28 -> given4  [label=dep];
+enhances13 [style=filled, fillcolor=white, label=enhances];
+that5 [style=filled, fillcolor=white, label=that];
+enhances13 -> that5  [label=mark];
+mutation6 [style=filled, fillcolor=white, label=mutation];
+enhances13 -> mutation6  [label=nsubj];
+site12 [style=filled, fillcolor=white, label=site];
+the8 [style=filled, fillcolor=white, label=the];
+site12 -> the8  [label=det];
+S3659 [style=filled, fillcolor=white, label=S365];
+site12 -> S3659  [label=nn];
+"14-3-30" [style=filled, fillcolor=white, label="14-3-3"];
+site12 -> "14-3-30"  [label=num];
+binding11 [style=filled, fillcolor=white, label=binding];
+site12 -> binding11  [label=amod];
+mutation6 -> site12  [label=prep_of];
+given4 -> enhances13  [label=pcomp];
+localization16 [style=filled, fillcolor=white, label=localization];
+the14 [style=filled, fillcolor=white, label=the];
+localization16 -> the14  [label=det];
+membrane15 [style=filled, fillcolor=white, label=membrane];
+localization16 -> membrane15  [label=amod];
+enhances13 -> localization16  [label=dobj];
+"B-Raf18" [style=filled, fillcolor=white, label="B-Raf"];
+localization16 -> "B-Raf18"  [label=prep_of];
+220 [style=filled, fillcolor=white, label=2];
+"B-Raf18" -> 220  [label=appos];
+heterodimerization24 [style=filled, fillcolor=white, label=heterodimerization];
+increased23 [style=filled, fillcolor=white, label=increased];
+heterodimerization24 -> increased23  [label=amod];
+observed28 -> heterodimerization24  [label=nsubjpass];
+"C-Raf26" [style=filled, fillcolor=white, label="C-Raf"];
+heterodimerization24 -> "C-Raf26"  [label=prep_with];
+was27 [style=filled, fillcolor=white, label=was];
+observed28 -> was27  [label=auxpass];
+observed28 -> observed28  [label=root];
+"B-Raf31" [style=filled, fillcolor=white, label="B-Raf"];
+S365A30 [style=filled, fillcolor=white, label=S365A];
+"B-Raf31" -> S365A30  [label=nn];
+observed28 -> "B-Raf31"  [label=prep_for];
+to33 [style=filled, fillcolor=white, label=to];
+observed28 -> to33  [label=prepc_compared_to];
+"B-Raf35" [style=filled, fillcolor=white, label="B-Raf"];
+WT34 [style=filled, fillcolor=white, label=WT];
+"B-Raf35" -> WT34  [label=nn];
+observed28 -> "B-Raf35"  [label=pobj];
+"3F38" [style=filled, fillcolor=white, label="3F"];
+"Fig.37" [style=filled, fillcolor=white, label="Fig."];
+"3F38" -> "Fig.37"  [label=number];
+"B-Raf35" -> "3F38"  [label=dep];
+}

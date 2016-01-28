@@ -1,0 +1,45 @@
+digraph "Activated JNK enters the nucleus and phosphorylates the transcription factor c-Jun ,  which combines with c-Fos to form the AP-1 transcription factor complex ." {
+label="Activated JNK enters the nucleus and phosphorylates the transcription factor
+c-Jun ,  which combines with c-Fos to form the AP-1 transcription factor complex
+.";
+JNK2 [style=filled, fillcolor=white, label=JNK];
+Activated1 [style=filled, fillcolor=white, label=Activated];
+JNK2 -> Activated1  [label=nn];
+enters3 [style=filled, fillcolor=white, label=enters];
+enters3 -> JNK2  [label=nsubj];
+enters3 -> enters3  [label=root];
+nucleus5 [style=filled, fillcolor=white, label=nucleus];
+the4 [style=filled, fillcolor=white, label=the];
+nucleus5 -> the4  [label=det];
+enters3 -> nucleus5  [label=dobj];
+phosphorylates7 [style=filled, fillcolor=white, label=phosphorylates];
+enters3 -> phosphorylates7  [label=conj_and];
+"c-Jun11" [style=filled, fillcolor=white, label="c-Jun"];
+the8 [style=filled, fillcolor=white, label=the];
+"c-Jun11" -> the8  [label=det];
+transcription9 [style=filled, fillcolor=white, label=transcription];
+"c-Jun11" -> transcription9  [label=amod];
+factor10 [style=filled, fillcolor=white, label=factor];
+"c-Jun11" -> factor10  [label=nn];
+phosphorylates7 -> "c-Jun11"  [label=dobj];
+combines14 [style=filled, fillcolor=white, label=combines];
+which13 [style=filled, fillcolor=white, label=which];
+combines14 -> which13  [label=nsubj];
+"c-Jun11" -> combines14  [label=rcmod];
+"c-Fos16" [style=filled, fillcolor=white, label="c-Fos"];
+combines14 -> "c-Fos16"  [label=prep_with];
+form18 [style=filled, fillcolor=white, label=form];
+to17 [style=filled, fillcolor=white, label=to];
+form18 -> to17  [label=aux];
+combines14 -> form18  [label=xcomp];
+factor22 [style=filled, fillcolor=white, label=factor];
+the19 [style=filled, fillcolor=white, label=the];
+factor22 -> the19  [label=det];
+"AP-120" [style=filled, fillcolor=white, label="AP-1"];
+factor22 -> "AP-120"  [label=nn];
+transcription21 [style=filled, fillcolor=white, label=transcription];
+factor22 -> transcription21  [label=nn];
+complex23 [style=filled, fillcolor=white, label=complex];
+complex23 -> factor22  [label=nsubj];
+form18 -> complex23  [label=xcomp];
+}

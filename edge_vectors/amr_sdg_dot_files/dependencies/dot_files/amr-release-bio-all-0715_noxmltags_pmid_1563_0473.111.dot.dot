@@ -1,0 +1,49 @@
+digraph "Despite the reductions in AJ markers ,  Tg skin still displayed sealed membranes and intercellular junctions that were largely intact ,  as judged by ultrastructural analyses ( unpublished data ) ." {
+label="Despite the reductions in AJ markers ,  Tg skin still displayed sealed
+membranes and intercellular junctions that were largely intact ,  as judged by
+ultrastructural analyses ( unpublished data ) .";
+reductions3 [style=filled, fillcolor=white, label=reductions];
+the2 [style=filled, fillcolor=white, label=the];
+reductions3 -> the2  [label=det];
+displayed11 [style=filled, fillcolor=white, label=displayed];
+displayed11 -> reductions3  [label=prep_despite];
+markers6 [style=filled, fillcolor=white, label=markers];
+AJ5 [style=filled, fillcolor=white, label=AJ];
+markers6 -> AJ5  [label=nn];
+reductions3 -> markers6  [label=prep_in];
+skin9 [style=filled, fillcolor=white, label=skin];
+Tg8 [style=filled, fillcolor=white, label=Tg];
+skin9 -> Tg8  [label=nn];
+displayed11 -> skin9  [label=nsubj];
+still10 [style=filled, fillcolor=white, label=still];
+displayed11 -> still10  [label=advmod];
+displayed11 -> displayed11  [label=root];
+membranes13 [style=filled, fillcolor=white, label=membranes];
+sealed12 [style=filled, fillcolor=white, label=sealed];
+membranes13 -> sealed12  [label=amod];
+displayed11 -> membranes13  [label=dobj];
+junctions16 [style=filled, fillcolor=white, label=junctions];
+intercellular15 [style=filled, fillcolor=white, label=intercellular];
+junctions16 -> intercellular15  [label=nn];
+membranes13 -> junctions16  [label=conj_and];
+intact20 [style=filled, fillcolor=white, label=intact];
+that17 [style=filled, fillcolor=white, label=that];
+intact20 -> that17  [label=nsubj];
+were18 [style=filled, fillcolor=white, label=were];
+intact20 -> were18  [label=cop];
+largely19 [style=filled, fillcolor=white, label=largely];
+intact20 -> largely19  [label=advmod];
+membranes13 -> intact20  [label=rcmod];
+judged23 [style=filled, fillcolor=white, label=judged];
+as22 [style=filled, fillcolor=white, label=as];
+judged23 -> as22  [label=mark];
+intact20 -> judged23  [label=advcl];
+analyses26 [style=filled, fillcolor=white, label=analyses];
+ultrastructural25 [style=filled, fillcolor=white, label=ultrastructural];
+analyses26 -> ultrastructural25  [label=amod];
+judged23 -> analyses26  [label=prep_by];
+data29 [style=filled, fillcolor=white, label=data];
+unpublished28 [style=filled, fillcolor=white, label=unpublished];
+data29 -> unpublished28  [label=amod];
+analyses26 -> data29  [label=appos];
+}

@@ -1,0 +1,58 @@
+digraph "SPRED proteins also bind to c-Kit ,  and perhaps to other RTKs ,  suggesting that neurofibromin regulates Ras locally in response to specific receptor signaling ,  rather than simply suppressing Ras throughout the plasma membrane ." {
+label="SPRED proteins also bind to c-Kit ,  and perhaps to other RTKs ,  suggesting
+that neurofibromin regulates Ras locally in response to specific receptor
+signaling ,  rather than simply suppressing Ras throughout the plasma membrane
+.";
+proteins2 [style=filled, fillcolor=white, label=proteins];
+SPRED1 [style=filled, fillcolor=white, label=SPRED];
+proteins2 -> SPRED1  [label=nn];
+bind4 [style=filled, fillcolor=white, label=bind];
+bind4 -> proteins2  [label=nsubj];
+also3 [style=filled, fillcolor=white, label=also];
+bind4 -> also3  [label=advmod];
+bind4 -> bind4  [label=root];
+to5 [style=filled, fillcolor=white, label=to];
+bind4 -> to5  [label=prep];
+"c-Kit6" [style=filled, fillcolor=white, label="c-Kit"];
+to5 -> "c-Kit6"  [label=pobj];
+perhaps9 [style=filled, fillcolor=white, label=perhaps];
+to5 -> perhaps9  [label=conj_and];
+to10 [style=filled, fillcolor=white, label=to];
+to5 -> to10  [label=dep];
+RTKs12 [style=filled, fillcolor=white, label=RTKs];
+other11 [style=filled, fillcolor=white, label=other];
+RTKs12 -> other11  [label=amod];
+to10 -> RTKs12  [label=pobj];
+suggesting14 [style=filled, fillcolor=white, label=suggesting];
+bind4 -> suggesting14  [label=ccomp];
+regulates17 [style=filled, fillcolor=white, label=regulates];
+that15 [style=filled, fillcolor=white, label=that];
+regulates17 -> that15  [label=mark];
+neurofibromin16 [style=filled, fillcolor=white, label=neurofibromin];
+regulates17 -> neurofibromin16  [label=nsubj];
+suggesting14 -> regulates17  [label=ccomp];
+Ras18 [style=filled, fillcolor=white, label=Ras];
+regulates17 -> Ras18  [label=acomp];
+locally19 [style=filled, fillcolor=white, label=locally];
+Ras18 -> locally19  [label=advmod];
+response21 [style=filled, fillcolor=white, label=response];
+Ras18 -> response21  [label=prep_in];
+receptor24 [style=filled, fillcolor=white, label=receptor];
+specific23 [style=filled, fillcolor=white, label=specific];
+receptor24 -> specific23  [label=amod];
+Ras18 -> receptor24  [label=prep_to];
+signaling25 [style=filled, fillcolor=white, label=signaling];
+receptor24 -> signaling25  [label=vmod];
+suppressing30 [style=filled, fillcolor=white, label=suppressing];
+simply29 [style=filled, fillcolor=white, label=simply];
+suppressing30 -> simply29  [label=advmod];
+suggesting14 -> suppressing30  [label=conj_negcc];
+Ras31 [style=filled, fillcolor=white, label=Ras];
+suppressing30 -> Ras31  [label=dobj];
+membrane35 [style=filled, fillcolor=white, label=membrane];
+the33 [style=filled, fillcolor=white, label=the];
+membrane35 -> the33  [label=det];
+plasma34 [style=filled, fillcolor=white, label=plasma];
+membrane35 -> plasma34  [label=nn];
+Ras31 -> membrane35  [label=prep_throughout];
+}

@@ -1,0 +1,38 @@
+digraph "So far ,  STK33 inhibition does not appear to be a useful approach to K-Ras cancers ( Weiwer et al. ,  2012 ) ." {
+label="So far ,  STK33 inhibition does not appear to be a useful approach to K-Ras
+cancers ( Weiwer et al. ,  2012 ) .";
+appear8 [style=filled, fillcolor=white, label=appear];
+So1 [style=filled, fillcolor=white, label=So];
+appear8 -> So1  [label=advmod];
+far2 [style=filled, fillcolor=white, label=far];
+So1 -> far2  [label=advmod];
+inhibition5 [style=filled, fillcolor=white, label=inhibition];
+STK334 [style=filled, fillcolor=white, label=STK33];
+inhibition5 -> STK334  [label=nn];
+appear8 -> inhibition5  [label=nsubj];
+does6 [style=filled, fillcolor=white, label=does];
+appear8 -> does6  [label=aux];
+not7 [style=filled, fillcolor=white, label=not];
+appear8 -> not7  [label=neg];
+appear8 -> appear8  [label=root];
+approach13 [style=filled, fillcolor=white, label=approach];
+to9 [style=filled, fillcolor=white, label=to];
+approach13 -> to9  [label=aux];
+be10 [style=filled, fillcolor=white, label=be];
+approach13 -> be10  [label=cop];
+a11 [style=filled, fillcolor=white, label=a];
+approach13 -> a11  [label=det];
+useful12 [style=filled, fillcolor=white, label=useful];
+approach13 -> useful12  [label=amod];
+appear8 -> approach13  [label=xcomp];
+cancers16 [style=filled, fillcolor=white, label=cancers];
+"K-Ras15" [style=filled, fillcolor=white, label="K-Ras"];
+cancers16 -> "K-Ras15"  [label=nn];
+approach13 -> cancers16  [label=prep_to];
+Weiwer18 [style=filled, fillcolor=white, label=Weiwer];
+cancers16 -> Weiwer18  [label=appos];
+"al.20" [style=filled, fillcolor=white, label="al."];
+Weiwer18 -> "al.20"  [label=conj_et];
+2012 [style=filled, fillcolor=white, label=2012];
+Weiwer18 -> 2012  [label=dep];
+}

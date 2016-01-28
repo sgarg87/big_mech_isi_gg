@@ -1,0 +1,34 @@
+digraph "Additionally ,  RAS/Raf/MAPK pathway activation stabilizes ASPP2 protein ,  although the underlying mechanism remains to be investigated ." {
+label="Additionally ,  RAS/Raf/MAPK pathway activation stabilizes ASPP2 protein ,
+although the underlying mechanism remains to be investigated .";
+stabilizes6 [style=filled, fillcolor=white, label=stabilizes];
+Additionally1 [style=filled, fillcolor=white, label=Additionally];
+stabilizes6 -> Additionally1  [label=advmod];
+activation5 [style=filled, fillcolor=white, label=activation];
+"RAS/Raf/MAPK3" [style=filled, fillcolor=white, label="RAS/Raf/MAPK"];
+activation5 -> "RAS/Raf/MAPK3"  [label=nn];
+pathway4 [style=filled, fillcolor=white, label=pathway];
+activation5 -> pathway4  [label=nn];
+stabilizes6 -> activation5  [label=nsubj];
+stabilizes6 -> stabilizes6  [label=root];
+protein8 [style=filled, fillcolor=white, label=protein];
+ASPP27 [style=filled, fillcolor=white, label=ASPP2];
+protein8 -> ASPP27  [label=nn];
+stabilizes6 -> protein8  [label=dobj];
+remains14 [style=filled, fillcolor=white, label=remains];
+although10 [style=filled, fillcolor=white, label=although];
+remains14 -> although10  [label=mark];
+mechanism13 [style=filled, fillcolor=white, label=mechanism];
+the11 [style=filled, fillcolor=white, label=the];
+mechanism13 -> the11  [label=det];
+underlying12 [style=filled, fillcolor=white, label=underlying];
+mechanism13 -> underlying12  [label=amod];
+remains14 -> mechanism13  [label=nsubj];
+stabilizes6 -> remains14  [label=advcl];
+investigated17 [style=filled, fillcolor=white, label=investigated];
+to15 [style=filled, fillcolor=white, label=to];
+investigated17 -> to15  [label=aux];
+be16 [style=filled, fillcolor=white, label=be];
+investigated17 -> be16  [label=auxpass];
+remains14 -> investigated17  [label=xcomp];
+}

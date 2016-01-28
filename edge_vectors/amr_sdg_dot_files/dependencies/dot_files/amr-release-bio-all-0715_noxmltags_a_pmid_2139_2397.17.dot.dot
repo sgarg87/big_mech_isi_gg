@@ -1,0 +1,21 @@
+digraph "In K-RASmt cells K-RAS siRNA as well as YB-1 siRNA blocked repair of DNA-DSB ." {
+label="In K-RASmt cells K-RAS siRNA as well as YB-1 siRNA blocked repair of DNA-DSB .";
+cells3 [style=filled, fillcolor=white, label=cells];
+"K-RASmt2" [style=filled, fillcolor=white, label="K-RASmt"];
+cells3 -> "K-RASmt2"  [label=amod];
+blocked11 [style=filled, fillcolor=white, label=blocked];
+blocked11 -> cells3  [label=prep_in];
+siRNA10 [style=filled, fillcolor=white, label=siRNA];
+"K-RAS4" [style=filled, fillcolor=white, label="K-RAS"];
+siRNA10 -> "K-RAS4"  [label=amod];
+siRNA5 [style=filled, fillcolor=white, label=siRNA];
+siRNA10 -> siRNA5  [label=amod];
+"YB-19" [style=filled, fillcolor=white, label="YB-1"];
+siRNA5 -> "YB-19"  [label=conj_and];
+blocked11 -> siRNA10  [label=nsubj];
+blocked11 -> blocked11  [label=root];
+repair12 [style=filled, fillcolor=white, label=repair];
+blocked11 -> repair12  [label=dobj];
+"DNA-DSB14" [style=filled, fillcolor=white, label="DNA-DSB"];
+repair12 -> "DNA-DSB14"  [label=prep_of];
+}

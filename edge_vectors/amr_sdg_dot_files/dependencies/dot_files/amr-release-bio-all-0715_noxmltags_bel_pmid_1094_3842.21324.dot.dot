@@ -1,0 +1,32 @@
+digraph "inhibition of MAPK14 activity also interfered with stabilization of EPO mRNA in human hepatoma cells undergoing hypoxic stress" {
+label="inhibition of MAPK14 activity also interfered with stabilization of EPO mRNA in
+human hepatoma cells undergoing hypoxic stress";
+interfered6 [style=filled, fillcolor=white, label=interfered];
+inhibition1 [style=filled, fillcolor=white, label=inhibition];
+interfered6 -> inhibition1  [label=nsubj];
+activity4 [style=filled, fillcolor=white, label=activity];
+MAPK143 [style=filled, fillcolor=white, label=MAPK14];
+activity4 -> MAPK143  [label=nn];
+inhibition1 -> activity4  [label=prep_of];
+also5 [style=filled, fillcolor=white, label=also];
+interfered6 -> also5  [label=advmod];
+interfered6 -> interfered6  [label=root];
+stabilization8 [style=filled, fillcolor=white, label=stabilization];
+interfered6 -> stabilization8  [label=prep_with];
+mRNA11 [style=filled, fillcolor=white, label=mRNA];
+EPO10 [style=filled, fillcolor=white, label=EPO];
+mRNA11 -> EPO10  [label=nn];
+stabilization8 -> mRNA11  [label=prep_of];
+cells15 [style=filled, fillcolor=white, label=cells];
+human13 [style=filled, fillcolor=white, label=human];
+cells15 -> human13  [label=amod];
+hepatoma14 [style=filled, fillcolor=white, label=hepatoma];
+cells15 -> hepatoma14  [label=nn];
+mRNA11 -> cells15  [label=prep_in];
+undergoing16 [style=filled, fillcolor=white, label=undergoing];
+interfered6 -> undergoing16  [label=xcomp];
+stress18 [style=filled, fillcolor=white, label=stress];
+hypoxic17 [style=filled, fillcolor=white, label=hypoxic];
+stress18 -> hypoxic17  [label=amod];
+undergoing16 -> stress18  [label=dobj];
+}

@@ -1,0 +1,55 @@
+digraph "The minimal HER3 promoter region regulated by MAPK inhibitors overlaps with sequences previously described to be immunoprecipitated using antibodies against the ZFN217 transcription factor and CtBP1/CtBP2 corepressors ( 28 -- 30 ) ." {
+label="The minimal HER3 promoter region regulated by MAPK inhibitors overlaps with
+sequences previously described to be immunoprecipitated using antibodies against
+the ZFN217 transcription factor and CtBP1/CtBP2 corepressors ( 28 -- 30 ) .";
+region5 [style=filled, fillcolor=white, label=region];
+The1 [style=filled, fillcolor=white, label=The];
+region5 -> The1  [label=det];
+minimal2 [style=filled, fillcolor=white, label=minimal];
+region5 -> minimal2  [label=amod];
+HER3 [style=filled, fillcolor=white, label=HER3];
+region5 -> HER3  [label=nn];
+promoter4 [style=filled, fillcolor=white, label=promoter];
+region5 -> promoter4  [label=nn];
+overlaps10 [style=filled, fillcolor=white, label=overlaps];
+overlaps10 -> region5  [label=nsubj];
+regulated6 [style=filled, fillcolor=white, label=regulated];
+region5 -> regulated6  [label=vmod];
+inhibitors9 [style=filled, fillcolor=white, label=inhibitors];
+MAPK8 [style=filled, fillcolor=white, label=MAPK];
+inhibitors9 -> MAPK8  [label=nn];
+regulated6 -> inhibitors9  [label=agent];
+overlaps10 -> overlaps10  [label=root];
+sequences12 [style=filled, fillcolor=white, label=sequences];
+overlaps10 -> sequences12  [label=prep_with];
+described14 [style=filled, fillcolor=white, label=described];
+previously13 [style=filled, fillcolor=white, label=previously];
+described14 -> previously13  [label=advmod];
+sequences12 -> described14  [label=vmod];
+immunoprecipitated17 [style=filled, fillcolor=white, label=immunoprecipitated];
+to15 [style=filled, fillcolor=white, label=to];
+immunoprecipitated17 -> to15  [label=aux];
+be16 [style=filled, fillcolor=white, label=be];
+immunoprecipitated17 -> be16  [label=auxpass];
+described14 -> immunoprecipitated17  [label=xcomp];
+using18 [style=filled, fillcolor=white, label=using];
+immunoprecipitated17 -> using18  [label=xcomp];
+antibodies19 [style=filled, fillcolor=white, label=antibodies];
+using18 -> antibodies19  [label=dobj];
+factor24 [style=filled, fillcolor=white, label=factor];
+the21 [style=filled, fillcolor=white, label=the];
+factor24 -> the21  [label=det];
+ZFN217 [style=filled, fillcolor=white, label=ZFN217];
+factor24 -> ZFN217  [label=nn];
+transcription23 [style=filled, fillcolor=white, label=transcription];
+factor24 -> transcription23  [label=nn];
+using18 -> factor24  [label=prep_against];
+corepressors27 [style=filled, fillcolor=white, label=corepressors];
+"CtBP1/CtBP226" [style=filled, fillcolor=white, label="CtBP1/CtBP2"];
+corepressors27 -> "CtBP1/CtBP226"  [label=amod];
+factor24 -> corepressors27  [label=conj_and];
+2829 [style=filled, fillcolor=white, label=28];
+using18 -> 2829  [label=dep];
+3031 [style=filled, fillcolor=white, label=30];
+2829 -> 3031  [label=dep];
+}

@@ -1,0 +1,56 @@
+digraph "The FAK and Fyn/Shc pathways . Integrins activate various protein tyrosine kinases ,  including focal adhesion kinase ( FAK ) ,  Srcfamily kinases ,  and Abl ,  and a serine-threonine kinase ,  integrin-linked kinase ( ILK ) ( 4 ,  7 ) ." {
+label="The FAK and Fyn/Shc pathways . Integrins activate various protein tyrosine
+kinases ,  including focal adhesion kinase ( FAK ) ,  Srcfamily kinases ,  and
+Abl ,  and a serine-threonine kinase ,  integrin-linked kinase ( ILK ) ( 4 ,  7
+) .";
+FAK2 [style=filled, fillcolor=white, label=FAK];
+The1 [style=filled, fillcolor=white, label=The];
+FAK2 -> The1  [label=det];
+activate8 [style=filled, fillcolor=white, label=activate];
+activate8 -> FAK2  [label=nsubj];
+Integrins7 [style=filled, fillcolor=white, label=Integrins];
+"Fyn/Shc4" [style=filled, fillcolor=white, label="Fyn/Shc"];
+Integrins7 -> "Fyn/Shc4"  [label=nn];
+pathways5 [style=filled, fillcolor=white, label=pathways];
+Integrins7 -> pathways5  [label=nn];
+FAK2 -> Integrins7  [label=conj_and];
+activate8 -> activate8  [label=root];
+kinases12 [style=filled, fillcolor=white, label=kinases];
+various9 [style=filled, fillcolor=white, label=various];
+kinases12 -> various9  [label=amod];
+protein10 [style=filled, fillcolor=white, label=protein];
+kinases12 -> protein10  [label=nn];
+tyrosine11 [style=filled, fillcolor=white, label=tyrosine];
+kinases12 -> tyrosine11  [label=nn];
+activate8 -> kinases12  [label=dobj];
+kinase17 [style=filled, fillcolor=white, label=kinase];
+focal15 [style=filled, fillcolor=white, label=focal];
+kinase17 -> focal15  [label=amod];
+adhesion16 [style=filled, fillcolor=white, label=adhesion];
+kinase17 -> adhesion16  [label=nn];
+kinases12 -> kinase17  [label=prep_including];
+FAK19 [style=filled, fillcolor=white, label=FAK];
+kinase17 -> FAK19  [label=appos];
+kinases23 [style=filled, fillcolor=white, label=kinases];
+Srcfamily22 [style=filled, fillcolor=white, label=Srcfamily];
+kinases23 -> Srcfamily22  [label=nn];
+kinase17 -> kinases23  [label=conj_and];
+Abl26 [style=filled, fillcolor=white, label=Abl];
+kinases23 -> Abl26  [label=conj_and];
+kinase34 [style=filled, fillcolor=white, label=kinase];
+a29 [style=filled, fillcolor=white, label=a];
+kinase34 -> a29  [label=det];
+"serine-threonine30" [style=filled, fillcolor=white, label="serine-threonine"];
+kinase34 -> "serine-threonine30"  [label=amod];
+kinase31 [style=filled, fillcolor=white, label=kinase];
+kinase34 -> kinase31  [label=amod];
+"integrin-linked33" [style=filled, fillcolor=white, label="integrin-linked"];
+kinase34 -> "integrin-linked33"  [label=amod];
+kinase17 -> kinase34  [label=conj_and];
+ILK36 [style=filled, fillcolor=white, label=ILK];
+kinase34 -> ILK36  [label=appos];
+439 [style=filled, fillcolor=white, label=4];
+kinase34 -> 439  [label=appos];
+741 [style=filled, fillcolor=white, label=7];
+439 -> 741  [label=dep];
+}

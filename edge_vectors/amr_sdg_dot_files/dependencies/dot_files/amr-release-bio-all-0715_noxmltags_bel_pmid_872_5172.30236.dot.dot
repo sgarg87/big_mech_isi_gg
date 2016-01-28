@@ -1,0 +1,28 @@
+digraph "Specifically ,  PTH and PTHrP rapidly and transiently induce expression of the mRNAs encoding IL-6 and LIF ." {
+label="Specifically ,  PTH and PTHrP rapidly and transiently induce expression of the
+mRNAs encoding IL-6 and LIF .";
+induce9 [style=filled, fillcolor=white, label=induce];
+Specifically1 [style=filled, fillcolor=white, label=Specifically];
+induce9 -> Specifically1  [label=advmod];
+PTH3 [style=filled, fillcolor=white, label=PTH];
+induce9 -> PTH3  [label=nsubj];
+PTHrP5 [style=filled, fillcolor=white, label=PTHrP];
+PTH3 -> PTHrP5  [label=conj_and];
+rapidly6 [style=filled, fillcolor=white, label=rapidly];
+induce9 -> rapidly6  [label=advmod];
+transiently8 [style=filled, fillcolor=white, label=transiently];
+rapidly6 -> transiently8  [label=conj_and];
+induce9 -> induce9  [label=root];
+expression10 [style=filled, fillcolor=white, label=expression];
+induce9 -> expression10  [label=dobj];
+mRNAs13 [style=filled, fillcolor=white, label=mRNAs];
+the12 [style=filled, fillcolor=white, label=the];
+mRNAs13 -> the12  [label=det];
+expression10 -> mRNAs13  [label=prep_of];
+encoding14 [style=filled, fillcolor=white, label=encoding];
+mRNAs13 -> encoding14  [label=vmod];
+"IL-615" [style=filled, fillcolor=white, label="IL-6"];
+encoding14 -> "IL-615"  [label=dobj];
+LIF17 [style=filled, fillcolor=white, label=LIF];
+"IL-615" -> LIF17  [label=conj_and];
+}

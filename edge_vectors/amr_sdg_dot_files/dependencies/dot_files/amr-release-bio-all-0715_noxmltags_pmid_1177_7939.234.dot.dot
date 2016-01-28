@@ -1,0 +1,21 @@
+digraph "The expression of E3b1 ( bottom ) was detected with an anti-E3b1 antibody ." {
+label="The expression of E3b1 ( bottom ) was detected with an anti-E3b1 antibody .";
+expression2 [style=filled, fillcolor=white, label=expression];
+The1 [style=filled, fillcolor=white, label=The];
+expression2 -> The1  [label=det];
+detected9 [style=filled, fillcolor=white, label=detected];
+detected9 -> expression2  [label=nsubjpass];
+E3b14 [style=filled, fillcolor=white, label=E3b1];
+expression2 -> E3b14  [label=prep_of];
+bottom6 [style=filled, fillcolor=white, label=bottom];
+E3b14 -> bottom6  [label=appos];
+was8 [style=filled, fillcolor=white, label=was];
+detected9 -> was8  [label=auxpass];
+detected9 -> detected9  [label=root];
+antibody13 [style=filled, fillcolor=white, label=antibody];
+an11 [style=filled, fillcolor=white, label=an];
+antibody13 -> an11  [label=det];
+"anti-E3b12" [style=filled, fillcolor=white, label="anti-E3b1"];
+antibody13 -> "anti-E3b12"  [label=amod];
+detected9 -> antibody13  [label=prep_with];
+}

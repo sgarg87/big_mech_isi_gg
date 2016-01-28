@@ -1,0 +1,26 @@
+digraph "Therefore ,  K-Ras expression was downregulated by siRNA ,  and the level of P-YB-1 was investigated ." {
+label="Therefore ,  K-Ras expression was downregulated by siRNA ,  and the level of
+P-YB-1 was investigated .";
+downregulated6 [style=filled, fillcolor=white, label=downregulated];
+Therefore1 [style=filled, fillcolor=white, label=Therefore];
+downregulated6 -> Therefore1  [label=advmod];
+expression4 [style=filled, fillcolor=white, label=expression];
+"K-Ras3" [style=filled, fillcolor=white, label="K-Ras"];
+expression4 -> "K-Ras3"  [label=nn];
+downregulated6 -> expression4  [label=nsubjpass];
+was5 [style=filled, fillcolor=white, label=was];
+downregulated6 -> was5  [label=auxpass];
+downregulated6 -> downregulated6  [label=root];
+siRNA8 [style=filled, fillcolor=white, label=siRNA];
+downregulated6 -> siRNA8  [label=agent];
+level12 [style=filled, fillcolor=white, label=level];
+the11 [style=filled, fillcolor=white, label=the];
+level12 -> the11  [label=det];
+investigated16 [style=filled, fillcolor=white, label=investigated];
+investigated16 -> level12  [label=nsubjpass];
+"P-YB-14" [style=filled, fillcolor=white, label="P-YB-1"];
+level12 -> "P-YB-14"  [label=prep_of];
+was15 [style=filled, fillcolor=white, label=was];
+investigated16 -> was15  [label=auxpass];
+downregulated6 -> investigated16  [label=conj_and];
+}

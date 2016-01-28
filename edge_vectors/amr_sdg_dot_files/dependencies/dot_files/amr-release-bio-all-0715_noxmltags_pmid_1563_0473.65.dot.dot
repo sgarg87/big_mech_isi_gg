@@ -1,0 +1,45 @@
+digraph "Furthermore ,  the immunohistochemical data paralleled our Snail in situ hybridization data revealing transient Snail expression at the hair bud stage ( Figure 1A ) ." {
+label="Furthermore ,  the immunohistochemical data paralleled our Snail in situ
+hybridization data revealing transient Snail expression at the hair bud stage (
+Figure 1A ) .";
+paralleled6 [style=filled, fillcolor=white, label=paralleled];
+Furthermore1 [style=filled, fillcolor=white, label=Furthermore];
+paralleled6 -> Furthermore1  [label=advmod];
+data5 [style=filled, fillcolor=white, label=data];
+the3 [style=filled, fillcolor=white, label=the];
+data5 -> the3  [label=det];
+immunohistochemical4 [style=filled, fillcolor=white, label=immunohistochemical];
+data5 -> immunohistochemical4  [label=amod];
+paralleled6 -> data5  [label=nsubj];
+paralleled6 -> paralleled6  [label=root];
+Snail8 [style=filled, fillcolor=white, label=Snail];
+our7 [style=filled, fillcolor=white, label=our];
+Snail8 -> our7  [label=poss];
+paralleled6 -> Snail8  [label=dobj];
+data12 [style=filled, fillcolor=white, label=data];
+situ10 [style=filled, fillcolor=white, label=situ];
+data12 -> situ10  [label=amod];
+hybridization11 [style=filled, fillcolor=white, label=hybridization];
+data12 -> hybridization11  [label=nn];
+paralleled6 -> data12  [label=prep_in];
+revealing13 [style=filled, fillcolor=white, label=revealing];
+paralleled6 -> revealing13  [label=xcomp];
+expression16 [style=filled, fillcolor=white, label=expression];
+transient14 [style=filled, fillcolor=white, label=transient];
+expression16 -> transient14  [label=amod];
+Snail15 [style=filled, fillcolor=white, label=Snail];
+expression16 -> Snail15  [label=amod];
+revealing13 -> expression16  [label=dobj];
+stage21 [style=filled, fillcolor=white, label=stage];
+the18 [style=filled, fillcolor=white, label=the];
+stage21 -> the18  [label=det];
+hair19 [style=filled, fillcolor=white, label=hair];
+stage21 -> hair19  [label=nn];
+bud20 [style=filled, fillcolor=white, label=bud];
+stage21 -> bud20  [label=nn];
+revealing13 -> stage21  [label=prep_at];
+Figure23 [style=filled, fillcolor=white, label=Figure];
+stage21 -> Figure23  [label=appos];
+"1A24" [style=filled, fillcolor=white, label="1A"];
+Figure23 -> "1A24"  [label=num];
+}

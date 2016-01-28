@@ -1,0 +1,37 @@
+digraph "Transient transfections were carried out with FuGENE6 reagent ( Roche ,  Indianapolis ,  Indiana ,  United States ) according to the manufacturers protocol ." {
+label="Transient transfections were carried out with FuGENE6 reagent ( Roche ,
+Indianapolis ,  Indiana ,  United States ) according to the manufacturers
+protocol .";
+transfections2 [style=filled, fillcolor=white, label=transfections];
+Transient1 [style=filled, fillcolor=white, label=Transient];
+transfections2 -> Transient1  [label=amod];
+carried4 [style=filled, fillcolor=white, label=carried];
+carried4 -> transfections2  [label=nsubjpass];
+were3 [style=filled, fillcolor=white, label=were];
+carried4 -> were3  [label=auxpass];
+carried4 -> carried4  [label=root];
+out5 [style=filled, fillcolor=white, label=out];
+carried4 -> out5  [label=prt];
+reagent8 [style=filled, fillcolor=white, label=reagent];
+FuGENE67 [style=filled, fillcolor=white, label=FuGENE6];
+reagent8 -> FuGENE67  [label=amod];
+carried4 -> reagent8  [label=prep_with];
+Roche10 [style=filled, fillcolor=white, label=Roche];
+reagent8 -> Roche10  [label=appos];
+Indiana14 [style=filled, fillcolor=white, label=Indiana];
+Indianapolis12 [style=filled, fillcolor=white, label=Indianapolis];
+Indiana14 -> Indianapolis12  [label=nn];
+Roche10 -> Indiana14  [label=dep];
+States17 [style=filled, fillcolor=white, label=States];
+United16 [style=filled, fillcolor=white, label=United];
+States17 -> United16  [label=nn];
+Roche10 -> States17  [label=dep];
+to20 [style=filled, fillcolor=white, label=to];
+carried4 -> to20  [label=prepc_according_to];
+protocol23 [style=filled, fillcolor=white, label=protocol];
+the21 [style=filled, fillcolor=white, label=the];
+protocol23 -> the21  [label=det];
+manufacturers22 [style=filled, fillcolor=white, label=manufacturers];
+protocol23 -> manufacturers22  [label=nn];
+carried4 -> protocol23  [label=pobj];
+}

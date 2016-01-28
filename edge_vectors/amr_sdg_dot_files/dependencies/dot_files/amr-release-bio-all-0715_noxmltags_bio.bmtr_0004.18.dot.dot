@@ -1,0 +1,26 @@
+digraph "Here we show that monoubiquitination decreases the sensitivity of Ras to GAP-mediated hydrolysis ." {
+label="Here we show that monoubiquitination decreases the sensitivity of Ras to GAP-
+mediated hydrolysis .";
+show3 [style=filled, fillcolor=white, label=show];
+Here1 [style=filled, fillcolor=white, label=Here];
+show3 -> Here1  [label=advmod];
+we2 [style=filled, fillcolor=white, label=we];
+show3 -> we2  [label=nsubj];
+show3 -> show3  [label=root];
+decreases6 [style=filled, fillcolor=white, label=decreases];
+that4 [style=filled, fillcolor=white, label=that];
+decreases6 -> that4  [label=mark];
+monoubiquitination5 [style=filled, fillcolor=white, label=monoubiquitination];
+decreases6 -> monoubiquitination5  [label=nsubj];
+show3 -> decreases6  [label=ccomp];
+sensitivity8 [style=filled, fillcolor=white, label=sensitivity];
+the7 [style=filled, fillcolor=white, label=the];
+sensitivity8 -> the7  [label=det];
+decreases6 -> sensitivity8  [label=dobj];
+Ras10 [style=filled, fillcolor=white, label=Ras];
+sensitivity8 -> Ras10  [label=prep_of];
+hydrolysis13 [style=filled, fillcolor=white, label=hydrolysis];
+"GAP-mediated12" [style=filled, fillcolor=white, label="GAP-mediated"];
+hydrolysis13 -> "GAP-mediated12"  [label=amod];
+decreases6 -> hydrolysis13  [label=prep_to];
+}

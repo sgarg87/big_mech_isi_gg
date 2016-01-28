@@ -1,0 +1,43 @@
+digraph "The indispensability of E3b1 in the cascade of events leading to Rac activation and Rac-dependent actin reorganization was further analyzed at the biological level ." {
+label="The indispensability of E3b1 in the cascade of events leading to Rac activation
+and Rac-dependent actin reorganization was further analyzed at the biological
+level .";
+indispensability2 [style=filled, fillcolor=white, label=indispensability];
+The1 [style=filled, fillcolor=white, label=The];
+indispensability2 -> The1  [label=det];
+analyzed20 [style=filled, fillcolor=white, label=analyzed];
+analyzed20 -> indispensability2  [label=nsubjpass];
+E3b14 [style=filled, fillcolor=white, label=E3b1];
+indispensability2 -> E3b14  [label=prep_of];
+cascade7 [style=filled, fillcolor=white, label=cascade];
+the6 [style=filled, fillcolor=white, label=the];
+cascade7 -> the6  [label=det];
+E3b14 -> cascade7  [label=prep_in];
+events9 [style=filled, fillcolor=white, label=events];
+cascade7 -> events9  [label=prep_of];
+leading10 [style=filled, fillcolor=white, label=leading];
+events9 -> leading10  [label=vmod];
+Rac12 [style=filled, fillcolor=white, label=Rac];
+to11 [style=filled, fillcolor=white, label=to];
+Rac12 -> to11  [label=aux];
+leading10 -> Rac12  [label=xcomp];
+reorganization17 [style=filled, fillcolor=white, label=reorganization];
+activation13 [style=filled, fillcolor=white, label=activation];
+reorganization17 -> activation13  [label=nn];
+"Rac-dependent15" [style=filled, fillcolor=white, label="Rac-dependent"];
+activation13 -> "Rac-dependent15"  [label=conj_and];
+actin16 [style=filled, fillcolor=white, label=actin];
+reorganization17 -> actin16  [label=nn];
+Rac12 -> reorganization17  [label=dobj];
+was18 [style=filled, fillcolor=white, label=was];
+analyzed20 -> was18  [label=auxpass];
+further19 [style=filled, fillcolor=white, label=further];
+analyzed20 -> further19  [label=advmod];
+analyzed20 -> analyzed20  [label=root];
+level24 [style=filled, fillcolor=white, label=level];
+the22 [style=filled, fillcolor=white, label=the];
+level24 -> the22  [label=det];
+biological23 [style=filled, fillcolor=white, label=biological];
+level24 -> biological23  [label=amod];
+analyzed20 -> level24  [label=prep_at];
+}

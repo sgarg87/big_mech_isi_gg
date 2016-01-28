@@ -1,0 +1,43 @@
+digraph "Allosteric activation by B-Raf induces cis-autophosporylation in the activation loop of the receiver kinase ,  i.e. C-Raf ,  and renders it able to phosphorylate Mek ." {
+label="Allosteric activation by B-Raf induces cis-autophosporylation in the activation
+loop of the receiver kinase ,  i.e. C-Raf ,  and renders it able to
+phosphorylate Mek .";
+activation2 [style=filled, fillcolor=white, label=activation];
+Allosteric1 [style=filled, fillcolor=white, label=Allosteric];
+activation2 -> Allosteric1  [label=amod];
+induces5 [style=filled, fillcolor=white, label=induces];
+induces5 -> activation2  [label=nsubj];
+"B-Raf4" [style=filled, fillcolor=white, label="B-Raf"];
+activation2 -> "B-Raf4"  [label=prep_by];
+induces5 -> induces5  [label=root];
+"cis-autophosporylation6" [style=filled, fillcolor=white, label="cis-autophosporylation"];
+induces5 -> "cis-autophosporylation6"  [label=dobj];
+loop10 [style=filled, fillcolor=white, label=loop];
+the8 [style=filled, fillcolor=white, label=the];
+loop10 -> the8  [label=det];
+activation9 [style=filled, fillcolor=white, label=activation];
+loop10 -> activation9  [label=nn];
+induces5 -> loop10  [label=prep_in];
+kinase14 [style=filled, fillcolor=white, label=kinase];
+the12 [style=filled, fillcolor=white, label=the];
+kinase14 -> the12  [label=det];
+receiver13 [style=filled, fillcolor=white, label=receiver];
+kinase14 -> receiver13  [label=nn];
+loop10 -> kinase14  [label=prep_of];
+"C-Raf17" [style=filled, fillcolor=white, label="C-Raf"];
+"i.e.16" [style=filled, fillcolor=white, label="i.e."];
+"C-Raf17" -> "i.e.16"  [label=nn];
+kinase14 -> "C-Raf17"  [label=appos];
+renders20 [style=filled, fillcolor=white, label=renders];
+induces5 -> renders20  [label=conj_and];
+able22 [style=filled, fillcolor=white, label=able];
+it21 [style=filled, fillcolor=white, label=it];
+able22 -> it21  [label=nsubj];
+renders20 -> able22  [label=xcomp];
+phosphorylate24 [style=filled, fillcolor=white, label=phosphorylate];
+to23 [style=filled, fillcolor=white, label=to];
+phosphorylate24 -> to23  [label=aux];
+able22 -> phosphorylate24  [label=xcomp];
+Mek25 [style=filled, fillcolor=white, label=Mek];
+phosphorylate24 -> Mek25  [label=dobj];
+}

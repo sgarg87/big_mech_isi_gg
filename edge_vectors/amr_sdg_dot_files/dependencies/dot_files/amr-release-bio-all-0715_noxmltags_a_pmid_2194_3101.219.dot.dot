@@ -1,0 +1,47 @@
+digraph "This illustrates how Cdc42 activation in response to the KRASG12V-PI3K signalling pathway can be potentially essential for Cdc42-dependent cell migration and invasion properties ( Figure 7E ) ." {
+label="This illustrates how Cdc42 activation in response to the KRASG12V-PI3K
+signalling pathway can be potentially essential for Cdc42-dependent cell
+migration and invasion properties ( Figure 7E ) .";
+illustrates2 [style=filled, fillcolor=white, label=illustrates];
+This1 [style=filled, fillcolor=white, label=This];
+illustrates2 -> This1  [label=nsubj];
+illustrates2 -> illustrates2  [label=root];
+essential16 [style=filled, fillcolor=white, label=essential];
+how3 [style=filled, fillcolor=white, label=how];
+essential16 -> how3  [label=advmod];
+activation5 [style=filled, fillcolor=white, label=activation];
+Cdc42 [style=filled, fillcolor=white, label=Cdc42];
+activation5 -> Cdc42  [label=amod];
+essential16 -> activation5  [label=nsubj];
+response7 [style=filled, fillcolor=white, label=response];
+activation5 -> response7  [label=prep_in];
+pathway12 [style=filled, fillcolor=white, label=pathway];
+the9 [style=filled, fillcolor=white, label=the];
+pathway12 -> the9  [label=det];
+"KRASG12V-PI3K0" [style=filled, fillcolor=white, label="KRASG12V-PI3K"];
+pathway12 -> "KRASG12V-PI3K0"  [label=nn];
+signalling11 [style=filled, fillcolor=white, label=signalling];
+pathway12 -> signalling11  [label=amod];
+response7 -> pathway12  [label=prep_to];
+can13 [style=filled, fillcolor=white, label=can];
+essential16 -> can13  [label=aux];
+be14 [style=filled, fillcolor=white, label=be];
+essential16 -> be14  [label=cop];
+potentially15 [style=filled, fillcolor=white, label=potentially];
+essential16 -> potentially15  [label=advmod];
+illustrates2 -> essential16  [label=ccomp];
+migration20 [style=filled, fillcolor=white, label=migration];
+"Cdc42-dependent18" [style=filled, fillcolor=white, label="Cdc42-dependent"];
+migration20 -> "Cdc42-dependent18"  [label=nn];
+cell19 [style=filled, fillcolor=white, label=cell];
+migration20 -> cell19  [label=nn];
+essential16 -> migration20  [label=prep_for];
+properties23 [style=filled, fillcolor=white, label=properties];
+invasion22 [style=filled, fillcolor=white, label=invasion];
+properties23 -> invasion22  [label=nn];
+migration20 -> properties23  [label=conj_and];
+Figure25 [style=filled, fillcolor=white, label=Figure];
+essential16 -> Figure25  [label=dep];
+"7E26" [style=filled, fillcolor=white, label="7E"];
+Figure25 -> "7E26"  [label=num];
+}

@@ -1,0 +1,22 @@
+digraph "Mutation of T669 and T677 abrogates MEK inhibitor-induced suppression of ERBB3 Activation" {
+label="Mutation of T669 and T677 abrogates MEK inhibitor-induced suppression of ERBB3
+Activation";
+abrogates6 [style=filled, fillcolor=white, label=abrogates];
+Mutation1 [style=filled, fillcolor=white, label=Mutation];
+abrogates6 -> Mutation1  [label=nsubj];
+T6693 [style=filled, fillcolor=white, label=T669];
+Mutation1 -> T6693  [label=prep_of];
+T6775 [style=filled, fillcolor=white, label=T677];
+T6693 -> T6775  [label=conj_and];
+abrogates6 -> abrogates6  [label=root];
+suppression9 [style=filled, fillcolor=white, label=suppression];
+MEK7 [style=filled, fillcolor=white, label=MEK];
+suppression9 -> MEK7  [label=nn];
+"inhibitor-induced8" [style=filled, fillcolor=white, label="inhibitor-induced"];
+suppression9 -> "inhibitor-induced8"  [label=amod];
+abrogates6 -> suppression9  [label=dobj];
+Activation12 [style=filled, fillcolor=white, label=Activation];
+ERBB311 [style=filled, fillcolor=white, label=ERBB3];
+Activation12 -> ERBB311  [label=nn];
+suppression9 -> Activation12  [label=prep_of];
+}

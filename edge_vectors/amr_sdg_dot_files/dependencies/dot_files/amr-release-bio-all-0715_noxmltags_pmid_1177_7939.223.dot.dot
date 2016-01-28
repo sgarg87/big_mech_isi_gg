@@ -1,0 +1,42 @@
+digraph "( D ) Kinetic analysis and rate constants for the binding of the SH3 domains of Grb2 and E3b1 to the proline-rich COOH-terminal of Sos-1 ( aa 1131 -- 1333 ) ." {
+label="( D ) Kinetic analysis and rate constants for the binding of the SH3 domains of
+Grb2 and E3b1 to the proline-rich COOH-terminal of Sos-1 ( aa 1131 -- 1333 ) .";
+analysis5 [style=filled, fillcolor=white, label=analysis];
+D2 [style=filled, fillcolor=white, label=D];
+analysis5 -> D2  [label=appos];
+Kinetic4 [style=filled, fillcolor=white, label=Kinetic];
+analysis5 -> Kinetic4  [label=amod];
+constants8 [style=filled, fillcolor=white, label=constants];
+constants8 -> analysis5  [label=nsubj];
+rate7 [style=filled, fillcolor=white, label=rate];
+analysis5 -> rate7  [label=conj_and];
+constants8 -> constants8  [label=root];
+binding11 [style=filled, fillcolor=white, label=binding];
+the10 [style=filled, fillcolor=white, label=the];
+binding11 -> the10  [label=det];
+constants8 -> binding11  [label=prep_for];
+domains15 [style=filled, fillcolor=white, label=domains];
+the13 [style=filled, fillcolor=white, label=the];
+domains15 -> the13  [label=det];
+SH314 [style=filled, fillcolor=white, label=SH3];
+domains15 -> SH314  [label=num];
+binding11 -> domains15  [label=prep_of];
+Grb217 [style=filled, fillcolor=white, label=Grb2];
+domains15 -> Grb217  [label=prep_of];
+E3b119 [style=filled, fillcolor=white, label=E3b1];
+Grb217 -> E3b119  [label=conj_and];
+"COOH-terminal23" [style=filled, fillcolor=white, label="COOH-terminal"];
+the21 [style=filled, fillcolor=white, label=the];
+"COOH-terminal23" -> the21  [label=det];
+"proline-rich22" [style=filled, fillcolor=white, label="proline-rich"];
+"COOH-terminal23" -> "proline-rich22"  [label=amod];
+constants8 -> "COOH-terminal23"  [label=prep_to];
+"Sos-125" [style=filled, fillcolor=white, label="Sos-1"];
+"COOH-terminal23" -> "Sos-125"  [label=prep_of];
+aa27 [style=filled, fillcolor=white, label=aa];
+"Sos-125" -> aa27  [label=dep];
+113128 [style=filled, fillcolor=white, label=1131];
+aa27 -> 113128  [label=num];
+133330 [style=filled, fillcolor=white, label=1333];
+aa27 -> 133330  [label=dep];
+}

@@ -1,0 +1,32 @@
+digraph "Phosphorylation of 4E-BP1 ,  S6k1 ( Thr ( 389 ) ) ,  and Erk 1/2 was reduced 2 h following IP injection of alcohol ." {
+label="Phosphorylation of 4E-BP1 ,  S6k1 ( Thr ( 389 ) ) ,  and Erk 1/2 was reduced 2
+h following IP injection of alcohol .";
+reduced17 [style=filled, fillcolor=white, label=reduced];
+Phosphorylation1 [style=filled, fillcolor=white, label=Phosphorylation];
+reduced17 -> Phosphorylation1  [label=nsubjpass];
+"4E-BP13" [style=filled, fillcolor=white, label="4E-BP1"];
+Phosphorylation1 -> "4E-BP13"  [label=prep_of];
+S6k15 [style=filled, fillcolor=white, label=S6k1];
+"4E-BP13" -> S6k15  [label=conj_and];
+Thr7 [style=filled, fillcolor=white, label=Thr];
+S6k15 -> Thr7  [label=dep];
+389 [style=filled, fillcolor=white, label=389];
+S6k15 -> 389  [label=appos];
+Erk14 [style=filled, fillcolor=white, label=Erk];
+"4E-BP13" -> Erk14  [label=conj_and];
+"1/215" [style=filled, fillcolor=white, label="1/2"];
+Erk14 -> "1/215"  [label=num];
+was16 [style=filled, fillcolor=white, label=was];
+reduced17 -> was16  [label=auxpass];
+reduced17 -> reduced17  [label=root];
+h19 [style=filled, fillcolor=white, label=h];
+218 [style=filled, fillcolor=white, label=2];
+h19 -> 218  [label=num];
+reduced17 -> h19  [label=dobj];
+injection22 [style=filled, fillcolor=white, label=injection];
+IP21 [style=filled, fillcolor=white, label=IP];
+injection22 -> IP21  [label=nn];
+h19 -> injection22  [label=prep_following];
+alcohol24 [style=filled, fillcolor=white, label=alcohol];
+injection22 -> alcohol24  [label=prep_of];
+}

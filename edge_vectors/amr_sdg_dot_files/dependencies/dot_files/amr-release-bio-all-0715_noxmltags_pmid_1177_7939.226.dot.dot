@@ -1,0 +1,49 @@
+digraph "Coupling of equal amounts of the GST fusion proteins was performed with a goat anti-GST antibody covalently linked to CM5 sensor chip according to the manufacturers instructions ." {
+label="Coupling of equal amounts of the GST fusion proteins was performed with a goat
+anti-GST antibody covalently linked to CM5 sensor chip according to the
+manufacturers instructions .";
+performed11 [style=filled, fillcolor=white, label=performed];
+Coupling1 [style=filled, fillcolor=white, label=Coupling];
+performed11 -> Coupling1  [label=nsubjpass];
+amounts4 [style=filled, fillcolor=white, label=amounts];
+equal3 [style=filled, fillcolor=white, label=equal];
+amounts4 -> equal3  [label=amod];
+Coupling1 -> amounts4  [label=prep_of];
+proteins9 [style=filled, fillcolor=white, label=proteins];
+the6 [style=filled, fillcolor=white, label=the];
+proteins9 -> the6  [label=det];
+GST7 [style=filled, fillcolor=white, label=GST];
+proteins9 -> GST7  [label=nn];
+fusion8 [style=filled, fillcolor=white, label=fusion];
+proteins9 -> fusion8  [label=nn];
+amounts4 -> proteins9  [label=prep_of];
+was10 [style=filled, fillcolor=white, label=was];
+performed11 -> was10  [label=auxpass];
+performed11 -> performed11  [label=root];
+covalently17 [style=filled, fillcolor=white, label=covalently];
+a13 [style=filled, fillcolor=white, label=a];
+covalently17 -> a13  [label=det];
+goat14 [style=filled, fillcolor=white, label=goat];
+covalently17 -> goat14  [label=amod];
+"anti-GST15" [style=filled, fillcolor=white, label="anti-GST"];
+covalently17 -> "anti-GST15"  [label=amod];
+antibody16 [style=filled, fillcolor=white, label=antibody];
+covalently17 -> antibody16  [label=nn];
+performed11 -> covalently17  [label=prep_with];
+linked18 [style=filled, fillcolor=white, label=linked];
+covalently17 -> linked18  [label=vmod];
+chip22 [style=filled, fillcolor=white, label=chip];
+CM520 [style=filled, fillcolor=white, label=CM5];
+chip22 -> CM520  [label=nn];
+sensor21 [style=filled, fillcolor=white, label=sensor];
+chip22 -> sensor21  [label=nn];
+linked18 -> chip22  [label=prep_to];
+to24 [style=filled, fillcolor=white, label=to];
+linked18 -> to24  [label=prepc_according_to];
+instructions27 [style=filled, fillcolor=white, label=instructions];
+the25 [style=filled, fillcolor=white, label=the];
+instructions27 -> the25  [label=det];
+manufacturers26 [style=filled, fillcolor=white, label=manufacturers];
+instructions27 -> manufacturers26  [label=nn];
+linked18 -> instructions27  [label=pobj];
+}

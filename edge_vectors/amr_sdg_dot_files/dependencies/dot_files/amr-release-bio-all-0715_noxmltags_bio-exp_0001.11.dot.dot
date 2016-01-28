@@ -1,0 +1,40 @@
+digraph "CtBPs have also been described to negatively regulate transcriptional activity of the HER3 promoter in breast carcinoma cell lines ( 30 ) ." {
+label="CtBPs have also been described to negatively regulate transcriptional activity
+of the HER3 promoter in breast carcinoma cell lines ( 30 ) .";
+described5 [style=filled, fillcolor=white, label=described];
+CtBPs1 [style=filled, fillcolor=white, label=CtBPs];
+described5 -> CtBPs1  [label=nsubjpass];
+have2 [style=filled, fillcolor=white, label=have];
+described5 -> have2  [label=aux];
+also3 [style=filled, fillcolor=white, label=also];
+described5 -> also3  [label=advmod];
+been4 [style=filled, fillcolor=white, label=been];
+described5 -> been4  [label=auxpass];
+described5 -> described5  [label=root];
+regulate8 [style=filled, fillcolor=white, label=regulate];
+to6 [style=filled, fillcolor=white, label=to];
+regulate8 -> to6  [label=aux];
+negatively7 [style=filled, fillcolor=white, label=negatively];
+regulate8 -> negatively7  [label=advmod];
+described5 -> regulate8  [label=xcomp];
+activity10 [style=filled, fillcolor=white, label=activity];
+transcriptional9 [style=filled, fillcolor=white, label=transcriptional];
+activity10 -> transcriptional9  [label=amod];
+regulate8 -> activity10  [label=dobj];
+promoter14 [style=filled, fillcolor=white, label=promoter];
+the12 [style=filled, fillcolor=white, label=the];
+promoter14 -> the12  [label=det];
+HER31 [style=filled, fillcolor=white, label=HER3];
+promoter14 -> HER31  [label=nn];
+activity10 -> promoter14  [label=prep_of];
+lines19 [style=filled, fillcolor=white, label=lines];
+breast16 [style=filled, fillcolor=white, label=breast];
+lines19 -> breast16  [label=nn];
+carcinoma17 [style=filled, fillcolor=white, label=carcinoma];
+lines19 -> carcinoma17  [label=nn];
+cell18 [style=filled, fillcolor=white, label=cell];
+lines19 -> cell18  [label=nn];
+promoter14 -> lines19  [label=prep_in];
+3021 [style=filled, fillcolor=white, label=30];
+lines19 -> 3021  [label=appos];
+}

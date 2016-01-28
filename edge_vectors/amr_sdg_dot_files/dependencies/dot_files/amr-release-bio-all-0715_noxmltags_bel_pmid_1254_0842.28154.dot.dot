@@ -1,0 +1,38 @@
+digraph "Because STAP-2 expression is induced by proinflammatory cytokines such as IL-6 or IL-1beta ,  STAP-2 may play a role in the regulation of inflammation ." {
+label="Because STAP-2 expression is induced by proinflammatory cytokines such as IL-6
+or IL-1beta ,  STAP-2 may play a role in the regulation of inflammation .";
+induced5 [style=filled, fillcolor=white, label=induced];
+Because1 [style=filled, fillcolor=white, label=Because];
+induced5 -> Because1  [label=mark];
+expression3 [style=filled, fillcolor=white, label=expression];
+"STAP-2" [style=filled, fillcolor=white, label="STAP-2"];
+expression3 -> "STAP-2"  [label=nn];
+induced5 -> expression3  [label=nsubjpass];
+is4 [style=filled, fillcolor=white, label=is];
+induced5 -> is4  [label=auxpass];
+play17 [style=filled, fillcolor=white, label=play];
+play17 -> induced5  [label=advcl];
+cytokines8 [style=filled, fillcolor=white, label=cytokines];
+proinflammatory7 [style=filled, fillcolor=white, label=proinflammatory];
+cytokines8 -> proinflammatory7  [label=amod];
+induced5 -> cytokines8  [label=agent];
+"IL-611" [style=filled, fillcolor=white, label="IL-6"];
+cytokines8 -> "IL-611"  [label=prep_such_as];
+"IL-1beta3" [style=filled, fillcolor=white, label="IL-1beta"];
+"IL-611" -> "IL-1beta3"  [label=conj_or];
+"STAP-215" [style=filled, fillcolor=white, label="STAP-2"];
+play17 -> "STAP-215"  [label=nsubj];
+may16 [style=filled, fillcolor=white, label=may];
+play17 -> may16  [label=aux];
+play17 -> play17  [label=root];
+role19 [style=filled, fillcolor=white, label=role];
+a18 [style=filled, fillcolor=white, label=a];
+role19 -> a18  [label=det];
+play17 -> role19  [label=dobj];
+regulation22 [style=filled, fillcolor=white, label=regulation];
+the21 [style=filled, fillcolor=white, label=the];
+regulation22 -> the21  [label=det];
+play17 -> regulation22  [label=prep_in];
+inflammation24 [style=filled, fillcolor=white, label=inflammation];
+regulation22 -> inflammation24  [label=prep_of];
+}

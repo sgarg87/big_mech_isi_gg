@@ -1,0 +1,28 @@
+digraph "Snail mRNA and Protein Are Expressed Transiently at the Hair Bud Stage of Follicle Morphogenesis" {
+label="Snail mRNA and Protein Are Expressed Transiently at the Hair Bud Stage of
+Follicle Morphogenesis";
+mRNA2 [style=filled, fillcolor=white, label=mRNA];
+Snail1 [style=filled, fillcolor=white, label=Snail];
+mRNA2 -> Snail1  [label=amod];
+mRNA2 -> mRNA2  [label=root];
+Transiently7 [style=filled, fillcolor=white, label=Transiently];
+Protein4 [style=filled, fillcolor=white, label=Protein];
+Transiently7 -> Protein4  [label=nn];
+Are5 [style=filled, fillcolor=white, label=Are];
+Transiently7 -> Are5  [label=nn];
+Expressed6 [style=filled, fillcolor=white, label=Expressed];
+Transiently7 -> Expressed6  [label=nn];
+mRNA2 -> Transiently7  [label=conj_and];
+Stage12 [style=filled, fillcolor=white, label=Stage];
+the9 [style=filled, fillcolor=white, label=the];
+Stage12 -> the9  [label=det];
+Hair10 [style=filled, fillcolor=white, label=Hair];
+Stage12 -> Hair10  [label=nn];
+Bud11 [style=filled, fillcolor=white, label=Bud];
+Stage12 -> Bud11  [label=nn];
+mRNA2 -> Stage12  [label=prep_at];
+Morphogenesis15 [style=filled, fillcolor=white, label=Morphogenesis];
+Follicle14 [style=filled, fillcolor=white, label=Follicle];
+Morphogenesis15 -> Follicle14  [label=nn];
+mRNA2 -> Morphogenesis15  [label=prep_of];
+}

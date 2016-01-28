@@ -1,0 +1,26 @@
+digraph "The E3b1DY mutant inhibits actin remodeling induced by activated Ras ,  but not by activated Rac ." {
+label="The E3b1DY mutant inhibits actin remodeling induced by activated Ras ,  but not
+by activated Rac .";
+remodeling6 [style=filled, fillcolor=white, label=remodeling];
+The1 [style=filled, fillcolor=white, label=The];
+remodeling6 -> The1  [label=det];
+E3b1DY2 [style=filled, fillcolor=white, label=E3b1DY];
+remodeling6 -> E3b1DY2  [label=amod];
+mutant3 [style=filled, fillcolor=white, label=mutant];
+remodeling6 -> mutant3  [label=amod];
+inhibits4 [style=filled, fillcolor=white, label=inhibits];
+remodeling6 -> inhibits4  [label=amod];
+actin5 [style=filled, fillcolor=white, label=actin];
+remodeling6 -> actin5  [label=nn];
+induced7 [style=filled, fillcolor=white, label=induced];
+induced7 -> remodeling6  [label=nsubj];
+induced7 -> induced7  [label=root];
+Ras10 [style=filled, fillcolor=white, label=Ras];
+activated9 [style=filled, fillcolor=white, label=activated];
+Ras10 -> activated9  [label=amod];
+induced7 -> Ras10  [label=prep_by];
+Rac16 [style=filled, fillcolor=white, label=Rac];
+activated15 [style=filled, fillcolor=white, label=activated];
+Rac16 -> activated15  [label=amod];
+Ras10 -> Rac16  [label=conj_negcc];
+}

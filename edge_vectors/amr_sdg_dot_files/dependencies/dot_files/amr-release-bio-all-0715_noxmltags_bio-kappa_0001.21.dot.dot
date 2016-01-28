@@ -1,0 +1,43 @@
+digraph "Activation requires dissociation of protein - bound GDP ,  an intrinsically slow process that is accelerated by guanine nucleotide 96 exchange factors ( GEFs ) ." {
+label="Activation requires dissociation of protein - bound GDP ,  an intrinsically
+slow process that is accelerated by guanine nucleotide 96 exchange factors (
+GEFs ) .";
+requires2 [style=filled, fillcolor=white, label=requires];
+Activation1 [style=filled, fillcolor=white, label=Activation];
+requires2 -> Activation1  [label=nsubj];
+requires2 -> requires2  [label=root];
+dissociation3 [style=filled, fillcolor=white, label=dissociation];
+requires2 -> dissociation3  [label=dobj];
+protein5 [style=filled, fillcolor=white, label=protein];
+dissociation3 -> protein5  [label=prep_of];
+GDP8 [style=filled, fillcolor=white, label=GDP];
+bound7 [style=filled, fillcolor=white, label=bound];
+GDP8 -> bound7  [label=nn];
+dissociation3 -> GDP8  [label=dep];
+process13 [style=filled, fillcolor=white, label=process];
+an10 [style=filled, fillcolor=white, label=an];
+process13 -> an10  [label=det];
+slow12 [style=filled, fillcolor=white, label=slow];
+intrinsically11 [style=filled, fillcolor=white, label=intrinsically];
+slow12 -> intrinsically11  [label=advmod];
+process13 -> slow12  [label=amod];
+GDP8 -> process13  [label=appos];
+accelerated16 [style=filled, fillcolor=white, label=accelerated];
+that14 [style=filled, fillcolor=white, label=that];
+accelerated16 -> that14  [label=nsubjpass];
+is15 [style=filled, fillcolor=white, label=is];
+accelerated16 -> is15  [label=auxpass];
+GDP8 -> accelerated16  [label=rcmod];
+factors22 [style=filled, fillcolor=white, label=factors];
+guanine18 [style=filled, fillcolor=white, label=guanine];
+factors22 -> guanine18  [label=amod];
+nucleotide19 [style=filled, fillcolor=white, label=nucleotide];
+factors22 -> nucleotide19  [label=amod];
+9620 [style=filled, fillcolor=white, label=96];
+factors22 -> 9620  [label=num];
+exchange21 [style=filled, fillcolor=white, label=exchange];
+factors22 -> exchange21  [label=nn];
+accelerated16 -> factors22  [label=agent];
+GEFs24 [style=filled, fillcolor=white, label=GEFs];
+factors22 -> GEFs24  [label=appos];
+}

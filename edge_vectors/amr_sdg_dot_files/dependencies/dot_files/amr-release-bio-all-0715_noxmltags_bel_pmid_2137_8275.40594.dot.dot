@@ -1,0 +1,34 @@
+digraph "The culture medium showed decreased secretion of IL-2 ,  IL-4 ,  and IFN7 in the activated MMP12-treated samples ( Figure 2F ) ." {
+label="The culture medium showed decreased secretion of IL-2 ,  IL-4 ,  and IFN7 in
+the activated MMP12-treated samples ( Figure 2F ) .";
+medium3 [style=filled, fillcolor=white, label=medium];
+The1 [style=filled, fillcolor=white, label=The];
+medium3 -> The1  [label=det];
+culture2 [style=filled, fillcolor=white, label=culture];
+medium3 -> culture2  [label=nn];
+showed4 [style=filled, fillcolor=white, label=showed];
+showed4 -> medium3  [label=nsubj];
+showed4 -> showed4  [label=root];
+secretion6 [style=filled, fillcolor=white, label=secretion];
+decreased5 [style=filled, fillcolor=white, label=decreased];
+secretion6 -> decreased5  [label=amod];
+showed4 -> secretion6  [label=dobj];
+"IL-28" [style=filled, fillcolor=white, label="IL-2"];
+secretion6 -> "IL-28"  [label=prep_of];
+"IL-410" [style=filled, fillcolor=white, label="IL-4"];
+"IL-28" -> "IL-410"  [label=conj_and];
+IFN713 [style=filled, fillcolor=white, label=IFN7];
+"IL-28" -> IFN713  [label=conj_and];
+samples18 [style=filled, fillcolor=white, label=samples];
+the15 [style=filled, fillcolor=white, label=the];
+samples18 -> the15  [label=det];
+activated16 [style=filled, fillcolor=white, label=activated];
+samples18 -> activated16  [label=amod];
+"MMP12-treated7" [style=filled, fillcolor=white, label="MMP12-treated"];
+samples18 -> "MMP12-treated7"  [label=nn];
+"IL-28" -> samples18  [label=prep_in];
+Figure20 [style=filled, fillcolor=white, label=Figure];
+samples18 -> Figure20  [label=appos];
+"2F21" [style=filled, fillcolor=white, label="2F"];
+Figure20 -> "2F21"  [label=num];
+}

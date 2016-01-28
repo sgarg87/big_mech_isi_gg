@@ -1,0 +1,41 @@
+digraph "Activated Ras controls diverse signaling pathways that ultimately determine Ras - induced cellular responses such as cell proliferation ,  survival ,  differentiation and motility ." {
+label="Activated Ras controls diverse signaling pathways that ultimately determine Ras
+- induced cellular responses such as cell proliferation ,  survival ,
+differentiation and motility .";
+Ras2 [style=filled, fillcolor=white, label=Ras];
+Activated1 [style=filled, fillcolor=white, label=Activated];
+Ras2 -> Activated1  [label=nn];
+controls3 [style=filled, fillcolor=white, label=controls];
+controls3 -> Ras2  [label=nsubj];
+controls3 -> controls3  [label=root];
+diverse4 [style=filled, fillcolor=white, label=diverse];
+controls3 -> diverse4  [label=acomp];
+signaling5 [style=filled, fillcolor=white, label=signaling];
+controls3 -> signaling5  [label=xcomp];
+pathways6 [style=filled, fillcolor=white, label=pathways];
+signaling5 -> pathways6  [label=dobj];
+determine9 [style=filled, fillcolor=white, label=determine];
+that7 [style=filled, fillcolor=white, label=that];
+determine9 -> that7  [label=nsubj];
+ultimately8 [style=filled, fillcolor=white, label=ultimately];
+determine9 -> ultimately8  [label=advmod];
+pathways6 -> determine9  [label=rcmod];
+Ras10 [style=filled, fillcolor=white, label=Ras];
+determine9 -> Ras10  [label=dobj];
+induced12 [style=filled, fillcolor=white, label=induced];
+Ras10 -> induced12  [label=vmod];
+responses14 [style=filled, fillcolor=white, label=responses];
+cellular13 [style=filled, fillcolor=white, label=cellular];
+responses14 -> cellular13  [label=amod];
+induced12 -> responses14  [label=dobj];
+proliferation18 [style=filled, fillcolor=white, label=proliferation];
+cell17 [style=filled, fillcolor=white, label=cell];
+proliferation18 -> cell17  [label=nn];
+responses14 -> proliferation18  [label=prep_such_as];
+survival20 [style=filled, fillcolor=white, label=survival];
+proliferation18 -> survival20  [label=appos];
+differentiation22 [style=filled, fillcolor=white, label=differentiation];
+survival20 -> differentiation22  [label=conj_and];
+motility24 [style=filled, fillcolor=white, label=motility];
+survival20 -> motility24  [label=conj_and];
+}

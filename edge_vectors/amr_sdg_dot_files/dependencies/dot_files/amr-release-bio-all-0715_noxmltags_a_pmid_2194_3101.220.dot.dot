@@ -1,0 +1,28 @@
+digraph "HRASG12V induces high cell migration and invasion properties mediated by Rac1 associated with acquired EMT" {
+label="HRASG12V induces high cell migration and invasion properties mediated by Rac1
+associated with acquired EMT";
+induces2 [style=filled, fillcolor=white, label=induces];
+HRASG12V [style=filled, fillcolor=white, label=HRASG12V];
+induces2 -> HRASG12V  [label=nsubj];
+induces2 -> induces2  [label=root];
+migration5 [style=filled, fillcolor=white, label=migration];
+high3 [style=filled, fillcolor=white, label=high];
+migration5 -> high3  [label=amod];
+cell4 [style=filled, fillcolor=white, label=cell];
+migration5 -> cell4  [label=nn];
+induces2 -> migration5  [label=dobj];
+properties8 [style=filled, fillcolor=white, label=properties];
+invasion7 [style=filled, fillcolor=white, label=invasion];
+properties8 -> invasion7  [label=nn];
+migration5 -> properties8  [label=conj_and];
+mediated9 [style=filled, fillcolor=white, label=mediated];
+migration5 -> mediated9  [label=vmod];
+Rac1 [style=filled, fillcolor=white, label=Rac1];
+mediated9 -> Rac1  [label=agent];
+associated12 [style=filled, fillcolor=white, label=associated];
+Rac1 -> associated12  [label=vmod];
+EMT15 [style=filled, fillcolor=white, label=EMT];
+acquired14 [style=filled, fillcolor=white, label=acquired];
+EMT15 -> acquired14  [label=amod];
+associated12 -> EMT15  [label=prep_with];
+}

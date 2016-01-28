@@ -1,0 +1,53 @@
+digraph "We compared human fibroblasts malignantly transformed by overexpression of H-Ras ( V12 ) oncogene to their nontransformed parental cells and found that the malignant cells express a high level of Spry2 ." {
+label="We compared human fibroblasts malignantly transformed by overexpression of
+H-Ras ( V12 ) oncogene to their nontransformed parental cells and found that the
+malignant cells express a high level of Spry2 .";
+compared2 [style=filled, fillcolor=white, label=compared];
+We1 [style=filled, fillcolor=white, label=We];
+compared2 -> We1  [label=nsubj];
+compared2 -> compared2  [label=root];
+fibroblasts4 [style=filled, fillcolor=white, label=fibroblasts];
+human3 [style=filled, fillcolor=white, label=human];
+fibroblasts4 -> human3  [label=amod];
+transformed6 [style=filled, fillcolor=white, label=transformed];
+transformed6 -> fibroblasts4  [label=nsubj];
+malignantly5 [style=filled, fillcolor=white, label=malignantly];
+transformed6 -> malignantly5  [label=advmod];
+compared2 -> transformed6  [label=ccomp];
+overexpression8 [style=filled, fillcolor=white, label=overexpression];
+transformed6 -> overexpression8  [label=prep_by];
+oncogene14 [style=filled, fillcolor=white, label=oncogene];
+"H-Ras10" [style=filled, fillcolor=white, label="H-Ras"];
+oncogene14 -> "H-Ras10"  [label=nn];
+V12 [style=filled, fillcolor=white, label=V12];
+oncogene14 -> V12  [label=appos];
+overexpression8 -> oncogene14  [label=prep_of];
+cells19 [style=filled, fillcolor=white, label=cells];
+their16 [style=filled, fillcolor=white, label=their];
+cells19 -> their16  [label=poss];
+nontransformed17 [style=filled, fillcolor=white, label=nontransformed];
+cells19 -> nontransformed17  [label=amod];
+parental18 [style=filled, fillcolor=white, label=parental];
+cells19 -> parental18  [label=amod];
+transformed6 -> cells19  [label=prep_to];
+found21 [style=filled, fillcolor=white, label=found];
+transformed6 -> found21  [label=conj_and];
+express26 [style=filled, fillcolor=white, label=express];
+that22 [style=filled, fillcolor=white, label=that];
+express26 -> that22  [label=mark];
+cells25 [style=filled, fillcolor=white, label=cells];
+the23 [style=filled, fillcolor=white, label=the];
+cells25 -> the23  [label=det];
+malignant24 [style=filled, fillcolor=white, label=malignant];
+cells25 -> malignant24  [label=amod];
+express26 -> cells25  [label=nsubj];
+found21 -> express26  [label=ccomp];
+level29 [style=filled, fillcolor=white, label=level];
+a27 [style=filled, fillcolor=white, label=a];
+level29 -> a27  [label=det];
+high28 [style=filled, fillcolor=white, label=high];
+level29 -> high28  [label=amod];
+express26 -> level29  [label=dobj];
+Spry231 [style=filled, fillcolor=white, label=Spry2];
+level29 -> Spry231  [label=prep_of];
+}

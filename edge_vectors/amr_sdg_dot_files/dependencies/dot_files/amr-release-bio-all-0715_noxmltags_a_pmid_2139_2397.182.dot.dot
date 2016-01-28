@@ -1,0 +1,32 @@
+digraph "As shown in Figure 5B ,  downregulation of K-Ras did not affect either IR - or EGF-induced YB-1 phosphorylation ." {
+label="As shown in Figure 5B ,  downregulation of K-Ras did not affect either IR - or
+EGF-induced YB-1 phosphorylation .";
+shown2 [style=filled, fillcolor=white, label=shown];
+As1 [style=filled, fillcolor=white, label=As];
+shown2 -> As1  [label=mark];
+affect12 [style=filled, fillcolor=white, label=affect];
+affect12 -> shown2  [label=advcl];
+Figure4 [style=filled, fillcolor=white, label=Figure];
+shown2 -> Figure4  [label=prep_in];
+"5B" [style=filled, fillcolor=white, label="5B"];
+Figure4 -> "5B"  [label=num];
+downregulation7 [style=filled, fillcolor=white, label=downregulation];
+affect12 -> downregulation7  [label=nsubj];
+"K-Ras9" [style=filled, fillcolor=white, label="K-Ras"];
+downregulation7 -> "K-Ras9"  [label=prep_of];
+did10 [style=filled, fillcolor=white, label=did];
+affect12 -> did10  [label=aux];
+not11 [style=filled, fillcolor=white, label=not];
+affect12 -> not11  [label=neg];
+affect12 -> affect12  [label=root];
+phosphorylation19 [style=filled, fillcolor=white, label=phosphorylation];
+either13 [style=filled, fillcolor=white, label=either];
+phosphorylation19 -> either13  [label=det];
+IR14 [style=filled, fillcolor=white, label=IR];
+phosphorylation19 -> IR14  [label=amod];
+"EGF-induced17" [style=filled, fillcolor=white, label="EGF-induced"];
+IR14 -> "EGF-induced17"  [label=conj_or];
+"YB-18" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation19 -> "YB-18"  [label=nn];
+affect12 -> phosphorylation19  [label=dobj];
+}

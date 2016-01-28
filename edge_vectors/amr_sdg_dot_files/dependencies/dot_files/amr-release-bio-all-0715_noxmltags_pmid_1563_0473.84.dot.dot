@@ -1,0 +1,41 @@
+digraph "These hyperthickened areas were marked by excessive proliferation ,  as revealed by antibodies against the proliferating nuclear antigen Ki67 ( Figure 2D and 2E ) ." {
+label="These hyperthickened areas were marked by excessive proliferation ,  as
+revealed by antibodies against the proliferating nuclear antigen Ki67 ( Figure
+2D and 2E ) .";
+areas3 [style=filled, fillcolor=white, label=areas];
+These1 [style=filled, fillcolor=white, label=These];
+areas3 -> These1  [label=det];
+hyperthickened2 [style=filled, fillcolor=white, label=hyperthickened];
+areas3 -> hyperthickened2  [label=amod];
+marked5 [style=filled, fillcolor=white, label=marked];
+marked5 -> areas3  [label=nsubjpass];
+were4 [style=filled, fillcolor=white, label=were];
+marked5 -> were4  [label=auxpass];
+marked5 -> marked5  [label=root];
+proliferation8 [style=filled, fillcolor=white, label=proliferation];
+excessive7 [style=filled, fillcolor=white, label=excessive];
+proliferation8 -> excessive7  [label=amod];
+marked5 -> proliferation8  [label=agent];
+revealed11 [style=filled, fillcolor=white, label=revealed];
+as10 [style=filled, fillcolor=white, label=as];
+revealed11 -> as10  [label=mark];
+marked5 -> revealed11  [label=advcl];
+antibodies13 [style=filled, fillcolor=white, label=antibodies];
+revealed11 -> antibodies13  [label=prep_by];
+Ki6719 [style=filled, fillcolor=white, label=Ki67];
+the15 [style=filled, fillcolor=white, label=the];
+Ki6719 -> the15  [label=det];
+proliferating16 [style=filled, fillcolor=white, label=proliferating];
+Ki6719 -> proliferating16  [label=amod];
+nuclear17 [style=filled, fillcolor=white, label=nuclear];
+Ki6719 -> nuclear17  [label=amod];
+antigen18 [style=filled, fillcolor=white, label=antigen];
+Ki6719 -> antigen18  [label=nn];
+antibodies13 -> Ki6719  [label=prep_against];
+Figure21 [style=filled, fillcolor=white, label=Figure];
+Ki6719 -> Figure21  [label=appos];
+"2D" [style=filled, fillcolor=white, label="2D"];
+Figure21 -> "2D"  [label=num];
+"2E24" [style=filled, fillcolor=white, label="2E"];
+"2D" -> "2E24"  [label=conj_and];
+}

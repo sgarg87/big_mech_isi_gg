@@ -1,0 +1,32 @@
+digraph "We further investigated whether YB-1 activity is involved in the process of DNA-DSB repair and postirradiation survival ." {
+label="We further investigated whether YB-1 activity is involved in the process of
+DNA-DSB repair and postirradiation survival .";
+investigated3 [style=filled, fillcolor=white, label=investigated];
+We1 [style=filled, fillcolor=white, label=We];
+investigated3 -> We1  [label=nsubj];
+further2 [style=filled, fillcolor=white, label=further];
+investigated3 -> further2  [label=advmod];
+investigated3 -> investigated3  [label=root];
+involved8 [style=filled, fillcolor=white, label=involved];
+whether4 [style=filled, fillcolor=white, label=whether];
+involved8 -> whether4  [label=mark];
+activity6 [style=filled, fillcolor=white, label=activity];
+"YB-15" [style=filled, fillcolor=white, label="YB-1"];
+activity6 -> "YB-15"  [label=nn];
+involved8 -> activity6  [label=nsubjpass];
+is7 [style=filled, fillcolor=white, label=is];
+involved8 -> is7  [label=auxpass];
+investigated3 -> involved8  [label=ccomp];
+process11 [style=filled, fillcolor=white, label=process];
+the10 [style=filled, fillcolor=white, label=the];
+process11 -> the10  [label=det];
+involved8 -> process11  [label=prep_in];
+repair14 [style=filled, fillcolor=white, label=repair];
+"DNA-DSB13" [style=filled, fillcolor=white, label="DNA-DSB"];
+repair14 -> "DNA-DSB13"  [label=amod];
+process11 -> repair14  [label=prep_of];
+survival17 [style=filled, fillcolor=white, label=survival];
+postirradiation16 [style=filled, fillcolor=white, label=postirradiation];
+survival17 -> postirradiation16  [label=nn];
+repair14 -> survival17  [label=conj_and];
+}

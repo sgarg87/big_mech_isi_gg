@@ -1,0 +1,36 @@
+digraph "Protein families are represented as single proteins to simplify the schematic ; in addition ,  feedback loops are not included ." {
+label="Protein families are represented as single proteins to simplify the schematic ;
+in addition ,  feedback loops are not included .";
+families2 [style=filled, fillcolor=white, label=families];
+Protein1 [style=filled, fillcolor=white, label=Protein];
+families2 -> Protein1  [label=nn];
+represented4 [style=filled, fillcolor=white, label=represented];
+represented4 -> families2  [label=nsubjpass];
+are3 [style=filled, fillcolor=white, label=are];
+represented4 -> are3  [label=auxpass];
+represented4 -> represented4  [label=root];
+proteins7 [style=filled, fillcolor=white, label=proteins];
+single6 [style=filled, fillcolor=white, label=single];
+proteins7 -> single6  [label=amod];
+represented4 -> proteins7  [label=prep_as];
+simplify9 [style=filled, fillcolor=white, label=simplify];
+to8 [style=filled, fillcolor=white, label=to];
+simplify9 -> to8  [label=aux];
+represented4 -> simplify9  [label=xcomp];
+schematic11 [style=filled, fillcolor=white, label=schematic];
+the10 [style=filled, fillcolor=white, label=the];
+schematic11 -> the10  [label=det];
+simplify9 -> schematic11  [label=dobj];
+included20 [style=filled, fillcolor=white, label=included];
+addition14 [style=filled, fillcolor=white, label=addition];
+included20 -> addition14  [label=prep_in];
+loops17 [style=filled, fillcolor=white, label=loops];
+feedback16 [style=filled, fillcolor=white, label=feedback];
+loops17 -> feedback16  [label=nn];
+included20 -> loops17  [label=nsubjpass];
+are18 [style=filled, fillcolor=white, label=are];
+included20 -> are18  [label=auxpass];
+not19 [style=filled, fillcolor=white, label=not];
+included20 -> not19  [label=neg];
+represented4 -> included20  [label=parataxis];
+}

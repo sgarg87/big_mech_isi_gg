@@ -1,0 +1,44 @@
+digraph "To distinguish Tg from endogenous Snail ,  we used the HA-epitope ,  shown previously not to alter Snails transcriptional activity -LSB- 12 -RSB- ." {
+label="To distinguish Tg from endogenous Snail ,  we used the HA-epitope ,  shown
+previously not to alter Snails transcriptional activity -LSB- 12 -RSB- .";
+distinguish2 [style=filled, fillcolor=white, label=distinguish];
+To1 [style=filled, fillcolor=white, label=To];
+distinguish2 -> To1  [label=aux];
+used9 [style=filled, fillcolor=white, label=used];
+used9 -> distinguish2  [label=advcl];
+Tg3 [style=filled, fillcolor=white, label=Tg];
+distinguish2 -> Tg3  [label=dobj];
+Snail6 [style=filled, fillcolor=white, label=Snail];
+endogenous5 [style=filled, fillcolor=white, label=endogenous];
+Snail6 -> endogenous5  [label=nn];
+distinguish2 -> Snail6  [label=prep_from];
+we8 [style=filled, fillcolor=white, label=we];
+used9 -> we8  [label=nsubj];
+used9 -> used9  [label=root];
+"HA-epitope11" [style=filled, fillcolor=white, label="HA-epitope"];
+the10 [style=filled, fillcolor=white, label=the];
+"HA-epitope11" -> the10  [label=det];
+used9 -> "HA-epitope11"  [label=dobj];
+shown13 [style=filled, fillcolor=white, label=shown];
+"HA-epitope11" -> shown13  [label=vmod];
+previously14 [style=filled, fillcolor=white, label=previously];
+shown13 -> previously14  [label=advmod];
+alter17 [style=filled, fillcolor=white, label=alter];
+not15 [style=filled, fillcolor=white, label=not];
+alter17 -> not15  [label=neg];
+to16 [style=filled, fillcolor=white, label=to];
+alter17 -> to16  [label=aux];
+shown13 -> alter17  [label=ccomp];
+"-RSB-23" [style=filled, fillcolor=white, label="-RSB-"];
+Snails18 [style=filled, fillcolor=white, label=Snails];
+"-RSB-23" -> Snails18  [label=nn];
+transcriptional19 [style=filled, fillcolor=white, label=transcriptional];
+"-RSB-23" -> transcriptional19  [label=nn];
+activity20 [style=filled, fillcolor=white, label=activity];
+"-RSB-23" -> activity20  [label=nn];
+"-LSB-21" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-23" -> "-LSB-21"  [label=nn];
+12 [style=filled, fillcolor=white, label=12];
+"-RSB-23" -> 12  [label=num];
+alter17 -> "-RSB-23"  [label=dobj];
+}

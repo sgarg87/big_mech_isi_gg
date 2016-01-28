@@ -1,0 +1,41 @@
+digraph "In addition ,  FBLN-3-expressing MCA102 tumors contained significantly enlarged regions of central and peripheral necrosis that were typically absent in their control counterparts ." {
+label="In addition ,  FBLN-3-expressing MCA102 tumors contained significantly enlarged
+regions of central and peripheral necrosis that were typically absent in their
+control counterparts .";
+contained7 [style=filled, fillcolor=white, label=contained];
+addition2 [style=filled, fillcolor=white, label=addition];
+contained7 -> addition2  [label=prep_in];
+tumors6 [style=filled, fillcolor=white, label=tumors];
+"FBLN-3-expressing4" [style=filled, fillcolor=white, label="FBLN-3-expressing"];
+tumors6 -> "FBLN-3-expressing4"  [label=nn];
+MCA1025 [style=filled, fillcolor=white, label=MCA102];
+tumors6 -> MCA1025  [label=nn];
+contained7 -> tumors6  [label=nsubj];
+contained7 -> contained7  [label=root];
+significantly8 [style=filled, fillcolor=white, label=significantly];
+contained7 -> significantly8  [label=advmod];
+regions10 [style=filled, fillcolor=white, label=regions];
+enlarged9 [style=filled, fillcolor=white, label=enlarged];
+regions10 -> enlarged9  [label=amod];
+contained7 -> regions10  [label=dobj];
+necrosis15 [style=filled, fillcolor=white, label=necrosis];
+central12 [style=filled, fillcolor=white, label=central];
+necrosis15 -> central12  [label=amod];
+peripheral14 [style=filled, fillcolor=white, label=peripheral];
+central12 -> peripheral14  [label=conj_and];
+regions10 -> necrosis15  [label=prep_of];
+absent19 [style=filled, fillcolor=white, label=absent];
+that16 [style=filled, fillcolor=white, label=that];
+absent19 -> that16  [label=nsubj];
+were17 [style=filled, fillcolor=white, label=were];
+absent19 -> were17  [label=cop];
+typically18 [style=filled, fillcolor=white, label=typically];
+absent19 -> typically18  [label=advmod];
+regions10 -> absent19  [label=rcmod];
+counterparts23 [style=filled, fillcolor=white, label=counterparts];
+their21 [style=filled, fillcolor=white, label=their];
+counterparts23 -> their21  [label=poss];
+control22 [style=filled, fillcolor=white, label=control];
+counterparts23 -> control22  [label=nn];
+absent19 -> counterparts23  [label=prep_in];
+}

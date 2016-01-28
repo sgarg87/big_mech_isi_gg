@@ -1,0 +1,41 @@
+digraph "TPO is necessary for megakaryocyte maturation in that TPO deficient mice display greatly reduced megakaryocyte production as well as reduced numbers of mature megakaryocytes" {
+label="TPO is necessary for megakaryocyte maturation in that TPO deficient mice
+display greatly reduced megakaryocyte production as well as reduced numbers of
+mature megakaryocytes";
+necessary3 [style=filled, fillcolor=white, label=necessary];
+TPO1 [style=filled, fillcolor=white, label=TPO];
+necessary3 -> TPO1  [label=nsubj];
+is2 [style=filled, fillcolor=white, label=is];
+necessary3 -> is2  [label=cop];
+necessary3 -> necessary3  [label=root];
+maturation6 [style=filled, fillcolor=white, label=maturation];
+megakaryocyte5 [style=filled, fillcolor=white, label=megakaryocyte];
+maturation6 -> megakaryocyte5  [label=amod];
+necessary3 -> maturation6  [label=prep_for];
+display12 [style=filled, fillcolor=white, label=display];
+that8 [style=filled, fillcolor=white, label=that];
+display12 -> that8  [label=prep_in];
+mice11 [style=filled, fillcolor=white, label=mice];
+TPO9 [style=filled, fillcolor=white, label=TPO];
+mice11 -> TPO9  [label=nn];
+deficient10 [style=filled, fillcolor=white, label=deficient];
+mice11 -> deficient10  [label=nn];
+display12 -> mice11  [label=nsubj];
+maturation6 -> display12  [label=rcmod];
+greatly13 [style=filled, fillcolor=white, label=greatly];
+display12 -> greatly13  [label=advmod];
+production16 [style=filled, fillcolor=white, label=production];
+reduced14 [style=filled, fillcolor=white, label=reduced];
+production16 -> reduced14  [label=amod];
+megakaryocyte15 [style=filled, fillcolor=white, label=megakaryocyte];
+production16 -> megakaryocyte15  [label=nn];
+display12 -> production16  [label=dobj];
+numbers21 [style=filled, fillcolor=white, label=numbers];
+reduced20 [style=filled, fillcolor=white, label=reduced];
+numbers21 -> reduced20  [label=amod];
+production16 -> numbers21  [label=conj_and];
+megakaryocytes24 [style=filled, fillcolor=white, label=megakaryocytes];
+mature23 [style=filled, fillcolor=white, label=mature];
+megakaryocytes24 -> mature23  [label=amod];
+numbers21 -> megakaryocytes24  [label=prep_of];
+}

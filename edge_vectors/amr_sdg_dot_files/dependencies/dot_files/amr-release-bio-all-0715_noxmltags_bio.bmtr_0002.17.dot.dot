@@ -1,0 +1,43 @@
+digraph "When endogenous EGFR was replaced with EGFR ( exon19del ) wild-type at T669 ,  MEK inhibition led to significant feedback activation of ERBB3/PI3K/AKT signaling ( Figure 6C ) ." {
+label="When endogenous EGFR was replaced with EGFR ( exon19del ) wild-type at T669 ,
+MEK inhibition led to significant feedback activation of ERBB3/PI3K/AKT
+signaling ( Figure 6C ) .";
+replaced5 [style=filled, fillcolor=white, label=replaced];
+When1 [style=filled, fillcolor=white, label=When];
+replaced5 -> When1  [label=advmod];
+EGFR3 [style=filled, fillcolor=white, label=EGFR];
+endogenous2 [style=filled, fillcolor=white, label=endogenous];
+EGFR3 -> endogenous2  [label=nn];
+replaced5 -> EGFR3  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+replaced5 -> was4  [label=auxpass];
+led17 [style=filled, fillcolor=white, label=led];
+led17 -> replaced5  [label=advcl];
+"wild-type11" [style=filled, fillcolor=white, label="wild-type"];
+EGFR7 [style=filled, fillcolor=white, label=EGFR];
+"wild-type11" -> EGFR7  [label=nn];
+exon19del [style=filled, fillcolor=white, label=exon19del];
+"wild-type11" -> exon19del  [label=appos];
+replaced5 -> "wild-type11"  [label=prep_with];
+T66913 [style=filled, fillcolor=white, label=T669];
+replaced5 -> T66913  [label=prep_at];
+inhibition16 [style=filled, fillcolor=white, label=inhibition];
+MEK15 [style=filled, fillcolor=white, label=MEK];
+inhibition16 -> MEK15  [label=nn];
+led17 -> inhibition16  [label=nsubj];
+led17 -> led17  [label=root];
+activation21 [style=filled, fillcolor=white, label=activation];
+significant19 [style=filled, fillcolor=white, label=significant];
+activation21 -> significant19  [label=amod];
+feedback20 [style=filled, fillcolor=white, label=feedback];
+activation21 -> feedback20  [label=nn];
+led17 -> activation21  [label=prep_to];
+signaling24 [style=filled, fillcolor=white, label=signaling];
+"ERBB3/PI3K/AKT2" [style=filled, fillcolor=white, label="ERBB3/PI3K/AKT"];
+signaling24 -> "ERBB3/PI3K/AKT2"  [label=nn];
+activation21 -> signaling24  [label=prep_of];
+Figure26 [style=filled, fillcolor=white, label=Figure];
+signaling24 -> Figure26  [label=appos];
+"6C27" [style=filled, fillcolor=white, label="6C"];
+Figure26 -> "6C27"  [label=num];
+}

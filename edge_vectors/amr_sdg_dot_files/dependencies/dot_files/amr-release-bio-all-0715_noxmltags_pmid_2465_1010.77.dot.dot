@@ -1,0 +1,53 @@
+digraph "Loss of neurofibromin is usually mutually exclusive with Ras mutation and receptor tyrosine kinase ( RTK ) activation ,  suggesting that these genetic events represent different ways of activating similar pathways ." {
+label="Loss of neurofibromin is usually mutually exclusive with Ras mutation and
+receptor tyrosine kinase ( RTK ) activation ,  suggesting that these genetic
+events represent different ways of activating similar pathways .";
+activation18 [style=filled, fillcolor=white, label=activation];
+Loss1 [style=filled, fillcolor=white, label=Loss];
+activation18 -> Loss1  [label=nsubj];
+neurofibromin3 [style=filled, fillcolor=white, label=neurofibromin];
+Loss1 -> neurofibromin3  [label=prep_of];
+is4 [style=filled, fillcolor=white, label=is];
+activation18 -> is4  [label=cop];
+usually5 [style=filled, fillcolor=white, label=usually];
+activation18 -> usually5  [label=advmod];
+exclusive7 [style=filled, fillcolor=white, label=exclusive];
+mutually6 [style=filled, fillcolor=white, label=mutually];
+exclusive7 -> mutually6  [label=advmod];
+activation18 -> exclusive7  [label=amod];
+mutation10 [style=filled, fillcolor=white, label=mutation];
+Ras9 [style=filled, fillcolor=white, label=Ras];
+mutation10 -> Ras9  [label=nn];
+exclusive7 -> mutation10  [label=prep_with];
+kinase14 [style=filled, fillcolor=white, label=kinase];
+receptor12 [style=filled, fillcolor=white, label=receptor];
+kinase14 -> receptor12  [label=nn];
+tyrosine13 [style=filled, fillcolor=white, label=tyrosine];
+kinase14 -> tyrosine13  [label=nn];
+mutation10 -> kinase14  [label=conj_and];
+RTK16 [style=filled, fillcolor=white, label=RTK];
+mutation10 -> RTK16  [label=appos];
+activation18 -> activation18  [label=root];
+suggesting20 [style=filled, fillcolor=white, label=suggesting];
+activation18 -> suggesting20  [label=vmod];
+represent25 [style=filled, fillcolor=white, label=represent];
+that21 [style=filled, fillcolor=white, label=that];
+represent25 -> that21  [label=mark];
+events24 [style=filled, fillcolor=white, label=events];
+these22 [style=filled, fillcolor=white, label=these];
+events24 -> these22  [label=det];
+genetic23 [style=filled, fillcolor=white, label=genetic];
+events24 -> genetic23  [label=amod];
+represent25 -> events24  [label=nsubj];
+suggesting20 -> represent25  [label=ccomp];
+ways27 [style=filled, fillcolor=white, label=ways];
+different26 [style=filled, fillcolor=white, label=different];
+ways27 -> different26  [label=amod];
+represent25 -> ways27  [label=dobj];
+activating29 [style=filled, fillcolor=white, label=activating];
+ways27 -> activating29  [label=prepc_of];
+pathways31 [style=filled, fillcolor=white, label=pathways];
+similar30 [style=filled, fillcolor=white, label=similar];
+pathways31 -> similar30  [label=amod];
+activating29 -> pathways31  [label=dobj];
+}

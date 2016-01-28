@@ -1,0 +1,64 @@
+digraph "Following staining with Hoechst and phalloidin the ability of Caco-2 cells to form spheroids with lumen was observed ,  a property also retained by Caco-K15 cells but completely absent in Caco-BR13 and Caco-H2 cells ( Figure 1B ,  lower panel ) ." {
+label="Following staining with Hoechst and phalloidin the ability of Caco-2 cells to
+form spheroids with lumen was observed ,  a property also retained by Caco-K15
+cells but completely absent in Caco-BR13 and Caco-H2 cells ( Figure 1B ,  lower
+panel ) .";
+observed18 [style=filled, fillcolor=white, label=observed];
+Following1 [style=filled, fillcolor=white, label=Following];
+observed18 -> Following1  [label=csubj];
+staining2 [style=filled, fillcolor=white, label=staining];
+Following1 -> staining2  [label=vmod];
+Hoechst4 [style=filled, fillcolor=white, label=Hoechst];
+staining2 -> Hoechst4  [label=prep_with];
+phalloidin6 [style=filled, fillcolor=white, label=phalloidin];
+Hoechst4 -> phalloidin6  [label=conj_and];
+ability8 [style=filled, fillcolor=white, label=ability];
+the7 [style=filled, fillcolor=white, label=the];
+ability8 -> the7  [label=det];
+staining2 -> ability8  [label=dobj];
+cells11 [style=filled, fillcolor=white, label=cells];
+"Caco-210" [style=filled, fillcolor=white, label="Caco-2"];
+cells11 -> "Caco-210"  [label=nn];
+ability8 -> cells11  [label=prep_of];
+form13 [style=filled, fillcolor=white, label=form];
+to12 [style=filled, fillcolor=white, label=to];
+form13 -> to12  [label=aux];
+staining2 -> form13  [label=vmod];
+spheroids14 [style=filled, fillcolor=white, label=spheroids];
+form13 -> spheroids14  [label=dobj];
+lumen16 [style=filled, fillcolor=white, label=lumen];
+form13 -> lumen16  [label=prep_with];
+was17 [style=filled, fillcolor=white, label=was];
+observed18 -> was17  [label=cop];
+retained23 [style=filled, fillcolor=white, label=retained];
+retained23 -> observed18  [label=ccomp];
+property21 [style=filled, fillcolor=white, label=property];
+a20 [style=filled, fillcolor=white, label=a];
+property21 -> a20  [label=det];
+retained23 -> property21  [label=nsubj];
+also22 [style=filled, fillcolor=white, label=also];
+retained23 -> also22  [label=advmod];
+retained23 -> retained23  [label=root];
+cells26 [style=filled, fillcolor=white, label=cells];
+"Caco-K152" [style=filled, fillcolor=white, label="Caco-K15"];
+cells26 -> "Caco-K152"  [label=nn];
+retained23 -> cells26  [label=prep_by];
+absent29 [style=filled, fillcolor=white, label=absent];
+completely28 [style=filled, fillcolor=white, label=completely];
+absent29 -> completely28  [label=advmod];
+retained23 -> absent29  [label=conj_but];
+cells34 [style=filled, fillcolor=white, label=cells];
+"Caco-BR13" [style=filled, fillcolor=white, label="Caco-BR13"];
+cells34 -> "Caco-BR13"  [label=amod];
+"Caco-H233" [style=filled, fillcolor=white, label="Caco-H2"];
+"Caco-BR13" -> "Caco-H233"  [label=conj_and];
+absent29 -> cells34  [label=prep_in];
+Figure36 [style=filled, fillcolor=white, label=Figure];
+cells34 -> Figure36  [label=dep];
+"1B37" [style=filled, fillcolor=white, label="1B"];
+Figure36 -> "1B37"  [label=num];
+panel40 [style=filled, fillcolor=white, label=panel];
+lower39 [style=filled, fillcolor=white, label=lower];
+panel40 -> lower39  [label=amod];
+Figure36 -> panel40  [label=appos];
+}

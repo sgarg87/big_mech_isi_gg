@@ -1,0 +1,28 @@
+digraph "Taken together ,  expression of CD72 most probably down-modu-lates phosphorylation of ERK induced by BCR signaling ." {
+label="Taken together ,  expression of CD72 most probably down-modu-lates
+phosphorylation of ERK induced by BCR signaling .";
+induced13 [style=filled, fillcolor=white, label=induced];
+Taken1 [style=filled, fillcolor=white, label=Taken];
+induced13 -> Taken1  [label=vmod];
+together2 [style=filled, fillcolor=white, label=together];
+Taken1 -> together2  [label=advmod];
+expression4 [style=filled, fillcolor=white, label=expression];
+induced13 -> expression4  [label=nsubj];
+phosphorylation10 [style=filled, fillcolor=white, label=phosphorylation];
+CD726 [style=filled, fillcolor=white, label=CD72];
+phosphorylation10 -> CD726  [label=num];
+"down-modu-lates9" [style=filled, fillcolor=white, label="down-modu-lates"];
+most7 [style=filled, fillcolor=white, label=most];
+"down-modu-lates9" -> most7  [label=advmod];
+probably8 [style=filled, fillcolor=white, label=probably];
+"down-modu-lates9" -> probably8  [label=advmod];
+phosphorylation10 -> "down-modu-lates9"  [label=amod];
+expression4 -> phosphorylation10  [label=prep_of];
+ERK12 [style=filled, fillcolor=white, label=ERK];
+phosphorylation10 -> ERK12  [label=prep_of];
+induced13 -> induced13  [label=root];
+signaling16 [style=filled, fillcolor=white, label=signaling];
+BCR15 [style=filled, fillcolor=white, label=BCR];
+signaling16 -> BCR15  [label=nn];
+induced13 -> signaling16  [label=prep_by];
+}

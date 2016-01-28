@@ -1,0 +1,22 @@
+digraph "Thus ,  Eps8 is required for the association between Sos-1 and nucleotide-free Rac ." {
+label="Thus ,  Eps8 is required for the association between Sos-1 and nucleotide-free
+Rac .";
+required5 [style=filled, fillcolor=white, label=required];
+Thus1 [style=filled, fillcolor=white, label=Thus];
+required5 -> Thus1  [label=advmod];
+Eps83 [style=filled, fillcolor=white, label=Eps8];
+required5 -> Eps83  [label=nsubjpass];
+is4 [style=filled, fillcolor=white, label=is];
+required5 -> is4  [label=auxpass];
+required5 -> required5  [label=root];
+association8 [style=filled, fillcolor=white, label=association];
+the7 [style=filled, fillcolor=white, label=the];
+association8 -> the7  [label=det];
+required5 -> association8  [label=prep_for];
+Rac13 [style=filled, fillcolor=white, label=Rac];
+"Sos-10" [style=filled, fillcolor=white, label="Sos-1"];
+Rac13 -> "Sos-10"  [label=amod];
+"nucleotide-free12" [style=filled, fillcolor=white, label="nucleotide-free"];
+"Sos-10" -> "nucleotide-free12"  [label=conj_and];
+association8 -> Rac13  [label=prep_between];
+}

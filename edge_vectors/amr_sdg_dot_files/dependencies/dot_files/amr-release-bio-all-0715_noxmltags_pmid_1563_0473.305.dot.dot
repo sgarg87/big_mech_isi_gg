@@ -1,0 +1,44 @@
+digraph "Embryos were either frozen in OCT embedding compound ( A ,  F ,  and H ) or embedded in paraffin ( C ,  D ,  E ,  and G ) ,  and then sectioned ( 8 μm ) ." {
+label="Embryos were either frozen in OCT embedding compound ( A ,  F ,  and H ) or
+embedded in paraffin ( C ,  D ,  E ,  and G ) ,  and then sectioned ( 8 μm ) .";
+frozen4 [style=filled, fillcolor=white, label=frozen];
+Embryos1 [style=filled, fillcolor=white, label=Embryos];
+frozen4 -> Embryos1  [label=nsubjpass];
+were2 [style=filled, fillcolor=white, label=were];
+frozen4 -> were2  [label=auxpass];
+either3 [style=filled, fillcolor=white, label=either];
+frozen4 -> either3  [label=advmod];
+frozen4 -> frozen4  [label=root];
+compound8 [style=filled, fillcolor=white, label=compound];
+OCT6 [style=filled, fillcolor=white, label=OCT];
+compound8 -> OCT6  [label=nn];
+embedding7 [style=filled, fillcolor=white, label=embedding];
+compound8 -> embedding7  [label=amod];
+frozen4 -> compound8  [label=prep_in];
+A10 [style=filled, fillcolor=white, label=A];
+compound8 -> A10  [label=dep];
+F12 [style=filled, fillcolor=white, label=F];
+A10 -> F12  [label=conj_and];
+H15 [style=filled, fillcolor=white, label=H];
+A10 -> H15  [label=conj_and];
+embedded18 [style=filled, fillcolor=white, label=embedded];
+frozen4 -> embedded18  [label=conj_or];
+paraffin20 [style=filled, fillcolor=white, label=paraffin];
+embedded18 -> paraffin20  [label=prep_in];
+C22 [style=filled, fillcolor=white, label=C];
+paraffin20 -> C22  [label=dep];
+D24 [style=filled, fillcolor=white, label=D];
+C22 -> D24  [label=conj_and];
+E26 [style=filled, fillcolor=white, label=E];
+C22 -> E26  [label=conj_and];
+G29 [style=filled, fillcolor=white, label=G];
+C22 -> G29  [label=conj_and];
+sectioned34 [style=filled, fillcolor=white, label=sectioned];
+then33 [style=filled, fillcolor=white, label=then];
+sectioned34 -> then33  [label=advmod];
+embedded18 -> sectioned34  [label=conj_and];
+"μm37" [style=filled, fillcolor=white, label="μm"];
+836 [style=filled, fillcolor=white, label=8];
+"μm37" -> 836  [label=number];
+sectioned34 -> "μm37"  [label=dep];
+}

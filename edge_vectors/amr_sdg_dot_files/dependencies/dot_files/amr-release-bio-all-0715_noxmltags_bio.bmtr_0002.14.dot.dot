@@ -1,0 +1,53 @@
+digraph "Together these results support the hypothesis that inhibition of ERK-mediated phosphorylation of a conserved JM domain threonine residue leads to feedback activation of EGFR ,  HER2 ,  and ERBB3 ( Figure 7 ) ." {
+label="Together these results support the hypothesis that inhibition of ERK-mediated
+phosphorylation of a conserved JM domain threonine residue leads to feedback
+activation of EGFR ,  HER2 ,  and ERBB3 ( Figure 7 ) .";
+support4 [style=filled, fillcolor=white, label=support];
+Together1 [style=filled, fillcolor=white, label=Together];
+support4 -> Together1  [label=advmod];
+results3 [style=filled, fillcolor=white, label=results];
+these2 [style=filled, fillcolor=white, label=these];
+results3 -> these2  [label=det];
+support4 -> results3  [label=nsubj];
+support4 -> support4  [label=root];
+hypothesis6 [style=filled, fillcolor=white, label=hypothesis];
+the5 [style=filled, fillcolor=white, label=the];
+hypothesis6 -> the5  [label=det];
+support4 -> hypothesis6  [label=dobj];
+leads19 [style=filled, fillcolor=white, label=leads];
+that7 [style=filled, fillcolor=white, label=that];
+leads19 -> that7  [label=mark];
+inhibition8 [style=filled, fillcolor=white, label=inhibition];
+leads19 -> inhibition8  [label=nsubj];
+phosphorylation11 [style=filled, fillcolor=white, label=phosphorylation];
+"ERK-mediated10" [style=filled, fillcolor=white, label="ERK-mediated"];
+phosphorylation11 -> "ERK-mediated10"  [label=amod];
+inhibition8 -> phosphorylation11  [label=prep_of];
+residue18 [style=filled, fillcolor=white, label=residue];
+a13 [style=filled, fillcolor=white, label=a];
+residue18 -> a13  [label=det];
+conserved14 [style=filled, fillcolor=white, label=conserved];
+residue18 -> conserved14  [label=amod];
+JM15 [style=filled, fillcolor=white, label=JM];
+residue18 -> JM15  [label=nn];
+domain16 [style=filled, fillcolor=white, label=domain];
+residue18 -> domain16  [label=nn];
+threonine17 [style=filled, fillcolor=white, label=threonine];
+residue18 -> threonine17  [label=nn];
+phosphorylation11 -> residue18  [label=prep_of];
+support4 -> leads19  [label=ccomp];
+activation22 [style=filled, fillcolor=white, label=activation];
+feedback21 [style=filled, fillcolor=white, label=feedback];
+activation22 -> feedback21  [label=nn];
+leads19 -> activation22  [label=prep_to];
+EGFR24 [style=filled, fillcolor=white, label=EGFR];
+activation22 -> EGFR24  [label=prep_of];
+HER226 [style=filled, fillcolor=white, label=HER2];
+EGFR24 -> HER226  [label=conj_and];
+ERBB329 [style=filled, fillcolor=white, label=ERBB3];
+EGFR24 -> ERBB329  [label=conj_and];
+Figure31 [style=filled, fillcolor=white, label=Figure];
+activation22 -> Figure31  [label=appos];
+732 [style=filled, fillcolor=white, label=7];
+Figure31 -> 732  [label=num];
+}

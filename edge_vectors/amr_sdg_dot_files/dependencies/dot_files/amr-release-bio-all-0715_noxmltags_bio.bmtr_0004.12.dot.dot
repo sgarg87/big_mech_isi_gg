@@ -1,0 +1,55 @@
+digraph "To validate the use of an in vitro system to dissect the mechanism of Ras regulation ,  we measured the sensitivity of mUbRas to GAP-mediated hydrolysis in a cellular reconstitution system ." {
+label="To validate the use of an in vitro system to dissect the mechanism of Ras
+regulation ,  we measured the sensitivity of mUbRas to GAP-mediated hydrolysis
+in a cellular reconstitution system .";
+validate2 [style=filled, fillcolor=white, label=validate];
+To1 [style=filled, fillcolor=white, label=To];
+validate2 -> To1  [label=aux];
+measured19 [style=filled, fillcolor=white, label=measured];
+measured19 -> validate2  [label=advcl];
+use4 [style=filled, fillcolor=white, label=use];
+the3 [style=filled, fillcolor=white, label=the];
+use4 -> the3  [label=det];
+validate2 -> use4  [label=dobj];
+system9 [style=filled, fillcolor=white, label=system];
+an6 [style=filled, fillcolor=white, label=an];
+system9 -> an6  [label=det];
+vitro8 [style=filled, fillcolor=white, label=vitro];
+in7 [style=filled, fillcolor=white, label=in];
+vitro8 -> in7  [label=dep];
+system9 -> vitro8  [label=amod];
+use4 -> system9  [label=prep_of];
+dissect11 [style=filled, fillcolor=white, label=dissect];
+to10 [style=filled, fillcolor=white, label=to];
+dissect11 -> to10  [label=aux];
+validate2 -> dissect11  [label=vmod];
+mechanism13 [style=filled, fillcolor=white, label=mechanism];
+the12 [style=filled, fillcolor=white, label=the];
+mechanism13 -> the12  [label=det];
+dissect11 -> mechanism13  [label=dobj];
+regulation16 [style=filled, fillcolor=white, label=regulation];
+Ras15 [style=filled, fillcolor=white, label=Ras];
+regulation16 -> Ras15  [label=nn];
+mechanism13 -> regulation16  [label=prep_of];
+we18 [style=filled, fillcolor=white, label=we];
+measured19 -> we18  [label=nsubj];
+measured19 -> measured19  [label=root];
+sensitivity21 [style=filled, fillcolor=white, label=sensitivity];
+the20 [style=filled, fillcolor=white, label=the];
+sensitivity21 -> the20  [label=det];
+measured19 -> sensitivity21  [label=dobj];
+mUbRas23 [style=filled, fillcolor=white, label=mUbRas];
+sensitivity21 -> mUbRas23  [label=prep_of];
+hydrolysis26 [style=filled, fillcolor=white, label=hydrolysis];
+"GAP-mediated25" [style=filled, fillcolor=white, label="GAP-mediated"];
+hydrolysis26 -> "GAP-mediated25"  [label=amod];
+measured19 -> hydrolysis26  [label=prep_to];
+system31 [style=filled, fillcolor=white, label=system];
+a28 [style=filled, fillcolor=white, label=a];
+system31 -> a28  [label=det];
+cellular29 [style=filled, fillcolor=white, label=cellular];
+system31 -> cellular29  [label=amod];
+reconstitution30 [style=filled, fillcolor=white, label=reconstitution];
+system31 -> reconstitution30  [label=nn];
+hydrolysis26 -> system31  [label=prep_in];
+}

@@ -1,0 +1,51 @@
+digraph "His - tagged ubiquitin and Flag - tagged K-Ras4B ( K-Ras hereafter ) were expressed in HEK293T cells at levels similar to endogenous K-Ras ( Fig. 1B ) and subjected to sequential affinity chromatography ." {
+label="His - tagged ubiquitin and Flag - tagged K-Ras4B ( K-Ras hereafter ) were
+expressed in HEK293T cells at levels similar to endogenous K-Ras ( Fig. 1B ) and
+subjected to sequential affinity chromatography .";
+"K-Ras4B9" [style=filled, fillcolor=white, label="K-Ras4B"];
+His1 [style=filled, fillcolor=white, label=His];
+"K-Ras4B9" -> His1  [label=poss];
+ubiquitin4 [style=filled, fillcolor=white, label=ubiquitin];
+tagged3 [style=filled, fillcolor=white, label=tagged];
+ubiquitin4 -> tagged3  [label=amod];
+"K-Ras4B9" -> ubiquitin4  [label=dep];
+Flag6 [style=filled, fillcolor=white, label=Flag];
+ubiquitin4 -> Flag6  [label=conj_and];
+tagged8 [style=filled, fillcolor=white, label=tagged];
+"K-Ras4B9" -> tagged8  [label=amod];
+expressed15 [style=filled, fillcolor=white, label=expressed];
+expressed15 -> "K-Ras4B9"  [label=nsubjpass];
+"K-Ras11" [style=filled, fillcolor=white, label="K-Ras"];
+expressed15 -> "K-Ras11"  [label=parataxis];
+hereafter12 [style=filled, fillcolor=white, label=hereafter];
+"K-Ras11" -> hereafter12  [label=advmod];
+were14 [style=filled, fillcolor=white, label=were];
+expressed15 -> were14  [label=auxpass];
+expressed15 -> expressed15  [label=root];
+cells18 [style=filled, fillcolor=white, label=cells];
+HEK293T17 [style=filled, fillcolor=white, label=HEK293T];
+cells18 -> HEK293T17  [label=num];
+expressed15 -> cells18  [label=prep_in];
+levels20 [style=filled, fillcolor=white, label=levels];
+cells18 -> levels20  [label=prep_at];
+similar21 [style=filled, fillcolor=white, label=similar];
+levels20 -> similar21  [label=amod];
+"K-Ras24" [style=filled, fillcolor=white, label="K-Ras"];
+endogenous23 [style=filled, fillcolor=white, label=endogenous];
+"K-Ras24" -> endogenous23  [label=amod];
+similar21 -> "K-Ras24"  [label=prep_to];
+"1B27" [style=filled, fillcolor=white, label="1B"];
+"Fig.26" [style=filled, fillcolor=white, label="Fig."];
+"1B27" -> "Fig.26"  [label=number];
+levels20 -> "1B27"  [label=dep];
+subjected30 [style=filled, fillcolor=white, label=subjected];
+expressed15 -> subjected30  [label=conj_and];
+sequential32 [style=filled, fillcolor=white, label=sequential];
+to31 [style=filled, fillcolor=white, label=to];
+sequential32 -> to31  [label=aux];
+subjected30 -> sequential32  [label=xcomp];
+chromatography34 [style=filled, fillcolor=white, label=chromatography];
+affinity33 [style=filled, fillcolor=white, label=affinity];
+chromatography34 -> affinity33  [label=advmod];
+sequential32 -> chromatography34  [label=acomp];
+}

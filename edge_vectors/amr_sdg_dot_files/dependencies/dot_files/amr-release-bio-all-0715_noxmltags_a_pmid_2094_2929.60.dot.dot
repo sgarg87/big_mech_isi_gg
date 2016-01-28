@@ -1,0 +1,30 @@
+digraph "caMEK-expressing cells were henceforth infected with shSerpinE2 lentiviruses or with lentiviruses expressing a control shRNA ( shScrambled ) ." {
+label="caMEK-expressing cells were henceforth infected with shSerpinE2 lentiviruses or
+with lentiviruses expressing a control shRNA ( shScrambled ) .";
+cells2 [style=filled, fillcolor=white, label=cells];
+"caMEK-expressing1" [style=filled, fillcolor=white, label="caMEK-expressing"];
+cells2 -> "caMEK-expressing1"  [label=amod];
+infected5 [style=filled, fillcolor=white, label=infected];
+infected5 -> cells2  [label=nsubjpass];
+were3 [style=filled, fillcolor=white, label=were];
+infected5 -> were3  [label=auxpass];
+henceforth4 [style=filled, fillcolor=white, label=henceforth];
+infected5 -> henceforth4  [label=advmod];
+infected5 -> infected5  [label=root];
+lentiviruses8 [style=filled, fillcolor=white, label=lentiviruses];
+shSerpinE27 [style=filled, fillcolor=white, label=shSerpinE2];
+lentiviruses8 -> shSerpinE27  [label=amod];
+infected5 -> lentiviruses8  [label=prep_with];
+lentiviruses11 [style=filled, fillcolor=white, label=lentiviruses];
+lentiviruses8 -> lentiviruses11  [label=conj_or];
+expressing12 [style=filled, fillcolor=white, label=expressing];
+lentiviruses11 -> expressing12  [label=vmod];
+shRNA15 [style=filled, fillcolor=white, label=shRNA];
+a13 [style=filled, fillcolor=white, label=a];
+shRNA15 -> a13  [label=det];
+control14 [style=filled, fillcolor=white, label=control];
+shRNA15 -> control14  [label=nn];
+expressing12 -> shRNA15  [label=dobj];
+shScrambled17 [style=filled, fillcolor=white, label=shScrambled];
+lentiviruses11 -> shScrambled17  [label=dep];
+}

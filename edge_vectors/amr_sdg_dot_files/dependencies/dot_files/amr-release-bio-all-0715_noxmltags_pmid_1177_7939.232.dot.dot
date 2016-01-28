@@ -1,0 +1,23 @@
+digraph "( Bottom ) The same cellular lysates ( 50 μg ) were detected with anti-Grb2 ." {
+label="( Bottom ) The same cellular lysates ( 50 μg ) were detected with anti-Grb2 .";
+detected13 [style=filled, fillcolor=white, label=detected];
+Bottom2 [style=filled, fillcolor=white, label=Bottom];
+detected13 -> Bottom2  [label=nsubjpass];
+lysates7 [style=filled, fillcolor=white, label=lysates];
+The4 [style=filled, fillcolor=white, label=The];
+lysates7 -> The4  [label=det];
+same5 [style=filled, fillcolor=white, label=same];
+lysates7 -> same5  [label=amod];
+cellular6 [style=filled, fillcolor=white, label=cellular];
+lysates7 -> cellular6  [label=amod];
+Bottom2 -> lysates7  [label=dep];
+"μg10" [style=filled, fillcolor=white, label="μg"];
+509 [style=filled, fillcolor=white, label=50];
+"μg10" -> 509  [label=number];
+Bottom2 -> "μg10"  [label=dep];
+were12 [style=filled, fillcolor=white, label=were];
+detected13 -> were12  [label=auxpass];
+detected13 -> detected13  [label=root];
+"anti-Grb215" [style=filled, fillcolor=white, label="anti-Grb2"];
+detected13 -> "anti-Grb215"  [label=prep_with];
+}

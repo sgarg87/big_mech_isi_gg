@@ -1,0 +1,77 @@
+digraph "It was established recently that monoubiquitination increases the proportion of Ras that is in the activated ( GTP-bound ) state ,  that monoubiquitination enhances association with the downstream effectors Raf and PI3-Kinase ,  and that mutation of the primary site of monoubiquitination impairs oncogenic Ras-mediated tumorigenesis ." {
+label="It was established recently that monoubiquitination increases the proportion of
+Ras that is in the activated ( GTP-bound ) state ,  that monoubiquitination
+enhances association with the downstream effectors Raf and PI3-Kinase ,  and
+that mutation of the primary site of monoubiquitination impairs oncogenic Ras-
+mediated tumorigenesis .";
+established3 [style=filled, fillcolor=white, label=established];
+It1 [style=filled, fillcolor=white, label=It];
+established3 -> It1  [label=nsubjpass];
+was2 [style=filled, fillcolor=white, label=was];
+established3 -> was2  [label=auxpass];
+established3 -> established3  [label=root];
+recently4 [style=filled, fillcolor=white, label=recently];
+established3 -> recently4  [label=advmod];
+increases7 [style=filled, fillcolor=white, label=increases];
+that5 [style=filled, fillcolor=white, label=that];
+increases7 -> that5  [label=mark];
+monoubiquitination6 [style=filled, fillcolor=white, label=monoubiquitination];
+increases7 -> monoubiquitination6  [label=nsubj];
+established3 -> increases7  [label=ccomp];
+proportion9 [style=filled, fillcolor=white, label=proportion];
+the8 [style=filled, fillcolor=white, label=the];
+proportion9 -> the8  [label=det];
+increases7 -> proportion9  [label=dobj];
+Ras11 [style=filled, fillcolor=white, label=Ras];
+proportion9 -> Ras11  [label=prep_of];
+is13 [style=filled, fillcolor=white, label=is];
+that12 [style=filled, fillcolor=white, label=that];
+is13 -> that12  [label=nsubj];
+proportion9 -> is13  [label=rcmod];
+state20 [style=filled, fillcolor=white, label=state];
+the15 [style=filled, fillcolor=white, label=the];
+state20 -> the15  [label=det];
+activated16 [style=filled, fillcolor=white, label=activated];
+state20 -> activated16  [label=amod];
+"GTP-bound18" [style=filled, fillcolor=white, label="GTP-bound"];
+state20 -> "GTP-bound18"  [label=appos];
+is13 -> state20  [label=prep_in];
+enhances24 [style=filled, fillcolor=white, label=enhances];
+that22 [style=filled, fillcolor=white, label=that];
+enhances24 -> that22  [label=mark];
+monoubiquitination23 [style=filled, fillcolor=white, label=monoubiquitination];
+enhances24 -> monoubiquitination23  [label=nsubj];
+is13 -> enhances24  [label=ccomp];
+association25 [style=filled, fillcolor=white, label=association];
+enhances24 -> association25  [label=dobj];
+effectors29 [style=filled, fillcolor=white, label=effectors];
+the27 [style=filled, fillcolor=white, label=the];
+effectors29 -> the27  [label=det];
+downstream28 [style=filled, fillcolor=white, label=downstream];
+effectors29 -> downstream28  [label=amod];
+enhances24 -> effectors29  [label=prep_with];
+Raf30 [style=filled, fillcolor=white, label=Raf];
+effectors29 -> Raf30  [label=amod];
+"PI3-Kinase2" [style=filled, fillcolor=white, label="PI3-Kinase"];
+Raf30 -> "PI3-Kinase2"  [label=conj_and];
+impairs43 [style=filled, fillcolor=white, label=impairs];
+that35 [style=filled, fillcolor=white, label=that];
+impairs43 -> that35  [label=mark];
+mutation36 [style=filled, fillcolor=white, label=mutation];
+impairs43 -> mutation36  [label=nsubj];
+site40 [style=filled, fillcolor=white, label=site];
+the38 [style=filled, fillcolor=white, label=the];
+site40 -> the38  [label=det];
+primary39 [style=filled, fillcolor=white, label=primary];
+site40 -> primary39  [label=amod];
+mutation36 -> site40  [label=prep_of];
+monoubiquitination42 [style=filled, fillcolor=white, label=monoubiquitination];
+site40 -> monoubiquitination42  [label=prep_of];
+enhances24 -> impairs43  [label=conj_and];
+tumorigenesis46 [style=filled, fillcolor=white, label=tumorigenesis];
+oncogenic44 [style=filled, fillcolor=white, label=oncogenic];
+tumorigenesis46 -> oncogenic44  [label=amod];
+"Ras-mediated45" [style=filled, fillcolor=white, label="Ras-mediated"];
+tumorigenesis46 -> "Ras-mediated45"  [label=amod];
+impairs43 -> tumorigenesis46  [label=dobj];
+}

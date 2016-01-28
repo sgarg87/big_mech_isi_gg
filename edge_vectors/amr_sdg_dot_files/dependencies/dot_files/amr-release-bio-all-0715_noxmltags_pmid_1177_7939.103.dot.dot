@@ -1,0 +1,41 @@
+digraph "Despite lower levels of Sos-1 in the coimmunoprecipitate ( with respect to a Sos-1 immunoprecipitate from SosTfx ) ,  Rac-GEF activity was now present ( Fig. 7 B ) ." {
+label="Despite lower levels of Sos-1 in the coimmunoprecipitate ( with respect to a
+Sos-1 immunoprecipitate from SosTfx ) ,  Rac-GEF activity was now present ( Fig.
+7 B ) .";
+levels3 [style=filled, fillcolor=white, label=levels];
+lower2 [style=filled, fillcolor=white, label=lower];
+levels3 -> lower2  [label=amod];
+present24 [style=filled, fillcolor=white, label=present];
+present24 -> levels3  [label=prep_despite];
+"Sos-15" [style=filled, fillcolor=white, label="Sos-1"];
+levels3 -> "Sos-15"  [label=prep_of];
+coimmunoprecipitate8 [style=filled, fillcolor=white, label=coimmunoprecipitate];
+the7 [style=filled, fillcolor=white, label=the];
+coimmunoprecipitate8 -> the7  [label=det];
+"Sos-15" -> coimmunoprecipitate8  [label=prep_in];
+respect11 [style=filled, fillcolor=white, label=respect];
+coimmunoprecipitate8 -> respect11  [label=prep_with_respect_to];
+immunoprecipitate15 [style=filled, fillcolor=white, label=immunoprecipitate];
+a13 [style=filled, fillcolor=white, label=a];
+immunoprecipitate15 -> a13  [label=det];
+"Sos-14" [style=filled, fillcolor=white, label="Sos-1"];
+immunoprecipitate15 -> "Sos-14"  [label=nn];
+coimmunoprecipitate8 -> immunoprecipitate15  [label=pobj];
+SosTfx17 [style=filled, fillcolor=white, label=SosTfx];
+coimmunoprecipitate8 -> SosTfx17  [label=prep_from];
+activity21 [style=filled, fillcolor=white, label=activity];
+"Rac-GEF20" [style=filled, fillcolor=white, label="Rac-GEF"];
+activity21 -> "Rac-GEF20"  [label=nn];
+present24 -> activity21  [label=nsubj];
+was22 [style=filled, fillcolor=white, label=was];
+present24 -> was22  [label=cop];
+now23 [style=filled, fillcolor=white, label=now];
+present24 -> now23  [label=advmod];
+present24 -> present24  [label=root];
+"Fig.26" [style=filled, fillcolor=white, label="Fig."];
+present24 -> "Fig.26"  [label=dep];
+B28 [style=filled, fillcolor=white, label=B];
+72 [style=filled, fillcolor=white, label=7];
+B28 -> 72  [label=number];
+"Fig.26" -> B28  [label=num];
+}

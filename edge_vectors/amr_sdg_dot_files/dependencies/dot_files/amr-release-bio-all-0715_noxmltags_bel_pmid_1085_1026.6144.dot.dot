@@ -1,0 +1,32 @@
+digraph "FGFs activate the endogenous FGFRs leading to the formation of a Grb2/FRS2/Shp2 complex and activation of MAP kinase ." {
+label="FGFs activate the endogenous FGFRs leading to the formation of a Grb2/FRS2/Shp2
+complex and activation of MAP kinase .";
+activate2 [style=filled, fillcolor=white, label=activate];
+FGFs1 [style=filled, fillcolor=white, label=FGFs];
+activate2 -> FGFs1  [label=nsubj];
+activate2 -> activate2  [label=root];
+endogenous4 [style=filled, fillcolor=white, label=endogenous];
+the3 [style=filled, fillcolor=white, label=the];
+endogenous4 -> the3  [label=det];
+FGFRs5 [style=filled, fillcolor=white, label=FGFRs];
+FGFRs5 -> endogenous4  [label=nsubj];
+activate2 -> FGFRs5  [label=ccomp];
+leading6 [style=filled, fillcolor=white, label=leading];
+FGFRs5 -> leading6  [label=xcomp];
+formation9 [style=filled, fillcolor=white, label=formation];
+the8 [style=filled, fillcolor=white, label=the];
+formation9 -> the8  [label=det];
+leading6 -> formation9  [label=prep_to];
+complex13 [style=filled, fillcolor=white, label=complex];
+a11 [style=filled, fillcolor=white, label=a];
+complex13 -> a11  [label=det];
+"Grb2/FRS2/Shp21" [style=filled, fillcolor=white, label="Grb2/FRS2/Shp2"];
+complex13 -> "Grb2/FRS2/Shp21"  [label=amod];
+formation9 -> complex13  [label=prep_of];
+activation15 [style=filled, fillcolor=white, label=activation];
+complex13 -> activation15  [label=conj_and];
+kinase18 [style=filled, fillcolor=white, label=kinase];
+MAP17 [style=filled, fillcolor=white, label=MAP];
+kinase18 -> MAP17  [label=nn];
+complex13 -> kinase18  [label=prep_of];
+}

@@ -1,0 +1,40 @@
+digraph "A New Dimension to Ras Function : A Novel Role for Nucleotide-Free Ras in Class II Phosphatidylinositol 3-Kinase Beta ( PI3KC2β ) Regulation ( PMC3441633 )" {
+label="A New Dimension to Ras Function : A Novel Role for Nucleotide-Free Ras in Class
+II Phosphatidylinositol 3-Kinase Beta ( PI3KC2β ) Regulation ( PMC3441633 )";
+Dimension3 [style=filled, fillcolor=white, label=Dimension];
+A1 [style=filled, fillcolor=white, label=A];
+Dimension3 -> A1  [label=det];
+New2 [style=filled, fillcolor=white, label=New];
+Dimension3 -> New2  [label=nn];
+Dimension3 -> Dimension3  [label=root];
+Function6 [style=filled, fillcolor=white, label=Function];
+Ras5 [style=filled, fillcolor=white, label=Ras];
+Function6 -> Ras5  [label=nn];
+Dimension3 -> Function6  [label=prep_to];
+Regulation23 [style=filled, fillcolor=white, label=Regulation];
+A8 [style=filled, fillcolor=white, label=A];
+Regulation23 -> A8  [label=det];
+Role10 [style=filled, fillcolor=white, label=Role];
+Novel9 [style=filled, fillcolor=white, label=Novel];
+Role10 -> Novel9  [label=nn];
+Regulation23 -> Role10  [label=nn];
+Ras13 [style=filled, fillcolor=white, label=Ras];
+"Nucleotide-Free12" [style=filled, fillcolor=white, label="Nucleotide-Free"];
+Ras13 -> "Nucleotide-Free12"  [label=nn];
+Role10 -> Ras13  [label=prep_for];
+Beta19 [style=filled, fillcolor=white, label=Beta];
+Class15 [style=filled, fillcolor=white, label=Class];
+Beta19 -> Class15  [label=nn];
+II16 [style=filled, fillcolor=white, label=II];
+Beta19 -> II16  [label=nn];
+Phosphatidylinositol17 [style=filled, fillcolor=white, label=Phosphatidylinositol];
+Beta19 -> Phosphatidylinositol17  [label=nn];
+"3-Kinase18" [style=filled, fillcolor=white, label="3-Kinase"];
+Beta19 -> "3-Kinase18"  [label=amod];
+Ras13 -> Beta19  [label=prep_in];
+"PI3KC2β21" [style=filled, fillcolor=white, label="PI3KC2β"];
+Role10 -> "PI3KC2β21"  [label=appos];
+Dimension3 -> Regulation23  [label=dep];
+PMC344163325 [style=filled, fillcolor=white, label=PMC3441633];
+Regulation23 -> PMC344163325  [label=appos];
+}

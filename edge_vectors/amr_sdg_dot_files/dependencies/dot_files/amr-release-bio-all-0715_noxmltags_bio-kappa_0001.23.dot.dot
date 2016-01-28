@@ -1,0 +1,45 @@
+digraph "The switch - OFF process is entirely different and involves hydrolysis of GTP to GDP ,  the guanosine triphosphatase ( GTPase ) reaction ,  which is basically irreversible ." {
+label="The switch - OFF process is entirely different and involves hydrolysis of GTP
+to GDP ,  the guanosine triphosphatase ( GTPase ) reaction ,  which is basically
+irreversible .";
+switch2 [style=filled, fillcolor=white, label=switch];
+The1 [style=filled, fillcolor=white, label=The];
+switch2 -> The1  [label=det];
+switch2 -> switch2  [label=root];
+process5 [style=filled, fillcolor=white, label=process];
+OFF4 [style=filled, fillcolor=white, label=OFF];
+process5 -> OFF4  [label=nn];
+different8 [style=filled, fillcolor=white, label=different];
+different8 -> process5  [label=nsubj];
+is6 [style=filled, fillcolor=white, label=is];
+different8 -> is6  [label=cop];
+entirely7 [style=filled, fillcolor=white, label=entirely];
+different8 -> entirely7  [label=advmod];
+switch2 -> different8  [label=dep];
+involves10 [style=filled, fillcolor=white, label=involves];
+different8 -> involves10  [label=conj_and];
+hydrolysis11 [style=filled, fillcolor=white, label=hydrolysis];
+different8 -> hydrolysis11  [label=dobj];
+GTP13 [style=filled, fillcolor=white, label=GTP];
+hydrolysis11 -> GTP13  [label=prep_of];
+GDP15 [style=filled, fillcolor=white, label=GDP];
+different8 -> GDP15  [label=prep_to];
+reaction23 [style=filled, fillcolor=white, label=reaction];
+the17 [style=filled, fillcolor=white, label=the];
+reaction23 -> the17  [label=det];
+triphosphatase19 [style=filled, fillcolor=white, label=triphosphatase];
+guanosine18 [style=filled, fillcolor=white, label=guanosine];
+triphosphatase19 -> guanosine18  [label=amod];
+reaction23 -> triphosphatase19  [label=amod];
+GTPase21 [style=filled, fillcolor=white, label=GTPase];
+reaction23 -> GTPase21  [label=appos];
+GDP15 -> reaction23  [label=appos];
+irreversible28 [style=filled, fillcolor=white, label=irreversible];
+which25 [style=filled, fillcolor=white, label=which];
+irreversible28 -> which25  [label=nsubj];
+is26 [style=filled, fillcolor=white, label=is];
+irreversible28 -> is26  [label=cop];
+basically27 [style=filled, fillcolor=white, label=basically];
+irreversible28 -> basically27  [label=advmod];
+GDP15 -> irreversible28  [label=rcmod];
+}

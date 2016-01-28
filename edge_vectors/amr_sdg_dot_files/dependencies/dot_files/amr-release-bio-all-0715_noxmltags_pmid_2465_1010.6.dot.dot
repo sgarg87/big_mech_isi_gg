@@ -1,0 +1,19 @@
+digraph "These knowledge gaps have impaired development of therapeutic strategies ." {
+label="These knowledge gaps have impaired development of therapeutic strategies .";
+gaps3 [style=filled, fillcolor=white, label=gaps];
+These1 [style=filled, fillcolor=white, label=These];
+gaps3 -> These1  [label=det];
+knowledge2 [style=filled, fillcolor=white, label=knowledge];
+gaps3 -> knowledge2  [label=nn];
+impaired5 [style=filled, fillcolor=white, label=impaired];
+impaired5 -> gaps3  [label=nsubj];
+have4 [style=filled, fillcolor=white, label=have];
+impaired5 -> have4  [label=aux];
+impaired5 -> impaired5  [label=root];
+development6 [style=filled, fillcolor=white, label=development];
+impaired5 -> development6  [label=dobj];
+strategies9 [style=filled, fillcolor=white, label=strategies];
+therapeutic8 [style=filled, fillcolor=white, label=therapeutic];
+strategies9 -> therapeutic8  [label=amod];
+development6 -> strategies9  [label=prep_of];
+}

@@ -1,0 +1,28 @@
+digraph "We therefore looked for evidence of differential regulation of the S/G and S/E complex upon RTK stimulation ." {
+label="We therefore looked for evidence of differential regulation of the S/G and S/E
+complex upon RTK stimulation .";
+looked3 [style=filled, fillcolor=white, label=looked];
+We1 [style=filled, fillcolor=white, label=We];
+looked3 -> We1  [label=nsubj];
+therefore2 [style=filled, fillcolor=white, label=therefore];
+looked3 -> therefore2  [label=advmod];
+looked3 -> looked3  [label=root];
+evidence5 [style=filled, fillcolor=white, label=evidence];
+looked3 -> evidence5  [label=prep_for];
+regulation8 [style=filled, fillcolor=white, label=regulation];
+differential7 [style=filled, fillcolor=white, label=differential];
+regulation8 -> differential7  [label=nn];
+evidence5 -> regulation8  [label=prep_of];
+"S/G11" [style=filled, fillcolor=white, label="S/G"];
+the10 [style=filled, fillcolor=white, label=the];
+"S/G11" -> the10  [label=det];
+regulation8 -> "S/G11"  [label=prep_of];
+"S/E13" [style=filled, fillcolor=white, label="S/E"];
+"S/G11" -> "S/E13"  [label=conj_and];
+complex14 [style=filled, fillcolor=white, label=complex];
+looked3 -> complex14  [label=acomp];
+stimulation17 [style=filled, fillcolor=white, label=stimulation];
+RTK16 [style=filled, fillcolor=white, label=RTK];
+stimulation17 -> RTK16  [label=nn];
+looked3 -> stimulation17  [label=prep_upon];
+}

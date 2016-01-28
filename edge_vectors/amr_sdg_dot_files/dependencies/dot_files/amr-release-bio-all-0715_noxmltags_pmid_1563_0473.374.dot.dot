@@ -1,0 +1,36 @@
+digraph "Note the presence of Ajuba only under conditions where levels of α-catenin and other AJ proteins were aberrantly low or absent ." {
+label="Note the presence of Ajuba only under conditions where levels of α-catenin and
+other AJ proteins were aberrantly low or absent .";
+Note1 [style=filled, fillcolor=white, label=Note];
+Note1 -> Note1  [label=root];
+presence3 [style=filled, fillcolor=white, label=presence];
+the2 [style=filled, fillcolor=white, label=the];
+presence3 -> the2  [label=det];
+Note1 -> presence3  [label=dobj];
+Ajuba5 [style=filled, fillcolor=white, label=Ajuba];
+presence3 -> Ajuba5  [label=prep_of];
+only6 [style=filled, fillcolor=white, label=only];
+Note1 -> only6  [label=advmod];
+conditions8 [style=filled, fillcolor=white, label=conditions];
+Note1 -> conditions8  [label=prep_under];
+low19 [style=filled, fillcolor=white, label=low];
+where9 [style=filled, fillcolor=white, label=where];
+low19 -> where9  [label=advmod];
+levels10 [style=filled, fillcolor=white, label=levels];
+low19 -> levels10  [label=nsubj];
+proteins16 [style=filled, fillcolor=white, label=proteins];
+"α-catenin12" [style=filled, fillcolor=white, label="α-catenin"];
+proteins16 -> "α-catenin12"  [label=nn];
+other14 [style=filled, fillcolor=white, label=other];
+"α-catenin12" -> other14  [label=conj_and];
+AJ15 [style=filled, fillcolor=white, label=AJ];
+proteins16 -> AJ15  [label=nn];
+levels10 -> proteins16  [label=prep_of];
+were17 [style=filled, fillcolor=white, label=were];
+low19 -> were17  [label=cop];
+aberrantly18 [style=filled, fillcolor=white, label=aberrantly];
+low19 -> aberrantly18  [label=advmod];
+conditions8 -> low19  [label=rcmod];
+absent21 [style=filled, fillcolor=white, label=absent];
+low19 -> absent21  [label=conj_or];
+}

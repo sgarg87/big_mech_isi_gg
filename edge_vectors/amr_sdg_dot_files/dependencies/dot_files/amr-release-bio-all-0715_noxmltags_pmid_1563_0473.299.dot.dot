@@ -1,0 +1,34 @@
+digraph "The DAB substrate kit ( Vector Labs ) was used according to manufacturers instructions to develop the signal ." {
+label="The DAB substrate kit ( Vector Labs ) was used according to manufacturers
+instructions to develop the signal .";
+kit4 [style=filled, fillcolor=white, label=kit];
+The1 [style=filled, fillcolor=white, label=The];
+kit4 -> The1  [label=det];
+DAB2 [style=filled, fillcolor=white, label=DAB];
+kit4 -> DAB2  [label=nn];
+substrate3 [style=filled, fillcolor=white, label=substrate];
+kit4 -> substrate3  [label=nn];
+used10 [style=filled, fillcolor=white, label=used];
+used10 -> kit4  [label=nsubjpass];
+Labs7 [style=filled, fillcolor=white, label=Labs];
+Vector6 [style=filled, fillcolor=white, label=Vector];
+Labs7 -> Vector6  [label=nn];
+kit4 -> Labs7  [label=appos];
+was9 [style=filled, fillcolor=white, label=was];
+used10 -> was9  [label=auxpass];
+used10 -> used10  [label=root];
+to12 [style=filled, fillcolor=white, label=to];
+used10 -> to12  [label=prepc_according_to];
+instructions14 [style=filled, fillcolor=white, label=instructions];
+manufacturers13 [style=filled, fillcolor=white, label=manufacturers];
+instructions14 -> manufacturers13  [label=nn];
+used10 -> instructions14  [label=pobj];
+develop16 [style=filled, fillcolor=white, label=develop];
+to15 [style=filled, fillcolor=white, label=to];
+develop16 -> to15  [label=aux];
+used10 -> develop16  [label=xcomp];
+signal18 [style=filled, fillcolor=white, label=signal];
+the17 [style=filled, fillcolor=white, label=the];
+signal18 -> the17  [label=det];
+develop16 -> signal18  [label=dobj];
+}

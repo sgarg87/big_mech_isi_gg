@@ -1,0 +1,51 @@
+digraph "PDGF-AA immunostaining was strongly expressed in the lungs of IL-13 transgene-positive mice and localized to the airway epithelium ,  airway smooth muscle ,  and interstitial cells ( Fig. 1 ,  B -- E ) ." {
+label="PDGF-AA immunostaining was strongly expressed in the lungs of IL-13 transgene-
+positive mice and localized to the airway epithelium ,  airway smooth muscle ,
+and interstitial cells ( Fig. 1 ,  B -- E ) .";
+immunostaining2 [style=filled, fillcolor=white, label=immunostaining];
+"PDGF-AA1" [style=filled, fillcolor=white, label="PDGF-AA"];
+immunostaining2 -> "PDGF-AA1"  [label=amod];
+expressed5 [style=filled, fillcolor=white, label=expressed];
+expressed5 -> immunostaining2  [label=nsubjpass];
+was3 [style=filled, fillcolor=white, label=was];
+expressed5 -> was3  [label=auxpass];
+strongly4 [style=filled, fillcolor=white, label=strongly];
+expressed5 -> strongly4  [label=advmod];
+expressed5 -> expressed5  [label=root];
+lungs8 [style=filled, fillcolor=white, label=lungs];
+the7 [style=filled, fillcolor=white, label=the];
+lungs8 -> the7  [label=det];
+expressed5 -> lungs8  [label=prep_in];
+mice12 [style=filled, fillcolor=white, label=mice];
+"IL-130" [style=filled, fillcolor=white, label="IL-13"];
+mice12 -> "IL-130"  [label=nn];
+"transgene-positive11" [style=filled, fillcolor=white, label="transgene-positive"];
+mice12 -> "transgene-positive11"  [label=amod];
+lungs8 -> mice12  [label=prep_of];
+localized14 [style=filled, fillcolor=white, label=localized];
+expressed5 -> localized14  [label=conj_and];
+epithelium18 [style=filled, fillcolor=white, label=epithelium];
+the16 [style=filled, fillcolor=white, label=the];
+epithelium18 -> the16  [label=det];
+airway17 [style=filled, fillcolor=white, label=airway];
+epithelium18 -> airway17  [label=amod];
+localized14 -> epithelium18  [label=prep_to];
+muscle22 [style=filled, fillcolor=white, label=muscle];
+airway20 [style=filled, fillcolor=white, label=airway];
+muscle22 -> airway20  [label=amod];
+smooth21 [style=filled, fillcolor=white, label=smooth];
+muscle22 -> smooth21  [label=amod];
+epithelium18 -> muscle22  [label=conj_and];
+cells26 [style=filled, fillcolor=white, label=cells];
+interstitial25 [style=filled, fillcolor=white, label=interstitial];
+cells26 -> interstitial25  [label=amod];
+epithelium18 -> cells26  [label=conj_and];
+"Fig.28" [style=filled, fillcolor=white, label="Fig."];
+epithelium18 -> "Fig.28"  [label=dep];
+129 [style=filled, fillcolor=white, label=1];
+"Fig.28" -> 129  [label=num];
+B31 [style=filled, fillcolor=white, label=B];
+"Fig.28" -> B31  [label=num];
+E33 [style=filled, fillcolor=white, label=E];
+"Fig.28" -> E33  [label=dep];
+}

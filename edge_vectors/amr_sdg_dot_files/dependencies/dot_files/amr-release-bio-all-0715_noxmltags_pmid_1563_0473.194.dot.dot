@@ -1,0 +1,55 @@
+digraph "These likely reflect the first wave of follicle ( i.e. ,  guard hair ) morphogenesis ,  which accounts for a small number ( fewer than 5 % ) of hairs and is under distinct regulatory control ." {
+label="These likely reflect the first wave of follicle ( i.e. ,  guard hair )
+morphogenesis ,  which accounts for a small number ( fewer than 5 % ) of hairs
+and is under distinct regulatory control .";
+reflect3 [style=filled, fillcolor=white, label=reflect];
+These1 [style=filled, fillcolor=white, label=These];
+reflect3 -> These1  [label=nsubj];
+likely2 [style=filled, fillcolor=white, label=likely];
+reflect3 -> likely2  [label=advmod];
+reflect3 -> reflect3  [label=root];
+wave6 [style=filled, fillcolor=white, label=wave];
+the4 [style=filled, fillcolor=white, label=the];
+wave6 -> the4  [label=det];
+first5 [style=filled, fillcolor=white, label=first];
+wave6 -> first5  [label=amod];
+reflect3 -> wave6  [label=dobj];
+morphogenesis15 [style=filled, fillcolor=white, label=morphogenesis];
+follicle8 [style=filled, fillcolor=white, label=follicle];
+morphogenesis15 -> follicle8  [label=amod];
+hair13 [style=filled, fillcolor=white, label=hair];
+"i.e.10" [style=filled, fillcolor=white, label="i.e."];
+hair13 -> "i.e.10"  [label=dep];
+guard12 [style=filled, fillcolor=white, label=guard];
+hair13 -> guard12  [label=advmod];
+morphogenesis15 -> hair13  [label=dep];
+wave6 -> morphogenesis15  [label=prep_of];
+accounts18 [style=filled, fillcolor=white, label=accounts];
+which17 [style=filled, fillcolor=white, label=which];
+accounts18 -> which17  [label=nsubj];
+wave6 -> accounts18  [label=rcmod];
+number22 [style=filled, fillcolor=white, label=number];
+a20 [style=filled, fillcolor=white, label=a];
+number22 -> a20  [label=det];
+small21 [style=filled, fillcolor=white, label=small];
+number22 -> small21  [label=amod];
+accounts18 -> number22  [label=prep_for];
+than25 [style=filled, fillcolor=white, label=than];
+fewer24 [style=filled, fillcolor=white, label=fewer];
+than25 -> fewer24  [label=mwe];
+526 [style=filled, fillcolor=white, label=5];
+526 -> than25  [label=quantmod];
+"%27" [style=filled, fillcolor=white, label="%"];
+"%27" -> 526  [label=num];
+number22 -> "%27"  [label=appos];
+hairs30 [style=filled, fillcolor=white, label=hairs];
+number22 -> hairs30  [label=prep_of];
+is32 [style=filled, fillcolor=white, label=is];
+accounts18 -> is32  [label=conj_and];
+control36 [style=filled, fillcolor=white, label=control];
+distinct34 [style=filled, fillcolor=white, label=distinct];
+control36 -> distinct34  [label=amod];
+regulatory35 [style=filled, fillcolor=white, label=regulatory];
+control36 -> regulatory35  [label=amod];
+is32 -> control36  [label=prep_under];
+}

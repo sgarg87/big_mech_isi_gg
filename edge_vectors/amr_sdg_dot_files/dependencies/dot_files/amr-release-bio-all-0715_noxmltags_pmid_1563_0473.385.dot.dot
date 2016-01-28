@@ -1,0 +1,30 @@
+digraph "Primary keratinocytes were treated for the indicated times with recombinant TGF-β2 ( + ) or heat inactivated TGF-β2 ( -- ) ." {
+label="Primary keratinocytes were treated for the indicated times with recombinant
+TGF-β2 ( + ) or heat inactivated TGF-β2 ( -- ) .";
+keratinocytes2 [style=filled, fillcolor=white, label=keratinocytes];
+Primary1 [style=filled, fillcolor=white, label=Primary];
+keratinocytes2 -> Primary1  [label=amod];
+treated4 [style=filled, fillcolor=white, label=treated];
+treated4 -> keratinocytes2  [label=nsubjpass];
+were3 [style=filled, fillcolor=white, label=were];
+treated4 -> were3  [label=auxpass];
+treated4 -> treated4  [label=root];
+times8 [style=filled, fillcolor=white, label=times];
+the6 [style=filled, fillcolor=white, label=the];
+times8 -> the6  [label=det];
+indicated7 [style=filled, fillcolor=white, label=indicated];
+times8 -> indicated7  [label=amod];
+treated4 -> times8  [label=prep_for];
+"TGF-β211" [style=filled, fillcolor=white, label="TGF-β2"];
+recombinant10 [style=filled, fillcolor=white, label=recombinant];
+"TGF-β211" -> recombinant10  [label=amod];
+times8 -> "TGF-β211"  [label=prep_with];
+"+13" [style=filled, fillcolor=white, label="+"];
+times8 -> "+13"  [label=dep];
+"TGF-β218" [style=filled, fillcolor=white, label="TGF-β2"];
+heat16 [style=filled, fillcolor=white, label=heat];
+"TGF-β218" -> heat16  [label=nn];
+inactivated17 [style=filled, fillcolor=white, label=inactivated];
+"TGF-β218" -> inactivated17  [label=amod];
+times8 -> "TGF-β218"  [label=conj_or];
+}

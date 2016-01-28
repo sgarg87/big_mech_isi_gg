@@ -1,0 +1,26 @@
+digraph "Ras-driven cancers are among the most difficult to treat and often excluded from therapies ." {
+label="Ras-driven cancers are among the most difficult to treat and often excluded
+from therapies .";
+cancers2 [style=filled, fillcolor=white, label=cancers];
+"Ras-driven1" [style=filled, fillcolor=white, label="Ras-driven"];
+cancers2 -> "Ras-driven1"  [label=amod];
+difficult7 [style=filled, fillcolor=white, label=difficult];
+difficult7 -> cancers2  [label=nsubj];
+are3 [style=filled, fillcolor=white, label=are];
+difficult7 -> are3  [label=cop];
+most6 [style=filled, fillcolor=white, label=most];
+the5 [style=filled, fillcolor=white, label=the];
+most6 -> the5  [label=det];
+difficult7 -> most6  [label=prep_among];
+difficult7 -> difficult7  [label=root];
+treat9 [style=filled, fillcolor=white, label=treat];
+to8 [style=filled, fillcolor=white, label=to];
+treat9 -> to8  [label=aux];
+difficult7 -> treat9  [label=xcomp];
+excluded12 [style=filled, fillcolor=white, label=excluded];
+often11 [style=filled, fillcolor=white, label=often];
+excluded12 -> often11  [label=advmod];
+difficult7 -> excluded12  [label=conj_and];
+therapies14 [style=filled, fillcolor=white, label=therapies];
+excluded12 -> therapies14  [label=prep_from];
+}

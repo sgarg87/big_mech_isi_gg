@@ -1,0 +1,52 @@
+digraph "Latent TGF - ? 1 was detected after activation in BALF from WT mice 7 days after BLM administration ,  but was not detected in BALF from MyD88 - or IL-1R1 -- deficient mice ( Figure 5G )" {
+label="Latent TGF - ? 1 was detected after activation in BALF from WT mice 7 days
+after BLM administration ,  but was not detected in BALF from MyD88 - or IL-1R1
+-- deficient mice ( Figure 5G )";
+"-3" [style=filled, fillcolor=white, label="-"];
+Latent1 [style=filled, fillcolor=white, label=Latent];
+"-3" -> Latent1  [label=nn];
+TGF2 [style=filled, fillcolor=white, label=TGF];
+"-3" -> TGF2  [label=nn];
+15 [style=filled, fillcolor=white, label=1];
+"-3" -> 15  [label=dep];
+detected7 [style=filled, fillcolor=white, label=detected];
+was6 [style=filled, fillcolor=white, label=was];
+detected7 -> was6  [label=auxpass];
+detected7 -> detected7  [label=root];
+activation9 [style=filled, fillcolor=white, label=activation];
+detected7 -> activation9  [label=prep_after];
+BALF11 [style=filled, fillcolor=white, label=BALF];
+activation9 -> BALF11  [label=prep_in];
+mice14 [style=filled, fillcolor=white, label=mice];
+WT13 [style=filled, fillcolor=white, label=WT];
+mice14 -> WT13  [label=nn];
+BALF11 -> mice14  [label=prep_from];
+days16 [style=filled, fillcolor=white, label=days];
+715 [style=filled, fillcolor=white, label=7];
+days16 -> 715  [label=num];
+BALF11 -> days16  [label=dep];
+administration19 [style=filled, fillcolor=white, label=administration];
+BLM18 [style=filled, fillcolor=white, label=BLM];
+administration19 -> BLM18  [label=nn];
+detected7 -> administration19  [label=prep_after];
+detected24 [style=filled, fillcolor=white, label=detected];
+was22 [style=filled, fillcolor=white, label=was];
+detected24 -> was22  [label=auxpass];
+not23 [style=filled, fillcolor=white, label=not];
+detected24 -> not23  [label=neg];
+detected7 -> detected24  [label=conj_but];
+mice34 [style=filled, fillcolor=white, label=mice];
+BALF26 [style=filled, fillcolor=white, label=BALF];
+mice34 -> BALF26  [label=amod];
+MyD882 [style=filled, fillcolor=white, label=MyD88];
+BALF26 -> MyD882  [label=prep_from];
+"IL-1R13" [style=filled, fillcolor=white, label="IL-1R1"];
+BALF26 -> "IL-1R13"  [label=conj_or];
+deficient33 [style=filled, fillcolor=white, label=deficient];
+mice34 -> deficient33  [label=nn];
+detected24 -> mice34  [label=prep_in];
+Figure36 [style=filled, fillcolor=white, label=Figure];
+mice34 -> Figure36  [label=appos];
+"5G37" [style=filled, fillcolor=white, label="5G"];
+Figure36 -> "5G37"  [label=num];
+}

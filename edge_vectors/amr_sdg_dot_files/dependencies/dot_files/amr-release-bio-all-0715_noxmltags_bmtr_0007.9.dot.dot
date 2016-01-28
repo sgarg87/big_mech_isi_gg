@@ -1,0 +1,34 @@
+digraph "ASPP2 phosphorylation was rapid and transient as 3 hours after EGF stimulation phosphorylated ASPP2 was barely detectable ." {
+label="ASPP2 phosphorylation was rapid and transient as 3 hours after EGF stimulation
+phosphorylated ASPP2 was barely detectable .";
+phosphorylation2 [style=filled, fillcolor=white, label=phosphorylation];
+ASPP21 [style=filled, fillcolor=white, label=ASPP2];
+phosphorylation2 -> ASPP21  [label=nn];
+rapid4 [style=filled, fillcolor=white, label=rapid];
+rapid4 -> phosphorylation2  [label=nsubj];
+was3 [style=filled, fillcolor=white, label=was];
+rapid4 -> was3  [label=cop];
+rapid4 -> rapid4  [label=root];
+transient6 [style=filled, fillcolor=white, label=transient];
+rapid4 -> transient6  [label=conj_and];
+hours9 [style=filled, fillcolor=white, label=hours];
+38 [style=filled, fillcolor=white, label=3];
+hours9 -> 38  [label=num];
+rapid4 -> hours9  [label=prep_as];
+phosphorylated13 [style=filled, fillcolor=white, label=phosphorylated];
+after10 [style=filled, fillcolor=white, label=after];
+phosphorylated13 -> after10  [label=mark];
+stimulation12 [style=filled, fillcolor=white, label=stimulation];
+EGF11 [style=filled, fillcolor=white, label=EGF];
+stimulation12 -> EGF11  [label=nn];
+phosphorylated13 -> stimulation12  [label=nsubj];
+rapid4 -> phosphorylated13  [label=advcl];
+detectable17 [style=filled, fillcolor=white, label=detectable];
+ASPP214 [style=filled, fillcolor=white, label=ASPP2];
+detectable17 -> ASPP214  [label=nsubj];
+was15 [style=filled, fillcolor=white, label=was];
+detectable17 -> was15  [label=cop];
+barely16 [style=filled, fillcolor=white, label=barely];
+detectable17 -> barely16  [label=advmod];
+phosphorylated13 -> detectable17  [label=ccomp];
+}

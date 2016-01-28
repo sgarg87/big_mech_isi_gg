@@ -1,0 +1,45 @@
+digraph "Stable knockdown of mutant KRAS ( D12 ) in murine C26 CRC cells by RNA interference lead to a dramatic reduction of COX-2 synthesis and prostaglandin E2 production ." {
+label="Stable knockdown of mutant KRAS ( D12 ) in murine C26 CRC cells by RNA
+interference lead to a dramatic reduction of COX-2 synthesis and prostaglandin
+E2 production .";
+knockdown2 [style=filled, fillcolor=white, label=knockdown];
+Stable1 [style=filled, fillcolor=white, label=Stable];
+knockdown2 -> Stable1  [label=amod];
+lead17 [style=filled, fillcolor=white, label=lead];
+lead17 -> knockdown2  [label=nsubj];
+KRAS5 [style=filled, fillcolor=white, label=KRAS];
+mutant4 [style=filled, fillcolor=white, label=mutant];
+KRAS5 -> mutant4  [label=amod];
+knockdown2 -> KRAS5  [label=prep_of];
+D127 [style=filled, fillcolor=white, label=D12];
+KRAS5 -> D127  [label=appos];
+cells13 [style=filled, fillcolor=white, label=cells];
+murine10 [style=filled, fillcolor=white, label=murine];
+cells13 -> murine10  [label=amod];
+C2611 [style=filled, fillcolor=white, label=C26];
+cells13 -> C2611  [label=nn];
+CRC12 [style=filled, fillcolor=white, label=CRC];
+cells13 -> CRC12  [label=nn];
+KRAS5 -> cells13  [label=prep_in];
+interference16 [style=filled, fillcolor=white, label=interference];
+RNA15 [style=filled, fillcolor=white, label=RNA];
+interference16 -> RNA15  [label=nn];
+KRAS5 -> interference16  [label=prep_by];
+lead17 -> lead17  [label=root];
+reduction21 [style=filled, fillcolor=white, label=reduction];
+a19 [style=filled, fillcolor=white, label=a];
+reduction21 -> a19  [label=det];
+dramatic20 [style=filled, fillcolor=white, label=dramatic];
+reduction21 -> dramatic20  [label=amod];
+lead17 -> reduction21  [label=prep_to];
+synthesis24 [style=filled, fillcolor=white, label=synthesis];
+"COX-23" [style=filled, fillcolor=white, label="COX-2"];
+synthesis24 -> "COX-23"  [label=nn];
+reduction21 -> synthesis24  [label=prep_of];
+production28 [style=filled, fillcolor=white, label=production];
+prostaglandin26 [style=filled, fillcolor=white, label=prostaglandin];
+production28 -> prostaglandin26  [label=nn];
+E227 [style=filled, fillcolor=white, label=E2];
+production28 -> E227  [label=nn];
+synthesis24 -> production28  [label=conj_and];
+}

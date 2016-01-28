@@ -1,0 +1,30 @@
+digraph "the wild-type MEFs responded to the induction of MMP-13 by TNF ,  whereas the heterozygotes did not ." {
+label="the wild-type MEFs responded to the induction of MMP-13 by TNF ,  whereas the
+heterozygotes did not .";
+MEFs3 [style=filled, fillcolor=white, label=MEFs];
+the1 [style=filled, fillcolor=white, label=the];
+MEFs3 -> the1  [label=det];
+"wild-type2" [style=filled, fillcolor=white, label="wild-type"];
+MEFs3 -> "wild-type2"  [label=amod];
+responded4 [style=filled, fillcolor=white, label=responded];
+responded4 -> MEFs3  [label=nsubj];
+responded4 -> responded4  [label=root];
+induction7 [style=filled, fillcolor=white, label=induction];
+the6 [style=filled, fillcolor=white, label=the];
+induction7 -> the6  [label=det];
+responded4 -> induction7  [label=prep_to];
+"MMP-139" [style=filled, fillcolor=white, label="MMP-13"];
+induction7 -> "MMP-139"  [label=prep_of];
+TNF11 [style=filled, fillcolor=white, label=TNF];
+responded4 -> TNF11  [label=prep_by];
+did16 [style=filled, fillcolor=white, label=did];
+whereas13 [style=filled, fillcolor=white, label=whereas];
+did16 -> whereas13  [label=mark];
+heterozygotes15 [style=filled, fillcolor=white, label=heterozygotes];
+the14 [style=filled, fillcolor=white, label=the];
+heterozygotes15 -> the14  [label=det];
+did16 -> heterozygotes15  [label=nsubj];
+responded4 -> did16  [label=advcl];
+not17 [style=filled, fillcolor=white, label=not];
+did16 -> not17  [label=neg];
+}

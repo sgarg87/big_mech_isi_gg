@@ -1,0 +1,53 @@
+digraph "MØCM was concentrated to contain ~ 3.5 ng/mL IGF-1 ,  and then incubated with control IgG ( Con IgG ) or α-IGF-1 IgG coated resin ,  as described -LSB- 39 -RSB- ." {
+label="MØCM was concentrated to contain ~ 3.5 ng/mL IGF-1 ,  and then incubated with
+control IgG ( Con IgG ) or α-IGF-1 IgG coated resin ,  as described -LSB- 39
+-RSB- .";
+concentrated3 [style=filled, fillcolor=white, label=concentrated];
+"MØCM1" [style=filled, fillcolor=white, label="MØCM"];
+concentrated3 -> "MØCM1"  [label=nsubjpass];
+was2 [style=filled, fillcolor=white, label=was];
+concentrated3 -> was2  [label=auxpass];
+concentrated3 -> concentrated3  [label=root];
+contain5 [style=filled, fillcolor=white, label=contain];
+to4 [style=filled, fillcolor=white, label=to];
+contain5 -> to4  [label=aux];
+concentrated3 -> contain5  [label=xcomp];
+"3.57" [style=filled, fillcolor=white, label="3.5"];
+"~6" [style=filled, fillcolor=white, label="~"];
+"3.57" -> "~6"  [label=number];
+"IGF-19" [style=filled, fillcolor=white, label="IGF-1"];
+"IGF-19" -> "3.57"  [label=num];
+"ng/mL8" [style=filled, fillcolor=white, label="ng/mL"];
+"IGF-19" -> "ng/mL8"  [label=amod];
+contain5 -> "IGF-19"  [label=dobj];
+incubated13 [style=filled, fillcolor=white, label=incubated];
+then12 [style=filled, fillcolor=white, label=then];
+incubated13 -> then12  [label=advmod];
+concentrated3 -> incubated13  [label=conj_and];
+IgG16 [style=filled, fillcolor=white, label=IgG];
+control15 [style=filled, fillcolor=white, label=control];
+IgG16 -> control15  [label=nn];
+incubated13 -> IgG16  [label=prep_with];
+IgG19 [style=filled, fillcolor=white, label=IgG];
+Con18 [style=filled, fillcolor=white, label=Con];
+IgG19 -> Con18  [label=nn];
+IgG16 -> IgG19  [label=appos];
+IgG23 [style=filled, fillcolor=white, label=IgG];
+"α-IGF-122" [style=filled, fillcolor=white, label="α-IGF-1"];
+IgG23 -> "α-IGF-122"  [label=amod];
+resin25 [style=filled, fillcolor=white, label=resin];
+resin25 -> IgG23  [label=amod];
+coated24 [style=filled, fillcolor=white, label=coated];
+resin25 -> coated24  [label=amod];
+IgG16 -> resin25  [label=conj_or];
+described28 [style=filled, fillcolor=white, label=described];
+as27 [style=filled, fillcolor=white, label=as];
+described28 -> as27  [label=mark];
+incubated13 -> described28  [label=advcl];
+3930 [style=filled, fillcolor=white, label=39];
+"-LSB-29" [style=filled, fillcolor=white, label="-LSB-"];
+3930 -> "-LSB-29"  [label=number];
+"-RSB-31" [style=filled, fillcolor=white, label="-RSB-"];
+"-RSB-31" -> 3930  [label=num];
+described28 -> "-RSB-31"  [label=dobj];
+}

@@ -1,0 +1,47 @@
+digraph "Intrinsic rates of GTP hydrolysis are five orders of magnitude slower than rates catalyzed by GAPs and therefore do not contribute significantly to steady-state levels of Ras-GTP ." {
+label="Intrinsic rates of GTP hydrolysis are five orders of magnitude slower than
+rates catalyzed by GAPs and therefore do not contribute significantly to steady-
+state levels of Ras-GTP .";
+rates2 [style=filled, fillcolor=white, label=rates];
+Intrinsic1 [style=filled, fillcolor=white, label=Intrinsic];
+rates2 -> Intrinsic1  [label=amod];
+slower11 [style=filled, fillcolor=white, label=slower];
+slower11 -> rates2  [label=nsubj];
+hydrolysis5 [style=filled, fillcolor=white, label=hydrolysis];
+GTP4 [style=filled, fillcolor=white, label=GTP];
+hydrolysis5 -> GTP4  [label=nn];
+rates2 -> hydrolysis5  [label=prep_of];
+are6 [style=filled, fillcolor=white, label=are];
+slower11 -> are6  [label=cop];
+orders8 [style=filled, fillcolor=white, label=orders];
+five7 [style=filled, fillcolor=white, label=five];
+orders8 -> five7  [label=num];
+slower11 -> orders8  [label=npadvmod];
+magnitude10 [style=filled, fillcolor=white, label=magnitude];
+orders8 -> magnitude10  [label=prep_of];
+slower11 -> slower11  [label=root];
+catalyzed14 [style=filled, fillcolor=white, label=catalyzed];
+than12 [style=filled, fillcolor=white, label=than];
+catalyzed14 -> than12  [label=mark];
+rates13 [style=filled, fillcolor=white, label=rates];
+catalyzed14 -> rates13  [label=nsubj];
+slower11 -> catalyzed14  [label=ccomp];
+GAPs16 [style=filled, fillcolor=white, label=GAPs];
+catalyzed14 -> GAPs16  [label=prep_by];
+contribute21 [style=filled, fillcolor=white, label=contribute];
+therefore18 [style=filled, fillcolor=white, label=therefore];
+contribute21 -> therefore18  [label=advmod];
+do19 [style=filled, fillcolor=white, label=do];
+contribute21 -> do19  [label=aux];
+not20 [style=filled, fillcolor=white, label=not];
+contribute21 -> not20  [label=neg];
+catalyzed14 -> contribute21  [label=conj_and];
+significantly22 [style=filled, fillcolor=white, label=significantly];
+contribute21 -> significantly22  [label=advmod];
+levels25 [style=filled, fillcolor=white, label=levels];
+"steady-state24" [style=filled, fillcolor=white, label="steady-state"];
+levels25 -> "steady-state24"  [label=amod];
+contribute21 -> levels25  [label=prep_to];
+"Ras-GTP27" [style=filled, fillcolor=white, label="Ras-GTP"];
+levels25 -> "Ras-GTP27"  [label=prep_of];
+}

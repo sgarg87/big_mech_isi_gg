@@ -1,0 +1,17 @@
+digraph "Like IL-12 ,  IL-23 binds to the IL-12R subunit IL-12Rbeta1 ." {
+label="Like IL-12 ,  IL-23 binds to the IL-12R subunit IL-12Rbeta1 .";
+binds5 [style=filled, fillcolor=white, label=binds];
+"IL-12" [style=filled, fillcolor=white, label="IL-12"];
+binds5 -> "IL-12"  [label=prep_like];
+"IL-234" [style=filled, fillcolor=white, label="IL-23"];
+binds5 -> "IL-234"  [label=nsubj];
+binds5 -> binds5  [label=root];
+"IL-12Rbeta10" [style=filled, fillcolor=white, label="IL-12Rbeta1"];
+the7 [style=filled, fillcolor=white, label=the];
+"IL-12Rbeta10" -> the7  [label=det];
+"IL-12R8" [style=filled, fillcolor=white, label="IL-12R"];
+"IL-12Rbeta10" -> "IL-12R8"  [label=nn];
+subunit9 [style=filled, fillcolor=white, label=subunit];
+"IL-12Rbeta10" -> subunit9  [label=nn];
+binds5 -> "IL-12Rbeta10"  [label=prep_to];
+}

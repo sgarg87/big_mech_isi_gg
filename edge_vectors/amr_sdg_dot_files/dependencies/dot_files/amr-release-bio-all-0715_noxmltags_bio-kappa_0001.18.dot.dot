@@ -1,0 +1,39 @@
+digraph "Following ligand binding ,  Sos is brought from the cytoplasm to the activated receptor in a phosphotyrosine - dependent manner through adapter proteins such as Grb2 ." {
+label="Following ligand binding ,  Sos is brought from the cytoplasm to the activated
+receptor in a phosphotyrosine - dependent manner through adapter proteins such
+as Grb2 .";
+brought7 [style=filled, fillcolor=white, label=brought];
+ligand2 [style=filled, fillcolor=white, label=ligand];
+brought7 -> ligand2  [label=prep_following];
+binding3 [style=filled, fillcolor=white, label=binding];
+ligand2 -> binding3  [label=amod];
+Sos5 [style=filled, fillcolor=white, label=Sos];
+brought7 -> Sos5  [label=nsubjpass];
+is6 [style=filled, fillcolor=white, label=is];
+brought7 -> is6  [label=auxpass];
+brought7 -> brought7  [label=root];
+cytoplasm10 [style=filled, fillcolor=white, label=cytoplasm];
+the9 [style=filled, fillcolor=white, label=the];
+cytoplasm10 -> the9  [label=det];
+brought7 -> cytoplasm10  [label=prep_from];
+receptor14 [style=filled, fillcolor=white, label=receptor];
+the12 [style=filled, fillcolor=white, label=the];
+receptor14 -> the12  [label=det];
+activated13 [style=filled, fillcolor=white, label=activated];
+receptor14 -> activated13  [label=amod];
+brought7 -> receptor14  [label=prep_to];
+phosphotyrosine17 [style=filled, fillcolor=white, label=phosphotyrosine];
+a16 [style=filled, fillcolor=white, label=a];
+phosphotyrosine17 -> a16  [label=det];
+receptor14 -> phosphotyrosine17  [label=prep_in];
+manner20 [style=filled, fillcolor=white, label=manner];
+dependent19 [style=filled, fillcolor=white, label=dependent];
+manner20 -> dependent19  [label=amod];
+receptor14 -> manner20  [label=dep];
+proteins23 [style=filled, fillcolor=white, label=proteins];
+adapter22 [style=filled, fillcolor=white, label=adapter];
+proteins23 -> adapter22  [label=nn];
+manner20 -> proteins23  [label=prep_through];
+Grb226 [style=filled, fillcolor=white, label=Grb2];
+proteins23 -> Grb226  [label=prep_such_as];
+}

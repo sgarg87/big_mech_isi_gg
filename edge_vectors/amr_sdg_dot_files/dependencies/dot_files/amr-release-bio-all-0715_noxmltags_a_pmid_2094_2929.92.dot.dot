@@ -1,0 +1,49 @@
+digraph "As shown in Figure 5A and 5B ,  HCT116 and LoVo cell lines induced palpable tumors with a short latency period of respectively 15 and 10 days after their injection ." {
+label="As shown in Figure 5A and 5B ,  HCT116 and LoVo cell lines induced palpable
+tumors with a short latency period of respectively 15 and 10 days after their
+injection .";
+shown2 [style=filled, fillcolor=white, label=shown];
+As1 [style=filled, fillcolor=white, label=As];
+shown2 -> As1  [label=mark];
+induced14 [style=filled, fillcolor=white, label=induced];
+induced14 -> shown2  [label=advcl];
+Figure4 [style=filled, fillcolor=white, label=Figure];
+shown2 -> Figure4  [label=prep_in];
+"5A" [style=filled, fillcolor=white, label="5A"];
+Figure4 -> "5A"  [label=num];
+"5B7" [style=filled, fillcolor=white, label="5B"];
+Figure4 -> "5B7"  [label=conj_and];
+HCT1169 [style=filled, fillcolor=white, label=HCT116];
+induced14 -> HCT1169  [label=nsubj];
+lines13 [style=filled, fillcolor=white, label=lines];
+LoVo11 [style=filled, fillcolor=white, label=LoVo];
+lines13 -> LoVo11  [label=nn];
+cell12 [style=filled, fillcolor=white, label=cell];
+lines13 -> cell12  [label=nn];
+HCT1169 -> lines13  [label=conj_and];
+induced14 -> induced14  [label=root];
+tumors16 [style=filled, fillcolor=white, label=tumors];
+palpable15 [style=filled, fillcolor=white, label=palpable];
+tumors16 -> palpable15  [label=amod];
+induced14 -> tumors16  [label=dobj];
+period21 [style=filled, fillcolor=white, label=period];
+a18 [style=filled, fillcolor=white, label=a];
+period21 -> a18  [label=det];
+short19 [style=filled, fillcolor=white, label=short];
+period21 -> short19  [label=amod];
+latency20 [style=filled, fillcolor=white, label=latency];
+period21 -> latency20  [label=nn];
+induced14 -> period21  [label=prep_with];
+respectively23 [style=filled, fillcolor=white, label=respectively];
+period21 -> respectively23  [label=advmod];
+days27 [style=filled, fillcolor=white, label=days];
+1524 [style=filled, fillcolor=white, label=15];
+days27 -> 1524  [label=nn];
+1026 [style=filled, fillcolor=white, label=10];
+1524 -> 1026  [label=conj_and];
+period21 -> days27  [label=prep_of];
+injection30 [style=filled, fillcolor=white, label=injection];
+their29 [style=filled, fillcolor=white, label=their];
+injection30 -> their29  [label=poss];
+days27 -> injection30  [label=prep_after];
+}

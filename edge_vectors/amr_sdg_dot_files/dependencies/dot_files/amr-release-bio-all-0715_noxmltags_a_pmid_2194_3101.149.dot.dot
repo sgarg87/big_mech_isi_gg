@@ -1,0 +1,66 @@
+digraph "Therefore ,  under 2D as well as 3D culture conditions BRAFV600E overexpression managed to alter the morphology of colon adenocarcinoma cells ,  rendering them a more mesenchymal-like phenotype ,  while KRASG12V conserved the epithelial architecture of Caco-2 cells in general ." {
+label="Therefore ,  under 2D as well as 3D culture conditions BRAFV600E overexpression
+managed to alter the morphology of colon adenocarcinoma cells ,  rendering them
+a more mesenchymal-like phenotype ,  while KRASG12V conserved the epithelial
+architecture of Caco-2 cells in general .";
+managed13 [style=filled, fillcolor=white, label=managed];
+Therefore1 [style=filled, fillcolor=white, label=Therefore];
+managed13 -> Therefore1  [label=advmod];
+"2D4" [style=filled, fillcolor=white, label="2D"];
+managed13 -> "2D4"  [label=prep_under];
+conditions10 [style=filled, fillcolor=white, label=conditions];
+"3D8" [style=filled, fillcolor=white, label="3D"];
+conditions10 -> "3D8"  [label=num];
+culture9 [style=filled, fillcolor=white, label=culture];
+conditions10 -> culture9  [label=nn];
+"2D4" -> conditions10  [label=conj_and];
+overexpression12 [style=filled, fillcolor=white, label=overexpression];
+BRAFV600E11 [style=filled, fillcolor=white, label=BRAFV600E];
+overexpression12 -> BRAFV600E11  [label=nn];
+managed13 -> overexpression12  [label=nsubj];
+managed13 -> managed13  [label=root];
+alter15 [style=filled, fillcolor=white, label=alter];
+to14 [style=filled, fillcolor=white, label=to];
+alter15 -> to14  [label=aux];
+managed13 -> alter15  [label=xcomp];
+morphology17 [style=filled, fillcolor=white, label=morphology];
+the16 [style=filled, fillcolor=white, label=the];
+morphology17 -> the16  [label=det];
+alter15 -> morphology17  [label=dobj];
+cells21 [style=filled, fillcolor=white, label=cells];
+colon19 [style=filled, fillcolor=white, label=colon];
+cells21 -> colon19  [label=nn];
+adenocarcinoma20 [style=filled, fillcolor=white, label=adenocarcinoma];
+cells21 -> adenocarcinoma20  [label=nn];
+morphology17 -> cells21  [label=prep_of];
+rendering23 [style=filled, fillcolor=white, label=rendering];
+managed13 -> rendering23  [label=xcomp];
+phenotype28 [style=filled, fillcolor=white, label=phenotype];
+them24 [style=filled, fillcolor=white, label=them];
+phenotype28 -> them24  [label=nsubj];
+a25 [style=filled, fillcolor=white, label=a];
+phenotype28 -> a25  [label=det];
+"mesenchymal-like27" [style=filled, fillcolor=white, label="mesenchymal-like"];
+more26 [style=filled, fillcolor=white, label=more];
+"mesenchymal-like27" -> more26  [label=advmod];
+phenotype28 -> "mesenchymal-like27"  [label=amod];
+rendering23 -> phenotype28  [label=xcomp];
+conserved32 [style=filled, fillcolor=white, label=conserved];
+while30 [style=filled, fillcolor=white, label=while];
+conserved32 -> while30  [label=mark];
+KRASG12V3 [style=filled, fillcolor=white, label=KRASG12V];
+conserved32 -> KRASG12V3  [label=nsubj];
+rendering23 -> conserved32  [label=advcl];
+architecture35 [style=filled, fillcolor=white, label=architecture];
+the33 [style=filled, fillcolor=white, label=the];
+architecture35 -> the33  [label=det];
+epithelial34 [style=filled, fillcolor=white, label=epithelial];
+architecture35 -> epithelial34  [label=amod];
+conserved32 -> architecture35  [label=dobj];
+cells38 [style=filled, fillcolor=white, label=cells];
+"Caco-237" [style=filled, fillcolor=white, label="Caco-2"];
+cells38 -> "Caco-237"  [label=nn];
+architecture35 -> cells38  [label=prep_of];
+general40 [style=filled, fillcolor=white, label=general];
+conserved32 -> general40  [label=prep_in];
+}

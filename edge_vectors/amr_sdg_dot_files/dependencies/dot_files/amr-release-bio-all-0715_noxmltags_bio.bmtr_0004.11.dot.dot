@@ -1,0 +1,44 @@
+digraph "These results indicate that variations in the linker length on this scale ( 1-2 bonds ) do not influence the sensitivity of mUbRas to GAP downregulation ." {
+label="These results indicate that variations in the linker length on this scale ( 1-2
+bonds ) do not influence the sensitivity of mUbRas to GAP downregulation .";
+results2 [style=filled, fillcolor=white, label=results];
+These1 [style=filled, fillcolor=white, label=These];
+results2 -> These1  [label=det];
+indicate3 [style=filled, fillcolor=white, label=indicate];
+indicate3 -> results2  [label=nsubj];
+indicate3 -> indicate3  [label=root];
+influence19 [style=filled, fillcolor=white, label=influence];
+that4 [style=filled, fillcolor=white, label=that];
+influence19 -> that4  [label=mark];
+variations5 [style=filled, fillcolor=white, label=variations];
+influence19 -> variations5  [label=nsubj];
+length9 [style=filled, fillcolor=white, label=length];
+the7 [style=filled, fillcolor=white, label=the];
+length9 -> the7  [label=det];
+linker8 [style=filled, fillcolor=white, label=linker];
+length9 -> linker8  [label=nn];
+variations5 -> length9  [label=prep_in];
+scale12 [style=filled, fillcolor=white, label=scale];
+this11 [style=filled, fillcolor=white, label=this];
+scale12 -> this11  [label=det];
+length9 -> scale12  [label=prep_on];
+bonds15 [style=filled, fillcolor=white, label=bonds];
+"1-24" [style=filled, fillcolor=white, label="1-2"];
+bonds15 -> "1-24"  [label=num];
+scale12 -> bonds15  [label=appos];
+do17 [style=filled, fillcolor=white, label=do];
+influence19 -> do17  [label=aux];
+not18 [style=filled, fillcolor=white, label=not];
+influence19 -> not18  [label=neg];
+indicate3 -> influence19  [label=ccomp];
+sensitivity21 [style=filled, fillcolor=white, label=sensitivity];
+the20 [style=filled, fillcolor=white, label=the];
+sensitivity21 -> the20  [label=det];
+influence19 -> sensitivity21  [label=dobj];
+mUbRas23 [style=filled, fillcolor=white, label=mUbRas];
+sensitivity21 -> mUbRas23  [label=prep_of];
+downregulation26 [style=filled, fillcolor=white, label=downregulation];
+GAP25 [style=filled, fillcolor=white, label=GAP];
+downregulation26 -> GAP25  [label=nn];
+influence19 -> downregulation26  [label=prep_to];
+}

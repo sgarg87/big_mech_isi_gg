@@ -1,0 +1,24 @@
+digraph "In addition ,  we found that Rheb inhibits the association of B-Raf with H-Ras ." {
+label="In addition ,  we found that Rheb inhibits the association of B-Raf with H-Ras
+.";
+found5 [style=filled, fillcolor=white, label=found];
+addition2 [style=filled, fillcolor=white, label=addition];
+found5 -> addition2  [label=prep_in];
+we4 [style=filled, fillcolor=white, label=we];
+found5 -> we4  [label=nsubj];
+found5 -> found5  [label=root];
+inhibits8 [style=filled, fillcolor=white, label=inhibits];
+that6 [style=filled, fillcolor=white, label=that];
+inhibits8 -> that6  [label=mark];
+Rheb7 [style=filled, fillcolor=white, label=Rheb];
+inhibits8 -> Rheb7  [label=nsubj];
+found5 -> inhibits8  [label=ccomp];
+association10 [style=filled, fillcolor=white, label=association];
+the9 [style=filled, fillcolor=white, label=the];
+association10 -> the9  [label=det];
+inhibits8 -> association10  [label=dobj];
+"B-Raf12" [style=filled, fillcolor=white, label="B-Raf"];
+association10 -> "B-Raf12"  [label=prep_of];
+"H-Ras14" [style=filled, fillcolor=white, label="H-Ras"];
+inhibits8 -> "H-Ras14"  [label=prep_with];
+}

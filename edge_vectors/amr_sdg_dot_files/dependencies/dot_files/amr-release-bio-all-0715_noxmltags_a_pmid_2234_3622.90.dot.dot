@@ -1,0 +1,53 @@
+digraph "In the sequence when docetaxel was administered before selumetinib ,  increased levels of pHH3 were observed at the early timepoints ( PD1 & PD2 ) ( 2.7 - and 2.3-fold change ,  respectively ; P < 0.0005 ) ." {
+label="In the sequence when docetaxel was administered before selumetinib ,  increased
+levels of pHH3 were observed at the early timepoints ( PD1 & PD2 ) ( 2.7 - and
+2.3-fold change ,  respectively ; P < 0.0005 ) .";
+sequence3 [style=filled, fillcolor=white, label=sequence];
+the2 [style=filled, fillcolor=white, label=the];
+sequence3 -> the2  [label=det];
+observed16 [style=filled, fillcolor=white, label=observed];
+observed16 -> sequence3  [label=prep_in];
+administered7 [style=filled, fillcolor=white, label=administered];
+when4 [style=filled, fillcolor=white, label=when];
+administered7 -> when4  [label=advmod];
+docetaxel5 [style=filled, fillcolor=white, label=docetaxel];
+administered7 -> docetaxel5  [label=nsubjpass];
+was6 [style=filled, fillcolor=white, label=was];
+administered7 -> was6  [label=auxpass];
+sequence3 -> administered7  [label=rcmod];
+selumetinib9 [style=filled, fillcolor=white, label=selumetinib];
+administered7 -> selumetinib9  [label=prep_before];
+levels12 [style=filled, fillcolor=white, label=levels];
+increased11 [style=filled, fillcolor=white, label=increased];
+levels12 -> increased11  [label=amod];
+observed16 -> levels12  [label=nsubjpass];
+pHH314 [style=filled, fillcolor=white, label=pHH3];
+levels12 -> pHH314  [label=prep_of];
+were15 [style=filled, fillcolor=white, label=were];
+observed16 -> were15  [label=auxpass];
+observed16 -> observed16  [label=root];
+timepoints20 [style=filled, fillcolor=white, label=timepoints];
+the18 [style=filled, fillcolor=white, label=the];
+timepoints20 -> the18  [label=det];
+early19 [style=filled, fillcolor=white, label=early];
+timepoints20 -> early19  [label=amod];
+observed16 -> timepoints20  [label=prep_at];
+PD122 [style=filled, fillcolor=white, label=PD1];
+timepoints20 -> PD122  [label=appos];
+PD224 [style=filled, fillcolor=white, label=PD2];
+PD122 -> PD224  [label=conj_and];
+"2.7" [style=filled, fillcolor=white, label="2.7"];
+timepoints20 -> "2.7"  [label=dep];
+change31 [style=filled, fillcolor=white, label=change];
+"2.3-fold0" [style=filled, fillcolor=white, label="2.3-fold"];
+change31 -> "2.3-fold0"  [label=amod];
+"2.7" -> change31  [label=conj_and];
+respectively33 [style=filled, fillcolor=white, label=respectively];
+change31 -> respectively33  [label=advmod];
+"<36" [style=filled, fillcolor=white, label="<"];
+P35 [style=filled, fillcolor=white, label=P];
+"<36" -> P35  [label=nn];
+change31 -> "<36"  [label=dep];
+"0.000537" [style=filled, fillcolor=white, label="0.0005"];
+"2.7" -> "0.000537"  [label=dep];
+}

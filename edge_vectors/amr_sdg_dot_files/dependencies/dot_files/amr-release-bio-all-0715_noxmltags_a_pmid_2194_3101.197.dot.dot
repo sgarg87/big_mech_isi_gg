@@ -1,0 +1,57 @@
+digraph "Treatment of Caco-2 and Caco-BR13 cells with the ROCK inhibitor had a moderate effect on downstream target p-Cofilin ,  while cell motility was found significantly increased in both cell lines ( Figure 6A-B ) ." {
+label="Treatment of Caco-2 and Caco-BR13 cells with the ROCK inhibitor had a moderate
+effect on downstream target p-Cofilin ,  while cell motility was found
+significantly increased in both cell lines ( Figure 6A-B ) .";
+had11 [style=filled, fillcolor=white, label=had];
+Treatment1 [style=filled, fillcolor=white, label=Treatment];
+had11 -> Treatment1  [label=nsubj];
+cells6 [style=filled, fillcolor=white, label=cells];
+"Caco-23" [style=filled, fillcolor=white, label="Caco-2"];
+cells6 -> "Caco-23"  [label=amod];
+"Caco-BR135" [style=filled, fillcolor=white, label="Caco-BR13"];
+"Caco-23" -> "Caco-BR135"  [label=conj_and];
+Treatment1 -> cells6  [label=prep_of];
+inhibitor10 [style=filled, fillcolor=white, label=inhibitor];
+the8 [style=filled, fillcolor=white, label=the];
+inhibitor10 -> the8  [label=det];
+ROCK9 [style=filled, fillcolor=white, label=ROCK];
+inhibitor10 -> ROCK9  [label=nn];
+cells6 -> inhibitor10  [label=prep_with];
+had11 -> had11  [label=root];
+effect14 [style=filled, fillcolor=white, label=effect];
+a12 [style=filled, fillcolor=white, label=a];
+effect14 -> a12  [label=det];
+moderate13 [style=filled, fillcolor=white, label=moderate];
+effect14 -> moderate13  [label=amod];
+had11 -> effect14  [label=dobj];
+"p-Cofilin18" [style=filled, fillcolor=white, label="p-Cofilin"];
+downstream16 [style=filled, fillcolor=white, label=downstream];
+"p-Cofilin18" -> downstream16  [label=amod];
+target17 [style=filled, fillcolor=white, label=target];
+"p-Cofilin18" -> target17  [label=nn];
+effect14 -> "p-Cofilin18"  [label=prep_on];
+found24 [style=filled, fillcolor=white, label=found];
+while20 [style=filled, fillcolor=white, label=while];
+found24 -> while20  [label=mark];
+motility22 [style=filled, fillcolor=white, label=motility];
+cell21 [style=filled, fillcolor=white, label=cell];
+motility22 -> cell21  [label=nn];
+found24 -> motility22  [label=nsubjpass];
+was23 [style=filled, fillcolor=white, label=was];
+found24 -> was23  [label=auxpass];
+had11 -> found24  [label=advcl];
+increased26 [style=filled, fillcolor=white, label=increased];
+significantly25 [style=filled, fillcolor=white, label=significantly];
+increased26 -> significantly25  [label=advmod];
+found24 -> increased26  [label=acomp];
+lines30 [style=filled, fillcolor=white, label=lines];
+both28 [style=filled, fillcolor=white, label=both];
+lines30 -> both28  [label=det];
+cell29 [style=filled, fillcolor=white, label=cell];
+lines30 -> cell29  [label=nn];
+found24 -> lines30  [label=prep_in];
+Figure32 [style=filled, fillcolor=white, label=Figure];
+lines30 -> Figure32  [label=appos];
+"6A-B33" [style=filled, fillcolor=white, label="6A-B"];
+Figure32 -> "6A-B33"  [label=num];
+}

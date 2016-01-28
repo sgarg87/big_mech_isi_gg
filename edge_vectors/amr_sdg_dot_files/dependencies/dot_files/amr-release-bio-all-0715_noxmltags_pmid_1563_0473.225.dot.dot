@@ -1,0 +1,41 @@
+digraph "The corresponding failure of E-cadherin down-regulation underscores the importance of Wnt/noggin signaling in regulating this event in follicle morphogenesis -LSB- 4 -RSB- ." {
+label="The corresponding failure of E-cadherin down-regulation underscores the
+importance of Wnt/noggin signaling in regulating this event in follicle
+morphogenesis -LSB- 4 -RSB- .";
+failure3 [style=filled, fillcolor=white, label=failure];
+The1 [style=filled, fillcolor=white, label=The];
+failure3 -> The1  [label=det];
+corresponding2 [style=filled, fillcolor=white, label=corresponding];
+failure3 -> corresponding2  [label=amod];
+underscores7 [style=filled, fillcolor=white, label=underscores];
+underscores7 -> failure3  [label=nsubj];
+"down-regulation6" [style=filled, fillcolor=white, label="down-regulation"];
+"E-cadherin5" [style=filled, fillcolor=white, label="E-cadherin"];
+"down-regulation6" -> "E-cadherin5"  [label=amod];
+failure3 -> "down-regulation6"  [label=prep_of];
+underscores7 -> underscores7  [label=root];
+importance9 [style=filled, fillcolor=white, label=importance];
+the8 [style=filled, fillcolor=white, label=the];
+importance9 -> the8  [label=det];
+underscores7 -> importance9  [label=dobj];
+"Wnt/noggin11" [style=filled, fillcolor=white, label="Wnt/noggin"];
+importance9 -> "Wnt/noggin11"  [label=prep_of];
+signaling12 [style=filled, fillcolor=white, label=signaling];
+"Wnt/noggin11" -> signaling12  [label=vmod];
+regulating14 [style=filled, fillcolor=white, label=regulating];
+signaling12 -> regulating14  [label=prepc_in];
+event16 [style=filled, fillcolor=white, label=event];
+this15 [style=filled, fillcolor=white, label=this];
+event16 -> this15  [label=det];
+regulating14 -> event16  [label=dobj];
+morphogenesis19 [style=filled, fillcolor=white, label=morphogenesis];
+follicle18 [style=filled, fillcolor=white, label=follicle];
+morphogenesis19 -> follicle18  [label=amod];
+event16 -> morphogenesis19  [label=prep_in];
+"-LSB-20" [style=filled, fillcolor=white, label="-LSB-"];
+morphogenesis19 -> "-LSB-20"  [label=vmod];
+"-RSB-22" [style=filled, fillcolor=white, label="-RSB-"];
+421 [style=filled, fillcolor=white, label=4];
+"-RSB-22" -> 421  [label=num];
+"-LSB-20" -> "-RSB-22"  [label=dobj];
+}

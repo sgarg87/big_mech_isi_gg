@@ -1,0 +1,32 @@
+digraph "The differential regulation of the S/G and S/E/E8 complexes by RTKs correlates with the kinetics of activation of Ras and Rac ." {
+label="The differential regulation of the S/G and S/E/E8 complexes by RTKs correlates
+with the kinetics of activation of Ras and Rac .";
+regulation3 [style=filled, fillcolor=white, label=regulation];
+The1 [style=filled, fillcolor=white, label=The];
+regulation3 -> The1  [label=det];
+differential2 [style=filled, fillcolor=white, label=differential];
+regulation3 -> differential2  [label=nn];
+correlates12 [style=filled, fillcolor=white, label=correlates];
+correlates12 -> regulation3  [label=nsubj];
+complexes9 [style=filled, fillcolor=white, label=complexes];
+the5 [style=filled, fillcolor=white, label=the];
+complexes9 -> the5  [label=det];
+"S/G6" [style=filled, fillcolor=white, label="S/G"];
+complexes9 -> "S/G6"  [label=nn];
+"S/E/E8" [style=filled, fillcolor=white, label="S/E/E8"];
+"S/G6" -> "S/E/E8"  [label=conj_and];
+regulation3 -> complexes9  [label=prep_of];
+RTKs11 [style=filled, fillcolor=white, label=RTKs];
+complexes9 -> RTKs11  [label=prep_by];
+correlates12 -> correlates12  [label=root];
+kinetics15 [style=filled, fillcolor=white, label=kinetics];
+the14 [style=filled, fillcolor=white, label=the];
+kinetics15 -> the14  [label=det];
+correlates12 -> kinetics15  [label=prep_with];
+activation17 [style=filled, fillcolor=white, label=activation];
+kinetics15 -> activation17  [label=prep_of];
+Ras19 [style=filled, fillcolor=white, label=Ras];
+activation17 -> Ras19  [label=prep_of];
+Rac21 [style=filled, fillcolor=white, label=Rac];
+Ras19 -> Rac21  [label=conj_and];
+}

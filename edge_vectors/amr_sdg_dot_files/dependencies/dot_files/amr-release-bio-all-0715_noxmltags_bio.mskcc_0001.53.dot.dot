@@ -1,0 +1,40 @@
+digraph "Through mutational analysis ,  we find that feedback phosphorylation disrupts the abilities of B-Raf to bind activated Ras and to heterodimerize with C-Raf ." {
+label="Through mutational analysis ,  we find that feedback phosphorylation disrupts
+the abilities of B-Raf to bind activated Ras and to heterodimerize with C-Raf .";
+analysis3 [style=filled, fillcolor=white, label=analysis];
+mutational2 [style=filled, fillcolor=white, label=mutational];
+analysis3 -> mutational2  [label=amod];
+find6 [style=filled, fillcolor=white, label=find];
+find6 -> analysis3  [label=prep_through];
+we5 [style=filled, fillcolor=white, label=we];
+find6 -> we5  [label=nsubj];
+find6 -> find6  [label=root];
+disrupts10 [style=filled, fillcolor=white, label=disrupts];
+that7 [style=filled, fillcolor=white, label=that];
+disrupts10 -> that7  [label=mark];
+phosphorylation9 [style=filled, fillcolor=white, label=phosphorylation];
+feedback8 [style=filled, fillcolor=white, label=feedback];
+phosphorylation9 -> feedback8  [label=nn];
+disrupts10 -> phosphorylation9  [label=nsubj];
+find6 -> disrupts10  [label=ccomp];
+abilities12 [style=filled, fillcolor=white, label=abilities];
+the11 [style=filled, fillcolor=white, label=the];
+abilities12 -> the11  [label=det];
+bind16 [style=filled, fillcolor=white, label=bind];
+bind16 -> abilities12  [label=nsubj];
+"B-Raf14" [style=filled, fillcolor=white, label="B-Raf"];
+abilities12 -> "B-Raf14"  [label=prep_of];
+to15 [style=filled, fillcolor=white, label=to];
+bind16 -> to15  [label=aux];
+disrupts10 -> bind16  [label=ccomp];
+Ras18 [style=filled, fillcolor=white, label=Ras];
+activated17 [style=filled, fillcolor=white, label=activated];
+Ras18 -> activated17  [label=amod];
+bind16 -> Ras18  [label=dobj];
+heterodimerize21 [style=filled, fillcolor=white, label=heterodimerize];
+to20 [style=filled, fillcolor=white, label=to];
+heterodimerize21 -> to20  [label=aux];
+bind16 -> heterodimerize21  [label=conj_and];
+"C-Raf23" [style=filled, fillcolor=white, label="C-Raf"];
+heterodimerize21 -> "C-Raf23"  [label=prep_with];
+}

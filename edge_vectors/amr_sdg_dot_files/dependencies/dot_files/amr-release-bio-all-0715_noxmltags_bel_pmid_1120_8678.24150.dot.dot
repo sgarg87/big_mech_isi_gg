@@ -1,0 +1,40 @@
+digraph "PPARa activators prevent TNF-a ? induced VCAM-1 expression in human saphenous vein endothelial cells ,  partly via inhibition of the NF-kB pathway .14" {
+label="PPARa activators prevent TNF-a ? induced VCAM-1 expression in human saphenous
+vein endothelial cells ,  partly via inhibition of the NF-kB pathway .14";
+activators2 [style=filled, fillcolor=white, label=activators];
+PPARa1 [style=filled, fillcolor=white, label=PPARa];
+activators2 -> PPARa1  [label=nn];
+prevent3 [style=filled, fillcolor=white, label=prevent];
+prevent3 -> activators2  [label=nsubj];
+prevent3 -> prevent3  [label=root];
+"TNF-a4" [style=filled, fillcolor=white, label="TNF-a"];
+prevent3 -> "TNF-a4"  [label=dobj];
+induced6 [style=filled, fillcolor=white, label=induced];
+"TNF-a4" -> induced6  [label=vmod];
+expression8 [style=filled, fillcolor=white, label=expression];
+"VCAM-17" [style=filled, fillcolor=white, label="VCAM-1"];
+expression8 -> "VCAM-17"  [label=nn];
+induced6 -> expression8  [label=dobj];
+cells14 [style=filled, fillcolor=white, label=cells];
+human10 [style=filled, fillcolor=white, label=human];
+cells14 -> human10  [label=amod];
+saphenous11 [style=filled, fillcolor=white, label=saphenous];
+cells14 -> saphenous11  [label=nn];
+vein12 [style=filled, fillcolor=white, label=vein];
+cells14 -> vein12  [label=nn];
+endothelial13 [style=filled, fillcolor=white, label=endothelial];
+cells14 -> endothelial13  [label=amod];
+induced6 -> cells14  [label=prep_in];
+partly16 [style=filled, fillcolor=white, label=partly];
+induced6 -> partly16  [label=dep];
+inhibition18 [style=filled, fillcolor=white, label=inhibition];
+induced6 -> inhibition18  [label=prep_via];
+pathway22 [style=filled, fillcolor=white, label=pathway];
+the20 [style=filled, fillcolor=white, label=the];
+pathway22 -> the20  [label=det];
+"NF-kB21" [style=filled, fillcolor=white, label="NF-kB"];
+pathway22 -> "NF-kB21"  [label=num];
+inhibition18 -> pathway22  [label=prep_of];
+".1423" [style=filled, fillcolor=white, label=".14"];
+pathway22 -> ".1423"  [label=num];
+}

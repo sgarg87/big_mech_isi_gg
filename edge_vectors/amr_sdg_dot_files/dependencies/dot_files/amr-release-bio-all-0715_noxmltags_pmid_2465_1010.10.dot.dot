@@ -1,0 +1,55 @@
+digraph "Harvey sarcoma virus ,  Kirsten sarcoma virus ,  and Rasheed sarcoma virus contain Ras genes ( so named for their role in forming rat sarcomas ; reviewed in Barbacid ,  1987 ; Karnoub and Weinberg ,  2008 ) ." {
+label="Harvey sarcoma virus ,  Kirsten sarcoma virus ,  and Rasheed sarcoma virus
+contain Ras genes ( so named for their role in forming rat sarcomas ; reviewed
+in Barbacid ,  1987 ; Karnoub and Weinberg ,  2008 ) .";
+virus3 [style=filled, fillcolor=white, label=virus];
+Harvey1 [style=filled, fillcolor=white, label=Harvey];
+virus3 -> Harvey1  [label=nn];
+sarcoma2 [style=filled, fillcolor=white, label=sarcoma];
+virus3 -> sarcoma2  [label=nn];
+contain13 [style=filled, fillcolor=white, label=contain];
+contain13 -> virus3  [label=nsubj];
+virus7 [style=filled, fillcolor=white, label=virus];
+Kirsten5 [style=filled, fillcolor=white, label=Kirsten];
+virus7 -> Kirsten5  [label=amod];
+sarcoma6 [style=filled, fillcolor=white, label=sarcoma];
+virus7 -> sarcoma6  [label=nn];
+virus3 -> virus7  [label=conj_and];
+virus12 [style=filled, fillcolor=white, label=virus];
+Rasheed10 [style=filled, fillcolor=white, label=Rasheed];
+virus12 -> Rasheed10  [label=nn];
+sarcoma11 [style=filled, fillcolor=white, label=sarcoma];
+virus12 -> sarcoma11  [label=nn];
+virus3 -> virus12  [label=conj_and];
+contain13 -> contain13  [label=root];
+genes15 [style=filled, fillcolor=white, label=genes];
+Ras14 [style=filled, fillcolor=white, label=Ras];
+genes15 -> Ras14  [label=nn];
+contain13 -> genes15  [label=dobj];
+named18 [style=filled, fillcolor=white, label=named];
+so17 [style=filled, fillcolor=white, label=so];
+named18 -> so17  [label=advmod];
+genes15 -> named18  [label=dep];
+role21 [style=filled, fillcolor=white, label=role];
+their20 [style=filled, fillcolor=white, label=their];
+role21 -> their20  [label=poss];
+named18 -> role21  [label=prep_for];
+forming23 [style=filled, fillcolor=white, label=forming];
+named18 -> forming23  [label=prep_in];
+sarcomas25 [style=filled, fillcolor=white, label=sarcomas];
+rat24 [style=filled, fillcolor=white, label=rat];
+sarcomas25 -> rat24  [label=nn];
+forming23 -> sarcomas25  [label=dobj];
+reviewed27 [style=filled, fillcolor=white, label=reviewed];
+forming23 -> reviewed27  [label=parataxis];
+Barbacid29 [style=filled, fillcolor=white, label=Barbacid];
+reviewed27 -> Barbacid29  [label=prep_in];
+19873 [style=filled, fillcolor=white, label=1987];
+Barbacid29 -> 19873  [label=num];
+Karnoub33 [style=filled, fillcolor=white, label=Karnoub];
+Barbacid29 -> Karnoub33  [label=num];
+Weinberg35 [style=filled, fillcolor=white, label=Weinberg];
+forming23 -> Weinberg35  [label=conj_and];
+200837 [style=filled, fillcolor=white, label=2008];
+Weinberg35 -> 200837  [label=amod];
+}

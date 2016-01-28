@@ -1,0 +1,26 @@
+digraph "Immunoblotting with a phospho-STAT1 antibody revealed an increase in STAT1 phosphorylation in TCPTP-deficient thymocytes" {
+label="Immunoblotting with a phospho-STAT1 antibody revealed an increase in STAT1
+phosphorylation in TCPTP-deficient thymocytes";
+Immunoblotting1 [style=filled, fillcolor=white, label=Immunoblotting];
+Immunoblotting1 -> Immunoblotting1  [label=root];
+antibody5 [style=filled, fillcolor=white, label=antibody];
+a3 [style=filled, fillcolor=white, label=a];
+antibody5 -> a3  [label=det];
+"phospho-STAT14" [style=filled, fillcolor=white, label="phospho-STAT1"];
+antibody5 -> "phospho-STAT14"  [label=amod];
+Immunoblotting1 -> antibody5  [label=prep_with];
+revealed6 [style=filled, fillcolor=white, label=revealed];
+Immunoblotting1 -> revealed6  [label=dep];
+increase8 [style=filled, fillcolor=white, label=increase];
+an7 [style=filled, fillcolor=white, label=an];
+increase8 -> an7  [label=det];
+revealed6 -> increase8  [label=dobj];
+STAT110 [style=filled, fillcolor=white, label=STAT1];
+revealed6 -> STAT110  [label=prep_in];
+phosphorylation11 [style=filled, fillcolor=white, label=phosphorylation];
+Immunoblotting1 -> phosphorylation11  [label=nsubj];
+thymocytes14 [style=filled, fillcolor=white, label=thymocytes];
+"TCPTP-deficient13" [style=filled, fillcolor=white, label="TCPTP-deficient"];
+thymocytes14 -> "TCPTP-deficient13"  [label=amod];
+phosphorylation11 -> thymocytes14  [label=prep_in];
+}

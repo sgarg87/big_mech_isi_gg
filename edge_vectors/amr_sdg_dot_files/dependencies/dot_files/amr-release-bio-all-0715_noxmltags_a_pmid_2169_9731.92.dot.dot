@@ -1,0 +1,38 @@
+digraph "When p-Akt was normalized to panAkt expression ,  there was no change in E10 cells with MH-S co-culture ( Figure 3F ) ." {
+label="When p-Akt was normalized to panAkt expression ,  there was no change in E10
+cells with MH-S co-culture ( Figure 3F ) .";
+normalized4 [style=filled, fillcolor=white, label=normalized];
+When1 [style=filled, fillcolor=white, label=When];
+normalized4 -> When1  [label=advmod];
+"p-Akt2" [style=filled, fillcolor=white, label="p-Akt"];
+normalized4 -> "p-Akt2"  [label=nsubjpass];
+was3 [style=filled, fillcolor=white, label=was];
+normalized4 -> was3  [label=auxpass];
+was10 [style=filled, fillcolor=white, label=was];
+was10 -> normalized4  [label=advcl];
+panAkt6 [style=filled, fillcolor=white, label=panAkt];
+to5 [style=filled, fillcolor=white, label=to];
+panAkt6 -> to5  [label=aux];
+normalized4 -> panAkt6  [label=xcomp];
+expression7 [style=filled, fillcolor=white, label=expression];
+panAkt6 -> expression7  [label=dobj];
+there9 [style=filled, fillcolor=white, label=there];
+was10 -> there9  [label=expl];
+was10 -> was10  [label=root];
+"co-culture18" [style=filled, fillcolor=white, label="co-culture"];
+no11 [style=filled, fillcolor=white, label=no];
+"co-culture18" -> no11  [label=neg];
+change12 [style=filled, fillcolor=white, label=change];
+"co-culture18" -> change12  [label=dep];
+cells15 [style=filled, fillcolor=white, label=cells];
+E1014 [style=filled, fillcolor=white, label=E10];
+cells15 -> E1014  [label=num];
+change12 -> cells15  [label=prep_in];
+"MH-S17" [style=filled, fillcolor=white, label="MH-S"];
+cells15 -> "MH-S17"  [label=prep_with];
+was10 -> "co-culture18"  [label=nsubj];
+Figure20 [style=filled, fillcolor=white, label=Figure];
+"co-culture18" -> Figure20  [label=appos];
+"3F21" [style=filled, fillcolor=white, label="3F"];
+Figure20 -> "3F21"  [label=num];
+}

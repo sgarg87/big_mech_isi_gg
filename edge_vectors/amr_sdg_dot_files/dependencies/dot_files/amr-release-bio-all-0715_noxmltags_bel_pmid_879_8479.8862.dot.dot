@@ -1,0 +1,55 @@
+digraph "PKA-phosphorylated GMF strongly enhances the activity of a related but distinct subfamily of MAP kinase ,  the p38 MAP kinase ,  showing an increase of 60-fold over baseline and an EC50 of 7 nM ." {
+label="PKA-phosphorylated GMF strongly enhances the activity of a related but distinct
+subfamily of MAP kinase ,  the p38 MAP kinase ,  showing an increase of 60-fold
+over baseline and an EC50 of 7 nM .";
+GMF2 [style=filled, fillcolor=white, label=GMF];
+"PKA-phosphorylated1" [style=filled, fillcolor=white, label="PKA-phosphorylated"];
+GMF2 -> "PKA-phosphorylated1"  [label=nn];
+enhances4 [style=filled, fillcolor=white, label=enhances];
+enhances4 -> GMF2  [label=nsubj];
+strongly3 [style=filled, fillcolor=white, label=strongly];
+enhances4 -> strongly3  [label=advmod];
+enhances4 -> enhances4  [label=root];
+activity6 [style=filled, fillcolor=white, label=activity];
+the5 [style=filled, fillcolor=white, label=the];
+activity6 -> the5  [label=det];
+enhances4 -> activity6  [label=dobj];
+subfamily12 [style=filled, fillcolor=white, label=subfamily];
+a8 [style=filled, fillcolor=white, label=a];
+subfamily12 -> a8  [label=det];
+related9 [style=filled, fillcolor=white, label=related];
+subfamily12 -> related9  [label=amod];
+distinct11 [style=filled, fillcolor=white, label=distinct];
+related9 -> distinct11  [label=conj_but];
+activity6 -> subfamily12  [label=prep_of];
+kinase15 [style=filled, fillcolor=white, label=kinase];
+MAP14 [style=filled, fillcolor=white, label=MAP];
+kinase15 -> MAP14  [label=nn];
+subfamily12 -> kinase15  [label=prep_of];
+kinase20 [style=filled, fillcolor=white, label=kinase];
+the17 [style=filled, fillcolor=white, label=the];
+kinase20 -> the17  [label=det];
+p381 [style=filled, fillcolor=white, label=p38];
+kinase20 -> p381  [label=amod];
+MAP19 [style=filled, fillcolor=white, label=MAP];
+kinase20 -> MAP19  [label=nn];
+kinase15 -> kinase20  [label=appos];
+showing22 [style=filled, fillcolor=white, label=showing];
+enhances4 -> showing22  [label=vmod];
+increase24 [style=filled, fillcolor=white, label=increase];
+an23 [style=filled, fillcolor=white, label=an];
+increase24 -> an23  [label=det];
+showing22 -> increase24  [label=dobj];
+"60-fold2" [style=filled, fillcolor=white, label="60-fold"];
+increase24 -> "60-fold2"  [label=prep_of];
+baseline28 [style=filled, fillcolor=white, label=baseline];
+"60-fold2" -> baseline28  [label=prep_over];
+EC5031 [style=filled, fillcolor=white, label=EC50];
+an30 [style=filled, fillcolor=white, label=an];
+EC5031 -> an30  [label=det];
+"60-fold2" -> EC5031  [label=conj_and];
+nM34 [style=filled, fillcolor=white, label=nM];
+733 [style=filled, fillcolor=white, label=7];
+nM34 -> 733  [label=num];
+EC5031 -> nM34  [label=prep_of];
+}

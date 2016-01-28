@@ -1,0 +1,51 @@
+digraph "We show that ectopic expression of STAT1 or its downstream transcriptional target IRF-1 promotes features of megakaryocytic differentiation of G1ME cells ,  a Gata1-null erythromegakaryocytic cell line ( 25 ) ," {
+label="We show that ectopic expression of STAT1 or its downstream transcriptional
+target IRF-1 promotes features of megakaryocytic differentiation of G1ME cells ,
+a Gata1-null erythromegakaryocytic cell line ( 25 ) ,";
+show2 [style=filled, fillcolor=white, label=show];
+We1 [style=filled, fillcolor=white, label=We];
+show2 -> We1  [label=nsubj];
+show2 -> show2  [label=root];
+promotes14 [style=filled, fillcolor=white, label=promotes];
+that3 [style=filled, fillcolor=white, label=that];
+promotes14 -> that3  [label=mark];
+expression5 [style=filled, fillcolor=white, label=expression];
+ectopic4 [style=filled, fillcolor=white, label=ectopic];
+expression5 -> ectopic4  [label=amod];
+promotes14 -> expression5  [label=nsubj];
+STAT17 [style=filled, fillcolor=white, label=STAT1];
+expression5 -> STAT17  [label=prep_of];
+"IRF-13" [style=filled, fillcolor=white, label="IRF-1"];
+its9 [style=filled, fillcolor=white, label=its];
+"IRF-13" -> its9  [label=poss];
+downstream10 [style=filled, fillcolor=white, label=downstream];
+"IRF-13" -> downstream10  [label=amod];
+transcriptional11 [style=filled, fillcolor=white, label=transcriptional];
+"IRF-13" -> transcriptional11  [label=amod];
+target12 [style=filled, fillcolor=white, label=target];
+"IRF-13" -> target12  [label=nn];
+STAT17 -> "IRF-13"  [label=conj_or];
+show2 -> promotes14  [label=ccomp];
+features15 [style=filled, fillcolor=white, label=features];
+promotes14 -> features15  [label=dobj];
+differentiation18 [style=filled, fillcolor=white, label=differentiation];
+megakaryocytic17 [style=filled, fillcolor=white, label=megakaryocytic];
+differentiation18 -> megakaryocytic17  [label=amod];
+features15 -> differentiation18  [label=prep_of];
+cells21 [style=filled, fillcolor=white, label=cells];
+G1ME20 [style=filled, fillcolor=white, label=G1ME];
+cells21 -> G1ME20  [label=num];
+differentiation18 -> cells21  [label=prep_of];
+line27 [style=filled, fillcolor=white, label=line];
+a23 [style=filled, fillcolor=white, label=a];
+line27 -> a23  [label=det];
+erythromegakaryocytic25 [style=filled, fillcolor=white, label=erythromegakaryocytic];
+"Gata1-null24" [style=filled, fillcolor=white, label="Gata1-null"];
+erythromegakaryocytic25 -> "Gata1-null24"  [label=amod];
+line27 -> erythromegakaryocytic25  [label=amod];
+cell26 [style=filled, fillcolor=white, label=cell];
+line27 -> cell26  [label=nn];
+cells21 -> line27  [label=appos];
+2529 [style=filled, fillcolor=white, label=25];
+line27 -> 2529  [label=appos];
+}

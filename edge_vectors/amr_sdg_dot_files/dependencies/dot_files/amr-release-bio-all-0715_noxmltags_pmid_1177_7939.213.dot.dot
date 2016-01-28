@@ -1,0 +1,55 @@
+digraph "( Bottom ) In vitro binding of various fragments of E3b1 ( all engineered as GST fusions ,  amino acid boundaries are indicated on the top ) to Sos-1 from lysates of Sos-1 -- transfected Cos-7 cells ." {
+label="( Bottom ) In vitro binding of various fragments of E3b1 ( all engineered as
+GST fusions ,  amino acid boundaries are indicated on the top ) to Sos-1 from
+lysates of Sos-1 -- transfected Cos-7 cells .";
+transfected35 [style=filled, fillcolor=white, label=transfected];
+Bottom2 [style=filled, fillcolor=white, label=Bottom];
+transfected35 -> Bottom2  [label=nsubj];
+In4 [style=filled, fillcolor=white, label=In];
+Bottom2 -> In4  [label=prep];
+binding6 [style=filled, fillcolor=white, label=binding];
+vitro5 [style=filled, fillcolor=white, label=vitro];
+binding6 -> vitro5  [label=npadvmod];
+In4 -> binding6  [label=pobj];
+fragments9 [style=filled, fillcolor=white, label=fragments];
+various8 [style=filled, fillcolor=white, label=various];
+fragments9 -> various8  [label=amod];
+Bottom2 -> fragments9  [label=prep_of];
+E3b1 [style=filled, fillcolor=white, label=E3b1];
+Bottom2 -> E3b1  [label=prep_of];
+all13 [style=filled, fillcolor=white, label=all];
+E3b1 -> all13  [label=dep];
+engineered14 [style=filled, fillcolor=white, label=engineered];
+all13 -> engineered14  [label=vmod];
+indicated23 [style=filled, fillcolor=white, label=indicated];
+as15 [style=filled, fillcolor=white, label=as];
+indicated23 -> as15  [label=mark];
+boundaries21 [style=filled, fillcolor=white, label=boundaries];
+GST16 [style=filled, fillcolor=white, label=GST];
+boundaries21 -> GST16  [label=nn];
+fusions17 [style=filled, fillcolor=white, label=fusions];
+boundaries21 -> fusions17  [label=nn];
+amino19 [style=filled, fillcolor=white, label=amino];
+boundaries21 -> amino19  [label=amod];
+acid20 [style=filled, fillcolor=white, label=acid];
+boundaries21 -> acid20  [label=nn];
+indicated23 -> boundaries21  [label=nsubjpass];
+are22 [style=filled, fillcolor=white, label=are];
+indicated23 -> are22  [label=auxpass];
+engineered14 -> indicated23  [label=advcl];
+top26 [style=filled, fillcolor=white, label=top];
+the25 [style=filled, fillcolor=white, label=the];
+top26 -> the25  [label=det];
+indicated23 -> top26  [label=prep_on];
+"Sos-129" [style=filled, fillcolor=white, label="Sos-1"];
+E3b1 -> "Sos-129"  [label=prep_to];
+lysates31 [style=filled, fillcolor=white, label=lysates];
+"Sos-129" -> lysates31  [label=prep_from];
+"Sos-133" [style=filled, fillcolor=white, label="Sos-1"];
+lysates31 -> "Sos-133"  [label=prep_of];
+transfected35 -> transfected35  [label=root];
+cells37 [style=filled, fillcolor=white, label=cells];
+"Cos-736" [style=filled, fillcolor=white, label="Cos-7"];
+cells37 -> "Cos-736"  [label=nn];
+transfected35 -> cells37  [label=dobj];
+}

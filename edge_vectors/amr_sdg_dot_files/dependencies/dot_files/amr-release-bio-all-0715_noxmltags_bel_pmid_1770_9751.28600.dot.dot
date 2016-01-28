@@ -1,0 +1,53 @@
+digraph "Quantitative real-time RT-PCR analysis revealed a slight ,  but very significant ,  increase in Bim messenger RNA level in splenic resting follicular B cells persisting in Itpkb ? / ? mice ." {
+label="Quantitative real-time RT-PCR analysis revealed a slight ,  but very
+significant ,  increase in Bim messenger RNA level in splenic resting follicular
+B cells persisting in Itpkb ? / ? mice .";
+analysis4 [style=filled, fillcolor=white, label=analysis];
+Quantitative1 [style=filled, fillcolor=white, label=Quantitative];
+analysis4 -> Quantitative1  [label=amod];
+"real-time2" [style=filled, fillcolor=white, label="real-time"];
+analysis4 -> "real-time2"  [label=amod];
+"RT-PCR3" [style=filled, fillcolor=white, label="RT-PCR"];
+analysis4 -> "RT-PCR3"  [label=nn];
+revealed5 [style=filled, fillcolor=white, label=revealed];
+revealed5 -> analysis4  [label=nsubj];
+revealed5 -> revealed5  [label=root];
+increase13 [style=filled, fillcolor=white, label=increase];
+a6 [style=filled, fillcolor=white, label=a];
+increase13 -> a6  [label=det];
+slight7 [style=filled, fillcolor=white, label=slight];
+increase13 -> slight7  [label=amod];
+significant11 [style=filled, fillcolor=white, label=significant];
+very10 [style=filled, fillcolor=white, label=very];
+significant11 -> very10  [label=advmod];
+slight7 -> significant11  [label=conj_but];
+revealed5 -> increase13  [label=dobj];
+level18 [style=filled, fillcolor=white, label=level];
+Bim15 [style=filled, fillcolor=white, label=Bim];
+level18 -> Bim15  [label=nn];
+messenger16 [style=filled, fillcolor=white, label=messenger];
+level18 -> messenger16  [label=nn];
+RNA17 [style=filled, fillcolor=white, label=RNA];
+level18 -> RNA17  [label=nn];
+increase13 -> level18  [label=prep_in];
+cells24 [style=filled, fillcolor=white, label=cells];
+splenic20 [style=filled, fillcolor=white, label=splenic];
+cells24 -> splenic20  [label=amod];
+resting21 [style=filled, fillcolor=white, label=resting];
+cells24 -> resting21  [label=amod];
+follicular22 [style=filled, fillcolor=white, label=follicular];
+cells24 -> follicular22  [label=nn];
+B23 [style=filled, fillcolor=white, label=B];
+cells24 -> B23  [label=nn];
+revealed5 -> cells24  [label=prep_in];
+persisting25 [style=filled, fillcolor=white, label=persisting];
+revealed5 -> persisting25  [label=xcomp];
+"/29" [style=filled, fillcolor=white, label="/"];
+in26 [style=filled, fillcolor=white, label=in];
+"/29" -> in26  [label=dep];
+Itpkb27 [style=filled, fillcolor=white, label=Itpkb];
+"/29" -> Itpkb27  [label=amod];
+persisting25 -> "/29"  [label=advmod];
+mice31 [style=filled, fillcolor=white, label=mice];
+persisting25 -> mice31  [label=dobj];
+}

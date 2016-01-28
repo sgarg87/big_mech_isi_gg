@@ -1,0 +1,36 @@
+digraph "c-Abl tyrosine kinase activity is blocked by pRb ,  which binds to the c-Abl kinase domain ( Welch and Wang ,  1995 ) ." {
+label="c-Abl tyrosine kinase activity is blocked by pRb ,  which binds to the c-Abl
+kinase domain ( Welch and Wang ,  1995 ) .";
+activity4 [style=filled, fillcolor=white, label=activity];
+"c-Abl1" [style=filled, fillcolor=white, label="c-Abl"];
+activity4 -> "c-Abl1"  [label=amod];
+tyrosine2 [style=filled, fillcolor=white, label=tyrosine];
+activity4 -> tyrosine2  [label=nn];
+kinase3 [style=filled, fillcolor=white, label=kinase];
+activity4 -> kinase3  [label=nn];
+blocked6 [style=filled, fillcolor=white, label=blocked];
+blocked6 -> activity4  [label=nsubjpass];
+is5 [style=filled, fillcolor=white, label=is];
+blocked6 -> is5  [label=auxpass];
+blocked6 -> blocked6  [label=root];
+pRb8 [style=filled, fillcolor=white, label=pRb];
+blocked6 -> pRb8  [label=agent];
+binds11 [style=filled, fillcolor=white, label=binds];
+which10 [style=filled, fillcolor=white, label=which];
+binds11 -> which10  [label=nsubj];
+pRb8 -> binds11  [label=rcmod];
+domain16 [style=filled, fillcolor=white, label=domain];
+the13 [style=filled, fillcolor=white, label=the];
+domain16 -> the13  [label=det];
+"c-Abl14" [style=filled, fillcolor=white, label="c-Abl"];
+domain16 -> "c-Abl14"  [label=amod];
+kinase15 [style=filled, fillcolor=white, label=kinase];
+domain16 -> kinase15  [label=nn];
+binds11 -> domain16  [label=prep_to];
+Welch18 [style=filled, fillcolor=white, label=Welch];
+domain16 -> Welch18  [label=appos];
+Wang20 [style=filled, fillcolor=white, label=Wang];
+Welch18 -> Wang20  [label=conj_and];
+199522 [style=filled, fillcolor=white, label=1995];
+Welch18 -> 199522  [label=dep];
+}

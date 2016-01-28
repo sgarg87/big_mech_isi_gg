@@ -1,0 +1,36 @@
+digraph "It can not be formally excluded that Eps8 ,  E3b1 ,  and Sos-1 associate after cell lysis ,  thus allowing coimmunoprecipitation ." {
+label="It can not be formally excluded that Eps8 ,  E3b1 ,  and Sos-1 associate after
+cell lysis ,  thus allowing coimmunoprecipitation .";
+excluded6 [style=filled, fillcolor=white, label=excluded];
+It1 [style=filled, fillcolor=white, label=It];
+excluded6 -> It1  [label=nsubjpass];
+can2 [style=filled, fillcolor=white, label=can];
+excluded6 -> can2  [label=aux];
+not3 [style=filled, fillcolor=white, label=not];
+excluded6 -> not3  [label=neg];
+be4 [style=filled, fillcolor=white, label=be];
+excluded6 -> be4  [label=auxpass];
+formally5 [style=filled, fillcolor=white, label=formally];
+excluded6 -> formally5  [label=advmod];
+excluded6 -> excluded6  [label=root];
+associate14 [style=filled, fillcolor=white, label=associate];
+that7 [style=filled, fillcolor=white, label=that];
+associate14 -> that7  [label=mark];
+Eps8 [style=filled, fillcolor=white, label=Eps8];
+associate14 -> Eps8  [label=nsubj];
+E3b110 [style=filled, fillcolor=white, label=E3b1];
+Eps8 -> E3b110  [label=conj_and];
+"Sos-13" [style=filled, fillcolor=white, label="Sos-1"];
+Eps8 -> "Sos-13"  [label=conj_and];
+excluded6 -> associate14  [label=ccomp];
+lysis17 [style=filled, fillcolor=white, label=lysis];
+cell16 [style=filled, fillcolor=white, label=cell];
+lysis17 -> cell16  [label=nn];
+associate14 -> lysis17  [label=prep_after];
+allowing20 [style=filled, fillcolor=white, label=allowing];
+thus19 [style=filled, fillcolor=white, label=thus];
+allowing20 -> thus19  [label=advmod];
+associate14 -> allowing20  [label=ccomp];
+coimmunoprecipitation21 [style=filled, fillcolor=white, label=coimmunoprecipitation];
+allowing20 -> coimmunoprecipitation21  [label=dobj];
+}

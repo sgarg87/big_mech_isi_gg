@@ -1,0 +1,47 @@
+digraph "Moreover ,  Caco-K cells ,  that retained typical epithelial morphology of Caco-2 parental cells also presented enhanced migrating and invasive properties ,  but to a lesser extent ." {
+label="Moreover ,  Caco-K cells ,  that retained typical epithelial morphology of
+Caco-2 parental cells also presented enhanced migrating and invasive properties
+,  but to a lesser extent .";
+presented16 [style=filled, fillcolor=white, label=presented];
+Moreover1 [style=filled, fillcolor=white, label=Moreover];
+presented16 -> Moreover1  [label=advmod];
+cells4 [style=filled, fillcolor=white, label=cells];
+"Caco-K3" [style=filled, fillcolor=white, label="Caco-K"];
+cells4 -> "Caco-K3"  [label=nn];
+presented16 -> cells4  [label=nsubj];
+retained7 [style=filled, fillcolor=white, label=retained];
+that6 [style=filled, fillcolor=white, label=that];
+retained7 -> that6  [label=nsubj];
+cells4 -> retained7  [label=rcmod];
+morphology10 [style=filled, fillcolor=white, label=morphology];
+typical8 [style=filled, fillcolor=white, label=typical];
+morphology10 -> typical8  [label=amod];
+epithelial9 [style=filled, fillcolor=white, label=epithelial];
+morphology10 -> epithelial9  [label=amod];
+retained7 -> morphology10  [label=dobj];
+cells14 [style=filled, fillcolor=white, label=cells];
+"Caco-21" [style=filled, fillcolor=white, label="Caco-2"];
+cells14 -> "Caco-21"  [label=amod];
+parental13 [style=filled, fillcolor=white, label=parental];
+cells14 -> parental13  [label=amod];
+morphology10 -> cells14  [label=prep_of];
+also15 [style=filled, fillcolor=white, label=also];
+presented16 -> also15  [label=advmod];
+presented16 -> presented16  [label=root];
+migrating18 [style=filled, fillcolor=white, label=migrating];
+enhanced17 [style=filled, fillcolor=white, label=enhanced];
+migrating18 -> enhanced17  [label=amod];
+presented16 -> migrating18  [label=dobj];
+properties21 [style=filled, fillcolor=white, label=properties];
+invasive20 [style=filled, fillcolor=white, label=invasive];
+properties21 -> invasive20  [label=nn];
+migrating18 -> properties21  [label=conj_and];
+to24 [style=filled, fillcolor=white, label=to];
+presented16 -> to24  [label=conj_but];
+extent27 [style=filled, fillcolor=white, label=extent];
+a25 [style=filled, fillcolor=white, label=a];
+extent27 -> a25  [label=det];
+lesser26 [style=filled, fillcolor=white, label=lesser];
+extent27 -> lesser26  [label=amod];
+to24 -> extent27  [label=pobj];
+}

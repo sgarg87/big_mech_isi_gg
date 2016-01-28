@@ -1,0 +1,49 @@
+digraph "At a GAP-to-Ras ratio of 1:500 ,  we observed an order of magnitude increase in the rate of GTP hydrolysis for unmodified Ras relative to the intrinsic rate of GTP hydrolysis ." {
+label="At a GAP-to-Ras ratio of 1:500 ,  we observed an order of magnitude increase in
+the rate of GTP hydrolysis for unmodified Ras relative to the intrinsic rate of
+GTP hydrolysis .";
+ratio4 [style=filled, fillcolor=white, label=ratio];
+a2 [style=filled, fillcolor=white, label=a];
+ratio4 -> a2  [label=det];
+"GAP-to-Ras3" [style=filled, fillcolor=white, label="GAP-to-Ras"];
+ratio4 -> "GAP-to-Ras3"  [label=nn];
+observed9 [style=filled, fillcolor=white, label=observed];
+observed9 -> ratio4  [label=prep_at];
+1 [style=filled, fillcolor=white, label="1:500"];
+ratio4 -> 1  [label=prep_of];
+we8 [style=filled, fillcolor=white, label=we];
+observed9 -> we8  [label=nsubj];
+observed9 -> observed9  [label=root];
+order11 [style=filled, fillcolor=white, label=order];
+an10 [style=filled, fillcolor=white, label=an];
+order11 -> an10  [label=det];
+observed9 -> order11  [label=dobj];
+increase14 [style=filled, fillcolor=white, label=increase];
+magnitude13 [style=filled, fillcolor=white, label=magnitude];
+increase14 -> magnitude13  [label=nn];
+order11 -> increase14  [label=prep_of];
+rate17 [style=filled, fillcolor=white, label=rate];
+the16 [style=filled, fillcolor=white, label=the];
+rate17 -> the16  [label=det];
+observed9 -> rate17  [label=prep_in];
+hydrolysis20 [style=filled, fillcolor=white, label=hydrolysis];
+GTP19 [style=filled, fillcolor=white, label=GTP];
+hydrolysis20 -> GTP19  [label=nn];
+rate17 -> hydrolysis20  [label=prep_of];
+hydrolysis31 [style=filled, fillcolor=white, label=hydrolysis];
+unmodified22 [style=filled, fillcolor=white, label=unmodified];
+hydrolysis31 -> unmodified22  [label=nn];
+Ras23 [style=filled, fillcolor=white, label=Ras];
+hydrolysis31 -> Ras23  [label=nn];
+relative24 [style=filled, fillcolor=white, label=relative];
+hydrolysis31 -> relative24  [label=amod];
+rate28 [style=filled, fillcolor=white, label=rate];
+the26 [style=filled, fillcolor=white, label=the];
+rate28 -> the26  [label=det];
+intrinsic27 [style=filled, fillcolor=white, label=intrinsic];
+rate28 -> intrinsic27  [label=amod];
+relative24 -> rate28  [label=prep_to];
+GTP30 [style=filled, fillcolor=white, label=GTP];
+rate28 -> GTP30  [label=prep_of];
+observed9 -> hydrolysis31  [label=prep_for];
+}

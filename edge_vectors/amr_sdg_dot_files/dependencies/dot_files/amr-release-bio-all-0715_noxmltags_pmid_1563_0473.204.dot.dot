@@ -1,0 +1,34 @@
+digraph "This said ,  based upon pSMAD2 immunohistochemistry ,  the immediate steps of downstream signaling appeared to be intact ." {
+label="This said ,  based upon pSMAD2 immunohistochemistry ,  the immediate steps of
+downstream signaling appeared to be intact .";
+said2 [style=filled, fillcolor=white, label=said];
+This1 [style=filled, fillcolor=white, label=This];
+said2 -> This1  [label=nsubj];
+appeared15 [style=filled, fillcolor=white, label=appeared];
+appeared15 -> said2  [label=ccomp];
+based4 [style=filled, fillcolor=white, label=based];
+said2 -> based4  [label=prep];
+upon5 [style=filled, fillcolor=white, label=upon];
+based4 -> upon5  [label=pcomp];
+immunohistochemistry7 [style=filled, fillcolor=white, label=immunohistochemistry];
+pSMAD26 [style=filled, fillcolor=white, label=pSMAD2];
+immunohistochemistry7 -> pSMAD26  [label=amod];
+upon5 -> immunohistochemistry7  [label=pobj];
+steps11 [style=filled, fillcolor=white, label=steps];
+the9 [style=filled, fillcolor=white, label=the];
+steps11 -> the9  [label=det];
+immediate10 [style=filled, fillcolor=white, label=immediate];
+steps11 -> immediate10  [label=amod];
+appeared15 -> steps11  [label=nsubj];
+signaling14 [style=filled, fillcolor=white, label=signaling];
+downstream13 [style=filled, fillcolor=white, label=downstream];
+signaling14 -> downstream13  [label=amod];
+steps11 -> signaling14  [label=prep_of];
+appeared15 -> appeared15  [label=root];
+intact18 [style=filled, fillcolor=white, label=intact];
+to16 [style=filled, fillcolor=white, label=to];
+intact18 -> to16  [label=aux];
+be17 [style=filled, fillcolor=white, label=be];
+intact18 -> be17  [label=cop];
+appeared15 -> intact18  [label=xcomp];
+}

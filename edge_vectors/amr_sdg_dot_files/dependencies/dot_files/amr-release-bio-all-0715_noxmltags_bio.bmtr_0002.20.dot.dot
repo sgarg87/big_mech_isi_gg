@@ -1,0 +1,34 @@
+digraph "These results demonstrate that EGFR T669 phosphorylation is necessary for MEK/ERK to suppress EGFR-mediated activation of ERBB3 ." {
+label="These results demonstrate that EGFR T669 phosphorylation is necessary for
+MEK/ERK to suppress EGFR-mediated activation of ERBB3 .";
+results2 [style=filled, fillcolor=white, label=results];
+These1 [style=filled, fillcolor=white, label=These];
+results2 -> These1  [label=det];
+demonstrate3 [style=filled, fillcolor=white, label=demonstrate];
+demonstrate3 -> results2  [label=nsubj];
+demonstrate3 -> demonstrate3  [label=root];
+necessary9 [style=filled, fillcolor=white, label=necessary];
+that4 [style=filled, fillcolor=white, label=that];
+necessary9 -> that4  [label=mark];
+phosphorylation7 [style=filled, fillcolor=white, label=phosphorylation];
+EGFR5 [style=filled, fillcolor=white, label=EGFR];
+phosphorylation7 -> EGFR5  [label=nn];
+T669 [style=filled, fillcolor=white, label=T669];
+phosphorylation7 -> T669  [label=nn];
+necessary9 -> phosphorylation7  [label=nsubj];
+is8 [style=filled, fillcolor=white, label=is];
+necessary9 -> is8  [label=cop];
+demonstrate3 -> necessary9  [label=ccomp];
+"MEK/ERK11" [style=filled, fillcolor=white, label="MEK/ERK"];
+necessary9 -> "MEK/ERK11"  [label=prep_for];
+suppress13 [style=filled, fillcolor=white, label=suppress];
+to12 [style=filled, fillcolor=white, label=to];
+suppress13 -> to12  [label=aux];
+necessary9 -> suppress13  [label=xcomp];
+activation15 [style=filled, fillcolor=white, label=activation];
+"EGFR-mediated14" [style=filled, fillcolor=white, label="EGFR-mediated"];
+activation15 -> "EGFR-mediated14"  [label=amod];
+suppress13 -> activation15  [label=dobj];
+ERBB317 [style=filled, fillcolor=white, label=ERBB3];
+activation15 -> ERBB317  [label=prep_of];
+}

@@ -1,0 +1,42 @@
+digraph "Our modeling and NMR analyses indicated that Ubiquitin dynamically samples a broad surface area of Ras that alters switch region dynamics ." {
+label="Our modeling and NMR analyses indicated that Ubiquitin dynamically samples a
+broad surface area of Ras that alters switch region dynamics .";
+modeling2 [style=filled, fillcolor=white, label=modeling];
+Our1 [style=filled, fillcolor=white, label=Our];
+modeling2 -> Our1  [label=poss];
+indicated6 [style=filled, fillcolor=white, label=indicated];
+indicated6 -> modeling2  [label=nsubj];
+analyses5 [style=filled, fillcolor=white, label=analyses];
+NMR4 [style=filled, fillcolor=white, label=NMR];
+analyses5 -> NMR4  [label=nn];
+modeling2 -> analyses5  [label=conj_and];
+indicated6 -> indicated6  [label=root];
+samples10 [style=filled, fillcolor=white, label=samples];
+that7 [style=filled, fillcolor=white, label=that];
+samples10 -> that7  [label=mark];
+Ubiquitin8 [style=filled, fillcolor=white, label=Ubiquitin];
+samples10 -> Ubiquitin8  [label=nsubj];
+dynamically9 [style=filled, fillcolor=white, label=dynamically];
+samples10 -> dynamically9  [label=advmod];
+indicated6 -> samples10  [label=ccomp];
+area14 [style=filled, fillcolor=white, label=area];
+a11 [style=filled, fillcolor=white, label=a];
+area14 -> a11  [label=det];
+broad12 [style=filled, fillcolor=white, label=broad];
+area14 -> broad12  [label=amod];
+surface13 [style=filled, fillcolor=white, label=surface];
+area14 -> surface13  [label=nn];
+samples10 -> area14  [label=dobj];
+Ras16 [style=filled, fillcolor=white, label=Ras];
+area14 -> Ras16  [label=prep_of];
+switch19 [style=filled, fillcolor=white, label=switch];
+that17 [style=filled, fillcolor=white, label=that];
+switch19 -> that17  [label=mark];
+alters18 [style=filled, fillcolor=white, label=alters];
+switch19 -> alters18  [label=nsubj];
+samples10 -> switch19  [label=ccomp];
+dynamics21 [style=filled, fillcolor=white, label=dynamics];
+region20 [style=filled, fillcolor=white, label=region];
+dynamics21 -> region20  [label=nn];
+switch19 -> dynamics21  [label=dobj];
+}

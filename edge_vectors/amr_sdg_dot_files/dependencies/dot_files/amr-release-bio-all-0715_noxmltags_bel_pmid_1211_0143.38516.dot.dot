@@ -1,0 +1,15 @@
+digraph "Socs1 inhibits activation of STAT6 by Il4 stimulation" {
+label="Socs1 inhibits activation of STAT6 by Il4 stimulation";
+inhibits2 [style=filled, fillcolor=white, label=inhibits];
+Socs1 [style=filled, fillcolor=white, label=Socs1];
+inhibits2 -> Socs1  [label=nsubj];
+inhibits2 -> inhibits2  [label=root];
+activation3 [style=filled, fillcolor=white, label=activation];
+inhibits2 -> activation3  [label=dobj];
+STAT65 [style=filled, fillcolor=white, label=STAT6];
+activation3 -> STAT65  [label=prep_of];
+stimulation8 [style=filled, fillcolor=white, label=stimulation];
+Il47 [style=filled, fillcolor=white, label=Il4];
+stimulation8 -> Il47  [label=amod];
+inhibits2 -> stimulation8  [label=prep_by];
+}

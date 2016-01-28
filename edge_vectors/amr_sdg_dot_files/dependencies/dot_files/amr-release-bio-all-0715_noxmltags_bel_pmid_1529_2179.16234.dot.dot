@@ -1,0 +1,41 @@
+digraph "Taken together ,  these observations strongly support a role for NADPH oxidase-generated ROS in mediating hyperoxia-induced Nrf2 activation in pulmonary epithelial cells ." {
+label="Taken together ,  these observations strongly support a role for NADPH oxidase-
+generated ROS in mediating hyperoxia-induced Nrf2 activation in pulmonary
+epithelial cells .";
+support7 [style=filled, fillcolor=white, label=support];
+Taken1 [style=filled, fillcolor=white, label=Taken];
+support7 -> Taken1  [label=vmod];
+together2 [style=filled, fillcolor=white, label=together];
+Taken1 -> together2  [label=advmod];
+observations5 [style=filled, fillcolor=white, label=observations];
+these4 [style=filled, fillcolor=white, label=these];
+observations5 -> these4  [label=det];
+support7 -> observations5  [label=nsubj];
+strongly6 [style=filled, fillcolor=white, label=strongly];
+support7 -> strongly6  [label=advmod];
+support7 -> support7  [label=root];
+role9 [style=filled, fillcolor=white, label=role];
+a8 [style=filled, fillcolor=white, label=a];
+role9 -> a8  [label=det];
+support7 -> role9  [label=dobj];
+ROS13 [style=filled, fillcolor=white, label=ROS];
+NADPH11 [style=filled, fillcolor=white, label=NADPH];
+ROS13 -> NADPH11  [label=nn];
+"oxidase-generated12" [style=filled, fillcolor=white, label="oxidase-generated"];
+ROS13 -> "oxidase-generated12"  [label=amod];
+role9 -> ROS13  [label=prep_for];
+mediating15 [style=filled, fillcolor=white, label=mediating];
+support7 -> mediating15  [label=prepc_in];
+activation18 [style=filled, fillcolor=white, label=activation];
+"hyperoxia-induced16" [style=filled, fillcolor=white, label="hyperoxia-induced"];
+activation18 -> "hyperoxia-induced16"  [label=amod];
+Nrf217 [style=filled, fillcolor=white, label=Nrf2];
+activation18 -> Nrf217  [label=amod];
+mediating15 -> activation18  [label=dobj];
+cells22 [style=filled, fillcolor=white, label=cells];
+pulmonary20 [style=filled, fillcolor=white, label=pulmonary];
+cells22 -> pulmonary20  [label=amod];
+epithelial21 [style=filled, fillcolor=white, label=epithelial];
+cells22 -> epithelial21  [label=amod];
+mediating15 -> cells22  [label=prep_in];
+}

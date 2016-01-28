@@ -1,0 +1,66 @@
+digraph "Tissue factor ( TF ) can be induced in monocytes by external signals such as growth factors ,  inflammatory cytokines ( interleukin -LSB- IL -RSB- -1 b and tumor necrosis factor -LSB- TNF -RSB- - a ) ,  oxidized LDLs ,  and endotoxin . 2" {
+label="Tissue factor ( TF ) can be induced in monocytes by external signals such as
+growth factors ,  inflammatory cytokines ( interleukin -LSB- IL -RSB- -1 b and
+tumor necrosis factor -LSB- TNF -RSB- - a ) ,  oxidized LDLs ,  and endotoxin .
+2";
+factor2 [style=filled, fillcolor=white, label=factor];
+Tissue1 [style=filled, fillcolor=white, label=Tissue];
+factor2 -> Tissue1  [label=amod];
+induced8 [style=filled, fillcolor=white, label=induced];
+induced8 -> factor2  [label=nsubjpass];
+TF4 [style=filled, fillcolor=white, label=TF];
+factor2 -> TF4  [label=appos];
+can6 [style=filled, fillcolor=white, label=can];
+induced8 -> can6  [label=aux];
+be7 [style=filled, fillcolor=white, label=be];
+induced8 -> be7  [label=auxpass];
+induced8 -> induced8  [label=root];
+monocytes10 [style=filled, fillcolor=white, label=monocytes];
+induced8 -> monocytes10  [label=prep_in];
+signals13 [style=filled, fillcolor=white, label=signals];
+external12 [style=filled, fillcolor=white, label=external];
+signals13 -> external12  [label=amod];
+induced8 -> signals13  [label=agent];
+factors17 [style=filled, fillcolor=white, label=factors];
+growth16 [style=filled, fillcolor=white, label=growth];
+factors17 -> growth16  [label=nn];
+signals13 -> factors17  [label=prep_such_as];
+cytokines20 [style=filled, fillcolor=white, label=cytokines];
+inflammatory19 [style=filled, fillcolor=white, label=inflammatory];
+cytokines20 -> inflammatory19  [label=amod];
+factors17 -> cytokines20  [label=conj_and];
+b27 [style=filled, fillcolor=white, label=b];
+interleukin22 [style=filled, fillcolor=white, label=interleukin];
+b27 -> interleukin22  [label=nn];
+"-LSB-23" [style=filled, fillcolor=white, label="-LSB-"];
+b27 -> "-LSB-23"  [label=nn];
+IL24 [style=filled, fillcolor=white, label=IL];
+b27 -> IL24  [label=nn];
+"-RSB-25" [style=filled, fillcolor=white, label="-RSB-"];
+b27 -> "-RSB-25"  [label=nn];
+"-126" [style=filled, fillcolor=white, label="-1"];
+b27 -> "-126"  [label=nn];
+factors17 -> b27  [label=dep];
+"-RSB-34" [style=filled, fillcolor=white, label="-RSB-"];
+tumor29 [style=filled, fillcolor=white, label=tumor];
+"-RSB-34" -> tumor29  [label=nn];
+necrosis30 [style=filled, fillcolor=white, label=necrosis];
+"-RSB-34" -> necrosis30  [label=nn];
+factor31 [style=filled, fillcolor=white, label=factor];
+"-RSB-34" -> factor31  [label=nn];
+"-LSB-32" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-34" -> "-LSB-32"  [label=nn];
+TNF33 [style=filled, fillcolor=white, label=TNF];
+"-RSB-34" -> TNF33  [label=nn];
+b27 -> "-RSB-34"  [label=conj_and];
+a36 [style=filled, fillcolor=white, label=a];
+b27 -> a36  [label=dep];
+LDLs40 [style=filled, fillcolor=white, label=LDLs];
+oxidized39 [style=filled, fillcolor=white, label=oxidized];
+LDLs40 -> oxidized39  [label=amod];
+factors17 -> LDLs40  [label=conj_and];
+endotoxin43 [style=filled, fillcolor=white, label=endotoxin];
+factors17 -> endotoxin43  [label=conj_and];
+245 [style=filled, fillcolor=white, label=2];
+endotoxin43 -> 245  [label=dep];
+}

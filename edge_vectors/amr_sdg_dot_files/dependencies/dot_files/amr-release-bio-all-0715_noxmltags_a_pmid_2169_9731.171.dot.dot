@@ -1,0 +1,42 @@
+digraph "Conversely ,  PI3K inhibition ( by LY294002 ) increased basal p-Erk1 / 2 levels at the expense of p-Akt ( 4 hrs time point ; Figure 9C ) ." {
+label="Conversely ,  PI3K inhibition ( by LY294002 ) increased basal p-Erk1 / 2 levels
+at the expense of p-Akt ( 4 hrs time point ; Figure 9C ) .";
+increased9 [style=filled, fillcolor=white, label=increased];
+Conversely1 [style=filled, fillcolor=white, label=Conversely];
+increased9 -> Conversely1  [label=advmod];
+inhibition4 [style=filled, fillcolor=white, label=inhibition];
+PI3K [style=filled, fillcolor=white, label=PI3K];
+inhibition4 -> PI3K  [label=num];
+increased9 -> inhibition4  [label=nsubj];
+LY2940027 [style=filled, fillcolor=white, label=LY294002];
+inhibition4 -> LY2940027  [label=prep_by];
+increased9 -> increased9  [label=root];
+"/12" [style=filled, fillcolor=white, label="/"];
+basal10 [style=filled, fillcolor=white, label=basal];
+"/12" -> basal10  [label=amod];
+"p-Erk1" [style=filled, fillcolor=white, label="p-Erk1"];
+"/12" -> "p-Erk1"  [label=amod];
+increased9 -> "/12"  [label=iobj];
+levels14 [style=filled, fillcolor=white, label=levels];
+213 [style=filled, fillcolor=white, label=2];
+levels14 -> 213  [label=num];
+increased9 -> levels14  [label=dobj];
+expense17 [style=filled, fillcolor=white, label=expense];
+the16 [style=filled, fillcolor=white, label=the];
+expense17 -> the16  [label=det];
+levels14 -> expense17  [label=prep_at];
+"p-Akt19" [style=filled, fillcolor=white, label="p-Akt"];
+expense17 -> "p-Akt19"  [label=prep_of];
+point24 [style=filled, fillcolor=white, label=point];
+421 [style=filled, fillcolor=white, label=4];
+point24 -> 421  [label=num];
+hrs22 [style=filled, fillcolor=white, label=hrs];
+point24 -> hrs22  [label=nn];
+time23 [style=filled, fillcolor=white, label=time];
+point24 -> time23  [label=nn];
+"p-Akt19" -> point24  [label=dep];
+Figure26 [style=filled, fillcolor=white, label=Figure];
+point24 -> Figure26  [label=dep];
+"9C27" [style=filled, fillcolor=white, label="9C"];
+Figure26 -> "9C27"  [label=num];
+}

@@ -1,0 +1,37 @@
+digraph "For experiments measuring phosphorylation of MAPK ,  keratinocytes were serum starved for 3 h prior to harvesting of cells by incubation in medium lacking serum ." {
+label="For experiments measuring phosphorylation of MAPK ,  keratinocytes were serum
+starved for 3 h prior to harvesting of cells by incubation in medium lacking
+serum .";
+measuring3 [style=filled, fillcolor=white, label=measuring];
+experiments2 [style=filled, fillcolor=white, label=experiments];
+measuring3 -> experiments2  [label=nsubj];
+serum10 [style=filled, fillcolor=white, label=serum];
+serum10 -> measuring3  [label=prepc_for];
+phosphorylation4 [style=filled, fillcolor=white, label=phosphorylation];
+measuring3 -> phosphorylation4  [label=dobj];
+MAPK6 [style=filled, fillcolor=white, label=MAPK];
+phosphorylation4 -> MAPK6  [label=prep_of];
+keratinocytes8 [style=filled, fillcolor=white, label=keratinocytes];
+serum10 -> keratinocytes8  [label=nsubj];
+were9 [style=filled, fillcolor=white, label=were];
+serum10 -> were9  [label=cop];
+serum10 -> serum10  [label=root];
+starved11 [style=filled, fillcolor=white, label=starved];
+serum10 -> starved11  [label=vmod];
+h14 [style=filled, fillcolor=white, label=h];
+31 [style=filled, fillcolor=white, label=3];
+h14 -> 31  [label=num];
+starved11 -> h14  [label=prep_for];
+harvesting17 [style=filled, fillcolor=white, label=harvesting];
+starved11 -> harvesting17  [label=prepc_prior_to];
+cells19 [style=filled, fillcolor=white, label=cells];
+harvesting17 -> cells19  [label=prep_of];
+incubation21 [style=filled, fillcolor=white, label=incubation];
+harvesting17 -> incubation21  [label=prep_by];
+medium23 [style=filled, fillcolor=white, label=medium];
+harvesting17 -> medium23  [label=prep_in];
+lacking24 [style=filled, fillcolor=white, label=lacking];
+medium23 -> lacking24  [label=vmod];
+serum25 [style=filled, fillcolor=white, label=serum];
+lacking24 -> serum25  [label=dobj];
+}

@@ -1,0 +1,13 @@
+digraph "Schematic Representation of the Ras Isoforms" {
+label="Schematic Representation of the Ras Isoforms";
+Representation2 [style=filled, fillcolor=white, label=Representation];
+Schematic1 [style=filled, fillcolor=white, label=Schematic];
+Representation2 -> Schematic1  [label=nn];
+Representation2 -> Representation2  [label=root];
+Isoforms6 [style=filled, fillcolor=white, label=Isoforms];
+the4 [style=filled, fillcolor=white, label=the];
+Isoforms6 -> the4  [label=det];
+Ras5 [style=filled, fillcolor=white, label=Ras];
+Isoforms6 -> Ras5  [label=nn];
+Representation2 -> Isoforms6  [label=prep_of];
+}

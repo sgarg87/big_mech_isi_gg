@@ -1,0 +1,38 @@
+digraph "inflammatory cytokines ,  notably Tnf-alpha ,  and Il6 ,  induce the expression of Cox2 and the secretion of Pge2 in human prostate cancer cell lines" {
+label="inflammatory cytokines ,  notably Tnf-alpha ,  and Il6 ,  induce the expression
+of Cox2 and the secretion of Pge2 in human prostate cancer cell lines";
+cytokines2 [style=filled, fillcolor=white, label=cytokines];
+inflammatory1 [style=filled, fillcolor=white, label=inflammatory];
+cytokines2 -> inflammatory1  [label=dep];
+cytokines2 -> cytokines2  [label=root];
+notably4 [style=filled, fillcolor=white, label=notably];
+cytokines2 -> notably4  [label=advmod];
+"Tnf-alpha5" [style=filled, fillcolor=white, label="Tnf-alpha"];
+notably4 -> "Tnf-alpha5"  [label=pobj];
+Il68 [style=filled, fillcolor=white, label=Il6];
+"Tnf-alpha5" -> Il68  [label=conj_and];
+induce10 [style=filled, fillcolor=white, label=induce];
+cytokines2 -> induce10  [label=dep];
+expression12 [style=filled, fillcolor=white, label=expression];
+the11 [style=filled, fillcolor=white, label=the];
+expression12 -> the11  [label=det];
+induce10 -> expression12  [label=dobj];
+Cox214 [style=filled, fillcolor=white, label=Cox2];
+expression12 -> Cox214  [label=prep_of];
+secretion17 [style=filled, fillcolor=white, label=secretion];
+the16 [style=filled, fillcolor=white, label=the];
+secretion17 -> the16  [label=det];
+expression12 -> secretion17  [label=conj_and];
+Pge219 [style=filled, fillcolor=white, label=Pge2];
+secretion17 -> Pge219  [label=prep_of];
+cancer23 [style=filled, fillcolor=white, label=cancer];
+human21 [style=filled, fillcolor=white, label=human];
+cancer23 -> human21  [label=amod];
+prostate22 [style=filled, fillcolor=white, label=prostate];
+cancer23 -> prostate22  [label=nn];
+Pge219 -> cancer23  [label=prep_in];
+lines25 [style=filled, fillcolor=white, label=lines];
+cell24 [style=filled, fillcolor=white, label=cell];
+lines25 -> cell24  [label=nn];
+cytokines2 -> lines25  [label=nsubj];
+}

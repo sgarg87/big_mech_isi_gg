@@ -1,0 +1,38 @@
+digraph "As shown in Figure 1C ,  the ratio of P-YB-1 / YB-1 is significantly higher in tumor cells than in fibroblasts ." {
+label="As shown in Figure 1C ,  the ratio of P-YB-1 / YB-1 is significantly higher in
+tumor cells than in fibroblasts .";
+shown2 [style=filled, fillcolor=white, label=shown];
+As1 [style=filled, fillcolor=white, label=As];
+shown2 -> As1  [label=mark];
+higher15 [style=filled, fillcolor=white, label=higher];
+higher15 -> shown2  [label=advcl];
+Figure4 [style=filled, fillcolor=white, label=Figure];
+shown2 -> Figure4  [label=prep_in];
+"1C5" [style=filled, fillcolor=white, label="1C"];
+Figure4 -> "1C5"  [label=num];
+ratio8 [style=filled, fillcolor=white, label=ratio];
+the7 [style=filled, fillcolor=white, label=the];
+ratio8 -> the7  [label=det];
+higher15 -> ratio8  [label=nsubj];
+"YB-12" [style=filled, fillcolor=white, label="YB-1"];
+"P-YB-10" [style=filled, fillcolor=white, label="P-YB-1"];
+"YB-12" -> "P-YB-10"  [label=nn];
+"/11" [style=filled, fillcolor=white, label="/"];
+"YB-12" -> "/11"  [label=nn];
+ratio8 -> "YB-12"  [label=prep_of];
+is13 [style=filled, fillcolor=white, label=is];
+higher15 -> is13  [label=cop];
+significantly14 [style=filled, fillcolor=white, label=significantly];
+higher15 -> significantly14  [label=advmod];
+higher15 -> higher15  [label=root];
+cells18 [style=filled, fillcolor=white, label=cells];
+tumor17 [style=filled, fillcolor=white, label=tumor];
+cells18 -> tumor17  [label=nn];
+higher15 -> cells18  [label=prep_in];
+than19 [style=filled, fillcolor=white, label=than];
+higher15 -> than19  [label=prep];
+in20 [style=filled, fillcolor=white, label=in];
+than19 -> in20  [label=pcomp];
+fibroblasts21 [style=filled, fillcolor=white, label=fibroblasts];
+in20 -> fibroblasts21  [label=pobj];
+}

@@ -1,0 +1,30 @@
+digraph "Immunoblots using antibodies to BATF detected an increase in BATF protein in response to LIF/IL -6 stimulation ." {
+label="Immunoblots using antibodies to BATF detected an increase in BATF protein in
+response to LIF/IL -6 stimulation .";
+detected6 [style=filled, fillcolor=white, label=detected];
+Immunoblots1 [style=filled, fillcolor=white, label=Immunoblots];
+detected6 -> Immunoblots1  [label=nsubj];
+using2 [style=filled, fillcolor=white, label=using];
+Immunoblots1 -> using2  [label=vmod];
+antibodies3 [style=filled, fillcolor=white, label=antibodies];
+using2 -> antibodies3  [label=dobj];
+BATF5 [style=filled, fillcolor=white, label=BATF];
+using2 -> BATF5  [label=prep_to];
+detected6 -> detected6  [label=root];
+increase8 [style=filled, fillcolor=white, label=increase];
+an7 [style=filled, fillcolor=white, label=an];
+increase8 -> an7  [label=det];
+detected6 -> increase8  [label=dobj];
+protein11 [style=filled, fillcolor=white, label=protein];
+BATF10 [style=filled, fillcolor=white, label=BATF];
+protein11 -> BATF10  [label=amod];
+detected6 -> protein11  [label=prep_in];
+response13 [style=filled, fillcolor=white, label=response];
+protein11 -> response13  [label=prep_in];
+stimulation17 [style=filled, fillcolor=white, label=stimulation];
+"LIF/IL15" [style=filled, fillcolor=white, label="LIF/IL"];
+stimulation17 -> "LIF/IL15"  [label=nn];
+"-61" [style=filled, fillcolor=white, label="-6"];
+stimulation17 -> "-61"  [label=num];
+detected6 -> stimulation17  [label=prep_to];
+}

@@ -1,0 +1,38 @@
+digraph "GEF activity of Ras-GRF1 toward Ha-Ras ,  as defined by in vitro GDP binding and release assays ,  was augmented after tyrosine phosphorylation by ACK1 ." {
+label="GEF activity of Ras-GRF1 toward Ha-Ras ,  as defined by in vitro GDP binding
+and release assays ,  was augmented after tyrosine phosphorylation by ACK1 .";
+activity2 [style=filled, fillcolor=white, label=activity];
+GEF1 [style=filled, fillcolor=white, label=GEF];
+activity2 -> GEF1  [label=nn];
+augmented20 [style=filled, fillcolor=white, label=augmented];
+augmented20 -> activity2  [label=nsubjpass];
+"Ras-GRF14" [style=filled, fillcolor=white, label="Ras-GRF1"];
+activity2 -> "Ras-GRF14"  [label=prep_of];
+"Ha-Ras6" [style=filled, fillcolor=white, label="Ha-Ras"];
+"Ras-GRF14" -> "Ha-Ras6"  [label=prep_toward];
+defined9 [style=filled, fillcolor=white, label=defined];
+as8 [style=filled, fillcolor=white, label=as];
+defined9 -> as8  [label=mark];
+activity2 -> defined9  [label=dep];
+by10 [style=filled, fillcolor=white, label=by];
+defined9 -> by10  [label=dep];
+binding14 [style=filled, fillcolor=white, label=binding];
+vitro12 [style=filled, fillcolor=white, label=vitro];
+binding14 -> vitro12  [label=nn];
+GDP13 [style=filled, fillcolor=white, label=GDP];
+binding14 -> GDP13  [label=nn];
+defined9 -> binding14  [label=prep_in];
+assays17 [style=filled, fillcolor=white, label=assays];
+release16 [style=filled, fillcolor=white, label=release];
+assays17 -> release16  [label=nn];
+binding14 -> assays17  [label=conj_and];
+was19 [style=filled, fillcolor=white, label=was];
+augmented20 -> was19  [label=auxpass];
+augmented20 -> augmented20  [label=root];
+phosphorylation23 [style=filled, fillcolor=white, label=phosphorylation];
+tyrosine22 [style=filled, fillcolor=white, label=tyrosine];
+phosphorylation23 -> tyrosine22  [label=amod];
+augmented20 -> phosphorylation23  [label=prep_after];
+ACK125 [style=filled, fillcolor=white, label=ACK1];
+augmented20 -> ACK125  [label=agent];
+}

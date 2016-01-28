@@ -1,0 +1,45 @@
+digraph "Interestingly ,  although TIMP-3 expression was elevated basally in FBLN-5-expressing MB114 cells ,  only FBLN-3 stimulated TIMP-3 expression in tubulating MB114 cells ( Fig. 3B ) ." {
+label="Interestingly ,  although TIMP-3 expression was elevated basally in
+FBLN-5-expressing MB114 cells ,  only FBLN-3 stimulated TIMP-3 expression in
+tubulating MB114 cells ( Fig. 3B ) .";
+stimulated16 [style=filled, fillcolor=white, label=stimulated];
+Interestingly1 [style=filled, fillcolor=white, label=Interestingly];
+stimulated16 -> Interestingly1  [label=advmod];
+basally8 [style=filled, fillcolor=white, label=basally];
+although3 [style=filled, fillcolor=white, label=although];
+basally8 -> although3  [label=mark];
+expression5 [style=filled, fillcolor=white, label=expression];
+"TIMP-34" [style=filled, fillcolor=white, label="TIMP-3"];
+expression5 -> "TIMP-34"  [label=nn];
+basally8 -> expression5  [label=nsubj];
+was6 [style=filled, fillcolor=white, label=was];
+basally8 -> was6  [label=cop];
+elevated7 [style=filled, fillcolor=white, label=elevated];
+basally8 -> elevated7  [label=amod];
+stimulated16 -> basally8  [label=advcl];
+cells12 [style=filled, fillcolor=white, label=cells];
+"FBLN-5-expressing10" [style=filled, fillcolor=white, label="FBLN-5-expressing"];
+cells12 -> "FBLN-5-expressing10"  [label=nn];
+MB114 [style=filled, fillcolor=white, label=MB114];
+cells12 -> MB114  [label=nn];
+basally8 -> cells12  [label=prep_in];
+"FBLN-315" [style=filled, fillcolor=white, label="FBLN-3"];
+only14 [style=filled, fillcolor=white, label=only];
+"FBLN-315" -> only14  [label=advmod];
+stimulated16 -> "FBLN-315"  [label=nsubj];
+stimulated16 -> stimulated16  [label=root];
+expression18 [style=filled, fillcolor=white, label=expression];
+"TIMP-317" [style=filled, fillcolor=white, label="TIMP-3"];
+expression18 -> "TIMP-317"  [label=nn];
+stimulated16 -> expression18  [label=dobj];
+tubulating20 [style=filled, fillcolor=white, label=tubulating];
+stimulated16 -> tubulating20  [label=prepc_in];
+cells22 [style=filled, fillcolor=white, label=cells];
+MB1142 [style=filled, fillcolor=white, label=MB114];
+cells22 -> MB1142  [label=num];
+tubulating20 -> cells22  [label=dobj];
+"3B25" [style=filled, fillcolor=white, label="3B"];
+"Fig.24" [style=filled, fillcolor=white, label="Fig."];
+"3B25" -> "Fig.24"  [label=number];
+cells22 -> "3B25"  [label=dep];
+}

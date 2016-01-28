@@ -1,0 +1,11 @@
+digraph "ATM phosphorylates P53 at Ser15" {
+label="ATM phosphorylates P53 at Ser15";
+phosphorylates2 [style=filled, fillcolor=white, label=phosphorylates];
+ATM1 [style=filled, fillcolor=white, label=ATM];
+phosphorylates2 -> ATM1  [label=nsubj];
+phosphorylates2 -> phosphorylates2  [label=root];
+P53 [style=filled, fillcolor=white, label=P53];
+phosphorylates2 -> P53  [label=dobj];
+Ser15 [style=filled, fillcolor=white, label=Ser15];
+P53 -> Ser15  [label=prep_at];
+}

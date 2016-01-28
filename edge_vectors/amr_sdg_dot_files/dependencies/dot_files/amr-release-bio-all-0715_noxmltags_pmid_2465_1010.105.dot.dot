@@ -1,0 +1,32 @@
+digraph "Presumably ,  these pathways are suppressed in cells with activated Ras and rebound when the suppressor is removed ." {
+label="Presumably ,  these pathways are suppressed in cells with activated Ras and
+rebound when the suppressor is removed .";
+suppressed6 [style=filled, fillcolor=white, label=suppressed];
+Presumably1 [style=filled, fillcolor=white, label=Presumably];
+suppressed6 -> Presumably1  [label=advmod];
+pathways4 [style=filled, fillcolor=white, label=pathways];
+these3 [style=filled, fillcolor=white, label=these];
+pathways4 -> these3  [label=det];
+suppressed6 -> pathways4  [label=nsubjpass];
+are5 [style=filled, fillcolor=white, label=are];
+suppressed6 -> are5  [label=auxpass];
+suppressed6 -> suppressed6  [label=root];
+cells8 [style=filled, fillcolor=white, label=cells];
+suppressed6 -> cells8  [label=prep_in];
+Ras11 [style=filled, fillcolor=white, label=Ras];
+activated10 [style=filled, fillcolor=white, label=activated];
+Ras11 -> activated10  [label=amod];
+suppressed6 -> Ras11  [label=prep_with];
+rebound13 [style=filled, fillcolor=white, label=rebound];
+Ras11 -> rebound13  [label=conj_and];
+removed18 [style=filled, fillcolor=white, label=removed];
+when14 [style=filled, fillcolor=white, label=when];
+removed18 -> when14  [label=advmod];
+suppressor16 [style=filled, fillcolor=white, label=suppressor];
+the15 [style=filled, fillcolor=white, label=the];
+suppressor16 -> the15  [label=det];
+removed18 -> suppressor16  [label=nsubjpass];
+is17 [style=filled, fillcolor=white, label=is];
+removed18 -> is17  [label=auxpass];
+Ras11 -> removed18  [label=rcmod];
+}

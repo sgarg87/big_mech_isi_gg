@@ -1,0 +1,38 @@
+digraph "In the early 1990s ,  the MAPK pathway and the PI3K pathway were known to be downstream of Ras ( Figure 1 ) ." {
+label="In the early 1990s ,  the MAPK pathway and the PI3K pathway were known to be
+downstream of Ras ( Figure 1 ) .";
+"1990s4" [style=filled, fillcolor=white, label="1990s"];
+the2 [style=filled, fillcolor=white, label=the];
+"1990s4" -> the2  [label=det];
+early3 [style=filled, fillcolor=white, label=early];
+"1990s4" -> early3  [label=amod];
+known14 [style=filled, fillcolor=white, label=known];
+known14 -> "1990s4"  [label=prep_in];
+pathway8 [style=filled, fillcolor=white, label=pathway];
+the6 [style=filled, fillcolor=white, label=the];
+pathway8 -> the6  [label=det];
+MAPK7 [style=filled, fillcolor=white, label=MAPK];
+pathway8 -> MAPK7  [label=nn];
+known14 -> pathway8  [label=nsubjpass];
+PI3K11 [style=filled, fillcolor=white, label=PI3K];
+the10 [style=filled, fillcolor=white, label=the];
+PI3K11 -> the10  [label=det];
+pathway8 -> PI3K11  [label=conj_and];
+pathway12 [style=filled, fillcolor=white, label=pathway];
+known14 -> pathway12  [label=advmod];
+were13 [style=filled, fillcolor=white, label=were];
+known14 -> were13  [label=auxpass];
+known14 -> known14  [label=root];
+downstream17 [style=filled, fillcolor=white, label=downstream];
+to15 [style=filled, fillcolor=white, label=to];
+downstream17 -> to15  [label=aux];
+be16 [style=filled, fillcolor=white, label=be];
+downstream17 -> be16  [label=cop];
+known14 -> downstream17  [label=xcomp];
+Ras19 [style=filled, fillcolor=white, label=Ras];
+downstream17 -> Ras19  [label=prep_of];
+Figure21 [style=filled, fillcolor=white, label=Figure];
+Ras19 -> Figure21  [label=appos];
+122 [style=filled, fillcolor=white, label=1];
+Figure21 -> 122  [label=num];
+}

@@ -1,0 +1,51 @@
+digraph "In order to determine any relevant role of EGFR in mediating macrophage-stimulated tumor cell proliferation in these cell lines ,  recombinant mouse EGF was added at 2 ng/mL ." {
+label="In order to determine any relevant role of EGFR in mediating macrophage-
+stimulated tumor cell proliferation in these cell lines ,  recombinant mouse EGF
+was added at 2 ng/mL .";
+determine4 [style=filled, fillcolor=white, label=determine];
+In1 [style=filled, fillcolor=white, label=In];
+determine4 -> In1  [label=mark];
+order2 [style=filled, fillcolor=white, label=order];
+determine4 -> order2  [label=dep];
+to3 [style=filled, fillcolor=white, label=to];
+determine4 -> to3  [label=aux];
+added25 [style=filled, fillcolor=white, label=added];
+added25 -> determine4  [label=advcl];
+role7 [style=filled, fillcolor=white, label=role];
+any5 [style=filled, fillcolor=white, label=any];
+role7 -> any5  [label=det];
+relevant6 [style=filled, fillcolor=white, label=relevant];
+role7 -> relevant6  [label=amod];
+determine4 -> role7  [label=dobj];
+EGFR9 [style=filled, fillcolor=white, label=EGFR];
+role7 -> EGFR9  [label=prep_of];
+mediating11 [style=filled, fillcolor=white, label=mediating];
+determine4 -> mediating11  [label=prepc_in];
+proliferation15 [style=filled, fillcolor=white, label=proliferation];
+"macrophage-stimulated12" [style=filled, fillcolor=white, label="macrophage-stimulated"];
+proliferation15 -> "macrophage-stimulated12"  [label=amod];
+tumor13 [style=filled, fillcolor=white, label=tumor];
+proliferation15 -> tumor13  [label=nn];
+cell14 [style=filled, fillcolor=white, label=cell];
+proliferation15 -> cell14  [label=nn];
+mediating11 -> proliferation15  [label=dobj];
+lines19 [style=filled, fillcolor=white, label=lines];
+these17 [style=filled, fillcolor=white, label=these];
+lines19 -> these17  [label=det];
+cell18 [style=filled, fillcolor=white, label=cell];
+lines19 -> cell18  [label=nn];
+proliferation15 -> lines19  [label=prep_in];
+EGF23 [style=filled, fillcolor=white, label=EGF];
+recombinant21 [style=filled, fillcolor=white, label=recombinant];
+EGF23 -> recombinant21  [label=amod];
+mouse22 [style=filled, fillcolor=white, label=mouse];
+EGF23 -> mouse22  [label=nn];
+added25 -> EGF23  [label=nsubjpass];
+was24 [style=filled, fillcolor=white, label=was];
+added25 -> was24  [label=auxpass];
+added25 -> added25  [label=root];
+"ng/mL28" [style=filled, fillcolor=white, label="ng/mL"];
+227 [style=filled, fillcolor=white, label=2];
+"ng/mL28" -> 227  [label=num];
+added25 -> "ng/mL28"  [label=prep_at];
+}

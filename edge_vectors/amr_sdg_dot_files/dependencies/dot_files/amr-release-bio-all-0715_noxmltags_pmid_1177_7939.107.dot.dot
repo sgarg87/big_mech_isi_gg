@@ -1,0 +1,24 @@
+digraph "Under these conditions ,  Ras-GEF activity was readily detectable ( Fig. 7 B ) ." {
+label="Under these conditions ,  Ras-GEF activity was readily detectable ( Fig. 7 B )
+.";
+conditions3 [style=filled, fillcolor=white, label=conditions];
+these2 [style=filled, fillcolor=white, label=these];
+conditions3 -> these2  [label=det];
+detectable9 [style=filled, fillcolor=white, label=detectable];
+detectable9 -> conditions3  [label=prep_under];
+activity6 [style=filled, fillcolor=white, label=activity];
+"Ras-GEF5" [style=filled, fillcolor=white, label="Ras-GEF"];
+activity6 -> "Ras-GEF5"  [label=nn];
+detectable9 -> activity6  [label=nsubj];
+was7 [style=filled, fillcolor=white, label=was];
+detectable9 -> was7  [label=cop];
+readily8 [style=filled, fillcolor=white, label=readily];
+detectable9 -> readily8  [label=advmod];
+detectable9 -> detectable9  [label=root];
+"Fig.11" [style=filled, fillcolor=white, label="Fig."];
+detectable9 -> "Fig.11"  [label=dep];
+B13 [style=filled, fillcolor=white, label=B];
+712 [style=filled, fillcolor=white, label=7];
+B13 -> 712  [label=number];
+"Fig.11" -> B13  [label=num];
+}

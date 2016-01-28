@@ -1,0 +1,32 @@
+digraph "HGF induced activation of ERK1 and ERK2 was shown to be dependent on the presence of HS moieties ." {
+label="HGF induced activation of ERK1 and ERK2 was shown to be dependent on the
+presence of HS moieties .";
+activation3 [style=filled, fillcolor=white, label=activation];
+HGF1 [style=filled, fillcolor=white, label=HGF];
+activation3 -> HGF1  [label=nn];
+induced2 [style=filled, fillcolor=white, label=induced];
+activation3 -> induced2  [label=nn];
+shown9 [style=filled, fillcolor=white, label=shown];
+shown9 -> activation3  [label=nsubjpass];
+ERK15 [style=filled, fillcolor=white, label=ERK1];
+activation3 -> ERK15  [label=prep_of];
+ERK27 [style=filled, fillcolor=white, label=ERK2];
+ERK15 -> ERK27  [label=conj_and];
+was8 [style=filled, fillcolor=white, label=was];
+shown9 -> was8  [label=auxpass];
+shown9 -> shown9  [label=root];
+dependent12 [style=filled, fillcolor=white, label=dependent];
+to10 [style=filled, fillcolor=white, label=to];
+dependent12 -> to10  [label=aux];
+be11 [style=filled, fillcolor=white, label=be];
+dependent12 -> be11  [label=cop];
+shown9 -> dependent12  [label=xcomp];
+presence15 [style=filled, fillcolor=white, label=presence];
+the14 [style=filled, fillcolor=white, label=the];
+presence15 -> the14  [label=det];
+dependent12 -> presence15  [label=prep_on];
+moieties18 [style=filled, fillcolor=white, label=moieties];
+HS17 [style=filled, fillcolor=white, label=HS];
+moieties18 -> HS17  [label=nn];
+presence15 -> moieties18  [label=prep_of];
+}

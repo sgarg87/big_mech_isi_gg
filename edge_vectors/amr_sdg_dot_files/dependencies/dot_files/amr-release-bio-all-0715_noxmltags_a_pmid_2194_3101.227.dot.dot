@@ -1,0 +1,34 @@
+digraph "It is therefore concluded that in Caco-H2 cells ,  HRASG12V deregulates PI3K-dependent activation of Rac1 as well as mediates RhoA inhibition ." {
+label="It is therefore concluded that in Caco-H2 cells ,  HRASG12V deregulates PI3K-
+dependent activation of Rac1 as well as mediates RhoA inhibition .";
+concluded4 [style=filled, fillcolor=white, label=concluded];
+It1 [style=filled, fillcolor=white, label=It];
+concluded4 -> It1  [label=nsubjpass];
+is2 [style=filled, fillcolor=white, label=is];
+concluded4 -> is2  [label=auxpass];
+therefore3 [style=filled, fillcolor=white, label=therefore];
+concluded4 -> therefore3  [label=advmod];
+concluded4 -> concluded4  [label=root];
+deregulates11 [style=filled, fillcolor=white, label=deregulates];
+that5 [style=filled, fillcolor=white, label=that];
+deregulates11 -> that5  [label=mark];
+cells8 [style=filled, fillcolor=white, label=cells];
+"Caco-H27" [style=filled, fillcolor=white, label="Caco-H2"];
+cells8 -> "Caco-H27"  [label=nn];
+deregulates11 -> cells8  [label=prep_in];
+HRASG12V10 [style=filled, fillcolor=white, label=HRASG12V];
+deregulates11 -> HRASG12V10  [label=nsubj];
+concluded4 -> deregulates11  [label=ccomp];
+activation13 [style=filled, fillcolor=white, label=activation];
+"PI3K-dependent12" [style=filled, fillcolor=white, label="PI3K-dependent"];
+activation13 -> "PI3K-dependent12"  [label=nn];
+deregulates11 -> activation13  [label=dobj];
+Rac115 [style=filled, fillcolor=white, label=Rac1];
+activation13 -> Rac115  [label=prep_of];
+mediates19 [style=filled, fillcolor=white, label=mediates];
+activation13 -> mediates19  [label=conj_and];
+inhibition21 [style=filled, fillcolor=white, label=inhibition];
+RhoA20 [style=filled, fillcolor=white, label=RhoA];
+inhibition21 -> RhoA20  [label=nn];
+mediates19 -> inhibition21  [label=dep];
+}

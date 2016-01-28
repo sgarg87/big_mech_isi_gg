@@ -1,0 +1,23 @@
+digraph "This region does not contain any predicted FoxO binding sites ." {
+label="This region does not contain any predicted FoxO binding sites .";
+region2 [style=filled, fillcolor=white, label=region];
+This1 [style=filled, fillcolor=white, label=This];
+region2 -> This1  [label=det];
+contain5 [style=filled, fillcolor=white, label=contain];
+contain5 -> region2  [label=nsubj];
+does3 [style=filled, fillcolor=white, label=does];
+contain5 -> does3  [label=aux];
+not4 [style=filled, fillcolor=white, label=not];
+contain5 -> not4  [label=neg];
+contain5 -> contain5  [label=root];
+predicted7 [style=filled, fillcolor=white, label=predicted];
+any6 [style=filled, fillcolor=white, label=any];
+predicted7 -> any6  [label=nsubj];
+contain5 -> predicted7  [label=ccomp];
+sites10 [style=filled, fillcolor=white, label=sites];
+FoxO8 [style=filled, fillcolor=white, label=FoxO];
+sites10 -> FoxO8  [label=nn];
+binding9 [style=filled, fillcolor=white, label=binding];
+sites10 -> binding9  [label=amod];
+predicted7 -> sites10  [label=dobj];
+}

@@ -1,0 +1,57 @@
+digraph "Using an antibody against Spry2 ,  we showed that endogenous Spry2 becomes phosphorylated on tyrosine in response to EGF or FGF stimulation in C2C12 cells ( Fig. 4b ,  left ) and in COS7 cells ( Fig. 4b ,  right ) ." {
+label="Using an antibody against Spry2 ,  we showed that endogenous Spry2 becomes
+phosphorylated on tyrosine in response to EGF or FGF stimulation in C2C12 cells
+( Fig. 4b ,  left ) and in COS7 cells ( Fig. 4b ,  right ) .";
+showed8 [style=filled, fillcolor=white, label=showed];
+Using1 [style=filled, fillcolor=white, label=Using];
+showed8 -> Using1  [label=vmod];
+antibody3 [style=filled, fillcolor=white, label=antibody];
+an2 [style=filled, fillcolor=white, label=an];
+antibody3 -> an2  [label=det];
+Using1 -> antibody3  [label=dobj];
+Spry25 [style=filled, fillcolor=white, label=Spry2];
+Using1 -> Spry25  [label=prep_against];
+we7 [style=filled, fillcolor=white, label=we];
+showed8 -> we7  [label=nsubj];
+showed8 -> showed8  [label=root];
+becomes12 [style=filled, fillcolor=white, label=becomes];
+that9 [style=filled, fillcolor=white, label=that];
+becomes12 -> that9  [label=mark];
+Spry211 [style=filled, fillcolor=white, label=Spry2];
+endogenous10 [style=filled, fillcolor=white, label=endogenous];
+Spry211 -> endogenous10  [label=nn];
+becomes12 -> Spry211  [label=nsubj];
+showed8 -> becomes12  [label=ccomp];
+stimulation22 [style=filled, fillcolor=white, label=stimulation];
+phosphorylated13 [style=filled, fillcolor=white, label=phosphorylated];
+stimulation22 -> phosphorylated13  [label=amod];
+tyrosine15 [style=filled, fillcolor=white, label=tyrosine];
+phosphorylated13 -> tyrosine15  [label=prep_on];
+response17 [style=filled, fillcolor=white, label=response];
+tyrosine15 -> response17  [label=prep_in];
+EGF19 [style=filled, fillcolor=white, label=EGF];
+phosphorylated13 -> EGF19  [label=prep_to];
+FGF21 [style=filled, fillcolor=white, label=FGF];
+EGF19 -> FGF21  [label=conj_or];
+becomes12 -> stimulation22  [label=xcomp];
+cells25 [style=filled, fillcolor=white, label=cells];
+C2C1224 [style=filled, fillcolor=white, label=C2C12];
+cells25 -> C2C1224  [label=num];
+becomes12 -> cells25  [label=prep_in];
+"4b28" [style=filled, fillcolor=white, label="4b"];
+"Fig.27" [style=filled, fillcolor=white, label="Fig."];
+"4b28" -> "Fig.27"  [label=nn];
+cells25 -> "4b28"  [label=appos];
+left30 [style=filled, fillcolor=white, label=left];
+"4b28" -> left30  [label=dep];
+cells35 [style=filled, fillcolor=white, label=cells];
+COS734 [style=filled, fillcolor=white, label=COS7];
+cells35 -> COS734  [label=num];
+cells25 -> cells35  [label=conj_and];
+"4b38" [style=filled, fillcolor=white, label="4b"];
+"Fig.37" [style=filled, fillcolor=white, label="Fig."];
+"4b38" -> "Fig.37"  [label=nn];
+cells35 -> "4b38"  [label=appos];
+right40 [style=filled, fillcolor=white, label=right];
+"4b38" -> right40  [label=dep];
+}

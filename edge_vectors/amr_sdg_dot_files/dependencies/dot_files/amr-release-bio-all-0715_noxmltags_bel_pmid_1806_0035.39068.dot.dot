@@ -1,0 +1,43 @@
+digraph "TPO functions through binding its receptor ,  c-Mpl ,  to activate JAK2 ,  STAT1 ,  STAT3 ,  and STAT5 in megakaryocytes and other hematopoietic cells ( 10 -- 12 ) ." {
+label="TPO functions through binding its receptor ,  c-Mpl ,  to activate JAK2 ,
+STAT1 ,  STAT3 ,  and STAT5 in megakaryocytes and other hematopoietic cells ( 10
+-- 12 ) .";
+functions2 [style=filled, fillcolor=white, label=functions];
+TPO1 [style=filled, fillcolor=white, label=TPO];
+functions2 -> TPO1  [label=nn];
+binding4 [style=filled, fillcolor=white, label=binding];
+binding4 -> functions2  [label=nsubj];
+through3 [style=filled, fillcolor=white, label=through];
+binding4 -> through3  [label=advmod];
+binding4 -> binding4  [label=root];
+receptor6 [style=filled, fillcolor=white, label=receptor];
+its5 [style=filled, fillcolor=white, label=its];
+receptor6 -> its5  [label=poss];
+binding4 -> receptor6  [label=dobj];
+"c-Mpl8" [style=filled, fillcolor=white, label="c-Mpl"];
+receptor6 -> "c-Mpl8"  [label=appos];
+activate11 [style=filled, fillcolor=white, label=activate];
+to10 [style=filled, fillcolor=white, label=to];
+activate11 -> to10  [label=aux];
+binding4 -> activate11  [label=xcomp];
+STAT114 [style=filled, fillcolor=white, label=STAT1];
+JAK21 [style=filled, fillcolor=white, label=JAK2];
+STAT114 -> JAK21  [label=num];
+activate11 -> STAT114  [label=dobj];
+STAT316 [style=filled, fillcolor=white, label=STAT3];
+STAT114 -> STAT316  [label=num];
+STAT519 [style=filled, fillcolor=white, label=STAT5];
+STAT114 -> STAT519  [label=conj_and];
+cells25 [style=filled, fillcolor=white, label=cells];
+megakaryocytes21 [style=filled, fillcolor=white, label=megakaryocytes];
+cells25 -> megakaryocytes21  [label=amod];
+other23 [style=filled, fillcolor=white, label=other];
+megakaryocytes21 -> other23  [label=conj_and];
+hematopoietic24 [style=filled, fillcolor=white, label=hematopoietic];
+cells25 -> hematopoietic24  [label=amod];
+STAT114 -> cells25  [label=prep_in];
+1027 [style=filled, fillcolor=white, label=10];
+cells25 -> 1027  [label=dep];
+1229 [style=filled, fillcolor=white, label=12];
+1027 -> 1229  [label=dep];
+}

@@ -1,0 +1,36 @@
+digraph "These results indicate that the endogenous IL-33 / ST2 signaling pathway enhances the expression of CCR3 on eosinophils ." {
+label="These results indicate that the endogenous IL-33 / ST2 signaling pathway
+enhances the expression of CCR3 on eosinophils .";
+results2 [style=filled, fillcolor=white, label=results];
+These1 [style=filled, fillcolor=white, label=These];
+results2 -> These1  [label=det];
+indicate3 [style=filled, fillcolor=white, label=indicate];
+indicate3 -> results2  [label=nsubj];
+indicate3 -> indicate3  [label=root];
+signaling10 [style=filled, fillcolor=white, label=signaling];
+that4 [style=filled, fillcolor=white, label=that];
+signaling10 -> that4  [label=mark];
+"IL-337" [style=filled, fillcolor=white, label="IL-33"];
+the5 [style=filled, fillcolor=white, label=the];
+"IL-337" -> the5  [label=det];
+endogenous6 [style=filled, fillcolor=white, label=endogenous];
+"IL-337" -> endogenous6  [label=amod];
+signaling10 -> "IL-337"  [label=dep];
+"/8" [style=filled, fillcolor=white, label="/"];
+signaling10 -> "/8"  [label=punct];
+ST29 [style=filled, fillcolor=white, label=ST2];
+signaling10 -> ST29  [label=nn];
+indicate3 -> signaling10  [label=dep];
+enhances12 [style=filled, fillcolor=white, label=enhances];
+pathway11 [style=filled, fillcolor=white, label=pathway];
+enhances12 -> pathway11  [label=advmod];
+signaling10 -> enhances12  [label=dep];
+expression14 [style=filled, fillcolor=white, label=expression];
+the13 [style=filled, fillcolor=white, label=the];
+expression14 -> the13  [label=det];
+enhances12 -> expression14  [label=dobj];
+CCR316 [style=filled, fillcolor=white, label=CCR3];
+expression14 -> CCR316  [label=prep_of];
+eosinophils18 [style=filled, fillcolor=white, label=eosinophils];
+enhances12 -> eosinophils18  [label=prep_on];
+}

@@ -1,0 +1,28 @@
+digraph "Differential BRAFV600E ,  KRASG12V and HRASG12V effect on the migration and invasion ability of Caco-2 cells in vitro" {
+label="Differential BRAFV600E ,  KRASG12V and HRASG12V effect on the migration and
+invasion ability of Caco-2 cells in vitro";
+BRAFV600E2 [style=filled, fillcolor=white, label=BRAFV600E];
+Differential1 [style=filled, fillcolor=white, label=Differential];
+BRAFV600E2 -> Differential1  [label=nn];
+BRAFV600E2 -> BRAFV600E2  [label=root];
+KRASG12V4 [style=filled, fillcolor=white, label=KRASG12V];
+BRAFV600E2 -> KRASG12V4  [label=conj_and];
+effect7 [style=filled, fillcolor=white, label=effect];
+HRASG12V6 [style=filled, fillcolor=white, label=HRASG12V];
+effect7 -> HRASG12V6  [label=num];
+BRAFV600E2 -> effect7  [label=conj_and];
+ability13 [style=filled, fillcolor=white, label=ability];
+the9 [style=filled, fillcolor=white, label=the];
+ability13 -> the9  [label=det];
+migration10 [style=filled, fillcolor=white, label=migration];
+ability13 -> migration10  [label=nn];
+invasion12 [style=filled, fillcolor=white, label=invasion];
+migration10 -> invasion12  [label=conj_and];
+BRAFV600E2 -> ability13  [label=prep_on];
+cells16 [style=filled, fillcolor=white, label=cells];
+"Caco-215" [style=filled, fillcolor=white, label="Caco-2"];
+cells16 -> "Caco-215"  [label=nn];
+ability13 -> cells16  [label=prep_of];
+vitro18 [style=filled, fillcolor=white, label=vitro];
+BRAFV600E2 -> vitro18  [label=prep_in];
+}

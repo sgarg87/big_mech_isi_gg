@@ -1,0 +1,46 @@
+digraph "CX3CR1 may also be of importance as it confers a survival signal ,  which prevents cell death of monocytes and foam cells -LSB- 52 -RSB- ." {
+label="CX3CR1 may also be of importance as it confers a survival signal ,  which
+prevents cell death of monocytes and foam cells -LSB- 52 -RSB- .";
+be4 [style=filled, fillcolor=white, label=be];
+CX3CR1 [style=filled, fillcolor=white, label=CX3CR1];
+be4 -> CX3CR1  [label=nsubj];
+may2 [style=filled, fillcolor=white, label=may];
+be4 -> may2  [label=aux];
+also3 [style=filled, fillcolor=white, label=also];
+be4 -> also3  [label=advmod];
+be4 -> be4  [label=root];
+importance6 [style=filled, fillcolor=white, label=importance];
+be4 -> importance6  [label=prep_of];
+confers9 [style=filled, fillcolor=white, label=confers];
+as7 [style=filled, fillcolor=white, label=as];
+confers9 -> as7  [label=mark];
+it8 [style=filled, fillcolor=white, label=it];
+confers9 -> it8  [label=nsubj];
+be4 -> confers9  [label=advcl];
+signal12 [style=filled, fillcolor=white, label=signal];
+a10 [style=filled, fillcolor=white, label=a];
+signal12 -> a10  [label=det];
+survival11 [style=filled, fillcolor=white, label=survival];
+signal12 -> survival11  [label=nn];
+confers9 -> signal12  [label=dobj];
+prevents15 [style=filled, fillcolor=white, label=prevents];
+which14 [style=filled, fillcolor=white, label=which];
+prevents15 -> which14  [label=nsubj];
+signal12 -> prevents15  [label=rcmod];
+death17 [style=filled, fillcolor=white, label=death];
+cell16 [style=filled, fillcolor=white, label=cell];
+death17 -> cell16  [label=nn];
+"-LSB-23" [style=filled, fillcolor=white, label="-LSB-"];
+"-LSB-23" -> death17  [label=nsubj];
+monocytes19 [style=filled, fillcolor=white, label=monocytes];
+death17 -> monocytes19  [label=prep_of];
+cells22 [style=filled, fillcolor=white, label=cells];
+foam21 [style=filled, fillcolor=white, label=foam];
+cells22 -> foam21  [label=nn];
+monocytes19 -> cells22  [label=conj_and];
+prevents15 -> "-LSB-23"  [label=dep];
+"-RSB-25" [style=filled, fillcolor=white, label="-RSB-"];
+5224 [style=filled, fillcolor=white, label=52];
+"-RSB-25" -> 5224  [label=num];
+"-LSB-23" -> "-RSB-25"  [label=dobj];
+}

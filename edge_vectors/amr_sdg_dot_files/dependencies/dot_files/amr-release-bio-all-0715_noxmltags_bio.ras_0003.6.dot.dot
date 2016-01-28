@@ -1,0 +1,21 @@
+digraph "H-Ras ubiquitination sites were also determined by the same approach ." {
+label="H-Ras ubiquitination sites were also determined by the same approach .";
+sites3 [style=filled, fillcolor=white, label=sites];
+"H-Ras1" [style=filled, fillcolor=white, label="H-Ras"];
+sites3 -> "H-Ras1"  [label=amod];
+ubiquitination2 [style=filled, fillcolor=white, label=ubiquitination];
+sites3 -> ubiquitination2  [label=nn];
+determined6 [style=filled, fillcolor=white, label=determined];
+determined6 -> sites3  [label=nsubjpass];
+were4 [style=filled, fillcolor=white, label=were];
+determined6 -> were4  [label=auxpass];
+also5 [style=filled, fillcolor=white, label=also];
+determined6 -> also5  [label=advmod];
+determined6 -> determined6  [label=root];
+approach10 [style=filled, fillcolor=white, label=approach];
+the8 [style=filled, fillcolor=white, label=the];
+approach10 -> the8  [label=det];
+same9 [style=filled, fillcolor=white, label=same];
+approach10 -> same9  [label=amod];
+determined6 -> approach10  [label=agent];
+}

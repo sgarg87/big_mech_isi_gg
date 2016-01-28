@@ -1,0 +1,39 @@
+digraph "The ability to restore α-catenin expression and localization under these conditions argues against the notion that Snail transcriptionally represses α-catenin ." {
+label="The ability to restore α-catenin expression and localization under these
+conditions argues against the notion that Snail transcriptionally represses
+α-catenin .";
+ability2 [style=filled, fillcolor=white, label=ability];
+The1 [style=filled, fillcolor=white, label=The];
+ability2 -> The1  [label=det];
+argues12 [style=filled, fillcolor=white, label=argues];
+argues12 -> ability2  [label=nsubj];
+restore4 [style=filled, fillcolor=white, label=restore];
+to3 [style=filled, fillcolor=white, label=to];
+restore4 -> to3  [label=aux];
+ability2 -> restore4  [label=vmod];
+expression6 [style=filled, fillcolor=white, label=expression];
+"α-catenin5" [style=filled, fillcolor=white, label="α-catenin"];
+expression6 -> "α-catenin5"  [label=amod];
+restore4 -> expression6  [label=dobj];
+localization8 [style=filled, fillcolor=white, label=localization];
+expression6 -> localization8  [label=conj_and];
+conditions11 [style=filled, fillcolor=white, label=conditions];
+these10 [style=filled, fillcolor=white, label=these];
+conditions11 -> these10  [label=det];
+restore4 -> conditions11  [label=prep_under];
+argues12 -> argues12  [label=root];
+notion15 [style=filled, fillcolor=white, label=notion];
+the14 [style=filled, fillcolor=white, label=the];
+notion15 -> the14  [label=det];
+argues12 -> notion15  [label=prep_against];
+represses19 [style=filled, fillcolor=white, label=represses];
+that16 [style=filled, fillcolor=white, label=that];
+represses19 -> that16  [label=mark];
+Snail17 [style=filled, fillcolor=white, label=Snail];
+represses19 -> Snail17  [label=nsubj];
+transcriptionally18 [style=filled, fillcolor=white, label=transcriptionally];
+represses19 -> transcriptionally18  [label=advmod];
+argues12 -> represses19  [label=ccomp];
+"α-catenin20" [style=filled, fillcolor=white, label="α-catenin"];
+represses19 -> "α-catenin20"  [label=acomp];
+}

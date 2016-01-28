@@ -1,0 +1,53 @@
+digraph "These compounds interact selectively with the GDP form of K-Ras-G12C protein ( Figure 2 ) and bind at a pocket near switch 2 that had not been apparent from analysis of crystal structures ." {
+label="These compounds interact selectively with the GDP form of K-Ras-G12C protein (
+Figure 2 ) and bind at a pocket near switch 2 that had not been apparent from
+analysis of crystal structures .";
+compounds2 [style=filled, fillcolor=white, label=compounds];
+These1 [style=filled, fillcolor=white, label=These];
+compounds2 -> These1  [label=det];
+interact3 [style=filled, fillcolor=white, label=interact];
+interact3 -> compounds2  [label=nsubj];
+interact3 -> interact3  [label=root];
+selectively4 [style=filled, fillcolor=white, label=selectively];
+interact3 -> selectively4  [label=advmod];
+form8 [style=filled, fillcolor=white, label=form];
+the6 [style=filled, fillcolor=white, label=the];
+form8 -> the6  [label=det];
+GDP7 [style=filled, fillcolor=white, label=GDP];
+form8 -> GDP7  [label=nn];
+interact3 -> form8  [label=prep_with];
+protein11 [style=filled, fillcolor=white, label=protein];
+"K-Ras-G12C0" [style=filled, fillcolor=white, label="K-Ras-G12C"];
+protein11 -> "K-Ras-G12C0"  [label=nn];
+form8 -> protein11  [label=prep_of];
+Figure13 [style=filled, fillcolor=white, label=Figure];
+protein11 -> Figure13  [label=appos];
+214 [style=filled, fillcolor=white, label=2];
+Figure13 -> 214  [label=num];
+bind17 [style=filled, fillcolor=white, label=bind];
+protein11 -> bind17  [label=conj_and];
+pocket20 [style=filled, fillcolor=white, label=pocket];
+a19 [style=filled, fillcolor=white, label=a];
+pocket20 -> a19  [label=det];
+bind17 -> pocket20  [label=prep_at];
+switch22 [style=filled, fillcolor=white, label=switch];
+pocket20 -> switch22  [label=prep_near];
+223 [style=filled, fillcolor=white, label=2];
+switch22 -> 223  [label=num];
+apparent28 [style=filled, fillcolor=white, label=apparent];
+that24 [style=filled, fillcolor=white, label=that];
+apparent28 -> that24  [label=nsubj];
+had25 [style=filled, fillcolor=white, label=had];
+apparent28 -> had25  [label=aux];
+not26 [style=filled, fillcolor=white, label=not];
+apparent28 -> not26  [label=neg];
+been27 [style=filled, fillcolor=white, label=been];
+apparent28 -> been27  [label=cop];
+protein11 -> apparent28  [label=dep];
+analysis30 [style=filled, fillcolor=white, label=analysis];
+apparent28 -> analysis30  [label=prep_from];
+structures33 [style=filled, fillcolor=white, label=structures];
+crystal32 [style=filled, fillcolor=white, label=crystal];
+structures33 -> crystal32  [label=nn];
+analysis30 -> structures33  [label=prep_of];
+}

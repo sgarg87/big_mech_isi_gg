@@ -1,0 +1,55 @@
+digraph "We hypothesized that MEK inhibition activates AKT by inhibiting ERK activity ,  which blocks an inhibitory threonine phosphorylation on the JM domains of EGFR and HER2 ,  thereby increasing ERBB3 phosphorylation ." {
+label="We hypothesized that MEK inhibition activates AKT by inhibiting ERK activity ,
+which blocks an inhibitory threonine phosphorylation on the JM domains of EGFR
+and HER2 ,  thereby increasing ERBB3 phosphorylation .";
+hypothesized2 [style=filled, fillcolor=white, label=hypothesized];
+We1 [style=filled, fillcolor=white, label=We];
+hypothesized2 -> We1  [label=nsubj];
+hypothesized2 -> hypothesized2  [label=root];
+activates6 [style=filled, fillcolor=white, label=activates];
+that3 [style=filled, fillcolor=white, label=that];
+activates6 -> that3  [label=mark];
+inhibition5 [style=filled, fillcolor=white, label=inhibition];
+MEK4 [style=filled, fillcolor=white, label=MEK];
+inhibition5 -> MEK4  [label=nn];
+activates6 -> inhibition5  [label=nsubj];
+hypothesized2 -> activates6  [label=ccomp];
+AKT7 [style=filled, fillcolor=white, label=AKT];
+activates6 -> AKT7  [label=dobj];
+activity11 [style=filled, fillcolor=white, label=activity];
+inhibiting9 [style=filled, fillcolor=white, label=inhibiting];
+activity11 -> inhibiting9  [label=amod];
+ERK10 [style=filled, fillcolor=white, label=ERK];
+activity11 -> ERK10  [label=nn];
+activates6 -> activity11  [label=prep_by];
+blocks14 [style=filled, fillcolor=white, label=blocks];
+which13 [style=filled, fillcolor=white, label=which];
+blocks14 -> which13  [label=nsubj];
+activity11 -> blocks14  [label=rcmod];
+phosphorylation18 [style=filled, fillcolor=white, label=phosphorylation];
+an15 [style=filled, fillcolor=white, label=an];
+phosphorylation18 -> an15  [label=det];
+threonine17 [style=filled, fillcolor=white, label=threonine];
+inhibitory16 [style=filled, fillcolor=white, label=inhibitory];
+threonine17 -> inhibitory16  [label=advmod];
+phosphorylation18 -> threonine17  [label=amod];
+blocks14 -> phosphorylation18  [label=dobj];
+domains22 [style=filled, fillcolor=white, label=domains];
+the20 [style=filled, fillcolor=white, label=the];
+domains22 -> the20  [label=det];
+JM21 [style=filled, fillcolor=white, label=JM];
+domains22 -> JM21  [label=nn];
+blocks14 -> domains22  [label=prep_on];
+EGFR24 [style=filled, fillcolor=white, label=EGFR];
+domains22 -> EGFR24  [label=prep_of];
+HER226 [style=filled, fillcolor=white, label=HER2];
+EGFR24 -> HER226  [label=conj_and];
+increasing29 [style=filled, fillcolor=white, label=increasing];
+thereby28 [style=filled, fillcolor=white, label=thereby];
+increasing29 -> thereby28  [label=advmod];
+blocks14 -> increasing29  [label=vmod];
+phosphorylation31 [style=filled, fillcolor=white, label=phosphorylation];
+ERBB330 [style=filled, fillcolor=white, label=ERBB3];
+phosphorylation31 -> ERBB330  [label=nn];
+increasing29 -> phosphorylation31  [label=dobj];
+}

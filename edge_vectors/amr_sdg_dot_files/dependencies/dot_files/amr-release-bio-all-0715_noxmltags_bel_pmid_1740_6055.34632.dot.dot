@@ -1,0 +1,42 @@
+digraph "c-Src has also been shown to be activated in response to ROS ,  including H2O2 ,  in different cell types ( 19 ,  20 ,  33 ,  37 ,  50 ) ." {
+label="c-Src has also been shown to be activated in response to ROS ,  including H2O2
+,  in different cell types ( 19 ,  20 ,  33 ,  37 ,  50 ) .";
+shown5 [style=filled, fillcolor=white, label=shown];
+"c-Src1" [style=filled, fillcolor=white, label="c-Src"];
+shown5 -> "c-Src1"  [label=nsubjpass];
+has2 [style=filled, fillcolor=white, label=has];
+shown5 -> has2  [label=aux];
+also3 [style=filled, fillcolor=white, label=also];
+shown5 -> also3  [label=advmod];
+been4 [style=filled, fillcolor=white, label=been];
+shown5 -> been4  [label=auxpass];
+shown5 -> shown5  [label=root];
+activated8 [style=filled, fillcolor=white, label=activated];
+to6 [style=filled, fillcolor=white, label=to];
+activated8 -> to6  [label=aux];
+be7 [style=filled, fillcolor=white, label=be];
+activated8 -> be7  [label=auxpass];
+shown5 -> activated8  [label=xcomp];
+response10 [style=filled, fillcolor=white, label=response];
+activated8 -> response10  [label=prep_in];
+ROS12 [style=filled, fillcolor=white, label=ROS];
+activated8 -> ROS12  [label=prep_to];
+H2O215 [style=filled, fillcolor=white, label=H2O2];
+activated8 -> H2O215  [label=prep_including];
+types20 [style=filled, fillcolor=white, label=types];
+different18 [style=filled, fillcolor=white, label=different];
+types20 -> different18  [label=amod];
+cell19 [style=filled, fillcolor=white, label=cell];
+types20 -> cell19  [label=nn];
+H2O215 -> types20  [label=prep_in];
+1922 [style=filled, fillcolor=white, label=19];
+types20 -> 1922  [label=dep];
+2024 [style=filled, fillcolor=white, label=20];
+1922 -> 2024  [label=amod];
+3326 [style=filled, fillcolor=white, label=33];
+1922 -> 3326  [label=amod];
+3728 [style=filled, fillcolor=white, label=37];
+1922 -> 3728  [label=amod];
+503 [style=filled, fillcolor=white, label=50];
+1922 -> 503  [label=amod];
+}

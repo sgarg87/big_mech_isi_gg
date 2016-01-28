@@ -1,0 +1,38 @@
+digraph "Analysis of human syndromes caused by germline mutations in H-Ras or K-Ras supports the idea that K-Ras is a stronger oncogene ." {
+label="Analysis of human syndromes caused by germline mutations in H-Ras or K-Ras
+supports the idea that K-Ras is a stronger oncogene .";
+supports13 [style=filled, fillcolor=white, label=supports];
+Analysis1 [style=filled, fillcolor=white, label=Analysis];
+supports13 -> Analysis1  [label=nsubj];
+syndromes4 [style=filled, fillcolor=white, label=syndromes];
+human3 [style=filled, fillcolor=white, label=human];
+syndromes4 -> human3  [label=amod];
+Analysis1 -> syndromes4  [label=prep_of];
+caused5 [style=filled, fillcolor=white, label=caused];
+syndromes4 -> caused5  [label=vmod];
+mutations8 [style=filled, fillcolor=white, label=mutations];
+germline7 [style=filled, fillcolor=white, label=germline];
+mutations8 -> germline7  [label=amod];
+caused5 -> mutations8  [label=agent];
+"H-Ras10" [style=filled, fillcolor=white, label="H-Ras"];
+mutations8 -> "H-Ras10"  [label=prep_in];
+"K-Ras12" [style=filled, fillcolor=white, label="K-Ras"];
+"H-Ras10" -> "K-Ras12"  [label=conj_or];
+supports13 -> supports13  [label=root];
+idea15 [style=filled, fillcolor=white, label=idea];
+the14 [style=filled, fillcolor=white, label=the];
+idea15 -> the14  [label=det];
+supports13 -> idea15  [label=dobj];
+oncogene21 [style=filled, fillcolor=white, label=oncogene];
+that16 [style=filled, fillcolor=white, label=that];
+oncogene21 -> that16  [label=mark];
+"K-Ras17" [style=filled, fillcolor=white, label="K-Ras"];
+oncogene21 -> "K-Ras17"  [label=nsubj];
+is18 [style=filled, fillcolor=white, label=is];
+oncogene21 -> is18  [label=cop];
+a19 [style=filled, fillcolor=white, label=a];
+oncogene21 -> a19  [label=det];
+stronger20 [style=filled, fillcolor=white, label=stronger];
+oncogene21 -> stronger20  [label=amod];
+supports13 -> oncogene21  [label=ccomp];
+}

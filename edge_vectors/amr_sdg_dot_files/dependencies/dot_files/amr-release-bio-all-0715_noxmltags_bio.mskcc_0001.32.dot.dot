@@ -1,0 +1,41 @@
+digraph "However ,  mutation of the feedback sites significantly increased the transforming activities of B-Raf proteins with intermediate or impaired kinase activity ( Fig. 4A ) ." {
+label="However ,  mutation of the feedback sites significantly increased the
+transforming activities of B-Raf proteins with intermediate or impaired kinase
+activity ( Fig. 4A ) .";
+increased9 [style=filled, fillcolor=white, label=increased];
+However1 [style=filled, fillcolor=white, label=However];
+increased9 -> However1  [label=advmod];
+mutation3 [style=filled, fillcolor=white, label=mutation];
+increased9 -> mutation3  [label=nsubj];
+sites7 [style=filled, fillcolor=white, label=sites];
+the5 [style=filled, fillcolor=white, label=the];
+sites7 -> the5  [label=det];
+feedback6 [style=filled, fillcolor=white, label=feedback];
+sites7 -> feedback6  [label=nn];
+mutation3 -> sites7  [label=prep_of];
+significantly8 [style=filled, fillcolor=white, label=significantly];
+increased9 -> significantly8  [label=advmod];
+increased9 -> increased9  [label=root];
+activities12 [style=filled, fillcolor=white, label=activities];
+the10 [style=filled, fillcolor=white, label=the];
+activities12 -> the10  [label=det];
+transforming11 [style=filled, fillcolor=white, label=transforming];
+activities12 -> transforming11  [label=amod];
+increased9 -> activities12  [label=dobj];
+proteins15 [style=filled, fillcolor=white, label=proteins];
+"B-Raf14" [style=filled, fillcolor=white, label="B-Raf"];
+proteins15 -> "B-Raf14"  [label=amod];
+activities12 -> proteins15  [label=prep_of];
+activity21 [style=filled, fillcolor=white, label=activity];
+intermediate17 [style=filled, fillcolor=white, label=intermediate];
+activity21 -> intermediate17  [label=amod];
+impaired19 [style=filled, fillcolor=white, label=impaired];
+intermediate17 -> impaired19  [label=conj_or];
+kinase20 [style=filled, fillcolor=white, label=kinase];
+activity21 -> kinase20  [label=amod];
+increased9 -> activity21  [label=prep_with];
+"4A2" [style=filled, fillcolor=white, label="4A"];
+"Fig.23" [style=filled, fillcolor=white, label="Fig."];
+"4A2" -> "Fig.23"  [label=number];
+activity21 -> "4A2"  [label=dep];
+}

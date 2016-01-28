@@ -1,0 +1,36 @@
+digraph "Although the MCF-7 and HBL100 cell lines have K-RASwt status ,  these cells presented high basal YB-1 phosphorylation ." {
+label="Although the MCF-7 and HBL100 cell lines have K-RASwt status ,  these cells
+presented high basal YB-1 phosphorylation .";
+have8 [style=filled, fillcolor=white, label=have];
+Although1 [style=filled, fillcolor=white, label=Although];
+have8 -> Although1  [label=mark];
+"MCF-73" [style=filled, fillcolor=white, label="MCF-7"];
+the2 [style=filled, fillcolor=white, label=the];
+"MCF-73" -> the2  [label=det];
+have8 -> "MCF-73"  [label=nsubj];
+lines7 [style=filled, fillcolor=white, label=lines];
+HBL1005 [style=filled, fillcolor=white, label=HBL100];
+lines7 -> HBL1005  [label=nn];
+cell6 [style=filled, fillcolor=white, label=cell];
+lines7 -> cell6  [label=nn];
+"MCF-73" -> lines7  [label=conj_and];
+presented14 [style=filled, fillcolor=white, label=presented];
+presented14 -> have8  [label=advcl];
+status10 [style=filled, fillcolor=white, label=status];
+"K-RASwt9" [style=filled, fillcolor=white, label="K-RASwt"];
+status10 -> "K-RASwt9"  [label=amod];
+have8 -> status10  [label=dobj];
+cells13 [style=filled, fillcolor=white, label=cells];
+these12 [style=filled, fillcolor=white, label=these];
+cells13 -> these12  [label=det];
+presented14 -> cells13  [label=nsubj];
+presented14 -> presented14  [label=root];
+phosphorylation18 [style=filled, fillcolor=white, label=phosphorylation];
+high15 [style=filled, fillcolor=white, label=high];
+phosphorylation18 -> high15  [label=amod];
+basal16 [style=filled, fillcolor=white, label=basal];
+phosphorylation18 -> basal16  [label=amod];
+"YB-17" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation18 -> "YB-17"  [label=nn];
+presented14 -> phosphorylation18  [label=dobj];
+}

@@ -1,0 +1,43 @@
+digraph "Expression of the Snail transgene did not block terminal differentiation in the hyperproliferative epidermis ,  but it distorted it markedly ( Figure 3A -- 3H ) ." {
+label="Expression of the Snail transgene did not block terminal differentiation in the
+hyperproliferative epidermis ,  but it distorted it markedly ( Figure 3A -- 3H )
+.";
+block8 [style=filled, fillcolor=white, label=block];
+Expression1 [style=filled, fillcolor=white, label=Expression];
+block8 -> Expression1  [label=nsubj];
+transgene5 [style=filled, fillcolor=white, label=transgene];
+the3 [style=filled, fillcolor=white, label=the];
+transgene5 -> the3  [label=det];
+Snail4 [style=filled, fillcolor=white, label=Snail];
+transgene5 -> Snail4  [label=nn];
+Expression1 -> transgene5  [label=prep_of];
+did6 [style=filled, fillcolor=white, label=did];
+block8 -> did6  [label=aux];
+not7 [style=filled, fillcolor=white, label=not];
+block8 -> not7  [label=neg];
+block8 -> block8  [label=root];
+differentiation10 [style=filled, fillcolor=white, label=differentiation];
+terminal9 [style=filled, fillcolor=white, label=terminal];
+differentiation10 -> terminal9  [label=nn];
+block8 -> differentiation10  [label=dobj];
+epidermis14 [style=filled, fillcolor=white, label=epidermis];
+the12 [style=filled, fillcolor=white, label=the];
+epidermis14 -> the12  [label=det];
+hyperproliferative13 [style=filled, fillcolor=white, label=hyperproliferative];
+epidermis14 -> hyperproliferative13  [label=amod];
+block8 -> epidermis14  [label=prep_in];
+distorted18 [style=filled, fillcolor=white, label=distorted];
+it17 [style=filled, fillcolor=white, label=it];
+distorted18 -> it17  [label=nsubj];
+block8 -> distorted18  [label=conj_but];
+markedly20 [style=filled, fillcolor=white, label=markedly];
+it19 [style=filled, fillcolor=white, label=it];
+markedly20 -> it19  [label=nsubj];
+distorted18 -> markedly20  [label=xcomp];
+Figure22 [style=filled, fillcolor=white, label=Figure];
+markedly20 -> Figure22  [label=dep];
+"3A2" [style=filled, fillcolor=white, label="3A"];
+Figure22 -> "3A2"  [label=num];
+"3H25" [style=filled, fillcolor=white, label="3H"];
+Figure22 -> "3H25"  [label=dep];
+}

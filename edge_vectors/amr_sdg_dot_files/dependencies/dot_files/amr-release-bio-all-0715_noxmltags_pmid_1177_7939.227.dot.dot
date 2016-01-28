@@ -1,0 +1,32 @@
+digraph "kon and koff kinetic rates were obtained by simple Langmuir fitting model ( biaevaluation software v2 .1 ) ." {
+label="kon and koff kinetic rates were obtained by simple Langmuir fitting model (
+biaevaluation software v2 .1 ) .";
+rates5 [style=filled, fillcolor=white, label=rates];
+kon1 [style=filled, fillcolor=white, label=kon];
+rates5 -> kon1  [label=nn];
+koff3 [style=filled, fillcolor=white, label=koff];
+kon1 -> koff3  [label=conj_and];
+kinetic4 [style=filled, fillcolor=white, label=kinetic];
+rates5 -> kinetic4  [label=nn];
+obtained7 [style=filled, fillcolor=white, label=obtained];
+obtained7 -> rates5  [label=nsubjpass];
+were6 [style=filled, fillcolor=white, label=were];
+obtained7 -> were6  [label=auxpass];
+obtained7 -> obtained7  [label=root];
+model12 [style=filled, fillcolor=white, label=model];
+simple9 [style=filled, fillcolor=white, label=simple];
+model12 -> simple9  [label=amod];
+Langmuir10 [style=filled, fillcolor=white, label=Langmuir];
+model12 -> Langmuir10  [label=nn];
+fitting11 [style=filled, fillcolor=white, label=fitting];
+model12 -> fitting11  [label=amod];
+obtained7 -> model12  [label=agent];
+v216 [style=filled, fillcolor=white, label=v2];
+biaevaluation14 [style=filled, fillcolor=white, label=biaevaluation];
+v216 -> biaevaluation14  [label=amod];
+software15 [style=filled, fillcolor=white, label=software];
+v216 -> software15  [label=nn];
+obtained7 -> v216  [label=dep];
+".117" [style=filled, fillcolor=white, label=".1"];
+v216 -> ".117"  [label=dep];
+}

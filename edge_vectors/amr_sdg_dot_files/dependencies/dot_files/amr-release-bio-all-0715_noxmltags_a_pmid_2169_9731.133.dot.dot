@@ -1,0 +1,57 @@
+digraph "While IGF-1 levels correlated strongly with the ability of MØCM to stimulate neoplastic growth ,  IGF-1 induced proliferation of these non-neoplastic and neoplastic mouse lung cell lines has not been demonstrated ." {
+label="While IGF-1 levels correlated strongly with the ability of MØCM to stimulate
+neoplastic growth ,  IGF-1 induced proliferation of these non-neoplastic and
+neoplastic mouse lung cell lines has not been demonstrated .";
+correlated4 [style=filled, fillcolor=white, label=correlated];
+While1 [style=filled, fillcolor=white, label=While];
+correlated4 -> While1  [label=mark];
+levels3 [style=filled, fillcolor=white, label=levels];
+"IGF-12" [style=filled, fillcolor=white, label="IGF-1"];
+levels3 -> "IGF-12"  [label=nn];
+correlated4 -> levels3  [label=nsubj];
+demonstrated31 [style=filled, fillcolor=white, label=demonstrated];
+demonstrated31 -> correlated4  [label=advcl];
+strongly5 [style=filled, fillcolor=white, label=strongly];
+correlated4 -> strongly5  [label=advmod];
+ability8 [style=filled, fillcolor=white, label=ability];
+the7 [style=filled, fillcolor=white, label=the];
+ability8 -> the7  [label=det];
+correlated4 -> ability8  [label=prep_with];
+"MØCM10" [style=filled, fillcolor=white, label="MØCM"];
+ability8 -> "MØCM10"  [label=prep_of];
+stimulate12 [style=filled, fillcolor=white, label=stimulate];
+to11 [style=filled, fillcolor=white, label=to];
+stimulate12 -> to11  [label=aux];
+correlated4 -> stimulate12  [label=xcomp];
+growth14 [style=filled, fillcolor=white, label=growth];
+neoplastic13 [style=filled, fillcolor=white, label=neoplastic];
+growth14 -> neoplastic13  [label=amod];
+stimulate12 -> growth14  [label=dobj];
+proliferation18 [style=filled, fillcolor=white, label=proliferation];
+"IGF-16" [style=filled, fillcolor=white, label="IGF-1"];
+proliferation18 -> "IGF-16"  [label=nn];
+induced17 [style=filled, fillcolor=white, label=induced];
+proliferation18 -> induced17  [label=nn];
+demonstrated31 -> proliferation18  [label=nsubjpass];
+lines27 [style=filled, fillcolor=white, label=lines];
+these20 [style=filled, fillcolor=white, label=these];
+lines27 -> these20  [label=det];
+"non-neoplastic21" [style=filled, fillcolor=white, label="non-neoplastic"];
+lines27 -> "non-neoplastic21"  [label=amod];
+neoplastic23 [style=filled, fillcolor=white, label=neoplastic];
+"non-neoplastic21" -> neoplastic23  [label=conj_and];
+mouse24 [style=filled, fillcolor=white, label=mouse];
+lines27 -> mouse24  [label=nn];
+lung25 [style=filled, fillcolor=white, label=lung];
+lines27 -> lung25  [label=nn];
+cell26 [style=filled, fillcolor=white, label=cell];
+lines27 -> cell26  [label=nn];
+proliferation18 -> lines27  [label=prep_of];
+has28 [style=filled, fillcolor=white, label=has];
+demonstrated31 -> has28  [label=aux];
+not29 [style=filled, fillcolor=white, label=not];
+demonstrated31 -> not29  [label=neg];
+been30 [style=filled, fillcolor=white, label=been];
+demonstrated31 -> been30  [label=auxpass];
+demonstrated31 -> demonstrated31  [label=root];
+}

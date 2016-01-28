@@ -1,0 +1,42 @@
+digraph "PCR analyses identified transient Snail mRNA expression during a period of skin embryogenesis when waves of hair follicles are forming ( unpublished data ) ." {
+label="PCR analyses identified transient Snail mRNA expression during a period of skin
+embryogenesis when waves of hair follicles are forming ( unpublished data ) .";
+analyses2 [style=filled, fillcolor=white, label=analyses];
+PCR1 [style=filled, fillcolor=white, label=PCR];
+analyses2 -> PCR1  [label=nn];
+identified3 [style=filled, fillcolor=white, label=identified];
+identified3 -> analyses2  [label=nsubj];
+identified3 -> identified3  [label=root];
+expression7 [style=filled, fillcolor=white, label=expression];
+transient4 [style=filled, fillcolor=white, label=transient];
+expression7 -> transient4  [label=amod];
+Snail5 [style=filled, fillcolor=white, label=Snail];
+expression7 -> Snail5  [label=nn];
+mRNA6 [style=filled, fillcolor=white, label=mRNA];
+expression7 -> mRNA6  [label=amod];
+identified3 -> expression7  [label=dobj];
+period10 [style=filled, fillcolor=white, label=period];
+a9 [style=filled, fillcolor=white, label=a];
+period10 -> a9  [label=det];
+identified3 -> period10  [label=prep_during];
+embryogenesis13 [style=filled, fillcolor=white, label=embryogenesis];
+skin12 [style=filled, fillcolor=white, label=skin];
+embryogenesis13 -> skin12  [label=nn];
+period10 -> embryogenesis13  [label=prep_of];
+forming20 [style=filled, fillcolor=white, label=forming];
+when14 [style=filled, fillcolor=white, label=when];
+forming20 -> when14  [label=advmod];
+waves15 [style=filled, fillcolor=white, label=waves];
+forming20 -> waves15  [label=nsubj];
+follicles18 [style=filled, fillcolor=white, label=follicles];
+hair17 [style=filled, fillcolor=white, label=hair];
+follicles18 -> hair17  [label=nn];
+waves15 -> follicles18  [label=prep_of];
+are19 [style=filled, fillcolor=white, label=are];
+forming20 -> are19  [label=aux];
+embryogenesis13 -> forming20  [label=rcmod];
+data23 [style=filled, fillcolor=white, label=data];
+unpublished22 [style=filled, fillcolor=white, label=unpublished];
+data23 -> unpublished22  [label=amod];
+embryogenesis13 -> data23  [label=appos];
+}

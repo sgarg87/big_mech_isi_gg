@@ -1,0 +1,41 @@
+digraph "Here we show that after stimulation by growth factors Spry1 and Spry2 translocate to the plasma membrane and become phosphorylated on a conserved tyrosine ." {
+label="Here we show that after stimulation by growth factors Spry1 and Spry2
+translocate to the plasma membrane and become phosphorylated on a conserved
+tyrosine .";
+show3 [style=filled, fillcolor=white, label=show];
+Here1 [style=filled, fillcolor=white, label=Here];
+show3 -> Here1  [label=advmod];
+we2 [style=filled, fillcolor=white, label=we];
+show3 -> we2  [label=nsubj];
+show3 -> show3  [label=root];
+translocate13 [style=filled, fillcolor=white, label=translocate];
+that4 [style=filled, fillcolor=white, label=that];
+translocate13 -> that4  [label=mark];
+stimulation6 [style=filled, fillcolor=white, label=stimulation];
+translocate13 -> stimulation6  [label=prep_after];
+factors9 [style=filled, fillcolor=white, label=factors];
+growth8 [style=filled, fillcolor=white, label=growth];
+factors9 -> growth8  [label=nn];
+stimulation6 -> factors9  [label=prep_by];
+Spry110 [style=filled, fillcolor=white, label=Spry1];
+translocate13 -> Spry110  [label=nsubj];
+Spry21 [style=filled, fillcolor=white, label=Spry2];
+Spry110 -> Spry21  [label=conj_and];
+show3 -> translocate13  [label=ccomp];
+membrane17 [style=filled, fillcolor=white, label=membrane];
+the15 [style=filled, fillcolor=white, label=the];
+membrane17 -> the15  [label=det];
+plasma16 [style=filled, fillcolor=white, label=plasma];
+membrane17 -> plasma16  [label=nn];
+translocate13 -> membrane17  [label=prep_to];
+become19 [style=filled, fillcolor=white, label=become];
+translocate13 -> become19  [label=conj_and];
+phosphorylated20 [style=filled, fillcolor=white, label=phosphorylated];
+become19 -> phosphorylated20  [label=acomp];
+tyrosine24 [style=filled, fillcolor=white, label=tyrosine];
+a22 [style=filled, fillcolor=white, label=a];
+tyrosine24 -> a22  [label=det];
+conserved23 [style=filled, fillcolor=white, label=conserved];
+tyrosine24 -> conserved23  [label=amod];
+phosphorylated20 -> tyrosine24  [label=prep_on];
+}

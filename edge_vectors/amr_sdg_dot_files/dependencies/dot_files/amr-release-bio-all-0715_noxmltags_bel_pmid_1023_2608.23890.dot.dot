@@ -1,0 +1,55 @@
+digraph "Using a coupled assay ,  we were able to show that MLK3-mediated phosphorylation of SEK1 resulted in activation because GST-SEK1 is able to phosphorylate recombinant SAPK ? ( Fig. 5D )" {
+label="Using a coupled assay ,  we were able to show that MLK3-mediated
+phosphorylation of SEK1 resulted in activation because GST-SEK1 is able to
+phosphorylate recombinant SAPK ? ( Fig. 5D )";
+able8 [style=filled, fillcolor=white, label=able];
+Using1 [style=filled, fillcolor=white, label=Using];
+able8 -> Using1  [label=vmod];
+assay4 [style=filled, fillcolor=white, label=assay];
+a2 [style=filled, fillcolor=white, label=a];
+assay4 -> a2  [label=det];
+coupled3 [style=filled, fillcolor=white, label=coupled];
+assay4 -> coupled3  [label=amod];
+Using1 -> assay4  [label=dobj];
+we6 [style=filled, fillcolor=white, label=we];
+able8 -> we6  [label=nsubj];
+were7 [style=filled, fillcolor=white, label=were];
+able8 -> were7  [label=cop];
+able8 -> able8  [label=root];
+show10 [style=filled, fillcolor=white, label=show];
+to9 [style=filled, fillcolor=white, label=to];
+show10 -> to9  [label=aux];
+able8 -> show10  [label=xcomp];
+resulted16 [style=filled, fillcolor=white, label=resulted];
+that11 [style=filled, fillcolor=white, label=that];
+resulted16 -> that11  [label=mark];
+phosphorylation13 [style=filled, fillcolor=white, label=phosphorylation];
+"MLK3-mediated12" [style=filled, fillcolor=white, label="MLK3-mediated"];
+phosphorylation13 -> "MLK3-mediated12"  [label=nn];
+resulted16 -> phosphorylation13  [label=nsubj];
+SEK115 [style=filled, fillcolor=white, label=SEK1];
+phosphorylation13 -> SEK115  [label=prep_of];
+show10 -> resulted16  [label=ccomp];
+activation18 [style=filled, fillcolor=white, label=activation];
+resulted16 -> activation18  [label=prep_in];
+able22 [style=filled, fillcolor=white, label=able];
+because19 [style=filled, fillcolor=white, label=because];
+able22 -> because19  [label=mark];
+"GST-SEK120" [style=filled, fillcolor=white, label="GST-SEK1"];
+able22 -> "GST-SEK120"  [label=nsubj];
+is21 [style=filled, fillcolor=white, label=is];
+able22 -> is21  [label=cop];
+resulted16 -> able22  [label=advcl];
+phosphorylate24 [style=filled, fillcolor=white, label=phosphorylate];
+to23 [style=filled, fillcolor=white, label=to];
+phosphorylate24 -> to23  [label=aux];
+able22 -> phosphorylate24  [label=xcomp];
+SAPK26 [style=filled, fillcolor=white, label=SAPK];
+recombinant25 [style=filled, fillcolor=white, label=recombinant];
+SAPK26 -> recombinant25  [label=nn];
+phosphorylate24 -> SAPK26  [label=dobj];
+"5D30" [style=filled, fillcolor=white, label="5D"];
+"Fig.29" [style=filled, fillcolor=white, label="Fig."];
+"5D30" -> "Fig.29"  [label=number];
+SAPK26 -> "5D30"  [label=dep];
+}

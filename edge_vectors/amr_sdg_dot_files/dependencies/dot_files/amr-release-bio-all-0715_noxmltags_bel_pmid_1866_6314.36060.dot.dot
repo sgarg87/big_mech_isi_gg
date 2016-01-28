@@ -1,0 +1,36 @@
+digraph "from full text - Both cytokines ( IL-12 and IL-23 ) activate TYK2 and JAK2 as well as STAT1 ,  STAT3 ,  STAT4 ,  and STAT5 -LSB- 60 -RSB- ." {
+label="from full text - Both cytokines ( IL-12 and IL-23 ) activate TYK2 and JAK2 as
+well as STAT1 ,  STAT3 ,  STAT4 ,  and STAT5 -LSB- 60 -RSB- .";
+text3 [style=filled, fillcolor=white, label=text];
+full2 [style=filled, fillcolor=white, label=full];
+text3 -> full2  [label=amod];
+activate12 [style=filled, fillcolor=white, label=activate];
+activate12 -> text3  [label=prep_from];
+cytokines6 [style=filled, fillcolor=white, label=cytokines];
+Both5 [style=filled, fillcolor=white, label=Both];
+cytokines6 -> Both5  [label=det];
+activate12 -> cytokines6  [label=nsubj];
+"IL-128" [style=filled, fillcolor=white, label="IL-12"];
+cytokines6 -> "IL-128"  [label=dep];
+"IL-2310" [style=filled, fillcolor=white, label="IL-23"];
+"IL-128" -> "IL-2310"  [label=conj_and];
+activate12 -> activate12  [label=root];
+TYK213 [style=filled, fillcolor=white, label=TYK2];
+activate12 -> TYK213  [label=dobj];
+JAK215 [style=filled, fillcolor=white, label=JAK2];
+TYK213 -> JAK215  [label=conj_and];
+STAT423 [style=filled, fillcolor=white, label=STAT4];
+STAT119 [style=filled, fillcolor=white, label=STAT1];
+STAT423 -> STAT119  [label=nn];
+STAT321 [style=filled, fillcolor=white, label=STAT3];
+STAT423 -> STAT321  [label=appos];
+TYK213 -> STAT423  [label=conj_and];
+"-LSB-27" [style=filled, fillcolor=white, label="-LSB-"];
+STAT526 [style=filled, fillcolor=white, label=STAT5];
+"-LSB-27" -> STAT526  [label=nn];
+STAT423 -> "-LSB-27"  [label=conj_and];
+"-RSB-29" [style=filled, fillcolor=white, label="-RSB-"];
+6028 [style=filled, fillcolor=white, label=60];
+"-RSB-29" -> 6028  [label=num];
+STAT423 -> "-RSB-29"  [label=dep];
+}

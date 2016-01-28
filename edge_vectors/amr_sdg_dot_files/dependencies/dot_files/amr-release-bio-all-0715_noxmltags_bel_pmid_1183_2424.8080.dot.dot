@@ -1,0 +1,45 @@
+digraph "We have previously shown that B cell lymphoma/leukemia -2 ( bcl-2 ) - / - mice develop cystic kidneys and exhibit sustained phosphorylation of FAK and paxillin ." {
+label="We have previously shown that B cell lymphoma/leukemia -2 ( bcl-2 ) - / - mice
+develop cystic kidneys and exhibit sustained phosphorylation of FAK and paxillin
+.";
+shown4 [style=filled, fillcolor=white, label=shown];
+We1 [style=filled, fillcolor=white, label=We];
+shown4 -> We1  [label=nsubj];
+have2 [style=filled, fillcolor=white, label=have];
+shown4 -> have2  [label=aux];
+previously3 [style=filled, fillcolor=white, label=previously];
+shown4 -> previously3  [label=advmod];
+shown4 -> shown4  [label=root];
+develop17 [style=filled, fillcolor=white, label=develop];
+that5 [style=filled, fillcolor=white, label=that];
+develop17 -> that5  [label=mark];
+"lymphoma/leukemia8" [style=filled, fillcolor=white, label="lymphoma/leukemia"];
+B6 [style=filled, fillcolor=white, label=B];
+"lymphoma/leukemia8" -> B6  [label=nn];
+cell7 [style=filled, fillcolor=white, label=cell];
+"lymphoma/leukemia8" -> cell7  [label=nn];
+develop17 -> "lymphoma/leukemia8"  [label=nsubj];
+mice16 [style=filled, fillcolor=white, label=mice];
+"-29" [style=filled, fillcolor=white, label="-2"];
+mice16 -> "-29"  [label=npadvmod];
+"bcl-211" [style=filled, fillcolor=white, label="bcl-2"];
+"-29" -> "bcl-211"  [label=dep];
+"/14" [style=filled, fillcolor=white, label="/"];
+"-29" -> "/14"  [label=dep];
+develop17 -> mice16  [label=advmod];
+shown4 -> develop17  [label=ccomp];
+kidneys19 [style=filled, fillcolor=white, label=kidneys];
+cystic18 [style=filled, fillcolor=white, label=cystic];
+kidneys19 -> cystic18  [label=amod];
+develop17 -> kidneys19  [label=dobj];
+exhibit21 [style=filled, fillcolor=white, label=exhibit];
+develop17 -> exhibit21  [label=conj_and];
+phosphorylation23 [style=filled, fillcolor=white, label=phosphorylation];
+sustained22 [style=filled, fillcolor=white, label=sustained];
+phosphorylation23 -> sustained22  [label=amod];
+exhibit21 -> phosphorylation23  [label=dobj];
+FAK25 [style=filled, fillcolor=white, label=FAK];
+phosphorylation23 -> FAK25  [label=prep_of];
+paxillin27 [style=filled, fillcolor=white, label=paxillin];
+FAK25 -> paxillin27  [label=conj_and];
+}

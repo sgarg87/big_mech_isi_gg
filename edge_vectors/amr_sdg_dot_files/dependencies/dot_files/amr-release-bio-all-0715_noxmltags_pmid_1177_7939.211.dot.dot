@@ -1,0 +1,11 @@
+digraph "( A ,  Top ) schematic of E3b1 ." {
+label="( A ,  Top ) schematic of E3b1 .";
+schematic6 [style=filled, fillcolor=white, label=schematic];
+A2 [style=filled, fillcolor=white, label=A];
+schematic6 -> A2  [label=nsubj];
+Top4 [style=filled, fillcolor=white, label=Top];
+A2 -> Top4  [label=dep];
+schematic6 -> schematic6  [label=root];
+E3b18 [style=filled, fillcolor=white, label=E3b1];
+schematic6 -> E3b18  [label=prep_of];
+}

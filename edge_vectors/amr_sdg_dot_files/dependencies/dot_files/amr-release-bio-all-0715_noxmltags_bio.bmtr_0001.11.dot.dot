@@ -1,0 +1,40 @@
+digraph "As expected based on previous studies ,  wild-type K-Ras bound primarily 32P-GDP ,  while G12V-Ras bound 32P-GTP ( Fig. 2 ,  A and B ) ." {
+label="As expected based on previous studies ,  wild-type K-Ras bound primarily 32P-
+GDP ,  while G12V-Ras bound 32P-GTP ( Fig. 2 ,  A and B ) .";
+expected2 [style=filled, fillcolor=white, label=expected];
+As1 [style=filled, fillcolor=white, label=As];
+expected2 -> As1  [label=mark];
+bound10 [style=filled, fillcolor=white, label=bound];
+bound10 -> expected2  [label=advcl];
+on4 [style=filled, fillcolor=white, label=on];
+expected2 -> on4  [label=prepc_based_on];
+studies6 [style=filled, fillcolor=white, label=studies];
+previous5 [style=filled, fillcolor=white, label=previous];
+studies6 -> previous5  [label=amod];
+expected2 -> studies6  [label=pobj];
+"K-Ras9" [style=filled, fillcolor=white, label="K-Ras"];
+"wild-type8" [style=filled, fillcolor=white, label="wild-type"];
+"K-Ras9" -> "wild-type8"  [label=amod];
+bound10 -> "K-Ras9"  [label=nsubj];
+bound10 -> bound10  [label=root];
+primarily11 [style=filled, fillcolor=white, label=primarily];
+bound10 -> primarily11  [label=advmod];
+"32P-GDP1" [style=filled, fillcolor=white, label="32P-GDP"];
+bound10 -> "32P-GDP1"  [label=dobj];
+bound16 [style=filled, fillcolor=white, label=bound];
+while14 [style=filled, fillcolor=white, label=while];
+bound16 -> while14  [label=mark];
+"G12V-Ras5" [style=filled, fillcolor=white, label="G12V-Ras"];
+bound16 -> "G12V-Ras5"  [label=nsubj];
+bound10 -> bound16  [label=advcl];
+"32P-GTP17" [style=filled, fillcolor=white, label="32P-GTP"];
+bound16 -> "32P-GTP17"  [label=dobj];
+"Fig.19" [style=filled, fillcolor=white, label="Fig."];
+"32P-GTP17" -> "Fig.19"  [label=appos];
+220 [style=filled, fillcolor=white, label=2];
+"Fig.19" -> 220  [label=num];
+A22 [style=filled, fillcolor=white, label=A];
+"Fig.19" -> A22  [label=dep];
+B24 [style=filled, fillcolor=white, label=B];
+A22 -> B24  [label=conj_and];
+}

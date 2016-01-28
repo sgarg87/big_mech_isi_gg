@@ -1,0 +1,38 @@
+digraph "Clamp-loader RF-C loads PCNA onto the DNA ( Kelman ,  1997 ) . RF-C interacts with the C-terminal side of PCNA ( Mossi et al. ,  1997 ) ." {
+label="Clamp-loader RF-C loads PCNA onto the DNA ( Kelman ,  1997 ) . RF-C interacts
+with the C-terminal side of PCNA ( Mossi et al. ,  1997 ) .";
+loads3 [style=filled, fillcolor=white, label=loads];
+"Clamp-loader1" [style=filled, fillcolor=white, label="Clamp-loader"];
+loads3 -> "Clamp-loader1"  [label=amod];
+"RF-C2" [style=filled, fillcolor=white, label="RF-C"];
+loads3 -> "RF-C2"  [label=amod];
+"RF-C14" [style=filled, fillcolor=white, label="RF-C"];
+"RF-C14" -> loads3  [label=nsubj];
+PCNA4 [style=filled, fillcolor=white, label=PCNA];
+loads3 -> PCNA4  [label=vmod];
+DNA7 [style=filled, fillcolor=white, label=DNA];
+the6 [style=filled, fillcolor=white, label=the];
+DNA7 -> the6  [label=det];
+PCNA4 -> DNA7  [label=prep_onto];
+Kelman9 [style=filled, fillcolor=white, label=Kelman];
+DNA7 -> Kelman9  [label=appos];
+1997 [style=filled, fillcolor=white, label=1997];
+Kelman9 -> 1997  [label=dep];
+"RF-C14" -> "RF-C14"  [label=root];
+interacts15 [style=filled, fillcolor=white, label=interacts];
+"RF-C14" -> interacts15  [label=dobj];
+side19 [style=filled, fillcolor=white, label=side];
+the17 [style=filled, fillcolor=white, label=the];
+side19 -> the17  [label=det];
+"C-terminal18" [style=filled, fillcolor=white, label="C-terminal"];
+side19 -> "C-terminal18"  [label=amod];
+"RF-C14" -> side19  [label=prep_with];
+PCNA21 [style=filled, fillcolor=white, label=PCNA];
+side19 -> PCNA21  [label=prep_of];
+Mossi23 [style=filled, fillcolor=white, label=Mossi];
+PCNA21 -> Mossi23  [label=appos];
+"al.25" [style=filled, fillcolor=white, label="al."];
+Mossi23 -> "al.25"  [label=conj_et];
+19972 [style=filled, fillcolor=white, label=1997];
+Mossi23 -> 19972  [label=dep];
+}

@@ -1,0 +1,52 @@
+digraph "resulted in an elevation in intracellular Ca ( 2 + ) concentration and activation of the mitogen-activated protein kinase cascade ,  specifically ,  extracellular signal-regulated kinase 2 ( ERK2 ) mitogen-activated protein kinase ." {
+label="resulted in an elevation in intracellular Ca ( 2 + ) concentration and
+activation of the mitogen-activated protein kinase cascade ,  specifically ,
+extracellular signal-regulated kinase 2 ( ERK2 ) mitogen-activated protein
+kinase .";
+"mitogen-activated31" [style=filled, fillcolor=white, label="mitogen-activated"];
+resulted1 [style=filled, fillcolor=white, label=resulted];
+"mitogen-activated31" -> resulted1  [label=vmod];
+elevation4 [style=filled, fillcolor=white, label=elevation];
+an3 [style=filled, fillcolor=white, label=an];
+elevation4 -> an3  [label=det];
+resulted1 -> elevation4  [label=prep_in];
+Ca7 [style=filled, fillcolor=white, label=Ca];
+intracellular6 [style=filled, fillcolor=white, label=intracellular];
+Ca7 -> intracellular6  [label=amod];
+concentration12 [style=filled, fillcolor=white, label=concentration];
+concentration12 -> Ca7  [label=amod];
+"+10" [style=filled, fillcolor=white, label="+"];
+29 [style=filled, fillcolor=white, label=2];
+"+10" -> 29  [label=number];
+Ca7 -> "+10"  [label=dep];
+elevation4 -> concentration12  [label=prep_in];
+activation14 [style=filled, fillcolor=white, label=activation];
+concentration12 -> activation14  [label=conj_and];
+cascade20 [style=filled, fillcolor=white, label=cascade];
+the16 [style=filled, fillcolor=white, label=the];
+cascade20 -> the16  [label=det];
+"mitogen-activated17" [style=filled, fillcolor=white, label="mitogen-activated"];
+cascade20 -> "mitogen-activated17"  [label=amod];
+protein18 [style=filled, fillcolor=white, label=protein];
+cascade20 -> protein18  [label=nn];
+kinase19 [style=filled, fillcolor=white, label=kinase];
+cascade20 -> kinase19  [label=nn];
+elevation4 -> cascade20  [label=prep_of];
+specifically22 [style=filled, fillcolor=white, label=specifically];
+resulted1 -> specifically22  [label=advmod];
+kinase26 [style=filled, fillcolor=white, label=kinase];
+extracellular24 [style=filled, fillcolor=white, label=extracellular];
+kinase26 -> extracellular24  [label=nn];
+"signal-regulated25" [style=filled, fillcolor=white, label="signal-regulated"];
+kinase26 -> "signal-regulated25"  [label=amod];
+"mitogen-activated31" -> kinase26  [label=nsubj];
+227 [style=filled, fillcolor=white, label=2];
+kinase26 -> 227  [label=dep];
+ERK229 [style=filled, fillcolor=white, label=ERK2];
+kinase26 -> ERK229  [label=appos];
+"mitogen-activated31" -> "mitogen-activated31"  [label=root];
+kinase33 [style=filled, fillcolor=white, label=kinase];
+protein32 [style=filled, fillcolor=white, label=protein];
+kinase33 -> protein32  [label=nn];
+"mitogen-activated31" -> kinase33  [label=dobj];
+}

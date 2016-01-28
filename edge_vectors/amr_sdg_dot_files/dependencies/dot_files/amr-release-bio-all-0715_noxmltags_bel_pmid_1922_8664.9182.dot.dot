@@ -1,0 +1,43 @@
+digraph "In CIA synoviocytes ,  IL-17 increased the expression of TLR-2 ,  4 ,  and 9 ,  and this effect was significantly alleviated by neutralizing antibodies to IL-17 ,  IL-1beta ,  and IL-6 ." {
+label="In CIA synoviocytes ,  IL-17 increased the expression of TLR-2 ,  4 ,  and 9 ,
+and this effect was significantly alleviated by neutralizing antibodies to IL-17
+,  IL-1beta ,  and IL-6 .";
+synoviocytes3 [style=filled, fillcolor=white, label=synoviocytes];
+CIA2 [style=filled, fillcolor=white, label=CIA];
+synoviocytes3 -> CIA2  [label=nn];
+increased6 [style=filled, fillcolor=white, label=increased];
+increased6 -> synoviocytes3  [label=prep_in];
+"IL-175" [style=filled, fillcolor=white, label="IL-17"];
+increased6 -> "IL-175"  [label=nsubj];
+increased6 -> increased6  [label=root];
+expression8 [style=filled, fillcolor=white, label=expression];
+the7 [style=filled, fillcolor=white, label=the];
+expression8 -> the7  [label=det];
+alleviated22 [style=filled, fillcolor=white, label=alleviated];
+alleviated22 -> expression8  [label=nsubj];
+"TLR-210" [style=filled, fillcolor=white, label="TLR-2"];
+expression8 -> "TLR-210"  [label=prep_of];
+412 [style=filled, fillcolor=white, label=4];
+"TLR-210" -> 412  [label=num];
+915 [style=filled, fillcolor=white, label=9];
+"TLR-210" -> 915  [label=conj_and];
+effect19 [style=filled, fillcolor=white, label=effect];
+this18 [style=filled, fillcolor=white, label=this];
+effect19 -> this18  [label=det];
+"TLR-210" -> effect19  [label=conj_and];
+was20 [style=filled, fillcolor=white, label=was];
+alleviated22 -> was20  [label=cop];
+significantly21 [style=filled, fillcolor=white, label=significantly];
+alleviated22 -> significantly21  [label=advmod];
+increased6 -> alleviated22  [label=ccomp];
+neutralizing24 [style=filled, fillcolor=white, label=neutralizing];
+alleviated22 -> neutralizing24  [label=prepc_by];
+antibodies25 [style=filled, fillcolor=white, label=antibodies];
+neutralizing24 -> antibodies25  [label=dobj];
+"IL-172" [style=filled, fillcolor=white, label="IL-17"];
+neutralizing24 -> "IL-172"  [label=prep_to];
+"IL-1beta29" [style=filled, fillcolor=white, label="IL-1beta"];
+"IL-172" -> "IL-1beta29"  [label=conj_and];
+"IL-632" [style=filled, fillcolor=white, label="IL-6"];
+"IL-172" -> "IL-632"  [label=conj_and];
+}

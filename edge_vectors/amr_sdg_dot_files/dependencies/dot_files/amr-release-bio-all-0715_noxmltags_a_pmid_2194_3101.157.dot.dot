@@ -1,0 +1,39 @@
+digraph "Expression of E-cadherin in the Caco-BR grown in 3D spheroids was found significantly downregulated with diffused distribution ( Figure 2B ,  lower panel ) ." {
+label="Expression of E-cadherin in the Caco-BR grown in 3D spheroids was found
+significantly downregulated with diffused distribution ( Figure 2B ,  lower
+panel ) .";
+found12 [style=filled, fillcolor=white, label=found];
+Expression1 [style=filled, fillcolor=white, label=Expression];
+found12 -> Expression1  [label=nsubjpass];
+"E-cadherin3" [style=filled, fillcolor=white, label="E-cadherin"];
+Expression1 -> "E-cadherin3"  [label=prep_of];
+"Caco-BR6" [style=filled, fillcolor=white, label="Caco-BR"];
+the5 [style=filled, fillcolor=white, label=the];
+"Caco-BR6" -> the5  [label=det];
+"E-cadherin3" -> "Caco-BR6"  [label=prep_in];
+grown7 [style=filled, fillcolor=white, label=grown];
+"Caco-BR6" -> grown7  [label=vmod];
+spheroids10 [style=filled, fillcolor=white, label=spheroids];
+"3D9" [style=filled, fillcolor=white, label="3D"];
+spheroids10 -> "3D9"  [label=num];
+grown7 -> spheroids10  [label=prep_in];
+was11 [style=filled, fillcolor=white, label=was];
+found12 -> was11  [label=auxpass];
+found12 -> found12  [label=root];
+downregulated14 [style=filled, fillcolor=white, label=downregulated];
+significantly13 [style=filled, fillcolor=white, label=significantly];
+downregulated14 -> significantly13  [label=advmod];
+found12 -> downregulated14  [label=acomp];
+distribution17 [style=filled, fillcolor=white, label=distribution];
+diffused16 [style=filled, fillcolor=white, label=diffused];
+distribution17 -> diffused16  [label=amod];
+found12 -> distribution17  [label=prep_with];
+Figure19 [style=filled, fillcolor=white, label=Figure];
+distribution17 -> Figure19  [label=dep];
+"2B20" [style=filled, fillcolor=white, label="2B"];
+Figure19 -> "2B20"  [label=num];
+panel23 [style=filled, fillcolor=white, label=panel];
+lower22 [style=filled, fillcolor=white, label=lower];
+panel23 -> lower22  [label=amod];
+Figure19 -> panel23  [label=appos];
+}

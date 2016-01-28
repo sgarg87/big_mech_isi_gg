@@ -1,0 +1,28 @@
+digraph "deletion of p38alpha mitogen-activated protein ( MAP ) kinase in adult mice results in increased proliferation" {
+label="deletion of p38alpha mitogen-activated protein ( MAP ) kinase in adult mice
+results in increased proliferation";
+kinase9 [style=filled, fillcolor=white, label=kinase];
+deletion1 [style=filled, fillcolor=white, label=deletion];
+kinase9 -> deletion1  [label=dep];
+protein5 [style=filled, fillcolor=white, label=protein];
+p38alpha [style=filled, fillcolor=white, label=p38alpha];
+protein5 -> p38alpha  [label=amod];
+"mitogen-activated4" [style=filled, fillcolor=white, label="mitogen-activated"];
+protein5 -> "mitogen-activated4"  [label=amod];
+deletion1 -> protein5  [label=prep_of];
+MAP7 [style=filled, fillcolor=white, label=MAP];
+protein5 -> MAP7  [label=appos];
+kinase9 -> kinase9  [label=root];
+results13 [style=filled, fillcolor=white, label=results];
+adult11 [style=filled, fillcolor=white, label=adult];
+results13 -> adult11  [label=amod];
+mice12 [style=filled, fillcolor=white, label=mice];
+results13 -> mice12  [label=nn];
+kinase9 -> results13  [label=prep_in];
+in14 [style=filled, fillcolor=white, label=in];
+kinase9 -> in14  [label=dep];
+proliferation16 [style=filled, fillcolor=white, label=proliferation];
+increased15 [style=filled, fillcolor=white, label=increased];
+proliferation16 -> increased15  [label=amod];
+in14 -> proliferation16  [label=pobj];
+}

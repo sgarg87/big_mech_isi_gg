@@ -1,0 +1,22 @@
+digraph "Combined inhibition of MEK and PI3K abrogates macrophage stimulation of neoplastic growth" {
+label="Combined inhibition of MEK and PI3K abrogates macrophage stimulation of
+neoplastic growth";
+inhibition2 [style=filled, fillcolor=white, label=inhibition];
+Combined1 [style=filled, fillcolor=white, label=Combined];
+inhibition2 -> Combined1  [label=amod];
+abrogates7 [style=filled, fillcolor=white, label=abrogates];
+abrogates7 -> inhibition2  [label=nsubj];
+MEK4 [style=filled, fillcolor=white, label=MEK];
+inhibition2 -> MEK4  [label=prep_of];
+PI3K6 [style=filled, fillcolor=white, label=PI3K];
+MEK4 -> PI3K6  [label=conj_and];
+abrogates7 -> abrogates7  [label=root];
+stimulation9 [style=filled, fillcolor=white, label=stimulation];
+macrophage8 [style=filled, fillcolor=white, label=macrophage];
+stimulation9 -> macrophage8  [label=amod];
+abrogates7 -> stimulation9  [label=dobj];
+growth12 [style=filled, fillcolor=white, label=growth];
+neoplastic11 [style=filled, fillcolor=white, label=neoplastic];
+growth12 -> neoplastic11  [label=amod];
+stimulation9 -> growth12  [label=prep_of];
+}

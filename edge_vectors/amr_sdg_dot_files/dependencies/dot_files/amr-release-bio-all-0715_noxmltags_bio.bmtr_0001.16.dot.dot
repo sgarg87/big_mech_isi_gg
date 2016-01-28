@@ -1,0 +1,57 @@
+digraph "These results ,  along with the crystal structure ,  support a model in which mono-ubiquitination at a Lys residue directly involved in GDP binding either enhances nucleotide exchange on K-Ras ,  impairs GTP hydrolysis ,  or both ." {
+label="These results ,  along with the crystal structure ,  support a model in which
+mono-ubiquitination at a Lys residue directly involved in GDP binding either
+enhances nucleotide exchange on K-Ras ,  impairs GTP hydrolysis ,  or both .";
+results2 [style=filled, fillcolor=white, label=results];
+These1 [style=filled, fillcolor=white, label=These];
+results2 -> These1  [label=det];
+support10 [style=filled, fillcolor=white, label=support];
+support10 -> results2  [label=nsubj];
+structure8 [style=filled, fillcolor=white, label=structure];
+the6 [style=filled, fillcolor=white, label=the];
+structure8 -> the6  [label=det];
+crystal7 [style=filled, fillcolor=white, label=crystal];
+structure8 -> crystal7  [label=nn];
+support10 -> structure8  [label=prep_along_with];
+support10 -> support10  [label=root];
+model12 [style=filled, fillcolor=white, label=model];
+a11 [style=filled, fillcolor=white, label=a];
+model12 -> a11  [label=det];
+support10 -> model12  [label=dobj];
+involved21 [style=filled, fillcolor=white, label=involved];
+which14 [style=filled, fillcolor=white, label=which];
+involved21 -> which14  [label=prep_in];
+"mono-ubiquitination15" [style=filled, fillcolor=white, label="mono-ubiquitination"];
+involved21 -> "mono-ubiquitination15"  [label=nsubj];
+residue19 [style=filled, fillcolor=white, label=residue];
+a17 [style=filled, fillcolor=white, label=a];
+residue19 -> a17  [label=det];
+Lys18 [style=filled, fillcolor=white, label=Lys];
+residue19 -> Lys18  [label=nn];
+"mono-ubiquitination15" -> residue19  [label=prep_at];
+directly20 [style=filled, fillcolor=white, label=directly];
+involved21 -> directly20  [label=advmod];
+model12 -> involved21  [label=rcmod];
+binding24 [style=filled, fillcolor=white, label=binding];
+GDP23 [style=filled, fillcolor=white, label=GDP];
+binding24 -> GDP23  [label=nn];
+involved21 -> binding24  [label=prep_in];
+either25 [style=filled, fillcolor=white, label=either];
+involved21 -> either25  [label=dep];
+enhances26 [style=filled, fillcolor=white, label=enhances];
+involved21 -> enhances26  [label=conj];
+exchange28 [style=filled, fillcolor=white, label=exchange];
+nucleotide27 [style=filled, fillcolor=white, label=nucleotide];
+exchange28 -> nucleotide27  [label=amod];
+enhances26 -> exchange28  [label=dobj];
+"K-Ras30" [style=filled, fillcolor=white, label="K-Ras"];
+enhances26 -> "K-Ras30"  [label=prep_on];
+hydrolysis34 [style=filled, fillcolor=white, label=hydrolysis];
+impairs32 [style=filled, fillcolor=white, label=impairs];
+hydrolysis34 -> impairs32  [label=amod];
+GTP33 [style=filled, fillcolor=white, label=GTP];
+hydrolysis34 -> GTP33  [label=nn];
+"K-Ras30" -> hydrolysis34  [label=conj_or];
+both37 [style=filled, fillcolor=white, label=both];
+"K-Ras30" -> both37  [label=conj_or];
+}

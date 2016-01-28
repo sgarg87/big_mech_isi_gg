@@ -1,0 +1,39 @@
+digraph "Inhibition of p38 MAPK by SB203580 in differentiating C2C12 myoblasts blocks MyoD expression ,  SHPS-1 tyrosyl phosphorylation and the association of SHPS-1 with SHP-2 ." {
+label="Inhibition of p38 MAPK by SB203580 in differentiating C2C12 myoblasts blocks
+MyoD expression ,  SHPS-1 tyrosyl phosphorylation and the association of SHPS-1
+with SHP-2 .";
+MAPK4 [style=filled, fillcolor=white, label=MAPK];
+Inhibition1 [style=filled, fillcolor=white, label=Inhibition];
+MAPK4 -> Inhibition1  [label=nsubj];
+p38 [style=filled, fillcolor=white, label=p38];
+Inhibition1 -> p38  [label=prep_of];
+blocks11 [style=filled, fillcolor=white, label=blocks];
+blocks11 -> MAPK4  [label=dep];
+SB2035806 [style=filled, fillcolor=white, label=SB203580];
+MAPK4 -> SB2035806  [label=prep_by];
+differentiating8 [style=filled, fillcolor=white, label=differentiating];
+MAPK4 -> differentiating8  [label=prepc_in];
+myoblasts10 [style=filled, fillcolor=white, label=myoblasts];
+C2C129 [style=filled, fillcolor=white, label=C2C12];
+myoblasts10 -> C2C129  [label=num];
+differentiating8 -> myoblasts10  [label=dobj];
+blocks11 -> blocks11  [label=root];
+expression13 [style=filled, fillcolor=white, label=expression];
+MyoD12 [style=filled, fillcolor=white, label=MyoD];
+expression13 -> MyoD12  [label=nn];
+blocks11 -> expression13  [label=nsubj];
+tyrosyl16 [style=filled, fillcolor=white, label=tyrosyl];
+"SHPS-15" [style=filled, fillcolor=white, label="SHPS-1"];
+tyrosyl16 -> "SHPS-15"  [label=amod];
+phosphorylation17 [style=filled, fillcolor=white, label=phosphorylation];
+phosphorylation17 -> tyrosyl16  [label=amod];
+expression13 -> phosphorylation17  [label=appos];
+association20 [style=filled, fillcolor=white, label=association];
+the19 [style=filled, fillcolor=white, label=the];
+association20 -> the19  [label=det];
+phosphorylation17 -> association20  [label=conj_and];
+"SHPS-122" [style=filled, fillcolor=white, label="SHPS-1"];
+association20 -> "SHPS-122"  [label=prep_of];
+"SHP-24" [style=filled, fillcolor=white, label="SHP-2"];
+"SHPS-122" -> "SHP-24"  [label=prep_with];
+}

@@ -1,0 +1,58 @@
+digraph "Using a trypsin-mediated de-adhesion assay ,  downregulation of serpinE2 significantly delayed LoVo cell detachment after trypsinization ( Figure 6C ) ,  suggesting that serpinE2 expression decreases adhesion of colorectal carcinoma cells to the substrate ." {
+label="Using a trypsin-mediated de-adhesion assay ,  downregulation of serpinE2
+significantly delayed LoVo cell detachment after trypsinization ( Figure 6C ) ,
+suggesting that serpinE2 expression decreases adhesion of colorectal carcinoma
+cells to the substrate .";
+delayed11 [style=filled, fillcolor=white, label=delayed];
+Using1 [style=filled, fillcolor=white, label=Using];
+delayed11 -> Using1  [label=vmod];
+assay5 [style=filled, fillcolor=white, label=assay];
+a2 [style=filled, fillcolor=white, label=a];
+assay5 -> a2  [label=det];
+"trypsin-mediated3" [style=filled, fillcolor=white, label="trypsin-mediated"];
+assay5 -> "trypsin-mediated3"  [label=amod];
+"de-adhesion4" [style=filled, fillcolor=white, label="de-adhesion"];
+assay5 -> "de-adhesion4"  [label=amod];
+Using1 -> assay5  [label=dobj];
+downregulation7 [style=filled, fillcolor=white, label=downregulation];
+delayed11 -> downregulation7  [label=nsubj];
+serpinE29 [style=filled, fillcolor=white, label=serpinE2];
+downregulation7 -> serpinE29  [label=prep_of];
+significantly10 [style=filled, fillcolor=white, label=significantly];
+delayed11 -> significantly10  [label=advmod];
+delayed11 -> delayed11  [label=root];
+detachment14 [style=filled, fillcolor=white, label=detachment];
+LoVo12 [style=filled, fillcolor=white, label=LoVo];
+detachment14 -> LoVo12  [label=nn];
+cell13 [style=filled, fillcolor=white, label=cell];
+detachment14 -> cell13  [label=nn];
+delayed11 -> detachment14  [label=dobj];
+trypsinization16 [style=filled, fillcolor=white, label=trypsinization];
+delayed11 -> trypsinization16  [label=prep_after];
+Figure18 [style=filled, fillcolor=white, label=Figure];
+trypsinization16 -> Figure18  [label=appos];
+"6C19" [style=filled, fillcolor=white, label="6C"];
+Figure18 -> "6C19"  [label=num];
+suggesting22 [style=filled, fillcolor=white, label=suggesting];
+delayed11 -> suggesting22  [label=vmod];
+decreases26 [style=filled, fillcolor=white, label=decreases];
+that23 [style=filled, fillcolor=white, label=that];
+decreases26 -> that23  [label=mark];
+expression25 [style=filled, fillcolor=white, label=expression];
+serpinE224 [style=filled, fillcolor=white, label=serpinE2];
+expression25 -> serpinE224  [label=amod];
+decreases26 -> expression25  [label=nsubj];
+suggesting22 -> decreases26  [label=ccomp];
+adhesion27 [style=filled, fillcolor=white, label=adhesion];
+decreases26 -> adhesion27  [label=dobj];
+cells31 [style=filled, fillcolor=white, label=cells];
+colorectal29 [style=filled, fillcolor=white, label=colorectal];
+cells31 -> colorectal29  [label=amod];
+carcinoma30 [style=filled, fillcolor=white, label=carcinoma];
+cells31 -> carcinoma30  [label=nn];
+adhesion27 -> cells31  [label=prep_of];
+substrate34 [style=filled, fillcolor=white, label=substrate];
+the33 [style=filled, fillcolor=white, label=the];
+substrate34 -> the33  [label=det];
+decreases26 -> substrate34  [label=prep_to];
+}

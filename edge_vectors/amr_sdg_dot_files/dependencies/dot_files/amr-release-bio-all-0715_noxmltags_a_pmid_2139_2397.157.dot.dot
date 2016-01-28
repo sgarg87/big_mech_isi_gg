@@ -1,0 +1,22 @@
+digraph "IR-induced YB-1 phosphorylation is mediated by erbB1-dependent PI3K/Akt and MAPK/ERK pathways" {
+label="IR-induced YB-1 phosphorylation is mediated by erbB1-dependent PI3K/Akt and
+MAPK/ERK pathways";
+phosphorylation3 [style=filled, fillcolor=white, label=phosphorylation];
+"IR-induced1" [style=filled, fillcolor=white, label="IR-induced"];
+phosphorylation3 -> "IR-induced1"  [label=amod];
+"YB-12" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation3 -> "YB-12"  [label=nn];
+mediated5 [style=filled, fillcolor=white, label=mediated];
+mediated5 -> phosphorylation3  [label=nsubjpass];
+is4 [style=filled, fillcolor=white, label=is];
+mediated5 -> is4  [label=auxpass];
+mediated5 -> mediated5  [label=root];
+"PI3K/Akt8" [style=filled, fillcolor=white, label="PI3K/Akt"];
+"erbB1-dependent7" [style=filled, fillcolor=white, label="erbB1-dependent"];
+"PI3K/Akt8" -> "erbB1-dependent7"  [label=amod];
+mediated5 -> "PI3K/Akt8"  [label=agent];
+pathways11 [style=filled, fillcolor=white, label=pathways];
+"MAPK/ERK10" [style=filled, fillcolor=white, label="MAPK/ERK"];
+pathways11 -> "MAPK/ERK10"  [label=nn];
+"PI3K/Akt8" -> pathways11  [label=conj_and];
+}

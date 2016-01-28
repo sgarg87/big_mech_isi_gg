@@ -1,0 +1,36 @@
+digraph "The ASPP1 sites are at residues 671 and 746 ,  and the ASPP2 sites are at residues 698 and 827 ( Figure 1A ) ." {
+label="The ASPP1 sites are at residues 671 and 746 ,  and the ASPP2 sites are at
+residues 698 and 827 ( Figure 1A ) .";
+sites3 [style=filled, fillcolor=white, label=sites];
+The1 [style=filled, fillcolor=white, label=The];
+sites3 -> The1  [label=det];
+ASPP12 [style=filled, fillcolor=white, label=ASPP1];
+sites3 -> ASPP12  [label=num];
+are4 [style=filled, fillcolor=white, label=are];
+are4 -> sites3  [label=nsubj];
+are4 -> are4  [label=root];
+residues6 [style=filled, fillcolor=white, label=residues];
+are4 -> residues6  [label=prep_at];
+671 [style=filled, fillcolor=white, label=671];
+residues6 -> 671  [label=num];
+7469 [style=filled, fillcolor=white, label=746];
+residues6 -> 7469  [label=conj_and];
+sites14 [style=filled, fillcolor=white, label=sites];
+the12 [style=filled, fillcolor=white, label=the];
+sites14 -> the12  [label=det];
+ASPP213 [style=filled, fillcolor=white, label=ASPP2];
+sites14 -> ASPP213  [label=num];
+are15 [style=filled, fillcolor=white, label=are];
+are15 -> sites14  [label=nsubj];
+are4 -> are15  [label=conj_and];
+residues17 [style=filled, fillcolor=white, label=residues];
+are15 -> residues17  [label=prep_at];
+6981 [style=filled, fillcolor=white, label=698];
+residues17 -> 6981  [label=num];
+82720 [style=filled, fillcolor=white, label=827];
+residues17 -> 82720  [label=conj_and];
+Figure22 [style=filled, fillcolor=white, label=Figure];
+residues17 -> Figure22  [label=appos];
+"1A23" [style=filled, fillcolor=white, label="1A"];
+Figure22 -> "1A23"  [label=num];
+}

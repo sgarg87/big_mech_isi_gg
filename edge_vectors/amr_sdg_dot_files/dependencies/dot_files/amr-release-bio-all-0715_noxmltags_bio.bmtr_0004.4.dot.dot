@@ -1,0 +1,47 @@
+digraph "To this end we compared the rate of GTP hydrolysis for Ras and mUbRas in the presence of the catalytic domains of two GAPs ,  NF1 ( NF1-333 ) and p120GAP ( GAP-334 ) ." {
+label="To this end we compared the rate of GTP hydrolysis for Ras and mUbRas in the
+presence of the catalytic domains of two GAPs ,  NF1 ( NF1-333 ) and p120GAP (
+GAP-334 ) .";
+end3 [style=filled, fillcolor=white, label=end];
+this2 [style=filled, fillcolor=white, label=this];
+end3 -> this2  [label=det];
+compared5 [style=filled, fillcolor=white, label=compared];
+compared5 -> end3  [label=prep_to];
+we4 [style=filled, fillcolor=white, label=we];
+compared5 -> we4  [label=nsubj];
+compared5 -> compared5  [label=root];
+rate7 [style=filled, fillcolor=white, label=rate];
+the6 [style=filled, fillcolor=white, label=the];
+rate7 -> the6  [label=det];
+compared5 -> rate7  [label=dobj];
+hydrolysis10 [style=filled, fillcolor=white, label=hydrolysis];
+GTP9 [style=filled, fillcolor=white, label=GTP];
+hydrolysis10 -> GTP9  [label=nn];
+rate7 -> hydrolysis10  [label=prep_of];
+Ras12 [style=filled, fillcolor=white, label=Ras];
+compared5 -> Ras12  [label=prep_for];
+mUbRas14 [style=filled, fillcolor=white, label=mUbRas];
+compared5 -> mUbRas14  [label=conj_and];
+presence17 [style=filled, fillcolor=white, label=presence];
+the16 [style=filled, fillcolor=white, label=the];
+presence17 -> the16  [label=det];
+mUbRas14 -> presence17  [label=prep_in];
+domains21 [style=filled, fillcolor=white, label=domains];
+the19 [style=filled, fillcolor=white, label=the];
+domains21 -> the19  [label=det];
+catalytic20 [style=filled, fillcolor=white, label=catalytic];
+domains21 -> catalytic20  [label=amod];
+presence17 -> domains21  [label=prep_of];
+NF126 [style=filled, fillcolor=white, label=NF1];
+two23 [style=filled, fillcolor=white, label=two];
+NF126 -> two23  [label=num];
+GAPs24 [style=filled, fillcolor=white, label=GAPs];
+NF126 -> GAPs24  [label=nn];
+domains21 -> NF126  [label=prep_of];
+"NF1-33328" [style=filled, fillcolor=white, label="NF1-333"];
+NF126 -> "NF1-33328"  [label=appos];
+p120GAP3 [style=filled, fillcolor=white, label=p120GAP];
+NF126 -> p120GAP3  [label=conj_and];
+"GAP-334" [style=filled, fillcolor=white, label="GAP-334"];
+NF126 -> "GAP-334"  [label=appos];
+}

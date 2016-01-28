@@ -1,0 +1,30 @@
+digraph "BRAFV600E downregulates E-cadherin at the mRNA level and impairs its distribution in human colon adenocarcinoma cells" {
+label="BRAFV600E downregulates E-cadherin at the mRNA level and impairs its
+distribution in human colon adenocarcinoma cells";
+downregulates2 [style=filled, fillcolor=white, label=downregulates];
+BRAFV600E1 [style=filled, fillcolor=white, label=BRAFV600E];
+downregulates2 -> BRAFV600E1  [label=num];
+"E-cadherin3" [style=filled, fillcolor=white, label="E-cadherin"];
+"E-cadherin3" -> downregulates2  [label=npadvmod];
+"E-cadherin3" -> "E-cadherin3"  [label=root];
+level7 [style=filled, fillcolor=white, label=level];
+the5 [style=filled, fillcolor=white, label=the];
+level7 -> the5  [label=det];
+mRNA6 [style=filled, fillcolor=white, label=mRNA];
+level7 -> mRNA6  [label=nn];
+"E-cadherin3" -> level7  [label=prep_at];
+impairs9 [style=filled, fillcolor=white, label=impairs];
+"E-cadherin3" -> impairs9  [label=conj_and];
+distribution11 [style=filled, fillcolor=white, label=distribution];
+its10 [style=filled, fillcolor=white, label=its];
+distribution11 -> its10  [label=poss];
+impairs9 -> distribution11  [label=dobj];
+cells16 [style=filled, fillcolor=white, label=cells];
+human13 [style=filled, fillcolor=white, label=human];
+cells16 -> human13  [label=amod];
+colon14 [style=filled, fillcolor=white, label=colon];
+cells16 -> colon14  [label=nn];
+adenocarcinoma15 [style=filled, fillcolor=white, label=adenocarcinoma];
+cells16 -> adenocarcinoma15  [label=nn];
+impairs9 -> cells16  [label=prep_in];
+}

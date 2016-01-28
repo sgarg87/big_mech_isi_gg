@@ -1,0 +1,28 @@
+digraph "( B ) Western blot analyses of protein extracts from P30 Wt and Tg back and ear skins ." {
+label="( B ) Western blot analyses of protein extracts from P30 Wt and Tg back and ear
+skins .";
+blot5 [style=filled, fillcolor=white, label=blot];
+B2 [style=filled, fillcolor=white, label=B];
+blot5 -> B2  [label=appos];
+Western4 [style=filled, fillcolor=white, label=Western];
+blot5 -> Western4  [label=amod];
+blot5 -> blot5  [label=root];
+analyses6 [style=filled, fillcolor=white, label=analyses];
+blot5 -> analyses6  [label=dep];
+extracts9 [style=filled, fillcolor=white, label=extracts];
+protein8 [style=filled, fillcolor=white, label=protein];
+extracts9 -> protein8  [label=nn];
+analyses6 -> extracts9  [label=prep_of];
+Wt12 [style=filled, fillcolor=white, label=Wt];
+P3011 [style=filled, fillcolor=white, label=P30];
+Wt12 -> P3011  [label=nn];
+extracts9 -> Wt12  [label=prep_from];
+back15 [style=filled, fillcolor=white, label=back];
+Tg14 [style=filled, fillcolor=white, label=Tg];
+back15 -> Tg14  [label=nn];
+Wt12 -> back15  [label=conj_and];
+skins18 [style=filled, fillcolor=white, label=skins];
+ear17 [style=filled, fillcolor=white, label=ear];
+skins18 -> ear17  [label=nn];
+Wt12 -> skins18  [label=conj_and];
+}

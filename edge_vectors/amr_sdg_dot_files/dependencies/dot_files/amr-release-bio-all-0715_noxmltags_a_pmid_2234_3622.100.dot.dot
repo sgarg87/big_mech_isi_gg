@@ -1,0 +1,62 @@
+digraph "The dose-scheduling effects of combining selumetinib and docetaxel lead us to investigate the sequence dependency of selumetinib combined with another mitotic targeting agent ,  the Aurora B kinase inhibitor ,  barasertib ( AZD1152 ) ( 16 ) ." {
+label="The dose-scheduling effects of combining selumetinib and docetaxel lead us to
+investigate the sequence dependency of selumetinib combined with another mitotic
+targeting agent ,  the Aurora B kinase inhibitor ,  barasertib ( AZD1152 ) ( 16
+) .";
+effects3 [style=filled, fillcolor=white, label=effects];
+The1 [style=filled, fillcolor=white, label=The];
+effects3 -> The1  [label=det];
+"dose-scheduling2" [style=filled, fillcolor=white, label="dose-scheduling"];
+effects3 -> "dose-scheduling2"  [label=amod];
+lead9 [style=filled, fillcolor=white, label=lead];
+lead9 -> effects3  [label=nsubj];
+combining5 [style=filled, fillcolor=white, label=combining];
+effects3 -> combining5  [label=prepc_of];
+selumetinib6 [style=filled, fillcolor=white, label=selumetinib];
+combining5 -> selumetinib6  [label=acomp];
+docetaxel8 [style=filled, fillcolor=white, label=docetaxel];
+selumetinib6 -> docetaxel8  [label=conj_and];
+lead9 -> lead9  [label=root];
+us10 [style=filled, fillcolor=white, label=us];
+lead9 -> us10  [label=dobj];
+investigate12 [style=filled, fillcolor=white, label=investigate];
+to11 [style=filled, fillcolor=white, label=to];
+investigate12 -> to11  [label=aux];
+lead9 -> investigate12  [label=xcomp];
+dependency15 [style=filled, fillcolor=white, label=dependency];
+the13 [style=filled, fillcolor=white, label=the];
+dependency15 -> the13  [label=det];
+sequence14 [style=filled, fillcolor=white, label=sequence];
+dependency15 -> sequence14  [label=nn];
+investigate12 -> dependency15  [label=dobj];
+selumetinib17 [style=filled, fillcolor=white, label=selumetinib];
+dependency15 -> selumetinib17  [label=prep_of];
+combined18 [style=filled, fillcolor=white, label=combined];
+investigate12 -> combined18  [label=prep];
+with19 [style=filled, fillcolor=white, label=with];
+combined18 -> with19  [label=pcomp];
+agent23 [style=filled, fillcolor=white, label=agent];
+another20 [style=filled, fillcolor=white, label=another];
+agent23 -> another20  [label=det];
+mitotic21 [style=filled, fillcolor=white, label=mitotic];
+agent23 -> mitotic21  [label=amod];
+targeting22 [style=filled, fillcolor=white, label=targeting];
+agent23 -> targeting22  [label=amod];
+with19 -> agent23  [label=pobj];
+inhibitor29 [style=filled, fillcolor=white, label=inhibitor];
+the25 [style=filled, fillcolor=white, label=the];
+inhibitor29 -> the25  [label=det];
+Aurora26 [style=filled, fillcolor=white, label=Aurora];
+inhibitor29 -> Aurora26  [label=nn];
+B27 [style=filled, fillcolor=white, label=B];
+inhibitor29 -> B27  [label=nn];
+kinase28 [style=filled, fillcolor=white, label=kinase];
+inhibitor29 -> kinase28  [label=nn];
+agent23 -> inhibitor29  [label=appos];
+barasertib31 [style=filled, fillcolor=white, label=barasertib];
+inhibitor29 -> barasertib31  [label=appos];
+AZD115233 [style=filled, fillcolor=white, label=AZD1152];
+barasertib31 -> AZD115233  [label=appos];
+163 [style=filled, fillcolor=white, label=16];
+barasertib31 -> 163  [label=appos];
+}

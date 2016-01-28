@@ -1,0 +1,43 @@
+digraph "For example ,  Puyol et al. ( 2010 ) recently demonstrated that germline or conditional deletion of Cdk4 led to senescence in lung cells expressing activated K-Ras ." {
+label="For example ,  Puyol et al. ( 2010 ) recently demonstrated that germline or
+conditional deletion of Cdk4 led to senescence in lung cells expressing
+activated K-Ras .";
+demonstrated11 [style=filled, fillcolor=white, label=demonstrated];
+example2 [style=filled, fillcolor=white, label=example];
+demonstrated11 -> example2  [label=prep_for];
+Puyol4 [style=filled, fillcolor=white, label=Puyol];
+demonstrated11 -> Puyol4  [label=nsubj];
+"al.6" [style=filled, fillcolor=white, label="al."];
+Puyol4 -> "al.6"  [label=conj_et];
+20108 [style=filled, fillcolor=white, label=2010];
+Puyol4 -> 20108  [label=appos];
+recently10 [style=filled, fillcolor=white, label=recently];
+demonstrated11 -> recently10  [label=advmod];
+demonstrated11 -> demonstrated11  [label=root];
+led19 [style=filled, fillcolor=white, label=led];
+that12 [style=filled, fillcolor=white, label=that];
+led19 -> that12  [label=mark];
+deletion16 [style=filled, fillcolor=white, label=deletion];
+germline13 [style=filled, fillcolor=white, label=germline];
+deletion16 -> germline13  [label=amod];
+conditional15 [style=filled, fillcolor=white, label=conditional];
+germline13 -> conditional15  [label=conj_or];
+led19 -> deletion16  [label=nsubj];
+Cdk418 [style=filled, fillcolor=white, label=Cdk4];
+deletion16 -> Cdk418  [label=prep_of];
+demonstrated11 -> led19  [label=ccomp];
+senescence21 [style=filled, fillcolor=white, label=senescence];
+to20 [style=filled, fillcolor=white, label=to];
+senescence21 -> to20  [label=aux];
+led19 -> senescence21  [label=xcomp];
+cells24 [style=filled, fillcolor=white, label=cells];
+lung23 [style=filled, fillcolor=white, label=lung];
+cells24 -> lung23  [label=nn];
+senescence21 -> cells24  [label=prep_in];
+expressing25 [style=filled, fillcolor=white, label=expressing];
+senescence21 -> expressing25  [label=xcomp];
+"K-Ras27" [style=filled, fillcolor=white, label="K-Ras"];
+activated26 [style=filled, fillcolor=white, label=activated];
+"K-Ras27" -> activated26  [label=amod];
+expressing25 -> "K-Ras27"  [label=dobj];
+}

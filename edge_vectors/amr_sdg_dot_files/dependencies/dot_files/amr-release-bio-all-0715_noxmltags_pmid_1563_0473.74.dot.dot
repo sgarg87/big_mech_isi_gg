@@ -1,0 +1,26 @@
+digraph "Sustained Expression of Snail Results in Epidermal Hyperproliferation and Differentiation Defects in Tg Mouse Skin" {
+label="Sustained Expression of Snail Results in Epidermal Hyperproliferation and
+Differentiation Defects in Tg Mouse Skin";
+Expression2 [style=filled, fillcolor=white, label=Expression];
+Sustained1 [style=filled, fillcolor=white, label=Sustained];
+Expression2 -> Sustained1  [label=nn];
+Expression2 -> Expression2  [label=root];
+Results5 [style=filled, fillcolor=white, label=Results];
+Snail4 [style=filled, fillcolor=white, label=Snail];
+Results5 -> Snail4  [label=nn];
+Expression2 -> Results5  [label=prep_of];
+Hyperproliferation8 [style=filled, fillcolor=white, label=Hyperproliferation];
+Epidermal7 [style=filled, fillcolor=white, label=Epidermal];
+Hyperproliferation8 -> Epidermal7  [label=nn];
+Expression2 -> Hyperproliferation8  [label=prep_in];
+Defects11 [style=filled, fillcolor=white, label=Defects];
+Differentiation10 [style=filled, fillcolor=white, label=Differentiation];
+Defects11 -> Differentiation10  [label=nn];
+Hyperproliferation8 -> Defects11  [label=conj_and];
+Skin15 [style=filled, fillcolor=white, label=Skin];
+Tg13 [style=filled, fillcolor=white, label=Tg];
+Skin15 -> Tg13  [label=nn];
+Mouse14 [style=filled, fillcolor=white, label=Mouse];
+Skin15 -> Mouse14  [label=nn];
+Expression2 -> Skin15  [label=prep_in];
+}

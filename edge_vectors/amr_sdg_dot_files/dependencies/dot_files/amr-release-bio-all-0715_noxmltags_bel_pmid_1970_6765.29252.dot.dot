@@ -1,0 +1,45 @@
+digraph "As shown in Fig. 4A ,  IL-6 concentration in BALF of doxycycline-treated mice was steadily increased compared with those in untreated bitransgenic mice in a time-dependent fashion ," {
+label="As shown in Fig. 4A ,  IL-6 concentration in BALF of doxycycline-treated mice
+was steadily increased compared with those in untreated bitransgenic mice in a
+time-dependent fashion ,";
+shown2 [style=filled, fillcolor=white, label=shown];
+As1 [style=filled, fillcolor=white, label=As];
+shown2 -> As1  [label=mark];
+increased16 [style=filled, fillcolor=white, label=increased];
+increased16 -> shown2  [label=advcl];
+"Fig.4" [style=filled, fillcolor=white, label="Fig."];
+shown2 -> "Fig.4"  [label=prep_in];
+"4A5" [style=filled, fillcolor=white, label="4A"];
+"Fig.4" -> "4A5"  [label=num];
+concentration8 [style=filled, fillcolor=white, label=concentration];
+"IL-67" [style=filled, fillcolor=white, label="IL-6"];
+concentration8 -> "IL-67"  [label=nn];
+increased16 -> concentration8  [label=nsubjpass];
+BALF10 [style=filled, fillcolor=white, label=BALF];
+concentration8 -> BALF10  [label=prep_in];
+mice13 [style=filled, fillcolor=white, label=mice];
+"doxycycline-treated12" [style=filled, fillcolor=white, label="doxycycline-treated"];
+mice13 -> "doxycycline-treated12"  [label=amod];
+BALF10 -> mice13  [label=prep_of];
+was14 [style=filled, fillcolor=white, label=was];
+increased16 -> was14  [label=auxpass];
+steadily15 [style=filled, fillcolor=white, label=steadily];
+increased16 -> steadily15  [label=advmod];
+increased16 -> increased16  [label=root];
+with18 [style=filled, fillcolor=white, label=with];
+increased16 -> with18  [label=prepc_compared_with];
+those19 [style=filled, fillcolor=white, label=those];
+increased16 -> those19  [label=pobj];
+bitransgenic22 [style=filled, fillcolor=white, label=bitransgenic];
+untreated21 [style=filled, fillcolor=white, label=untreated];
+bitransgenic22 -> untreated21  [label=amod];
+mice23 [style=filled, fillcolor=white, label=mice];
+mice23 -> bitransgenic22  [label=amod];
+those19 -> mice23  [label=prep_in];
+fashion27 [style=filled, fillcolor=white, label=fashion];
+a25 [style=filled, fillcolor=white, label=a];
+fashion27 -> a25  [label=det];
+"time-dependent26" [style=filled, fillcolor=white, label="time-dependent"];
+fashion27 -> "time-dependent26"  [label=amod];
+those19 -> fashion27  [label=prep_in];
+}

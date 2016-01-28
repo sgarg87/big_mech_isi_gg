@@ -1,0 +1,53 @@
+digraph "Two days after BRAFE600 selection ,  we seeded cells at low density and performed growth curves . RSK4 inhibition partially rescued BRAFE600-induced senescence in both TIG3 and TIG3 p16-null ( Figure 4A ) ." {
+label="Two days after BRAFE600 selection ,  we seeded cells at low density and
+performed growth curves . RSK4 inhibition partially rescued BRAFE600-induced
+senescence in both TIG3 and TIG3 p16-null ( Figure 4A ) .";
+days2 [style=filled, fillcolor=white, label=days];
+Two1 [style=filled, fillcolor=white, label=Two];
+days2 -> Two1  [label=num];
+rescued21 [style=filled, fillcolor=white, label=rescued];
+rescued21 -> days2  [label=nsubj];
+selection5 [style=filled, fillcolor=white, label=selection];
+BRAFE6004 [style=filled, fillcolor=white, label=BRAFE600];
+selection5 -> BRAFE6004  [label=nn];
+seeded8 [style=filled, fillcolor=white, label=seeded];
+seeded8 -> selection5  [label=nsubj];
+we7 [style=filled, fillcolor=white, label=we];
+seeded8 -> we7  [label=nsubj];
+inhibition19 [style=filled, fillcolor=white, label=inhibition];
+inhibition19 -> seeded8  [label=dep];
+cells9 [style=filled, fillcolor=white, label=cells];
+seeded8 -> cells9  [label=dobj];
+density12 [style=filled, fillcolor=white, label=density];
+low11 [style=filled, fillcolor=white, label=low];
+density12 -> low11  [label=amod];
+seeded8 -> density12  [label=prep_at];
+performed14 [style=filled, fillcolor=white, label=performed];
+seeded8 -> performed14  [label=conj_and];
+curves16 [style=filled, fillcolor=white, label=curves];
+growth15 [style=filled, fillcolor=white, label=growth];
+curves16 -> growth15  [label=nn];
+performed14 -> curves16  [label=dobj];
+RSK418 [style=filled, fillcolor=white, label=RSK4];
+inhibition19 -> RSK418  [label=amod];
+days2 -> inhibition19  [label=prep_after];
+partially20 [style=filled, fillcolor=white, label=partially];
+rescued21 -> partially20  [label=advmod];
+rescued21 -> rescued21  [label=root];
+senescence23 [style=filled, fillcolor=white, label=senescence];
+"BRAFE600-induced22" [style=filled, fillcolor=white, label="BRAFE600-induced"];
+senescence23 -> "BRAFE600-induced22"  [label=nn];
+rescued21 -> senescence23  [label=dobj];
+"p16-null29" [style=filled, fillcolor=white, label="p16-null"];
+both25 [style=filled, fillcolor=white, label=both];
+"p16-null29" -> both25  [label=preconj];
+TIG326 [style=filled, fillcolor=white, label=TIG3];
+"p16-null29" -> TIG326  [label=nn];
+TIG328 [style=filled, fillcolor=white, label=TIG3];
+TIG326 -> TIG328  [label=conj_and];
+rescued21 -> "p16-null29"  [label=prep_in];
+Figure31 [style=filled, fillcolor=white, label=Figure];
+"p16-null29" -> Figure31  [label=appos];
+"4A32" [style=filled, fillcolor=white, label="4A"];
+Figure31 -> "4A32"  [label=num];
+}

@@ -1,0 +1,9 @@
+digraph "Passage 1-2 ( Discussion/Conclusion )" {
+label="Passage 1-2 ( Discussion/Conclusion )";
+Passage1 [style=filled, fillcolor=white, label=Passage];
+Passage1 -> Passage1  [label=root];
+"1-2" [style=filled, fillcolor=white, label="1-2"];
+Passage1 -> "1-2"  [label=num];
+"Discussion/Conclusion4" [style=filled, fillcolor=white, label="Discussion/Conclusion"];
+Passage1 -> "Discussion/Conclusion4"  [label=appos];
+}

@@ -1,0 +1,21 @@
+digraph "Hence ASPP2 can be phosphorylated at serine 827 by MAPK1 in vitro ." {
+label="Hence ASPP2 can be phosphorylated at serine 827 by MAPK1 in vitro .";
+phosphorylated5 [style=filled, fillcolor=white, label=phosphorylated];
+Hence1 [style=filled, fillcolor=white, label=Hence];
+phosphorylated5 -> Hence1  [label=advmod];
+ASPP2 [style=filled, fillcolor=white, label=ASPP2];
+phosphorylated5 -> ASPP2  [label=nsubjpass];
+can3 [style=filled, fillcolor=white, label=can];
+phosphorylated5 -> can3  [label=aux];
+be4 [style=filled, fillcolor=white, label=be];
+phosphorylated5 -> be4  [label=auxpass];
+phosphorylated5 -> phosphorylated5  [label=root];
+827 [style=filled, fillcolor=white, label=827];
+serine7 [style=filled, fillcolor=white, label=serine];
+827 -> serine7  [label=amod];
+phosphorylated5 -> 827  [label=prep_at];
+MAPK110 [style=filled, fillcolor=white, label=MAPK1];
+phosphorylated5 -> MAPK110  [label=agent];
+vitro12 [style=filled, fillcolor=white, label=vitro];
+phosphorylated5 -> vitro12  [label=prep_in];
+}

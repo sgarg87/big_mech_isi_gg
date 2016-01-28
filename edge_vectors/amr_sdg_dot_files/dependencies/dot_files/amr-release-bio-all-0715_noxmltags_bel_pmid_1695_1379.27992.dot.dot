@@ -1,0 +1,40 @@
+digraph "A late peak of Egr-1 mRNA occurred 12 -- 24 h after IL-13 treatment but was not accompanied by an increase in Egr-1 protein ." {
+label="A late peak of Egr-1 mRNA occurred 12 -- 24 h after IL-13 treatment but was not
+accompanied by an increase in Egr-1 protein .";
+peak3 [style=filled, fillcolor=white, label=peak];
+A1 [style=filled, fillcolor=white, label=A];
+peak3 -> A1  [label=det];
+late2 [style=filled, fillcolor=white, label=late];
+peak3 -> late2  [label=amod];
+occurred7 [style=filled, fillcolor=white, label=occurred];
+occurred7 -> peak3  [label=nsubj];
+mRNA6 [style=filled, fillcolor=white, label=mRNA];
+"Egr-15" [style=filled, fillcolor=white, label="Egr-1"];
+mRNA6 -> "Egr-15"  [label=nn];
+peak3 -> mRNA6  [label=prep_of];
+occurred7 -> occurred7  [label=root];
+128 [style=filled, fillcolor=white, label=12];
+occurred7 -> 128  [label=dobj];
+h11 [style=filled, fillcolor=white, label=h];
+2410 [style=filled, fillcolor=white, label=24];
+h11 -> 2410  [label=num];
+128 -> h11  [label=dep];
+treatment14 [style=filled, fillcolor=white, label=treatment];
+"IL-13" [style=filled, fillcolor=white, label="IL-13"];
+treatment14 -> "IL-13"  [label=nn];
+h11 -> treatment14  [label=prep_after];
+accompanied18 [style=filled, fillcolor=white, label=accompanied];
+was16 [style=filled, fillcolor=white, label=was];
+accompanied18 -> was16  [label=auxpass];
+not17 [style=filled, fillcolor=white, label=not];
+accompanied18 -> not17  [label=neg];
+occurred7 -> accompanied18  [label=conj_but];
+increase21 [style=filled, fillcolor=white, label=increase];
+an20 [style=filled, fillcolor=white, label=an];
+increase21 -> an20  [label=det];
+accompanied18 -> increase21  [label=agent];
+protein24 [style=filled, fillcolor=white, label=protein];
+"Egr-123" [style=filled, fillcolor=white, label="Egr-1"];
+protein24 -> "Egr-123"  [label=nn];
+increase21 -> protein24  [label=prep_in];
+}

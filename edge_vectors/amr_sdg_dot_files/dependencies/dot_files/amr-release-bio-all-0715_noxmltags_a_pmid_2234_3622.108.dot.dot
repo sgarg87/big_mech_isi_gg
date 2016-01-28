@@ -1,0 +1,28 @@
+digraph "In order to investigate this further ,  we performed pharmacodynamic analysis on tumour tissue ." {
+label="In order to investigate this further ,  we performed pharmacodynamic analysis
+on tumour tissue .";
+investigate4 [style=filled, fillcolor=white, label=investigate];
+In1 [style=filled, fillcolor=white, label=In];
+investigate4 -> In1  [label=mark];
+order2 [style=filled, fillcolor=white, label=order];
+investigate4 -> order2  [label=dep];
+to3 [style=filled, fillcolor=white, label=to];
+investigate4 -> to3  [label=aux];
+performed9 [style=filled, fillcolor=white, label=performed];
+performed9 -> investigate4  [label=advcl];
+further6 [style=filled, fillcolor=white, label=further];
+this5 [style=filled, fillcolor=white, label=this];
+further6 -> this5  [label=det];
+investigate4 -> further6  [label=dobj];
+we8 [style=filled, fillcolor=white, label=we];
+performed9 -> we8  [label=nsubj];
+performed9 -> performed9  [label=root];
+analysis11 [style=filled, fillcolor=white, label=analysis];
+pharmacodynamic10 [style=filled, fillcolor=white, label=pharmacodynamic];
+analysis11 -> pharmacodynamic10  [label=amod];
+performed9 -> analysis11  [label=dobj];
+tissue14 [style=filled, fillcolor=white, label=tissue];
+tumour13 [style=filled, fillcolor=white, label=tumour];
+tissue14 -> tumour13  [label=nn];
+performed9 -> tissue14  [label=prep_on];
+}

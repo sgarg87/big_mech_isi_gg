@@ -1,0 +1,40 @@
+digraph "As IGF-1 was sufficient to induce neoplastic proliferation ,  we determined whether the IGF-1 and MØCM growth effects were additive ." {
+label="As IGF-1 was sufficient to induce neoplastic proliferation ,  we determined
+whether the IGF-1 and MØCM growth effects were additive .";
+sufficient4 [style=filled, fillcolor=white, label=sufficient];
+As1 [style=filled, fillcolor=white, label=As];
+sufficient4 -> As1  [label=mark];
+"IGF-12" [style=filled, fillcolor=white, label="IGF-1"];
+sufficient4 -> "IGF-12"  [label=nsubj];
+was3 [style=filled, fillcolor=white, label=was];
+sufficient4 -> was3  [label=cop];
+determined11 [style=filled, fillcolor=white, label=determined];
+determined11 -> sufficient4  [label=advcl];
+induce6 [style=filled, fillcolor=white, label=induce];
+to5 [style=filled, fillcolor=white, label=to];
+induce6 -> to5  [label=aux];
+sufficient4 -> induce6  [label=xcomp];
+proliferation8 [style=filled, fillcolor=white, label=proliferation];
+neoplastic7 [style=filled, fillcolor=white, label=neoplastic];
+proliferation8 -> neoplastic7  [label=amod];
+induce6 -> proliferation8  [label=dobj];
+we10 [style=filled, fillcolor=white, label=we];
+determined11 -> we10  [label=nsubj];
+determined11 -> determined11  [label=root];
+additive20 [style=filled, fillcolor=white, label=additive];
+whether12 [style=filled, fillcolor=white, label=whether];
+additive20 -> whether12  [label=mark];
+"IGF-14" [style=filled, fillcolor=white, label="IGF-1"];
+the13 [style=filled, fillcolor=white, label=the];
+"IGF-14" -> the13  [label=det];
+additive20 -> "IGF-14"  [label=nsubj];
+effects18 [style=filled, fillcolor=white, label=effects];
+"MØCM16" [style=filled, fillcolor=white, label="MØCM"];
+effects18 -> "MØCM16"  [label=nn];
+growth17 [style=filled, fillcolor=white, label=growth];
+effects18 -> growth17  [label=nn];
+"IGF-14" -> effects18  [label=conj_and];
+were19 [style=filled, fillcolor=white, label=were];
+additive20 -> were19  [label=cop];
+determined11 -> additive20  [label=ccomp];
+}

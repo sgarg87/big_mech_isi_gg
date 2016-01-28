@@ -1,0 +1,32 @@
+digraph "Arrows mark membrane localization of the protein and asterisks mark cells with elevated levels of cytoplasmic β-catenin or Ajuba ." {
+label="Arrows mark membrane localization of the protein and asterisks mark cells with
+elevated levels of cytoplasmic β-catenin or Ajuba .";
+mark2 [style=filled, fillcolor=white, label=mark];
+Arrows1 [style=filled, fillcolor=white, label=Arrows];
+mark2 -> Arrows1  [label=nsubj];
+mark2 -> mark2  [label=root];
+localization4 [style=filled, fillcolor=white, label=localization];
+membrane3 [style=filled, fillcolor=white, label=membrane];
+localization4 -> membrane3  [label=amod];
+mark2 -> localization4  [label=dobj];
+protein7 [style=filled, fillcolor=white, label=protein];
+the6 [style=filled, fillcolor=white, label=the];
+protein7 -> the6  [label=det];
+localization4 -> protein7  [label=prep_of];
+asterisks9 [style=filled, fillcolor=white, label=asterisks];
+mark2 -> asterisks9  [label=conj_and];
+cells11 [style=filled, fillcolor=white, label=cells];
+mark10 [style=filled, fillcolor=white, label=mark];
+cells11 -> mark10  [label=nn];
+asterisks9 -> cells11  [label=dobj];
+levels14 [style=filled, fillcolor=white, label=levels];
+elevated13 [style=filled, fillcolor=white, label=elevated];
+levels14 -> elevated13  [label=amod];
+asterisks9 -> levels14  [label=prep_with];
+"β-catenin17" [style=filled, fillcolor=white, label="β-catenin"];
+cytoplasmic16 [style=filled, fillcolor=white, label=cytoplasmic];
+"β-catenin17" -> cytoplasmic16  [label=amod];
+levels14 -> "β-catenin17"  [label=prep_of];
+Ajuba19 [style=filled, fillcolor=white, label=Ajuba];
+"β-catenin17" -> Ajuba19  [label=conj_or];
+}

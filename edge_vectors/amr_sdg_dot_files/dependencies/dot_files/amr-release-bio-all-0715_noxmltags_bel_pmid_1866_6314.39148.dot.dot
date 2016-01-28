@@ -1,0 +1,65 @@
+digraph "from full text - TNF-alpha exerts its pro-inflammatory effects through increased production of IL-1beta and IL-6 ,  expression of adhesion molecules ,  proliferation of fibroblasts and procoagulant factors ,  as well as initiation of cytotoxic ,  apoptotic ,  acute-phase responses ,  and inhibition of apoptosis -LSB- 8 ,  9 -RSB- ." {
+label="from full text - TNF-alpha exerts its pro-inflammatory effects through
+increased production of IL-1beta and IL-6 ,  expression of adhesion molecules ,
+proliferation of fibroblasts and procoagulant factors ,  as well as initiation
+of cytotoxic ,  apoptotic ,  acute-phase responses ,  and inhibition of
+apoptosis -LSB- 8 ,  9 -RSB- .";
+text3 [style=filled, fillcolor=white, label=text];
+full2 [style=filled, fillcolor=white, label=full];
+text3 -> full2  [label=amod];
+exerts6 [style=filled, fillcolor=white, label=exerts];
+exerts6 -> text3  [label=prep_from];
+"TNF-alpha5" [style=filled, fillcolor=white, label="TNF-alpha"];
+exerts6 -> "TNF-alpha5"  [label=nsubj];
+exerts6 -> exerts6  [label=root];
+effects9 [style=filled, fillcolor=white, label=effects];
+its7 [style=filled, fillcolor=white, label=its];
+effects9 -> its7  [label=poss];
+"pro-inflammatory8" [style=filled, fillcolor=white, label="pro-inflammatory"];
+effects9 -> "pro-inflammatory8"  [label=amod];
+exerts6 -> effects9  [label=dobj];
+production12 [style=filled, fillcolor=white, label=production];
+increased11 [style=filled, fillcolor=white, label=increased];
+production12 -> increased11  [label=amod];
+exerts6 -> production12  [label=prep_through];
+"IL-1beta4" [style=filled, fillcolor=white, label="IL-1beta"];
+production12 -> "IL-1beta4"  [label=prep_of];
+"IL-61" [style=filled, fillcolor=white, label="IL-6"];
+"IL-1beta4" -> "IL-61"  [label=conj_and];
+expression18 [style=filled, fillcolor=white, label=expression];
+production12 -> expression18  [label=conj_and];
+molecules21 [style=filled, fillcolor=white, label=molecules];
+adhesion20 [style=filled, fillcolor=white, label=adhesion];
+molecules21 -> adhesion20  [label=nn];
+expression18 -> molecules21  [label=prep_of];
+proliferation23 [style=filled, fillcolor=white, label=proliferation];
+production12 -> proliferation23  [label=conj_and];
+fibroblasts25 [style=filled, fillcolor=white, label=fibroblasts];
+proliferation23 -> fibroblasts25  [label=prep_of];
+factors28 [style=filled, fillcolor=white, label=factors];
+procoagulant27 [style=filled, fillcolor=white, label=procoagulant];
+factors28 -> procoagulant27  [label=nn];
+fibroblasts25 -> factors28  [label=conj_and];
+initiation33 [style=filled, fillcolor=white, label=initiation];
+proliferation23 -> initiation33  [label=conj_and];
+"acute-phase39" [style=filled, fillcolor=white, label="acute-phase"];
+cytotoxic35 [style=filled, fillcolor=white, label=cytotoxic];
+"acute-phase39" -> cytotoxic35  [label=amod];
+apoptotic37 [style=filled, fillcolor=white, label=apoptotic];
+"acute-phase39" -> apoptotic37  [label=amod];
+responses40 [style=filled, fillcolor=white, label=responses];
+responses40 -> "acute-phase39"  [label=amod];
+initiation33 -> responses40  [label=prep_of];
+inhibition43 [style=filled, fillcolor=white, label=inhibition];
+production12 -> inhibition43  [label=conj_and];
+apoptosis45 [style=filled, fillcolor=white, label=apoptosis];
+inhibition43 -> apoptosis45  [label=prep_of];
+"-RSB-50" [style=filled, fillcolor=white, label="-RSB-"];
+"-LSB-46" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-50" -> "-LSB-46"  [label=dep];
+847 [style=filled, fillcolor=white, label=8];
+"-LSB-46" -> 847  [label=num];
+94 [style=filled, fillcolor=white, label=9];
+"-LSB-46" -> 94  [label=num];
+apoptosis45 -> "-RSB-50"  [label=amod];
+}

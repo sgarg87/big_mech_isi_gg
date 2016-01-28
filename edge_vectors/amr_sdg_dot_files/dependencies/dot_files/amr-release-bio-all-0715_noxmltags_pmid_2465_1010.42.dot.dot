@@ -1,0 +1,40 @@
+digraph "Further support for the idea that K-Ras has functions distinct from H-Ras and N-Ras comes from analyses of the roles of Ras genes in development ." {
+label="Further support for the idea that K-Ras has functions distinct from H-Ras and
+N-Ras comes from analyses of the roles of Ras genes in development .";
+support2 [style=filled, fillcolor=white, label=support];
+Further1 [style=filled, fillcolor=white, label=Further];
+support2 -> Further1  [label=amod];
+comes15 [style=filled, fillcolor=white, label=comes];
+comes15 -> support2  [label=nsubj];
+idea5 [style=filled, fillcolor=white, label=idea];
+the4 [style=filled, fillcolor=white, label=the];
+idea5 -> the4  [label=det];
+support2 -> idea5  [label=prep_for];
+has8 [style=filled, fillcolor=white, label=has];
+that6 [style=filled, fillcolor=white, label=that];
+has8 -> that6  [label=mark];
+"K-Ras7" [style=filled, fillcolor=white, label="K-Ras"];
+has8 -> "K-Ras7"  [label=nsubj];
+idea5 -> has8  [label=dep];
+functions9 [style=filled, fillcolor=white, label=functions];
+has8 -> functions9  [label=dobj];
+distinct10 [style=filled, fillcolor=white, label=distinct];
+functions9 -> distinct10  [label=amod];
+"H-Ras12" [style=filled, fillcolor=white, label="H-Ras"];
+distinct10 -> "H-Ras12"  [label=prep_from];
+"N-Ras14" [style=filled, fillcolor=white, label="N-Ras"];
+"H-Ras12" -> "N-Ras14"  [label=conj_and];
+comes15 -> comes15  [label=root];
+analyses17 [style=filled, fillcolor=white, label=analyses];
+comes15 -> analyses17  [label=prep_from];
+roles20 [style=filled, fillcolor=white, label=roles];
+the19 [style=filled, fillcolor=white, label=the];
+roles20 -> the19  [label=det];
+analyses17 -> roles20  [label=prep_of];
+genes23 [style=filled, fillcolor=white, label=genes];
+Ras22 [style=filled, fillcolor=white, label=Ras];
+genes23 -> Ras22  [label=nn];
+roles20 -> genes23  [label=prep_of];
+development25 [style=filled, fillcolor=white, label=development];
+comes15 -> development25  [label=prep_in];
+}

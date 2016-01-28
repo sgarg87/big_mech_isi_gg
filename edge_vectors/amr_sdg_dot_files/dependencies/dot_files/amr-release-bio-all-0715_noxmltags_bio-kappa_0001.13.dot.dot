@@ -1,0 +1,30 @@
+digraph "In addition to promoting C-Raf activation ,  PP2A is also able to dephosphorylate Erk - dependent sites on C-Raf ." {
+label="In addition to promoting C-Raf activation ,  PP2A is also able to
+dephosphorylate Erk - dependent sites on C-Raf .";
+able11 [style=filled, fillcolor=white, label=able];
+promoting4 [style=filled, fillcolor=white, label=promoting];
+able11 -> promoting4  [label=prepc_in_addition_to];
+activation6 [style=filled, fillcolor=white, label=activation];
+"C-Raf5" [style=filled, fillcolor=white, label="C-Raf"];
+activation6 -> "C-Raf5"  [label=amod];
+promoting4 -> activation6  [label=dobj];
+PP2A8 [style=filled, fillcolor=white, label=PP2A];
+able11 -> PP2A8  [label=nsubj];
+is9 [style=filled, fillcolor=white, label=is];
+able11 -> is9  [label=cop];
+also10 [style=filled, fillcolor=white, label=also];
+able11 -> also10  [label=advmod];
+able11 -> able11  [label=root];
+dephosphorylate13 [style=filled, fillcolor=white, label=dephosphorylate];
+to12 [style=filled, fillcolor=white, label=to];
+dephosphorylate13 -> to12  [label=aux];
+able11 -> dephosphorylate13  [label=xcomp];
+Erk14 [style=filled, fillcolor=white, label=Erk];
+dephosphorylate13 -> Erk14  [label=dobj];
+sites17 [style=filled, fillcolor=white, label=sites];
+dependent16 [style=filled, fillcolor=white, label=dependent];
+sites17 -> dependent16  [label=amod];
+Erk14 -> sites17  [label=dep];
+"C-Raf19" [style=filled, fillcolor=white, label="C-Raf"];
+sites17 -> "C-Raf19"  [label=prep_on];
+}

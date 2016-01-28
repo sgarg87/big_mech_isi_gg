@@ -1,0 +1,41 @@
+digraph "More importantly ,  persistent activation of IL-6 downstream Stat3 in AT II epithelial cellsdirec tly induced lung inflammation and bronchioalveolar adenocarcinoma ( 22 ) ." {
+label="More importantly ,  persistent activation of IL-6 downstream Stat3 in AT II
+epithelial cellsdirec tly induced lung inflammation and bronchioalveolar
+adenocarcinoma ( 22 ) .";
+importantly2 [style=filled, fillcolor=white, label=importantly];
+More1 [style=filled, fillcolor=white, label=More];
+importantly2 -> More1  [label=advmod];
+induced16 [style=filled, fillcolor=white, label=induced];
+induced16 -> importantly2  [label=advmod];
+activation5 [style=filled, fillcolor=white, label=activation];
+persistent4 [style=filled, fillcolor=white, label=persistent];
+activation5 -> persistent4  [label=amod];
+induced16 -> activation5  [label=nsubj];
+Stat39 [style=filled, fillcolor=white, label=Stat3];
+"IL-67" [style=filled, fillcolor=white, label="IL-6"];
+Stat39 -> "IL-67"  [label=nn];
+downstream8 [style=filled, fillcolor=white, label=downstream];
+Stat39 -> downstream8  [label=amod];
+activation5 -> Stat39  [label=prep_of];
+tly15 [style=filled, fillcolor=white, label=tly];
+AT11 [style=filled, fillcolor=white, label=AT];
+tly15 -> AT11  [label=nn];
+II12 [style=filled, fillcolor=white, label=II];
+tly15 -> II12  [label=nn];
+epithelial13 [style=filled, fillcolor=white, label=epithelial];
+tly15 -> epithelial13  [label=nn];
+cellsdirec14 [style=filled, fillcolor=white, label=cellsdirec];
+tly15 -> cellsdirec14  [label=amod];
+Stat39 -> tly15  [label=prep_in];
+induced16 -> induced16  [label=root];
+inflammation18 [style=filled, fillcolor=white, label=inflammation];
+lung17 [style=filled, fillcolor=white, label=lung];
+inflammation18 -> lung17  [label=nn];
+induced16 -> inflammation18  [label=dobj];
+adenocarcinoma21 [style=filled, fillcolor=white, label=adenocarcinoma];
+bronchioalveolar20 [style=filled, fillcolor=white, label=bronchioalveolar];
+adenocarcinoma21 -> bronchioalveolar20  [label=nn];
+inflammation18 -> adenocarcinoma21  [label=conj_and];
+2223 [style=filled, fillcolor=white, label=22];
+inflammation18 -> 2223  [label=appos];
+}

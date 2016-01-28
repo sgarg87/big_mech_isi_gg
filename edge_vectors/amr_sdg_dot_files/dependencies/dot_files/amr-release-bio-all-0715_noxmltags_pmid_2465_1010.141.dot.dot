@@ -1,0 +1,53 @@
+digraph "However ,  the compounds that these groups discovered could be excellent starting points toward the discovery of compounds that have selectivity for mutant forms of K-Ras or block effector interactions ." {
+label="However ,  the compounds that these groups discovered could be excellent
+starting points toward the discovery of compounds that have selectivity for
+mutant forms of K-Ras or block effector interactions .";
+excellent11 [style=filled, fillcolor=white, label=excellent];
+However1 [style=filled, fillcolor=white, label=However];
+excellent11 -> However1  [label=advmod];
+compounds4 [style=filled, fillcolor=white, label=compounds];
+the3 [style=filled, fillcolor=white, label=the];
+compounds4 -> the3  [label=det];
+excellent11 -> compounds4  [label=nsubj];
+discovered8 [style=filled, fillcolor=white, label=discovered];
+that5 [style=filled, fillcolor=white, label=that];
+discovered8 -> that5  [label=mark];
+groups7 [style=filled, fillcolor=white, label=groups];
+these6 [style=filled, fillcolor=white, label=these];
+groups7 -> these6  [label=det];
+discovered8 -> groups7  [label=nsubj];
+compounds4 -> discovered8  [label=dep];
+could9 [style=filled, fillcolor=white, label=could];
+excellent11 -> could9  [label=aux];
+be10 [style=filled, fillcolor=white, label=be];
+excellent11 -> be10  [label=cop];
+excellent11 -> excellent11  [label=root];
+starting12 [style=filled, fillcolor=white, label=starting];
+excellent11 -> starting12  [label=xcomp];
+points13 [style=filled, fillcolor=white, label=points];
+starting12 -> points13  [label=dobj];
+discovery16 [style=filled, fillcolor=white, label=discovery];
+the15 [style=filled, fillcolor=white, label=the];
+discovery16 -> the15  [label=det];
+starting12 -> discovery16  [label=prep_toward];
+compounds18 [style=filled, fillcolor=white, label=compounds];
+discovery16 -> compounds18  [label=prep_of];
+have20 [style=filled, fillcolor=white, label=have];
+that19 [style=filled, fillcolor=white, label=that];
+have20 -> that19  [label=nsubj];
+compounds18 -> have20  [label=rcmod];
+selectivity21 [style=filled, fillcolor=white, label=selectivity];
+have20 -> selectivity21  [label=dobj];
+forms24 [style=filled, fillcolor=white, label=forms];
+mutant23 [style=filled, fillcolor=white, label=mutant];
+forms24 -> mutant23  [label=amod];
+selectivity21 -> forms24  [label=prep_for];
+"K-Ras26" [style=filled, fillcolor=white, label="K-Ras"];
+forms24 -> "K-Ras26"  [label=prep_of];
+block28 [style=filled, fillcolor=white, label=block];
+excellent11 -> block28  [label=conj_or];
+interactions30 [style=filled, fillcolor=white, label=interactions];
+effector29 [style=filled, fillcolor=white, label=effector];
+interactions30 -> effector29  [label=nn];
+block28 -> interactions30  [label=dobj];
+}

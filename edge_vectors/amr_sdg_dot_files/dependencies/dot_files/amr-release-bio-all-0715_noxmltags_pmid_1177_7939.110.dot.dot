@@ -1,0 +1,40 @@
+digraph "At this stage ,  we can not formally exclude that an unknown GEF ,  coprecipitating with Sos-1 ,  is responsible for the observed activity ." {
+label="At this stage ,  we can not formally exclude that an unknown GEF ,
+coprecipitating with Sos-1 ,  is responsible for the observed activity .";
+stage3 [style=filled, fillcolor=white, label=stage];
+this2 [style=filled, fillcolor=white, label=this];
+stage3 -> this2  [label=det];
+exclude9 [style=filled, fillcolor=white, label=exclude];
+exclude9 -> stage3  [label=prep_at];
+we5 [style=filled, fillcolor=white, label=we];
+exclude9 -> we5  [label=nsubj];
+can6 [style=filled, fillcolor=white, label=can];
+exclude9 -> can6  [label=aux];
+not7 [style=filled, fillcolor=white, label=not];
+exclude9 -> not7  [label=neg];
+formally8 [style=filled, fillcolor=white, label=formally];
+exclude9 -> formally8  [label=advmod];
+exclude9 -> exclude9  [label=root];
+responsible20 [style=filled, fillcolor=white, label=responsible];
+that10 [style=filled, fillcolor=white, label=that];
+responsible20 -> that10  [label=mark];
+GEF13 [style=filled, fillcolor=white, label=GEF];
+an11 [style=filled, fillcolor=white, label=an];
+GEF13 -> an11  [label=det];
+unknown12 [style=filled, fillcolor=white, label=unknown];
+GEF13 -> unknown12  [label=amod];
+responsible20 -> GEF13  [label=nsubj];
+coprecipitating15 [style=filled, fillcolor=white, label=coprecipitating];
+GEF13 -> coprecipitating15  [label=vmod];
+"Sos-17" [style=filled, fillcolor=white, label="Sos-1"];
+coprecipitating15 -> "Sos-17"  [label=prep_with];
+is19 [style=filled, fillcolor=white, label=is];
+responsible20 -> is19  [label=cop];
+exclude9 -> responsible20  [label=ccomp];
+activity24 [style=filled, fillcolor=white, label=activity];
+the22 [style=filled, fillcolor=white, label=the];
+activity24 -> the22  [label=det];
+observed23 [style=filled, fillcolor=white, label=observed];
+activity24 -> observed23  [label=amod];
+responsible20 -> activity24  [label=prep_for];
+}

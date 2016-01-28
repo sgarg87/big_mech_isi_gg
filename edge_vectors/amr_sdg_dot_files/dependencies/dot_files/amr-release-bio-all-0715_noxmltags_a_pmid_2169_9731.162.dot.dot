@@ -1,0 +1,30 @@
+digraph "IGF-1 stimulated neoplastic proliferation and mediated a significant portion of macrophage-induced tumor cell growth in culture ." {
+label="IGF-1 stimulated neoplastic proliferation and mediated a significant portion of
+macrophage-induced tumor cell growth in culture .";
+stimulated2 [style=filled, fillcolor=white, label=stimulated];
+"IGF-1" [style=filled, fillcolor=white, label="IGF-1"];
+stimulated2 -> "IGF-1"  [label=nsubj];
+stimulated2 -> stimulated2  [label=root];
+proliferation4 [style=filled, fillcolor=white, label=proliferation];
+neoplastic3 [style=filled, fillcolor=white, label=neoplastic];
+proliferation4 -> neoplastic3  [label=amod];
+stimulated2 -> proliferation4  [label=dobj];
+mediated6 [style=filled, fillcolor=white, label=mediated];
+stimulated2 -> mediated6  [label=conj_and];
+portion9 [style=filled, fillcolor=white, label=portion];
+a7 [style=filled, fillcolor=white, label=a];
+portion9 -> a7  [label=det];
+significant8 [style=filled, fillcolor=white, label=significant];
+portion9 -> significant8  [label=amod];
+mediated6 -> portion9  [label=dobj];
+growth14 [style=filled, fillcolor=white, label=growth];
+"macrophage-induced11" [style=filled, fillcolor=white, label="macrophage-induced"];
+growth14 -> "macrophage-induced11"  [label=amod];
+tumor12 [style=filled, fillcolor=white, label=tumor];
+growth14 -> tumor12  [label=nn];
+cell13 [style=filled, fillcolor=white, label=cell];
+growth14 -> cell13  [label=nn];
+portion9 -> growth14  [label=prep_of];
+culture16 [style=filled, fillcolor=white, label=culture];
+mediated6 -> culture16  [label=prep_in];
+}

@@ -1,0 +1,40 @@
+digraph "the human COx2 gene contains a putative NF-IL-6 element in the 5-flanking promoter region which can be activated by Il6" {
+label="the human COx2 gene contains a putative NF-IL-6 element in the 5-flanking
+promoter region which can be activated by Il6";
+gene4 [style=filled, fillcolor=white, label=gene];
+the1 [style=filled, fillcolor=white, label=the];
+gene4 -> the1  [label=det];
+human2 [style=filled, fillcolor=white, label=human];
+gene4 -> human2  [label=amod];
+COx23 [style=filled, fillcolor=white, label=COx2];
+gene4 -> COx23  [label=amod];
+contains5 [style=filled, fillcolor=white, label=contains];
+contains5 -> gene4  [label=nsubj];
+contains5 -> contains5  [label=root];
+element9 [style=filled, fillcolor=white, label=element];
+a6 [style=filled, fillcolor=white, label=a];
+element9 -> a6  [label=det];
+putative7 [style=filled, fillcolor=white, label=putative];
+element9 -> putative7  [label=amod];
+"NF-IL-68" [style=filled, fillcolor=white, label="NF-IL-6"];
+element9 -> "NF-IL-68"  [label=nn];
+contains5 -> element9  [label=dobj];
+region14 [style=filled, fillcolor=white, label=region];
+the11 [style=filled, fillcolor=white, label=the];
+region14 -> the11  [label=det];
+"5-flanking12" [style=filled, fillcolor=white, label="5-flanking"];
+region14 -> "5-flanking12"  [label=amod];
+promoter13 [style=filled, fillcolor=white, label=promoter];
+region14 -> promoter13  [label=nn];
+contains5 -> region14  [label=prep_in];
+activated18 [style=filled, fillcolor=white, label=activated];
+which15 [style=filled, fillcolor=white, label=which];
+activated18 -> which15  [label=nsubjpass];
+can16 [style=filled, fillcolor=white, label=can];
+activated18 -> can16  [label=aux];
+be17 [style=filled, fillcolor=white, label=be];
+activated18 -> be17  [label=auxpass];
+region14 -> activated18  [label=rcmod];
+Il620 [style=filled, fillcolor=white, label=Il6];
+activated18 -> Il620  [label=agent];
+}

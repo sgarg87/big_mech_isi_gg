@@ -1,0 +1,38 @@
+digraph "Induction of the urokinase promoter by HGF/SF via the Met receptor was blocked by co-expression of a dominant-negative Grb2 and Sos1 expression construct ." {
+label="Induction of the urokinase promoter by HGF/SF via the Met receptor was blocked
+by co-expression of a dominant-negative Grb2 and Sos1 expression construct .";
+blocked13 [style=filled, fillcolor=white, label=blocked];
+Induction1 [style=filled, fillcolor=white, label=Induction];
+blocked13 -> Induction1  [label=nsubjpass];
+promoter5 [style=filled, fillcolor=white, label=promoter];
+the3 [style=filled, fillcolor=white, label=the];
+promoter5 -> the3  [label=det];
+urokinase4 [style=filled, fillcolor=white, label=urokinase];
+promoter5 -> urokinase4  [label=amod];
+Induction1 -> promoter5  [label=prep_of];
+"HGF/SF7" [style=filled, fillcolor=white, label="HGF/SF"];
+promoter5 -> "HGF/SF7"  [label=prep_by];
+receptor11 [style=filled, fillcolor=white, label=receptor];
+the9 [style=filled, fillcolor=white, label=the];
+receptor11 -> the9  [label=det];
+Met10 [style=filled, fillcolor=white, label=Met];
+receptor11 -> Met10  [label=nn];
+"HGF/SF7" -> receptor11  [label=prep_via];
+was12 [style=filled, fillcolor=white, label=was];
+blocked13 -> was12  [label=auxpass];
+blocked13 -> blocked13  [label=root];
+"co-expression15" [style=filled, fillcolor=white, label="co-expression"];
+blocked13 -> "co-expression15"  [label=agent];
+Grb219 [style=filled, fillcolor=white, label=Grb2];
+a17 [style=filled, fillcolor=white, label=a];
+Grb219 -> a17  [label=det];
+"dominant-negative18" [style=filled, fillcolor=white, label="dominant-negative"];
+Grb219 -> "dominant-negative18"  [label=amod];
+"co-expression15" -> Grb219  [label=prep_of];
+construct23 [style=filled, fillcolor=white, label=construct];
+Sos12 [style=filled, fillcolor=white, label=Sos1];
+construct23 -> Sos12  [label=amod];
+expression22 [style=filled, fillcolor=white, label=expression];
+construct23 -> expression22  [label=nn];
+Grb219 -> construct23  [label=conj_and];
+}

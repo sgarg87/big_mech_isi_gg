@@ -1,0 +1,49 @@
+digraph "After 15 h ,  BrdU was added and 3 h later the cells were fixed and stained to detect BrdU incorporation ( top ) ,  E3b1 ( anti-HA ) ,  or control ( anti-IgG ) ." {
+label="After 15 h ,  BrdU was added and 3 h later the cells were fixed and stained to
+detect BrdU incorporation ( top ) ,  E3b1 ( anti-HA ) ,  or control ( anti-IgG )
+.";
+h3 [style=filled, fillcolor=white, label=h];
+152 [style=filled, fillcolor=white, label=15];
+h3 -> 152  [label=num];
+added7 [style=filled, fillcolor=white, label=added];
+added7 -> h3  [label=prep_after];
+BrdU5 [style=filled, fillcolor=white, label=BrdU];
+added7 -> BrdU5  [label=nsubjpass];
+was6 [style=filled, fillcolor=white, label=was];
+added7 -> was6  [label=auxpass];
+added7 -> added7  [label=root];
+h10 [style=filled, fillcolor=white, label=h];
+39 [style=filled, fillcolor=white, label=3];
+h10 -> 39  [label=num];
+later11 [style=filled, fillcolor=white, label=later];
+later11 -> h10  [label=npadvmod];
+fixed15 [style=filled, fillcolor=white, label=fixed];
+fixed15 -> later11  [label=advmod];
+cells13 [style=filled, fillcolor=white, label=cells];
+the12 [style=filled, fillcolor=white, label=the];
+cells13 -> the12  [label=det];
+fixed15 -> cells13  [label=nsubjpass];
+were14 [style=filled, fillcolor=white, label=were];
+fixed15 -> were14  [label=auxpass];
+added7 -> fixed15  [label=conj_and];
+stained17 [style=filled, fillcolor=white, label=stained];
+fixed15 -> stained17  [label=conj_and];
+detect19 [style=filled, fillcolor=white, label=detect];
+to18 [style=filled, fillcolor=white, label=to];
+detect19 -> to18  [label=aux];
+fixed15 -> detect19  [label=xcomp];
+incorporation21 [style=filled, fillcolor=white, label=incorporation];
+BrdU20 [style=filled, fillcolor=white, label=BrdU];
+incorporation21 -> BrdU20  [label=amod];
+detect19 -> incorporation21  [label=dobj];
+top23 [style=filled, fillcolor=white, label=top];
+incorporation21 -> top23  [label=appos];
+E3b126 [style=filled, fillcolor=white, label=E3b1];
+incorporation21 -> E3b126  [label=conj_or];
+"anti-HA28" [style=filled, fillcolor=white, label="anti-HA"];
+E3b126 -> "anti-HA28"  [label=appos];
+control32 [style=filled, fillcolor=white, label=control];
+incorporation21 -> control32  [label=conj_or];
+"anti-IgG34" [style=filled, fillcolor=white, label="anti-IgG"];
+control32 -> "anti-IgG34"  [label=appos];
+}

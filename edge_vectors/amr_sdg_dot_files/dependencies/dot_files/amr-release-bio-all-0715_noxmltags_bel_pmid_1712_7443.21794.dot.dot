@@ -1,0 +1,47 @@
+digraph "Tyk2 ,  along with JAK2 ,  does appear to regulate TPO receptor localization at the plasma membrane by stimulating recycling and enhancing the stability of the receptor in Ba/F3 cells" {
+label="Tyk2 ,  along with JAK2 ,  does appear to regulate TPO receptor localization at
+the plasma membrane by stimulating recycling and enhancing the stability of the
+receptor in Ba/F3 cells";
+appear8 [style=filled, fillcolor=white, label=appear];
+Tyk21 [style=filled, fillcolor=white, label=Tyk2];
+appear8 -> Tyk21  [label=nsubj];
+JAK25 [style=filled, fillcolor=white, label=JAK2];
+Tyk21 -> JAK25  [label=prep_along_with];
+does7 [style=filled, fillcolor=white, label=does];
+appear8 -> does7  [label=aux];
+appear8 -> appear8  [label=root];
+regulate10 [style=filled, fillcolor=white, label=regulate];
+to9 [style=filled, fillcolor=white, label=to];
+regulate10 -> to9  [label=aux];
+appear8 -> regulate10  [label=xcomp];
+localization13 [style=filled, fillcolor=white, label=localization];
+TPO11 [style=filled, fillcolor=white, label=TPO];
+localization13 -> TPO11  [label=nn];
+receptor12 [style=filled, fillcolor=white, label=receptor];
+localization13 -> receptor12  [label=nn];
+regulate10 -> localization13  [label=dobj];
+membrane17 [style=filled, fillcolor=white, label=membrane];
+the15 [style=filled, fillcolor=white, label=the];
+membrane17 -> the15  [label=det];
+plasma16 [style=filled, fillcolor=white, label=plasma];
+membrane17 -> plasma16  [label=nn];
+localization13 -> membrane17  [label=prep_at];
+stimulating19 [style=filled, fillcolor=white, label=stimulating];
+regulate10 -> stimulating19  [label=prepc_by];
+recycling20 [style=filled, fillcolor=white, label=recycling];
+stimulating19 -> recycling20  [label=vmod];
+enhancing22 [style=filled, fillcolor=white, label=enhancing];
+recycling20 -> enhancing22  [label=conj_and];
+stability24 [style=filled, fillcolor=white, label=stability];
+the23 [style=filled, fillcolor=white, label=the];
+stability24 -> the23  [label=det];
+recycling20 -> stability24  [label=dobj];
+receptor27 [style=filled, fillcolor=white, label=receptor];
+the26 [style=filled, fillcolor=white, label=the];
+receptor27 -> the26  [label=det];
+stability24 -> receptor27  [label=prep_of];
+cells30 [style=filled, fillcolor=white, label=cells];
+"Ba/F329" [style=filled, fillcolor=white, label="Ba/F3"];
+cells30 -> "Ba/F329"  [label=amod];
+receptor27 -> cells30  [label=prep_in];
+}

@@ -1,0 +1,22 @@
+digraph "This suggests tissue-specific signaling cascades and will require more investigation ." {
+label="This suggests tissue-specific signaling cascades and will require more
+investigation .";
+suggests2 [style=filled, fillcolor=white, label=suggests];
+This1 [style=filled, fillcolor=white, label=This];
+suggests2 -> This1  [label=nsubj];
+suggests2 -> suggests2  [label=root];
+cascades5 [style=filled, fillcolor=white, label=cascades];
+"tissue-specific3" [style=filled, fillcolor=white, label="tissue-specific"];
+cascades5 -> "tissue-specific3"  [label=amod];
+signaling4 [style=filled, fillcolor=white, label=signaling];
+cascades5 -> signaling4  [label=amod];
+suggests2 -> cascades5  [label=dobj];
+require8 [style=filled, fillcolor=white, label=require];
+will7 [style=filled, fillcolor=white, label=will];
+require8 -> will7  [label=aux];
+suggests2 -> require8  [label=conj_and];
+investigation10 [style=filled, fillcolor=white, label=investigation];
+more9 [style=filled, fillcolor=white, label=more];
+investigation10 -> more9  [label=amod];
+require8 -> investigation10  [label=dobj];
+}

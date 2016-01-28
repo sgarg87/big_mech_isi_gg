@@ -1,0 +1,53 @@
+digraph "This study shows that in hepatoma cells ,  the recruitment and tyrosine phosphorylation of SHP-2 ,  but not SHC ,  is the primary signaling event associated with the activation of MAP kinases ( ERK1/2 ) by gp130 ." {
+label="This study shows that in hepatoma cells ,  the recruitment and tyrosine
+phosphorylation of SHP-2 ,  but not SHC ,  is the primary signaling event
+associated with the activation of MAP kinases ( ERK1/2 ) by gp130 .";
+study2 [style=filled, fillcolor=white, label=study];
+This1 [style=filled, fillcolor=white, label=This];
+study2 -> This1  [label=det];
+shows3 [style=filled, fillcolor=white, label=shows];
+shows3 -> study2  [label=nsubj];
+shows3 -> shows3  [label=root];
+event25 [style=filled, fillcolor=white, label=event];
+that4 [style=filled, fillcolor=white, label=that];
+event25 -> that4  [label=mark];
+cells7 [style=filled, fillcolor=white, label=cells];
+hepatoma6 [style=filled, fillcolor=white, label=hepatoma];
+cells7 -> hepatoma6  [label=nn];
+event25 -> cells7  [label=prep_in];
+phosphorylation13 [style=filled, fillcolor=white, label=phosphorylation];
+the9 [style=filled, fillcolor=white, label=the];
+phosphorylation13 -> the9  [label=det];
+recruitment10 [style=filled, fillcolor=white, label=recruitment];
+phosphorylation13 -> recruitment10  [label=nn];
+tyrosine12 [style=filled, fillcolor=white, label=tyrosine];
+recruitment10 -> tyrosine12  [label=conj_and];
+event25 -> phosphorylation13  [label=nsubj];
+"SHP-215" [style=filled, fillcolor=white, label="SHP-2"];
+phosphorylation13 -> "SHP-215"  [label=prep_of];
+SHC19 [style=filled, fillcolor=white, label=SHC];
+phosphorylation13 -> SHC19  [label=conj_negcc];
+is21 [style=filled, fillcolor=white, label=is];
+event25 -> is21  [label=cop];
+the22 [style=filled, fillcolor=white, label=the];
+event25 -> the22  [label=det];
+primary23 [style=filled, fillcolor=white, label=primary];
+event25 -> primary23  [label=amod];
+signaling24 [style=filled, fillcolor=white, label=signaling];
+event25 -> signaling24  [label=amod];
+shows3 -> event25  [label=ccomp];
+associated26 [style=filled, fillcolor=white, label=associated];
+event25 -> associated26  [label=vmod];
+activation29 [style=filled, fillcolor=white, label=activation];
+the28 [style=filled, fillcolor=white, label=the];
+activation29 -> the28  [label=det];
+associated26 -> activation29  [label=prep_with];
+kinases32 [style=filled, fillcolor=white, label=kinases];
+MAP31 [style=filled, fillcolor=white, label=MAP];
+kinases32 -> MAP31  [label=nn];
+activation29 -> kinases32  [label=prep_of];
+"ERK1/234" [style=filled, fillcolor=white, label="ERK1/2"];
+kinases32 -> "ERK1/234"  [label=appos];
+gp13037 [style=filled, fillcolor=white, label=gp130];
+associated26 -> gp13037  [label=agent];
+}

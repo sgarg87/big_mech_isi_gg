@@ -1,0 +1,57 @@
+digraph "In order to study in depth the morphology and architecture of the different cell lines under conditions that resemble the real tissue microenvironment ,  the three-dimensional ( 3D ) culture system was adopted ." {
+label="In order to study in depth the morphology and architecture of the different
+cell lines under conditions that resemble the real tissue microenvironment ,
+the three-dimensional ( 3D ) culture system was adopted .";
+study4 [style=filled, fillcolor=white, label=study];
+In1 [style=filled, fillcolor=white, label=In];
+study4 -> In1  [label=mark];
+order2 [style=filled, fillcolor=white, label=order];
+study4 -> order2  [label=dep];
+to3 [style=filled, fillcolor=white, label=to];
+study4 -> to3  [label=aux];
+adopted33 [style=filled, fillcolor=white, label=adopted];
+adopted33 -> study4  [label=advcl];
+depth6 [style=filled, fillcolor=white, label=depth];
+study4 -> depth6  [label=prep_in];
+morphology8 [style=filled, fillcolor=white, label=morphology];
+the7 [style=filled, fillcolor=white, label=the];
+morphology8 -> the7  [label=det];
+study4 -> morphology8  [label=dobj];
+architecture10 [style=filled, fillcolor=white, label=architecture];
+morphology8 -> architecture10  [label=conj_and];
+lines15 [style=filled, fillcolor=white, label=lines];
+the12 [style=filled, fillcolor=white, label=the];
+lines15 -> the12  [label=det];
+different13 [style=filled, fillcolor=white, label=different];
+lines15 -> different13  [label=amod];
+cell14 [style=filled, fillcolor=white, label=cell];
+lines15 -> cell14  [label=nn];
+morphology8 -> lines15  [label=prep_of];
+conditions17 [style=filled, fillcolor=white, label=conditions];
+lines15 -> conditions17  [label=prep_under];
+resemble19 [style=filled, fillcolor=white, label=resemble];
+that18 [style=filled, fillcolor=white, label=that];
+resemble19 -> that18  [label=nsubj];
+conditions17 -> resemble19  [label=rcmod];
+microenvironment23 [style=filled, fillcolor=white, label=microenvironment];
+the20 [style=filled, fillcolor=white, label=the];
+microenvironment23 -> the20  [label=det];
+real21 [style=filled, fillcolor=white, label=real];
+microenvironment23 -> real21  [label=amod];
+tissue22 [style=filled, fillcolor=white, label=tissue];
+microenvironment23 -> tissue22  [label=nn];
+resemble19 -> microenvironment23  [label=xcomp];
+system31 [style=filled, fillcolor=white, label=system];
+the25 [style=filled, fillcolor=white, label=the];
+system31 -> the25  [label=det];
+culture30 [style=filled, fillcolor=white, label=culture];
+"three-dimensional26" [style=filled, fillcolor=white, label="three-dimensional"];
+culture30 -> "three-dimensional26"  [label=amod];
+"3D28" [style=filled, fillcolor=white, label="3D"];
+culture30 -> "3D28"  [label=appos];
+system31 -> culture30  [label=nn];
+adopted33 -> system31  [label=nsubjpass];
+was32 [style=filled, fillcolor=white, label=was];
+adopted33 -> was32  [label=auxpass];
+adopted33 -> adopted33  [label=root];
+}

@@ -1,0 +1,55 @@
+digraph "In conclusion ,  our results show that IL-6 stimulates hepatic IGFBP-4 gene expression and production in vitro and in vivo ,  thereby suggesting another mechanism by which cytokines could control IGF-I action ." {
+label="In conclusion ,  our results show that IL-6 stimulates hepatic IGFBP-4 gene
+expression and production in vitro and in vivo ,  thereby suggesting another
+mechanism by which cytokines could control IGF-I action .";
+show6 [style=filled, fillcolor=white, label=show];
+conclusion2 [style=filled, fillcolor=white, label=conclusion];
+show6 -> conclusion2  [label=prep_in];
+results5 [style=filled, fillcolor=white, label=results];
+our4 [style=filled, fillcolor=white, label=our];
+results5 -> our4  [label=poss];
+show6 -> results5  [label=nsubj];
+show6 -> show6  [label=root];
+stimulates9 [style=filled, fillcolor=white, label=stimulates];
+that7 [style=filled, fillcolor=white, label=that];
+stimulates9 -> that7  [label=mark];
+"IL-68" [style=filled, fillcolor=white, label="IL-6"];
+stimulates9 -> "IL-68"  [label=nsubj];
+show6 -> stimulates9  [label=ccomp];
+expression13 [style=filled, fillcolor=white, label=expression];
+hepatic10 [style=filled, fillcolor=white, label=hepatic];
+expression13 -> hepatic10  [label=amod];
+"IGFBP-411" [style=filled, fillcolor=white, label="IGFBP-4"];
+expression13 -> "IGFBP-411"  [label=nn];
+gene12 [style=filled, fillcolor=white, label=gene];
+expression13 -> gene12  [label=nn];
+stimulates9 -> expression13  [label=dobj];
+production15 [style=filled, fillcolor=white, label=production];
+expression13 -> production15  [label=conj_and];
+vitro17 [style=filled, fillcolor=white, label=vitro];
+stimulates9 -> vitro17  [label=prep_in];
+in19 [style=filled, fillcolor=white, label=in];
+vitro17 -> in19  [label=conj_and];
+vivo20 [style=filled, fillcolor=white, label=vivo];
+in19 -> vivo20  [label=pobj];
+suggesting23 [style=filled, fillcolor=white, label=suggesting];
+thereby22 [style=filled, fillcolor=white, label=thereby];
+suggesting23 -> thereby22  [label=advmod];
+stimulates9 -> suggesting23  [label=vmod];
+mechanism25 [style=filled, fillcolor=white, label=mechanism];
+another24 [style=filled, fillcolor=white, label=another];
+mechanism25 -> another24  [label=det];
+suggesting23 -> mechanism25  [label=dobj];
+control30 [style=filled, fillcolor=white, label=control];
+which27 [style=filled, fillcolor=white, label=which];
+control30 -> which27  [label=prep_by];
+cytokines28 [style=filled, fillcolor=white, label=cytokines];
+control30 -> cytokines28  [label=nsubj];
+could29 [style=filled, fillcolor=white, label=could];
+control30 -> could29  [label=aux];
+mechanism25 -> control30  [label=rcmod];
+action32 [style=filled, fillcolor=white, label=action];
+"IGF-I31" [style=filled, fillcolor=white, label="IGF-I"];
+action32 -> "IGF-I31"  [label=amod];
+control30 -> action32  [label=dobj];
+}

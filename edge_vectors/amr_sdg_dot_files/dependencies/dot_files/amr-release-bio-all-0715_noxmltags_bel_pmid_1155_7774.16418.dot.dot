@@ -1,0 +1,66 @@
+digraph "Pparg ,  which is activated by 15-deoxy-D12 ,  14-prostaglandin J2 and the thiazolidione class of insulin-sensitizing drugs ,  ... Among its known target genes are adipocyte factty-acid binidng protein and fatty acid synthase ,  which are efeeectors of lipid accumulaiton during adipogeesis ." {
+label="Pparg ,  which is activated by 15-deoxy-D12 ,  14-prostaglandin J2 and the
+thiazolidione class of insulin-sensitizing drugs ,  ... Among its known target
+genes are adipocyte factty-acid binidng protein and fatty acid synthase ,  which
+are efeeectors of lipid accumulaiton during adipogeesis .";
+Pparg1 [style=filled, fillcolor=white, label=Pparg];
+Pparg1 -> Pparg1  [label=root];
+activated5 [style=filled, fillcolor=white, label=activated];
+which3 [style=filled, fillcolor=white, label=which];
+activated5 -> which3  [label=nsubjpass];
+is4 [style=filled, fillcolor=white, label=is];
+activated5 -> is4  [label=auxpass];
+Pparg1 -> activated5  [label=parataxis];
+J210 [style=filled, fillcolor=white, label=J2];
+"15-deoxy-D127" [style=filled, fillcolor=white, label="15-deoxy-D12"];
+J210 -> "15-deoxy-D127"  [label=amod];
+"14-prostaglandin9" [style=filled, fillcolor=white, label="14-prostaglandin"];
+J210 -> "14-prostaglandin9"  [label=amod];
+activated5 -> J210  [label=agent];
+class14 [style=filled, fillcolor=white, label=class];
+the12 [style=filled, fillcolor=white, label=the];
+class14 -> the12  [label=det];
+thiazolidione13 [style=filled, fillcolor=white, label=thiazolidione];
+class14 -> thiazolidione13  [label=amod];
+J210 -> class14  [label=conj_and];
+drugs17 [style=filled, fillcolor=white, label=drugs];
+"insulin-sensitizing16" [style=filled, fillcolor=white, label="insulin-sensitizing"];
+drugs17 -> "insulin-sensitizing16"  [label=amod];
+class14 -> drugs17  [label=prep_of];
+target23 [style=filled, fillcolor=white, label=target];
+its21 [style=filled, fillcolor=white, label=its];
+target23 -> its21  [label=poss];
+known22 [style=filled, fillcolor=white, label=known];
+target23 -> known22  [label=amod];
+protein29 [style=filled, fillcolor=white, label=protein];
+protein29 -> target23  [label=prep_among];
+genes24 [style=filled, fillcolor=white, label=genes];
+protein29 -> genes24  [label=nsubj];
+are25 [style=filled, fillcolor=white, label=are];
+protein29 -> are25  [label=cop];
+adipocyte26 [style=filled, fillcolor=white, label=adipocyte];
+protein29 -> adipocyte26  [label=amod];
+binidng28 [style=filled, fillcolor=white, label=binidng];
+"factty-acid27" [style=filled, fillcolor=white, label="factty-acid"];
+binidng28 -> "factty-acid27"  [label=amod];
+protein29 -> binidng28  [label=amod];
+Pparg1 -> protein29  [label=parataxis];
+synthase33 [style=filled, fillcolor=white, label=synthase];
+fatty31 [style=filled, fillcolor=white, label=fatty];
+synthase33 -> fatty31  [label=amod];
+acid32 [style=filled, fillcolor=white, label=acid];
+synthase33 -> acid32  [label=nn];
+protein29 -> synthase33  [label=conj_and];
+efeeectors37 [style=filled, fillcolor=white, label=efeeectors];
+which35 [style=filled, fillcolor=white, label=which];
+efeeectors37 -> which35  [label=nsubj];
+are36 [style=filled, fillcolor=white, label=are];
+efeeectors37 -> are36  [label=cop];
+protein29 -> efeeectors37  [label=rcmod];
+accumulaiton40 [style=filled, fillcolor=white, label=accumulaiton];
+lipid39 [style=filled, fillcolor=white, label=lipid];
+accumulaiton40 -> lipid39  [label=nn];
+efeeectors37 -> accumulaiton40  [label=prep_of];
+adipogeesis42 [style=filled, fillcolor=white, label=adipogeesis];
+efeeectors37 -> adipogeesis42  [label=prep_during];
+}

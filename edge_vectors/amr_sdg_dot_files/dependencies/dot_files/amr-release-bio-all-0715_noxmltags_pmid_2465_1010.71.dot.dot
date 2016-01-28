@@ -1,0 +1,47 @@
+digraph "However ,  only H-Ras ,  N-Ras ,  and K-Ras are capable of binding and activating Raf kinases ,  and this unique property may well account for their predominance as human oncogenes ." {
+label="However ,  only H-Ras ,  N-Ras ,  and K-Ras are capable of binding and
+activating Raf kinases ,  and this unique property may well account for their
+predominance as human oncogenes .";
+capable11 [style=filled, fillcolor=white, label=capable];
+However1 [style=filled, fillcolor=white, label=However];
+capable11 -> However1  [label=advmod];
+only3 [style=filled, fillcolor=white, label=only];
+capable11 -> only3  [label=advmod];
+"H-Ras4" [style=filled, fillcolor=white, label="H-Ras"];
+capable11 -> "H-Ras4"  [label=nsubj];
+"N-Ras6" [style=filled, fillcolor=white, label="N-Ras"];
+"H-Ras4" -> "N-Ras6"  [label=conj_and];
+"K-Ras9" [style=filled, fillcolor=white, label="K-Ras"];
+"H-Ras4" -> "K-Ras9"  [label=conj_and];
+are10 [style=filled, fillcolor=white, label=are];
+capable11 -> are10  [label=cop];
+capable11 -> capable11  [label=root];
+kinases17 [style=filled, fillcolor=white, label=kinases];
+binding13 [style=filled, fillcolor=white, label=binding];
+kinases17 -> binding13  [label=amod];
+activating15 [style=filled, fillcolor=white, label=activating];
+binding13 -> activating15  [label=conj_and];
+Raf16 [style=filled, fillcolor=white, label=Raf];
+kinases17 -> Raf16  [label=nn];
+capable11 -> kinases17  [label=prep_of];
+property22 [style=filled, fillcolor=white, label=property];
+this20 [style=filled, fillcolor=white, label=this];
+property22 -> this20  [label=det];
+unique21 [style=filled, fillcolor=white, label=unique];
+property22 -> unique21  [label=amod];
+account25 [style=filled, fillcolor=white, label=account];
+account25 -> property22  [label=nsubj];
+may23 [style=filled, fillcolor=white, label=may];
+account25 -> may23  [label=aux];
+well24 [style=filled, fillcolor=white, label=well];
+account25 -> well24  [label=advmod];
+capable11 -> account25  [label=conj_and];
+predominance28 [style=filled, fillcolor=white, label=predominance];
+their27 [style=filled, fillcolor=white, label=their];
+predominance28 -> their27  [label=poss];
+account25 -> predominance28  [label=prep_for];
+oncogenes31 [style=filled, fillcolor=white, label=oncogenes];
+human30 [style=filled, fillcolor=white, label=human];
+oncogenes31 -> human30  [label=amod];
+account25 -> oncogenes31  [label=prep_as];
+}

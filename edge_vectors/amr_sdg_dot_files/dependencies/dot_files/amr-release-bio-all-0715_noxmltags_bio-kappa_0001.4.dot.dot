@@ -1,0 +1,47 @@
+digraph "In B-Raf ,  this motif is negatively charged due to the constitutive phosphorylation of Ser446 and/or 447 ,  and to the presence of two aspartates at position 448/9 ( Fig. 2A ) ." {
+label="In B-Raf ,  this motif is negatively charged due to the constitutive
+phosphorylation of Ser446 and/or 447 ,  and to the presence of two aspartates at
+position 448/9 ( Fig. 2A ) .";
+charged8 [style=filled, fillcolor=white, label=charged];
+"B-Raf2" [style=filled, fillcolor=white, label="B-Raf"];
+charged8 -> "B-Raf2"  [label=prep_in];
+motif5 [style=filled, fillcolor=white, label=motif];
+this4 [style=filled, fillcolor=white, label=this];
+motif5 -> this4  [label=det];
+charged8 -> motif5  [label=nsubjpass];
+is6 [style=filled, fillcolor=white, label=is];
+charged8 -> is6  [label=auxpass];
+negatively7 [style=filled, fillcolor=white, label=negatively];
+charged8 -> negatively7  [label=advmod];
+charged8 -> charged8  [label=root];
+phosphorylation13 [style=filled, fillcolor=white, label=phosphorylation];
+the11 [style=filled, fillcolor=white, label=the];
+phosphorylation13 -> the11  [label=det];
+constitutive12 [style=filled, fillcolor=white, label=constitutive];
+phosphorylation13 -> constitutive12  [label=amod];
+charged8 -> phosphorylation13  [label=prep_due_to];
+"and/or16" [style=filled, fillcolor=white, label="and/or"];
+Ser44615 [style=filled, fillcolor=white, label=Ser446];
+"and/or16" -> Ser44615  [label=amod];
+phosphorylation13 -> "and/or16"  [label=prep_of];
+4471 [style=filled, fillcolor=white, label=447];
+"and/or16" -> 4471  [label=num];
+to20 [style=filled, fillcolor=white, label=to];
+charged8 -> to20  [label=conj_and];
+presence22 [style=filled, fillcolor=white, label=presence];
+the21 [style=filled, fillcolor=white, label=the];
+presence22 -> the21  [label=det];
+to20 -> presence22  [label=pobj];
+aspartates25 [style=filled, fillcolor=white, label=aspartates];
+two24 [style=filled, fillcolor=white, label=two];
+aspartates25 -> two24  [label=num];
+presence22 -> aspartates25  [label=prep_of];
+position27 [style=filled, fillcolor=white, label=position];
+aspartates25 -> position27  [label=prep_at];
+"448/92" [style=filled, fillcolor=white, label="448/9"];
+position27 -> "448/92"  [label=num];
+"2A31" [style=filled, fillcolor=white, label="2A"];
+"Fig.30" [style=filled, fillcolor=white, label="Fig."];
+"2A31" -> "Fig.30"  [label=number];
+position27 -> "2A31"  [label=dep];
+}

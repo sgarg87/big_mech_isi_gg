@@ -1,0 +1,57 @@
+digraph "As shown in Figure 3A ,  serpinE2 mRNA levels were barely detectable in the Caco-2 / 15 cell line while being markedly expressed in all other CRC cell lines tested ." {
+label="As shown in Figure 3A ,  serpinE2 mRNA levels were barely detectable in the
+Caco-2 / 15 cell line while being markedly expressed in all other CRC cell lines
+tested .";
+shown2 [style=filled, fillcolor=white, label=shown];
+As1 [style=filled, fillcolor=white, label=As];
+shown2 -> As1  [label=mark];
+detectable12 [style=filled, fillcolor=white, label=detectable];
+detectable12 -> shown2  [label=advcl];
+Figure4 [style=filled, fillcolor=white, label=Figure];
+shown2 -> Figure4  [label=prep_in];
+"3A5" [style=filled, fillcolor=white, label="3A"];
+Figure4 -> "3A5"  [label=num];
+levels9 [style=filled, fillcolor=white, label=levels];
+serpinE27 [style=filled, fillcolor=white, label=serpinE2];
+levels9 -> serpinE27  [label=amod];
+mRNA8 [style=filled, fillcolor=white, label=mRNA];
+levels9 -> mRNA8  [label=nn];
+detectable12 -> levels9  [label=nsubj];
+were10 [style=filled, fillcolor=white, label=were];
+detectable12 -> were10  [label=cop];
+barely11 [style=filled, fillcolor=white, label=barely];
+detectable12 -> barely11  [label=advmod];
+detectable12 -> detectable12  [label=root];
+line19 [style=filled, fillcolor=white, label=line];
+the14 [style=filled, fillcolor=white, label=the];
+line19 -> the14  [label=det];
+"Caco-215" [style=filled, fillcolor=white, label="Caco-2"];
+line19 -> "Caco-215"  [label=amod];
+"/16" [style=filled, fillcolor=white, label="/"];
+"Caco-215" -> "/16"  [label=dep];
+1517 [style=filled, fillcolor=white, label=15];
+"/16" -> 1517  [label=num];
+cell18 [style=filled, fillcolor=white, label=cell];
+line19 -> cell18  [label=nn];
+detectable12 -> line19  [label=prep_in];
+tested30 [style=filled, fillcolor=white, label=tested];
+while20 [style=filled, fillcolor=white, label=while];
+tested30 -> while20  [label=mark];
+expressed23 [style=filled, fillcolor=white, label=expressed];
+being21 [style=filled, fillcolor=white, label=being];
+expressed23 -> being21  [label=cop];
+markedly22 [style=filled, fillcolor=white, label=markedly];
+expressed23 -> markedly22  [label=advmod];
+tested30 -> expressed23  [label=csubj];
+lines29 [style=filled, fillcolor=white, label=lines];
+all25 [style=filled, fillcolor=white, label=all];
+lines29 -> all25  [label=det];
+other26 [style=filled, fillcolor=white, label=other];
+lines29 -> other26  [label=amod];
+CRC27 [style=filled, fillcolor=white, label=CRC];
+lines29 -> CRC27  [label=nn];
+cell28 [style=filled, fillcolor=white, label=cell];
+lines29 -> cell28  [label=nn];
+expressed23 -> lines29  [label=prep_in];
+detectable12 -> tested30  [label=advcl];
+}

@@ -1,0 +1,36 @@
+digraph "Mechanistically ASPP1 and ASPP2 bind RAS-GTP and potentiates RAS signalling to enhance p53 mediated apoptosis -LSB- 2 -RSB- ." {
+label="Mechanistically ASPP1 and ASPP2 bind RAS-GTP and potentiates RAS signalling to
+enhance p53 mediated apoptosis -LSB- 2 -RSB- .";
+ASPP12 [style=filled, fillcolor=white, label=ASPP1];
+Mechanistically1 [style=filled, fillcolor=white, label=Mechanistically];
+ASPP12 -> Mechanistically1  [label=nn];
+"RAS-GTP6" [style=filled, fillcolor=white, label="RAS-GTP"];
+"RAS-GTP6" -> ASPP12  [label=nsubj];
+bind5 [style=filled, fillcolor=white, label=bind];
+ASPP24 [style=filled, fillcolor=white, label=ASPP2];
+bind5 -> ASPP24  [label=num];
+ASPP12 -> bind5  [label=conj_and];
+"RAS-GTP6" -> "RAS-GTP6"  [label=root];
+potentiates8 [style=filled, fillcolor=white, label=potentiates];
+"RAS-GTP6" -> potentiates8  [label=conj_and];
+RAS9 [style=filled, fillcolor=white, label=RAS];
+"RAS-GTP6" -> RAS9  [label=dobj];
+signalling10 [style=filled, fillcolor=white, label=signalling];
+RAS9 -> signalling10  [label=vmod];
+enhance12 [style=filled, fillcolor=white, label=enhance];
+to11 [style=filled, fillcolor=white, label=to];
+enhance12 -> to11  [label=aux];
+signalling10 -> enhance12  [label=xcomp];
+apoptosis15 [style=filled, fillcolor=white, label=apoptosis];
+p531 [style=filled, fillcolor=white, label=p53];
+apoptosis15 -> p531  [label=num];
+mediated14 [style=filled, fillcolor=white, label=mediated];
+apoptosis15 -> mediated14  [label=amod];
+enhance12 -> apoptosis15  [label=dobj];
+"-LSB-16" [style=filled, fillcolor=white, label="-LSB-"];
+apoptosis15 -> "-LSB-16"  [label=vmod];
+"-RSB-18" [style=filled, fillcolor=white, label="-RSB-"];
+217 [style=filled, fillcolor=white, label=2];
+"-RSB-18" -> 217  [label=number];
+"-LSB-16" -> "-RSB-18"  [label=dobj];
+}

@@ -1,0 +1,26 @@
+digraph "In this Review ,  we have summarized some of the challenges of targeting Ras cancers ." {
+label="In this Review ,  we have summarized some of the challenges of targeting Ras
+cancers .";
+Review3 [style=filled, fillcolor=white, label=Review];
+this2 [style=filled, fillcolor=white, label=this];
+Review3 -> this2  [label=det];
+summarized7 [style=filled, fillcolor=white, label=summarized];
+summarized7 -> Review3  [label=prep_in];
+we5 [style=filled, fillcolor=white, label=we];
+summarized7 -> we5  [label=nsubj];
+have6 [style=filled, fillcolor=white, label=have];
+summarized7 -> have6  [label=aux];
+summarized7 -> summarized7  [label=root];
+some8 [style=filled, fillcolor=white, label=some];
+summarized7 -> some8  [label=dobj];
+challenges11 [style=filled, fillcolor=white, label=challenges];
+the10 [style=filled, fillcolor=white, label=the];
+challenges11 -> the10  [label=det];
+some8 -> challenges11  [label=prep_of];
+cancers15 [style=filled, fillcolor=white, label=cancers];
+targeting13 [style=filled, fillcolor=white, label=targeting];
+cancers15 -> targeting13  [label=amod];
+Ras14 [style=filled, fillcolor=white, label=Ras];
+cancers15 -> Ras14  [label=nn];
+challenges11 -> cancers15  [label=prep_of];
+}

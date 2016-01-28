@@ -1,0 +1,36 @@
+digraph "Inactivation of Icmt inhibited cell growth and K-Ras-induced oncogenic transformation ,  both in soft agar assays and in a nude mice model ." {
+label="Inactivation of Icmt inhibited cell growth and K-Ras-induced oncogenic
+transformation ,  both in soft agar assays and in a nude mice model .";
+inhibited4 [style=filled, fillcolor=white, label=inhibited];
+Inactivation1 [style=filled, fillcolor=white, label=Inactivation];
+inhibited4 -> Inactivation1  [label=nsubj];
+Icmt3 [style=filled, fillcolor=white, label=Icmt];
+Inactivation1 -> Icmt3  [label=prep_of];
+inhibited4 -> inhibited4  [label=root];
+growth6 [style=filled, fillcolor=white, label=growth];
+cell5 [style=filled, fillcolor=white, label=cell];
+growth6 -> cell5  [label=nn];
+inhibited4 -> growth6  [label=dobj];
+transformation10 [style=filled, fillcolor=white, label=transformation];
+"K-Ras-induced8" [style=filled, fillcolor=white, label="K-Ras-induced"];
+transformation10 -> "K-Ras-induced8"  [label=amod];
+oncogenic9 [style=filled, fillcolor=white, label=oncogenic];
+transformation10 -> oncogenic9  [label=amod];
+growth6 -> transformation10  [label=conj_and];
+both12 [style=filled, fillcolor=white, label=both];
+inhibited4 -> both12  [label=preconj];
+assays16 [style=filled, fillcolor=white, label=assays];
+soft14 [style=filled, fillcolor=white, label=soft];
+assays16 -> soft14  [label=amod];
+agar15 [style=filled, fillcolor=white, label=agar];
+assays16 -> agar15  [label=nn];
+inhibited4 -> assays16  [label=prep_in];
+model22 [style=filled, fillcolor=white, label=model];
+a19 [style=filled, fillcolor=white, label=a];
+model22 -> a19  [label=det];
+nude20 [style=filled, fillcolor=white, label=nude];
+model22 -> nude20  [label=amod];
+mice21 [style=filled, fillcolor=white, label=mice];
+model22 -> mice21  [label=nn];
+assays16 -> model22  [label=conj_and];
+}

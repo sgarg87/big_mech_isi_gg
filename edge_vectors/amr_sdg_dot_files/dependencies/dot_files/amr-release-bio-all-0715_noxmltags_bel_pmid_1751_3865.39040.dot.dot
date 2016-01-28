@@ -1,0 +1,23 @@
+digraph "FIGURE 11 . TGF-beta1 induces activation of Smad2/3 pathway in AML12 cell line" {
+label="FIGURE 11 . TGF-beta1 induces activation of Smad2/3 pathway in AML12 cell line";
+112 [style=filled, fillcolor=white, label=11];
+FIGURE1 [style=filled, fillcolor=white, label=FIGURE];
+112 -> FIGURE1  [label=dep];
+"TGF-beta14" [style=filled, fillcolor=white, label="TGF-beta1"];
+"TGF-beta14" -> 112  [label=dep];
+"TGF-beta14" -> "TGF-beta14"  [label=root];
+induces5 [style=filled, fillcolor=white, label=induces];
+"TGF-beta14" -> induces5  [label=rcmod];
+activation6 [style=filled, fillcolor=white, label=activation];
+induces5 -> activation6  [label=dobj];
+pathway9 [style=filled, fillcolor=white, label=pathway];
+"Smad2/38" [style=filled, fillcolor=white, label="Smad2/3"];
+pathway9 -> "Smad2/38"  [label=amod];
+activation6 -> pathway9  [label=prep_of];
+line13 [style=filled, fillcolor=white, label=line];
+AML12 [style=filled, fillcolor=white, label=AML12];
+line13 -> AML12  [label=nn];
+cell12 [style=filled, fillcolor=white, label=cell];
+line13 -> cell12  [label=nn];
+pathway9 -> line13  [label=prep_in];
+}

@@ -1,0 +1,28 @@
+digraph "Furthermore ,  the degree to which Ras genes are knocked down may be critical ." {
+label="Furthermore ,  the degree to which Ras genes are knocked down may be critical
+.";
+critical14 [style=filled, fillcolor=white, label=critical];
+Furthermore1 [style=filled, fillcolor=white, label=Furthermore];
+critical14 -> Furthermore1  [label=advmod];
+degree4 [style=filled, fillcolor=white, label=degree];
+the3 [style=filled, fillcolor=white, label=the];
+degree4 -> the3  [label=det];
+critical14 -> degree4  [label=nsubj];
+knocked10 [style=filled, fillcolor=white, label=knocked];
+which6 [style=filled, fillcolor=white, label=which];
+knocked10 -> which6  [label=prep_to];
+genes8 [style=filled, fillcolor=white, label=genes];
+Ras7 [style=filled, fillcolor=white, label=Ras];
+genes8 -> Ras7  [label=nn];
+knocked10 -> genes8  [label=nsubjpass];
+are9 [style=filled, fillcolor=white, label=are];
+knocked10 -> are9  [label=auxpass];
+degree4 -> knocked10  [label=rcmod];
+down11 [style=filled, fillcolor=white, label=down];
+knocked10 -> down11  [label=prt];
+may12 [style=filled, fillcolor=white, label=may];
+critical14 -> may12  [label=aux];
+be13 [style=filled, fillcolor=white, label=be];
+critical14 -> be13  [label=cop];
+critical14 -> critical14  [label=root];
+}

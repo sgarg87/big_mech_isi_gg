@@ -1,0 +1,55 @@
+digraph "Further ,  we observed that in vivo tumor education of primary lung macrophages slightly enhances this ability to stimulate epithelial proliferation ,  an effect similar to co-culture with MH-S macrophages ." {
+label="Further ,  we observed that in vivo tumor education of primary lung macrophages
+slightly enhances this ability to stimulate epithelial proliferation ,  an
+effect similar to co-culture with MH-S macrophages .";
+observed4 [style=filled, fillcolor=white, label=observed];
+Further1 [style=filled, fillcolor=white, label=Further];
+observed4 -> Further1  [label=advmod];
+we3 [style=filled, fillcolor=white, label=we];
+observed4 -> we3  [label=nsubj];
+observed4 -> observed4  [label=root];
+enhances15 [style=filled, fillcolor=white, label=enhances];
+that5 [style=filled, fillcolor=white, label=that];
+enhances15 -> that5  [label=nsubj];
+education9 [style=filled, fillcolor=white, label=education];
+vivo7 [style=filled, fillcolor=white, label=vivo];
+education9 -> vivo7  [label=nn];
+tumor8 [style=filled, fillcolor=white, label=tumor];
+education9 -> tumor8  [label=nn];
+that5 -> education9  [label=prep_in];
+macrophages13 [style=filled, fillcolor=white, label=macrophages];
+primary11 [style=filled, fillcolor=white, label=primary];
+macrophages13 -> primary11  [label=amod];
+lung12 [style=filled, fillcolor=white, label=lung];
+macrophages13 -> lung12  [label=nn];
+education9 -> macrophages13  [label=prep_of];
+slightly14 [style=filled, fillcolor=white, label=slightly];
+enhances15 -> slightly14  [label=advmod];
+observed4 -> enhances15  [label=ccomp];
+ability17 [style=filled, fillcolor=white, label=ability];
+this16 [style=filled, fillcolor=white, label=this];
+ability17 -> this16  [label=det];
+enhances15 -> ability17  [label=dobj];
+stimulate19 [style=filled, fillcolor=white, label=stimulate];
+to18 [style=filled, fillcolor=white, label=to];
+stimulate19 -> to18  [label=aux];
+ability17 -> stimulate19  [label=vmod];
+proliferation21 [style=filled, fillcolor=white, label=proliferation];
+epithelial20 [style=filled, fillcolor=white, label=epithelial];
+proliferation21 -> epithelial20  [label=amod];
+stimulate19 -> proliferation21  [label=dobj];
+effect24 [style=filled, fillcolor=white, label=effect];
+an23 [style=filled, fillcolor=white, label=an];
+effect24 -> an23  [label=det];
+similar25 [style=filled, fillcolor=white, label=similar];
+similar25 -> effect24  [label=nsubj];
+stimulate19 -> similar25  [label=xcomp];
+"co-culture27" [style=filled, fillcolor=white, label="co-culture"];
+to26 [style=filled, fillcolor=white, label=to];
+"co-culture27" -> to26  [label=aux];
+similar25 -> "co-culture27"  [label=xcomp];
+macrophages30 [style=filled, fillcolor=white, label=macrophages];
+"MH-S29" [style=filled, fillcolor=white, label="MH-S"];
+macrophages30 -> "MH-S29"  [label=amod];
+"co-culture27" -> macrophages30  [label=prep_with];
+}

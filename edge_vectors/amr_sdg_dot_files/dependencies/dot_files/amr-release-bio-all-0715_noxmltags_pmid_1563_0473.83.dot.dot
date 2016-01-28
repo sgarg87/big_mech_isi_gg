@@ -1,0 +1,45 @@
+digraph "The mosaic morphology was reflected at the level of Tg Snail protein ,  with only the hyperthickened regions expressing nuclear HA-tagged Snail ( Figure 2C ) ." {
+label="The mosaic morphology was reflected at the level of Tg Snail protein ,  with
+only the hyperthickened regions expressing nuclear HA-tagged Snail ( Figure 2C )
+.";
+morphology3 [style=filled, fillcolor=white, label=morphology];
+The1 [style=filled, fillcolor=white, label=The];
+morphology3 -> The1  [label=det];
+mosaic2 [style=filled, fillcolor=white, label=mosaic];
+morphology3 -> mosaic2  [label=amod];
+reflected5 [style=filled, fillcolor=white, label=reflected];
+reflected5 -> morphology3  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+reflected5 -> was4  [label=auxpass];
+reflected5 -> reflected5  [label=root];
+level8 [style=filled, fillcolor=white, label=level];
+the7 [style=filled, fillcolor=white, label=the];
+level8 -> the7  [label=det];
+reflected5 -> level8  [label=prep_at];
+protein12 [style=filled, fillcolor=white, label=protein];
+Tg10 [style=filled, fillcolor=white, label=Tg];
+protein12 -> Tg10  [label=nn];
+Snail11 [style=filled, fillcolor=white, label=Snail];
+protein12 -> Snail11  [label=nn];
+level8 -> protein12  [label=prep_of];
+regions18 [style=filled, fillcolor=white, label=regions];
+only15 [style=filled, fillcolor=white, label=only];
+regions18 -> only15  [label=advmod];
+the16 [style=filled, fillcolor=white, label=the];
+regions18 -> the16  [label=det];
+hyperthickened17 [style=filled, fillcolor=white, label=hyperthickened];
+regions18 -> hyperthickened17  [label=amod];
+reflected5 -> regions18  [label=prep_with];
+expressing19 [style=filled, fillcolor=white, label=expressing];
+regions18 -> expressing19  [label=vmod];
+Snail22 [style=filled, fillcolor=white, label=Snail];
+nuclear20 [style=filled, fillcolor=white, label=nuclear];
+Snail22 -> nuclear20  [label=amod];
+"HA-tagged21" [style=filled, fillcolor=white, label="HA-tagged"];
+Snail22 -> "HA-tagged21"  [label=amod];
+expressing19 -> Snail22  [label=dobj];
+Figure24 [style=filled, fillcolor=white, label=Figure];
+Snail22 -> Figure24  [label=appos];
+"2C25" [style=filled, fillcolor=white, label="2C"];
+Figure24 -> "2C25"  [label=num];
+}

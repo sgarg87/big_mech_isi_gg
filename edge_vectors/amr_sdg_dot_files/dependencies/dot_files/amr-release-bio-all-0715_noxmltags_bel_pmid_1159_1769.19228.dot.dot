@@ -1,0 +1,38 @@
+digraph "Here we show that IL-10 directly affects progenitor myeloid cells by protecting them from death following the removal of growth factors ." {
+label="Here we show that IL-10 directly affects progenitor myeloid cells by protecting
+them from death following the removal of growth factors .";
+show3 [style=filled, fillcolor=white, label=show];
+Here1 [style=filled, fillcolor=white, label=Here];
+show3 -> Here1  [label=advmod];
+we2 [style=filled, fillcolor=white, label=we];
+show3 -> we2  [label=nsubj];
+show3 -> show3  [label=root];
+affects7 [style=filled, fillcolor=white, label=affects];
+that4 [style=filled, fillcolor=white, label=that];
+affects7 -> that4  [label=mark];
+"IL-105" [style=filled, fillcolor=white, label="IL-10"];
+affects7 -> "IL-105"  [label=nsubj];
+directly6 [style=filled, fillcolor=white, label=directly];
+affects7 -> directly6  [label=advmod];
+show3 -> affects7  [label=ccomp];
+cells10 [style=filled, fillcolor=white, label=cells];
+progenitor8 [style=filled, fillcolor=white, label=progenitor];
+cells10 -> progenitor8  [label=amod];
+myeloid9 [style=filled, fillcolor=white, label=myeloid];
+cells10 -> myeloid9  [label=amod];
+affects7 -> cells10  [label=dobj];
+protecting12 [style=filled, fillcolor=white, label=protecting];
+affects7 -> protecting12  [label=prepc_by];
+them13 [style=filled, fillcolor=white, label=them];
+protecting12 -> them13  [label=dobj];
+death15 [style=filled, fillcolor=white, label=death];
+protecting12 -> death15  [label=prep_from];
+removal18 [style=filled, fillcolor=white, label=removal];
+the17 [style=filled, fillcolor=white, label=the];
+removal18 -> the17  [label=det];
+death15 -> removal18  [label=prep_following];
+factors21 [style=filled, fillcolor=white, label=factors];
+growth20 [style=filled, fillcolor=white, label=growth];
+factors21 -> growth20  [label=nn];
+removal18 -> factors21  [label=prep_of];
+}

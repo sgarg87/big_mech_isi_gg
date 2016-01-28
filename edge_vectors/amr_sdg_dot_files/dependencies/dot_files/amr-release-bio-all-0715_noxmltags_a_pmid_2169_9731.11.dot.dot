@@ -1,0 +1,26 @@
+digraph "Primary macrophages from both naïve and lung-tumor bearing mice stimulated epithelial cell proliferation ." {
+label="Primary macrophages from both naïve and lung-tumor bearing mice stimulated
+epithelial cell proliferation .";
+macrophages2 [style=filled, fillcolor=white, label=macrophages];
+Primary1 [style=filled, fillcolor=white, label=Primary];
+macrophages2 -> Primary1  [label=amod];
+stimulated10 [style=filled, fillcolor=white, label=stimulated];
+stimulated10 -> macrophages2  [label=nsubj];
+"naïve5" [style=filled, fillcolor=white, label="naïve"];
+both4 [style=filled, fillcolor=white, label=both];
+"naïve5" -> both4  [label=preconj];
+macrophages2 -> "naïve5"  [label=prep_from];
+mice9 [style=filled, fillcolor=white, label=mice];
+"lung-tumor7" [style=filled, fillcolor=white, label="lung-tumor"];
+mice9 -> "lung-tumor7"  [label=amod];
+bearing8 [style=filled, fillcolor=white, label=bearing];
+mice9 -> bearing8  [label=nn];
+"naïve5" -> mice9  [label=conj_and];
+stimulated10 -> stimulated10  [label=root];
+proliferation13 [style=filled, fillcolor=white, label=proliferation];
+epithelial11 [style=filled, fillcolor=white, label=epithelial];
+proliferation13 -> epithelial11  [label=amod];
+cell12 [style=filled, fillcolor=white, label=cell];
+proliferation13 -> cell12  [label=nn];
+stimulated10 -> proliferation13  [label=dobj];
+}

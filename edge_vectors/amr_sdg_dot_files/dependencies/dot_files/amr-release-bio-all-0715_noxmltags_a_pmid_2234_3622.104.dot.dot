@@ -1,0 +1,47 @@
+digraph "In comparison when selumetinib was dosed before barasertib the anti-tumour efficacy was 74 % ( PP < 0.0005 ) observed when selumetinib was dosed following barasertib ." {
+label="In comparison when selumetinib was dosed before barasertib the anti-tumour
+efficacy was 74 % ( PP < 0.0005 ) observed when selumetinib was dosed following
+barasertib .";
+"%14" [style=filled, fillcolor=white, label="%"];
+comparison2 [style=filled, fillcolor=white, label=comparison];
+"%14" -> comparison2  [label=prep_in];
+dosed6 [style=filled, fillcolor=white, label=dosed];
+when3 [style=filled, fillcolor=white, label=when];
+dosed6 -> when3  [label=advmod];
+selumetinib4 [style=filled, fillcolor=white, label=selumetinib];
+dosed6 -> selumetinib4  [label=nsubjpass];
+was5 [style=filled, fillcolor=white, label=was];
+dosed6 -> was5  [label=auxpass];
+comparison2 -> dosed6  [label=rcmod];
+barasertib8 [style=filled, fillcolor=white, label=barasertib];
+dosed6 -> barasertib8  [label=prep_before];
+efficacy11 [style=filled, fillcolor=white, label=efficacy];
+the9 [style=filled, fillcolor=white, label=the];
+efficacy11 -> the9  [label=det];
+"anti-tumour10" [style=filled, fillcolor=white, label="anti-tumour"];
+efficacy11 -> "anti-tumour10"  [label=amod];
+"%14" -> efficacy11  [label=nsubj];
+was12 [style=filled, fillcolor=white, label=was];
+"%14" -> was12  [label=cop];
+7413 [style=filled, fillcolor=white, label=74];
+"%14" -> 7413  [label=num];
+"%14" -> "%14"  [label=root];
+PP16 [style=filled, fillcolor=white, label=PP];
+"%14" -> PP16  [label=appos];
+"0.000518" [style=filled, fillcolor=white, label="0.0005"];
+"<17" [style=filled, fillcolor=white, label="<"];
+"0.000518" -> "<17"  [label=number];
+PP16 -> "0.000518"  [label=num];
+observed20 [style=filled, fillcolor=white, label=observed];
+"%14" -> observed20  [label=rcmod];
+dosed24 [style=filled, fillcolor=white, label=dosed];
+when21 [style=filled, fillcolor=white, label=when];
+dosed24 -> when21  [label=advmod];
+selumetinib22 [style=filled, fillcolor=white, label=selumetinib];
+dosed24 -> selumetinib22  [label=nsubjpass];
+was23 [style=filled, fillcolor=white, label=was];
+dosed24 -> was23  [label=auxpass];
+observed20 -> dosed24  [label=advcl];
+barasertib26 [style=filled, fillcolor=white, label=barasertib];
+dosed24 -> barasertib26  [label=prep_following];
+}

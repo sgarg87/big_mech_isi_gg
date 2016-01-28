@@ -1,0 +1,23 @@
+digraph "We thus tested whether RAS activation may regulate ASPP2 phosphorylation ." {
+label="We thus tested whether RAS activation may regulate ASPP2 phosphorylation .";
+tested3 [style=filled, fillcolor=white, label=tested];
+We1 [style=filled, fillcolor=white, label=We];
+tested3 -> We1  [label=nsubj];
+thus2 [style=filled, fillcolor=white, label=thus];
+tested3 -> thus2  [label=advmod];
+tested3 -> tested3  [label=root];
+regulate8 [style=filled, fillcolor=white, label=regulate];
+whether4 [style=filled, fillcolor=white, label=whether];
+regulate8 -> whether4  [label=mark];
+activation6 [style=filled, fillcolor=white, label=activation];
+RAS5 [style=filled, fillcolor=white, label=RAS];
+activation6 -> RAS5  [label=nn];
+regulate8 -> activation6  [label=nsubj];
+may7 [style=filled, fillcolor=white, label=may];
+regulate8 -> may7  [label=aux];
+tested3 -> regulate8  [label=ccomp];
+phosphorylation10 [style=filled, fillcolor=white, label=phosphorylation];
+ASPP29 [style=filled, fillcolor=white, label=ASPP2];
+phosphorylation10 -> ASPP29  [label=nn];
+regulate8 -> phosphorylation10  [label=dobj];
+}

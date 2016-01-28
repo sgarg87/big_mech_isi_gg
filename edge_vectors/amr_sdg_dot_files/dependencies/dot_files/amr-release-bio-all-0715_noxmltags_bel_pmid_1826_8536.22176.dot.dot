@@ -1,0 +1,51 @@
+digraph "Src-family kinases then phosphorylate the plaque proteins b-catenin ,  plakoglobin ,  p120cnt ,  and acatenin ,  which is required for their association with the E-cadherin tail ( Calautti et al. ,  1998 ,  2005 ) ." {
+label="Src-family kinases then phosphorylate the plaque proteins b-catenin ,
+plakoglobin ,  p120cnt ,  and acatenin ,  which is required for their
+association with the E-cadherin tail ( Calautti et al. ,  1998 ,  2005 ) .";
+kinases2 [style=filled, fillcolor=white, label=kinases];
+"Src-family1" [style=filled, fillcolor=white, label="Src-family"];
+kinases2 -> "Src-family1"  [label=amod];
+phosphorylate4 [style=filled, fillcolor=white, label=phosphorylate];
+phosphorylate4 -> kinases2  [label=nsubj];
+then3 [style=filled, fillcolor=white, label=then];
+phosphorylate4 -> then3  [label=advmod];
+phosphorylate4 -> phosphorylate4  [label=root];
+proteins7 [style=filled, fillcolor=white, label=proteins];
+the5 [style=filled, fillcolor=white, label=the];
+proteins7 -> the5  [label=det];
+plaque6 [style=filled, fillcolor=white, label=plaque];
+proteins7 -> plaque6  [label=nn];
+p120cnt [style=filled, fillcolor=white, label=p120cnt];
+p120cnt -> proteins7  [label=nsubj];
+"b-catenin8" [style=filled, fillcolor=white, label="b-catenin"];
+p120cnt -> "b-catenin8"  [label=nn];
+plakoglobin10 [style=filled, fillcolor=white, label=plakoglobin];
+p120cnt -> plakoglobin10  [label=dep];
+phosphorylate4 -> p120cnt  [label=xcomp];
+acatenin15 [style=filled, fillcolor=white, label=acatenin];
+p120cnt -> acatenin15  [label=conj_and];
+required19 [style=filled, fillcolor=white, label=required];
+which17 [style=filled, fillcolor=white, label=which];
+required19 -> which17  [label=nsubjpass];
+is18 [style=filled, fillcolor=white, label=is];
+required19 -> is18  [label=auxpass];
+p120cnt -> required19  [label=rcmod];
+association22 [style=filled, fillcolor=white, label=association];
+their21 [style=filled, fillcolor=white, label=their];
+association22 -> their21  [label=poss];
+required19 -> association22  [label=prep_for];
+tail26 [style=filled, fillcolor=white, label=tail];
+the24 [style=filled, fillcolor=white, label=the];
+tail26 -> the24  [label=det];
+"E-cadherin25" [style=filled, fillcolor=white, label="E-cadherin"];
+tail26 -> "E-cadherin25"  [label=amod];
+required19 -> tail26  [label=prep_with];
+Calautti28 [style=filled, fillcolor=white, label=Calautti];
+tail26 -> Calautti28  [label=appos];
+"al.30" [style=filled, fillcolor=white, label="al."];
+Calautti28 -> "al.30"  [label=conj_et];
+199832 [style=filled, fillcolor=white, label=1998];
+Calautti28 -> 199832  [label=dep];
+200534 [style=filled, fillcolor=white, label=2005];
+Calautti28 -> 200534  [label=dep];
+}

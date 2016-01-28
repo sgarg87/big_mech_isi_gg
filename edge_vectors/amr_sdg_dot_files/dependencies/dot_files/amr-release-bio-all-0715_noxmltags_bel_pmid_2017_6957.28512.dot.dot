@@ -1,0 +1,44 @@
+digraph "There was also a decrease in IRF-4 expression in Irf5 - / - B cells ,  seen both on RNA and protein levels ( Fig. 4 A and B ) ." {
+label="There was also a decrease in IRF-4 expression in Irf5 - / - B cells ,  seen
+both on RNA and protein levels ( Fig. 4 A and B ) .";
+was2 [style=filled, fillcolor=white, label=was];
+There1 [style=filled, fillcolor=white, label=There];
+was2 -> There1  [label=expl];
+was2 -> was2  [label=root];
+also3 [style=filled, fillcolor=white, label=also];
+was2 -> also3  [label=advmod];
+decrease5 [style=filled, fillcolor=white, label=decrease];
+a4 [style=filled, fillcolor=white, label=a];
+decrease5 -> a4  [label=det];
+was2 -> decrease5  [label=nsubj];
+expression8 [style=filled, fillcolor=white, label=expression];
+"IRF-47" [style=filled, fillcolor=white, label="IRF-4"];
+expression8 -> "IRF-47"  [label=nn];
+decrease5 -> expression8  [label=prep_in];
+Irf510 [style=filled, fillcolor=white, label=Irf5];
+expression8 -> Irf510  [label=prep_in];
+"/12" [style=filled, fillcolor=white, label="/"];
+decrease5 -> "/12"  [label=amod];
+cells15 [style=filled, fillcolor=white, label=cells];
+B14 [style=filled, fillcolor=white, label=B];
+cells15 -> B14  [label=nn];
+"/12" -> cells15  [label=dep];
+seen17 [style=filled, fillcolor=white, label=seen];
+cells15 -> seen17  [label=vmod];
+both18 [style=filled, fillcolor=white, label=both];
+seen17 -> both18  [label=dep];
+RNA20 [style=filled, fillcolor=white, label=RNA];
+seen17 -> RNA20  [label=prep_on];
+levels23 [style=filled, fillcolor=white, label=levels];
+protein22 [style=filled, fillcolor=white, label=protein];
+levels23 -> protein22  [label=nn];
+RNA20 -> levels23  [label=conj_and];
+A27 [style=filled, fillcolor=white, label=A];
+"Fig.25" [style=filled, fillcolor=white, label="Fig."];
+A27 -> "Fig.25"  [label=nn];
+426 [style=filled, fillcolor=white, label=4];
+A27 -> 426  [label=num];
+levels23 -> A27  [label=dep];
+B29 [style=filled, fillcolor=white, label=B];
+A27 -> B29  [label=conj_and];
+}

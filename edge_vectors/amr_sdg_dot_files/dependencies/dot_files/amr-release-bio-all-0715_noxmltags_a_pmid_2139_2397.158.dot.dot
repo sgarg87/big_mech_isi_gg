@@ -1,0 +1,42 @@
+digraph "The phosphorylation of YB-1 at S102 in response to stimulation with EGF has been described as being dependent on p90 ribosomal S6 kinase -LSB- 11 -RSB- ." {
+label="The phosphorylation of YB-1 at S102 in response to stimulation with EGF has
+been described as being dependent on p90 ribosomal S6 kinase -LSB- 11 -RSB- .";
+phosphorylation2 [style=filled, fillcolor=white, label=phosphorylation];
+The1 [style=filled, fillcolor=white, label=The];
+phosphorylation2 -> The1  [label=det];
+described15 [style=filled, fillcolor=white, label=described];
+described15 -> phosphorylation2  [label=nsubjpass];
+"YB-14" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation2 -> "YB-14"  [label=prep_of];
+S1026 [style=filled, fillcolor=white, label=S102];
+"YB-14" -> S1026  [label=prep_at];
+response8 [style=filled, fillcolor=white, label=response];
+S1026 -> response8  [label=prep_in];
+stimulation10 [style=filled, fillcolor=white, label=stimulation];
+response8 -> stimulation10  [label=prep_to];
+EGF12 [style=filled, fillcolor=white, label=EGF];
+stimulation10 -> EGF12  [label=prep_with];
+has13 [style=filled, fillcolor=white, label=has];
+described15 -> has13  [label=aux];
+been14 [style=filled, fillcolor=white, label=been];
+described15 -> been14  [label=auxpass];
+described15 -> described15  [label=root];
+dependent18 [style=filled, fillcolor=white, label=dependent];
+being17 [style=filled, fillcolor=white, label=being];
+dependent18 -> being17  [label=cop];
+described15 -> dependent18  [label=prepc_as];
+"-RSB-26" [style=filled, fillcolor=white, label="-RSB-"];
+p902 [style=filled, fillcolor=white, label=p90];
+"-RSB-26" -> p902  [label=amod];
+ribosomal21 [style=filled, fillcolor=white, label=ribosomal];
+"-RSB-26" -> ribosomal21  [label=amod];
+S622 [style=filled, fillcolor=white, label=S6];
+"-RSB-26" -> S622  [label=nn];
+kinase23 [style=filled, fillcolor=white, label=kinase];
+"-RSB-26" -> kinase23  [label=nn];
+"-LSB-24" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-26" -> "-LSB-24"  [label=nn];
+1125 [style=filled, fillcolor=white, label=11];
+"-RSB-26" -> 1125  [label=nn];
+dependent18 -> "-RSB-26"  [label=prep_on];
+}

@@ -1,0 +1,43 @@
+digraph "addition of AG1478 also suppressed ATP-mediated phosphorylation of ERK1/2 and I - ? B ? ( Fig. 4A ) ,  indicating the involvement of EGFR activation in these signaling events ." {
+label="addition of AG1478 also suppressed ATP-mediated phosphorylation of ERK1/2 and I
+- ? B ? ( Fig. 4A ) ,  indicating the involvement of EGFR activation in these
+signaling events .";
+suppressed5 [style=filled, fillcolor=white, label=suppressed];
+addition1 [style=filled, fillcolor=white, label=addition];
+suppressed5 -> addition1  [label=nsubj];
+AG14783 [style=filled, fillcolor=white, label=AG1478];
+addition1 -> AG14783  [label=prep_of];
+also4 [style=filled, fillcolor=white, label=also];
+suppressed5 -> also4  [label=advmod];
+suppressed5 -> suppressed5  [label=root];
+phosphorylation7 [style=filled, fillcolor=white, label=phosphorylation];
+"ATP-mediated6" [style=filled, fillcolor=white, label="ATP-mediated"];
+phosphorylation7 -> "ATP-mediated6"  [label=amod];
+suppressed5 -> phosphorylation7  [label=dobj];
+"ERK1/29" [style=filled, fillcolor=white, label="ERK1/2"];
+phosphorylation7 -> "ERK1/29"  [label=prep_of];
+I11 [style=filled, fillcolor=white, label=I];
+"ERK1/29" -> I11  [label=conj_and];
+B14 [style=filled, fillcolor=white, label=B];
+phosphorylation7 -> B14  [label=dep];
+"4A18" [style=filled, fillcolor=white, label="4A"];
+"Fig.17" [style=filled, fillcolor=white, label="Fig."];
+"4A18" -> "Fig.17"  [label=number];
+phosphorylation7 -> "4A18"  [label=dep];
+indicating21 [style=filled, fillcolor=white, label=indicating];
+suppressed5 -> indicating21  [label=vmod];
+involvement23 [style=filled, fillcolor=white, label=involvement];
+the22 [style=filled, fillcolor=white, label=the];
+involvement23 -> the22  [label=det];
+indicating21 -> involvement23  [label=dobj];
+activation26 [style=filled, fillcolor=white, label=activation];
+EGFR25 [style=filled, fillcolor=white, label=EGFR];
+activation26 -> EGFR25  [label=amod];
+involvement23 -> activation26  [label=prep_of];
+events30 [style=filled, fillcolor=white, label=events];
+these28 [style=filled, fillcolor=white, label=these];
+events30 -> these28  [label=det];
+signaling29 [style=filled, fillcolor=white, label=signaling];
+events30 -> signaling29  [label=amod];
+indicating21 -> events30  [label=prep_in];
+}

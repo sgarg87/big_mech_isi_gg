@@ -1,0 +1,32 @@
+digraph "These data suggest that PI3KC2β binding to nucleotide-free Ras in vivo may prevent loading of nucleotides onto Ras ." {
+label="These data suggest that PI3KC2β binding to nucleotide-free Ras in vivo may
+prevent loading of nucleotides onto Ras .";
+data2 [style=filled, fillcolor=white, label=data];
+These1 [style=filled, fillcolor=white, label=These];
+data2 -> These1  [label=det];
+suggest3 [style=filled, fillcolor=white, label=suggest];
+suggest3 -> data2  [label=nsubj];
+suggest3 -> suggest3  [label=root];
+prevent13 [style=filled, fillcolor=white, label=prevent];
+that4 [style=filled, fillcolor=white, label=that];
+prevent13 -> that4  [label=mark];
+"PI3KC2β5" [style=filled, fillcolor=white, label="PI3KC2β"];
+prevent13 -> "PI3KC2β5"  [label=nsubj];
+binding6 [style=filled, fillcolor=white, label=binding];
+"PI3KC2β5" -> binding6  [label=amod];
+Ras9 [style=filled, fillcolor=white, label=Ras];
+"nucleotide-free8" [style=filled, fillcolor=white, label="nucleotide-free"];
+Ras9 -> "nucleotide-free8"  [label=amod];
+binding6 -> Ras9  [label=prep_to];
+vivo11 [style=filled, fillcolor=white, label=vivo];
+Ras9 -> vivo11  [label=prep_in];
+may12 [style=filled, fillcolor=white, label=may];
+prevent13 -> may12  [label=aux];
+suggest3 -> prevent13  [label=ccomp];
+loading14 [style=filled, fillcolor=white, label=loading];
+prevent13 -> loading14  [label=dobj];
+nucleotides16 [style=filled, fillcolor=white, label=nucleotides];
+loading14 -> nucleotides16  [label=prep_of];
+Ras18 [style=filled, fillcolor=white, label=Ras];
+prevent13 -> Ras18  [label=prep_onto];
+}

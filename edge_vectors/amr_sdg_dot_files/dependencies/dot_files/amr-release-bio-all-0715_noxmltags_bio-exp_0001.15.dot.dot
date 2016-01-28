@@ -1,0 +1,26 @@
+digraph "These findings were confirmed in a second cell line ( Supplementary Fig . S5A ) ." {
+label="These findings were confirmed in a second cell line ( Supplementary Fig . S5A )
+.";
+findings2 [style=filled, fillcolor=white, label=findings];
+These1 [style=filled, fillcolor=white, label=These];
+findings2 -> These1  [label=det];
+confirmed4 [style=filled, fillcolor=white, label=confirmed];
+confirmed4 -> findings2  [label=nsubjpass];
+were3 [style=filled, fillcolor=white, label=were];
+confirmed4 -> were3  [label=auxpass];
+confirmed4 -> confirmed4  [label=root];
+line9 [style=filled, fillcolor=white, label=line];
+a6 [style=filled, fillcolor=white, label=a];
+line9 -> a6  [label=det];
+second7 [style=filled, fillcolor=white, label=second];
+line9 -> second7  [label=amod];
+cell8 [style=filled, fillcolor=white, label=cell];
+line9 -> cell8  [label=nn];
+confirmed4 -> line9  [label=prep_in];
+S5A14 [style=filled, fillcolor=white, label=S5A];
+Supplementary11 [style=filled, fillcolor=white, label=Supplementary];
+S5A14 -> Supplementary11  [label=nn];
+Fig12 [style=filled, fillcolor=white, label=Fig];
+S5A14 -> Fig12  [label=nn];
+line9 -> S5A14  [label=appos];
+}

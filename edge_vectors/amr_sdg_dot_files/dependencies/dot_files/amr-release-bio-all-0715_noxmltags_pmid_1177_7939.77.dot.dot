@@ -1,0 +1,40 @@
+digraph "They further suggest that the pool of E3b1 ,  available for binding to Sos-1 ,  is reduced relative to that of Grb2 ,  and may be rate-limiting ." {
+label="They further suggest that the pool of E3b1 ,  available for binding to Sos-1 ,
+is reduced relative to that of Grb2 ,  and may be rate-limiting .";
+suggest3 [style=filled, fillcolor=white, label=suggest];
+They1 [style=filled, fillcolor=white, label=They];
+suggest3 -> They1  [label=nsubj];
+further2 [style=filled, fillcolor=white, label=further];
+suggest3 -> further2  [label=advmod];
+suggest3 -> suggest3  [label=root];
+reduced17 [style=filled, fillcolor=white, label=reduced];
+that4 [style=filled, fillcolor=white, label=that];
+reduced17 -> that4  [label=mark];
+pool6 [style=filled, fillcolor=white, label=pool];
+the5 [style=filled, fillcolor=white, label=the];
+pool6 -> the5  [label=det];
+reduced17 -> pool6  [label=nsubjpass];
+E3b18 [style=filled, fillcolor=white, label=E3b1];
+pool6 -> E3b18  [label=prep_of];
+available10 [style=filled, fillcolor=white, label=available];
+pool6 -> available10  [label=amod];
+binding12 [style=filled, fillcolor=white, label=binding];
+available10 -> binding12  [label=prep_for];
+"Sos-14" [style=filled, fillcolor=white, label="Sos-1"];
+available10 -> "Sos-14"  [label=prep_to];
+is16 [style=filled, fillcolor=white, label=is];
+reduced17 -> is16  [label=auxpass];
+suggest3 -> reduced17  [label=ccomp];
+relative18 [style=filled, fillcolor=white, label=relative];
+reduced17 -> relative18  [label=advmod];
+that20 [style=filled, fillcolor=white, label=that];
+reduced17 -> that20  [label=prep_to];
+Grb2 [style=filled, fillcolor=white, label=Grb2];
+that20 -> Grb2  [label=prep_of];
+"rate-limiting27" [style=filled, fillcolor=white, label="rate-limiting"];
+may25 [style=filled, fillcolor=white, label=may];
+"rate-limiting27" -> may25  [label=aux];
+be26 [style=filled, fillcolor=white, label=be];
+"rate-limiting27" -> be26  [label=cop];
+reduced17 -> "rate-limiting27"  [label=conj_and];
+}

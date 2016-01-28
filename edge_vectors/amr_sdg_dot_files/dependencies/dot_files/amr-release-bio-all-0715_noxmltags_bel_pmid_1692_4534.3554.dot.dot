@@ -1,0 +1,57 @@
+digraph "PGD ( 2 ) induced a reduction in adiponectin and leptin mRNA ,  and the secretion of these adipokines was also inhibited ,  the effect being greater with leptin ( up to 10-fold ) than with adiponectin ( twofold ) ." {
+label="PGD ( 2 ) induced a reduction in adiponectin and leptin mRNA ,  and the
+secretion of these adipokines was also inhibited ,  the effect being greater
+with leptin ( up to 10-fold ) than with adiponectin ( twofold ) .";
+induced5 [style=filled, fillcolor=white, label=induced];
+PGD1 [style=filled, fillcolor=white, label=PGD];
+induced5 -> PGD1  [label=nsubj];
+23 [style=filled, fillcolor=white, label=2];
+PGD1 -> 23  [label=appos];
+induced5 -> induced5  [label=root];
+reduction7 [style=filled, fillcolor=white, label=reduction];
+a6 [style=filled, fillcolor=white, label=a];
+reduction7 -> a6  [label=det];
+induced5 -> reduction7  [label=dobj];
+mRNA12 [style=filled, fillcolor=white, label=mRNA];
+adiponectin9 [style=filled, fillcolor=white, label=adiponectin];
+mRNA12 -> adiponectin9  [label=nn];
+leptin11 [style=filled, fillcolor=white, label=leptin];
+adiponectin9 -> leptin11  [label=conj_and];
+reduction7 -> mRNA12  [label=prep_in];
+secretion16 [style=filled, fillcolor=white, label=secretion];
+the15 [style=filled, fillcolor=white, label=the];
+secretion16 -> the15  [label=det];
+inhibited22 [style=filled, fillcolor=white, label=inhibited];
+inhibited22 -> secretion16  [label=nsubjpass];
+adipokines19 [style=filled, fillcolor=white, label=adipokines];
+these18 [style=filled, fillcolor=white, label=these];
+adipokines19 -> these18  [label=det];
+secretion16 -> adipokines19  [label=prep_of];
+was20 [style=filled, fillcolor=white, label=was];
+inhibited22 -> was20  [label=auxpass];
+also21 [style=filled, fillcolor=white, label=also];
+inhibited22 -> also21  [label=advmod];
+induced5 -> inhibited22  [label=conj_and];
+effect25 [style=filled, fillcolor=white, label=effect];
+the24 [style=filled, fillcolor=white, label=the];
+effect25 -> the24  [label=det];
+inhibited22 -> effect25  [label=dobj];
+greater27 [style=filled, fillcolor=white, label=greater];
+being26 [style=filled, fillcolor=white, label=being];
+greater27 -> being26  [label=cop];
+effect25 -> greater27  [label=vmod];
+leptin29 [style=filled, fillcolor=white, label=leptin];
+greater27 -> leptin29  [label=prep_with];
+"10-fold33" [style=filled, fillcolor=white, label="10-fold"];
+up31 [style=filled, fillcolor=white, label=up];
+"10-fold33" -> up31  [label=quantmod];
+to32 [style=filled, fillcolor=white, label=to];
+"10-fold33" -> to32  [label=dep];
+leptin29 -> "10-fold33"  [label=dep];
+than35 [style=filled, fillcolor=white, label=than];
+greater27 -> than35  [label=dep];
+adiponectin37 [style=filled, fillcolor=white, label=adiponectin];
+greater27 -> adiponectin37  [label=prep_with];
+twofold39 [style=filled, fillcolor=white, label=twofold];
+adiponectin37 -> twofold39  [label=dep];
+}

@@ -1,0 +1,24 @@
+digraph "The fractions representing these radioactive peaks were analysed by mass spectrometry ." {
+label="The fractions representing these radioactive peaks were analysed by mass
+spectrometry .";
+fractions2 [style=filled, fillcolor=white, label=fractions];
+The1 [style=filled, fillcolor=white, label=The];
+fractions2 -> The1  [label=det];
+analysed8 [style=filled, fillcolor=white, label=analysed];
+analysed8 -> fractions2  [label=nsubjpass];
+representing3 [style=filled, fillcolor=white, label=representing];
+fractions2 -> representing3  [label=vmod];
+peaks6 [style=filled, fillcolor=white, label=peaks];
+these4 [style=filled, fillcolor=white, label=these];
+peaks6 -> these4  [label=det];
+radioactive5 [style=filled, fillcolor=white, label=radioactive];
+peaks6 -> radioactive5  [label=amod];
+representing3 -> peaks6  [label=dobj];
+were7 [style=filled, fillcolor=white, label=were];
+analysed8 -> were7  [label=auxpass];
+analysed8 -> analysed8  [label=root];
+spectrometry11 [style=filled, fillcolor=white, label=spectrometry];
+mass10 [style=filled, fillcolor=white, label=mass];
+spectrometry11 -> mass10  [label=amod];
+analysed8 -> spectrometry11  [label=agent];
+}

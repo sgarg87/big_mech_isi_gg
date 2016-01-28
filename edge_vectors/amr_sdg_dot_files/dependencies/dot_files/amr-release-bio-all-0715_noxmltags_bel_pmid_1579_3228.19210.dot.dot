@@ -1,0 +1,53 @@
+digraph "model . Tumor necrosis factor - alpha ( TNF-a ) ,  a fat cell - derived cytokine that can cause insulin resistance ( 3 ,  22 ) ,  was significantly elevated in serum of Tg mice" {
+label="model . Tumor necrosis factor - alpha ( TNF-a ) ,  a fat cell - derived
+cytokine that can cause insulin resistance ( 3 ,  22 ) ,  was significantly
+elevated in serum of Tg mice";
+Tumor3 [style=filled, fillcolor=white, label=Tumor];
+model1 [style=filled, fillcolor=white, label=model];
+Tumor3 -> model1  [label=nn];
+necrosis4 [style=filled, fillcolor=white, label=necrosis];
+necrosis4 -> Tumor3  [label=nsubj];
+necrosis4 -> necrosis4  [label=root];
+elevated31 [style=filled, fillcolor=white, label=elevated];
+factor5 [style=filled, fillcolor=white, label=factor];
+elevated31 -> factor5  [label=nsubj];
+alpha7 [style=filled, fillcolor=white, label=alpha];
+factor5 -> alpha7  [label=amod];
+"TNF-a9" [style=filled, fillcolor=white, label="TNF-a"];
+alpha7 -> "TNF-a9"  [label=dep];
+cell14 [style=filled, fillcolor=white, label=cell];
+a12 [style=filled, fillcolor=white, label=a];
+cell14 -> a12  [label=det];
+fat13 [style=filled, fillcolor=white, label=fat];
+cell14 -> fat13  [label=amod];
+factor5 -> cell14  [label=appos];
+cytokine17 [style=filled, fillcolor=white, label=cytokine];
+derived16 [style=filled, fillcolor=white, label=derived];
+cytokine17 -> derived16  [label=amod];
+cell14 -> cytokine17  [label=dep];
+cause20 [style=filled, fillcolor=white, label=cause];
+that18 [style=filled, fillcolor=white, label=that];
+cause20 -> that18  [label=nsubj];
+can19 [style=filled, fillcolor=white, label=can];
+cause20 -> can19  [label=aux];
+cytokine17 -> cause20  [label=rcmod];
+resistance22 [style=filled, fillcolor=white, label=resistance];
+insulin21 [style=filled, fillcolor=white, label=insulin];
+resistance22 -> insulin21  [label=nn];
+cause20 -> resistance22  [label=dobj];
+324 [style=filled, fillcolor=white, label=3];
+resistance22 -> 324  [label=appos];
+2226 [style=filled, fillcolor=white, label=22];
+324 -> 2226  [label=dep];
+was29 [style=filled, fillcolor=white, label=was];
+elevated31 -> was29  [label=cop];
+significantly30 [style=filled, fillcolor=white, label=significantly];
+elevated31 -> significantly30  [label=advmod];
+necrosis4 -> elevated31  [label=ccomp];
+serum33 [style=filled, fillcolor=white, label=serum];
+elevated31 -> serum33  [label=prep_in];
+mice36 [style=filled, fillcolor=white, label=mice];
+Tg35 [style=filled, fillcolor=white, label=Tg];
+mice36 -> Tg35  [label=nn];
+serum33 -> mice36  [label=prep_of];
+}

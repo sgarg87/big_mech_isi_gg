@@ -1,0 +1,38 @@
+digraph "In mouse keratinocytes ,  it was however shown to result in Src kinase-mediated phosphorylation of EGF-R ,  presumably on Tyr920 ( Calautti et al. ,  2005 ) ." {
+label="In mouse keratinocytes ,  it was however shown to result in Src kinase-mediated
+phosphorylation of EGF-R ,  presumably on Tyr920 ( Calautti et al. ,  2005 ) .";
+keratinocytes3 [style=filled, fillcolor=white, label=keratinocytes];
+mouse2 [style=filled, fillcolor=white, label=mouse];
+keratinocytes3 -> mouse2  [label=nn];
+shown8 [style=filled, fillcolor=white, label=shown];
+shown8 -> keratinocytes3  [label=prep_in];
+it5 [style=filled, fillcolor=white, label=it];
+shown8 -> it5  [label=nsubjpass];
+was6 [style=filled, fillcolor=white, label=was];
+shown8 -> was6  [label=auxpass];
+however7 [style=filled, fillcolor=white, label=however];
+shown8 -> however7  [label=advmod];
+shown8 -> shown8  [label=root];
+result10 [style=filled, fillcolor=white, label=result];
+to9 [style=filled, fillcolor=white, label=to];
+result10 -> to9  [label=aux];
+shown8 -> result10  [label=xcomp];
+phosphorylation14 [style=filled, fillcolor=white, label=phosphorylation];
+Src12 [style=filled, fillcolor=white, label=Src];
+phosphorylation14 -> Src12  [label=nn];
+"kinase-mediated13" [style=filled, fillcolor=white, label="kinase-mediated"];
+phosphorylation14 -> "kinase-mediated13"  [label=amod];
+result10 -> phosphorylation14  [label=prep_in];
+"EGF-R16" [style=filled, fillcolor=white, label="EGF-R"];
+phosphorylation14 -> "EGF-R16"  [label=prep_of];
+presumably18 [style=filled, fillcolor=white, label=presumably];
+result10 -> presumably18  [label=advmod];
+Tyr920 [style=filled, fillcolor=white, label=Tyr920];
+result10 -> Tyr920  [label=prep_on];
+Calautti22 [style=filled, fillcolor=white, label=Calautti];
+Tyr920 -> Calautti22  [label=appos];
+"al.24" [style=filled, fillcolor=white, label="al."];
+Calautti22 -> "al.24"  [label=conj_et];
+200526 [style=filled, fillcolor=white, label=2005];
+Calautti22 -> 200526  [label=dep];
+}

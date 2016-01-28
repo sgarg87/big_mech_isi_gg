@@ -1,0 +1,24 @@
+digraph "In contrast ,  small-interfering RNA-mediated reduction of LMW-DSP2 expression enhanced IL-6-induced STAT3-dependent transcription ." {
+label="In contrast ,  small-interfering RNA-mediated reduction of LMW-DSP2 expression
+enhanced IL-6-induced STAT3-dependent transcription .";
+enhanced10 [style=filled, fillcolor=white, label=enhanced];
+contrast2 [style=filled, fillcolor=white, label=contrast];
+enhanced10 -> contrast2  [label=prep_in];
+reduction6 [style=filled, fillcolor=white, label=reduction];
+"small-interfering4" [style=filled, fillcolor=white, label="small-interfering"];
+reduction6 -> "small-interfering4"  [label=amod];
+"RNA-mediated5" [style=filled, fillcolor=white, label="RNA-mediated"];
+reduction6 -> "RNA-mediated5"  [label=amod];
+enhanced10 -> reduction6  [label=nsubj];
+expression9 [style=filled, fillcolor=white, label=expression];
+"LMW-DSP28" [style=filled, fillcolor=white, label="LMW-DSP2"];
+expression9 -> "LMW-DSP28"  [label=nn];
+reduction6 -> expression9  [label=prep_of];
+enhanced10 -> enhanced10  [label=root];
+"STAT3-dependent12" [style=filled, fillcolor=white, label="STAT3-dependent"];
+"IL-6-induced11" [style=filled, fillcolor=white, label="IL-6-induced"];
+"STAT3-dependent12" -> "IL-6-induced11"  [label=amod];
+transcription13 [style=filled, fillcolor=white, label=transcription];
+transcription13 -> "STAT3-dependent12"  [label=amod];
+enhanced10 -> transcription13  [label=dobj];
+}

@@ -1,0 +1,26 @@
+digraph "Interestingly ,  the ubiquitinated subfraction of wild-type K-Ras retained a significant amount of 32P-GTP ." {
+label="Interestingly ,  the ubiquitinated subfraction of wild-type K-Ras retained a
+significant amount of 32P-GTP .";
+retained9 [style=filled, fillcolor=white, label=retained];
+Interestingly1 [style=filled, fillcolor=white, label=Interestingly];
+retained9 -> Interestingly1  [label=advmod];
+subfraction5 [style=filled, fillcolor=white, label=subfraction];
+the3 [style=filled, fillcolor=white, label=the];
+subfraction5 -> the3  [label=det];
+ubiquitinated4 [style=filled, fillcolor=white, label=ubiquitinated];
+subfraction5 -> ubiquitinated4  [label=amod];
+retained9 -> subfraction5  [label=nsubj];
+"K-Ras8" [style=filled, fillcolor=white, label="K-Ras"];
+"wild-type7" [style=filled, fillcolor=white, label="wild-type"];
+"K-Ras8" -> "wild-type7"  [label=amod];
+subfraction5 -> "K-Ras8"  [label=prep_of];
+retained9 -> retained9  [label=root];
+amount12 [style=filled, fillcolor=white, label=amount];
+a10 [style=filled, fillcolor=white, label=a];
+amount12 -> a10  [label=det];
+significant11 [style=filled, fillcolor=white, label=significant];
+amount12 -> significant11  [label=amod];
+retained9 -> amount12  [label=dobj];
+"32P-GTP14" [style=filled, fillcolor=white, label="32P-GTP"];
+amount12 -> "32P-GTP14"  [label=prep_of];
+}

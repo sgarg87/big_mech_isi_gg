@@ -1,0 +1,53 @@
+digraph "48 h posttransfection ,  protein extracts were prepared and subjected to SDS-PAGE and Western blot analyses with antibodies against pMAPK ,  total MAPK ,  Ajuba ( also recognizing the smaller ,  pre-LIM domain ) ,  and Snail ." {
+label="48 h posttransfection ,  protein extracts were prepared and subjected to SDS-
+PAGE and Western blot analyses with antibodies against pMAPK ,  total MAPK ,
+Ajuba ( also recognizing the smaller ,  pre-LIM domain ) ,  and Snail .";
+posttransfection3 [style=filled, fillcolor=white, label=posttransfection];
+481 [style=filled, fillcolor=white, label=48];
+posttransfection3 -> 481  [label=num];
+h2 [style=filled, fillcolor=white, label=h];
+posttransfection3 -> h2  [label=nn];
+total22 [style=filled, fillcolor=white, label=total];
+total22 -> posttransfection3  [label=nsubj];
+extracts6 [style=filled, fillcolor=white, label=extracts];
+protein5 [style=filled, fillcolor=white, label=protein];
+extracts6 -> protein5  [label=nn];
+prepared8 [style=filled, fillcolor=white, label=prepared];
+prepared8 -> extracts6  [label=nsubjpass];
+were7 [style=filled, fillcolor=white, label=were];
+prepared8 -> were7  [label=auxpass];
+total22 -> prepared8  [label=parataxis];
+subjected10 [style=filled, fillcolor=white, label=subjected];
+prepared8 -> subjected10  [label=conj_and];
+analyses16 [style=filled, fillcolor=white, label=analyses];
+"SDS-PAGE12" [style=filled, fillcolor=white, label="SDS-PAGE"];
+analyses16 -> "SDS-PAGE12"  [label=nn];
+Western14 [style=filled, fillcolor=white, label=Western];
+"SDS-PAGE12" -> Western14  [label=conj_and];
+blot15 [style=filled, fillcolor=white, label=blot];
+analyses16 -> blot15  [label=nn];
+prepared8 -> analyses16  [label=prep_to];
+antibodies18 [style=filled, fillcolor=white, label=antibodies];
+prepared8 -> antibodies18  [label=prep_with];
+pMAPK20 [style=filled, fillcolor=white, label=pMAPK];
+antibodies18 -> pMAPK20  [label=prep_against];
+total22 -> total22  [label=root];
+MAPK23 [style=filled, fillcolor=white, label=MAPK];
+total22 -> MAPK23  [label=dobj];
+Ajuba25 [style=filled, fillcolor=white, label=Ajuba];
+MAPK23 -> Ajuba25  [label=appos];
+recognizing28 [style=filled, fillcolor=white, label=recognizing];
+also27 [style=filled, fillcolor=white, label=also];
+recognizing28 -> also27  [label=advmod];
+MAPK23 -> recognizing28  [label=dep];
+domain33 [style=filled, fillcolor=white, label=domain];
+the29 [style=filled, fillcolor=white, label=the];
+domain33 -> the29  [label=det];
+smaller30 [style=filled, fillcolor=white, label=smaller];
+domain33 -> smaller30  [label=amod];
+"pre-LIM32" [style=filled, fillcolor=white, label="pre-LIM"];
+domain33 -> "pre-LIM32"  [label=amod];
+recognizing28 -> domain33  [label=dobj];
+Snail37 [style=filled, fillcolor=white, label=Snail];
+MAPK23 -> Snail37  [label=conj_and];
+}

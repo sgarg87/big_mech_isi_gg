@@ -1,0 +1,19 @@
+digraph "( C ) Snail mRNA expression is transiently induced by TGF-β2 ." {
+label="( C ) Snail mRNA expression is transiently induced by TGF-β2 .";
+induced9 [style=filled, fillcolor=white, label=induced];
+C2 [style=filled, fillcolor=white, label=C];
+induced9 -> C2  [label=nsubjpass];
+expression6 [style=filled, fillcolor=white, label=expression];
+Snail4 [style=filled, fillcolor=white, label=Snail];
+expression6 -> Snail4  [label=amod];
+mRNA5 [style=filled, fillcolor=white, label=mRNA];
+expression6 -> mRNA5  [label=nn];
+C2 -> expression6  [label=dep];
+is7 [style=filled, fillcolor=white, label=is];
+induced9 -> is7  [label=auxpass];
+transiently8 [style=filled, fillcolor=white, label=transiently];
+induced9 -> transiently8  [label=advmod];
+induced9 -> induced9  [label=root];
+"TGF-β211" [style=filled, fillcolor=white, label="TGF-β2"];
+induced9 -> "TGF-β211"  [label=agent];
+}

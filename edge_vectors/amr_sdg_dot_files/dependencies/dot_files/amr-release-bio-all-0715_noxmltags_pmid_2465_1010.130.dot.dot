@@ -1,0 +1,26 @@
+digraph "The effects of most of these proteins on nucleotide binding have not been measured ." {
+label="The effects of most of these proteins on nucleotide binding have not been
+measured .";
+effects2 [style=filled, fillcolor=white, label=effects];
+The1 [style=filled, fillcolor=white, label=The];
+effects2 -> The1  [label=det];
+measured14 [style=filled, fillcolor=white, label=measured];
+measured14 -> effects2  [label=nsubjpass];
+most4 [style=filled, fillcolor=white, label=most];
+effects2 -> most4  [label=prep_of];
+proteins7 [style=filled, fillcolor=white, label=proteins];
+these6 [style=filled, fillcolor=white, label=these];
+proteins7 -> these6  [label=det];
+most4 -> proteins7  [label=prep_of];
+binding10 [style=filled, fillcolor=white, label=binding];
+nucleotide9 [style=filled, fillcolor=white, label=nucleotide];
+binding10 -> nucleotide9  [label=amod];
+proteins7 -> binding10  [label=prep_on];
+have11 [style=filled, fillcolor=white, label=have];
+measured14 -> have11  [label=aux];
+not12 [style=filled, fillcolor=white, label=not];
+measured14 -> not12  [label=neg];
+been13 [style=filled, fillcolor=white, label=been];
+measured14 -> been13  [label=auxpass];
+measured14 -> measured14  [label=root];
+}

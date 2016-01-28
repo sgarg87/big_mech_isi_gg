@@ -1,0 +1,46 @@
+digraph "These conditions are known to activate the LEF-1 / β-catenin reporter TOPGal and down-regulate the E-cadherin promoter ( see -LSB- 4 -RSB- for details ) ." {
+label="These conditions are known to activate the LEF-1 / β-catenin reporter TOPGal
+and down-regulate the E-cadherin promoter ( see -LSB- 4 -RSB- for details ) .";
+conditions2 [style=filled, fillcolor=white, label=conditions];
+These1 [style=filled, fillcolor=white, label=These];
+conditions2 -> These1  [label=det];
+known4 [style=filled, fillcolor=white, label=known];
+known4 -> conditions2  [label=nsubjpass];
+are3 [style=filled, fillcolor=white, label=are];
+known4 -> are3  [label=auxpass];
+known4 -> known4  [label=root];
+activate6 [style=filled, fillcolor=white, label=activate];
+to5 [style=filled, fillcolor=white, label=to];
+activate6 -> to5  [label=aux];
+known4 -> activate6  [label=xcomp];
+TOPGal12 [style=filled, fillcolor=white, label=TOPGal];
+the7 [style=filled, fillcolor=white, label=the];
+TOPGal12 -> the7  [label=det];
+"/9" [style=filled, fillcolor=white, label="/"];
+"LEF-18" [style=filled, fillcolor=white, label="LEF-1"];
+"/9" -> "LEF-18"  [label=amod];
+TOPGal12 -> "/9"  [label=amod];
+"β-catenin10" [style=filled, fillcolor=white, label="β-catenin"];
+TOPGal12 -> "β-catenin10"  [label=amod];
+reporter11 [style=filled, fillcolor=white, label=reporter];
+TOPGal12 -> reporter11  [label=nn];
+activate6 -> TOPGal12  [label=dobj];
+"down-regulate14" [style=filled, fillcolor=white, label="down-regulate"];
+activate6 -> "down-regulate14"  [label=conj_and];
+promoter17 [style=filled, fillcolor=white, label=promoter];
+the15 [style=filled, fillcolor=white, label=the];
+promoter17 -> the15  [label=det];
+"E-cadherin16" [style=filled, fillcolor=white, label="E-cadherin"];
+promoter17 -> "E-cadherin16"  [label=amod];
+activate6 -> promoter17  [label=dobj];
+see19 [style=filled, fillcolor=white, label=see];
+activate6 -> see19  [label=parataxis];
+421 [style=filled, fillcolor=white, label=4];
+"-LSB-20" [style=filled, fillcolor=white, label="-LSB-"];
+421 -> "-LSB-20"  [label=number];
+"-RSB-22" [style=filled, fillcolor=white, label="-RSB-"];
+"-RSB-22" -> 421  [label=num];
+see19 -> "-RSB-22"  [label=dobj];
+details24 [style=filled, fillcolor=white, label=details];
+"-RSB-22" -> details24  [label=prep_for];
+}

@@ -1,0 +1,45 @@
+digraph "Likewise ,  cyclin D1 ,  NF-κB ,  and Myc are necessary for Ras tumorigenesis ; further analysis of the role of these pathways may lead to new therapeutic insights ." {
+label="Likewise ,  cyclin D1 ,  NF-κB ,  and Myc are necessary for Ras tumorigenesis ;
+further analysis of the role of these pathways may lead to new therapeutic
+insights .";
+necessary11 [style=filled, fillcolor=white, label=necessary];
+Likewise1 [style=filled, fillcolor=white, label=Likewise];
+necessary11 -> Likewise1  [label=advmod];
+cyclin3 [style=filled, fillcolor=white, label=cyclin];
+necessary11 -> cyclin3  [label=nsubj];
+D14 [style=filled, fillcolor=white, label=D1];
+cyclin3 -> D14  [label=num];
+"NF-κB6" [style=filled, fillcolor=white, label="NF-κB"];
+cyclin3 -> "NF-κB6"  [label=num];
+Myc9 [style=filled, fillcolor=white, label=Myc];
+cyclin3 -> Myc9  [label=conj_and];
+are10 [style=filled, fillcolor=white, label=are];
+necessary11 -> are10  [label=cop];
+necessary11 -> necessary11  [label=root];
+tumorigenesis14 [style=filled, fillcolor=white, label=tumorigenesis];
+Ras13 [style=filled, fillcolor=white, label=Ras];
+tumorigenesis14 -> Ras13  [label=nn];
+necessary11 -> tumorigenesis14  [label=prep_for];
+analysis17 [style=filled, fillcolor=white, label=analysis];
+further16 [style=filled, fillcolor=white, label=further];
+analysis17 -> further16  [label=amod];
+lead25 [style=filled, fillcolor=white, label=lead];
+lead25 -> analysis17  [label=nsubj];
+role20 [style=filled, fillcolor=white, label=role];
+the19 [style=filled, fillcolor=white, label=the];
+role20 -> the19  [label=det];
+analysis17 -> role20  [label=prep_of];
+pathways23 [style=filled, fillcolor=white, label=pathways];
+these22 [style=filled, fillcolor=white, label=these];
+pathways23 -> these22  [label=det];
+role20 -> pathways23  [label=prep_of];
+may24 [style=filled, fillcolor=white, label=may];
+lead25 -> may24  [label=aux];
+necessary11 -> lead25  [label=parataxis];
+insights29 [style=filled, fillcolor=white, label=insights];
+new27 [style=filled, fillcolor=white, label=new];
+insights29 -> new27  [label=amod];
+therapeutic28 [style=filled, fillcolor=white, label=therapeutic];
+insights29 -> therapeutic28  [label=amod];
+lead25 -> insights29  [label=prep_to];
+}

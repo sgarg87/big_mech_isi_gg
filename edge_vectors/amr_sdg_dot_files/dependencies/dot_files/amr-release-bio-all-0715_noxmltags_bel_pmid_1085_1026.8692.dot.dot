@@ -1,0 +1,45 @@
+digraph "However ,  immature osteoblasts respond to FGF treatment with increased proliferation ,  whereas in differentiating cells FGF does not induce DNA synthesis but causes apoptosis ." {
+label="However ,  immature osteoblasts respond to FGF treatment with increased
+proliferation ,  whereas in differentiating cells FGF does not induce DNA
+synthesis but causes apoptosis .";
+respond5 [style=filled, fillcolor=white, label=respond];
+However1 [style=filled, fillcolor=white, label=However];
+respond5 -> However1  [label=advmod];
+osteoblasts4 [style=filled, fillcolor=white, label=osteoblasts];
+immature3 [style=filled, fillcolor=white, label=immature];
+osteoblasts4 -> immature3  [label=amod];
+respond5 -> osteoblasts4  [label=nsubj];
+respond5 -> respond5  [label=root];
+FGF7 [style=filled, fillcolor=white, label=FGF];
+to6 [style=filled, fillcolor=white, label=to];
+FGF7 -> to6  [label=aux];
+respond5 -> FGF7  [label=xcomp];
+treatment8 [style=filled, fillcolor=white, label=treatment];
+FGF7 -> treatment8  [label=dobj];
+proliferation11 [style=filled, fillcolor=white, label=proliferation];
+increased10 [style=filled, fillcolor=white, label=increased];
+proliferation11 -> increased10  [label=amod];
+FGF7 -> proliferation11  [label=prep_with];
+induce20 [style=filled, fillcolor=white, label=induce];
+whereas13 [style=filled, fillcolor=white, label=whereas];
+induce20 -> whereas13  [label=mark];
+differentiating15 [style=filled, fillcolor=white, label=differentiating];
+induce20 -> differentiating15  [label=prepc_in];
+cells16 [style=filled, fillcolor=white, label=cells];
+differentiating15 -> cells16  [label=dobj];
+FGF17 [style=filled, fillcolor=white, label=FGF];
+induce20 -> FGF17  [label=nsubj];
+does18 [style=filled, fillcolor=white, label=does];
+induce20 -> does18  [label=aux];
+not19 [style=filled, fillcolor=white, label=not];
+induce20 -> not19  [label=neg];
+proliferation11 -> induce20  [label=dep];
+synthesis22 [style=filled, fillcolor=white, label=synthesis];
+DNA21 [style=filled, fillcolor=white, label=DNA];
+synthesis22 -> DNA21  [label=nn];
+induce20 -> synthesis22  [label=dobj];
+causes24 [style=filled, fillcolor=white, label=causes];
+induce20 -> causes24  [label=conj_but];
+apoptosis25 [style=filled, fillcolor=white, label=apoptosis];
+causes24 -> apoptosis25  [label=dobj];
+}

@@ -1,0 +1,32 @@
+digraph "These findings suggest that KRASG12V regulates motility and invasiveness of colon cancer cells through the Cdc42 GTPase ." {
+label="These findings suggest that KRASG12V regulates motility and invasiveness of
+colon cancer cells through the Cdc42 GTPase .";
+findings2 [style=filled, fillcolor=white, label=findings];
+These1 [style=filled, fillcolor=white, label=These];
+findings2 -> These1  [label=det];
+suggest3 [style=filled, fillcolor=white, label=suggest];
+suggest3 -> findings2  [label=nsubj];
+suggest3 -> suggest3  [label=root];
+regulates6 [style=filled, fillcolor=white, label=regulates];
+that4 [style=filled, fillcolor=white, label=that];
+regulates6 -> that4  [label=mark];
+KRASG12V5 [style=filled, fillcolor=white, label=KRASG12V];
+regulates6 -> KRASG12V5  [label=nsubj];
+suggest3 -> regulates6  [label=ccomp];
+motility7 [style=filled, fillcolor=white, label=motility];
+regulates6 -> motility7  [label=dobj];
+invasiveness9 [style=filled, fillcolor=white, label=invasiveness];
+motility7 -> invasiveness9  [label=conj_and];
+cells13 [style=filled, fillcolor=white, label=cells];
+colon11 [style=filled, fillcolor=white, label=colon];
+cells13 -> colon11  [label=nn];
+cancer12 [style=filled, fillcolor=white, label=cancer];
+cells13 -> cancer12  [label=nn];
+motility7 -> cells13  [label=prep_of];
+GTPase17 [style=filled, fillcolor=white, label=GTPase];
+the15 [style=filled, fillcolor=white, label=the];
+GTPase17 -> the15  [label=det];
+Cdc4216 [style=filled, fillcolor=white, label=Cdc42];
+GTPase17 -> Cdc4216  [label=nn];
+regulates6 -> GTPase17  [label=prep_through];
+}

@@ -1,0 +1,75 @@
+digraph "Our previous study shows important similarities between Caco-BR and DLD-1 cells regarding their tumourigenic properties and signaling pathways ,  suggesting that their transformation process occurs mainly through the constitutive activation of the MAPK ( Mitogen-Activated Protein Kinase ) pathway -LSB- 21 -RSB- ." {
+label="Our previous study shows important similarities between Caco-BR and DLD-1 cells
+regarding their tumourigenic properties and signaling pathways ,  suggesting
+that their transformation process occurs mainly through the constitutive
+activation of the MAPK ( Mitogen-Activated Protein Kinase ) pathway -LSB- 21
+-RSB- .";
+study3 [style=filled, fillcolor=white, label=study];
+Our1 [style=filled, fillcolor=white, label=Our];
+study3 -> Our1  [label=poss];
+previous2 [style=filled, fillcolor=white, label=previous];
+study3 -> previous2  [label=amod];
+shows4 [style=filled, fillcolor=white, label=shows];
+shows4 -> study3  [label=nsubj];
+shows4 -> shows4  [label=root];
+similarities6 [style=filled, fillcolor=white, label=similarities];
+important5 [style=filled, fillcolor=white, label=important];
+similarities6 -> important5  [label=amod];
+shows4 -> similarities6  [label=dobj];
+cells11 [style=filled, fillcolor=white, label=cells];
+"Caco-BR8" [style=filled, fillcolor=white, label="Caco-BR"];
+cells11 -> "Caco-BR8"  [label=nn];
+"DLD-10" [style=filled, fillcolor=white, label="DLD-1"];
+"Caco-BR8" -> "DLD-10"  [label=conj_and];
+regarding12 [style=filled, fillcolor=white, label=regarding];
+regarding12 -> cells11  [label=nsubj];
+shows4 -> regarding12  [label=prepc_between];
+properties15 [style=filled, fillcolor=white, label=properties];
+their13 [style=filled, fillcolor=white, label=their];
+properties15 -> their13  [label=poss];
+tumourigenic14 [style=filled, fillcolor=white, label=tumourigenic];
+properties15 -> tumourigenic14  [label=amod];
+regarding12 -> properties15  [label=dobj];
+signaling17 [style=filled, fillcolor=white, label=signaling];
+regarding12 -> signaling17  [label=conj_and];
+pathways18 [style=filled, fillcolor=white, label=pathways];
+signaling17 -> pathways18  [label=dobj];
+suggesting20 [style=filled, fillcolor=white, label=suggesting];
+regarding12 -> suggesting20  [label=dep];
+occurs25 [style=filled, fillcolor=white, label=occurs];
+that21 [style=filled, fillcolor=white, label=that];
+occurs25 -> that21  [label=mark];
+process24 [style=filled, fillcolor=white, label=process];
+their22 [style=filled, fillcolor=white, label=their];
+process24 -> their22  [label=poss];
+transformation23 [style=filled, fillcolor=white, label=transformation];
+process24 -> transformation23  [label=nn];
+occurs25 -> process24  [label=nsubj];
+suggesting20 -> occurs25  [label=ccomp];
+mainly26 [style=filled, fillcolor=white, label=mainly];
+occurs25 -> mainly26  [label=advmod];
+activation30 [style=filled, fillcolor=white, label=activation];
+the28 [style=filled, fillcolor=white, label=the];
+activation30 -> the28  [label=det];
+constitutive29 [style=filled, fillcolor=white, label=constitutive];
+activation30 -> constitutive29  [label=amod];
+occurs25 -> activation30  [label=prep_through];
+MAPK33 [style=filled, fillcolor=white, label=MAPK];
+the32 [style=filled, fillcolor=white, label=the];
+MAPK33 -> the32  [label=det];
+activation30 -> MAPK33  [label=prep_of];
+Kinase37 [style=filled, fillcolor=white, label=Kinase];
+"Mitogen-Activated35" [style=filled, fillcolor=white, label="Mitogen-Activated"];
+Kinase37 -> "Mitogen-Activated35"  [label=nn];
+Protein36 [style=filled, fillcolor=white, label=Protein];
+Kinase37 -> Protein36  [label=nn];
+MAPK33 -> Kinase37  [label=appos];
+pathway39 [style=filled, fillcolor=white, label=pathway];
+occurs25 -> pathway39  [label=advmod];
+214 [style=filled, fillcolor=white, label=21];
+"-LSB-40" [style=filled, fillcolor=white, label="-LSB-"];
+214 -> "-LSB-40"  [label=number];
+"-RSB-42" [style=filled, fillcolor=white, label="-RSB-"];
+"-RSB-42" -> 214  [label=num];
+regarding12 -> "-RSB-42"  [label=dobj];
+}

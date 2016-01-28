@@ -1,0 +1,30 @@
+digraph "As shown in Figure 1A ,  specific hybridization was detected within the epithelium of nascent hair buds ." {
+label="As shown in Figure 1A ,  specific hybridization was detected within the
+epithelium of nascent hair buds .";
+shown2 [style=filled, fillcolor=white, label=shown];
+As1 [style=filled, fillcolor=white, label=As];
+shown2 -> As1  [label=mark];
+detected10 [style=filled, fillcolor=white, label=detected];
+detected10 -> shown2  [label=advcl];
+Figure4 [style=filled, fillcolor=white, label=Figure];
+shown2 -> Figure4  [label=prep_in];
+"1A5" [style=filled, fillcolor=white, label="1A"];
+Figure4 -> "1A5"  [label=num];
+hybridization8 [style=filled, fillcolor=white, label=hybridization];
+specific7 [style=filled, fillcolor=white, label=specific];
+hybridization8 -> specific7  [label=amod];
+detected10 -> hybridization8  [label=nsubjpass];
+was9 [style=filled, fillcolor=white, label=was];
+detected10 -> was9  [label=auxpass];
+detected10 -> detected10  [label=root];
+epithelium13 [style=filled, fillcolor=white, label=epithelium];
+the12 [style=filled, fillcolor=white, label=the];
+epithelium13 -> the12  [label=det];
+detected10 -> epithelium13  [label=prep_within];
+buds17 [style=filled, fillcolor=white, label=buds];
+nascent15 [style=filled, fillcolor=white, label=nascent];
+buds17 -> nascent15  [label=amod];
+hair16 [style=filled, fillcolor=white, label=hair];
+buds17 -> hair16  [label=nn];
+epithelium13 -> buds17  [label=prep_of];
+}

@@ -1,0 +1,23 @@
+digraph "How E-cadherin is regulated in guard hairs remains to be determined ." {
+label="How E-cadherin is regulated in guard hairs remains to be determined .";
+regulated4 [style=filled, fillcolor=white, label=regulated];
+How1 [style=filled, fillcolor=white, label=How];
+regulated4 -> How1  [label=advmod];
+"E-cadherin2" [style=filled, fillcolor=white, label="E-cadherin"];
+regulated4 -> "E-cadherin2"  [label=nsubjpass];
+is3 [style=filled, fillcolor=white, label=is];
+regulated4 -> is3  [label=auxpass];
+remains8 [style=filled, fillcolor=white, label=remains];
+remains8 -> regulated4  [label=csubj];
+hairs7 [style=filled, fillcolor=white, label=hairs];
+guard6 [style=filled, fillcolor=white, label=guard];
+hairs7 -> guard6  [label=nn];
+regulated4 -> hairs7  [label=prep_in];
+remains8 -> remains8  [label=root];
+determined11 [style=filled, fillcolor=white, label=determined];
+to9 [style=filled, fillcolor=white, label=to];
+determined11 -> to9  [label=aux];
+be10 [style=filled, fillcolor=white, label=be];
+determined11 -> be10  [label=auxpass];
+remains8 -> determined11  [label=xcomp];
+}

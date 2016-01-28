@@ -1,0 +1,22 @@
+digraph "Therefore ,  we measured the kinetic of RTK-induced activation of Ras and Rac ." {
+label="Therefore ,  we measured the kinetic of RTK-induced activation of Ras and Rac
+.";
+measured4 [style=filled, fillcolor=white, label=measured];
+Therefore1 [style=filled, fillcolor=white, label=Therefore];
+measured4 -> Therefore1  [label=advmod];
+we3 [style=filled, fillcolor=white, label=we];
+measured4 -> we3  [label=nsubj];
+measured4 -> measured4  [label=root];
+kinetic6 [style=filled, fillcolor=white, label=kinetic];
+the5 [style=filled, fillcolor=white, label=the];
+kinetic6 -> the5  [label=det];
+measured4 -> kinetic6  [label=dobj];
+activation9 [style=filled, fillcolor=white, label=activation];
+"RTK-induced8" [style=filled, fillcolor=white, label="RTK-induced"];
+activation9 -> "RTK-induced8"  [label=amod];
+kinetic6 -> activation9  [label=prep_of];
+Ras11 [style=filled, fillcolor=white, label=Ras];
+activation9 -> Ras11  [label=prep_of];
+Rac13 [style=filled, fillcolor=white, label=Rac];
+Ras11 -> Rac13  [label=conj_and];
+}

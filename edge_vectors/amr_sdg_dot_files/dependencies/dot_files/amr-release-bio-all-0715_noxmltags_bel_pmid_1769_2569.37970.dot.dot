@@ -1,0 +1,77 @@
+digraph "Table 1 . Production of pro- and anti-angiogenic mediators by DCs Pro-angiogenic mediators : VEGF ,  FGF2 ,  TNF-a ,  IL-6 ,  TGF-b ,  CXCL8 ,  CXCL5 ,  CXCL1 ,  2 ,  3 ,  CCL2 ,  GM-CSF ,  ET-1 ,  OPN ,  Anti-angiogenic mediators : IL-12 ,  IL-18 ,  IL-10 ,  TSP-1 ,  PTX3 ,  IFN-a/b ,  CXCL9 ,  CXCL10 ,  CXCL13 ,  CCL21" {
+label="Table 1 . Production of pro- and anti-angiogenic mediators by DCs Pro-
+angiogenic mediators : VEGF ,  FGF2 ,  TNF-a ,  IL-6 ,  TGF-b ,  CXCL8 ,  CXCL5
+,  CXCL1 ,  2 ,  3 ,  CCL2 ,  GM-CSF ,  ET-1 ,  OPN ,  Anti-angiogenic mediators
+: IL-12 ,  IL-18 ,  IL-10 ,  TSP-1 ,  PTX3 ,  IFN-a/b ,  CXCL9 ,  CXCL10 ,
+CXCL13 ,  CCL21";
+Table1 [style=filled, fillcolor=white, label=Table];
+Table1 -> Table1  [label=root];
+Production4 [style=filled, fillcolor=white, label=Production];
+12 [style=filled, fillcolor=white, label=1];
+Production4 -> 12  [label=dep];
+Table1 -> Production4  [label=dep];
+mediators9 [style=filled, fillcolor=white, label=mediators];
+"pro-6" [style=filled, fillcolor=white, label="pro-"];
+mediators9 -> "pro-6"  [label=amod];
+"anti-angiogenic8" [style=filled, fillcolor=white, label="anti-angiogenic"];
+"pro-6" -> "anti-angiogenic8"  [label=conj_and];
+Production4 -> mediators9  [label=prep_of];
+mediators13 [style=filled, fillcolor=white, label=mediators];
+DCs11 [style=filled, fillcolor=white, label=DCs];
+mediators13 -> DCs11  [label=nn];
+"Pro-angiogenic12" [style=filled, fillcolor=white, label="Pro-angiogenic"];
+mediators13 -> "Pro-angiogenic12"  [label=nn];
+mediators9 -> mediators13  [label=prep_by];
+CXCL129 [style=filled, fillcolor=white, label=CXCL1];
+VEGF15 [style=filled, fillcolor=white, label=VEGF];
+CXCL129 -> VEGF15  [label=nn];
+FGF217 [style=filled, fillcolor=white, label=FGF2];
+CXCL129 -> FGF217  [label=appos];
+"TNF-a19" [style=filled, fillcolor=white, label="TNF-a"];
+CXCL129 -> "TNF-a19"  [label=appos];
+"IL-621" [style=filled, fillcolor=white, label="IL-6"];
+CXCL129 -> "IL-621"  [label=appos];
+"TGF-b23" [style=filled, fillcolor=white, label="TGF-b"];
+CXCL129 -> "TGF-b23"  [label=appos];
+CXCL825 [style=filled, fillcolor=white, label=CXCL8];
+CXCL129 -> CXCL825  [label=appos];
+CXCL527 [style=filled, fillcolor=white, label=CXCL5];
+CXCL129 -> CXCL527  [label=appos];
+Production4 -> CXCL129  [label=dep];
+231 [style=filled, fillcolor=white, label=2];
+CXCL129 -> 231  [label=amod];
+3 [style=filled, fillcolor=white, label=3];
+CXCL129 -> 3  [label=amod];
+mediators44 [style=filled, fillcolor=white, label=mediators];
+CCL235 [style=filled, fillcolor=white, label=CCL2];
+mediators44 -> CCL235  [label=nn];
+"GM-CSF37" [style=filled, fillcolor=white, label="GM-CSF"];
+mediators44 -> "GM-CSF37"  [label=appos];
+"ET-139" [style=filled, fillcolor=white, label="ET-1"];
+mediators44 -> "ET-139"  [label=appos];
+OPN41 [style=filled, fillcolor=white, label=OPN];
+mediators44 -> OPN41  [label=appos];
+"Anti-angiogenic43" [style=filled, fillcolor=white, label="Anti-angiogenic"];
+mediators44 -> "Anti-angiogenic43"  [label=appos];
+CXCL129 -> mediators44  [label=appos];
+"IL-1246" [style=filled, fillcolor=white, label="IL-12"];
+Production4 -> "IL-1246"  [label=dep];
+CCL2164 [style=filled, fillcolor=white, label=CCL21];
+"IL-184" [style=filled, fillcolor=white, label="IL-18"];
+CCL2164 -> "IL-184"  [label=nn];
+"IL-105" [style=filled, fillcolor=white, label="IL-10"];
+CCL2164 -> "IL-105"  [label=appos];
+"TSP-152" [style=filled, fillcolor=white, label="TSP-1"];
+CCL2164 -> "TSP-152"  [label=appos];
+PTX354 [style=filled, fillcolor=white, label=PTX3];
+CCL2164 -> PTX354  [label=appos];
+"IFN-a/b56" [style=filled, fillcolor=white, label="IFN-a/b"];
+CCL2164 -> "IFN-a/b56"  [label=appos];
+CXCL958 [style=filled, fillcolor=white, label=CXCL9];
+CCL2164 -> CXCL958  [label=appos];
+CXCL106 [style=filled, fillcolor=white, label=CXCL10];
+CCL2164 -> CXCL106  [label=appos];
+CXCL1362 [style=filled, fillcolor=white, label=CXCL13];
+CCL2164 -> CXCL1362  [label=appos];
+"IL-1246" -> CCL2164  [label=appos];
+}

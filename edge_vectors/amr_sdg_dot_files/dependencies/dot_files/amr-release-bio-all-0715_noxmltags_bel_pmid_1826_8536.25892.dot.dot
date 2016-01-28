@@ -1,0 +1,52 @@
+digraph "Recently reported in A431 cells ,  this can occur through E-cadherin-mediated inhibition of transphosphorylation on Tyr845EGF-R ( Perrais et al. ,  2007 ) ,  the site ,  which catalyzes EGF-induced mitogenesis ( Ishizawar and Parsons ,  2004 ) ." {
+label="Recently reported in A431 cells ,  this can occur through E-cadherin-mediated
+inhibition of transphosphorylation on Tyr845EGF-R ( Perrais et al. ,  2007 ) ,
+the site ,  which catalyzes EGF-induced mitogenesis ( Ishizawar and Parsons ,
+2004 ) .";
+reported2 [style=filled, fillcolor=white, label=reported];
+Recently1 [style=filled, fillcolor=white, label=Recently];
+reported2 -> Recently1  [label=advmod];
+occur9 [style=filled, fillcolor=white, label=occur];
+occur9 -> reported2  [label=vmod];
+cells5 [style=filled, fillcolor=white, label=cells];
+A431 [style=filled, fillcolor=white, label=A431];
+cells5 -> A431  [label=num];
+reported2 -> cells5  [label=prep_in];
+this7 [style=filled, fillcolor=white, label=this];
+occur9 -> this7  [label=nsubj];
+can8 [style=filled, fillcolor=white, label=can];
+occur9 -> can8  [label=aux];
+occur9 -> occur9  [label=root];
+inhibition12 [style=filled, fillcolor=white, label=inhibition];
+"E-cadherin-mediated11" [style=filled, fillcolor=white, label="E-cadherin-mediated"];
+inhibition12 -> "E-cadherin-mediated11"  [label=amod];
+occur9 -> inhibition12  [label=prep_through];
+transphosphorylation14 [style=filled, fillcolor=white, label=transphosphorylation];
+inhibition12 -> transphosphorylation14  [label=prep_of];
+"Tyr845EGF-R16" [style=filled, fillcolor=white, label="Tyr845EGF-R"];
+occur9 -> "Tyr845EGF-R16"  [label=prep_on];
+Perrais18 [style=filled, fillcolor=white, label=Perrais];
+"Tyr845EGF-R16" -> Perrais18  [label=appos];
+"al.20" [style=filled, fillcolor=white, label="al."];
+Perrais18 -> "al.20"  [label=conj_et];
+2007 [style=filled, fillcolor=white, label=2007];
+Perrais18 -> 2007  [label=dep];
+site26 [style=filled, fillcolor=white, label=site];
+the25 [style=filled, fillcolor=white, label=the];
+site26 -> the25  [label=det];
+"Tyr845EGF-R16" -> site26  [label=appos];
+catalyzes29 [style=filled, fillcolor=white, label=catalyzes];
+which28 [style=filled, fillcolor=white, label=which];
+catalyzes29 -> which28  [label=nsubj];
+"Tyr845EGF-R16" -> catalyzes29  [label=rcmod];
+mitogenesis31 [style=filled, fillcolor=white, label=mitogenesis];
+"EGF-induced30" [style=filled, fillcolor=white, label="EGF-induced"];
+mitogenesis31 -> "EGF-induced30"  [label=amod];
+catalyzes29 -> mitogenesis31  [label=dobj];
+Ishizawar33 [style=filled, fillcolor=white, label=Ishizawar];
+mitogenesis31 -> Ishizawar33  [label=appos];
+Parsons35 [style=filled, fillcolor=white, label=Parsons];
+Ishizawar33 -> Parsons35  [label=conj_and];
+200437 [style=filled, fillcolor=white, label=2004];
+Ishizawar33 -> 200437  [label=dep];
+}

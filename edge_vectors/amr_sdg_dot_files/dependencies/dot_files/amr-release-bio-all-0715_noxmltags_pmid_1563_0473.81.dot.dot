@@ -1,0 +1,38 @@
+digraph "As Snail Tg animals grew ,  they became distinguished by their small size ,  short tails ,  and flaky skin ( Figure 2A ) ." {
+label="As Snail Tg animals grew ,  they became distinguished by their small size ,
+short tails ,  and flaky skin ( Figure 2A ) .";
+grew5 [style=filled, fillcolor=white, label=grew];
+As1 [style=filled, fillcolor=white, label=As];
+grew5 -> As1  [label=mark];
+animals4 [style=filled, fillcolor=white, label=animals];
+Snail2 [style=filled, fillcolor=white, label=Snail];
+animals4 -> Snail2  [label=nn];
+Tg3 [style=filled, fillcolor=white, label=Tg];
+animals4 -> Tg3  [label=nn];
+grew5 -> animals4  [label=nsubj];
+became8 [style=filled, fillcolor=white, label=became];
+became8 -> grew5  [label=advcl];
+they7 [style=filled, fillcolor=white, label=they];
+became8 -> they7  [label=nsubj];
+became8 -> became8  [label=root];
+distinguished9 [style=filled, fillcolor=white, label=distinguished];
+became8 -> distinguished9  [label=acomp];
+size13 [style=filled, fillcolor=white, label=size];
+their11 [style=filled, fillcolor=white, label=their];
+size13 -> their11  [label=poss];
+small12 [style=filled, fillcolor=white, label=small];
+size13 -> small12  [label=amod];
+became8 -> size13  [label=prep_by];
+tails16 [style=filled, fillcolor=white, label=tails];
+short15 [style=filled, fillcolor=white, label=short];
+tails16 -> short15  [label=amod];
+size13 -> tails16  [label=conj_and];
+skin20 [style=filled, fillcolor=white, label=skin];
+flaky19 [style=filled, fillcolor=white, label=flaky];
+skin20 -> flaky19  [label=amod];
+size13 -> skin20  [label=conj_and];
+Figure22 [style=filled, fillcolor=white, label=Figure];
+size13 -> Figure22  [label=appos];
+"2A23" [style=filled, fillcolor=white, label="2A"];
+Figure22 -> "2A23"  [label=num];
+}

@@ -1,0 +1,40 @@
+digraph "Recombinant lentiviruses encoding anti-serpinE2 short hairpin RNA ( shRNA ) were therefore developed to stably suppress serpinE2 levels in these cells ." {
+label="Recombinant lentiviruses encoding anti-serpinE2 short hairpin RNA ( shRNA )
+were therefore developed to stably suppress serpinE2 levels in these cells .";
+lentiviruses2 [style=filled, fillcolor=white, label=lentiviruses];
+Recombinant1 [style=filled, fillcolor=white, label=Recombinant];
+lentiviruses2 -> Recombinant1  [label=amod];
+developed13 [style=filled, fillcolor=white, label=developed];
+developed13 -> lentiviruses2  [label=nsubjpass];
+encoding3 [style=filled, fillcolor=white, label=encoding];
+lentiviruses2 -> encoding3  [label=vmod];
+RNA7 [style=filled, fillcolor=white, label=RNA];
+"anti-serpinE24" [style=filled, fillcolor=white, label="anti-serpinE2"];
+RNA7 -> "anti-serpinE24"  [label=amod];
+short5 [style=filled, fillcolor=white, label=short];
+RNA7 -> short5  [label=amod];
+hairpin6 [style=filled, fillcolor=white, label=hairpin];
+RNA7 -> hairpin6  [label=nn];
+encoding3 -> RNA7  [label=dobj];
+shRNA9 [style=filled, fillcolor=white, label=shRNA];
+RNA7 -> shRNA9  [label=appos];
+were11 [style=filled, fillcolor=white, label=were];
+developed13 -> were11  [label=auxpass];
+therefore12 [style=filled, fillcolor=white, label=therefore];
+developed13 -> therefore12  [label=advmod];
+developed13 -> developed13  [label=root];
+suppress16 [style=filled, fillcolor=white, label=suppress];
+to14 [style=filled, fillcolor=white, label=to];
+suppress16 -> to14  [label=aux];
+stably15 [style=filled, fillcolor=white, label=stably];
+suppress16 -> stably15  [label=advmod];
+developed13 -> suppress16  [label=xcomp];
+levels18 [style=filled, fillcolor=white, label=levels];
+serpinE217 [style=filled, fillcolor=white, label=serpinE2];
+levels18 -> serpinE217  [label=amod];
+suppress16 -> levels18  [label=dobj];
+cells21 [style=filled, fillcolor=white, label=cells];
+these20 [style=filled, fillcolor=white, label=these];
+cells21 -> these20  [label=det];
+levels18 -> cells21  [label=prep_in];
+}

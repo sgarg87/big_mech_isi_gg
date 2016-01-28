@@ -1,0 +1,55 @@
+digraph "The Ras proteins have been termed `` undruggable ,   based on failures from an era in which understanding of signaling transduction ,  feedback loops ,  redundancy ,  tumor heterogeneity ,  and Ras  oncogenic role was poor ." {
+label="The Ras proteins have been termed `` undruggable ,   based on failures from an
+era in which understanding of signaling transduction ,  feedback loops ,
+redundancy ,  tumor heterogeneity ,  and Ras  oncogenic role was poor .";
+proteins3 [style=filled, fillcolor=white, label=proteins];
+The1 [style=filled, fillcolor=white, label=The];
+proteins3 -> The1  [label=det];
+Ras2 [style=filled, fillcolor=white, label=Ras];
+proteins3 -> Ras2  [label=nn];
+termed6 [style=filled, fillcolor=white, label=termed];
+termed6 -> proteins3  [label=nsubjpass];
+have4 [style=filled, fillcolor=white, label=have];
+termed6 -> have4  [label=aux];
+been5 [style=filled, fillcolor=white, label=been];
+termed6 -> been5  [label=auxpass];
+termed6 -> termed6  [label=root];
+undruggable8 [style=filled, fillcolor=white, label=undruggable];
+termed6 -> undruggable8  [label=dep];
+on12 [style=filled, fillcolor=white, label=on];
+termed6 -> on12  [label=prepc_based_on];
+failures13 [style=filled, fillcolor=white, label=failures];
+termed6 -> failures13  [label=pobj];
+era16 [style=filled, fillcolor=white, label=era];
+an15 [style=filled, fillcolor=white, label=an];
+era16 -> an15  [label=det];
+termed6 -> era16  [label=prep_from];
+poor38 [style=filled, fillcolor=white, label=poor];
+which18 [style=filled, fillcolor=white, label=which];
+poor38 -> which18  [label=prep_in];
+understanding19 [style=filled, fillcolor=white, label=understanding];
+poor38 -> understanding19  [label=nsubj];
+transduction22 [style=filled, fillcolor=white, label=transduction];
+signaling21 [style=filled, fillcolor=white, label=signaling];
+transduction22 -> signaling21  [label=amod];
+understanding19 -> transduction22  [label=prep_of];
+loops25 [style=filled, fillcolor=white, label=loops];
+feedback24 [style=filled, fillcolor=white, label=feedback];
+loops25 -> feedback24  [label=nn];
+transduction22 -> loops25  [label=conj_and];
+redundancy27 [style=filled, fillcolor=white, label=redundancy];
+transduction22 -> redundancy27  [label=conj_and];
+heterogeneity30 [style=filled, fillcolor=white, label=heterogeneity];
+tumor29 [style=filled, fillcolor=white, label=tumor];
+heterogeneity30 -> tumor29  [label=nn];
+transduction22 -> heterogeneity30  [label=conj_and];
+role36 [style=filled, fillcolor=white, label=role];
+Ras33 [style=filled, fillcolor=white, label=Ras];
+role36 -> Ras33  [label=poss];
+oncogenic35 [style=filled, fillcolor=white, label=oncogenic];
+role36 -> oncogenic35  [label=amod];
+transduction22 -> role36  [label=conj_and];
+was37 [style=filled, fillcolor=white, label=was];
+poor38 -> was37  [label=cop];
+era16 -> poor38  [label=rcmod];
+}

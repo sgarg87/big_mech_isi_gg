@@ -1,0 +1,51 @@
+digraph "Among the most harmful of all genetic abnormalities that appear in CRC development are mutations of KRAS and its downstream effector BRAF as they result in abnormal ERK signaling ." {
+label="Among the most harmful of all genetic abnormalities that appear in CRC
+development are mutations of KRAS and its downstream effector BRAF as they
+result in abnormal ERK signaling .";
+development13 [style=filled, fillcolor=white, label=development];
+the2 [style=filled, fillcolor=white, label=the];
+development13 -> the2  [label=det];
+harmful4 [style=filled, fillcolor=white, label=harmful];
+most3 [style=filled, fillcolor=white, label=most];
+harmful4 -> most3  [label=advmod];
+development13 -> harmful4  [label=amod];
+abnormalities8 [style=filled, fillcolor=white, label=abnormalities];
+all6 [style=filled, fillcolor=white, label=all];
+abnormalities8 -> all6  [label=det];
+genetic7 [style=filled, fillcolor=white, label=genetic];
+abnormalities8 -> genetic7  [label=amod];
+harmful4 -> abnormalities8  [label=prep_of];
+appear10 [style=filled, fillcolor=white, label=appear];
+that9 [style=filled, fillcolor=white, label=that];
+appear10 -> that9  [label=nsubj];
+abnormalities8 -> appear10  [label=rcmod];
+CRC12 [style=filled, fillcolor=white, label=CRC];
+appear10 -> CRC12  [label=prep_in];
+mutations15 [style=filled, fillcolor=white, label=mutations];
+mutations15 -> development13  [label=prep_among];
+are14 [style=filled, fillcolor=white, label=are];
+mutations15 -> are14  [label=cop];
+mutations15 -> mutations15  [label=root];
+KRAS17 [style=filled, fillcolor=white, label=KRAS];
+mutations15 -> KRAS17  [label=prep_of];
+BRAF22 [style=filled, fillcolor=white, label=BRAF];
+its19 [style=filled, fillcolor=white, label=its];
+BRAF22 -> its19  [label=poss];
+downstream20 [style=filled, fillcolor=white, label=downstream];
+BRAF22 -> downstream20  [label=amod];
+effector21 [style=filled, fillcolor=white, label=effector];
+BRAF22 -> effector21  [label=nn];
+KRAS17 -> BRAF22  [label=conj_and];
+result25 [style=filled, fillcolor=white, label=result];
+as23 [style=filled, fillcolor=white, label=as];
+result25 -> as23  [label=mark];
+they24 [style=filled, fillcolor=white, label=they];
+result25 -> they24  [label=nsubj];
+mutations15 -> result25  [label=dep];
+signaling29 [style=filled, fillcolor=white, label=signaling];
+abnormal27 [style=filled, fillcolor=white, label=abnormal];
+signaling29 -> abnormal27  [label=amod];
+ERK28 [style=filled, fillcolor=white, label=ERK];
+signaling29 -> ERK28  [label=nn];
+result25 -> signaling29  [label=prep_in];
+}

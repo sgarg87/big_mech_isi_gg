@@ -1,0 +1,53 @@
+digraph "This prompted an investigation that subsequently led to our discovery that LEF-1 / β-catenin can contribute to repression of E-cadherin gene expression in skin keratinocytes -LSB- 4 -RSB- ." {
+label="This prompted an investigation that subsequently led to our discovery that
+LEF-1 / β-catenin can contribute to repression of E-cadherin gene expression in
+skin keratinocytes -LSB- 4 -RSB- .";
+prompted2 [style=filled, fillcolor=white, label=prompted];
+This1 [style=filled, fillcolor=white, label=This];
+prompted2 -> This1  [label=nsubj];
+prompted2 -> prompted2  [label=root];
+investigation4 [style=filled, fillcolor=white, label=investigation];
+an3 [style=filled, fillcolor=white, label=an];
+investigation4 -> an3  [label=det];
+prompted2 -> investigation4  [label=dobj];
+led7 [style=filled, fillcolor=white, label=led];
+that5 [style=filled, fillcolor=white, label=that];
+led7 -> that5  [label=nsubj];
+subsequently6 [style=filled, fillcolor=white, label=subsequently];
+led7 -> subsequently6  [label=advmod];
+investigation4 -> led7  [label=rcmod];
+discovery10 [style=filled, fillcolor=white, label=discovery];
+our9 [style=filled, fillcolor=white, label=our];
+discovery10 -> our9  [label=poss];
+led7 -> discovery10  [label=prep_to];
+contribute16 [style=filled, fillcolor=white, label=contribute];
+that11 [style=filled, fillcolor=white, label=that];
+contribute16 -> that11  [label=mark];
+"β-catenin14" [style=filled, fillcolor=white, label="β-catenin"];
+"LEF-12" [style=filled, fillcolor=white, label="LEF-1"];
+"β-catenin14" -> "LEF-12"  [label=nn];
+"/13" [style=filled, fillcolor=white, label="/"];
+"β-catenin14" -> "/13"  [label=nn];
+contribute16 -> "β-catenin14"  [label=nsubj];
+can15 [style=filled, fillcolor=white, label=can];
+contribute16 -> can15  [label=aux];
+led7 -> contribute16  [label=ccomp];
+repression18 [style=filled, fillcolor=white, label=repression];
+contribute16 -> repression18  [label=prep_to];
+expression22 [style=filled, fillcolor=white, label=expression];
+"E-cadherin20" [style=filled, fillcolor=white, label="E-cadherin"];
+expression22 -> "E-cadherin20"  [label=amod];
+gene21 [style=filled, fillcolor=white, label=gene];
+expression22 -> gene21  [label=nn];
+repression18 -> expression22  [label=prep_of];
+keratinocytes25 [style=filled, fillcolor=white, label=keratinocytes];
+skin24 [style=filled, fillcolor=white, label=skin];
+keratinocytes25 -> skin24  [label=nn];
+expression22 -> keratinocytes25  [label=prep_in];
+"-LSB-26" [style=filled, fillcolor=white, label="-LSB-"];
+contribute16 -> "-LSB-26"  [label=xcomp];
+"-RSB-28" [style=filled, fillcolor=white, label="-RSB-"];
+427 [style=filled, fillcolor=white, label=4];
+"-RSB-28" -> 427  [label=num];
+"-LSB-26" -> "-RSB-28"  [label=dobj];
+}

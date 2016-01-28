@@ -1,0 +1,47 @@
+digraph "These data indicate that erbB1-RTK activity is necessary for radiation-induced YB-1 phosphorylation ,  and this is most likely due to activation of the PI3K/Akt and MAPK/ERK pathways ." {
+label="These data indicate that erbB1-RTK activity is necessary for radiation-induced
+YB-1 phosphorylation ,  and this is most likely due to activation of the
+PI3K/Akt and MAPK/ERK pathways .";
+data2 [style=filled, fillcolor=white, label=data];
+These1 [style=filled, fillcolor=white, label=These];
+data2 -> These1  [label=det];
+indicate3 [style=filled, fillcolor=white, label=indicate];
+indicate3 -> data2  [label=nsubj];
+indicate3 -> indicate3  [label=root];
+necessary8 [style=filled, fillcolor=white, label=necessary];
+that4 [style=filled, fillcolor=white, label=that];
+necessary8 -> that4  [label=mark];
+activity6 [style=filled, fillcolor=white, label=activity];
+"erbB1-RTK5" [style=filled, fillcolor=white, label="erbB1-RTK"];
+activity6 -> "erbB1-RTK5"  [label=amod];
+necessary8 -> activity6  [label=nsubj];
+is7 [style=filled, fillcolor=white, label=is];
+necessary8 -> is7  [label=cop];
+indicate3 -> necessary8  [label=ccomp];
+phosphorylation12 [style=filled, fillcolor=white, label=phosphorylation];
+"radiation-induced10" [style=filled, fillcolor=white, label="radiation-induced"];
+phosphorylation12 -> "radiation-induced10"  [label=amod];
+"YB-1" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation12 -> "YB-1"  [label=nn];
+necessary8 -> phosphorylation12  [label=prep_for];
+due19 [style=filled, fillcolor=white, label=due];
+this15 [style=filled, fillcolor=white, label=this];
+due19 -> this15  [label=nsubj];
+is16 [style=filled, fillcolor=white, label=is];
+due19 -> is16  [label=cop];
+most17 [style=filled, fillcolor=white, label=most];
+due19 -> most17  [label=advmod];
+likely18 [style=filled, fillcolor=white, label=likely];
+due19 -> likely18  [label=advmod];
+indicate3 -> due19  [label=conj_and];
+activation21 [style=filled, fillcolor=white, label=activation];
+due19 -> activation21  [label=prep_to];
+"PI3K/Akt24" [style=filled, fillcolor=white, label="PI3K/Akt"];
+the23 [style=filled, fillcolor=white, label=the];
+"PI3K/Akt24" -> the23  [label=det];
+activation21 -> "PI3K/Akt24"  [label=prep_of];
+pathways27 [style=filled, fillcolor=white, label=pathways];
+"MAPK/ERK26" [style=filled, fillcolor=white, label="MAPK/ERK"];
+pathways27 -> "MAPK/ERK26"  [label=nn];
+"PI3K/Akt24" -> pathways27  [label=conj_and];
+}

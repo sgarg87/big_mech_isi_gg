@@ -1,0 +1,47 @@
+digraph "The effects of selumetinib in combination with a number of key standard of care agents were tested pre-clinically in human tumour xenograft models and resulted in enhanced anti-tumour activity ." {
+label="The effects of selumetinib in combination with a number of key standard of care
+agents were tested pre-clinically in human tumour xenograft models and resulted
+in enhanced anti-tumour activity .";
+effects2 [style=filled, fillcolor=white, label=effects];
+The1 [style=filled, fillcolor=white, label=The];
+effects2 -> The1  [label=det];
+tested17 [style=filled, fillcolor=white, label=tested];
+tested17 -> effects2  [label=nsubjpass];
+selumetinib4 [style=filled, fillcolor=white, label=selumetinib];
+effects2 -> selumetinib4  [label=prep_of];
+combination6 [style=filled, fillcolor=white, label=combination];
+selumetinib4 -> combination6  [label=prep_in];
+number9 [style=filled, fillcolor=white, label=number];
+a8 [style=filled, fillcolor=white, label=a];
+number9 -> a8  [label=det];
+combination6 -> number9  [label=prep_with];
+standard12 [style=filled, fillcolor=white, label=standard];
+key11 [style=filled, fillcolor=white, label=key];
+standard12 -> key11  [label=amod];
+number9 -> standard12  [label=prep_of];
+agents15 [style=filled, fillcolor=white, label=agents];
+care14 [style=filled, fillcolor=white, label=care];
+agents15 -> care14  [label=nn];
+standard12 -> agents15  [label=prep_of];
+were16 [style=filled, fillcolor=white, label=were];
+tested17 -> were16  [label=auxpass];
+tested17 -> tested17  [label=root];
+"pre-clinically18" [style=filled, fillcolor=white, label="pre-clinically"];
+tested17 -> "pre-clinically18"  [label=advmod];
+models23 [style=filled, fillcolor=white, label=models];
+human20 [style=filled, fillcolor=white, label=human];
+models23 -> human20  [label=amod];
+tumour21 [style=filled, fillcolor=white, label=tumour];
+models23 -> tumour21  [label=nn];
+xenograft22 [style=filled, fillcolor=white, label=xenograft];
+models23 -> xenograft22  [label=nn];
+tested17 -> models23  [label=prep_in];
+resulted25 [style=filled, fillcolor=white, label=resulted];
+tested17 -> resulted25  [label=conj_and];
+activity29 [style=filled, fillcolor=white, label=activity];
+enhanced27 [style=filled, fillcolor=white, label=enhanced];
+activity29 -> enhanced27  [label=amod];
+"anti-tumour28" [style=filled, fillcolor=white, label="anti-tumour"];
+activity29 -> "anti-tumour28"  [label=amod];
+resulted25 -> activity29  [label=prep_in];
+}

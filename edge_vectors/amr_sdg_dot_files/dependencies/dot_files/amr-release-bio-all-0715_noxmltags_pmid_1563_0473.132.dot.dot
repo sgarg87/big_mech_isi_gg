@@ -1,0 +1,36 @@
+digraph "As expected ,  the small peptide inhibitor that interrupts the Grb-2 / Sos association blocked the effects ." {
+label="As expected ,  the small peptide inhibitor that interrupts the Grb-2 / Sos
+association blocked the effects .";
+expected2 [style=filled, fillcolor=white, label=expected];
+As1 [style=filled, fillcolor=white, label=As];
+expected2 -> As1  [label=mark];
+blocked15 [style=filled, fillcolor=white, label=blocked];
+blocked15 -> expected2  [label=advcl];
+inhibitor7 [style=filled, fillcolor=white, label=inhibitor];
+the4 [style=filled, fillcolor=white, label=the];
+inhibitor7 -> the4  [label=det];
+small5 [style=filled, fillcolor=white, label=small];
+inhibitor7 -> small5  [label=amod];
+peptide6 [style=filled, fillcolor=white, label=peptide];
+inhibitor7 -> peptide6  [label=nn];
+blocked15 -> inhibitor7  [label=nsubj];
+interrupts9 [style=filled, fillcolor=white, label=interrupts];
+that8 [style=filled, fillcolor=white, label=that];
+interrupts9 -> that8  [label=nsubj];
+inhibitor7 -> interrupts9  [label=rcmod];
+association14 [style=filled, fillcolor=white, label=association];
+the10 [style=filled, fillcolor=white, label=the];
+association14 -> the10  [label=det];
+"Grb-211" [style=filled, fillcolor=white, label="Grb-2"];
+association14 -> "Grb-211"  [label=amod];
+"/12" [style=filled, fillcolor=white, label="/"];
+association14 -> "/12"  [label=nn];
+Sos13 [style=filled, fillcolor=white, label=Sos];
+association14 -> Sos13  [label=nn];
+interrupts9 -> association14  [label=dobj];
+blocked15 -> blocked15  [label=root];
+effects17 [style=filled, fillcolor=white, label=effects];
+the16 [style=filled, fillcolor=white, label=the];
+effects17 -> the16  [label=det];
+blocked15 -> effects17  [label=dobj];
+}

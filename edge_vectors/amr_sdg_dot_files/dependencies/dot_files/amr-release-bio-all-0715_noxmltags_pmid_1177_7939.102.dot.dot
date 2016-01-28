@@ -1,0 +1,32 @@
+digraph "Under these conditions ,  all of the coimmunoprecipitated Sos-1 is present in the S/E/E8 tricomplex ( Scita et al. ,  1999 ) ." {
+label="Under these conditions ,  all of the coimmunoprecipitated Sos-1 is present in
+the S/E/E8 tricomplex ( Scita et al. ,  1999 ) .";
+conditions3 [style=filled, fillcolor=white, label=conditions];
+these2 [style=filled, fillcolor=white, label=these];
+conditions3 -> these2  [label=det];
+present11 [style=filled, fillcolor=white, label=present];
+present11 -> conditions3  [label=prep_under];
+all5 [style=filled, fillcolor=white, label=all];
+present11 -> all5  [label=nsubj];
+"Sos-19" [style=filled, fillcolor=white, label="Sos-1"];
+the7 [style=filled, fillcolor=white, label=the];
+"Sos-19" -> the7  [label=det];
+coimmunoprecipitated8 [style=filled, fillcolor=white, label=coimmunoprecipitated];
+"Sos-19" -> coimmunoprecipitated8  [label=amod];
+all5 -> "Sos-19"  [label=prep_of];
+is10 [style=filled, fillcolor=white, label=is];
+present11 -> is10  [label=cop];
+present11 -> present11  [label=root];
+tricomplex15 [style=filled, fillcolor=white, label=tricomplex];
+the13 [style=filled, fillcolor=white, label=the];
+tricomplex15 -> the13  [label=det];
+"S/E/E814" [style=filled, fillcolor=white, label="S/E/E8"];
+tricomplex15 -> "S/E/E814"  [label=nn];
+present11 -> tricomplex15  [label=prep_in];
+Scita17 [style=filled, fillcolor=white, label=Scita];
+tricomplex15 -> Scita17  [label=appos];
+"al.19" [style=filled, fillcolor=white, label="al."];
+Scita17 -> "al.19"  [label=conj_et];
+19992 [style=filled, fillcolor=white, label=1999];
+Scita17 -> 19992  [label=dep];
+}

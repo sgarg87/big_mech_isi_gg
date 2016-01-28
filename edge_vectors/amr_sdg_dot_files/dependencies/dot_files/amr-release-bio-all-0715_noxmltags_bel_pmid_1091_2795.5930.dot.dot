@@ -1,0 +1,45 @@
+digraph "constitutively active kinases within the ERK1/2 pathway ( MEKK1 ,  MEK1 ) or the p38 pathway ( ASK1 ,  MEKK1 ,  MKK3 ) are potent activators of the MMP-1 promoter" {
+label="constitutively active kinases within the ERK1/2 pathway ( MEKK1 ,  MEK1 ) or
+the p38 pathway ( ASK1 ,  MEKK1 ,  MKK3 ) are potent activators of the MMP-1
+promoter";
+active2 [style=filled, fillcolor=white, label=active];
+constitutively1 [style=filled, fillcolor=white, label=constitutively];
+active2 -> constitutively1  [label=advmod];
+kinases3 [style=filled, fillcolor=white, label=kinases];
+kinases3 -> active2  [label=amod];
+activators26 [style=filled, fillcolor=white, label=activators];
+activators26 -> kinases3  [label=nsubj];
+pathway7 [style=filled, fillcolor=white, label=pathway];
+the5 [style=filled, fillcolor=white, label=the];
+pathway7 -> the5  [label=det];
+"ERK1/26" [style=filled, fillcolor=white, label="ERK1/2"];
+pathway7 -> "ERK1/26"  [label=nn];
+kinases3 -> pathway7  [label=prep_within];
+MEKK19 [style=filled, fillcolor=white, label=MEKK1];
+pathway7 -> MEKK19  [label=appos];
+MEK1 [style=filled, fillcolor=white, label=MEK1];
+MEKK19 -> MEK1  [label=dep];
+pathway16 [style=filled, fillcolor=white, label=pathway];
+the14 [style=filled, fillcolor=white, label=the];
+pathway16 -> the14  [label=det];
+p3815 [style=filled, fillcolor=white, label=p38];
+pathway16 -> p3815  [label=amod];
+pathway7 -> pathway16  [label=conj_or];
+ASK118 [style=filled, fillcolor=white, label=ASK1];
+pathway7 -> ASK118  [label=appos];
+MEKK120 [style=filled, fillcolor=white, label=MEKK1];
+ASK118 -> MEKK120  [label=dep];
+MKK322 [style=filled, fillcolor=white, label=MKK3];
+ASK118 -> MKK322  [label=dep];
+are24 [style=filled, fillcolor=white, label=are];
+activators26 -> are24  [label=cop];
+potent25 [style=filled, fillcolor=white, label=potent];
+activators26 -> potent25  [label=amod];
+activators26 -> activators26  [label=root];
+promoter30 [style=filled, fillcolor=white, label=promoter];
+the28 [style=filled, fillcolor=white, label=the];
+promoter30 -> the28  [label=det];
+"MMP-129" [style=filled, fillcolor=white, label="MMP-1"];
+promoter30 -> "MMP-129"  [label=nn];
+activators26 -> promoter30  [label=prep_of];
+}

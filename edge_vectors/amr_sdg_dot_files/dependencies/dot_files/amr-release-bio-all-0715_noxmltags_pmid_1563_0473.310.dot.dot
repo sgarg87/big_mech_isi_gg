@@ -1,0 +1,17 @@
+digraph "( B ) Expression of Snail protein coincides with hair development ." {
+label="( B ) Expression of Snail protein coincides with hair development .";
+Expression4 [style=filled, fillcolor=white, label=Expression];
+B2 [style=filled, fillcolor=white, label=B];
+Expression4 -> B2  [label=nn];
+coincides8 [style=filled, fillcolor=white, label=coincides];
+coincides8 -> Expression4  [label=nsubj];
+protein7 [style=filled, fillcolor=white, label=protein];
+Snail6 [style=filled, fillcolor=white, label=Snail];
+protein7 -> Snail6  [label=nn];
+Expression4 -> protein7  [label=prep_of];
+coincides8 -> coincides8  [label=root];
+development11 [style=filled, fillcolor=white, label=development];
+hair10 [style=filled, fillcolor=white, label=hair];
+development11 -> hair10  [label=nn];
+coincides8 -> development11  [label=prep_with];
+}

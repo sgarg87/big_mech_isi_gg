@@ -1,0 +1,38 @@
+digraph "We showed that BIAcore measurements revealed similar kinetic parameters for the SH3-mediated S/G and S/E interactions ( Fig. 2 D ) ." {
+label="We showed that BIAcore measurements revealed similar kinetic parameters for the
+SH3-mediated S/G and S/E interactions ( Fig. 2 D ) .";
+showed2 [style=filled, fillcolor=white, label=showed];
+We1 [style=filled, fillcolor=white, label=We];
+showed2 -> We1  [label=nsubj];
+showed2 -> showed2  [label=root];
+revealed6 [style=filled, fillcolor=white, label=revealed];
+that3 [style=filled, fillcolor=white, label=that];
+revealed6 -> that3  [label=mark];
+measurements5 [style=filled, fillcolor=white, label=measurements];
+BIAcore4 [style=filled, fillcolor=white, label=BIAcore];
+measurements5 -> BIAcore4  [label=nn];
+revealed6 -> measurements5  [label=nsubj];
+showed2 -> revealed6  [label=ccomp];
+parameters9 [style=filled, fillcolor=white, label=parameters];
+similar7 [style=filled, fillcolor=white, label=similar];
+parameters9 -> similar7  [label=amod];
+kinetic8 [style=filled, fillcolor=white, label=kinetic];
+parameters9 -> kinetic8  [label=amod];
+revealed6 -> parameters9  [label=dobj];
+"S/G13" [style=filled, fillcolor=white, label="S/G"];
+the11 [style=filled, fillcolor=white, label=the];
+"S/G13" -> the11  [label=det];
+"SH3-mediated12" [style=filled, fillcolor=white, label="SH3-mediated"];
+"S/G13" -> "SH3-mediated12"  [label=nn];
+revealed6 -> "S/G13"  [label=prep_for];
+interactions16 [style=filled, fillcolor=white, label=interactions];
+"S/E15" [style=filled, fillcolor=white, label="S/E"];
+interactions16 -> "S/E15"  [label=nn];
+"S/G13" -> interactions16  [label=conj_and];
+"Fig.18" [style=filled, fillcolor=white, label="Fig."];
+"S/G13" -> "Fig.18"  [label=appos];
+D20 [style=filled, fillcolor=white, label=D];
+219 [style=filled, fillcolor=white, label=2];
+D20 -> 219  [label=number];
+"Fig.18" -> D20  [label=num];
+}

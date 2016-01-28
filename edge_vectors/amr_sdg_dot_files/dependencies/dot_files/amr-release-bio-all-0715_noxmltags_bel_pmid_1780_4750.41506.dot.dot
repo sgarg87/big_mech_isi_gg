@@ -1,0 +1,49 @@
+digraph "Treatment of PANC-89 ,  Capan1 ,  and Panc1 cells with TGF-h2 led to an up-regulation of the Foxp3 protein ,  which was moderate for PANC-89 and Capan1 and strong for Panc1 ( Fig. 3A and D ) ." {
+label="Treatment of PANC-89 ,  Capan1 ,  and Panc1 cells with TGF-h2 led to an up-
+regulation of the Foxp3 protein ,  which was moderate for PANC-89 and Capan1 and
+strong for Panc1 ( Fig. 3A and D ) .";
+led12 [style=filled, fillcolor=white, label=led];
+Treatment1 [style=filled, fillcolor=white, label=Treatment];
+led12 -> Treatment1  [label=nsubj];
+"PANC-893" [style=filled, fillcolor=white, label="PANC-89"];
+Treatment1 -> "PANC-893"  [label=prep_of];
+Capan15 [style=filled, fillcolor=white, label=Capan1];
+"PANC-893" -> Capan15  [label=conj_and];
+cells9 [style=filled, fillcolor=white, label=cells];
+Panc18 [style=filled, fillcolor=white, label=Panc1];
+cells9 -> Panc18  [label=amod];
+"PANC-893" -> cells9  [label=conj_and];
+"TGF-h211" [style=filled, fillcolor=white, label="TGF-h2"];
+cells9 -> "TGF-h211"  [label=prep_with];
+led12 -> led12  [label=root];
+"up-regulation15" [style=filled, fillcolor=white, label="up-regulation"];
+an14 [style=filled, fillcolor=white, label=an];
+"up-regulation15" -> an14  [label=det];
+led12 -> "up-regulation15"  [label=prep_to];
+protein19 [style=filled, fillcolor=white, label=protein];
+the17 [style=filled, fillcolor=white, label=the];
+protein19 -> the17  [label=det];
+Foxp318 [style=filled, fillcolor=white, label=Foxp3];
+protein19 -> Foxp318  [label=amod];
+"up-regulation15" -> protein19  [label=prep_of];
+moderate23 [style=filled, fillcolor=white, label=moderate];
+which21 [style=filled, fillcolor=white, label=which];
+moderate23 -> which21  [label=nsubj];
+was22 [style=filled, fillcolor=white, label=was];
+moderate23 -> was22  [label=cop];
+protein19 -> moderate23  [label=rcmod];
+"PANC-8925" [style=filled, fillcolor=white, label="PANC-89"];
+moderate23 -> "PANC-8925"  [label=prep_for];
+Capan127 [style=filled, fillcolor=white, label=Capan1];
+"PANC-8925" -> Capan127  [label=conj_and];
+strong29 [style=filled, fillcolor=white, label=strong];
+led12 -> strong29  [label=conj_and];
+Panc13 [style=filled, fillcolor=white, label=Panc1];
+strong29 -> Panc13  [label=prep_for];
+"Fig.33" [style=filled, fillcolor=white, label="Fig."];
+Panc13 -> "Fig.33"  [label=dep];
+"3A34" [style=filled, fillcolor=white, label="3A"];
+"Fig.33" -> "3A34"  [label=num];
+D36 [style=filled, fillcolor=white, label=D];
+"Fig.33" -> D36  [label=conj_and];
+}

@@ -1,0 +1,40 @@
+digraph "PCNA binds DNA ligase I ; the complex may function to join Okazaki fragments during DNA replication ( Levin et al. ,  1997 ) ." {
+label="PCNA binds DNA ligase I ; the complex may function to join Okazaki fragments
+during DNA replication ( Levin et al. ,  1997 ) .";
+binds2 [style=filled, fillcolor=white, label=binds];
+PCNA1 [style=filled, fillcolor=white, label=PCNA];
+binds2 -> PCNA1  [label=nsubj];
+binds2 -> binds2  [label=root];
+ligase4 [style=filled, fillcolor=white, label=ligase];
+DNA3 [style=filled, fillcolor=white, label=DNA];
+ligase4 -> DNA3  [label=nsubj];
+binds2 -> ligase4  [label=ccomp];
+I5 [style=filled, fillcolor=white, label=I];
+ligase4 -> I5  [label=dobj];
+complex8 [style=filled, fillcolor=white, label=complex];
+the7 [style=filled, fillcolor=white, label=the];
+complex8 -> the7  [label=det];
+function10 [style=filled, fillcolor=white, label=function];
+function10 -> complex8  [label=nsubj];
+may9 [style=filled, fillcolor=white, label=may];
+function10 -> may9  [label=aux];
+binds2 -> function10  [label=parataxis];
+join12 [style=filled, fillcolor=white, label=join];
+to11 [style=filled, fillcolor=white, label=to];
+join12 -> to11  [label=aux];
+function10 -> join12  [label=xcomp];
+fragments14 [style=filled, fillcolor=white, label=fragments];
+Okazaki13 [style=filled, fillcolor=white, label=Okazaki];
+fragments14 -> Okazaki13  [label=nn];
+join12 -> fragments14  [label=dobj];
+replication17 [style=filled, fillcolor=white, label=replication];
+DNA16 [style=filled, fillcolor=white, label=DNA];
+replication17 -> DNA16  [label=nn];
+join12 -> replication17  [label=prep_during];
+Levin19 [style=filled, fillcolor=white, label=Levin];
+replication17 -> Levin19  [label=appos];
+"al.21" [style=filled, fillcolor=white, label="al."];
+Levin19 -> "al.21"  [label=conj_et];
+199723 [style=filled, fillcolor=white, label=1997];
+Levin19 -> 199723  [label=dep];
+}

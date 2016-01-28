@@ -1,0 +1,40 @@
+digraph "The mRNA for resistin ,  which has been suggested to be involved in glucose homeostasis ( 25 ) ,  was significantly decreased in Tg mice ." {
+label="The mRNA for resistin ,  which has been suggested to be involved in glucose
+homeostasis ( 25 ) ,  was significantly decreased in Tg mice .";
+mRNA2 [style=filled, fillcolor=white, label=mRNA];
+The1 [style=filled, fillcolor=white, label=The];
+mRNA2 -> The1  [label=det];
+decreased22 [style=filled, fillcolor=white, label=decreased];
+decreased22 -> mRNA2  [label=nsubjpass];
+resistin4 [style=filled, fillcolor=white, label=resistin];
+mRNA2 -> resistin4  [label=prep_for];
+suggested9 [style=filled, fillcolor=white, label=suggested];
+which6 [style=filled, fillcolor=white, label=which];
+suggested9 -> which6  [label=nsubjpass];
+has7 [style=filled, fillcolor=white, label=has];
+suggested9 -> has7  [label=aux];
+been8 [style=filled, fillcolor=white, label=been];
+suggested9 -> been8  [label=auxpass];
+mRNA2 -> suggested9  [label=rcmod];
+involved12 [style=filled, fillcolor=white, label=involved];
+to10 [style=filled, fillcolor=white, label=to];
+involved12 -> to10  [label=aux];
+be11 [style=filled, fillcolor=white, label=be];
+involved12 -> be11  [label=auxpass];
+suggested9 -> involved12  [label=xcomp];
+homeostasis15 [style=filled, fillcolor=white, label=homeostasis];
+glucose14 [style=filled, fillcolor=white, label=glucose];
+homeostasis15 -> glucose14  [label=nn];
+involved12 -> homeostasis15  [label=prep_in];
+2517 [style=filled, fillcolor=white, label=25];
+homeostasis15 -> 2517  [label=appos];
+was20 [style=filled, fillcolor=white, label=was];
+decreased22 -> was20  [label=auxpass];
+significantly21 [style=filled, fillcolor=white, label=significantly];
+decreased22 -> significantly21  [label=advmod];
+decreased22 -> decreased22  [label=root];
+mice25 [style=filled, fillcolor=white, label=mice];
+Tg24 [style=filled, fillcolor=white, label=Tg];
+mice25 -> Tg24  [label=nn];
+decreased22 -> mice25  [label=prep_in];
+}

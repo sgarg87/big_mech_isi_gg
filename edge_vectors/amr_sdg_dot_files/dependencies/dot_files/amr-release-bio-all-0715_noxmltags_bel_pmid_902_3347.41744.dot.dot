@@ -1,0 +1,42 @@
+digraph "Since wortmannin inhibits VEGF and MMP activity ,  but does not restore TIMP activity ,  tumor-igenesis is not expected to be fully suppressed ." {
+label="Since wortmannin inhibits VEGF and MMP activity ,  but does not restore TIMP
+activity ,  tumor-igenesis is not expected to be fully suppressed .";
+inhibits3 [style=filled, fillcolor=white, label=inhibits];
+Since1 [style=filled, fillcolor=white, label=Since];
+inhibits3 -> Since1  [label=mark];
+wortmannin2 [style=filled, fillcolor=white, label=wortmannin];
+inhibits3 -> wortmannin2  [label=nsubj];
+expected19 [style=filled, fillcolor=white, label=expected];
+expected19 -> inhibits3  [label=advcl];
+activity7 [style=filled, fillcolor=white, label=activity];
+VEGF4 [style=filled, fillcolor=white, label=VEGF];
+activity7 -> VEGF4  [label=nn];
+MMP6 [style=filled, fillcolor=white, label=MMP];
+VEGF4 -> MMP6  [label=conj_and];
+inhibits3 -> activity7  [label=dobj];
+restore12 [style=filled, fillcolor=white, label=restore];
+does10 [style=filled, fillcolor=white, label=does];
+restore12 -> does10  [label=aux];
+not11 [style=filled, fillcolor=white, label=not];
+restore12 -> not11  [label=neg];
+inhibits3 -> restore12  [label=conj_but];
+activity14 [style=filled, fillcolor=white, label=activity];
+TIMP13 [style=filled, fillcolor=white, label=TIMP];
+activity14 -> TIMP13  [label=nn];
+restore12 -> activity14  [label=dobj];
+"tumor-igenesis16" [style=filled, fillcolor=white, label="tumor-igenesis"];
+expected19 -> "tumor-igenesis16"  [label=nsubjpass];
+is17 [style=filled, fillcolor=white, label=is];
+expected19 -> is17  [label=auxpass];
+not18 [style=filled, fillcolor=white, label=not];
+expected19 -> not18  [label=neg];
+expected19 -> expected19  [label=root];
+suppressed23 [style=filled, fillcolor=white, label=suppressed];
+to20 [style=filled, fillcolor=white, label=to];
+suppressed23 -> to20  [label=aux];
+be21 [style=filled, fillcolor=white, label=be];
+suppressed23 -> be21  [label=auxpass];
+fully22 [style=filled, fillcolor=white, label=fully];
+suppressed23 -> fully22  [label=advmod];
+expected19 -> suppressed23  [label=xcomp];
+}

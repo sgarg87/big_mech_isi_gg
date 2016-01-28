@@ -1,0 +1,38 @@
+digraph "The development of a bud requires a number of coordinated changes in the behavior of the targeted cells within an epithelial sheet ." {
+label="The development of a bud requires a number of coordinated changes in the
+behavior of the targeted cells within an epithelial sheet .";
+development2 [style=filled, fillcolor=white, label=development];
+The1 [style=filled, fillcolor=white, label=The];
+development2 -> The1  [label=det];
+requires6 [style=filled, fillcolor=white, label=requires];
+requires6 -> development2  [label=nsubj];
+bud5 [style=filled, fillcolor=white, label=bud];
+a4 [style=filled, fillcolor=white, label=a];
+bud5 -> a4  [label=det];
+development2 -> bud5  [label=prep_of];
+requires6 -> requires6  [label=root];
+number8 [style=filled, fillcolor=white, label=number];
+a7 [style=filled, fillcolor=white, label=a];
+number8 -> a7  [label=det];
+requires6 -> number8  [label=dobj];
+changes11 [style=filled, fillcolor=white, label=changes];
+coordinated10 [style=filled, fillcolor=white, label=coordinated];
+changes11 -> coordinated10  [label=amod];
+number8 -> changes11  [label=prep_of];
+behavior14 [style=filled, fillcolor=white, label=behavior];
+the13 [style=filled, fillcolor=white, label=the];
+behavior14 -> the13  [label=det];
+changes11 -> behavior14  [label=prep_in];
+cells18 [style=filled, fillcolor=white, label=cells];
+the16 [style=filled, fillcolor=white, label=the];
+cells18 -> the16  [label=det];
+targeted17 [style=filled, fillcolor=white, label=targeted];
+cells18 -> targeted17  [label=amod];
+behavior14 -> cells18  [label=prep_of];
+sheet22 [style=filled, fillcolor=white, label=sheet];
+an20 [style=filled, fillcolor=white, label=an];
+sheet22 -> an20  [label=det];
+epithelial21 [style=filled, fillcolor=white, label=epithelial];
+sheet22 -> epithelial21  [label=amod];
+cells18 -> sheet22  [label=prep_within];
+}

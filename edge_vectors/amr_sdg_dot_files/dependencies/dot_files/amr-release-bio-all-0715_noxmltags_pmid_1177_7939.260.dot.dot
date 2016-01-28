@@ -1,0 +1,17 @@
+digraph "Similar results were obtained using Cos-7 cells ." {
+label="Similar results were obtained using Cos-7 cells .";
+results2 [style=filled, fillcolor=white, label=results];
+Similar1 [style=filled, fillcolor=white, label=Similar];
+results2 -> Similar1  [label=amod];
+obtained4 [style=filled, fillcolor=white, label=obtained];
+obtained4 -> results2  [label=nsubjpass];
+were3 [style=filled, fillcolor=white, label=were];
+obtained4 -> were3  [label=auxpass];
+obtained4 -> obtained4  [label=root];
+using5 [style=filled, fillcolor=white, label=using];
+obtained4 -> using5  [label=xcomp];
+cells7 [style=filled, fillcolor=white, label=cells];
+"Cos-76" [style=filled, fillcolor=white, label="Cos-7"];
+cells7 -> "Cos-76"  [label=nn];
+using5 -> cells7  [label=dobj];
+}

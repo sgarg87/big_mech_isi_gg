@@ -1,0 +1,41 @@
+digraph "but did not substantially affect phosphorylation of p38 and ERK 1/2 . In addition ,  phosphorylation of AKT was greatly impaired in aortic-banded heart of melusin-null mice ." {
+label="but did not substantially affect phosphorylation of p38 and ERK 1/2 . In
+addition ,  phosphorylation of AKT was greatly impaired in aortic-banded heart
+of melusin-null mice .";
+affect5 [style=filled, fillcolor=white, label=affect];
+did2 [style=filled, fillcolor=white, label=did];
+affect5 -> did2  [label=aux];
+not3 [style=filled, fillcolor=white, label=not];
+affect5 -> not3  [label=neg];
+substantially4 [style=filled, fillcolor=white, label=substantially];
+affect5 -> substantially4  [label=advmod];
+affect5 -> affect5  [label=root];
+phosphorylation6 [style=filled, fillcolor=white, label=phosphorylation];
+affect5 -> phosphorylation6  [label=dobj];
+p38 [style=filled, fillcolor=white, label=p38];
+phosphorylation6 -> p38  [label=prep_of];
+"1/2" [style=filled, fillcolor=white, label="1/2"];
+ERK10 [style=filled, fillcolor=white, label=ERK];
+"1/2" -> ERK10  [label=dep];
+impaired21 [style=filled, fillcolor=white, label=impaired];
+impaired21 -> "1/2"  [label=dep];
+addition14 [style=filled, fillcolor=white, label=addition];
+impaired21 -> addition14  [label=prep_in];
+phosphorylation16 [style=filled, fillcolor=white, label=phosphorylation];
+impaired21 -> phosphorylation16  [label=nsubjpass];
+AKT18 [style=filled, fillcolor=white, label=AKT];
+phosphorylation16 -> AKT18  [label=prep_of];
+was19 [style=filled, fillcolor=white, label=was];
+impaired21 -> was19  [label=auxpass];
+greatly20 [style=filled, fillcolor=white, label=greatly];
+impaired21 -> greatly20  [label=advmod];
+affect5 -> impaired21  [label=conj_and];
+heart24 [style=filled, fillcolor=white, label=heart];
+"aortic-banded23" [style=filled, fillcolor=white, label="aortic-banded"];
+heart24 -> "aortic-banded23"  [label=amod];
+impaired21 -> heart24  [label=prep_in];
+mice27 [style=filled, fillcolor=white, label=mice];
+"melusin-null26" [style=filled, fillcolor=white, label="melusin-null"];
+mice27 -> "melusin-null26"  [label=amod];
+heart24 -> mice27  [label=prep_of];
+}

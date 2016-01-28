@@ -1,0 +1,49 @@
+digraph "In addition ,  STAT1 or IRF-1 induced the expression of CD42 ,  a late marker of megakaryocyte maturation ,  albeit to a much lesser extent than GATA-1 ( Figure ? ( Figure1C ) .1 C ) ." {
+label="In addition ,  STAT1 or IRF-1 induced the expression of CD42 ,  a late marker
+of megakaryocyte maturation ,  albeit to a much lesser extent than GATA-1 (
+Figure ? ( Figure1C ) .1 C ) .";
+induced7 [style=filled, fillcolor=white, label=induced];
+addition2 [style=filled, fillcolor=white, label=addition];
+induced7 -> addition2  [label=prep_in];
+STAT14 [style=filled, fillcolor=white, label=STAT1];
+induced7 -> STAT14  [label=nsubj];
+"IRF-16" [style=filled, fillcolor=white, label="IRF-1"];
+STAT14 -> "IRF-16"  [label=conj_or];
+induced7 -> induced7  [label=root];
+expression9 [style=filled, fillcolor=white, label=expression];
+the8 [style=filled, fillcolor=white, label=the];
+expression9 -> the8  [label=det];
+induced7 -> expression9  [label=dobj];
+CD4211 [style=filled, fillcolor=white, label=CD42];
+expression9 -> CD4211  [label=prep_of];
+marker15 [style=filled, fillcolor=white, label=marker];
+a13 [style=filled, fillcolor=white, label=a];
+marker15 -> a13  [label=det];
+late14 [style=filled, fillcolor=white, label=late];
+marker15 -> late14  [label=amod];
+CD4211 -> marker15  [label=appos];
+maturation18 [style=filled, fillcolor=white, label=maturation];
+megakaryocyte17 [style=filled, fillcolor=white, label=megakaryocyte];
+maturation18 -> megakaryocyte17  [label=amod];
+marker15 -> maturation18  [label=prep_of];
+albeit20 [style=filled, fillcolor=white, label=albeit];
+induced7 -> albeit20  [label=advmod];
+extent25 [style=filled, fillcolor=white, label=extent];
+a22 [style=filled, fillcolor=white, label=a];
+extent25 -> a22  [label=det];
+lesser24 [style=filled, fillcolor=white, label=lesser];
+much23 [style=filled, fillcolor=white, label=much];
+lesser24 -> much23  [label=advmod];
+extent25 -> lesser24  [label=amod];
+albeit20 -> extent25  [label=prep_to];
+"GATA-127" [style=filled, fillcolor=white, label="GATA-1"];
+extent25 -> "GATA-127"  [label=prep_than];
+Figure29 [style=filled, fillcolor=white, label=Figure];
+"GATA-127" -> Figure29  [label=dep];
+Figure1C32 [style=filled, fillcolor=white, label=Figure1C];
+Figure29 -> Figure1C32  [label=appos];
+".134" [style=filled, fillcolor=white, label=".1"];
+Figure29 -> ".134"  [label=dep];
+C35 [style=filled, fillcolor=white, label=C];
+Figure29 -> C35  [label=appos];
+}

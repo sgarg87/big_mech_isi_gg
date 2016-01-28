@@ -1,0 +1,38 @@
+digraph "There are two isoforms of 3beta - HSD expressed in wild-type megakaryocytes ( I and VI ) ,  but neither are expressed in NF-E2 null megakaryocytes ." {
+label="There are two isoforms of 3beta - HSD expressed in wild-type megakaryocytes ( I
+and VI ) ,  but neither are expressed in NF-E2 null megakaryocytes .";
+are2 [style=filled, fillcolor=white, label=are];
+There1 [style=filled, fillcolor=white, label=There];
+are2 -> There1  [label=expl];
+are2 -> are2  [label=root];
+isoforms4 [style=filled, fillcolor=white, label=isoforms];
+two3 [style=filled, fillcolor=white, label=two];
+isoforms4 -> two3  [label=num];
+are2 -> isoforms4  [label=nsubj];
+"3beta6" [style=filled, fillcolor=white, label="3beta"];
+isoforms4 -> "3beta6"  [label=prep_of];
+HSD8 [style=filled, fillcolor=white, label=HSD];
+isoforms4 -> HSD8  [label=dep];
+expressed9 [style=filled, fillcolor=white, label=expressed];
+HSD8 -> expressed9  [label=vmod];
+megakaryocytes12 [style=filled, fillcolor=white, label=megakaryocytes];
+"wild-type11" [style=filled, fillcolor=white, label="wild-type"];
+megakaryocytes12 -> "wild-type11"  [label=amod];
+expressed9 -> megakaryocytes12  [label=prep_in];
+I14 [style=filled, fillcolor=white, label=I];
+megakaryocytes12 -> I14  [label=dep];
+VI16 [style=filled, fillcolor=white, label=VI];
+I14 -> VI16  [label=conj_and];
+expressed22 [style=filled, fillcolor=white, label=expressed];
+neither20 [style=filled, fillcolor=white, label=neither];
+expressed22 -> neither20  [label=nsubjpass];
+are21 [style=filled, fillcolor=white, label=are];
+expressed22 -> are21  [label=auxpass];
+are2 -> expressed22  [label=conj_but];
+megakaryocytes26 [style=filled, fillcolor=white, label=megakaryocytes];
+"NF-E24" [style=filled, fillcolor=white, label="NF-E2"];
+megakaryocytes26 -> "NF-E24"  [label=nn];
+null25 [style=filled, fillcolor=white, label=null];
+megakaryocytes26 -> null25  [label=nn];
+expressed22 -> megakaryocytes26  [label=prep_in];
+}

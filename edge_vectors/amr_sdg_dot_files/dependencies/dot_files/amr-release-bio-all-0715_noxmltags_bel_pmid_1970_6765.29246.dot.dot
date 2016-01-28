@@ -1,0 +1,40 @@
+digraph "Bronchioalveolar adenocarcinomas were observed in the lungs of bitransgenic mice after doxycycline treatment asearly as16 weeks ( Fig. 2A ,  + Dox 16W ) ." {
+label="Bronchioalveolar adenocarcinomas were observed in the lungs of bitransgenic
+mice after doxycycline treatment asearly as16 weeks ( Fig. 2A ,  + Dox 16W ) .";
+adenocarcinomas2 [style=filled, fillcolor=white, label=adenocarcinomas];
+Bronchioalveolar1 [style=filled, fillcolor=white, label=Bronchioalveolar];
+adenocarcinomas2 -> Bronchioalveolar1  [label=nn];
+observed4 [style=filled, fillcolor=white, label=observed];
+observed4 -> adenocarcinomas2  [label=nsubjpass];
+were3 [style=filled, fillcolor=white, label=were];
+observed4 -> were3  [label=auxpass];
+observed4 -> observed4  [label=root];
+lungs7 [style=filled, fillcolor=white, label=lungs];
+the6 [style=filled, fillcolor=white, label=the];
+lungs7 -> the6  [label=det];
+observed4 -> lungs7  [label=prep_in];
+mice10 [style=filled, fillcolor=white, label=mice];
+bitransgenic9 [style=filled, fillcolor=white, label=bitransgenic];
+mice10 -> bitransgenic9  [label=amod];
+lungs7 -> mice10  [label=prep_of];
+treatment13 [style=filled, fillcolor=white, label=treatment];
+doxycycline12 [style=filled, fillcolor=white, label=doxycycline];
+treatment13 -> doxycycline12  [label=amod];
+weeks16 [style=filled, fillcolor=white, label=weeks];
+weeks16 -> treatment13  [label=nn];
+asearly14 [style=filled, fillcolor=white, label=asearly];
+weeks16 -> asearly14  [label=amod];
+as1615 [style=filled, fillcolor=white, label=as16];
+weeks16 -> as1615  [label=amod];
+observed4 -> weeks16  [label=prep_after];
+"Fig.18" [style=filled, fillcolor=white, label="Fig."];
+weeks16 -> "Fig.18"  [label=dep];
+"2A19" [style=filled, fillcolor=white, label="2A"];
+"Fig.18" -> "2A19"  [label=num];
+"16W23" [style=filled, fillcolor=white, label="16W"];
+"+21" [style=filled, fillcolor=white, label="+"];
+"16W23" -> "+21"  [label=nn];
+Dox22 [style=filled, fillcolor=white, label=Dox];
+"16W23" -> Dox22  [label=nn];
+"Fig.18" -> "16W23"  [label=appos];
+}

@@ -1,0 +1,47 @@
+digraph "Silencing of CtBP1 ,  and to a lesser extent CtBP2 ,  increased basal HER3 in 8505C cells ,  and markedly potentiated the effects of PLX4032 ( Fig. 5D and 5E ) ." {
+label="Silencing of CtBP1 ,  and to a lesser extent CtBP2 ,  increased basal HER3 in
+8505C cells ,  and markedly potentiated the effects of PLX4032 ( Fig. 5D and 5E
+) .";
+potentiated21 [style=filled, fillcolor=white, label=potentiated];
+Silencing1 [style=filled, fillcolor=white, label=Silencing];
+potentiated21 -> Silencing1  [label=vmod];
+CtBP13 [style=filled, fillcolor=white, label=CtBP1];
+Silencing1 -> CtBP13  [label=prep_of];
+to6 [style=filled, fillcolor=white, label=to];
+Silencing1 -> to6  [label=conj_and];
+CtBP210 [style=filled, fillcolor=white, label=CtBP2];
+a7 [style=filled, fillcolor=white, label=a];
+CtBP210 -> a7  [label=det];
+lesser8 [style=filled, fillcolor=white, label=lesser];
+CtBP210 -> lesser8  [label=amod];
+extent9 [style=filled, fillcolor=white, label=extent];
+CtBP210 -> extent9  [label=nn];
+to6 -> CtBP210  [label=dobj];
+HER314 [style=filled, fillcolor=white, label=HER3];
+increased12 [style=filled, fillcolor=white, label=increased];
+HER314 -> increased12  [label=amod];
+basal13 [style=filled, fillcolor=white, label=basal];
+HER314 -> basal13  [label=amod];
+potentiated21 -> HER314  [label=nsubj];
+cells17 [style=filled, fillcolor=white, label=cells];
+"8505C16" [style=filled, fillcolor=white, label="8505C"];
+cells17 -> "8505C16"  [label=num];
+HER314 -> cells17  [label=prep_in];
+markedly20 [style=filled, fillcolor=white, label=markedly];
+and19 [style=filled, fillcolor=white, label=and];
+markedly20 -> and19  [label=cc];
+cells17 -> markedly20  [label=advmod];
+potentiated21 -> potentiated21  [label=root];
+effects23 [style=filled, fillcolor=white, label=effects];
+the22 [style=filled, fillcolor=white, label=the];
+effects23 -> the22  [label=det];
+potentiated21 -> effects23  [label=dobj];
+PLX403225 [style=filled, fillcolor=white, label=PLX4032];
+effects23 -> PLX403225  [label=prep_of];
+"Fig.27" [style=filled, fillcolor=white, label="Fig."];
+PLX403225 -> "Fig.27"  [label=appos];
+"5D28" [style=filled, fillcolor=white, label="5D"];
+"Fig.27" -> "5D28"  [label=num];
+"5E30" [style=filled, fillcolor=white, label="5E"];
+"5D28" -> "5E30"  [label=conj_and];
+}

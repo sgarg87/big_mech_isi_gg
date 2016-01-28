@@ -1,0 +1,26 @@
+digraph "Proteins from keratinocytes transfected with K14-Snail were used as a positive control for Snail expression ." {
+label="Proteins from keratinocytes transfected with K14-Snail were used as a positive
+control for Snail expression .";
+used8 [style=filled, fillcolor=white, label=used];
+Proteins1 [style=filled, fillcolor=white, label=Proteins];
+used8 -> Proteins1  [label=nsubjpass];
+keratinocytes3 [style=filled, fillcolor=white, label=keratinocytes];
+Proteins1 -> keratinocytes3  [label=prep_from];
+transfected4 [style=filled, fillcolor=white, label=transfected];
+keratinocytes3 -> transfected4  [label=vmod];
+"K14-Snail6" [style=filled, fillcolor=white, label="K14-Snail"];
+transfected4 -> "K14-Snail6"  [label=prep_with];
+were7 [style=filled, fillcolor=white, label=were];
+used8 -> were7  [label=auxpass];
+used8 -> used8  [label=root];
+control12 [style=filled, fillcolor=white, label=control];
+a10 [style=filled, fillcolor=white, label=a];
+control12 -> a10  [label=det];
+positive11 [style=filled, fillcolor=white, label=positive];
+control12 -> positive11  [label=amod];
+used8 -> control12  [label=prep_as];
+expression15 [style=filled, fillcolor=white, label=expression];
+Snail14 [style=filled, fillcolor=white, label=Snail];
+expression15 -> Snail14  [label=nn];
+control12 -> expression15  [label=prep_for];
+}

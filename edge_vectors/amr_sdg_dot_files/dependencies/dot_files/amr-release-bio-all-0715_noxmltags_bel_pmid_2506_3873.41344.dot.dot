@@ -1,0 +1,36 @@
+digraph "Blocking STAT3 activation by JSI-124 dramatically decreased the levels of p52 and RelB in nuclei ( Fig. 2C ,  p < 0.05 ) ." {
+label="Blocking STAT3 activation by JSI-124 dramatically decreased the levels of p52
+and RelB in nuclei ( Fig. 2C ,  p < 0.05 ) .";
+activation3 [style=filled, fillcolor=white, label=activation];
+Blocking1 [style=filled, fillcolor=white, label=Blocking];
+activation3 -> Blocking1  [label=amod];
+STAT32 [style=filled, fillcolor=white, label=STAT3];
+activation3 -> STAT32  [label=nn];
+decreased7 [style=filled, fillcolor=white, label=decreased];
+decreased7 -> activation3  [label=nsubj];
+"JSI-1245" [style=filled, fillcolor=white, label="JSI-124"];
+activation3 -> "JSI-1245"  [label=prep_by];
+dramatically6 [style=filled, fillcolor=white, label=dramatically];
+decreased7 -> dramatically6  [label=advmod];
+decreased7 -> decreased7  [label=root];
+levels9 [style=filled, fillcolor=white, label=levels];
+the8 [style=filled, fillcolor=white, label=the];
+levels9 -> the8  [label=det];
+decreased7 -> levels9  [label=dobj];
+p5211 [style=filled, fillcolor=white, label=p52];
+levels9 -> p5211  [label=prep_of];
+RelB13 [style=filled, fillcolor=white, label=RelB];
+p5211 -> RelB13  [label=conj_and];
+nuclei15 [style=filled, fillcolor=white, label=nuclei];
+decreased7 -> nuclei15  [label=prep_in];
+"Fig.17" [style=filled, fillcolor=white, label="Fig."];
+nuclei15 -> "Fig.17"  [label=dep];
+"2C18" [style=filled, fillcolor=white, label="2C"];
+"Fig.17" -> "2C18"  [label=num];
+"0.0522" [style=filled, fillcolor=white, label="0.05"];
+p20 [style=filled, fillcolor=white, label=p];
+"0.0522" -> p20  [label=nn];
+"<21" [style=filled, fillcolor=white, label="<"];
+"0.0522" -> "<21"  [label=nn];
+"Fig.17" -> "0.0522"  [label=appos];
+}

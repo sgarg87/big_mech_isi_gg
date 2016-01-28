@@ -1,0 +1,26 @@
+digraph "binding of Il6 to Il6R induces homodimerization ofgp130 ,  activating JAK associated with gp130 at Box1 ." {
+label="binding of Il6 to Il6R induces homodimerization ofgp130 ,  activating JAK
+associated with gp130 at Box1 .";
+induces6 [style=filled, fillcolor=white, label=induces];
+binding1 [style=filled, fillcolor=white, label=binding];
+induces6 -> binding1  [label=nsubj];
+Il63 [style=filled, fillcolor=white, label=Il6];
+binding1 -> Il63  [label=prep_of];
+Il6R5 [style=filled, fillcolor=white, label=Il6R];
+Il63 -> Il6R5  [label=prep_to];
+induces6 -> induces6  [label=root];
+ofgp1308 [style=filled, fillcolor=white, label=ofgp130];
+homodimerization7 [style=filled, fillcolor=white, label=homodimerization];
+ofgp1308 -> homodimerization7  [label=nn];
+induces6 -> ofgp1308  [label=dobj];
+activating10 [style=filled, fillcolor=white, label=activating];
+induces6 -> activating10  [label=vmod];
+JAK11 [style=filled, fillcolor=white, label=JAK];
+activating10 -> JAK11  [label=dobj];
+associated12 [style=filled, fillcolor=white, label=associated];
+JAK11 -> associated12  [label=vmod];
+gp13014 [style=filled, fillcolor=white, label=gp130];
+associated12 -> gp13014  [label=prep_with];
+Box116 [style=filled, fillcolor=white, label=Box1];
+gp13014 -> Box116  [label=prep_at];
+}

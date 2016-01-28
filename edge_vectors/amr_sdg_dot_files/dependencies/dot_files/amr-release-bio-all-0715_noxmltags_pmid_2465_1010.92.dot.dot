@@ -1,0 +1,55 @@
+digraph "In this case ,  loss of neurofibromin may lead to local activation of Ras that is coupled to specific receptors ,  suggesting that inhibitors of these receptors might reverse the effects of neurofibromin loss ." {
+label="In this case ,  loss of neurofibromin may lead to local activation of Ras that
+is coupled to specific receptors ,  suggesting that inhibitors of these
+receptors might reverse the effects of neurofibromin loss .";
+case3 [style=filled, fillcolor=white, label=case];
+this2 [style=filled, fillcolor=white, label=this];
+case3 -> this2  [label=det];
+lead9 [style=filled, fillcolor=white, label=lead];
+lead9 -> case3  [label=prep_in];
+loss5 [style=filled, fillcolor=white, label=loss];
+lead9 -> loss5  [label=nsubj];
+neurofibromin7 [style=filled, fillcolor=white, label=neurofibromin];
+loss5 -> neurofibromin7  [label=prep_of];
+may8 [style=filled, fillcolor=white, label=may];
+lead9 -> may8  [label=aux];
+lead9 -> lead9  [label=root];
+activation12 [style=filled, fillcolor=white, label=activation];
+local11 [style=filled, fillcolor=white, label=local];
+activation12 -> local11  [label=amod];
+lead9 -> activation12  [label=prep_to];
+Ras14 [style=filled, fillcolor=white, label=Ras];
+activation12 -> Ras14  [label=prep_of];
+coupled17 [style=filled, fillcolor=white, label=coupled];
+that15 [style=filled, fillcolor=white, label=that];
+coupled17 -> that15  [label=nsubjpass];
+is16 [style=filled, fillcolor=white, label=is];
+coupled17 -> is16  [label=auxpass];
+activation12 -> coupled17  [label=rcmod];
+receptors20 [style=filled, fillcolor=white, label=receptors];
+specific19 [style=filled, fillcolor=white, label=specific];
+receptors20 -> specific19  [label=amod];
+coupled17 -> receptors20  [label=prep_to];
+suggesting22 [style=filled, fillcolor=white, label=suggesting];
+lead9 -> suggesting22  [label=xcomp];
+reverse29 [style=filled, fillcolor=white, label=reverse];
+that23 [style=filled, fillcolor=white, label=that];
+reverse29 -> that23  [label=mark];
+inhibitors24 [style=filled, fillcolor=white, label=inhibitors];
+reverse29 -> inhibitors24  [label=nsubj];
+receptors27 [style=filled, fillcolor=white, label=receptors];
+these26 [style=filled, fillcolor=white, label=these];
+receptors27 -> these26  [label=det];
+inhibitors24 -> receptors27  [label=prep_of];
+might28 [style=filled, fillcolor=white, label=might];
+reverse29 -> might28  [label=aux];
+suggesting22 -> reverse29  [label=ccomp];
+effects31 [style=filled, fillcolor=white, label=effects];
+the30 [style=filled, fillcolor=white, label=the];
+effects31 -> the30  [label=det];
+reverse29 -> effects31  [label=dobj];
+loss34 [style=filled, fillcolor=white, label=loss];
+neurofibromin33 [style=filled, fillcolor=white, label=neurofibromin];
+loss34 -> neurofibromin33  [label=nn];
+effects31 -> loss34  [label=prep_of];
+}

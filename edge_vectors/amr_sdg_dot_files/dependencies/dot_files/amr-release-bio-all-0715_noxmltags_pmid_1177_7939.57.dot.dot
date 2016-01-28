@@ -1,0 +1,40 @@
+digraph "Further mapping revealed that the SH3 domain of E3b1 ( aa 416 -- 480 ) was necessary and sufficient for binding ( Fig. 2 A ) ." {
+label="Further mapping revealed that the SH3 domain of E3b1 ( aa 416 -- 480 ) was
+necessary and sufficient for binding ( Fig. 2 A ) .";
+mapping2 [style=filled, fillcolor=white, label=mapping];
+Further1 [style=filled, fillcolor=white, label=Further];
+mapping2 -> Further1  [label=amod];
+revealed3 [style=filled, fillcolor=white, label=revealed];
+revealed3 -> mapping2  [label=nsubj];
+revealed3 -> revealed3  [label=root];
+necessary17 [style=filled, fillcolor=white, label=necessary];
+that4 [style=filled, fillcolor=white, label=that];
+necessary17 -> that4  [label=mark];
+domain7 [style=filled, fillcolor=white, label=domain];
+the5 [style=filled, fillcolor=white, label=the];
+domain7 -> the5  [label=det];
+SH36 [style=filled, fillcolor=white, label=SH3];
+domain7 -> SH36  [label=nn];
+necessary17 -> domain7  [label=nsubj];
+E3b19 [style=filled, fillcolor=white, label=E3b1];
+domain7 -> E3b19  [label=prep_of];
+aa11 [style=filled, fillcolor=white, label=aa];
+E3b19 -> aa11  [label=dep];
+41612 [style=filled, fillcolor=white, label=416];
+aa11 -> 41612  [label=num];
+4801 [style=filled, fillcolor=white, label=480];
+aa11 -> 4801  [label=dep];
+was16 [style=filled, fillcolor=white, label=was];
+necessary17 -> was16  [label=cop];
+revealed3 -> necessary17  [label=ccomp];
+sufficient19 [style=filled, fillcolor=white, label=sufficient];
+necessary17 -> sufficient19  [label=conj_and];
+binding21 [style=filled, fillcolor=white, label=binding];
+necessary17 -> binding21  [label=prep_for];
+"Fig.23" [style=filled, fillcolor=white, label="Fig."];
+binding21 -> "Fig.23"  [label=dep];
+224 [style=filled, fillcolor=white, label=2];
+"Fig.23" -> 224  [label=num];
+A25 [style=filled, fillcolor=white, label=A];
+"Fig.23" -> A25  [label=appos];
+}

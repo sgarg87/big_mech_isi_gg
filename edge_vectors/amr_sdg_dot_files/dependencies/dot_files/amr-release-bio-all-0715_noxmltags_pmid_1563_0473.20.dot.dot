@@ -1,0 +1,41 @@
+digraph "The process must be accompanied by alterations in the proliferation ,  polarity ,  shape ,  and adhesiveness of selected cells ,  as well as by modifications in their underlying basal lamina ." {
+label="The process must be accompanied by alterations in the proliferation ,  polarity
+,  shape ,  and adhesiveness of selected cells ,  as well as by modifications in
+their underlying basal lamina .";
+process2 [style=filled, fillcolor=white, label=process];
+The1 [style=filled, fillcolor=white, label=The];
+process2 -> The1  [label=det];
+accompanied5 [style=filled, fillcolor=white, label=accompanied];
+accompanied5 -> process2  [label=nsubjpass];
+must3 [style=filled, fillcolor=white, label=must];
+accompanied5 -> must3  [label=aux];
+be4 [style=filled, fillcolor=white, label=be];
+accompanied5 -> be4  [label=auxpass];
+accompanied5 -> accompanied5  [label=root];
+alterations7 [style=filled, fillcolor=white, label=alterations];
+accompanied5 -> alterations7  [label=agent];
+proliferation10 [style=filled, fillcolor=white, label=proliferation];
+the9 [style=filled, fillcolor=white, label=the];
+proliferation10 -> the9  [label=det];
+alterations7 -> proliferation10  [label=prep_in];
+polarity12 [style=filled, fillcolor=white, label=polarity];
+proliferation10 -> polarity12  [label=conj_and];
+shape14 [style=filled, fillcolor=white, label=shape];
+proliferation10 -> shape14  [label=conj_and];
+adhesiveness17 [style=filled, fillcolor=white, label=adhesiveness];
+proliferation10 -> adhesiveness17  [label=conj_and];
+cells20 [style=filled, fillcolor=white, label=cells];
+selected19 [style=filled, fillcolor=white, label=selected];
+cells20 -> selected19  [label=amod];
+proliferation10 -> cells20  [label=prep_of];
+modifications26 [style=filled, fillcolor=white, label=modifications];
+alterations7 -> modifications26  [label=conj_and];
+lamina31 [style=filled, fillcolor=white, label=lamina];
+their28 [style=filled, fillcolor=white, label=their];
+lamina31 -> their28  [label=poss];
+underlying29 [style=filled, fillcolor=white, label=underlying];
+lamina31 -> underlying29  [label=amod];
+basal30 [style=filled, fillcolor=white, label=basal];
+lamina31 -> basal30  [label=amod];
+modifications26 -> lamina31  [label=prep_in];
+}

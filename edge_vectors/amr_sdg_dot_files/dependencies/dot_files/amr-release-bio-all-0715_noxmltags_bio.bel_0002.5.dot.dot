@@ -1,0 +1,26 @@
+digraph "In addition ,  introduction of B-Raf enhances and sustains integrin-mediated activation of ERK in wild-type primary fibroblasts" {
+label="In addition ,  introduction of B-Raf enhances and sustains integrin-mediated
+activation of ERK in wild-type primary fibroblasts";
+enhances7 [style=filled, fillcolor=white, label=enhances];
+addition2 [style=filled, fillcolor=white, label=addition];
+enhances7 -> addition2  [label=prep_in];
+introduction4 [style=filled, fillcolor=white, label=introduction];
+enhances7 -> introduction4  [label=nsubj];
+"B-Raf6" [style=filled, fillcolor=white, label="B-Raf"];
+introduction4 -> "B-Raf6"  [label=prep_of];
+enhances7 -> enhances7  [label=root];
+sustains9 [style=filled, fillcolor=white, label=sustains];
+enhances7 -> sustains9  [label=conj_and];
+activation11 [style=filled, fillcolor=white, label=activation];
+"integrin-mediated10" [style=filled, fillcolor=white, label="integrin-mediated"];
+activation11 -> "integrin-mediated10"  [label=amod];
+enhances7 -> activation11  [label=dobj];
+ERK13 [style=filled, fillcolor=white, label=ERK];
+activation11 -> ERK13  [label=prep_of];
+fibroblasts17 [style=filled, fillcolor=white, label=fibroblasts];
+"wild-type15" [style=filled, fillcolor=white, label="wild-type"];
+fibroblasts17 -> "wild-type15"  [label=amod];
+primary16 [style=filled, fillcolor=white, label=primary];
+fibroblasts17 -> primary16  [label=amod];
+ERK13 -> fibroblasts17  [label=prep_in];
+}

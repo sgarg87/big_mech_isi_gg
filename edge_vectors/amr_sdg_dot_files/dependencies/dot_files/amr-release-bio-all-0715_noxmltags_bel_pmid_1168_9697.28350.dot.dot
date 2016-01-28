@@ -1,0 +1,38 @@
+digraph "Il6 induces the activation of the Src family kinase Hck ,  which is associated with the Il6 receptor beta-chain ,  gp130" {
+label="Il6 induces the activation of the Src family kinase Hck ,  which is associated
+with the Il6 receptor beta-chain ,  gp130";
+induces2 [style=filled, fillcolor=white, label=induces];
+Il61 [style=filled, fillcolor=white, label=Il6];
+induces2 -> Il61  [label=advmod];
+induces2 -> induces2  [label=root];
+activation4 [style=filled, fillcolor=white, label=activation];
+the3 [style=filled, fillcolor=white, label=the];
+activation4 -> the3  [label=det];
+induces2 -> activation4  [label=dobj];
+kinase9 [style=filled, fillcolor=white, label=kinase];
+the6 [style=filled, fillcolor=white, label=the];
+kinase9 -> the6  [label=det];
+Src7 [style=filled, fillcolor=white, label=Src];
+kinase9 -> Src7  [label=nn];
+family8 [style=filled, fillcolor=white, label=family];
+kinase9 -> family8  [label=nn];
+activation4 -> kinase9  [label=prep_of];
+Hck10 [style=filled, fillcolor=white, label=Hck];
+induces2 -> Hck10  [label=nsubj];
+associated14 [style=filled, fillcolor=white, label=associated];
+which12 [style=filled, fillcolor=white, label=which];
+associated14 -> which12  [label=nsubjpass];
+is13 [style=filled, fillcolor=white, label=is];
+associated14 -> is13  [label=auxpass];
+Hck10 -> associated14  [label=rcmod];
+"beta-chain19" [style=filled, fillcolor=white, label="beta-chain"];
+the16 [style=filled, fillcolor=white, label=the];
+"beta-chain19" -> the16  [label=det];
+Il617 [style=filled, fillcolor=white, label=Il6];
+"beta-chain19" -> Il617  [label=amod];
+receptor18 [style=filled, fillcolor=white, label=receptor];
+"beta-chain19" -> receptor18  [label=nn];
+associated14 -> "beta-chain19"  [label=prep_with];
+gp1302 [style=filled, fillcolor=white, label=gp130];
+"beta-chain19" -> gp1302  [label=appos];
+}

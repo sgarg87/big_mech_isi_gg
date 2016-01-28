@@ -1,0 +1,34 @@
+digraph "Expression of the transfected proteins was detected ( bottom ,  green ) with either anti-Ras or anti-Rac antibodies or by epifluorescence ( ECFP ) ." {
+label="Expression of the transfected proteins was detected ( bottom ,  green ) with
+either anti-Ras or anti-Rac antibodies or by epifluorescence ( ECFP ) .";
+detected7 [style=filled, fillcolor=white, label=detected];
+Expression1 [style=filled, fillcolor=white, label=Expression];
+detected7 -> Expression1  [label=nsubjpass];
+proteins5 [style=filled, fillcolor=white, label=proteins];
+the3 [style=filled, fillcolor=white, label=the];
+proteins5 -> the3  [label=det];
+transfected4 [style=filled, fillcolor=white, label=transfected];
+proteins5 -> transfected4  [label=amod];
+Expression1 -> proteins5  [label=prep_of];
+was6 [style=filled, fillcolor=white, label=was];
+detected7 -> was6  [label=auxpass];
+detected7 -> detected7  [label=root];
+bottom9 [style=filled, fillcolor=white, label=bottom];
+detected7 -> bottom9  [label=ccomp];
+"bottom9'" [style=filled, fillcolor=white, label=bottom];
+bottom9 -> "bottom9'"  [label=conj_or];
+green11 [style=filled, fillcolor=white, label=green];
+bottom9 -> green11  [label=appos];
+either14 [style=filled, fillcolor=white, label=either];
+bottom9 -> either14  [label=prep_with];
+antibodies18 [style=filled, fillcolor=white, label=antibodies];
+"anti-Ras15" [style=filled, fillcolor=white, label="anti-Ras"];
+antibodies18 -> "anti-Ras15"  [label=amod];
+"anti-Rac17" [style=filled, fillcolor=white, label="anti-Rac"];
+"anti-Ras15" -> "anti-Rac17"  [label=conj_or];
+bottom9 -> antibodies18  [label=conj];
+epifluorescence21 [style=filled, fillcolor=white, label=epifluorescence];
+"bottom9'" -> epifluorescence21  [label=prep_by];
+ECFP23 [style=filled, fillcolor=white, label=ECFP];
+epifluorescence21 -> ECFP23  [label=appos];
+}

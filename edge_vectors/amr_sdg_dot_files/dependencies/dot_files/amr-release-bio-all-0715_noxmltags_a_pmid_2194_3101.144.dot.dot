@@ -1,0 +1,47 @@
+digraph "During 3D culture conditions ,  normal epithelial cells are organized into spheroids presenting a characteristic centrally-localized hollow lumen and distinct polarization of cells surrounding this lumen ." {
+label="During 3D culture conditions ,  normal epithelial cells are organized into
+spheroids presenting a characteristic centrally-localized hollow lumen and
+distinct polarization of cells surrounding this lumen .";
+conditions4 [style=filled, fillcolor=white, label=conditions];
+"3D2" [style=filled, fillcolor=white, label="3D"];
+conditions4 -> "3D2"  [label=num];
+culture3 [style=filled, fillcolor=white, label=culture];
+conditions4 -> culture3  [label=nn];
+organized10 [style=filled, fillcolor=white, label=organized];
+organized10 -> conditions4  [label=prep_during];
+cells8 [style=filled, fillcolor=white, label=cells];
+normal6 [style=filled, fillcolor=white, label=normal];
+cells8 -> normal6  [label=amod];
+epithelial7 [style=filled, fillcolor=white, label=epithelial];
+cells8 -> epithelial7  [label=amod];
+organized10 -> cells8  [label=nsubjpass];
+are9 [style=filled, fillcolor=white, label=are];
+organized10 -> are9  [label=auxpass];
+organized10 -> organized10  [label=root];
+spheroids12 [style=filled, fillcolor=white, label=spheroids];
+organized10 -> spheroids12  [label=prep_into];
+presenting13 [style=filled, fillcolor=white, label=presenting];
+spheroids12 -> presenting13  [label=vmod];
+lumen18 [style=filled, fillcolor=white, label=lumen];
+a14 [style=filled, fillcolor=white, label=a];
+lumen18 -> a14  [label=det];
+"centrally-localized16" [style=filled, fillcolor=white, label="centrally-localized"];
+characteristic15 [style=filled, fillcolor=white, label=characteristic];
+"centrally-localized16" -> characteristic15  [label=amod];
+lumen18 -> "centrally-localized16"  [label=amod];
+hollow17 [style=filled, fillcolor=white, label=hollow];
+lumen18 -> hollow17  [label=amod];
+presenting13 -> lumen18  [label=dobj];
+polarization21 [style=filled, fillcolor=white, label=polarization];
+distinct20 [style=filled, fillcolor=white, label=distinct];
+polarization21 -> distinct20  [label=amod];
+lumen18 -> polarization21  [label=conj_and];
+cells23 [style=filled, fillcolor=white, label=cells];
+lumen18 -> cells23  [label=prep_of];
+surrounding24 [style=filled, fillcolor=white, label=surrounding];
+cells23 -> surrounding24  [label=vmod];
+lumen26 [style=filled, fillcolor=white, label=lumen];
+this25 [style=filled, fillcolor=white, label=this];
+lumen26 -> this25  [label=det];
+surrounding24 -> lumen26  [label=dobj];
+}

@@ -1,0 +1,36 @@
+digraph "This might lead to a transient peak in Ras activity vis a vis a more prolonged activation of Rac ." {
+label="This might lead to a transient peak in Ras activity vis a vis a more prolonged
+activation of Rac .";
+lead3 [style=filled, fillcolor=white, label=lead];
+This1 [style=filled, fillcolor=white, label=This];
+lead3 -> This1  [label=nsubj];
+might2 [style=filled, fillcolor=white, label=might];
+lead3 -> might2  [label=aux];
+lead3 -> lead3  [label=root];
+peak7 [style=filled, fillcolor=white, label=peak];
+a5 [style=filled, fillcolor=white, label=a];
+peak7 -> a5  [label=det];
+transient6 [style=filled, fillcolor=white, label=transient];
+peak7 -> transient6  [label=amod];
+lead3 -> peak7  [label=prep_to];
+activity10 [style=filled, fillcolor=white, label=activity];
+Ras9 [style=filled, fillcolor=white, label=Ras];
+activity10 -> Ras9  [label=nn];
+peak7 -> activity10  [label=prep_in];
+a14 [style=filled, fillcolor=white, label=a];
+vis11 [style=filled, fillcolor=white, label=vis];
+a14 -> vis11  [label=dep];
+a12 [style=filled, fillcolor=white, label=a];
+a14 -> a12  [label=dep];
+vis13 [style=filled, fillcolor=white, label=vis];
+a14 -> vis13  [label=dep];
+activation17 [style=filled, fillcolor=white, label=activation];
+activation17 -> a14  [label=dep];
+more15 [style=filled, fillcolor=white, label=more];
+activation17 -> more15  [label=amod];
+prolonged16 [style=filled, fillcolor=white, label=prolonged];
+activation17 -> prolonged16  [label=amod];
+peak7 -> activation17  [label=dep];
+Rac19 [style=filled, fillcolor=white, label=Rac];
+peak7 -> Rac19  [label=prep_of];
+}

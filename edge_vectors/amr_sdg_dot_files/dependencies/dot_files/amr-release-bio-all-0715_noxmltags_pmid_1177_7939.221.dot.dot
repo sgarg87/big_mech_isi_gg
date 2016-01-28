@@ -1,0 +1,53 @@
+digraph "Binding was in the presence of the indicated amounts of the competing peptide NH2-VPVPPPVPPRRR-COOH ( derived from the sequence of Sos-1 ,  • and ▪ ) ,  or of a scrambled control peptide ( ○ and □ ) ." {
+label="Binding was in the presence of the indicated amounts of the competing peptide
+NH2-VPVPPPVPPRRR-COOH ( derived from the sequence of Sos-1 ,  • and ▪ ) ,  or of
+a scrambled control peptide ( ○ and □ ) .";
+was2 [style=filled, fillcolor=white, label=was];
+Binding1 [style=filled, fillcolor=white, label=Binding];
+was2 -> Binding1  [label=nsubj];
+was2 -> was2  [label=root];
+"was2'" [style=filled, fillcolor=white, label=was];
+was2 -> "was2'"  [label=conj_or];
+presence5 [style=filled, fillcolor=white, label=presence];
+the4 [style=filled, fillcolor=white, label=the];
+presence5 -> the4  [label=det];
+was2 -> presence5  [label=prep_in];
+amounts9 [style=filled, fillcolor=white, label=amounts];
+the7 [style=filled, fillcolor=white, label=the];
+amounts9 -> the7  [label=det];
+indicated8 [style=filled, fillcolor=white, label=indicated];
+amounts9 -> indicated8  [label=amod];
+presence5 -> amounts9  [label=prep_of];
+"NH2-VPVPPPVPPRRR-COOH14" [style=filled, fillcolor=white, label="NH2-VPVPPPVPPRRR-COOH"];
+the11 [style=filled, fillcolor=white, label=the];
+"NH2-VPVPPPVPPRRR-COOH14" -> the11  [label=det];
+competing12 [style=filled, fillcolor=white, label=competing];
+"NH2-VPVPPPVPPRRR-COOH14" -> competing12  [label=amod];
+peptide13 [style=filled, fillcolor=white, label=peptide];
+"NH2-VPVPPPVPPRRR-COOH14" -> peptide13  [label=amod];
+amounts9 -> "NH2-VPVPPPVPPRRR-COOH14"  [label=prep_of];
+derived16 [style=filled, fillcolor=white, label=derived];
+"NH2-VPVPPPVPPRRR-COOH14" -> derived16  [label=dep];
+sequence19 [style=filled, fillcolor=white, label=sequence];
+the18 [style=filled, fillcolor=white, label=the];
+sequence19 -> the18  [label=det];
+derived16 -> sequence19  [label=prep_from];
+"Sos-12" [style=filled, fillcolor=white, label="Sos-1"];
+sequence19 -> "Sos-12"  [label=prep_of];
+"•23" [style=filled, fillcolor=white, label="•"];
+"Sos-12" -> "•23"  [label=conj_and];
+"▪25" [style=filled, fillcolor=white, label="▪"];
+"Sos-12" -> "▪25"  [label=conj_and];
+peptide33 [style=filled, fillcolor=white, label=peptide];
+a30 [style=filled, fillcolor=white, label=a];
+peptide33 -> a30  [label=det];
+scrambled31 [style=filled, fillcolor=white, label=scrambled];
+peptide33 -> scrambled31  [label=amod];
+control32 [style=filled, fillcolor=white, label=control];
+peptide33 -> control32  [label=nn];
+"was2'" -> peptide33  [label=prep_of];
+"○35" [style=filled, fillcolor=white, label="○"];
+peptide33 -> "○35"  [label=appos];
+"□37" [style=filled, fillcolor=white, label="□"];
+"○35" -> "□37"  [label=conj_and];
+}

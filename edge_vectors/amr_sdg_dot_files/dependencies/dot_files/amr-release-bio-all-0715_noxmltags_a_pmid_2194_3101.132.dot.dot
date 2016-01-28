@@ -1,0 +1,42 @@
+digraph "Previously established Caco-BR cells have adopted a substantially different morphology when compared to the parental Caco-2 cells -LSB- 21 -RSB- ." {
+label="Previously established Caco-BR cells have adopted a substantially different
+morphology when compared to the parental Caco-2 cells -LSB- 21 -RSB- .";
+adopted6 [style=filled, fillcolor=white, label=adopted];
+Previously1 [style=filled, fillcolor=white, label=Previously];
+adopted6 -> Previously1  [label=advmod];
+cells4 [style=filled, fillcolor=white, label=cells];
+established2 [style=filled, fillcolor=white, label=established];
+cells4 -> established2  [label=amod];
+"Caco-BR3" [style=filled, fillcolor=white, label="Caco-BR"];
+cells4 -> "Caco-BR3"  [label=amod];
+adopted6 -> cells4  [label=nsubj];
+have5 [style=filled, fillcolor=white, label=have];
+adopted6 -> have5  [label=aux];
+adopted6 -> adopted6  [label=root];
+morphology10 [style=filled, fillcolor=white, label=morphology];
+a7 [style=filled, fillcolor=white, label=a];
+morphology10 -> a7  [label=det];
+different9 [style=filled, fillcolor=white, label=different];
+substantially8 [style=filled, fillcolor=white, label=substantially];
+different9 -> substantially8  [label=advmod];
+morphology10 -> different9  [label=amod];
+adopted6 -> morphology10  [label=dobj];
+"-LSB-18" [style=filled, fillcolor=white, label="-LSB-"];
+when11 [style=filled, fillcolor=white, label=when];
+"-LSB-18" -> when11  [label=advmod];
+to13 [style=filled, fillcolor=white, label=to];
+"-LSB-18" -> to13  [label=prepc_compared_to];
+"Caco-216" [style=filled, fillcolor=white, label="Caco-2"];
+the14 [style=filled, fillcolor=white, label=the];
+"Caco-216" -> the14  [label=det];
+parental15 [style=filled, fillcolor=white, label=parental];
+"Caco-216" -> parental15  [label=amod];
+"-LSB-18" -> "Caco-216"  [label=pobj];
+cells17 [style=filled, fillcolor=white, label=cells];
+"-LSB-18" -> cells17  [label=nsubj];
+adopted6 -> "-LSB-18"  [label=advcl];
+"-RSB-20" [style=filled, fillcolor=white, label="-RSB-"];
+2119 [style=filled, fillcolor=white, label=21];
+"-RSB-20" -> 2119  [label=num];
+"-LSB-18" -> "-RSB-20"  [label=dobj];
+}

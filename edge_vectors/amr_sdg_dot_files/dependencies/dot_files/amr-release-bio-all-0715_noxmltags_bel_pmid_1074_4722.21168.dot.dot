@@ -1,0 +1,44 @@
+digraph "Both Chk1 and Chk2/Cds1 have been shown to localize to the nucleus and to phosphorylate serine 216 of Cdc25C in vitro ( 13 ,  15 ) ( 18 -- 21 ) ." {
+label="Both Chk1 and Chk2/Cds1 have been shown to localize to the nucleus and to
+phosphorylate serine 216 of Cdc25C in vitro ( 13 ,  15 ) ( 18 -- 21 ) .";
+Chk12 [style=filled, fillcolor=white, label=Chk1];
+Both1 [style=filled, fillcolor=white, label=Both];
+Chk12 -> Both1  [label=preconj];
+shown7 [style=filled, fillcolor=white, label=shown];
+shown7 -> Chk12  [label=nsubjpass];
+"Chk2/Cds14" [style=filled, fillcolor=white, label="Chk2/Cds1"];
+Chk12 -> "Chk2/Cds14"  [label=conj_and];
+have5 [style=filled, fillcolor=white, label=have];
+shown7 -> have5  [label=aux];
+been6 [style=filled, fillcolor=white, label=been];
+shown7 -> been6  [label=auxpass];
+shown7 -> shown7  [label=root];
+localize9 [style=filled, fillcolor=white, label=localize];
+to8 [style=filled, fillcolor=white, label=to];
+localize9 -> to8  [label=aux];
+shown7 -> localize9  [label=ccomp];
+nucleus12 [style=filled, fillcolor=white, label=nucleus];
+the11 [style=filled, fillcolor=white, label=the];
+nucleus12 -> the11  [label=det];
+localize9 -> nucleus12  [label=prep_to];
+phosphorylate15 [style=filled, fillcolor=white, label=phosphorylate];
+to14 [style=filled, fillcolor=white, label=to];
+phosphorylate15 -> to14  [label=aux];
+localize9 -> phosphorylate15  [label=conj_and];
+serine16 [style=filled, fillcolor=white, label=serine];
+phosphorylate15 -> serine16  [label=dobj];
+21617 [style=filled, fillcolor=white, label=216];
+serine16 -> 21617  [label=num];
+Cdc25C19 [style=filled, fillcolor=white, label=Cdc25C];
+serine16 -> Cdc25C19  [label=prep_of];
+vitro21 [style=filled, fillcolor=white, label=vitro];
+Cdc25C19 -> vitro21  [label=prep_in];
+132 [style=filled, fillcolor=white, label=13];
+vitro21 -> 132  [label=appos];
+152 [style=filled, fillcolor=white, label=15];
+132 -> 152  [label=dep];
+182 [style=filled, fillcolor=white, label=18];
+vitro21 -> 182  [label=dep];
+2130 [style=filled, fillcolor=white, label=21];
+182 -> 2130  [label=dep];
+}

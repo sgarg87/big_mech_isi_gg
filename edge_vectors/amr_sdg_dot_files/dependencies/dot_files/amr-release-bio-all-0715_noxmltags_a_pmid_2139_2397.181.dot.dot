@@ -1,0 +1,24 @@
+digraph "Therefore ,  following downregulation of K-Ras by siRNA ,  SKBr3 cells were irradiated or stimulated with EGF ." {
+label="Therefore ,  following downregulation of K-Ras by siRNA ,  SKBr3 cells were
+irradiated or stimulated with EGF .";
+irradiated13 [style=filled, fillcolor=white, label=irradiated];
+Therefore1 [style=filled, fillcolor=white, label=Therefore];
+irradiated13 -> Therefore1  [label=advmod];
+downregulation4 [style=filled, fillcolor=white, label=downregulation];
+irradiated13 -> downregulation4  [label=prep_following];
+"K-Ras6" [style=filled, fillcolor=white, label="K-Ras"];
+downregulation4 -> "K-Ras6"  [label=prep_of];
+siRNA8 [style=filled, fillcolor=white, label=siRNA];
+"K-Ras6" -> siRNA8  [label=prep_by];
+cells11 [style=filled, fillcolor=white, label=cells];
+SKBr310 [style=filled, fillcolor=white, label=SKBr3];
+cells11 -> SKBr310  [label=amod];
+irradiated13 -> cells11  [label=nsubjpass];
+were12 [style=filled, fillcolor=white, label=were];
+irradiated13 -> were12  [label=auxpass];
+irradiated13 -> irradiated13  [label=root];
+stimulated15 [style=filled, fillcolor=white, label=stimulated];
+irradiated13 -> stimulated15  [label=conj_or];
+EGF17 [style=filled, fillcolor=white, label=EGF];
+irradiated13 -> EGF17  [label=prep_with];
+}

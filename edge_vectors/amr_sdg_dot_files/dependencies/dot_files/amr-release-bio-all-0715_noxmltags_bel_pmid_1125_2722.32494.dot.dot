@@ -1,0 +1,53 @@
+digraph "We demonstrated that ROR alpha is expressed in human primary smooth-muscle cells and that ectopic expression of ROR alpha1 inhibits TNFalpha-induced IL-6 ,  IL-8 and COX-2 expression in these cells ." {
+label="We demonstrated that ROR alpha is expressed in human primary smooth-muscle
+cells and that ectopic expression of ROR alpha1 inhibits TNFalpha-induced IL-6 ,
+IL-8 and COX-2 expression in these cells .";
+demonstrated2 [style=filled, fillcolor=white, label=demonstrated];
+We1 [style=filled, fillcolor=white, label=We];
+demonstrated2 -> We1  [label=nsubj];
+demonstrated2 -> demonstrated2  [label=root];
+expressed7 [style=filled, fillcolor=white, label=expressed];
+that3 [style=filled, fillcolor=white, label=that];
+expressed7 -> that3  [label=mark];
+alpha5 [style=filled, fillcolor=white, label=alpha];
+ROR4 [style=filled, fillcolor=white, label=ROR];
+alpha5 -> ROR4  [label=nn];
+expressed7 -> alpha5  [label=nsubjpass];
+is6 [style=filled, fillcolor=white, label=is];
+expressed7 -> is6  [label=auxpass];
+demonstrated2 -> expressed7  [label=ccomp];
+cells12 [style=filled, fillcolor=white, label=cells];
+human9 [style=filled, fillcolor=white, label=human];
+cells12 -> human9  [label=amod];
+primary10 [style=filled, fillcolor=white, label=primary];
+cells12 -> primary10  [label=amod];
+"smooth-muscle11" [style=filled, fillcolor=white, label="smooth-muscle"];
+cells12 -> "smooth-muscle11"  [label=amod];
+expressed7 -> cells12  [label=prep_in];
+inhibits20 [style=filled, fillcolor=white, label=inhibits];
+that14 [style=filled, fillcolor=white, label=that];
+inhibits20 -> that14  [label=mark];
+expression16 [style=filled, fillcolor=white, label=expression];
+ectopic15 [style=filled, fillcolor=white, label=ectopic];
+expression16 -> ectopic15  [label=amod];
+inhibits20 -> expression16  [label=nsubj];
+ROR18 [style=filled, fillcolor=white, label=ROR];
+expression16 -> ROR18  [label=prep_of];
+alpha119 [style=filled, fillcolor=white, label=alpha1];
+ROR18 -> alpha119  [label=num];
+expressed7 -> inhibits20  [label=conj_and];
+expression27 [style=filled, fillcolor=white, label=expression];
+"TNFalpha-induced21" [style=filled, fillcolor=white, label="TNFalpha-induced"];
+expression27 -> "TNFalpha-induced21"  [label=amod];
+"IL-622" [style=filled, fillcolor=white, label="IL-6"];
+expression27 -> "IL-622"  [label=amod];
+"IL-824" [style=filled, fillcolor=white, label="IL-8"];
+"IL-622" -> "IL-824"  [label=conj_and];
+"COX-26" [style=filled, fillcolor=white, label="COX-2"];
+"IL-622" -> "COX-26"  [label=conj_and];
+inhibits20 -> expression27  [label=dobj];
+cells30 [style=filled, fillcolor=white, label=cells];
+these29 [style=filled, fillcolor=white, label=these];
+cells30 -> these29  [label=det];
+inhibits20 -> cells30  [label=prep_in];
+}

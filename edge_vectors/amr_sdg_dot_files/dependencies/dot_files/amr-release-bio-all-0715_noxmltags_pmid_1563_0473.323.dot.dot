@@ -1,0 +1,34 @@
+digraph "( H ) Immunofluorescence with anti-laminin 5 ( lam5 ) ,  which demarcates the basement membrane ,  and anti-E-cadherin ( E-cad ) ,  a component of AJs ." {
+label="( H ) Immunofluorescence with anti-laminin 5 ( lam5 ) ,  which demarcates the
+basement membrane ,  and anti-E-cadherin ( E-cad ) ,  a component of AJs .";
+Immunofluorescence4 [style=filled, fillcolor=white, label=Immunofluorescence];
+H2 [style=filled, fillcolor=white, label=H];
+Immunofluorescence4 -> H2  [label=nn];
+Immunofluorescence4 -> Immunofluorescence4  [label=root];
+"anti-laminin6" [style=filled, fillcolor=white, label="anti-laminin"];
+Immunofluorescence4 -> "anti-laminin6"  [label=prep_with];
+57 [style=filled, fillcolor=white, label=5];
+"anti-laminin6" -> 57  [label=num];
+lam59 [style=filled, fillcolor=white, label=lam5];
+"anti-laminin6" -> lam59  [label=appos];
+demarcates13 [style=filled, fillcolor=white, label=demarcates];
+which12 [style=filled, fillcolor=white, label=which];
+demarcates13 -> which12  [label=nsubj];
+"anti-laminin6" -> demarcates13  [label=rcmod];
+basement15 [style=filled, fillcolor=white, label=basement];
+the14 [style=filled, fillcolor=white, label=the];
+basement15 -> the14  [label=det];
+demarcates13 -> basement15  [label=dobj];
+membrane16 [style=filled, fillcolor=white, label=membrane];
+Immunofluorescence4 -> membrane16  [label=amod];
+"anti-E-cadherin19" [style=filled, fillcolor=white, label="anti-E-cadherin"];
+membrane16 -> "anti-E-cadherin19"  [label=conj_and];
+"E-cad21" [style=filled, fillcolor=white, label="E-cad"];
+"anti-E-cadherin19" -> "E-cad21"  [label=dep];
+component25 [style=filled, fillcolor=white, label=component];
+a24 [style=filled, fillcolor=white, label=a];
+component25 -> a24  [label=det];
+Immunofluorescence4 -> component25  [label=appos];
+AJs27 [style=filled, fillcolor=white, label=AJs];
+component25 -> AJs27  [label=prep_of];
+}

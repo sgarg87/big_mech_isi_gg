@@ -1,0 +1,40 @@
+digraph "The experiment in ( B ) was repeated ,  and this time ,  total RNAs were isolated from keratinocytes treated with TGF-β2 for the indicated times ." {
+label="The experiment in ( B ) was repeated ,  and this time ,  total RNAs were
+isolated from keratinocytes treated with TGF-β2 for the indicated times .";
+experiment2 [style=filled, fillcolor=white, label=experiment];
+The1 [style=filled, fillcolor=white, label=The];
+experiment2 -> The1  [label=det];
+repeated8 [style=filled, fillcolor=white, label=repeated];
+repeated8 -> experiment2  [label=nsubjpass];
+in3 [style=filled, fillcolor=white, label=in];
+experiment2 -> in3  [label=prep];
+B5 [style=filled, fillcolor=white, label=B];
+experiment2 -> B5  [label=appos];
+was7 [style=filled, fillcolor=white, label=was];
+repeated8 -> was7  [label=auxpass];
+repeated8 -> repeated8  [label=root];
+time12 [style=filled, fillcolor=white, label=time];
+this11 [style=filled, fillcolor=white, label=this];
+time12 -> this11  [label=det];
+isolated17 [style=filled, fillcolor=white, label=isolated];
+isolated17 -> time12  [label=nsubjpass];
+RNAs15 [style=filled, fillcolor=white, label=RNAs];
+total14 [style=filled, fillcolor=white, label=total];
+RNAs15 -> total14  [label=amod];
+isolated17 -> RNAs15  [label=nsubjpass];
+were16 [style=filled, fillcolor=white, label=were];
+isolated17 -> were16  [label=auxpass];
+repeated8 -> isolated17  [label=conj_and];
+keratinocytes19 [style=filled, fillcolor=white, label=keratinocytes];
+isolated17 -> keratinocytes19  [label=prep_from];
+treated20 [style=filled, fillcolor=white, label=treated];
+keratinocytes19 -> treated20  [label=vmod];
+"TGF-β2" [style=filled, fillcolor=white, label="TGF-β2"];
+treated20 -> "TGF-β2"  [label=prep_with];
+times26 [style=filled, fillcolor=white, label=times];
+the24 [style=filled, fillcolor=white, label=the];
+times26 -> the24  [label=det];
+indicated25 [style=filled, fillcolor=white, label=indicated];
+times26 -> indicated25  [label=amod];
+"TGF-β2" -> times26  [label=prep_for];
+}

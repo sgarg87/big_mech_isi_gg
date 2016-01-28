@@ -1,0 +1,28 @@
+digraph "NGF activates Erk1/Erk2 and JNK but not p38MAPK in J774 cells ... NGF also induced phosphorylation of JNK" {
+label="NGF activates Erk1/Erk2 and JNK but not p38MAPK in J774 cells ... NGF also
+induced phosphorylation of JNK";
+activates2 [style=filled, fillcolor=white, label=activates];
+NGF1 [style=filled, fillcolor=white, label=NGF];
+activates2 -> NGF1  [label=nsubj];
+activates2 -> activates2  [label=root];
+"Erk1/Erk23" [style=filled, fillcolor=white, label="Erk1/Erk2"];
+activates2 -> "Erk1/Erk23"  [label=dobj];
+JNK5 [style=filled, fillcolor=white, label=JNK];
+"Erk1/Erk23" -> JNK5  [label=conj_and];
+p38MAPK [style=filled, fillcolor=white, label=p38MAPK];
+"Erk1/Erk23" -> p38MAPK  [label=conj_negcc];
+cells11 [style=filled, fillcolor=white, label=cells];
+J77410 [style=filled, fillcolor=white, label=J774];
+cells11 -> J77410  [label=num];
+p38MAPK -> cells11  [label=prep_in];
+induced15 [style=filled, fillcolor=white, label=induced];
+NGF13 [style=filled, fillcolor=white, label=NGF];
+induced15 -> NGF13  [label=nsubj];
+also14 [style=filled, fillcolor=white, label=also];
+induced15 -> also14  [label=advmod];
+activates2 -> induced15  [label=parataxis];
+phosphorylation16 [style=filled, fillcolor=white, label=phosphorylation];
+induced15 -> phosphorylation16  [label=dobj];
+JNK18 [style=filled, fillcolor=white, label=JNK];
+phosphorylation16 -> JNK18  [label=prep_of];
+}

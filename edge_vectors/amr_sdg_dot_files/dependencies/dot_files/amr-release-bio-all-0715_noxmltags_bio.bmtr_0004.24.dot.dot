@@ -1,0 +1,22 @@
+digraph "The analysis revealed that monoubiquitination abrogates GAP-mediated GTP hydrolysis ." {
+label="The analysis revealed that monoubiquitination abrogates GAP-mediated GTP
+hydrolysis .";
+analysis2 [style=filled, fillcolor=white, label=analysis];
+The1 [style=filled, fillcolor=white, label=The];
+analysis2 -> The1  [label=det];
+revealed3 [style=filled, fillcolor=white, label=revealed];
+revealed3 -> analysis2  [label=nsubj];
+revealed3 -> revealed3  [label=root];
+abrogates6 [style=filled, fillcolor=white, label=abrogates];
+that4 [style=filled, fillcolor=white, label=that];
+abrogates6 -> that4  [label=mark];
+monoubiquitination5 [style=filled, fillcolor=white, label=monoubiquitination];
+abrogates6 -> monoubiquitination5  [label=nsubj];
+revealed3 -> abrogates6  [label=ccomp];
+hydrolysis9 [style=filled, fillcolor=white, label=hydrolysis];
+"GAP-mediated7" [style=filled, fillcolor=white, label="GAP-mediated"];
+hydrolysis9 -> "GAP-mediated7"  [label=amod];
+GTP8 [style=filled, fillcolor=white, label=GTP];
+hydrolysis9 -> GTP8  [label=nn];
+abrogates6 -> hydrolysis9  [label=dobj];
+}

@@ -1,0 +1,40 @@
+digraph "A variant of lower molecular weight for RhoA protein has previously been reported both in colon and breast tissues -LSB- 7 -RSB- ." {
+label="A variant of lower molecular weight for RhoA protein has previously been
+reported both in colon and breast tissues -LSB- 7 -RSB- .";
+variant2 [style=filled, fillcolor=white, label=variant];
+A1 [style=filled, fillcolor=white, label=A];
+variant2 -> A1  [label=det];
+reported13 [style=filled, fillcolor=white, label=reported];
+reported13 -> variant2  [label=nsubjpass];
+weight6 [style=filled, fillcolor=white, label=weight];
+lower4 [style=filled, fillcolor=white, label=lower];
+weight6 -> lower4  [label=amod];
+molecular5 [style=filled, fillcolor=white, label=molecular];
+weight6 -> molecular5  [label=amod];
+variant2 -> weight6  [label=prep_of];
+protein9 [style=filled, fillcolor=white, label=protein];
+RhoA8 [style=filled, fillcolor=white, label=RhoA];
+protein9 -> RhoA8  [label=nn];
+weight6 -> protein9  [label=prep_for];
+has10 [style=filled, fillcolor=white, label=has];
+reported13 -> has10  [label=aux];
+previously11 [style=filled, fillcolor=white, label=previously];
+reported13 -> previously11  [label=advmod];
+been12 [style=filled, fillcolor=white, label=been];
+reported13 -> been12  [label=auxpass];
+reported13 -> reported13  [label=root];
+both14 [style=filled, fillcolor=white, label=both];
+reported13 -> both14  [label=dep];
+tissues19 [style=filled, fillcolor=white, label=tissues];
+colon16 [style=filled, fillcolor=white, label=colon];
+tissues19 -> colon16  [label=nn];
+breast18 [style=filled, fillcolor=white, label=breast];
+colon16 -> breast18  [label=conj_and];
+reported13 -> tissues19  [label=prep_in];
+"-LSB-20" [style=filled, fillcolor=white, label="-LSB-"];
+tissues19 -> "-LSB-20"  [label=vmod];
+"-RSB-22" [style=filled, fillcolor=white, label="-RSB-"];
+721 [style=filled, fillcolor=white, label=7];
+"-RSB-22" -> 721  [label=num];
+"-LSB-20" -> "-RSB-22"  [label=dobj];
+}

@@ -1,0 +1,41 @@
+digraph "1 - RT-PCR and western blot analyses confirmed the strong up-regulation of serpinE2 expression and secretion by IECs expressing oncogenic MEK ,  Ras or BRAF ." {
+label="1 - RT-PCR and western blot analyses confirmed the strong up-regulation of
+serpinE2 expression and secretion by IECs expressing oncogenic MEK ,  Ras or
+BRAF .";
+confirmed8 [style=filled, fillcolor=white, label=confirmed];
+1 [style=filled, fillcolor=white, label=1];
+confirmed8 -> 1  [label=dep];
+analyses7 [style=filled, fillcolor=white, label=analyses];
+"RT-PCR3" [style=filled, fillcolor=white, label="RT-PCR"];
+analyses7 -> "RT-PCR3"  [label=nn];
+western5 [style=filled, fillcolor=white, label=western];
+"RT-PCR3" -> western5  [label=conj_and];
+blot6 [style=filled, fillcolor=white, label=blot];
+analyses7 -> blot6  [label=nn];
+confirmed8 -> analyses7  [label=nsubj];
+confirmed8 -> confirmed8  [label=root];
+"up-regulation11" [style=filled, fillcolor=white, label="up-regulation"];
+the9 [style=filled, fillcolor=white, label=the];
+"up-regulation11" -> the9  [label=det];
+strong10 [style=filled, fillcolor=white, label=strong];
+"up-regulation11" -> strong10  [label=amod];
+confirmed8 -> "up-regulation11"  [label=dobj];
+expression14 [style=filled, fillcolor=white, label=expression];
+serpinE213 [style=filled, fillcolor=white, label=serpinE2];
+expression14 -> serpinE213  [label=amod];
+"up-regulation11" -> expression14  [label=prep_of];
+secretion16 [style=filled, fillcolor=white, label=secretion];
+expression14 -> secretion16  [label=conj_and];
+MEK21 [style=filled, fillcolor=white, label=MEK];
+IECs18 [style=filled, fillcolor=white, label=IECs];
+MEK21 -> IECs18  [label=nn];
+expressing19 [style=filled, fillcolor=white, label=expressing];
+MEK21 -> expressing19  [label=nn];
+oncogenic20 [style=filled, fillcolor=white, label=oncogenic];
+MEK21 -> oncogenic20  [label=amod];
+confirmed8 -> MEK21  [label=prep_by];
+Ras23 [style=filled, fillcolor=white, label=Ras];
+MEK21 -> Ras23  [label=conj_or];
+BRAF25 [style=filled, fillcolor=white, label=BRAF];
+MEK21 -> BRAF25  [label=conj_or];
+}

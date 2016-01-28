@@ -1,0 +1,23 @@
+digraph "p53 binds BRCA1 . This binding enhances the transcriptional activity of P53" {
+label="p53 binds BRCA1 . This binding enhances the transcriptional activity of P53";
+binds2 [style=filled, fillcolor=white, label=binds];
+p531 [style=filled, fillcolor=white, label=p53];
+binds2 -> p531  [label=nsubj];
+binds2 -> binds2  [label=root];
+BRCA13 [style=filled, fillcolor=white, label=BRCA1];
+binds2 -> BRCA13  [label=dobj];
+enhances7 [style=filled, fillcolor=white, label=enhances];
+This5 [style=filled, fillcolor=white, label=This];
+enhances7 -> This5  [label=nsubj];
+binding6 [style=filled, fillcolor=white, label=binding];
+This5 -> binding6  [label=amod];
+BRCA13 -> enhances7  [label=rcmod];
+activity10 [style=filled, fillcolor=white, label=activity];
+the8 [style=filled, fillcolor=white, label=the];
+activity10 -> the8  [label=det];
+transcriptional9 [style=filled, fillcolor=white, label=transcriptional];
+activity10 -> transcriptional9  [label=amod];
+enhances7 -> activity10  [label=dobj];
+P5312 [style=filled, fillcolor=white, label=P53];
+activity10 -> P5312  [label=prep_of];
+}

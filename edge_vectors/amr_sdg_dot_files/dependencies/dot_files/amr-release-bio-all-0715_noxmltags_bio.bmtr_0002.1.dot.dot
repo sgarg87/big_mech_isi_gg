@@ -1,0 +1,36 @@
+digraph "Turke et al. `` MEK inhibition leads to PI3K/AKT activation by relieving a negative feedback on ERBB receptors  ( PMC3515079 )" {
+label="Turke et al. `` MEK inhibition leads to PI3K/AKT activation by relieving a
+negative feedback on ERBB receptors  ( PMC3515079 )";
+et2 [style=filled, fillcolor=white, label=et];
+Turke1 [style=filled, fillcolor=white, label=Turke];
+et2 -> Turke1  [label=nn];
+"al.3" [style=filled, fillcolor=white, label="al."];
+"al.3" -> et2  [label=nsubj];
+"al.3" -> "al.3"  [label=root];
+leads7 [style=filled, fillcolor=white, label=leads];
+MEK5 [style=filled, fillcolor=white, label=MEK];
+leads7 -> MEK5  [label=nn];
+inhibition6 [style=filled, fillcolor=white, label=inhibition];
+leads7 -> inhibition6  [label=nn];
+"al.3" -> leads7  [label=dobj];
+"PI3K/AKT9" [style=filled, fillcolor=white, label="PI3K/AKT"];
+to8 [style=filled, fillcolor=white, label=to];
+"PI3K/AKT9" -> to8  [label=aux];
+"al.3" -> "PI3K/AKT9"  [label=xcomp];
+activation10 [style=filled, fillcolor=white, label=activation];
+"PI3K/AKT9" -> activation10  [label=dobj];
+relieving12 [style=filled, fillcolor=white, label=relieving];
+"PI3K/AKT9" -> relieving12  [label=prepc_by];
+feedback15 [style=filled, fillcolor=white, label=feedback];
+a13 [style=filled, fillcolor=white, label=a];
+feedback15 -> a13  [label=det];
+negative14 [style=filled, fillcolor=white, label=negative];
+feedback15 -> negative14  [label=amod];
+relieving12 -> feedback15  [label=dobj];
+receptors18 [style=filled, fillcolor=white, label=receptors];
+ERBB17 [style=filled, fillcolor=white, label=ERBB];
+receptors18 -> ERBB17  [label=nn];
+relieving12 -> receptors18  [label=prep_on];
+PMC35150792 [style=filled, fillcolor=white, label=PMC3515079];
+"al.3" -> PMC35150792  [label=dep];
+}

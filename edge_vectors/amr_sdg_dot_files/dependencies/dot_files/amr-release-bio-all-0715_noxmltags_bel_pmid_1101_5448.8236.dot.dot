@@ -1,0 +1,66 @@
+digraph "Additionally ,  T cells from CCR2 ( - / ) - immunized mice showed decreased antigen-induced proliferation and production of IFN-gamma compared with wild-type immunized controls ,  suggesting that CCR2 enhances the T helper cell type 1 immune response in EAE ." {
+label="Additionally ,  T cells from CCR2 ( - / ) - immunized mice showed decreased
+antigen-induced proliferation and production of IFN-gamma compared with wild-
+type immunized controls ,  suggesting that CCR2 enhances the T helper cell type
+1 immune response in EAE .";
+showed14 [style=filled, fillcolor=white, label=showed];
+Additionally1 [style=filled, fillcolor=white, label=Additionally];
+showed14 -> Additionally1  [label=advmod];
+cells4 [style=filled, fillcolor=white, label=cells];
+T3 [style=filled, fillcolor=white, label=T];
+cells4 -> T3  [label=nn];
+showed14 -> cells4  [label=nsubj];
+CCR26 [style=filled, fillcolor=white, label=CCR2];
+cells4 -> CCR26  [label=prep_from];
+"/9" [style=filled, fillcolor=white, label="/"];
+CCR26 -> "/9"  [label=appos];
+mice13 [style=filled, fillcolor=white, label=mice];
+immunized12 [style=filled, fillcolor=white, label=immunized];
+mice13 -> immunized12  [label=amod];
+CCR26 -> mice13  [label=dep];
+showed14 -> showed14  [label=root];
+proliferation17 [style=filled, fillcolor=white, label=proliferation];
+decreased15 [style=filled, fillcolor=white, label=decreased];
+proliferation17 -> decreased15  [label=amod];
+"antigen-induced16" [style=filled, fillcolor=white, label="antigen-induced"];
+proliferation17 -> "antigen-induced16"  [label=amod];
+showed14 -> proliferation17  [label=dobj];
+production19 [style=filled, fillcolor=white, label=production];
+proliferation17 -> production19  [label=conj_and];
+"IFN-gamma21" [style=filled, fillcolor=white, label="IFN-gamma"];
+production19 -> "IFN-gamma21"  [label=prep_of];
+with23 [style=filled, fillcolor=white, label=with];
+"IFN-gamma21" -> with23  [label=prepc_compared_with];
+controls26 [style=filled, fillcolor=white, label=controls];
+"wild-type24" [style=filled, fillcolor=white, label="wild-type"];
+controls26 -> "wild-type24"  [label=amod];
+immunized25 [style=filled, fillcolor=white, label=immunized];
+controls26 -> immunized25  [label=amod];
+"IFN-gamma21" -> controls26  [label=pobj];
+suggesting28 [style=filled, fillcolor=white, label=suggesting];
+showed14 -> suggesting28  [label=vmod];
+enhances31 [style=filled, fillcolor=white, label=enhances];
+that29 [style=filled, fillcolor=white, label=that];
+enhances31 -> that29  [label=mark];
+CCR230 [style=filled, fillcolor=white, label=CCR2];
+enhances31 -> CCR230  [label=nsubj];
+suggesting28 -> enhances31  [label=ccomp];
+response39 [style=filled, fillcolor=white, label=response];
+the32 [style=filled, fillcolor=white, label=the];
+response39 -> the32  [label=det];
+T33 [style=filled, fillcolor=white, label=T];
+response39 -> T33  [label=nn];
+helper34 [style=filled, fillcolor=white, label=helper];
+response39 -> helper34  [label=nn];
+cell35 [style=filled, fillcolor=white, label=cell];
+response39 -> cell35  [label=nn];
+type36 [style=filled, fillcolor=white, label=type];
+response39 -> type36  [label=nn];
+137 [style=filled, fillcolor=white, label=1];
+response39 -> 137  [label=num];
+immune38 [style=filled, fillcolor=white, label=immune];
+response39 -> immune38  [label=amod];
+enhances31 -> response39  [label=dobj];
+EAE41 [style=filled, fillcolor=white, label=EAE];
+response39 -> EAE41  [label=prep_in];
+}

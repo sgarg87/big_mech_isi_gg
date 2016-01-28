@@ -1,0 +1,40 @@
+digraph "Sos-1 has been shown to be part of a signaling complex with Grb2 ,  which mediates the activation of Ras upon RTK stimulation ." {
+label="Sos-1 has been shown to be part of a signaling complex with Grb2 ,  which
+mediates the activation of Ras upon RTK stimulation .";
+shown4 [style=filled, fillcolor=white, label=shown];
+"Sos-1" [style=filled, fillcolor=white, label="Sos-1"];
+shown4 -> "Sos-1"  [label=nsubjpass];
+has2 [style=filled, fillcolor=white, label=has];
+shown4 -> has2  [label=aux];
+been3 [style=filled, fillcolor=white, label=been];
+shown4 -> been3  [label=auxpass];
+shown4 -> shown4  [label=root];
+part7 [style=filled, fillcolor=white, label=part];
+to5 [style=filled, fillcolor=white, label=to];
+part7 -> to5  [label=aux];
+be6 [style=filled, fillcolor=white, label=be];
+part7 -> be6  [label=cop];
+shown4 -> part7  [label=xcomp];
+complex11 [style=filled, fillcolor=white, label=complex];
+a9 [style=filled, fillcolor=white, label=a];
+complex11 -> a9  [label=det];
+signaling10 [style=filled, fillcolor=white, label=signaling];
+complex11 -> signaling10  [label=amod];
+part7 -> complex11  [label=prep_of];
+Grb213 [style=filled, fillcolor=white, label=Grb2];
+complex11 -> Grb213  [label=prep_with];
+mediates16 [style=filled, fillcolor=white, label=mediates];
+which15 [style=filled, fillcolor=white, label=which];
+mediates16 -> which15  [label=nsubj];
+Grb213 -> mediates16  [label=rcmod];
+activation18 [style=filled, fillcolor=white, label=activation];
+the17 [style=filled, fillcolor=white, label=the];
+activation18 -> the17  [label=det];
+mediates16 -> activation18  [label=dobj];
+Ras20 [style=filled, fillcolor=white, label=Ras];
+activation18 -> Ras20  [label=prep_of];
+stimulation23 [style=filled, fillcolor=white, label=stimulation];
+RTK22 [style=filled, fillcolor=white, label=RTK];
+stimulation23 -> RTK22  [label=nn];
+mediates16 -> stimulation23  [label=prep_upon];
+}

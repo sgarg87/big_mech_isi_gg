@@ -1,0 +1,17 @@
+digraph "Socs1 is essential for inhibition of IFN-gamma-induced inhibition of STAT6" {
+label="Socs1 is essential for inhibition of IFN-gamma-induced inhibition of STAT6";
+essential3 [style=filled, fillcolor=white, label=essential];
+Socs1 [style=filled, fillcolor=white, label=Socs1];
+essential3 -> Socs1  [label=nsubj];
+is2 [style=filled, fillcolor=white, label=is];
+essential3 -> is2  [label=cop];
+essential3 -> essential3  [label=root];
+inhibition5 [style=filled, fillcolor=white, label=inhibition];
+essential3 -> inhibition5  [label=prep_for];
+inhibition8 [style=filled, fillcolor=white, label=inhibition];
+"IFN-gamma-induced7" [style=filled, fillcolor=white, label="IFN-gamma-induced"];
+inhibition8 -> "IFN-gamma-induced7"  [label=amod];
+inhibition5 -> inhibition8  [label=prep_of];
+STAT610 [style=filled, fillcolor=white, label=STAT6];
+inhibition8 -> STAT610  [label=prep_of];
+}

@@ -1,0 +1,53 @@
+digraph "As depicted in Figure 3a ,  mutation of tyr928 ( RET ) reduced STAT3 transactivation approximately 1.5-fold ,  indicating that other STAT3 docking sites must be present in MEN2A-RET as well ." {
+label="As depicted in Figure 3a ,  mutation of tyr928 ( RET ) reduced STAT3
+transactivation approximately 1.5-fold ,  indicating that other STAT3 docking
+sites must be present in MEN2A-RET as well .";
+depicted2 [style=filled, fillcolor=white, label=depicted];
+As1 [style=filled, fillcolor=white, label=As];
+depicted2 -> As1  [label=mark];
+reduced13 [style=filled, fillcolor=white, label=reduced];
+reduced13 -> depicted2  [label=advcl];
+"3a5" [style=filled, fillcolor=white, label="3a"];
+Figure4 [style=filled, fillcolor=white, label=Figure];
+"3a5" -> Figure4  [label=nn];
+depicted2 -> "3a5"  [label=prep_in];
+mutation7 [style=filled, fillcolor=white, label=mutation];
+reduced13 -> mutation7  [label=nsubj];
+tyr928 [style=filled, fillcolor=white, label=tyr928];
+mutation7 -> tyr928  [label=prep_of];
+RET11 [style=filled, fillcolor=white, label=RET];
+tyr928 -> RET11  [label=appos];
+reduced13 -> reduced13  [label=root];
+transactivation15 [style=filled, fillcolor=white, label=transactivation];
+STAT314 [style=filled, fillcolor=white, label=STAT3];
+transactivation15 -> STAT314  [label=num];
+reduced13 -> transactivation15  [label=dobj];
+"1.5-fold7" [style=filled, fillcolor=white, label="1.5-fold"];
+approximately16 [style=filled, fillcolor=white, label=approximately];
+"1.5-fold7" -> approximately16  [label=advmod];
+transactivation15 -> "1.5-fold7"  [label=amod];
+indicating19 [style=filled, fillcolor=white, label=indicating];
+reduced13 -> indicating19  [label=vmod];
+present27 [style=filled, fillcolor=white, label=present];
+that20 [style=filled, fillcolor=white, label=that];
+present27 -> that20  [label=mark];
+sites24 [style=filled, fillcolor=white, label=sites];
+other21 [style=filled, fillcolor=white, label=other];
+sites24 -> other21  [label=amod];
+STAT322 [style=filled, fillcolor=white, label=STAT3];
+sites24 -> STAT322  [label=nn];
+docking23 [style=filled, fillcolor=white, label=docking];
+sites24 -> docking23  [label=nn];
+present27 -> sites24  [label=nsubj];
+must25 [style=filled, fillcolor=white, label=must];
+present27 -> must25  [label=aux];
+be26 [style=filled, fillcolor=white, label=be];
+present27 -> be26  [label=cop];
+indicating19 -> present27  [label=ccomp];
+"MEN2A-RET9" [style=filled, fillcolor=white, label="MEN2A-RET"];
+present27 -> "MEN2A-RET9"  [label=prep_in];
+well31 [style=filled, fillcolor=white, label=well];
+as30 [style=filled, fillcolor=white, label=as];
+well31 -> as30  [label=advmod];
+present27 -> well31  [label=advmod];
+}

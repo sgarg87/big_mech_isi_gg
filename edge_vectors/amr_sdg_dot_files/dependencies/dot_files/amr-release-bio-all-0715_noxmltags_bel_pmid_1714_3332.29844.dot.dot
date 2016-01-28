@@ -1,0 +1,51 @@
+digraph "Expression of PGC-1 ? ,  PEPCK ,  and glucose-6-phosphatase mRNAs were also significantly increased in fasted KO compared with fasted WT livers ( Table 2 ) ,  consistent with enhanced glucose production in KO livers ." {
+label="Expression of PGC-1 ? ,  PEPCK ,  and glucose-6-phosphatase mRNAs were also
+significantly increased in fasted KO compared with fasted WT livers ( Table 2 )
+,  consistent with enhanced glucose production in KO livers .";
+increased14 [style=filled, fillcolor=white, label=increased];
+Expression1 [style=filled, fillcolor=white, label=Expression];
+increased14 -> Expression1  [label=nsubjpass];
+"PGC-13" [style=filled, fillcolor=white, label="PGC-1"];
+Expression1 -> "PGC-13"  [label=prep_of];
+PEPCK6 [style=filled, fillcolor=white, label=PEPCK];
+"PGC-13" -> PEPCK6  [label=conj_and];
+mRNAs10 [style=filled, fillcolor=white, label=mRNAs];
+"glucose-6-phosphatase9" [style=filled, fillcolor=white, label="glucose-6-phosphatase"];
+mRNAs10 -> "glucose-6-phosphatase9"  [label=amod];
+"PGC-13" -> mRNAs10  [label=conj_and];
+were11 [style=filled, fillcolor=white, label=were];
+increased14 -> were11  [label=auxpass];
+also12 [style=filled, fillcolor=white, label=also];
+increased14 -> also12  [label=advmod];
+significantly13 [style=filled, fillcolor=white, label=significantly];
+increased14 -> significantly13  [label=advmod];
+increased14 -> increased14  [label=root];
+KO17 [style=filled, fillcolor=white, label=KO];
+fasted16 [style=filled, fillcolor=white, label=fasted];
+KO17 -> fasted16  [label=amod];
+increased14 -> KO17  [label=prep_in];
+with19 [style=filled, fillcolor=white, label=with];
+increased14 -> with19  [label=prepc_compared_with];
+livers22 [style=filled, fillcolor=white, label=livers];
+fasted20 [style=filled, fillcolor=white, label=fasted];
+livers22 -> fasted20  [label=amod];
+WT21 [style=filled, fillcolor=white, label=WT];
+livers22 -> WT21  [label=nn];
+increased14 -> livers22  [label=pobj];
+225 [style=filled, fillcolor=white, label=2];
+Table24 [style=filled, fillcolor=white, label=Table];
+225 -> Table24  [label=number];
+livers22 -> 225  [label=dep];
+consistent28 [style=filled, fillcolor=white, label=consistent];
+livers22 -> consistent28  [label=amod];
+production32 [style=filled, fillcolor=white, label=production];
+enhanced30 [style=filled, fillcolor=white, label=enhanced];
+production32 -> enhanced30  [label=amod];
+glucose31 [style=filled, fillcolor=white, label=glucose];
+production32 -> glucose31  [label=nn];
+consistent28 -> production32  [label=prep_with];
+livers35 [style=filled, fillcolor=white, label=livers];
+KO34 [style=filled, fillcolor=white, label=KO];
+livers35 -> KO34  [label=nn];
+livers22 -> livers35  [label=prep_in];
+}

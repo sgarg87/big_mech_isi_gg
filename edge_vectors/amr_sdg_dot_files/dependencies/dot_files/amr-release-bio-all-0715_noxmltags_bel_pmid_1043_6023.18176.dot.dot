@@ -1,0 +1,66 @@
+digraph "c-Abl phosphorylates DNA-PK in the C-terminal region ( amino acids 3414 ? 3850 ) ( Jin et al. ,  1997 ) . c-Abl-dependent phosphorylation of DNA-PK is stimulated by IR ( Kharbanda et al. ,  1997 ) . c-Abl does not phosphorylate Ku ( Kharbanda et al. ,  1997 ) ." {
+label="c-Abl phosphorylates DNA-PK in the C-terminal region ( amino acids 3414 ? 3850
+) ( Jin et al. ,  1997 ) . c-Abl-dependent phosphorylation of DNA-PK is
+stimulated by IR ( Kharbanda et al. ,  1997 ) . c-Abl does not phosphorylate Ku
+( Kharbanda et al. ,  1997 ) .";
+phosphorylates2 [style=filled, fillcolor=white, label=phosphorylates];
+"c-Abl1" [style=filled, fillcolor=white, label="c-Abl"];
+phosphorylates2 -> "c-Abl1"  [label=amod];
+phosphorylate42 [style=filled, fillcolor=white, label=phosphorylate];
+phosphorylate42 -> phosphorylates2  [label=nsubj];
+"DNA-PK3" [style=filled, fillcolor=white, label="DNA-PK"];
+phosphorylates2 -> "DNA-PK3"  [label=vmod];
+region7 [style=filled, fillcolor=white, label=region];
+the5 [style=filled, fillcolor=white, label=the];
+region7 -> the5  [label=det];
+"C-terminal6" [style=filled, fillcolor=white, label="C-terminal"];
+region7 -> "C-terminal6"  [label=amod];
+"DNA-PK3" -> region7  [label=prep_in];
+acids10 [style=filled, fillcolor=white, label=acids];
+amino9 [style=filled, fillcolor=white, label=amino];
+acids10 -> amino9  [label=amod];
+region7 -> acids10  [label=dep];
+3414 [style=filled, fillcolor=white, label=3414];
+acids10 -> 3414  [label=dep];
+38501 [style=filled, fillcolor=white, label=3850];
+3414 -> 38501  [label=dep];
+Jin16 [style=filled, fillcolor=white, label=Jin];
+region7 -> Jin16  [label=appos];
+"al.18" [style=filled, fillcolor=white, label="al."];
+Jin16 -> "al.18"  [label=conj_et];
+199720 [style=filled, fillcolor=white, label=1997];
+Jin16 -> 199720  [label=dep];
+phosphorylation24 [style=filled, fillcolor=white, label=phosphorylation];
+"c-Abl-dependent23" [style=filled, fillcolor=white, label="c-Abl-dependent"];
+phosphorylation24 -> "c-Abl-dependent23"  [label=amod];
+stimulated28 [style=filled, fillcolor=white, label=stimulated];
+stimulated28 -> phosphorylation24  [label=nsubjpass];
+"DNA-PK26" [style=filled, fillcolor=white, label="DNA-PK"];
+phosphorylation24 -> "DNA-PK26"  [label=prep_of];
+is27 [style=filled, fillcolor=white, label=is];
+stimulated28 -> is27  [label=auxpass];
+phosphorylate42 -> stimulated28  [label=parataxis];
+IR30 [style=filled, fillcolor=white, label=IR];
+stimulated28 -> IR30  [label=agent];
+Kharbanda32 [style=filled, fillcolor=white, label=Kharbanda];
+IR30 -> Kharbanda32  [label=appos];
+"al.34" [style=filled, fillcolor=white, label="al."];
+Kharbanda32 -> "al.34"  [label=conj_et];
+199736 [style=filled, fillcolor=white, label=1997];
+Kharbanda32 -> 199736  [label=dep];
+"c-Abl39" [style=filled, fillcolor=white, label="c-Abl"];
+phosphorylate42 -> "c-Abl39"  [label=nsubj];
+does40 [style=filled, fillcolor=white, label=does];
+phosphorylate42 -> does40  [label=aux];
+not41 [style=filled, fillcolor=white, label=not];
+phosphorylate42 -> not41  [label=neg];
+phosphorylate42 -> phosphorylate42  [label=root];
+Ku43 [style=filled, fillcolor=white, label=Ku];
+phosphorylate42 -> Ku43  [label=dobj];
+Kharbanda45 [style=filled, fillcolor=white, label=Kharbanda];
+Ku43 -> Kharbanda45  [label=appos];
+"al.47" [style=filled, fillcolor=white, label="al."];
+Kharbanda45 -> "al.47"  [label=conj_et];
+19974 [style=filled, fillcolor=white, label=1997];
+Kharbanda45 -> 19974  [label=dep];
+}

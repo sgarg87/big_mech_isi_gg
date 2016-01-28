@@ -1,0 +1,47 @@
+digraph "SerpinE2 expression was also markedly enhanced in IEC-6 cells transformed by oncogenic RAS ( 26-fold ) or BRAF ( 12-fold after 12 h of 4-hydroxytamoxifen ( 4-OHT ) ( Figure 1B and 1C ) ." {
+label="SerpinE2 expression was also markedly enhanced in IEC-6 cells transformed by
+oncogenic RAS ( 26-fold ) or BRAF ( 12-fold after 12 h of 4-hydroxytamoxifen (
+4-OHT ) ( Figure 1B and 1C ) .";
+expression2 [style=filled, fillcolor=white, label=expression];
+SerpinE21 [style=filled, fillcolor=white, label=SerpinE2];
+expression2 -> SerpinE21  [label=amod];
+enhanced6 [style=filled, fillcolor=white, label=enhanced];
+enhanced6 -> expression2  [label=nsubjpass];
+was3 [style=filled, fillcolor=white, label=was];
+enhanced6 -> was3  [label=auxpass];
+also4 [style=filled, fillcolor=white, label=also];
+enhanced6 -> also4  [label=advmod];
+markedly5 [style=filled, fillcolor=white, label=markedly];
+enhanced6 -> markedly5  [label=advmod];
+enhanced6 -> enhanced6  [label=root];
+cells9 [style=filled, fillcolor=white, label=cells];
+"IEC-68" [style=filled, fillcolor=white, label="IEC-6"];
+cells9 -> "IEC-68"  [label=nn];
+enhanced6 -> cells9  [label=prep_in];
+transformed10 [style=filled, fillcolor=white, label=transformed];
+cells9 -> transformed10  [label=vmod];
+RAS13 [style=filled, fillcolor=white, label=RAS];
+oncogenic12 [style=filled, fillcolor=white, label=oncogenic];
+RAS13 -> oncogenic12  [label=amod];
+transformed10 -> RAS13  [label=agent];
+"26-fold15" [style=filled, fillcolor=white, label="26-fold"];
+RAS13 -> "26-fold15"  [label=dep];
+BRAF18 [style=filled, fillcolor=white, label=BRAF];
+RAS13 -> BRAF18  [label=conj_or];
+h23 [style=filled, fillcolor=white, label=h];
+"12-fold0" [style=filled, fillcolor=white, label="12-fold"];
+h23 -> "12-fold0"  [label=amod];
+12 [style=filled, fillcolor=white, label=12];
+"12-fold0" -> 12  [label=prep_after];
+BRAF18 -> h23  [label=dep];
+"4-hydroxytamoxifen25" [style=filled, fillcolor=white, label="4-hydroxytamoxifen"];
+h23 -> "4-hydroxytamoxifen25"  [label=prep_of];
+"4-OHT27" [style=filled, fillcolor=white, label="4-OHT"];
+"4-hydroxytamoxifen25" -> "4-OHT27"  [label=appos];
+Figure30 [style=filled, fillcolor=white, label=Figure];
+"4-hydroxytamoxifen25" -> Figure30  [label=appos];
+"1B3" [style=filled, fillcolor=white, label="1B"];
+Figure30 -> "1B3"  [label=num];
+"1C33" [style=filled, fillcolor=white, label="1C"];
+"1B3" -> "1C33"  [label=conj_and];
+}

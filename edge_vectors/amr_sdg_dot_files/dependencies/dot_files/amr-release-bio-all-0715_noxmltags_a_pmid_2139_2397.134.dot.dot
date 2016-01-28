@@ -1,0 +1,47 @@
+digraph "Thus ,  we investigated whether the constitutive phosphorylation of YB-1 in MDA-MB-231 cells is due to the described endogenous expression of mutated K-RAS -LSB- 37 -RSB- ." {
+label="Thus ,  we investigated whether the constitutive phosphorylation of YB-1 in
+MDA-MB-231 cells is due to the described endogenous expression of mutated K-RAS
+-LSB- 37 -RSB- .";
+investigated4 [style=filled, fillcolor=white, label=investigated];
+Thus1 [style=filled, fillcolor=white, label=Thus];
+investigated4 -> Thus1  [label=advmod];
+we3 [style=filled, fillcolor=white, label=we];
+investigated4 -> we3  [label=nsubj];
+investigated4 -> investigated4  [label=root];
+due15 [style=filled, fillcolor=white, label=due];
+whether5 [style=filled, fillcolor=white, label=whether];
+due15 -> whether5  [label=mark];
+phosphorylation8 [style=filled, fillcolor=white, label=phosphorylation];
+the6 [style=filled, fillcolor=white, label=the];
+phosphorylation8 -> the6  [label=det];
+constitutive7 [style=filled, fillcolor=white, label=constitutive];
+phosphorylation8 -> constitutive7  [label=amod];
+due15 -> phosphorylation8  [label=nsubj];
+"YB-10" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation8 -> "YB-10"  [label=prep_of];
+cells13 [style=filled, fillcolor=white, label=cells];
+"MDA-MB-231" [style=filled, fillcolor=white, label="MDA-MB-231"];
+cells13 -> "MDA-MB-231"  [label=nn];
+"YB-10" -> cells13  [label=prep_in];
+is14 [style=filled, fillcolor=white, label=is];
+due15 -> is14  [label=cop];
+investigated4 -> due15  [label=ccomp];
+expression20 [style=filled, fillcolor=white, label=expression];
+the17 [style=filled, fillcolor=white, label=the];
+expression20 -> the17  [label=det];
+described18 [style=filled, fillcolor=white, label=described];
+expression20 -> described18  [label=amod];
+endogenous19 [style=filled, fillcolor=white, label=endogenous];
+expression20 -> endogenous19  [label=nn];
+due15 -> expression20  [label=prep_to];
+"-RSB-26" [style=filled, fillcolor=white, label="-RSB-"];
+mutated22 [style=filled, fillcolor=white, label=mutated];
+"-RSB-26" -> mutated22  [label=nn];
+"K-RAS23" [style=filled, fillcolor=white, label="K-RAS"];
+"-RSB-26" -> "K-RAS23"  [label=nn];
+"-LSB-24" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-26" -> "-LSB-24"  [label=nn];
+3725 [style=filled, fillcolor=white, label=37];
+"-RSB-26" -> 3725  [label=num];
+expression20 -> "-RSB-26"  [label=prep_of];
+}

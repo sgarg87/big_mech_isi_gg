@@ -1,0 +1,30 @@
+digraph "We observed reciprocal changes in the Erk and Akt pathways in response to their respective enzyme inhibitors ." {
+label="We observed reciprocal changes in the Erk and Akt pathways in response to their
+respective enzyme inhibitors .";
+observed2 [style=filled, fillcolor=white, label=observed];
+We1 [style=filled, fillcolor=white, label=We];
+observed2 -> We1  [label=nsubj];
+observed2 -> observed2  [label=root];
+changes4 [style=filled, fillcolor=white, label=changes];
+reciprocal3 [style=filled, fillcolor=white, label=reciprocal];
+changes4 -> reciprocal3  [label=amod];
+observed2 -> changes4  [label=dobj];
+pathways10 [style=filled, fillcolor=white, label=pathways];
+the6 [style=filled, fillcolor=white, label=the];
+pathways10 -> the6  [label=det];
+Erk7 [style=filled, fillcolor=white, label=Erk];
+pathways10 -> Erk7  [label=nn];
+Akt9 [style=filled, fillcolor=white, label=Akt];
+Erk7 -> Akt9  [label=conj_and];
+observed2 -> pathways10  [label=prep_in];
+response12 [style=filled, fillcolor=white, label=response];
+observed2 -> response12  [label=prep_in];
+inhibitors17 [style=filled, fillcolor=white, label=inhibitors];
+their14 [style=filled, fillcolor=white, label=their];
+inhibitors17 -> their14  [label=poss];
+respective15 [style=filled, fillcolor=white, label=respective];
+inhibitors17 -> respective15  [label=amod];
+enzyme16 [style=filled, fillcolor=white, label=enzyme];
+inhibitors17 -> enzyme16  [label=nn];
+observed2 -> inhibitors17  [label=prep_to];
+}

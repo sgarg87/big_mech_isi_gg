@@ -1,0 +1,52 @@
+digraph "By contrast ,  serum - and glucocorticoid-inducible kinase 1 ( SGK1 ) was significantly induced in a p53-dependent manner after DNA damage ,  and this induction was through extracellular signal-regulated kinase 1/2-mediated posttranslational regulation ." {
+label="By contrast ,  serum - and glucocorticoid-inducible kinase 1 ( SGK1 ) was
+significantly induced in a p53-dependent manner after DNA damage ,  and this
+induction was through extracellular signal-regulated kinase 1/2-mediated
+posttranslational regulation .";
+induced15 [style=filled, fillcolor=white, label=induced];
+contrast2 [style=filled, fillcolor=white, label=contrast];
+induced15 -> contrast2  [label=agent];
+kinase8 [style=filled, fillcolor=white, label=kinase];
+serum4 [style=filled, fillcolor=white, label=serum];
+kinase8 -> serum4  [label=amod];
+"glucocorticoid-inducible7" [style=filled, fillcolor=white, label="glucocorticoid-inducible"];
+serum4 -> "glucocorticoid-inducible7"  [label=conj_and];
+induced15 -> kinase8  [label=nsubjpass];
+19 [style=filled, fillcolor=white, label=1];
+kinase8 -> 19  [label=dep];
+SGK1 [style=filled, fillcolor=white, label=SGK1];
+kinase8 -> SGK1  [label=appos];
+was13 [style=filled, fillcolor=white, label=was];
+induced15 -> was13  [label=auxpass];
+significantly14 [style=filled, fillcolor=white, label=significantly];
+induced15 -> significantly14  [label=advmod];
+induced15 -> induced15  [label=root];
+manner19 [style=filled, fillcolor=white, label=manner];
+a17 [style=filled, fillcolor=white, label=a];
+manner19 -> a17  [label=det];
+"p53-dependent18" [style=filled, fillcolor=white, label="p53-dependent"];
+manner19 -> "p53-dependent18"  [label=amod];
+induced15 -> manner19  [label=prep_in];
+damage22 [style=filled, fillcolor=white, label=damage];
+DNA21 [style=filled, fillcolor=white, label=DNA];
+damage22 -> DNA21  [label=nn];
+induced15 -> damage22  [label=prep_after];
+induction26 [style=filled, fillcolor=white, label=induction];
+this25 [style=filled, fillcolor=white, label=this];
+induction26 -> this25  [label=det];
+was27 [style=filled, fillcolor=white, label=was];
+was27 -> induction26  [label=nsubj];
+induced15 -> was27  [label=conj_and];
+regulation34 [style=filled, fillcolor=white, label=regulation];
+extracellular29 [style=filled, fillcolor=white, label=extracellular];
+regulation34 -> extracellular29  [label=nn];
+"signal-regulated30" [style=filled, fillcolor=white, label="signal-regulated"];
+regulation34 -> "signal-regulated30"  [label=amod];
+kinase31 [style=filled, fillcolor=white, label=kinase];
+regulation34 -> kinase31  [label=amod];
+"1/2-mediated3" [style=filled, fillcolor=white, label="1/2-mediated"];
+regulation34 -> "1/2-mediated3"  [label=amod];
+posttranslational33 [style=filled, fillcolor=white, label=posttranslational];
+regulation34 -> posttranslational33  [label=nn];
+was27 -> regulation34  [label=prep_through];
+}

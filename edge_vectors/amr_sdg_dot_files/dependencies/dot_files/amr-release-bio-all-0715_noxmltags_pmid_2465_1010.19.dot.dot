@@ -1,0 +1,77 @@
+digraph "Early efforts to block Ras cancers by preventing Ras farnesylation ,  once thought to be an essential posttranslational modification for Ras activity ,  were thwarted by the unexpected presence of a backup system ( geranylgeranyltransferase ) that restored activity of K-Ras and N-Ras after farnesyltransferase treatment ." {
+label="Early efforts to block Ras cancers by preventing Ras farnesylation ,  once
+thought to be an essential posttranslational modification for Ras activity ,
+were thwarted by the unexpected presence of a backup system (
+geranylgeranyltransferase ) that restored activity of K-Ras and N-Ras after
+farnesyltransferase treatment .";
+efforts2 [style=filled, fillcolor=white, label=efforts];
+Early1 [style=filled, fillcolor=white, label=Early];
+efforts2 -> Early1  [label=amod];
+thwarted25 [style=filled, fillcolor=white, label=thwarted];
+thwarted25 -> efforts2  [label=nsubjpass];
+block4 [style=filled, fillcolor=white, label=block];
+to3 [style=filled, fillcolor=white, label=to];
+block4 -> to3  [label=aux];
+efforts2 -> block4  [label=vmod];
+cancers6 [style=filled, fillcolor=white, label=cancers];
+Ras5 [style=filled, fillcolor=white, label=Ras];
+cancers6 -> Ras5  [label=nn];
+block4 -> cancers6  [label=dobj];
+preventing8 [style=filled, fillcolor=white, label=preventing];
+block4 -> preventing8  [label=prepc_by];
+farnesylation10 [style=filled, fillcolor=white, label=farnesylation];
+Ras9 [style=filled, fillcolor=white, label=Ras];
+farnesylation10 -> Ras9  [label=nn];
+preventing8 -> farnesylation10  [label=dobj];
+thought13 [style=filled, fillcolor=white, label=thought];
+once12 [style=filled, fillcolor=white, label=once];
+thought13 -> once12  [label=advmod];
+farnesylation10 -> thought13  [label=vmod];
+modification19 [style=filled, fillcolor=white, label=modification];
+to14 [style=filled, fillcolor=white, label=to];
+modification19 -> to14  [label=aux];
+be15 [style=filled, fillcolor=white, label=be];
+modification19 -> be15  [label=cop];
+an16 [style=filled, fillcolor=white, label=an];
+modification19 -> an16  [label=det];
+essential17 [style=filled, fillcolor=white, label=essential];
+modification19 -> essential17  [label=amod];
+posttranslational18 [style=filled, fillcolor=white, label=posttranslational];
+modification19 -> posttranslational18  [label=amod];
+thought13 -> modification19  [label=xcomp];
+activity22 [style=filled, fillcolor=white, label=activity];
+Ras21 [style=filled, fillcolor=white, label=Ras];
+activity22 -> Ras21  [label=nn];
+modification19 -> activity22  [label=prep_for];
+were24 [style=filled, fillcolor=white, label=were];
+thwarted25 -> were24  [label=auxpass];
+thwarted25 -> thwarted25  [label=root];
+presence29 [style=filled, fillcolor=white, label=presence];
+the27 [style=filled, fillcolor=white, label=the];
+presence29 -> the27  [label=det];
+unexpected28 [style=filled, fillcolor=white, label=unexpected];
+presence29 -> unexpected28  [label=amod];
+thwarted25 -> presence29  [label=agent];
+system33 [style=filled, fillcolor=white, label=system];
+a31 [style=filled, fillcolor=white, label=a];
+system33 -> a31  [label=det];
+backup32 [style=filled, fillcolor=white, label=backup];
+system33 -> backup32  [label=amod];
+presence29 -> system33  [label=prep_of];
+geranylgeranyltransferase35 [style=filled, fillcolor=white, label=geranylgeranyltransferase];
+system33 -> geranylgeranyltransferase35  [label=appos];
+restored38 [style=filled, fillcolor=white, label=restored];
+that37 [style=filled, fillcolor=white, label=that];
+restored38 -> that37  [label=nsubj];
+system33 -> restored38  [label=rcmod];
+activity39 [style=filled, fillcolor=white, label=activity];
+restored38 -> activity39  [label=dobj];
+"K-Ras41" [style=filled, fillcolor=white, label="K-Ras"];
+activity39 -> "K-Ras41"  [label=prep_of];
+"N-Ras43" [style=filled, fillcolor=white, label="N-Ras"];
+"K-Ras41" -> "N-Ras43"  [label=conj_and];
+treatment46 [style=filled, fillcolor=white, label=treatment];
+farnesyltransferase45 [style=filled, fillcolor=white, label=farnesyltransferase];
+treatment46 -> farnesyltransferase45  [label=amod];
+restored38 -> treatment46  [label=prep_after];
+}

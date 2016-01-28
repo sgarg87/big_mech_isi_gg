@@ -1,0 +1,26 @@
+digraph "Tissue samples for immunohistochemistry were fixed in 4 % paraformaldehyde ,  dehydrated ,  and embedded in paraffin ." {
+label="Tissue samples for immunohistochemistry were fixed in 4 % paraformaldehyde ,
+dehydrated ,  and embedded in paraffin .";
+samples2 [style=filled, fillcolor=white, label=samples];
+Tissue1 [style=filled, fillcolor=white, label=Tissue];
+samples2 -> Tissue1  [label=amod];
+fixed6 [style=filled, fillcolor=white, label=fixed];
+fixed6 -> samples2  [label=nsubjpass];
+immunohistochemistry4 [style=filled, fillcolor=white, label=immunohistochemistry];
+samples2 -> immunohistochemistry4  [label=prep_for];
+were5 [style=filled, fillcolor=white, label=were];
+fixed6 -> were5  [label=auxpass];
+fixed6 -> fixed6  [label=root];
+"%9" [style=filled, fillcolor=white, label="%"];
+48 [style=filled, fillcolor=white, label=4];
+"%9" -> 48  [label=number];
+paraformaldehyde10 [style=filled, fillcolor=white, label=paraformaldehyde];
+paraformaldehyde10 -> "%9"  [label=amod];
+fixed6 -> paraformaldehyde10  [label=prep_in];
+dehydrated12 [style=filled, fillcolor=white, label=dehydrated];
+fixed6 -> dehydrated12  [label=conj_and];
+embedded15 [style=filled, fillcolor=white, label=embedded];
+fixed6 -> embedded15  [label=conj_and];
+paraffin17 [style=filled, fillcolor=white, label=paraffin];
+embedded15 -> paraffin17  [label=prep_in];
+}

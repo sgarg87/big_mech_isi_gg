@@ -1,0 +1,26 @@
+digraph "These findings support a model whereby feedback phosphorylation disrupts Raf heterodimerization ." {
+label="These findings support a model whereby feedback phosphorylation disrupts Raf
+heterodimerization .";
+findings2 [style=filled, fillcolor=white, label=findings];
+These1 [style=filled, fillcolor=white, label=These];
+findings2 -> These1  [label=det];
+support3 [style=filled, fillcolor=white, label=support];
+support3 -> findings2  [label=nsubj];
+support3 -> support3  [label=root];
+model5 [style=filled, fillcolor=white, label=model];
+a4 [style=filled, fillcolor=white, label=a];
+model5 -> a4  [label=det];
+support3 -> model5  [label=dobj];
+disrupts9 [style=filled, fillcolor=white, label=disrupts];
+whereby6 [style=filled, fillcolor=white, label=whereby];
+disrupts9 -> whereby6  [label=advmod];
+phosphorylation8 [style=filled, fillcolor=white, label=phosphorylation];
+feedback7 [style=filled, fillcolor=white, label=feedback];
+phosphorylation8 -> feedback7  [label=nn];
+disrupts9 -> phosphorylation8  [label=nsubj];
+model5 -> disrupts9  [label=rcmod];
+heterodimerization11 [style=filled, fillcolor=white, label=heterodimerization];
+Raf10 [style=filled, fillcolor=white, label=Raf];
+heterodimerization11 -> Raf10  [label=nn];
+disrupts9 -> heterodimerization11  [label=dobj];
+}

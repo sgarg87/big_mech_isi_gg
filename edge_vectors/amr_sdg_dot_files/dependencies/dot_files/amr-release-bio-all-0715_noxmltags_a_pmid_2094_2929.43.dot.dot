@@ -1,0 +1,51 @@
+digraph "Results from microarrays comparing control ( wtMEK ) to caMEK-expressing IEC-6 cells identified the Serpin clade E member 2 ( serpinE2 or PN-1 ) gene as a potential target of activated MEK1 ." {
+label="Results from microarrays comparing control ( wtMEK ) to caMEK-expressing IEC-6
+cells identified the Serpin clade E member 2 ( serpinE2 or PN-1 ) gene as a
+potential target of activated MEK1 .";
+identified13 [style=filled, fillcolor=white, label=identified];
+Results1 [style=filled, fillcolor=white, label=Results];
+identified13 -> Results1  [label=nsubj];
+microarrays3 [style=filled, fillcolor=white, label=microarrays];
+Results1 -> microarrays3  [label=prep_from];
+comparing4 [style=filled, fillcolor=white, label=comparing];
+microarrays3 -> comparing4  [label=vmod];
+control5 [style=filled, fillcolor=white, label=control];
+comparing4 -> control5  [label=dobj];
+wtMEK7 [style=filled, fillcolor=white, label=wtMEK];
+control5 -> wtMEK7  [label=appos];
+cells12 [style=filled, fillcolor=white, label=cells];
+"caMEK-expressing10" [style=filled, fillcolor=white, label="caMEK-expressing"];
+cells12 -> "caMEK-expressing10"  [label=amod];
+"IEC-611" [style=filled, fillcolor=white, label="IEC-6"];
+cells12 -> "IEC-611"  [label=nn];
+control5 -> cells12  [label=prep_to];
+identified13 -> identified13  [label=root];
+gene25 [style=filled, fillcolor=white, label=gene];
+the14 [style=filled, fillcolor=white, label=the];
+gene25 -> the14  [label=det];
+member18 [style=filled, fillcolor=white, label=member];
+Serpin15 [style=filled, fillcolor=white, label=Serpin];
+member18 -> Serpin15  [label=nn];
+clade16 [style=filled, fillcolor=white, label=clade];
+member18 -> clade16  [label=nn];
+E17 [style=filled, fillcolor=white, label=E];
+member18 -> E17  [label=nn];
+gene25 -> member18  [label=nn];
+219 [style=filled, fillcolor=white, label=2];
+member18 -> 219  [label=num];
+serpinE221 [style=filled, fillcolor=white, label=serpinE2];
+member18 -> serpinE221  [label=dep];
+"PN-123" [style=filled, fillcolor=white, label="PN-1"];
+serpinE221 -> "PN-123"  [label=conj_or];
+identified13 -> gene25  [label=dobj];
+target29 [style=filled, fillcolor=white, label=target];
+a27 [style=filled, fillcolor=white, label=a];
+target29 -> a27  [label=det];
+potential28 [style=filled, fillcolor=white, label=potential];
+target29 -> potential28  [label=amod];
+gene25 -> target29  [label=prep_as];
+MEK132 [style=filled, fillcolor=white, label=MEK1];
+activated31 [style=filled, fillcolor=white, label=activated];
+MEK132 -> activated31  [label=amod];
+target29 -> MEK132  [label=prep_of];
+}

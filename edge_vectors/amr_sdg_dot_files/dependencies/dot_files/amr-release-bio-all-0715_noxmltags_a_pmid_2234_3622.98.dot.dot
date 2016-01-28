@@ -1,0 +1,46 @@
+digraph "The data presented here suggests that the combination efficacy effect seen when docetaxel was dosed before selumetinib was due to an increase in apoptosis ." {
+label="The data presented here suggests that the combination efficacy effect seen when
+docetaxel was dosed before selumetinib was due to an increase in apoptosis .";
+data2 [style=filled, fillcolor=white, label=data];
+The1 [style=filled, fillcolor=white, label=The];
+data2 -> The1  [label=det];
+suggests5 [style=filled, fillcolor=white, label=suggests];
+suggests5 -> data2  [label=nsubj];
+presented3 [style=filled, fillcolor=white, label=presented];
+data2 -> presented3  [label=vmod];
+here4 [style=filled, fillcolor=white, label=here];
+presented3 -> here4  [label=advmod];
+suggests5 -> suggests5  [label=root];
+due19 [style=filled, fillcolor=white, label=due];
+that6 [style=filled, fillcolor=white, label=that];
+due19 -> that6  [label=mark];
+effect10 [style=filled, fillcolor=white, label=effect];
+the7 [style=filled, fillcolor=white, label=the];
+effect10 -> the7  [label=det];
+combination8 [style=filled, fillcolor=white, label=combination];
+effect10 -> combination8  [label=nn];
+efficacy9 [style=filled, fillcolor=white, label=efficacy];
+effect10 -> efficacy9  [label=nn];
+due19 -> effect10  [label=nsubj];
+seen11 [style=filled, fillcolor=white, label=seen];
+effect10 -> seen11  [label=vmod];
+dosed15 [style=filled, fillcolor=white, label=dosed];
+when12 [style=filled, fillcolor=white, label=when];
+dosed15 -> when12  [label=advmod];
+docetaxel13 [style=filled, fillcolor=white, label=docetaxel];
+dosed15 -> docetaxel13  [label=nsubjpass];
+was14 [style=filled, fillcolor=white, label=was];
+dosed15 -> was14  [label=auxpass];
+seen11 -> dosed15  [label=advcl];
+selumetinib17 [style=filled, fillcolor=white, label=selumetinib];
+dosed15 -> selumetinib17  [label=prep_before];
+was18 [style=filled, fillcolor=white, label=was];
+due19 -> was18  [label=cop];
+suggests5 -> due19  [label=ccomp];
+increase22 [style=filled, fillcolor=white, label=increase];
+an21 [style=filled, fillcolor=white, label=an];
+increase22 -> an21  [label=det];
+due19 -> increase22  [label=prep_to];
+apoptosis24 [style=filled, fillcolor=white, label=apoptosis];
+increase22 -> apoptosis24  [label=prep_in];
+}

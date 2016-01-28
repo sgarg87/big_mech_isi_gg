@@ -1,0 +1,38 @@
+digraph "It did not detect other Snail family members known to be expressed in keratinocytes and/or skin ( unpublished data ) ." {
+label="It did not detect other Snail family members known to be expressed in
+keratinocytes and/or skin ( unpublished data ) .";
+detect4 [style=filled, fillcolor=white, label=detect];
+It1 [style=filled, fillcolor=white, label=It];
+detect4 -> It1  [label=nsubj];
+did2 [style=filled, fillcolor=white, label=did];
+detect4 -> did2  [label=aux];
+not3 [style=filled, fillcolor=white, label=not];
+detect4 -> not3  [label=neg];
+detect4 -> detect4  [label=root];
+members8 [style=filled, fillcolor=white, label=members];
+other5 [style=filled, fillcolor=white, label=other];
+members8 -> other5  [label=amod];
+Snail6 [style=filled, fillcolor=white, label=Snail];
+members8 -> Snail6  [label=nn];
+family7 [style=filled, fillcolor=white, label=family];
+members8 -> family7  [label=nn];
+detect4 -> members8  [label=dobj];
+known9 [style=filled, fillcolor=white, label=known];
+members8 -> known9  [label=vmod];
+expressed12 [style=filled, fillcolor=white, label=expressed];
+to10 [style=filled, fillcolor=white, label=to];
+expressed12 -> to10  [label=aux];
+be11 [style=filled, fillcolor=white, label=be];
+expressed12 -> be11  [label=auxpass];
+known9 -> expressed12  [label=xcomp];
+skin16 [style=filled, fillcolor=white, label=skin];
+keratinocytes14 [style=filled, fillcolor=white, label=keratinocytes];
+skin16 -> keratinocytes14  [label=amod];
+"and/or15" [style=filled, fillcolor=white, label="and/or"];
+skin16 -> "and/or15"  [label=amod];
+expressed12 -> skin16  [label=prep_in];
+data19 [style=filled, fillcolor=white, label=data];
+unpublished18 [style=filled, fillcolor=white, label=unpublished];
+data19 -> unpublished18  [label=amod];
+skin16 -> data19  [label=appos];
+}

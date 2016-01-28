@@ -1,0 +1,55 @@
+digraph "p300 binds to the transactivation domain of E2F1 ( Lee et al. ,  1998a ) . E2F1 and p53 may be reciprocally regulated by their mutual dependence on coactivation by limiting amounts of p300 ( Lee et al. ,  1998a ) ." {
+label="p300 binds to the transactivation domain of E2F1 ( Lee et al. ,  1998a ) . E2F1
+and p53 may be reciprocally regulated by their mutual dependence on coactivation
+by limiting amounts of p300 ( Lee et al. ,  1998a ) .";
+binds2 [style=filled, fillcolor=white, label=binds];
+p3001 [style=filled, fillcolor=white, label=p300];
+binds2 -> p3001  [label=nsubj];
+regulated23 [style=filled, fillcolor=white, label=regulated];
+regulated23 -> binds2  [label=dep];
+domain6 [style=filled, fillcolor=white, label=domain];
+the4 [style=filled, fillcolor=white, label=the];
+domain6 -> the4  [label=det];
+transactivation5 [style=filled, fillcolor=white, label=transactivation];
+domain6 -> transactivation5  [label=nn];
+binds2 -> domain6  [label=prep_to];
+E2F18 [style=filled, fillcolor=white, label=E2F1];
+domain6 -> E2F18  [label=prep_of];
+Lee10 [style=filled, fillcolor=white, label=Lee];
+binds2 -> Lee10  [label=dep];
+"al.12" [style=filled, fillcolor=white, label="al."];
+Lee10 -> "al.12"  [label=conj_et];
+"1998a14" [style=filled, fillcolor=white, label="1998a"];
+Lee10 -> "1998a14"  [label=appos];
+E2F117 [style=filled, fillcolor=white, label=E2F1];
+regulated23 -> E2F117  [label=nsubjpass];
+p5319 [style=filled, fillcolor=white, label=p53];
+E2F117 -> p5319  [label=conj_and];
+may20 [style=filled, fillcolor=white, label=may];
+regulated23 -> may20  [label=aux];
+be21 [style=filled, fillcolor=white, label=be];
+regulated23 -> be21  [label=auxpass];
+reciprocally22 [style=filled, fillcolor=white, label=reciprocally];
+regulated23 -> reciprocally22  [label=advmod];
+regulated23 -> regulated23  [label=root];
+dependence27 [style=filled, fillcolor=white, label=dependence];
+their25 [style=filled, fillcolor=white, label=their];
+dependence27 -> their25  [label=poss];
+mutual26 [style=filled, fillcolor=white, label=mutual];
+dependence27 -> mutual26  [label=amod];
+regulated23 -> dependence27  [label=agent];
+coactivation29 [style=filled, fillcolor=white, label=coactivation];
+dependence27 -> coactivation29  [label=prep_on];
+limiting31 [style=filled, fillcolor=white, label=limiting];
+regulated23 -> limiting31  [label=agent];
+amounts32 [style=filled, fillcolor=white, label=amounts];
+limiting31 -> amounts32  [label=dobj];
+p30034 [style=filled, fillcolor=white, label=p300];
+amounts32 -> p30034  [label=prep_of];
+Lee36 [style=filled, fillcolor=white, label=Lee];
+p30034 -> Lee36  [label=appos];
+"al.38" [style=filled, fillcolor=white, label="al."];
+Lee36 -> "al.38"  [label=conj_et];
+"1998a40" [style=filled, fillcolor=white, label="1998a"];
+Lee36 -> "1998a40"  [label=dep];
+}

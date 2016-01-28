@@ -1,0 +1,34 @@
+digraph "Ajubas pre-LIM domain is the segment that associates with Grb-2s Src-homology 3 domain -LSB- 9 -RSB- ." {
+label="Ajubas pre-LIM domain is the segment that associates with Grb-2s Src-homology 3
+domain -LSB- 9 -RSB- .";
+domain3 [style=filled, fillcolor=white, label=domain];
+Ajubas1 [style=filled, fillcolor=white, label=Ajubas];
+domain3 -> Ajubas1  [label=amod];
+"pre-LIM2" [style=filled, fillcolor=white, label="pre-LIM"];
+domain3 -> "pre-LIM2"  [label=amod];
+segment6 [style=filled, fillcolor=white, label=segment];
+segment6 -> domain3  [label=nsubj];
+is4 [style=filled, fillcolor=white, label=is];
+segment6 -> is4  [label=cop];
+the5 [style=filled, fillcolor=white, label=the];
+segment6 -> the5  [label=det];
+segment6 -> segment6  [label=root];
+associates8 [style=filled, fillcolor=white, label=associates];
+that7 [style=filled, fillcolor=white, label=that];
+associates8 -> that7  [label=det];
+"-LSB-14" [style=filled, fillcolor=white, label="-LSB-"];
+"-LSB-14" -> associates8  [label=dobj];
+"Src-homology11" [style=filled, fillcolor=white, label="Src-homology"];
+"Grb-2s10" [style=filled, fillcolor=white, label="Grb-2s"];
+"Src-homology11" -> "Grb-2s10"  [label=nn];
+associates8 -> "Src-homology11"  [label=prep_with];
+domain13 [style=filled, fillcolor=white, label=domain];
+312 [style=filled, fillcolor=white, label=3];
+domain13 -> 312  [label=num];
+"-LSB-14" -> domain13  [label=nsubj];
+segment6 -> "-LSB-14"  [label=rcmod];
+"-RSB-16" [style=filled, fillcolor=white, label="-RSB-"];
+915 [style=filled, fillcolor=white, label=9];
+"-RSB-16" -> 915  [label=num];
+"-LSB-14" -> "-RSB-16"  [label=dobj];
+}

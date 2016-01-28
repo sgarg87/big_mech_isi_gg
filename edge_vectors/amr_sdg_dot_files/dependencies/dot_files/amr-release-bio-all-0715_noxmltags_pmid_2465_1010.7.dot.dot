@@ -1,0 +1,47 @@
+digraph "A better understanding of Ras biology and biochemistry ,  coupled with new ways of targeting undruggable proteins ,  is likely to lead to new ways of defeating Ras-driven cancers ." {
+label="A better understanding of Ras biology and biochemistry ,  coupled with new ways
+of targeting undruggable proteins ,  is likely to lead to new ways of defeating
+Ras-driven cancers .";
+understanding3 [style=filled, fillcolor=white, label=understanding];
+A1 [style=filled, fillcolor=white, label=A];
+understanding3 -> A1  [label=det];
+better2 [style=filled, fillcolor=white, label=better];
+understanding3 -> better2  [label=amod];
+likely20 [style=filled, fillcolor=white, label=likely];
+likely20 -> understanding3  [label=nsubj];
+biology6 [style=filled, fillcolor=white, label=biology];
+Ras5 [style=filled, fillcolor=white, label=Ras];
+biology6 -> Ras5  [label=nn];
+understanding3 -> biology6  [label=prep_of];
+biochemistry8 [style=filled, fillcolor=white, label=biochemistry];
+biology6 -> biochemistry8  [label=conj_and];
+coupled10 [style=filled, fillcolor=white, label=coupled];
+understanding3 -> coupled10  [label=vmod];
+ways13 [style=filled, fillcolor=white, label=ways];
+new12 [style=filled, fillcolor=white, label=new];
+ways13 -> new12  [label=amod];
+coupled10 -> ways13  [label=prep_with];
+targeting15 [style=filled, fillcolor=white, label=targeting];
+ways13 -> targeting15  [label=prepc_of];
+proteins17 [style=filled, fillcolor=white, label=proteins];
+undruggable16 [style=filled, fillcolor=white, label=undruggable];
+proteins17 -> undruggable16  [label=amod];
+targeting15 -> proteins17  [label=dobj];
+is19 [style=filled, fillcolor=white, label=is];
+likely20 -> is19  [label=cop];
+likely20 -> likely20  [label=root];
+lead22 [style=filled, fillcolor=white, label=lead];
+to21 [style=filled, fillcolor=white, label=to];
+lead22 -> to21  [label=aux];
+likely20 -> lead22  [label=xcomp];
+ways25 [style=filled, fillcolor=white, label=ways];
+new24 [style=filled, fillcolor=white, label=new];
+ways25 -> new24  [label=amod];
+lead22 -> ways25  [label=prep_to];
+defeating27 [style=filled, fillcolor=white, label=defeating];
+ways25 -> defeating27  [label=prepc_of];
+cancers29 [style=filled, fillcolor=white, label=cancers];
+"Ras-driven28" [style=filled, fillcolor=white, label="Ras-driven"];
+cancers29 -> "Ras-driven28"  [label=amod];
+defeating27 -> cancers29  [label=dobj];
+}

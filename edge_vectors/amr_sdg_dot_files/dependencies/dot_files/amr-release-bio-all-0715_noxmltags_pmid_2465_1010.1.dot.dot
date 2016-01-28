@@ -1,0 +1,17 @@
+digraph "Dragging Ras Back in the Ring ( PMID :24651010 )" {
+label="Dragging Ras Back in the Ring ( PMID :24651010 )";
+Dragging1 [style=filled, fillcolor=white, label=Dragging];
+Dragging1 -> Dragging1  [label=root];
+Back3 [style=filled, fillcolor=white, label=Back];
+Ras2 [style=filled, fillcolor=white, label=Ras];
+Back3 -> Ras2  [label=nn];
+Dragging1 -> Back3  [label=dobj];
+Ring6 [style=filled, fillcolor=white, label=Ring];
+the5 [style=filled, fillcolor=white, label=the];
+Ring6 -> the5  [label=det];
+Back3 -> Ring6  [label=prep_in];
+PMID8 [style=filled, fillcolor=white, label=PMID];
+Ring6 -> PMID8  [label=appos];
+":246510109" [style=filled, fillcolor=white, label=":24651010"];
+PMID8 -> ":246510109"  [label=num];
+}

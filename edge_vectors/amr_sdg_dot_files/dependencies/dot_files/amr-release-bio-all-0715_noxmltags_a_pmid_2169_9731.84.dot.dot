@@ -1,0 +1,53 @@
+digraph "Cytosolic Raf functionally links the Erk and Akt pathways ; activated Akt can phosphorylate cRaf at S259 ,  placing Erk regulation downstream of Akt activation -LSB- 32 ,  33 -RSB- ." {
+label="Cytosolic Raf functionally links the Erk and Akt pathways ; activated Akt can
+phosphorylate cRaf at S259 ,  placing Erk regulation downstream of Akt
+activation -LSB- 32 ,  33 -RSB- .";
+Raf2 [style=filled, fillcolor=white, label=Raf];
+Cytosolic1 [style=filled, fillcolor=white, label=Cytosolic];
+Raf2 -> Cytosolic1  [label=nn];
+links4 [style=filled, fillcolor=white, label=links];
+links4 -> Raf2  [label=nsubj];
+functionally3 [style=filled, fillcolor=white, label=functionally];
+links4 -> functionally3  [label=advmod];
+links4 -> links4  [label=root];
+pathways9 [style=filled, fillcolor=white, label=pathways];
+the5 [style=filled, fillcolor=white, label=the];
+pathways9 -> the5  [label=det];
+Erk6 [style=filled, fillcolor=white, label=Erk];
+pathways9 -> Erk6  [label=nn];
+Akt8 [style=filled, fillcolor=white, label=Akt];
+Erk6 -> Akt8  [label=conj_and];
+links4 -> pathways9  [label=dobj];
+Akt12 [style=filled, fillcolor=white, label=Akt];
+activated11 [style=filled, fillcolor=white, label=activated];
+Akt12 -> activated11  [label=nn];
+phosphorylate14 [style=filled, fillcolor=white, label=phosphorylate];
+phosphorylate14 -> Akt12  [label=nsubj];
+can13 [style=filled, fillcolor=white, label=can];
+phosphorylate14 -> can13  [label=aux];
+links4 -> phosphorylate14  [label=parataxis];
+cRaf15 [style=filled, fillcolor=white, label=cRaf];
+phosphorylate14 -> cRaf15  [label=dobj];
+S25917 [style=filled, fillcolor=white, label=S259];
+phosphorylate14 -> S25917  [label=prep_at];
+placing19 [style=filled, fillcolor=white, label=placing];
+phosphorylate14 -> placing19  [label=vmod];
+downstream22 [style=filled, fillcolor=white, label=downstream];
+Erk20 [style=filled, fillcolor=white, label=Erk];
+downstream22 -> Erk20  [label=nn];
+regulation21 [style=filled, fillcolor=white, label=regulation];
+downstream22 -> regulation21  [label=nn];
+placing19 -> downstream22  [label=dobj];
+activation25 [style=filled, fillcolor=white, label=activation];
+Akt24 [style=filled, fillcolor=white, label=Akt];
+activation25 -> Akt24  [label=nn];
+downstream22 -> activation25  [label=prep_of];
+"-RSB-30" [style=filled, fillcolor=white, label="-RSB-"];
+"-LSB-26" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-30" -> "-LSB-26"  [label=dep];
+3227 [style=filled, fillcolor=white, label=32];
+"-LSB-26" -> 3227  [label=num];
+3329 [style=filled, fillcolor=white, label=33];
+"-LSB-26" -> 3329  [label=num];
+activation25 -> "-RSB-30"  [label=amod];
+}

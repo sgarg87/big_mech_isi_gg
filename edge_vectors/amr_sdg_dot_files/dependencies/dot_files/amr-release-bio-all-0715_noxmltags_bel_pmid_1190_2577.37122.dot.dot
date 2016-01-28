@@ -1,0 +1,71 @@
+digraph "Inhibitory phosphorylation of adjacent threonine and tyrosine residues ( T14/Y15 in CDK1 ) is mediated by dualspecificity kinases ( such as WEE1 and MYT1 ) . This inhibition is relieved when the CDC25 phosphatases ( CDC25A ,  CDC25B and CDC25C ) dephosphorylate these residues ,  which triggers entry into mitosis" {
+label="Inhibitory phosphorylation of adjacent threonine and tyrosine residues (
+T14/Y15 in CDK1 ) is mediated by dualspecificity kinases ( such as WEE1 and MYT1
+) . This inhibition is relieved when the CDC25 phosphatases ( CDC25A ,  CDC25B
+and CDC25C ) dephosphorylate these residues ,  which triggers entry into
+mitosis";
+phosphorylation2 [style=filled, fillcolor=white, label=phosphorylation];
+Inhibitory1 [style=filled, fillcolor=white, label=Inhibitory];
+phosphorylation2 -> Inhibitory1  [label=advmod];
+phosphorylation2 -> phosphorylation2  [label=root];
+residues8 [style=filled, fillcolor=white, label=residues];
+adjacent4 [style=filled, fillcolor=white, label=adjacent];
+residues8 -> adjacent4  [label=amod];
+threonine5 [style=filled, fillcolor=white, label=threonine];
+residues8 -> threonine5  [label=amod];
+tyrosine7 [style=filled, fillcolor=white, label=tyrosine];
+threonine5 -> tyrosine7  [label=conj_and];
+phosphorylation2 -> residues8  [label=prep_of];
+"T14/Y1510" [style=filled, fillcolor=white, label="T14/Y15"];
+residues8 -> "T14/Y1510"  [label=dep];
+CDK112 [style=filled, fillcolor=white, label=CDK1];
+"T14/Y1510" -> CDK112  [label=prep_in];
+mediated15 [style=filled, fillcolor=white, label=mediated];
+is14 [style=filled, fillcolor=white, label=is];
+mediated15 -> is14  [label=auxpass];
+phosphorylation2 -> mediated15  [label=auxpass];
+kinases18 [style=filled, fillcolor=white, label=kinases];
+dualspecificity17 [style=filled, fillcolor=white, label=dualspecificity];
+kinases18 -> dualspecificity17  [label=amod];
+mediated15 -> kinases18  [label=agent];
+WEE122 [style=filled, fillcolor=white, label=WEE1];
+kinases18 -> WEE122  [label=prep_such_as];
+MYT124 [style=filled, fillcolor=white, label=MYT1];
+WEE122 -> MYT124  [label=conj_and];
+inhibition28 [style=filled, fillcolor=white, label=inhibition];
+This27 [style=filled, fillcolor=white, label=This];
+inhibition28 -> This27  [label=det];
+phosphorylation2 -> inhibition28  [label=nsubjpass];
+relieved30 [style=filled, fillcolor=white, label=relieved];
+is29 [style=filled, fillcolor=white, label=is];
+relieved30 -> is29  [label=cop];
+inhibition28 -> relieved30  [label=rcmod];
+dephosphorylate42 [style=filled, fillcolor=white, label=dephosphorylate];
+when31 [style=filled, fillcolor=white, label=when];
+dephosphorylate42 -> when31  [label=advmod];
+phosphatases34 [style=filled, fillcolor=white, label=phosphatases];
+the32 [style=filled, fillcolor=white, label=the];
+phosphatases34 -> the32  [label=det];
+CDC2533 [style=filled, fillcolor=white, label=CDC25];
+phosphatases34 -> CDC2533  [label=num];
+dephosphorylate42 -> phosphatases34  [label=nsubj];
+CDC25A36 [style=filled, fillcolor=white, label=CDC25A];
+phosphatases34 -> CDC25A36  [label=appos];
+CDC25B38 [style=filled, fillcolor=white, label=CDC25B];
+CDC25A36 -> CDC25B38  [label=dep];
+CDC25C40 [style=filled, fillcolor=white, label=CDC25C];
+CDC25B38 -> CDC25C40  [label=conj_and];
+relieved30 -> dephosphorylate42  [label=advcl];
+residues44 [style=filled, fillcolor=white, label=residues];
+these43 [style=filled, fillcolor=white, label=these];
+residues44 -> these43  [label=det];
+dephosphorylate42 -> residues44  [label=dobj];
+triggers47 [style=filled, fillcolor=white, label=triggers];
+which46 [style=filled, fillcolor=white, label=which];
+triggers47 -> which46  [label=nsubj];
+residues44 -> triggers47  [label=rcmod];
+entry48 [style=filled, fillcolor=white, label=entry];
+triggers47 -> entry48  [label=dobj];
+mitosis50 [style=filled, fillcolor=white, label=mitosis];
+triggers47 -> mitosis50  [label=prep_into];
+}

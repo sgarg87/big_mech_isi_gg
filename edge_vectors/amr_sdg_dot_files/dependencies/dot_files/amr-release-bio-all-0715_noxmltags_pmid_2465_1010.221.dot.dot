@@ -1,0 +1,53 @@
+digraph "Rac1 is necessary for K-Ras tumor initiation ,  further implicating the importance of this pathway in K-Ras tumorigenesis ,  though not yet providing obvious therapeutic targets ( Gysin et al. ,  2011 ) ." {
+label="Rac1 is necessary for K-Ras tumor initiation ,  further implicating the
+importance of this pathway in K-Ras tumorigenesis ,  though not yet providing
+obvious therapeutic targets ( Gysin et al. ,  2011 ) .";
+necessary3 [style=filled, fillcolor=white, label=necessary];
+Rac1 [style=filled, fillcolor=white, label=Rac1];
+necessary3 -> Rac1  [label=nsubj];
+is2 [style=filled, fillcolor=white, label=is];
+necessary3 -> is2  [label=cop];
+necessary3 -> necessary3  [label=root];
+initiation7 [style=filled, fillcolor=white, label=initiation];
+"K-Ras5" [style=filled, fillcolor=white, label="K-Ras"];
+initiation7 -> "K-Ras5"  [label=nn];
+tumor6 [style=filled, fillcolor=white, label=tumor];
+initiation7 -> tumor6  [label=nn];
+necessary3 -> initiation7  [label=prep_for];
+implicating10 [style=filled, fillcolor=white, label=implicating];
+further9 [style=filled, fillcolor=white, label=further];
+implicating10 -> further9  [label=advmod];
+necessary3 -> implicating10  [label=xcomp];
+importance12 [style=filled, fillcolor=white, label=importance];
+the11 [style=filled, fillcolor=white, label=the];
+importance12 -> the11  [label=det];
+implicating10 -> importance12  [label=dobj];
+pathway15 [style=filled, fillcolor=white, label=pathway];
+this14 [style=filled, fillcolor=white, label=this];
+pathway15 -> this14  [label=det];
+importance12 -> pathway15  [label=prep_of];
+tumorigenesis18 [style=filled, fillcolor=white, label=tumorigenesis];
+"K-Ras17" [style=filled, fillcolor=white, label="K-Ras"];
+tumorigenesis18 -> "K-Ras17"  [label=nn];
+pathway15 -> tumorigenesis18  [label=prep_in];
+providing23 [style=filled, fillcolor=white, label=providing];
+though20 [style=filled, fillcolor=white, label=though];
+providing23 -> though20  [label=mark];
+not21 [style=filled, fillcolor=white, label=not];
+providing23 -> not21  [label=neg];
+yet22 [style=filled, fillcolor=white, label=yet];
+providing23 -> yet22  [label=advmod];
+pathway15 -> providing23  [label=dep];
+targets26 [style=filled, fillcolor=white, label=targets];
+obvious24 [style=filled, fillcolor=white, label=obvious];
+targets26 -> obvious24  [label=amod];
+therapeutic25 [style=filled, fillcolor=white, label=therapeutic];
+targets26 -> therapeutic25  [label=amod];
+providing23 -> targets26  [label=dobj];
+Gysin28 [style=filled, fillcolor=white, label=Gysin];
+targets26 -> Gysin28  [label=appos];
+"al.30" [style=filled, fillcolor=white, label="al."];
+Gysin28 -> "al.30"  [label=conj_et];
+20113 [style=filled, fillcolor=white, label=2011];
+Gysin28 -> 20113  [label=dep];
+}

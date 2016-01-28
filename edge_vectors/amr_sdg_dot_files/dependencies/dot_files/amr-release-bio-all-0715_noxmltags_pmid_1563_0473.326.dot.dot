@@ -1,0 +1,53 @@
+digraph "Three different surviving Tg founder mice harbored a K14-Snail transgene that was integrated into a locus that resulted in inheritable ,  mosaic expression of the transgene in skin epidermis ." {
+label="Three different surviving Tg founder mice harbored a K14-Snail transgene that
+was integrated into a locus that resulted in inheritable ,  mosaic expression of
+the transgene in skin epidermis .";
+mice6 [style=filled, fillcolor=white, label=mice];
+Three1 [style=filled, fillcolor=white, label=Three];
+mice6 -> Three1  [label=num];
+different2 [style=filled, fillcolor=white, label=different];
+mice6 -> different2  [label=amod];
+surviving3 [style=filled, fillcolor=white, label=surviving];
+mice6 -> surviving3  [label=amod];
+Tg4 [style=filled, fillcolor=white, label=Tg];
+mice6 -> Tg4  [label=nn];
+founder5 [style=filled, fillcolor=white, label=founder];
+mice6 -> founder5  [label=nn];
+harbored7 [style=filled, fillcolor=white, label=harbored];
+harbored7 -> mice6  [label=nsubj];
+harbored7 -> harbored7  [label=root];
+transgene10 [style=filled, fillcolor=white, label=transgene];
+a8 [style=filled, fillcolor=white, label=a];
+transgene10 -> a8  [label=det];
+"K14-Snail9" [style=filled, fillcolor=white, label="K14-Snail"];
+transgene10 -> "K14-Snail9"  [label=nn];
+harbored7 -> transgene10  [label=dobj];
+integrated13 [style=filled, fillcolor=white, label=integrated];
+that11 [style=filled, fillcolor=white, label=that];
+integrated13 -> that11  [label=nsubjpass];
+was12 [style=filled, fillcolor=white, label=was];
+integrated13 -> was12  [label=auxpass];
+transgene10 -> integrated13  [label=rcmod];
+locus16 [style=filled, fillcolor=white, label=locus];
+a15 [style=filled, fillcolor=white, label=a];
+locus16 -> a15  [label=det];
+integrated13 -> locus16  [label=prep_into];
+resulted18 [style=filled, fillcolor=white, label=resulted];
+that17 [style=filled, fillcolor=white, label=that];
+resulted18 -> that17  [label=nsubj];
+locus16 -> resulted18  [label=rcmod];
+expression23 [style=filled, fillcolor=white, label=expression];
+inheritable20 [style=filled, fillcolor=white, label=inheritable];
+expression23 -> inheritable20  [label=amod];
+mosaic22 [style=filled, fillcolor=white, label=mosaic];
+expression23 -> mosaic22  [label=amod];
+resulted18 -> expression23  [label=prep_in];
+transgene26 [style=filled, fillcolor=white, label=transgene];
+the25 [style=filled, fillcolor=white, label=the];
+transgene26 -> the25  [label=det];
+expression23 -> transgene26  [label=prep_of];
+epidermis29 [style=filled, fillcolor=white, label=epidermis];
+skin28 [style=filled, fillcolor=white, label=skin];
+epidermis29 -> skin28  [label=nn];
+resulted18 -> epidermis29  [label=prep_in];
+}

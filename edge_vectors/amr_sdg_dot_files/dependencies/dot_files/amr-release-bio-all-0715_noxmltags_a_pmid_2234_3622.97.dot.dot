@@ -1,0 +1,49 @@
+digraph "Representative IHC images from PD2 highlights the increase in pHH3 following docetaxel exposure and the increase in cleaved caspase 3 in the docetaxel followed by selumetinib group ( Figure 4C ) ." {
+label="Representative IHC images from PD2 highlights the increase in pHH3 following
+docetaxel exposure and the increase in cleaved caspase 3 in the docetaxel
+followed by selumetinib group ( Figure 4C ) .";
+images3 [style=filled, fillcolor=white, label=images];
+Representative1 [style=filled, fillcolor=white, label=Representative];
+images3 -> Representative1  [label=nn];
+IHC2 [style=filled, fillcolor=white, label=IHC];
+images3 -> IHC2  [label=nn];
+highlights6 [style=filled, fillcolor=white, label=highlights];
+highlights6 -> images3  [label=nsubj];
+PD25 [style=filled, fillcolor=white, label=PD2];
+images3 -> PD25  [label=prep_from];
+highlights6 -> highlights6  [label=root];
+increase8 [style=filled, fillcolor=white, label=increase];
+the7 [style=filled, fillcolor=white, label=the];
+increase8 -> the7  [label=det];
+highlights6 -> increase8  [label=dobj];
+pHH310 [style=filled, fillcolor=white, label=pHH3];
+increase8 -> pHH310  [label=prep_in];
+exposure13 [style=filled, fillcolor=white, label=exposure];
+docetaxel12 [style=filled, fillcolor=white, label=docetaxel];
+exposure13 -> docetaxel12  [label=amod];
+pHH310 -> exposure13  [label=prep_following];
+increase16 [style=filled, fillcolor=white, label=increase];
+the15 [style=filled, fillcolor=white, label=the];
+increase16 -> the15  [label=det];
+exposure13 -> increase16  [label=conj_and];
+caspase19 [style=filled, fillcolor=white, label=caspase];
+cleaved18 [style=filled, fillcolor=white, label=cleaved];
+caspase19 -> cleaved18  [label=amod];
+increase16 -> caspase19  [label=prep_in];
+320 [style=filled, fillcolor=white, label=3];
+caspase19 -> 320  [label=num];
+docetaxel23 [style=filled, fillcolor=white, label=docetaxel];
+the22 [style=filled, fillcolor=white, label=the];
+docetaxel23 -> the22  [label=det];
+caspase19 -> docetaxel23  [label=prep_in];
+followed24 [style=filled, fillcolor=white, label=followed];
+docetaxel23 -> followed24  [label=vmod];
+group27 [style=filled, fillcolor=white, label=group];
+selumetinib26 [style=filled, fillcolor=white, label=selumetinib];
+group27 -> selumetinib26  [label=amod];
+followed24 -> group27  [label=agent];
+Figure29 [style=filled, fillcolor=white, label=Figure];
+group27 -> Figure29  [label=appos];
+"4C30" [style=filled, fillcolor=white, label="4C"];
+Figure29 -> "4C30"  [label=num];
+}

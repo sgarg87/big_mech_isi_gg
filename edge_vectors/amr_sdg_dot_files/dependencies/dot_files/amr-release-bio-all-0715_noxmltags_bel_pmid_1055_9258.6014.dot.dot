@@ -1,0 +1,34 @@
+digraph "RIP2 activates AP-1 and serum response element regulated expression by inducing the activation of the Elk1 transcription factor ." {
+label="RIP2 activates AP-1 and serum response element regulated expression by inducing
+the activation of the Elk1 transcription factor .";
+activates2 [style=filled, fillcolor=white, label=activates];
+RIP21 [style=filled, fillcolor=white, label=RIP2];
+activates2 -> RIP21  [label=nsubj];
+activates2 -> activates2  [label=root];
+element7 [style=filled, fillcolor=white, label=element];
+"AP-13" [style=filled, fillcolor=white, label="AP-1"];
+element7 -> "AP-13"  [label=nn];
+serum5 [style=filled, fillcolor=white, label=serum];
+"AP-13" -> serum5  [label=conj_and];
+response6 [style=filled, fillcolor=white, label=response];
+element7 -> response6  [label=nn];
+activates2 -> element7  [label=dobj];
+regulated8 [style=filled, fillcolor=white, label=regulated];
+element7 -> regulated8  [label=vmod];
+expression9 [style=filled, fillcolor=white, label=expression];
+regulated8 -> expression9  [label=dobj];
+inducing11 [style=filled, fillcolor=white, label=inducing];
+regulated8 -> inducing11  [label=agent];
+activation13 [style=filled, fillcolor=white, label=activation];
+the12 [style=filled, fillcolor=white, label=the];
+activation13 -> the12  [label=det];
+inducing11 -> activation13  [label=dobj];
+factor18 [style=filled, fillcolor=white, label=factor];
+the15 [style=filled, fillcolor=white, label=the];
+factor18 -> the15  [label=det];
+Elk116 [style=filled, fillcolor=white, label=Elk1];
+factor18 -> Elk116  [label=amod];
+transcription17 [style=filled, fillcolor=white, label=transcription];
+factor18 -> transcription17  [label=nn];
+activation13 -> factor18  [label=prep_of];
+}

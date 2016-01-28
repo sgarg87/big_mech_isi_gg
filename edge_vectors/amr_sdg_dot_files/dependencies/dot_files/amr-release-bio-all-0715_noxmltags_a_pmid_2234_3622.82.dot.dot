@@ -1,0 +1,66 @@
+digraph "However ,  we were interested to explore the effect of dose sequencing on the anti-tumour efficacy of these two agents as administration of selumetinib and docetaxel as monotherapies results in distinct cell cycle phenotypes ; a G1 or mitotic arrest ,  respectively ." {
+label="However ,  we were interested to explore the effect of dose sequencing on the
+anti-tumour efficacy of these two agents as administration of selumetinib and
+docetaxel as monotherapies results in distinct cell cycle phenotypes ; a G1 or
+mitotic arrest ,  respectively .";
+interested5 [style=filled, fillcolor=white, label=interested];
+However1 [style=filled, fillcolor=white, label=However];
+interested5 -> However1  [label=advmod];
+we3 [style=filled, fillcolor=white, label=we];
+interested5 -> we3  [label=nsubj];
+were4 [style=filled, fillcolor=white, label=were];
+interested5 -> were4  [label=cop];
+interested5 -> interested5  [label=root];
+explore7 [style=filled, fillcolor=white, label=explore];
+to6 [style=filled, fillcolor=white, label=to];
+explore7 -> to6  [label=aux];
+interested5 -> explore7  [label=xcomp];
+effect9 [style=filled, fillcolor=white, label=effect];
+the8 [style=filled, fillcolor=white, label=the];
+effect9 -> the8  [label=det];
+explore7 -> effect9  [label=dobj];
+dose11 [style=filled, fillcolor=white, label=dose];
+effect9 -> dose11  [label=prep_of];
+sequencing12 [style=filled, fillcolor=white, label=sequencing];
+dose11 -> sequencing12  [label=vmod];
+efficacy16 [style=filled, fillcolor=white, label=efficacy];
+the14 [style=filled, fillcolor=white, label=the];
+efficacy16 -> the14  [label=det];
+"anti-tumour15" [style=filled, fillcolor=white, label="anti-tumour"];
+efficacy16 -> "anti-tumour15"  [label=amod];
+sequencing12 -> efficacy16  [label=prep_on];
+agents20 [style=filled, fillcolor=white, label=agents];
+these18 [style=filled, fillcolor=white, label=these];
+agents20 -> these18  [label=det];
+two19 [style=filled, fillcolor=white, label=two];
+agents20 -> two19  [label=num];
+efficacy16 -> agents20  [label=prep_of];
+administration22 [style=filled, fillcolor=white, label=administration];
+sequencing12 -> administration22  [label=prep_as];
+phenotypes34 [style=filled, fillcolor=white, label=phenotypes];
+selumetinib24 [style=filled, fillcolor=white, label=selumetinib];
+phenotypes34 -> selumetinib24  [label=amod];
+docetaxel26 [style=filled, fillcolor=white, label=docetaxel];
+selumetinib24 -> docetaxel26  [label=conj_and];
+results29 [style=filled, fillcolor=white, label=results];
+monotherapies28 [style=filled, fillcolor=white, label=monotherapies];
+results29 -> monotherapies28  [label=amod];
+docetaxel26 -> results29  [label=prep_as];
+cell32 [style=filled, fillcolor=white, label=cell];
+distinct31 [style=filled, fillcolor=white, label=distinct];
+cell32 -> distinct31  [label=amod];
+results29 -> cell32  [label=prep_in];
+cycle33 [style=filled, fillcolor=white, label=cycle];
+phenotypes34 -> cycle33  [label=nn];
+administration22 -> phenotypes34  [label=prep_of];
+arrest40 [style=filled, fillcolor=white, label=arrest];
+a36 [style=filled, fillcolor=white, label=a];
+arrest40 -> a36  [label=det];
+G137 [style=filled, fillcolor=white, label=G1];
+arrest40 -> G137  [label=amod];
+mitotic39 [style=filled, fillcolor=white, label=mitotic];
+G137 -> mitotic39  [label=conj_or];
+phenotypes34 -> arrest40  [label=dep];
+respectively42 [style=filled, fillcolor=white, label=respectively];
+phenotypes34 -> respectively42  [label=advmod];
+}

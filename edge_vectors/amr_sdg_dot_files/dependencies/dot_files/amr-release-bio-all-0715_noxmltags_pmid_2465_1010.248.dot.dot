@@ -1,0 +1,15 @@
+digraph "Ras-GTP binds and activates multiple downstream effectors ." {
+label="Ras-GTP binds and activates multiple downstream effectors .";
+binds2 [style=filled, fillcolor=white, label=binds];
+"Ras-GTP1" [style=filled, fillcolor=white, label="Ras-GTP"];
+binds2 -> "Ras-GTP1"  [label=nsubj];
+binds2 -> binds2  [label=root];
+activates4 [style=filled, fillcolor=white, label=activates];
+binds2 -> activates4  [label=conj_and];
+effectors7 [style=filled, fillcolor=white, label=effectors];
+multiple5 [style=filled, fillcolor=white, label=multiple];
+effectors7 -> multiple5  [label=amod];
+downstream6 [style=filled, fillcolor=white, label=downstream];
+effectors7 -> downstream6  [label=amod];
+binds2 -> effectors7  [label=dobj];
+}

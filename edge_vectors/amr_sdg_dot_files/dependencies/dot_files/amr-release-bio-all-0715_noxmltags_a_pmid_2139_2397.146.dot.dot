@@ -1,0 +1,44 @@
+digraph "Sequencing of the K-RAS gene revealed that none of these cell lines presents a K-RAS point mutation in codon 12 ,  codon 13 or 61 ." {
+label="Sequencing of the K-RAS gene revealed that none of these cell lines presents a
+K-RAS point mutation in codon 12 ,  codon 13 or 61 .";
+revealed6 [style=filled, fillcolor=white, label=revealed];
+Sequencing1 [style=filled, fillcolor=white, label=Sequencing];
+revealed6 -> Sequencing1  [label=nsubj];
+gene5 [style=filled, fillcolor=white, label=gene];
+the3 [style=filled, fillcolor=white, label=the];
+gene5 -> the3  [label=det];
+"K-RAS4" [style=filled, fillcolor=white, label="K-RAS"];
+gene5 -> "K-RAS4"  [label=nn];
+Sequencing1 -> gene5  [label=prep_of];
+revealed6 -> revealed6  [label=root];
+presents13 [style=filled, fillcolor=white, label=presents];
+that7 [style=filled, fillcolor=white, label=that];
+presents13 -> that7  [label=mark];
+none8 [style=filled, fillcolor=white, label=none];
+presents13 -> none8  [label=nsubj];
+lines12 [style=filled, fillcolor=white, label=lines];
+these10 [style=filled, fillcolor=white, label=these];
+lines12 -> these10  [label=det];
+cell11 [style=filled, fillcolor=white, label=cell];
+lines12 -> cell11  [label=nn];
+none8 -> lines12  [label=prep_of];
+revealed6 -> presents13  [label=ccomp];
+mutation17 [style=filled, fillcolor=white, label=mutation];
+a14 [style=filled, fillcolor=white, label=a];
+mutation17 -> a14  [label=det];
+"K-RAS15" [style=filled, fillcolor=white, label="K-RAS"];
+mutation17 -> "K-RAS15"  [label=nn];
+point16 [style=filled, fillcolor=white, label=point];
+mutation17 -> point16  [label=nn];
+presents13 -> mutation17  [label=dobj];
+codon19 [style=filled, fillcolor=white, label=codon];
+mutation17 -> codon19  [label=prep_in];
+1220 [style=filled, fillcolor=white, label=12];
+codon19 -> 1220  [label=num];
+codon22 [style=filled, fillcolor=white, label=codon];
+mutation17 -> codon22  [label=amod];
+132 [style=filled, fillcolor=white, label=13];
+codon22 -> 132  [label=dep];
+6125 [style=filled, fillcolor=white, label=61];
+132 -> 6125  [label=conj_or];
+}

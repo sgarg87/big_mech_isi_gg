@@ -1,0 +1,24 @@
+digraph "In response to IFN-gamma ,  C/EBP-beta undergoes phosphorylation at a critical ERK1/2 phosphorylation motif ." {
+label="In response to IFN-gamma ,  C/EBP-beta undergoes phosphorylation at a critical
+ERK1/2 phosphorylation motif .";
+undergoes7 [style=filled, fillcolor=white, label=undergoes];
+response2 [style=filled, fillcolor=white, label=response];
+undergoes7 -> response2  [label=prep_in];
+"IFN-gamma4" [style=filled, fillcolor=white, label="IFN-gamma"];
+response2 -> "IFN-gamma4"  [label=prep_to];
+"C/EBP-beta6" [style=filled, fillcolor=white, label="C/EBP-beta"];
+undergoes7 -> "C/EBP-beta6"  [label=nsubj];
+undergoes7 -> undergoes7  [label=root];
+phosphorylation8 [style=filled, fillcolor=white, label=phosphorylation];
+undergoes7 -> phosphorylation8  [label=dobj];
+motif14 [style=filled, fillcolor=white, label=motif];
+a10 [style=filled, fillcolor=white, label=a];
+motif14 -> a10  [label=det];
+critical11 [style=filled, fillcolor=white, label=critical];
+motif14 -> critical11  [label=amod];
+"ERK1/2" [style=filled, fillcolor=white, label="ERK1/2"];
+motif14 -> "ERK1/2"  [label=nn];
+phosphorylation13 [style=filled, fillcolor=white, label=phosphorylation];
+motif14 -> phosphorylation13  [label=nn];
+undergoes7 -> motif14  [label=prep_at];
+}

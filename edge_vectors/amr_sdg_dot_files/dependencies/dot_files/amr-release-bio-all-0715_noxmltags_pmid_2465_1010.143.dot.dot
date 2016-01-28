@@ -1,0 +1,23 @@
+digraph "Mutations at codons 12 ,  13 ,  and 61 inhibit GAP-mediated GTP hydrolysis ." {
+label="Mutations at codons 12 ,  13 ,  and 61 inhibit GAP-mediated GTP hydrolysis .";
+at2 [style=filled, fillcolor=white, label=at];
+Mutations1 [style=filled, fillcolor=white, label=Mutations];
+at2 -> Mutations1  [label=npadvmod];
+inhibit10 [style=filled, fillcolor=white, label=inhibit];
+inhibit10 -> at2  [label=advmod];
+codons3 [style=filled, fillcolor=white, label=codons];
+inhibit10 -> codons3  [label=nsubj];
+124 [style=filled, fillcolor=white, label=12];
+codons3 -> 124  [label=num];
+136 [style=filled, fillcolor=white, label=13];
+codons3 -> 136  [label=num];
+619 [style=filled, fillcolor=white, label=61];
+codons3 -> 619  [label=conj_and];
+inhibit10 -> inhibit10  [label=root];
+hydrolysis13 [style=filled, fillcolor=white, label=hydrolysis];
+"GAP-mediated11" [style=filled, fillcolor=white, label="GAP-mediated"];
+hydrolysis13 -> "GAP-mediated11"  [label=amod];
+GTP12 [style=filled, fillcolor=white, label=GTP];
+hydrolysis13 -> GTP12  [label=nn];
+inhibit10 -> hydrolysis13  [label=dobj];
+}

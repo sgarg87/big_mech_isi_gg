@@ -1,0 +1,34 @@
+digraph "It is also intrinsically very slow and thus has to be accelerated by GTPase - activating proteins ( GAPs ) ." {
+label="It is also intrinsically very slow and thus has to be accelerated by GTPase -
+activating proteins ( GAPs ) .";
+slow6 [style=filled, fillcolor=white, label=slow];
+It1 [style=filled, fillcolor=white, label=It];
+slow6 -> It1  [label=nsubj];
+is2 [style=filled, fillcolor=white, label=is];
+slow6 -> is2  [label=cop];
+also3 [style=filled, fillcolor=white, label=also];
+slow6 -> also3  [label=advmod];
+intrinsically4 [style=filled, fillcolor=white, label=intrinsically];
+slow6 -> intrinsically4  [label=advmod];
+very5 [style=filled, fillcolor=white, label=very];
+slow6 -> very5  [label=advmod];
+slow6 -> slow6  [label=root];
+has9 [style=filled, fillcolor=white, label=has];
+thus8 [style=filled, fillcolor=white, label=thus];
+has9 -> thus8  [label=advmod];
+slow6 -> has9  [label=conj_and];
+accelerated12 [style=filled, fillcolor=white, label=accelerated];
+to10 [style=filled, fillcolor=white, label=to];
+accelerated12 -> to10  [label=aux];
+be11 [style=filled, fillcolor=white, label=be];
+accelerated12 -> be11  [label=auxpass];
+has9 -> accelerated12  [label=xcomp];
+GTPase14 [style=filled, fillcolor=white, label=GTPase];
+accelerated12 -> GTPase14  [label=agent];
+proteins17 [style=filled, fillcolor=white, label=proteins];
+activating16 [style=filled, fillcolor=white, label=activating];
+proteins17 -> activating16  [label=amod];
+GTPase14 -> proteins17  [label=dep];
+GAPs19 [style=filled, fillcolor=white, label=GAPs];
+proteins17 -> GAPs19  [label=appos];
+}

@@ -1,0 +1,47 @@
+digraph "atg7 deficiency in tumors prevented LC3-I processing to LC3-II and caused accumulation of LC3-I and autophagy substrate p62 in large aggregates apparent at 6 wk that increased throughout tumorigenesis" {
+label="atg7 deficiency in tumors prevented LC3-I processing to LC3-II and caused
+accumulation of LC3-I and autophagy substrate p62 in large aggregates apparent
+at 6 wk that increased throughout tumorigenesis";
+deficiency2 [style=filled, fillcolor=white, label=deficiency];
+atg71 [style=filled, fillcolor=white, label=atg7];
+deficiency2 -> atg71  [label=amod];
+prevented5 [style=filled, fillcolor=white, label=prevented];
+prevented5 -> deficiency2  [label=nsubj];
+tumors4 [style=filled, fillcolor=white, label=tumors];
+deficiency2 -> tumors4  [label=prep_in];
+prevented5 -> prevented5  [label=root];
+processing7 [style=filled, fillcolor=white, label=processing];
+"LC3-I6" [style=filled, fillcolor=white, label="LC3-I"];
+processing7 -> "LC3-I6"  [label=nn];
+prevented5 -> processing7  [label=dobj];
+"LC3-II9" [style=filled, fillcolor=white, label="LC3-II"];
+prevented5 -> "LC3-II9"  [label=prep_to];
+caused11 [style=filled, fillcolor=white, label=caused];
+prevented5 -> caused11  [label=conj_and];
+accumulation12 [style=filled, fillcolor=white, label=accumulation];
+caused11 -> accumulation12  [label=dobj];
+p6218 [style=filled, fillcolor=white, label=p62];
+"LC3-I14" [style=filled, fillcolor=white, label="LC3-I"];
+p6218 -> "LC3-I14"  [label=amod];
+autophagy16 [style=filled, fillcolor=white, label=autophagy];
+"LC3-I14" -> autophagy16  [label=conj_and];
+substrate17 [style=filled, fillcolor=white, label=substrate];
+p6218 -> substrate17  [label=nn];
+accumulation12 -> p6218  [label=prep_of];
+aggregates21 [style=filled, fillcolor=white, label=aggregates];
+large20 [style=filled, fillcolor=white, label=large];
+aggregates21 -> large20  [label=amod];
+caused11 -> aggregates21  [label=prep_in];
+apparent22 [style=filled, fillcolor=white, label=apparent];
+aggregates21 -> apparent22  [label=amod];
+wk25 [style=filled, fillcolor=white, label=wk];
+624 [style=filled, fillcolor=white, label=6];
+wk25 -> 624  [label=num];
+apparent22 -> wk25  [label=prep_at];
+increased27 [style=filled, fillcolor=white, label=increased];
+that26 [style=filled, fillcolor=white, label=that];
+increased27 -> that26  [label=nsubj];
+wk25 -> increased27  [label=rcmod];
+tumorigenesis29 [style=filled, fillcolor=white, label=tumorigenesis];
+increased27 -> tumorigenesis29  [label=prep_throughout];
+}

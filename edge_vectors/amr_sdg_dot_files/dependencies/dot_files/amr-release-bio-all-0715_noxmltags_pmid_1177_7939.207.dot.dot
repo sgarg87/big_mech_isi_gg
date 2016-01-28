@@ -1,0 +1,15 @@
+digraph "Immunoblotting was with the indicated antibodies ( WB ) ." {
+label="Immunoblotting was with the indicated antibodies ( WB ) .";
+was2 [style=filled, fillcolor=white, label=was];
+Immunoblotting1 [style=filled, fillcolor=white, label=Immunoblotting];
+was2 -> Immunoblotting1  [label=nsubj];
+was2 -> was2  [label=root];
+antibodies6 [style=filled, fillcolor=white, label=antibodies];
+the4 [style=filled, fillcolor=white, label=the];
+antibodies6 -> the4  [label=det];
+indicated5 [style=filled, fillcolor=white, label=indicated];
+antibodies6 -> indicated5  [label=amod];
+was2 -> antibodies6  [label=prep_with];
+WB8 [style=filled, fillcolor=white, label=WB];
+antibodies6 -> WB8  [label=appos];
+}

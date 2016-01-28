@@ -1,0 +1,36 @@
+digraph "However ,  a much greater fraction of the ubiquitinated-K-Ras was pulled down by the GST-RBD ( Fig. 2C and fig . S1D ) ." {
+label="However ,  a much greater fraction of the ubiquitinated-K-Ras was pulled down
+by the GST-RBD ( Fig. 2C and fig . S1D ) .";
+pulled11 [style=filled, fillcolor=white, label=pulled];
+However1 [style=filled, fillcolor=white, label=However];
+pulled11 -> However1  [label=advmod];
+fraction6 [style=filled, fillcolor=white, label=fraction];
+a3 [style=filled, fillcolor=white, label=a];
+fraction6 -> a3  [label=det];
+greater5 [style=filled, fillcolor=white, label=greater];
+much4 [style=filled, fillcolor=white, label=much];
+greater5 -> much4  [label=advmod];
+fraction6 -> greater5  [label=amod];
+pulled11 -> fraction6  [label=nsubjpass];
+"ubiquitinated-K-Ras9" [style=filled, fillcolor=white, label="ubiquitinated-K-Ras"];
+the8 [style=filled, fillcolor=white, label=the];
+"ubiquitinated-K-Ras9" -> the8  [label=det];
+fraction6 -> "ubiquitinated-K-Ras9"  [label=prep_of];
+was10 [style=filled, fillcolor=white, label=was];
+pulled11 -> was10  [label=auxpass];
+pulled11 -> pulled11  [label=root];
+down12 [style=filled, fillcolor=white, label=down];
+pulled11 -> down12  [label=prt];
+"GST-RBD15" [style=filled, fillcolor=white, label="GST-RBD"];
+the14 [style=filled, fillcolor=white, label=the];
+"GST-RBD15" -> the14  [label=det];
+pulled11 -> "GST-RBD15"  [label=agent];
+"Fig.17" [style=filled, fillcolor=white, label="Fig."];
+"GST-RBD15" -> "Fig.17"  [label=dep];
+"2C18" [style=filled, fillcolor=white, label="2C"];
+"Fig.17" -> "2C18"  [label=num];
+S1D22 [style=filled, fillcolor=white, label=S1D];
+fig20 [style=filled, fillcolor=white, label=fig];
+S1D22 -> fig20  [label=nn];
+"Fig.17" -> S1D22  [label=conj_and];
+}

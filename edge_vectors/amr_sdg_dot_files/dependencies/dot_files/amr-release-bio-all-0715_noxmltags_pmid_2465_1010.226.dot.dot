@@ -1,0 +1,13 @@
+digraph "These include STK33 ,  TBK1 ,  and GATA-2 ." {
+label="These include STK33 ,  TBK1 ,  and GATA-2 .";
+include2 [style=filled, fillcolor=white, label=include];
+These1 [style=filled, fillcolor=white, label=These];
+include2 -> These1  [label=nsubj];
+include2 -> include2  [label=root];
+STK33 [style=filled, fillcolor=white, label=STK33];
+include2 -> STK33  [label=dobj];
+TBK15 [style=filled, fillcolor=white, label=TBK1];
+STK33 -> TBK15  [label=conj_and];
+"GATA-28" [style=filled, fillcolor=white, label="GATA-2"];
+STK33 -> "GATA-28"  [label=conj_and];
+}

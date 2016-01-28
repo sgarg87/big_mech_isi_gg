@@ -1,0 +1,45 @@
+digraph "Since S/G and S/E complexes are present in the cells simultaneously ,  then both Sos-1-dependent Ras - and Rac-GEF activities are present at the same time ." {
+label="Since S/G and S/E complexes are present in the cells simultaneously ,  then
+both Sos-1-dependent Ras - and Rac-GEF activities are present at the same time
+.";
+present7 [style=filled, fillcolor=white, label=present];
+Since1 [style=filled, fillcolor=white, label=Since];
+present7 -> Since1  [label=mark];
+complexes5 [style=filled, fillcolor=white, label=complexes];
+"S/G2" [style=filled, fillcolor=white, label="S/G"];
+complexes5 -> "S/G2"  [label=nn];
+"S/E4" [style=filled, fillcolor=white, label="S/E"];
+"S/G2" -> "S/E4"  [label=conj_and];
+present7 -> complexes5  [label=nsubj];
+are6 [style=filled, fillcolor=white, label=are];
+present7 -> are6  [label=cop];
+present22 [style=filled, fillcolor=white, label=present];
+present22 -> present7  [label=advcl];
+cells10 [style=filled, fillcolor=white, label=cells];
+the9 [style=filled, fillcolor=white, label=the];
+cells10 -> the9  [label=det];
+present7 -> cells10  [label=prep_in];
+simultaneously11 [style=filled, fillcolor=white, label=simultaneously];
+present7 -> simultaneously11  [label=advmod];
+both14 [style=filled, fillcolor=white, label=both];
+then13 [style=filled, fillcolor=white, label=then];
+both14 -> then13  [label=advmod];
+activities20 [style=filled, fillcolor=white, label=activities];
+activities20 -> both14  [label=amod];
+"Sos-1-dependent5" [style=filled, fillcolor=white, label="Sos-1-dependent"];
+activities20 -> "Sos-1-dependent5"  [label=amod];
+Ras16 [style=filled, fillcolor=white, label=Ras];
+activities20 -> Ras16  [label=amod];
+"Rac-GEF19" [style=filled, fillcolor=white, label="Rac-GEF"];
+Ras16 -> "Rac-GEF19"  [label=conj_and];
+present22 -> activities20  [label=nsubj];
+are21 [style=filled, fillcolor=white, label=are];
+present22 -> are21  [label=cop];
+present22 -> present22  [label=root];
+time26 [style=filled, fillcolor=white, label=time];
+the24 [style=filled, fillcolor=white, label=the];
+time26 -> the24  [label=det];
+same25 [style=filled, fillcolor=white, label=same];
+time26 -> same25  [label=amod];
+present22 -> time26  [label=prep_at];
+}

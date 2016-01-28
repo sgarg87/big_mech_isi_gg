@@ -1,0 +1,51 @@
+digraph "It also contains an additional binding site located in the phosphorylated kinase activation loop of the insulin receptor but is only very slightly phosphorylated by insulin receptor ." {
+label="It also contains an additional binding site located in the phosphorylated
+kinase activation loop of the insulin receptor but is only very slightly
+phosphorylated by insulin receptor .";
+contains3 [style=filled, fillcolor=white, label=contains];
+It1 [style=filled, fillcolor=white, label=It];
+contains3 -> It1  [label=nsubj];
+also2 [style=filled, fillcolor=white, label=also];
+contains3 -> also2  [label=advmod];
+contains3 -> contains3  [label=root];
+site7 [style=filled, fillcolor=white, label=site];
+an4 [style=filled, fillcolor=white, label=an];
+site7 -> an4  [label=det];
+additional5 [style=filled, fillcolor=white, label=additional];
+site7 -> additional5  [label=amod];
+binding6 [style=filled, fillcolor=white, label=binding];
+site7 -> binding6  [label=amod];
+contains3 -> site7  [label=dobj];
+located8 [style=filled, fillcolor=white, label=located];
+site7 -> located8  [label=vmod];
+loop14 [style=filled, fillcolor=white, label=loop];
+the10 [style=filled, fillcolor=white, label=the];
+loop14 -> the10  [label=det];
+phosphorylated11 [style=filled, fillcolor=white, label=phosphorylated];
+loop14 -> phosphorylated11  [label=amod];
+kinase12 [style=filled, fillcolor=white, label=kinase];
+loop14 -> kinase12  [label=amod];
+activation13 [style=filled, fillcolor=white, label=activation];
+loop14 -> activation13  [label=nn];
+located8 -> loop14  [label=prep_in];
+receptor18 [style=filled, fillcolor=white, label=receptor];
+the16 [style=filled, fillcolor=white, label=the];
+receptor18 -> the16  [label=det];
+insulin17 [style=filled, fillcolor=white, label=insulin];
+receptor18 -> insulin17  [label=nn];
+loop14 -> receptor18  [label=prep_of];
+phosphorylated24 [style=filled, fillcolor=white, label=phosphorylated];
+is20 [style=filled, fillcolor=white, label=is];
+phosphorylated24 -> is20  [label=cop];
+only21 [style=filled, fillcolor=white, label=only];
+phosphorylated24 -> only21  [label=advmod];
+very22 [style=filled, fillcolor=white, label=very];
+phosphorylated24 -> very22  [label=advmod];
+slightly23 [style=filled, fillcolor=white, label=slightly];
+phosphorylated24 -> slightly23  [label=advmod];
+contains3 -> phosphorylated24  [label=conj_but];
+receptor27 [style=filled, fillcolor=white, label=receptor];
+insulin26 [style=filled, fillcolor=white, label=insulin];
+receptor27 -> insulin26  [label=nn];
+phosphorylated24 -> receptor27  [label=prep_by];
+}

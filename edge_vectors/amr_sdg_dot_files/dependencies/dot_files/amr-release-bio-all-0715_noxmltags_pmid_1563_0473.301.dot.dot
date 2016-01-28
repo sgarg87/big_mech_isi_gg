@@ -1,0 +1,28 @@
+digraph "RNA was extracted from keratinocytes or skin tissue with Trizol ( Invitrogen ) according to the manufacturers protocol ." {
+label="RNA was extracted from keratinocytes or skin tissue with Trizol ( Invitrogen )
+according to the manufacturers protocol .";
+extracted3 [style=filled, fillcolor=white, label=extracted];
+RNA1 [style=filled, fillcolor=white, label=RNA];
+extracted3 -> RNA1  [label=nsubjpass];
+was2 [style=filled, fillcolor=white, label=was];
+extracted3 -> was2  [label=auxpass];
+extracted3 -> extracted3  [label=root];
+keratinocytes5 [style=filled, fillcolor=white, label=keratinocytes];
+extracted3 -> keratinocytes5  [label=prep_from];
+tissue8 [style=filled, fillcolor=white, label=tissue];
+skin7 [style=filled, fillcolor=white, label=skin];
+tissue8 -> skin7  [label=nn];
+keratinocytes5 -> tissue8  [label=conj_or];
+Trizol10 [style=filled, fillcolor=white, label=Trizol];
+extracted3 -> Trizol10  [label=prep_with];
+Invitrogen12 [style=filled, fillcolor=white, label=Invitrogen];
+Trizol10 -> Invitrogen12  [label=appos];
+to15 [style=filled, fillcolor=white, label=to];
+extracted3 -> to15  [label=prepc_according_to];
+protocol18 [style=filled, fillcolor=white, label=protocol];
+the16 [style=filled, fillcolor=white, label=the];
+protocol18 -> the16  [label=det];
+manufacturers17 [style=filled, fillcolor=white, label=manufacturers];
+protocol18 -> manufacturers17  [label=nn];
+extracted3 -> protocol18  [label=pobj];
+}

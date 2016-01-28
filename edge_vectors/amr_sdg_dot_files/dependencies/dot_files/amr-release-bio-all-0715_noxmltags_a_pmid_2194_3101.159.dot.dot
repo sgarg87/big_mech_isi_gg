@@ -1,0 +1,51 @@
+digraph "In order to determine whether Caco-BR cells have acquired more mesenchymal characteristics ,  RNA and protein levels of the mesenchymal marker Vimentin were examined ( Figure 2C ) ." {
+label="In order to determine whether Caco-BR cells have acquired more mesenchymal
+characteristics ,  RNA and protein levels of the mesenchymal marker Vimentin
+were examined ( Figure 2C ) .";
+determine4 [style=filled, fillcolor=white, label=determine];
+In1 [style=filled, fillcolor=white, label=In];
+determine4 -> In1  [label=mark];
+order2 [style=filled, fillcolor=white, label=order];
+determine4 -> order2  [label=dep];
+to3 [style=filled, fillcolor=white, label=to];
+determine4 -> to3  [label=aux];
+examined24 [style=filled, fillcolor=white, label=examined];
+examined24 -> determine4  [label=advcl];
+acquired9 [style=filled, fillcolor=white, label=acquired];
+whether5 [style=filled, fillcolor=white, label=whether];
+acquired9 -> whether5  [label=mark];
+cells7 [style=filled, fillcolor=white, label=cells];
+"Caco-BR6" [style=filled, fillcolor=white, label="Caco-BR"];
+cells7 -> "Caco-BR6"  [label=amod];
+acquired9 -> cells7  [label=nsubj];
+have8 [style=filled, fillcolor=white, label=have];
+acquired9 -> have8  [label=aux];
+determine4 -> acquired9  [label=ccomp];
+mesenchymal11 [style=filled, fillcolor=white, label=mesenchymal];
+more10 [style=filled, fillcolor=white, label=more];
+mesenchymal11 -> more10  [label=advmod];
+characteristics12 [style=filled, fillcolor=white, label=characteristics];
+characteristics12 -> mesenchymal11  [label=amod];
+acquired9 -> characteristics12  [label=dobj];
+levels17 [style=filled, fillcolor=white, label=levels];
+RNA14 [style=filled, fillcolor=white, label=RNA];
+levels17 -> RNA14  [label=nn];
+protein16 [style=filled, fillcolor=white, label=protein];
+RNA14 -> protein16  [label=conj_and];
+examined24 -> levels17  [label=nsubjpass];
+Vimentin22 [style=filled, fillcolor=white, label=Vimentin];
+the19 [style=filled, fillcolor=white, label=the];
+Vimentin22 -> the19  [label=det];
+mesenchymal20 [style=filled, fillcolor=white, label=mesenchymal];
+Vimentin22 -> mesenchymal20  [label=amod];
+marker21 [style=filled, fillcolor=white, label=marker];
+Vimentin22 -> marker21  [label=nn];
+levels17 -> Vimentin22  [label=prep_of];
+were23 [style=filled, fillcolor=white, label=were];
+examined24 -> were23  [label=auxpass];
+examined24 -> examined24  [label=root];
+Figure26 [style=filled, fillcolor=white, label=Figure];
+examined24 -> Figure26  [label=dep];
+"2C27" [style=filled, fillcolor=white, label="2C"];
+Figure26 -> "2C27"  [label=num];
+}

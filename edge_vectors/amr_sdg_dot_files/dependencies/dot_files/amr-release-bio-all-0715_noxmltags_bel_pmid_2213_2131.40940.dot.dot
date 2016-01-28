@@ -1,0 +1,49 @@
+digraph "qRT-PCR analysis revealed a significant decrease in SHIP-1 mRNA expression in control splenocytes co-cultured with Panc 02.03 cells compared to control splenocytes cultured alone ( Figure 5a ) ." {
+label="qRT-PCR analysis revealed a significant decrease in SHIP-1 mRNA expression in
+control splenocytes co-cultured with Panc 02.03 cells compared to control
+splenocytes cultured alone ( Figure 5a ) .";
+analysis2 [style=filled, fillcolor=white, label=analysis];
+"qRT-PCR1" [style=filled, fillcolor=white, label="qRT-PCR"];
+analysis2 -> "qRT-PCR1"  [label=amod];
+revealed3 [style=filled, fillcolor=white, label=revealed];
+revealed3 -> analysis2  [label=nsubj];
+revealed3 -> revealed3  [label=root];
+decrease6 [style=filled, fillcolor=white, label=decrease];
+a4 [style=filled, fillcolor=white, label=a];
+decrease6 -> a4  [label=det];
+significant5 [style=filled, fillcolor=white, label=significant];
+decrease6 -> significant5  [label=amod];
+revealed3 -> decrease6  [label=dobj];
+expression10 [style=filled, fillcolor=white, label=expression];
+"SHIP-18" [style=filled, fillcolor=white, label="SHIP-1"];
+expression10 -> "SHIP-18"  [label=nn];
+mRNA9 [style=filled, fillcolor=white, label=mRNA];
+expression10 -> mRNA9  [label=nn];
+revealed3 -> expression10  [label=prep_in];
+splenocytes13 [style=filled, fillcolor=white, label=splenocytes];
+control12 [style=filled, fillcolor=white, label=control];
+splenocytes13 -> control12  [label=nn];
+revealed3 -> splenocytes13  [label=prep_in];
+"co-cultured14" [style=filled, fillcolor=white, label="co-cultured"];
+splenocytes13 -> "co-cultured14"  [label=vmod];
+cells18 [style=filled, fillcolor=white, label=cells];
+Panc16 [style=filled, fillcolor=white, label=Panc];
+cells18 -> Panc16  [label=nn];
+"02.0317" [style=filled, fillcolor=white, label="02.03"];
+cells18 -> "02.0317"  [label=num];
+"co-cultured14" -> cells18  [label=prep_with];
+to20 [style=filled, fillcolor=white, label=to];
+"co-cultured14" -> to20  [label=prepc_compared_to];
+splenocytes22 [style=filled, fillcolor=white, label=splenocytes];
+control21 [style=filled, fillcolor=white, label=control];
+splenocytes22 -> control21  [label=nn];
+"co-cultured14" -> splenocytes22  [label=pobj];
+cultured23 [style=filled, fillcolor=white, label=cultured];
+splenocytes22 -> cultured23  [label=vmod];
+alone24 [style=filled, fillcolor=white, label=alone];
+cultured23 -> alone24  [label=advmod];
+Figure26 [style=filled, fillcolor=white, label=Figure];
+cultured23 -> Figure26  [label=dep];
+"5a27" [style=filled, fillcolor=white, label="5a"];
+Figure26 -> "5a27"  [label=num];
+}

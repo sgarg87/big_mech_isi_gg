@@ -1,0 +1,47 @@
+digraph "In keratinocytes ,  however ,  TGF-β1 inhibits keratinocyte growth and seems to be involved in triggering the destructive phase of the cycling hair follicle -LSB- 32 -RSB- ." {
+label="In keratinocytes ,  however ,  TGF-β1 inhibits keratinocyte growth and seems to
+be involved in triggering the destructive phase of the cycling hair follicle
+-LSB- 32 -RSB- .";
+inhibits7 [style=filled, fillcolor=white, label=inhibits];
+keratinocytes2 [style=filled, fillcolor=white, label=keratinocytes];
+inhibits7 -> keratinocytes2  [label=prep_in];
+however4 [style=filled, fillcolor=white, label=however];
+inhibits7 -> however4  [label=advmod];
+"TGF-β16" [style=filled, fillcolor=white, label="TGF-β1"];
+inhibits7 -> "TGF-β16"  [label=nsubj];
+inhibits7 -> inhibits7  [label=root];
+growth9 [style=filled, fillcolor=white, label=growth];
+keratinocyte8 [style=filled, fillcolor=white, label=keratinocyte];
+growth9 -> keratinocyte8  [label=amod];
+inhibits7 -> growth9  [label=dobj];
+seems11 [style=filled, fillcolor=white, label=seems];
+inhibits7 -> seems11  [label=conj_and];
+involved14 [style=filled, fillcolor=white, label=involved];
+to12 [style=filled, fillcolor=white, label=to];
+involved14 -> to12  [label=aux];
+be13 [style=filled, fillcolor=white, label=be];
+involved14 -> be13  [label=auxpass];
+seems11 -> involved14  [label=xcomp];
+triggering16 [style=filled, fillcolor=white, label=triggering];
+involved14 -> triggering16  [label=prepc_in];
+phase19 [style=filled, fillcolor=white, label=phase];
+the17 [style=filled, fillcolor=white, label=the];
+phase19 -> the17  [label=det];
+destructive18 [style=filled, fillcolor=white, label=destructive];
+phase19 -> destructive18  [label=amod];
+triggering16 -> phase19  [label=dobj];
+follicle24 [style=filled, fillcolor=white, label=follicle];
+the21 [style=filled, fillcolor=white, label=the];
+follicle24 -> the21  [label=det];
+cycling22 [style=filled, fillcolor=white, label=cycling];
+follicle24 -> cycling22  [label=nn];
+hair23 [style=filled, fillcolor=white, label=hair];
+follicle24 -> hair23  [label=nn];
+phase19 -> follicle24  [label=prep_of];
+"-LSB-25" [style=filled, fillcolor=white, label="-LSB-"];
+follicle24 -> "-LSB-25"  [label=vmod];
+"-RSB-27" [style=filled, fillcolor=white, label="-RSB-"];
+3226 [style=filled, fillcolor=white, label=32];
+"-RSB-27" -> 3226  [label=num];
+"-LSB-25" -> "-RSB-27"  [label=dobj];
+}

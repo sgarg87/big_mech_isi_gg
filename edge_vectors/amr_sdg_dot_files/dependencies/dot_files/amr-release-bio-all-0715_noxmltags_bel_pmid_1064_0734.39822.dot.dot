@@ -1,0 +1,55 @@
+digraph "Taken together ,  CD72 down-modulates both ERK activation and Ca2 + mobilization induced by BCR ligation ,  strongly suggesting that CD72 negatively regulates BCR signaling in K46 ^ mA cells ." {
+label="Taken together ,  CD72 down-modulates both ERK activation and Ca2 +
+mobilization induced by BCR ligation ,  strongly suggesting that CD72 negatively
+regulates BCR signaling in K46 ^ mA cells .";
+"down-modulates5" [style=filled, fillcolor=white, label="down-modulates"];
+Taken1 [style=filled, fillcolor=white, label=Taken];
+"down-modulates5" -> Taken1  [label=vmod];
+together2 [style=filled, fillcolor=white, label=together];
+Taken1 -> together2  [label=advmod];
+CD724 [style=filled, fillcolor=white, label=CD72];
+"down-modulates5" -> CD724  [label=nsubj];
+"down-modulates5" -> "down-modulates5"  [label=root];
+activation8 [style=filled, fillcolor=white, label=activation];
+both6 [style=filled, fillcolor=white, label=both];
+activation8 -> both6  [label=preconj];
+ERK7 [style=filled, fillcolor=white, label=ERK];
+activation8 -> ERK7  [label=nn];
+"down-modulates5" -> activation8  [label=dobj];
+mobilization12 [style=filled, fillcolor=white, label=mobilization];
+Ca210 [style=filled, fillcolor=white, label=Ca2];
+mobilization12 -> Ca210  [label=amod];
+"+11" [style=filled, fillcolor=white, label="+"];
+mobilization12 -> "+11"  [label=nn];
+activation8 -> mobilization12  [label=conj_and];
+induced13 [style=filled, fillcolor=white, label=induced];
+activation8 -> induced13  [label=vmod];
+ligation16 [style=filled, fillcolor=white, label=ligation];
+BCR15 [style=filled, fillcolor=white, label=BCR];
+ligation16 -> BCR15  [label=nn];
+induced13 -> ligation16  [label=agent];
+suggesting19 [style=filled, fillcolor=white, label=suggesting];
+strongly18 [style=filled, fillcolor=white, label=strongly];
+suggesting19 -> strongly18  [label=advmod];
+induced13 -> suggesting19  [label=xcomp];
+regulates23 [style=filled, fillcolor=white, label=regulates];
+that20 [style=filled, fillcolor=white, label=that];
+regulates23 -> that20  [label=mark];
+CD7221 [style=filled, fillcolor=white, label=CD72];
+regulates23 -> CD7221  [label=nsubj];
+negatively22 [style=filled, fillcolor=white, label=negatively];
+regulates23 -> negatively22  [label=advmod];
+suggesting19 -> regulates23  [label=ccomp];
+BCR24 [style=filled, fillcolor=white, label=BCR];
+regulates23 -> BCR24  [label=dobj];
+signaling25 [style=filled, fillcolor=white, label=signaling];
+BCR24 -> signaling25  [label=vmod];
+cells30 [style=filled, fillcolor=white, label=cells];
+K4627 [style=filled, fillcolor=white, label=K46];
+cells30 -> K4627  [label=nn];
+"^28" [style=filled, fillcolor=white, label="^"];
+cells30 -> "^28"  [label=nn];
+mA29 [style=filled, fillcolor=white, label=mA];
+cells30 -> mA29  [label=nn];
+signaling25 -> cells30  [label=prep_in];
+}

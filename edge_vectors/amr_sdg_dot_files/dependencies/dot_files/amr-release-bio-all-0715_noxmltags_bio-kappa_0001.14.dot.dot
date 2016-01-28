@@ -1,0 +1,43 @@
+digraph "Since the sites have been described alternatively as negative regulatory or activating ,  the significance of these dephosphorylation events for Raf activation is unclear ." {
+label="Since the sites have been described alternatively as negative regulatory or
+activating ,  the significance of these dephosphorylation events for Raf
+activation is unclear .";
+described6 [style=filled, fillcolor=white, label=described];
+Since1 [style=filled, fillcolor=white, label=Since];
+described6 -> Since1  [label=mark];
+sites3 [style=filled, fillcolor=white, label=sites];
+the2 [style=filled, fillcolor=white, label=the];
+sites3 -> the2  [label=det];
+described6 -> sites3  [label=nsubjpass];
+have4 [style=filled, fillcolor=white, label=have];
+described6 -> have4  [label=aux];
+been5 [style=filled, fillcolor=white, label=been];
+described6 -> been5  [label=auxpass];
+unclear24 [style=filled, fillcolor=white, label=unclear];
+unclear24 -> described6  [label=advcl];
+alternatively7 [style=filled, fillcolor=white, label=alternatively];
+described6 -> alternatively7  [label=advmod];
+negative9 [style=filled, fillcolor=white, label=negative];
+described6 -> negative9  [label=prep_as];
+regulatory10 [style=filled, fillcolor=white, label=regulatory];
+negative9 -> regulatory10  [label=amod];
+activating12 [style=filled, fillcolor=white, label=activating];
+regulatory10 -> activating12  [label=conj_or];
+significance15 [style=filled, fillcolor=white, label=significance];
+the14 [style=filled, fillcolor=white, label=the];
+significance15 -> the14  [label=det];
+unclear24 -> significance15  [label=nsubj];
+events19 [style=filled, fillcolor=white, label=events];
+these17 [style=filled, fillcolor=white, label=these];
+events19 -> these17  [label=det];
+dephosphorylation18 [style=filled, fillcolor=white, label=dephosphorylation];
+events19 -> dephosphorylation18  [label=nn];
+significance15 -> events19  [label=prep_of];
+activation22 [style=filled, fillcolor=white, label=activation];
+Raf21 [style=filled, fillcolor=white, label=Raf];
+activation22 -> Raf21  [label=nn];
+events19 -> activation22  [label=prep_for];
+is23 [style=filled, fillcolor=white, label=is];
+unclear24 -> is23  [label=cop];
+unclear24 -> unclear24  [label=root];
+}

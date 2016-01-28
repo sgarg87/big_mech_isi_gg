@@ -1,0 +1,53 @@
+digraph "Thus ,  a 15-fold increase in Sod2 levels ,  which is well within the range of activity observed in response to cytokines and growth factors ,  can enhance MMP-1 expression in an H2O2-dependent fashion ." {
+label="Thus ,  a 15-fold increase in Sod2 levels ,  which is well within the range of
+activity observed in response to cytokines and growth factors ,  can enhance
+MMP-1 expression in an H2O2-dependent fashion .";
+enhance28 [style=filled, fillcolor=white, label=enhance];
+Thus1 [style=filled, fillcolor=white, label=Thus];
+enhance28 -> Thus1  [label=advmod];
+increase5 [style=filled, fillcolor=white, label=increase];
+a3 [style=filled, fillcolor=white, label=a];
+increase5 -> a3  [label=det];
+"15-fold4" [style=filled, fillcolor=white, label="15-fold"];
+increase5 -> "15-fold4"  [label=amod];
+enhance28 -> increase5  [label=nsubj];
+levels8 [style=filled, fillcolor=white, label=levels];
+Sod27 [style=filled, fillcolor=white, label=Sod2];
+levels8 -> Sod27  [label=amod];
+increase5 -> levels8  [label=prep_in];
+observed18 [style=filled, fillcolor=white, label=observed];
+which10 [style=filled, fillcolor=white, label=which];
+observed18 -> which10  [label=nsubjpass];
+is11 [style=filled, fillcolor=white, label=is];
+observed18 -> is11  [label=auxpass];
+well12 [style=filled, fillcolor=white, label=well];
+observed18 -> well12  [label=advmod];
+range15 [style=filled, fillcolor=white, label=range];
+the14 [style=filled, fillcolor=white, label=the];
+range15 -> the14  [label=det];
+well12 -> range15  [label=prep_within];
+activity17 [style=filled, fillcolor=white, label=activity];
+range15 -> activity17  [label=prep_of];
+increase5 -> observed18  [label=rcmod];
+response20 [style=filled, fillcolor=white, label=response];
+observed18 -> response20  [label=prep_in];
+cytokines22 [style=filled, fillcolor=white, label=cytokines];
+observed18 -> cytokines22  [label=prep_to];
+factors25 [style=filled, fillcolor=white, label=factors];
+growth24 [style=filled, fillcolor=white, label=growth];
+factors25 -> growth24  [label=nn];
+cytokines22 -> factors25  [label=conj_and];
+can27 [style=filled, fillcolor=white, label=can];
+enhance28 -> can27  [label=aux];
+enhance28 -> enhance28  [label=root];
+expression30 [style=filled, fillcolor=white, label=expression];
+"MMP-129" [style=filled, fillcolor=white, label="MMP-1"];
+expression30 -> "MMP-129"  [label=nn];
+enhance28 -> expression30  [label=dobj];
+fashion34 [style=filled, fillcolor=white, label=fashion];
+an32 [style=filled, fillcolor=white, label=an];
+fashion34 -> an32  [label=det];
+"H2O2-dependent33" [style=filled, fillcolor=white, label="H2O2-dependent"];
+fashion34 -> "H2O2-dependent33"  [label=nn];
+enhance28 -> fashion34  [label=prep_in];
+}

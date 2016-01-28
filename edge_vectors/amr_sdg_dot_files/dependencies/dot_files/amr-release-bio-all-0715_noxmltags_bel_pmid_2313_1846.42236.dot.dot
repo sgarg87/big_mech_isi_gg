@@ -1,0 +1,34 @@
+digraph "In contrast ,  VEGF plugs in Pld1 ~ - ~ mice exhibited almost no vascularization ( Fig. 2 ,  A and B ) ." {
+label="In contrast ,  VEGF plugs in Pld1 ~ - ~ mice exhibited almost no
+vascularization ( Fig. 2 ,  A and B ) .";
+plugs5 [style=filled, fillcolor=white, label=plugs];
+contrast2 [style=filled, fillcolor=white, label=contrast];
+plugs5 -> contrast2  [label=prep_in];
+VEGF4 [style=filled, fillcolor=white, label=VEGF];
+plugs5 -> VEGF4  [label=nsubj];
+plugs5 -> plugs5  [label=root];
+"~8" [style=filled, fillcolor=white, label="~"];
+Pld17 [style=filled, fillcolor=white, label=Pld1];
+"~8" -> Pld17  [label=amod];
+plugs5 -> "~8"  [label=prep_in];
+mice11 [style=filled, fillcolor=white, label=mice];
+"~10" [style=filled, fillcolor=white, label="~"];
+mice11 -> "~10"  [label=amod];
+exhibited12 [style=filled, fillcolor=white, label=exhibited];
+exhibited12 -> mice11  [label=nsubj];
+plugs5 -> exhibited12  [label=parataxis];
+vascularization15 [style=filled, fillcolor=white, label=vascularization];
+almost13 [style=filled, fillcolor=white, label=almost];
+vascularization15 -> almost13  [label=advmod];
+no14 [style=filled, fillcolor=white, label=no];
+vascularization15 -> no14  [label=neg];
+exhibited12 -> vascularization15  [label=dobj];
+"Fig.17" [style=filled, fillcolor=white, label="Fig."];
+vascularization15 -> "Fig.17"  [label=appos];
+218 [style=filled, fillcolor=white, label=2];
+"Fig.17" -> 218  [label=num];
+A20 [style=filled, fillcolor=white, label=A];
+"Fig.17" -> A20  [label=dep];
+B22 [style=filled, fillcolor=white, label=B];
+A20 -> B22  [label=conj_and];
+}

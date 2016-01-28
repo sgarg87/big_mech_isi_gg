@@ -1,0 +1,43 @@
+digraph "results indicate that BCL-6 negatively regulates proliferation of the monocytic/macrophage lineage by suppressing an autocrine IL-6 / STAT3-mediated gene expression program ." {
+label="results indicate that BCL-6 negatively regulates proliferation of the
+monocytic/macrophage lineage by suppressing an autocrine IL-6 / STAT3-mediated
+gene expression program .";
+indicate2 [style=filled, fillcolor=white, label=indicate];
+results1 [style=filled, fillcolor=white, label=results];
+indicate2 -> results1  [label=nsubj];
+indicate2 -> indicate2  [label=root];
+regulates6 [style=filled, fillcolor=white, label=regulates];
+that3 [style=filled, fillcolor=white, label=that];
+regulates6 -> that3  [label=mark];
+"BCL-64" [style=filled, fillcolor=white, label="BCL-6"];
+regulates6 -> "BCL-64"  [label=nsubj];
+negatively5 [style=filled, fillcolor=white, label=negatively];
+regulates6 -> negatively5  [label=advmod];
+indicate2 -> regulates6  [label=ccomp];
+proliferation7 [style=filled, fillcolor=white, label=proliferation];
+regulates6 -> proliferation7  [label=dobj];
+lineage11 [style=filled, fillcolor=white, label=lineage];
+the9 [style=filled, fillcolor=white, label=the];
+lineage11 -> the9  [label=det];
+"monocytic/macrophage10" [style=filled, fillcolor=white, label="monocytic/macrophage"];
+lineage11 -> "monocytic/macrophage10"  [label=amod];
+proliferation7 -> lineage11  [label=prep_of];
+suppressing13 [style=filled, fillcolor=white, label=suppressing];
+regulates6 -> suppressing13  [label=prepc_by];
+program21 [style=filled, fillcolor=white, label=program];
+an14 [style=filled, fillcolor=white, label=an];
+program21 -> an14  [label=det];
+autocrine15 [style=filled, fillcolor=white, label=autocrine];
+program21 -> autocrine15  [label=amod];
+"IL-61" [style=filled, fillcolor=white, label="IL-6"];
+program21 -> "IL-61"  [label=nn];
+"/17" [style=filled, fillcolor=white, label="/"];
+program21 -> "/17"  [label=nn];
+"STAT3-mediated18" [style=filled, fillcolor=white, label="STAT3-mediated"];
+program21 -> "STAT3-mediated18"  [label=nn];
+gene19 [style=filled, fillcolor=white, label=gene];
+program21 -> gene19  [label=nn];
+expression20 [style=filled, fillcolor=white, label=expression];
+program21 -> expression20  [label=nn];
+suppressing13 -> program21  [label=dobj];
+}

@@ -1,0 +1,41 @@
+digraph "TNFalpha ,  but not IGF-I ,  induced tissue inhibitor of metalloproteinase-1 ( TIMP-1 ) expression and reduced matrix metalloproteinases-2 activity and collagen degradation . TNFalpha also activated ERK1/2 ." {
+label="TNFalpha ,  but not IGF-I ,  induced tissue inhibitor of metalloproteinase-1 (
+TIMP-1 ) expression and reduced matrix metalloproteinases-2 activity and
+collagen degradation . TNFalpha also activated ERK1/2 .";
+induced7 [style=filled, fillcolor=white, label=induced];
+TNFalpha1 [style=filled, fillcolor=white, label=TNFalpha];
+induced7 -> TNFalpha1  [label=nsubj];
+"IGF-I5" [style=filled, fillcolor=white, label="IGF-I"];
+TNFalpha1 -> "IGF-I5"  [label=conj_negcc];
+induced7 -> induced7  [label=root];
+inhibitor9 [style=filled, fillcolor=white, label=inhibitor];
+tissue8 [style=filled, fillcolor=white, label=tissue];
+inhibitor9 -> tissue8  [label=nn];
+induced7 -> inhibitor9  [label=dobj];
+expression15 [style=filled, fillcolor=white, label=expression];
+"metalloproteinase-1" [style=filled, fillcolor=white, label="metalloproteinase-1"];
+expression15 -> "metalloproteinase-1"  [label=amod];
+"TIMP-13" [style=filled, fillcolor=white, label="TIMP-1"];
+expression15 -> "TIMP-13"  [label=appos];
+inhibitor9 -> expression15  [label=prep_of];
+activity20 [style=filled, fillcolor=white, label=activity];
+reduced17 [style=filled, fillcolor=white, label=reduced];
+activity20 -> reduced17  [label=amod];
+matrix18 [style=filled, fillcolor=white, label=matrix];
+activity20 -> matrix18  [label=nn];
+"metalloproteinases-219" [style=filled, fillcolor=white, label="metalloproteinases-2"];
+activity20 -> "metalloproteinases-219"  [label=amod];
+expression15 -> activity20  [label=conj_and];
+TNFalpha25 [style=filled, fillcolor=white, label=TNFalpha];
+collagen22 [style=filled, fillcolor=white, label=collagen];
+TNFalpha25 -> collagen22  [label=nn];
+degradation23 [style=filled, fillcolor=white, label=degradation];
+TNFalpha25 -> degradation23  [label=nn];
+inhibitor9 -> TNFalpha25  [label=conj_and];
+activated27 [style=filled, fillcolor=white, label=activated];
+also26 [style=filled, fillcolor=white, label=also];
+activated27 -> also26  [label=advmod];
+TNFalpha25 -> activated27  [label=vmod];
+"ERK1/228" [style=filled, fillcolor=white, label="ERK1/2"];
+activated27 -> "ERK1/228"  [label=dobj];
+}

@@ -1,0 +1,57 @@
+digraph "In contrast ,  the S729A mutation reduced the transforming activities of the oncogenic proteins with intermediate or impaired kinase activity ,  causing a reduction in focus number and a flatter cell morphology ( Fig. 4A ) ." {
+label="In contrast ,  the S729A mutation reduced the transforming activities of the
+oncogenic proteins with intermediate or impaired kinase activity ,  causing a
+reduction in focus number and a flatter cell morphology ( Fig. 4A ) .";
+reduced7 [style=filled, fillcolor=white, label=reduced];
+contrast2 [style=filled, fillcolor=white, label=contrast];
+reduced7 -> contrast2  [label=prep_in];
+mutation6 [style=filled, fillcolor=white, label=mutation];
+the4 [style=filled, fillcolor=white, label=the];
+mutation6 -> the4  [label=det];
+S729A5 [style=filled, fillcolor=white, label=S729A];
+mutation6 -> S729A5  [label=nn];
+reduced7 -> mutation6  [label=nsubj];
+reduced7 -> reduced7  [label=root];
+activities10 [style=filled, fillcolor=white, label=activities];
+the8 [style=filled, fillcolor=white, label=the];
+activities10 -> the8  [label=det];
+transforming9 [style=filled, fillcolor=white, label=transforming];
+activities10 -> transforming9  [label=amod];
+reduced7 -> activities10  [label=dobj];
+proteins14 [style=filled, fillcolor=white, label=proteins];
+the12 [style=filled, fillcolor=white, label=the];
+proteins14 -> the12  [label=det];
+oncogenic13 [style=filled, fillcolor=white, label=oncogenic];
+proteins14 -> oncogenic13  [label=amod];
+activities10 -> proteins14  [label=prep_of];
+activity20 [style=filled, fillcolor=white, label=activity];
+intermediate16 [style=filled, fillcolor=white, label=intermediate];
+activity20 -> intermediate16  [label=amod];
+impaired18 [style=filled, fillcolor=white, label=impaired];
+intermediate16 -> impaired18  [label=conj_or];
+kinase19 [style=filled, fillcolor=white, label=kinase];
+activity20 -> kinase19  [label=nn];
+reduced7 -> activity20  [label=prep_with];
+causing22 [style=filled, fillcolor=white, label=causing];
+reduced7 -> causing22  [label=vmod];
+reduction24 [style=filled, fillcolor=white, label=reduction];
+a23 [style=filled, fillcolor=white, label=a];
+reduction24 -> a23  [label=det];
+causing22 -> reduction24  [label=dobj];
+number27 [style=filled, fillcolor=white, label=number];
+focus26 [style=filled, fillcolor=white, label=focus];
+number27 -> focus26  [label=nn];
+causing22 -> number27  [label=prep_in];
+morphology32 [style=filled, fillcolor=white, label=morphology];
+a29 [style=filled, fillcolor=white, label=a];
+morphology32 -> a29  [label=det];
+flatter30 [style=filled, fillcolor=white, label=flatter];
+morphology32 -> flatter30  [label=nn];
+cell31 [style=filled, fillcolor=white, label=cell];
+morphology32 -> cell31  [label=nn];
+number27 -> morphology32  [label=conj_and];
+"4A35" [style=filled, fillcolor=white, label="4A"];
+"Fig.34" [style=filled, fillcolor=white, label="Fig."];
+"4A35" -> "Fig.34"  [label=number];
+morphology32 -> "4A35"  [label=dep];
+}

@@ -1,0 +1,38 @@
+digraph "Our previous studies demonstrated that IL-13 causes MMP - and cathepsin-dependent lung remodeling and inhibits the expression of a1 -- AT ( 4 ) ." {
+label="Our previous studies demonstrated that IL-13 causes MMP - and cathepsin-
+dependent lung remodeling and inhibits the expression of a1 -- AT ( 4 ) .";
+studies3 [style=filled, fillcolor=white, label=studies];
+Our1 [style=filled, fillcolor=white, label=Our];
+studies3 -> Our1  [label=poss];
+previous2 [style=filled, fillcolor=white, label=previous];
+studies3 -> previous2  [label=amod];
+demonstrated4 [style=filled, fillcolor=white, label=demonstrated];
+demonstrated4 -> studies3  [label=nsubj];
+demonstrated4 -> demonstrated4  [label=root];
+causes7 [style=filled, fillcolor=white, label=causes];
+that5 [style=filled, fillcolor=white, label=that];
+causes7 -> that5  [label=mark];
+"IL-136" [style=filled, fillcolor=white, label="IL-13"];
+causes7 -> "IL-136"  [label=nsubj];
+demonstrated4 -> causes7  [label=ccomp];
+MMP8 [style=filled, fillcolor=white, label=MMP];
+causes7 -> MMP8  [label=dobj];
+remodeling13 [style=filled, fillcolor=white, label=remodeling];
+"cathepsin-dependent11" [style=filled, fillcolor=white, label="cathepsin-dependent"];
+remodeling13 -> "cathepsin-dependent11"  [label=amod];
+lung12 [style=filled, fillcolor=white, label=lung];
+remodeling13 -> lung12  [label=nn];
+MMP8 -> remodeling13  [label=conj_and];
+inhibits15 [style=filled, fillcolor=white, label=inhibits];
+causes7 -> inhibits15  [label=conj_and];
+expression17 [style=filled, fillcolor=white, label=expression];
+the16 [style=filled, fillcolor=white, label=the];
+expression17 -> the16  [label=det];
+inhibits15 -> expression17  [label=dobj];
+a119 [style=filled, fillcolor=white, label=a1];
+expression17 -> a119  [label=prep_of];
+AT21 [style=filled, fillcolor=white, label=AT];
+a119 -> AT21  [label=dep];
+423 [style=filled, fillcolor=white, label=4];
+a119 -> 423  [label=appos];
+}

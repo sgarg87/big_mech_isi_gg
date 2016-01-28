@@ -1,0 +1,43 @@
+digraph "To determine the functional role of serpinE2 in caMEK-expressing cells ,  the proliferation rate of these cell populations was assessed when cultured on plastic ." {
+label="To determine the functional role of serpinE2 in caMEK-expressing cells ,  the
+proliferation rate of these cell populations was assessed when cultured on
+plastic .";
+determine2 [style=filled, fillcolor=white, label=determine];
+To1 [style=filled, fillcolor=white, label=To];
+determine2 -> To1  [label=aux];
+assessed20 [style=filled, fillcolor=white, label=assessed];
+assessed20 -> determine2  [label=advcl];
+role5 [style=filled, fillcolor=white, label=role];
+the3 [style=filled, fillcolor=white, label=the];
+role5 -> the3  [label=det];
+functional4 [style=filled, fillcolor=white, label=functional];
+role5 -> functional4  [label=amod];
+determine2 -> role5  [label=dobj];
+serpinE27 [style=filled, fillcolor=white, label=serpinE2];
+role5 -> serpinE27  [label=prep_of];
+cells10 [style=filled, fillcolor=white, label=cells];
+"caMEK-expressing9" [style=filled, fillcolor=white, label="caMEK-expressing"];
+cells10 -> "caMEK-expressing9"  [label=amod];
+serpinE27 -> cells10  [label=prep_in];
+rate14 [style=filled, fillcolor=white, label=rate];
+the12 [style=filled, fillcolor=white, label=the];
+rate14 -> the12  [label=det];
+proliferation13 [style=filled, fillcolor=white, label=proliferation];
+rate14 -> proliferation13  [label=nn];
+assessed20 -> rate14  [label=nsubjpass];
+populations18 [style=filled, fillcolor=white, label=populations];
+these16 [style=filled, fillcolor=white, label=these];
+populations18 -> these16  [label=det];
+cell17 [style=filled, fillcolor=white, label=cell];
+populations18 -> cell17  [label=nn];
+rate14 -> populations18  [label=prep_of];
+was19 [style=filled, fillcolor=white, label=was];
+assessed20 -> was19  [label=auxpass];
+assessed20 -> assessed20  [label=root];
+cultured22 [style=filled, fillcolor=white, label=cultured];
+when21 [style=filled, fillcolor=white, label=when];
+cultured22 -> when21  [label=advmod];
+assessed20 -> cultured22  [label=advcl];
+plastic24 [style=filled, fillcolor=white, label=plastic];
+cultured22 -> plastic24  [label=prep_on];
+}

@@ -1,0 +1,38 @@
+digraph "Suppression of the PAF effects by calphostin C ,  a PKC inhibitor ,  suggests that PKC is an upstream activator of FAK" {
+label="Suppression of the PAF effects by calphostin C ,  a PKC inhibitor ,  suggests
+that PKC is an upstream activator of FAK";
+suggests14 [style=filled, fillcolor=white, label=suggests];
+Suppression1 [style=filled, fillcolor=white, label=Suppression];
+suggests14 -> Suppression1  [label=nsubj];
+effects5 [style=filled, fillcolor=white, label=effects];
+the3 [style=filled, fillcolor=white, label=the];
+effects5 -> the3  [label=det];
+PAF4 [style=filled, fillcolor=white, label=PAF];
+effects5 -> PAF4  [label=nn];
+Suppression1 -> effects5  [label=prep_of];
+C8 [style=filled, fillcolor=white, label=C];
+calphostin7 [style=filled, fillcolor=white, label=calphostin];
+C8 -> calphostin7  [label=nn];
+effects5 -> C8  [label=prep_by];
+inhibitor12 [style=filled, fillcolor=white, label=inhibitor];
+a10 [style=filled, fillcolor=white, label=a];
+inhibitor12 -> a10  [label=det];
+PKC11 [style=filled, fillcolor=white, label=PKC];
+inhibitor12 -> PKC11  [label=nn];
+C8 -> inhibitor12  [label=appos];
+suggests14 -> suggests14  [label=root];
+activator20 [style=filled, fillcolor=white, label=activator];
+that15 [style=filled, fillcolor=white, label=that];
+activator20 -> that15  [label=mark];
+PKC16 [style=filled, fillcolor=white, label=PKC];
+activator20 -> PKC16  [label=nsubj];
+is17 [style=filled, fillcolor=white, label=is];
+activator20 -> is17  [label=cop];
+an18 [style=filled, fillcolor=white, label=an];
+activator20 -> an18  [label=det];
+upstream19 [style=filled, fillcolor=white, label=upstream];
+activator20 -> upstream19  [label=amod];
+suggests14 -> activator20  [label=ccomp];
+FAK22 [style=filled, fillcolor=white, label=FAK];
+activator20 -> FAK22  [label=prep_of];
+}

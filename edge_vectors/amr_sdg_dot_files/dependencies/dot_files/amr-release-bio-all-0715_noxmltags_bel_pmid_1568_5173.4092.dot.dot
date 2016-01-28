@@ -1,0 +1,58 @@
+digraph "These findings indicate that lipid accumulation in the liver leads to subacute hepatic inflammation through NF-kappaB activation and downstream cytokine production . This causes insulin resistance both locally in liver and systemically ." {
+label="These findings indicate that lipid accumulation in the liver leads to subacute
+hepatic inflammation through NF-kappaB activation and downstream cytokine
+production . This causes insulin resistance both locally in liver and
+systemically .";
+findings2 [style=filled, fillcolor=white, label=findings];
+These1 [style=filled, fillcolor=white, label=These];
+findings2 -> These1  [label=det];
+indicate3 [style=filled, fillcolor=white, label=indicate];
+indicate3 -> findings2  [label=nsubj];
+causes24 [style=filled, fillcolor=white, label=causes];
+causes24 -> indicate3  [label=dep];
+leads10 [style=filled, fillcolor=white, label=leads];
+that4 [style=filled, fillcolor=white, label=that];
+leads10 -> that4  [label=mark];
+accumulation6 [style=filled, fillcolor=white, label=accumulation];
+lipid5 [style=filled, fillcolor=white, label=lipid];
+accumulation6 -> lipid5  [label=nn];
+leads10 -> accumulation6  [label=nsubj];
+liver9 [style=filled, fillcolor=white, label=liver];
+the8 [style=filled, fillcolor=white, label=the];
+liver9 -> the8  [label=det];
+accumulation6 -> liver9  [label=prep_in];
+indicate3 -> leads10  [label=ccomp];
+subacute12 [style=filled, fillcolor=white, label=subacute];
+to11 [style=filled, fillcolor=white, label=to];
+subacute12 -> to11  [label=aux];
+leads10 -> subacute12  [label=xcomp];
+inflammation14 [style=filled, fillcolor=white, label=inflammation];
+hepatic13 [style=filled, fillcolor=white, label=hepatic];
+inflammation14 -> hepatic13  [label=amod];
+subacute12 -> inflammation14  [label=dobj];
+activation17 [style=filled, fillcolor=white, label=activation];
+"NF-kappaB16" [style=filled, fillcolor=white, label="NF-kappaB"];
+activation17 -> "NF-kappaB16"  [label=amod];
+subacute12 -> activation17  [label=prep_through];
+production21 [style=filled, fillcolor=white, label=production];
+downstream19 [style=filled, fillcolor=white, label=downstream];
+production21 -> downstream19  [label=amod];
+cytokine20 [style=filled, fillcolor=white, label=cytokine];
+production21 -> cytokine20  [label=nn];
+activation17 -> production21  [label=conj_and];
+This23 [style=filled, fillcolor=white, label=This];
+causes24 -> This23  [label=nsubj];
+causes24 -> causes24  [label=root];
+resistance26 [style=filled, fillcolor=white, label=resistance];
+insulin25 [style=filled, fillcolor=white, label=insulin];
+resistance26 -> insulin25  [label=nn];
+locally28 [style=filled, fillcolor=white, label=locally];
+locally28 -> resistance26  [label=nsubj];
+both27 [style=filled, fillcolor=white, label=both];
+locally28 -> both27  [label=dep];
+causes24 -> locally28  [label=dep];
+liver30 [style=filled, fillcolor=white, label=liver];
+locally28 -> liver30  [label=prep_in];
+systemically32 [style=filled, fillcolor=white, label=systemically];
+liver30 -> systemically32  [label=conj_and];
+}

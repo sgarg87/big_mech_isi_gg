@@ -1,0 +1,34 @@
+digraph "IL-10 can directly promote the death of inflammatory cells ,  including activated macrophages ( 4 ) ,  neutrophils ( 5 ) ,  and T cells" {
+label="IL-10 can directly promote the death of inflammatory cells ,  including
+activated macrophages ( 4 ) ,  neutrophils ( 5 ) ,  and T cells";
+promote4 [style=filled, fillcolor=white, label=promote];
+"IL-10" [style=filled, fillcolor=white, label="IL-10"];
+promote4 -> "IL-10"  [label=nsubj];
+can2 [style=filled, fillcolor=white, label=can];
+promote4 -> can2  [label=aux];
+directly3 [style=filled, fillcolor=white, label=directly];
+promote4 -> directly3  [label=advmod];
+promote4 -> promote4  [label=root];
+death6 [style=filled, fillcolor=white, label=death];
+the5 [style=filled, fillcolor=white, label=the];
+death6 -> the5  [label=det];
+promote4 -> death6  [label=dobj];
+cells9 [style=filled, fillcolor=white, label=cells];
+inflammatory8 [style=filled, fillcolor=white, label=inflammatory];
+cells9 -> inflammatory8  [label=amod];
+death6 -> cells9  [label=prep_of];
+macrophages13 [style=filled, fillcolor=white, label=macrophages];
+activated12 [style=filled, fillcolor=white, label=activated];
+macrophages13 -> activated12  [label=amod];
+cells9 -> macrophages13  [label=prep_including];
+415 [style=filled, fillcolor=white, label=4];
+macrophages13 -> 415  [label=appos];
+neutrophils18 [style=filled, fillcolor=white, label=neutrophils];
+macrophages13 -> neutrophils18  [label=appos];
+520 [style=filled, fillcolor=white, label=5];
+neutrophils18 -> 520  [label=appos];
+T24 [style=filled, fillcolor=white, label=T];
+promote4 -> T24  [label=conj_and];
+cells25 [style=filled, fillcolor=white, label=cells];
+T24 -> cells25  [label=dobj];
+}

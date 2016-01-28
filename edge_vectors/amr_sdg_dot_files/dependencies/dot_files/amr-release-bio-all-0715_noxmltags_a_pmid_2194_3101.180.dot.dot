@@ -1,0 +1,49 @@
+digraph "To further explore the role of BRAFV600E in the activation of the RhoA pathway ,  transient transfection of the oncogene in Caco-2 cells was performed ( Additional Figure 2 ) ." {
+label="To further explore the role of BRAFV600E in the activation of the RhoA pathway
+,  transient transfection of the oncogene in Caco-2 cells was performed (
+Additional Figure 2 ) .";
+explore3 [style=filled, fillcolor=white, label=explore];
+To1 [style=filled, fillcolor=white, label=To];
+explore3 -> To1  [label=aux];
+further2 [style=filled, fillcolor=white, label=further];
+explore3 -> further2  [label=advmod];
+performed25 [style=filled, fillcolor=white, label=performed];
+performed25 -> explore3  [label=advcl];
+role5 [style=filled, fillcolor=white, label=role];
+the4 [style=filled, fillcolor=white, label=the];
+role5 -> the4  [label=det];
+explore3 -> role5  [label=dobj];
+BRAFV600E7 [style=filled, fillcolor=white, label=BRAFV600E];
+role5 -> BRAFV600E7  [label=prep_of];
+activation10 [style=filled, fillcolor=white, label=activation];
+the9 [style=filled, fillcolor=white, label=the];
+activation10 -> the9  [label=det];
+BRAFV600E7 -> activation10  [label=prep_in];
+pathway14 [style=filled, fillcolor=white, label=pathway];
+the12 [style=filled, fillcolor=white, label=the];
+pathway14 -> the12  [label=det];
+RhoA13 [style=filled, fillcolor=white, label=RhoA];
+pathway14 -> RhoA13  [label=nn];
+activation10 -> pathway14  [label=prep_of];
+transfection17 [style=filled, fillcolor=white, label=transfection];
+transient16 [style=filled, fillcolor=white, label=transient];
+transfection17 -> transient16  [label=amod];
+performed25 -> transfection17  [label=nsubjpass];
+oncogene20 [style=filled, fillcolor=white, label=oncogene];
+the19 [style=filled, fillcolor=white, label=the];
+oncogene20 -> the19  [label=det];
+transfection17 -> oncogene20  [label=prep_of];
+cells23 [style=filled, fillcolor=white, label=cells];
+"Caco-2" [style=filled, fillcolor=white, label="Caco-2"];
+cells23 -> "Caco-2"  [label=nn];
+oncogene20 -> cells23  [label=prep_in];
+was24 [style=filled, fillcolor=white, label=was];
+performed25 -> was24  [label=auxpass];
+performed25 -> performed25  [label=root];
+Figure28 [style=filled, fillcolor=white, label=Figure];
+Additional27 [style=filled, fillcolor=white, label=Additional];
+Figure28 -> Additional27  [label=amod];
+performed25 -> Figure28  [label=dep];
+229 [style=filled, fillcolor=white, label=2];
+Figure28 -> 229  [label=dep];
+}

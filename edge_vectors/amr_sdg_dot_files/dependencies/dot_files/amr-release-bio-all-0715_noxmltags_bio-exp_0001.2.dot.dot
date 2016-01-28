@@ -1,0 +1,62 @@
+digraph "Upregulation of HER3 has been found to mediate resistance to PI3K/AKT ( 26 ) or HER2 ( 27 ) inhibitors in HER2-amplified breast cancer cell lines ,  which is caused in part through a FoxO3A-dependent induction of HER3 gene transcription ." {
+label="Upregulation of HER3 has been found to mediate resistance to PI3K/AKT ( 26 ) or
+HER2 ( 27 ) inhibitors in HER2-amplified breast cancer cell lines ,  which is
+caused in part through a FoxO3A-dependent induction of HER3 gene transcription
+.";
+found6 [style=filled, fillcolor=white, label=found];
+Upregulation1 [style=filled, fillcolor=white, label=Upregulation];
+found6 -> Upregulation1  [label=nsubjpass];
+HER3 [style=filled, fillcolor=white, label=HER3];
+Upregulation1 -> HER3  [label=prep_of];
+has4 [style=filled, fillcolor=white, label=has];
+found6 -> has4  [label=aux];
+been5 [style=filled, fillcolor=white, label=been];
+found6 -> been5  [label=auxpass];
+found6 -> found6  [label=root];
+mediate8 [style=filled, fillcolor=white, label=mediate];
+to7 [style=filled, fillcolor=white, label=to];
+mediate8 -> to7  [label=aux];
+found6 -> mediate8  [label=xcomp];
+resistance9 [style=filled, fillcolor=white, label=resistance];
+mediate8 -> resistance9  [label=dobj];
+"PI3K/AKT11" [style=filled, fillcolor=white, label="PI3K/AKT"];
+mediate8 -> "PI3K/AKT11"  [label=prep_to];
+2613 [style=filled, fillcolor=white, label=26];
+"PI3K/AKT11" -> 2613  [label=appos];
+transcription40 [style=filled, fillcolor=white, label=transcription];
+HER216 [style=filled, fillcolor=white, label=HER2];
+transcription40 -> HER216  [label=amod];
+2718 [style=filled, fillcolor=white, label=27];
+transcription40 -> 2718  [label=appos];
+inhibitors20 [style=filled, fillcolor=white, label=inhibitors];
+transcription40 -> inhibitors20  [label=amod];
+lines26 [style=filled, fillcolor=white, label=lines];
+"HER2-amplified" [style=filled, fillcolor=white, label="HER2-amplified"];
+lines26 -> "HER2-amplified"  [label=amod];
+breast23 [style=filled, fillcolor=white, label=breast];
+lines26 -> breast23  [label=nn];
+cancer24 [style=filled, fillcolor=white, label=cancer];
+lines26 -> cancer24  [label=nn];
+cell25 [style=filled, fillcolor=white, label=cell];
+lines26 -> cell25  [label=nn];
+inhibitors20 -> lines26  [label=prep_in];
+caused30 [style=filled, fillcolor=white, label=caused];
+which28 [style=filled, fillcolor=white, label=which];
+caused30 -> which28  [label=nsubjpass];
+is29 [style=filled, fillcolor=white, label=is];
+caused30 -> is29  [label=auxpass];
+lines26 -> caused30  [label=rcmod];
+part32 [style=filled, fillcolor=white, label=part];
+caused30 -> part32  [label=prep_in];
+induction36 [style=filled, fillcolor=white, label=induction];
+a34 [style=filled, fillcolor=white, label=a];
+induction36 -> a34  [label=det];
+"FoxO3A-dependent5" [style=filled, fillcolor=white, label="FoxO3A-dependent"];
+induction36 -> "FoxO3A-dependent5"  [label=nn];
+caused30 -> induction36  [label=prep_through];
+gene39 [style=filled, fillcolor=white, label=gene];
+HER338 [style=filled, fillcolor=white, label=HER3];
+gene39 -> HER338  [label=nn];
+induction36 -> gene39  [label=prep_of];
+"PI3K/AKT11" -> transcription40  [label=conj_or];
+}

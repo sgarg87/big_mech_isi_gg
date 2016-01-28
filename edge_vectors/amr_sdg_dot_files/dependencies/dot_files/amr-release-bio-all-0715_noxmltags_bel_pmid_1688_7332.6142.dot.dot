@@ -1,0 +1,38 @@
+digraph "We demonstrate that siRNA targeting ULK2 in mouse P19 cells results in elevated FGFR1 mediated FRS3 and SHP2 tyrosyl phosphorylation ." {
+label="We demonstrate that siRNA targeting ULK2 in mouse P19 cells results in elevated
+FGFR1 mediated FRS3 and SHP2 tyrosyl phosphorylation .";
+demonstrate2 [style=filled, fillcolor=white, label=demonstrate];
+We1 [style=filled, fillcolor=white, label=We];
+demonstrate2 -> We1  [label=nsubj];
+demonstrate2 -> demonstrate2  [label=root];
+results11 [style=filled, fillcolor=white, label=results];
+that3 [style=filled, fillcolor=white, label=that];
+results11 -> that3  [label=mark];
+ULK26 [style=filled, fillcolor=white, label=ULK2];
+siRNA4 [style=filled, fillcolor=white, label=siRNA];
+ULK26 -> siRNA4  [label=nn];
+targeting5 [style=filled, fillcolor=white, label=targeting];
+ULK26 -> targeting5  [label=amod];
+results11 -> ULK26  [label=nsubj];
+cells10 [style=filled, fillcolor=white, label=cells];
+mouse8 [style=filled, fillcolor=white, label=mouse];
+cells10 -> mouse8  [label=nn];
+P19 [style=filled, fillcolor=white, label=P19];
+cells10 -> P19  [label=nn];
+ULK26 -> cells10  [label=prep_in];
+demonstrate2 -> results11  [label=ccomp];
+FRS316 [style=filled, fillcolor=white, label=FRS3];
+elevated13 [style=filled, fillcolor=white, label=elevated];
+FRS316 -> elevated13  [label=amod];
+FGFR114 [style=filled, fillcolor=white, label=FGFR1];
+FRS316 -> FGFR114  [label=nn];
+mediated15 [style=filled, fillcolor=white, label=mediated];
+FRS316 -> mediated15  [label=nn];
+results11 -> FRS316  [label=prep_in];
+phosphorylation20 [style=filled, fillcolor=white, label=phosphorylation];
+SHP218 [style=filled, fillcolor=white, label=SHP2];
+phosphorylation20 -> SHP218  [label=nn];
+tyrosyl19 [style=filled, fillcolor=white, label=tyrosyl];
+phosphorylation20 -> tyrosyl19  [label=nn];
+FRS316 -> phosphorylation20  [label=conj_and];
+}

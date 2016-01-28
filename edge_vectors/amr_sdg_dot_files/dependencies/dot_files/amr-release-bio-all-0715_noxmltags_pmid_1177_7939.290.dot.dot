@@ -1,0 +1,45 @@
+digraph "Lysates were immunoprecipitated ( IP ) with anti-Grb2 ( left ) or anti-E3b1 ( right ) antibody and detected with anti -- Sos-1 antibody ( top ) or anti-Grb2 ( bottom ,  left ) ,  or anti-E3b1 ( bottom ,  right ) ." {
+label="Lysates were immunoprecipitated ( IP ) with anti-Grb2 ( left ) or anti-E3b1 (
+right ) antibody and detected with anti -- Sos-1 antibody ( top ) or anti-Grb2 (
+bottom ,  left ) ,  or anti-E3b1 ( bottom ,  right ) .";
+immunoprecipitated3 [style=filled, fillcolor=white, label=immunoprecipitated];
+Lysates1 [style=filled, fillcolor=white, label=Lysates];
+immunoprecipitated3 -> Lysates1  [label=nsubjpass];
+were2 [style=filled, fillcolor=white, label=were];
+immunoprecipitated3 -> were2  [label=auxpass];
+immunoprecipitated3 -> immunoprecipitated3  [label=root];
+IP5 [style=filled, fillcolor=white, label=IP];
+immunoprecipitated3 -> IP5  [label=dobj];
+"anti-Grb28" [style=filled, fillcolor=white, label="anti-Grb2"];
+IP5 -> "anti-Grb28"  [label=prep_with];
+left10 [style=filled, fillcolor=white, label=left];
+IP5 -> left10  [label=dep];
+antibody17 [style=filled, fillcolor=white, label=antibody];
+"anti-E3b1" [style=filled, fillcolor=white, label="anti-E3b1"];
+antibody17 -> "anti-E3b1"  [label=amod];
+right15 [style=filled, fillcolor=white, label=right];
+antibody17 -> right15  [label=appos];
+IP5 -> antibody17  [label=conj_or];
+detected19 [style=filled, fillcolor=white, label=detected];
+immunoprecipitated3 -> detected19  [label=conj_and];
+anti21 [style=filled, fillcolor=white, label=anti];
+detected19 -> anti21  [label=prep_with];
+antibody24 [style=filled, fillcolor=white, label=antibody];
+"Sos-123" [style=filled, fillcolor=white, label="Sos-1"];
+antibody24 -> "Sos-123"  [label=nn];
+anti21 -> antibody24  [label=dep];
+top26 [style=filled, fillcolor=white, label=top];
+antibody24 -> top26  [label=appos];
+"anti-Grb29" [style=filled, fillcolor=white, label="anti-Grb2"];
+antibody24 -> "anti-Grb29"  [label=conj_or];
+bottom31 [style=filled, fillcolor=white, label=bottom];
+"anti-Grb29" -> bottom31  [label=dep];
+left33 [style=filled, fillcolor=white, label=left];
+bottom31 -> left33  [label=appos];
+"anti-E3b17" [style=filled, fillcolor=white, label="anti-E3b1"];
+anti21 -> "anti-E3b17"  [label=conj_or];
+bottom39 [style=filled, fillcolor=white, label=bottom];
+"anti-E3b17" -> bottom39  [label=dep];
+right41 [style=filled, fillcolor=white, label=right];
+bottom39 -> right41  [label=appos];
+}

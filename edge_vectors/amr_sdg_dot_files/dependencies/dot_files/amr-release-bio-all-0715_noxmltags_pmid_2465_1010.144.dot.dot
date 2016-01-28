@@ -1,0 +1,22 @@
+digraph "As a result ,  mutant Ras proteins accumulate with elevated GTP-bound proportion ." {
+label="As a result ,  mutant Ras proteins accumulate with elevated GTP-bound
+proportion .";
+result3 [style=filled, fillcolor=white, label=result];
+a2 [style=filled, fillcolor=white, label=a];
+result3 -> a2  [label=det];
+accumulate8 [style=filled, fillcolor=white, label=accumulate];
+accumulate8 -> result3  [label=prep_as];
+proteins7 [style=filled, fillcolor=white, label=proteins];
+mutant5 [style=filled, fillcolor=white, label=mutant];
+proteins7 -> mutant5  [label=amod];
+Ras6 [style=filled, fillcolor=white, label=Ras];
+proteins7 -> Ras6  [label=nn];
+accumulate8 -> proteins7  [label=nsubj];
+accumulate8 -> accumulate8  [label=root];
+proportion12 [style=filled, fillcolor=white, label=proportion];
+elevated10 [style=filled, fillcolor=white, label=elevated];
+proportion12 -> elevated10  [label=amod];
+"GTP-bound11" [style=filled, fillcolor=white, label="GTP-bound"];
+proportion12 -> "GTP-bound11"  [label=amod];
+accumulate8 -> proportion12  [label=prep_with];
+}

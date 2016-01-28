@@ -1,0 +1,43 @@
+digraph "An in vitro phophorylation assay was performed with a purified C-terminus fragment of ASPP2 ( 693-1128 ) containing both MAPK putative phosphorylation sites ." {
+label="An in vitro phophorylation assay was performed with a purified C-terminus
+fragment of ASPP2 ( 693-1128 ) containing both MAPK putative phosphorylation
+sites .";
+phophorylation4 [style=filled, fillcolor=white, label=phophorylation];
+An1 [style=filled, fillcolor=white, label=An];
+phophorylation4 -> An1  [label=det];
+vitro3 [style=filled, fillcolor=white, label=vitro];
+in2 [style=filled, fillcolor=white, label=in];
+vitro3 -> in2  [label=dep];
+phophorylation4 -> vitro3  [label=amod];
+performed7 [style=filled, fillcolor=white, label=performed];
+performed7 -> phophorylation4  [label=nsubjpass];
+assay5 [style=filled, fillcolor=white, label=assay];
+performed7 -> assay5  [label=advmod];
+was6 [style=filled, fillcolor=white, label=was];
+performed7 -> was6  [label=auxpass];
+performed7 -> performed7  [label=root];
+fragment12 [style=filled, fillcolor=white, label=fragment];
+a9 [style=filled, fillcolor=white, label=a];
+fragment12 -> a9  [label=det];
+purified10 [style=filled, fillcolor=white, label=purified];
+fragment12 -> purified10  [label=nn];
+"C-terminus11" [style=filled, fillcolor=white, label="C-terminus"];
+fragment12 -> "C-terminus11"  [label=nn];
+performed7 -> fragment12  [label=prep_with];
+ASPP214 [style=filled, fillcolor=white, label=ASPP2];
+fragment12 -> ASPP214  [label=prep_of];
+"693-1128" [style=filled, fillcolor=white, label="693-1128"];
+ASPP214 -> "693-1128"  [label=appos];
+containing18 [style=filled, fillcolor=white, label=containing];
+performed7 -> containing18  [label=xcomp];
+sites23 [style=filled, fillcolor=white, label=sites];
+both19 [style=filled, fillcolor=white, label=both];
+sites23 -> both19  [label=det];
+MAPK20 [style=filled, fillcolor=white, label=MAPK];
+sites23 -> MAPK20  [label=nn];
+putative21 [style=filled, fillcolor=white, label=putative];
+sites23 -> putative21  [label=nn];
+phosphorylation22 [style=filled, fillcolor=white, label=phosphorylation];
+sites23 -> phosphorylation22  [label=nn];
+containing18 -> sites23  [label=dobj];
+}

@@ -1,0 +1,32 @@
+digraph "Protein G Sepharose was added and samples were incubated for 1 h at 4 ° C with rocking ." {
+label="Protein G Sepharose was added and samples were incubated for 1 h at 4 ° C with
+rocking .";
+Sepharose3 [style=filled, fillcolor=white, label=Sepharose];
+Protein1 [style=filled, fillcolor=white, label=Protein];
+Sepharose3 -> Protein1  [label=nn];
+G2 [style=filled, fillcolor=white, label=G];
+Sepharose3 -> G2  [label=nn];
+added5 [style=filled, fillcolor=white, label=added];
+added5 -> Sepharose3  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+added5 -> was4  [label=auxpass];
+added5 -> added5  [label=root];
+incubated9 [style=filled, fillcolor=white, label=incubated];
+samples7 [style=filled, fillcolor=white, label=samples];
+incubated9 -> samples7  [label=nsubjpass];
+were8 [style=filled, fillcolor=white, label=were];
+incubated9 -> were8  [label=auxpass];
+added5 -> incubated9  [label=conj_and];
+h12 [style=filled, fillcolor=white, label=h];
+1 [style=filled, fillcolor=white, label=1];
+h12 -> 1  [label=num];
+incubated9 -> h12  [label=prep_for];
+C16 [style=filled, fillcolor=white, label=C];
+41 [style=filled, fillcolor=white, label=4];
+C16 -> 41  [label=num];
+"°15" [style=filled, fillcolor=white, label="°"];
+C16 -> "°15"  [label=nn];
+incubated9 -> C16  [label=prep_at];
+rocking18 [style=filled, fillcolor=white, label=rocking];
+C16 -> rocking18  [label=prepc_with];
+}

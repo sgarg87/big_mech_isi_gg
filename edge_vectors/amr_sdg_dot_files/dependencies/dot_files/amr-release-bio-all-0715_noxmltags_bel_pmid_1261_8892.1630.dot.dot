@@ -1,0 +1,47 @@
+digraph "The treatment of NCI-N87 cells with EGF resulted in increases in phosphorylation of Erk1/2 ,  Akt ,  and P38 . Blockade of the Erk ,  phosphatidylinositol-3 kinase/Akt ,  or P38 pathways in this cell line" {
+label="The treatment of NCI-N87 cells with EGF resulted in increases in
+phosphorylation of Erk1/2 ,  Akt ,  and P38 . Blockade of the Erk ,
+phosphatidylinositol-3 kinase/Akt ,  or P38 pathways in this cell line";
+treatment2 [style=filled, fillcolor=white, label=treatment];
+The1 [style=filled, fillcolor=white, label=The];
+treatment2 -> The1  [label=det];
+treatment2 -> treatment2  [label=root];
+cells5 [style=filled, fillcolor=white, label=cells];
+"NCI-N874" [style=filled, fillcolor=white, label="NCI-N87"];
+cells5 -> "NCI-N874"  [label=nn];
+treatment2 -> cells5  [label=prep_of];
+EGF7 [style=filled, fillcolor=white, label=EGF];
+treatment2 -> EGF7  [label=prep_with];
+resulted8 [style=filled, fillcolor=white, label=resulted];
+EGF7 -> resulted8  [label=vmod];
+increases10 [style=filled, fillcolor=white, label=increases];
+resulted8 -> increases10  [label=prep_in];
+phosphorylation12 [style=filled, fillcolor=white, label=phosphorylation];
+increases10 -> phosphorylation12  [label=prep_in];
+"Erk1/214" [style=filled, fillcolor=white, label="Erk1/2"];
+phosphorylation12 -> "Erk1/214"  [label=prep_of];
+Akt16 [style=filled, fillcolor=white, label=Akt];
+"Erk1/214" -> Akt16  [label=conj_and];
+P3819 [style=filled, fillcolor=white, label=P38];
+"Erk1/214" -> P3819  [label=conj_and];
+Blockade21 [style=filled, fillcolor=white, label=Blockade];
+EGF7 -> Blockade21  [label=dep];
+Erk24 [style=filled, fillcolor=white, label=Erk];
+the23 [style=filled, fillcolor=white, label=the];
+Erk24 -> the23  [label=det];
+Blockade21 -> Erk24  [label=prep_of];
+"kinase/Akt27" [style=filled, fillcolor=white, label="kinase/Akt"];
+"phosphatidylinositol-326" [style=filled, fillcolor=white, label="phosphatidylinositol-3"];
+"kinase/Akt27" -> "phosphatidylinositol-326"  [label=amod];
+Erk24 -> "kinase/Akt27"  [label=appos];
+pathways31 [style=filled, fillcolor=white, label=pathways];
+P3830 [style=filled, fillcolor=white, label=P38];
+pathways31 -> P3830  [label=num];
+EGF7 -> pathways31  [label=conj_or];
+line35 [style=filled, fillcolor=white, label=line];
+this33 [style=filled, fillcolor=white, label=this];
+line35 -> this33  [label=det];
+cell34 [style=filled, fillcolor=white, label=cell];
+line35 -> cell34  [label=nn];
+pathways31 -> line35  [label=prep_in];
+}

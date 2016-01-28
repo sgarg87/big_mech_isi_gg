@@ -1,0 +1,41 @@
+digraph "In contrast ,  LPS from Escherichia coli stimulated mast cells in a TLR4-dependent manner to produce TNF-alpha ,  IL-1beta ,  IL-6 ,  and IL-13 ,  but not IL-4 nor IL-5 ." {
+label="In contrast ,  LPS from Escherichia coli stimulated mast cells in a
+TLR4-dependent manner to produce TNF-alpha ,  IL-1beta ,  IL-6 ,  and IL-13 ,
+but not IL-4 nor IL-5 .";
+stimulated8 [style=filled, fillcolor=white, label=stimulated];
+contrast2 [style=filled, fillcolor=white, label=contrast];
+stimulated8 -> contrast2  [label=prep_in];
+LPS4 [style=filled, fillcolor=white, label=LPS];
+stimulated8 -> LPS4  [label=nsubj];
+coli7 [style=filled, fillcolor=white, label=coli];
+Escherichia6 [style=filled, fillcolor=white, label=Escherichia];
+coli7 -> Escherichia6  [label=nn];
+LPS4 -> coli7  [label=prep_from];
+stimulated8 -> stimulated8  [label=root];
+cells10 [style=filled, fillcolor=white, label=cells];
+mast9 [style=filled, fillcolor=white, label=mast];
+cells10 -> mast9  [label=amod];
+stimulated8 -> cells10  [label=dobj];
+manner14 [style=filled, fillcolor=white, label=manner];
+a12 [style=filled, fillcolor=white, label=a];
+manner14 -> a12  [label=det];
+"TLR4-dependent13" [style=filled, fillcolor=white, label="TLR4-dependent"];
+manner14 -> "TLR4-dependent13"  [label=nn];
+cells10 -> manner14  [label=prep_in];
+produce16 [style=filled, fillcolor=white, label=produce];
+to15 [style=filled, fillcolor=white, label=to];
+produce16 -> to15  [label=aux];
+stimulated8 -> produce16  [label=xcomp];
+"IL-621" [style=filled, fillcolor=white, label="IL-6"];
+"TNF-alpha17" [style=filled, fillcolor=white, label="TNF-alpha"];
+"IL-621" -> "TNF-alpha17"  [label=num];
+"IL-1beta9" [style=filled, fillcolor=white, label="IL-1beta"];
+"IL-621" -> "IL-1beta9"  [label=dep];
+produce16 -> "IL-621"  [label=dobj];
+"IL-1324" [style=filled, fillcolor=white, label="IL-13"];
+"IL-621" -> "IL-1324"  [label=conj_and];
+"IL-428" [style=filled, fillcolor=white, label="IL-4"];
+"IL-621" -> "IL-428"  [label=conj_negcc];
+"IL-530" [style=filled, fillcolor=white, label="IL-5"];
+"IL-428" -> "IL-530"  [label=conj_nor];
+}

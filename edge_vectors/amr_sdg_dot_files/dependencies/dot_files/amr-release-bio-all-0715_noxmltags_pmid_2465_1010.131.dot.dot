@@ -1,0 +1,34 @@
+digraph "GEFs ,  of course ,  greatly reduce the affinity for nucleotides ,  allowing GDP to be released rapidly and replaced by GTP ." {
+label="GEFs ,  of course ,  greatly reduce the affinity for nucleotides ,  allowing
+GDP to be released rapidly and replaced by GTP .";
+reduce7 [style=filled, fillcolor=white, label=reduce];
+GEFs1 [style=filled, fillcolor=white, label=GEFs];
+reduce7 -> GEFs1  [label=nsubj];
+course4 [style=filled, fillcolor=white, label=course];
+GEFs1 -> course4  [label=prep_of];
+greatly6 [style=filled, fillcolor=white, label=greatly];
+reduce7 -> greatly6  [label=advmod];
+reduce7 -> reduce7  [label=root];
+affinity9 [style=filled, fillcolor=white, label=affinity];
+the8 [style=filled, fillcolor=white, label=the];
+affinity9 -> the8  [label=det];
+reduce7 -> affinity9  [label=dobj];
+nucleotides11 [style=filled, fillcolor=white, label=nucleotides];
+affinity9 -> nucleotides11  [label=prep_for];
+allowing13 [style=filled, fillcolor=white, label=allowing];
+reduce7 -> allowing13  [label=vmod];
+GDP14 [style=filled, fillcolor=white, label=GDP];
+allowing13 -> GDP14  [label=dobj];
+released17 [style=filled, fillcolor=white, label=released];
+to15 [style=filled, fillcolor=white, label=to];
+released17 -> to15  [label=aux];
+be16 [style=filled, fillcolor=white, label=be];
+released17 -> be16  [label=auxpass];
+allowing13 -> released17  [label=xcomp];
+rapidly18 [style=filled, fillcolor=white, label=rapidly];
+released17 -> rapidly18  [label=advmod];
+replaced20 [style=filled, fillcolor=white, label=replaced];
+released17 -> replaced20  [label=conj_and];
+GTP22 [style=filled, fillcolor=white, label=GTP];
+replaced20 -> GTP22  [label=prep_by];
+}

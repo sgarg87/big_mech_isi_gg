@@ -1,0 +1,54 @@
+digraph "Over-expression of MEN2A-RET mutants reduced STAT3 ser727 phosphorylation to basal levels ,  suggesting that STAT3 tyr705 phosphorylation is a prerequisite for maximal MEN2A-RET induced STAT3 ser727 phosphorylation ( Figure 3b ) ." {
+label="Over-expression of MEN2A-RET mutants reduced STAT3 ser727 phosphorylation to
+basal levels ,  suggesting that STAT3 tyr705 phosphorylation is a prerequisite
+for maximal MEN2A-RET induced STAT3 ser727 phosphorylation ( Figure 3b ) .";
+reduced5 [style=filled, fillcolor=white, label=reduced];
+"Over-expression1" [style=filled, fillcolor=white, label="Over-expression"];
+reduced5 -> "Over-expression1"  [label=nsubj];
+mutants4 [style=filled, fillcolor=white, label=mutants];
+"MEN2A-RET3" [style=filled, fillcolor=white, label="MEN2A-RET"];
+mutants4 -> "MEN2A-RET3"  [label=nn];
+"Over-expression1" -> mutants4  [label=prep_of];
+reduced5 -> reduced5  [label=root];
+phosphorylation8 [style=filled, fillcolor=white, label=phosphorylation];
+STAT36 [style=filled, fillcolor=white, label=STAT3];
+phosphorylation8 -> STAT36  [label=num];
+ser727 [style=filled, fillcolor=white, label=ser727];
+phosphorylation8 -> ser727  [label=amod];
+reduced5 -> phosphorylation8  [label=dobj];
+levels11 [style=filled, fillcolor=white, label=levels];
+basal10 [style=filled, fillcolor=white, label=basal];
+levels11 -> basal10  [label=amod];
+reduced5 -> levels11  [label=prep_to];
+suggesting13 [style=filled, fillcolor=white, label=suggesting];
+reduced5 -> suggesting13  [label=vmod];
+phosphorylation27 [style=filled, fillcolor=white, label=phosphorylation];
+that14 [style=filled, fillcolor=white, label=that];
+phosphorylation27 -> that14  [label=mark];
+phosphorylation17 [style=filled, fillcolor=white, label=phosphorylation];
+STAT315 [style=filled, fillcolor=white, label=STAT3];
+phosphorylation17 -> STAT315  [label=num];
+tyr70516 [style=filled, fillcolor=white, label=tyr705];
+phosphorylation17 -> tyr70516  [label=amod];
+phosphorylation27 -> phosphorylation17  [label=nsubj];
+is18 [style=filled, fillcolor=white, label=is];
+phosphorylation27 -> is18  [label=cop];
+a19 [style=filled, fillcolor=white, label=a];
+phosphorylation27 -> a19  [label=det];
+prerequisite20 [style=filled, fillcolor=white, label=prerequisite];
+phosphorylation27 -> prerequisite20  [label=amod];
+STAT325 [style=filled, fillcolor=white, label=STAT3];
+maximal22 [style=filled, fillcolor=white, label=maximal];
+STAT325 -> maximal22  [label=amod];
+STAT325 -> "MEN2A-RET3"  [label=nn];
+induced24 [style=filled, fillcolor=white, label=induced];
+STAT325 -> induced24  [label=nn];
+prerequisite20 -> STAT325  [label=prep_for];
+ser72726 [style=filled, fillcolor=white, label=ser727];
+phosphorylation27 -> ser72726  [label=amod];
+suggesting13 -> phosphorylation27  [label=ccomp];
+Figure29 [style=filled, fillcolor=white, label=Figure];
+phosphorylation27 -> Figure29  [label=appos];
+"3b30" [style=filled, fillcolor=white, label="3b"];
+Figure29 -> "3b30"  [label=num];
+}

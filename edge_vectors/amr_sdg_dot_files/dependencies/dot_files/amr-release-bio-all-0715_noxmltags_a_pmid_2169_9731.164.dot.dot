@@ -1,0 +1,55 @@
+digraph "Analogous to previous results with macrophage co-culture ,  growth stimulated by either IGF-1 or MØCM was blocked by combined inhibition of MEK and PI3K ,  to a greater extent than either pathway by itself ( Figure 9A ,  B ) ." {
+label="Analogous to previous results with macrophage co-culture ,  growth stimulated
+by either IGF-1 or MØCM was blocked by combined inhibition of MEK and PI3K ,  to
+a greater extent than either pathway by itself ( Figure 9A ,  B ) .";
+blocked17 [style=filled, fillcolor=white, label=blocked];
+Analogous1 [style=filled, fillcolor=white, label=Analogous];
+blocked17 -> Analogous1  [label=nsubjpass];
+results4 [style=filled, fillcolor=white, label=results];
+previous3 [style=filled, fillcolor=white, label=previous];
+results4 -> previous3  [label=amod];
+Analogous1 -> results4  [label=prep_to];
+"co-culture7" [style=filled, fillcolor=white, label="co-culture"];
+macrophage6 [style=filled, fillcolor=white, label=macrophage];
+"co-culture7" -> macrophage6  [label=amod];
+results4 -> "co-culture7"  [label=prep_with];
+growth9 [style=filled, fillcolor=white, label=growth];
+"co-culture7" -> growth9  [label=appos];
+stimulated10 [style=filled, fillcolor=white, label=stimulated];
+growth9 -> stimulated10  [label=vmod];
+"IGF-13" [style=filled, fillcolor=white, label="IGF-1"];
+either12 [style=filled, fillcolor=white, label=either];
+"IGF-13" -> either12  [label=preconj];
+stimulated10 -> "IGF-13"  [label=agent];
+"MØCM15" [style=filled, fillcolor=white, label="MØCM"];
+"IGF-13" -> "MØCM15"  [label=conj_or];
+was16 [style=filled, fillcolor=white, label=was];
+blocked17 -> was16  [label=auxpass];
+blocked17 -> blocked17  [label=root];
+inhibition20 [style=filled, fillcolor=white, label=inhibition];
+combined19 [style=filled, fillcolor=white, label=combined];
+inhibition20 -> combined19  [label=amod];
+blocked17 -> inhibition20  [label=agent];
+MEK22 [style=filled, fillcolor=white, label=MEK];
+inhibition20 -> MEK22  [label=prep_of];
+PI3K24 [style=filled, fillcolor=white, label=PI3K];
+MEK22 -> PI3K24  [label=conj_and];
+extent29 [style=filled, fillcolor=white, label=extent];
+a27 [style=filled, fillcolor=white, label=a];
+extent29 -> a27  [label=det];
+greater28 [style=filled, fillcolor=white, label=greater];
+extent29 -> greater28  [label=amod];
+blocked17 -> extent29  [label=prep_to];
+pathway32 [style=filled, fillcolor=white, label=pathway];
+either31 [style=filled, fillcolor=white, label=either];
+pathway32 -> either31  [label=det];
+extent29 -> pathway32  [label=prep_than];
+itself34 [style=filled, fillcolor=white, label=itself];
+blocked17 -> itself34  [label=agent];
+Figure36 [style=filled, fillcolor=white, label=Figure];
+itself34 -> Figure36  [label=appos];
+"9A37" [style=filled, fillcolor=white, label="9A"];
+Figure36 -> "9A37"  [label=num];
+B39 [style=filled, fillcolor=white, label=B];
+Figure36 -> B39  [label=dep];
+}

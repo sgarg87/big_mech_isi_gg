@@ -1,0 +1,30 @@
+digraph "Overexpression of serpinE2 in caMEK-expressing IECs was furthermore confirmed following RT-PCR analysis as shown in Figure 1A ." {
+label="Overexpression of serpinE2 in caMEK-expressing IECs was furthermore confirmed
+following RT-PCR analysis as shown in Figure 1A .";
+confirmed9 [style=filled, fillcolor=white, label=confirmed];
+Overexpression1 [style=filled, fillcolor=white, label=Overexpression];
+confirmed9 -> Overexpression1  [label=nsubjpass];
+serpinE23 [style=filled, fillcolor=white, label=serpinE2];
+Overexpression1 -> serpinE23  [label=prep_of];
+IECs6 [style=filled, fillcolor=white, label=IECs];
+"caMEK-expressing5" [style=filled, fillcolor=white, label="caMEK-expressing"];
+IECs6 -> "caMEK-expressing5"  [label=amod];
+serpinE23 -> IECs6  [label=prep_in];
+was7 [style=filled, fillcolor=white, label=was];
+confirmed9 -> was7  [label=auxpass];
+furthermore8 [style=filled, fillcolor=white, label=furthermore];
+confirmed9 -> furthermore8  [label=advmod];
+confirmed9 -> confirmed9  [label=root];
+analysis12 [style=filled, fillcolor=white, label=analysis];
+"RT-PCR11" [style=filled, fillcolor=white, label="RT-PCR"];
+analysis12 -> "RT-PCR11"  [label=amod];
+confirmed9 -> analysis12  [label=prep_following];
+as13 [style=filled, fillcolor=white, label=as];
+analysis12 -> as13  [label=amod];
+shown14 [style=filled, fillcolor=white, label=shown];
+analysis12 -> shown14  [label=vmod];
+Figure16 [style=filled, fillcolor=white, label=Figure];
+shown14 -> Figure16  [label=prep_in];
+"1A17" [style=filled, fillcolor=white, label="1A"];
+Figure16 -> "1A17"  [label=num];
+}

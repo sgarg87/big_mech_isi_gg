@@ -1,0 +1,36 @@
+digraph "Re-expression of wild-type MKK7 ( Fig. 2c ) restored the reduced proliferation of mkk7 - / - MEFs to levels observed in wild-type MEFs ." {
+label="Re-expression of wild-type MKK7 ( Fig. 2c ) restored the reduced proliferation
+of mkk7 - / - MEFs to levels observed in wild-type MEFs .";
+restored9 [style=filled, fillcolor=white, label=restored];
+"Re-expression1" [style=filled, fillcolor=white, label="Re-expression"];
+restored9 -> "Re-expression1"  [label=nsubj];
+MKK74 [style=filled, fillcolor=white, label=MKK7];
+"wild-type3" [style=filled, fillcolor=white, label="wild-type"];
+MKK74 -> "wild-type3"  [label=amod];
+"Re-expression1" -> MKK74  [label=prep_of];
+"2c7" [style=filled, fillcolor=white, label="2c"];
+"Fig.6" [style=filled, fillcolor=white, label="Fig."];
+"2c7" -> "Fig.6"  [label=nn];
+"Re-expression1" -> "2c7"  [label=appos];
+restored9 -> restored9  [label=root];
+proliferation12 [style=filled, fillcolor=white, label=proliferation];
+the10 [style=filled, fillcolor=white, label=the];
+proliferation12 -> the10  [label=det];
+reduced11 [style=filled, fillcolor=white, label=reduced];
+proliferation12 -> reduced11  [label=amod];
+restored9 -> proliferation12  [label=dobj];
+MEFs18 [style=filled, fillcolor=white, label=MEFs];
+mkk714 [style=filled, fillcolor=white, label=mkk7];
+MEFs18 -> mkk714  [label=amod];
+"/16" [style=filled, fillcolor=white, label="/"];
+MEFs18 -> "/16"  [label=dep];
+proliferation12 -> MEFs18  [label=prep_of];
+levels20 [style=filled, fillcolor=white, label=levels];
+restored9 -> levels20  [label=prep_to];
+observed21 [style=filled, fillcolor=white, label=observed];
+levels20 -> observed21  [label=vmod];
+MEFs24 [style=filled, fillcolor=white, label=MEFs];
+"wild-type23" [style=filled, fillcolor=white, label="wild-type"];
+MEFs24 -> "wild-type23"  [label=amod];
+observed21 -> MEFs24  [label=prep_in];
+}

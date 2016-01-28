@@ -1,0 +1,32 @@
+digraph "Phosphorylated endogenous ASPP2 was detected by the phospho-specific antibody 30 minutes after RAS stimulation ( Figure 1D ) ." {
+label="Phosphorylated endogenous ASPP2 was detected by the phospho-specific antibody
+30 minutes after RAS stimulation ( Figure 1D ) .";
+ASPP23 [style=filled, fillcolor=white, label=ASPP2];
+Phosphorylated1 [style=filled, fillcolor=white, label=Phosphorylated];
+ASPP23 -> Phosphorylated1  [label=nn];
+endogenous2 [style=filled, fillcolor=white, label=endogenous];
+ASPP23 -> endogenous2  [label=nn];
+detected5 [style=filled, fillcolor=white, label=detected];
+detected5 -> ASPP23  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+detected5 -> was4  [label=auxpass];
+detected5 -> detected5  [label=root];
+antibody9 [style=filled, fillcolor=white, label=antibody];
+the7 [style=filled, fillcolor=white, label=the];
+antibody9 -> the7  [label=det];
+"phospho-specific8" [style=filled, fillcolor=white, label="phospho-specific"];
+antibody9 -> "phospho-specific8"  [label=amod];
+detected5 -> antibody9  [label=agent];
+minutes11 [style=filled, fillcolor=white, label=minutes];
+301 [style=filled, fillcolor=white, label=30];
+minutes11 -> 301  [label=num];
+detected5 -> minutes11  [label=dep];
+stimulation14 [style=filled, fillcolor=white, label=stimulation];
+RAS13 [style=filled, fillcolor=white, label=RAS];
+stimulation14 -> RAS13  [label=nn];
+detected5 -> stimulation14  [label=prep_after];
+Figure16 [style=filled, fillcolor=white, label=Figure];
+detected5 -> Figure16  [label=dep];
+"1D17" [style=filled, fillcolor=white, label="1D"];
+Figure16 -> "1D17"  [label=num];
+}

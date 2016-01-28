@@ -1,0 +1,45 @@
+digraph "Transcriptional interference between PPARalpha and both c-Jun and p65 occurs reciprocally ,  since c-Jun and p65 also inhibit PPARalpha-mediated activation of a PPAR response element-driven promoter ." {
+label="Transcriptional interference between PPARalpha and both c-Jun and p65 occurs
+reciprocally ,  since c-Jun and p65 also inhibit PPARalpha-mediated activation
+of a PPAR response element-driven promoter .";
+interference2 [style=filled, fillcolor=white, label=interference];
+Transcriptional1 [style=filled, fillcolor=white, label=Transcriptional];
+interference2 -> Transcriptional1  [label=amod];
+occurs10 [style=filled, fillcolor=white, label=occurs];
+occurs10 -> interference2  [label=nsubj];
+PPARalpha4 [style=filled, fillcolor=white, label=PPARalpha];
+interference2 -> PPARalpha4  [label=prep_between];
+"c-Jun7" [style=filled, fillcolor=white, label="c-Jun"];
+both6 [style=filled, fillcolor=white, label=both];
+"c-Jun7" -> both6  [label=det];
+interference2 -> "c-Jun7"  [label=conj_and];
+p659 [style=filled, fillcolor=white, label=p65];
+"c-Jun7" -> p659  [label=conj_and];
+occurs10 -> occurs10  [label=root];
+reciprocally11 [style=filled, fillcolor=white, label=reciprocally];
+occurs10 -> reciprocally11  [label=advmod];
+inhibit18 [style=filled, fillcolor=white, label=inhibit];
+since13 [style=filled, fillcolor=white, label=since];
+inhibit18 -> since13  [label=mark];
+"c-Jun14" [style=filled, fillcolor=white, label="c-Jun"];
+inhibit18 -> "c-Jun14"  [label=nsubj];
+p651 [style=filled, fillcolor=white, label=p65];
+"c-Jun14" -> p651  [label=conj_and];
+also17 [style=filled, fillcolor=white, label=also];
+inhibit18 -> also17  [label=advmod];
+occurs10 -> inhibit18  [label=advcl];
+activation20 [style=filled, fillcolor=white, label=activation];
+"PPARalpha-mediated19" [style=filled, fillcolor=white, label="PPARalpha-mediated"];
+activation20 -> "PPARalpha-mediated19"  [label=amod];
+inhibit18 -> activation20  [label=dobj];
+promoter26 [style=filled, fillcolor=white, label=promoter];
+a22 [style=filled, fillcolor=white, label=a];
+promoter26 -> a22  [label=det];
+PPAR23 [style=filled, fillcolor=white, label=PPAR];
+promoter26 -> PPAR23  [label=nn];
+response24 [style=filled, fillcolor=white, label=response];
+promoter26 -> response24  [label=nn];
+"element-driven25" [style=filled, fillcolor=white, label="element-driven"];
+promoter26 -> "element-driven25"  [label=nn];
+activation20 -> promoter26  [label=prep_of];
+}

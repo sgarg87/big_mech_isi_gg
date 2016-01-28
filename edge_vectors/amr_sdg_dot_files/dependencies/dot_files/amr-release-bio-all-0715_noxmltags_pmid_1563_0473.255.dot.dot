@@ -1,0 +1,24 @@
+digraph "The linearized construct was injected into the nucleus of embryos from CD1 mice ." {
+label="The linearized construct was injected into the nucleus of embryos from CD1 mice
+.";
+construct3 [style=filled, fillcolor=white, label=construct];
+The1 [style=filled, fillcolor=white, label=The];
+construct3 -> The1  [label=det];
+linearized2 [style=filled, fillcolor=white, label=linearized];
+construct3 -> linearized2  [label=amod];
+injected5 [style=filled, fillcolor=white, label=injected];
+injected5 -> construct3  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+injected5 -> was4  [label=auxpass];
+injected5 -> injected5  [label=root];
+nucleus8 [style=filled, fillcolor=white, label=nucleus];
+the7 [style=filled, fillcolor=white, label=the];
+nucleus8 -> the7  [label=det];
+injected5 -> nucleus8  [label=prep_into];
+embryos10 [style=filled, fillcolor=white, label=embryos];
+nucleus8 -> embryos10  [label=prep_of];
+mice13 [style=filled, fillcolor=white, label=mice];
+CD112 [style=filled, fillcolor=white, label=CD1];
+mice13 -> CD112  [label=num];
+injected5 -> mice13  [label=prep_from];
+}

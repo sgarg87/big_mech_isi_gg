@@ -1,0 +1,38 @@
+digraph "E10 cells expressed lower basal p-Erk/panErk vs. the neoplastic cell lines ,  consistent with previous observations -LSB- 21 -RSB- ." {
+label="E10 cells expressed lower basal p-Erk/panErk vs. the neoplastic cell lines ,
+consistent with previous observations -LSB- 21 -RSB- .";
+cells2 [style=filled, fillcolor=white, label=cells];
+E10 [style=filled, fillcolor=white, label=E10];
+cells2 -> E10  [label=nn];
+expressed3 [style=filled, fillcolor=white, label=expressed];
+expressed3 -> cells2  [label=nsubj];
+expressed3 -> expressed3  [label=root];
+"p-Erk/panErk6" [style=filled, fillcolor=white, label="p-Erk/panErk"];
+lower4 [style=filled, fillcolor=white, label=lower];
+"p-Erk/panErk6" -> lower4  [label=amod];
+basal5 [style=filled, fillcolor=white, label=basal];
+"p-Erk/panErk6" -> basal5  [label=nn];
+expressed3 -> "p-Erk/panErk6"  [label=dobj];
+"vs.7" [style=filled, fillcolor=white, label="vs."];
+expressed3 -> "vs.7"  [label=prep];
+lines11 [style=filled, fillcolor=white, label=lines];
+the8 [style=filled, fillcolor=white, label=the];
+lines11 -> the8  [label=det];
+neoplastic9 [style=filled, fillcolor=white, label=neoplastic];
+lines11 -> neoplastic9  [label=amod];
+cell10 [style=filled, fillcolor=white, label=cell];
+lines11 -> cell10  [label=nn];
+"vs.7" -> lines11  [label=pobj];
+"-RSB-19" [style=filled, fillcolor=white, label="-RSB-"];
+consistent13 [style=filled, fillcolor=white, label=consistent];
+"-RSB-19" -> consistent13  [label=amod];
+observations16 [style=filled, fillcolor=white, label=observations];
+previous15 [style=filled, fillcolor=white, label=previous];
+observations16 -> previous15  [label=amod];
+consistent13 -> observations16  [label=prep_with];
+"-LSB-17" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-19" -> "-LSB-17"  [label=amod];
+2118 [style=filled, fillcolor=white, label=21];
+"-RSB-19" -> 2118  [label=num];
+lines11 -> "-RSB-19"  [label=appos];
+}

@@ -1,0 +1,30 @@
+digraph "Fifty years have passed since the transforming power of Ras genes was first recognized ." {
+label="Fifty years have passed since the transforming power of Ras genes was first
+recognized .";
+years2 [style=filled, fillcolor=white, label=years];
+Fifty1 [style=filled, fillcolor=white, label=Fifty];
+years2 -> Fifty1  [label=num];
+passed4 [style=filled, fillcolor=white, label=passed];
+passed4 -> years2  [label=nsubj];
+have3 [style=filled, fillcolor=white, label=have];
+passed4 -> have3  [label=aux];
+passed4 -> passed4  [label=root];
+recognized14 [style=filled, fillcolor=white, label=recognized];
+since5 [style=filled, fillcolor=white, label=since];
+recognized14 -> since5  [label=mark];
+power8 [style=filled, fillcolor=white, label=power];
+the6 [style=filled, fillcolor=white, label=the];
+power8 -> the6  [label=det];
+transforming7 [style=filled, fillcolor=white, label=transforming];
+power8 -> transforming7  [label=amod];
+recognized14 -> power8  [label=nsubjpass];
+genes11 [style=filled, fillcolor=white, label=genes];
+Ras10 [style=filled, fillcolor=white, label=Ras];
+genes11 -> Ras10  [label=nn];
+power8 -> genes11  [label=prep_of];
+was12 [style=filled, fillcolor=white, label=was];
+recognized14 -> was12  [label=auxpass];
+first13 [style=filled, fillcolor=white, label=first];
+recognized14 -> first13  [label=advmod];
+passed4 -> recognized14  [label=advcl];
+}

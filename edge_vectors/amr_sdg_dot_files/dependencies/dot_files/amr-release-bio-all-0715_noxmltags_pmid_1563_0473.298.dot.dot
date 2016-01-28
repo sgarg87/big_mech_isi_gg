@@ -1,0 +1,53 @@
+digraph "Samples stained with Snail ,  pMAPK ,  pSmad2 ,  and cyclin D were antigen unmasked with 10 mM sodium citrate ( pH 6 ) in an Antigen Retriever 2100 ( Pickcell Laboratories ,  Leiden ,  Netherlands ) ." {
+label="Samples stained with Snail ,  pMAPK ,  pSmad2 ,  and cyclin D were antigen
+unmasked with 10 mM sodium citrate ( pH 6 ) in an Antigen Retriever 2100 (
+Pickcell Laboratories ,  Leiden ,  Netherlands ) .";
+antigen14 [style=filled, fillcolor=white, label=antigen];
+Samples1 [style=filled, fillcolor=white, label=Samples];
+antigen14 -> Samples1  [label=nsubj];
+stained2 [style=filled, fillcolor=white, label=stained];
+Samples1 -> stained2  [label=vmod];
+Snail4 [style=filled, fillcolor=white, label=Snail];
+stained2 -> Snail4  [label=prep_with];
+pMAPK6 [style=filled, fillcolor=white, label=pMAPK];
+Snail4 -> pMAPK6  [label=conj_and];
+pSmad28 [style=filled, fillcolor=white, label=pSmad2];
+Snail4 -> pSmad28  [label=conj_and];
+D12 [style=filled, fillcolor=white, label=D];
+cyclin11 [style=filled, fillcolor=white, label=cyclin];
+D12 -> cyclin11  [label=nn];
+Snail4 -> D12  [label=conj_and];
+were13 [style=filled, fillcolor=white, label=were];
+antigen14 -> were13  [label=cop];
+antigen14 -> antigen14  [label=root];
+unmasked15 [style=filled, fillcolor=white, label=unmasked];
+antigen14 -> unmasked15  [label=vmod];
+citrate20 [style=filled, fillcolor=white, label=citrate];
+1017 [style=filled, fillcolor=white, label=10];
+citrate20 -> 1017  [label=num];
+mM18 [style=filled, fillcolor=white, label=mM];
+citrate20 -> mM18  [label=nn];
+sodium19 [style=filled, fillcolor=white, label=sodium];
+citrate20 -> sodium19  [label=nn];
+unmasked15 -> citrate20  [label=prep_with];
+623 [style=filled, fillcolor=white, label=6];
+pH22 [style=filled, fillcolor=white, label=pH];
+623 -> pH22  [label=number];
+citrate20 -> 623  [label=dep];
+210029 [style=filled, fillcolor=white, label=2100];
+an26 [style=filled, fillcolor=white, label=an];
+210029 -> an26  [label=det];
+Antigen27 [style=filled, fillcolor=white, label=Antigen];
+210029 -> Antigen27  [label=nn];
+Retriever28 [style=filled, fillcolor=white, label=Retriever];
+210029 -> Retriever28  [label=nn];
+citrate20 -> 210029  [label=prep_in];
+Laboratories32 [style=filled, fillcolor=white, label=Laboratories];
+Pickcell31 [style=filled, fillcolor=white, label=Pickcell];
+Laboratories32 -> Pickcell31  [label=nn];
+210029 -> Laboratories32  [label=appos];
+Leiden34 [style=filled, fillcolor=white, label=Leiden];
+Laboratories32 -> Leiden34  [label=dep];
+Netherlands36 [style=filled, fillcolor=white, label=Netherlands];
+Laboratories32 -> Netherlands36  [label=dep];
+}

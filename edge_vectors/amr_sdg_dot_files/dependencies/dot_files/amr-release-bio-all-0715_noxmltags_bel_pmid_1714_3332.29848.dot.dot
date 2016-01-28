@@ -1,0 +1,36 @@
+digraph "In addition ,  expression of tribbles 3 ( TRB3 ) protein ( Figure 8C ) and mRNA ( Table 2 ) was increased in fasted KO livers ." {
+label="In addition ,  expression of tribbles 3 ( TRB3 ) protein ( Figure 8C ) and mRNA
+( Table 2 ) was increased in fasted KO livers .";
+increased23 [style=filled, fillcolor=white, label=increased];
+addition2 [style=filled, fillcolor=white, label=addition];
+increased23 -> addition2  [label=prep_in];
+expression4 [style=filled, fillcolor=white, label=expression];
+increased23 -> expression4  [label=nsubjpass];
+protein11 [style=filled, fillcolor=white, label=protein];
+tribbles6 [style=filled, fillcolor=white, label=tribbles];
+protein11 -> tribbles6  [label=nn];
+37 [style=filled, fillcolor=white, label=3];
+protein11 -> 37  [label=num];
+TRB39 [style=filled, fillcolor=white, label=TRB3];
+protein11 -> TRB39  [label=nn];
+expression4 -> protein11  [label=prep_of];
+Figure13 [style=filled, fillcolor=white, label=Figure];
+expression4 -> Figure13  [label=appos];
+"8C14" [style=filled, fillcolor=white, label="8C"];
+Figure13 -> "8C14"  [label=num];
+mRNA17 [style=filled, fillcolor=white, label=mRNA];
+expression4 -> mRNA17  [label=conj_and];
+220 [style=filled, fillcolor=white, label=2];
+Table19 [style=filled, fillcolor=white, label=Table];
+220 -> Table19  [label=number];
+mRNA17 -> 220  [label=dep];
+was22 [style=filled, fillcolor=white, label=was];
+increased23 -> was22  [label=auxpass];
+increased23 -> increased23  [label=root];
+livers27 [style=filled, fillcolor=white, label=livers];
+fasted25 [style=filled, fillcolor=white, label=fasted];
+livers27 -> fasted25  [label=amod];
+KO26 [style=filled, fillcolor=white, label=KO];
+livers27 -> KO26  [label=nn];
+increased23 -> livers27  [label=prep_in];
+}

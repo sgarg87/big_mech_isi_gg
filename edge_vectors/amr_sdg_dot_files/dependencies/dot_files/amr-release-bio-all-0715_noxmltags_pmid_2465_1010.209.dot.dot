@@ -1,0 +1,47 @@
+digraph "Inhibitors of PI3K pathway have not yet fared much better in the clinic ,  also because of feedback mechanisms that activate upstream signaling ,  as well as poor therapeutic index ." {
+label="Inhibitors of PI3K pathway have not yet fared much better in the clinic ,  also
+because of feedback mechanisms that activate upstream signaling ,  as well as
+poor therapeutic index .";
+fared8 [style=filled, fillcolor=white, label=fared];
+Inhibitors1 [style=filled, fillcolor=white, label=Inhibitors];
+fared8 -> Inhibitors1  [label=nsubj];
+PI3K [style=filled, fillcolor=white, label=PI3K];
+Inhibitors1 -> PI3K  [label=prep_of];
+pathway4 [style=filled, fillcolor=white, label=pathway];
+fared8 -> pathway4  [label=advmod];
+have5 [style=filled, fillcolor=white, label=have];
+fared8 -> have5  [label=aux];
+not6 [style=filled, fillcolor=white, label=not];
+fared8 -> not6  [label=neg];
+yet7 [style=filled, fillcolor=white, label=yet];
+fared8 -> yet7  [label=advmod];
+fared8 -> fared8  [label=root];
+better10 [style=filled, fillcolor=white, label=better];
+much9 [style=filled, fillcolor=white, label=much];
+better10 -> much9  [label=advmod];
+fared8 -> better10  [label=acomp];
+clinic13 [style=filled, fillcolor=white, label=clinic];
+the12 [style=filled, fillcolor=white, label=the];
+clinic13 -> the12  [label=det];
+fared8 -> clinic13  [label=prep_in];
+also15 [style=filled, fillcolor=white, label=also];
+fared8 -> also15  [label=advmod];
+mechanisms19 [style=filled, fillcolor=white, label=mechanisms];
+feedback18 [style=filled, fillcolor=white, label=feedback];
+mechanisms19 -> feedback18  [label=nn];
+fared8 -> mechanisms19  [label=prep_because_of];
+activate21 [style=filled, fillcolor=white, label=activate];
+that20 [style=filled, fillcolor=white, label=that];
+activate21 -> that20  [label=nsubj];
+mechanisms19 -> activate21  [label=rcmod];
+signaling23 [style=filled, fillcolor=white, label=signaling];
+upstream22 [style=filled, fillcolor=white, label=upstream];
+signaling23 -> upstream22  [label=amod];
+activate21 -> signaling23  [label=dobj];
+index30 [style=filled, fillcolor=white, label=index];
+poor28 [style=filled, fillcolor=white, label=poor];
+index30 -> poor28  [label=amod];
+therapeutic29 [style=filled, fillcolor=white, label=therapeutic];
+index30 -> therapeutic29  [label=amod];
+signaling23 -> index30  [label=conj_and];
+}

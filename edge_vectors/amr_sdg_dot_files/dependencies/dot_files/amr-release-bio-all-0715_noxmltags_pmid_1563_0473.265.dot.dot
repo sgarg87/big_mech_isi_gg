@@ -1,0 +1,47 @@
+digraph "Extracts subjected to immunoprecipitation were precleared with Protein G Sepharose ( Amersham ,  Piscataway ,  New York ,  United States ) and incubated with antibody with rocking overnight at 4 ° C." {
+label="Extracts subjected to immunoprecipitation were precleared with Protein G
+Sepharose ( Amersham ,  Piscataway ,  New York ,  United States ) and incubated
+with antibody with rocking overnight at 4 ° C.";
+subjected2 [style=filled, fillcolor=white, label=subjected];
+Extracts1 [style=filled, fillcolor=white, label=Extracts];
+subjected2 -> Extracts1  [label=advmod];
+subjected2 -> subjected2  [label=root];
+immunoprecipitation4 [style=filled, fillcolor=white, label=immunoprecipitation];
+subjected2 -> immunoprecipitation4  [label=prep_to];
+precleared6 [style=filled, fillcolor=white, label=precleared];
+were5 [style=filled, fillcolor=white, label=were];
+precleared6 -> were5  [label=auxpass];
+subjected2 -> precleared6  [label=auxpass];
+Sepharose10 [style=filled, fillcolor=white, label=Sepharose];
+Protein8 [style=filled, fillcolor=white, label=Protein];
+Sepharose10 -> Protein8  [label=nn];
+G9 [style=filled, fillcolor=white, label=G];
+Sepharose10 -> G9  [label=nn];
+precleared6 -> Sepharose10  [label=prep_with];
+Piscataway14 [style=filled, fillcolor=white, label=Piscataway];
+Amersham12 [style=filled, fillcolor=white, label=Amersham];
+Piscataway14 -> Amersham12  [label=nn];
+Sepharose10 -> Piscataway14  [label=appos];
+York17 [style=filled, fillcolor=white, label=York];
+New16 [style=filled, fillcolor=white, label=New];
+York17 -> New16  [label=nn];
+Piscataway14 -> York17  [label=dep];
+States20 [style=filled, fillcolor=white, label=States];
+United19 [style=filled, fillcolor=white, label=United];
+States20 -> United19  [label=nn];
+Piscataway14 -> States20  [label=dep];
+incubated23 [style=filled, fillcolor=white, label=incubated];
+precleared6 -> incubated23  [label=conj_and];
+antibody25 [style=filled, fillcolor=white, label=antibody];
+incubated23 -> antibody25  [label=prep_with];
+rocking27 [style=filled, fillcolor=white, label=rocking];
+precleared6 -> rocking27  [label=prepc_with];
+overnight28 [style=filled, fillcolor=white, label=overnight];
+rocking27 -> overnight28  [label=advmod];
+430 [style=filled, fillcolor=white, label=4];
+rocking27 -> 430  [label=prep_at];
+"C.32" [style=filled, fillcolor=white, label="C."];
+"°31" [style=filled, fillcolor=white, label="°"];
+"C.32" -> "°31"  [label=nn];
+subjected2 -> "C.32"  [label=nsubjpass];
+}

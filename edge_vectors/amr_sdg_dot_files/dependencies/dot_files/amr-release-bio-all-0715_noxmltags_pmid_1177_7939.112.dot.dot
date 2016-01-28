@@ -1,0 +1,38 @@
+digraph "It is reasonable ,  therefore ,  to propose that Sos-1 alone ( or complexed with proteins ,  such as Grb2 ) is endowed with Ras-GEF activity ." {
+label="It is reasonable ,  therefore ,  to propose that Sos-1 alone ( or complexed
+with proteins ,  such as Grb2 ) is endowed with Ras-GEF activity .";
+reasonable3 [style=filled, fillcolor=white, label=reasonable];
+It1 [style=filled, fillcolor=white, label=It];
+reasonable3 -> It1  [label=nsubj];
+is2 [style=filled, fillcolor=white, label=is];
+reasonable3 -> is2  [label=cop];
+reasonable3 -> reasonable3  [label=root];
+therefore5 [style=filled, fillcolor=white, label=therefore];
+reasonable3 -> therefore5  [label=advmod];
+propose8 [style=filled, fillcolor=white, label=propose];
+to7 [style=filled, fillcolor=white, label=to];
+propose8 -> to7  [label=aux];
+reasonable3 -> propose8  [label=xcomp];
+endowed23 [style=filled, fillcolor=white, label=endowed];
+that9 [style=filled, fillcolor=white, label=that];
+endowed23 -> that9  [label=mark];
+"Sos-10" [style=filled, fillcolor=white, label="Sos-1"];
+endowed23 -> "Sos-10"  [label=nsubjpass];
+alone11 [style=filled, fillcolor=white, label=alone];
+"Sos-10" -> alone11  [label=advmod];
+complexed14 [style=filled, fillcolor=white, label=complexed];
+or13 [style=filled, fillcolor=white, label=or];
+complexed14 -> or13  [label=cc];
+"Sos-10" -> complexed14  [label=dep];
+proteins16 [style=filled, fillcolor=white, label=proteins];
+complexed14 -> proteins16  [label=prep_with];
+Grb220 [style=filled, fillcolor=white, label=Grb2];
+complexed14 -> Grb220  [label=prep_such_as];
+is22 [style=filled, fillcolor=white, label=is];
+endowed23 -> is22  [label=auxpass];
+propose8 -> endowed23  [label=ccomp];
+activity26 [style=filled, fillcolor=white, label=activity];
+"Ras-GEF25" [style=filled, fillcolor=white, label="Ras-GEF"];
+activity26 -> "Ras-GEF25"  [label=amod];
+endowed23 -> activity26  [label=prep_with];
+}

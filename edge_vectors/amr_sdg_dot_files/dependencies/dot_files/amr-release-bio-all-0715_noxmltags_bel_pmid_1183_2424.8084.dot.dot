@@ -1,0 +1,45 @@
+digraph "Cystic kidneys from postnatal day 20 bcl-2 - / - mice demonstrate a reduced expression ,  sixfold decrease in activity ,  and altered distribution of SHP-2 and PTP 1B ." {
+label="Cystic kidneys from postnatal day 20 bcl-2 - / - mice demonstrate a reduced
+expression ,  sixfold decrease in activity ,  and altered distribution of SHP-2
+and PTP 1B .";
+kidneys2 [style=filled, fillcolor=white, label=kidneys];
+Cystic1 [style=filled, fillcolor=white, label=Cystic];
+kidneys2 -> Cystic1  [label=nsubj];
+kidneys2 -> kidneys2  [label=root];
+day5 [style=filled, fillcolor=white, label=day];
+postnatal4 [style=filled, fillcolor=white, label=postnatal];
+day5 -> postnatal4  [label=amod];
+kidneys2 -> day5  [label=prep_from];
+"bcl-27" [style=filled, fillcolor=white, label="bcl-2"];
+206 [style=filled, fillcolor=white, label=20];
+"bcl-27" -> 206  [label=number];
+day5 -> "bcl-27"  [label=amod];
+"/9" [style=filled, fillcolor=white, label="/"];
+kidneys2 -> "/9"  [label=advmod];
+demonstrate12 [style=filled, fillcolor=white, label=demonstrate];
+mice11 [style=filled, fillcolor=white, label=mice];
+demonstrate12 -> mice11  [label=nsubj];
+kidneys2 -> demonstrate12  [label=parataxis];
+decrease18 [style=filled, fillcolor=white, label=decrease];
+a13 [style=filled, fillcolor=white, label=a];
+decrease18 -> a13  [label=det];
+reduced14 [style=filled, fillcolor=white, label=reduced];
+decrease18 -> reduced14  [label=amod];
+expression15 [style=filled, fillcolor=white, label=expression];
+decrease18 -> expression15  [label=nn];
+sixfold17 [style=filled, fillcolor=white, label=sixfold];
+decrease18 -> sixfold17  [label=amod];
+demonstrate12 -> decrease18  [label=dobj];
+activity20 [style=filled, fillcolor=white, label=activity];
+decrease18 -> activity20  [label=prep_in];
+distribution24 [style=filled, fillcolor=white, label=distribution];
+altered23 [style=filled, fillcolor=white, label=altered];
+distribution24 -> altered23  [label=amod];
+decrease18 -> distribution24  [label=conj_and];
+"SHP-26" [style=filled, fillcolor=white, label="SHP-2"];
+distribution24 -> "SHP-26"  [label=prep_of];
+PTP28 [style=filled, fillcolor=white, label=PTP];
+"SHP-26" -> PTP28  [label=conj_and];
+"1B29" [style=filled, fillcolor=white, label="1B"];
+PTP28 -> "1B29"  [label=num];
+}

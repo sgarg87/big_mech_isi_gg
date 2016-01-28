@@ -1,0 +1,49 @@
+digraph "loss of MKK7 expression resulted in impaired JNK activation in MEFs at the basal level and after stimulation with tumour necrosis factor alpha ( TNF-alpha ) or UV irradiation ( Fig. 2a ) ." {
+label="loss of MKK7 expression resulted in impaired JNK activation in MEFs at the
+basal level and after stimulation with tumour necrosis factor alpha ( TNF-alpha
+) or UV irradiation ( Fig. 2a ) .";
+resulted5 [style=filled, fillcolor=white, label=resulted];
+loss1 [style=filled, fillcolor=white, label=loss];
+resulted5 -> loss1  [label=nsubj];
+expression4 [style=filled, fillcolor=white, label=expression];
+MKK73 [style=filled, fillcolor=white, label=MKK7];
+expression4 -> MKK73  [label=nn];
+loss1 -> expression4  [label=prep_of];
+resulted5 -> resulted5  [label=root];
+"resulted5'" [style=filled, fillcolor=white, label=resulted];
+resulted5 -> "resulted5'"  [label=conj_and];
+activation9 [style=filled, fillcolor=white, label=activation];
+impaired7 [style=filled, fillcolor=white, label=impaired];
+activation9 -> impaired7  [label=amod];
+JNK8 [style=filled, fillcolor=white, label=JNK];
+activation9 -> JNK8  [label=nn];
+resulted5 -> activation9  [label=prep_in];
+MEFs11 [style=filled, fillcolor=white, label=MEFs];
+resulted5 -> MEFs11  [label=prep_in];
+level15 [style=filled, fillcolor=white, label=level];
+the13 [style=filled, fillcolor=white, label=the];
+level15 -> the13  [label=det];
+basal14 [style=filled, fillcolor=white, label=basal];
+level15 -> basal14  [label=amod];
+resulted5 -> level15  [label=prep_at];
+stimulation18 [style=filled, fillcolor=white, label=stimulation];
+"resulted5'" -> stimulation18  [label=prep_after];
+alpha23 [style=filled, fillcolor=white, label=alpha];
+tumour20 [style=filled, fillcolor=white, label=tumour];
+alpha23 -> tumour20  [label=nn];
+necrosis21 [style=filled, fillcolor=white, label=necrosis];
+alpha23 -> necrosis21  [label=nn];
+factor22 [style=filled, fillcolor=white, label=factor];
+alpha23 -> factor22  [label=nn];
+resulted5 -> alpha23  [label=prep_with];
+"TNF-alpha25" [style=filled, fillcolor=white, label="TNF-alpha"];
+alpha23 -> "TNF-alpha25"  [label=appos];
+irradiation29 [style=filled, fillcolor=white, label=irradiation];
+UV28 [style=filled, fillcolor=white, label=UV];
+irradiation29 -> UV28  [label=nn];
+alpha23 -> irradiation29  [label=conj_or];
+"2a3" [style=filled, fillcolor=white, label="2a"];
+"Fig.31" [style=filled, fillcolor=white, label="Fig."];
+"2a3" -> "Fig.31"  [label=nn];
+alpha23 -> "2a3"  [label=appos];
+}

@@ -1,0 +1,57 @@
+digraph "the preincubation of RAW264 .7 cells with a specific PPARalpha agonist ,  K-111 ( 2 ,  2-dichloro-12 - ( 4-chlorophenyl ) dodecanoic acid ) . K-111 reduced both the IL-6 production and mRNA expression in RAW264 .7 cells" {
+label="the preincubation of RAW264 .7 cells with a specific PPARalpha agonist ,  K-111
+( 2 ,  2-dichloro-12 - ( 4-chlorophenyl ) dodecanoic acid ) . K-111 reduced both
+the IL-6 production and mRNA expression in RAW264 .7 cells";
+preincubation2 [style=filled, fillcolor=white, label=preincubation];
+the1 [style=filled, fillcolor=white, label=the];
+preincubation2 -> the1  [label=det];
+cells6 [style=filled, fillcolor=white, label=cells];
+cells6 -> preincubation2  [label=dep];
+RAW264 [style=filled, fillcolor=white, label=RAW264];
+preincubation2 -> RAW264  [label=prep_of];
+".75" [style=filled, fillcolor=white, label=".7"];
+cells6 -> ".75"  [label=num];
+reduced27 [style=filled, fillcolor=white, label=reduced];
+reduced27 -> cells6  [label=dep];
+agonist11 [style=filled, fillcolor=white, label=agonist];
+a8 [style=filled, fillcolor=white, label=a];
+agonist11 -> a8  [label=det];
+specific9 [style=filled, fillcolor=white, label=specific];
+agonist11 -> specific9  [label=amod];
+PPARalpha10 [style=filled, fillcolor=white, label=PPARalpha];
+agonist11 -> PPARalpha10  [label=nn];
+cells6 -> agonist11  [label=prep_with];
+"K-1113" [style=filled, fillcolor=white, label="K-111"];
+agonist11 -> "K-1113"  [label=appos];
+215 [style=filled, fillcolor=white, label=2];
+"K-1113" -> 215  [label=dep];
+"2-dichloro-127" [style=filled, fillcolor=white, label="2-dichloro-12"];
+215 -> "2-dichloro-127"  [label=appos];
+acid23 [style=filled, fillcolor=white, label=acid];
+"4-chlorophenyl20" [style=filled, fillcolor=white, label="4-chlorophenyl"];
+acid23 -> "4-chlorophenyl20"  [label=dep];
+dodecanoic22 [style=filled, fillcolor=white, label=dodecanoic];
+acid23 -> dodecanoic22  [label=amod];
+"2-dichloro-127" -> acid23  [label=dep];
+"K-11126" [style=filled, fillcolor=white, label="K-111"];
+reduced27 -> "K-11126"  [label=dep];
+reduced27 -> reduced27  [label=root];
+both28 [style=filled, fillcolor=white, label=both];
+reduced27 -> both28  [label=prep];
+production31 [style=filled, fillcolor=white, label=production];
+the29 [style=filled, fillcolor=white, label=the];
+production31 -> the29  [label=det];
+"IL-630" [style=filled, fillcolor=white, label="IL-6"];
+production31 -> "IL-630"  [label=nn];
+both28 -> production31  [label=pobj];
+expression34 [style=filled, fillcolor=white, label=expression];
+mRNA33 [style=filled, fillcolor=white, label=mRNA];
+expression34 -> mRNA33  [label=nn];
+production31 -> expression34  [label=conj_and];
+".73" [style=filled, fillcolor=white, label=".7"];
+RAW2643 [style=filled, fillcolor=white, label=RAW264];
+".73" -> RAW2643  [label=number];
+cells38 [style=filled, fillcolor=white, label=cells];
+cells38 -> ".73"  [label=num];
+production31 -> cells38  [label=prep_in];
+}

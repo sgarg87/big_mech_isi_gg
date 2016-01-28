@@ -1,0 +1,62 @@
+digraph "Functional assessment of NCC by using thiazide-sensitive ( 22 ) Na ( + ) uptakes revealed that TPA completely suppresses NCC function . Biotinylation experiments demonstrated that this result was primarily because of decreased surface expression of NCC ." {
+label="Functional assessment of NCC by using thiazide-sensitive ( 22 ) Na ( + )
+uptakes revealed that TPA completely suppresses NCC function . Biotinylation
+experiments demonstrated that this result was primarily because of decreased
+surface expression of NCC .";
+assessment2 [style=filled, fillcolor=white, label=assessment];
+Functional1 [style=filled, fillcolor=white, label=Functional];
+assessment2 -> Functional1  [label=amod];
+revealed16 [style=filled, fillcolor=white, label=revealed];
+revealed16 -> assessment2  [label=nsubj];
+NCC4 [style=filled, fillcolor=white, label=NCC];
+assessment2 -> NCC4  [label=prep_of];
+using6 [style=filled, fillcolor=white, label=using];
+NCC4 -> using6  [label=prepc_by];
+Na11 [style=filled, fillcolor=white, label=Na];
+"thiazide-sensitive7" [style=filled, fillcolor=white, label="thiazide-sensitive"];
+Na11 -> "thiazide-sensitive7"  [label=amod];
+229 [style=filled, fillcolor=white, label=22];
+Na11 -> 229  [label=appos];
+using6 -> Na11  [label=dobj];
+"+13" [style=filled, fillcolor=white, label="+"];
+Na11 -> "+13"  [label=appos];
+uptakes15 [style=filled, fillcolor=white, label=uptakes];
+revealed16 -> uptakes15  [label=advmod];
+revealed16 -> revealed16  [label=root];
+suppresses20 [style=filled, fillcolor=white, label=suppresses];
+that17 [style=filled, fillcolor=white, label=that];
+suppresses20 -> that17  [label=mark];
+TPA18 [style=filled, fillcolor=white, label=TPA];
+suppresses20 -> TPA18  [label=nsubj];
+completely19 [style=filled, fillcolor=white, label=completely];
+suppresses20 -> completely19  [label=advmod];
+revealed16 -> suppresses20  [label=ccomp];
+Biotinylation24 [style=filled, fillcolor=white, label=Biotinylation];
+NCC21 [style=filled, fillcolor=white, label=NCC];
+Biotinylation24 -> NCC21  [label=nn];
+function22 [style=filled, fillcolor=white, label=function];
+Biotinylation24 -> function22  [label=nn];
+suppresses20 -> Biotinylation24  [label=dobj];
+demonstrated26 [style=filled, fillcolor=white, label=demonstrated];
+experiments25 [style=filled, fillcolor=white, label=experiments];
+demonstrated26 -> experiments25  [label=nsubj];
+Biotinylation24 -> demonstrated26  [label=rcmod];
+was30 [style=filled, fillcolor=white, label=was];
+that27 [style=filled, fillcolor=white, label=that];
+was30 -> that27  [label=mark];
+result29 [style=filled, fillcolor=white, label=result];
+this28 [style=filled, fillcolor=white, label=this];
+result29 -> this28  [label=det];
+was30 -> result29  [label=nsubj];
+demonstrated26 -> was30  [label=ccomp];
+primarily31 [style=filled, fillcolor=white, label=primarily];
+was30 -> primarily31  [label=advmod];
+expression36 [style=filled, fillcolor=white, label=expression];
+decreased34 [style=filled, fillcolor=white, label=decreased];
+expression36 -> decreased34  [label=amod];
+surface35 [style=filled, fillcolor=white, label=surface];
+expression36 -> surface35  [label=nn];
+was30 -> expression36  [label=prep_because_of];
+NCC38 [style=filled, fillcolor=white, label=NCC];
+expression36 -> NCC38  [label=prep_of];
+}

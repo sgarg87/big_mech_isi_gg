@@ -1,0 +1,53 @@
+digraph "Incubation of THP-1 cells with PPARa activators 1 hour before LPS stimulation for 2 hours resulted in a decreased level of TF mRNA compared with cells incubated with only LPS ( Figure 2A ) ." {
+label="Incubation of THP-1 cells with PPARa activators 1 hour before LPS stimulation
+for 2 hours resulted in a decreased level of TF mRNA compared with cells
+incubated with only LPS ( Figure 2A ) .";
+activators7 [style=filled, fillcolor=white, label=activators];
+Incubation1 [style=filled, fillcolor=white, label=Incubation];
+activators7 -> Incubation1  [label=nsubj];
+cells4 [style=filled, fillcolor=white, label=cells];
+"THP-13" [style=filled, fillcolor=white, label="THP-1"];
+cells4 -> "THP-13"  [label=nn];
+Incubation1 -> cells4  [label=prep_of];
+PPARa6 [style=filled, fillcolor=white, label=PPARa];
+cells4 -> PPARa6  [label=prep_with];
+activators7 -> activators7  [label=root];
+hour9 [style=filled, fillcolor=white, label=hour];
+18 [style=filled, fillcolor=white, label=1];
+hour9 -> 18  [label=num];
+activators7 -> hour9  [label=dobj];
+stimulation12 [style=filled, fillcolor=white, label=stimulation];
+LPS11 [style=filled, fillcolor=white, label=LPS];
+stimulation12 -> LPS11  [label=nn];
+activators7 -> stimulation12  [label=prep_before];
+hours15 [style=filled, fillcolor=white, label=hours];
+214 [style=filled, fillcolor=white, label=2];
+hours15 -> 214  [label=num];
+stimulation12 -> hours15  [label=prep_for];
+resulted16 [style=filled, fillcolor=white, label=resulted];
+hours15 -> resulted16  [label=vmod];
+level20 [style=filled, fillcolor=white, label=level];
+a18 [style=filled, fillcolor=white, label=a];
+level20 -> a18  [label=det];
+decreased19 [style=filled, fillcolor=white, label=decreased];
+level20 -> decreased19  [label=amod];
+resulted16 -> level20  [label=prep_in];
+mRNA23 [style=filled, fillcolor=white, label=mRNA];
+TF22 [style=filled, fillcolor=white, label=TF];
+mRNA23 -> TF22  [label=nn];
+level20 -> mRNA23  [label=prep_of];
+with25 [style=filled, fillcolor=white, label=with];
+mRNA23 -> with25  [label=prepc_compared_with];
+cells26 [style=filled, fillcolor=white, label=cells];
+mRNA23 -> cells26  [label=pobj];
+incubated27 [style=filled, fillcolor=white, label=incubated];
+cells26 -> incubated27  [label=vmod];
+LPS30 [style=filled, fillcolor=white, label=LPS];
+only29 [style=filled, fillcolor=white, label=only];
+LPS30 -> only29  [label=amod];
+incubated27 -> LPS30  [label=prep_with];
+Figure32 [style=filled, fillcolor=white, label=Figure];
+mRNA23 -> Figure32  [label=appos];
+"2A33" [style=filled, fillcolor=white, label="2A"];
+Figure32 -> "2A33"  [label=num];
+}

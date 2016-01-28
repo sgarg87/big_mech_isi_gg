@@ -1,0 +1,28 @@
+digraph "In the same experiment ,  we monitored the population of sub G1 cells in these groups ." {
+label="In the same experiment ,  we monitored the population of sub G1 cells in these
+groups .";
+experiment4 [style=filled, fillcolor=white, label=experiment];
+the2 [style=filled, fillcolor=white, label=the];
+experiment4 -> the2  [label=det];
+same3 [style=filled, fillcolor=white, label=same];
+experiment4 -> same3  [label=amod];
+monitored7 [style=filled, fillcolor=white, label=monitored];
+monitored7 -> experiment4  [label=prep_in];
+we6 [style=filled, fillcolor=white, label=we];
+monitored7 -> we6  [label=nsubj];
+monitored7 -> monitored7  [label=root];
+population9 [style=filled, fillcolor=white, label=population];
+the8 [style=filled, fillcolor=white, label=the];
+population9 -> the8  [label=det];
+monitored7 -> population9  [label=dobj];
+cells13 [style=filled, fillcolor=white, label=cells];
+sub11 [style=filled, fillcolor=white, label=sub];
+cells13 -> sub11  [label=nn];
+G112 [style=filled, fillcolor=white, label=G1];
+cells13 -> G112  [label=nn];
+population9 -> cells13  [label=prep_of];
+groups16 [style=filled, fillcolor=white, label=groups];
+these15 [style=filled, fillcolor=white, label=these];
+groups16 -> these15  [label=det];
+monitored7 -> groups16  [label=prep_in];
+}

@@ -1,0 +1,45 @@
+digraph "The total number of foci observed and ,  often ,  the sizes of the foci were increased ,  and cells within the foci exhibited a more transformed appearance ." {
+label="The total number of foci observed and ,  often ,  the sizes of the foci were
+increased ,  and cells within the foci exhibited a more transformed appearance
+.";
+number3 [style=filled, fillcolor=white, label=number];
+The1 [style=filled, fillcolor=white, label=The];
+number3 -> The1  [label=det];
+total2 [style=filled, fillcolor=white, label=total];
+number3 -> total2  [label=amod];
+observed6 [style=filled, fillcolor=white, label=observed];
+observed6 -> number3  [label=nsubj];
+foci5 [style=filled, fillcolor=white, label=foci];
+number3 -> foci5  [label=prep_of];
+observed6 -> observed6  [label=root];
+increased17 [style=filled, fillcolor=white, label=increased];
+often9 [style=filled, fillcolor=white, label=often];
+increased17 -> often9  [label=advmod];
+sizes12 [style=filled, fillcolor=white, label=sizes];
+the11 [style=filled, fillcolor=white, label=the];
+sizes12 -> the11  [label=det];
+increased17 -> sizes12  [label=nsubjpass];
+foci15 [style=filled, fillcolor=white, label=foci];
+the14 [style=filled, fillcolor=white, label=the];
+foci15 -> the14  [label=det];
+sizes12 -> foci15  [label=prep_of];
+were16 [style=filled, fillcolor=white, label=were];
+increased17 -> were16  [label=auxpass];
+observed6 -> increased17  [label=conj_and];
+exhibited24 [style=filled, fillcolor=white, label=exhibited];
+cells20 [style=filled, fillcolor=white, label=cells];
+exhibited24 -> cells20  [label=nsubj];
+foci23 [style=filled, fillcolor=white, label=foci];
+the22 [style=filled, fillcolor=white, label=the];
+foci23 -> the22  [label=det];
+cells20 -> foci23  [label=prep_within];
+observed6 -> exhibited24  [label=conj_and];
+appearance28 [style=filled, fillcolor=white, label=appearance];
+a25 [style=filled, fillcolor=white, label=a];
+appearance28 -> a25  [label=det];
+transformed27 [style=filled, fillcolor=white, label=transformed];
+more26 [style=filled, fillcolor=white, label=more];
+transformed27 -> more26  [label=advmod];
+appearance28 -> transformed27  [label=amod];
+exhibited24 -> appearance28  [label=dobj];
+}

@@ -1,0 +1,32 @@
+digraph "Dominant-negative JAK1 or JAK2 was able to block the IGF-IR-mediated tyrosine phosphorylation of STAT3 in 293T cells ." {
+label="Dominant-negative JAK1 or JAK2 was able to block the IGF-IR-mediated tyrosine
+phosphorylation of STAT3 in 293T cells .";
+JAK12 [style=filled, fillcolor=white, label=JAK1];
+"Dominant-negative1" [style=filled, fillcolor=white, label="Dominant-negative"];
+JAK12 -> "Dominant-negative1"  [label=nn];
+able6 [style=filled, fillcolor=white, label=able];
+able6 -> JAK12  [label=nsubj];
+JAK24 [style=filled, fillcolor=white, label=JAK2];
+JAK12 -> JAK24  [label=conj_or];
+was5 [style=filled, fillcolor=white, label=was];
+able6 -> was5  [label=cop];
+able6 -> able6  [label=root];
+block8 [style=filled, fillcolor=white, label=block];
+to7 [style=filled, fillcolor=white, label=to];
+block8 -> to7  [label=aux];
+able6 -> block8  [label=xcomp];
+phosphorylation12 [style=filled, fillcolor=white, label=phosphorylation];
+the9 [style=filled, fillcolor=white, label=the];
+phosphorylation12 -> the9  [label=det];
+"IGF-IR-mediated10" [style=filled, fillcolor=white, label="IGF-IR-mediated"];
+phosphorylation12 -> "IGF-IR-mediated10"  [label=amod];
+tyrosine11 [style=filled, fillcolor=white, label=tyrosine];
+phosphorylation12 -> tyrosine11  [label=nn];
+block8 -> phosphorylation12  [label=dobj];
+STAT314 [style=filled, fillcolor=white, label=STAT3];
+phosphorylation12 -> STAT314  [label=prep_of];
+cells17 [style=filled, fillcolor=white, label=cells];
+"293T16" [style=filled, fillcolor=white, label="293T"];
+cells17 -> "293T16"  [label=num];
+block8 -> cells17  [label=prep_in];
+}

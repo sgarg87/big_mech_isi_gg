@@ -1,0 +1,41 @@
+digraph "These successes can therefore be attributed to the central ,  dominant role of this pathway in cancer ,  as well as the fortuitous abundance of druggable targets ." {
+label="These successes can therefore be attributed to the central ,  dominant role of
+this pathway in cancer ,  as well as the fortuitous abundance of druggable
+targets .";
+successes2 [style=filled, fillcolor=white, label=successes];
+These1 [style=filled, fillcolor=white, label=These];
+successes2 -> These1  [label=det];
+attributed6 [style=filled, fillcolor=white, label=attributed];
+attributed6 -> successes2  [label=nsubjpass];
+can3 [style=filled, fillcolor=white, label=can];
+attributed6 -> can3  [label=aux];
+therefore4 [style=filled, fillcolor=white, label=therefore];
+attributed6 -> therefore4  [label=advmod];
+be5 [style=filled, fillcolor=white, label=be];
+attributed6 -> be5  [label=auxpass];
+attributed6 -> attributed6  [label=root];
+role12 [style=filled, fillcolor=white, label=role];
+the8 [style=filled, fillcolor=white, label=the];
+role12 -> the8  [label=det];
+central9 [style=filled, fillcolor=white, label=central];
+role12 -> central9  [label=amod];
+dominant11 [style=filled, fillcolor=white, label=dominant];
+role12 -> dominant11  [label=amod];
+attributed6 -> role12  [label=prep_to];
+pathway15 [style=filled, fillcolor=white, label=pathway];
+this14 [style=filled, fillcolor=white, label=this];
+pathway15 -> this14  [label=det];
+role12 -> pathway15  [label=prep_of];
+cancer17 [style=filled, fillcolor=white, label=cancer];
+pathway15 -> cancer17  [label=prep_in];
+abundance24 [style=filled, fillcolor=white, label=abundance];
+the22 [style=filled, fillcolor=white, label=the];
+abundance24 -> the22  [label=det];
+fortuitous23 [style=filled, fillcolor=white, label=fortuitous];
+abundance24 -> fortuitous23  [label=amod];
+pathway15 -> abundance24  [label=conj_and];
+targets27 [style=filled, fillcolor=white, label=targets];
+druggable26 [style=filled, fillcolor=white, label=druggable];
+targets27 -> druggable26  [label=amod];
+abundance24 -> targets27  [label=prep_of];
+}

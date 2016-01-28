@@ -1,0 +1,55 @@
+digraph "Introduction of N17Rac1 into NK92 cells totally blocked PAK1 activation triggered by target ligation ,  whereas introduction of V12Rac1 strongly stimulated PAK1 activity even in the absence of target cells ( Fig. 7d ) ." {
+label="Introduction of N17Rac1 into NK92 cells totally blocked PAK1 activation
+triggered by target ligation ,  whereas introduction of V12Rac1 strongly
+stimulated PAK1 activity even in the absence of target cells ( Fig. 7d ) .";
+blocked8 [style=filled, fillcolor=white, label=blocked];
+Introduction1 [style=filled, fillcolor=white, label=Introduction];
+blocked8 -> Introduction1  [label=nsubj];
+N17Rac13 [style=filled, fillcolor=white, label=N17Rac1];
+Introduction1 -> N17Rac13  [label=prep_of];
+cells6 [style=filled, fillcolor=white, label=cells];
+NK925 [style=filled, fillcolor=white, label=NK92];
+cells6 -> NK925  [label=num];
+N17Rac13 -> cells6  [label=prep_into];
+totally7 [style=filled, fillcolor=white, label=totally];
+blocked8 -> totally7  [label=advmod];
+blocked8 -> blocked8  [label=root];
+activation10 [style=filled, fillcolor=white, label=activation];
+PAK19 [style=filled, fillcolor=white, label=PAK1];
+activation10 -> PAK19  [label=nn];
+triggered11 [style=filled, fillcolor=white, label=triggered];
+triggered11 -> activation10  [label=nsubj];
+blocked8 -> triggered11  [label=ccomp];
+ligation14 [style=filled, fillcolor=white, label=ligation];
+target13 [style=filled, fillcolor=white, label=target];
+ligation14 -> target13  [label=nn];
+triggered11 -> ligation14  [label=prep_by];
+stimulated21 [style=filled, fillcolor=white, label=stimulated];
+whereas16 [style=filled, fillcolor=white, label=whereas];
+stimulated21 -> whereas16  [label=mark];
+introduction17 [style=filled, fillcolor=white, label=introduction];
+stimulated21 -> introduction17  [label=nsubj];
+V12Rac119 [style=filled, fillcolor=white, label=V12Rac1];
+introduction17 -> V12Rac119  [label=prep_of];
+strongly20 [style=filled, fillcolor=white, label=strongly];
+stimulated21 -> strongly20  [label=advmod];
+triggered11 -> stimulated21  [label=advcl];
+activity23 [style=filled, fillcolor=white, label=activity];
+PAK122 [style=filled, fillcolor=white, label=PAK1];
+activity23 -> PAK122  [label=num];
+even24 [style=filled, fillcolor=white, label=even];
+even24 -> activity23  [label=npadvmod];
+stimulated21 -> even24  [label=advmod];
+absence27 [style=filled, fillcolor=white, label=absence];
+the26 [style=filled, fillcolor=white, label=the];
+absence27 -> the26  [label=det];
+stimulated21 -> absence27  [label=prep_in];
+cells30 [style=filled, fillcolor=white, label=cells];
+target29 [style=filled, fillcolor=white, label=target];
+cells30 -> target29  [label=nn];
+absence27 -> cells30  [label=prep_of];
+"7d33" [style=filled, fillcolor=white, label="7d"];
+"Fig.32" [style=filled, fillcolor=white, label="Fig."];
+"7d33" -> "Fig.32"  [label=nn];
+cells30 -> "7d33"  [label=appos];
+}

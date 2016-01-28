@@ -1,0 +1,40 @@
+digraph "The proteins were then expressed in NIH 3T3 cells and examined for their abilities to alter cell morphology and induce focus formation ." {
+label="The proteins were then expressed in NIH 3T3 cells and examined for their
+abilities to alter cell morphology and induce focus formation .";
+proteins2 [style=filled, fillcolor=white, label=proteins];
+The1 [style=filled, fillcolor=white, label=The];
+proteins2 -> The1  [label=det];
+expressed5 [style=filled, fillcolor=white, label=expressed];
+expressed5 -> proteins2  [label=nsubjpass];
+were3 [style=filled, fillcolor=white, label=were];
+expressed5 -> were3  [label=auxpass];
+then4 [style=filled, fillcolor=white, label=then];
+expressed5 -> then4  [label=advmod];
+expressed5 -> expressed5  [label=root];
+cells9 [style=filled, fillcolor=white, label=cells];
+NIH7 [style=filled, fillcolor=white, label=NIH];
+cells9 -> NIH7  [label=nn];
+"3T38" [style=filled, fillcolor=white, label="3T3"];
+cells9 -> "3T38"  [label=num];
+expressed5 -> cells9  [label=prep_in];
+examined11 [style=filled, fillcolor=white, label=examined];
+expressed5 -> examined11  [label=conj_and];
+abilities14 [style=filled, fillcolor=white, label=abilities];
+their13 [style=filled, fillcolor=white, label=their];
+abilities14 -> their13  [label=poss];
+examined11 -> abilities14  [label=prep_for];
+alter16 [style=filled, fillcolor=white, label=alter];
+to15 [style=filled, fillcolor=white, label=to];
+alter16 -> to15  [label=aux];
+abilities14 -> alter16  [label=vmod];
+cell17 [style=filled, fillcolor=white, label=cell];
+alter16 -> cell17  [label=dobj];
+morphology18 [style=filled, fillcolor=white, label=morphology];
+alter16 -> morphology18  [label=advmod];
+induce20 [style=filled, fillcolor=white, label=induce];
+alter16 -> induce20  [label=conj_and];
+formation22 [style=filled, fillcolor=white, label=formation];
+focus21 [style=filled, fillcolor=white, label=focus];
+formation22 -> focus21  [label=nn];
+induce20 -> formation22  [label=dobj];
+}

@@ -1,0 +1,36 @@
+digraph "MØCM induced early increases in cRaf ,  Akt and GSK-3β phosphorylation ,  and Erk1/2 phosphorylation peaked at 24 hrs ( Figure 9C ,  D ) ." {
+label="MØCM induced early increases in cRaf ,  Akt and GSK-3β phosphorylation ,  and
+Erk1/2 phosphorylation peaked at 24 hrs ( Figure 9C ,  D ) .";
+induced2 [style=filled, fillcolor=white, label=induced];
+"MØCM1" [style=filled, fillcolor=white, label="MØCM"];
+induced2 -> "MØCM1"  [label=nsubj];
+induced2 -> induced2  [label=root];
+increases4 [style=filled, fillcolor=white, label=increases];
+early3 [style=filled, fillcolor=white, label=early];
+increases4 -> early3  [label=amod];
+induced2 -> increases4  [label=dobj];
+phosphorylation11 [style=filled, fillcolor=white, label=phosphorylation];
+cRaf6 [style=filled, fillcolor=white, label=cRaf];
+phosphorylation11 -> cRaf6  [label=nn];
+Akt8 [style=filled, fillcolor=white, label=Akt];
+cRaf6 -> Akt8  [label=conj_and];
+"GSK-3β10" [style=filled, fillcolor=white, label="GSK-3β"];
+cRaf6 -> "GSK-3β10"  [label=conj_and];
+increases4 -> phosphorylation11  [label=prep_in];
+phosphorylation15 [style=filled, fillcolor=white, label=phosphorylation];
+"Erk1/214" [style=filled, fillcolor=white, label="Erk1/2"];
+phosphorylation15 -> "Erk1/214"  [label=amod];
+peaked16 [style=filled, fillcolor=white, label=peaked];
+peaked16 -> phosphorylation15  [label=nsubj];
+induced2 -> peaked16  [label=conj_and];
+hrs19 [style=filled, fillcolor=white, label=hrs];
+2418 [style=filled, fillcolor=white, label=24];
+hrs19 -> 2418  [label=num];
+peaked16 -> hrs19  [label=prep_at];
+Figure21 [style=filled, fillcolor=white, label=Figure];
+hrs19 -> Figure21  [label=appos];
+"9C22" [style=filled, fillcolor=white, label="9C"];
+Figure21 -> "9C22"  [label=num];
+D24 [style=filled, fillcolor=white, label=D];
+Figure21 -> D24  [label=dep];
+}

@@ -1,0 +1,45 @@
+digraph "Neoplastic growth reflected the level of IGF-1 in the media conditioned by siRNA-treated macrophages ,  with all three groups differing significantly in JF32 cells ( Figure 8D ) ." {
+label="Neoplastic growth reflected the level of IGF-1 in the media conditioned by
+siRNA-treated macrophages ,  with all three groups differing significantly in
+JF32 cells ( Figure 8D ) .";
+growth2 [style=filled, fillcolor=white, label=growth];
+Neoplastic1 [style=filled, fillcolor=white, label=Neoplastic];
+growth2 -> Neoplastic1  [label=amod];
+reflected3 [style=filled, fillcolor=white, label=reflected];
+reflected3 -> growth2  [label=nsubj];
+reflected3 -> reflected3  [label=root];
+level5 [style=filled, fillcolor=white, label=level];
+the4 [style=filled, fillcolor=white, label=the];
+level5 -> the4  [label=det];
+reflected3 -> level5  [label=dobj];
+"IGF-17" [style=filled, fillcolor=white, label="IGF-1"];
+level5 -> "IGF-17"  [label=prep_of];
+media10 [style=filled, fillcolor=white, label=media];
+the9 [style=filled, fillcolor=white, label=the];
+media10 -> the9  [label=det];
+reflected3 -> media10  [label=prep_in];
+conditioned11 [style=filled, fillcolor=white, label=conditioned];
+media10 -> conditioned11  [label=vmod];
+macrophages14 [style=filled, fillcolor=white, label=macrophages];
+"siRNA-treated13" [style=filled, fillcolor=white, label="siRNA-treated"];
+macrophages14 -> "siRNA-treated13"  [label=amod];
+conditioned11 -> macrophages14  [label=agent];
+groups19 [style=filled, fillcolor=white, label=groups];
+all17 [style=filled, fillcolor=white, label=all];
+groups19 -> all17  [label=det];
+three18 [style=filled, fillcolor=white, label=three];
+groups19 -> three18  [label=num];
+conditioned11 -> groups19  [label=prep_with];
+differing20 [style=filled, fillcolor=white, label=differing];
+groups19 -> differing20  [label=vmod];
+significantly21 [style=filled, fillcolor=white, label=significantly];
+differing20 -> significantly21  [label=advmod];
+cells24 [style=filled, fillcolor=white, label=cells];
+JF32 [style=filled, fillcolor=white, label=JF32];
+cells24 -> JF32  [label=num];
+differing20 -> cells24  [label=prep_in];
+Figure26 [style=filled, fillcolor=white, label=Figure];
+cells24 -> Figure26  [label=appos];
+"8D27" [style=filled, fillcolor=white, label="8D"];
+Figure26 -> "8D27"  [label=num];
+}

@@ -1,0 +1,34 @@
+digraph "> 95 % of the cells expressed the infected cDNA ,  as determined by immunostaining with anti-E3b1 ( not shown ) ." {
+label="> 95 % of the cells expressed the infected cDNA ,  as determined by
+immunostaining with anti-E3b1 ( not shown ) .";
+952 [style=filled, fillcolor=white, label=95];
+">1" [style=filled, fillcolor=white, label=">"];
+952 -> ">1"  [label=number];
+"%3" [style=filled, fillcolor=white, label="%"];
+"%3" -> 952  [label=num];
+expressed7 [style=filled, fillcolor=white, label=expressed];
+expressed7 -> "%3"  [label=nsubj];
+cells6 [style=filled, fillcolor=white, label=cells];
+the5 [style=filled, fillcolor=white, label=the];
+cells6 -> the5  [label=det];
+"%3" -> cells6  [label=prep_of];
+expressed7 -> expressed7  [label=root];
+cDNA10 [style=filled, fillcolor=white, label=cDNA];
+the8 [style=filled, fillcolor=white, label=the];
+cDNA10 -> the8  [label=det];
+infected9 [style=filled, fillcolor=white, label=infected];
+cDNA10 -> infected9  [label=amod];
+expressed7 -> cDNA10  [label=dobj];
+determined13 [style=filled, fillcolor=white, label=determined];
+as12 [style=filled, fillcolor=white, label=as];
+determined13 -> as12  [label=advmod];
+cDNA10 -> determined13  [label=amod];
+immunostaining15 [style=filled, fillcolor=white, label=immunostaining];
+expressed7 -> immunostaining15  [label=prepc_by];
+"anti-E3b17" [style=filled, fillcolor=white, label="anti-E3b1"];
+immunostaining15 -> "anti-E3b17"  [label=prep_with];
+shown20 [style=filled, fillcolor=white, label=shown];
+not19 [style=filled, fillcolor=white, label=not];
+shown20 -> not19  [label=neg];
+"anti-E3b17" -> shown20  [label=dep];
+}

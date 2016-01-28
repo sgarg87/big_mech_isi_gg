@@ -1,0 +1,28 @@
+digraph "Lysates ( 50 μg ) were analyzed by immunoblotting with anti-EGFR ,  anti-HA ( for Sos-1 detection ) ,  or anti-E3b1 antibody ." {
+label="Lysates ( 50 μg ) were analyzed by immunoblotting with anti-EGFR ,  anti-HA (
+for Sos-1 detection ) ,  or anti-E3b1 antibody .";
+analyzed7 [style=filled, fillcolor=white, label=analyzed];
+Lysates1 [style=filled, fillcolor=white, label=Lysates];
+analyzed7 -> Lysates1  [label=nsubjpass];
+"μg4" [style=filled, fillcolor=white, label="μg"];
+503 [style=filled, fillcolor=white, label=50];
+"μg4" -> 503  [label=number];
+Lysates1 -> "μg4"  [label=dep];
+were6 [style=filled, fillcolor=white, label=were];
+analyzed7 -> were6  [label=auxpass];
+analyzed7 -> analyzed7  [label=root];
+immunoblotting9 [style=filled, fillcolor=white, label=immunoblotting];
+analyzed7 -> immunoblotting9  [label=agent];
+"anti-EGFR11" [style=filled, fillcolor=white, label="anti-EGFR"];
+immunoblotting9 -> "anti-EGFR11"  [label=prep_with];
+"anti-HA13" [style=filled, fillcolor=white, label="anti-HA"];
+"anti-EGFR11" -> "anti-HA13"  [label=conj_or];
+detection17 [style=filled, fillcolor=white, label=detection];
+"Sos-16" [style=filled, fillcolor=white, label="Sos-1"];
+detection17 -> "Sos-16"  [label=nn];
+"anti-EGFR11" -> detection17  [label=prep_for];
+antibody22 [style=filled, fillcolor=white, label=antibody];
+"anti-E3b12" [style=filled, fillcolor=white, label="anti-E3b1"];
+antibody22 -> "anti-E3b12"  [label=amod];
+"anti-EGFR11" -> antibody22  [label=conj_or];
+}

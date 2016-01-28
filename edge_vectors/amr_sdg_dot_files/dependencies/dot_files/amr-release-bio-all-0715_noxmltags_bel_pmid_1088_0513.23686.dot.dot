@@ -1,0 +1,47 @@
+digraph "We and others have shown that IL-6 induces growth in MM cells via the MAPK pathway ,  which includes activation of protein-tyrosine phosphatase SHP2 ( 16 ,  28 )" {
+label="We and others have shown that IL-6 induces growth in MM cells via the MAPK
+pathway ,  which includes activation of protein-tyrosine phosphatase SHP2 ( 16 ,
+28 )";
+shown5 [style=filled, fillcolor=white, label=shown];
+We1 [style=filled, fillcolor=white, label=We];
+shown5 -> We1  [label=nsubj];
+others3 [style=filled, fillcolor=white, label=others];
+We1 -> others3  [label=conj_and];
+have4 [style=filled, fillcolor=white, label=have];
+shown5 -> have4  [label=aux];
+shown5 -> shown5  [label=root];
+induces8 [style=filled, fillcolor=white, label=induces];
+that6 [style=filled, fillcolor=white, label=that];
+induces8 -> that6  [label=mark];
+"IL-67" [style=filled, fillcolor=white, label="IL-6"];
+induces8 -> "IL-67"  [label=nsubj];
+shown5 -> induces8  [label=ccomp];
+growth9 [style=filled, fillcolor=white, label=growth];
+induces8 -> growth9  [label=dobj];
+cells12 [style=filled, fillcolor=white, label=cells];
+MM11 [style=filled, fillcolor=white, label=MM];
+cells12 -> MM11  [label=nn];
+induces8 -> cells12  [label=prep_in];
+pathway16 [style=filled, fillcolor=white, label=pathway];
+the14 [style=filled, fillcolor=white, label=the];
+pathway16 -> the14  [label=det];
+MAPK15 [style=filled, fillcolor=white, label=MAPK];
+pathway16 -> MAPK15  [label=nn];
+cells12 -> pathway16  [label=prep_via];
+includes19 [style=filled, fillcolor=white, label=includes];
+which18 [style=filled, fillcolor=white, label=which];
+includes19 -> which18  [label=nsubj];
+pathway16 -> includes19  [label=rcmod];
+activation20 [style=filled, fillcolor=white, label=activation];
+includes19 -> activation20  [label=dobj];
+SHP224 [style=filled, fillcolor=white, label=SHP2];
+"protein-tyrosine22" [style=filled, fillcolor=white, label="protein-tyrosine"];
+SHP224 -> "protein-tyrosine22"  [label=amod];
+phosphatase23 [style=filled, fillcolor=white, label=phosphatase];
+SHP224 -> phosphatase23  [label=nn];
+activation20 -> SHP224  [label=prep_of];
+162 [style=filled, fillcolor=white, label=16];
+SHP224 -> 162  [label=appos];
+28 [style=filled, fillcolor=white, label=28];
+162 -> 28  [label=dep];
+}

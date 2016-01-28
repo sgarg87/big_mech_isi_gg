@@ -1,0 +1,9 @@
+digraph "Ras Mutations in Cancer" {
+label="Ras Mutations in Cancer";
+Ras1 [style=filled, fillcolor=white, label=Ras];
+Ras1 -> Ras1  [label=root];
+Mutations2 [style=filled, fillcolor=white, label=Mutations];
+Ras1 -> Mutations2  [label=dobj];
+Cancer4 [style=filled, fillcolor=white, label=Cancer];
+Mutations2 -> Cancer4  [label=prep_in];
+}

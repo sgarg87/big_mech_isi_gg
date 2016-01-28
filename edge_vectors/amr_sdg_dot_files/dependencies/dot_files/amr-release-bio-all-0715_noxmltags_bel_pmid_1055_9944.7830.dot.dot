@@ -1,0 +1,36 @@
+digraph "The haematopoietic protein tyrosine phosphatase ( HePTP ) is a negative regulator of the MAP kinases Erk1 ,  Erk2 and p38 ." {
+label="The haematopoietic protein tyrosine phosphatase ( HePTP ) is a negative
+regulator of the MAP kinases Erk1 ,  Erk2 and p38 .";
+phosphatase5 [style=filled, fillcolor=white, label=phosphatase];
+The1 [style=filled, fillcolor=white, label=The];
+phosphatase5 -> The1  [label=det];
+haematopoietic2 [style=filled, fillcolor=white, label=haematopoietic];
+phosphatase5 -> haematopoietic2  [label=amod];
+protein3 [style=filled, fillcolor=white, label=protein];
+phosphatase5 -> protein3  [label=nn];
+tyrosine4 [style=filled, fillcolor=white, label=tyrosine];
+phosphatase5 -> tyrosine4  [label=nn];
+regulator12 [style=filled, fillcolor=white, label=regulator];
+regulator12 -> phosphatase5  [label=nsubj];
+HePTP7 [style=filled, fillcolor=white, label=HePTP];
+phosphatase5 -> HePTP7  [label=appos];
+is9 [style=filled, fillcolor=white, label=is];
+regulator12 -> is9  [label=cop];
+a10 [style=filled, fillcolor=white, label=a];
+regulator12 -> a10  [label=det];
+negative11 [style=filled, fillcolor=white, label=negative];
+regulator12 -> negative11  [label=amod];
+regulator12 -> regulator12  [label=root];
+Erk117 [style=filled, fillcolor=white, label=Erk1];
+the14 [style=filled, fillcolor=white, label=the];
+Erk117 -> the14  [label=det];
+MAP15 [style=filled, fillcolor=white, label=MAP];
+Erk117 -> MAP15  [label=nn];
+kinases16 [style=filled, fillcolor=white, label=kinases];
+Erk117 -> kinases16  [label=nn];
+regulator12 -> Erk117  [label=prep_of];
+Erk219 [style=filled, fillcolor=white, label=Erk2];
+Erk117 -> Erk219  [label=conj_and];
+p3821 [style=filled, fillcolor=white, label=p38];
+Erk117 -> p3821  [label=conj_and];
+}

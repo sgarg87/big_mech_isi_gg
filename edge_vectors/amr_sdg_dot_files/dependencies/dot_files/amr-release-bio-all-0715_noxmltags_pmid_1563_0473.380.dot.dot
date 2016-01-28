@@ -1,0 +1,30 @@
+digraph "Primary mouse keratinocytes were treated with Wnt - and/or noggin-conditioned medium ( + ) or the corresponding control medium ( -- ) ." {
+label="Primary mouse keratinocytes were treated with Wnt - and/or noggin-conditioned
+medium ( + ) or the corresponding control medium ( -- ) .";
+keratinocytes3 [style=filled, fillcolor=white, label=keratinocytes];
+Primary1 [style=filled, fillcolor=white, label=Primary];
+keratinocytes3 -> Primary1  [label=amod];
+mouse2 [style=filled, fillcolor=white, label=mouse];
+keratinocytes3 -> mouse2  [label=nn];
+treated5 [style=filled, fillcolor=white, label=treated];
+treated5 -> keratinocytes3  [label=nsubjpass];
+were4 [style=filled, fillcolor=white, label=were];
+treated5 -> were4  [label=auxpass];
+treated5 -> treated5  [label=root];
+Wnt7 [style=filled, fillcolor=white, label=Wnt];
+treated5 -> Wnt7  [label=prep_with];
+"noggin-conditioned10" [style=filled, fillcolor=white, label="noggin-conditioned"];
+treated5 -> "noggin-conditioned10"  [label="conj_and/or"];
+medium11 [style=filled, fillcolor=white, label=medium];
+"noggin-conditioned10" -> medium11  [label=dobj];
+"+13" [style=filled, fillcolor=white, label="+"];
+medium11 -> "+13"  [label=dep];
+medium19 [style=filled, fillcolor=white, label=medium];
+the16 [style=filled, fillcolor=white, label=the];
+medium19 -> the16  [label=det];
+corresponding17 [style=filled, fillcolor=white, label=corresponding];
+medium19 -> corresponding17  [label=amod];
+control18 [style=filled, fillcolor=white, label=control];
+medium19 -> control18  [label=nn];
+medium11 -> medium19  [label=conj_or];
+}

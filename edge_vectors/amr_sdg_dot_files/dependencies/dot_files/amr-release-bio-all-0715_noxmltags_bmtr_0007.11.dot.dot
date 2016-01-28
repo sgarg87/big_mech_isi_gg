@@ -1,0 +1,32 @@
+digraph "The phospho-specific antibody for ASPP2 is specific as knockdown of ASPP2 resulted in a lack of detection of phospho-ASPP2 ." {
+label="The phospho-specific antibody for ASPP2 is specific as knockdown of ASPP2
+resulted in a lack of detection of phospho-ASPP2 .";
+antibody3 [style=filled, fillcolor=white, label=antibody];
+The1 [style=filled, fillcolor=white, label=The];
+antibody3 -> The1  [label=det];
+"phospho-specific2" [style=filled, fillcolor=white, label="phospho-specific"];
+antibody3 -> "phospho-specific2"  [label=amod];
+specific7 [style=filled, fillcolor=white, label=specific];
+specific7 -> antibody3  [label=nsubj];
+ASPP25 [style=filled, fillcolor=white, label=ASPP2];
+antibody3 -> ASPP25  [label=prep_for];
+is6 [style=filled, fillcolor=white, label=is];
+specific7 -> is6  [label=cop];
+specific7 -> specific7  [label=root];
+resulted12 [style=filled, fillcolor=white, label=resulted];
+as8 [style=filled, fillcolor=white, label=as];
+resulted12 -> as8  [label=mark];
+knockdown9 [style=filled, fillcolor=white, label=knockdown];
+resulted12 -> knockdown9  [label=nsubj];
+ASPP211 [style=filled, fillcolor=white, label=ASPP2];
+knockdown9 -> ASPP211  [label=prep_of];
+specific7 -> resulted12  [label=advcl];
+lack15 [style=filled, fillcolor=white, label=lack];
+a14 [style=filled, fillcolor=white, label=a];
+lack15 -> a14  [label=det];
+resulted12 -> lack15  [label=prep_in];
+detection17 [style=filled, fillcolor=white, label=detection];
+lack15 -> detection17  [label=prep_of];
+"phospho-ASPP219" [style=filled, fillcolor=white, label="phospho-ASPP2"];
+detection17 -> "phospho-ASPP219"  [label=prep_of];
+}

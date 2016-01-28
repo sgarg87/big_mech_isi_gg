@@ -1,0 +1,19 @@
+digraph "Yet ,  ERK1/2 and YB-1 protein levels were not affected ." {
+label="Yet ,  ERK1/2 and YB-1 protein levels were not affected .";
+affected10 [style=filled, fillcolor=white, label=affected];
+Yet1 [style=filled, fillcolor=white, label=Yet];
+affected10 -> Yet1  [label=advmod];
+levels7 [style=filled, fillcolor=white, label=levels];
+"ERK1/23" [style=filled, fillcolor=white, label="ERK1/2"];
+levels7 -> "ERK1/23"  [label=nn];
+"YB-15" [style=filled, fillcolor=white, label="YB-1"];
+"ERK1/23" -> "YB-15"  [label=conj_and];
+protein6 [style=filled, fillcolor=white, label=protein];
+levels7 -> protein6  [label=nn];
+affected10 -> levels7  [label=nsubjpass];
+were8 [style=filled, fillcolor=white, label=were];
+affected10 -> were8  [label=auxpass];
+not9 [style=filled, fillcolor=white, label=not];
+affected10 -> not9  [label=neg];
+affected10 -> affected10  [label=root];
+}

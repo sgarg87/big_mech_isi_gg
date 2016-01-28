@@ -1,0 +1,51 @@
+digraph "In contrast to the GEF-Ras complex ,  which is disrupted by addition of guanine nucleotides ,  the PI3KC2β RBD-Ras complex is stable even in the presence of high concentrations of GTP or GDP ." {
+label="In contrast to the GEF-Ras complex ,  which is disrupted by addition of guanine
+nucleotides ,  the PI3KC2β RBD-Ras complex is stable even in the presence of
+high concentrations of GTP or GDP .";
+stable22 [style=filled, fillcolor=white, label=stable];
+contrast2 [style=filled, fillcolor=white, label=contrast];
+stable22 -> contrast2  [label=prep_in];
+complex6 [style=filled, fillcolor=white, label=complex];
+the4 [style=filled, fillcolor=white, label=the];
+complex6 -> the4  [label=det];
+"GEF-Ras5" [style=filled, fillcolor=white, label="GEF-Ras"];
+complex6 -> "GEF-Ras5"  [label=nn];
+contrast2 -> complex6  [label=prep_to];
+disrupted10 [style=filled, fillcolor=white, label=disrupted];
+which8 [style=filled, fillcolor=white, label=which];
+disrupted10 -> which8  [label=nsubjpass];
+is9 [style=filled, fillcolor=white, label=is];
+disrupted10 -> is9  [label=auxpass];
+contrast2 -> disrupted10  [label=rcmod];
+addition12 [style=filled, fillcolor=white, label=addition];
+disrupted10 -> addition12  [label=agent];
+nucleotides15 [style=filled, fillcolor=white, label=nucleotides];
+guanine14 [style=filled, fillcolor=white, label=guanine];
+nucleotides15 -> guanine14  [label=amod];
+addition12 -> nucleotides15  [label=prep_of];
+complex20 [style=filled, fillcolor=white, label=complex];
+the17 [style=filled, fillcolor=white, label=the];
+complex20 -> the17  [label=det];
+"PI3KC2β18" [style=filled, fillcolor=white, label="PI3KC2β"];
+complex20 -> "PI3KC2β18"  [label=nn];
+"RBD-Ras19" [style=filled, fillcolor=white, label="RBD-Ras"];
+complex20 -> "RBD-Ras19"  [label=nn];
+stable22 -> complex20  [label=nsubj];
+is21 [style=filled, fillcolor=white, label=is];
+stable22 -> is21  [label=cop];
+stable22 -> stable22  [label=root];
+even23 [style=filled, fillcolor=white, label=even];
+stable22 -> even23  [label=advmod];
+presence26 [style=filled, fillcolor=white, label=presence];
+the25 [style=filled, fillcolor=white, label=the];
+presence26 -> the25  [label=det];
+stable22 -> presence26  [label=prep_in];
+concentrations29 [style=filled, fillcolor=white, label=concentrations];
+high28 [style=filled, fillcolor=white, label=high];
+concentrations29 -> high28  [label=amod];
+presence26 -> concentrations29  [label=prep_of];
+GTP31 [style=filled, fillcolor=white, label=GTP];
+concentrations29 -> GTP31  [label=prep_of];
+GDP33 [style=filled, fillcolor=white, label=GDP];
+GTP31 -> GDP33  [label=conj_or];
+}

@@ -1,0 +1,44 @@
+digraph "However ,  the CD72 transfectants showed less increase in the intracellular Ca2 + concentration than the parent K46 ^ mA cells did ." {
+label="However ,  the CD72 transfectants showed less increase in the intracellular Ca2
++ concentration than the parent K46 ^ mA cells did .";
+showed6 [style=filled, fillcolor=white, label=showed];
+However1 [style=filled, fillcolor=white, label=However];
+showed6 -> However1  [label=advmod];
+transfectants5 [style=filled, fillcolor=white, label=transfectants];
+the3 [style=filled, fillcolor=white, label=the];
+transfectants5 -> the3  [label=det];
+CD724 [style=filled, fillcolor=white, label=CD72];
+transfectants5 -> CD724  [label=num];
+showed6 -> transfectants5  [label=nsubj];
+showed6 -> showed6  [label=root];
+increase8 [style=filled, fillcolor=white, label=increase];
+less7 [style=filled, fillcolor=white, label=less];
+increase8 -> less7  [label=amod];
+showed6 -> increase8  [label=dobj];
+concentration14 [style=filled, fillcolor=white, label=concentration];
+the10 [style=filled, fillcolor=white, label=the];
+concentration14 -> the10  [label=det];
+intracellular11 [style=filled, fillcolor=white, label=intracellular];
+concentration14 -> intracellular11  [label=amod];
+Ca21 [style=filled, fillcolor=white, label=Ca2];
+concentration14 -> Ca21  [label=amod];
+"+13" [style=filled, fillcolor=white, label="+"];
+concentration14 -> "+13"  [label=nn];
+showed6 -> concentration14  [label=prep_in];
+did22 [style=filled, fillcolor=white, label=did];
+than15 [style=filled, fillcolor=white, label=than];
+did22 -> than15  [label=mark];
+cells21 [style=filled, fillcolor=white, label=cells];
+the16 [style=filled, fillcolor=white, label=the];
+cells21 -> the16  [label=det];
+parent17 [style=filled, fillcolor=white, label=parent];
+cells21 -> parent17  [label=nn];
+K4618 [style=filled, fillcolor=white, label=K46];
+cells21 -> K4618  [label=num];
+"^19" [style=filled, fillcolor=white, label="^"];
+cells21 -> "^19"  [label=amod];
+mA20 [style=filled, fillcolor=white, label=mA];
+cells21 -> mA20  [label=nn];
+did22 -> cells21  [label=nsubj];
+showed6 -> did22  [label=advcl];
+}

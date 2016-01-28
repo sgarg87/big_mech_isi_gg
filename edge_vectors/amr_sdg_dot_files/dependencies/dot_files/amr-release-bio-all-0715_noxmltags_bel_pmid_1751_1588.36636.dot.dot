@@ -1,0 +1,55 @@
+digraph "VEGFR2 forms a complex with VE-cadherin ,  - catenin ,  and PI3 kinase that is required for phosphorylation of Akt ,  which plays an important role in EC survival ( 15 ) and migration ( 27 ,  28 ,  80 ) ." {
+label="VEGFR2 forms a complex with VE-cadherin ,  - catenin ,  and PI3 kinase that is
+required for phosphorylation of Akt ,  which plays an important role in EC
+survival ( 15 ) and migration ( 27 ,  28 ,  80 ) .";
+forms2 [style=filled, fillcolor=white, label=forms];
+VEGFR21 [style=filled, fillcolor=white, label=VEGFR2];
+forms2 -> VEGFR21  [label=nsubj];
+forms2 -> forms2  [label=root];
+kinase13 [style=filled, fillcolor=white, label=kinase];
+a3 [style=filled, fillcolor=white, label=a];
+kinase13 -> a3  [label=det];
+complex4 [style=filled, fillcolor=white, label=complex];
+kinase13 -> complex4  [label=amod];
+"VE-cadherin6" [style=filled, fillcolor=white, label="VE-cadherin"];
+complex4 -> "VE-cadherin6"  [label=prep_with];
+catenin9 [style=filled, fillcolor=white, label=catenin];
+"VE-cadherin6" -> catenin9  [label=conj_and];
+PI312 [style=filled, fillcolor=white, label=PI3];
+"VE-cadherin6" -> PI312  [label=conj_and];
+forms2 -> kinase13  [label=dobj];
+required16 [style=filled, fillcolor=white, label=required];
+that14 [style=filled, fillcolor=white, label=that];
+required16 -> that14  [label=nsubjpass];
+is15 [style=filled, fillcolor=white, label=is];
+required16 -> is15  [label=auxpass];
+kinase13 -> required16  [label=rcmod];
+phosphorylation18 [style=filled, fillcolor=white, label=phosphorylation];
+required16 -> phosphorylation18  [label=prep_for];
+Akt20 [style=filled, fillcolor=white, label=Akt];
+phosphorylation18 -> Akt20  [label=prep_of];
+plays23 [style=filled, fillcolor=white, label=plays];
+which22 [style=filled, fillcolor=white, label=which];
+plays23 -> which22  [label=nsubj];
+phosphorylation18 -> plays23  [label=rcmod];
+role26 [style=filled, fillcolor=white, label=role];
+an24 [style=filled, fillcolor=white, label=an];
+role26 -> an24  [label=det];
+important25 [style=filled, fillcolor=white, label=important];
+role26 -> important25  [label=amod];
+plays23 -> role26  [label=dobj];
+survival29 [style=filled, fillcolor=white, label=survival];
+EC28 [style=filled, fillcolor=white, label=EC];
+survival29 -> EC28  [label=nn];
+role26 -> survival29  [label=prep_in];
+153 [style=filled, fillcolor=white, label=15];
+survival29 -> 153  [label=appos];
+migration34 [style=filled, fillcolor=white, label=migration];
+survival29 -> migration34  [label=conj_and];
+2736 [style=filled, fillcolor=white, label=27];
+survival29 -> 2736  [label=appos];
+283 [style=filled, fillcolor=white, label=28];
+2736 -> 283  [label=dep];
+804 [style=filled, fillcolor=white, label=80];
+2736 -> 804  [label=dep];
+}

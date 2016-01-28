@@ -1,0 +1,40 @@
+digraph "Mek ,  in turn ,  phosphorylates the N-terminal acidic motif in C-Raf ,  converting it to an allosteric activator of other Rafs ( Fig. 2B and C ) ." {
+label="Mek ,  in turn ,  phosphorylates the N-terminal acidic motif in C-Raf ,
+converting it to an allosteric activator of other Rafs ( Fig. 2B and C ) .";
+phosphorylates6 [style=filled, fillcolor=white, label=phosphorylates];
+Mek1 [style=filled, fillcolor=white, label=Mek];
+phosphorylates6 -> Mek1  [label=nsubj];
+turn4 [style=filled, fillcolor=white, label=turn];
+Mek1 -> turn4  [label=prep_in];
+phosphorylates6 -> phosphorylates6  [label=root];
+motif10 [style=filled, fillcolor=white, label=motif];
+the7 [style=filled, fillcolor=white, label=the];
+motif10 -> the7  [label=det];
+"N-terminal8" [style=filled, fillcolor=white, label="N-terminal"];
+motif10 -> "N-terminal8"  [label=amod];
+acidic9 [style=filled, fillcolor=white, label=acidic];
+motif10 -> acidic9  [label=amod];
+phosphorylates6 -> motif10  [label=dobj];
+"C-Raf12" [style=filled, fillcolor=white, label="C-Raf"];
+motif10 -> "C-Raf12"  [label=prep_in];
+converting14 [style=filled, fillcolor=white, label=converting];
+phosphorylates6 -> converting14  [label=vmod];
+it15 [style=filled, fillcolor=white, label=it];
+converting14 -> it15  [label=dobj];
+activator19 [style=filled, fillcolor=white, label=activator];
+an17 [style=filled, fillcolor=white, label=an];
+activator19 -> an17  [label=det];
+allosteric18 [style=filled, fillcolor=white, label=allosteric];
+activator19 -> allosteric18  [label=amod];
+converting14 -> activator19  [label=prep_to];
+Rafs22 [style=filled, fillcolor=white, label=Rafs];
+other21 [style=filled, fillcolor=white, label=other];
+Rafs22 -> other21  [label=amod];
+activator19 -> Rafs22  [label=prep_of];
+"Fig.24" [style=filled, fillcolor=white, label="Fig."];
+Rafs22 -> "Fig.24"  [label=dep];
+"2B25" [style=filled, fillcolor=white, label="2B"];
+"Fig.24" -> "2B25"  [label=num];
+C27 [style=filled, fillcolor=white, label=C];
+"Fig.24" -> C27  [label=conj_and];
+}

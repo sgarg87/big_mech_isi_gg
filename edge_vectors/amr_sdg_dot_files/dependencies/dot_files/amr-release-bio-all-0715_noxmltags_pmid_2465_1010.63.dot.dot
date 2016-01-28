@@ -1,0 +1,38 @@
+digraph "This result challenges our understanding of how these Ras mutations actually function in clinical situations ( De Roock et al. ,  2010 ) ." {
+label="This result challenges our understanding of how these Ras mutations actually
+function in clinical situations ( De Roock et al. ,  2010 ) .";
+result2 [style=filled, fillcolor=white, label=result];
+This1 [style=filled, fillcolor=white, label=This];
+result2 -> This1  [label=det];
+challenges3 [style=filled, fillcolor=white, label=challenges];
+challenges3 -> result2  [label=nsubj];
+challenges3 -> challenges3  [label=root];
+understanding5 [style=filled, fillcolor=white, label=understanding];
+our4 [style=filled, fillcolor=white, label=our];
+understanding5 -> our4  [label=poss];
+challenges3 -> understanding5  [label=dobj];
+function12 [style=filled, fillcolor=white, label=function];
+how7 [style=filled, fillcolor=white, label=how];
+function12 -> how7  [label=advmod];
+mutations10 [style=filled, fillcolor=white, label=mutations];
+these8 [style=filled, fillcolor=white, label=these];
+mutations10 -> these8  [label=det];
+Ras9 [style=filled, fillcolor=white, label=Ras];
+mutations10 -> Ras9  [label=nn];
+function12 -> mutations10  [label=nsubj];
+actually11 [style=filled, fillcolor=white, label=actually];
+function12 -> actually11  [label=advmod];
+understanding5 -> function12  [label=prepc_of];
+situations15 [style=filled, fillcolor=white, label=situations];
+clinical14 [style=filled, fillcolor=white, label=clinical];
+situations15 -> clinical14  [label=amod];
+function12 -> situations15  [label=prep_in];
+Roock18 [style=filled, fillcolor=white, label=Roock];
+De17 [style=filled, fillcolor=white, label=De];
+Roock18 -> De17  [label=nn];
+situations15 -> Roock18  [label=dep];
+"al.20" [style=filled, fillcolor=white, label="al."];
+Roock18 -> "al.20"  [label=conj_et];
+2010 [style=filled, fillcolor=white, label=2010];
+Roock18 -> 2010  [label=amod];
+}

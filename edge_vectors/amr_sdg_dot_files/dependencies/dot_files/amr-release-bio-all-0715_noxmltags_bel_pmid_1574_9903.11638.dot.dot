@@ -1,0 +1,36 @@
+digraph "IkappaBNS resulted in impaired LPS-induced IL-6 production ,  but not TNF-alpha production in the murine macrophage cell line RAW264 .7 ." {
+label="IkappaBNS resulted in impaired LPS-induced IL-6 production ,  but not TNF-alpha
+production in the murine macrophage cell line RAW264 .7 .";
+resulted2 [style=filled, fillcolor=white, label=resulted];
+IkappaBNS1 [style=filled, fillcolor=white, label=IkappaBNS];
+resulted2 -> IkappaBNS1  [label=nsubj];
+resulted2 -> resulted2  [label=root];
+production7 [style=filled, fillcolor=white, label=production];
+impaired4 [style=filled, fillcolor=white, label=impaired];
+production7 -> impaired4  [label=amod];
+"LPS-induced5" [style=filled, fillcolor=white, label="LPS-induced"];
+production7 -> "LPS-induced5"  [label=amod];
+"IL-6" [style=filled, fillcolor=white, label="IL-6"];
+production7 -> "IL-6"  [label=nn];
+resulted2 -> production7  [label=prep_in];
+production12 [style=filled, fillcolor=white, label=production];
+not10 [style=filled, fillcolor=white, label=not];
+production12 -> not10  [label=neg];
+"TNF-alpha11" [style=filled, fillcolor=white, label="TNF-alpha"];
+production12 -> "TNF-alpha11"  [label=amod];
+line18 [style=filled, fillcolor=white, label=line];
+line18 -> production12  [label=nsubj];
+cell17 [style=filled, fillcolor=white, label=cell];
+the14 [style=filled, fillcolor=white, label=the];
+cell17 -> the14  [label=det];
+murine15 [style=filled, fillcolor=white, label=murine];
+cell17 -> murine15  [label=amod];
+macrophage16 [style=filled, fillcolor=white, label=macrophage];
+cell17 -> macrophage16  [label=nn];
+production12 -> cell17  [label=prep_in];
+resulted2 -> line18  [label=conj_but];
+".720" [style=filled, fillcolor=white, label=".7"];
+RAW26419 [style=filled, fillcolor=white, label=RAW264];
+".720" -> RAW26419  [label=number];
+line18 -> ".720"  [label=dobj];
+}

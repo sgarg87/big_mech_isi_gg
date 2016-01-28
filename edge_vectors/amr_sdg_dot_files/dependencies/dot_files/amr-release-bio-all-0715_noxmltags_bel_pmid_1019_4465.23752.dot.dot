@@ -1,0 +1,49 @@
+digraph "Grb-IR is a recently discovered SH2 domain protein that may translocate from the cytosol to the plasma membrane and bind directly to the tyrosine-phosphorylated insulin receptor" {
+label="Grb-IR is a recently discovered SH2 domain protein that may translocate from
+the cytosol to the plasma membrane and bind directly to the tyrosine-
+phosphorylated insulin receptor";
+protein8 [style=filled, fillcolor=white, label=protein];
+"Grb-IR1" [style=filled, fillcolor=white, label="Grb-IR"];
+protein8 -> "Grb-IR1"  [label=nsubj];
+is2 [style=filled, fillcolor=white, label=is];
+protein8 -> is2  [label=cop];
+a3 [style=filled, fillcolor=white, label=a];
+protein8 -> a3  [label=det];
+discovered5 [style=filled, fillcolor=white, label=discovered];
+recently4 [style=filled, fillcolor=white, label=recently];
+discovered5 -> recently4  [label=advmod];
+protein8 -> discovered5  [label=amod];
+SH26 [style=filled, fillcolor=white, label=SH2];
+protein8 -> SH26  [label=nn];
+domain7 [style=filled, fillcolor=white, label=domain];
+protein8 -> domain7  [label=nn];
+protein8 -> protein8  [label=root];
+translocate11 [style=filled, fillcolor=white, label=translocate];
+that9 [style=filled, fillcolor=white, label=that];
+translocate11 -> that9  [label=nsubj];
+may10 [style=filled, fillcolor=white, label=may];
+translocate11 -> may10  [label=aux];
+protein8 -> translocate11  [label=rcmod];
+cytosol14 [style=filled, fillcolor=white, label=cytosol];
+the13 [style=filled, fillcolor=white, label=the];
+cytosol14 -> the13  [label=det];
+translocate11 -> cytosol14  [label=prep_from];
+membrane18 [style=filled, fillcolor=white, label=membrane];
+the16 [style=filled, fillcolor=white, label=the];
+membrane18 -> the16  [label=det];
+plasma17 [style=filled, fillcolor=white, label=plasma];
+membrane18 -> plasma17  [label=nn];
+translocate11 -> membrane18  [label=prep_to];
+bind20 [style=filled, fillcolor=white, label=bind];
+membrane18 -> bind20  [label=conj_and];
+directly21 [style=filled, fillcolor=white, label=directly];
+membrane18 -> directly21  [label=advmod];
+receptor26 [style=filled, fillcolor=white, label=receptor];
+the23 [style=filled, fillcolor=white, label=the];
+receptor26 -> the23  [label=det];
+"tyrosine-phosphorylated24" [style=filled, fillcolor=white, label="tyrosine-phosphorylated"];
+receptor26 -> "tyrosine-phosphorylated24"  [label=amod];
+insulin25 [style=filled, fillcolor=white, label=insulin];
+receptor26 -> insulin25  [label=nn];
+directly21 -> receptor26  [label=prep_to];
+}

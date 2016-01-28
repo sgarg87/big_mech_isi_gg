@@ -1,0 +1,43 @@
+digraph "In addition ,  MH-S macrophage IGF-1 secretion was interrupted by transfection with scrambled control ( scr siRNA ) or siRNA constructs designed against mouse IGF-1 ( α-IGF siRNA ) ." {
+label="In addition ,  MH-S macrophage IGF-1 secretion was interrupted by transfection
+with scrambled control ( scr siRNA ) or siRNA constructs designed against mouse
+IGF-1 ( α-IGF siRNA ) .";
+interrupted9 [style=filled, fillcolor=white, label=interrupted];
+addition2 [style=filled, fillcolor=white, label=addition];
+interrupted9 -> addition2  [label=prep_in];
+secretion7 [style=filled, fillcolor=white, label=secretion];
+"MH-S4" [style=filled, fillcolor=white, label="MH-S"];
+secretion7 -> "MH-S4"  [label=nn];
+macrophage5 [style=filled, fillcolor=white, label=macrophage];
+secretion7 -> macrophage5  [label=nn];
+"IGF-16" [style=filled, fillcolor=white, label="IGF-1"];
+secretion7 -> "IGF-16"  [label=nn];
+interrupted9 -> secretion7  [label=nsubjpass];
+was8 [style=filled, fillcolor=white, label=was];
+interrupted9 -> was8  [label=auxpass];
+interrupted9 -> interrupted9  [label=root];
+transfection11 [style=filled, fillcolor=white, label=transfection];
+interrupted9 -> transfection11  [label=agent];
+control14 [style=filled, fillcolor=white, label=control];
+scrambled13 [style=filled, fillcolor=white, label=scrambled];
+control14 -> scrambled13  [label=amod];
+interrupted9 -> control14  [label=prep_with];
+siRNA17 [style=filled, fillcolor=white, label=siRNA];
+scr16 [style=filled, fillcolor=white, label=scr];
+siRNA17 -> scr16  [label=nn];
+control14 -> siRNA17  [label=appos];
+constructs21 [style=filled, fillcolor=white, label=constructs];
+siRNA20 [style=filled, fillcolor=white, label=siRNA];
+constructs21 -> siRNA20  [label=nn];
+control14 -> constructs21  [label=conj_or];
+designed22 [style=filled, fillcolor=white, label=designed];
+constructs21 -> designed22  [label=vmod];
+"IGF-125" [style=filled, fillcolor=white, label="IGF-1"];
+mouse24 [style=filled, fillcolor=white, label=mouse];
+"IGF-125" -> mouse24  [label=nn];
+designed22 -> "IGF-125"  [label=prep_against];
+siRNA28 [style=filled, fillcolor=white, label=siRNA];
+"α-IGF27" [style=filled, fillcolor=white, label="α-IGF"];
+siRNA28 -> "α-IGF27"  [label=amod];
+constructs21 -> siRNA28  [label=appos];
+}

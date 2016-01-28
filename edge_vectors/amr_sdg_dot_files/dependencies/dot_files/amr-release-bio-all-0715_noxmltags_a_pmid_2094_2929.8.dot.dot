@@ -1,0 +1,36 @@
+digraph "2 - Interestingly ,  serpinE2 mRNA and protein were also markedly enhanced in human CRC cells exhibiting mutation in KRAS and BRAF ." {
+label="2 - Interestingly ,  serpinE2 mRNA and protein were also markedly enhanced in
+human CRC cells exhibiting mutation in KRAS and BRAF .";
+enhanced12 [style=filled, fillcolor=white, label=enhanced];
+21 [style=filled, fillcolor=white, label=2];
+enhanced12 -> 21  [label=dep];
+Interestingly3 [style=filled, fillcolor=white, label=Interestingly];
+enhanced12 -> Interestingly3  [label=nsubjpass];
+mRNA6 [style=filled, fillcolor=white, label=mRNA];
+serpinE25 [style=filled, fillcolor=white, label=serpinE2];
+mRNA6 -> serpinE25  [label=amod];
+Interestingly3 -> mRNA6  [label=conj_and];
+protein8 [style=filled, fillcolor=white, label=protein];
+Interestingly3 -> protein8  [label=conj_and];
+were9 [style=filled, fillcolor=white, label=were];
+enhanced12 -> were9  [label=auxpass];
+also10 [style=filled, fillcolor=white, label=also];
+enhanced12 -> also10  [label=advmod];
+markedly11 [style=filled, fillcolor=white, label=markedly];
+enhanced12 -> markedly11  [label=advmod];
+enhanced12 -> enhanced12  [label=root];
+cells16 [style=filled, fillcolor=white, label=cells];
+human14 [style=filled, fillcolor=white, label=human];
+cells16 -> human14  [label=amod];
+CRC15 [style=filled, fillcolor=white, label=CRC];
+cells16 -> CRC15  [label=nn];
+enhanced12 -> cells16  [label=prep_in];
+exhibiting17 [style=filled, fillcolor=white, label=exhibiting];
+cells16 -> exhibiting17  [label=vmod];
+mutation18 [style=filled, fillcolor=white, label=mutation];
+exhibiting17 -> mutation18  [label=dobj];
+KRAS20 [style=filled, fillcolor=white, label=KRAS];
+mutation18 -> KRAS20  [label=prep_in];
+BRAF22 [style=filled, fillcolor=white, label=BRAF];
+KRAS20 -> BRAF22  [label=conj_and];
+}

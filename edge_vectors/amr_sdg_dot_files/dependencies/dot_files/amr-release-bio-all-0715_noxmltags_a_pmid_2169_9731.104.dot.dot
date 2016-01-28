@@ -1,0 +1,42 @@
+digraph "Only the combined inhibition of both kinases ablated the stimulatory effect of macrophage co-culture on neoplastic proliferation ( U0 + LY ,  Figure 4 ) ." {
+label="Only the combined inhibition of both kinases ablated the stimulatory effect of
+macrophage co-culture on neoplastic proliferation ( U0 + LY ,  Figure 4 ) .";
+inhibition4 [style=filled, fillcolor=white, label=inhibition];
+Only1 [style=filled, fillcolor=white, label=Only];
+inhibition4 -> Only1  [label=advmod];
+the2 [style=filled, fillcolor=white, label=the];
+inhibition4 -> the2  [label=det];
+combined3 [style=filled, fillcolor=white, label=combined];
+inhibition4 -> combined3  [label=amod];
+ablated8 [style=filled, fillcolor=white, label=ablated];
+ablated8 -> inhibition4  [label=nsubj];
+kinases7 [style=filled, fillcolor=white, label=kinases];
+both6 [style=filled, fillcolor=white, label=both];
+kinases7 -> both6  [label=det];
+inhibition4 -> kinases7  [label=prep_of];
+ablated8 -> ablated8  [label=root];
+effect11 [style=filled, fillcolor=white, label=effect];
+the9 [style=filled, fillcolor=white, label=the];
+effect11 -> the9  [label=det];
+stimulatory10 [style=filled, fillcolor=white, label=stimulatory];
+effect11 -> stimulatory10  [label=amod];
+ablated8 -> effect11  [label=dobj];
+"co-culture14" [style=filled, fillcolor=white, label="co-culture"];
+macrophage13 [style=filled, fillcolor=white, label=macrophage];
+"co-culture14" -> macrophage13  [label=amod];
+effect11 -> "co-culture14"  [label=prep_of];
+proliferation17 [style=filled, fillcolor=white, label=proliferation];
+neoplastic16 [style=filled, fillcolor=white, label=neoplastic];
+proliferation17 -> neoplastic16  [label=amod];
+ablated8 -> proliferation17  [label=prep_on];
+LY21 [style=filled, fillcolor=white, label=LY];
+U019 [style=filled, fillcolor=white, label=U0];
+LY21 -> U019  [label=nn];
+"+20" [style=filled, fillcolor=white, label="+"];
+LY21 -> "+20"  [label=nn];
+proliferation17 -> LY21  [label=appos];
+Figure23 [style=filled, fillcolor=white, label=Figure];
+LY21 -> Figure23  [label=dep];
+42 [style=filled, fillcolor=white, label=4];
+Figure23 -> 42  [label=num];
+}

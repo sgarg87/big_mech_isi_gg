@@ -1,0 +1,44 @@
+digraph "When compared to p38 SAPK ,  MAPK1 was clearly able to phosphorylate the ASPP2 fragment in vitro ( Figure 1B ,  left and middle panels ) ." {
+label="When compared to p38 SAPK ,  MAPK1 was clearly able to phosphorylate the ASPP2
+fragment in vitro ( Figure 1B ,  left and middle panels ) .";
+compared2 [style=filled, fillcolor=white, label=compared];
+When1 [style=filled, fillcolor=white, label=When];
+compared2 -> When1  [label=advmod];
+able10 [style=filled, fillcolor=white, label=able];
+able10 -> compared2  [label=advcl];
+SAPK5 [style=filled, fillcolor=white, label=SAPK];
+p384 [style=filled, fillcolor=white, label=p38];
+SAPK5 -> p384  [label=amod];
+compared2 -> SAPK5  [label=prep_to];
+MAPK17 [style=filled, fillcolor=white, label=MAPK1];
+able10 -> MAPK17  [label=nsubj];
+was8 [style=filled, fillcolor=white, label=was];
+able10 -> was8  [label=cop];
+clearly9 [style=filled, fillcolor=white, label=clearly];
+able10 -> clearly9  [label=advmod];
+able10 -> able10  [label=root];
+phosphorylate12 [style=filled, fillcolor=white, label=phosphorylate];
+to11 [style=filled, fillcolor=white, label=to];
+phosphorylate12 -> to11  [label=aux];
+able10 -> phosphorylate12  [label=xcomp];
+fragment15 [style=filled, fillcolor=white, label=fragment];
+the13 [style=filled, fillcolor=white, label=the];
+fragment15 -> the13  [label=det];
+ASPP214 [style=filled, fillcolor=white, label=ASPP2];
+fragment15 -> ASPP214  [label=nn];
+phosphorylate12 -> fragment15  [label=dobj];
+vitro17 [style=filled, fillcolor=white, label=vitro];
+in16 [style=filled, fillcolor=white, label=in];
+vitro17 -> in16  [label=dep];
+fragment15 -> vitro17  [label=amod];
+Figure19 [style=filled, fillcolor=white, label=Figure];
+fragment15 -> Figure19  [label=dep];
+"1B20" [style=filled, fillcolor=white, label="1B"];
+Figure19 -> "1B20"  [label=num];
+panels25 [style=filled, fillcolor=white, label=panels];
+left22 [style=filled, fillcolor=white, label=left];
+panels25 -> left22  [label=amod];
+middle24 [style=filled, fillcolor=white, label=middle];
+left22 -> middle24  [label=conj_and];
+Figure19 -> panels25  [label=appos];
+}

@@ -1,0 +1,62 @@
+digraph "As IR-induced YB-1 phosphorylation was shown to be dependent on erbB1 ,  PI3K/Akt and MAPK/ERK ,  we further investigated whether K-RASmt-dependent constitutive phosphorylation of YB-1 might be sensitive to the inhibition of erbB1 ,  PI3K and MEK ." {
+label="As IR-induced YB-1 phosphorylation was shown to be dependent on erbB1 ,
+PI3K/Akt and MAPK/ERK ,  we further investigated whether K-RASmt-dependent
+constitutive phosphorylation of YB-1 might be sensitive to the inhibition of
+erbB1 ,  PI3K and MEK .";
+shown6 [style=filled, fillcolor=white, label=shown];
+As1 [style=filled, fillcolor=white, label=As];
+shown6 -> As1  [label=mark];
+phosphorylation4 [style=filled, fillcolor=white, label=phosphorylation];
+"IR-induced2" [style=filled, fillcolor=white, label="IR-induced"];
+phosphorylation4 -> "IR-induced2"  [label=amod];
+"YB-13" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation4 -> "YB-13"  [label=nn];
+shown6 -> phosphorylation4  [label=nsubjpass];
+was5 [style=filled, fillcolor=white, label=was];
+shown6 -> was5  [label=auxpass];
+investigated19 [style=filled, fillcolor=white, label=investigated];
+investigated19 -> shown6  [label=advcl];
+dependent9 [style=filled, fillcolor=white, label=dependent];
+to7 [style=filled, fillcolor=white, label=to];
+dependent9 -> to7  [label=aux];
+be8 [style=filled, fillcolor=white, label=be];
+dependent9 -> be8  [label=cop];
+shown6 -> dependent9  [label=xcomp];
+erbB1 [style=filled, fillcolor=white, label=erbB1];
+dependent9 -> erbB1  [label=prep_on];
+"PI3K/Akt1" [style=filled, fillcolor=white, label="PI3K/Akt"];
+erbB1 -> "PI3K/Akt1"  [label=conj_and];
+"MAPK/ERK15" [style=filled, fillcolor=white, label="MAPK/ERK"];
+erbB1 -> "MAPK/ERK15"  [label=conj_and];
+we17 [style=filled, fillcolor=white, label=we];
+investigated19 -> we17  [label=nsubj];
+further18 [style=filled, fillcolor=white, label=further];
+investigated19 -> further18  [label=advmod];
+investigated19 -> investigated19  [label=root];
+sensitive28 [style=filled, fillcolor=white, label=sensitive];
+whether20 [style=filled, fillcolor=white, label=whether];
+sensitive28 -> whether20  [label=mark];
+phosphorylation23 [style=filled, fillcolor=white, label=phosphorylation];
+"K-RASmt-dependent21" [style=filled, fillcolor=white, label="K-RASmt-dependent"];
+phosphorylation23 -> "K-RASmt-dependent21"  [label=amod];
+constitutive22 [style=filled, fillcolor=white, label=constitutive];
+phosphorylation23 -> constitutive22  [label=nn];
+sensitive28 -> phosphorylation23  [label=nsubj];
+"YB-125" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation23 -> "YB-125"  [label=prep_of];
+might26 [style=filled, fillcolor=white, label=might];
+sensitive28 -> might26  [label=aux];
+be27 [style=filled, fillcolor=white, label=be];
+sensitive28 -> be27  [label=cop];
+investigated19 -> sensitive28  [label=ccomp];
+inhibition31 [style=filled, fillcolor=white, label=inhibition];
+the30 [style=filled, fillcolor=white, label=the];
+inhibition31 -> the30  [label=det];
+sensitive28 -> inhibition31  [label=prep_to];
+erbB133 [style=filled, fillcolor=white, label=erbB1];
+inhibition31 -> erbB133  [label=prep_of];
+PI3K35 [style=filled, fillcolor=white, label=PI3K];
+erbB133 -> PI3K35  [label=conj_and];
+MEK37 [style=filled, fillcolor=white, label=MEK];
+erbB133 -> MEK37  [label=conj_and];
+}

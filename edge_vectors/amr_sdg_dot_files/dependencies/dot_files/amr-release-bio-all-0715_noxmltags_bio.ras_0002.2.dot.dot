@@ -1,0 +1,42 @@
+digraph "These multiple Ras functions depend on its binding to a range of functionally diverse effector molecules such as Raf ,  PI3K ,  AF6 and RASSFs ( 1 ) ." {
+label="These multiple Ras functions depend on its binding to a range of functionally
+diverse effector molecules such as Raf ,  PI3K ,  AF6 and RASSFs ( 1 ) .";
+functions4 [style=filled, fillcolor=white, label=functions];
+These1 [style=filled, fillcolor=white, label=These];
+functions4 -> These1  [label=det];
+multiple2 [style=filled, fillcolor=white, label=multiple];
+functions4 -> multiple2  [label=amod];
+Ras3 [style=filled, fillcolor=white, label=Ras];
+functions4 -> Ras3  [label=nn];
+depend5 [style=filled, fillcolor=white, label=depend];
+depend5 -> functions4  [label=nsubj];
+depend5 -> depend5  [label=root];
+on6 [style=filled, fillcolor=white, label=on];
+depend5 -> on6  [label=prt];
+molecules16 [style=filled, fillcolor=white, label=molecules];
+its7 [style=filled, fillcolor=white, label=its];
+molecules16 -> its7  [label=poss];
+binding8 [style=filled, fillcolor=white, label=binding];
+molecules16 -> binding8  [label=amod];
+range11 [style=filled, fillcolor=white, label=range];
+a10 [style=filled, fillcolor=white, label=a];
+range11 -> a10  [label=det];
+binding8 -> range11  [label=prep_to];
+diverse14 [style=filled, fillcolor=white, label=diverse];
+functionally13 [style=filled, fillcolor=white, label=functionally];
+diverse14 -> functionally13  [label=advmod];
+effector15 [style=filled, fillcolor=white, label=effector];
+effector15 -> diverse14  [label=amod];
+range11 -> effector15  [label=prep_of];
+depend5 -> molecules16  [label=dobj];
+Raf19 [style=filled, fillcolor=white, label=Raf];
+molecules16 -> Raf19  [label=prep_such_as];
+PI3K21 [style=filled, fillcolor=white, label=PI3K];
+Raf19 -> PI3K21  [label=conj_and];
+AF623 [style=filled, fillcolor=white, label=AF6];
+Raf19 -> AF623  [label=conj_and];
+RASSFs25 [style=filled, fillcolor=white, label=RASSFs];
+Raf19 -> RASSFs25  [label=conj_and];
+127 [style=filled, fillcolor=white, label=1];
+depend5 -> 127  [label=dep];
+}

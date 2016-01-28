@@ -1,0 +1,52 @@
+digraph "Ha-Ras cooperates with transforming growth factor beta ( TGFbeta ) to cause epithelial mesenchymal transition ( EMT ) characterized by spindle-like cell morphology ,  loss of epithelial markers ,  and induction of mesenchymal markers ." {
+label="Ha-Ras cooperates with transforming growth factor beta ( TGFbeta ) to cause
+epithelial mesenchymal transition ( EMT ) characterized by spindle-like cell
+morphology ,  loss of epithelial markers ,  and induction of mesenchymal markers
+.";
+cooperates2 [style=filled, fillcolor=white, label=cooperates];
+"Ha-Ras1" [style=filled, fillcolor=white, label="Ha-Ras"];
+cooperates2 -> "Ha-Ras1"  [label=nsubj];
+cooperates2 -> cooperates2  [label=root];
+transforming4 [style=filled, fillcolor=white, label=transforming];
+cooperates2 -> transforming4  [label=prepc_with];
+beta7 [style=filled, fillcolor=white, label=beta];
+growth5 [style=filled, fillcolor=white, label=growth];
+beta7 -> growth5  [label=nn];
+factor6 [style=filled, fillcolor=white, label=factor];
+beta7 -> factor6  [label=nn];
+transforming4 -> beta7  [label=dobj];
+TGFbeta9 [style=filled, fillcolor=white, label=TGFbeta];
+beta7 -> TGFbeta9  [label=appos];
+cause12 [style=filled, fillcolor=white, label=cause];
+to11 [style=filled, fillcolor=white, label=to];
+cause12 -> to11  [label=aux];
+transforming4 -> cause12  [label=vmod];
+transition15 [style=filled, fillcolor=white, label=transition];
+epithelial13 [style=filled, fillcolor=white, label=epithelial];
+transition15 -> epithelial13  [label=amod];
+mesenchymal14 [style=filled, fillcolor=white, label=mesenchymal];
+transition15 -> mesenchymal14  [label=amod];
+cause12 -> transition15  [label=dobj];
+EMT17 [style=filled, fillcolor=white, label=EMT];
+transition15 -> EMT17  [label=appos];
+characterized19 [style=filled, fillcolor=white, label=characterized];
+transition15 -> characterized19  [label=vmod];
+morphology23 [style=filled, fillcolor=white, label=morphology];
+"spindle-like21" [style=filled, fillcolor=white, label="spindle-like"];
+morphology23 -> "spindle-like21"  [label=amod];
+cell22 [style=filled, fillcolor=white, label=cell];
+morphology23 -> cell22  [label=nn];
+characterized19 -> morphology23  [label=agent];
+loss25 [style=filled, fillcolor=white, label=loss];
+transition15 -> loss25  [label=conj_and];
+markers28 [style=filled, fillcolor=white, label=markers];
+epithelial27 [style=filled, fillcolor=white, label=epithelial];
+markers28 -> epithelial27  [label=amod];
+loss25 -> markers28  [label=prep_of];
+induction31 [style=filled, fillcolor=white, label=induction];
+transition15 -> induction31  [label=conj_and];
+markers34 [style=filled, fillcolor=white, label=markers];
+mesenchymal33 [style=filled, fillcolor=white, label=mesenchymal];
+markers34 -> mesenchymal33  [label=amod];
+induction31 -> markers34  [label=prep_of];
+}

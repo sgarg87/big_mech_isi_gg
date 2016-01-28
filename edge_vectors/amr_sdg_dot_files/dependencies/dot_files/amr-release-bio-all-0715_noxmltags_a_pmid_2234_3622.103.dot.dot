@@ -1,0 +1,47 @@
+digraph "Selumetinib and barasertib alone resulted in 57 % ( PP < 0.0005 ) tumour growth inhibition compared with the vehicle-treated controls at day 21 after the start of dosing ." {
+label="Selumetinib and barasertib alone resulted in 57 % ( PP < 0.0005 ) tumour growth
+inhibition compared with the vehicle-treated controls at day 21 after the start
+of dosing .";
+resulted5 [style=filled, fillcolor=white, label=resulted];
+Selumetinib1 [style=filled, fillcolor=white, label=Selumetinib];
+resulted5 -> Selumetinib1  [label=dep];
+barasertib3 [style=filled, fillcolor=white, label=barasertib];
+Selumetinib1 -> barasertib3  [label=conj_and];
+alone4 [style=filled, fillcolor=white, label=alone];
+resulted5 -> alone4  [label=advmod];
+resulted5 -> resulted5  [label=root];
+"%8" [style=filled, fillcolor=white, label="%"];
+57 [style=filled, fillcolor=white, label=57];
+"%8" -> 57  [label=num];
+resulted5 -> "%8"  [label=prep_in];
+PP10 [style=filled, fillcolor=white, label=PP];
+"%8" -> PP10  [label=appos];
+"0.000512" [style=filled, fillcolor=white, label="0.0005"];
+"<11" [style=filled, fillcolor=white, label="<"];
+"0.000512" -> "<11"  [label=number];
+PP10 -> "0.000512"  [label=num];
+inhibition16 [style=filled, fillcolor=white, label=inhibition];
+tumour14 [style=filled, fillcolor=white, label=tumour];
+inhibition16 -> tumour14  [label=nn];
+growth15 [style=filled, fillcolor=white, label=growth];
+inhibition16 -> growth15  [label=nn];
+resulted5 -> inhibition16  [label=nsubj];
+with18 [style=filled, fillcolor=white, label=with];
+inhibition16 -> with18  [label=prepc_compared_with];
+controls21 [style=filled, fillcolor=white, label=controls];
+the19 [style=filled, fillcolor=white, label=the];
+controls21 -> the19  [label=det];
+"vehicle-treated20" [style=filled, fillcolor=white, label="vehicle-treated"];
+controls21 -> "vehicle-treated20"  [label=amod];
+inhibition16 -> controls21  [label=pobj];
+day23 [style=filled, fillcolor=white, label=day];
+controls21 -> day23  [label=prep_at];
+2124 [style=filled, fillcolor=white, label=21];
+day23 -> 2124  [label=num];
+start27 [style=filled, fillcolor=white, label=start];
+the26 [style=filled, fillcolor=white, label=the];
+start27 -> the26  [label=det];
+day23 -> start27  [label=prep_after];
+dosing29 [style=filled, fillcolor=white, label=dosing];
+start27 -> dosing29  [label=prep_of];
+}

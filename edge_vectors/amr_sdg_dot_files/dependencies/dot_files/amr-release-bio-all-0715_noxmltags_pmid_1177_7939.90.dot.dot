@@ -1,0 +1,34 @@
+digraph "To test this ,  we cotransfected the activated versions of either Ras or Rac ,  together with E3b1 or the E3b1DY mutant ." {
+label="To test this ,  we cotransfected the activated versions of either Ras or Rac ,
+together with E3b1 or the E3b1DY mutant .";
+test2 [style=filled, fillcolor=white, label=test];
+To1 [style=filled, fillcolor=white, label=To];
+test2 -> To1  [label=aux];
+cotransfected6 [style=filled, fillcolor=white, label=cotransfected];
+cotransfected6 -> test2  [label=advcl];
+this3 [style=filled, fillcolor=white, label=this];
+test2 -> this3  [label=dobj];
+we5 [style=filled, fillcolor=white, label=we];
+cotransfected6 -> we5  [label=nsubj];
+cotransfected6 -> cotransfected6  [label=root];
+versions9 [style=filled, fillcolor=white, label=versions];
+the7 [style=filled, fillcolor=white, label=the];
+versions9 -> the7  [label=det];
+activated8 [style=filled, fillcolor=white, label=activated];
+versions9 -> activated8  [label=amod];
+cotransfected6 -> versions9  [label=dobj];
+Ras12 [style=filled, fillcolor=white, label=Ras];
+either11 [style=filled, fillcolor=white, label=either];
+Ras12 -> either11  [label=preconj];
+versions9 -> Ras12  [label=prep_of];
+Rac14 [style=filled, fillcolor=white, label=Rac];
+Ras12 -> Rac14  [label=conj_or];
+E3b118 [style=filled, fillcolor=white, label=E3b1];
+versions9 -> E3b118  [label=prep_together_with];
+mutant22 [style=filled, fillcolor=white, label=mutant];
+the20 [style=filled, fillcolor=white, label=the];
+mutant22 -> the20  [label=det];
+E3b1DY2 [style=filled, fillcolor=white, label=E3b1DY];
+mutant22 -> E3b1DY2  [label=amod];
+E3b118 -> mutant22  [label=conj_or];
+}

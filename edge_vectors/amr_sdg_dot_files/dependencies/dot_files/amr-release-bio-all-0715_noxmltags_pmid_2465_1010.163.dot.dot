@@ -1,0 +1,22 @@
+digraph "K-Ras-4A ,  H-Ras ,  and N-Ras are further processed by palmitoylation ( Figure 3 ) ." {
+label="K-Ras-4A ,  H-Ras ,  and N-Ras are further processed by palmitoylation ( Figure
+3 ) .";
+processed9 [style=filled, fillcolor=white, label=processed];
+"K-Ras-4A1" [style=filled, fillcolor=white, label="K-Ras-4A"];
+processed9 -> "K-Ras-4A1"  [label=nsubjpass];
+"H-Ras3" [style=filled, fillcolor=white, label="H-Ras"];
+"K-Ras-4A1" -> "H-Ras3"  [label=conj_and];
+"N-Ras6" [style=filled, fillcolor=white, label="N-Ras"];
+"K-Ras-4A1" -> "N-Ras6"  [label=conj_and];
+are7 [style=filled, fillcolor=white, label=are];
+processed9 -> are7  [label=auxpass];
+further8 [style=filled, fillcolor=white, label=further];
+processed9 -> further8  [label=advmod];
+processed9 -> processed9  [label=root];
+palmitoylation11 [style=filled, fillcolor=white, label=palmitoylation];
+processed9 -> palmitoylation11  [label=agent];
+Figure13 [style=filled, fillcolor=white, label=Figure];
+palmitoylation11 -> Figure13  [label=appos];
+314 [style=filled, fillcolor=white, label=3];
+Figure13 -> 314  [label=num];
+}

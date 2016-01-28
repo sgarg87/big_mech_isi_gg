@@ -1,0 +1,32 @@
+digraph "Ras acts as a molecular switch that is activated upon GTP loading and deactivated upon hydrolysis of GTP to GDP ." {
+label="Ras acts as a molecular switch that is activated upon GTP loading and
+deactivated upon hydrolysis of GTP to GDP .";
+acts2 [style=filled, fillcolor=white, label=acts];
+Ras1 [style=filled, fillcolor=white, label=Ras];
+acts2 -> Ras1  [label=nsubj];
+acts2 -> acts2  [label=root];
+switch6 [style=filled, fillcolor=white, label=switch];
+a4 [style=filled, fillcolor=white, label=a];
+switch6 -> a4  [label=det];
+molecular5 [style=filled, fillcolor=white, label=molecular];
+switch6 -> molecular5  [label=amod];
+acts2 -> switch6  [label=prep_as];
+activated9 [style=filled, fillcolor=white, label=activated];
+that7 [style=filled, fillcolor=white, label=that];
+activated9 -> that7  [label=nsubjpass];
+is8 [style=filled, fillcolor=white, label=is];
+activated9 -> is8  [label=auxpass];
+switch6 -> activated9  [label=rcmod];
+loading12 [style=filled, fillcolor=white, label=loading];
+GTP11 [style=filled, fillcolor=white, label=GTP];
+loading12 -> GTP11  [label=nn];
+activated9 -> loading12  [label=prep_upon];
+deactivated14 [style=filled, fillcolor=white, label=deactivated];
+activated9 -> deactivated14  [label=conj_and];
+hydrolysis16 [style=filled, fillcolor=white, label=hydrolysis];
+deactivated14 -> hydrolysis16  [label=prep_upon];
+GTP18 [style=filled, fillcolor=white, label=GTP];
+hydrolysis16 -> GTP18  [label=prep_of];
+GDP20 [style=filled, fillcolor=white, label=GDP];
+deactivated14 -> GDP20  [label=prep_to];
+}

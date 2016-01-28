@@ -1,0 +1,26 @@
+digraph "ciliary neurotrophic factor ,  CNTF ,  activation of gp130 in NSCs rapidly increased Notch1 expression" {
+label="ciliary neurotrophic factor ,  CNTF ,  activation of gp130 in NSCs rapidly
+increased Notch1 expression";
+factor3 [style=filled, fillcolor=white, label=factor];
+ciliary1 [style=filled, fillcolor=white, label=ciliary];
+factor3 -> ciliary1  [label=amod];
+neurotrophic2 [style=filled, fillcolor=white, label=neurotrophic];
+factor3 -> neurotrophic2  [label=amod];
+factor3 -> factor3  [label=root];
+CNTF5 [style=filled, fillcolor=white, label=CNTF];
+factor3 -> CNTF5  [label=appos];
+activation7 [style=filled, fillcolor=white, label=activation];
+factor3 -> activation7  [label=appos];
+gp1309 [style=filled, fillcolor=white, label=gp130];
+activation7 -> gp1309  [label=prep_of];
+NSCs11 [style=filled, fillcolor=white, label=NSCs];
+factor3 -> NSCs11  [label=prep_in];
+increased13 [style=filled, fillcolor=white, label=increased];
+rapidly12 [style=filled, fillcolor=white, label=rapidly];
+increased13 -> rapidly12  [label=advmod];
+NSCs11 -> increased13  [label=vmod];
+expression15 [style=filled, fillcolor=white, label=expression];
+Notch114 [style=filled, fillcolor=white, label=Notch1];
+expression15 -> Notch114  [label=amod];
+increased13 -> expression15  [label=dobj];
+}

@@ -1,0 +1,38 @@
+digraph "Expression of either Hes1 or Hes5 significantly activated the STAT reporter gene construct in both E13 neuroepithelial cells and MNS-70 cells ," {
+label="Expression of either Hes1 or Hes5 significantly activated the STAT reporter
+gene construct in both E13 neuroepithelial cells and MNS-70 cells ,";
+activated8 [style=filled, fillcolor=white, label=activated];
+Expression1 [style=filled, fillcolor=white, label=Expression];
+activated8 -> Expression1  [label=nsubj];
+Hes14 [style=filled, fillcolor=white, label=Hes1];
+either3 [style=filled, fillcolor=white, label=either];
+Hes14 -> either3  [label=preconj];
+Expression1 -> Hes14  [label=prep_of];
+Hes56 [style=filled, fillcolor=white, label=Hes5];
+Hes14 -> Hes56  [label=conj_or];
+significantly7 [style=filled, fillcolor=white, label=significantly];
+activated8 -> significantly7  [label=advmod];
+activated8 -> activated8  [label=root];
+gene12 [style=filled, fillcolor=white, label=gene];
+the9 [style=filled, fillcolor=white, label=the];
+gene12 -> the9  [label=det];
+STAT10 [style=filled, fillcolor=white, label=STAT];
+gene12 -> STAT10  [label=nn];
+reporter11 [style=filled, fillcolor=white, label=reporter];
+gene12 -> reporter11  [label=nn];
+construct13 [style=filled, fillcolor=white, label=construct];
+construct13 -> gene12  [label=nsubj];
+activated8 -> construct13  [label=ccomp];
+cells18 [style=filled, fillcolor=white, label=cells];
+both15 [style=filled, fillcolor=white, label=both];
+cells18 -> both15  [label=preconj];
+E1316 [style=filled, fillcolor=white, label=E13];
+cells18 -> E1316  [label=num];
+neuroepithelial17 [style=filled, fillcolor=white, label=neuroepithelial];
+cells18 -> neuroepithelial17  [label=nn];
+construct13 -> cells18  [label=prep_in];
+cells21 [style=filled, fillcolor=white, label=cells];
+"MNS-702" [style=filled, fillcolor=white, label="MNS-70"];
+cells21 -> "MNS-702"  [label=nn];
+cells18 -> cells21  [label=conj_and];
+}

@@ -1,0 +1,44 @@
+digraph "One α-IGF siRNA construct was more effective than the scr siRNA ,  and significantly decreased MØCM IGF-1 levels to 25 % of control ( Figure 8C ) ." {
+label="One α-IGF siRNA construct was more effective than the scr siRNA ,  and
+significantly decreased MØCM IGF-1 levels to 25 % of control ( Figure 8C ) .";
+construct4 [style=filled, fillcolor=white, label=construct];
+One1 [style=filled, fillcolor=white, label=One];
+construct4 -> One1  [label=num];
+"α-IGF2" [style=filled, fillcolor=white, label="α-IGF"];
+construct4 -> "α-IGF2"  [label=amod];
+siRNA3 [style=filled, fillcolor=white, label=siRNA];
+construct4 -> siRNA3  [label=nn];
+effective7 [style=filled, fillcolor=white, label=effective];
+effective7 -> construct4  [label=nsubj];
+was5 [style=filled, fillcolor=white, label=was];
+effective7 -> was5  [label=cop];
+more6 [style=filled, fillcolor=white, label=more];
+effective7 -> more6  [label=advmod];
+effective7 -> effective7  [label=root];
+siRNA11 [style=filled, fillcolor=white, label=siRNA];
+the9 [style=filled, fillcolor=white, label=the];
+siRNA11 -> the9  [label=det];
+scr10 [style=filled, fillcolor=white, label=scr];
+siRNA11 -> scr10  [label=nn];
+effective7 -> siRNA11  [label=prep_than];
+decreased15 [style=filled, fillcolor=white, label=decreased];
+significantly14 [style=filled, fillcolor=white, label=significantly];
+decreased15 -> significantly14  [label=advmod];
+effective7 -> decreased15  [label=conj_and];
+levels18 [style=filled, fillcolor=white, label=levels];
+"MØCM16" [style=filled, fillcolor=white, label="MØCM"];
+levels18 -> "MØCM16"  [label=nn];
+"IGF-17" [style=filled, fillcolor=white, label="IGF-1"];
+levels18 -> "IGF-17"  [label=nn];
+decreased15 -> levels18  [label=dobj];
+"%21" [style=filled, fillcolor=white, label="%"];
+2520 [style=filled, fillcolor=white, label=25];
+"%21" -> 2520  [label=num];
+decreased15 -> "%21"  [label=prep_to];
+control23 [style=filled, fillcolor=white, label=control];
+"%21" -> control23  [label=prep_of];
+Figure25 [style=filled, fillcolor=white, label=Figure];
+control23 -> Figure25  [label=appos];
+"8C26" [style=filled, fillcolor=white, label="8C"];
+Figure25 -> "8C26"  [label=num];
+}

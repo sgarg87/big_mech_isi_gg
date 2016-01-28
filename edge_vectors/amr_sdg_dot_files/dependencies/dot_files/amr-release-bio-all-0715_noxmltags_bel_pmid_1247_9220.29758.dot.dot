@@ -1,0 +1,53 @@
+digraph "These data demonstrate that OSM induces up-regulation of C/EBPdelta via a Stat3-dependent pathway in mammary epithelial cells and that the growth inhibition induced by OSM depends on the presence of C/EBPdelta ." {
+label="These data demonstrate that OSM induces up-regulation of C/EBPdelta via a
+Stat3-dependent pathway in mammary epithelial cells and that the growth
+inhibition induced by OSM depends on the presence of C/EBPdelta .";
+data2 [style=filled, fillcolor=white, label=data];
+These1 [style=filled, fillcolor=white, label=These];
+data2 -> These1  [label=det];
+demonstrate3 [style=filled, fillcolor=white, label=demonstrate];
+demonstrate3 -> data2  [label=nsubj];
+demonstrate3 -> demonstrate3  [label=root];
+induces6 [style=filled, fillcolor=white, label=induces];
+that4 [style=filled, fillcolor=white, label=that];
+induces6 -> that4  [label=mark];
+OSM5 [style=filled, fillcolor=white, label=OSM];
+induces6 -> OSM5  [label=nsubj];
+demonstrate3 -> induces6  [label=ccomp];
+"up-regulation7" [style=filled, fillcolor=white, label="up-regulation"];
+induces6 -> "up-regulation7"  [label=dobj];
+"C/EBPdelta9" [style=filled, fillcolor=white, label="C/EBPdelta"];
+"up-regulation7" -> "C/EBPdelta9"  [label=prep_of];
+pathway13 [style=filled, fillcolor=white, label=pathway];
+a11 [style=filled, fillcolor=white, label=a];
+pathway13 -> a11  [label=det];
+"Stat3-dependent12" [style=filled, fillcolor=white, label="Stat3-dependent"];
+pathway13 -> "Stat3-dependent12"  [label=nn];
+"C/EBPdelta9" -> pathway13  [label=prep_via];
+epithelial16 [style=filled, fillcolor=white, label=epithelial];
+mammary15 [style=filled, fillcolor=white, label=mammary];
+epithelial16 -> mammary15  [label=advmod];
+cells17 [style=filled, fillcolor=white, label=cells];
+cells17 -> epithelial16  [label=amod];
+pathway13 -> cells17  [label=prep_in];
+depends26 [style=filled, fillcolor=white, label=depends];
+that19 [style=filled, fillcolor=white, label=that];
+depends26 -> that19  [label=mark];
+inhibition22 [style=filled, fillcolor=white, label=inhibition];
+the20 [style=filled, fillcolor=white, label=the];
+inhibition22 -> the20  [label=det];
+growth21 [style=filled, fillcolor=white, label=growth];
+inhibition22 -> growth21  [label=nn];
+depends26 -> inhibition22  [label=nsubj];
+induced23 [style=filled, fillcolor=white, label=induced];
+inhibition22 -> induced23  [label=vmod];
+OSM25 [style=filled, fillcolor=white, label=OSM];
+induced23 -> OSM25  [label=agent];
+induces6 -> depends26  [label=conj_and];
+presence29 [style=filled, fillcolor=white, label=presence];
+the28 [style=filled, fillcolor=white, label=the];
+presence29 -> the28  [label=det];
+depends26 -> presence29  [label=prep_on];
+"C/EBPdelta31" [style=filled, fillcolor=white, label="C/EBPdelta"];
+presence29 -> "C/EBPdelta31"  [label=prep_of];
+}

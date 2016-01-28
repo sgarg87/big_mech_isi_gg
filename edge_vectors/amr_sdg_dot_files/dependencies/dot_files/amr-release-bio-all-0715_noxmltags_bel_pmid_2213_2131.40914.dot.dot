@@ -1,0 +1,38 @@
+digraph "In vitro ,  qRT-PCR and Western blot analyses detected reduced SHIP-1 mRNA and protein expression in control splenocytes co-cultured with Panc 02.03 cells ." {
+label="In vitro ,  qRT-PCR and Western blot analyses detected reduced SHIP-1 mRNA and
+protein expression in control splenocytes co-cultured with Panc 02.03 cells .";
+detected9 [style=filled, fillcolor=white, label=detected];
+vitro2 [style=filled, fillcolor=white, label=vitro];
+detected9 -> vitro2  [label=prep_in];
+analyses8 [style=filled, fillcolor=white, label=analyses];
+"qRT-PCR4" [style=filled, fillcolor=white, label="qRT-PCR"];
+analyses8 -> "qRT-PCR4"  [label=nn];
+Western6 [style=filled, fillcolor=white, label=Western];
+"qRT-PCR4" -> Western6  [label=conj_and];
+blot7 [style=filled, fillcolor=white, label=blot];
+analyses8 -> blot7  [label=nn];
+detected9 -> analyses8  [label=nsubj];
+detected9 -> detected9  [label=root];
+mRNA12 [style=filled, fillcolor=white, label=mRNA];
+reduced10 [style=filled, fillcolor=white, label=reduced];
+mRNA12 -> reduced10  [label=amod];
+"SHIP-1" [style=filled, fillcolor=white, label="SHIP-1"];
+mRNA12 -> "SHIP-1"  [label=nn];
+detected9 -> mRNA12  [label=dobj];
+expression15 [style=filled, fillcolor=white, label=expression];
+protein14 [style=filled, fillcolor=white, label=protein];
+expression15 -> protein14  [label=nn];
+mRNA12 -> expression15  [label=conj_and];
+splenocytes18 [style=filled, fillcolor=white, label=splenocytes];
+control17 [style=filled, fillcolor=white, label=control];
+splenocytes18 -> control17  [label=nn];
+detected9 -> splenocytes18  [label=prep_in];
+"co-cultured19" [style=filled, fillcolor=white, label="co-cultured"];
+splenocytes18 -> "co-cultured19"  [label=vmod];
+cells23 [style=filled, fillcolor=white, label=cells];
+Panc21 [style=filled, fillcolor=white, label=Panc];
+cells23 -> Panc21  [label=nn];
+"02.03" [style=filled, fillcolor=white, label="02.03"];
+cells23 -> "02.03"  [label=num];
+"co-cultured19" -> cells23  [label=prep_with];
+}

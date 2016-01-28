@@ -1,0 +1,66 @@
+digraph "The detection of Rac-specific GEF activity in anti-Eps8 immunoprecipitates strictly required the presence of Sos-1 ,  since no GEF activity was detected in Eps8 immunoprecipitates ,  in the absence of coexpressed Sos-1 ( Scita et al. ,  1999 ; unpublished data ) ." {
+label="The detection of Rac-specific GEF activity in anti-Eps8 immunoprecipitates
+strictly required the presence of Sos-1 ,  since no GEF activity was detected in
+Eps8 immunoprecipitates ,  in the absence of coexpressed Sos-1 ( Scita et al. ,
+1999 ; unpublished data ) .";
+detection2 [style=filled, fillcolor=white, label=detection];
+The1 [style=filled, fillcolor=white, label=The];
+detection2 -> The1  [label=det];
+required11 [style=filled, fillcolor=white, label=required];
+required11 -> detection2  [label=nsubj];
+activity6 [style=filled, fillcolor=white, label=activity];
+"Rac-specific4" [style=filled, fillcolor=white, label="Rac-specific"];
+activity6 -> "Rac-specific4"  [label=nn];
+GEF5 [style=filled, fillcolor=white, label=GEF];
+activity6 -> GEF5  [label=nn];
+detection2 -> activity6  [label=prep_of];
+immunoprecipitates9 [style=filled, fillcolor=white, label=immunoprecipitates];
+"anti-Eps8" [style=filled, fillcolor=white, label="anti-Eps8"];
+immunoprecipitates9 -> "anti-Eps8"  [label=amod];
+activity6 -> immunoprecipitates9  [label=prep_in];
+strictly10 [style=filled, fillcolor=white, label=strictly];
+required11 -> strictly10  [label=advmod];
+required11 -> required11  [label=root];
+presence13 [style=filled, fillcolor=white, label=presence];
+the12 [style=filled, fillcolor=white, label=the];
+presence13 -> the12  [label=det];
+required11 -> presence13  [label=dobj];
+"Sos-15" [style=filled, fillcolor=white, label="Sos-1"];
+presence13 -> "Sos-15"  [label=prep_of];
+detected22 [style=filled, fillcolor=white, label=detected];
+since17 [style=filled, fillcolor=white, label=since];
+detected22 -> since17  [label=mark];
+activity20 [style=filled, fillcolor=white, label=activity];
+no18 [style=filled, fillcolor=white, label=no];
+activity20 -> no18  [label=neg];
+GEF19 [style=filled, fillcolor=white, label=GEF];
+activity20 -> GEF19  [label=nn];
+detected22 -> activity20  [label=nsubjpass];
+was21 [style=filled, fillcolor=white, label=was];
+detected22 -> was21  [label=auxpass];
+required11 -> detected22  [label=advcl];
+immunoprecipitates25 [style=filled, fillcolor=white, label=immunoprecipitates];
+Eps824 [style=filled, fillcolor=white, label=Eps8];
+immunoprecipitates25 -> Eps824  [label=amod];
+detected22 -> immunoprecipitates25  [label=prep_in];
+absence29 [style=filled, fillcolor=white, label=absence];
+the28 [style=filled, fillcolor=white, label=the];
+absence29 -> the28  [label=det];
+detected22 -> absence29  [label=prep_in];
+"Sos-132" [style=filled, fillcolor=white, label="Sos-1"];
+coexpressed31 [style=filled, fillcolor=white, label=coexpressed];
+"Sos-132" -> coexpressed31  [label=amod];
+absence29 -> "Sos-132"  [label=prep_of];
+et35 [style=filled, fillcolor=white, label=et];
+Scita34 [style=filled, fillcolor=white, label=Scita];
+et35 -> Scita34  [label=nn];
+"Sos-132" -> et35  [label=dep];
+"al.36" [style=filled, fillcolor=white, label="al."];
+et35 -> "al.36"  [label=num];
+199938 [style=filled, fillcolor=white, label=1999];
+et35 -> 199938  [label=num];
+data41 [style=filled, fillcolor=white, label=data];
+unpublished40 [style=filled, fillcolor=white, label=unpublished];
+data41 -> unpublished40  [label=amod];
+et35 -> data41  [label=dep];
+}

@@ -1,0 +1,53 @@
+digraph "Thus ,  these data support the hypothesis that in cells expressing mutated K-RAS ,  the basal phosphorylation of YB-1 is constitutively enhanced and can not be further stimulated by IR ." {
+label="Thus ,  these data support the hypothesis that in cells expressing mutated
+K-RAS ,  the basal phosphorylation of YB-1 is constitutively enhanced and can
+not be further stimulated by IR .";
+support5 [style=filled, fillcolor=white, label=support];
+Thus1 [style=filled, fillcolor=white, label=Thus];
+support5 -> Thus1  [label=advmod];
+data4 [style=filled, fillcolor=white, label=data];
+these3 [style=filled, fillcolor=white, label=these];
+data4 -> these3  [label=det];
+support5 -> data4  [label=nsubj];
+support5 -> support5  [label=root];
+hypothesis7 [style=filled, fillcolor=white, label=hypothesis];
+the6 [style=filled, fillcolor=white, label=the];
+hypothesis7 -> the6  [label=det];
+support5 -> hypothesis7  [label=dobj];
+enhanced22 [style=filled, fillcolor=white, label=enhanced];
+that8 [style=filled, fillcolor=white, label=that];
+enhanced22 -> that8  [label=mark];
+expressing11 [style=filled, fillcolor=white, label=expressing];
+cells10 [style=filled, fillcolor=white, label=cells];
+expressing11 -> cells10  [label=nsubj];
+enhanced22 -> expressing11  [label=prepc_in];
+"K-RAS13" [style=filled, fillcolor=white, label="K-RAS"];
+mutated12 [style=filled, fillcolor=white, label=mutated];
+"K-RAS13" -> mutated12  [label=nn];
+expressing11 -> "K-RAS13"  [label=dobj];
+phosphorylation17 [style=filled, fillcolor=white, label=phosphorylation];
+the15 [style=filled, fillcolor=white, label=the];
+phosphorylation17 -> the15  [label=det];
+basal16 [style=filled, fillcolor=white, label=basal];
+phosphorylation17 -> basal16  [label=amod];
+enhanced22 -> phosphorylation17  [label=nsubjpass];
+"YB-19" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation17 -> "YB-19"  [label=prep_of];
+is20 [style=filled, fillcolor=white, label=is];
+enhanced22 -> is20  [label=auxpass];
+constitutively21 [style=filled, fillcolor=white, label=constitutively];
+enhanced22 -> constitutively21  [label=advmod];
+support5 -> enhanced22  [label=ccomp];
+stimulated28 [style=filled, fillcolor=white, label=stimulated];
+can24 [style=filled, fillcolor=white, label=can];
+stimulated28 -> can24  [label=aux];
+not25 [style=filled, fillcolor=white, label=not];
+stimulated28 -> not25  [label=neg];
+be26 [style=filled, fillcolor=white, label=be];
+stimulated28 -> be26  [label=auxpass];
+further27 [style=filled, fillcolor=white, label=further];
+stimulated28 -> further27  [label=advmod];
+support5 -> stimulated28  [label=conj_and];
+IR30 [style=filled, fillcolor=white, label=IR];
+stimulated28 -> IR30  [label=agent];
+}

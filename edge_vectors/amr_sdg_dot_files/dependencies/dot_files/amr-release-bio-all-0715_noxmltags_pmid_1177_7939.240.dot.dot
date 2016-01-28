@@ -1,0 +1,11 @@
+digraph "HA-Sos ,  HA-epitope tagged Sos-1" {
+label="HA-Sos ,  HA-epitope tagged Sos-1";
+"HA-Sos1" [style=filled, fillcolor=white, label="HA-Sos"];
+"HA-Sos1" -> "HA-Sos1"  [label=root];
+"Sos-15" [style=filled, fillcolor=white, label="Sos-1"];
+"HA-epitope3" [style=filled, fillcolor=white, label="HA-epitope"];
+"Sos-15" -> "HA-epitope3"  [label=amod];
+tagged4 [style=filled, fillcolor=white, label=tagged];
+"Sos-15" -> tagged4  [label=amod];
+"HA-Sos1" -> "Sos-15"  [label=appos];
+}

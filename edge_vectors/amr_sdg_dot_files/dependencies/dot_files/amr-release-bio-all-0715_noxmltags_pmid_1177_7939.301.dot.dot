@@ -1,0 +1,43 @@
+digraph "The expression levels of Ras ( total Ras ) and Rac ( total Rac ) ,  in the same lysates ,  were determined by immunoblotting with anti-Ras and anti-Rac antibodies ,  respectively ." {
+label="The expression levels of Ras ( total Ras ) and Rac ( total Rac ) ,  in the same
+lysates ,  were determined by immunoblotting with anti-Ras and anti-Rac
+antibodies ,  respectively .";
+levels3 [style=filled, fillcolor=white, label=levels];
+The1 [style=filled, fillcolor=white, label=The];
+levels3 -> The1  [label=det];
+expression2 [style=filled, fillcolor=white, label=expression];
+levels3 -> expression2  [label=nn];
+determined23 [style=filled, fillcolor=white, label=determined];
+determined23 -> levels3  [label=nsubjpass];
+Ras5 [style=filled, fillcolor=white, label=Ras];
+levels3 -> Ras5  [label=prep_of];
+Ras8 [style=filled, fillcolor=white, label=Ras];
+total7 [style=filled, fillcolor=white, label=total];
+Ras8 -> total7  [label=amod];
+Ras5 -> Ras8  [label=appos];
+Rac11 [style=filled, fillcolor=white, label=Rac];
+Ras5 -> Rac11  [label=conj_and];
+Rac14 [style=filled, fillcolor=white, label=Rac];
+total13 [style=filled, fillcolor=white, label=total];
+Rac14 -> total13  [label=amod];
+Ras5 -> Rac14  [label=appos];
+lysates20 [style=filled, fillcolor=white, label=lysates];
+the18 [style=filled, fillcolor=white, label=the];
+lysates20 -> the18  [label=det];
+same19 [style=filled, fillcolor=white, label=same];
+lysates20 -> same19  [label=amod];
+levels3 -> lysates20  [label=prep_in];
+were22 [style=filled, fillcolor=white, label=were];
+determined23 -> were22  [label=auxpass];
+determined23 -> determined23  [label=root];
+immunoblotting25 [style=filled, fillcolor=white, label=immunoblotting];
+determined23 -> immunoblotting25  [label=agent];
+"anti-Ras27" [style=filled, fillcolor=white, label="anti-Ras"];
+immunoblotting25 -> "anti-Ras27"  [label=prep_with];
+antibodies30 [style=filled, fillcolor=white, label=antibodies];
+"anti-Rac29" [style=filled, fillcolor=white, label="anti-Rac"];
+antibodies30 -> "anti-Rac29"  [label=amod];
+"anti-Ras27" -> antibodies30  [label=conj_and];
+respectively32 [style=filled, fillcolor=white, label=respectively];
+immunoblotting25 -> respectively32  [label=advmod];
+}

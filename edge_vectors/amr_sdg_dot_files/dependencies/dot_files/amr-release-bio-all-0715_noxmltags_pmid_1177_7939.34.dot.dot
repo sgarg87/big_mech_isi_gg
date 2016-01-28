@@ -1,0 +1,32 @@
+digraph "We reasoned that this could be due to the low efficiency of the immunoprecipitating antibodies used ." {
+label="We reasoned that this could be due to the low efficiency of the
+immunoprecipitating antibodies used .";
+reasoned2 [style=filled, fillcolor=white, label=reasoned];
+We1 [style=filled, fillcolor=white, label=We];
+reasoned2 -> We1  [label=nsubj];
+reasoned2 -> reasoned2  [label=root];
+due7 [style=filled, fillcolor=white, label=due];
+that3 [style=filled, fillcolor=white, label=that];
+due7 -> that3  [label=mark];
+this4 [style=filled, fillcolor=white, label=this];
+due7 -> this4  [label=nsubj];
+could5 [style=filled, fillcolor=white, label=could];
+due7 -> could5  [label=aux];
+be6 [style=filled, fillcolor=white, label=be];
+due7 -> be6  [label=cop];
+reasoned2 -> due7  [label=ccomp];
+efficiency11 [style=filled, fillcolor=white, label=efficiency];
+the9 [style=filled, fillcolor=white, label=the];
+efficiency11 -> the9  [label=det];
+low10 [style=filled, fillcolor=white, label=low];
+efficiency11 -> low10  [label=amod];
+due7 -> efficiency11  [label=prep_to];
+antibodies15 [style=filled, fillcolor=white, label=antibodies];
+the13 [style=filled, fillcolor=white, label=the];
+antibodies15 -> the13  [label=det];
+immunoprecipitating14 [style=filled, fillcolor=white, label=immunoprecipitating];
+antibodies15 -> immunoprecipitating14  [label=amod];
+efficiency11 -> antibodies15  [label=prep_of];
+used16 [style=filled, fillcolor=white, label=used];
+antibodies15 -> used16  [label=vmod];
+}

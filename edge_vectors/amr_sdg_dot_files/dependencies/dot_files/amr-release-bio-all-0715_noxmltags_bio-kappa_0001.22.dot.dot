@@ -1,0 +1,34 @@
+digraph "This switch - ON process involves the exchange of GDP for GTP ,  and is ,  at least in principle ,  reversible ." {
+label="This switch - ON process involves the exchange of GDP for GTP ,  and is ,  at
+least in principle ,  reversible .";
+switch2 [style=filled, fillcolor=white, label=switch];
+This1 [style=filled, fillcolor=white, label=This];
+switch2 -> This1  [label=nsubj];
+switch2 -> switch2  [label=root];
+process5 [style=filled, fillcolor=white, label=process];
+ON4 [style=filled, fillcolor=white, label=ON];
+process5 -> ON4  [label=amod];
+involves6 [style=filled, fillcolor=white, label=involves];
+involves6 -> process5  [label=nsubj];
+switch2 -> involves6  [label=parataxis];
+exchange8 [style=filled, fillcolor=white, label=exchange];
+the7 [style=filled, fillcolor=white, label=the];
+exchange8 -> the7  [label=det];
+involves6 -> exchange8  [label=dobj];
+GDP10 [style=filled, fillcolor=white, label=GDP];
+exchange8 -> GDP10  [label=prep_of];
+GTP12 [style=filled, fillcolor=white, label=GTP];
+involves6 -> GTP12  [label=prep_for];
+reversible22 [style=filled, fillcolor=white, label=reversible];
+is15 [style=filled, fillcolor=white, label=is];
+reversible22 -> is15  [label=cop];
+in19 [style=filled, fillcolor=white, label=in];
+at17 [style=filled, fillcolor=white, label=at];
+in19 -> at17  [label=advmod];
+least18 [style=filled, fillcolor=white, label=least];
+at17 -> least18  [label=pobj];
+reversible22 -> in19  [label=dep];
+principle20 [style=filled, fillcolor=white, label=principle];
+in19 -> principle20  [label=pobj];
+involves6 -> reversible22  [label=conj_and];
+}

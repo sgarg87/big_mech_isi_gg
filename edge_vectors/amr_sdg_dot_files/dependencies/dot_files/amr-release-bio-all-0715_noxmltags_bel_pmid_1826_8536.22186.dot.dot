@@ -1,0 +1,62 @@
+digraph "b1-integrin phosphorylation by Src results in EGF-R activation ( Miranti and Brugge ,  2002 ) ,  and b1-integrin expression is required for the initiation of mouse mammary tumors expressing the polyoma virus middle T antigen ( White et al. ,  2004 ) ." {
+label="b1-integrin phosphorylation by Src results in EGF-R activation ( Miranti and
+Brugge ,  2002 ) ,  and b1-integrin expression is required for the initiation of
+mouse mammary tumors expressing the polyoma virus middle T antigen ( White et
+al. ,  2004 ) .";
+phosphorylation2 [style=filled, fillcolor=white, label=phosphorylation];
+"b1-integrin" [style=filled, fillcolor=white, label="b1-integrin"];
+phosphorylation2 -> "b1-integrin"  [label=amod];
+required21 [style=filled, fillcolor=white, label=required];
+required21 -> phosphorylation2  [label=nsubjpass];
+results5 [style=filled, fillcolor=white, label=results];
+Src4 [style=filled, fillcolor=white, label=Src];
+results5 -> Src4  [label=nn];
+phosphorylation2 -> results5  [label=prep_by];
+activation8 [style=filled, fillcolor=white, label=activation];
+"EGF-R7" [style=filled, fillcolor=white, label="EGF-R"];
+activation8 -> "EGF-R7"  [label=nn];
+results5 -> activation8  [label=prep_in];
+Miranti10 [style=filled, fillcolor=white, label=Miranti];
+activation8 -> Miranti10  [label=appos];
+Brugge12 [style=filled, fillcolor=white, label=Brugge];
+Miranti10 -> Brugge12  [label=conj_and];
+200214 [style=filled, fillcolor=white, label=2002];
+Miranti10 -> 200214  [label=dep];
+expression19 [style=filled, fillcolor=white, label=expression];
+"b1-integrin8" [style=filled, fillcolor=white, label="b1-integrin"];
+expression19 -> "b1-integrin8"  [label=amod];
+activation8 -> expression19  [label=conj_and];
+is20 [style=filled, fillcolor=white, label=is];
+required21 -> is20  [label=auxpass];
+required21 -> required21  [label=root];
+initiation24 [style=filled, fillcolor=white, label=initiation];
+the23 [style=filled, fillcolor=white, label=the];
+initiation24 -> the23  [label=det];
+required21 -> initiation24  [label=prep_for];
+tumors28 [style=filled, fillcolor=white, label=tumors];
+mouse26 [style=filled, fillcolor=white, label=mouse];
+tumors28 -> mouse26  [label=nn];
+mammary27 [style=filled, fillcolor=white, label=mammary];
+tumors28 -> mammary27  [label=nn];
+initiation24 -> tumors28  [label=prep_of];
+expressing29 [style=filled, fillcolor=white, label=expressing];
+required21 -> expressing29  [label=xcomp];
+antigen35 [style=filled, fillcolor=white, label=antigen];
+the30 [style=filled, fillcolor=white, label=the];
+antigen35 -> the30  [label=det];
+polyoma31 [style=filled, fillcolor=white, label=polyoma];
+antigen35 -> polyoma31  [label=nn];
+virus32 [style=filled, fillcolor=white, label=virus];
+antigen35 -> virus32  [label=nn];
+middle33 [style=filled, fillcolor=white, label=middle];
+antigen35 -> middle33  [label=amod];
+T34 [style=filled, fillcolor=white, label=T];
+antigen35 -> T34  [label=nn];
+expressing29 -> antigen35  [label=dobj];
+White37 [style=filled, fillcolor=white, label=White];
+antigen35 -> White37  [label=appos];
+"al.39" [style=filled, fillcolor=white, label="al."];
+White37 -> "al.39"  [label=conj_et];
+200441 [style=filled, fillcolor=white, label=2004];
+White37 -> 200441  [label=dep];
+}

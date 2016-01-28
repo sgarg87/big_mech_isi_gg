@@ -1,0 +1,11 @@
+digraph "Detection was with anti -- Sos-1 ." {
+label="Detection was with anti -- Sos-1 .";
+was2 [style=filled, fillcolor=white, label=was];
+Detection1 [style=filled, fillcolor=white, label=Detection];
+was2 -> Detection1  [label=nsubj];
+was2 -> was2  [label=root];
+anti4 [style=filled, fillcolor=white, label=anti];
+was2 -> anti4  [label=prep_with];
+"Sos-16" [style=filled, fillcolor=white, label="Sos-1"];
+anti4 -> "Sos-16"  [label=dep];
+}

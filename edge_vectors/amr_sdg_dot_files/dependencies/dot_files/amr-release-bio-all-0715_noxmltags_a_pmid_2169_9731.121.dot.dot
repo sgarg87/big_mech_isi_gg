@@ -1,0 +1,51 @@
+digraph "Measurement of IGF-1 levels in MØCM from primary naïve and tumor-educated BAL macrophages showed that tumor-educated macrophages produced significantly more IGF-1 than naïve macrophages ( Figure 6B ,  grey bars ) ." {
+label="Measurement of IGF-1 levels in MØCM from primary naïve and tumor-educated BAL
+macrophages showed that tumor-educated macrophages produced significantly more
+IGF-1 than naïve macrophages ( Figure 6B ,  grey bars ) .";
+showed14 [style=filled, fillcolor=white, label=showed];
+Measurement1 [style=filled, fillcolor=white, label=Measurement];
+showed14 -> Measurement1  [label=nsubj];
+levels4 [style=filled, fillcolor=white, label=levels];
+"IGF-13" [style=filled, fillcolor=white, label="IGF-1"];
+levels4 -> "IGF-13"  [label=nn];
+Measurement1 -> levels4  [label=prep_of];
+"MØCM6" [style=filled, fillcolor=white, label="MØCM"];
+levels4 -> "MØCM6"  [label=prep_in];
+"naïve9" [style=filled, fillcolor=white, label="naïve"];
+primary8 [style=filled, fillcolor=white, label=primary];
+"naïve9" -> primary8  [label=amod];
+"MØCM6" -> "naïve9"  [label=prep_from];
+macrophages13 [style=filled, fillcolor=white, label=macrophages];
+"tumor-educated11" [style=filled, fillcolor=white, label="tumor-educated"];
+macrophages13 -> "tumor-educated11"  [label=amod];
+BAL12 [style=filled, fillcolor=white, label=BAL];
+macrophages13 -> BAL12  [label=nn];
+"naïve9" -> macrophages13  [label=conj_and];
+showed14 -> showed14  [label=root];
+produced18 [style=filled, fillcolor=white, label=produced];
+that15 [style=filled, fillcolor=white, label=that];
+produced18 -> that15  [label=mark];
+macrophages17 [style=filled, fillcolor=white, label=macrophages];
+"tumor-educated16" [style=filled, fillcolor=white, label="tumor-educated"];
+macrophages17 -> "tumor-educated16"  [label=amod];
+produced18 -> macrophages17  [label=nsubj];
+showed14 -> produced18  [label=ccomp];
+"IGF-12" [style=filled, fillcolor=white, label="IGF-1"];
+significantly19 [style=filled, fillcolor=white, label=significantly];
+"IGF-12" -> significantly19  [label=advmod];
+more20 [style=filled, fillcolor=white, label=more];
+"IGF-12" -> more20  [label=advmod];
+produced18 -> "IGF-12"  [label=acomp];
+macrophages24 [style=filled, fillcolor=white, label=macrophages];
+"naïve23" [style=filled, fillcolor=white, label="naïve"];
+macrophages24 -> "naïve23"  [label=amod];
+produced18 -> macrophages24  [label=prep_than];
+Figure26 [style=filled, fillcolor=white, label=Figure];
+macrophages24 -> Figure26  [label=appos];
+"6B27" [style=filled, fillcolor=white, label="6B"];
+Figure26 -> "6B27"  [label=num];
+bars30 [style=filled, fillcolor=white, label=bars];
+grey29 [style=filled, fillcolor=white, label=grey];
+bars30 -> grey29  [label=amod];
+Figure26 -> bars30  [label=dep];
+}

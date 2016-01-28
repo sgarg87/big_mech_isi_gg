@@ -1,0 +1,60 @@
+digraph "Against this background ,  we conducted in vitro phosphorylation studies of the phosphorylation of in-tegrin avp3 dimer with activated ERK1 and found phosphorylation of the dimer ( Fig. 3A ) that was inhibited by the ERK inhibitor ,  FR180204 ." {
+label="Against this background ,  we conducted in vitro phosphorylation studies of the
+phosphorylation of in-tegrin avp3 dimer with activated ERK1 and found
+phosphorylation of the dimer ( Fig. 3A ) that was inhibited by the ERK inhibitor
+,  FR180204 .";
+background3 [style=filled, fillcolor=white, label=background];
+this2 [style=filled, fillcolor=white, label=this];
+background3 -> this2  [label=det];
+conducted6 [style=filled, fillcolor=white, label=conducted];
+conducted6 -> background3  [label=prep_against];
+we5 [style=filled, fillcolor=white, label=we];
+conducted6 -> we5  [label=nsubj];
+conducted6 -> conducted6  [label=root];
+studies10 [style=filled, fillcolor=white, label=studies];
+vitro8 [style=filled, fillcolor=white, label=vitro];
+studies10 -> vitro8  [label=amod];
+phosphorylation9 [style=filled, fillcolor=white, label=phosphorylation];
+studies10 -> phosphorylation9  [label=nn];
+conducted6 -> studies10  [label=prep_in];
+phosphorylation13 [style=filled, fillcolor=white, label=phosphorylation];
+the12 [style=filled, fillcolor=white, label=the];
+phosphorylation13 -> the12  [label=det];
+studies10 -> phosphorylation13  [label=prep_of];
+dimer17 [style=filled, fillcolor=white, label=dimer];
+"in-tegrin15" [style=filled, fillcolor=white, label="in-tegrin"];
+dimer17 -> "in-tegrin15"  [label=amod];
+avp316 [style=filled, fillcolor=white, label=avp3];
+dimer17 -> avp316  [label=amod];
+phosphorylation13 -> dimer17  [label=prep_of];
+ERK120 [style=filled, fillcolor=white, label=ERK1];
+activated19 [style=filled, fillcolor=white, label=activated];
+ERK120 -> activated19  [label=amod];
+conducted6 -> ERK120  [label=prep_with];
+found22 [style=filled, fillcolor=white, label=found];
+conducted6 -> found22  [label=conj_and];
+phosphorylation23 [style=filled, fillcolor=white, label=phosphorylation];
+found22 -> phosphorylation23  [label=dobj];
+dimer26 [style=filled, fillcolor=white, label=dimer];
+the25 [style=filled, fillcolor=white, label=the];
+dimer26 -> the25  [label=det];
+phosphorylation23 -> dimer26  [label=prep_of];
+"3A29" [style=filled, fillcolor=white, label="3A"];
+"Fig.28" [style=filled, fillcolor=white, label="Fig."];
+"3A29" -> "Fig.28"  [label=number];
+dimer26 -> "3A29"  [label=dep];
+inhibited33 [style=filled, fillcolor=white, label=inhibited];
+that31 [style=filled, fillcolor=white, label=that];
+inhibited33 -> that31  [label=nsubjpass];
+was32 [style=filled, fillcolor=white, label=was];
+inhibited33 -> was32  [label=auxpass];
+dimer26 -> inhibited33  [label=rcmod];
+inhibitor37 [style=filled, fillcolor=white, label=inhibitor];
+the35 [style=filled, fillcolor=white, label=the];
+inhibitor37 -> the35  [label=det];
+ERK36 [style=filled, fillcolor=white, label=ERK];
+inhibitor37 -> ERK36  [label=nn];
+inhibited33 -> inhibitor37  [label=agent];
+FR18020439 [style=filled, fillcolor=white, label=FR180204];
+inhibitor37 -> FR18020439  [label=appos];
+}

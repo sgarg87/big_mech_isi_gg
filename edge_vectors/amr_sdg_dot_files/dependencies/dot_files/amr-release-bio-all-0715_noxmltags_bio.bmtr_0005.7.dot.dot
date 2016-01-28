@@ -1,0 +1,26 @@
+digraph "Interestingly ,  we observed two conserved putative MAPK phosphorylation sites in ASPP1 and ASPP2 ." {
+label="Interestingly ,  we observed two conserved putative MAPK phosphorylation sites
+in ASPP1 and ASPP2 .";
+observed4 [style=filled, fillcolor=white, label=observed];
+Interestingly1 [style=filled, fillcolor=white, label=Interestingly];
+observed4 -> Interestingly1  [label=advmod];
+we3 [style=filled, fillcolor=white, label=we];
+observed4 -> we3  [label=nsubj];
+observed4 -> observed4  [label=root];
+sites10 [style=filled, fillcolor=white, label=sites];
+two5 [style=filled, fillcolor=white, label=two];
+sites10 -> two5  [label=num];
+conserved6 [style=filled, fillcolor=white, label=conserved];
+sites10 -> conserved6  [label=amod];
+putative7 [style=filled, fillcolor=white, label=putative];
+sites10 -> putative7  [label=nn];
+MAPK8 [style=filled, fillcolor=white, label=MAPK];
+sites10 -> MAPK8  [label=nn];
+phosphorylation9 [style=filled, fillcolor=white, label=phosphorylation];
+sites10 -> phosphorylation9  [label=nn];
+observed4 -> sites10  [label=dobj];
+ASPP112 [style=filled, fillcolor=white, label=ASPP1];
+observed4 -> ASPP112  [label=prep_in];
+ASPP214 [style=filled, fillcolor=white, label=ASPP2];
+ASPP112 -> ASPP214  [label=conj_and];
+}

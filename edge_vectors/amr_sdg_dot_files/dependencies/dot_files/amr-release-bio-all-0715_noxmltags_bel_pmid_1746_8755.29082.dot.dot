@@ -1,0 +1,64 @@
+digraph "Notably ,  EGFR transcription is regulated by AP-1 ( ref . 28 ) ,  and we observed higher levels of phospho-c-Jun ,  one of the AP-1 components ,  in the p38a-deficient lungs ( Fig. 3c ) ,  suggesting that p38a downregulation might activate AP-1 ." {
+label="Notably ,  EGFR transcription is regulated by AP-1 ( ref . 28 ) ,  and we
+observed higher levels of phospho-c-Jun ,  one of the AP-1 components ,  in the
+p38a-deficient lungs ( Fig. 3c ) ,  suggesting that p38a downregulation might
+activate AP-1 .";
+regulated6 [style=filled, fillcolor=white, label=regulated];
+Notably1 [style=filled, fillcolor=white, label=Notably];
+regulated6 -> Notably1  [label=advmod];
+transcription4 [style=filled, fillcolor=white, label=transcription];
+EGFR3 [style=filled, fillcolor=white, label=EGFR];
+transcription4 -> EGFR3  [label=amod];
+regulated6 -> transcription4  [label=nsubjpass];
+is5 [style=filled, fillcolor=white, label=is];
+regulated6 -> is5  [label=auxpass];
+regulated6 -> regulated6  [label=root];
+"AP-18" [style=filled, fillcolor=white, label="AP-1"];
+regulated6 -> "AP-18"  [label=agent];
+ref10 [style=filled, fillcolor=white, label=ref];
+"AP-18" -> ref10  [label=dep];
+281 [style=filled, fillcolor=white, label=28];
+ref10 -> 281  [label=dep];
+observed17 [style=filled, fillcolor=white, label=observed];
+we16 [style=filled, fillcolor=white, label=we];
+observed17 -> we16  [label=nsubj];
+regulated6 -> observed17  [label=conj_and];
+levels19 [style=filled, fillcolor=white, label=levels];
+higher18 [style=filled, fillcolor=white, label=higher];
+levels19 -> higher18  [label=amod];
+observed17 -> levels19  [label=dobj];
+"phospho-c-Jun21" [style=filled, fillcolor=white, label="phospho-c-Jun"];
+levels19 -> "phospho-c-Jun21"  [label=prep_of];
+one23 [style=filled, fillcolor=white, label=one];
+"phospho-c-Jun21" -> one23  [label=appos];
+components27 [style=filled, fillcolor=white, label=components];
+the25 [style=filled, fillcolor=white, label=the];
+components27 -> the25  [label=det];
+"AP-126" [style=filled, fillcolor=white, label="AP-1"];
+components27 -> "AP-126"  [label=nn];
+one23 -> components27  [label=prep_of];
+lungs32 [style=filled, fillcolor=white, label=lungs];
+the30 [style=filled, fillcolor=white, label=the];
+lungs32 -> the30  [label=det];
+"p38a-deficient1" [style=filled, fillcolor=white, label="p38a-deficient"];
+lungs32 -> "p38a-deficient1"  [label=amod];
+observed17 -> lungs32  [label=prep_in];
+"3c35" [style=filled, fillcolor=white, label="3c"];
+"Fig.34" [style=filled, fillcolor=white, label="Fig."];
+"3c35" -> "Fig.34"  [label=nn];
+lungs32 -> "3c35"  [label=appos];
+suggesting38 [style=filled, fillcolor=white, label=suggesting];
+observed17 -> suggesting38  [label=vmod];
+activate43 [style=filled, fillcolor=white, label=activate];
+that39 [style=filled, fillcolor=white, label=that];
+activate43 -> that39  [label=mark];
+downregulation41 [style=filled, fillcolor=white, label=downregulation];
+p38a40 [style=filled, fillcolor=white, label=p38a];
+downregulation41 -> p38a40  [label=amod];
+activate43 -> downregulation41  [label=nsubj];
+might42 [style=filled, fillcolor=white, label=might];
+activate43 -> might42  [label=aux];
+suggesting38 -> activate43  [label=ccomp];
+"AP-144" [style=filled, fillcolor=white, label="AP-1"];
+activate43 -> "AP-144"  [label=dobj];
+}

@@ -1,0 +1,47 @@
+digraph "In the 1980s ,  several groups ,  including those at Cetus and Hoffmann La Roche ,  screened for compounds that restore GTP hydrolysis to mutant Ras ,  in the presence or absence of GAP ." {
+label="In the 1980s ,  several groups ,  including those at Cetus and Hoffmann La
+Roche ,  screened for compounds that restore GTP hydrolysis to mutant Ras ,  in
+the presence or absence of GAP .";
+"1980s3" [style=filled, fillcolor=white, label="1980s"];
+the2 [style=filled, fillcolor=white, label=the];
+"1980s3" -> the2  [label=det];
+screened17 [style=filled, fillcolor=white, label=screened];
+screened17 -> "1980s3"  [label=prep_in];
+groups6 [style=filled, fillcolor=white, label=groups];
+several5 [style=filled, fillcolor=white, label=several];
+groups6 -> several5  [label=amod];
+screened17 -> groups6  [label=nsubj];
+those9 [style=filled, fillcolor=white, label=those];
+groups6 -> those9  [label=prep_including];
+Cetus11 [style=filled, fillcolor=white, label=Cetus];
+those9 -> Cetus11  [label=prep_at];
+Roche15 [style=filled, fillcolor=white, label=Roche];
+Hoffmann13 [style=filled, fillcolor=white, label=Hoffmann];
+Roche15 -> Hoffmann13  [label=nn];
+La14 [style=filled, fillcolor=white, label=La];
+Roche15 -> La14  [label=nn];
+Cetus11 -> Roche15  [label=conj_and];
+screened17 -> screened17  [label=root];
+compounds19 [style=filled, fillcolor=white, label=compounds];
+screened17 -> compounds19  [label=prep_for];
+hydrolysis23 [style=filled, fillcolor=white, label=hydrolysis];
+that20 [style=filled, fillcolor=white, label=that];
+hydrolysis23 -> that20  [label=mark];
+GTP22 [style=filled, fillcolor=white, label=GTP];
+restore21 [style=filled, fillcolor=white, label=restore];
+GTP22 -> restore21  [label=nn];
+hydrolysis23 -> GTP22  [label=nsubj];
+screened17 -> hydrolysis23  [label=ccomp];
+Ras26 [style=filled, fillcolor=white, label=Ras];
+mutant25 [style=filled, fillcolor=white, label=mutant];
+Ras26 -> mutant25  [label=amod];
+hydrolysis23 -> Ras26  [label=prep_to];
+presence30 [style=filled, fillcolor=white, label=presence];
+the29 [style=filled, fillcolor=white, label=the];
+presence30 -> the29  [label=det];
+hydrolysis23 -> presence30  [label=prep_in];
+absence32 [style=filled, fillcolor=white, label=absence];
+presence30 -> absence32  [label=conj_or];
+GAP34 [style=filled, fillcolor=white, label=GAP];
+presence30 -> GAP34  [label=prep_of];
+}

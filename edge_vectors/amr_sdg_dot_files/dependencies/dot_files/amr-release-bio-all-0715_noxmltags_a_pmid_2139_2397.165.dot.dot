@@ -1,0 +1,55 @@
+digraph "To rule out off-target effects of erlotinib ,  the efficacy of the highly specific erbB1-RTK inhibitor BIBX1382BS -LSB- 38 -RSB- on radiation-induced YB-1 phosphorylation was tested in cytoplasmic and nuclear fractions ." {
+label="To rule out off-target effects of erlotinib ,  the efficacy of the highly
+specific erbB1-RTK inhibitor BIBX1382BS -LSB- 38 -RSB- on radiation-induced YB-1
+phosphorylation was tested in cytoplasmic and nuclear fractions .";
+rule2 [style=filled, fillcolor=white, label=rule];
+To1 [style=filled, fillcolor=white, label=To];
+rule2 -> To1  [label=aux];
+tested26 [style=filled, fillcolor=white, label=tested];
+tested26 -> rule2  [label=advcl];
+out3 [style=filled, fillcolor=white, label=out];
+rule2 -> out3  [label=prt];
+effects5 [style=filled, fillcolor=white, label=effects];
+"off-target4" [style=filled, fillcolor=white, label="off-target"];
+effects5 -> "off-target4"  [label=amod];
+rule2 -> effects5  [label=dobj];
+erlotinib7 [style=filled, fillcolor=white, label=erlotinib];
+effects5 -> erlotinib7  [label=prep_of];
+efficacy10 [style=filled, fillcolor=white, label=efficacy];
+the9 [style=filled, fillcolor=white, label=the];
+efficacy10 -> the9  [label=det];
+tested26 -> efficacy10  [label=nsubjpass];
+"-RSB-20" [style=filled, fillcolor=white, label="-RSB-"];
+the12 [style=filled, fillcolor=white, label=the];
+"-RSB-20" -> the12  [label=det];
+specific14 [style=filled, fillcolor=white, label=specific];
+highly13 [style=filled, fillcolor=white, label=highly];
+specific14 -> highly13  [label=advmod];
+"-RSB-20" -> specific14  [label=amod];
+"erbB1-RTK5" [style=filled, fillcolor=white, label="erbB1-RTK"];
+"-RSB-20" -> "erbB1-RTK5"  [label=amod];
+inhibitor16 [style=filled, fillcolor=white, label=inhibitor];
+"-RSB-20" -> inhibitor16  [label=nn];
+BIBX1382BS17 [style=filled, fillcolor=white, label=BIBX1382BS];
+"-RSB-20" -> BIBX1382BS17  [label=num];
+"-LSB-18" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-20" -> "-LSB-18"  [label=amod];
+3819 [style=filled, fillcolor=white, label=38];
+"-LSB-18" -> 3819  [label=dep];
+efficacy10 -> "-RSB-20"  [label=prep_of];
+phosphorylation24 [style=filled, fillcolor=white, label=phosphorylation];
+"radiation-induced22" [style=filled, fillcolor=white, label="radiation-induced"];
+phosphorylation24 -> "radiation-induced22"  [label=amod];
+"YB-123" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation24 -> "YB-123"  [label=nn];
+"-RSB-20" -> phosphorylation24  [label=prep_on];
+was25 [style=filled, fillcolor=white, label=was];
+tested26 -> was25  [label=auxpass];
+tested26 -> tested26  [label=root];
+fractions31 [style=filled, fillcolor=white, label=fractions];
+cytoplasmic28 [style=filled, fillcolor=white, label=cytoplasmic];
+fractions31 -> cytoplasmic28  [label=amod];
+nuclear30 [style=filled, fillcolor=white, label=nuclear];
+cytoplasmic28 -> nuclear30  [label=conj_and];
+tested26 -> fractions31  [label=prep_in];
+}

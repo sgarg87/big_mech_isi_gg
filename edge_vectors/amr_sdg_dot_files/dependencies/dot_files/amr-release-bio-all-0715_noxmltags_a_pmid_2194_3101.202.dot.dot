@@ -1,0 +1,51 @@
+digraph "Nevertheless increase motility was recorded in Caco-2 cells suggesting that Rac1 activation may be taking a lead role in the absence of the RhoA-Rho kinase signalling ." {
+label="Nevertheless increase motility was recorded in Caco-2 cells suggesting that
+Rac1 activation may be taking a lead role in the absence of the RhoA-Rho kinase
+signalling .";
+recorded5 [style=filled, fillcolor=white, label=recorded];
+Nevertheless1 [style=filled, fillcolor=white, label=Nevertheless];
+recorded5 -> Nevertheless1  [label=advmod];
+motility3 [style=filled, fillcolor=white, label=motility];
+increase2 [style=filled, fillcolor=white, label=increase];
+motility3 -> increase2  [label=nn];
+recorded5 -> motility3  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+recorded5 -> was4  [label=auxpass];
+recorded5 -> recorded5  [label=root];
+cells8 [style=filled, fillcolor=white, label=cells];
+"Caco-27" [style=filled, fillcolor=white, label="Caco-2"];
+cells8 -> "Caco-27"  [label=nn];
+recorded5 -> cells8  [label=prep_in];
+suggesting9 [style=filled, fillcolor=white, label=suggesting];
+recorded5 -> suggesting9  [label=xcomp];
+taking15 [style=filled, fillcolor=white, label=taking];
+that10 [style=filled, fillcolor=white, label=that];
+taking15 -> that10  [label=mark];
+activation12 [style=filled, fillcolor=white, label=activation];
+Rac1 [style=filled, fillcolor=white, label=Rac1];
+activation12 -> Rac1  [label=amod];
+taking15 -> activation12  [label=nsubj];
+may13 [style=filled, fillcolor=white, label=may];
+taking15 -> may13  [label=aux];
+be14 [style=filled, fillcolor=white, label=be];
+taking15 -> be14  [label=aux];
+suggesting9 -> taking15  [label=ccomp];
+role18 [style=filled, fillcolor=white, label=role];
+a16 [style=filled, fillcolor=white, label=a];
+role18 -> a16  [label=det];
+lead17 [style=filled, fillcolor=white, label=lead];
+role18 -> lead17  [label=amod];
+taking15 -> role18  [label=dobj];
+absence21 [style=filled, fillcolor=white, label=absence];
+the20 [style=filled, fillcolor=white, label=the];
+absence21 -> the20  [label=det];
+taking15 -> absence21  [label=prep_in];
+signalling26 [style=filled, fillcolor=white, label=signalling];
+the23 [style=filled, fillcolor=white, label=the];
+signalling26 -> the23  [label=det];
+"RhoA-Rho24" [style=filled, fillcolor=white, label="RhoA-Rho"];
+signalling26 -> "RhoA-Rho24"  [label=amod];
+kinase25 [style=filled, fillcolor=white, label=kinase];
+signalling26 -> kinase25  [label=nn];
+absence21 -> signalling26  [label=prep_of];
+}

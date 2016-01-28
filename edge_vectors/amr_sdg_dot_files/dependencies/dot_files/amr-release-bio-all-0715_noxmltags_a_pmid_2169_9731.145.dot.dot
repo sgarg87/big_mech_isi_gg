@@ -1,0 +1,57 @@
+digraph "IGF-1 and MØCM each significantly increased cell numbers after 48 and 72 hrs ,  while pharmacological inhibition of IGF-1R signaling blocked IGF-1 and MØCM growth effects in both neoplastic lines ( Figure 7G ,  H ) ." {
+label="IGF-1 and MØCM each significantly increased cell numbers after 48 and 72 hrs ,
+while pharmacological inhibition of IGF-1R signaling blocked IGF-1 and MØCM
+growth effects in both neoplastic lines ( Figure 7G ,  H ) .";
+increased6 [style=filled, fillcolor=white, label=increased];
+"IGF-1" [style=filled, fillcolor=white, label="IGF-1"];
+increased6 -> "IGF-1"  [label=nsubj];
+"MØCM3" [style=filled, fillcolor=white, label="MØCM"];
+"IGF-1" -> "MØCM3"  [label=conj_and];
+each4 [style=filled, fillcolor=white, label=each];
+increased6 -> each4  [label=dep];
+significantly5 [style=filled, fillcolor=white, label=significantly];
+increased6 -> significantly5  [label=advmod];
+increased6 -> increased6  [label=root];
+numbers8 [style=filled, fillcolor=white, label=numbers];
+cell7 [style=filled, fillcolor=white, label=cell];
+numbers8 -> cell7  [label=nn];
+increased6 -> numbers8  [label=dobj];
+4810 [style=filled, fillcolor=white, label=48];
+increased6 -> 4810  [label=prep_after];
+hrs13 [style=filled, fillcolor=white, label=hrs];
+721 [style=filled, fillcolor=white, label=72];
+hrs13 -> 721  [label=num];
+4810 -> hrs13  [label=conj_and];
+blocked21 [style=filled, fillcolor=white, label=blocked];
+while15 [style=filled, fillcolor=white, label=while];
+blocked21 -> while15  [label=mark];
+inhibition17 [style=filled, fillcolor=white, label=inhibition];
+pharmacological16 [style=filled, fillcolor=white, label=pharmacological];
+inhibition17 -> pharmacological16  [label=amod];
+blocked21 -> inhibition17  [label=nsubj];
+signaling20 [style=filled, fillcolor=white, label=signaling];
+"IGF-1R9" [style=filled, fillcolor=white, label="IGF-1R"];
+signaling20 -> "IGF-1R9"  [label=nn];
+inhibition17 -> signaling20  [label=prep_of];
+increased6 -> blocked21  [label=advcl];
+effects26 [style=filled, fillcolor=white, label=effects];
+"IGF-122" [style=filled, fillcolor=white, label="IGF-1"];
+effects26 -> "IGF-122"  [label=nn];
+"MØCM24" [style=filled, fillcolor=white, label="MØCM"];
+"IGF-122" -> "MØCM24"  [label=conj_and];
+growth25 [style=filled, fillcolor=white, label=growth];
+effects26 -> growth25  [label=nn];
+blocked21 -> effects26  [label=dobj];
+lines30 [style=filled, fillcolor=white, label=lines];
+both28 [style=filled, fillcolor=white, label=both];
+lines30 -> both28  [label=det];
+neoplastic29 [style=filled, fillcolor=white, label=neoplastic];
+lines30 -> neoplastic29  [label=amod];
+blocked21 -> lines30  [label=prep_in];
+Figure32 [style=filled, fillcolor=white, label=Figure];
+lines30 -> Figure32  [label=appos];
+"7G33" [style=filled, fillcolor=white, label="7G"];
+Figure32 -> "7G33"  [label=num];
+H35 [style=filled, fillcolor=white, label=H];
+Figure32 -> H35  [label=dep];
+}

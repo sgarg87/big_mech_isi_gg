@@ -1,0 +1,57 @@
+digraph "RIPA buffer ( 1 % Triton X-100 in PBS with 10 mM EDTA ,  150 mN NaCl ,  1 % sodium deoxycholate ,  and 0.1 % SDS ) and protease inhibitors or Laemmli buffer was added ." {
+label="RIPA buffer ( 1 % Triton X-100 in PBS with 10 mM EDTA ,  150 mN NaCl ,  1 %
+sodium deoxycholate ,  and 0.1 % SDS ) and protease inhibitors or Laemmli buffer
+was added .";
+buffer2 [style=filled, fillcolor=white, label=buffer];
+RIPA1 [style=filled, fillcolor=white, label=RIPA];
+buffer2 -> RIPA1  [label=nn];
+added36 [style=filled, fillcolor=white, label=added];
+added36 -> buffer2  [label=nsubjpass];
+"%5" [style=filled, fillcolor=white, label="%"];
+14 [style=filled, fillcolor=white, label=1];
+"%5" -> 14  [label=num];
+buffer2 -> "%5"  [label=dep];
+"X-1007" [style=filled, fillcolor=white, label="X-100"];
+Triton6 [style=filled, fillcolor=white, label=Triton];
+"X-1007" -> Triton6  [label=nn];
+"%5" -> "X-1007"  [label=dep];
+PBS9 [style=filled, fillcolor=white, label=PBS];
+"X-1007" -> PBS9  [label=prep_in];
+EDTA13 [style=filled, fillcolor=white, label=EDTA];
+10 [style=filled, fillcolor=white, label=10];
+EDTA13 -> 10  [label=num];
+mM12 [style=filled, fillcolor=white, label=mM];
+EDTA13 -> mM12  [label=nn];
+PBS9 -> EDTA13  [label=prep_with];
+mN16 [style=filled, fillcolor=white, label=mN];
+150 [style=filled, fillcolor=white, label=150];
+mN16 -> 150  [label=number];
+deoxycholate22 [style=filled, fillcolor=white, label=deoxycholate];
+deoxycholate22 -> mN16  [label=num];
+NaCl17 [style=filled, fillcolor=white, label=NaCl];
+deoxycholate22 -> NaCl17  [label=nn];
+"%20" [style=filled, fillcolor=white, label="%"];
+119 [style=filled, fillcolor=white, label=1];
+"%20" -> 119  [label=number];
+deoxycholate22 -> "%20"  [label=amod];
+sodium21 [style=filled, fillcolor=white, label=sodium];
+deoxycholate22 -> sodium21  [label=nn];
+EDTA13 -> deoxycholate22  [label=appos];
+"%26" [style=filled, fillcolor=white, label="%"];
+"0.125" [style=filled, fillcolor=white, label="0.1"];
+"%26" -> "0.125"  [label=number];
+SDS27 [style=filled, fillcolor=white, label=SDS];
+SDS27 -> "%26"  [label=amod];
+deoxycholate22 -> SDS27  [label=conj_and];
+inhibitors31 [style=filled, fillcolor=white, label=inhibitors];
+protease30 [style=filled, fillcolor=white, label=protease];
+inhibitors31 -> protease30  [label=nn];
+buffer2 -> inhibitors31  [label=conj_and];
+buffer34 [style=filled, fillcolor=white, label=buffer];
+Laemmli33 [style=filled, fillcolor=white, label=Laemmli];
+buffer34 -> Laemmli33  [label=nn];
+buffer2 -> buffer34  [label=conj_or];
+was35 [style=filled, fillcolor=white, label=was];
+added36 -> was35  [label=auxpass];
+added36 -> added36  [label=root];
+}

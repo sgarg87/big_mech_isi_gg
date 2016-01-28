@@ -1,0 +1,44 @@
+digraph "Here we find that both normal and oncogenic B-Raf proteins are phosphorylated on four S/TP sites ( S151 ,  T401 ,  S750 ,  and T753 ) by activated ERK ." {
+label="Here we find that both normal and oncogenic B-Raf proteins are phosphorylated
+on four S/TP sites ( S151 ,  T401 ,  S750 ,  and T753 ) by activated ERK .";
+find3 [style=filled, fillcolor=white, label=find];
+Here1 [style=filled, fillcolor=white, label=Here];
+find3 -> Here1  [label=advmod];
+we2 [style=filled, fillcolor=white, label=we];
+find3 -> we2  [label=nsubj];
+find3 -> find3  [label=root];
+phosphorylated12 [style=filled, fillcolor=white, label=phosphorylated];
+that4 [style=filled, fillcolor=white, label=that];
+phosphorylated12 -> that4  [label=mark];
+normal6 [style=filled, fillcolor=white, label=normal];
+both5 [style=filled, fillcolor=white, label=both];
+normal6 -> both5  [label=preconj];
+proteins10 [style=filled, fillcolor=white, label=proteins];
+proteins10 -> normal6  [label=amod];
+oncogenic8 [style=filled, fillcolor=white, label=oncogenic];
+normal6 -> oncogenic8  [label=conj_and];
+"B-Raf9" [style=filled, fillcolor=white, label="B-Raf"];
+proteins10 -> "B-Raf9"  [label=nn];
+phosphorylated12 -> proteins10  [label=nsubjpass];
+are11 [style=filled, fillcolor=white, label=are];
+phosphorylated12 -> are11  [label=auxpass];
+find3 -> phosphorylated12  [label=ccomp];
+sites16 [style=filled, fillcolor=white, label=sites];
+four14 [style=filled, fillcolor=white, label=four];
+sites16 -> four14  [label=num];
+"S/TP15" [style=filled, fillcolor=white, label="S/TP"];
+sites16 -> "S/TP15"  [label=nn];
+phosphorylated12 -> sites16  [label=prep_on];
+S15118 [style=filled, fillcolor=white, label=S151];
+phosphorylated12 -> S15118  [label=dep];
+T4012 [style=filled, fillcolor=white, label=T401];
+S15118 -> T4012  [label=appos];
+S75022 [style=filled, fillcolor=white, label=S750];
+T4012 -> S75022  [label=num];
+T7532 [style=filled, fillcolor=white, label=T753];
+T4012 -> T7532  [label=conj_and];
+ERK29 [style=filled, fillcolor=white, label=ERK];
+activated28 [style=filled, fillcolor=white, label=activated];
+ERK29 -> activated28  [label=amod];
+phosphorylated12 -> ERK29  [label=agent];
+}

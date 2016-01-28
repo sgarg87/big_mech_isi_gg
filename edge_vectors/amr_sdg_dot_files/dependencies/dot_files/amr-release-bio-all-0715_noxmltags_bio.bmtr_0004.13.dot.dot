@@ -1,0 +1,34 @@
+digraph "We immunoprecipitated Ras from HEK293T cells and compared the sensitivity of the monoubiquitinated and unmodified fractions of Ras to regulation by GAP ." {
+label="We immunoprecipitated Ras from HEK293T cells and compared the sensitivity of
+the monoubiquitinated and unmodified fractions of Ras to regulation by GAP .";
+immunoprecipitated2 [style=filled, fillcolor=white, label=immunoprecipitated];
+We1 [style=filled, fillcolor=white, label=We];
+immunoprecipitated2 -> We1  [label=nsubj];
+immunoprecipitated2 -> immunoprecipitated2  [label=root];
+Ras3 [style=filled, fillcolor=white, label=Ras];
+immunoprecipitated2 -> Ras3  [label=dobj];
+cells6 [style=filled, fillcolor=white, label=cells];
+HEK293T5 [style=filled, fillcolor=white, label=HEK293T];
+cells6 -> HEK293T5  [label=num];
+immunoprecipitated2 -> cells6  [label=prep_from];
+compared8 [style=filled, fillcolor=white, label=compared];
+immunoprecipitated2 -> compared8  [label=conj_and];
+sensitivity10 [style=filled, fillcolor=white, label=sensitivity];
+the9 [style=filled, fillcolor=white, label=the];
+sensitivity10 -> the9  [label=det];
+compared8 -> sensitivity10  [label=dobj];
+fractions16 [style=filled, fillcolor=white, label=fractions];
+the12 [style=filled, fillcolor=white, label=the];
+fractions16 -> the12  [label=det];
+monoubiquitinated13 [style=filled, fillcolor=white, label=monoubiquitinated];
+fractions16 -> monoubiquitinated13  [label=amod];
+unmodified15 [style=filled, fillcolor=white, label=unmodified];
+monoubiquitinated13 -> unmodified15  [label=conj_and];
+sensitivity10 -> fractions16  [label=prep_of];
+Ras18 [style=filled, fillcolor=white, label=Ras];
+fractions16 -> Ras18  [label=prep_of];
+regulation20 [style=filled, fillcolor=white, label=regulation];
+compared8 -> regulation20  [label=prep_to];
+GAP22 [style=filled, fillcolor=white, label=GAP];
+compared8 -> GAP22  [label=prep_by];
+}

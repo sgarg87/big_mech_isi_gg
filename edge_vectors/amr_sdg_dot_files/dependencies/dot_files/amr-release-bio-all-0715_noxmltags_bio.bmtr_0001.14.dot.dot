@@ -1,0 +1,51 @@
+digraph "It could be argued that GTP loading occurs prior to ubiquitination and that the GTP bound form of K-Ras ,  via interaction with effectors ,  is preferentially mono-ubiquitinated via a feedback mechanism ." {
+label="It could be argued that GTP loading occurs prior to ubiquitination and that the
+GTP bound form of K-Ras ,  via interaction with effectors ,  is preferentially
+mono-ubiquitinated via a feedback mechanism .";
+argued4 [style=filled, fillcolor=white, label=argued];
+It1 [style=filled, fillcolor=white, label=It];
+argued4 -> It1  [label=nsubjpass];
+could2 [style=filled, fillcolor=white, label=could];
+argued4 -> could2  [label=aux];
+be3 [style=filled, fillcolor=white, label=be];
+argued4 -> be3  [label=auxpass];
+argued4 -> argued4  [label=root];
+occurs8 [style=filled, fillcolor=white, label=occurs];
+that5 [style=filled, fillcolor=white, label=that];
+occurs8 -> that5  [label=mark];
+loading7 [style=filled, fillcolor=white, label=loading];
+GTP6 [style=filled, fillcolor=white, label=GTP];
+loading7 -> GTP6  [label=nn];
+occurs8 -> loading7  [label=nsubj];
+argued4 -> occurs8  [label=ccomp];
+ubiquitination11 [style=filled, fillcolor=white, label=ubiquitination];
+occurs8 -> ubiquitination11  [label=prep_prior_to];
+"mono-ubiquitinated28" [style=filled, fillcolor=white, label="mono-ubiquitinated"];
+that13 [style=filled, fillcolor=white, label=that];
+"mono-ubiquitinated28" -> that13  [label=mark];
+form17 [style=filled, fillcolor=white, label=form];
+the14 [style=filled, fillcolor=white, label=the];
+form17 -> the14  [label=det];
+GTP15 [style=filled, fillcolor=white, label=GTP];
+form17 -> GTP15  [label=nn];
+bound16 [style=filled, fillcolor=white, label=bound];
+form17 -> bound16  [label=nn];
+"mono-ubiquitinated28" -> form17  [label=nsubj];
+"K-Ras19" [style=filled, fillcolor=white, label="K-Ras"];
+form17 -> "K-Ras19"  [label=prep_of];
+interaction22 [style=filled, fillcolor=white, label=interaction];
+form17 -> interaction22  [label=prep_via];
+effectors24 [style=filled, fillcolor=white, label=effectors];
+interaction22 -> effectors24  [label=prep_with];
+is26 [style=filled, fillcolor=white, label=is];
+"mono-ubiquitinated28" -> is26  [label=cop];
+preferentially27 [style=filled, fillcolor=white, label=preferentially];
+"mono-ubiquitinated28" -> preferentially27  [label=advmod];
+occurs8 -> "mono-ubiquitinated28"  [label=conj_and];
+mechanism32 [style=filled, fillcolor=white, label=mechanism];
+a30 [style=filled, fillcolor=white, label=a];
+mechanism32 -> a30  [label=det];
+feedback31 [style=filled, fillcolor=white, label=feedback];
+mechanism32 -> feedback31  [label=nn];
+"mono-ubiquitinated28" -> mechanism32  [label=prep_via];
+}

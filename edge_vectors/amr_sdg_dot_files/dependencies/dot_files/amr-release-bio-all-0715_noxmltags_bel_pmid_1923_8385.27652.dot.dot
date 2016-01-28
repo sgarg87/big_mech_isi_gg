@@ -1,0 +1,64 @@
+digraph "The same group demonstrated just recently that mast cells actively participate in the formation of aortic aneurysms by release of IL-6 and IFN ? ,  which induced apoptosis of smooth muscle cells and protease expression -LSB- 111 -RSB- ." {
+label="The same group demonstrated just recently that mast cells actively participate
+in the formation of aortic aneurysms by release of IL-6 and IFN ? ,  which
+induced apoptosis of smooth muscle cells and protease expression -LSB- 111 -RSB-
+.";
+group3 [style=filled, fillcolor=white, label=group];
+The1 [style=filled, fillcolor=white, label=The];
+group3 -> The1  [label=det];
+same2 [style=filled, fillcolor=white, label=same];
+group3 -> same2  [label=amod];
+demonstrated4 [style=filled, fillcolor=white, label=demonstrated];
+demonstrated4 -> group3  [label=nsubj];
+demonstrated4 -> demonstrated4  [label=root];
+participate11 [style=filled, fillcolor=white, label=participate];
+just5 [style=filled, fillcolor=white, label=just];
+participate11 -> just5  [label=advmod];
+recently6 [style=filled, fillcolor=white, label=recently];
+participate11 -> recently6  [label=advmod];
+that7 [style=filled, fillcolor=white, label=that];
+participate11 -> that7  [label=mark];
+cells9 [style=filled, fillcolor=white, label=cells];
+mast8 [style=filled, fillcolor=white, label=mast];
+cells9 -> mast8  [label=nn];
+participate11 -> cells9  [label=nsubj];
+actively10 [style=filled, fillcolor=white, label=actively];
+participate11 -> actively10  [label=advmod];
+demonstrated4 -> participate11  [label=dep];
+formation14 [style=filled, fillcolor=white, label=formation];
+the13 [style=filled, fillcolor=white, label=the];
+formation14 -> the13  [label=det];
+participate11 -> formation14  [label=prep_in];
+aneurysms17 [style=filled, fillcolor=white, label=aneurysms];
+aortic16 [style=filled, fillcolor=white, label=aortic];
+aneurysms17 -> aortic16  [label=amod];
+formation14 -> aneurysms17  [label=prep_of];
+release19 [style=filled, fillcolor=white, label=release];
+participate11 -> release19  [label=prep_by];
+"IL-621" [style=filled, fillcolor=white, label="IL-6"];
+release19 -> "IL-621"  [label=prep_of];
+IFN23 [style=filled, fillcolor=white, label=IFN];
+"IL-621" -> IFN23  [label=conj_and];
+induced27 [style=filled, fillcolor=white, label=induced];
+which26 [style=filled, fillcolor=white, label=which];
+induced27 -> which26  [label=nsubj];
+participate11 -> induced27  [label=dep];
+apoptosis28 [style=filled, fillcolor=white, label=apoptosis];
+induced27 -> apoptosis28  [label=dobj];
+cells32 [style=filled, fillcolor=white, label=cells];
+smooth30 [style=filled, fillcolor=white, label=smooth];
+cells32 -> smooth30  [label=amod];
+muscle31 [style=filled, fillcolor=white, label=muscle];
+cells32 -> muscle31  [label=nn];
+apoptosis28 -> cells32  [label=prep_of];
+"-LSB-36" [style=filled, fillcolor=white, label="-LSB-"];
+protease34 [style=filled, fillcolor=white, label=protease];
+"-LSB-36" -> protease34  [label=amod];
+expression35 [style=filled, fillcolor=white, label=expression];
+"-LSB-36" -> expression35  [label=nn];
+apoptosis28 -> "-LSB-36"  [label=conj_and];
+"-RSB-38" [style=filled, fillcolor=white, label="-RSB-"];
+11137 [style=filled, fillcolor=white, label=111];
+"-RSB-38" -> 11137  [label=num];
+"-LSB-36" -> "-RSB-38"  [label=dep];
+}

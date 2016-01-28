@@ -1,0 +1,43 @@
+digraph "For comparison ,  established adenocarcinoma cell lines HT29 and DLD-1 ,  bearing mutant BRAFV600E and KRASG13D respectively ,  have also been analyzed in the present study ." {
+label="For comparison ,  established adenocarcinoma cell lines HT29 and DLD-1 ,
+bearing mutant BRAFV600E and KRASG13D respectively ,  have also been analyzed in
+the present study .";
+analyzed22 [style=filled, fillcolor=white, label=analyzed];
+comparison2 [style=filled, fillcolor=white, label=comparison];
+analyzed22 -> comparison2  [label=prep_for];
+lines7 [style=filled, fillcolor=white, label=lines];
+established4 [style=filled, fillcolor=white, label=established];
+lines7 -> established4  [label=amod];
+adenocarcinoma5 [style=filled, fillcolor=white, label=adenocarcinoma];
+lines7 -> adenocarcinoma5  [label=nn];
+cell6 [style=filled, fillcolor=white, label=cell];
+lines7 -> cell6  [label=nn];
+analyzed22 -> lines7  [label=nsubjpass];
+HT298 [style=filled, fillcolor=white, label=HT29];
+lines7 -> HT298  [label=amod];
+"DLD-10" [style=filled, fillcolor=white, label="DLD-1"];
+HT298 -> "DLD-10"  [label=conj_and];
+bearing12 [style=filled, fillcolor=white, label=bearing];
+analyzed22 -> bearing12  [label=vmod];
+BRAFV600E14 [style=filled, fillcolor=white, label=BRAFV600E];
+mutant13 [style=filled, fillcolor=white, label=mutant];
+BRAFV600E14 -> mutant13  [label=amod];
+bearing12 -> BRAFV600E14  [label=dobj];
+KRASG13D16 [style=filled, fillcolor=white, label=KRASG13D];
+BRAFV600E14 -> KRASG13D16  [label=conj_and];
+respectively17 [style=filled, fillcolor=white, label=respectively];
+bearing12 -> respectively17  [label=advmod];
+have19 [style=filled, fillcolor=white, label=have];
+analyzed22 -> have19  [label=aux];
+also20 [style=filled, fillcolor=white, label=also];
+analyzed22 -> also20  [label=advmod];
+been21 [style=filled, fillcolor=white, label=been];
+analyzed22 -> been21  [label=auxpass];
+analyzed22 -> analyzed22  [label=root];
+study26 [style=filled, fillcolor=white, label=study];
+the24 [style=filled, fillcolor=white, label=the];
+study26 -> the24  [label=det];
+present25 [style=filled, fillcolor=white, label=present];
+study26 -> present25  [label=amod];
+analyzed22 -> study26  [label=prep_in];
+}

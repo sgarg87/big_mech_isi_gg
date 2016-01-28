@@ -1,0 +1,20 @@
+digraph "As monotherapies ,  docetaxel and selumetinib resulted in 77 % ( PPFigure 3C ) ." {
+label="As monotherapies ,  docetaxel and selumetinib resulted in 77 % ( PPFigure 3C )
+.";
+resulted7 [style=filled, fillcolor=white, label=resulted];
+monotherapies2 [style=filled, fillcolor=white, label=monotherapies];
+resulted7 -> monotherapies2  [label=prep_as];
+docetaxel4 [style=filled, fillcolor=white, label=docetaxel];
+resulted7 -> docetaxel4  [label=nsubj];
+selumetinib6 [style=filled, fillcolor=white, label=selumetinib];
+docetaxel4 -> selumetinib6  [label=conj_and];
+resulted7 -> resulted7  [label=root];
+"%10" [style=filled, fillcolor=white, label="%"];
+779 [style=filled, fillcolor=white, label=77];
+"%10" -> 779  [label=num];
+resulted7 -> "%10"  [label=prep_in];
+PPFigure12 [style=filled, fillcolor=white, label=PPFigure];
+"%10" -> PPFigure12  [label=appos];
+"3C1" [style=filled, fillcolor=white, label="3C"];
+PPFigure12 -> "3C1"  [label=num];
+}

@@ -1,0 +1,45 @@
+digraph "Consistent with the earlier results ,  p42/44 MAPK and its upstream kinase MEK1/2 were activated in a time-dependent manner by the induction of Pak1 ( Fig. 3C ) ." {
+label="Consistent with the earlier results ,  p42/44 MAPK and its upstream kinase
+MEK1/2 were activated in a time-dependent manner by the induction of Pak1 ( Fig.
+3C ) .";
+activated15 [style=filled, fillcolor=white, label=activated];
+Consistent1 [style=filled, fillcolor=white, label=Consistent];
+activated15 -> Consistent1  [label=nsubjpass];
+results5 [style=filled, fillcolor=white, label=results];
+the3 [style=filled, fillcolor=white, label=the];
+results5 -> the3  [label=det];
+earlier4 [style=filled, fillcolor=white, label=earlier];
+results5 -> earlier4  [label=amod];
+Consistent1 -> results5  [label=prep_with];
+MAPK8 [style=filled, fillcolor=white, label=MAPK];
+"p42/447" [style=filled, fillcolor=white, label="p42/44"];
+MAPK8 -> "p42/447"  [label=amod];
+results5 -> MAPK8  [label=conj_and];
+"MEK1/213" [style=filled, fillcolor=white, label="MEK1/2"];
+its10 [style=filled, fillcolor=white, label=its];
+"MEK1/213" -> its10  [label=poss];
+upstream11 [style=filled, fillcolor=white, label=upstream];
+"MEK1/213" -> upstream11  [label=amod];
+kinase12 [style=filled, fillcolor=white, label=kinase];
+"MEK1/213" -> kinase12  [label=amod];
+results5 -> "MEK1/213"  [label=conj_and];
+were14 [style=filled, fillcolor=white, label=were];
+activated15 -> were14  [label=auxpass];
+activated15 -> activated15  [label=root];
+manner19 [style=filled, fillcolor=white, label=manner];
+a17 [style=filled, fillcolor=white, label=a];
+manner19 -> a17  [label=det];
+"time-dependent18" [style=filled, fillcolor=white, label="time-dependent"];
+manner19 -> "time-dependent18"  [label=amod];
+activated15 -> manner19  [label=prep_in];
+induction22 [style=filled, fillcolor=white, label=induction];
+the21 [style=filled, fillcolor=white, label=the];
+induction22 -> the21  [label=det];
+activated15 -> induction22  [label=agent];
+Pak124 [style=filled, fillcolor=white, label=Pak1];
+induction22 -> Pak124  [label=prep_of];
+"3C27" [style=filled, fillcolor=white, label="3C"];
+"Fig.26" [style=filled, fillcolor=white, label="Fig."];
+"3C27" -> "Fig.26"  [label=number];
+Pak124 -> "3C27"  [label=dep];
+}

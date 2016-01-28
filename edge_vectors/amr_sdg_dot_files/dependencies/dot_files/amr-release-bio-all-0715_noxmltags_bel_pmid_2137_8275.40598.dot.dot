@@ -1,0 +1,47 @@
+digraph "CD11b + / Gr-1 + cells from doxcycline-treated bitransgenic mice showed the strongest inhibition on proliferation of wild-type CD4 + T cells ( Figure 3C ) ." {
+label="CD11b + / Gr-1 + cells from doxcycline-treated bitransgenic mice showed the
+strongest inhibition on proliferation of wild-type CD4 + T cells ( Figure 3C )
+.";
+"+2" [style=filled, fillcolor=white, label="+"];
+CD11b [style=filled, fillcolor=white, label=CD11b];
+"+2" -> CD11b  [label=nn];
+"+2" -> "+2"  [label=root];
+"/3" [style=filled, fillcolor=white, label="/"];
+"+2" -> "/3"  [label=punct];
+cells6 [style=filled, fillcolor=white, label=cells];
+"Gr-14" [style=filled, fillcolor=white, label="Gr-1"];
+cells6 -> "Gr-14"  [label=nn];
+"+5" [style=filled, fillcolor=white, label="+"];
+cells6 -> "+5"  [label=nn];
+showed11 [style=filled, fillcolor=white, label=showed];
+showed11 -> cells6  [label=nsubj];
+mice10 [style=filled, fillcolor=white, label=mice];
+"doxcycline-treated8" [style=filled, fillcolor=white, label="doxcycline-treated"];
+mice10 -> "doxcycline-treated8"  [label=amod];
+bitransgenic9 [style=filled, fillcolor=white, label=bitransgenic];
+mice10 -> bitransgenic9  [label=amod];
+cells6 -> mice10  [label=prep_from];
+"+2" -> showed11  [label=dep];
+inhibition14 [style=filled, fillcolor=white, label=inhibition];
+the12 [style=filled, fillcolor=white, label=the];
+inhibition14 -> the12  [label=det];
+strongest13 [style=filled, fillcolor=white, label=strongest];
+inhibition14 -> strongest13  [label=amod];
+showed11 -> inhibition14  [label=dobj];
+proliferation16 [style=filled, fillcolor=white, label=proliferation];
+inhibition14 -> proliferation16  [label=prep_on];
+cells22 [style=filled, fillcolor=white, label=cells];
+"wild-type18" [style=filled, fillcolor=white, label="wild-type"];
+cells22 -> "wild-type18"  [label=amod];
+CD419 [style=filled, fillcolor=white, label=CD4];
+cells22 -> CD419  [label=nn];
+"+20" [style=filled, fillcolor=white, label="+"];
+cells22 -> "+20"  [label=nn];
+T21 [style=filled, fillcolor=white, label=T];
+cells22 -> T21  [label=nn];
+proliferation16 -> cells22  [label=prep_of];
+Figure24 [style=filled, fillcolor=white, label=Figure];
+proliferation16 -> Figure24  [label=appos];
+"3C25" [style=filled, fillcolor=white, label="3C"];
+Figure24 -> "3C25"  [label=num];
+}

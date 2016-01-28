@@ -1,0 +1,32 @@
+digraph "Following this treatment ,  Snail protein was detected within 30 min ,  peaked at 2 h ,  and then declined thereafter ." {
+label="Following this treatment ,  Snail protein was detected within 30 min ,  peaked
+at 2 h ,  and then declined thereafter .";
+treatment3 [style=filled, fillcolor=white, label=treatment];
+this2 [style=filled, fillcolor=white, label=this];
+treatment3 -> this2  [label=det];
+detected8 [style=filled, fillcolor=white, label=detected];
+detected8 -> treatment3  [label=prep_following];
+protein6 [style=filled, fillcolor=white, label=protein];
+Snail5 [style=filled, fillcolor=white, label=Snail];
+protein6 -> Snail5  [label=nn];
+detected8 -> protein6  [label=nsubjpass];
+was7 [style=filled, fillcolor=white, label=was];
+detected8 -> was7  [label=auxpass];
+detected8 -> detected8  [label=root];
+min11 [style=filled, fillcolor=white, label=min];
+301 [style=filled, fillcolor=white, label=30];
+min11 -> 301  [label=num];
+detected8 -> min11  [label=prep_within];
+peaked13 [style=filled, fillcolor=white, label=peaked];
+detected8 -> peaked13  [label=conj_and];
+h16 [style=filled, fillcolor=white, label=h];
+215 [style=filled, fillcolor=white, label=2];
+h16 -> 215  [label=num];
+peaked13 -> h16  [label=prep_at];
+declined20 [style=filled, fillcolor=white, label=declined];
+then19 [style=filled, fillcolor=white, label=then];
+declined20 -> then19  [label=advmod];
+detected8 -> declined20  [label=conj_and];
+thereafter21 [style=filled, fillcolor=white, label=thereafter];
+declined20 -> thereafter21  [label=advmod];
+}

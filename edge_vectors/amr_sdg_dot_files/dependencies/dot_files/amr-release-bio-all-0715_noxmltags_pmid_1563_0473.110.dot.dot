@@ -1,0 +1,42 @@
+digraph "Rather ,  the findings are consistent with a previous report that E-cadherin is required for the translation of α-catenin mRNA -LSB- 22 -RSB- ." {
+label="Rather ,  the findings are consistent with a previous report that E-cadherin is
+required for the translation of α-catenin mRNA -LSB- 22 -RSB- .";
+consistent6 [style=filled, fillcolor=white, label=consistent];
+Rather1 [style=filled, fillcolor=white, label=Rather];
+consistent6 -> Rather1  [label=advmod];
+findings4 [style=filled, fillcolor=white, label=findings];
+the3 [style=filled, fillcolor=white, label=the];
+findings4 -> the3  [label=det];
+consistent6 -> findings4  [label=nsubj];
+are5 [style=filled, fillcolor=white, label=are];
+consistent6 -> are5  [label=cop];
+consistent6 -> consistent6  [label=root];
+report10 [style=filled, fillcolor=white, label=report];
+a8 [style=filled, fillcolor=white, label=a];
+report10 -> a8  [label=det];
+previous9 [style=filled, fillcolor=white, label=previous];
+report10 -> previous9  [label=amod];
+consistent6 -> report10  [label=prep_with];
+required14 [style=filled, fillcolor=white, label=required];
+that11 [style=filled, fillcolor=white, label=that];
+required14 -> that11  [label=mark];
+"E-cadherin12" [style=filled, fillcolor=white, label="E-cadherin"];
+required14 -> "E-cadherin12"  [label=nsubjpass];
+is13 [style=filled, fillcolor=white, label=is];
+required14 -> is13  [label=auxpass];
+consistent6 -> required14  [label=ccomp];
+translation17 [style=filled, fillcolor=white, label=translation];
+the16 [style=filled, fillcolor=white, label=the];
+translation17 -> the16  [label=det];
+required14 -> translation17  [label=prep_for];
+mRNA20 [style=filled, fillcolor=white, label=mRNA];
+"α-catenin19" [style=filled, fillcolor=white, label="α-catenin"];
+mRNA20 -> "α-catenin19"  [label=amod];
+translation17 -> mRNA20  [label=prep_of];
+"-LSB-21" [style=filled, fillcolor=white, label="-LSB-"];
+required14 -> "-LSB-21"  [label=xcomp];
+"-RSB-23" [style=filled, fillcolor=white, label="-RSB-"];
+22 [style=filled, fillcolor=white, label=22];
+"-RSB-23" -> 22  [label=num];
+"-LSB-21" -> "-RSB-23"  [label=dobj];
+}

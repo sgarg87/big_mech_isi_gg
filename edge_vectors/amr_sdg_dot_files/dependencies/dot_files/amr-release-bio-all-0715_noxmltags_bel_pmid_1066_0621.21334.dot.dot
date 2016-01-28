@@ -1,0 +1,49 @@
+digraph "Furthermore ,  Erk-2 phosphorylated threonine 1179 and serine 1185 ( and to a lesser extent ,  serine 395 ) in vitro ,  suggesting the importance of this pathway for SRC-1 regulation ." {
+label="Furthermore ,  Erk-2 phosphorylated threonine 1179 and serine 1185 ( and to a
+lesser extent ,  serine 395 ) in vitro ,  suggesting the importance of this
+pathway for SRC-1 regulation .";
+phosphorylated4 [style=filled, fillcolor=white, label=phosphorylated];
+Furthermore1 [style=filled, fillcolor=white, label=Furthermore];
+phosphorylated4 -> Furthermore1  [label=advmod];
+"Erk-23" [style=filled, fillcolor=white, label="Erk-2"];
+phosphorylated4 -> "Erk-23"  [label=nsubj];
+phosphorylated4 -> phosphorylated4  [label=root];
+threonine5 [style=filled, fillcolor=white, label=threonine];
+phosphorylated4 -> threonine5  [label=dep];
+11796 [style=filled, fillcolor=white, label=1179];
+threonine5 -> 11796  [label=dobj];
+serine8 [style=filled, fillcolor=white, label=serine];
+threonine5 -> serine8  [label=conj_and];
+11859 [style=filled, fillcolor=white, label=1185];
+serine8 -> 11859  [label=dobj];
+to12 [style=filled, fillcolor=white, label=to];
+and11 [style=filled, fillcolor=white, label=and];
+to12 -> and11  [label=cc];
+serine8 -> to12  [label=dep];
+extent15 [style=filled, fillcolor=white, label=extent];
+a13 [style=filled, fillcolor=white, label=a];
+extent15 -> a13  [label=det];
+lesser14 [style=filled, fillcolor=white, label=lesser];
+extent15 -> lesser14  [label=amod];
+to12 -> extent15  [label=pobj];
+serine17 [style=filled, fillcolor=white, label=serine];
+to12 -> serine17  [label=dep];
+39518 [style=filled, fillcolor=white, label=395];
+serine17 -> 39518  [label=dobj];
+vitro21 [style=filled, fillcolor=white, label=vitro];
+serine8 -> vitro21  [label=prepc_in];
+suggesting23 [style=filled, fillcolor=white, label=suggesting];
+vitro21 -> suggesting23  [label=dep];
+importance25 [style=filled, fillcolor=white, label=importance];
+the24 [style=filled, fillcolor=white, label=the];
+importance25 -> the24  [label=det];
+vitro21 -> importance25  [label=dobj];
+pathway28 [style=filled, fillcolor=white, label=pathway];
+this27 [style=filled, fillcolor=white, label=this];
+pathway28 -> this27  [label=det];
+importance25 -> pathway28  [label=prep_of];
+regulation31 [style=filled, fillcolor=white, label=regulation];
+"SRC-130" [style=filled, fillcolor=white, label="SRC-1"];
+regulation31 -> "SRC-130"  [label=nn];
+pathway28 -> regulation31  [label=prep_for];
+}

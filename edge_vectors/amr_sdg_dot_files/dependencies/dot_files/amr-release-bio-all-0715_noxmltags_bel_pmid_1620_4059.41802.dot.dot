@@ -1,0 +1,30 @@
+digraph "Down-regulation of thrombospondin-1 promoter activity in nontumorigenic dermal fibroblasts exposed to tumor cell-derived soluble mediator ( s ) ." {
+label="Down-regulation of thrombospondin-1 promoter activity in nontumorigenic dermal
+fibroblasts exposed to tumor cell-derived soluble mediator ( s ) .";
+exposed10 [style=filled, fillcolor=white, label=exposed];
+"Down-regulation1" [style=filled, fillcolor=white, label="Down-regulation"];
+exposed10 -> "Down-regulation1"  [label=nsubj];
+activity5 [style=filled, fillcolor=white, label=activity];
+"thrombospondin-13" [style=filled, fillcolor=white, label="thrombospondin-1"];
+activity5 -> "thrombospondin-13"  [label=amod];
+promoter4 [style=filled, fillcolor=white, label=promoter];
+activity5 -> promoter4  [label=nn];
+"Down-regulation1" -> activity5  [label=prep_of];
+fibroblasts9 [style=filled, fillcolor=white, label=fibroblasts];
+nontumorigenic7 [style=filled, fillcolor=white, label=nontumorigenic];
+fibroblasts9 -> nontumorigenic7  [label=amod];
+dermal8 [style=filled, fillcolor=white, label=dermal];
+fibroblasts9 -> dermal8  [label=amod];
+activity5 -> fibroblasts9  [label=prep_in];
+exposed10 -> exposed10  [label=root];
+mediator15 [style=filled, fillcolor=white, label=mediator];
+tumor12 [style=filled, fillcolor=white, label=tumor];
+mediator15 -> tumor12  [label=nn];
+"cell-derived13" [style=filled, fillcolor=white, label="cell-derived"];
+mediator15 -> "cell-derived13"  [label=amod];
+soluble14 [style=filled, fillcolor=white, label=soluble];
+mediator15 -> soluble14  [label=amod];
+exposed10 -> mediator15  [label=prep_to];
+s17 [style=filled, fillcolor=white, label=s];
+mediator15 -> s17  [label=dep];
+}

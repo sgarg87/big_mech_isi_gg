@@ -1,0 +1,36 @@
+digraph "Elk-1 is phosphorylated by both kinases ( MAPK8 and MAPK9 ) ,  each of which is strongly stimulated by pre-treatment of cells with ultraviolet light ." {
+label="Elk-1 is phosphorylated by both kinases ( MAPK8 and MAPK9 ) ,  each of which is
+strongly stimulated by pre-treatment of cells with ultraviolet light .";
+phosphorylated3 [style=filled, fillcolor=white, label=phosphorylated];
+"Elk-1" [style=filled, fillcolor=white, label="Elk-1"];
+phosphorylated3 -> "Elk-1"  [label=nsubjpass];
+is2 [style=filled, fillcolor=white, label=is];
+phosphorylated3 -> is2  [label=auxpass];
+phosphorylated3 -> phosphorylated3  [label=root];
+kinases6 [style=filled, fillcolor=white, label=kinases];
+both5 [style=filled, fillcolor=white, label=both];
+kinases6 -> both5  [label=det];
+phosphorylated3 -> kinases6  [label=agent];
+MAPK8 [style=filled, fillcolor=white, label=MAPK8];
+kinases6 -> MAPK8  [label=appos];
+MAPK910 [style=filled, fillcolor=white, label=MAPK9];
+MAPK8 -> MAPK910  [label=conj_and];
+stimulated18 [style=filled, fillcolor=white, label=stimulated];
+each13 [style=filled, fillcolor=white, label=each];
+stimulated18 -> each13  [label=nsubjpass];
+which15 [style=filled, fillcolor=white, label=which];
+each13 -> which15  [label=prep_of];
+is16 [style=filled, fillcolor=white, label=is];
+stimulated18 -> is16  [label=auxpass];
+strongly17 [style=filled, fillcolor=white, label=strongly];
+stimulated18 -> strongly17  [label=advmod];
+kinases6 -> stimulated18  [label=rcmod];
+"pre-treatment20" [style=filled, fillcolor=white, label="pre-treatment"];
+stimulated18 -> "pre-treatment20"  [label=agent];
+cells22 [style=filled, fillcolor=white, label=cells];
+"pre-treatment20" -> cells22  [label=prep_of];
+light25 [style=filled, fillcolor=white, label=light];
+ultraviolet24 [style=filled, fillcolor=white, label=ultraviolet];
+light25 -> ultraviolet24  [label=amod];
+cells22 -> light25  [label=prep_with];
+}

@@ -1,0 +1,47 @@
+digraph "after a long latency ,  Ung / and Mutyh / mice developed B-cell lymphomas and intestinal tumors ,  respectively ( Nilsen et al ,  2003 ; Sakamoto et al ,  2007 ) ." {
+label="after a long latency ,  Ung / and Mutyh / mice developed B-cell lymphomas and
+intestinal tumors ,  respectively ( Nilsen et al ,  2003 ; Sakamoto et al ,
+2007 ) .";
+latency4 [style=filled, fillcolor=white, label=latency];
+a2 [style=filled, fillcolor=white, label=a];
+latency4 -> a2  [label=det];
+long3 [style=filled, fillcolor=white, label=long];
+latency4 -> long3  [label=amod];
+developed12 [style=filled, fillcolor=white, label=developed];
+developed12 -> latency4  [label=prep_after];
+mice11 [style=filled, fillcolor=white, label=mice];
+Ung6 [style=filled, fillcolor=white, label=Ung];
+mice11 -> Ung6  [label=nn];
+Mutyh9 [style=filled, fillcolor=white, label=Mutyh];
+"/7" [style=filled, fillcolor=white, label="/"];
+Mutyh9 -> "/7"  [label=punct];
+and8 [style=filled, fillcolor=white, label=and];
+Mutyh9 -> and8  [label=cc];
+mice11 -> Mutyh9  [label=dep];
+"/10" [style=filled, fillcolor=white, label="/"];
+Mutyh9 -> "/10"  [label=punct];
+developed12 -> mice11  [label=nsubj];
+developed12 -> developed12  [label=root];
+lymphomas14 [style=filled, fillcolor=white, label=lymphomas];
+"B-cell13" [style=filled, fillcolor=white, label="B-cell"];
+lymphomas14 -> "B-cell13"  [label=amod];
+developed12 -> lymphomas14  [label=dobj];
+tumors17 [style=filled, fillcolor=white, label=tumors];
+intestinal16 [style=filled, fillcolor=white, label=intestinal];
+tumors17 -> intestinal16  [label=amod];
+lymphomas14 -> tumors17  [label=conj_and];
+respectively19 [style=filled, fillcolor=white, label=respectively];
+lymphomas14 -> respectively19  [label=advmod];
+Nilsen21 [style=filled, fillcolor=white, label=Nilsen];
+lymphomas14 -> Nilsen21  [label=dep];
+al23 [style=filled, fillcolor=white, label=al];
+Nilsen21 -> al23  [label=conj_et];
+200325 [style=filled, fillcolor=white, label=2003];
+Nilsen21 -> 200325  [label=appos];
+Sakamoto27 [style=filled, fillcolor=white, label=Sakamoto];
+200325 -> Sakamoto27  [label=dep];
+al29 [style=filled, fillcolor=white, label=al];
+Sakamoto27 -> al29  [label=conj_et];
+200731 [style=filled, fillcolor=white, label=2007];
+Nilsen21 -> 200731  [label=amod];
+}

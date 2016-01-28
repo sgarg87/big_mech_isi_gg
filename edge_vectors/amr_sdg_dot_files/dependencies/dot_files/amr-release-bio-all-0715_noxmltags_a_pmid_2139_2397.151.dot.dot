@@ -1,0 +1,39 @@
+digraph "In con.-vector-transfected cells ,  GFP expression was not accumulated at the cell membrane ,  but rather it was equally distributed throughout the cytoplasm ." {
+label="In con.-vector-transfected cells ,  GFP expression was not accumulated at the
+cell membrane ,  but rather it was equally distributed throughout the cytoplasm
+.";
+cells3 [style=filled, fillcolor=white, label=cells];
+"con.-vector-transfected2" [style=filled, fillcolor=white, label="con.-vector-transfected"];
+cells3 -> "con.-vector-transfected2"  [label=amod];
+accumulated9 [style=filled, fillcolor=white, label=accumulated];
+accumulated9 -> cells3  [label=prep_in];
+expression6 [style=filled, fillcolor=white, label=expression];
+GFP5 [style=filled, fillcolor=white, label=GFP];
+expression6 -> GFP5  [label=nn];
+accumulated9 -> expression6  [label=nsubjpass];
+was7 [style=filled, fillcolor=white, label=was];
+accumulated9 -> was7  [label=auxpass];
+not8 [style=filled, fillcolor=white, label=not];
+accumulated9 -> not8  [label=neg];
+accumulated9 -> accumulated9  [label=root];
+membrane13 [style=filled, fillcolor=white, label=membrane];
+the11 [style=filled, fillcolor=white, label=the];
+membrane13 -> the11  [label=det];
+cell12 [style=filled, fillcolor=white, label=cell];
+membrane13 -> cell12  [label=nn];
+accumulated9 -> membrane13  [label=prep_at];
+distributed20 [style=filled, fillcolor=white, label=distributed];
+rather16 [style=filled, fillcolor=white, label=rather];
+distributed20 -> rather16  [label=advmod];
+it17 [style=filled, fillcolor=white, label=it];
+distributed20 -> it17  [label=nsubjpass];
+was18 [style=filled, fillcolor=white, label=was];
+distributed20 -> was18  [label=auxpass];
+equally19 [style=filled, fillcolor=white, label=equally];
+distributed20 -> equally19  [label=advmod];
+accumulated9 -> distributed20  [label=conj_but];
+cytoplasm23 [style=filled, fillcolor=white, label=cytoplasm];
+the22 [style=filled, fillcolor=white, label=the];
+cytoplasm23 -> the22  [label=det];
+distributed20 -> cytoplasm23  [label=prep_throughout];
+}

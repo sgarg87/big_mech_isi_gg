@@ -1,0 +1,21 @@
+digraph "( H -- J ) TGF-β2-null hair fails to down-regulate E-cadherin ( H ) ." {
+label="( H -- J ) TGF-β2-null hair fails to down-regulate E-cadherin ( H ) .";
+"TGF-β2-null6" [style=filled, fillcolor=white, label="TGF-β2-null"];
+H2 [style=filled, fillcolor=white, label=H];
+"TGF-β2-null6" -> H2  [label=nsubj];
+J4 [style=filled, fillcolor=white, label=J];
+H2 -> J4  [label=dep];
+"TGF-β2-null6" -> "TGF-β2-null6"  [label=root];
+fails8 [style=filled, fillcolor=white, label=fails];
+hair7 [style=filled, fillcolor=white, label=hair];
+fails8 -> hair7  [label=nsubj];
+"TGF-β2-null6" -> fails8  [label=ccomp];
+"down-regulate10" [style=filled, fillcolor=white, label="down-regulate"];
+to9 [style=filled, fillcolor=white, label=to];
+"down-regulate10" -> to9  [label=aux];
+fails8 -> "down-regulate10"  [label=xcomp];
+H13 [style=filled, fillcolor=white, label=H];
+"E-cadherin11" [style=filled, fillcolor=white, label="E-cadherin"];
+H13 -> "E-cadherin11"  [label=nn];
+"down-regulate10" -> H13  [label=dobj];
+}

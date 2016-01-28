@@ -1,0 +1,42 @@
+digraph "Jak2 and STAT3 protein expression was significantly higher in the model control group than in all other groups ( P < 0.05 ) ." {
+label="Jak2 and STAT3 protein expression was significantly higher in the model control
+group than in all other groups ( P < 0.05 ) .";
+expression5 [style=filled, fillcolor=white, label=expression];
+Jak21 [style=filled, fillcolor=white, label=Jak2];
+expression5 -> Jak21  [label=nn];
+STAT3 [style=filled, fillcolor=white, label=STAT3];
+Jak21 -> STAT3  [label=conj_and];
+protein4 [style=filled, fillcolor=white, label=protein];
+expression5 -> protein4  [label=nn];
+higher8 [style=filled, fillcolor=white, label=higher];
+higher8 -> expression5  [label=nsubj];
+was6 [style=filled, fillcolor=white, label=was];
+higher8 -> was6  [label=cop];
+significantly7 [style=filled, fillcolor=white, label=significantly];
+higher8 -> significantly7  [label=advmod];
+higher8 -> higher8  [label=root];
+group13 [style=filled, fillcolor=white, label=group];
+the10 [style=filled, fillcolor=white, label=the];
+group13 -> the10  [label=det];
+model11 [style=filled, fillcolor=white, label=model];
+group13 -> model11  [label=nn];
+control12 [style=filled, fillcolor=white, label=control];
+group13 -> control12  [label=nn];
+higher8 -> group13  [label=prep_in];
+than14 [style=filled, fillcolor=white, label=than];
+higher8 -> than14  [label=prep];
+in15 [style=filled, fillcolor=white, label=in];
+than14 -> in15  [label=pcomp];
+groups18 [style=filled, fillcolor=white, label=groups];
+all16 [style=filled, fillcolor=white, label=all];
+groups18 -> all16  [label=det];
+other17 [style=filled, fillcolor=white, label=other];
+groups18 -> other17  [label=amod];
+in15 -> groups18  [label=pobj];
+"0.0522" [style=filled, fillcolor=white, label="0.05"];
+P20 [style=filled, fillcolor=white, label=P];
+"0.0522" -> P20  [label=nn];
+"<21" [style=filled, fillcolor=white, label="<"];
+"0.0522" -> "<21"  [label=nn];
+groups18 -> "0.0522"  [label=appos];
+}

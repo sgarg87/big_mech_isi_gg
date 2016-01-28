@@ -1,0 +1,57 @@
+digraph "A further negative regulator of the cascade ,  at the level of C-Raf ,  is Protein phosphatase 5 ( PP5 ) ,  which associates with C-Raf via its N-terminal tetratricopeptide ( TPR ) domain in growth factor stimulated cells ." {
+label="A further negative regulator of the cascade ,  at the level of C-Raf ,  is
+Protein phosphatase 5 ( PP5 ) ,  which associates with C-Raf via its N-terminal
+tetratricopeptide ( TPR ) domain in growth factor stimulated cells .";
+regulator4 [style=filled, fillcolor=white, label=regulator];
+A1 [style=filled, fillcolor=white, label=A];
+regulator4 -> A1  [label=det];
+further2 [style=filled, fillcolor=white, label=further];
+regulator4 -> further2  [label=amod];
+negative3 [style=filled, fillcolor=white, label=negative];
+regulator4 -> negative3  [label=amod];
+Protein16 [style=filled, fillcolor=white, label=Protein];
+Protein16 -> regulator4  [label=nsubj];
+cascade7 [style=filled, fillcolor=white, label=cascade];
+the6 [style=filled, fillcolor=white, label=the];
+cascade7 -> the6  [label=det];
+regulator4 -> cascade7  [label=prep_of];
+level11 [style=filled, fillcolor=white, label=level];
+the10 [style=filled, fillcolor=white, label=the];
+level11 -> the10  [label=det];
+regulator4 -> level11  [label=prep_at];
+"C-Raf13" [style=filled, fillcolor=white, label="C-Raf"];
+level11 -> "C-Raf13"  [label=prep_of];
+is15 [style=filled, fillcolor=white, label=is];
+Protein16 -> is15  [label=cop];
+Protein16 -> Protein16  [label=root];
+phosphatase17 [style=filled, fillcolor=white, label=phosphatase];
+Protein16 -> phosphatase17  [label=amod];
+518 [style=filled, fillcolor=white, label=5];
+phosphatase17 -> 518  [label=dep];
+PP520 [style=filled, fillcolor=white, label=PP5];
+Protein16 -> PP520  [label=appos];
+domain34 [style=filled, fillcolor=white, label=domain];
+which23 [style=filled, fillcolor=white, label=which];
+domain34 -> which23  [label=dobj];
+associates24 [style=filled, fillcolor=white, label=associates];
+domain34 -> associates24  [label=nsubj];
+"C-Raf26" [style=filled, fillcolor=white, label="C-Raf"];
+associates24 -> "C-Raf26"  [label=prep_with];
+tetratricopeptide30 [style=filled, fillcolor=white, label=tetratricopeptide];
+its28 [style=filled, fillcolor=white, label=its];
+tetratricopeptide30 -> its28  [label=poss];
+"N-terminal29" [style=filled, fillcolor=white, label="N-terminal"];
+tetratricopeptide30 -> "N-terminal29"  [label=amod];
+"C-Raf26" -> tetratricopeptide30  [label=prep_via];
+TPR32 [style=filled, fillcolor=white, label=TPR];
+tetratricopeptide30 -> TPR32  [label=appos];
+Protein16 -> domain34  [label=dep];
+factor37 [style=filled, fillcolor=white, label=factor];
+growth36 [style=filled, fillcolor=white, label=growth];
+factor37 -> growth36  [label=nn];
+domain34 -> factor37  [label=prep_in];
+stimulated38 [style=filled, fillcolor=white, label=stimulated];
+factor37 -> stimulated38  [label=vmod];
+cells39 [style=filled, fillcolor=white, label=cells];
+stimulated38 -> cells39  [label=dobj];
+}

@@ -1,0 +1,45 @@
+digraph "Through metabolic labeling experiments ,  we find here that in addition to the S750 and T753 sites ,  B-Raf is feedback phosphorylated on two other sites ,  S151 and T401 ." {
+label="Through metabolic labeling experiments ,  we find here that in addition to the
+S750 and T753 sites ,  B-Raf is feedback phosphorylated on two other sites ,
+S151 and T401 .";
+experiments4 [style=filled, fillcolor=white, label=experiments];
+metabolic2 [style=filled, fillcolor=white, label=metabolic];
+experiments4 -> metabolic2  [label=amod];
+labeling3 [style=filled, fillcolor=white, label=labeling];
+experiments4 -> labeling3  [label=amod];
+find7 [style=filled, fillcolor=white, label=find];
+find7 -> experiments4  [label=prep_through];
+we6 [style=filled, fillcolor=white, label=we];
+find7 -> we6  [label=nsubj];
+find7 -> find7  [label=root];
+here8 [style=filled, fillcolor=white, label=here];
+find7 -> here8  [label=advmod];
+feedback21 [style=filled, fillcolor=white, label=feedback];
+that9 [style=filled, fillcolor=white, label=that];
+feedback21 -> that9  [label=mark];
+sites17 [style=filled, fillcolor=white, label=sites];
+the13 [style=filled, fillcolor=white, label=the];
+sites17 -> the13  [label=det];
+S75014 [style=filled, fillcolor=white, label=S750];
+sites17 -> S75014  [label=nn];
+T75316 [style=filled, fillcolor=white, label=T753];
+S75014 -> T75316  [label=conj_and];
+feedback21 -> sites17  [label=prep_in_addition_to];
+"B-Raf19" [style=filled, fillcolor=white, label="B-Raf"];
+feedback21 -> "B-Raf19"  [label=nsubj];
+is20 [style=filled, fillcolor=white, label=is];
+feedback21 -> is20  [label=cop];
+find7 -> feedback21  [label=ccomp];
+phosphorylated22 [style=filled, fillcolor=white, label=phosphorylated];
+feedback21 -> phosphorylated22  [label=vmod];
+sites26 [style=filled, fillcolor=white, label=sites];
+two24 [style=filled, fillcolor=white, label=two];
+sites26 -> two24  [label=num];
+other25 [style=filled, fillcolor=white, label=other];
+sites26 -> other25  [label=amod];
+phosphorylated22 -> sites26  [label=prep_on];
+S15128 [style=filled, fillcolor=white, label=S151];
+sites26 -> S15128  [label=conj_and];
+T4013 [style=filled, fillcolor=white, label=T401];
+sites26 -> T4013  [label=conj_and];
+}

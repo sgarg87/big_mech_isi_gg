@@ -1,0 +1,55 @@
+digraph "A number of compounds including the DNA-alkylating agent TMZ and the anti-mitotic drug docetaxel resulted in a greatly enhanced tumour growth inhibition compared with monotherapies ( Table 1 and supplementary Table 1 ) ." {
+label="A number of compounds including the DNA-alkylating agent TMZ and the anti-
+mitotic drug docetaxel resulted in a greatly enhanced tumour growth inhibition
+compared with monotherapies ( Table 1 and supplementary Table 1 ) .";
+number2 [style=filled, fillcolor=white, label=number];
+A1 [style=filled, fillcolor=white, label=A];
+number2 -> A1  [label=det];
+resulted15 [style=filled, fillcolor=white, label=resulted];
+resulted15 -> number2  [label=nsubj];
+compounds4 [style=filled, fillcolor=white, label=compounds];
+number2 -> compounds4  [label=prep_of];
+TMZ9 [style=filled, fillcolor=white, label=TMZ];
+the6 [style=filled, fillcolor=white, label=the];
+TMZ9 -> the6  [label=det];
+"DNA-alkylating7" [style=filled, fillcolor=white, label="DNA-alkylating"];
+TMZ9 -> "DNA-alkylating7"  [label=amod];
+agent8 [style=filled, fillcolor=white, label=agent];
+TMZ9 -> agent8  [label=nn];
+compounds4 -> TMZ9  [label=prep_including];
+docetaxel14 [style=filled, fillcolor=white, label=docetaxel];
+the11 [style=filled, fillcolor=white, label=the];
+docetaxel14 -> the11  [label=det];
+"anti-mitotic12" [style=filled, fillcolor=white, label="anti-mitotic"];
+docetaxel14 -> "anti-mitotic12"  [label=amod];
+drug13 [style=filled, fillcolor=white, label=drug];
+docetaxel14 -> drug13  [label=nn];
+TMZ9 -> docetaxel14  [label=conj_and];
+resulted15 -> resulted15  [label=root];
+inhibition22 [style=filled, fillcolor=white, label=inhibition];
+a17 [style=filled, fillcolor=white, label=a];
+inhibition22 -> a17  [label=det];
+enhanced19 [style=filled, fillcolor=white, label=enhanced];
+greatly18 [style=filled, fillcolor=white, label=greatly];
+enhanced19 -> greatly18  [label=advmod];
+inhibition22 -> enhanced19  [label=amod];
+tumour20 [style=filled, fillcolor=white, label=tumour];
+inhibition22 -> tumour20  [label=nn];
+growth21 [style=filled, fillcolor=white, label=growth];
+inhibition22 -> growth21  [label=nn];
+resulted15 -> inhibition22  [label=prep_in];
+with24 [style=filled, fillcolor=white, label=with];
+inhibition22 -> with24  [label=prepc_compared_with];
+monotherapies25 [style=filled, fillcolor=white, label=monotherapies];
+inhibition22 -> monotherapies25  [label=pobj];
+128 [style=filled, fillcolor=white, label=1];
+Table27 [style=filled, fillcolor=white, label=Table];
+128 -> Table27  [label=num];
+monotherapies25 -> 128  [label=dep];
+132 [style=filled, fillcolor=white, label=1];
+supplementary30 [style=filled, fillcolor=white, label=supplementary];
+132 -> supplementary30  [label=num];
+Table31 [style=filled, fillcolor=white, label=Table];
+132 -> Table31  [label=num];
+128 -> 132  [label=conj_and];
+}

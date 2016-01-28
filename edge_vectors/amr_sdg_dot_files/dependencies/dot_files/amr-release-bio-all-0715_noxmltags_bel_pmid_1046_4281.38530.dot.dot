@@ -1,0 +1,46 @@
+digraph "Ariadne : GRP58 is a major target for tyrosine phosphorylation by the Lyn kinase ( 76 ) ,  a kinase that can be activated by IL-6 through gp130 signaling" {
+label="Ariadne : GRP58 is a major target for tyrosine phosphorylation by the Lyn
+kinase ( 76 ) ,  a kinase that can be activated by IL-6 through gp130 signaling";
+Ariadne1 [style=filled, fillcolor=white, label=Ariadne];
+Ariadne1 -> Ariadne1  [label=root];
+target7 [style=filled, fillcolor=white, label=target];
+GRP583 [style=filled, fillcolor=white, label=GRP58];
+target7 -> GRP583  [label=nsubj];
+is4 [style=filled, fillcolor=white, label=is];
+target7 -> is4  [label=cop];
+a5 [style=filled, fillcolor=white, label=a];
+target7 -> a5  [label=det];
+major6 [style=filled, fillcolor=white, label=major];
+target7 -> major6  [label=amod];
+Ariadne1 -> target7  [label=dep];
+phosphorylation10 [style=filled, fillcolor=white, label=phosphorylation];
+tyrosine9 [style=filled, fillcolor=white, label=tyrosine];
+phosphorylation10 -> tyrosine9  [label=amod];
+target7 -> phosphorylation10  [label=prep_for];
+kinase14 [style=filled, fillcolor=white, label=kinase];
+the12 [style=filled, fillcolor=white, label=the];
+kinase14 -> the12  [label=det];
+Lyn13 [style=filled, fillcolor=white, label=Lyn];
+kinase14 -> Lyn13  [label=nn];
+phosphorylation10 -> kinase14  [label=prep_by];
+761 [style=filled, fillcolor=white, label=76];
+kinase14 -> 761  [label=appos];
+kinase20 [style=filled, fillcolor=white, label=kinase];
+a19 [style=filled, fillcolor=white, label=a];
+kinase20 -> a19  [label=det];
+kinase14 -> kinase20  [label=appos];
+activated24 [style=filled, fillcolor=white, label=activated];
+that21 [style=filled, fillcolor=white, label=that];
+activated24 -> that21  [label=nsubjpass];
+can22 [style=filled, fillcolor=white, label=can];
+activated24 -> can22  [label=aux];
+be23 [style=filled, fillcolor=white, label=be];
+activated24 -> be23  [label=auxpass];
+kinase20 -> activated24  [label=rcmod];
+"IL-62" [style=filled, fillcolor=white, label="IL-6"];
+activated24 -> "IL-62"  [label=agent];
+signaling29 [style=filled, fillcolor=white, label=signaling];
+gp13028 [style=filled, fillcolor=white, label=gp130];
+signaling29 -> gp13028  [label=amod];
+activated24 -> signaling29  [label=prep_through];
+}

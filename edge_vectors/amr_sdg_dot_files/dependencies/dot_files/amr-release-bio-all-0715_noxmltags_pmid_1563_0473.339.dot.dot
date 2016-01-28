@@ -1,0 +1,42 @@
+digraph "Comparison of D and E provide representative examples that illustrate that pMAPK is found in only a subset of all proliferating ( Ki67-positive ) cells ." {
+label="Comparison of D and E provide representative examples that illustrate that
+pMAPK is found in only a subset of all proliferating ( Ki67-positive ) cells .";
+provide6 [style=filled, fillcolor=white, label=provide];
+Comparison1 [style=filled, fillcolor=white, label=Comparison];
+provide6 -> Comparison1  [label=nsubj];
+D3 [style=filled, fillcolor=white, label=D];
+Comparison1 -> D3  [label=prep_of];
+E5 [style=filled, fillcolor=white, label=E];
+D3 -> E5  [label=conj_and];
+provide6 -> provide6  [label=root];
+examples8 [style=filled, fillcolor=white, label=examples];
+representative7 [style=filled, fillcolor=white, label=representative];
+examples8 -> representative7  [label=amod];
+provide6 -> examples8  [label=dobj];
+illustrate10 [style=filled, fillcolor=white, label=illustrate];
+that9 [style=filled, fillcolor=white, label=that];
+illustrate10 -> that9  [label=nsubj];
+examples8 -> illustrate10  [label=rcmod];
+found14 [style=filled, fillcolor=white, label=found];
+that11 [style=filled, fillcolor=white, label=that];
+found14 -> that11  [label=mark];
+pMAPK12 [style=filled, fillcolor=white, label=pMAPK];
+found14 -> pMAPK12  [label=nsubjpass];
+is13 [style=filled, fillcolor=white, label=is];
+found14 -> is13  [label=auxpass];
+illustrate10 -> found14  [label=ccomp];
+subset18 [style=filled, fillcolor=white, label=subset];
+only16 [style=filled, fillcolor=white, label=only];
+subset18 -> only16  [label=advmod];
+a17 [style=filled, fillcolor=white, label=a];
+subset18 -> a17  [label=det];
+found14 -> subset18  [label=prep_in];
+all20 [style=filled, fillcolor=white, label=all];
+subset18 -> all20  [label=prep_of];
+proliferating21 [style=filled, fillcolor=white, label=proliferating];
+all20 -> proliferating21  [label=vmod];
+cells25 [style=filled, fillcolor=white, label=cells];
+"Ki67-positive23" [style=filled, fillcolor=white, label="Ki67-positive"];
+cells25 -> "Ki67-positive23"  [label=appos];
+proliferating21 -> cells25  [label=dobj];
+}

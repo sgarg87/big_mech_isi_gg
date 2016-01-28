@@ -1,0 +1,42 @@
+digraph "Previous studies have indicated that RhoA ,  Rac1 and Cdc42 signalling is essential for oncogenic Ras transforming capacity -LSB- 29 ,  30 -RSB- ." {
+label="Previous studies have indicated that RhoA ,  Rac1 and Cdc42 signalling is
+essential for oncogenic Ras transforming capacity -LSB- 29 ,  30 -RSB- .";
+studies2 [style=filled, fillcolor=white, label=studies];
+Previous1 [style=filled, fillcolor=white, label=Previous];
+studies2 -> Previous1  [label=amod];
+indicated4 [style=filled, fillcolor=white, label=indicated];
+indicated4 -> studies2  [label=nsubj];
+have3 [style=filled, fillcolor=white, label=have];
+indicated4 -> have3  [label=aux];
+indicated4 -> indicated4  [label=root];
+essential13 [style=filled, fillcolor=white, label=essential];
+that5 [style=filled, fillcolor=white, label=that];
+essential13 -> that5  [label=mark];
+RhoA6 [style=filled, fillcolor=white, label=RhoA];
+essential13 -> RhoA6  [label=nsubj];
+Rac18 [style=filled, fillcolor=white, label=Rac1];
+RhoA6 -> Rac18  [label=conj_and];
+signalling11 [style=filled, fillcolor=white, label=signalling];
+Cdc4210 [style=filled, fillcolor=white, label=Cdc42];
+signalling11 -> Cdc4210  [label=amod];
+RhoA6 -> signalling11  [label=conj_and];
+is12 [style=filled, fillcolor=white, label=is];
+essential13 -> is12  [label=cop];
+indicated4 -> essential13  [label=ccomp];
+Ras16 [style=filled, fillcolor=white, label=Ras];
+oncogenic15 [style=filled, fillcolor=white, label=oncogenic];
+Ras16 -> oncogenic15  [label=amod];
+essential13 -> Ras16  [label=prep_for];
+transforming17 [style=filled, fillcolor=white, label=transforming];
+essential13 -> transforming17  [label=xcomp];
+capacity18 [style=filled, fillcolor=white, label=capacity];
+transforming17 -> capacity18  [label=dobj];
+"-RSB-23" [style=filled, fillcolor=white, label="-RSB-"];
+"-LSB-19" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-23" -> "-LSB-19"  [label=dep];
+2920 [style=filled, fillcolor=white, label=29];
+"-LSB-19" -> 2920  [label=num];
+3022 [style=filled, fillcolor=white, label=30];
+"-LSB-19" -> 3022  [label=num];
+capacity18 -> "-RSB-23"  [label=amod];
+}

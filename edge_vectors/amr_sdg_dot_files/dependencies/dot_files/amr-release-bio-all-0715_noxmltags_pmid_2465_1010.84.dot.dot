@@ -1,0 +1,38 @@
+digraph "SPRED1 has a well-established pedigree as a negative regulator of the Raf/MAPK pathway ,  though the mechanism has been unclear ." {
+label="SPRED1 has a well-established pedigree as a negative regulator of the Raf/MAPK
+pathway ,  though the mechanism has been unclear .";
+has2 [style=filled, fillcolor=white, label=has];
+SPRED1 [style=filled, fillcolor=white, label=SPRED1];
+has2 -> SPRED1  [label=nsubj];
+has2 -> has2  [label=root];
+pedigree5 [style=filled, fillcolor=white, label=pedigree];
+a3 [style=filled, fillcolor=white, label=a];
+pedigree5 -> a3  [label=det];
+"well-established4" [style=filled, fillcolor=white, label="well-established"];
+pedigree5 -> "well-established4"  [label=amod];
+has2 -> pedigree5  [label=dobj];
+regulator9 [style=filled, fillcolor=white, label=regulator];
+a7 [style=filled, fillcolor=white, label=a];
+regulator9 -> a7  [label=det];
+negative8 [style=filled, fillcolor=white, label=negative];
+regulator9 -> negative8  [label=amod];
+has2 -> regulator9  [label=prep_as];
+pathway13 [style=filled, fillcolor=white, label=pathway];
+the11 [style=filled, fillcolor=white, label=the];
+pathway13 -> the11  [label=det];
+"Raf/MAPK12" [style=filled, fillcolor=white, label="Raf/MAPK"];
+pathway13 -> "Raf/MAPK12"  [label=nn];
+regulator9 -> pathway13  [label=prep_of];
+unclear20 [style=filled, fillcolor=white, label=unclear];
+though15 [style=filled, fillcolor=white, label=though];
+unclear20 -> though15  [label=mark];
+mechanism17 [style=filled, fillcolor=white, label=mechanism];
+the16 [style=filled, fillcolor=white, label=the];
+mechanism17 -> the16  [label=det];
+unclear20 -> mechanism17  [label=nsubj];
+has18 [style=filled, fillcolor=white, label=has];
+unclear20 -> has18  [label=aux];
+been19 [style=filled, fillcolor=white, label=been];
+unclear20 -> been19  [label=cop];
+has2 -> unclear20  [label=advcl];
+}

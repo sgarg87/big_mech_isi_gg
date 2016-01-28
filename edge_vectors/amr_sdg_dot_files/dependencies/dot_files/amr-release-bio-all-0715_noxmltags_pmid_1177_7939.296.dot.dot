@@ -1,0 +1,41 @@
+digraph "Immmunoprecipitations ( IP ) were performed with anti-myc antibody or with an irrelevant ( ctr ) antibody ,  followed by immunoblot with the antibody indicated on the right ( WB ) ." {
+label="Immmunoprecipitations ( IP ) were performed with anti-myc antibody or with an
+irrelevant ( ctr ) antibody ,  followed by immunoblot with the antibody
+indicated on the right ( WB ) .";
+performed6 [style=filled, fillcolor=white, label=performed];
+Immmunoprecipitations1 [style=filled, fillcolor=white, label=Immmunoprecipitations];
+performed6 -> Immmunoprecipitations1  [label=nsubjpass];
+IP3 [style=filled, fillcolor=white, label=IP];
+Immmunoprecipitations1 -> IP3  [label=appos];
+were5 [style=filled, fillcolor=white, label=were];
+performed6 -> were5  [label=auxpass];
+performed6 -> performed6  [label=root];
+antibody9 [style=filled, fillcolor=white, label=antibody];
+"anti-myc8" [style=filled, fillcolor=white, label="anti-myc"];
+antibody9 -> "anti-myc8"  [label=amod];
+performed6 -> antibody9  [label=prep_with];
+antibody17 [style=filled, fillcolor=white, label=antibody];
+an12 [style=filled, fillcolor=white, label=an];
+antibody17 -> an12  [label=det];
+irrelevant13 [style=filled, fillcolor=white, label=irrelevant];
+antibody17 -> irrelevant13  [label=amod];
+ctr15 [style=filled, fillcolor=white, label=ctr];
+antibody17 -> ctr15  [label=appos];
+antibody9 -> antibody17  [label=conj_or];
+followed19 [style=filled, fillcolor=white, label=followed];
+antibody17 -> followed19  [label=vmod];
+immunoblot21 [style=filled, fillcolor=white, label=immunoblot];
+followed19 -> immunoblot21  [label=agent];
+antibody24 [style=filled, fillcolor=white, label=antibody];
+the23 [style=filled, fillcolor=white, label=the];
+antibody24 -> the23  [label=det];
+followed19 -> antibody24  [label=prep_with];
+indicated25 [style=filled, fillcolor=white, label=indicated];
+antibody24 -> indicated25  [label=vmod];
+right28 [style=filled, fillcolor=white, label=right];
+the27 [style=filled, fillcolor=white, label=the];
+right28 -> the27  [label=det];
+indicated25 -> right28  [label=prep_on];
+WB30 [style=filled, fillcolor=white, label=WB];
+right28 -> WB30  [label=appos];
+}

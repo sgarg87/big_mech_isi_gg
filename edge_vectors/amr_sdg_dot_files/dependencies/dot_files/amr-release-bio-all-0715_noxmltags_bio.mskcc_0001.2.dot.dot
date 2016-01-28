@@ -1,0 +1,41 @@
+digraph "14-3-3 dimers bind to phosphorylation sites present in both the N - and C-terminal regions and stabilize the autoinhibited state ( 22 ) ." {
+label="14-3-3 dimers bind to phosphorylation sites present in both the N - and
+C-terminal regions and stabilize the autoinhibited state ( 22 ) .";
+dimers2 [style=filled, fillcolor=white, label=dimers];
+"14-3-3" [style=filled, fillcolor=white, label="14-3-3"];
+dimers2 -> "14-3-3"  [label=num];
+bind3 [style=filled, fillcolor=white, label=bind];
+bind3 -> dimers2  [label=nsubj];
+bind3 -> bind3  [label=root];
+phosphorylation5 [style=filled, fillcolor=white, label=phosphorylation];
+to4 [style=filled, fillcolor=white, label=to];
+phosphorylation5 -> to4  [label=aux];
+bind3 -> phosphorylation5  [label=xcomp];
+present7 [style=filled, fillcolor=white, label=present];
+sites6 [style=filled, fillcolor=white, label=sites];
+present7 -> sites6  [label=nsubj];
+phosphorylation5 -> present7  [label=xcomp];
+in8 [style=filled, fillcolor=white, label=in];
+present7 -> in8  [label=prep];
+"-12" [style=filled, fillcolor=white, label="-"];
+both9 [style=filled, fillcolor=white, label=both];
+"-12" -> both9  [label=preconj];
+the10 [style=filled, fillcolor=white, label=the];
+"-12" -> the10  [label=det];
+N11 [style=filled, fillcolor=white, label=N];
+"-12" -> N11  [label=nn];
+regions15 [style=filled, fillcolor=white, label=regions];
+"C-terminal14" [style=filled, fillcolor=white, label="C-terminal"];
+regions15 -> "C-terminal14"  [label=nn];
+"-12" -> regions15  [label=conj_and];
+stabilize17 [style=filled, fillcolor=white, label=stabilize];
+phosphorylation5 -> stabilize17  [label=conj_and];
+state20 [style=filled, fillcolor=white, label=state];
+the18 [style=filled, fillcolor=white, label=the];
+state20 -> the18  [label=det];
+autoinhibited19 [style=filled, fillcolor=white, label=autoinhibited];
+state20 -> autoinhibited19  [label=amod];
+stabilize17 -> state20  [label=dobj];
+22 [style=filled, fillcolor=white, label=22];
+state20 -> 22  [label=appos];
+}

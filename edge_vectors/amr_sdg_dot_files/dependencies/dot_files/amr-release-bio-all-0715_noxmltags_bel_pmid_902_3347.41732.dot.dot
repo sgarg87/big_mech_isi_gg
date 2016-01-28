@@ -1,0 +1,56 @@
+digraph "Treatment of cells with wortmannin ,  a steroidal inhibitor of phosphatidylinositol-3-kinase ( 15 ) ,  resulted in a decreased level of VEGF under hypoxic conditions but the fold stimulation of VEGF mRNA was not changed ( Fig. 5 ) ." {
+label="Treatment of cells with wortmannin ,  a steroidal inhibitor of
+phosphatidylinositol-3-kinase ( 15 ) ,  resulted in a decreased level of VEGF
+under hypoxic conditions but the fold stimulation of VEGF mRNA was not changed (
+Fig. 5 ) .";
+resulted16 [style=filled, fillcolor=white, label=resulted];
+Treatment1 [style=filled, fillcolor=white, label=Treatment];
+resulted16 -> Treatment1  [label=nsubj];
+cells3 [style=filled, fillcolor=white, label=cells];
+Treatment1 -> cells3  [label=prep_of];
+wortmannin5 [style=filled, fillcolor=white, label=wortmannin];
+cells3 -> wortmannin5  [label=prep_with];
+inhibitor9 [style=filled, fillcolor=white, label=inhibitor];
+a7 [style=filled, fillcolor=white, label=a];
+inhibitor9 -> a7  [label=det];
+steroidal8 [style=filled, fillcolor=white, label=steroidal];
+inhibitor9 -> steroidal8  [label=amod];
+Treatment1 -> inhibitor9  [label=appos];
+"phosphatidylinositol-3-kinase11" [style=filled, fillcolor=white, label="phosphatidylinositol-3-kinase"];
+inhibitor9 -> "phosphatidylinositol-3-kinase11"  [label=prep_of];
+1513 [style=filled, fillcolor=white, label=15];
+"phosphatidylinositol-3-kinase11" -> 1513  [label=appos];
+resulted16 -> resulted16  [label=root];
+level20 [style=filled, fillcolor=white, label=level];
+a18 [style=filled, fillcolor=white, label=a];
+level20 -> a18  [label=det];
+decreased19 [style=filled, fillcolor=white, label=decreased];
+level20 -> decreased19  [label=amod];
+resulted16 -> level20  [label=prep_in];
+VEGF22 [style=filled, fillcolor=white, label=VEGF];
+level20 -> VEGF22  [label=prep_of];
+conditions25 [style=filled, fillcolor=white, label=conditions];
+hypoxic24 [style=filled, fillcolor=white, label=hypoxic];
+conditions25 -> hypoxic24  [label=amod];
+VEGF22 -> conditions25  [label=prep_under];
+stimulation29 [style=filled, fillcolor=white, label=stimulation];
+the27 [style=filled, fillcolor=white, label=the];
+stimulation29 -> the27  [label=det];
+fold28 [style=filled, fillcolor=white, label=fold];
+stimulation29 -> fold28  [label=amod];
+changed35 [style=filled, fillcolor=white, label=changed];
+changed35 -> stimulation29  [label=nsubjpass];
+mRNA32 [style=filled, fillcolor=white, label=mRNA];
+VEGF31 [style=filled, fillcolor=white, label=VEGF];
+mRNA32 -> VEGF31  [label=nn];
+stimulation29 -> mRNA32  [label=prep_of];
+was33 [style=filled, fillcolor=white, label=was];
+changed35 -> was33  [label=auxpass];
+not34 [style=filled, fillcolor=white, label=not];
+changed35 -> not34  [label=neg];
+resulted16 -> changed35  [label=conj_but];
+538 [style=filled, fillcolor=white, label=5];
+"Fig.37" [style=filled, fillcolor=white, label="Fig."];
+538 -> "Fig.37"  [label=number];
+changed35 -> 538  [label=dep];
+}

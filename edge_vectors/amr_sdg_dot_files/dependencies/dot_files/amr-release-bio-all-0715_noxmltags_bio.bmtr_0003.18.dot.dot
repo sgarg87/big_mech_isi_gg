@@ -1,0 +1,53 @@
+digraph "These corepressors have been previously linked to inhibition of HER3 transcription through promoter regions that show overlapping occupancy with ZNF217 ,  a transcription factor also involved in HER3 regulation ( 30 ) ." {
+label="These corepressors have been previously linked to inhibition of HER3
+transcription through promoter regions that show overlapping occupancy with
+ZNF217 ,  a transcription factor also involved in HER3 regulation ( 30 ) .";
+corepressors2 [style=filled, fillcolor=white, label=corepressors];
+These1 [style=filled, fillcolor=white, label=These];
+corepressors2 -> These1  [label=det];
+linked6 [style=filled, fillcolor=white, label=linked];
+linked6 -> corepressors2  [label=nsubjpass];
+have3 [style=filled, fillcolor=white, label=have];
+linked6 -> have3  [label=aux];
+been4 [style=filled, fillcolor=white, label=been];
+linked6 -> been4  [label=auxpass];
+previously5 [style=filled, fillcolor=white, label=previously];
+linked6 -> previously5  [label=advmod];
+linked6 -> linked6  [label=root];
+inhibition8 [style=filled, fillcolor=white, label=inhibition];
+linked6 -> inhibition8  [label=prep_to];
+transcription11 [style=filled, fillcolor=white, label=transcription];
+HER310 [style=filled, fillcolor=white, label=HER3];
+transcription11 -> HER310  [label=nn];
+inhibition8 -> transcription11  [label=prep_of];
+regions14 [style=filled, fillcolor=white, label=regions];
+promoter13 [style=filled, fillcolor=white, label=promoter];
+regions14 -> promoter13  [label=nn];
+linked6 -> regions14  [label=prep_through];
+show16 [style=filled, fillcolor=white, label=show];
+that15 [style=filled, fillcolor=white, label=that];
+show16 -> that15  [label=nsubj];
+regions14 -> show16  [label=rcmod];
+occupancy18 [style=filled, fillcolor=white, label=occupancy];
+overlapping17 [style=filled, fillcolor=white, label=overlapping];
+occupancy18 -> overlapping17  [label=amod];
+show16 -> occupancy18  [label=dobj];
+ZNF21720 [style=filled, fillcolor=white, label=ZNF217];
+show16 -> ZNF21720  [label=prep_with];
+factor24 [style=filled, fillcolor=white, label=factor];
+a22 [style=filled, fillcolor=white, label=a];
+factor24 -> a22  [label=det];
+transcription23 [style=filled, fillcolor=white, label=transcription];
+factor24 -> transcription23  [label=nn];
+ZNF21720 -> factor24  [label=appos];
+involved26 [style=filled, fillcolor=white, label=involved];
+also25 [style=filled, fillcolor=white, label=also];
+involved26 -> also25  [label=advmod];
+factor24 -> involved26  [label=vmod];
+regulation29 [style=filled, fillcolor=white, label=regulation];
+HER328 [style=filled, fillcolor=white, label=HER3];
+regulation29 -> HER328  [label=num];
+involved26 -> regulation29  [label=prep_in];
+3031 [style=filled, fillcolor=white, label=30];
+regulation29 -> 3031  [label=appos];
+}

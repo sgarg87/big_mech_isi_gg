@@ -1,0 +1,32 @@
+digraph "Therefore ,  the cell cycle progression from S to M phase was impaired during liver regeneration in Cry-deficient mice" {
+label="Therefore ,  the cell cycle progression from S to M phase was impaired during
+liver regeneration in Cry-deficient mice";
+impaired13 [style=filled, fillcolor=white, label=impaired];
+Therefore1 [style=filled, fillcolor=white, label=Therefore];
+impaired13 -> Therefore1  [label=advmod];
+cycle5 [style=filled, fillcolor=white, label=cycle];
+the3 [style=filled, fillcolor=white, label=the];
+cycle5 -> the3  [label=det];
+cell4 [style=filled, fillcolor=white, label=cell];
+cycle5 -> cell4  [label=nn];
+impaired13 -> cycle5  [label=nsubjpass];
+progression6 [style=filled, fillcolor=white, label=progression];
+cycle5 -> progression6  [label=vmod];
+S8 [style=filled, fillcolor=white, label=S];
+progression6 -> S8  [label=prep_from];
+phase11 [style=filled, fillcolor=white, label=phase];
+M10 [style=filled, fillcolor=white, label=M];
+phase11 -> M10  [label=nn];
+progression6 -> phase11  [label=prep_to];
+was12 [style=filled, fillcolor=white, label=was];
+impaired13 -> was12  [label=auxpass];
+impaired13 -> impaired13  [label=root];
+regeneration16 [style=filled, fillcolor=white, label=regeneration];
+liver15 [style=filled, fillcolor=white, label=liver];
+regeneration16 -> liver15  [label=nn];
+impaired13 -> regeneration16  [label=prep_during];
+mice19 [style=filled, fillcolor=white, label=mice];
+"Cry-deficient18" [style=filled, fillcolor=white, label="Cry-deficient"];
+mice19 -> "Cry-deficient18"  [label=amod];
+regeneration16 -> mice19  [label=prep_in];
+}

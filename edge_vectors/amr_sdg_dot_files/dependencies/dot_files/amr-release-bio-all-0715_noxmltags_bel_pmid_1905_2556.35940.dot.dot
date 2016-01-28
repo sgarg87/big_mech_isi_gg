@@ -1,0 +1,24 @@
+digraph "All TLRs ( except for TLR3 ) and IL-1 receptor family members signal through MyD88 ." {
+label="All TLRs ( except for TLR3 ) and IL-1 receptor family members signal through
+MyD88 .";
+TLRs2 [style=filled, fillcolor=white, label=TLRs];
+All1 [style=filled, fillcolor=white, label=All];
+TLRs2 -> All1  [label=det];
+signal13 [style=filled, fillcolor=white, label=signal];
+signal13 -> TLRs2  [label=nsubj];
+for5 [style=filled, fillcolor=white, label=for];
+TLRs2 -> for5  [label=prepc_except_for];
+TLR36 [style=filled, fillcolor=white, label=TLR3];
+TLRs2 -> TLR36  [label=pobj];
+members12 [style=filled, fillcolor=white, label=members];
+"IL-19" [style=filled, fillcolor=white, label="IL-1"];
+members12 -> "IL-19"  [label=nn];
+receptor10 [style=filled, fillcolor=white, label=receptor];
+members12 -> receptor10  [label=nn];
+family11 [style=filled, fillcolor=white, label=family];
+members12 -> family11  [label=nn];
+TLRs2 -> members12  [label=conj_and];
+signal13 -> signal13  [label=root];
+MyD8815 [style=filled, fillcolor=white, label=MyD88];
+signal13 -> MyD8815  [label=prep_through];
+}

@@ -1,0 +1,44 @@
+digraph "Wnt and noggin signaling pathways are still intact in the TGF-β2 null hair as nuclear LEF-1 ( I ) and nuclear β-catenin ( J ) are still expressed ." {
+label="Wnt and noggin signaling pathways are still intact in the TGF-β2 null hair as
+nuclear LEF-1 ( I ) and nuclear β-catenin ( J ) are still expressed .";
+expressed28 [style=filled, fillcolor=white, label=expressed];
+Wnt1 [style=filled, fillcolor=white, label=Wnt];
+expressed28 -> Wnt1  [label=nsubjpass];
+noggin3 [style=filled, fillcolor=white, label=noggin];
+Wnt1 -> noggin3  [label=conj_and];
+signaling4 [style=filled, fillcolor=white, label=signaling];
+Wnt1 -> signaling4  [label=vmod];
+intact8 [style=filled, fillcolor=white, label=intact];
+pathways5 [style=filled, fillcolor=white, label=pathways];
+intact8 -> pathways5  [label=nsubj];
+are6 [style=filled, fillcolor=white, label=are];
+intact8 -> are6  [label=cop];
+still7 [style=filled, fillcolor=white, label=still];
+intact8 -> still7  [label=advmod];
+signaling4 -> intact8  [label=ccomp];
+hair13 [style=filled, fillcolor=white, label=hair];
+the10 [style=filled, fillcolor=white, label=the];
+hair13 -> the10  [label=det];
+null12 [style=filled, fillcolor=white, label=null];
+"TGF-β211" [style=filled, fillcolor=white, label="TGF-β2"];
+null12 -> "TGF-β211"  [label=amod];
+hair13 -> null12  [label=amod];
+intact8 -> hair13  [label=prep_in];
+"LEF-16" [style=filled, fillcolor=white, label="LEF-1"];
+nuclear15 [style=filled, fillcolor=white, label=nuclear];
+"LEF-16" -> nuclear15  [label=amod];
+hair13 -> "LEF-16"  [label=prep_as];
+I18 [style=filled, fillcolor=white, label=I];
+"LEF-16" -> I18  [label=dep];
+"β-catenin22" [style=filled, fillcolor=white, label="β-catenin"];
+nuclear21 [style=filled, fillcolor=white, label=nuclear];
+"β-catenin22" -> nuclear21  [label=amod];
+"LEF-16" -> "β-catenin22"  [label=conj_and];
+J24 [style=filled, fillcolor=white, label=J];
+"LEF-16" -> J24  [label=appos];
+are26 [style=filled, fillcolor=white, label=are];
+expressed28 -> are26  [label=auxpass];
+still27 [style=filled, fillcolor=white, label=still];
+expressed28 -> still27  [label=advmod];
+expressed28 -> expressed28  [label=root];
+}

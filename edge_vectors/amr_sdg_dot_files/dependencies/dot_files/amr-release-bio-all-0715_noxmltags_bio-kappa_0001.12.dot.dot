@@ -1,0 +1,45 @@
+digraph "A similar role in C-Raf activation has been described for the catalytic subunit of PP1C ,  which associates with C-Raf in Ras - and growth factor - stimulated cells ." {
+label="A similar role in C-Raf activation has been described for the catalytic subunit
+of PP1C ,  which associates with C-Raf in Ras - and growth factor - stimulated
+cells .";
+role3 [style=filled, fillcolor=white, label=role];
+A1 [style=filled, fillcolor=white, label=A];
+role3 -> A1  [label=det];
+similar2 [style=filled, fillcolor=white, label=similar];
+role3 -> similar2  [label=amod];
+described9 [style=filled, fillcolor=white, label=described];
+described9 -> role3  [label=nsubjpass];
+activation6 [style=filled, fillcolor=white, label=activation];
+"C-Raf5" [style=filled, fillcolor=white, label="C-Raf"];
+activation6 -> "C-Raf5"  [label=amod];
+role3 -> activation6  [label=prep_in];
+has7 [style=filled, fillcolor=white, label=has];
+described9 -> has7  [label=aux];
+been8 [style=filled, fillcolor=white, label=been];
+described9 -> been8  [label=auxpass];
+described9 -> described9  [label=root];
+subunit13 [style=filled, fillcolor=white, label=subunit];
+the11 [style=filled, fillcolor=white, label=the];
+subunit13 -> the11  [label=det];
+catalytic12 [style=filled, fillcolor=white, label=catalytic];
+subunit13 -> catalytic12  [label=amod];
+described9 -> subunit13  [label=prep_for];
+PP1C15 [style=filled, fillcolor=white, label=PP1C];
+subunit13 -> PP1C15  [label=prep_of];
+associates18 [style=filled, fillcolor=white, label=associates];
+which17 [style=filled, fillcolor=white, label=which];
+associates18 -> which17  [label=det];
+stimulated28 [style=filled, fillcolor=white, label=stimulated];
+stimulated28 -> associates18  [label=nsubj];
+"C-Raf20" [style=filled, fillcolor=white, label="C-Raf"];
+associates18 -> "C-Raf20"  [label=prep_with];
+factor26 [style=filled, fillcolor=white, label=factor];
+Ras22 [style=filled, fillcolor=white, label=Ras];
+factor26 -> Ras22  [label=amod];
+growth25 [style=filled, fillcolor=white, label=growth];
+Ras22 -> growth25  [label=conj_and];
+"C-Raf20" -> factor26  [label=prep_in];
+subunit13 -> stimulated28  [label=rcmod];
+cells29 [style=filled, fillcolor=white, label=cells];
+stimulated28 -> cells29  [label=dobj];
+}

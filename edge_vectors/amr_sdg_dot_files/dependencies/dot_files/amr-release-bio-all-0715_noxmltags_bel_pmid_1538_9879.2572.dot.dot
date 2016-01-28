@@ -1,0 +1,45 @@
+digraph "IL-6 family cytokines ( Interleukin-6 and Oncostatin M ( OSM ) ) - increase STAT3 phosphorylation ( pSTAT3 ) ,  increase CCAAT enhancer binding protein delta ( C/EBPdelta ) gene expression" {
+label="IL-6 family cytokines ( Interleukin-6 and Oncostatin M ( OSM ) ) - increase
+STAT3 phosphorylation ( pSTAT3 ) ,  increase CCAAT enhancer binding protein
+delta ( C/EBPdelta ) gene expression";
+cytokines3 [style=filled, fillcolor=white, label=cytokines];
+"IL-61" [style=filled, fillcolor=white, label="IL-6"];
+cytokines3 -> "IL-61"  [label=nn];
+family2 [style=filled, fillcolor=white, label=family];
+cytokines3 -> family2  [label=nn];
+cytokines3 -> cytokines3  [label=root];
+M8 [style=filled, fillcolor=white, label=M];
+"Interleukin-65" [style=filled, fillcolor=white, label="Interleukin-6"];
+M8 -> "Interleukin-65"  [label=nn];
+Oncostatin7 [style=filled, fillcolor=white, label=Oncostatin];
+"Interleukin-65" -> Oncostatin7  [label=conj_and];
+cytokines3 -> M8  [label=dep];
+OSM10 [style=filled, fillcolor=white, label=OSM];
+cytokines3 -> OSM10  [label=appos];
+phosphorylation16 [style=filled, fillcolor=white, label=phosphorylation];
+increase14 [style=filled, fillcolor=white, label=increase];
+phosphorylation16 -> increase14  [label=nn];
+STAT315 [style=filled, fillcolor=white, label=STAT3];
+phosphorylation16 -> STAT315  [label=nn];
+cytokines3 -> phosphorylation16  [label=dep];
+pSTAT318 [style=filled, fillcolor=white, label=pSTAT3];
+phosphorylation16 -> pSTAT318  [label=appos];
+enhancer23 [style=filled, fillcolor=white, label=enhancer];
+increase21 [style=filled, fillcolor=white, label=increase];
+enhancer23 -> increase21  [label=nn];
+CCAAT22 [style=filled, fillcolor=white, label=CCAAT];
+enhancer23 -> CCAAT22  [label=nn];
+phosphorylation16 -> enhancer23  [label=appos];
+delta26 [style=filled, fillcolor=white, label=delta];
+binding24 [style=filled, fillcolor=white, label=binding];
+delta26 -> binding24  [label=amod];
+protein25 [style=filled, fillcolor=white, label=protein];
+delta26 -> protein25  [label=nn];
+cytokines3 -> delta26  [label=dep];
+"C/EBPdelta28" [style=filled, fillcolor=white, label="C/EBPdelta"];
+delta26 -> "C/EBPdelta28"  [label=appos];
+expression31 [style=filled, fillcolor=white, label=expression];
+gene30 [style=filled, fillcolor=white, label=gene];
+expression31 -> gene30  [label=nn];
+delta26 -> expression31  [label=dep];
+}

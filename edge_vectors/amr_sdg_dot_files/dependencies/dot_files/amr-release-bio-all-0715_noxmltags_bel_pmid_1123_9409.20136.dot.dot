@@ -1,0 +1,49 @@
+digraph "Phosphorylation of Shc produces its binding to the adaptor protein Grb2 ,  causing activation of the protooncogene ras ,  which is also upstream of the MAP kinase pathway ." {
+label="Phosphorylation of Shc produces its binding to the adaptor protein Grb2 ,
+causing activation of the protooncogene ras ,  which is also upstream of the MAP
+kinase pathway .";
+produces4 [style=filled, fillcolor=white, label=produces];
+Phosphorylation1 [style=filled, fillcolor=white, label=Phosphorylation];
+produces4 -> Phosphorylation1  [label=nsubj];
+Shc3 [style=filled, fillcolor=white, label=Shc];
+Phosphorylation1 -> Shc3  [label=prep_of];
+produces4 -> produces4  [label=root];
+Grb211 [style=filled, fillcolor=white, label=Grb2];
+its5 [style=filled, fillcolor=white, label=its];
+Grb211 -> its5  [label=poss];
+binding6 [style=filled, fillcolor=white, label=binding];
+Grb211 -> binding6  [label=amod];
+adaptor9 [style=filled, fillcolor=white, label=adaptor];
+the8 [style=filled, fillcolor=white, label=the];
+adaptor9 -> the8  [label=det];
+binding6 -> adaptor9  [label=prep_to];
+protein10 [style=filled, fillcolor=white, label=protein];
+Grb211 -> protein10  [label=nn];
+produces4 -> Grb211  [label=dobj];
+causing13 [style=filled, fillcolor=white, label=causing];
+Grb211 -> causing13  [label=vmod];
+activation14 [style=filled, fillcolor=white, label=activation];
+causing13 -> activation14  [label=dobj];
+ras18 [style=filled, fillcolor=white, label=ras];
+the16 [style=filled, fillcolor=white, label=the];
+ras18 -> the16  [label=det];
+protooncogene17 [style=filled, fillcolor=white, label=protooncogene];
+ras18 -> protooncogene17  [label=amod];
+activation14 -> ras18  [label=prep_of];
+upstream23 [style=filled, fillcolor=white, label=upstream];
+which20 [style=filled, fillcolor=white, label=which];
+upstream23 -> which20  [label=nsubj];
+is21 [style=filled, fillcolor=white, label=is];
+upstream23 -> is21  [label=cop];
+also22 [style=filled, fillcolor=white, label=also];
+upstream23 -> also22  [label=advmod];
+ras18 -> upstream23  [label=rcmod];
+pathway28 [style=filled, fillcolor=white, label=pathway];
+the25 [style=filled, fillcolor=white, label=the];
+pathway28 -> the25  [label=det];
+MAP26 [style=filled, fillcolor=white, label=MAP];
+pathway28 -> MAP26  [label=nn];
+kinase27 [style=filled, fillcolor=white, label=kinase];
+pathway28 -> kinase27  [label=nn];
+upstream23 -> pathway28  [label=prep_of];
+}

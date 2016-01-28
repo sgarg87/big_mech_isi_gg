@@ -1,0 +1,17 @@
+digraph "Overexpression of mutated K-RASV12 enhances basal YB-1 phosphorylation" {
+label="Overexpression of mutated K-RASV12 enhances basal YB-1 phosphorylation";
+enhances5 [style=filled, fillcolor=white, label=enhances];
+Overexpression1 [style=filled, fillcolor=white, label=Overexpression];
+enhances5 -> Overexpression1  [label=nsubj];
+"K-RASV124" [style=filled, fillcolor=white, label="K-RASV12"];
+mutated3 [style=filled, fillcolor=white, label=mutated];
+"K-RASV124" -> mutated3  [label=nn];
+Overexpression1 -> "K-RASV124"  [label=prep_of];
+enhances5 -> enhances5  [label=root];
+phosphorylation8 [style=filled, fillcolor=white, label=phosphorylation];
+basal6 [style=filled, fillcolor=white, label=basal];
+phosphorylation8 -> basal6  [label=amod];
+"YB-17" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation8 -> "YB-17"  [label=nn];
+enhances5 -> phosphorylation8  [label=dobj];
+}

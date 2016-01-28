@@ -1,0 +1,55 @@
+digraph "We found that CCR7 induced a Gi-dependent activation of MAPK members ERK1/2 ,  JNK ,  and p38 ,  with ERK1/2 and p38 controlling JNK . MAPK members regulated chemotaxis ,  but not the migratory speed ,  of DCs ." {
+label="We found that CCR7 induced a Gi-dependent activation of MAPK members ERK1/2 ,
+JNK ,  and p38 ,  with ERK1/2 and p38 controlling JNK . MAPK members regulated
+chemotaxis ,  but not the migratory speed ,  of DCs .";
+found2 [style=filled, fillcolor=white, label=found];
+We1 [style=filled, fillcolor=white, label=We];
+found2 -> We1  [label=nsubj];
+MAPK26 [style=filled, fillcolor=white, label=MAPK];
+MAPK26 -> found2  [label=dep];
+induced5 [style=filled, fillcolor=white, label=induced];
+that3 [style=filled, fillcolor=white, label=that];
+induced5 -> that3  [label=mark];
+CCR74 [style=filled, fillcolor=white, label=CCR7];
+induced5 -> CCR74  [label=nsubj];
+found2 -> induced5  [label=ccomp];
+activation8 [style=filled, fillcolor=white, label=activation];
+a6 [style=filled, fillcolor=white, label=a];
+activation8 -> a6  [label=det];
+"Gi-dependent7" [style=filled, fillcolor=white, label="Gi-dependent"];
+activation8 -> "Gi-dependent7"  [label=amod];
+induced5 -> activation8  [label=dobj];
+members11 [style=filled, fillcolor=white, label=members];
+MAPK10 [style=filled, fillcolor=white, label=MAPK];
+members11 -> MAPK10  [label=nn];
+activation8 -> members11  [label=prep_of];
+"ERK1/2" [style=filled, fillcolor=white, label="ERK1/2"];
+induced5 -> "ERK1/2"  [label=dep];
+JNK14 [style=filled, fillcolor=white, label=JNK];
+"ERK1/2" -> JNK14  [label=conj_and];
+p3817 [style=filled, fillcolor=white, label=p38];
+"ERK1/2" -> p3817  [label=conj_and];
+"ERK1/220" [style=filled, fillcolor=white, label="ERK1/2"];
+"ERK1/2" -> "ERK1/220"  [label=prep_with];
+JNK24 [style=filled, fillcolor=white, label=JNK];
+p3822 [style=filled, fillcolor=white, label=p38];
+JNK24 -> p3822  [label=amod];
+controlling23 [style=filled, fillcolor=white, label=controlling];
+JNK24 -> controlling23  [label=amod];
+"ERK1/220" -> JNK24  [label=conj_and];
+MAPK26 -> MAPK26  [label=root];
+members27 [style=filled, fillcolor=white, label=members];
+MAPK26 -> members27  [label=dobj];
+chemotaxis29 [style=filled, fillcolor=white, label=chemotaxis];
+regulated28 [style=filled, fillcolor=white, label=regulated];
+chemotaxis29 -> regulated28  [label=amod];
+MAPK26 -> chemotaxis29  [label=nsubj];
+speed35 [style=filled, fillcolor=white, label=speed];
+the33 [style=filled, fillcolor=white, label=the];
+speed35 -> the33  [label=det];
+migratory34 [style=filled, fillcolor=white, label=migratory];
+speed35 -> migratory34  [label=amod];
+chemotaxis29 -> speed35  [label=conj_negcc];
+DCs38 [style=filled, fillcolor=white, label=DCs];
+chemotaxis29 -> DCs38  [label=prep_of];
+}

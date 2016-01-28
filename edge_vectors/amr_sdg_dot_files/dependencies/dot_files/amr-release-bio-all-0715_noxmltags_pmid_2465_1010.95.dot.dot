@@ -1,0 +1,28 @@
+digraph "Ras oncogenes can certainly initiate cancer in model organisms and probably do so in humans ." {
+label="Ras oncogenes can certainly initiate cancer in model organisms and probably do
+so in humans .";
+oncogenes2 [style=filled, fillcolor=white, label=oncogenes];
+Ras1 [style=filled, fillcolor=white, label=Ras];
+oncogenes2 -> Ras1  [label=nn];
+initiate5 [style=filled, fillcolor=white, label=initiate];
+initiate5 -> oncogenes2  [label=nsubj];
+can3 [style=filled, fillcolor=white, label=can];
+initiate5 -> can3  [label=aux];
+certainly4 [style=filled, fillcolor=white, label=certainly];
+initiate5 -> certainly4  [label=advmod];
+initiate5 -> initiate5  [label=root];
+cancer6 [style=filled, fillcolor=white, label=cancer];
+initiate5 -> cancer6  [label=dobj];
+organisms9 [style=filled, fillcolor=white, label=organisms];
+model8 [style=filled, fillcolor=white, label=model];
+organisms9 -> model8  [label=nn];
+initiate5 -> organisms9  [label=prep_in];
+do12 [style=filled, fillcolor=white, label=do];
+probably11 [style=filled, fillcolor=white, label=probably];
+do12 -> probably11  [label=advmod];
+initiate5 -> do12  [label=conj_and];
+so13 [style=filled, fillcolor=white, label=so];
+do12 -> so13  [label=advmod];
+humans15 [style=filled, fillcolor=white, label=humans];
+do12 -> humans15  [label=prep_in];
+}

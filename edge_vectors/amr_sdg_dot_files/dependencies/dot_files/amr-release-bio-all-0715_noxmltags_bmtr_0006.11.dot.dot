@@ -1,0 +1,49 @@
+digraph "As a result ,  BiFC traps this form of Ras resulting in greater fluorescence complementation for Ras17N ( and Ras17N/69N ) compared to wild type or constitutively activated Ras ( 61L or 12V ) ." {
+label="As a result ,  BiFC traps this form of Ras resulting in greater fluorescence
+complementation for Ras17N ( and Ras17N/69N ) compared to wild type or
+constitutively activated Ras ( 61L or 12V ) .";
+result3 [style=filled, fillcolor=white, label=result];
+a2 [style=filled, fillcolor=white, label=a];
+result3 -> a2  [label=det];
+traps6 [style=filled, fillcolor=white, label=traps];
+traps6 -> result3  [label=prep_as];
+BiFC5 [style=filled, fillcolor=white, label=BiFC];
+traps6 -> BiFC5  [label=nsubj];
+traps6 -> traps6  [label=root];
+form8 [style=filled, fillcolor=white, label=form];
+this7 [style=filled, fillcolor=white, label=this];
+form8 -> this7  [label=det];
+traps6 -> form8  [label=dobj];
+Ras10 [style=filled, fillcolor=white, label=Ras];
+form8 -> Ras10  [label=prep_of];
+resulting11 [style=filled, fillcolor=white, label=resulting];
+Ras10 -> resulting11  [label=vmod];
+complementation15 [style=filled, fillcolor=white, label=complementation];
+greater13 [style=filled, fillcolor=white, label=greater];
+complementation15 -> greater13  [label=amod];
+fluorescence14 [style=filled, fillcolor=white, label=fluorescence];
+complementation15 -> fluorescence14  [label=nn];
+resulting11 -> complementation15  [label=prep_in];
+Ras17N [style=filled, fillcolor=white, label=Ras17N];
+complementation15 -> Ras17N  [label=prep_for];
+"Ras17N/69N20" [style=filled, fillcolor=white, label="Ras17N/69N"];
+and19 [style=filled, fillcolor=white, label=and];
+"Ras17N/69N20" -> and19  [label=cc];
+Ras17N -> "Ras17N/69N20"  [label=dep];
+to23 [style=filled, fillcolor=white, label=to];
+resulting11 -> to23  [label=prepc_compared_to];
+type25 [style=filled, fillcolor=white, label=type];
+wild24 [style=filled, fillcolor=white, label=wild];
+type25 -> wild24  [label=amod];
+resulting11 -> type25  [label=pobj];
+Ras29 [style=filled, fillcolor=white, label=Ras];
+constitutively27 [style=filled, fillcolor=white, label=constitutively];
+Ras29 -> constitutively27  [label=amod];
+activated28 [style=filled, fillcolor=white, label=activated];
+Ras29 -> activated28  [label=amod];
+type25 -> Ras29  [label=conj_or];
+"61L3" [style=filled, fillcolor=white, label="61L"];
+Ras29 -> "61L3"  [label=dep];
+"12V33" [style=filled, fillcolor=white, label="12V"];
+"61L3" -> "12V33"  [label=conj_or];
+}

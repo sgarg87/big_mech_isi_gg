@@ -1,0 +1,42 @@
+digraph "The human BTG1 protein is thought to be a potential tumour suppressor because its overexpression inhibits NIH 3T3 cell proliferation ." {
+label="The human BTG1 protein is thought to be a potential tumour suppressor because
+its overexpression inhibits NIH 3T3 cell proliferation .";
+protein4 [style=filled, fillcolor=white, label=protein];
+The1 [style=filled, fillcolor=white, label=The];
+protein4 -> The1  [label=det];
+human2 [style=filled, fillcolor=white, label=human];
+protein4 -> human2  [label=amod];
+BTG13 [style=filled, fillcolor=white, label=BTG1];
+protein4 -> BTG13  [label=nn];
+thought6 [style=filled, fillcolor=white, label=thought];
+thought6 -> protein4  [label=nsubjpass];
+is5 [style=filled, fillcolor=white, label=is];
+thought6 -> is5  [label=auxpass];
+inhibits16 [style=filled, fillcolor=white, label=inhibits];
+inhibits16 -> thought6  [label=dep];
+suppressor12 [style=filled, fillcolor=white, label=suppressor];
+to7 [style=filled, fillcolor=white, label=to];
+suppressor12 -> to7  [label=aux];
+be8 [style=filled, fillcolor=white, label=be];
+suppressor12 -> be8  [label=cop];
+a9 [style=filled, fillcolor=white, label=a];
+suppressor12 -> a9  [label=det];
+potential10 [style=filled, fillcolor=white, label=potential];
+suppressor12 -> potential10  [label=amod];
+tumour11 [style=filled, fillcolor=white, label=tumour];
+suppressor12 -> tumour11  [label=nn];
+thought6 -> suppressor12  [label=xcomp];
+overexpression15 [style=filled, fillcolor=white, label=overexpression];
+its14 [style=filled, fillcolor=white, label=its];
+overexpression15 -> its14  [label=poss];
+suppressor12 -> overexpression15  [label=prep_because];
+inhibits16 -> inhibits16  [label=root];
+NIH17 [style=filled, fillcolor=white, label=NIH];
+inhibits16 -> NIH17  [label=dobj];
+proliferation20 [style=filled, fillcolor=white, label=proliferation];
+"3T318" [style=filled, fillcolor=white, label="3T3"];
+proliferation20 -> "3T318"  [label=num];
+cell19 [style=filled, fillcolor=white, label=cell];
+proliferation20 -> cell19  [label=nn];
+inhibits16 -> proliferation20  [label=nsubj];
+}

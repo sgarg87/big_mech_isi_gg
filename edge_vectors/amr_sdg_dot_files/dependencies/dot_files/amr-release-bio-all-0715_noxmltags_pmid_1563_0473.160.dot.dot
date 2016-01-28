@@ -1,0 +1,28 @@
+digraph "The kinetics of Snail promoter activity closely paralleled those observed for Snail protein induction ." {
+label="The kinetics of Snail promoter activity closely paralleled those observed for
+Snail protein induction .";
+kinetics2 [style=filled, fillcolor=white, label=kinetics];
+The1 [style=filled, fillcolor=white, label=The];
+kinetics2 -> The1  [label=det];
+paralleled8 [style=filled, fillcolor=white, label=paralleled];
+paralleled8 -> kinetics2  [label=nsubj];
+activity6 [style=filled, fillcolor=white, label=activity];
+Snail4 [style=filled, fillcolor=white, label=Snail];
+activity6 -> Snail4  [label=nn];
+promoter5 [style=filled, fillcolor=white, label=promoter];
+activity6 -> promoter5  [label=nn];
+kinetics2 -> activity6  [label=prep_of];
+closely7 [style=filled, fillcolor=white, label=closely];
+paralleled8 -> closely7  [label=advmod];
+paralleled8 -> paralleled8  [label=root];
+observed10 [style=filled, fillcolor=white, label=observed];
+those9 [style=filled, fillcolor=white, label=those];
+observed10 -> those9  [label=nsubj];
+paralleled8 -> observed10  [label=ccomp];
+induction14 [style=filled, fillcolor=white, label=induction];
+Snail12 [style=filled, fillcolor=white, label=Snail];
+induction14 -> Snail12  [label=nn];
+protein13 [style=filled, fillcolor=white, label=protein];
+induction14 -> protein13  [label=nn];
+observed10 -> induction14  [label=prep_for];
+}

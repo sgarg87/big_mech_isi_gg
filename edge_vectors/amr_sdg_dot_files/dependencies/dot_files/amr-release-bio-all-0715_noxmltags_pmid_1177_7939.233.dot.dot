@@ -1,0 +1,60 @@
+digraph "( B ) Lysates ,  from 293T cells transfected ( Tfx ) with E3b1 or a control vector ( ctr ) ,  were immunoprecipitated ( IP ) with anti-Grb2 or an irrelevant antibody ( ctr ) ,  followed by detection ( WB ) with anti -- Sos-1 ( top ) or anti-Grb2 ( middle ) ." {
+label="( B ) Lysates ,  from 293T cells transfected ( Tfx ) with E3b1 or a control
+vector ( ctr ) ,  were immunoprecipitated ( IP ) with anti-Grb2 or an irrelevant
+antibody ( ctr ) ,  followed by detection ( WB ) with anti -- Sos-1 ( top ) or
+anti-Grb2 ( middle ) .";
+Lysates4 [style=filled, fillcolor=white, label=Lysates];
+B2 [style=filled, fillcolor=white, label=B];
+Lysates4 -> B2  [label=appos];
+immunoprecipitated24 [style=filled, fillcolor=white, label=immunoprecipitated];
+immunoprecipitated24 -> Lysates4  [label=nsubjpass];
+cells8 [style=filled, fillcolor=white, label=cells];
+"293T7" [style=filled, fillcolor=white, label="293T"];
+cells8 -> "293T7"  [label=num];
+Lysates4 -> cells8  [label=prep_from];
+transfected9 [style=filled, fillcolor=white, label=transfected];
+cells8 -> transfected9  [label=rcmod];
+Tfx11 [style=filled, fillcolor=white, label=Tfx];
+transfected9 -> Tfx11  [label=dep];
+E3b114 [style=filled, fillcolor=white, label=E3b1];
+transfected9 -> E3b114  [label=prep_with];
+vector18 [style=filled, fillcolor=white, label=vector];
+a16 [style=filled, fillcolor=white, label=a];
+vector18 -> a16  [label=det];
+control17 [style=filled, fillcolor=white, label=control];
+vector18 -> control17  [label=nn];
+E3b114 -> vector18  [label=conj_or];
+ctr20 [style=filled, fillcolor=white, label=ctr];
+vector18 -> ctr20  [label=appos];
+were23 [style=filled, fillcolor=white, label=were];
+immunoprecipitated24 -> were23  [label=auxpass];
+immunoprecipitated24 -> immunoprecipitated24  [label=root];
+IP26 [style=filled, fillcolor=white, label=IP];
+immunoprecipitated24 -> IP26  [label=dobj];
+"anti-Grb29" [style=filled, fillcolor=white, label="anti-Grb2"];
+IP26 -> "anti-Grb29"  [label=prep_with];
+antibody33 [style=filled, fillcolor=white, label=antibody];
+an31 [style=filled, fillcolor=white, label=an];
+antibody33 -> an31  [label=det];
+irrelevant32 [style=filled, fillcolor=white, label=irrelevant];
+antibody33 -> irrelevant32  [label=amod];
+IP26 -> antibody33  [label=conj_or];
+ctr35 [style=filled, fillcolor=white, label=ctr];
+antibody33 -> ctr35  [label=appos];
+followed38 [style=filled, fillcolor=white, label=followed];
+antibody33 -> followed38  [label=vmod];
+detection40 [style=filled, fillcolor=white, label=detection];
+followed38 -> detection40  [label=agent];
+WB42 [style=filled, fillcolor=white, label=WB];
+detection40 -> WB42  [label=appos];
+anti45 [style=filled, fillcolor=white, label=anti];
+followed38 -> anti45  [label=prep_with];
+"Sos-147" [style=filled, fillcolor=white, label="Sos-1"];
+antibody33 -> "Sos-147"  [label=dep];
+top49 [style=filled, fillcolor=white, label=top];
+"Sos-147" -> top49  [label=appos];
+middle54 [style=filled, fillcolor=white, label=middle];
+"anti-Grb25" [style=filled, fillcolor=white, label="anti-Grb2"];
+middle54 -> "anti-Grb25"  [label=amod];
+"Sos-147" -> middle54  [label=conj_or];
+}

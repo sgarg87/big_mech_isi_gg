@@ -1,0 +1,28 @@
+digraph "This procedure successfully decreased MØCM IGF-1 levels to 40-50 % of control ( Figure 8A ) ." {
+label="This procedure successfully decreased MØCM IGF-1 levels to 40-50 % of control (
+Figure 8A ) .";
+procedure2 [style=filled, fillcolor=white, label=procedure];
+This1 [style=filled, fillcolor=white, label=This];
+procedure2 -> This1  [label=det];
+decreased4 [style=filled, fillcolor=white, label=decreased];
+decreased4 -> procedure2  [label=nsubj];
+successfully3 [style=filled, fillcolor=white, label=successfully];
+decreased4 -> successfully3  [label=advmod];
+decreased4 -> decreased4  [label=root];
+levels7 [style=filled, fillcolor=white, label=levels];
+"MØCM5" [style=filled, fillcolor=white, label="MØCM"];
+levels7 -> "MØCM5"  [label=nn];
+"IGF-16" [style=filled, fillcolor=white, label="IGF-1"];
+levels7 -> "IGF-16"  [label=nn];
+decreased4 -> levels7  [label=dobj];
+"%10" [style=filled, fillcolor=white, label="%"];
+"40-509" [style=filled, fillcolor=white, label="40-50"];
+"%10" -> "40-509"  [label=num];
+decreased4 -> "%10"  [label=prep_to];
+control12 [style=filled, fillcolor=white, label=control];
+"%10" -> control12  [label=prep_of];
+Figure14 [style=filled, fillcolor=white, label=Figure];
+control12 -> Figure14  [label=appos];
+"8A15" [style=filled, fillcolor=white, label="8A"];
+Figure14 -> "8A15"  [label=num];
+}

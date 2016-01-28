@@ -1,0 +1,17 @@
+digraph "E3b1 is a limiting factor in Rac activation" {
+label="E3b1 is a limiting factor in Rac activation";
+factor5 [style=filled, fillcolor=white, label=factor];
+E3b1 [style=filled, fillcolor=white, label=E3b1];
+factor5 -> E3b1  [label=nsubj];
+is2 [style=filled, fillcolor=white, label=is];
+factor5 -> is2  [label=cop];
+a3 [style=filled, fillcolor=white, label=a];
+factor5 -> a3  [label=det];
+limiting4 [style=filled, fillcolor=white, label=limiting];
+factor5 -> limiting4  [label=amod];
+factor5 -> factor5  [label=root];
+activation8 [style=filled, fillcolor=white, label=activation];
+Rac7 [style=filled, fillcolor=white, label=Rac];
+activation8 -> Rac7  [label=nn];
+factor5 -> activation8  [label=prep_in];
+}

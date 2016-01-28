@@ -1,0 +1,19 @@
+digraph "Position of C12 residue is shown in ball and stick ( green ) ." {
+label="Position of C12 residue is shown in ball and stick ( green ) .";
+shown6 [style=filled, fillcolor=white, label=shown];
+Position1 [style=filled, fillcolor=white, label=Position];
+shown6 -> Position1  [label=nsubjpass];
+residue4 [style=filled, fillcolor=white, label=residue];
+C123 [style=filled, fillcolor=white, label=C12];
+residue4 -> C123  [label=nn];
+Position1 -> residue4  [label=prep_of];
+is5 [style=filled, fillcolor=white, label=is];
+shown6 -> is5  [label=auxpass];
+shown6 -> shown6  [label=root];
+ball8 [style=filled, fillcolor=white, label=ball];
+shown6 -> ball8  [label=prep_in];
+stick10 [style=filled, fillcolor=white, label=stick];
+ball8 -> stick10  [label=conj_and];
+green12 [style=filled, fillcolor=white, label=green];
+ball8 -> green12  [label=dep];
+}

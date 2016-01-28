@@ -1,0 +1,22 @@
+digraph "TGF-p1-induced miR-494 was involved in the negative regulation of PTEN expression ." {
+label="TGF-p1-induced miR-494 was involved in the negative regulation of PTEN
+expression .";
+"miR-4942" [style=filled, fillcolor=white, label="miR-494"];
+"TGF-p1-induced" [style=filled, fillcolor=white, label="TGF-p1-induced"];
+"miR-4942" -> "TGF-p1-induced"  [label=amod];
+involved4 [style=filled, fillcolor=white, label=involved];
+involved4 -> "miR-4942"  [label=nsubjpass];
+was3 [style=filled, fillcolor=white, label=was];
+involved4 -> was3  [label=auxpass];
+involved4 -> involved4  [label=root];
+regulation8 [style=filled, fillcolor=white, label=regulation];
+the6 [style=filled, fillcolor=white, label=the];
+regulation8 -> the6  [label=det];
+negative7 [style=filled, fillcolor=white, label=negative];
+regulation8 -> negative7  [label=amod];
+involved4 -> regulation8  [label=prep_in];
+expression11 [style=filled, fillcolor=white, label=expression];
+PTEN10 [style=filled, fillcolor=white, label=PTEN];
+expression11 -> PTEN10  [label=nn];
+regulation8 -> expression11  [label=prep_of];
+}

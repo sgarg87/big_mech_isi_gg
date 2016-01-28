@@ -1,0 +1,30 @@
+digraph "Table 3 . Alteration of Gene Expression Specially Associated with p53 and H-ras Status in Skin Tumorigenesis upregulated" {
+label="Table 3 . Alteration of Gene Expression Specially Associated with p53 and H-ras
+Status in Skin Tumorigenesis upregulated";
+Alteration4 [style=filled, fillcolor=white, label=Alteration];
+Table1 [style=filled, fillcolor=white, label=Table];
+Alteration4 -> Table1  [label=nn];
+32 [style=filled, fillcolor=white, label=3];
+Alteration4 -> 32  [label=nn];
+upregulated18 [style=filled, fillcolor=white, label=upregulated];
+upregulated18 -> Alteration4  [label=dep];
+Associated9 [style=filled, fillcolor=white, label=Associated];
+Gene6 [style=filled, fillcolor=white, label=Gene];
+Associated9 -> Gene6  [label=nn];
+Expression7 [style=filled, fillcolor=white, label=Expression];
+Associated9 -> Expression7  [label=nn];
+Specially8 [style=filled, fillcolor=white, label=Specially];
+Associated9 -> Specially8  [label=nn];
+Alteration4 -> Associated9  [label=prep_of];
+p5311 [style=filled, fillcolor=white, label=p53];
+Associated9 -> p5311  [label=prep_with];
+Status14 [style=filled, fillcolor=white, label=Status];
+"H-ras13" [style=filled, fillcolor=white, label="H-ras"];
+Status14 -> "H-ras13"  [label=nn];
+Associated9 -> Status14  [label=conj_and];
+Tumorigenesis17 [style=filled, fillcolor=white, label=Tumorigenesis];
+Skin16 [style=filled, fillcolor=white, label=Skin];
+Tumorigenesis17 -> Skin16  [label=nn];
+Status14 -> Tumorigenesis17  [label=prep_in];
+upregulated18 -> upregulated18  [label=root];
+}

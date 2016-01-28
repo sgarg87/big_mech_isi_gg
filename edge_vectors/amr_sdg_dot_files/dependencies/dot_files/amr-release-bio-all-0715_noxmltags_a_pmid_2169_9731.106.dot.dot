@@ -1,0 +1,40 @@
+digraph "These results suggest that both the MEK and PI3K pathways must be blocked to effectively inhibit macrophage-stimulated neoplastic growth ." {
+label="These results suggest that both the MEK and PI3K pathways must be blocked to
+effectively inhibit macrophage-stimulated neoplastic growth .";
+results2 [style=filled, fillcolor=white, label=results];
+These1 [style=filled, fillcolor=white, label=These];
+results2 -> These1  [label=det];
+suggest3 [style=filled, fillcolor=white, label=suggest];
+suggest3 -> results2  [label=nsubj];
+suggest3 -> suggest3  [label=root];
+blocked13 [style=filled, fillcolor=white, label=blocked];
+that4 [style=filled, fillcolor=white, label=that];
+blocked13 -> that4  [label=mark];
+MEK7 [style=filled, fillcolor=white, label=MEK];
+both5 [style=filled, fillcolor=white, label=both];
+MEK7 -> both5  [label=preconj];
+the6 [style=filled, fillcolor=white, label=the];
+MEK7 -> the6  [label=det];
+blocked13 -> MEK7  [label=nsubjpass];
+pathways10 [style=filled, fillcolor=white, label=pathways];
+PI3K9 [style=filled, fillcolor=white, label=PI3K];
+pathways10 -> PI3K9  [label=nn];
+MEK7 -> pathways10  [label=conj_and];
+must11 [style=filled, fillcolor=white, label=must];
+blocked13 -> must11  [label=aux];
+be12 [style=filled, fillcolor=white, label=be];
+blocked13 -> be12  [label=auxpass];
+suggest3 -> blocked13  [label=ccomp];
+inhibit16 [style=filled, fillcolor=white, label=inhibit];
+to14 [style=filled, fillcolor=white, label=to];
+inhibit16 -> to14  [label=aux];
+effectively15 [style=filled, fillcolor=white, label=effectively];
+inhibit16 -> effectively15  [label=advmod];
+blocked13 -> inhibit16  [label=xcomp];
+growth19 [style=filled, fillcolor=white, label=growth];
+"macrophage-stimulated17" [style=filled, fillcolor=white, label="macrophage-stimulated"];
+growth19 -> "macrophage-stimulated17"  [label=amod];
+neoplastic18 [style=filled, fillcolor=white, label=neoplastic];
+growth19 -> neoplastic18  [label=amod];
+inhibit16 -> growth19  [label=dobj];
+}

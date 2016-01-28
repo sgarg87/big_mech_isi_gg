@@ -1,0 +1,28 @@
+digraph "FIGURE 9 . TGF-beta1 induces snail-1 in hepatocytes in EMT state and lack of evidence for Akt/Erk1/2 activation" {
+label="FIGURE 9 . TGF-beta1 induces snail-1 in hepatocytes in EMT state and lack of
+evidence for Akt/Erk1/2 activation";
+92 [style=filled, fillcolor=white, label=9];
+FIGURE1 [style=filled, fillcolor=white, label=FIGURE];
+92 -> FIGURE1  [label=dep];
+"TGF-beta14" [style=filled, fillcolor=white, label="TGF-beta1"];
+"TGF-beta14" -> 92  [label=dep];
+"TGF-beta14" -> "TGF-beta14"  [label=root];
+induces5 [style=filled, fillcolor=white, label=induces];
+"TGF-beta14" -> induces5  [label=rcmod];
+"snail-16" [style=filled, fillcolor=white, label="snail-1"];
+induces5 -> "snail-16"  [label=acomp];
+hepatocytes8 [style=filled, fillcolor=white, label=hepatocytes];
+"snail-16" -> hepatocytes8  [label=prep_in];
+state11 [style=filled, fillcolor=white, label=state];
+EMT10 [style=filled, fillcolor=white, label=EMT];
+state11 -> EMT10  [label=nn];
+hepatocytes8 -> state11  [label=prep_in];
+lack13 [style=filled, fillcolor=white, label=lack];
+state11 -> lack13  [label=conj_and];
+evidence15 [style=filled, fillcolor=white, label=evidence];
+state11 -> evidence15  [label=prep_of];
+activation18 [style=filled, fillcolor=white, label=activation];
+"Akt/Erk1/217" [style=filled, fillcolor=white, label="Akt/Erk1/2"];
+activation18 -> "Akt/Erk1/217"  [label=amod];
+evidence15 -> activation18  [label=prep_for];
+}

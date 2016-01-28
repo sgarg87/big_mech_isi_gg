@@ -1,0 +1,51 @@
+digraph "More specifically ,  in Caco-BR13 cells the formation of stress fibers was enhanced ,  whereas formation of filopodia-membrane protrusions enriched with actin - is evident in Caco-K15 cells ( Figure 1A-ii ,  arrow ) ." {
+label="More specifically ,  in Caco-BR13 cells the formation of stress fibers was
+enhanced ,  whereas formation of filopodia-membrane protrusions enriched with
+actin - is evident in Caco-K15 cells ( Figure 1A-ii ,  arrow ) .";
+specifically2 [style=filled, fillcolor=white, label=specifically];
+More1 [style=filled, fillcolor=white, label=More];
+specifically2 -> More1  [label=advmod];
+enhanced13 [style=filled, fillcolor=white, label=enhanced];
+enhanced13 -> specifically2  [label=advmod];
+cells6 [style=filled, fillcolor=white, label=cells];
+"Caco-BR135" [style=filled, fillcolor=white, label="Caco-BR13"];
+cells6 -> "Caco-BR135"  [label=nn];
+enhanced13 -> cells6  [label=prep_in];
+formation8 [style=filled, fillcolor=white, label=formation];
+the7 [style=filled, fillcolor=white, label=the];
+formation8 -> the7  [label=det];
+enhanced13 -> formation8  [label=nsubjpass];
+fibers11 [style=filled, fillcolor=white, label=fibers];
+stress10 [style=filled, fillcolor=white, label=stress];
+fibers11 -> stress10  [label=nn];
+formation8 -> fibers11  [label=prep_of];
+was12 [style=filled, fillcolor=white, label=was];
+enhanced13 -> was12  [label=auxpass];
+enhanced13 -> enhanced13  [label=root];
+evident25 [style=filled, fillcolor=white, label=evident];
+whereas15 [style=filled, fillcolor=white, label=whereas];
+evident25 -> whereas15  [label=mark];
+formation16 [style=filled, fillcolor=white, label=formation];
+evident25 -> formation16  [label=nsubj];
+protrusions19 [style=filled, fillcolor=white, label=protrusions];
+"filopodia-membrane18" [style=filled, fillcolor=white, label="filopodia-membrane"];
+protrusions19 -> "filopodia-membrane18"  [label=amod];
+formation16 -> protrusions19  [label=prep_of];
+enriched20 [style=filled, fillcolor=white, label=enriched];
+protrusions19 -> enriched20  [label=vmod];
+actin22 [style=filled, fillcolor=white, label=actin];
+enriched20 -> actin22  [label=prep_with];
+is24 [style=filled, fillcolor=white, label=is];
+evident25 -> is24  [label=cop];
+enhanced13 -> evident25  [label=advcl];
+cells28 [style=filled, fillcolor=white, label=cells];
+"Caco-K1527" [style=filled, fillcolor=white, label="Caco-K15"];
+cells28 -> "Caco-K1527"  [label=nn];
+evident25 -> cells28  [label=prep_in];
+Figure30 [style=filled, fillcolor=white, label=Figure];
+cells28 -> Figure30  [label=appos];
+"1A-ii3" [style=filled, fillcolor=white, label="1A-ii"];
+Figure30 -> "1A-ii3"  [label=num];
+arrow33 [style=filled, fillcolor=white, label=arrow];
+Figure30 -> arrow33  [label=dep];
+}

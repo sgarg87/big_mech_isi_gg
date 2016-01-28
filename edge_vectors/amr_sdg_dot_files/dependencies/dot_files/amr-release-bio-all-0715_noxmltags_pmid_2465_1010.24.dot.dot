@@ -1,0 +1,34 @@
+digraph "Here ,  we will discuss some of these knowledge gaps ,  as well as recent advances and the challenges that lie ahead ." {
+label="Here ,  we will discuss some of these knowledge gaps ,  as well as recent
+advances and the challenges that lie ahead .";
+discuss5 [style=filled, fillcolor=white, label=discuss];
+Here1 [style=filled, fillcolor=white, label=Here];
+discuss5 -> Here1  [label=advmod];
+we3 [style=filled, fillcolor=white, label=we];
+discuss5 -> we3  [label=nsubj];
+will4 [style=filled, fillcolor=white, label=will];
+discuss5 -> will4  [label=aux];
+discuss5 -> discuss5  [label=root];
+some6 [style=filled, fillcolor=white, label=some];
+discuss5 -> some6  [label=dobj];
+gaps10 [style=filled, fillcolor=white, label=gaps];
+these8 [style=filled, fillcolor=white, label=these];
+gaps10 -> these8  [label=det];
+knowledge9 [style=filled, fillcolor=white, label=knowledge];
+gaps10 -> knowledge9  [label=nn];
+some6 -> gaps10  [label=prep_of];
+advances16 [style=filled, fillcolor=white, label=advances];
+recent15 [style=filled, fillcolor=white, label=recent];
+advances16 -> recent15  [label=amod];
+some6 -> advances16  [label=conj_and];
+challenges19 [style=filled, fillcolor=white, label=challenges];
+the18 [style=filled, fillcolor=white, label=the];
+challenges19 -> the18  [label=det];
+advances16 -> challenges19  [label=conj_and];
+lie21 [style=filled, fillcolor=white, label=lie];
+that20 [style=filled, fillcolor=white, label=that];
+lie21 -> that20  [label=nsubj];
+challenges19 -> lie21  [label=rcmod];
+ahead22 [style=filled, fillcolor=white, label=ahead];
+lie21 -> ahead22  [label=advmod];
+}

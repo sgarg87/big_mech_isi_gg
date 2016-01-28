@@ -1,0 +1,55 @@
+digraph "The third direct effector arm of Ras signaling that plays a major role in human cancer is the RalGDS ( Ral guanine nucleotide dissociation stimulator ) pathway ( Figure 1 ) ." {
+label="The third direct effector arm of Ras signaling that plays a major role in human
+cancer is the RalGDS ( Ral guanine nucleotide dissociation stimulator ) pathway
+( Figure 1 ) .";
+arm5 [style=filled, fillcolor=white, label=arm];
+The1 [style=filled, fillcolor=white, label=The];
+arm5 -> The1  [label=det];
+third2 [style=filled, fillcolor=white, label=third];
+arm5 -> third2  [label=amod];
+direct3 [style=filled, fillcolor=white, label=direct];
+arm5 -> direct3  [label=amod];
+effector4 [style=filled, fillcolor=white, label=effector];
+arm5 -> effector4  [label=nn];
+pathway27 [style=filled, fillcolor=white, label=pathway];
+pathway27 -> arm5  [label=nsubj];
+signaling8 [style=filled, fillcolor=white, label=signaling];
+Ras7 [style=filled, fillcolor=white, label=Ras];
+signaling8 -> Ras7  [label=nn];
+arm5 -> signaling8  [label=prep_of];
+plays10 [style=filled, fillcolor=white, label=plays];
+that9 [style=filled, fillcolor=white, label=that];
+plays10 -> that9  [label=nsubj];
+signaling8 -> plays10  [label=rcmod];
+role13 [style=filled, fillcolor=white, label=role];
+a11 [style=filled, fillcolor=white, label=a];
+role13 -> a11  [label=det];
+major12 [style=filled, fillcolor=white, label=major];
+role13 -> major12  [label=amod];
+plays10 -> role13  [label=dobj];
+cancer16 [style=filled, fillcolor=white, label=cancer];
+human15 [style=filled, fillcolor=white, label=human];
+cancer16 -> human15  [label=amod];
+role13 -> cancer16  [label=prep_in];
+is17 [style=filled, fillcolor=white, label=is];
+pathway27 -> is17  [label=cop];
+the18 [style=filled, fillcolor=white, label=the];
+pathway27 -> the18  [label=det];
+RalGDS19 [style=filled, fillcolor=white, label=RalGDS];
+pathway27 -> RalGDS19  [label=nn];
+Ral21 [style=filled, fillcolor=white, label=Ral];
+pathway27 -> Ral21  [label=dep];
+stimulator25 [style=filled, fillcolor=white, label=stimulator];
+guanine22 [style=filled, fillcolor=white, label=guanine];
+stimulator25 -> guanine22  [label=amod];
+nucleotide23 [style=filled, fillcolor=white, label=nucleotide];
+stimulator25 -> nucleotide23  [label=amod];
+dissociation24 [style=filled, fillcolor=white, label=dissociation];
+stimulator25 -> dissociation24  [label=nn];
+Ral21 -> stimulator25  [label=dep];
+pathway27 -> pathway27  [label=root];
+Figure29 [style=filled, fillcolor=white, label=Figure];
+pathway27 -> Figure29  [label=appos];
+130 [style=filled, fillcolor=white, label=1];
+Figure29 -> 130  [label=num];
+}

@@ -1,0 +1,49 @@
+digraph "Similarly ,  it can not be formally excluded that other interactors of the SH3 domain of Eps8 ,  besides E3b1 ,  mediate the formation of the endogenous trimeric complex ." {
+label="Similarly ,  it can not be formally excluded that other interactors of the SH3
+domain of Eps8 ,  besides E3b1 ,  mediate the formation of the endogenous
+trimeric complex .";
+excluded8 [style=filled, fillcolor=white, label=excluded];
+Similarly1 [style=filled, fillcolor=white, label=Similarly];
+excluded8 -> Similarly1  [label=advmod];
+it3 [style=filled, fillcolor=white, label=it];
+excluded8 -> it3  [label=nsubjpass];
+can4 [style=filled, fillcolor=white, label=can];
+excluded8 -> can4  [label=aux];
+not5 [style=filled, fillcolor=white, label=not];
+excluded8 -> not5  [label=neg];
+be6 [style=filled, fillcolor=white, label=be];
+excluded8 -> be6  [label=auxpass];
+formally7 [style=filled, fillcolor=white, label=formally];
+excluded8 -> formally7  [label=advmod];
+excluded8 -> excluded8  [label=root];
+mediate22 [style=filled, fillcolor=white, label=mediate];
+that9 [style=filled, fillcolor=white, label=that];
+mediate22 -> that9  [label=mark];
+interactors11 [style=filled, fillcolor=white, label=interactors];
+other10 [style=filled, fillcolor=white, label=other];
+interactors11 -> other10  [label=amod];
+mediate22 -> interactors11  [label=nsubj];
+domain15 [style=filled, fillcolor=white, label=domain];
+the13 [style=filled, fillcolor=white, label=the];
+domain15 -> the13  [label=det];
+SH314 [style=filled, fillcolor=white, label=SH3];
+domain15 -> SH314  [label=nn];
+interactors11 -> domain15  [label=prep_of];
+Eps817 [style=filled, fillcolor=white, label=Eps8];
+domain15 -> Eps817  [label=prep_of];
+E3b120 [style=filled, fillcolor=white, label=E3b1];
+Eps817 -> E3b120  [label=prep_besides];
+excluded8 -> mediate22  [label=ccomp];
+formation24 [style=filled, fillcolor=white, label=formation];
+the23 [style=filled, fillcolor=white, label=the];
+formation24 -> the23  [label=det];
+mediate22 -> formation24  [label=dobj];
+complex29 [style=filled, fillcolor=white, label=complex];
+the26 [style=filled, fillcolor=white, label=the];
+complex29 -> the26  [label=det];
+endogenous27 [style=filled, fillcolor=white, label=endogenous];
+complex29 -> endogenous27  [label=amod];
+trimeric28 [style=filled, fillcolor=white, label=trimeric];
+complex29 -> trimeric28  [label=amod];
+formation24 -> complex29  [label=prep_of];
+}

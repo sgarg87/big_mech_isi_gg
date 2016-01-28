@@ -1,0 +1,53 @@
+digraph "The rapid kinetics of Snail expression were reflected at the mRNA level ,  suggesting that Snail promoter activity in keratinocytes might be sensitive to TGF-β2 signaling ( Figure 5C ) ." {
+label="The rapid kinetics of Snail expression were reflected at the mRNA level ,
+suggesting that Snail promoter activity in keratinocytes might be sensitive to
+TGF-β2 signaling ( Figure 5C ) .";
+kinetics3 [style=filled, fillcolor=white, label=kinetics];
+The1 [style=filled, fillcolor=white, label=The];
+kinetics3 -> The1  [label=det];
+rapid2 [style=filled, fillcolor=white, label=rapid];
+kinetics3 -> rapid2  [label=amod];
+reflected8 [style=filled, fillcolor=white, label=reflected];
+reflected8 -> kinetics3  [label=nsubjpass];
+expression6 [style=filled, fillcolor=white, label=expression];
+Snail5 [style=filled, fillcolor=white, label=Snail];
+expression6 -> Snail5  [label=nn];
+kinetics3 -> expression6  [label=prep_of];
+were7 [style=filled, fillcolor=white, label=were];
+reflected8 -> were7  [label=auxpass];
+reflected8 -> reflected8  [label=root];
+level12 [style=filled, fillcolor=white, label=level];
+the10 [style=filled, fillcolor=white, label=the];
+level12 -> the10  [label=det];
+mRNA11 [style=filled, fillcolor=white, label=mRNA];
+level12 -> mRNA11  [label=nn];
+reflected8 -> level12  [label=prep_at];
+suggesting14 [style=filled, fillcolor=white, label=suggesting];
+reflected8 -> suggesting14  [label=xcomp];
+sensitive23 [style=filled, fillcolor=white, label=sensitive];
+that15 [style=filled, fillcolor=white, label=that];
+sensitive23 -> that15  [label=mark];
+activity18 [style=filled, fillcolor=white, label=activity];
+Snail16 [style=filled, fillcolor=white, label=Snail];
+activity18 -> Snail16  [label=amod];
+promoter17 [style=filled, fillcolor=white, label=promoter];
+activity18 -> promoter17  [label=nn];
+sensitive23 -> activity18  [label=nsubj];
+keratinocytes20 [style=filled, fillcolor=white, label=keratinocytes];
+activity18 -> keratinocytes20  [label=prep_in];
+might21 [style=filled, fillcolor=white, label=might];
+sensitive23 -> might21  [label=aux];
+be22 [style=filled, fillcolor=white, label=be];
+sensitive23 -> be22  [label=cop];
+suggesting14 -> sensitive23  [label=ccomp];
+"TGF-β25" [style=filled, fillcolor=white, label="TGF-β2"];
+to24 [style=filled, fillcolor=white, label=to];
+"TGF-β25" -> to24  [label=aux];
+sensitive23 -> "TGF-β25"  [label=xcomp];
+signaling26 [style=filled, fillcolor=white, label=signaling];
+"TGF-β25" -> signaling26  [label=xcomp];
+Figure28 [style=filled, fillcolor=white, label=Figure];
+signaling26 -> Figure28  [label=dep];
+"5C29" [style=filled, fillcolor=white, label="5C"];
+Figure28 -> "5C29"  [label=num];
+}

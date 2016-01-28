@@ -1,0 +1,45 @@
+digraph "These results indicate that primary lung macrophages produce diffusible signals which can augment the proliferation of both non-neoplastic and neoplastic cells in vitro ." {
+label="These results indicate that primary lung macrophages produce diffusible signals
+which can augment the proliferation of both non-neoplastic and neoplastic cells
+in vitro .";
+results2 [style=filled, fillcolor=white, label=results];
+These1 [style=filled, fillcolor=white, label=These];
+results2 -> These1  [label=det];
+indicate3 [style=filled, fillcolor=white, label=indicate];
+indicate3 -> results2  [label=nsubj];
+indicate3 -> indicate3  [label=root];
+produce8 [style=filled, fillcolor=white, label=produce];
+that4 [style=filled, fillcolor=white, label=that];
+produce8 -> that4  [label=mark];
+macrophages7 [style=filled, fillcolor=white, label=macrophages];
+primary5 [style=filled, fillcolor=white, label=primary];
+macrophages7 -> primary5  [label=amod];
+lung6 [style=filled, fillcolor=white, label=lung];
+macrophages7 -> lung6  [label=nn];
+produce8 -> macrophages7  [label=nsubj];
+indicate3 -> produce8  [label=ccomp];
+signals10 [style=filled, fillcolor=white, label=signals];
+diffusible9 [style=filled, fillcolor=white, label=diffusible];
+signals10 -> diffusible9  [label=amod];
+produce8 -> signals10  [label=dobj];
+augment13 [style=filled, fillcolor=white, label=augment];
+which11 [style=filled, fillcolor=white, label=which];
+augment13 -> which11  [label=nsubj];
+can12 [style=filled, fillcolor=white, label=can];
+augment13 -> can12  [label=aux];
+signals10 -> augment13  [label=rcmod];
+proliferation15 [style=filled, fillcolor=white, label=proliferation];
+the14 [style=filled, fillcolor=white, label=the];
+proliferation15 -> the14  [label=det];
+augment13 -> proliferation15  [label=dobj];
+"non-neoplastic18" [style=filled, fillcolor=white, label="non-neoplastic"];
+both17 [style=filled, fillcolor=white, label=both];
+"non-neoplastic18" -> both17  [label=preconj];
+cells21 [style=filled, fillcolor=white, label=cells];
+cells21 -> "non-neoplastic18"  [label=amod];
+neoplastic20 [style=filled, fillcolor=white, label=neoplastic];
+"non-neoplastic18" -> neoplastic20  [label=conj_and];
+proliferation15 -> cells21  [label=prep_of];
+vitro23 [style=filled, fillcolor=white, label=vitro];
+augment13 -> vitro23  [label=prep_in];
+}

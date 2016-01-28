@@ -1,0 +1,36 @@
+digraph "We thus sought to exploit the availability of eps8 − / − fibroblasts to circumvent this problem ." {
+label="We thus sought to exploit the availability of eps8 − / − fibroblasts to
+circumvent this problem .";
+sought3 [style=filled, fillcolor=white, label=sought];
+We1 [style=filled, fillcolor=white, label=We];
+sought3 -> We1  [label=nsubj];
+thus2 [style=filled, fillcolor=white, label=thus];
+sought3 -> thus2  [label=advmod];
+fibroblasts13 [style=filled, fillcolor=white, label=fibroblasts];
+fibroblasts13 -> sought3  [label=dep];
+exploit5 [style=filled, fillcolor=white, label=exploit];
+to4 [style=filled, fillcolor=white, label=to];
+exploit5 -> to4  [label=aux];
+sought3 -> exploit5  [label=xcomp];
+availability7 [style=filled, fillcolor=white, label=availability];
+the6 [style=filled, fillcolor=white, label=the];
+availability7 -> the6  [label=det];
+exploit5 -> availability7  [label=dobj];
+"−10" [style=filled, fillcolor=white, label="−"];
+eps89 [style=filled, fillcolor=white, label=eps8];
+"−10" -> eps89  [label=amod];
+availability7 -> "−10"  [label=prep_of];
+"/11" [style=filled, fillcolor=white, label="/"];
+fibroblasts13 -> "/11"  [label=punct];
+"−12" [style=filled, fillcolor=white, label="−"];
+fibroblasts13 -> "−12"  [label=amod];
+fibroblasts13 -> fibroblasts13  [label=root];
+circumvent15 [style=filled, fillcolor=white, label=circumvent];
+to14 [style=filled, fillcolor=white, label=to];
+circumvent15 -> to14  [label=aux];
+fibroblasts13 -> circumvent15  [label=dep];
+problem17 [style=filled, fillcolor=white, label=problem];
+this16 [style=filled, fillcolor=white, label=this];
+problem17 -> this16  [label=det];
+circumvent15 -> problem17  [label=dobj];
+}

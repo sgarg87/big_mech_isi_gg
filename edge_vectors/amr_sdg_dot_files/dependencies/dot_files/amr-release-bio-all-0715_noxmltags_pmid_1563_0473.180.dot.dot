@@ -1,0 +1,47 @@
+digraph "Since a major target for Snail-mediated repression is the E-cadherin gene -LSB- 12 ,  13 -RSB- ,  we investigated the status of E-cadherin in TGF-β2-null buds ." {
+label="Since a major target for Snail-mediated repression is the E-cadherin gene -LSB-
+12 ,  13 -RSB- ,  we investigated the status of E-cadherin in TGF-β2-null buds
+.";
+gene11 [style=filled, fillcolor=white, label=gene];
+Since1 [style=filled, fillcolor=white, label=Since];
+gene11 -> Since1  [label=mark];
+target4 [style=filled, fillcolor=white, label=target];
+a2 [style=filled, fillcolor=white, label=a];
+target4 -> a2  [label=det];
+major3 [style=filled, fillcolor=white, label=major];
+target4 -> major3  [label=amod];
+gene11 -> target4  [label=nsubj];
+repression7 [style=filled, fillcolor=white, label=repression];
+"Snail-mediated6" [style=filled, fillcolor=white, label="Snail-mediated"];
+repression7 -> "Snail-mediated6"  [label=amod];
+target4 -> repression7  [label=prep_for];
+is8 [style=filled, fillcolor=white, label=is];
+gene11 -> is8  [label=cop];
+the9 [style=filled, fillcolor=white, label=the];
+gene11 -> the9  [label=det];
+"E-cadherin10" [style=filled, fillcolor=white, label="E-cadherin"];
+gene11 -> "E-cadherin10"  [label=amod];
+investigated19 [style=filled, fillcolor=white, label=investigated];
+investigated19 -> gene11  [label=advcl];
+"-RSB-16" [style=filled, fillcolor=white, label="-RSB-"];
+"-LSB-12" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-16" -> "-LSB-12"  [label=dep];
+1213 [style=filled, fillcolor=white, label=12];
+"-LSB-12" -> 1213  [label=num];
+1315 [style=filled, fillcolor=white, label=13];
+"-LSB-12" -> 1315  [label=num];
+gene11 -> "-RSB-16"  [label=amod];
+we18 [style=filled, fillcolor=white, label=we];
+investigated19 -> we18  [label=nsubj];
+investigated19 -> investigated19  [label=root];
+status21 [style=filled, fillcolor=white, label=status];
+the20 [style=filled, fillcolor=white, label=the];
+status21 -> the20  [label=det];
+investigated19 -> status21  [label=dobj];
+"E-cadherin23" [style=filled, fillcolor=white, label="E-cadherin"];
+status21 -> "E-cadherin23"  [label=prep_of];
+buds26 [style=filled, fillcolor=white, label=buds];
+"TGF-β2-null5" [style=filled, fillcolor=white, label="TGF-β2-null"];
+buds26 -> "TGF-β2-null5"  [label=nn];
+investigated19 -> buds26  [label=prep_in];
+}

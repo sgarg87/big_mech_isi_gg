@@ -1,0 +1,45 @@
+digraph "Quantitative Reverse Transcription Polymerase Chain Reaction ( qRT-PCR ) results detected a decrease in SHIP-1 mRNA expression in TB compared to control splenocytes ( Figure 3b ) ." {
+label="Quantitative Reverse Transcription Polymerase Chain Reaction ( qRT-PCR )
+results detected a decrease in SHIP-1 mRNA expression in TB compared to control
+splenocytes ( Figure 3b ) .";
+Reaction6 [style=filled, fillcolor=white, label=Reaction];
+Quantitative1 [style=filled, fillcolor=white, label=Quantitative];
+Reaction6 -> Quantitative1  [label=nn];
+Reverse2 [style=filled, fillcolor=white, label=Reverse];
+Reaction6 -> Reverse2  [label=nn];
+Transcription3 [style=filled, fillcolor=white, label=Transcription];
+Reaction6 -> Transcription3  [label=nn];
+Polymerase4 [style=filled, fillcolor=white, label=Polymerase];
+Reaction6 -> Polymerase4  [label=nn];
+Chain5 [style=filled, fillcolor=white, label=Chain];
+Reaction6 -> Chain5  [label=nn];
+results10 [style=filled, fillcolor=white, label=results];
+results10 -> Reaction6  [label=nn];
+"qRT-PCR8" [style=filled, fillcolor=white, label="qRT-PCR"];
+results10 -> "qRT-PCR8"  [label=appos];
+detected11 [style=filled, fillcolor=white, label=detected];
+detected11 -> results10  [label=nsubj];
+detected11 -> detected11  [label=root];
+decrease13 [style=filled, fillcolor=white, label=decrease];
+a12 [style=filled, fillcolor=white, label=a];
+decrease13 -> a12  [label=det];
+detected11 -> decrease13  [label=dobj];
+expression17 [style=filled, fillcolor=white, label=expression];
+"SHIP-15" [style=filled, fillcolor=white, label="SHIP-1"];
+expression17 -> "SHIP-15"  [label=nn];
+mRNA16 [style=filled, fillcolor=white, label=mRNA];
+expression17 -> mRNA16  [label=nn];
+detected11 -> expression17  [label=prep_in];
+TB19 [style=filled, fillcolor=white, label=TB];
+expression17 -> TB19  [label=prep_in];
+to21 [style=filled, fillcolor=white, label=to];
+detected11 -> to21  [label=prepc_compared_to];
+splenocytes23 [style=filled, fillcolor=white, label=splenocytes];
+control22 [style=filled, fillcolor=white, label=control];
+splenocytes23 -> control22  [label=nn];
+detected11 -> splenocytes23  [label=pobj];
+Figure25 [style=filled, fillcolor=white, label=Figure];
+splenocytes23 -> Figure25  [label=appos];
+"3b26" [style=filled, fillcolor=white, label="3b"];
+Figure25 -> "3b26"  [label=num];
+}

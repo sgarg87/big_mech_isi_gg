@@ -1,0 +1,38 @@
+digraph "p107 inhibits Sp1-dependent transcription . Binding of p107 to Sp1 seems to inhibit the binding of Sp1 to DNA ( Datta et al. ,  1995 ) ." {
+label="p107 inhibits Sp1-dependent transcription . Binding of p107 to Sp1 seems to
+inhibit the binding of Sp1 to DNA ( Datta et al. ,  1995 ) .";
+inhibits2 [style=filled, fillcolor=white, label=inhibits];
+p107 [style=filled, fillcolor=white, label=p107];
+inhibits2 -> p107  [label=nsubj];
+inhibits2 -> inhibits2  [label=root];
+Binding6 [style=filled, fillcolor=white, label=Binding];
+"Sp1-dependent3" [style=filled, fillcolor=white, label="Sp1-dependent"];
+Binding6 -> "Sp1-dependent3"  [label=nn];
+transcription4 [style=filled, fillcolor=white, label=transcription];
+Binding6 -> transcription4  [label=nn];
+seems11 [style=filled, fillcolor=white, label=seems];
+seems11 -> Binding6  [label=nsubj];
+p1078 [style=filled, fillcolor=white, label=p107];
+Binding6 -> p1078  [label=prep_of];
+Sp110 [style=filled, fillcolor=white, label=Sp1];
+p1078 -> Sp110  [label=prep_to];
+inhibits2 -> seems11  [label=ccomp];
+inhibit13 [style=filled, fillcolor=white, label=inhibit];
+to12 [style=filled, fillcolor=white, label=to];
+inhibit13 -> to12  [label=aux];
+seems11 -> inhibit13  [label=xcomp];
+binding15 [style=filled, fillcolor=white, label=binding];
+the14 [style=filled, fillcolor=white, label=the];
+binding15 -> the14  [label=det];
+inhibit13 -> binding15  [label=dobj];
+Sp117 [style=filled, fillcolor=white, label=Sp1];
+binding15 -> Sp117  [label=prep_of];
+DNA19 [style=filled, fillcolor=white, label=DNA];
+inhibit13 -> DNA19  [label=prep_to];
+Datta21 [style=filled, fillcolor=white, label=Datta];
+DNA19 -> Datta21  [label=appos];
+"al.23" [style=filled, fillcolor=white, label="al."];
+Datta21 -> "al.23"  [label=conj_et];
+19952 [style=filled, fillcolor=white, label=1995];
+Datta21 -> 19952  [label=dep];
+}

@@ -1,0 +1,34 @@
+digraph "TGF-β1 has been shown to induce Snail family members in hepatocytes and heart -LSB- 15 ,  31 -RSB- ." {
+label="TGF-β1 has been shown to induce Snail family members in hepatocytes and heart
+-LSB- 15 ,  31 -RSB- .";
+shown4 [style=filled, fillcolor=white, label=shown];
+"TGF-β1" [style=filled, fillcolor=white, label="TGF-β1"];
+shown4 -> "TGF-β1"  [label=nsubjpass];
+has2 [style=filled, fillcolor=white, label=has];
+shown4 -> has2  [label=aux];
+been3 [style=filled, fillcolor=white, label=been];
+shown4 -> been3  [label=auxpass];
+shown4 -> shown4  [label=root];
+induce6 [style=filled, fillcolor=white, label=induce];
+to5 [style=filled, fillcolor=white, label=to];
+induce6 -> to5  [label=aux];
+shown4 -> induce6  [label=xcomp];
+members9 [style=filled, fillcolor=white, label=members];
+Snail7 [style=filled, fillcolor=white, label=Snail];
+members9 -> Snail7  [label=amod];
+family8 [style=filled, fillcolor=white, label=family];
+members9 -> family8  [label=nn];
+induce6 -> members9  [label=dobj];
+hepatocytes11 [style=filled, fillcolor=white, label=hepatocytes];
+members9 -> hepatocytes11  [label=prep_in];
+heart13 [style=filled, fillcolor=white, label=heart];
+hepatocytes11 -> heart13  [label=conj_and];
+"-RSB-18" [style=filled, fillcolor=white, label="-RSB-"];
+"-LSB-14" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-18" -> "-LSB-14"  [label=dep];
+15 [style=filled, fillcolor=white, label=15];
+"-LSB-14" -> 15  [label=num];
+3117 [style=filled, fillcolor=white, label=31];
+"-LSB-14" -> 3117  [label=num];
+members9 -> "-RSB-18"  [label=amod];
+}

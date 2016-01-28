@@ -1,0 +1,49 @@
+digraph "In addition ,  constitutive activation of the pathway via expression of the constitutively active mutants of MAPKK1 or MAPKK2 induced the expression of the platelet/megakaryocytic-specific genes alpha IIb and eta 3 ." {
+label="In addition ,  constitutive activation of the pathway via expression of the
+constitutively active mutants of MAPKK1 or MAPKK2 induced the expression of the
+platelet/megakaryocytic-specific genes alpha IIb and eta 3 .";
+induced20 [style=filled, fillcolor=white, label=induced];
+addition2 [style=filled, fillcolor=white, label=addition];
+induced20 -> addition2  [label=prep_in];
+activation5 [style=filled, fillcolor=white, label=activation];
+constitutive4 [style=filled, fillcolor=white, label=constitutive];
+activation5 -> constitutive4  [label=amod];
+induced20 -> activation5  [label=nsubj];
+pathway8 [style=filled, fillcolor=white, label=pathway];
+the7 [style=filled, fillcolor=white, label=the];
+pathway8 -> the7  [label=det];
+activation5 -> pathway8  [label=prep_of];
+expression10 [style=filled, fillcolor=white, label=expression];
+pathway8 -> expression10  [label=prep_via];
+mutants15 [style=filled, fillcolor=white, label=mutants];
+the12 [style=filled, fillcolor=white, label=the];
+mutants15 -> the12  [label=det];
+active14 [style=filled, fillcolor=white, label=active];
+constitutively13 [style=filled, fillcolor=white, label=constitutively];
+active14 -> constitutively13  [label=advmod];
+mutants15 -> active14  [label=amod];
+expression10 -> mutants15  [label=prep_of];
+MAPKK117 [style=filled, fillcolor=white, label=MAPKK1];
+mutants15 -> MAPKK117  [label=prep_of];
+MAPKK219 [style=filled, fillcolor=white, label=MAPKK2];
+MAPKK117 -> MAPKK219  [label=conj_or];
+induced20 -> induced20  [label=root];
+expression22 [style=filled, fillcolor=white, label=expression];
+the21 [style=filled, fillcolor=white, label=the];
+expression22 -> the21  [label=det];
+induced20 -> expression22  [label=dobj];
+IIb28 [style=filled, fillcolor=white, label=IIb];
+the24 [style=filled, fillcolor=white, label=the];
+IIb28 -> the24  [label=det];
+"platelet/megakaryocytic-specific25" [style=filled, fillcolor=white, label="platelet/megakaryocytic-specific"];
+IIb28 -> "platelet/megakaryocytic-specific25"  [label=amod];
+genes26 [style=filled, fillcolor=white, label=genes];
+IIb28 -> genes26  [label=nn];
+alpha27 [style=filled, fillcolor=white, label=alpha];
+IIb28 -> alpha27  [label=nn];
+expression22 -> IIb28  [label=prep_of];
+eta30 [style=filled, fillcolor=white, label=eta];
+IIb28 -> eta30  [label=conj_and];
+331 [style=filled, fillcolor=white, label=3];
+eta30 -> 331  [label=num];
+}

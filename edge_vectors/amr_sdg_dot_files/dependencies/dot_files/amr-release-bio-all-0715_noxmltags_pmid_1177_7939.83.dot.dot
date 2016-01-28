@@ -1,0 +1,55 @@
+digraph "E3b1 ,  but not the E3b1 mutant impaired in Eps8 binding ,  caused a readily detectable increase in Rac-GTP levels in wild type ,  but not in eps8 − / − fibroblasts ( Fig. 5 C ) ." {
+label="E3b1 ,  but not the E3b1 mutant impaired in Eps8 binding ,  caused a readily
+detectable increase in Rac-GTP levels in wild type ,  but not in eps8 − / −
+fibroblasts ( Fig. 5 C ) .";
+caused13 [style=filled, fillcolor=white, label=caused];
+E3b1 [style=filled, fillcolor=white, label=E3b1];
+caused13 -> E3b1  [label=nsubj];
+mutant7 [style=filled, fillcolor=white, label=mutant];
+the5 [style=filled, fillcolor=white, label=the];
+mutant7 -> the5  [label=det];
+E3b16 [style=filled, fillcolor=white, label=E3b1];
+mutant7 -> E3b16  [label=amod];
+E3b1 -> mutant7  [label=conj_negcc];
+impaired8 [style=filled, fillcolor=white, label=impaired];
+mutant7 -> impaired8  [label=vmod];
+Eps810 [style=filled, fillcolor=white, label=Eps8];
+impaired8 -> Eps810  [label=prep_in];
+binding11 [style=filled, fillcolor=white, label=binding];
+Eps810 -> binding11  [label=amod];
+caused13 -> caused13  [label=root];
+increase17 [style=filled, fillcolor=white, label=increase];
+a14 [style=filled, fillcolor=white, label=a];
+increase17 -> a14  [label=det];
+detectable16 [style=filled, fillcolor=white, label=detectable];
+readily15 [style=filled, fillcolor=white, label=readily];
+detectable16 -> readily15  [label=advmod];
+increase17 -> detectable16  [label=amod];
+caused13 -> increase17  [label=dobj];
+levels20 [style=filled, fillcolor=white, label=levels];
+"Rac-GTP19" [style=filled, fillcolor=white, label="Rac-GTP"];
+levels20 -> "Rac-GTP19"  [label=nn];
+increase17 -> levels20  [label=prep_in];
+type23 [style=filled, fillcolor=white, label=type];
+wild22 [style=filled, fillcolor=white, label=wild];
+type23 -> wild22  [label=amod];
+caused13 -> type23  [label=prep_in];
+not26 [style=filled, fillcolor=white, label=not];
+caused13 -> not26  [label=neg];
+"−29" [style=filled, fillcolor=white, label="−"];
+eps82 [style=filled, fillcolor=white, label=eps8];
+"−29" -> eps82  [label=amod];
+type23 -> "−29"  [label=conj_but];
+fibroblasts32 [style=filled, fillcolor=white, label=fibroblasts];
+"/30" [style=filled, fillcolor=white, label="/"];
+fibroblasts32 -> "/30"  [label=punct];
+"−31" [style=filled, fillcolor=white, label="−"];
+fibroblasts32 -> "−31"  [label=num];
+"−29" -> fibroblasts32  [label=dep];
+"Fig.34" [style=filled, fillcolor=white, label="Fig."];
+"−29" -> "Fig.34"  [label=appos];
+C36 [style=filled, fillcolor=white, label=C];
+53 [style=filled, fillcolor=white, label=5];
+C36 -> 53  [label=number];
+"Fig.34" -> C36  [label=num];
+}

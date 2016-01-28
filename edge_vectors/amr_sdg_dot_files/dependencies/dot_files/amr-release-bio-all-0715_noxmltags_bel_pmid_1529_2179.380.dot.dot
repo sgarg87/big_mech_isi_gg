@@ -1,0 +1,35 @@
+digraph "Collectively ,  these results indicate that ERK-1 regulates hyperoxia-stimulated Nrf2 phosphorylation and the subsequent ARE-driven transcriptional response ." {
+label="Collectively ,  these results indicate that ERK-1 regulates hyperoxia-
+stimulated Nrf2 phosphorylation and the subsequent ARE-driven transcriptional
+response .";
+indicate5 [style=filled, fillcolor=white, label=indicate];
+Collectively1 [style=filled, fillcolor=white, label=Collectively];
+indicate5 -> Collectively1  [label=advmod];
+results4 [style=filled, fillcolor=white, label=results];
+these3 [style=filled, fillcolor=white, label=these];
+results4 -> these3  [label=det];
+indicate5 -> results4  [label=nsubj];
+indicate5 -> indicate5  [label=root];
+regulates8 [style=filled, fillcolor=white, label=regulates];
+that6 [style=filled, fillcolor=white, label=that];
+regulates8 -> that6  [label=mark];
+"ERK-17" [style=filled, fillcolor=white, label="ERK-1"];
+regulates8 -> "ERK-17"  [label=nsubj];
+indicate5 -> regulates8  [label=ccomp];
+phosphorylation11 [style=filled, fillcolor=white, label=phosphorylation];
+"hyperoxia-stimulated9" [style=filled, fillcolor=white, label="hyperoxia-stimulated"];
+phosphorylation11 -> "hyperoxia-stimulated9"  [label=amod];
+Nrf210 [style=filled, fillcolor=white, label=Nrf2];
+phosphorylation11 -> Nrf210  [label=amod];
+regulates8 -> phosphorylation11  [label=dobj];
+response17 [style=filled, fillcolor=white, label=response];
+the13 [style=filled, fillcolor=white, label=the];
+response17 -> the13  [label=det];
+subsequent14 [style=filled, fillcolor=white, label=subsequent];
+response17 -> subsequent14  [label=amod];
+"ARE-driven15" [style=filled, fillcolor=white, label="ARE-driven"];
+response17 -> "ARE-driven15"  [label=amod];
+transcriptional16 [style=filled, fillcolor=white, label=transcriptional];
+response17 -> transcriptional16  [label=nn];
+phosphorylation11 -> response17  [label=conj_and];
+}

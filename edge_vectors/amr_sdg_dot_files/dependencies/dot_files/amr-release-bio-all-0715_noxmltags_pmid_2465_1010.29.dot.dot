@@ -1,0 +1,36 @@
+digraph "Although these numbers are ,  by now ,  painfully familiar ,  they underscore major gaps in our knowledge of Ras biology ." {
+label="Although these numbers are ,  by now ,  painfully familiar ,  they underscore
+major gaps in our knowledge of Ras biology .";
+familiar10 [style=filled, fillcolor=white, label=familiar];
+Although1 [style=filled, fillcolor=white, label=Although];
+familiar10 -> Although1  [label=mark];
+numbers3 [style=filled, fillcolor=white, label=numbers];
+these2 [style=filled, fillcolor=white, label=these];
+numbers3 -> these2  [label=det];
+familiar10 -> numbers3  [label=nsubj];
+are4 [style=filled, fillcolor=white, label=are];
+familiar10 -> are4  [label=cop];
+by6 [style=filled, fillcolor=white, label=by];
+familiar10 -> by6  [label=prep];
+now7 [style=filled, fillcolor=white, label=now];
+familiar10 -> now7  [label=advmod];
+painfully9 [style=filled, fillcolor=white, label=painfully];
+familiar10 -> painfully9  [label=advmod];
+underscore13 [style=filled, fillcolor=white, label=underscore];
+underscore13 -> familiar10  [label=advcl];
+they12 [style=filled, fillcolor=white, label=they];
+underscore13 -> they12  [label=nsubj];
+underscore13 -> underscore13  [label=root];
+gaps15 [style=filled, fillcolor=white, label=gaps];
+major14 [style=filled, fillcolor=white, label=major];
+gaps15 -> major14  [label=amod];
+underscore13 -> gaps15  [label=dobj];
+knowledge18 [style=filled, fillcolor=white, label=knowledge];
+our17 [style=filled, fillcolor=white, label=our];
+knowledge18 -> our17  [label=poss];
+underscore13 -> knowledge18  [label=prep_in];
+biology21 [style=filled, fillcolor=white, label=biology];
+Ras20 [style=filled, fillcolor=white, label=Ras];
+biology21 -> Ras20  [label=nn];
+knowledge18 -> biology21  [label=prep_of];
+}

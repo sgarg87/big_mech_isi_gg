@@ -1,0 +1,22 @@
+digraph "K-Ras-G12C ( Protein Data Bank 4LUC_A ) is displayed in surface representation ." {
+label="K-Ras-G12C ( Protein Data Bank 4LUC_A ) is displayed in surface representation
+.";
+displayed9 [style=filled, fillcolor=white, label=displayed];
+"K-Ras-G12C" [style=filled, fillcolor=white, label="K-Ras-G12C"];
+displayed9 -> "K-Ras-G12C"  [label=nsubjpass];
+Bank5 [style=filled, fillcolor=white, label=Bank];
+Protein3 [style=filled, fillcolor=white, label=Protein];
+Bank5 -> Protein3  [label=nn];
+Data4 [style=filled, fillcolor=white, label=Data];
+Bank5 -> Data4  [label=nn];
+"K-Ras-G12C" -> Bank5  [label=dep];
+"4LUC_A6" [style=filled, fillcolor=white, label="4LUC_A"];
+Bank5 -> "4LUC_A6"  [label=num];
+is8 [style=filled, fillcolor=white, label=is];
+displayed9 -> is8  [label=auxpass];
+displayed9 -> displayed9  [label=root];
+representation12 [style=filled, fillcolor=white, label=representation];
+surface11 [style=filled, fillcolor=white, label=surface];
+representation12 -> surface11  [label=nn];
+displayed9 -> representation12  [label=prep_in];
+}

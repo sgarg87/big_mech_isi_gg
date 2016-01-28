@@ -1,0 +1,38 @@
+digraph "We next analyzed serpinE2 gene expression in a series of human paired specimens ( resection margins and primary tumors ) by Q-PCR analysis ." {
+label="We next analyzed serpinE2 gene expression in a series of human paired specimens
+( resection margins and primary tumors ) by Q-PCR analysis .";
+analyzed3 [style=filled, fillcolor=white, label=analyzed];
+We1 [style=filled, fillcolor=white, label=We];
+analyzed3 -> We1  [label=nsubj];
+next2 [style=filled, fillcolor=white, label=next];
+analyzed3 -> next2  [label=advmod];
+analyzed3 -> analyzed3  [label=root];
+expression6 [style=filled, fillcolor=white, label=expression];
+serpinE24 [style=filled, fillcolor=white, label=serpinE2];
+expression6 -> serpinE24  [label=amod];
+gene5 [style=filled, fillcolor=white, label=gene];
+expression6 -> gene5  [label=nn];
+analyzed3 -> expression6  [label=dobj];
+series9 [style=filled, fillcolor=white, label=series];
+a8 [style=filled, fillcolor=white, label=a];
+series9 -> a8  [label=det];
+analyzed3 -> series9  [label=prep_in];
+specimens13 [style=filled, fillcolor=white, label=specimens];
+human11 [style=filled, fillcolor=white, label=human];
+specimens13 -> human11  [label=amod];
+paired12 [style=filled, fillcolor=white, label=paired];
+specimens13 -> paired12  [label=amod];
+series9 -> specimens13  [label=prep_of];
+margins16 [style=filled, fillcolor=white, label=margins];
+resection15 [style=filled, fillcolor=white, label=resection];
+margins16 -> resection15  [label=nn];
+specimens13 -> margins16  [label=dep];
+tumors19 [style=filled, fillcolor=white, label=tumors];
+primary18 [style=filled, fillcolor=white, label=primary];
+tumors19 -> primary18  [label=amod];
+margins16 -> tumors19  [label=conj_and];
+analysis23 [style=filled, fillcolor=white, label=analysis];
+"Q-PCR22" [style=filled, fillcolor=white, label="Q-PCR"];
+analysis23 -> "Q-PCR22"  [label=nn];
+analyzed3 -> analysis23  [label=prep_by];
+}

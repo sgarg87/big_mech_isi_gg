@@ -1,0 +1,34 @@
+digraph "Figure 1C shows that the phosphospecific antibody is specific for the ASPP2 fragment phosphorylated in vitro by MAPK ." {
+label="Figure 1C shows that the phosphospecific antibody is specific for the ASPP2
+fragment phosphorylated in vitro by MAPK .";
+shows3 [style=filled, fillcolor=white, label=shows];
+Figure1 [style=filled, fillcolor=white, label=Figure];
+shows3 -> Figure1  [label=nsubj];
+"1C2" [style=filled, fillcolor=white, label="1C"];
+Figure1 -> "1C2"  [label=num];
+shows3 -> shows3  [label=root];
+specific9 [style=filled, fillcolor=white, label=specific];
+that4 [style=filled, fillcolor=white, label=that];
+specific9 -> that4  [label=mark];
+antibody7 [style=filled, fillcolor=white, label=antibody];
+the5 [style=filled, fillcolor=white, label=the];
+antibody7 -> the5  [label=det];
+phosphospecific6 [style=filled, fillcolor=white, label=phosphospecific];
+antibody7 -> phosphospecific6  [label=amod];
+specific9 -> antibody7  [label=nsubj];
+is8 [style=filled, fillcolor=white, label=is];
+specific9 -> is8  [label=cop];
+shows3 -> specific9  [label=ccomp];
+fragment13 [style=filled, fillcolor=white, label=fragment];
+the11 [style=filled, fillcolor=white, label=the];
+fragment13 -> the11  [label=det];
+ASPP21 [style=filled, fillcolor=white, label=ASPP2];
+fragment13 -> ASPP21  [label=nn];
+specific9 -> fragment13  [label=prep_for];
+phosphorylated14 [style=filled, fillcolor=white, label=phosphorylated];
+fragment13 -> phosphorylated14  [label=vmod];
+vitro16 [style=filled, fillcolor=white, label=vitro];
+phosphorylated14 -> vitro16  [label=prep_in];
+MAPK18 [style=filled, fillcolor=white, label=MAPK];
+vitro16 -> MAPK18  [label=prep_by];
+}

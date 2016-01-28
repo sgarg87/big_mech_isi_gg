@@ -1,0 +1,34 @@
+digraph "Thus ,  expression of CD72 appears to negatively regulate BCR-mediated Ca2 + mobilization in K46 ^ mA cells ." {
+label="Thus ,  expression of CD72 appears to negatively regulate BCR-mediated Ca2 +
+mobilization in K46 ^ mA cells .";
+appears6 [style=filled, fillcolor=white, label=appears];
+Thus1 [style=filled, fillcolor=white, label=Thus];
+appears6 -> Thus1  [label=advmod];
+expression3 [style=filled, fillcolor=white, label=expression];
+appears6 -> expression3  [label=nsubj];
+CD725 [style=filled, fillcolor=white, label=CD72];
+expression3 -> CD725  [label=prep_of];
+appears6 -> appears6  [label=root];
+regulate9 [style=filled, fillcolor=white, label=regulate];
+to7 [style=filled, fillcolor=white, label=to];
+regulate9 -> to7  [label=aux];
+negatively8 [style=filled, fillcolor=white, label=negatively];
+regulate9 -> negatively8  [label=advmod];
+appears6 -> regulate9  [label=xcomp];
+mobilization13 [style=filled, fillcolor=white, label=mobilization];
+"BCR-mediated10" [style=filled, fillcolor=white, label="BCR-mediated"];
+mobilization13 -> "BCR-mediated10"  [label=amod];
+Ca211 [style=filled, fillcolor=white, label=Ca2];
+mobilization13 -> Ca211  [label=amod];
+"+12" [style=filled, fillcolor=white, label="+"];
+mobilization13 -> "+12"  [label=nn];
+regulate9 -> mobilization13  [label=dobj];
+cells18 [style=filled, fillcolor=white, label=cells];
+K4615 [style=filled, fillcolor=white, label=K46];
+cells18 -> K4615  [label=nn];
+"^16" [style=filled, fillcolor=white, label="^"];
+cells18 -> "^16"  [label=nn];
+mA17 [style=filled, fillcolor=white, label=mA];
+cells18 -> mA17  [label=nn];
+mobilization13 -> cells18  [label=prep_in];
+}

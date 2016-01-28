@@ -1,0 +1,45 @@
+digraph "E-cadherin gene deletion ,  which results in some hyperproliferation in the epidermis ( Young et al. ,  2003 ; Tinkle et al. ,  2004 ; Tunggal et al. ,  2005 ) ." {
+label="E-cadherin gene deletion ,  which results in some hyperproliferation in the
+epidermis ( Young et al. ,  2003 ; Tinkle et al. ,  2004 ; Tunggal et al. ,
+2005 ) .";
+deletion3 [style=filled, fillcolor=white, label=deletion];
+"E-cadherin1" [style=filled, fillcolor=white, label="E-cadherin"];
+deletion3 -> "E-cadherin1"  [label=amod];
+gene2 [style=filled, fillcolor=white, label=gene];
+deletion3 -> gene2  [label=nn];
+deletion3 -> deletion3  [label=root];
+results6 [style=filled, fillcolor=white, label=results];
+which5 [style=filled, fillcolor=white, label=which];
+results6 -> which5  [label=nsubj];
+deletion3 -> results6  [label=dep];
+hyperproliferation9 [style=filled, fillcolor=white, label=hyperproliferation];
+some8 [style=filled, fillcolor=white, label=some];
+hyperproliferation9 -> some8  [label=det];
+results6 -> hyperproliferation9  [label=prep_in];
+epidermis12 [style=filled, fillcolor=white, label=epidermis];
+the11 [style=filled, fillcolor=white, label=the];
+epidermis12 -> the11  [label=det];
+hyperproliferation9 -> epidermis12  [label=prep_in];
+et15 [style=filled, fillcolor=white, label=et];
+Young14 [style=filled, fillcolor=white, label=Young];
+et15 -> Young14  [label=nn];
+epidermis12 -> et15  [label=dep];
+"al.16" [style=filled, fillcolor=white, label="al."];
+et15 -> "al.16"  [label=num];
+200318 [style=filled, fillcolor=white, label=2003];
+et15 -> 200318  [label=num];
+Tinkle20 [style=filled, fillcolor=white, label=Tinkle];
+et15 -> Tinkle20  [label=dep];
+"al.22" [style=filled, fillcolor=white, label="al."];
+Tinkle20 -> "al.22"  [label=conj_et];
+2004 [style=filled, fillcolor=white, label=2004];
+et15 -> 2004  [label=dep];
+et27 [style=filled, fillcolor=white, label=et];
+Tunggal26 [style=filled, fillcolor=white, label=Tunggal];
+et27 -> Tunggal26  [label=nn];
+2004 -> et27  [label=dep];
+"al.28" [style=filled, fillcolor=white, label="al."];
+et27 -> "al.28"  [label=num];
+20053 [style=filled, fillcolor=white, label=2005];
+et27 -> 20053  [label=num];
+}

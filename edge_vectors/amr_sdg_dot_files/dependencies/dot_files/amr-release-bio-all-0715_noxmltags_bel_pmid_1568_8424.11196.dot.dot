@@ -1,0 +1,38 @@
+digraph "Knockdown experiments using siRNA against CEBPB transcripts showed that the effect of FUS-DDIT3 on IL6 expression is C/EBP beta dependent" {
+label="Knockdown experiments using siRNA against CEBPB transcripts showed that the
+effect of FUS-DDIT3 on IL6 expression is C/EBP beta dependent";
+experiments2 [style=filled, fillcolor=white, label=experiments];
+Knockdown1 [style=filled, fillcolor=white, label=Knockdown];
+experiments2 -> Knockdown1  [label=nn];
+showed8 [style=filled, fillcolor=white, label=showed];
+showed8 -> experiments2  [label=nsubj];
+using3 [style=filled, fillcolor=white, label=using];
+experiments2 -> using3  [label=vmod];
+siRNA4 [style=filled, fillcolor=white, label=siRNA];
+using3 -> siRNA4  [label=dobj];
+transcripts7 [style=filled, fillcolor=white, label=transcripts];
+CEBPB6 [style=filled, fillcolor=white, label=CEBPB];
+transcripts7 -> CEBPB6  [label=nn];
+siRNA4 -> transcripts7  [label=prep_against];
+showed8 -> showed8  [label=root];
+dependent20 [style=filled, fillcolor=white, label=dependent];
+that9 [style=filled, fillcolor=white, label=that];
+dependent20 -> that9  [label=mark];
+effect11 [style=filled, fillcolor=white, label=effect];
+the10 [style=filled, fillcolor=white, label=the];
+effect11 -> the10  [label=det];
+dependent20 -> effect11  [label=nsubj];
+"FUS-DDIT31" [style=filled, fillcolor=white, label="FUS-DDIT3"];
+effect11 -> "FUS-DDIT31"  [label=prep_of];
+expression16 [style=filled, fillcolor=white, label=expression];
+IL615 [style=filled, fillcolor=white, label=IL6];
+expression16 -> IL615  [label=nn];
+"FUS-DDIT31" -> expression16  [label=prep_on];
+is17 [style=filled, fillcolor=white, label=is];
+dependent20 -> is17  [label=cop];
+beta19 [style=filled, fillcolor=white, label=beta];
+"C/EBP18" [style=filled, fillcolor=white, label="C/EBP"];
+beta19 -> "C/EBP18"  [label=num];
+dependent20 -> beta19  [label=npadvmod];
+showed8 -> dependent20  [label=ccomp];
+}

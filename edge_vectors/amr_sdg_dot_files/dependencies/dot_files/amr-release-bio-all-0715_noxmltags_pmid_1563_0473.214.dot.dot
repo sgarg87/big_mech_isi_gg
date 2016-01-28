@@ -1,0 +1,26 @@
+digraph "Several factors may contribute to the seemingly normal follicle development in these mice ." {
+label="Several factors may contribute to the seemingly normal follicle development in
+these mice .";
+factors2 [style=filled, fillcolor=white, label=factors];
+Several1 [style=filled, fillcolor=white, label=Several];
+factors2 -> Several1  [label=amod];
+contribute4 [style=filled, fillcolor=white, label=contribute];
+contribute4 -> factors2  [label=nsubj];
+may3 [style=filled, fillcolor=white, label=may];
+contribute4 -> may3  [label=aux];
+contribute4 -> contribute4  [label=root];
+development10 [style=filled, fillcolor=white, label=development];
+the6 [style=filled, fillcolor=white, label=the];
+development10 -> the6  [label=det];
+normal8 [style=filled, fillcolor=white, label=normal];
+seemingly7 [style=filled, fillcolor=white, label=seemingly];
+normal8 -> seemingly7  [label=advmod];
+development10 -> normal8  [label=amod];
+follicle9 [style=filled, fillcolor=white, label=follicle];
+development10 -> follicle9  [label=nn];
+contribute4 -> development10  [label=prep_to];
+mice13 [style=filled, fillcolor=white, label=mice];
+these12 [style=filled, fillcolor=white, label=these];
+mice13 -> these12  [label=det];
+development10 -> mice13  [label=prep_in];
+}

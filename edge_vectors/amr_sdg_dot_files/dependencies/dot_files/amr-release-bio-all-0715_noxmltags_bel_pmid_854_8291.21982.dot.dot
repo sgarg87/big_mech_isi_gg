@@ -1,0 +1,46 @@
+digraph "Figure 3b shows that activated SAPKs isolated from cells stimulate the formation of a ternary complex by Elk-1 ( Fig. 3b ,  lanes 8 and 10 ) ." {
+label="Figure 3b shows that activated SAPKs isolated from cells stimulate the
+formation of a ternary complex by Elk-1 ( Fig. 3b ,  lanes 8 and 10 ) .";
+"3b2" [style=filled, fillcolor=white, label="3b"];
+Figure1 [style=filled, fillcolor=white, label=Figure];
+"3b2" -> Figure1  [label=nn];
+shows3 [style=filled, fillcolor=white, label=shows];
+shows3 -> "3b2"  [label=nsubj];
+shows3 -> shows3  [label=root];
+stimulate10 [style=filled, fillcolor=white, label=stimulate];
+that4 [style=filled, fillcolor=white, label=that];
+stimulate10 -> that4  [label=mark];
+SAPKs6 [style=filled, fillcolor=white, label=SAPKs];
+activated5 [style=filled, fillcolor=white, label=activated];
+SAPKs6 -> activated5  [label=amod];
+stimulate10 -> SAPKs6  [label=nsubj];
+isolated7 [style=filled, fillcolor=white, label=isolated];
+SAPKs6 -> isolated7  [label=vmod];
+cells9 [style=filled, fillcolor=white, label=cells];
+isolated7 -> cells9  [label=prep_from];
+shows3 -> stimulate10  [label=ccomp];
+formation12 [style=filled, fillcolor=white, label=formation];
+the11 [style=filled, fillcolor=white, label=the];
+formation12 -> the11  [label=det];
+stimulate10 -> formation12  [label=dobj];
+"Elk-18" [style=filled, fillcolor=white, label="Elk-1"];
+a14 [style=filled, fillcolor=white, label=a];
+"Elk-18" -> a14  [label=det];
+complex16 [style=filled, fillcolor=white, label=complex];
+ternary15 [style=filled, fillcolor=white, label=ternary];
+complex16 -> ternary15  [label=advmod];
+"Elk-18" -> complex16  [label=amod];
+by17 [style=filled, fillcolor=white, label=by];
+complex16 -> by17  [label=prep];
+formation12 -> "Elk-18"  [label=prep_of];
+"3b21" [style=filled, fillcolor=white, label="3b"];
+"Fig.20" [style=filled, fillcolor=white, label="Fig."];
+"3b21" -> "Fig.20"  [label=nn];
+"Elk-18" -> "3b21"  [label=dep];
+lanes23 [style=filled, fillcolor=white, label=lanes];
+"3b21" -> lanes23  [label=appos];
+824 [style=filled, fillcolor=white, label=8];
+lanes23 -> 824  [label=num];
+1026 [style=filled, fillcolor=white, label=10];
+lanes23 -> 1026  [label=conj_and];
+}

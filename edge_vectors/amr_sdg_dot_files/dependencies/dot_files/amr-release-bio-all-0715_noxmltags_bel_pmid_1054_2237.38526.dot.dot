@@ -1,0 +1,40 @@
+digraph "IL-6 controls macrophage and T cell activation ,  SMC proliferation ,  and migration and is a major regulator of the acute phase response ( 5 ) ." {
+label="IL-6 controls macrophage and T cell activation ,  SMC proliferation ,  and
+migration and is a major regulator of the acute phase response ( 5 ) .";
+controls2 [style=filled, fillcolor=white, label=controls];
+"IL-61" [style=filled, fillcolor=white, label="IL-6"];
+controls2 -> "IL-61"  [label=nn];
+macrophage3 [style=filled, fillcolor=white, label=macrophage];
+macrophage3 -> controls2  [label=nsubj];
+macrophage3 -> macrophage3  [label=root];
+T5 [style=filled, fillcolor=white, label=T];
+macrophage3 -> T5  [label=conj_and];
+activation7 [style=filled, fillcolor=white, label=activation];
+cell6 [style=filled, fillcolor=white, label=cell];
+activation7 -> cell6  [label=nn];
+macrophage3 -> activation7  [label=dobj];
+proliferation10 [style=filled, fillcolor=white, label=proliferation];
+SMC9 [style=filled, fillcolor=white, label=SMC];
+proliferation10 -> SMC9  [label=nn];
+activation7 -> proliferation10  [label=conj_and];
+migration13 [style=filled, fillcolor=white, label=migration];
+activation7 -> migration13  [label=conj_and];
+regulator18 [style=filled, fillcolor=white, label=regulator];
+is15 [style=filled, fillcolor=white, label=is];
+regulator18 -> is15  [label=cop];
+a16 [style=filled, fillcolor=white, label=a];
+regulator18 -> a16  [label=det];
+major17 [style=filled, fillcolor=white, label=major];
+regulator18 -> major17  [label=amod];
+macrophage3 -> regulator18  [label=conj_and];
+response23 [style=filled, fillcolor=white, label=response];
+the20 [style=filled, fillcolor=white, label=the];
+response23 -> the20  [label=det];
+acute21 [style=filled, fillcolor=white, label=acute];
+response23 -> acute21  [label=amod];
+phase22 [style=filled, fillcolor=white, label=phase];
+response23 -> phase22  [label=nn];
+regulator18 -> response23  [label=prep_of];
+52 [style=filled, fillcolor=white, label=5];
+response23 -> 52  [label=appos];
+}

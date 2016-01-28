@@ -1,0 +1,62 @@
+digraph "Together these data indicate that loss of this inhibitory threonine phosphorylation on the JM domains of EGFR and HER2 occurs in cancer cell lines following MEK inhibition ,  presumably due to differential subcellular localization and/or binding proteins ." {
+label="Together these data indicate that loss of this inhibitory threonine
+phosphorylation on the JM domains of EGFR and HER2 occurs in cancer cell lines
+following MEK inhibition ,  presumably due to differential subcellular
+localization and/or binding proteins .";
+indicate4 [style=filled, fillcolor=white, label=indicate];
+Together1 [style=filled, fillcolor=white, label=Together];
+indicate4 -> Together1  [label=advmod];
+data3 [style=filled, fillcolor=white, label=data];
+these2 [style=filled, fillcolor=white, label=these];
+data3 -> these2  [label=det];
+indicate4 -> data3  [label=nsubj];
+indicate4 -> indicate4  [label=root];
+occurs20 [style=filled, fillcolor=white, label=occurs];
+that5 [style=filled, fillcolor=white, label=that];
+occurs20 -> that5  [label=mark];
+loss6 [style=filled, fillcolor=white, label=loss];
+occurs20 -> loss6  [label=nsubj];
+phosphorylation11 [style=filled, fillcolor=white, label=phosphorylation];
+this8 [style=filled, fillcolor=white, label=this];
+phosphorylation11 -> this8  [label=det];
+threonine10 [style=filled, fillcolor=white, label=threonine];
+inhibitory9 [style=filled, fillcolor=white, label=inhibitory];
+threonine10 -> inhibitory9  [label=advmod];
+phosphorylation11 -> threonine10  [label=amod];
+loss6 -> phosphorylation11  [label=prep_of];
+domains15 [style=filled, fillcolor=white, label=domains];
+the13 [style=filled, fillcolor=white, label=the];
+domains15 -> the13  [label=det];
+JM14 [style=filled, fillcolor=white, label=JM];
+domains15 -> JM14  [label=nn];
+phosphorylation11 -> domains15  [label=prep_on];
+EGFR17 [style=filled, fillcolor=white, label=EGFR];
+phosphorylation11 -> EGFR17  [label=prep_of];
+HER219 [style=filled, fillcolor=white, label=HER2];
+EGFR17 -> HER219  [label=conj_and];
+indicate4 -> occurs20  [label=ccomp];
+lines24 [style=filled, fillcolor=white, label=lines];
+cancer22 [style=filled, fillcolor=white, label=cancer];
+lines24 -> cancer22  [label=nn];
+cell23 [style=filled, fillcolor=white, label=cell];
+lines24 -> cell23  [label=nn];
+occurs20 -> lines24  [label=prep_in];
+inhibition27 [style=filled, fillcolor=white, label=inhibition];
+MEK26 [style=filled, fillcolor=white, label=MEK];
+inhibition27 -> MEK26  [label=nn];
+lines24 -> inhibition27  [label=prep_following];
+proteins37 [style=filled, fillcolor=white, label=proteins];
+presumably29 [style=filled, fillcolor=white, label=presumably];
+proteins37 -> presumably29  [label=advmod];
+localization34 [style=filled, fillcolor=white, label=localization];
+differential32 [style=filled, fillcolor=white, label=differential];
+localization34 -> differential32  [label=nn];
+subcellular33 [style=filled, fillcolor=white, label=subcellular];
+localization34 -> subcellular33  [label=nn];
+proteins37 -> localization34  [label=prep_due_to];
+"and/or35" [style=filled, fillcolor=white, label="and/or"];
+proteins37 -> "and/or35"  [label=amod];
+binding36 [style=filled, fillcolor=white, label=binding];
+proteins37 -> binding36  [label=amod];
+lines24 -> proteins37  [label=appos];
+}

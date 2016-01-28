@@ -1,0 +1,30 @@
+digraph "JNK2 might potentially be activated via Src kinasemediated phosphorylation of EGF-R on Tyr920 ( Calautti et al. ,  2005 ) ," {
+label="JNK2 might potentially be activated via Src kinasemediated phosphorylation of
+EGF-R on Tyr920 ( Calautti et al. ,  2005 ) ,";
+activated5 [style=filled, fillcolor=white, label=activated];
+JNK21 [style=filled, fillcolor=white, label=JNK2];
+activated5 -> JNK21  [label=nsubjpass];
+might2 [style=filled, fillcolor=white, label=might];
+activated5 -> might2  [label=aux];
+potentially3 [style=filled, fillcolor=white, label=potentially];
+activated5 -> potentially3  [label=advmod];
+be4 [style=filled, fillcolor=white, label=be];
+activated5 -> be4  [label=auxpass];
+activated5 -> activated5  [label=root];
+phosphorylation9 [style=filled, fillcolor=white, label=phosphorylation];
+Src7 [style=filled, fillcolor=white, label=Src];
+phosphorylation9 -> Src7  [label=nn];
+kinasemediated8 [style=filled, fillcolor=white, label=kinasemediated];
+phosphorylation9 -> kinasemediated8  [label=amod];
+activated5 -> phosphorylation9  [label=prep_via];
+"EGF-R11" [style=filled, fillcolor=white, label="EGF-R"];
+phosphorylation9 -> "EGF-R11"  [label=prep_of];
+Tyr92013 [style=filled, fillcolor=white, label=Tyr920];
+activated5 -> Tyr92013  [label=prep_on];
+Calautti15 [style=filled, fillcolor=white, label=Calautti];
+Tyr92013 -> Calautti15  [label=appos];
+"al.17" [style=filled, fillcolor=white, label="al."];
+Calautti15 -> "al.17"  [label=conj_et];
+200519 [style=filled, fillcolor=white, label=2005];
+Calautti15 -> 200519  [label=dep];
+}

@@ -1,0 +1,22 @@
+digraph "Sections were labeled with antibodies as indicated and color-coded on each frame ." {
+label="Sections were labeled with antibodies as indicated and color-coded on each
+frame .";
+labeled3 [style=filled, fillcolor=white, label=labeled];
+Sections1 [style=filled, fillcolor=white, label=Sections];
+labeled3 -> Sections1  [label=nsubjpass];
+were2 [style=filled, fillcolor=white, label=were];
+labeled3 -> were2  [label=auxpass];
+labeled3 -> labeled3  [label=root];
+antibodies5 [style=filled, fillcolor=white, label=antibodies];
+labeled3 -> antibodies5  [label=prep_with];
+indicated7 [style=filled, fillcolor=white, label=indicated];
+as6 [style=filled, fillcolor=white, label=as];
+indicated7 -> as6  [label=mark];
+labeled3 -> indicated7  [label=advcl];
+"color-coded9" [style=filled, fillcolor=white, label="color-coded"];
+labeled3 -> "color-coded9"  [label=conj_and];
+frame12 [style=filled, fillcolor=white, label=frame];
+each11 [style=filled, fillcolor=white, label=each];
+frame12 -> each11  [label=det];
+"color-coded9" -> frame12  [label=prep_on];
+}

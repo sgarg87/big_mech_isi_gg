@@ -1,0 +1,41 @@
+digraph "These results suggest that although T4 increased complex formation between integrin av and NCoR/SMRT ,  the association between NCoR/SMRT and DNA was unchanged ." {
+label="These results suggest that although T4 increased complex formation between
+integrin av and NCoR/SMRT ,  the association between NCoR/SMRT and DNA was
+unchanged .";
+results2 [style=filled, fillcolor=white, label=results];
+These1 [style=filled, fillcolor=white, label=These];
+results2 -> These1  [label=det];
+suggest3 [style=filled, fillcolor=white, label=suggest];
+suggest3 -> results2  [label=nsubj];
+suggest3 -> suggest3  [label=root];
+unchanged23 [style=filled, fillcolor=white, label=unchanged];
+that4 [style=filled, fillcolor=white, label=that];
+unchanged23 -> that4  [label=mark];
+increased7 [style=filled, fillcolor=white, label=increased];
+although5 [style=filled, fillcolor=white, label=although];
+increased7 -> although5  [label=mark];
+T46 [style=filled, fillcolor=white, label=T4];
+increased7 -> T46  [label=nsubj];
+unchanged23 -> increased7  [label=advcl];
+formation9 [style=filled, fillcolor=white, label=formation];
+complex8 [style=filled, fillcolor=white, label=complex];
+formation9 -> complex8  [label=amod];
+increased7 -> formation9  [label=dobj];
+av12 [style=filled, fillcolor=white, label=av];
+integrin11 [style=filled, fillcolor=white, label=integrin];
+av12 -> integrin11  [label=nn];
+formation9 -> av12  [label=prep_between];
+"NCoR/SMRT14" [style=filled, fillcolor=white, label="NCoR/SMRT"];
+av12 -> "NCoR/SMRT14"  [label=conj_and];
+association17 [style=filled, fillcolor=white, label=association];
+the16 [style=filled, fillcolor=white, label=the];
+association17 -> the16  [label=det];
+unchanged23 -> association17  [label=nsubj];
+"NCoR/SMRT19" [style=filled, fillcolor=white, label="NCoR/SMRT"];
+association17 -> "NCoR/SMRT19"  [label=prep_between];
+DNA21 [style=filled, fillcolor=white, label=DNA];
+"NCoR/SMRT19" -> DNA21  [label=conj_and];
+was22 [style=filled, fillcolor=white, label=was];
+unchanged23 -> was22  [label=cop];
+suggest3 -> unchanged23  [label=ccomp];
+}

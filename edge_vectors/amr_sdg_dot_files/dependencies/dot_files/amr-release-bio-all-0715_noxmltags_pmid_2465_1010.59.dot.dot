@@ -1,0 +1,46 @@
+digraph "As MEK and PI3K inhibitors are tested in the clinic ,  it will be important to ask whether Ras alleles respond differently to these treatments ." {
+label="As MEK and PI3K inhibitors are tested in the clinic ,  it will be important to
+ask whether Ras alleles respond differently to these treatments .";
+tested7 [style=filled, fillcolor=white, label=tested];
+As1 [style=filled, fillcolor=white, label=As];
+tested7 -> As1  [label=mark];
+inhibitors5 [style=filled, fillcolor=white, label=inhibitors];
+MEK2 [style=filled, fillcolor=white, label=MEK];
+inhibitors5 -> MEK2  [label=nn];
+PI3K4 [style=filled, fillcolor=white, label=PI3K];
+MEK2 -> PI3K4  [label=conj_and];
+tested7 -> inhibitors5  [label=nsubjpass];
+are6 [style=filled, fillcolor=white, label=are];
+tested7 -> are6  [label=auxpass];
+important15 [style=filled, fillcolor=white, label=important];
+important15 -> tested7  [label=advcl];
+clinic10 [style=filled, fillcolor=white, label=clinic];
+the9 [style=filled, fillcolor=white, label=the];
+clinic10 -> the9  [label=det];
+tested7 -> clinic10  [label=prep_in];
+it12 [style=filled, fillcolor=white, label=it];
+important15 -> it12  [label=nsubj];
+will13 [style=filled, fillcolor=white, label=will];
+important15 -> will13  [label=aux];
+be14 [style=filled, fillcolor=white, label=be];
+important15 -> be14  [label=cop];
+important15 -> important15  [label=root];
+ask17 [style=filled, fillcolor=white, label=ask];
+to16 [style=filled, fillcolor=white, label=to];
+ask17 -> to16  [label=aux];
+important15 -> ask17  [label=xcomp];
+respond21 [style=filled, fillcolor=white, label=respond];
+whether18 [style=filled, fillcolor=white, label=whether];
+respond21 -> whether18  [label=mark];
+alleles20 [style=filled, fillcolor=white, label=alleles];
+Ras19 [style=filled, fillcolor=white, label=Ras];
+alleles20 -> Ras19  [label=nn];
+respond21 -> alleles20  [label=nsubj];
+ask17 -> respond21  [label=ccomp];
+differently22 [style=filled, fillcolor=white, label=differently];
+respond21 -> differently22  [label=advmod];
+treatments25 [style=filled, fillcolor=white, label=treatments];
+these24 [style=filled, fillcolor=white, label=these];
+treatments25 -> these24  [label=det];
+respond21 -> treatments25  [label=prep_to];
+}

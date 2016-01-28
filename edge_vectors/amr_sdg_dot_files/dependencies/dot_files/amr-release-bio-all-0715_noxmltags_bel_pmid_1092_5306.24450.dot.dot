@@ -1,0 +1,38 @@
+digraph "Also ,  stimulation with TGF-b1 ( 1 ng/ml ) caused a time-dependent increase in IL-6 protein accumulation in the culture supernatants ( Fig. 2C ) ." {
+label="Also ,  stimulation with TGF-b1 ( 1 ng/ml ) caused a time-dependent increase in
+IL-6 protein accumulation in the culture supernatants ( Fig. 2C ) .";
+caused10 [style=filled, fillcolor=white, label=caused];
+Also1 [style=filled, fillcolor=white, label=Also];
+caused10 -> Also1  [label=advmod];
+stimulation3 [style=filled, fillcolor=white, label=stimulation];
+caused10 -> stimulation3  [label=nsubj];
+"TGF-b15" [style=filled, fillcolor=white, label="TGF-b1"];
+stimulation3 -> "TGF-b15"  [label=prep_with];
+"ng/ml8" [style=filled, fillcolor=white, label="ng/ml"];
+17 [style=filled, fillcolor=white, label=1];
+"ng/ml8" -> 17  [label=num];
+"TGF-b15" -> "ng/ml8"  [label=appos];
+caused10 -> caused10  [label=root];
+increase13 [style=filled, fillcolor=white, label=increase];
+a11 [style=filled, fillcolor=white, label=a];
+increase13 -> a11  [label=det];
+"time-dependent12" [style=filled, fillcolor=white, label="time-dependent"];
+increase13 -> "time-dependent12"  [label=amod];
+caused10 -> increase13  [label=dobj];
+accumulation17 [style=filled, fillcolor=white, label=accumulation];
+"IL-615" [style=filled, fillcolor=white, label="IL-6"];
+accumulation17 -> "IL-615"  [label=nn];
+protein16 [style=filled, fillcolor=white, label=protein];
+accumulation17 -> protein16  [label=nn];
+caused10 -> accumulation17  [label=prep_in];
+supernatants21 [style=filled, fillcolor=white, label=supernatants];
+the19 [style=filled, fillcolor=white, label=the];
+supernatants21 -> the19  [label=det];
+culture20 [style=filled, fillcolor=white, label=culture];
+supernatants21 -> culture20  [label=nn];
+caused10 -> supernatants21  [label=prep_in];
+"2C24" [style=filled, fillcolor=white, label="2C"];
+"Fig.23" [style=filled, fillcolor=white, label="Fig."];
+"2C24" -> "Fig.23"  [label=number];
+supernatants21 -> "2C24"  [label=dep];
+}

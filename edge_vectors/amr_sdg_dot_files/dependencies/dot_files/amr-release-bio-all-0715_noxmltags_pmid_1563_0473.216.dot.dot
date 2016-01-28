@@ -1,0 +1,53 @@
+digraph "The K14 promoter is also less active in the ORS than epidermis and hence this might also account for the lack of apparent response of the ORS to ectopic Snail ." {
+label="The K14 promoter is also less active in the ORS than epidermis and hence this
+might also account for the lack of apparent response of the ORS to ectopic Snail
+.";
+promoter3 [style=filled, fillcolor=white, label=promoter];
+The1 [style=filled, fillcolor=white, label=The];
+promoter3 -> The1  [label=det];
+K142 [style=filled, fillcolor=white, label=K14];
+promoter3 -> K142  [label=nn];
+active7 [style=filled, fillcolor=white, label=active];
+active7 -> promoter3  [label=nsubj];
+is4 [style=filled, fillcolor=white, label=is];
+active7 -> is4  [label=cop];
+also5 [style=filled, fillcolor=white, label=also];
+active7 -> also5  [label=advmod];
+less6 [style=filled, fillcolor=white, label=less];
+active7 -> less6  [label=advmod];
+active7 -> active7  [label=root];
+ORS10 [style=filled, fillcolor=white, label=ORS];
+the9 [style=filled, fillcolor=white, label=the];
+ORS10 -> the9  [label=det];
+active7 -> ORS10  [label=prep_in];
+account18 [style=filled, fillcolor=white, label=account];
+than11 [style=filled, fillcolor=white, label=than];
+account18 -> than11  [label=mark];
+epidermis12 [style=filled, fillcolor=white, label=epidermis];
+account18 -> epidermis12  [label=nsubj];
+this15 [style=filled, fillcolor=white, label=this];
+hence14 [style=filled, fillcolor=white, label=hence];
+this15 -> hence14  [label=advmod];
+epidermis12 -> this15  [label=conj_and];
+might16 [style=filled, fillcolor=white, label=might];
+account18 -> might16  [label=aux];
+also17 [style=filled, fillcolor=white, label=also];
+account18 -> also17  [label=advmod];
+active7 -> account18  [label=advcl];
+lack21 [style=filled, fillcolor=white, label=lack];
+the20 [style=filled, fillcolor=white, label=the];
+lack21 -> the20  [label=det];
+account18 -> lack21  [label=prep_for];
+response24 [style=filled, fillcolor=white, label=response];
+apparent23 [style=filled, fillcolor=white, label=apparent];
+response24 -> apparent23  [label=amod];
+lack21 -> response24  [label=prep_of];
+ORS27 [style=filled, fillcolor=white, label=ORS];
+the26 [style=filled, fillcolor=white, label=the];
+ORS27 -> the26  [label=det];
+response24 -> ORS27  [label=prep_of];
+Snail30 [style=filled, fillcolor=white, label=Snail];
+ectopic29 [style=filled, fillcolor=white, label=ectopic];
+Snail30 -> ectopic29  [label=amod];
+account18 -> Snail30  [label=prep_to];
+}

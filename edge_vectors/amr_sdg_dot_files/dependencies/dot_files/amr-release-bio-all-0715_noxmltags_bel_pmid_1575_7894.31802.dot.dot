@@ -1,0 +1,28 @@
+digraph "Protein levels of iNOS and -LCB- beta -RCB- - actin were measured by Western blotting . ( increased Nos2 expression )" {
+label="Protein levels of iNOS and -LCB- beta -RCB- - actin were measured by Western
+blotting . ( increased Nos2 expression )";
+levels2 [style=filled, fillcolor=white, label=levels];
+Protein1 [style=filled, fillcolor=white, label=Protein];
+levels2 -> Protein1  [label=nn];
+measured12 [style=filled, fillcolor=white, label=measured];
+measured12 -> levels2  [label=nsubjpass];
+iNOS4 [style=filled, fillcolor=white, label=iNOS];
+levels2 -> iNOS4  [label=prep_of];
+beta7 [style=filled, fillcolor=white, label=beta];
+iNOS4 -> beta7  [label=conj_and];
+actin10 [style=filled, fillcolor=white, label=actin];
+iNOS4 -> actin10  [label=dep];
+were11 [style=filled, fillcolor=white, label=were];
+measured12 -> were11  [label=auxpass];
+measured12 -> measured12  [label=root];
+blotting15 [style=filled, fillcolor=white, label=blotting];
+Western14 [style=filled, fillcolor=white, label=Western];
+blotting15 -> Western14  [label=nn];
+measured12 -> blotting15  [label=agent];
+expression20 [style=filled, fillcolor=white, label=expression];
+increased18 [style=filled, fillcolor=white, label=increased];
+expression20 -> increased18  [label=amod];
+Nos219 [style=filled, fillcolor=white, label=Nos2];
+expression20 -> Nos219  [label=amod];
+blotting15 -> expression20  [label=appos];
+}

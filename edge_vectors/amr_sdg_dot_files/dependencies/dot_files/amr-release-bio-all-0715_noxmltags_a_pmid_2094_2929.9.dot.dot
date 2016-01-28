@@ -1,0 +1,62 @@
+digraph "3 - RNAi directed against serpinE2 in caMEK-transformed rat IECs or in human CRC cell lines HCT116 and LoVo markedly decreased foci formation ,  anchorage-independent growth in soft agarose ,  cell migration and tumor formation in nude mice ." {
+label="3 - RNAi directed against serpinE2 in caMEK-transformed rat IECs or in human
+CRC cell lines HCT116 and LoVo markedly decreased foci formation ,  anchorage-
+independent growth in soft agarose ,  cell migration and tumor formation in nude
+mice .";
+directed4 [style=filled, fillcolor=white, label=directed];
+31 [style=filled, fillcolor=white, label=3];
+directed4 -> 31  [label=dep];
+RNAi3 [style=filled, fillcolor=white, label=RNAi];
+directed4 -> RNAi3  [label=nsubj];
+directed4 -> directed4  [label=root];
+"directed4'" [style=filled, fillcolor=white, label=directed];
+directed4 -> "directed4'"  [label=conj_or];
+serpinE26 [style=filled, fillcolor=white, label=serpinE2];
+directed4 -> serpinE26  [label=prep_against];
+IECs10 [style=filled, fillcolor=white, label=IECs];
+"caMEK-transformed8" [style=filled, fillcolor=white, label="caMEK-transformed"];
+IECs10 -> "caMEK-transformed8"  [label=amod];
+rat9 [style=filled, fillcolor=white, label=rat];
+IECs10 -> rat9  [label=nn];
+serpinE26 -> IECs10  [label=prep_in];
+lines16 [style=filled, fillcolor=white, label=lines];
+human13 [style=filled, fillcolor=white, label=human];
+lines16 -> human13  [label=amod];
+CRC14 [style=filled, fillcolor=white, label=CRC];
+lines16 -> CRC14  [label=nn];
+cell15 [style=filled, fillcolor=white, label=cell];
+lines16 -> cell15  [label=nn];
+"directed4'" -> lines16  [label=prep_in];
+HCT11617 [style=filled, fillcolor=white, label=HCT116];
+directed4 -> HCT11617  [label=pobj];
+LoVo19 [style=filled, fillcolor=white, label=LoVo];
+HCT11617 -> LoVo19  [label=conj_and];
+formation23 [style=filled, fillcolor=white, label=formation];
+markedly20 [style=filled, fillcolor=white, label=markedly];
+formation23 -> markedly20  [label=amod];
+decreased21 [style=filled, fillcolor=white, label=decreased];
+formation23 -> decreased21  [label=amod];
+foci22 [style=filled, fillcolor=white, label=foci];
+formation23 -> foci22  [label=amod];
+directed4 -> formation23  [label=dobj];
+growth26 [style=filled, fillcolor=white, label=growth];
+"anchorage-independent25" [style=filled, fillcolor=white, label="anchorage-independent"];
+growth26 -> "anchorage-independent25"  [label=amod];
+formation23 -> growth26  [label=conj_and];
+agarose29 [style=filled, fillcolor=white, label=agarose];
+soft28 [style=filled, fillcolor=white, label=soft];
+agarose29 -> soft28  [label=amod];
+growth26 -> agarose29  [label=prep_in];
+migration32 [style=filled, fillcolor=white, label=migration];
+cell31 [style=filled, fillcolor=white, label=cell];
+migration32 -> cell31  [label=nn];
+formation23 -> migration32  [label=conj_and];
+formation35 [style=filled, fillcolor=white, label=formation];
+tumor34 [style=filled, fillcolor=white, label=tumor];
+formation35 -> tumor34  [label=nn];
+formation23 -> formation35  [label=conj_and];
+mice38 [style=filled, fillcolor=white, label=mice];
+nude37 [style=filled, fillcolor=white, label=nude];
+mice38 -> nude37  [label=amod];
+formation35 -> mice38  [label=prep_in];
+}

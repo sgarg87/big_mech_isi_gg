@@ -1,0 +1,34 @@
+digraph "Unexpectedly ,  humans can tolerate germline-activating mutations in H-Ras -- the same activating mutations that drive somatic mutations ." {
+label="Unexpectedly ,  humans can tolerate germline-activating mutations in H-Ras --
+the same activating mutations that drive somatic mutations .";
+tolerate5 [style=filled, fillcolor=white, label=tolerate];
+Unexpectedly1 [style=filled, fillcolor=white, label=Unexpectedly];
+tolerate5 -> Unexpectedly1  [label=advmod];
+humans3 [style=filled, fillcolor=white, label=humans];
+tolerate5 -> humans3  [label=nsubj];
+can4 [style=filled, fillcolor=white, label=can];
+tolerate5 -> can4  [label=aux];
+tolerate5 -> tolerate5  [label=root];
+mutations7 [style=filled, fillcolor=white, label=mutations];
+"germline-activating6" [style=filled, fillcolor=white, label="germline-activating"];
+mutations7 -> "germline-activating6"  [label=amod];
+tolerate5 -> mutations7  [label=dobj];
+"H-Ras9" [style=filled, fillcolor=white, label="H-Ras"];
+mutations7 -> "H-Ras9"  [label=prep_in];
+mutations14 [style=filled, fillcolor=white, label=mutations];
+the11 [style=filled, fillcolor=white, label=the];
+mutations14 -> the11  [label=det];
+same12 [style=filled, fillcolor=white, label=same];
+mutations14 -> same12  [label=amod];
+activating13 [style=filled, fillcolor=white, label=activating];
+mutations14 -> activating13  [label=nn];
+mutations7 -> mutations14  [label=dep];
+drive16 [style=filled, fillcolor=white, label=drive];
+that15 [style=filled, fillcolor=white, label=that];
+drive16 -> that15  [label=nsubj];
+mutations14 -> drive16  [label=rcmod];
+mutations18 [style=filled, fillcolor=white, label=mutations];
+somatic17 [style=filled, fillcolor=white, label=somatic];
+mutations18 -> somatic17  [label=amod];
+drive16 -> mutations18  [label=dobj];
+}

@@ -1,0 +1,43 @@
+digraph "KLF5 accelerates mitotic entry in H-Ras-transformed cells by transcriptionally activating cyclin B1 and Cdc2 ,  which leads to an increase in cyclin B1/Cdc2 kinase activity" {
+label="KLF5 accelerates mitotic entry in H-Ras-transformed cells by transcriptionally
+activating cyclin B1 and Cdc2 ,  which leads to an increase in cyclin B1/Cdc2
+kinase activity";
+accelerates2 [style=filled, fillcolor=white, label=accelerates];
+KLF51 [style=filled, fillcolor=white, label=KLF5];
+accelerates2 -> KLF51  [label=nsubj];
+accelerates2 -> accelerates2  [label=root];
+entry4 [style=filled, fillcolor=white, label=entry];
+mitotic3 [style=filled, fillcolor=white, label=mitotic];
+entry4 -> mitotic3  [label=amod];
+accelerates2 -> entry4  [label=dobj];
+cells7 [style=filled, fillcolor=white, label=cells];
+"H-Ras-transformed6" [style=filled, fillcolor=white, label="H-Ras-transformed"];
+cells7 -> "H-Ras-transformed6"  [label=amod];
+entry4 -> cells7  [label=prep_in];
+activating10 [style=filled, fillcolor=white, label=activating];
+transcriptionally9 [style=filled, fillcolor=white, label=transcriptionally];
+activating10 -> transcriptionally9  [label=advmod];
+B112 [style=filled, fillcolor=white, label=B1];
+B112 -> activating10  [label=amod];
+cyclin11 [style=filled, fillcolor=white, label=cyclin];
+B112 -> cyclin11  [label=nn];
+accelerates2 -> B112  [label=prep_by];
+Cdc214 [style=filled, fillcolor=white, label=Cdc2];
+B112 -> Cdc214  [label=conj_and];
+leads17 [style=filled, fillcolor=white, label=leads];
+which16 [style=filled, fillcolor=white, label=which];
+leads17 -> which16  [label=nsubj];
+B112 -> leads17  [label=rcmod];
+increase20 [style=filled, fillcolor=white, label=increase];
+an19 [style=filled, fillcolor=white, label=an];
+increase20 -> an19  [label=det];
+leads17 -> increase20  [label=prep_to];
+activity25 [style=filled, fillcolor=white, label=activity];
+cyclin22 [style=filled, fillcolor=white, label=cyclin];
+activity25 -> cyclin22  [label=amod];
+"B1/Cdc223" [style=filled, fillcolor=white, label="B1/Cdc2"];
+activity25 -> "B1/Cdc223"  [label=amod];
+kinase24 [style=filled, fillcolor=white, label=kinase];
+activity25 -> kinase24  [label=nn];
+increase20 -> activity25  [label=prep_in];
+}

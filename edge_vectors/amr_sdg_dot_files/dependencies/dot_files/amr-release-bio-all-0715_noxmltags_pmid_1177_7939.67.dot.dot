@@ -1,0 +1,30 @@
+digraph "Consistently ,  Fan and Goff ( 2000 ) did not observe competition in vivo between Grb2 and E3b1 for binding to Sos-1 ." {
+label="Consistently ,  Fan and Goff ( 2000 ) did not observe competition in vivo
+between Grb2 and E3b1 for binding to Sos-1 .";
+observe11 [style=filled, fillcolor=white, label=observe];
+Consistently1 [style=filled, fillcolor=white, label=Consistently];
+observe11 -> Consistently1  [label=advmod];
+Fan3 [style=filled, fillcolor=white, label=Fan];
+observe11 -> Fan3  [label=nsubj];
+Goff5 [style=filled, fillcolor=white, label=Goff];
+Fan3 -> Goff5  [label=conj_and];
+20007 [style=filled, fillcolor=white, label=2000];
+Fan3 -> 20007  [label=appos];
+did9 [style=filled, fillcolor=white, label=did];
+observe11 -> did9  [label=aux];
+not10 [style=filled, fillcolor=white, label=not];
+observe11 -> not10  [label=neg];
+observe11 -> observe11  [label=root];
+competition12 [style=filled, fillcolor=white, label=competition];
+observe11 -> competition12  [label=dobj];
+vivo14 [style=filled, fillcolor=white, label=vivo];
+observe11 -> vivo14  [label=prep_in];
+Grb216 [style=filled, fillcolor=white, label=Grb2];
+vivo14 -> Grb216  [label=prep_between];
+E3b118 [style=filled, fillcolor=white, label=E3b1];
+Grb216 -> E3b118  [label=conj_and];
+binding20 [style=filled, fillcolor=white, label=binding];
+observe11 -> binding20  [label=prep_for];
+"Sos-122" [style=filled, fillcolor=white, label="Sos-1"];
+binding20 -> "Sos-122"  [label=prep_to];
+}

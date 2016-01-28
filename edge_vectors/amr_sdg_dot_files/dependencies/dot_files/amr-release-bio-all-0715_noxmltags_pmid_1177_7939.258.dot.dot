@@ -1,0 +1,42 @@
+digraph "Equal amounts of anti-HA immunoprecipitated PAK65 were subjected to an in vitro kinase assay using myelin basic protein ( MBP ) as a substrate ." {
+label="Equal amounts of anti-HA immunoprecipitated PAK65 were subjected to an in vitro
+kinase assay using myelin basic protein ( MBP ) as a substrate .";
+amounts2 [style=filled, fillcolor=white, label=amounts];
+Equal1 [style=filled, fillcolor=white, label=Equal];
+amounts2 -> Equal1  [label=nn];
+subjected8 [style=filled, fillcolor=white, label=subjected];
+subjected8 -> amounts2  [label=nsubjpass];
+PAK65 [style=filled, fillcolor=white, label=PAK65];
+"anti-HA4" [style=filled, fillcolor=white, label="anti-HA"];
+PAK65 -> "anti-HA4"  [label=amod];
+immunoprecipitated5 [style=filled, fillcolor=white, label=immunoprecipitated];
+PAK65 -> immunoprecipitated5  [label=amod];
+amounts2 -> PAK65  [label=prep_of];
+were7 [style=filled, fillcolor=white, label=were];
+subjected8 -> were7  [label=auxpass];
+subjected8 -> subjected8  [label=root];
+assay14 [style=filled, fillcolor=white, label=assay];
+an10 [style=filled, fillcolor=white, label=an];
+assay14 -> an10  [label=det];
+vitro12 [style=filled, fillcolor=white, label=vitro];
+in11 [style=filled, fillcolor=white, label=in];
+vitro12 -> in11  [label=dep];
+assay14 -> vitro12  [label=amod];
+kinase13 [style=filled, fillcolor=white, label=kinase];
+assay14 -> kinase13  [label=nn];
+subjected8 -> assay14  [label=prep_to];
+using15 [style=filled, fillcolor=white, label=using];
+subjected8 -> using15  [label=xcomp];
+protein18 [style=filled, fillcolor=white, label=protein];
+myelin16 [style=filled, fillcolor=white, label=myelin];
+protein18 -> myelin16  [label=amod];
+basic17 [style=filled, fillcolor=white, label=basic];
+protein18 -> basic17  [label=amod];
+using15 -> protein18  [label=dobj];
+MBP20 [style=filled, fillcolor=white, label=MBP];
+protein18 -> MBP20  [label=appos];
+substrate24 [style=filled, fillcolor=white, label=substrate];
+a23 [style=filled, fillcolor=white, label=a];
+substrate24 -> a23  [label=det];
+using15 -> substrate24  [label=prep_as];
+}

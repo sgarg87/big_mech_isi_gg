@@ -1,0 +1,36 @@
+digraph "Cotransfection of the p65 NF-kB subunit resulted in a strong activation of wild-type IL-6 promoter activity ( 11-fold ) ( Fig. 3A ) ." {
+label="Cotransfection of the p65 NF-kB subunit resulted in a strong activation of
+wild-type IL-6 promoter activity ( 11-fold ) ( Fig. 3A ) .";
+resulted7 [style=filled, fillcolor=white, label=resulted];
+Cotransfection1 [style=filled, fillcolor=white, label=Cotransfection];
+resulted7 -> Cotransfection1  [label=nsubj];
+subunit6 [style=filled, fillcolor=white, label=subunit];
+the3 [style=filled, fillcolor=white, label=the];
+subunit6 -> the3  [label=det];
+p654 [style=filled, fillcolor=white, label=p65];
+subunit6 -> p654  [label=amod];
+"NF-kB5" [style=filled, fillcolor=white, label="NF-kB"];
+subunit6 -> "NF-kB5"  [label=amod];
+Cotransfection1 -> subunit6  [label=prep_of];
+resulted7 -> resulted7  [label=root];
+activation11 [style=filled, fillcolor=white, label=activation];
+a9 [style=filled, fillcolor=white, label=a];
+activation11 -> a9  [label=det];
+strong10 [style=filled, fillcolor=white, label=strong];
+activation11 -> strong10  [label=amod];
+resulted7 -> activation11  [label=prep_in];
+activity16 [style=filled, fillcolor=white, label=activity];
+"wild-type13" [style=filled, fillcolor=white, label="wild-type"];
+activity16 -> "wild-type13"  [label=amod];
+"IL-614" [style=filled, fillcolor=white, label="IL-6"];
+activity16 -> "IL-614"  [label=nn];
+promoter15 [style=filled, fillcolor=white, label=promoter];
+activity16 -> promoter15  [label=nn];
+activation11 -> activity16  [label=prep_of];
+"11-fold8" [style=filled, fillcolor=white, label="11-fold"];
+activity16 -> "11-fold8"  [label=dep];
+"3A22" [style=filled, fillcolor=white, label="3A"];
+"Fig.21" [style=filled, fillcolor=white, label="Fig."];
+"3A22" -> "Fig.21"  [label=number];
+activity16 -> "3A22"  [label=dep];
+}

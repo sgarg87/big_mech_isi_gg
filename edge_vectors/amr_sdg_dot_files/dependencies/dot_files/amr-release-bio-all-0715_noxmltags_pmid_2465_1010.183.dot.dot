@@ -1,0 +1,11 @@
+digraph "Downstream Pathways and Drug Targets" {
+label="Downstream Pathways and Drug Targets";
+Pathways2 [style=filled, fillcolor=white, label=Pathways];
+Downstream1 [style=filled, fillcolor=white, label=Downstream];
+Pathways2 -> Downstream1  [label=nn];
+Pathways2 -> Pathways2  [label=root];
+Targets5 [style=filled, fillcolor=white, label=Targets];
+Drug4 [style=filled, fillcolor=white, label=Drug];
+Targets5 -> Drug4  [label=nn];
+Pathways2 -> Targets5  [label=conj_and];
+}

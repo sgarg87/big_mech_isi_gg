@@ -1,0 +1,15 @@
+digraph  {
+	graph [label="RT-PCR"];
+	node [label="\N"];
+	a0	 [color=black,
+		gold_ind=0,
+		gold_label="RT-PCR",
+		label="RT-PCR",
+		test_ind=0,
+		test_label="RT-PCR"];
+	a0 -> a0 [key=0,
+	color=black,
+	gold_label=TOP,
+	label=TOP,
+	test_label=TOP];
+}

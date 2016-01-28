@@ -1,0 +1,45 @@
+digraph "Taken together ,  these results indicate that coligation with CD72 negatively regulates BCR-induced ERK activation and Ca2 + concentration in normal spleen B cells ." {
+label="Taken together ,  these results indicate that coligation with CD72 negatively
+regulates BCR-induced ERK activation and Ca2 + concentration in normal spleen B
+cells .";
+indicate6 [style=filled, fillcolor=white, label=indicate];
+Taken1 [style=filled, fillcolor=white, label=Taken];
+indicate6 -> Taken1  [label=vmod];
+together2 [style=filled, fillcolor=white, label=together];
+Taken1 -> together2  [label=advmod];
+results5 [style=filled, fillcolor=white, label=results];
+these4 [style=filled, fillcolor=white, label=these];
+results5 -> these4  [label=det];
+indicate6 -> results5  [label=nsubj];
+indicate6 -> indicate6  [label=root];
+regulates12 [style=filled, fillcolor=white, label=regulates];
+that7 [style=filled, fillcolor=white, label=that];
+regulates12 -> that7  [label=mark];
+coligation8 [style=filled, fillcolor=white, label=coligation];
+regulates12 -> coligation8  [label=nsubj];
+CD7210 [style=filled, fillcolor=white, label=CD72];
+coligation8 -> CD7210  [label=prep_with];
+negatively11 [style=filled, fillcolor=white, label=negatively];
+regulates12 -> negatively11  [label=advmod];
+indicate6 -> regulates12  [label=ccomp];
+activation15 [style=filled, fillcolor=white, label=activation];
+"BCR-induced13" [style=filled, fillcolor=white, label="BCR-induced"];
+activation15 -> "BCR-induced13"  [label=amod];
+ERK14 [style=filled, fillcolor=white, label=ERK];
+activation15 -> ERK14  [label=nn];
+regulates12 -> activation15  [label=dobj];
+concentration19 [style=filled, fillcolor=white, label=concentration];
+Ca217 [style=filled, fillcolor=white, label=Ca2];
+concentration19 -> Ca217  [label=amod];
+"+18" [style=filled, fillcolor=white, label="+"];
+concentration19 -> "+18"  [label=nn];
+activation15 -> concentration19  [label=conj_and];
+cells24 [style=filled, fillcolor=white, label=cells];
+normal21 [style=filled, fillcolor=white, label=normal];
+cells24 -> normal21  [label=amod];
+spleen22 [style=filled, fillcolor=white, label=spleen];
+cells24 -> spleen22  [label=nn];
+B23 [style=filled, fillcolor=white, label=B];
+cells24 -> B23  [label=nn];
+regulates12 -> cells24  [label=prep_in];
+}

@@ -1,0 +1,26 @@
+digraph "This is due to posttranslational modification and membrane association of K-Ras ( Figure 3A ) ." {
+label="This is due to posttranslational modification and membrane association of K-Ras
+( Figure 3A ) .";
+due3 [style=filled, fillcolor=white, label=due];
+This1 [style=filled, fillcolor=white, label=This];
+due3 -> This1  [label=nsubj];
+is2 [style=filled, fillcolor=white, label=is];
+due3 -> is2  [label=cop];
+due3 -> due3  [label=root];
+posttranslational5 [style=filled, fillcolor=white, label=posttranslational];
+to4 [style=filled, fillcolor=white, label=to];
+posttranslational5 -> to4  [label=aux];
+due3 -> posttranslational5  [label=xcomp];
+association9 [style=filled, fillcolor=white, label=association];
+modification6 [style=filled, fillcolor=white, label=modification];
+association9 -> modification6  [label=nn];
+membrane8 [style=filled, fillcolor=white, label=membrane];
+modification6 -> membrane8  [label=conj_and];
+posttranslational5 -> association9  [label=dobj];
+"K-Ras11" [style=filled, fillcolor=white, label="K-Ras"];
+association9 -> "K-Ras11"  [label=prep_of];
+Figure13 [style=filled, fillcolor=white, label=Figure];
+"K-Ras11" -> Figure13  [label=appos];
+"3A14" [style=filled, fillcolor=white, label="3A"];
+Figure13 -> "3A14"  [label=num];
+}

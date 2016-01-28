@@ -1,0 +1,45 @@
+digraph "This interaction leads to the activation of PP5 catalytic activity and to the selective dephosphorylation of the activating serine residue at position 338 ,  terminating the signal ." {
+label="This interaction leads to the activation of PP5 catalytic activity and to the
+selective dephosphorylation of the activating serine residue at position 338 ,
+terminating the signal .";
+interaction2 [style=filled, fillcolor=white, label=interaction];
+This1 [style=filled, fillcolor=white, label=This];
+interaction2 -> This1  [label=det];
+leads3 [style=filled, fillcolor=white, label=leads];
+leads3 -> interaction2  [label=nsubj];
+leads3 -> leads3  [label=root];
+activation6 [style=filled, fillcolor=white, label=activation];
+the5 [style=filled, fillcolor=white, label=the];
+activation6 -> the5  [label=det];
+leads3 -> activation6  [label=prep_to];
+activity10 [style=filled, fillcolor=white, label=activity];
+PP58 [style=filled, fillcolor=white, label=PP5];
+activity10 -> PP58  [label=nn];
+catalytic9 [style=filled, fillcolor=white, label=catalytic];
+activity10 -> catalytic9  [label=amod];
+activation6 -> activity10  [label=prep_of];
+dephosphorylation15 [style=filled, fillcolor=white, label=dephosphorylation];
+the13 [style=filled, fillcolor=white, label=the];
+dephosphorylation15 -> the13  [label=det];
+selective14 [style=filled, fillcolor=white, label=selective];
+dephosphorylation15 -> selective14  [label=amod];
+activation6 -> dephosphorylation15  [label=conj_and];
+residue20 [style=filled, fillcolor=white, label=residue];
+the17 [style=filled, fillcolor=white, label=the];
+residue20 -> the17  [label=det];
+activating18 [style=filled, fillcolor=white, label=activating];
+residue20 -> activating18  [label=amod];
+serine19 [style=filled, fillcolor=white, label=serine];
+residue20 -> serine19  [label=nn];
+dephosphorylation15 -> residue20  [label=prep_of];
+position22 [style=filled, fillcolor=white, label=position];
+leads3 -> position22  [label=prep_at];
+3382 [style=filled, fillcolor=white, label=338];
+position22 -> 3382  [label=num];
+terminating25 [style=filled, fillcolor=white, label=terminating];
+leads3 -> terminating25  [label=xcomp];
+signal27 [style=filled, fillcolor=white, label=signal];
+the26 [style=filled, fillcolor=white, label=the];
+signal27 -> the26  [label=det];
+terminating25 -> signal27  [label=dobj];
+}

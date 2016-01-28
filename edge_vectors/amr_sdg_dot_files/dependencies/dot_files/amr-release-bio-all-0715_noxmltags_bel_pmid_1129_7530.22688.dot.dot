@@ -1,0 +1,51 @@
+digraph "Immunoblot analysis of extracts from control and HT15 cells showed an increase in the activated forms of ERK1/2 in the Sod2-overexpressing cells that was reversed upon coexpression of catalase ( Fig. 5A ) ." {
+label="Immunoblot analysis of extracts from control and HT15 cells showed an increase
+in the activated forms of ERK1/2 in the Sod2-overexpressing cells that was
+reversed upon coexpression of catalase ( Fig. 5A ) .";
+analysis2 [style=filled, fillcolor=white, label=analysis];
+Immunoblot1 [style=filled, fillcolor=white, label=Immunoblot];
+analysis2 -> Immunoblot1  [label=amod];
+showed10 [style=filled, fillcolor=white, label=showed];
+showed10 -> analysis2  [label=nsubj];
+extracts4 [style=filled, fillcolor=white, label=extracts];
+analysis2 -> extracts4  [label=prep_of];
+cells9 [style=filled, fillcolor=white, label=cells];
+control6 [style=filled, fillcolor=white, label=control];
+cells9 -> control6  [label=nn];
+HT158 [style=filled, fillcolor=white, label=HT15];
+control6 -> HT158  [label=conj_and];
+extracts4 -> cells9  [label=prep_from];
+showed10 -> showed10  [label=root];
+increase12 [style=filled, fillcolor=white, label=increase];
+an11 [style=filled, fillcolor=white, label=an];
+increase12 -> an11  [label=det];
+showed10 -> increase12  [label=dobj];
+forms16 [style=filled, fillcolor=white, label=forms];
+the14 [style=filled, fillcolor=white, label=the];
+forms16 -> the14  [label=det];
+activated15 [style=filled, fillcolor=white, label=activated];
+forms16 -> activated15  [label=amod];
+increase12 -> forms16  [label=prep_in];
+"ERK1/218" [style=filled, fillcolor=white, label="ERK1/2"];
+forms16 -> "ERK1/218"  [label=prep_of];
+cells22 [style=filled, fillcolor=white, label=cells];
+the20 [style=filled, fillcolor=white, label=the];
+cells22 -> the20  [label=det];
+"Sod2-overexpressing1" [style=filled, fillcolor=white, label="Sod2-overexpressing"];
+cells22 -> "Sod2-overexpressing1"  [label=nn];
+forms16 -> cells22  [label=prep_in];
+reversed25 [style=filled, fillcolor=white, label=reversed];
+that23 [style=filled, fillcolor=white, label=that];
+reversed25 -> that23  [label=nsubjpass];
+was24 [style=filled, fillcolor=white, label=was];
+reversed25 -> was24  [label=auxpass];
+cells22 -> reversed25  [label=rcmod];
+coexpression27 [style=filled, fillcolor=white, label=coexpression];
+reversed25 -> coexpression27  [label=prep_upon];
+catalase29 [style=filled, fillcolor=white, label=catalase];
+coexpression27 -> catalase29  [label=prep_of];
+"5A32" [style=filled, fillcolor=white, label="5A"];
+"Fig.31" [style=filled, fillcolor=white, label="Fig."];
+"5A32" -> "Fig.31"  [label=number];
+cells22 -> "5A32"  [label=dep];
+}

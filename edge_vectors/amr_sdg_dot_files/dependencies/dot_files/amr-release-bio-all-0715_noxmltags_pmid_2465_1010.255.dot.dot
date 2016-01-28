@@ -1,0 +1,21 @@
+digraph "The location of calcium ion is shown as a green ball ." {
+label="The location of calcium ion is shown as a green ball .";
+location2 [style=filled, fillcolor=white, label=location];
+The1 [style=filled, fillcolor=white, label=The];
+location2 -> The1  [label=det];
+shown7 [style=filled, fillcolor=white, label=shown];
+shown7 -> location2  [label=nsubjpass];
+ion5 [style=filled, fillcolor=white, label=ion];
+calcium4 [style=filled, fillcolor=white, label=calcium];
+ion5 -> calcium4  [label=nn];
+location2 -> ion5  [label=prep_of];
+is6 [style=filled, fillcolor=white, label=is];
+shown7 -> is6  [label=auxpass];
+shown7 -> shown7  [label=root];
+ball11 [style=filled, fillcolor=white, label=ball];
+a9 [style=filled, fillcolor=white, label=a];
+ball11 -> a9  [label=det];
+green10 [style=filled, fillcolor=white, label=green];
+ball11 -> green10  [label=amod];
+shown7 -> ball11  [label=prep_as];
+}

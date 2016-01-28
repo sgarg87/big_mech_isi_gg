@@ -1,0 +1,34 @@
+digraph "So far ,  however ,  no data demonstrating the function of YB-1 in repair of IR-induced DNA-DSB and postirradiation survival exist ." {
+label="So far ,  however ,  no data demonstrating the function of YB-1 in repair of
+IR-induced DNA-DSB and postirradiation survival exist .";
+exist21 [style=filled, fillcolor=white, label=exist];
+So1 [style=filled, fillcolor=white, label=So];
+exist21 -> So1  [label=advmod];
+far2 [style=filled, fillcolor=white, label=far];
+So1 -> far2  [label=advmod];
+however4 [style=filled, fillcolor=white, label=however];
+exist21 -> however4  [label=advmod];
+data7 [style=filled, fillcolor=white, label=data];
+no6 [style=filled, fillcolor=white, label=no];
+data7 -> no6  [label=neg];
+exist21 -> data7  [label=nsubj];
+demonstrating8 [style=filled, fillcolor=white, label=demonstrating];
+data7 -> demonstrating8  [label=vmod];
+function10 [style=filled, fillcolor=white, label=function];
+the9 [style=filled, fillcolor=white, label=the];
+function10 -> the9  [label=det];
+demonstrating8 -> function10  [label=dobj];
+"YB-12" [style=filled, fillcolor=white, label="YB-1"];
+function10 -> "YB-12"  [label=prep_of];
+repair14 [style=filled, fillcolor=white, label=repair];
+demonstrating8 -> repair14  [label=prep_in];
+"DNA-DSB17" [style=filled, fillcolor=white, label="DNA-DSB"];
+"IR-induced16" [style=filled, fillcolor=white, label="IR-induced"];
+"DNA-DSB17" -> "IR-induced16"  [label=amod];
+repair14 -> "DNA-DSB17"  [label=prep_of];
+survival20 [style=filled, fillcolor=white, label=survival];
+postirradiation19 [style=filled, fillcolor=white, label=postirradiation];
+survival20 -> postirradiation19  [label=nn];
+"DNA-DSB17" -> survival20  [label=conj_and];
+exist21 -> exist21  [label=root];
+}

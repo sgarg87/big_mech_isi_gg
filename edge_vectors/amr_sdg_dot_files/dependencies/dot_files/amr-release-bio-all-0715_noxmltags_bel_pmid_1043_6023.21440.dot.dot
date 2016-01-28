@@ -1,0 +1,53 @@
+digraph "DNA-PK phosphorylates itself ,  thereby blocking its interaction with Ku : DNA complex and inhibiting its kinase activity ; it also phosphorylates Ku70 . Ku80 ,  but without effect ( Chan and Lees-Miller ,  1996 ) ." {
+label="DNA-PK phosphorylates itself ,  thereby blocking its interaction with Ku : DNA
+complex and inhibiting its kinase activity ; it also phosphorylates Ku70 . Ku80
+,  but without effect ( Chan and Lees-Miller ,  1996 ) .";
+phosphorylates2 [style=filled, fillcolor=white, label=phosphorylates];
+"DNA-PK1" [style=filled, fillcolor=white, label="DNA-PK"];
+phosphorylates2 -> "DNA-PK1"  [label=nsubj];
+phosphorylates2 -> phosphorylates2  [label=root];
+itself3 [style=filled, fillcolor=white, label=itself];
+phosphorylates2 -> itself3  [label=dobj];
+blocking6 [style=filled, fillcolor=white, label=blocking];
+thereby5 [style=filled, fillcolor=white, label=thereby];
+blocking6 -> thereby5  [label=advmod];
+phosphorylates2 -> blocking6  [label=dep];
+interaction8 [style=filled, fillcolor=white, label=interaction];
+its7 [style=filled, fillcolor=white, label=its];
+interaction8 -> its7  [label=poss];
+blocking6 -> interaction8  [label=dobj];
+Ku10 [style=filled, fillcolor=white, label=Ku];
+interaction8 -> Ku10  [label=prep_with];
+complex13 [style=filled, fillcolor=white, label=complex];
+DNA12 [style=filled, fillcolor=white, label=DNA];
+complex13 -> DNA12  [label=nn];
+interaction8 -> complex13  [label=dep];
+inhibiting15 [style=filled, fillcolor=white, label=inhibiting];
+blocking6 -> inhibiting15  [label=conj_and];
+activity18 [style=filled, fillcolor=white, label=activity];
+its16 [style=filled, fillcolor=white, label=its];
+activity18 -> its16  [label=poss];
+kinase17 [style=filled, fillcolor=white, label=kinase];
+activity18 -> kinase17  [label=amod];
+inhibiting15 -> activity18  [label=dobj];
+phosphorylates22 [style=filled, fillcolor=white, label=phosphorylates];
+it20 [style=filled, fillcolor=white, label=it];
+phosphorylates22 -> it20  [label=nsubj];
+also21 [style=filled, fillcolor=white, label=also];
+phosphorylates22 -> also21  [label=advmod];
+phosphorylates2 -> phosphorylates22  [label=parataxis];
+Ku7023 [style=filled, fillcolor=white, label=Ku70];
+phosphorylates22 -> Ku7023  [label=dobj];
+Ku8025 [style=filled, fillcolor=white, label=Ku80];
+Ku7023 -> Ku8025  [label=dep];
+but27 [style=filled, fillcolor=white, label=but];
+Ku7023 -> but27  [label=cc];
+effect29 [style=filled, fillcolor=white, label=effect];
+Ku7023 -> effect29  [label=prep_without];
+Chan31 [style=filled, fillcolor=white, label=Chan];
+Ku7023 -> Chan31  [label=appos];
+"Lees-Miller33" [style=filled, fillcolor=white, label="Lees-Miller"];
+Chan31 -> "Lees-Miller33"  [label=conj_and];
+199635 [style=filled, fillcolor=white, label=1996];
+Chan31 -> 199635  [label=dep];
+}

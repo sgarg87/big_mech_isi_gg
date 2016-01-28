@@ -1,0 +1,47 @@
+digraph "STAM2 is downstream of the Jak family of kinases since coexpression of STAM2 with Jak1 or Jak2 but not an unrelated Tec family kinase ,  Etk ,  resulted in its tyrosine phosphorylation ." {
+label="STAM2 is downstream of the Jak family of kinases since coexpression of STAM2
+with Jak1 or Jak2 but not an unrelated Tec family kinase ,  Etk ,  resulted in
+its tyrosine phosphorylation .";
+downstream3 [style=filled, fillcolor=white, label=downstream];
+STAM21 [style=filled, fillcolor=white, label=STAM2];
+downstream3 -> STAM21  [label=nsubj];
+is2 [style=filled, fillcolor=white, label=is];
+downstream3 -> is2  [label=cop];
+downstream3 -> downstream3  [label=root];
+family7 [style=filled, fillcolor=white, label=family];
+the5 [style=filled, fillcolor=white, label=the];
+family7 -> the5  [label=det];
+Jak6 [style=filled, fillcolor=white, label=Jak];
+family7 -> Jak6  [label=nn];
+downstream3 -> family7  [label=prep_of];
+kinases9 [style=filled, fillcolor=white, label=kinases];
+family7 -> kinases9  [label=prep_of];
+coexpression11 [style=filled, fillcolor=white, label=coexpression];
+kinases9 -> coexpression11  [label=prep_since];
+STAM213 [style=filled, fillcolor=white, label=STAM2];
+coexpression11 -> STAM213  [label=prep_of];
+Jak115 [style=filled, fillcolor=white, label=Jak1];
+STAM213 -> Jak115  [label=prep_with];
+Jak217 [style=filled, fillcolor=white, label=Jak2];
+Jak115 -> Jak217  [label=conj_or];
+kinase24 [style=filled, fillcolor=white, label=kinase];
+an20 [style=filled, fillcolor=white, label=an];
+kinase24 -> an20  [label=det];
+unrelated21 [style=filled, fillcolor=white, label=unrelated];
+kinase24 -> unrelated21  [label=amod];
+Tec22 [style=filled, fillcolor=white, label=Tec];
+kinase24 -> Tec22  [label=nn];
+family23 [style=filled, fillcolor=white, label=family];
+kinase24 -> family23  [label=nn];
+family7 -> kinase24  [label=conj_negcc];
+Etk26 [style=filled, fillcolor=white, label=Etk];
+kinase24 -> Etk26  [label=appos];
+resulted28 [style=filled, fillcolor=white, label=resulted];
+kinase24 -> resulted28  [label=vmod];
+phosphorylation32 [style=filled, fillcolor=white, label=phosphorylation];
+its30 [style=filled, fillcolor=white, label=its];
+phosphorylation32 -> its30  [label=poss];
+tyrosine31 [style=filled, fillcolor=white, label=tyrosine];
+phosphorylation32 -> tyrosine31  [label=amod];
+resulted28 -> phosphorylation32  [label=prep_in];
+}

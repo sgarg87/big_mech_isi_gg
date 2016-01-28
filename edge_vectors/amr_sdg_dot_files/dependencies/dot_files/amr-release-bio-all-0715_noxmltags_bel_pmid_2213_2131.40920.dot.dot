@@ -1,0 +1,17 @@
+digraph "TB splenocytes have a reduction in SHIP-1 expression ." {
+label="TB splenocytes have a reduction in SHIP-1 expression .";
+splenocytes2 [style=filled, fillcolor=white, label=splenocytes];
+TB1 [style=filled, fillcolor=white, label=TB];
+splenocytes2 -> TB1  [label=nn];
+have3 [style=filled, fillcolor=white, label=have];
+have3 -> splenocytes2  [label=nsubj];
+have3 -> have3  [label=root];
+reduction5 [style=filled, fillcolor=white, label=reduction];
+a4 [style=filled, fillcolor=white, label=a];
+reduction5 -> a4  [label=det];
+have3 -> reduction5  [label=dobj];
+expression8 [style=filled, fillcolor=white, label=expression];
+"SHIP-17" [style=filled, fillcolor=white, label="SHIP-1"];
+expression8 -> "SHIP-17"  [label=nn];
+reduction5 -> expression8  [label=prep_in];
+}

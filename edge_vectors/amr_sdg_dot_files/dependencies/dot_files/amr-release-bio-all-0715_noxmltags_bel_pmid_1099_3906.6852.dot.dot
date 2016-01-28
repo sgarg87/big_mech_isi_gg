@@ -1,0 +1,35 @@
+digraph "Tyrosine phosphorylation of STAM2 is induced by growth factors such as epidermal growth factor and platelet-derived growth factor as well as by cytokines like IL-3 ." {
+label="Tyrosine phosphorylation of STAM2 is induced by growth factors such as
+epidermal growth factor and platelet-derived growth factor as well as by
+cytokines like IL-3 .";
+phosphorylation2 [style=filled, fillcolor=white, label=phosphorylation];
+Tyrosine1 [style=filled, fillcolor=white, label=Tyrosine];
+phosphorylation2 -> Tyrosine1  [label=amod];
+induced6 [style=filled, fillcolor=white, label=induced];
+induced6 -> phosphorylation2  [label=nsubjpass];
+STAM24 [style=filled, fillcolor=white, label=STAM2];
+phosphorylation2 -> STAM24  [label=prep_of];
+is5 [style=filled, fillcolor=white, label=is];
+induced6 -> is5  [label=auxpass];
+induced6 -> induced6  [label=root];
+factors9 [style=filled, fillcolor=white, label=factors];
+growth8 [style=filled, fillcolor=white, label=growth];
+factors9 -> growth8  [label=nn];
+induced6 -> factors9  [label=agent];
+factor14 [style=filled, fillcolor=white, label=factor];
+epidermal12 [style=filled, fillcolor=white, label=epidermal];
+factor14 -> epidermal12  [label=amod];
+growth13 [style=filled, fillcolor=white, label=growth];
+factor14 -> growth13  [label=nn];
+factors9 -> factor14  [label=prep_such_as];
+factor18 [style=filled, fillcolor=white, label=factor];
+"platelet-derived16" [style=filled, fillcolor=white, label="platelet-derived"];
+factor18 -> "platelet-derived16"  [label=amod];
+growth17 [style=filled, fillcolor=white, label=growth];
+factor18 -> growth17  [label=nn];
+factor14 -> factor18  [label=conj_and];
+cytokines23 [style=filled, fillcolor=white, label=cytokines];
+factors9 -> cytokines23  [label=conj_and];
+"IL-325" [style=filled, fillcolor=white, label="IL-3"];
+cytokines23 -> "IL-325"  [label=prep_like];
+}

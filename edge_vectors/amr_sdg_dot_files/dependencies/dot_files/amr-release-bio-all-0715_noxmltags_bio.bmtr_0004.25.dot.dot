@@ -1,0 +1,45 @@
+digraph "All other activities ,  including the ability to bind regulators ,  were largely preserved and our kinetic modeling suggests that the GAP defect will dominate ." {
+label="All other activities ,  including the ability to bind regulators ,  were
+largely preserved and our kinetic modeling suggests that the GAP defect will
+dominate .";
+activities3 [style=filled, fillcolor=white, label=activities];
+All1 [style=filled, fillcolor=white, label=All];
+activities3 -> All1  [label=det];
+other2 [style=filled, fillcolor=white, label=other];
+activities3 -> other2  [label=amod];
+preserved14 [style=filled, fillcolor=white, label=preserved];
+preserved14 -> activities3  [label=nsubjpass];
+ability7 [style=filled, fillcolor=white, label=ability];
+the6 [style=filled, fillcolor=white, label=the];
+ability7 -> the6  [label=det];
+activities3 -> ability7  [label=prep_including];
+regulators10 [style=filled, fillcolor=white, label=regulators];
+bind9 [style=filled, fillcolor=white, label=bind];
+regulators10 -> bind9  [label=nn];
+ability7 -> regulators10  [label=prep_to];
+were12 [style=filled, fillcolor=white, label=were];
+preserved14 -> were12  [label=auxpass];
+largely13 [style=filled, fillcolor=white, label=largely];
+preserved14 -> largely13  [label=advmod];
+preserved14 -> preserved14  [label=root];
+modeling18 [style=filled, fillcolor=white, label=modeling];
+our16 [style=filled, fillcolor=white, label=our];
+modeling18 -> our16  [label=poss];
+kinetic17 [style=filled, fillcolor=white, label=kinetic];
+modeling18 -> kinetic17  [label=amod];
+suggests19 [style=filled, fillcolor=white, label=suggests];
+suggests19 -> modeling18  [label=nsubj];
+preserved14 -> suggests19  [label=conj_and];
+dominate25 [style=filled, fillcolor=white, label=dominate];
+that20 [style=filled, fillcolor=white, label=that];
+dominate25 -> that20  [label=mark];
+defect23 [style=filled, fillcolor=white, label=defect];
+the21 [style=filled, fillcolor=white, label=the];
+defect23 -> the21  [label=det];
+GAP22 [style=filled, fillcolor=white, label=GAP];
+defect23 -> GAP22  [label=nn];
+dominate25 -> defect23  [label=nsubj];
+will24 [style=filled, fillcolor=white, label=will];
+dominate25 -> will24  [label=aux];
+suggests19 -> dominate25  [label=ccomp];
+}

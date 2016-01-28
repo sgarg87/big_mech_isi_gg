@@ -1,0 +1,43 @@
+digraph "However ,  a high proportion of Nrf2 accumulated in the nucleus of both cell types following the exposure of cells to hyperoxia ( Fig. 1A ,  right panels ) ." {
+label="However ,  a high proportion of Nrf2 accumulated in the nucleus of both cell
+types following the exposure of cells to hyperoxia ( Fig. 1A ,  right panels )
+.";
+accumulated8 [style=filled, fillcolor=white, label=accumulated];
+However1 [style=filled, fillcolor=white, label=However];
+accumulated8 -> However1  [label=advmod];
+proportion5 [style=filled, fillcolor=white, label=proportion];
+a3 [style=filled, fillcolor=white, label=a];
+proportion5 -> a3  [label=det];
+high4 [style=filled, fillcolor=white, label=high];
+proportion5 -> high4  [label=amod];
+accumulated8 -> proportion5  [label=nsubj];
+Nrf27 [style=filled, fillcolor=white, label=Nrf2];
+proportion5 -> Nrf27  [label=prep_of];
+accumulated8 -> accumulated8  [label=root];
+nucleus11 [style=filled, fillcolor=white, label=nucleus];
+the10 [style=filled, fillcolor=white, label=the];
+nucleus11 -> the10  [label=det];
+accumulated8 -> nucleus11  [label=prep_in];
+types15 [style=filled, fillcolor=white, label=types];
+both13 [style=filled, fillcolor=white, label=both];
+types15 -> both13  [label=det];
+cell14 [style=filled, fillcolor=white, label=cell];
+types15 -> cell14  [label=nn];
+nucleus11 -> types15  [label=prep_of];
+exposure18 [style=filled, fillcolor=white, label=exposure];
+the17 [style=filled, fillcolor=white, label=the];
+exposure18 -> the17  [label=det];
+types15 -> exposure18  [label=prep_following];
+cells20 [style=filled, fillcolor=white, label=cells];
+exposure18 -> cells20  [label=prep_of];
+hyperoxia22 [style=filled, fillcolor=white, label=hyperoxia];
+cells20 -> hyperoxia22  [label=prep_to];
+"Fig.24" [style=filled, fillcolor=white, label="Fig."];
+hyperoxia22 -> "Fig.24"  [label=appos];
+"1A25" [style=filled, fillcolor=white, label="1A"];
+"Fig.24" -> "1A25"  [label=num];
+panels28 [style=filled, fillcolor=white, label=panels];
+right27 [style=filled, fillcolor=white, label=right];
+panels28 -> right27  [label=amod];
+"Fig.24" -> panels28  [label=dep];
+}

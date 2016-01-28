@@ -1,0 +1,36 @@
+digraph "We find that Cdk10 binds full length Ets2 in vitro and in vivo and inhibits Ets2 transactivation in mammalian cells ." {
+label="We find that Cdk10 binds full length Ets2 in vitro and in vivo and inhibits
+Ets2 transactivation in mammalian cells .";
+find2 [style=filled, fillcolor=white, label=find];
+We1 [style=filled, fillcolor=white, label=We];
+find2 -> We1  [label=nsubj];
+find2 -> find2  [label=root];
+binds5 [style=filled, fillcolor=white, label=binds];
+that3 [style=filled, fillcolor=white, label=that];
+binds5 -> that3  [label=mark];
+Cdk104 [style=filled, fillcolor=white, label=Cdk10];
+binds5 -> Cdk104  [label=nsubj];
+find2 -> binds5  [label=ccomp];
+Ets28 [style=filled, fillcolor=white, label=Ets2];
+full6 [style=filled, fillcolor=white, label=full];
+Ets28 -> full6  [label=amod];
+length7 [style=filled, fillcolor=white, label=length];
+Ets28 -> length7  [label=nn];
+binds5 -> Ets28  [label=dobj];
+vitro10 [style=filled, fillcolor=white, label=vitro];
+binds5 -> vitro10  [label=prep_in];
+in12 [style=filled, fillcolor=white, label=in];
+vitro10 -> in12  [label=conj_and];
+vivo13 [style=filled, fillcolor=white, label=vivo];
+in12 -> vivo13  [label=pobj];
+inhibits15 [style=filled, fillcolor=white, label=inhibits];
+binds5 -> inhibits15  [label=conj_and];
+transactivation17 [style=filled, fillcolor=white, label=transactivation];
+Ets216 [style=filled, fillcolor=white, label=Ets2];
+transactivation17 -> Ets216  [label=amod];
+inhibits15 -> transactivation17  [label=dobj];
+cells20 [style=filled, fillcolor=white, label=cells];
+mammalian19 [style=filled, fillcolor=white, label=mammalian];
+cells20 -> mammalian19  [label=amod];
+inhibits15 -> cells20  [label=prep_in];
+}

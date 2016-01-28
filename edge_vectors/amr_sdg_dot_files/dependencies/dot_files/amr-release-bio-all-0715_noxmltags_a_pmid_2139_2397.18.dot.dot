@@ -1,0 +1,15 @@
+digraph "Likewise ,  YB-1 siRNA increased radiation sensitivity ." {
+label="Likewise ,  YB-1 siRNA increased radiation sensitivity .";
+increased5 [style=filled, fillcolor=white, label=increased];
+Likewise1 [style=filled, fillcolor=white, label=Likewise];
+increased5 -> Likewise1  [label=advmod];
+siRNA4 [style=filled, fillcolor=white, label=siRNA];
+"YB-13" [style=filled, fillcolor=white, label="YB-1"];
+siRNA4 -> "YB-13"  [label=nn];
+increased5 -> siRNA4  [label=nsubj];
+increased5 -> increased5  [label=root];
+sensitivity7 [style=filled, fillcolor=white, label=sensitivity];
+radiation6 [style=filled, fillcolor=white, label=radiation];
+sensitivity7 -> radiation6  [label=nn];
+increased5 -> sensitivity7  [label=dobj];
+}

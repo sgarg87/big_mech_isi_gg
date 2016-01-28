@@ -1,0 +1,23 @@
+digraph "The levels of total Rac ( Rac ) and E3b1 proteins are also shown ." {
+label="The levels of total Rac ( Rac ) and E3b1 proteins are also shown .";
+levels2 [style=filled, fillcolor=white, label=levels];
+The1 [style=filled, fillcolor=white, label=The];
+levels2 -> The1  [label=det];
+shown14 [style=filled, fillcolor=white, label=shown];
+shown14 -> levels2  [label=nsubjpass];
+Rac5 [style=filled, fillcolor=white, label=Rac];
+total4 [style=filled, fillcolor=white, label=total];
+Rac5 -> total4  [label=amod];
+levels2 -> Rac5  [label=prep_of];
+Rac7 [style=filled, fillcolor=white, label=Rac];
+Rac5 -> Rac7  [label=appos];
+proteins11 [style=filled, fillcolor=white, label=proteins];
+E3b110 [style=filled, fillcolor=white, label=E3b1];
+proteins11 -> E3b110  [label=amod];
+Rac5 -> proteins11  [label=conj_and];
+are12 [style=filled, fillcolor=white, label=are];
+shown14 -> are12  [label=auxpass];
+also13 [style=filled, fillcolor=white, label=also];
+shown14 -> also13  [label=advmod];
+shown14 -> shown14  [label=root];
+}

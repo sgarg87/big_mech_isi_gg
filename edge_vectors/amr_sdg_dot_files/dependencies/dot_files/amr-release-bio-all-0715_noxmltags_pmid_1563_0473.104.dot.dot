@@ -1,0 +1,26 @@
+digraph "Taken together ,  these data were consistent with our results obtained from immunofluorescence microscopy ." {
+label="Taken together ,  these data were consistent with our results obtained from
+immunofluorescence microscopy .";
+consistent7 [style=filled, fillcolor=white, label=consistent];
+Taken1 [style=filled, fillcolor=white, label=Taken];
+consistent7 -> Taken1  [label=vmod];
+together2 [style=filled, fillcolor=white, label=together];
+Taken1 -> together2  [label=advmod];
+data5 [style=filled, fillcolor=white, label=data];
+these4 [style=filled, fillcolor=white, label=these];
+data5 -> these4  [label=det];
+consistent7 -> data5  [label=nsubj];
+were6 [style=filled, fillcolor=white, label=were];
+consistent7 -> were6  [label=cop];
+consistent7 -> consistent7  [label=root];
+results10 [style=filled, fillcolor=white, label=results];
+our9 [style=filled, fillcolor=white, label=our];
+results10 -> our9  [label=poss];
+consistent7 -> results10  [label=prep_with];
+obtained11 [style=filled, fillcolor=white, label=obtained];
+results10 -> obtained11  [label=vmod];
+microscopy14 [style=filled, fillcolor=white, label=microscopy];
+immunofluorescence13 [style=filled, fillcolor=white, label=immunofluorescence];
+microscopy14 -> immunofluorescence13  [label=amod];
+obtained11 -> microscopy14  [label=prep_from];
+}

@@ -1,0 +1,49 @@
+digraph "According to previous studies ,  the mutation in the C-terminal domain of Smad4 ,  D351H ,  that is present in Caco-2 cells ,  results in complete Smad4 inactivation -LSB- 36 -RSB- ." {
+label="According to previous studies ,  the mutation in the C-terminal domain of Smad4
+,  D351H ,  that is present in Caco-2 cells ,  results in complete Smad4
+inactivation -LSB- 36 -RSB- .";
+results24 [style=filled, fillcolor=white, label=results];
+to2 [style=filled, fillcolor=white, label=to];
+results24 -> to2  [label=prepc_according_to];
+studies4 [style=filled, fillcolor=white, label=studies];
+previous3 [style=filled, fillcolor=white, label=previous];
+studies4 -> previous3  [label=amod];
+results24 -> studies4  [label=pobj];
+mutation7 [style=filled, fillcolor=white, label=mutation];
+the6 [style=filled, fillcolor=white, label=the];
+mutation7 -> the6  [label=det];
+studies4 -> mutation7  [label=appos];
+domain11 [style=filled, fillcolor=white, label=domain];
+the9 [style=filled, fillcolor=white, label=the];
+domain11 -> the9  [label=det];
+"C-terminal10" [style=filled, fillcolor=white, label="C-terminal"];
+domain11 -> "C-terminal10"  [label=amod];
+mutation7 -> domain11  [label=prep_in];
+Smad413 [style=filled, fillcolor=white, label=Smad4];
+domain11 -> Smad413  [label=prep_of];
+D351H [style=filled, fillcolor=white, label=D351H];
+results24 -> D351H  [label=nsubj];
+present19 [style=filled, fillcolor=white, label=present];
+that17 [style=filled, fillcolor=white, label=that];
+present19 -> that17  [label=nsubj];
+is18 [style=filled, fillcolor=white, label=is];
+present19 -> is18  [label=cop];
+D351H -> present19  [label=rcmod];
+cells22 [style=filled, fillcolor=white, label=cells];
+"Caco-21" [style=filled, fillcolor=white, label="Caco-2"];
+cells22 -> "Caco-21"  [label=nn];
+present19 -> cells22  [label=prep_in];
+results24 -> results24  [label=root];
+inactivation28 [style=filled, fillcolor=white, label=inactivation];
+complete26 [style=filled, fillcolor=white, label=complete];
+inactivation28 -> complete26  [label=amod];
+Smad427 [style=filled, fillcolor=white, label=Smad4];
+inactivation28 -> Smad427  [label=amod];
+results24 -> inactivation28  [label=prep_in];
+"-LSB-29" [style=filled, fillcolor=white, label="-LSB-"];
+inactivation28 -> "-LSB-29"  [label=vmod];
+"-RSB-31" [style=filled, fillcolor=white, label="-RSB-"];
+3630 [style=filled, fillcolor=white, label=36];
+"-RSB-31" -> 3630  [label=num];
+"-LSB-29" -> "-RSB-31"  [label=dobj];
+}

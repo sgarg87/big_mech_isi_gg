@@ -1,0 +1,62 @@
+digraph "In human HaCaT keratinocytes for instance ,  ERK1/2 phosphorylation increases in dependence of EGF-R recruitment to transadhering E-cadherin ,  and E-cadherin-mediated activation of MAPK was also reported in intestinal epithelial cells ( Pece and Gutkind ,  2000 ; Laprise et al. ,  2004 ) ." {
+label="In human HaCaT keratinocytes for instance ,  ERK1/2 phosphorylation increases
+in dependence of EGF-R recruitment to transadhering E-cadherin ,  and E
+-cadherin-mediated activation of MAPK was also reported in intestinal epithelial
+cells ( Pece and Gutkind ,  2000 ; Laprise et al. ,  2004 ) .";
+keratinocytes4 [style=filled, fillcolor=white, label=keratinocytes];
+human2 [style=filled, fillcolor=white, label=human];
+keratinocytes4 -> human2  [label=amod];
+HaCaT3 [style=filled, fillcolor=white, label=HaCaT];
+keratinocytes4 -> HaCaT3  [label=nn];
+increases10 [style=filled, fillcolor=white, label=increases];
+increases10 -> keratinocytes4  [label=prep_in];
+instance6 [style=filled, fillcolor=white, label=instance];
+keratinocytes4 -> instance6  [label=prep_for];
+phosphorylation9 [style=filled, fillcolor=white, label=phosphorylation];
+"ERK1/28" [style=filled, fillcolor=white, label="ERK1/2"];
+phosphorylation9 -> "ERK1/28"  [label=nn];
+increases10 -> phosphorylation9  [label=nsubj];
+increases10 -> increases10  [label=root];
+dependence12 [style=filled, fillcolor=white, label=dependence];
+increases10 -> dependence12  [label=prep_in];
+recruitment15 [style=filled, fillcolor=white, label=recruitment];
+"EGF-R14" [style=filled, fillcolor=white, label="EGF-R"];
+recruitment15 -> "EGF-R14"  [label=nn];
+dependence12 -> recruitment15  [label=prep_of];
+transadhering17 [style=filled, fillcolor=white, label=transadhering];
+to16 [style=filled, fillcolor=white, label=to];
+transadhering17 -> to16  [label=aux];
+increases10 -> transadhering17  [label=xcomp];
+"E-cadherin18" [style=filled, fillcolor=white, label="E-cadherin"];
+transadhering17 -> "E-cadherin18"  [label=dobj];
+activation22 [style=filled, fillcolor=white, label=activation];
+"E-cadherin-mediated21" [style=filled, fillcolor=white, label="E-cadherin-mediated"];
+activation22 -> "E-cadherin-mediated21"  [label=amod];
+reported27 [style=filled, fillcolor=white, label=reported];
+reported27 -> activation22  [label=nsubjpass];
+MAPK24 [style=filled, fillcolor=white, label=MAPK];
+activation22 -> MAPK24  [label=prep_of];
+was25 [style=filled, fillcolor=white, label=was];
+reported27 -> was25  [label=auxpass];
+also26 [style=filled, fillcolor=white, label=also];
+reported27 -> also26  [label=advmod];
+increases10 -> reported27  [label=conj_and];
+cells31 [style=filled, fillcolor=white, label=cells];
+intestinal29 [style=filled, fillcolor=white, label=intestinal];
+cells31 -> intestinal29  [label=amod];
+epithelial30 [style=filled, fillcolor=white, label=epithelial];
+cells31 -> epithelial30  [label=amod];
+reported27 -> cells31  [label=prep_in];
+Pece33 [style=filled, fillcolor=white, label=Pece];
+cells31 -> Pece33  [label=dep];
+Gutkind35 [style=filled, fillcolor=white, label=Gutkind];
+Pece33 -> Gutkind35  [label=conj_and];
+200037 [style=filled, fillcolor=white, label=2000];
+Pece33 -> 200037  [label=appos];
+Laprise39 [style=filled, fillcolor=white, label=Laprise];
+200037 -> Laprise39  [label=dep];
+"al.41" [style=filled, fillcolor=white, label="al."];
+Laprise39 -> "al.41"  [label=conj_et];
+200443 [style=filled, fillcolor=white, label=2004];
+Pece33 -> 200443  [label=amod];
+}

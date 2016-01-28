@@ -1,0 +1,41 @@
+digraph "IRAK-1 activation and recruitment is essential for activation of TRAF6 ( TNF-associated factor 6 ) ,  which is an essential adaptor for MyD88-dependent NF-kB activation ." {
+label="IRAK-1 activation and recruitment is essential for activation of TRAF6 ( TNF-
+associated factor 6 ) ,  which is an essential adaptor for MyD88-dependent NF-kB
+activation .";
+activation2 [style=filled, fillcolor=white, label=activation];
+"IRAK-1" [style=filled, fillcolor=white, label="IRAK-1"];
+activation2 -> "IRAK-1"  [label=nn];
+essential6 [style=filled, fillcolor=white, label=essential];
+essential6 -> activation2  [label=nsubj];
+recruitment4 [style=filled, fillcolor=white, label=recruitment];
+activation2 -> recruitment4  [label=conj_and];
+is5 [style=filled, fillcolor=white, label=is];
+essential6 -> is5  [label=cop];
+essential6 -> essential6  [label=root];
+activation8 [style=filled, fillcolor=white, label=activation];
+essential6 -> activation8  [label=prep_for];
+TRAF610 [style=filled, fillcolor=white, label=TRAF6];
+activation8 -> TRAF610  [label=prep_of];
+factor13 [style=filled, fillcolor=white, label=factor];
+"TNF-associated12" [style=filled, fillcolor=white, label="TNF-associated"];
+factor13 -> "TNF-associated12"  [label=amod];
+TRAF610 -> factor13  [label=dep];
+614 [style=filled, fillcolor=white, label=6];
+factor13 -> 614  [label=dep];
+adaptor21 [style=filled, fillcolor=white, label=adaptor];
+which17 [style=filled, fillcolor=white, label=which];
+adaptor21 -> which17  [label=nsubj];
+is18 [style=filled, fillcolor=white, label=is];
+adaptor21 -> is18  [label=cop];
+an19 [style=filled, fillcolor=white, label=an];
+adaptor21 -> an19  [label=det];
+essential20 [style=filled, fillcolor=white, label=essential];
+adaptor21 -> essential20  [label=amod];
+TRAF610 -> adaptor21  [label=rcmod];
+activation25 [style=filled, fillcolor=white, label=activation];
+"MyD88-dependent23" [style=filled, fillcolor=white, label="MyD88-dependent"];
+activation25 -> "MyD88-dependent23"  [label=nn];
+"NF-kB24" [style=filled, fillcolor=white, label="NF-kB"];
+activation25 -> "NF-kB24"  [label=nn];
+adaptor21 -> activation25  [label=prep_for];
+}

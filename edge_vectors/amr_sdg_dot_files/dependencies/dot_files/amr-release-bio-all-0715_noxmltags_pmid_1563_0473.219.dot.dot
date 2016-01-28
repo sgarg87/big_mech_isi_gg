@@ -1,0 +1,24 @@
+digraph "Links between Signaling ,  Transcriptional Cascades ,  Epithelial Remodeling ,  and Proliferation in the Hair Bud" {
+label="Links between Signaling ,  Transcriptional Cascades ,  Epithelial Remodeling ,
+and Proliferation in the Hair Bud";
+Links1 [style=filled, fillcolor=white, label=Links];
+Links1 -> Links1  [label=root];
+Signaling3 [style=filled, fillcolor=white, label=Signaling];
+Links1 -> Signaling3  [label=prep_between];
+Cascades6 [style=filled, fillcolor=white, label=Cascades];
+Transcriptional5 [style=filled, fillcolor=white, label=Transcriptional];
+Cascades6 -> Transcriptional5  [label=nn];
+Signaling3 -> Cascades6  [label=conj_and];
+Remodeling9 [style=filled, fillcolor=white, label=Remodeling];
+Epithelial8 [style=filled, fillcolor=white, label=Epithelial];
+Remodeling9 -> Epithelial8  [label=nn];
+Signaling3 -> Remodeling9  [label=conj_and];
+Proliferation12 [style=filled, fillcolor=white, label=Proliferation];
+Signaling3 -> Proliferation12  [label=conj_and];
+Bud16 [style=filled, fillcolor=white, label=Bud];
+the14 [style=filled, fillcolor=white, label=the];
+Bud16 -> the14  [label=det];
+Hair15 [style=filled, fillcolor=white, label=Hair];
+Bud16 -> Hair15  [label=nn];
+Links1 -> Bud16  [label=prep_in];
+}

@@ -1,0 +1,40 @@
+digraph "Together ,  these data underscore the importance of the TGF-β2 isoform despite expression of both TGF-β1 and TGF-β2 in developing hair buds at this stage ." {
+label="Together ,  these data underscore the importance of the TGF-β2 isoform despite
+expression of both TGF-β1 and TGF-β2 in developing hair buds at this stage .";
+underscore5 [style=filled, fillcolor=white, label=underscore];
+Together1 [style=filled, fillcolor=white, label=Together];
+underscore5 -> Together1  [label=advmod];
+data4 [style=filled, fillcolor=white, label=data];
+these3 [style=filled, fillcolor=white, label=these];
+data4 -> these3  [label=det];
+underscore5 -> data4  [label=nsubj];
+underscore5 -> underscore5  [label=root];
+importance7 [style=filled, fillcolor=white, label=importance];
+the6 [style=filled, fillcolor=white, label=the];
+importance7 -> the6  [label=det];
+underscore5 -> importance7  [label=dobj];
+isoform11 [style=filled, fillcolor=white, label=isoform];
+the9 [style=filled, fillcolor=white, label=the];
+isoform11 -> the9  [label=det];
+"TGF-β210" [style=filled, fillcolor=white, label="TGF-β2"];
+isoform11 -> "TGF-β210"  [label=nn];
+importance7 -> isoform11  [label=prep_of];
+expression13 [style=filled, fillcolor=white, label=expression];
+underscore5 -> expression13  [label=prep_despite];
+"TGF-β16" [style=filled, fillcolor=white, label="TGF-β1"];
+both15 [style=filled, fillcolor=white, label=both];
+"TGF-β16" -> both15  [label=preconj];
+expression13 -> "TGF-β16"  [label=prep_of];
+"TGF-β218" [style=filled, fillcolor=white, label="TGF-β2"];
+"TGF-β16" -> "TGF-β218"  [label=conj_and];
+developing20 [style=filled, fillcolor=white, label=developing];
+"TGF-β16" -> developing20  [label=prepc_in];
+buds22 [style=filled, fillcolor=white, label=buds];
+hair21 [style=filled, fillcolor=white, label=hair];
+buds22 -> hair21  [label=nn];
+developing20 -> buds22  [label=dobj];
+stage25 [style=filled, fillcolor=white, label=stage];
+this24 [style=filled, fillcolor=white, label=this];
+stage25 -> this24  [label=det];
+developing20 -> stage25  [label=prep_at];
+}

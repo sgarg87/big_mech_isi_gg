@@ -1,0 +1,26 @@
+digraph "Treatment of ras-containing cells with wortmannin resulted in a decrease in MMP expression ( Fig. 6 ) ." {
+label="Treatment of ras-containing cells with wortmannin resulted in a decrease in MMP
+expression ( Fig. 6 ) .";
+resulted7 [style=filled, fillcolor=white, label=resulted];
+Treatment1 [style=filled, fillcolor=white, label=Treatment];
+resulted7 -> Treatment1  [label=nsubj];
+cells4 [style=filled, fillcolor=white, label=cells];
+"ras-containing3" [style=filled, fillcolor=white, label="ras-containing"];
+cells4 -> "ras-containing3"  [label=amod];
+Treatment1 -> cells4  [label=prep_of];
+wortmannin6 [style=filled, fillcolor=white, label=wortmannin];
+cells4 -> wortmannin6  [label=prep_with];
+resulted7 -> resulted7  [label=root];
+decrease10 [style=filled, fillcolor=white, label=decrease];
+a9 [style=filled, fillcolor=white, label=a];
+decrease10 -> a9  [label=det];
+resulted7 -> decrease10  [label=prep_in];
+expression13 [style=filled, fillcolor=white, label=expression];
+MMP12 [style=filled, fillcolor=white, label=MMP];
+expression13 -> MMP12  [label=nn];
+resulted7 -> expression13  [label=prep_in];
+61 [style=filled, fillcolor=white, label=6];
+"Fig.15" [style=filled, fillcolor=white, label="Fig."];
+61 -> "Fig.15"  [label=number];
+resulted7 -> 61  [label=dep];
+}

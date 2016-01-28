@@ -1,0 +1,52 @@
+digraph "Coculture of Foxp3-expressing tumor cells with naive T cells completely inhibited T-cell proliferation ,  but not activation ,  and this antiproliferative effect was partially abrogated following specific inhibition of Foxp3 expression ." {
+label="Coculture of Foxp3-expressing tumor cells with naive T cells completely
+inhibited T-cell proliferation ,  but not activation ,  and this
+antiproliferative effect was partially abrogated following specific inhibition
+of Foxp3 expression .";
+inhibited11 [style=filled, fillcolor=white, label=inhibited];
+Coculture1 [style=filled, fillcolor=white, label=Coculture];
+inhibited11 -> Coculture1  [label=nsubj];
+cells5 [style=filled, fillcolor=white, label=cells];
+"Foxp3-expressing" [style=filled, fillcolor=white, label="Foxp3-expressing"];
+cells5 -> "Foxp3-expressing"  [label=nn];
+tumor4 [style=filled, fillcolor=white, label=tumor];
+cells5 -> tumor4  [label=nn];
+Coculture1 -> cells5  [label=prep_of];
+cells9 [style=filled, fillcolor=white, label=cells];
+naive7 [style=filled, fillcolor=white, label=naive];
+cells9 -> naive7  [label=nn];
+T8 [style=filled, fillcolor=white, label=T];
+cells9 -> T8  [label=nn];
+cells5 -> cells9  [label=prep_with];
+completely10 [style=filled, fillcolor=white, label=completely];
+inhibited11 -> completely10  [label=advmod];
+inhibited11 -> inhibited11  [label=root];
+proliferation13 [style=filled, fillcolor=white, label=proliferation];
+"T-cell12" [style=filled, fillcolor=white, label="T-cell"];
+proliferation13 -> "T-cell12"  [label=amod];
+inhibited11 -> proliferation13  [label=dobj];
+activation17 [style=filled, fillcolor=white, label=activation];
+not16 [style=filled, fillcolor=white, label=not];
+activation17 -> not16  [label=neg];
+inhibited11 -> activation17  [label=conj_but];
+effect22 [style=filled, fillcolor=white, label=effect];
+this20 [style=filled, fillcolor=white, label=this];
+effect22 -> this20  [label=det];
+antiproliferative21 [style=filled, fillcolor=white, label=antiproliferative];
+effect22 -> antiproliferative21  [label=amod];
+abrogated25 [style=filled, fillcolor=white, label=abrogated];
+abrogated25 -> effect22  [label=nsubjpass];
+was23 [style=filled, fillcolor=white, label=was];
+abrogated25 -> was23  [label=auxpass];
+partially24 [style=filled, fillcolor=white, label=partially];
+abrogated25 -> partially24  [label=advmod];
+inhibited11 -> abrogated25  [label=conj_and];
+inhibition28 [style=filled, fillcolor=white, label=inhibition];
+specific27 [style=filled, fillcolor=white, label=specific];
+inhibition28 -> specific27  [label=amod];
+abrogated25 -> inhibition28  [label=prep_following];
+expression31 [style=filled, fillcolor=white, label=expression];
+Foxp330 [style=filled, fillcolor=white, label=Foxp3];
+expression31 -> Foxp330  [label=amod];
+inhibition28 -> expression31  [label=prep_of];
+}

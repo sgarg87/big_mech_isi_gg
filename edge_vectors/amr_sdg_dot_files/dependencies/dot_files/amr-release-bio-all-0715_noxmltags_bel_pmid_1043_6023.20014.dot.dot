@@ -1,0 +1,38 @@
+digraph "HMG1 or 2 competes with Ku for binding to DNA-PK and stimulates DNA-dependent kinase activity in vitro in the absence of Ku ( Yumoto et al. ,  1998 ) ." {
+label="HMG1 or 2 competes with Ku for binding to DNA-PK and stimulates DNA-dependent
+kinase activity in vitro in the absence of Ku ( Yumoto et al. ,  1998 ) .";
+competes4 [style=filled, fillcolor=white, label=competes];
+HMG1 [style=filled, fillcolor=white, label=HMG1];
+competes4 -> HMG1  [label=nsubj];
+23 [style=filled, fillcolor=white, label=2];
+HMG1 -> 23  [label=conj_or];
+competes4 -> competes4  [label=root];
+Ku6 [style=filled, fillcolor=white, label=Ku];
+competes4 -> Ku6  [label=prep_with];
+activity15 [style=filled, fillcolor=white, label=activity];
+binding8 [style=filled, fillcolor=white, label=binding];
+activity15 -> binding8  [label=amod];
+"DNA-PK10" [style=filled, fillcolor=white, label="DNA-PK"];
+binding8 -> "DNA-PK10"  [label=prep_to];
+stimulates12 [style=filled, fillcolor=white, label=stimulates];
+"DNA-PK10" -> stimulates12  [label=conj_and];
+"DNA-dependent13" [style=filled, fillcolor=white, label="DNA-dependent"];
+activity15 -> "DNA-dependent13"  [label=amod];
+kinase14 [style=filled, fillcolor=white, label=kinase];
+activity15 -> kinase14  [label=amod];
+Ku6 -> activity15  [label=prep_for];
+vitro17 [style=filled, fillcolor=white, label=vitro];
+competes4 -> vitro17  [label=prep_in];
+absence20 [style=filled, fillcolor=white, label=absence];
+the19 [style=filled, fillcolor=white, label=the];
+absence20 -> the19  [label=det];
+vitro17 -> absence20  [label=prep_in];
+Ku22 [style=filled, fillcolor=white, label=Ku];
+absence20 -> Ku22  [label=prep_of];
+Yumoto24 [style=filled, fillcolor=white, label=Yumoto];
+Ku22 -> Yumoto24  [label=appos];
+"al.26" [style=filled, fillcolor=white, label="al."];
+Yumoto24 -> "al.26"  [label=conj_et];
+19982 [style=filled, fillcolor=white, label=1998];
+Yumoto24 -> 19982  [label=dep];
+}

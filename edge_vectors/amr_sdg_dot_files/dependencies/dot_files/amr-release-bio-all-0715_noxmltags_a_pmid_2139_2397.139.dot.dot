@@ -1,0 +1,28 @@
+digraph "Likewise ,  a marked reduction of P-YB-1 was observed when ERK1 was targeted with siRNA ." {
+label="Likewise ,  a marked reduction of P-YB-1 was observed when ERK1 was targeted
+with siRNA .";
+observed9 [style=filled, fillcolor=white, label=observed];
+Likewise1 [style=filled, fillcolor=white, label=Likewise];
+observed9 -> Likewise1  [label=advmod];
+reduction5 [style=filled, fillcolor=white, label=reduction];
+a3 [style=filled, fillcolor=white, label=a];
+reduction5 -> a3  [label=det];
+marked4 [style=filled, fillcolor=white, label=marked];
+reduction5 -> marked4  [label=amod];
+observed9 -> reduction5  [label=nsubjpass];
+"P-YB-17" [style=filled, fillcolor=white, label="P-YB-1"];
+reduction5 -> "P-YB-17"  [label=prep_of];
+was8 [style=filled, fillcolor=white, label=was];
+observed9 -> was8  [label=auxpass];
+observed9 -> observed9  [label=root];
+targeted13 [style=filled, fillcolor=white, label=targeted];
+when10 [style=filled, fillcolor=white, label=when];
+targeted13 -> when10  [label=advmod];
+ERK1 [style=filled, fillcolor=white, label=ERK1];
+targeted13 -> ERK1  [label=nsubjpass];
+was12 [style=filled, fillcolor=white, label=was];
+targeted13 -> was12  [label=auxpass];
+observed9 -> targeted13  [label=advcl];
+siRNA15 [style=filled, fillcolor=white, label=siRNA];
+targeted13 -> siRNA15  [label=prep_with];
+}

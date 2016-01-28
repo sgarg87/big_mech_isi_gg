@@ -1,0 +1,45 @@
+digraph "Growth factors can turn on Ras by activating Guanine nucleotide Exchange Factors ( GEFs ) or by inhibiting the GTPase Activating Proteins ( GAPs ) or by both mechanisms ." {
+label="Growth factors can turn on Ras by activating Guanine nucleotide Exchange
+Factors ( GEFs ) or by inhibiting the GTPase Activating Proteins ( GAPs ) or by
+both mechanisms .";
+factors2 [style=filled, fillcolor=white, label=factors];
+Growth1 [style=filled, fillcolor=white, label=Growth];
+factors2 -> Growth1  [label=nn];
+turn4 [style=filled, fillcolor=white, label=turn];
+turn4 -> factors2  [label=nsubj];
+can3 [style=filled, fillcolor=white, label=can];
+turn4 -> can3  [label=aux];
+turn4 -> turn4  [label=root];
+Ras6 [style=filled, fillcolor=white, label=Ras];
+turn4 -> Ras6  [label=prep_on];
+activating8 [style=filled, fillcolor=white, label=activating];
+turn4 -> activating8  [label=prepc_by];
+Factors12 [style=filled, fillcolor=white, label=Factors];
+Guanine9 [style=filled, fillcolor=white, label=Guanine];
+Factors12 -> Guanine9  [label=nn];
+nucleotide10 [style=filled, fillcolor=white, label=nucleotide];
+Factors12 -> nucleotide10  [label=nn];
+Exchange11 [style=filled, fillcolor=white, label=Exchange];
+Factors12 -> Exchange11  [label=nn];
+activating8 -> Factors12  [label=dobj];
+GEFs14 [style=filled, fillcolor=white, label=GEFs];
+Factors12 -> GEFs14  [label=appos];
+or16 [style=filled, fillcolor=white, label=or];
+turn4 -> or16  [label=cc];
+inhibiting18 [style=filled, fillcolor=white, label=inhibiting];
+activating8 -> inhibiting18  [label=conj_or];
+Proteins22 [style=filled, fillcolor=white, label=Proteins];
+the19 [style=filled, fillcolor=white, label=the];
+Proteins22 -> the19  [label=det];
+GTPase20 [style=filled, fillcolor=white, label=GTPase];
+Proteins22 -> GTPase20  [label=nn];
+Activating21 [style=filled, fillcolor=white, label=Activating];
+Proteins22 -> Activating21  [label=nn];
+inhibiting18 -> Proteins22  [label=dobj];
+GAPs24 [style=filled, fillcolor=white, label=GAPs];
+Proteins22 -> GAPs24  [label=appos];
+mechanisms29 [style=filled, fillcolor=white, label=mechanisms];
+both28 [style=filled, fillcolor=white, label=both];
+mechanisms29 -> both28  [label=det];
+activating8 -> mechanisms29  [label=conj_or];
+}

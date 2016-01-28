@@ -1,0 +1,28 @@
+digraph "Furthermore ,  activation of PPARalpha represses both c-Jun - and p65-induced transcription of the human IL-6 promoter ." {
+label="Furthermore ,  activation of PPARalpha represses both c-Jun - and p65-induced
+transcription of the human IL-6 promoter .";
+represses6 [style=filled, fillcolor=white, label=represses];
+Furthermore1 [style=filled, fillcolor=white, label=Furthermore];
+represses6 -> Furthermore1  [label=advmod];
+activation3 [style=filled, fillcolor=white, label=activation];
+represses6 -> activation3  [label=nsubj];
+PPARalpha5 [style=filled, fillcolor=white, label=PPARalpha];
+activation3 -> PPARalpha5  [label=prep_of];
+represses6 -> represses6  [label=root];
+transcription12 [style=filled, fillcolor=white, label=transcription];
+both7 [style=filled, fillcolor=white, label=both];
+transcription12 -> both7  [label=det];
+"c-Jun8" [style=filled, fillcolor=white, label="c-Jun"];
+transcription12 -> "c-Jun8"  [label=amod];
+"p65-induced11" [style=filled, fillcolor=white, label="p65-induced"];
+"c-Jun8" -> "p65-induced11"  [label=conj_and];
+represses6 -> transcription12  [label=dobj];
+promoter17 [style=filled, fillcolor=white, label=promoter];
+the14 [style=filled, fillcolor=white, label=the];
+promoter17 -> the14  [label=det];
+human15 [style=filled, fillcolor=white, label=human];
+promoter17 -> human15  [label=amod];
+"IL-61" [style=filled, fillcolor=white, label="IL-6"];
+promoter17 -> "IL-61"  [label=nn];
+transcription12 -> promoter17  [label=prep_of];
+}

@@ -1,0 +1,24 @@
+digraph "Insulin resistance was improved by systemic neutralization of IL-6 or salicylate inhibition of IKK-beta ." {
+label="Insulin resistance was improved by systemic neutralization of IL-6 or
+salicylate inhibition of IKK-beta .";
+resistance2 [style=filled, fillcolor=white, label=resistance];
+Insulin1 [style=filled, fillcolor=white, label=Insulin];
+resistance2 -> Insulin1  [label=nn];
+improved4 [style=filled, fillcolor=white, label=improved];
+improved4 -> resistance2  [label=nsubjpass];
+was3 [style=filled, fillcolor=white, label=was];
+improved4 -> was3  [label=auxpass];
+improved4 -> improved4  [label=root];
+neutralization7 [style=filled, fillcolor=white, label=neutralization];
+systemic6 [style=filled, fillcolor=white, label=systemic];
+neutralization7 -> systemic6  [label=amod];
+improved4 -> neutralization7  [label=agent];
+inhibition12 [style=filled, fillcolor=white, label=inhibition];
+"IL-69" [style=filled, fillcolor=white, label="IL-6"];
+inhibition12 -> "IL-69"  [label=nn];
+salicylate11 [style=filled, fillcolor=white, label=salicylate];
+"IL-69" -> salicylate11  [label=conj_or];
+neutralization7 -> inhibition12  [label=prep_of];
+"IKK-beta14" [style=filled, fillcolor=white, label="IKK-beta"];
+inhibition12 -> "IKK-beta14"  [label=prep_of];
+}

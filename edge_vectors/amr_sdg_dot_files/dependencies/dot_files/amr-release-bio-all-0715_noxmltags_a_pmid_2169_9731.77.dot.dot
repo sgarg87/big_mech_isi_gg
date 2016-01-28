@@ -1,0 +1,57 @@
+digraph "To determine if MH-S macrophages could recapitulate the effects of primary alveolar macrophages in this in vitro model ,  we co-cultured MH-S macrophages with both neoplastic and non-neoplastic lung epithelial cells ." {
+label="To determine if MH-S macrophages could recapitulate the effects of primary
+alveolar macrophages in this in vitro model ,  we co-cultured MH-S macrophages
+with both neoplastic and non-neoplastic lung epithelial cells .";
+determine2 [style=filled, fillcolor=white, label=determine];
+To1 [style=filled, fillcolor=white, label=To];
+determine2 -> To1  [label=aux];
+"co-cultured21" [style=filled, fillcolor=white, label="co-cultured"];
+"co-cultured21" -> determine2  [label=advcl];
+recapitulate7 [style=filled, fillcolor=white, label=recapitulate];
+if3 [style=filled, fillcolor=white, label=if];
+recapitulate7 -> if3  [label=mark];
+macrophages5 [style=filled, fillcolor=white, label=macrophages];
+"MH-S4" [style=filled, fillcolor=white, label="MH-S"];
+macrophages5 -> "MH-S4"  [label=nn];
+recapitulate7 -> macrophages5  [label=nsubj];
+could6 [style=filled, fillcolor=white, label=could];
+recapitulate7 -> could6  [label=aux];
+determine2 -> recapitulate7  [label=advcl];
+effects9 [style=filled, fillcolor=white, label=effects];
+the8 [style=filled, fillcolor=white, label=the];
+effects9 -> the8  [label=det];
+recapitulate7 -> effects9  [label=dobj];
+macrophages13 [style=filled, fillcolor=white, label=macrophages];
+primary11 [style=filled, fillcolor=white, label=primary];
+macrophages13 -> primary11  [label=amod];
+alveolar12 [style=filled, fillcolor=white, label=alveolar];
+macrophages13 -> alveolar12  [label=nn];
+effects9 -> macrophages13  [label=prep_of];
+model18 [style=filled, fillcolor=white, label=model];
+this15 [style=filled, fillcolor=white, label=this];
+model18 -> this15  [label=det];
+vitro17 [style=filled, fillcolor=white, label=vitro];
+in16 [style=filled, fillcolor=white, label=in];
+vitro17 -> in16  [label=dep];
+model18 -> vitro17  [label=amod];
+recapitulate7 -> model18  [label=prep_in];
+we20 [style=filled, fillcolor=white, label=we];
+"co-cultured21" -> we20  [label=nsubj];
+"co-cultured21" -> "co-cultured21"  [label=root];
+macrophages23 [style=filled, fillcolor=white, label=macrophages];
+"MH-S22" [style=filled, fillcolor=white, label="MH-S"];
+macrophages23 -> "MH-S22"  [label=amod];
+"co-cultured21" -> macrophages23  [label=dobj];
+neoplastic26 [style=filled, fillcolor=white, label=neoplastic];
+both25 [style=filled, fillcolor=white, label=both];
+neoplastic26 -> both25  [label=preconj];
+"co-cultured21" -> neoplastic26  [label=prep_with];
+cells31 [style=filled, fillcolor=white, label=cells];
+"non-neoplastic28" [style=filled, fillcolor=white, label="non-neoplastic"];
+cells31 -> "non-neoplastic28"  [label=amod];
+lung29 [style=filled, fillcolor=white, label=lung];
+cells31 -> lung29  [label=nn];
+epithelial30 [style=filled, fillcolor=white, label=epithelial];
+cells31 -> epithelial30  [label=nn];
+neoplastic26 -> cells31  [label=conj_and];
+}

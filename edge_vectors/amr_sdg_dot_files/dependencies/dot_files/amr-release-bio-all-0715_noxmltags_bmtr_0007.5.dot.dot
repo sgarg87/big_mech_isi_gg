@@ -1,0 +1,36 @@
+digraph "antibody ,  a non-radioactive in vitro phosphorylation assay was performed on the purified GST-ASPP2 fragment ( 693-1128 ) with recombinant MAPK1 ." {
+label="antibody ,  a non-radioactive in vitro phosphorylation assay was performed on
+the purified GST-ASPP2 fragment ( 693-1128 ) with recombinant MAPK1 .";
+performed10 [style=filled, fillcolor=white, label=performed];
+antibody1 [style=filled, fillcolor=white, label=antibody];
+performed10 -> antibody1  [label=nsubjpass];
+phosphorylation7 [style=filled, fillcolor=white, label=phosphorylation];
+a3 [style=filled, fillcolor=white, label=a];
+phosphorylation7 -> a3  [label=det];
+"non-radioactive4" [style=filled, fillcolor=white, label="non-radioactive"];
+phosphorylation7 -> "non-radioactive4"  [label=amod];
+vitro6 [style=filled, fillcolor=white, label=vitro];
+in5 [style=filled, fillcolor=white, label=in];
+vitro6 -> in5  [label=dep];
+phosphorylation7 -> vitro6  [label=amod];
+antibody1 -> phosphorylation7  [label=appos];
+assay8 [style=filled, fillcolor=white, label=assay];
+performed10 -> assay8  [label=advmod];
+was9 [style=filled, fillcolor=white, label=was];
+performed10 -> was9  [label=auxpass];
+performed10 -> performed10  [label=root];
+fragment15 [style=filled, fillcolor=white, label=fragment];
+the12 [style=filled, fillcolor=white, label=the];
+fragment15 -> the12  [label=det];
+"GST-ASPP214" [style=filled, fillcolor=white, label="GST-ASPP2"];
+purified13 [style=filled, fillcolor=white, label=purified];
+"GST-ASPP214" -> purified13  [label=advmod];
+fragment15 -> "GST-ASPP214"  [label=amod];
+performed10 -> fragment15  [label=prep_on];
+"693-11287" [style=filled, fillcolor=white, label="693-1128"];
+fragment15 -> "693-11287"  [label=appos];
+MAPK12 [style=filled, fillcolor=white, label=MAPK1];
+recombinant20 [style=filled, fillcolor=white, label=recombinant];
+MAPK12 -> recombinant20  [label=amod];
+performed10 -> MAPK12  [label=prep_with];
+}

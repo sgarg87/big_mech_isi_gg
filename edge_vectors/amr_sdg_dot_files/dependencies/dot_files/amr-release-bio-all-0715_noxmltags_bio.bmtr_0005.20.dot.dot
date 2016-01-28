@@ -1,0 +1,32 @@
+digraph "Moreover ,  the RAS-ASPP interaction enhances the transcription function of p53 in cancer cells -LSB- 2 -RSB- ." {
+label="Moreover ,  the RAS-ASPP interaction enhances the transcription function of p53
+in cancer cells -LSB- 2 -RSB- .";
+enhances6 [style=filled, fillcolor=white, label=enhances];
+Moreover1 [style=filled, fillcolor=white, label=Moreover];
+enhances6 -> Moreover1  [label=advmod];
+interaction5 [style=filled, fillcolor=white, label=interaction];
+the3 [style=filled, fillcolor=white, label=the];
+interaction5 -> the3  [label=det];
+"RAS-ASPP4" [style=filled, fillcolor=white, label="RAS-ASPP"];
+interaction5 -> "RAS-ASPP4"  [label=nn];
+enhances6 -> interaction5  [label=nsubj];
+enhances6 -> enhances6  [label=root];
+function9 [style=filled, fillcolor=white, label=function];
+the7 [style=filled, fillcolor=white, label=the];
+function9 -> the7  [label=det];
+transcription8 [style=filled, fillcolor=white, label=transcription];
+function9 -> transcription8  [label=nn];
+enhances6 -> function9  [label=dobj];
+p5311 [style=filled, fillcolor=white, label=p53];
+function9 -> p5311  [label=prep_of];
+cells14 [style=filled, fillcolor=white, label=cells];
+cancer13 [style=filled, fillcolor=white, label=cancer];
+cells14 -> cancer13  [label=nn];
+p5311 -> cells14  [label=prep_in];
+"-LSB-15" [style=filled, fillcolor=white, label="-LSB-"];
+cells14 -> "-LSB-15"  [label=vmod];
+"-RSB-17" [style=filled, fillcolor=white, label="-RSB-"];
+216 [style=filled, fillcolor=white, label=2];
+"-RSB-17" -> 216  [label=number];
+"-LSB-15" -> "-RSB-17"  [label=dobj];
+}

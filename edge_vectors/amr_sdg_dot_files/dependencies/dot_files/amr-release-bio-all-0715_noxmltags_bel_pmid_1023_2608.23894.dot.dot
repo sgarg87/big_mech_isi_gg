@@ -1,0 +1,34 @@
+digraph "Wild type ,  but not KD ,  MLK3 was able to phosphorylate His-MEK1 ( Fig. 5A ) ? and GST-SEK1 ( Fig. 5B ) ? in vitro ." {
+label="Wild type ,  but not KD ,  MLK3 was able to phosphorylate His-MEK1 ( Fig. 5A )
+? and GST-SEK1 ( Fig. 5B ) ? in vitro .";
+type2 [style=filled, fillcolor=white, label=type];
+Wild1 [style=filled, fillcolor=white, label=Wild];
+type2 -> Wild1  [label=amod];
+able10 [style=filled, fillcolor=white, label=able];
+able10 -> type2  [label=nsubj];
+MLK38 [style=filled, fillcolor=white, label=MLK3];
+KD6 [style=filled, fillcolor=white, label=KD];
+MLK38 -> KD6  [label=nn];
+type2 -> MLK38  [label=conj_negcc];
+was9 [style=filled, fillcolor=white, label=was];
+able10 -> was9  [label=cop];
+able10 -> able10  [label=root];
+phosphorylate12 [style=filled, fillcolor=white, label=phosphorylate];
+to11 [style=filled, fillcolor=white, label=to];
+phosphorylate12 -> to11  [label=aux];
+able10 -> phosphorylate12  [label=xcomp];
+"His-MEK13" [style=filled, fillcolor=white, label="His-MEK1"];
+phosphorylate12 -> "His-MEK13"  [label=dobj];
+"5A16" [style=filled, fillcolor=white, label="5A"];
+"Fig.15" [style=filled, fillcolor=white, label="Fig."];
+"5A16" -> "Fig.15"  [label=num];
+phosphorylate12 -> "5A16"  [label=dep];
+"GST-SEK120" [style=filled, fillcolor=white, label="GST-SEK1"];
+phosphorylate12 -> "GST-SEK120"  [label=conj_and];
+"5B23" [style=filled, fillcolor=white, label="5B"];
+"Fig.22" [style=filled, fillcolor=white, label="Fig."];
+"5B23" -> "Fig.22"  [label=num];
+"GST-SEK120" -> "5B23"  [label=dep];
+vitro27 [style=filled, fillcolor=white, label=vitro];
+able10 -> vitro27  [label=prep_in];
+}

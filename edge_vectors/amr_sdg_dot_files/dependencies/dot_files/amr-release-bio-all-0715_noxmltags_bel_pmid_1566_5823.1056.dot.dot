@@ -1,0 +1,28 @@
+digraph "We also provide evidence that IRF-5 interacts with and is activated by MyD88 and TRAF6" {
+label="We also provide evidence that IRF-5 interacts with and is activated by MyD88
+and TRAF6";
+provide3 [style=filled, fillcolor=white, label=provide];
+We1 [style=filled, fillcolor=white, label=We];
+provide3 -> We1  [label=nsubj];
+also2 [style=filled, fillcolor=white, label=also];
+provide3 -> also2  [label=advmod];
+provide3 -> provide3  [label=root];
+evidence4 [style=filled, fillcolor=white, label=evidence];
+provide3 -> evidence4  [label=dobj];
+interacts7 [style=filled, fillcolor=white, label=interacts];
+that5 [style=filled, fillcolor=white, label=that];
+interacts7 -> that5  [label=mark];
+"IRF-56" [style=filled, fillcolor=white, label="IRF-5"];
+interacts7 -> "IRF-56"  [label=nsubj];
+provide3 -> interacts7  [label=ccomp];
+with8 [style=filled, fillcolor=white, label=with];
+interacts7 -> with8  [label=prep];
+activated11 [style=filled, fillcolor=white, label=activated];
+is10 [style=filled, fillcolor=white, label=is];
+activated11 -> is10  [label=auxpass];
+interacts7 -> activated11  [label=conj_and];
+MyD8813 [style=filled, fillcolor=white, label=MyD88];
+activated11 -> MyD8813  [label=agent];
+TRAF615 [style=filled, fillcolor=white, label=TRAF6];
+MyD8813 -> TRAF615  [label=conj_and];
+}

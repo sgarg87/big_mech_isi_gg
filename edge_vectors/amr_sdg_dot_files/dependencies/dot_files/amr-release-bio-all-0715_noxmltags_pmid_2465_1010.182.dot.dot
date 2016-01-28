@@ -1,0 +1,51 @@
+digraph "The eNos protein was identified as a strong enhancer of nitrosylation and therefore could also be a therapeutic target to attack mutant Ras ( Lim et al. ,  2008 ) ." {
+label="The eNos protein was identified as a strong enhancer of nitrosylation and
+therefore could also be a therapeutic target to attack mutant Ras ( Lim et al. ,
+2008 ) .";
+protein3 [style=filled, fillcolor=white, label=protein];
+The1 [style=filled, fillcolor=white, label=The];
+protein3 -> The1  [label=det];
+eNos2 [style=filled, fillcolor=white, label=eNos];
+protein3 -> eNos2  [label=nn];
+identified5 [style=filled, fillcolor=white, label=identified];
+identified5 -> protein3  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+identified5 -> was4  [label=auxpass];
+identified5 -> identified5  [label=root];
+enhancer9 [style=filled, fillcolor=white, label=enhancer];
+a7 [style=filled, fillcolor=white, label=a];
+enhancer9 -> a7  [label=det];
+strong8 [style=filled, fillcolor=white, label=strong];
+enhancer9 -> strong8  [label=amod];
+identified5 -> enhancer9  [label=prep_as];
+nitrosylation11 [style=filled, fillcolor=white, label=nitrosylation];
+enhancer9 -> nitrosylation11  [label=prep_of];
+target19 [style=filled, fillcolor=white, label=target];
+therefore13 [style=filled, fillcolor=white, label=therefore];
+target19 -> therefore13  [label=advmod];
+could14 [style=filled, fillcolor=white, label=could];
+target19 -> could14  [label=aux];
+also15 [style=filled, fillcolor=white, label=also];
+target19 -> also15  [label=advmod];
+be16 [style=filled, fillcolor=white, label=be];
+target19 -> be16  [label=cop];
+a17 [style=filled, fillcolor=white, label=a];
+target19 -> a17  [label=det];
+therapeutic18 [style=filled, fillcolor=white, label=therapeutic];
+target19 -> therapeutic18  [label=amod];
+identified5 -> target19  [label=conj_and];
+attack21 [style=filled, fillcolor=white, label=attack];
+to20 [style=filled, fillcolor=white, label=to];
+attack21 -> to20  [label=aux];
+target19 -> attack21  [label=vmod];
+Ras23 [style=filled, fillcolor=white, label=Ras];
+mutant22 [style=filled, fillcolor=white, label=mutant];
+Ras23 -> mutant22  [label=amod];
+attack21 -> Ras23  [label=dobj];
+Lim25 [style=filled, fillcolor=white, label=Lim];
+Ras23 -> Lim25  [label=appos];
+"al.27" [style=filled, fillcolor=white, label="al."];
+Lim25 -> "al.27"  [label=conj_et];
+200829 [style=filled, fillcolor=white, label=2008];
+Lim25 -> 200829  [label=dep];
+}

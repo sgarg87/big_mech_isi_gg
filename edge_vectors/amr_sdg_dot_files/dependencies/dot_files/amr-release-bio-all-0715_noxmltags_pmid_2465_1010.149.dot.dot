@@ -1,0 +1,45 @@
+digraph "If indeed intrinsic GTPase limits signal output ,  perhaps assays for compounds that stimulate intrinsic GTPase of Ras effector complexes may merit consideration ." {
+label="If indeed intrinsic GTPase limits signal output ,  perhaps assays for compounds
+that stimulate intrinsic GTPase of Ras effector complexes may merit
+consideration .";
+signal6 [style=filled, fillcolor=white, label=signal];
+If1 [style=filled, fillcolor=white, label=If];
+signal6 -> If1  [label=mark];
+limits5 [style=filled, fillcolor=white, label=limits];
+indeed2 [style=filled, fillcolor=white, label=indeed];
+limits5 -> indeed2  [label=advmod];
+intrinsic3 [style=filled, fillcolor=white, label=intrinsic];
+limits5 -> intrinsic3  [label=amod];
+GTPase4 [style=filled, fillcolor=white, label=GTPase];
+limits5 -> GTPase4  [label=nn];
+signal6 -> limits5  [label=nsubj];
+merit22 [style=filled, fillcolor=white, label=merit];
+merit22 -> signal6  [label=advcl];
+output7 [style=filled, fillcolor=white, label=output];
+signal6 -> output7  [label=dobj];
+assays10 [style=filled, fillcolor=white, label=assays];
+perhaps9 [style=filled, fillcolor=white, label=perhaps];
+assays10 -> perhaps9  [label=advmod];
+merit22 -> assays10  [label=nsubj];
+compounds12 [style=filled, fillcolor=white, label=compounds];
+assays10 -> compounds12  [label=prep_for];
+stimulate14 [style=filled, fillcolor=white, label=stimulate];
+that13 [style=filled, fillcolor=white, label=that];
+stimulate14 -> that13  [label=nsubj];
+compounds12 -> stimulate14  [label=rcmod];
+GTPase16 [style=filled, fillcolor=white, label=GTPase];
+intrinsic15 [style=filled, fillcolor=white, label=intrinsic];
+GTPase16 -> intrinsic15  [label=nn];
+stimulate14 -> GTPase16  [label=dobj];
+complexes20 [style=filled, fillcolor=white, label=complexes];
+Ras18 [style=filled, fillcolor=white, label=Ras];
+complexes20 -> Ras18  [label=nn];
+effector19 [style=filled, fillcolor=white, label=effector];
+complexes20 -> effector19  [label=nn];
+GTPase16 -> complexes20  [label=prep_of];
+may21 [style=filled, fillcolor=white, label=may];
+merit22 -> may21  [label=aux];
+merit22 -> merit22  [label=root];
+consideration23 [style=filled, fillcolor=white, label=consideration];
+merit22 -> consideration23  [label=dobj];
+}

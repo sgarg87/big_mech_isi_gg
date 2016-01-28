@@ -1,0 +1,47 @@
+digraph "mTORC2 can be activated by PI3K directly and phosphorylates Akt at S473 ,  which together with phosphorylation at T308 results in the full activation of Akt -LSB- 12 ,  13 -RSB- ." {
+label="mTORC2 can be activated by PI3K directly and phosphorylates Akt at S473 ,
+which together with phosphorylation at T308 results in the full activation of
+Akt -LSB- 12 ,  13 -RSB- .";
+activated4 [style=filled, fillcolor=white, label=activated];
+mTORC21 [style=filled, fillcolor=white, label=mTORC2];
+activated4 -> mTORC21  [label=nsubjpass];
+can2 [style=filled, fillcolor=white, label=can];
+activated4 -> can2  [label=aux];
+be3 [style=filled, fillcolor=white, label=be];
+activated4 -> be3  [label=auxpass];
+activated4 -> activated4  [label=root];
+PI3K6 [style=filled, fillcolor=white, label=PI3K];
+activated4 -> PI3K6  [label=agent];
+directly7 [style=filled, fillcolor=white, label=directly];
+activated4 -> directly7  [label=advmod];
+Akt10 [style=filled, fillcolor=white, label=Akt];
+phosphorylates9 [style=filled, fillcolor=white, label=phosphorylates];
+Akt10 -> phosphorylates9  [label=advmod];
+activated4 -> Akt10  [label=conj_and];
+S47312 [style=filled, fillcolor=white, label=S473];
+Akt10 -> S47312  [label=prep_at];
+which14 [style=filled, fillcolor=white, label=which];
+activated4 -> which14  [label=dep];
+phosphorylation17 [style=filled, fillcolor=white, label=phosphorylation];
+which14 -> phosphorylation17  [label=prep_together_with];
+results20 [style=filled, fillcolor=white, label=results];
+T30819 [style=filled, fillcolor=white, label=T308];
+results20 -> T30819  [label=num];
+phosphorylation17 -> results20  [label=prep_at];
+activation24 [style=filled, fillcolor=white, label=activation];
+the22 [style=filled, fillcolor=white, label=the];
+activation24 -> the22  [label=det];
+full23 [style=filled, fillcolor=white, label=full];
+activation24 -> full23  [label=amod];
+results20 -> activation24  [label=prep_in];
+"-LSB-27" [style=filled, fillcolor=white, label="-LSB-"];
+Akt26 [style=filled, fillcolor=white, label=Akt];
+"-LSB-27" -> Akt26  [label=nn];
+activation24 -> "-LSB-27"  [label=prep_of];
+1228 [style=filled, fillcolor=white, label=12];
+"-LSB-27" -> 1228  [label=num];
+1330 [style=filled, fillcolor=white, label=13];
+"-LSB-27" -> 1330  [label=num];
+"-RSB-31" [style=filled, fillcolor=white, label="-RSB-"];
+"-LSB-27" -> "-RSB-31"  [label=vmod];
+}

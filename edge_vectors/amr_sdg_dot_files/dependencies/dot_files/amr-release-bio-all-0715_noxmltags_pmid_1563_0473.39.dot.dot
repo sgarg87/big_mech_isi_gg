@@ -1,0 +1,51 @@
+digraph "In the present study ,  we discovered that Snail is expressed briefly at an early stage of hair bud formation ,  when E-cadherin down-regulation and activation of proliferation take place ." {
+label="In the present study ,  we discovered that Snail is expressed briefly at an
+early stage of hair bud formation ,  when E-cadherin down-regulation and
+activation of proliferation take place .";
+study4 [style=filled, fillcolor=white, label=study];
+the2 [style=filled, fillcolor=white, label=the];
+study4 -> the2  [label=det];
+present3 [style=filled, fillcolor=white, label=present];
+study4 -> present3  [label=amod];
+discovered7 [style=filled, fillcolor=white, label=discovered];
+discovered7 -> study4  [label=prep_in];
+we6 [style=filled, fillcolor=white, label=we];
+discovered7 -> we6  [label=nsubj];
+discovered7 -> discovered7  [label=root];
+expressed11 [style=filled, fillcolor=white, label=expressed];
+that8 [style=filled, fillcolor=white, label=that];
+expressed11 -> that8  [label=mark];
+Snail9 [style=filled, fillcolor=white, label=Snail];
+expressed11 -> Snail9  [label=nsubjpass];
+is10 [style=filled, fillcolor=white, label=is];
+expressed11 -> is10  [label=auxpass];
+discovered7 -> expressed11  [label=ccomp];
+briefly12 [style=filled, fillcolor=white, label=briefly];
+expressed11 -> briefly12  [label=advmod];
+stage16 [style=filled, fillcolor=white, label=stage];
+an14 [style=filled, fillcolor=white, label=an];
+stage16 -> an14  [label=det];
+early15 [style=filled, fillcolor=white, label=early];
+stage16 -> early15  [label=amod];
+expressed11 -> stage16  [label=prep_at];
+formation20 [style=filled, fillcolor=white, label=formation];
+hair18 [style=filled, fillcolor=white, label=hair];
+formation20 -> hair18  [label=nn];
+bud19 [style=filled, fillcolor=white, label=bud];
+formation20 -> bud19  [label=nn];
+stage16 -> formation20  [label=prep_of];
+take29 [style=filled, fillcolor=white, label=take];
+when22 [style=filled, fillcolor=white, label=when];
+take29 -> when22  [label=advmod];
+"down-regulation24" [style=filled, fillcolor=white, label="down-regulation"];
+"E-cadherin23" [style=filled, fillcolor=white, label="E-cadherin"];
+"down-regulation24" -> "E-cadherin23"  [label=amod];
+take29 -> "down-regulation24"  [label=nsubj];
+activation26 [style=filled, fillcolor=white, label=activation];
+"down-regulation24" -> activation26  [label=conj_and];
+proliferation28 [style=filled, fillcolor=white, label=proliferation];
+"down-regulation24" -> proliferation28  [label=prep_of];
+formation20 -> take29  [label=rcmod];
+place30 [style=filled, fillcolor=white, label=place];
+take29 -> place30  [label=dobj];
+}

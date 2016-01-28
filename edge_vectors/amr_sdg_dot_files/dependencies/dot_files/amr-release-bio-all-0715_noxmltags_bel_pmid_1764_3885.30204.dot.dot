@@ -1,0 +1,53 @@
+digraph "Aortas from COX-2 ? / ? mice on atherogenic diet after 3 weeks had significantly larger areas of neutral lipid content as measured by Oil Red O staining ( Fig. 1A ) ." {
+label="Aortas from COX-2 ? / ? mice on atherogenic diet after 3 weeks had
+significantly larger areas of neutral lipid content as measured by Oil Red O
+staining ( Fig. 1A ) .";
+mice7 [style=filled, fillcolor=white, label=mice];
+Aortas1 [style=filled, fillcolor=white, label=Aortas];
+mice7 -> Aortas1  [label=amod];
+from2 [style=filled, fillcolor=white, label=from];
+Aortas1 -> from2  [label=prep];
+"/5" [style=filled, fillcolor=white, label="/"];
+"COX-23" [style=filled, fillcolor=white, label="COX-2"];
+"/5" -> "COX-23"  [label=amod];
+from2 -> "/5"  [label=dep];
+had14 [style=filled, fillcolor=white, label=had];
+had14 -> mice7  [label=nsubj];
+diet10 [style=filled, fillcolor=white, label=diet];
+atherogenic9 [style=filled, fillcolor=white, label=atherogenic];
+diet10 -> atherogenic9  [label=amod];
+mice7 -> diet10  [label=prep_on];
+weeks13 [style=filled, fillcolor=white, label=weeks];
+312 [style=filled, fillcolor=white, label=3];
+weeks13 -> 312  [label=num];
+diet10 -> weeks13  [label=prep_after];
+had14 -> had14  [label=root];
+larger16 [style=filled, fillcolor=white, label=larger];
+significantly15 [style=filled, fillcolor=white, label=significantly];
+larger16 -> significantly15  [label=advmod];
+areas17 [style=filled, fillcolor=white, label=areas];
+areas17 -> larger16  [label=amod];
+had14 -> areas17  [label=dobj];
+content21 [style=filled, fillcolor=white, label=content];
+neutral19 [style=filled, fillcolor=white, label=neutral];
+content21 -> neutral19  [label=amod];
+lipid20 [style=filled, fillcolor=white, label=lipid];
+content21 -> lipid20  [label=nn];
+areas17 -> content21  [label=prep_of];
+measured23 [style=filled, fillcolor=white, label=measured];
+as22 [style=filled, fillcolor=white, label=as];
+measured23 -> as22  [label=mark];
+content21 -> measured23  [label=dep];
+O27 [style=filled, fillcolor=white, label=O];
+Oil25 [style=filled, fillcolor=white, label=Oil];
+O27 -> Oil25  [label=nn];
+Red26 [style=filled, fillcolor=white, label=Red];
+O27 -> Red26  [label=nn];
+measured23 -> O27  [label=prep_by];
+staining28 [style=filled, fillcolor=white, label=staining];
+O27 -> staining28  [label=vmod];
+"1A3" [style=filled, fillcolor=white, label="1A"];
+"Fig.30" [style=filled, fillcolor=white, label="Fig."];
+"1A3" -> "Fig.30"  [label=number];
+content21 -> "1A3"  [label=dep];
+}

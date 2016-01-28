@@ -1,0 +1,38 @@
+digraph "the majority of cells within BRafVE-induced tumors expressed SP-C ,  suggesting that they have properties of ATII pneumocytes ( Fig. 2K ,  L ) ." {
+label="the majority of cells within BRafVE-induced tumors expressed SP-C ,  suggesting
+that they have properties of ATII pneumocytes ( Fig. 2K ,  L ) .";
+majority2 [style=filled, fillcolor=white, label=majority];
+the1 [style=filled, fillcolor=white, label=the];
+majority2 -> the1  [label=det];
+expressed8 [style=filled, fillcolor=white, label=expressed];
+expressed8 -> majority2  [label=nsubj];
+cells4 [style=filled, fillcolor=white, label=cells];
+majority2 -> cells4  [label=prep_of];
+tumors7 [style=filled, fillcolor=white, label=tumors];
+"BRafVE-induced6" [style=filled, fillcolor=white, label="BRafVE-induced"];
+tumors7 -> "BRafVE-induced6"  [label=amod];
+cells4 -> tumors7  [label=prep_within];
+expressed8 -> expressed8  [label=root];
+"SP-C9" [style=filled, fillcolor=white, label="SP-C"];
+expressed8 -> "SP-C9"  [label=advmod];
+suggesting11 [style=filled, fillcolor=white, label=suggesting];
+expressed8 -> suggesting11  [label=xcomp];
+have14 [style=filled, fillcolor=white, label=have];
+that12 [style=filled, fillcolor=white, label=that];
+have14 -> that12  [label=mark];
+they13 [style=filled, fillcolor=white, label=they];
+have14 -> they13  [label=nsubj];
+suggesting11 -> have14  [label=ccomp];
+properties15 [style=filled, fillcolor=white, label=properties];
+have14 -> properties15  [label=dobj];
+pneumocytes18 [style=filled, fillcolor=white, label=pneumocytes];
+ATII17 [style=filled, fillcolor=white, label=ATII];
+pneumocytes18 -> ATII17  [label=nn];
+properties15 -> pneumocytes18  [label=prep_of];
+"Fig.20" [style=filled, fillcolor=white, label="Fig."];
+have14 -> "Fig.20"  [label=dep];
+"2K21" [style=filled, fillcolor=white, label="2K"];
+"Fig.20" -> "2K21"  [label=num];
+L23 [style=filled, fillcolor=white, label=L];
+"Fig.20" -> L23  [label=dep];
+}

@@ -1,0 +1,51 @@
+digraph "Together ,  these findings indicate a correlation between the changes in the transformation potentials of the intermediate and impaired oncogenic B-Raf proteins and their abilities to heterodimerize and activate C-Raf ." {
+label="Together ,  these findings indicate a correlation between the changes in the
+transformation potentials of the intermediate and impaired oncogenic B-Raf
+proteins and their abilities to heterodimerize and activate C-Raf .";
+indicate5 [style=filled, fillcolor=white, label=indicate];
+Together1 [style=filled, fillcolor=white, label=Together];
+indicate5 -> Together1  [label=advmod];
+findings4 [style=filled, fillcolor=white, label=findings];
+these3 [style=filled, fillcolor=white, label=these];
+findings4 -> these3  [label=det];
+indicate5 -> findings4  [label=nsubj];
+indicate5 -> indicate5  [label=root];
+correlation7 [style=filled, fillcolor=white, label=correlation];
+a6 [style=filled, fillcolor=white, label=a];
+correlation7 -> a6  [label=det];
+indicate5 -> correlation7  [label=dobj];
+changes10 [style=filled, fillcolor=white, label=changes];
+the9 [style=filled, fillcolor=white, label=the];
+changes10 -> the9  [label=det];
+correlation7 -> changes10  [label=prep_between];
+potentials14 [style=filled, fillcolor=white, label=potentials];
+the12 [style=filled, fillcolor=white, label=the];
+potentials14 -> the12  [label=det];
+transformation13 [style=filled, fillcolor=white, label=transformation];
+potentials14 -> transformation13  [label=nn];
+changes10 -> potentials14  [label=prep_in];
+proteins22 [style=filled, fillcolor=white, label=proteins];
+the16 [style=filled, fillcolor=white, label=the];
+proteins22 -> the16  [label=det];
+intermediate17 [style=filled, fillcolor=white, label=intermediate];
+proteins22 -> intermediate17  [label=amod];
+impaired19 [style=filled, fillcolor=white, label=impaired];
+intermediate17 -> impaired19  [label=conj_and];
+oncogenic20 [style=filled, fillcolor=white, label=oncogenic];
+proteins22 -> oncogenic20  [label=amod];
+"B-Raf21" [style=filled, fillcolor=white, label="B-Raf"];
+proteins22 -> "B-Raf21"  [label=amod];
+potentials14 -> proteins22  [label=prep_of];
+abilities25 [style=filled, fillcolor=white, label=abilities];
+their24 [style=filled, fillcolor=white, label=their];
+abilities25 -> their24  [label=poss];
+proteins22 -> abilities25  [label=conj_and];
+heterodimerize27 [style=filled, fillcolor=white, label=heterodimerize];
+to26 [style=filled, fillcolor=white, label=to];
+heterodimerize27 -> to26  [label=aux];
+indicate5 -> heterodimerize27  [label=vmod];
+activate29 [style=filled, fillcolor=white, label=activate];
+indicate5 -> activate29  [label=conj_and];
+"C-Raf30" [style=filled, fillcolor=white, label="C-Raf"];
+activate29 -> "C-Raf30"  [label=dobj];
+}

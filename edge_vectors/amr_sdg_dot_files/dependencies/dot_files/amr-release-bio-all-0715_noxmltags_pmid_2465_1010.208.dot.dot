@@ -1,0 +1,30 @@
+digraph "Hopefully ,  a clearer picture will emerge through analysis of exceptional responders or through deciphering mechanisms of drug resistance ." {
+label="Hopefully ,  a clearer picture will emerge through analysis of exceptional
+responders or through deciphering mechanisms of drug resistance .";
+emerge7 [style=filled, fillcolor=white, label=emerge];
+Hopefully1 [style=filled, fillcolor=white, label=Hopefully];
+emerge7 -> Hopefully1  [label=advmod];
+picture5 [style=filled, fillcolor=white, label=picture];
+a3 [style=filled, fillcolor=white, label=a];
+picture5 -> a3  [label=det];
+clearer4 [style=filled, fillcolor=white, label=clearer];
+picture5 -> clearer4  [label=amod];
+emerge7 -> picture5  [label=nsubj];
+will6 [style=filled, fillcolor=white, label=will];
+emerge7 -> will6  [label=aux];
+emerge7 -> emerge7  [label=root];
+analysis9 [style=filled, fillcolor=white, label=analysis];
+emerge7 -> analysis9  [label=prep_through];
+responders12 [style=filled, fillcolor=white, label=responders];
+exceptional11 [style=filled, fillcolor=white, label=exceptional];
+responders12 -> exceptional11  [label=amod];
+analysis9 -> responders12  [label=prep_of];
+mechanisms16 [style=filled, fillcolor=white, label=mechanisms];
+deciphering15 [style=filled, fillcolor=white, label=deciphering];
+mechanisms16 -> deciphering15  [label=amod];
+analysis9 -> mechanisms16  [label=conj_or];
+resistance19 [style=filled, fillcolor=white, label=resistance];
+drug18 [style=filled, fillcolor=white, label=drug];
+resistance19 -> drug18  [label=nn];
+mechanisms16 -> resistance19  [label=prep_of];
+}

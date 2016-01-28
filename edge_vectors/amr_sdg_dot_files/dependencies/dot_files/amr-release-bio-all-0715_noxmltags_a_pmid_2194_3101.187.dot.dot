@@ -1,0 +1,64 @@
+digraph "Considering that these cell lines bear mutation in KRASG13D and BRAFV600E respectively ,  RhoA depletion was also performed in selected clones where KRASG13D ( DKO4 ) or BRAFV600E ( HTshBR3 ) was knocked out or down regulated via shRNA respectively ." {
+label="Considering that these cell lines bear mutation in KRASG13D and BRAFV600E
+respectively ,  RhoA depletion was also performed in selected clones where
+KRASG13D ( DKO4 ) or BRAFV600E ( HTshBR3 ) was knocked out or down regulated via
+shRNA respectively .";
+performed18 [style=filled, fillcolor=white, label=performed];
+Considering1 [style=filled, fillcolor=white, label=Considering];
+performed18 -> Considering1  [label=dep];
+bear6 [style=filled, fillcolor=white, label=bear];
+that2 [style=filled, fillcolor=white, label=that];
+bear6 -> that2  [label=mark];
+lines5 [style=filled, fillcolor=white, label=lines];
+these3 [style=filled, fillcolor=white, label=these];
+lines5 -> these3  [label=det];
+cell4 [style=filled, fillcolor=white, label=cell];
+lines5 -> cell4  [label=nn];
+bear6 -> lines5  [label=nsubj];
+Considering1 -> bear6  [label=pcomp];
+mutation7 [style=filled, fillcolor=white, label=mutation];
+bear6 -> mutation7  [label=dobj];
+KRASG13D9 [style=filled, fillcolor=white, label=KRASG13D];
+mutation7 -> KRASG13D9  [label=prep_in];
+BRAFV600E11 [style=filled, fillcolor=white, label=BRAFV600E];
+KRASG13D9 -> BRAFV600E11  [label=conj_and];
+respectively12 [style=filled, fillcolor=white, label=respectively];
+bear6 -> respectively12  [label=advmod];
+depletion15 [style=filled, fillcolor=white, label=depletion];
+RhoA14 [style=filled, fillcolor=white, label=RhoA];
+depletion15 -> RhoA14  [label=nn];
+performed18 -> depletion15  [label=nsubjpass];
+was16 [style=filled, fillcolor=white, label=was];
+performed18 -> was16  [label=auxpass];
+also17 [style=filled, fillcolor=white, label=also];
+performed18 -> also17  [label=advmod];
+performed18 -> performed18  [label=root];
+clones21 [style=filled, fillcolor=white, label=clones];
+selected20 [style=filled, fillcolor=white, label=selected];
+clones21 -> selected20  [label=amod];
+performed18 -> clones21  [label=prep_in];
+knocked33 [style=filled, fillcolor=white, label=knocked];
+where22 [style=filled, fillcolor=white, label=where];
+knocked33 -> where22  [label=advmod];
+KRASG13D2 [style=filled, fillcolor=white, label=KRASG13D];
+knocked33 -> KRASG13D2  [label=nsubjpass];
+DKO425 [style=filled, fillcolor=white, label=DKO4];
+KRASG13D2 -> DKO425  [label=appos];
+BRAFV600E28 [style=filled, fillcolor=white, label=BRAFV600E];
+KRASG13D2 -> BRAFV600E28  [label=conj_or];
+HTshBR330 [style=filled, fillcolor=white, label=HTshBR3];
+BRAFV600E28 -> HTshBR330  [label=appos];
+was32 [style=filled, fillcolor=white, label=was];
+knocked33 -> was32  [label=auxpass];
+clones21 -> knocked33  [label=rcmod];
+out34 [style=filled, fillcolor=white, label=out];
+knocked33 -> out34  [label=prt];
+regulated37 [style=filled, fillcolor=white, label=regulated];
+down36 [style=filled, fillcolor=white, label=down];
+regulated37 -> down36  [label=advmod];
+knocked33 -> regulated37  [label=conj_or];
+shRNA39 [style=filled, fillcolor=white, label=shRNA];
+regulated37 -> shRNA39  [label=prep_via];
+respectively40 [style=filled, fillcolor=white, label=respectively];
+regulated37 -> respectively40  [label=advmod];
+}

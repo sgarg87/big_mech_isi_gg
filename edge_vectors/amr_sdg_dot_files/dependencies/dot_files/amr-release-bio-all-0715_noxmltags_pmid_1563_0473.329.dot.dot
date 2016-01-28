@@ -1,0 +1,30 @@
+digraph "Insets denote magnified tail segments ,  which displayed a mosaic ,  flaky appearance in Tg mice ." {
+label="Insets denote magnified tail segments ,  which displayed a mosaic ,  flaky
+appearance in Tg mice .";
+magnified3 [style=filled, fillcolor=white, label=magnified];
+Insets1 [style=filled, fillcolor=white, label=Insets];
+magnified3 -> Insets1  [label=nsubj];
+denote2 [style=filled, fillcolor=white, label=denote];
+magnified3 -> denote2  [label=advmod];
+magnified3 -> magnified3  [label=root];
+segments5 [style=filled, fillcolor=white, label=segments];
+tail4 [style=filled, fillcolor=white, label=tail];
+segments5 -> tail4  [label=amod];
+magnified3 -> segments5  [label=dobj];
+displayed8 [style=filled, fillcolor=white, label=displayed];
+which7 [style=filled, fillcolor=white, label=which];
+displayed8 -> which7  [label=nsubj];
+segments5 -> displayed8  [label=rcmod];
+appearance13 [style=filled, fillcolor=white, label=appearance];
+a9 [style=filled, fillcolor=white, label=a];
+appearance13 -> a9  [label=det];
+mosaic10 [style=filled, fillcolor=white, label=mosaic];
+appearance13 -> mosaic10  [label=amod];
+flaky12 [style=filled, fillcolor=white, label=flaky];
+appearance13 -> flaky12  [label=amod];
+displayed8 -> appearance13  [label=dobj];
+mice16 [style=filled, fillcolor=white, label=mice];
+Tg15 [style=filled, fillcolor=white, label=Tg];
+mice16 -> Tg15  [label=nn];
+displayed8 -> mice16  [label=prep_in];
+}

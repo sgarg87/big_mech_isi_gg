@@ -1,0 +1,56 @@
+digraph "Selective inhibition of either MEK ( by U0126 ) or PI3K ( by LY294002 ) significantly decreased basal proliferation ,  and blocked growth stimulated by macrophage co-culture to different extents in LM2 and JF32 cells ( Figure 4A and 4B ,  respectively ) ." {
+label="Selective inhibition of either MEK ( by U0126 ) or PI3K ( by LY294002 )
+significantly decreased basal proliferation ,  and blocked growth stimulated by
+macrophage co-culture to different extents in LM2 and JF32 cells ( Figure 4A and
+4B ,  respectively ) .";
+inhibition2 [style=filled, fillcolor=white, label=inhibition];
+Selective1 [style=filled, fillcolor=white, label=Selective];
+inhibition2 -> Selective1  [label=amod];
+decreased17 [style=filled, fillcolor=white, label=decreased];
+decreased17 -> inhibition2  [label=nsubj];
+MEK5 [style=filled, fillcolor=white, label=MEK];
+either4 [style=filled, fillcolor=white, label=either];
+MEK5 -> either4  [label=det];
+inhibition2 -> MEK5  [label=prep_of];
+U01268 [style=filled, fillcolor=white, label=U0126];
+MEK5 -> U01268  [label=prep_by];
+PI3K11 [style=filled, fillcolor=white, label=PI3K];
+MEK5 -> PI3K11  [label=conj_or];
+LY2940021 [style=filled, fillcolor=white, label=LY294002];
+MEK5 -> LY2940021  [label=prep_by];
+significantly16 [style=filled, fillcolor=white, label=significantly];
+decreased17 -> significantly16  [label=advmod];
+decreased17 -> decreased17  [label=root];
+proliferation19 [style=filled, fillcolor=white, label=proliferation];
+basal18 [style=filled, fillcolor=white, label=basal];
+proliferation19 -> basal18  [label=amod];
+decreased17 -> proliferation19  [label=dobj];
+blocked22 [style=filled, fillcolor=white, label=blocked];
+decreased17 -> blocked22  [label=conj_and];
+growth23 [style=filled, fillcolor=white, label=growth];
+blocked22 -> growth23  [label=dobj];
+stimulated24 [style=filled, fillcolor=white, label=stimulated];
+growth23 -> stimulated24  [label=vmod];
+cells35 [style=filled, fillcolor=white, label=cells];
+macrophage26 [style=filled, fillcolor=white, label=macrophage];
+cells35 -> macrophage26  [label=amod];
+"co-culture27" [style=filled, fillcolor=white, label="co-culture"];
+cells35 -> "co-culture27"  [label=amod];
+extents30 [style=filled, fillcolor=white, label=extents];
+different29 [style=filled, fillcolor=white, label=different];
+extents30 -> different29  [label=amod];
+"co-culture27" -> extents30  [label=prep_to];
+LM23 [style=filled, fillcolor=white, label=LM2];
+extents30 -> LM23  [label=prep_in];
+JF3234 [style=filled, fillcolor=white, label=JF32];
+LM23 -> JF3234  [label=conj_and];
+stimulated24 -> cells35  [label=agent];
+Figure37 [style=filled, fillcolor=white, label=Figure];
+cells35 -> Figure37  [label=dep];
+"4A38" [style=filled, fillcolor=white, label="4A"];
+Figure37 -> "4A38"  [label=num];
+"4B40" [style=filled, fillcolor=white, label="4B"];
+Figure37 -> "4B40"  [label=conj_and];
+respectively42 [style=filled, fillcolor=white, label=respectively];
+Figure37 -> respectively42  [label=advmod];
+}

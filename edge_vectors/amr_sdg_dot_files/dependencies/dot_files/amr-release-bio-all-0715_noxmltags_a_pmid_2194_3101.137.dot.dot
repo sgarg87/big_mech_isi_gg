@@ -1,0 +1,53 @@
+digraph "It is of interest that the phenotype of Caco-BR cells resembles that of DLD-1 cells ( KRASG13D ) ,  especially since both of these cell types share high levels of p-BRAF ( later analyzed ) ." {
+label="It is of interest that the phenotype of Caco-BR cells resembles that of DLD-1
+cells ( KRASG13D ) ,  especially since both of these cell types share high
+levels of p-BRAF ( later analyzed ) .";
+is2 [style=filled, fillcolor=white, label=is];
+It1 [style=filled, fillcolor=white, label=It];
+is2 -> It1  [label=nsubj];
+is2 -> is2  [label=root];
+interest4 [style=filled, fillcolor=white, label=interest];
+is2 -> interest4  [label=prep_of];
+resembles11 [style=filled, fillcolor=white, label=resembles];
+that5 [style=filled, fillcolor=white, label=that];
+resembles11 -> that5  [label=mark];
+phenotype7 [style=filled, fillcolor=white, label=phenotype];
+the6 [style=filled, fillcolor=white, label=the];
+phenotype7 -> the6  [label=det];
+resembles11 -> phenotype7  [label=nsubj];
+cells10 [style=filled, fillcolor=white, label=cells];
+"Caco-BR9" [style=filled, fillcolor=white, label="Caco-BR"];
+cells10 -> "Caco-BR9"  [label=amod];
+phenotype7 -> cells10  [label=prep_of];
+is2 -> resembles11  [label=ccomp];
+that12 [style=filled, fillcolor=white, label=that];
+resembles11 -> that12  [label=xcomp];
+cells15 [style=filled, fillcolor=white, label=cells];
+"DLD-14" [style=filled, fillcolor=white, label="DLD-1"];
+cells15 -> "DLD-14"  [label=nn];
+that12 -> cells15  [label=prep_of];
+KRASG13D17 [style=filled, fillcolor=white, label=KRASG13D];
+cells15 -> KRASG13D17  [label=appos];
+levels29 [style=filled, fillcolor=white, label=levels];
+especially20 [style=filled, fillcolor=white, label=especially];
+levels29 -> especially20  [label=amod];
+both22 [style=filled, fillcolor=white, label=both];
+especially20 -> both22  [label=prep_since];
+share27 [style=filled, fillcolor=white, label=share];
+these24 [style=filled, fillcolor=white, label=these];
+share27 -> these24  [label=det];
+cell25 [style=filled, fillcolor=white, label=cell];
+share27 -> cell25  [label=nn];
+types26 [style=filled, fillcolor=white, label=types];
+share27 -> types26  [label=nn];
+both22 -> share27  [label=prep_of];
+high28 [style=filled, fillcolor=white, label=high];
+levels29 -> high28  [label=amod];
+that12 -> levels29  [label=appos];
+"p-BRAF31" [style=filled, fillcolor=white, label="p-BRAF"];
+levels29 -> "p-BRAF31"  [label=prep_of];
+analyzed34 [style=filled, fillcolor=white, label=analyzed];
+later33 [style=filled, fillcolor=white, label=later];
+analyzed34 -> later33  [label=advmod];
+that12 -> analyzed34  [label=dep];
+}

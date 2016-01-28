@@ -1,0 +1,47 @@
+digraph "Compared with doxycycline-untreated bitransgenic mice ,  the expression levels of IL-1p ,  IL-6 ,  MIP-2 ,  and TNF-a were abnormally increased in the plasma of doxycycline-treated bitransgenic mice ( Figure 4A ) ." {
+label="Compared with doxycycline-untreated bitransgenic mice ,  the expression levels
+of IL-1p ,  IL-6 ,  MIP-2 ,  and TNF-a were abnormally increased in the plasma
+of doxycycline-treated bitransgenic mice ( Figure 4A ) .";
+increased21 [style=filled, fillcolor=white, label=increased];
+with2 [style=filled, fillcolor=white, label=with];
+increased21 -> with2  [label=prepc_compared_with];
+mice5 [style=filled, fillcolor=white, label=mice];
+"doxycycline-untreated3" [style=filled, fillcolor=white, label="doxycycline-untreated"];
+mice5 -> "doxycycline-untreated3"  [label=amod];
+bitransgenic4 [style=filled, fillcolor=white, label=bitransgenic];
+mice5 -> bitransgenic4  [label=amod];
+increased21 -> mice5  [label=pobj];
+levels9 [style=filled, fillcolor=white, label=levels];
+the7 [style=filled, fillcolor=white, label=the];
+levels9 -> the7  [label=det];
+expression8 [style=filled, fillcolor=white, label=expression];
+levels9 -> expression8  [label=nn];
+increased21 -> levels9  [label=nsubjpass];
+"IL-1p" [style=filled, fillcolor=white, label="IL-1p"];
+levels9 -> "IL-1p"  [label=prep_of];
+"IL-613" [style=filled, fillcolor=white, label="IL-6"];
+"IL-1p" -> "IL-613"  [label=conj_and];
+"MIP-215" [style=filled, fillcolor=white, label="MIP-2"];
+"IL-1p" -> "MIP-215"  [label=conj_and];
+"TNF-a18" [style=filled, fillcolor=white, label="TNF-a"];
+"IL-1p" -> "TNF-a18"  [label=conj_and];
+were19 [style=filled, fillcolor=white, label=were];
+increased21 -> were19  [label=auxpass];
+abnormally20 [style=filled, fillcolor=white, label=abnormally];
+increased21 -> abnormally20  [label=advmod];
+increased21 -> increased21  [label=root];
+plasma24 [style=filled, fillcolor=white, label=plasma];
+the23 [style=filled, fillcolor=white, label=the];
+plasma24 -> the23  [label=det];
+increased21 -> plasma24  [label=prep_in];
+mice28 [style=filled, fillcolor=white, label=mice];
+"doxycycline-treated26" [style=filled, fillcolor=white, label="doxycycline-treated"];
+mice28 -> "doxycycline-treated26"  [label=amod];
+bitransgenic27 [style=filled, fillcolor=white, label=bitransgenic];
+mice28 -> bitransgenic27  [label=amod];
+plasma24 -> mice28  [label=prep_of];
+Figure30 [style=filled, fillcolor=white, label=Figure];
+mice28 -> Figure30  [label=appos];
+"4A31" [style=filled, fillcolor=white, label="4A"];
+Figure30 -> "4A31"  [label=num];
+}

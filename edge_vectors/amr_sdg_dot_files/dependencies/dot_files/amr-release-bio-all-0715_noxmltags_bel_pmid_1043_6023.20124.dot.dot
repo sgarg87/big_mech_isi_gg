@@ -1,0 +1,38 @@
+digraph "pRb binds and activates C/EBP ( Chen et al. ,  1996a ,  b ) . The binding of C/EBP to its DNA recognition elements is enhanced ." {
+label="pRb binds and activates C/EBP ( Chen et al. ,  1996a ,  b ) . The binding of
+C/EBP to its DNA recognition elements is enhanced .";
+binds2 [style=filled, fillcolor=white, label=binds];
+pRb1 [style=filled, fillcolor=white, label=pRb];
+binds2 -> pRb1  [label=nn];
+enhanced26 [style=filled, fillcolor=white, label=enhanced];
+enhanced26 -> binds2  [label=nsubjpass];
+"C/EBP5" [style=filled, fillcolor=white, label="C/EBP"];
+activates4 [style=filled, fillcolor=white, label=activates];
+"C/EBP5" -> activates4  [label=amod];
+binds2 -> "C/EBP5"  [label=conj_and];
+Chen7 [style=filled, fillcolor=white, label=Chen];
+"C/EBP5" -> Chen7  [label=dep];
+"al.9" [style=filled, fillcolor=white, label="al."];
+Chen7 -> "al.9"  [label=conj_et];
+"1996a" [style=filled, fillcolor=white, label="1996a"];
+Chen7 -> "1996a"  [label=appos];
+b13 [style=filled, fillcolor=white, label=b];
+Chen7 -> b13  [label=appos];
+binding17 [style=filled, fillcolor=white, label=binding];
+The16 [style=filled, fillcolor=white, label=The];
+binding17 -> The16  [label=det];
+"C/EBP5" -> binding17  [label=dep];
+"C/EBP19" [style=filled, fillcolor=white, label="C/EBP"];
+binding17 -> "C/EBP19"  [label=prep_of];
+elements24 [style=filled, fillcolor=white, label=elements];
+its21 [style=filled, fillcolor=white, label=its];
+elements24 -> its21  [label=poss];
+DNA22 [style=filled, fillcolor=white, label=DNA];
+elements24 -> DNA22  [label=nn];
+recognition23 [style=filled, fillcolor=white, label=recognition];
+elements24 -> recognition23  [label=nn];
+"C/EBP19" -> elements24  [label=prep_to];
+is25 [style=filled, fillcolor=white, label=is];
+enhanced26 -> is25  [label=auxpass];
+enhanced26 -> enhanced26  [label=root];
+}

@@ -1,0 +1,36 @@
+digraph "Note that with age ,  affected areas of the Tg epidermis became increasingly undulating ,  often exhibiting papilloma-like invaginations ( J ) ." {
+label="Note that with age ,  affected areas of the Tg epidermis became increasingly
+undulating ,  often exhibiting papilloma-like invaginations ( J ) .";
+Note1 [style=filled, fillcolor=white, label=Note];
+Note1 -> Note1  [label=root];
+became12 [style=filled, fillcolor=white, label=became];
+that2 [style=filled, fillcolor=white, label=that];
+became12 -> that2  [label=mark];
+age4 [style=filled, fillcolor=white, label=age];
+became12 -> age4  [label=prep_with];
+areas7 [style=filled, fillcolor=white, label=areas];
+affected6 [style=filled, fillcolor=white, label=affected];
+areas7 -> affected6  [label=amod];
+became12 -> areas7  [label=nsubj];
+epidermis11 [style=filled, fillcolor=white, label=epidermis];
+the9 [style=filled, fillcolor=white, label=the];
+epidermis11 -> the9  [label=det];
+Tg10 [style=filled, fillcolor=white, label=Tg];
+epidermis11 -> Tg10  [label=nn];
+areas7 -> epidermis11  [label=prep_of];
+Note1 -> became12  [label=ccomp];
+undulating14 [style=filled, fillcolor=white, label=undulating];
+increasingly13 [style=filled, fillcolor=white, label=increasingly];
+undulating14 -> increasingly13  [label=advmod];
+became12 -> undulating14  [label=acomp];
+exhibiting17 [style=filled, fillcolor=white, label=exhibiting];
+often16 [style=filled, fillcolor=white, label=often];
+exhibiting17 -> often16  [label=advmod];
+became12 -> exhibiting17  [label=xcomp];
+invaginations19 [style=filled, fillcolor=white, label=invaginations];
+"papilloma-like18" [style=filled, fillcolor=white, label="papilloma-like"];
+invaginations19 -> "papilloma-like18"  [label=amod];
+exhibiting17 -> invaginations19  [label=dobj];
+J21 [style=filled, fillcolor=white, label=J];
+invaginations19 -> J21  [label=appos];
+}

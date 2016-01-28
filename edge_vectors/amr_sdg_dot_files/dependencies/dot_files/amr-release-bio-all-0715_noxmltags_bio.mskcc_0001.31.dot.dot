@@ -1,0 +1,55 @@
+digraph "As shown in Fig. 4A ,  the FBm or S729A mutation had no effect on transformation induced by the V600E or G469A B-Raf protein ,  both of which possess high kinase activity ." {
+label="As shown in Fig. 4A ,  the FBm or S729A mutation had no effect on
+transformation induced by the V600E or G469A B-Raf protein ,  both of which
+possess high kinase activity .";
+shown2 [style=filled, fillcolor=white, label=shown];
+As1 [style=filled, fillcolor=white, label=As];
+shown2 -> As1  [label=mark];
+had12 [style=filled, fillcolor=white, label=had];
+had12 -> shown2  [label=advcl];
+"Fig.4" [style=filled, fillcolor=white, label="Fig."];
+shown2 -> "Fig.4"  [label=prep_in];
+"4A5" [style=filled, fillcolor=white, label="4A"];
+"Fig.4" -> "4A5"  [label=num];
+mutation11 [style=filled, fillcolor=white, label=mutation];
+the7 [style=filled, fillcolor=white, label=the];
+mutation11 -> the7  [label=det];
+FBm8 [style=filled, fillcolor=white, label=FBm];
+mutation11 -> FBm8  [label=nn];
+S729A10 [style=filled, fillcolor=white, label=S729A];
+FBm8 -> S729A10  [label=conj_or];
+had12 -> mutation11  [label=nsubj];
+had12 -> had12  [label=root];
+effect14 [style=filled, fillcolor=white, label=effect];
+no13 [style=filled, fillcolor=white, label=no];
+effect14 -> no13  [label=neg];
+had12 -> effect14  [label=dobj];
+transformation16 [style=filled, fillcolor=white, label=transformation];
+effect14 -> transformation16  [label=prep_on];
+induced17 [style=filled, fillcolor=white, label=induced];
+transformation16 -> induced17  [label=vmod];
+V600E2 [style=filled, fillcolor=white, label=V600E];
+the19 [style=filled, fillcolor=white, label=the];
+V600E2 -> the19  [label=det];
+induced17 -> V600E2  [label=agent];
+protein24 [style=filled, fillcolor=white, label=protein];
+G469A22 [style=filled, fillcolor=white, label=G469A];
+protein24 -> G469A22  [label=nn];
+"B-Raf23" [style=filled, fillcolor=white, label="B-Raf"];
+protein24 -> "B-Raf23"  [label=nn];
+V600E2 -> protein24  [label=conj_or];
+of27 [style=filled, fillcolor=white, label=of];
+both26 [style=filled, fillcolor=white, label=both];
+of27 -> both26  [label=dep];
+possess29 [style=filled, fillcolor=white, label=possess];
+possess29 -> of27  [label=nsubj];
+which28 [style=filled, fillcolor=white, label=which];
+of27 -> which28  [label=pobj];
+V600E2 -> possess29  [label=rcmod];
+activity32 [style=filled, fillcolor=white, label=activity];
+high30 [style=filled, fillcolor=white, label=high];
+activity32 -> high30  [label=amod];
+kinase31 [style=filled, fillcolor=white, label=kinase];
+activity32 -> kinase31  [label=nn];
+possess29 -> activity32  [label=dobj];
+}

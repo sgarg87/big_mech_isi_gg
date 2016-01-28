@@ -1,0 +1,23 @@
+digraph "This disease is now called Legius syndrome ( Brems et al. ,  2007 ) ." {
+label="This disease is now called Legius syndrome ( Brems et al. ,  2007 ) .";
+disease2 [style=filled, fillcolor=white, label=disease];
+This1 [style=filled, fillcolor=white, label=This];
+disease2 -> This1  [label=det];
+called5 [style=filled, fillcolor=white, label=called];
+called5 -> disease2  [label=nsubjpass];
+is3 [style=filled, fillcolor=white, label=is];
+called5 -> is3  [label=auxpass];
+now4 [style=filled, fillcolor=white, label=now];
+called5 -> now4  [label=advmod];
+called5 -> called5  [label=root];
+syndrome7 [style=filled, fillcolor=white, label=syndrome];
+Legius6 [style=filled, fillcolor=white, label=Legius];
+syndrome7 -> Legius6  [label=nn];
+called5 -> syndrome7  [label=dobj];
+Brems9 [style=filled, fillcolor=white, label=Brems];
+syndrome7 -> Brems9  [label=appos];
+"al.11" [style=filled, fillcolor=white, label="al."];
+Brems9 -> "al.11"  [label=conj_et];
+200713 [style=filled, fillcolor=white, label=2007];
+Brems9 -> 200713  [label=dep];
+}

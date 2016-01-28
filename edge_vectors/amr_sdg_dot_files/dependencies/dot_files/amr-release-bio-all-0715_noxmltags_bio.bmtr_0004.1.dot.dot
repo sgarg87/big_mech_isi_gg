@@ -1,0 +1,22 @@
+digraph "Site-Specific Monoubiquitination Activates Ras by Impeding GTPase Activating Protein ( PMC3537887 )" {
+label="Site-Specific Monoubiquitination Activates Ras by Impeding GTPase Activating
+Protein ( PMC3537887 )";
+Ras4 [style=filled, fillcolor=white, label=Ras];
+"Site-Specific1" [style=filled, fillcolor=white, label="Site-Specific"];
+Ras4 -> "Site-Specific1"  [label=nn];
+Monoubiquitination2 [style=filled, fillcolor=white, label=Monoubiquitination];
+Ras4 -> Monoubiquitination2  [label=nn];
+Activates3 [style=filled, fillcolor=white, label=Activates];
+Ras4 -> Activates3  [label=nn];
+Ras4 -> Ras4  [label=root];
+Protein9 [style=filled, fillcolor=white, label=Protein];
+Impeding6 [style=filled, fillcolor=white, label=Impeding];
+Protein9 -> Impeding6  [label=nn];
+GTPase7 [style=filled, fillcolor=white, label=GTPase];
+Protein9 -> GTPase7  [label=nn];
+Activating8 [style=filled, fillcolor=white, label=Activating];
+Protein9 -> Activating8  [label=nn];
+Ras4 -> Protein9  [label=prep_by];
+PMC353788711 [style=filled, fillcolor=white, label=PMC3537887];
+Protein9 -> PMC353788711  [label=appos];
+}

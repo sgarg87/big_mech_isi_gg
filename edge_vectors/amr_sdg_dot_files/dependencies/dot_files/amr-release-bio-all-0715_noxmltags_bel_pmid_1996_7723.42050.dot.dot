@@ -1,0 +1,33 @@
+digraph "In particular ,  a6-integrin-deficient endothelial cells displayed increased levels of VEGF-receptor 2 ( VEGFR2 ) and VEGF-mediated downstream ERK1/2 activation ." {
+label="In particular ,  a6-integrin-deficient endothelial cells displayed increased
+levels of VEGF-receptor 2 ( VEGFR2 ) and VEGF-mediated downstream ERK1/2
+activation .";
+displayed7 [style=filled, fillcolor=white, label=displayed];
+particular2 [style=filled, fillcolor=white, label=particular];
+displayed7 -> particular2  [label=prep_in];
+cells6 [style=filled, fillcolor=white, label=cells];
+"a6-integrin-deficient4" [style=filled, fillcolor=white, label="a6-integrin-deficient"];
+cells6 -> "a6-integrin-deficient4"  [label=amod];
+endothelial5 [style=filled, fillcolor=white, label=endothelial];
+cells6 -> endothelial5  [label=amod];
+displayed7 -> cells6  [label=nsubj];
+displayed7 -> displayed7  [label=root];
+levels9 [style=filled, fillcolor=white, label=levels];
+increased8 [style=filled, fillcolor=white, label=increased];
+levels9 -> increased8  [label=amod];
+displayed7 -> levels9  [label=dobj];
+"VEGF-receptor11" [style=filled, fillcolor=white, label="VEGF-receptor"];
+levels9 -> "VEGF-receptor11"  [label=prep_of];
+21 [style=filled, fillcolor=white, label=2];
+"VEGF-receptor11" -> 21  [label=num];
+VEGFR214 [style=filled, fillcolor=white, label=VEGFR2];
+levels9 -> VEGFR214  [label=appos];
+activation20 [style=filled, fillcolor=white, label=activation];
+"VEGF-mediated17" [style=filled, fillcolor=white, label="VEGF-mediated"];
+activation20 -> "VEGF-mediated17"  [label=amod];
+downstream18 [style=filled, fillcolor=white, label=downstream];
+activation20 -> downstream18  [label=amod];
+"ERK1/219" [style=filled, fillcolor=white, label="ERK1/2"];
+activation20 -> "ERK1/219"  [label=nn];
+levels9 -> activation20  [label=conj_and];
+}

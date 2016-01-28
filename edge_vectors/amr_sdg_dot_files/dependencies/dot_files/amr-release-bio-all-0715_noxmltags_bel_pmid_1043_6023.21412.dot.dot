@@ -1,0 +1,51 @@
+digraph "Cyclin B is degraded late in mitosis through the ubiquitin-protein ligase ( E3 ) activity of the anaphase-promoting complex ,  which is probably activated by phosphorylation by Plk1 ( Glover et al. ,  1998 ) ." {
+label="Cyclin B is degraded late in mitosis through the ubiquitin-protein ligase ( E3
+) activity of the anaphase-promoting complex ,  which is probably activated by
+phosphorylation by Plk1 ( Glover et al. ,  1998 ) .";
+B2 [style=filled, fillcolor=white, label=B];
+Cyclin1 [style=filled, fillcolor=white, label=Cyclin];
+B2 -> Cyclin1  [label=nn];
+degraded4 [style=filled, fillcolor=white, label=degraded];
+degraded4 -> B2  [label=nsubj];
+is3 [style=filled, fillcolor=white, label=is];
+degraded4 -> is3  [label=aux];
+degraded4 -> degraded4  [label=root];
+late5 [style=filled, fillcolor=white, label=late];
+degraded4 -> late5  [label=advmod];
+mitosis7 [style=filled, fillcolor=white, label=mitosis];
+late5 -> mitosis7  [label=prep_in];
+activity15 [style=filled, fillcolor=white, label=activity];
+the9 [style=filled, fillcolor=white, label=the];
+activity15 -> the9  [label=det];
+ligase11 [style=filled, fillcolor=white, label=ligase];
+"ubiquitin-protein10" [style=filled, fillcolor=white, label="ubiquitin-protein"];
+ligase11 -> "ubiquitin-protein10"  [label=amod];
+activity15 -> ligase11  [label=amod];
+E31 [style=filled, fillcolor=white, label=E3];
+activity15 -> E31  [label=appos];
+degraded4 -> activity15  [label=prep_through];
+complex19 [style=filled, fillcolor=white, label=complex];
+the17 [style=filled, fillcolor=white, label=the];
+complex19 -> the17  [label=det];
+"anaphase-promoting18" [style=filled, fillcolor=white, label="anaphase-promoting"];
+complex19 -> "anaphase-promoting18"  [label=amod];
+activity15 -> complex19  [label=prep_of];
+activated24 [style=filled, fillcolor=white, label=activated];
+which21 [style=filled, fillcolor=white, label=which];
+activated24 -> which21  [label=nsubjpass];
+is22 [style=filled, fillcolor=white, label=is];
+activated24 -> is22  [label=auxpass];
+probably23 [style=filled, fillcolor=white, label=probably];
+activated24 -> probably23  [label=advmod];
+complex19 -> activated24  [label=rcmod];
+phosphorylation26 [style=filled, fillcolor=white, label=phosphorylation];
+activated24 -> phosphorylation26  [label=agent];
+Plk128 [style=filled, fillcolor=white, label=Plk1];
+activated24 -> Plk128  [label=agent];
+Glover30 [style=filled, fillcolor=white, label=Glover];
+activity15 -> Glover30  [label=appos];
+"al.32" [style=filled, fillcolor=white, label="al."];
+Glover30 -> "al.32"  [label=conj_et];
+199834 [style=filled, fillcolor=white, label=1998];
+Glover30 -> 199834  [label=dep];
+}

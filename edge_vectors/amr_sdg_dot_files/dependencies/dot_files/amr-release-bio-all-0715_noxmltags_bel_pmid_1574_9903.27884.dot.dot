@@ -1,0 +1,58 @@
+digraph "We compared CLPMphi gene expression profiles of wild-type mice with IL-10-deficient mice ,  and identified genes that are selectively expressed in wild-type CLPMphi . These genes included nuclear IkappaB proteins such as Bcl-3 and IkappaBNS ." {
+label="We compared CLPMphi gene expression profiles of wild-type mice with
+IL-10-deficient mice ,  and identified genes that are selectively expressed in
+wild-type CLPMphi . These genes included nuclear IkappaB proteins such as Bcl-3
+and IkappaBNS .";
+compared2 [style=filled, fillcolor=white, label=compared];
+We1 [style=filled, fillcolor=white, label=We];
+compared2 -> We1  [label=nsubj];
+compared2 -> compared2  [label=root];
+profiles6 [style=filled, fillcolor=white, label=profiles];
+CLPMphi3 [style=filled, fillcolor=white, label=CLPMphi];
+profiles6 -> CLPMphi3  [label=nn];
+gene4 [style=filled, fillcolor=white, label=gene];
+profiles6 -> gene4  [label=nn];
+expression5 [style=filled, fillcolor=white, label=expression];
+profiles6 -> expression5  [label=nn];
+compared2 -> profiles6  [label=dobj];
+mice9 [style=filled, fillcolor=white, label=mice];
+"wild-type8" [style=filled, fillcolor=white, label="wild-type"];
+mice9 -> "wild-type8"  [label=amod];
+profiles6 -> mice9  [label=prep_of];
+mice12 [style=filled, fillcolor=white, label=mice];
+"IL-10-deficient" [style=filled, fillcolor=white, label="IL-10-deficient"];
+mice12 -> "IL-10-deficient"  [label=nn];
+compared2 -> mice12  [label=prep_with];
+included27 [style=filled, fillcolor=white, label=included];
+identified15 [style=filled, fillcolor=white, label=identified];
+included27 -> identified15  [label=dep];
+genes16 [style=filled, fillcolor=white, label=genes];
+identified15 -> genes16  [label=dobj];
+expressed20 [style=filled, fillcolor=white, label=expressed];
+that17 [style=filled, fillcolor=white, label=that];
+expressed20 -> that17  [label=nsubjpass];
+are18 [style=filled, fillcolor=white, label=are];
+expressed20 -> are18  [label=auxpass];
+selectively19 [style=filled, fillcolor=white, label=selectively];
+expressed20 -> selectively19  [label=advmod];
+genes16 -> expressed20  [label=rcmod];
+CLPMphi23 [style=filled, fillcolor=white, label=CLPMphi];
+"wild-type22" [style=filled, fillcolor=white, label="wild-type"];
+CLPMphi23 -> "wild-type22"  [label=amod];
+expressed20 -> CLPMphi23  [label=prep_in];
+genes26 [style=filled, fillcolor=white, label=genes];
+These25 [style=filled, fillcolor=white, label=These];
+genes26 -> These25  [label=det];
+included27 -> genes26  [label=nsubj];
+compared2 -> included27  [label=conj_and];
+proteins30 [style=filled, fillcolor=white, label=proteins];
+nuclear28 [style=filled, fillcolor=white, label=nuclear];
+proteins30 -> nuclear28  [label=amod];
+IkappaB29 [style=filled, fillcolor=white, label=IkappaB];
+proteins30 -> IkappaB29  [label=nn];
+included27 -> proteins30  [label=dobj];
+"Bcl-3" [style=filled, fillcolor=white, label="Bcl-3"];
+proteins30 -> "Bcl-3"  [label=prep_such_as];
+IkappaBNS35 [style=filled, fillcolor=white, label=IkappaBNS];
+"Bcl-3" -> IkappaBNS35  [label=conj_and];
+}

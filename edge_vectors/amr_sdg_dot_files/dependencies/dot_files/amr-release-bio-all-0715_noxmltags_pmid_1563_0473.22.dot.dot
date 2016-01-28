@@ -1,0 +1,36 @@
+digraph "Among the few dispensable organs ,  hair follicles offer an excellent model system to study epithelial bud formation ." {
+label="Among the few dispensable organs ,  hair follicles offer an excellent model
+system to study epithelial bud formation .";
+organs5 [style=filled, fillcolor=white, label=organs];
+the2 [style=filled, fillcolor=white, label=the];
+organs5 -> the2  [label=det];
+few3 [style=filled, fillcolor=white, label=few];
+organs5 -> few3  [label=amod];
+dispensable4 [style=filled, fillcolor=white, label=dispensable];
+organs5 -> dispensable4  [label=amod];
+offer9 [style=filled, fillcolor=white, label=offer];
+offer9 -> organs5  [label=prep_among];
+follicles8 [style=filled, fillcolor=white, label=follicles];
+hair7 [style=filled, fillcolor=white, label=hair];
+follicles8 -> hair7  [label=nn];
+offer9 -> follicles8  [label=nsubj];
+offer9 -> offer9  [label=root];
+system13 [style=filled, fillcolor=white, label=system];
+an10 [style=filled, fillcolor=white, label=an];
+system13 -> an10  [label=det];
+excellent11 [style=filled, fillcolor=white, label=excellent];
+system13 -> excellent11  [label=amod];
+model12 [style=filled, fillcolor=white, label=model];
+system13 -> model12  [label=nn];
+offer9 -> system13  [label=dobj];
+study15 [style=filled, fillcolor=white, label=study];
+to14 [style=filled, fillcolor=white, label=to];
+study15 -> to14  [label=aux];
+offer9 -> study15  [label=xcomp];
+formation18 [style=filled, fillcolor=white, label=formation];
+epithelial16 [style=filled, fillcolor=white, label=epithelial];
+formation18 -> epithelial16  [label=amod];
+bud17 [style=filled, fillcolor=white, label=bud];
+formation18 -> bud17  [label=nn];
+study15 -> formation18  [label=dobj];
+}

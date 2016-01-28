@@ -1,0 +1,40 @@
+digraph "In PBMC ,  LPS significantly induced G-CSF and interleukin ( IL ) -1 ,  an inducer of G-CSF . Both were partly inhibited by IL-4 ,  IL-6 and IL-10 ." {
+label="In PBMC ,  LPS significantly induced G-CSF and interleukin ( IL ) -1 ,  an
+inducer of G-CSF . Both were partly inhibited by IL-4 ,  IL-6 and IL-10 .";
+inhibited23 [style=filled, fillcolor=white, label=inhibited];
+PBMC2 [style=filled, fillcolor=white, label=PBMC];
+inhibited23 -> PBMC2  [label=prep_in];
+induced6 [style=filled, fillcolor=white, label=induced];
+LPS4 [style=filled, fillcolor=white, label=LPS];
+induced6 -> LPS4  [label=advmod];
+significantly5 [style=filled, fillcolor=white, label=significantly];
+induced6 -> significantly5  [label=advmod];
+inhibited23 -> induced6  [label=parataxis];
+"G-CSF7" [style=filled, fillcolor=white, label="G-CSF"];
+induced6 -> "G-CSF7"  [label=dobj];
+interleukin9 [style=filled, fillcolor=white, label=interleukin];
+"G-CSF7" -> interleukin9  [label=conj_and];
+IL11 [style=filled, fillcolor=white, label=IL];
+"G-CSF7" -> IL11  [label=appos];
+"-13" [style=filled, fillcolor=white, label="-1"];
+induced6 -> "-13"  [label=nsubj];
+inducer16 [style=filled, fillcolor=white, label=inducer];
+an15 [style=filled, fillcolor=white, label=an];
+inducer16 -> an15  [label=det];
+"-13" -> inducer16  [label=appos];
+"G-CSF18" [style=filled, fillcolor=white, label="G-CSF"];
+inducer16 -> "G-CSF18"  [label=prep_of];
+Both20 [style=filled, fillcolor=white, label=Both];
+inhibited23 -> Both20  [label=nsubjpass];
+were21 [style=filled, fillcolor=white, label=were];
+inhibited23 -> were21  [label=auxpass];
+partly22 [style=filled, fillcolor=white, label=partly];
+inhibited23 -> partly22  [label=advmod];
+inhibited23 -> inhibited23  [label=root];
+"IL-425" [style=filled, fillcolor=white, label="IL-4"];
+inhibited23 -> "IL-425"  [label=agent];
+"IL-627" [style=filled, fillcolor=white, label="IL-6"];
+"IL-425" -> "IL-627"  [label=conj_and];
+"IL-1029" [style=filled, fillcolor=white, label="IL-10"];
+"IL-425" -> "IL-1029"  [label=conj_and];
+}

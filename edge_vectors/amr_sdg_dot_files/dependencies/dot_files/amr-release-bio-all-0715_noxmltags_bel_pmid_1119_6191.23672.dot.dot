@@ -1,0 +1,30 @@
+digraph "The IL-6-type cytokines ,  IL-6 and oncostatin M ,  simultaneously inhibited cell proliferation and increased cell migration" {
+label="The IL-6-type cytokines ,  IL-6 and oncostatin M ,  simultaneously inhibited
+cell proliferation and increased cell migration";
+cytokines3 [style=filled, fillcolor=white, label=cytokines];
+The1 [style=filled, fillcolor=white, label=The];
+cytokines3 -> The1  [label=det];
+"IL-6-type2" [style=filled, fillcolor=white, label="IL-6-type"];
+cytokines3 -> "IL-6-type2"  [label=nn];
+inhibited11 [style=filled, fillcolor=white, label=inhibited];
+inhibited11 -> cytokines3  [label=nsubj];
+"IL-65" [style=filled, fillcolor=white, label="IL-6"];
+cytokines3 -> "IL-65"  [label=appos];
+M8 [style=filled, fillcolor=white, label=M];
+oncostatin7 [style=filled, fillcolor=white, label=oncostatin];
+M8 -> oncostatin7  [label=nn];
+"IL-65" -> M8  [label=conj_and];
+simultaneously10 [style=filled, fillcolor=white, label=simultaneously];
+inhibited11 -> simultaneously10  [label=advmod];
+inhibited11 -> inhibited11  [label=root];
+proliferation13 [style=filled, fillcolor=white, label=proliferation];
+cell12 [style=filled, fillcolor=white, label=cell];
+proliferation13 -> cell12  [label=nn];
+inhibited11 -> proliferation13  [label=dobj];
+migration17 [style=filled, fillcolor=white, label=migration];
+increased15 [style=filled, fillcolor=white, label=increased];
+migration17 -> increased15  [label=amod];
+cell16 [style=filled, fillcolor=white, label=cell];
+migration17 -> cell16  [label=nn];
+proliferation13 -> migration17  [label=conj_and];
+}

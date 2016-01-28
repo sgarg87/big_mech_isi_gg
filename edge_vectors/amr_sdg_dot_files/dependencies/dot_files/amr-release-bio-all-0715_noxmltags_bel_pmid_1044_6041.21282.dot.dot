@@ -1,0 +1,40 @@
+digraph "Yes and Lck are known to be enriched in rafts and may mediate the activation of Shc when Fyn is not expressed ." {
+label="Yes and Lck are known to be enriched in rafts and may mediate the activation of
+Shc when Fyn is not expressed .";
+known5 [style=filled, fillcolor=white, label=known];
+Yes1 [style=filled, fillcolor=white, label=Yes];
+known5 -> Yes1  [label=nsubjpass];
+Lck3 [style=filled, fillcolor=white, label=Lck];
+Yes1 -> Lck3  [label=conj_and];
+are4 [style=filled, fillcolor=white, label=are];
+known5 -> are4  [label=auxpass];
+known5 -> known5  [label=root];
+enriched8 [style=filled, fillcolor=white, label=enriched];
+to6 [style=filled, fillcolor=white, label=to];
+enriched8 -> to6  [label=aux];
+be7 [style=filled, fillcolor=white, label=be];
+enriched8 -> be7  [label=auxpass];
+known5 -> enriched8  [label=xcomp];
+rafts10 [style=filled, fillcolor=white, label=rafts];
+enriched8 -> rafts10  [label=prep_in];
+mediate13 [style=filled, fillcolor=white, label=mediate];
+may12 [style=filled, fillcolor=white, label=may];
+mediate13 -> may12  [label=aux];
+known5 -> mediate13  [label=conj_and];
+activation15 [style=filled, fillcolor=white, label=activation];
+the14 [style=filled, fillcolor=white, label=the];
+activation15 -> the14  [label=det];
+mediate13 -> activation15  [label=dobj];
+Shc17 [style=filled, fillcolor=white, label=Shc];
+activation15 -> Shc17  [label=prep_of];
+expressed22 [style=filled, fillcolor=white, label=expressed];
+when18 [style=filled, fillcolor=white, label=when];
+expressed22 -> when18  [label=advmod];
+Fyn19 [style=filled, fillcolor=white, label=Fyn];
+expressed22 -> Fyn19  [label=nsubjpass];
+is20 [style=filled, fillcolor=white, label=is];
+expressed22 -> is20  [label=auxpass];
+not21 [style=filled, fillcolor=white, label=not];
+expressed22 -> not21  [label=neg];
+mediate13 -> expressed22  [label=advcl];
+}

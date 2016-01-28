@@ -1,0 +1,28 @@
+digraph "Sifting through these converging pathways is likely to be a difficult and painstaking process ." {
+label="Sifting through these converging pathways is likely to be a difficult and
+painstaking process .";
+likely7 [style=filled, fillcolor=white, label=likely];
+Sifting1 [style=filled, fillcolor=white, label=Sifting];
+likely7 -> Sifting1  [label=csubj];
+pathways5 [style=filled, fillcolor=white, label=pathways];
+these3 [style=filled, fillcolor=white, label=these];
+pathways5 -> these3  [label=det];
+converging4 [style=filled, fillcolor=white, label=converging];
+pathways5 -> converging4  [label=amod];
+Sifting1 -> pathways5  [label=prep_through];
+is6 [style=filled, fillcolor=white, label=is];
+likely7 -> is6  [label=cop];
+likely7 -> likely7  [label=root];
+process14 [style=filled, fillcolor=white, label=process];
+to8 [style=filled, fillcolor=white, label=to];
+process14 -> to8  [label=aux];
+be9 [style=filled, fillcolor=white, label=be];
+process14 -> be9  [label=cop];
+a10 [style=filled, fillcolor=white, label=a];
+process14 -> a10  [label=det];
+difficult11 [style=filled, fillcolor=white, label=difficult];
+process14 -> difficult11  [label=amod];
+painstaking13 [style=filled, fillcolor=white, label=painstaking];
+difficult11 -> painstaking13  [label=conj_and];
+likely7 -> process14  [label=xcomp];
+}

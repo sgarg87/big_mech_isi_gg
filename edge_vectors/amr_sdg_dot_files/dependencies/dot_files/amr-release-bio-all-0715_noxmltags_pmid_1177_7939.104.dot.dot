@@ -1,0 +1,23 @@
+digraph "Conversely ,  no Ras-GEF activity could be detected ( Fig. 7 B ) ." {
+label="Conversely ,  no Ras-GEF activity could be detected ( Fig. 7 B ) .";
+detected8 [style=filled, fillcolor=white, label=detected];
+Conversely1 [style=filled, fillcolor=white, label=Conversely];
+detected8 -> Conversely1  [label=advmod];
+activity5 [style=filled, fillcolor=white, label=activity];
+no3 [style=filled, fillcolor=white, label=no];
+activity5 -> no3  [label=neg];
+"Ras-GEF4" [style=filled, fillcolor=white, label="Ras-GEF"];
+activity5 -> "Ras-GEF4"  [label=nn];
+detected8 -> activity5  [label=nsubjpass];
+could6 [style=filled, fillcolor=white, label=could];
+detected8 -> could6  [label=aux];
+be7 [style=filled, fillcolor=white, label=be];
+detected8 -> be7  [label=auxpass];
+detected8 -> detected8  [label=root];
+"Fig.10" [style=filled, fillcolor=white, label="Fig."];
+detected8 -> "Fig.10"  [label=dep];
+B12 [style=filled, fillcolor=white, label=B];
+711 [style=filled, fillcolor=white, label=7];
+B12 -> 711  [label=number];
+"Fig.10" -> B12  [label=num];
+}

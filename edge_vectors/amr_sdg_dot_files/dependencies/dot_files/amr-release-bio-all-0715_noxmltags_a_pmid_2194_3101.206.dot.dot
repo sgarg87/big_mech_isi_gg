@@ -1,0 +1,57 @@
+digraph "The formation of filopodia in these cells ,  earlier described ,  was in agreement with the high Cdc42 activity and is illustrated here by staining with antibody against Fascin ,  a filopodia marker ( Figure 7B ,  upper panel ) ." {
+label="The formation of filopodia in these cells ,  earlier described ,  was in
+agreement with the high Cdc42 activity and is illustrated here by staining with
+antibody against Fascin ,  a filopodia marker ( Figure 7B ,  upper panel ) .";
+formation2 [style=filled, fillcolor=white, label=formation];
+The1 [style=filled, fillcolor=white, label=The];
+formation2 -> The1  [label=det];
+was12 [style=filled, fillcolor=white, label=was];
+was12 -> formation2  [label=nsubj];
+filopodia4 [style=filled, fillcolor=white, label=filopodia];
+formation2 -> filopodia4  [label=prep_of];
+cells7 [style=filled, fillcolor=white, label=cells];
+these6 [style=filled, fillcolor=white, label=these];
+cells7 -> these6  [label=det];
+filopodia4 -> cells7  [label=prep_in];
+described10 [style=filled, fillcolor=white, label=described];
+earlier9 [style=filled, fillcolor=white, label=earlier];
+described10 -> earlier9  [label=advmod];
+formation2 -> described10  [label=vmod];
+was12 -> was12  [label=root];
+agreement14 [style=filled, fillcolor=white, label=agreement];
+was12 -> agreement14  [label=prep_in];
+activity19 [style=filled, fillcolor=white, label=activity];
+the16 [style=filled, fillcolor=white, label=the];
+activity19 -> the16  [label=det];
+high17 [style=filled, fillcolor=white, label=high];
+activity19 -> high17  [label=amod];
+Cdc4218 [style=filled, fillcolor=white, label=Cdc42];
+activity19 -> Cdc4218  [label=amod];
+agreement14 -> activity19  [label=prep_with];
+illustrated22 [style=filled, fillcolor=white, label=illustrated];
+is21 [style=filled, fillcolor=white, label=is];
+illustrated22 -> is21  [label=auxpass];
+was12 -> illustrated22  [label=conj_and];
+here23 [style=filled, fillcolor=white, label=here];
+illustrated22 -> here23  [label=advmod];
+staining25 [style=filled, fillcolor=white, label=staining];
+illustrated22 -> staining25  [label=agent];
+antibody27 [style=filled, fillcolor=white, label=antibody];
+staining25 -> antibody27  [label=prep_with];
+Fascin29 [style=filled, fillcolor=white, label=Fascin];
+antibody27 -> Fascin29  [label=prep_against];
+marker33 [style=filled, fillcolor=white, label=marker];
+a31 [style=filled, fillcolor=white, label=a];
+marker33 -> a31  [label=det];
+filopodia32 [style=filled, fillcolor=white, label=filopodia];
+marker33 -> filopodia32  [label=nn];
+Fascin29 -> marker33  [label=appos];
+"7B36" [style=filled, fillcolor=white, label="7B"];
+Figure35 [style=filled, fillcolor=white, label=Figure];
+"7B36" -> Figure35  [label=nn];
+marker33 -> "7B36"  [label=appos];
+panel39 [style=filled, fillcolor=white, label=panel];
+upper38 [style=filled, fillcolor=white, label=upper];
+panel39 -> upper38  [label=amod];
+"7B36" -> panel39  [label=dep];
+}

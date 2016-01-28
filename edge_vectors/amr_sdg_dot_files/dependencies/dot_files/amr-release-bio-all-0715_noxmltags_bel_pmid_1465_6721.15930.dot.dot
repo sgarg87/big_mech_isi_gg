@@ -1,0 +1,34 @@
+digraph "whereas exposure of neutrophils to LPS or TNF-a resulted in increased levels of the transcriptionally active serine 133-phosphorylated form of CREB" {
+label="whereas exposure of neutrophils to LPS or TNF-a resulted in increased levels of
+the transcriptionally active serine 133-phosphorylated form of CREB";
+resulted9 [style=filled, fillcolor=white, label=resulted];
+whereas1 [style=filled, fillcolor=white, label=whereas];
+resulted9 -> whereas1  [label=mark];
+exposure2 [style=filled, fillcolor=white, label=exposure];
+resulted9 -> exposure2  [label=nsubj];
+neutrophils4 [style=filled, fillcolor=white, label=neutrophils];
+exposure2 -> neutrophils4  [label=prep_of];
+LPS6 [style=filled, fillcolor=white, label=LPS];
+neutrophils4 -> LPS6  [label=prep_to];
+"TNF-a8" [style=filled, fillcolor=white, label="TNF-a"];
+LPS6 -> "TNF-a8"  [label=conj_or];
+resulted9 -> resulted9  [label=root];
+levels12 [style=filled, fillcolor=white, label=levels];
+increased11 [style=filled, fillcolor=white, label=increased];
+levels12 -> increased11  [label=amod];
+resulted9 -> levels12  [label=prep_in];
+form19 [style=filled, fillcolor=white, label=form];
+the14 [style=filled, fillcolor=white, label=the];
+form19 -> the14  [label=det];
+active16 [style=filled, fillcolor=white, label=active];
+transcriptionally15 [style=filled, fillcolor=white, label=transcriptionally];
+active16 -> transcriptionally15  [label=advmod];
+form19 -> active16  [label=amod];
+serine17 [style=filled, fillcolor=white, label=serine];
+form19 -> serine17  [label=amod];
+"133-phosphorylated8" [style=filled, fillcolor=white, label="133-phosphorylated"];
+form19 -> "133-phosphorylated8"  [label=amod];
+levels12 -> form19  [label=prep_of];
+CREB21 [style=filled, fillcolor=white, label=CREB];
+form19 -> CREB21  [label=prep_of];
+}

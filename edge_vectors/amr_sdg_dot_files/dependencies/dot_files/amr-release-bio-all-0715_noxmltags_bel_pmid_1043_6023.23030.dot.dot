@@ -1,0 +1,53 @@
+digraph "P300 coactivates P53-activated promotors ,  including p21 ,  Bax ,  and Mdm2 . P300 binds the transactivation domain in the Nterminal region of p53 - this interaction is involved in the coactivation of p53 by p300" {
+label="P300 coactivates P53-activated promotors ,  including p21 ,  Bax ,  and Mdm2 .
+P300 binds the transactivation domain in the Nterminal region of p53 - this
+interaction is involved in the coactivation of p53 by p300";
+coactivates2 [style=filled, fillcolor=white, label=coactivates];
+P3001 [style=filled, fillcolor=white, label=P300];
+coactivates2 -> P3001  [label=nsubj];
+coactivates2 -> coactivates2  [label=root];
+promotors4 [style=filled, fillcolor=white, label=promotors];
+"P53-activated" [style=filled, fillcolor=white, label="P53-activated"];
+promotors4 -> "P53-activated"  [label=nn];
+coactivates2 -> promotors4  [label=dobj];
+p217 [style=filled, fillcolor=white, label=p21];
+promotors4 -> p217  [label=prep_including];
+Bax9 [style=filled, fillcolor=white, label=Bax];
+p217 -> Bax9  [label=appos];
+P30014 [style=filled, fillcolor=white, label=P300];
+Mdm21 [style=filled, fillcolor=white, label=Mdm2];
+P30014 -> Mdm21  [label=nn];
+binds15 [style=filled, fillcolor=white, label=binds];
+binds15 -> P30014  [label=nsubj];
+coactivates2 -> binds15  [label=conj_and];
+domain18 [style=filled, fillcolor=white, label=domain];
+the16 [style=filled, fillcolor=white, label=the];
+domain18 -> the16  [label=det];
+transactivation17 [style=filled, fillcolor=white, label=transactivation];
+domain18 -> transactivation17  [label=nn];
+binds15 -> domain18  [label=dobj];
+region22 [style=filled, fillcolor=white, label=region];
+the20 [style=filled, fillcolor=white, label=the];
+region22 -> the20  [label=det];
+Nterminal21 [style=filled, fillcolor=white, label=Nterminal];
+region22 -> Nterminal21  [label=amod];
+binds15 -> region22  [label=prep_in];
+p5324 [style=filled, fillcolor=white, label=p53];
+region22 -> p5324  [label=prep_of];
+interaction27 [style=filled, fillcolor=white, label=interaction];
+this26 [style=filled, fillcolor=white, label=this];
+interaction27 -> this26  [label=det];
+involved29 [style=filled, fillcolor=white, label=involved];
+involved29 -> interaction27  [label=nsubjpass];
+is28 [style=filled, fillcolor=white, label=is];
+involved29 -> is28  [label=auxpass];
+coactivates2 -> involved29  [label=parataxis];
+coactivation32 [style=filled, fillcolor=white, label=coactivation];
+the31 [style=filled, fillcolor=white, label=the];
+coactivation32 -> the31  [label=det];
+involved29 -> coactivation32  [label=prep_in];
+p5334 [style=filled, fillcolor=white, label=p53];
+coactivation32 -> p5334  [label=prep_of];
+p30036 [style=filled, fillcolor=white, label=p300];
+involved29 -> p30036  [label=agent];
+}

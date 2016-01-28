@@ -1,0 +1,28 @@
+digraph "In contrast ,  both IDO and NIK expression were reduced by JSI-124 treatment in MDSCs ( Fig. 3A ) ." {
+label="In contrast ,  both IDO and NIK expression were reduced by JSI-124 treatment in
+MDSCs ( Fig. 3A ) .";
+reduced10 [style=filled, fillcolor=white, label=reduced];
+contrast2 [style=filled, fillcolor=white, label=contrast];
+reduced10 -> contrast2  [label=prep_in];
+expression8 [style=filled, fillcolor=white, label=expression];
+both4 [style=filled, fillcolor=white, label=both];
+expression8 -> both4  [label=preconj];
+IDO5 [style=filled, fillcolor=white, label=IDO];
+expression8 -> IDO5  [label=nn];
+NIK7 [style=filled, fillcolor=white, label=NIK];
+IDO5 -> NIK7  [label=conj_and];
+reduced10 -> expression8  [label=nsubjpass];
+were9 [style=filled, fillcolor=white, label=were];
+reduced10 -> were9  [label=auxpass];
+reduced10 -> reduced10  [label=root];
+treatment13 [style=filled, fillcolor=white, label=treatment];
+"JSI-124" [style=filled, fillcolor=white, label="JSI-124"];
+treatment13 -> "JSI-124"  [label=nn];
+reduced10 -> treatment13  [label=agent];
+MDSCs15 [style=filled, fillcolor=white, label=MDSCs];
+treatment13 -> MDSCs15  [label=prep_in];
+"3A18" [style=filled, fillcolor=white, label="3A"];
+"Fig.17" [style=filled, fillcolor=white, label="Fig."];
+"3A18" -> "Fig.17"  [label=number];
+MDSCs15 -> "3A18"  [label=dep];
+}

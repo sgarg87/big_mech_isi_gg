@@ -1,0 +1,43 @@
+digraph "Therefore the profound repression of CYP27 and apoE expressoin by activatoin or overexpression of PPARd might contribute to the lipid accumulation observed in these cells in culture" {
+label="Therefore the profound repression of CYP27 and apoE expressoin by activatoin or
+overexpression of PPARd might contribute to the lipid accumulation observed in
+these cells in culture";
+repression4 [style=filled, fillcolor=white, label=repression];
+Therefore1 [style=filled, fillcolor=white, label=Therefore];
+repression4 -> Therefore1  [label=advmod];
+the2 [style=filled, fillcolor=white, label=the];
+repression4 -> the2  [label=det];
+profound3 [style=filled, fillcolor=white, label=profound];
+repression4 -> profound3  [label=amod];
+contribute17 [style=filled, fillcolor=white, label=contribute];
+contribute17 -> repression4  [label=nsubj];
+CYP276 [style=filled, fillcolor=white, label=CYP27];
+repression4 -> CYP276  [label=prep_of];
+expressoin9 [style=filled, fillcolor=white, label=expressoin];
+apoE8 [style=filled, fillcolor=white, label=apoE];
+expressoin9 -> apoE8  [label=amod];
+repression4 -> expressoin9  [label=conj_and];
+activatoin11 [style=filled, fillcolor=white, label=activatoin];
+expressoin9 -> activatoin11  [label=prep_by];
+overexpression13 [style=filled, fillcolor=white, label=overexpression];
+activatoin11 -> overexpression13  [label=conj_or];
+PPARd15 [style=filled, fillcolor=white, label=PPARd];
+expressoin9 -> PPARd15  [label=prep_of];
+might16 [style=filled, fillcolor=white, label=might];
+contribute17 -> might16  [label=aux];
+contribute17 -> contribute17  [label=root];
+accumulation21 [style=filled, fillcolor=white, label=accumulation];
+the19 [style=filled, fillcolor=white, label=the];
+accumulation21 -> the19  [label=det];
+lipid20 [style=filled, fillcolor=white, label=lipid];
+accumulation21 -> lipid20  [label=nn];
+contribute17 -> accumulation21  [label=prep_to];
+observed22 [style=filled, fillcolor=white, label=observed];
+accumulation21 -> observed22  [label=vmod];
+cells25 [style=filled, fillcolor=white, label=cells];
+these24 [style=filled, fillcolor=white, label=these];
+cells25 -> these24  [label=det];
+observed22 -> cells25  [label=prep_in];
+culture27 [style=filled, fillcolor=white, label=culture];
+cells25 -> culture27  [label=prep_in];
+}

@@ -1,0 +1,51 @@
+digraph "TNF-a appears to impair insulin signaling by increasing serine phosphorylation of IRS-1 . Serine-phosphorylated IRS-1 inhibits insulin receptor tyrosine kinase activity ,  which leads to impaired downstream signaling" {
+label="TNF-a appears to impair insulin signaling by increasing serine phosphorylation
+of IRS-1 . Serine-phosphorylated IRS-1 inhibits insulin receptor tyrosine kinase
+activity ,  which leads to impaired downstream signaling";
+appears2 [style=filled, fillcolor=white, label=appears];
+"TNF-a1" [style=filled, fillcolor=white, label="TNF-a"];
+appears2 -> "TNF-a1"  [label=advmod];
+appears2 -> appears2  [label=root];
+impair4 [style=filled, fillcolor=white, label=impair];
+to3 [style=filled, fillcolor=white, label=to];
+impair4 -> to3  [label=aux];
+appears2 -> impair4  [label=xcomp];
+insulin5 [style=filled, fillcolor=white, label=insulin];
+impair4 -> insulin5  [label=dobj];
+signaling6 [style=filled, fillcolor=white, label=signaling];
+insulin5 -> signaling6  [label=vmod];
+phosphorylation10 [style=filled, fillcolor=white, label=phosphorylation];
+increasing8 [style=filled, fillcolor=white, label=increasing];
+phosphorylation10 -> increasing8  [label=amod];
+serine9 [style=filled, fillcolor=white, label=serine];
+phosphorylation10 -> serine9  [label=amod];
+signaling6 -> phosphorylation10  [label=agent];
+"IRS-15" [style=filled, fillcolor=white, label="IRS-1"];
+"IRS-12" [style=filled, fillcolor=white, label="IRS-1"];
+"IRS-15" -> "IRS-12"  [label=nn];
+"Serine-phosphorylated14" [style=filled, fillcolor=white, label="Serine-phosphorylated"];
+"IRS-15" -> "Serine-phosphorylated14"  [label=nn];
+phosphorylation10 -> "IRS-15"  [label=prep_of];
+activity21 [style=filled, fillcolor=white, label=activity];
+inhibits16 [style=filled, fillcolor=white, label=inhibits];
+activity21 -> inhibits16  [label=amod];
+insulin17 [style=filled, fillcolor=white, label=insulin];
+activity21 -> insulin17  [label=nn];
+receptor18 [style=filled, fillcolor=white, label=receptor];
+activity21 -> receptor18  [label=nn];
+tyrosine19 [style=filled, fillcolor=white, label=tyrosine];
+activity21 -> tyrosine19  [label=nn];
+kinase20 [style=filled, fillcolor=white, label=kinase];
+activity21 -> kinase20  [label=nn];
+appears2 -> activity21  [label=nsubj];
+leads24 [style=filled, fillcolor=white, label=leads];
+which23 [style=filled, fillcolor=white, label=which];
+leads24 -> which23  [label=nsubj];
+activity21 -> leads24  [label=rcmod];
+signaling28 [style=filled, fillcolor=white, label=signaling];
+impaired26 [style=filled, fillcolor=white, label=impaired];
+signaling28 -> impaired26  [label=amod];
+downstream27 [style=filled, fillcolor=white, label=downstream];
+signaling28 -> downstream27  [label=amod];
+leads24 -> signaling28  [label=prep_to];
+}

@@ -1,0 +1,47 @@
+digraph "Thus our work establishes an entirely new mode of Ras activation in which signaling is sustained even in the absence of hormone stimulus or oncogene mutation ." {
+label="Thus our work establishes an entirely new mode of Ras activation in which
+signaling is sustained even in the absence of hormone stimulus or oncogene
+mutation .";
+establishes4 [style=filled, fillcolor=white, label=establishes];
+Thus1 [style=filled, fillcolor=white, label=Thus];
+establishes4 -> Thus1  [label=advmod];
+work3 [style=filled, fillcolor=white, label=work];
+our2 [style=filled, fillcolor=white, label=our];
+work3 -> our2  [label=poss];
+establishes4 -> work3  [label=nsubj];
+establishes4 -> establishes4  [label=root];
+mode8 [style=filled, fillcolor=white, label=mode];
+an5 [style=filled, fillcolor=white, label=an];
+mode8 -> an5  [label=det];
+new7 [style=filled, fillcolor=white, label=new];
+entirely6 [style=filled, fillcolor=white, label=entirely];
+new7 -> entirely6  [label=advmod];
+mode8 -> new7  [label=amod];
+establishes4 -> mode8  [label=dobj];
+activation11 [style=filled, fillcolor=white, label=activation];
+Ras10 [style=filled, fillcolor=white, label=Ras];
+activation11 -> Ras10  [label=nn];
+mode8 -> activation11  [label=prep_of];
+sustained16 [style=filled, fillcolor=white, label=sustained];
+which13 [style=filled, fillcolor=white, label=which];
+sustained16 -> which13  [label=prep_in];
+signaling14 [style=filled, fillcolor=white, label=signaling];
+sustained16 -> signaling14  [label=nsubjpass];
+is15 [style=filled, fillcolor=white, label=is];
+sustained16 -> is15  [label=auxpass];
+mode8 -> sustained16  [label=rcmod];
+even17 [style=filled, fillcolor=white, label=even];
+sustained16 -> even17  [label=advmod];
+absence20 [style=filled, fillcolor=white, label=absence];
+the19 [style=filled, fillcolor=white, label=the];
+absence20 -> the19  [label=det];
+sustained16 -> absence20  [label=prep_in];
+stimulus23 [style=filled, fillcolor=white, label=stimulus];
+hormone22 [style=filled, fillcolor=white, label=hormone];
+stimulus23 -> hormone22  [label=nn];
+absence20 -> stimulus23  [label=prep_of];
+mutation26 [style=filled, fillcolor=white, label=mutation];
+oncogene25 [style=filled, fillcolor=white, label=oncogene];
+mutation26 -> oncogene25  [label=nn];
+stimulus23 -> mutation26  [label=conj_or];
+}

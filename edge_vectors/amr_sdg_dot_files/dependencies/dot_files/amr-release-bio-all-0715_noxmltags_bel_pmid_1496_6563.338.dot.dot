@@ -1,0 +1,43 @@
+digraph "The effect of inactivating Icmt was not limited to the inhibition of K-Ras-induced transformation : inactivation of Icmt blocked transformation by an oncogenic form of B-Raf" {
+label="The effect of inactivating Icmt was not limited to the inhibition of K-Ras-
+induced transformation : inactivation of Icmt blocked transformation by an
+oncogenic form of B-Raf";
+effect2 [style=filled, fillcolor=white, label=effect];
+The1 [style=filled, fillcolor=white, label=The];
+effect2 -> The1  [label=det];
+limited8 [style=filled, fillcolor=white, label=limited];
+limited8 -> effect2  [label=nsubjpass];
+inactivating4 [style=filled, fillcolor=white, label=inactivating];
+effect2 -> inactivating4  [label=prepc_of];
+Icmt5 [style=filled, fillcolor=white, label=Icmt];
+inactivating4 -> Icmt5  [label=dobj];
+was6 [style=filled, fillcolor=white, label=was];
+limited8 -> was6  [label=auxpass];
+not7 [style=filled, fillcolor=white, label=not];
+limited8 -> not7  [label=neg];
+limited8 -> limited8  [label=root];
+inhibition11 [style=filled, fillcolor=white, label=inhibition];
+the10 [style=filled, fillcolor=white, label=the];
+inhibition11 -> the10  [label=det];
+limited8 -> inhibition11  [label=prep_to];
+transformation14 [style=filled, fillcolor=white, label=transformation];
+"K-Ras-induced13" [style=filled, fillcolor=white, label="K-Ras-induced"];
+transformation14 -> "K-Ras-induced13"  [label=amod];
+inhibition11 -> transformation14  [label=prep_of];
+blocked19 [style=filled, fillcolor=white, label=blocked];
+inactivation16 [style=filled, fillcolor=white, label=inactivation];
+blocked19 -> inactivation16  [label=nsubj];
+Icmt18 [style=filled, fillcolor=white, label=Icmt];
+inactivation16 -> Icmt18  [label=prep_of];
+limited8 -> blocked19  [label=parataxis];
+transformation20 [style=filled, fillcolor=white, label=transformation];
+blocked19 -> transformation20  [label=dobj];
+form24 [style=filled, fillcolor=white, label=form];
+an22 [style=filled, fillcolor=white, label=an];
+form24 -> an22  [label=det];
+oncogenic23 [style=filled, fillcolor=white, label=oncogenic];
+form24 -> oncogenic23  [label=amod];
+blocked19 -> form24  [label=prep_by];
+"B-Raf26" [style=filled, fillcolor=white, label="B-Raf"];
+form24 -> "B-Raf26"  [label=prep_of];
+}

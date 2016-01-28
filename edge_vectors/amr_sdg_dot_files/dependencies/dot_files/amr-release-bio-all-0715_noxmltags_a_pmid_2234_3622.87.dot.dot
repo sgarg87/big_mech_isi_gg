@@ -1,0 +1,26 @@
+digraph "The sequence dependency of selumetinib when combined with docetaxel enhances apoptotic cell death" {
+label="The sequence dependency of selumetinib when combined with docetaxel enhances
+apoptotic cell death";
+dependency3 [style=filled, fillcolor=white, label=dependency];
+The1 [style=filled, fillcolor=white, label=The];
+dependency3 -> The1  [label=det];
+sequence2 [style=filled, fillcolor=white, label=sequence];
+dependency3 -> sequence2  [label=nn];
+dependency3 -> dependency3  [label=root];
+selumetinib5 [style=filled, fillcolor=white, label=selumetinib];
+dependency3 -> selumetinib5  [label=prep_of];
+enhances10 [style=filled, fillcolor=white, label=enhances];
+when6 [style=filled, fillcolor=white, label=when];
+enhances10 -> when6  [label=advmod];
+combined7 [style=filled, fillcolor=white, label=combined];
+enhances10 -> combined7  [label=csubj];
+docetaxel9 [style=filled, fillcolor=white, label=docetaxel];
+combined7 -> docetaxel9  [label=prep_with];
+dependency3 -> enhances10  [label=dep];
+death13 [style=filled, fillcolor=white, label=death];
+apoptotic11 [style=filled, fillcolor=white, label=apoptotic];
+death13 -> apoptotic11  [label=amod];
+cell12 [style=filled, fillcolor=white, label=cell];
+death13 -> cell12  [label=nn];
+enhances10 -> death13  [label=dobj];
+}

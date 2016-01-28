@@ -1,0 +1,40 @@
+digraph "As shown in Fig. 5A ,  PLX4032 treatment increased HER3 and HER2 mRNAs in all six BRAF-mutant thyroid cancer cell lines tested ." {
+label="As shown in Fig. 5A ,  PLX4032 treatment increased HER3 and HER2 mRNAs in all
+six BRAF-mutant thyroid cancer cell lines tested .";
+shown2 [style=filled, fillcolor=white, label=shown];
+As1 [style=filled, fillcolor=white, label=As];
+shown2 -> As1  [label=mark];
+increased9 [style=filled, fillcolor=white, label=increased];
+increased9 -> shown2  [label=advcl];
+"Fig.4" [style=filled, fillcolor=white, label="Fig."];
+shown2 -> "Fig.4"  [label=prep_in];
+"5A" [style=filled, fillcolor=white, label="5A"];
+"Fig.4" -> "5A"  [label=num];
+treatment8 [style=filled, fillcolor=white, label=treatment];
+PLX40327 [style=filled, fillcolor=white, label=PLX4032];
+treatment8 -> PLX40327  [label=nn];
+increased9 -> treatment8  [label=nsubj];
+increased9 -> increased9  [label=root];
+mRNAs13 [style=filled, fillcolor=white, label=mRNAs];
+HER310 [style=filled, fillcolor=white, label=HER3];
+mRNAs13 -> HER310  [label=nn];
+HER21 [style=filled, fillcolor=white, label=HER2];
+HER310 -> HER21  [label=conj_and];
+increased9 -> mRNAs13  [label=dobj];
+lines21 [style=filled, fillcolor=white, label=lines];
+all15 [style=filled, fillcolor=white, label=all];
+lines21 -> all15  [label=det];
+six16 [style=filled, fillcolor=white, label=six];
+lines21 -> six16  [label=num];
+"BRAF-mutant17" [style=filled, fillcolor=white, label="BRAF-mutant"];
+lines21 -> "BRAF-mutant17"  [label=amod];
+thyroid18 [style=filled, fillcolor=white, label=thyroid];
+lines21 -> thyroid18  [label=nn];
+cancer19 [style=filled, fillcolor=white, label=cancer];
+lines21 -> cancer19  [label=nn];
+cell20 [style=filled, fillcolor=white, label=cell];
+lines21 -> cell20  [label=nn];
+increased9 -> lines21  [label=prep_in];
+tested22 [style=filled, fillcolor=white, label=tested];
+lines21 -> tested22  [label=vmod];
+}

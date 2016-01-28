@@ -1,0 +1,32 @@
+digraph "The kinetic of the mobility shift of Sos-1 ,  after PDGF stimulation ,  was determined by immunoblotting with anti -- Sos-1 antibodies ." {
+label="The kinetic of the mobility shift of Sos-1 ,  after PDGF stimulation ,  was
+determined by immunoblotting with anti -- Sos-1 antibodies .";
+kinetic2 [style=filled, fillcolor=white, label=kinetic];
+The1 [style=filled, fillcolor=white, label=The];
+kinetic2 -> The1  [label=det];
+determined15 [style=filled, fillcolor=white, label=determined];
+determined15 -> kinetic2  [label=nsubjpass];
+shift6 [style=filled, fillcolor=white, label=shift];
+the4 [style=filled, fillcolor=white, label=the];
+shift6 -> the4  [label=det];
+mobility5 [style=filled, fillcolor=white, label=mobility];
+shift6 -> mobility5  [label=amod];
+kinetic2 -> shift6  [label=prep_of];
+"Sos-18" [style=filled, fillcolor=white, label="Sos-1"];
+shift6 -> "Sos-18"  [label=prep_of];
+stimulation12 [style=filled, fillcolor=white, label=stimulation];
+PDGF11 [style=filled, fillcolor=white, label=PDGF];
+stimulation12 -> PDGF11  [label=nn];
+determined15 -> stimulation12  [label=prep_after];
+was14 [style=filled, fillcolor=white, label=was];
+determined15 -> was14  [label=auxpass];
+determined15 -> determined15  [label=root];
+immunoblotting17 [style=filled, fillcolor=white, label=immunoblotting];
+determined15 -> immunoblotting17  [label=agent];
+anti19 [style=filled, fillcolor=white, label=anti];
+immunoblotting17 -> anti19  [label=prep_with];
+antibodies22 [style=filled, fillcolor=white, label=antibodies];
+"Sos-12" [style=filled, fillcolor=white, label="Sos-1"];
+antibodies22 -> "Sos-12"  [label=nn];
+anti19 -> antibodies22  [label=dep];
+}

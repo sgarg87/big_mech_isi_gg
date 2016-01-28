@@ -1,0 +1,39 @@
+digraph "Finally ,  nitrosylation of Cys118 in H-Ras has been shown to activate Ras by enhancing nucleotide dissociation ,  leading to higher levels of GTP-bound protein ." {
+label="Finally ,  nitrosylation of Cys118 in H-Ras has been shown to activate Ras by
+enhancing nucleotide dissociation ,  leading to higher levels of GTP-bound
+protein .";
+shown10 [style=filled, fillcolor=white, label=shown];
+Finally1 [style=filled, fillcolor=white, label=Finally];
+shown10 -> Finally1  [label=advmod];
+nitrosylation3 [style=filled, fillcolor=white, label=nitrosylation];
+shown10 -> nitrosylation3  [label=nsubjpass];
+Cys1185 [style=filled, fillcolor=white, label=Cys118];
+nitrosylation3 -> Cys1185  [label=prep_of];
+"H-Ras7" [style=filled, fillcolor=white, label="H-Ras"];
+Cys1185 -> "H-Ras7"  [label=prep_in];
+has8 [style=filled, fillcolor=white, label=has];
+shown10 -> has8  [label=aux];
+been9 [style=filled, fillcolor=white, label=been];
+shown10 -> been9  [label=auxpass];
+shown10 -> shown10  [label=root];
+Ras13 [style=filled, fillcolor=white, label=Ras];
+activate12 [style=filled, fillcolor=white, label=activate];
+Ras13 -> activate12  [label=nn];
+shown10 -> Ras13  [label=prep_to];
+enhancing15 [style=filled, fillcolor=white, label=enhancing];
+shown10 -> enhancing15  [label=agent];
+dissociation17 [style=filled, fillcolor=white, label=dissociation];
+nucleotide16 [style=filled, fillcolor=white, label=nucleotide];
+dissociation17 -> nucleotide16  [label=amod];
+enhancing15 -> dissociation17  [label=dobj];
+leading19 [style=filled, fillcolor=white, label=leading];
+enhancing15 -> leading19  [label=dep];
+levels22 [style=filled, fillcolor=white, label=levels];
+higher21 [style=filled, fillcolor=white, label=higher];
+levels22 -> higher21  [label=amod];
+leading19 -> levels22  [label=prep_to];
+protein25 [style=filled, fillcolor=white, label=protein];
+"GTP-bound24" [style=filled, fillcolor=white, label="GTP-bound"];
+protein25 -> "GTP-bound24"  [label=amod];
+levels22 -> protein25  [label=prep_of];
+}

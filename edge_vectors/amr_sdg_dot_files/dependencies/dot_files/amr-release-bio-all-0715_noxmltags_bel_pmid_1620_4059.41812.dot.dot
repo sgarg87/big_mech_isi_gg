@@ -1,0 +1,49 @@
+digraph "A ,  immortalized dermal fibroblasts ( MDFB6 ) down-regulate TSP-1 protein expression in the presence of conditioned medium from their H-ras-transformed counterparts ( B6ras CM ) ; quantification of representative Western blot ." {
+label="A ,  immortalized dermal fibroblasts ( MDFB6 ) down-regulate TSP-1 protein
+expression in the presence of conditioned medium from their H-ras-transformed
+counterparts ( B6ras CM ) ; quantification of representative Western blot .";
+A1 [style=filled, fillcolor=white, label=A];
+A1 -> A1  [label=root];
+immortalized3 [style=filled, fillcolor=white, label=immortalized];
+A1 -> immortalized3  [label=vmod];
+fibroblasts5 [style=filled, fillcolor=white, label=fibroblasts];
+dermal4 [style=filled, fillcolor=white, label=dermal];
+fibroblasts5 -> dermal4  [label=amod];
+immortalized3 -> fibroblasts5  [label=dobj];
+MDFB67 [style=filled, fillcolor=white, label=MDFB6];
+A1 -> MDFB67  [label=appos];
+expression12 [style=filled, fillcolor=white, label=expression];
+"down-regulate9" [style=filled, fillcolor=white, label="down-regulate"];
+expression12 -> "down-regulate9"  [label=amod];
+"TSP-10" [style=filled, fillcolor=white, label="TSP-1"];
+expression12 -> "TSP-10"  [label=nn];
+protein11 [style=filled, fillcolor=white, label=protein];
+expression12 -> protein11  [label=nn];
+A1 -> expression12  [label=dep];
+presence15 [style=filled, fillcolor=white, label=presence];
+the14 [style=filled, fillcolor=white, label=the];
+presence15 -> the14  [label=det];
+expression12 -> presence15  [label=prep_in];
+medium18 [style=filled, fillcolor=white, label=medium];
+conditioned17 [style=filled, fillcolor=white, label=conditioned];
+medium18 -> conditioned17  [label=amod];
+presence15 -> medium18  [label=prep_of];
+counterparts22 [style=filled, fillcolor=white, label=counterparts];
+their20 [style=filled, fillcolor=white, label=their];
+counterparts22 -> their20  [label=poss];
+"H-ras-transformed21" [style=filled, fillcolor=white, label="H-ras-transformed"];
+counterparts22 -> "H-ras-transformed21"  [label=amod];
+medium18 -> counterparts22  [label=prep_from];
+CM25 [style=filled, fillcolor=white, label=CM];
+B6ras24 [style=filled, fillcolor=white, label=B6ras];
+CM25 -> B6ras24  [label=nn];
+counterparts22 -> CM25  [label=appos];
+quantification28 [style=filled, fillcolor=white, label=quantification];
+A1 -> quantification28  [label=dep];
+blot32 [style=filled, fillcolor=white, label=blot];
+representative30 [style=filled, fillcolor=white, label=representative];
+blot32 -> representative30  [label=amod];
+Western31 [style=filled, fillcolor=white, label=Western];
+blot32 -> Western31  [label=amod];
+quantification28 -> blot32  [label=prep_of];
+}

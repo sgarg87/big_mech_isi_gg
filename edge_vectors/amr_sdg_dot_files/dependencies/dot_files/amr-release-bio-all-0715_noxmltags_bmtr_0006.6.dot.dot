@@ -1,0 +1,30 @@
+digraph "We demonstrate that the RBD of PI3KC2β binds nucleotide-free Ras in vitro ( Fig. 5 ) ." {
+label="We demonstrate that the RBD of PI3KC2β binds nucleotide-free Ras in vitro (
+Fig. 5 ) .";
+demonstrate2 [style=filled, fillcolor=white, label=demonstrate];
+We1 [style=filled, fillcolor=white, label=We];
+demonstrate2 -> We1  [label=nsubj];
+demonstrate2 -> demonstrate2  [label=root];
+binds8 [style=filled, fillcolor=white, label=binds];
+that3 [style=filled, fillcolor=white, label=that];
+binds8 -> that3  [label=mark];
+RBD5 [style=filled, fillcolor=white, label=RBD];
+the4 [style=filled, fillcolor=white, label=the];
+RBD5 -> the4  [label=det];
+binds8 -> RBD5  [label=nsubj];
+"PI3KC2β7" [style=filled, fillcolor=white, label="PI3KC2β"];
+RBD5 -> "PI3KC2β7"  [label=prep_of];
+demonstrate2 -> binds8  [label=ccomp];
+Ras10 [style=filled, fillcolor=white, label=Ras];
+"nucleotide-free9" [style=filled, fillcolor=white, label="nucleotide-free"];
+Ras10 -> "nucleotide-free9"  [label=amod];
+binds8 -> Ras10  [label=dobj];
+vitro12 [style=filled, fillcolor=white, label=vitro];
+in11 [style=filled, fillcolor=white, label=in];
+vitro12 -> in11  [label=dep];
+Ras10 -> vitro12  [label=amod];
+51 [style=filled, fillcolor=white, label=5];
+"Fig.14" [style=filled, fillcolor=white, label="Fig."];
+51 -> "Fig.14"  [label=number];
+Ras10 -> 51  [label=dep];
+}

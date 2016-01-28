@@ -1,0 +1,37 @@
+digraph "The interleukin-6 ( IL6 ) family of cytokines signals through the common receptor subunit gp130 ,  and subsequently activates Stat3 ,  MAPK ,  and PI3K ." {
+label="The interleukin-6 ( IL6 ) family of cytokines signals through the common
+receptor subunit gp130 ,  and subsequently activates Stat3 ,  MAPK ,  and PI3K
+.";
+family6 [style=filled, fillcolor=white, label=family];
+The1 [style=filled, fillcolor=white, label=The];
+family6 -> The1  [label=det];
+"interleukin-62" [style=filled, fillcolor=white, label="interleukin-6"];
+family6 -> "interleukin-62"  [label=amod];
+IL64 [style=filled, fillcolor=white, label=IL6];
+family6 -> IL64  [label=appos];
+signals9 [style=filled, fillcolor=white, label=signals];
+signals9 -> family6  [label=nsubj];
+cytokines8 [style=filled, fillcolor=white, label=cytokines];
+family6 -> cytokines8  [label=prep_of];
+signals9 -> signals9  [label=root];
+gp13015 [style=filled, fillcolor=white, label=gp130];
+the11 [style=filled, fillcolor=white, label=the];
+gp13015 -> the11  [label=det];
+common12 [style=filled, fillcolor=white, label=common];
+gp13015 -> common12  [label=amod];
+receptor13 [style=filled, fillcolor=white, label=receptor];
+gp13015 -> receptor13  [label=nn];
+subunit14 [style=filled, fillcolor=white, label=subunit];
+gp13015 -> subunit14  [label=nn];
+signals9 -> gp13015  [label=prep_through];
+activates19 [style=filled, fillcolor=white, label=activates];
+subsequently18 [style=filled, fillcolor=white, label=subsequently];
+activates19 -> subsequently18  [label=advmod];
+signals9 -> activates19  [label=conj_and];
+Stat320 [style=filled, fillcolor=white, label=Stat3];
+activates19 -> Stat320  [label=dobj];
+MAPK22 [style=filled, fillcolor=white, label=MAPK];
+Stat320 -> MAPK22  [label=conj_and];
+PI3K25 [style=filled, fillcolor=white, label=PI3K];
+Stat320 -> PI3K25  [label=conj_and];
+}

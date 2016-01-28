@@ -1,0 +1,34 @@
+digraph "β-galactosidase assays were then conducted ,  and results are reported as fold increase over a basal level of activity of 1 ." {
+label="β-galactosidase assays were then conducted ,  and results are reported as fold
+increase over a basal level of activity of 1 .";
+assays2 [style=filled, fillcolor=white, label=assays];
+"β-galactosidase1" [style=filled, fillcolor=white, label="β-galactosidase"];
+assays2 -> "β-galactosidase1"  [label=amod];
+conducted5 [style=filled, fillcolor=white, label=conducted];
+conducted5 -> assays2  [label=nsubjpass];
+were3 [style=filled, fillcolor=white, label=were];
+conducted5 -> were3  [label=auxpass];
+then4 [style=filled, fillcolor=white, label=then];
+conducted5 -> then4  [label=advmod];
+conducted5 -> conducted5  [label=root];
+reported10 [style=filled, fillcolor=white, label=reported];
+results8 [style=filled, fillcolor=white, label=results];
+reported10 -> results8  [label=nsubjpass];
+are9 [style=filled, fillcolor=white, label=are];
+reported10 -> are9  [label=auxpass];
+conducted5 -> reported10  [label=conj_and];
+increase13 [style=filled, fillcolor=white, label=increase];
+fold12 [style=filled, fillcolor=white, label=fold];
+increase13 -> fold12  [label=amod];
+reported10 -> increase13  [label=prep_as];
+level17 [style=filled, fillcolor=white, label=level];
+a15 [style=filled, fillcolor=white, label=a];
+level17 -> a15  [label=det];
+basal16 [style=filled, fillcolor=white, label=basal];
+level17 -> basal16  [label=amod];
+reported10 -> level17  [label=prep_over];
+activity19 [style=filled, fillcolor=white, label=activity];
+level17 -> activity19  [label=prep_of];
+12 [style=filled, fillcolor=white, label=1];
+activity19 -> 12  [label=prep_of];
+}

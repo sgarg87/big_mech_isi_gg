@@ -1,0 +1,41 @@
+digraph "Two cytoplasmic protein tyrosine phosphatases ,  PTP-PEST and PTP-1B ,  target p130CAS and may specifically inhibit some of the signals downstream of FAK ( 20 ) ." {
+label="Two cytoplasmic protein tyrosine phosphatases ,  PTP-PEST and PTP-1B ,  target
+p130CAS and may specifically inhibit some of the signals downstream of FAK ( 20
+) .";
+phosphatases5 [style=filled, fillcolor=white, label=phosphatases];
+Two1 [style=filled, fillcolor=white, label=Two];
+phosphatases5 -> Two1  [label=num];
+cytoplasmic2 [style=filled, fillcolor=white, label=cytoplasmic];
+phosphatases5 -> cytoplasmic2  [label=amod];
+protein3 [style=filled, fillcolor=white, label=protein];
+phosphatases5 -> protein3  [label=nn];
+tyrosine4 [style=filled, fillcolor=white, label=tyrosine];
+phosphatases5 -> tyrosine4  [label=nn];
+target11 [style=filled, fillcolor=white, label=target];
+target11 -> phosphatases5  [label=nsubj];
+"PTP-PEST7" [style=filled, fillcolor=white, label="PTP-PEST"];
+phosphatases5 -> "PTP-PEST7"  [label=amod];
+"PTP-1B9" [style=filled, fillcolor=white, label="PTP-1B"];
+"PTP-PEST7" -> "PTP-1B9"  [label=conj_and];
+target11 -> target11  [label=root];
+p130CAS12 [style=filled, fillcolor=white, label=p130CAS];
+target11 -> p130CAS12  [label=dobj];
+inhibit16 [style=filled, fillcolor=white, label=inhibit];
+may14 [style=filled, fillcolor=white, label=may];
+inhibit16 -> may14  [label=aux];
+specifically15 [style=filled, fillcolor=white, label=specifically];
+inhibit16 -> specifically15  [label=advmod];
+target11 -> inhibit16  [label=conj_and];
+some17 [style=filled, fillcolor=white, label=some];
+inhibit16 -> some17  [label=dobj];
+downstream21 [style=filled, fillcolor=white, label=downstream];
+the19 [style=filled, fillcolor=white, label=the];
+downstream21 -> the19  [label=det];
+signals20 [style=filled, fillcolor=white, label=signals];
+downstream21 -> signals20  [label=nn];
+some17 -> downstream21  [label=prep_of];
+FAK23 [style=filled, fillcolor=white, label=FAK];
+downstream21 -> FAK23  [label=prep_of];
+2025 [style=filled, fillcolor=white, label=20];
+FAK23 -> 2025  [label=appos];
+}

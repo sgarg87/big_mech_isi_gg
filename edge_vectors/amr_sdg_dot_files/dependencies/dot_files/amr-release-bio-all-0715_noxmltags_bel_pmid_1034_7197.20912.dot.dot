@@ -1,0 +1,53 @@
+digraph "Further ,  the expression of the catalytically inactive mutants of Ha-Ras ,  RhoA ,  c-Raf ,  and Erk2 or addition of the Mek1-specific inhibitor PD 098059 abrogated the stimulation of the urokinase promoter by HGF/SF ." {
+label="Further ,  the expression of the catalytically inactive mutants of Ha-Ras ,
+RhoA ,  c-Raf ,  and Erk2 or addition of the Mek1-specific inhibitor PD 098059
+abrogated the stimulation of the urokinase promoter by HGF/SF .";
+abrogated27 [style=filled, fillcolor=white, label=abrogated];
+Further1 [style=filled, fillcolor=white, label=Further];
+abrogated27 -> Further1  [label=advmod];
+expression4 [style=filled, fillcolor=white, label=expression];
+the3 [style=filled, fillcolor=white, label=the];
+expression4 -> the3  [label=det];
+abrogated27 -> expression4  [label=nsubj];
+mutants9 [style=filled, fillcolor=white, label=mutants];
+the6 [style=filled, fillcolor=white, label=the];
+mutants9 -> the6  [label=det];
+inactive8 [style=filled, fillcolor=white, label=inactive];
+catalytically7 [style=filled, fillcolor=white, label=catalytically];
+inactive8 -> catalytically7  [label=advmod];
+mutants9 -> inactive8  [label=amod];
+expression4 -> mutants9  [label=prep_of];
+"c-Raf15" [style=filled, fillcolor=white, label="c-Raf"];
+"Ha-Ras11" [style=filled, fillcolor=white, label="Ha-Ras"];
+"c-Raf15" -> "Ha-Ras11"  [label=nn];
+RhoA13 [style=filled, fillcolor=white, label=RhoA];
+"c-Raf15" -> RhoA13  [label=appos];
+mutants9 -> "c-Raf15"  [label=prep_of];
+Erk218 [style=filled, fillcolor=white, label=Erk2];
+mutants9 -> Erk218  [label=conj_and];
+addition20 [style=filled, fillcolor=white, label=addition];
+Erk218 -> addition20  [label=conj_or];
+PD25 [style=filled, fillcolor=white, label=PD];
+the22 [style=filled, fillcolor=white, label=the];
+PD25 -> the22  [label=det];
+"Mek1-specific23" [style=filled, fillcolor=white, label="Mek1-specific"];
+PD25 -> "Mek1-specific23"  [label=nn];
+inhibitor24 [style=filled, fillcolor=white, label=inhibitor];
+PD25 -> inhibitor24  [label=nn];
+Erk218 -> PD25  [label=prep_of];
+09805926 [style=filled, fillcolor=white, label=098059];
+PD25 -> 09805926  [label=num];
+abrogated27 -> abrogated27  [label=root];
+stimulation29 [style=filled, fillcolor=white, label=stimulation];
+the28 [style=filled, fillcolor=white, label=the];
+stimulation29 -> the28  [label=det];
+abrogated27 -> stimulation29  [label=dobj];
+promoter33 [style=filled, fillcolor=white, label=promoter];
+the31 [style=filled, fillcolor=white, label=the];
+promoter33 -> the31  [label=det];
+urokinase32 [style=filled, fillcolor=white, label=urokinase];
+promoter33 -> urokinase32  [label=amod];
+stimulation29 -> promoter33  [label=prep_of];
+"HGF/SF35" [style=filled, fillcolor=white, label="HGF/SF"];
+abrogated27 -> "HGF/SF35"  [label=prep_by];
+}

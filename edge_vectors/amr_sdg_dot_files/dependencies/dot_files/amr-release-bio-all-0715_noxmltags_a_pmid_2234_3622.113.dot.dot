@@ -1,0 +1,38 @@
+digraph "At the end of the dosing period in schedule 1 ( PD2 ) ,  there was a significant increase ( 3.5-fold change ; PFigure 5Cii ) ." {
+label="At the end of the dosing period in schedule 1 ( PD2 ) ,  there was a
+significant increase ( 3.5-fold change ; PFigure 5Cii ) .";
+end3 [style=filled, fillcolor=white, label=end];
+the2 [style=filled, fillcolor=white, label=the];
+end3 -> the2  [label=det];
+was16 [style=filled, fillcolor=white, label=was];
+was16 -> end3  [label=prep_at];
+period7 [style=filled, fillcolor=white, label=period];
+the5 [style=filled, fillcolor=white, label=the];
+period7 -> the5  [label=det];
+dosing6 [style=filled, fillcolor=white, label=dosing];
+period7 -> dosing6  [label=amod];
+end3 -> period7  [label=prep_of];
+schedule9 [style=filled, fillcolor=white, label=schedule];
+period7 -> schedule9  [label=prep_in];
+110 [style=filled, fillcolor=white, label=1];
+schedule9 -> 110  [label=num];
+PD21 [style=filled, fillcolor=white, label=PD2];
+schedule9 -> PD21  [label=appos];
+there15 [style=filled, fillcolor=white, label=there];
+was16 -> there15  [label=expl];
+was16 -> was16  [label=root];
+increase19 [style=filled, fillcolor=white, label=increase];
+a17 [style=filled, fillcolor=white, label=a];
+increase19 -> a17  [label=det];
+significant18 [style=filled, fillcolor=white, label=significant];
+increase19 -> significant18  [label=amod];
+was16 -> increase19  [label=nsubj];
+change22 [style=filled, fillcolor=white, label=change];
+"3.5-fold21" [style=filled, fillcolor=white, label="3.5-fold"];
+change22 -> "3.5-fold21"  [label=amod];
+increase19 -> change22  [label=appos];
+"5Cii2" [style=filled, fillcolor=white, label="5Cii"];
+PFigure24 [style=filled, fillcolor=white, label=PFigure];
+"5Cii2" -> PFigure24  [label=nn];
+change22 -> "5Cii2"  [label=dep];
+}

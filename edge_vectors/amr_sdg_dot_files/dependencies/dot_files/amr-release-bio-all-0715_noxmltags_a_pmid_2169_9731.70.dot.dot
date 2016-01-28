@@ -1,0 +1,40 @@
+digraph "LM2 cell number significantly increased with BAL macrophage co-culture at 48 ( 2.3 vs. 4.1-fold ) and 72 hrs ( 3.5 vs. 7.5-fold ) ( Figure 2A ) ." {
+label="LM2 cell number significantly increased with BAL macrophage co-culture at 48 (
+2.3 vs. 4.1-fold ) and 72 hrs ( 3.5 vs. 7.5-fold ) ( Figure 2A ) .";
+number3 [style=filled, fillcolor=white, label=number];
+LM21 [style=filled, fillcolor=white, label=LM2];
+number3 -> LM21  [label=num];
+cell2 [style=filled, fillcolor=white, label=cell];
+number3 -> cell2  [label=nn];
+increased5 [style=filled, fillcolor=white, label=increased];
+increased5 -> number3  [label=nsubj];
+significantly4 [style=filled, fillcolor=white, label=significantly];
+increased5 -> significantly4  [label=advmod];
+increased5 -> increased5  [label=root];
+"co-culture9" [style=filled, fillcolor=white, label="co-culture"];
+BAL7 [style=filled, fillcolor=white, label=BAL];
+"co-culture9" -> BAL7  [label=nn];
+macrophage8 [style=filled, fillcolor=white, label=macrophage];
+"co-culture9" -> macrophage8  [label=amod];
+increased5 -> "co-culture9"  [label=prep_with];
+4811 [style=filled, fillcolor=white, label=48];
+increased5 -> 4811  [label=prep_at];
+"4.1-fold5" [style=filled, fillcolor=white, label="4.1-fold"];
+"2.31" [style=filled, fillcolor=white, label="2.3"];
+"4.1-fold5" -> "2.31"  [label=nn];
+"vs.14" [style=filled, fillcolor=white, label="vs."];
+"4.1-fold5" -> "vs.14"  [label=amod];
+4811 -> "4.1-fold5"  [label=appos];
+hrs19 [style=filled, fillcolor=white, label=hrs];
+7218 [style=filled, fillcolor=white, label=72];
+hrs19 -> 7218  [label=num];
+4811 -> hrs19  [label=conj_and];
+"3.521" [style=filled, fillcolor=white, label="3.5"];
+hrs19 -> "3.521"  [label=dep];
+"7.5-fold23" [style=filled, fillcolor=white, label="7.5-fold"];
+"3.521" -> "7.5-fold23"  [label="conj_vs."];
+Figure26 [style=filled, fillcolor=white, label=Figure];
+hrs19 -> Figure26  [label=appos];
+"2A27" [style=filled, fillcolor=white, label="2A"];
+Figure26 -> "2A27"  [label=num];
+}

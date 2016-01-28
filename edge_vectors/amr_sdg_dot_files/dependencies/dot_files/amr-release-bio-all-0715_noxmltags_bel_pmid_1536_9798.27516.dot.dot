@@ -1,0 +1,52 @@
+digraph "Over-expression of constitutively activated H-Ras ( CA-Ras ) in Ba/F3 cells blocked down-modulation of Survivin expression ,  G0/G1 arrest ,  and apoptosis induced by IL-3 withdrawal ,  while dominant-negative ( DN ) H-Ras down-regulated Survivin ." {
+label="Over-expression of constitutively activated H-Ras ( CA-Ras ) in Ba/F3 cells
+blocked down-modulation of Survivin expression ,  G0/G1 arrest ,  and apoptosis
+induced by IL-3 withdrawal ,  while dominant-negative ( DN ) H-Ras down-
+regulated Survivin .";
+blocked12 [style=filled, fillcolor=white, label=blocked];
+"Over-expression1" [style=filled, fillcolor=white, label="Over-expression"];
+blocked12 -> "Over-expression1"  [label=nsubj];
+"H-Ras5" [style=filled, fillcolor=white, label="H-Ras"];
+constitutively3 [style=filled, fillcolor=white, label=constitutively];
+"H-Ras5" -> constitutively3  [label=amod];
+activated4 [style=filled, fillcolor=white, label=activated];
+"H-Ras5" -> activated4  [label=amod];
+"Over-expression1" -> "H-Ras5"  [label=prep_of];
+"CA-Ras7" [style=filled, fillcolor=white, label="CA-Ras"];
+"H-Ras5" -> "CA-Ras7"  [label=appos];
+cells11 [style=filled, fillcolor=white, label=cells];
+"Ba/F310" [style=filled, fillcolor=white, label="Ba/F3"];
+cells11 -> "Ba/F310"  [label=amod];
+"H-Ras5" -> cells11  [label=prep_in];
+blocked12 -> blocked12  [label=root];
+"down-modulation13" [style=filled, fillcolor=white, label="down-modulation"];
+blocked12 -> "down-modulation13"  [label=dobj];
+expression16 [style=filled, fillcolor=white, label=expression];
+Survivin15 [style=filled, fillcolor=white, label=Survivin];
+expression16 -> Survivin15  [label=nn];
+"down-modulation13" -> expression16  [label=prep_of];
+arrest19 [style=filled, fillcolor=white, label=arrest];
+"G0/G118" [style=filled, fillcolor=white, label="G0/G1"];
+arrest19 -> "G0/G118"  [label=num];
+"down-modulation13" -> arrest19  [label=conj_and];
+apoptosis22 [style=filled, fillcolor=white, label=apoptosis];
+"down-modulation13" -> apoptosis22  [label=conj_and];
+induced23 [style=filled, fillcolor=white, label=induced];
+apoptosis22 -> induced23  [label=vmod];
+withdrawal26 [style=filled, fillcolor=white, label=withdrawal];
+"IL-325" [style=filled, fillcolor=white, label="IL-3"];
+withdrawal26 -> "IL-325"  [label=nn];
+induced23 -> withdrawal26  [label=agent];
+"down-regulated34" [style=filled, fillcolor=white, label="down-regulated"];
+while28 [style=filled, fillcolor=white, label=while];
+"down-regulated34" -> while28  [label=mark];
+"H-Ras33" [style=filled, fillcolor=white, label="H-Ras"];
+"dominant-negative29" [style=filled, fillcolor=white, label="dominant-negative"];
+"H-Ras33" -> "dominant-negative29"  [label=amod];
+DN31 [style=filled, fillcolor=white, label=DN];
+"H-Ras33" -> DN31  [label=appos];
+"down-regulated34" -> "H-Ras33"  [label=nsubj];
+induced23 -> "down-regulated34"  [label=advcl];
+Survivin35 [style=filled, fillcolor=white, label=Survivin];
+"down-regulated34" -> Survivin35  [label=dobj];
+}

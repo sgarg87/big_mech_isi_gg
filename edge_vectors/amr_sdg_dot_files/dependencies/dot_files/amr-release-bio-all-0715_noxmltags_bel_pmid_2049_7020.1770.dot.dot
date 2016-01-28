@@ -1,0 +1,34 @@
+digraph "Leptin-induced MUC5B expression was blocked by the ERK1/2 and p38 pathway inhibitors ,  but not by the JAK2/STAT3 pathway inhibitor ." {
+label="Leptin-induced MUC5B expression was blocked by the ERK1/2 and p38 pathway
+inhibitors ,  but not by the JAK2/STAT3 pathway inhibitor .";
+expression3 [style=filled, fillcolor=white, label=expression];
+"Leptin-induced1" [style=filled, fillcolor=white, label="Leptin-induced"];
+expression3 -> "Leptin-induced1"  [label=amod];
+MUC5B2 [style=filled, fillcolor=white, label=MUC5B];
+expression3 -> MUC5B2  [label=nn];
+blocked5 [style=filled, fillcolor=white, label=blocked];
+blocked5 -> expression3  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+blocked5 -> was4  [label=auxpass];
+blocked5 -> blocked5  [label=root];
+"ERK1/28" [style=filled, fillcolor=white, label="ERK1/2"];
+the7 [style=filled, fillcolor=white, label=the];
+"ERK1/28" -> the7  [label=det];
+blocked5 -> "ERK1/28"  [label=agent];
+inhibitors12 [style=filled, fillcolor=white, label=inhibitors];
+p3810 [style=filled, fillcolor=white, label=p38];
+inhibitors12 -> p3810  [label=amod];
+pathway11 [style=filled, fillcolor=white, label=pathway];
+inhibitors12 -> pathway11  [label=nn];
+"ERK1/28" -> inhibitors12  [label=conj_and];
+not15 [style=filled, fillcolor=white, label=not];
+blocked5 -> not15  [label=neg];
+inhibitor20 [style=filled, fillcolor=white, label=inhibitor];
+the17 [style=filled, fillcolor=white, label=the];
+inhibitor20 -> the17  [label=det];
+"JAK2/STAT318" [style=filled, fillcolor=white, label="JAK2/STAT3"];
+inhibitor20 -> "JAK2/STAT318"  [label=nn];
+pathway19 [style=filled, fillcolor=white, label=pathway];
+inhibitor20 -> pathway19  [label=nn];
+"ERK1/28" -> inhibitor20  [label=conj_but];
+}

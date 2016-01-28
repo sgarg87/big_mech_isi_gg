@@ -1,0 +1,45 @@
+digraph "The specificity in Ras - induced signaling is primarily determined by the balance between Ras affinity for each of its effectors and the local concentrations of those effectors ." {
+label="The specificity in Ras - induced signaling is primarily determined by the
+balance between Ras affinity for each of its effectors and the local
+concentrations of those effectors .";
+specificity2 [style=filled, fillcolor=white, label=specificity];
+The1 [style=filled, fillcolor=white, label=The];
+specificity2 -> The1  [label=det];
+determined10 [style=filled, fillcolor=white, label=determined];
+determined10 -> specificity2  [label=nsubjpass];
+Ras4 [style=filled, fillcolor=white, label=Ras];
+specificity2 -> Ras4  [label=prep_in];
+induced6 [style=filled, fillcolor=white, label=induced];
+Ras4 -> induced6  [label=vmod];
+signaling7 [style=filled, fillcolor=white, label=signaling];
+induced6 -> signaling7  [label=xcomp];
+is8 [style=filled, fillcolor=white, label=is];
+determined10 -> is8  [label=auxpass];
+primarily9 [style=filled, fillcolor=white, label=primarily];
+determined10 -> primarily9  [label=advmod];
+determined10 -> determined10  [label=root];
+balance13 [style=filled, fillcolor=white, label=balance];
+the12 [style=filled, fillcolor=white, label=the];
+balance13 -> the12  [label=det];
+determined10 -> balance13  [label=agent];
+Ras15 [style=filled, fillcolor=white, label=Ras];
+balance13 -> Ras15  [label=prep_between];
+affinity16 [style=filled, fillcolor=white, label=affinity];
+determined10 -> affinity16  [label=advmod];
+each18 [style=filled, fillcolor=white, label=each];
+determined10 -> each18  [label=prep_for];
+effectors21 [style=filled, fillcolor=white, label=effectors];
+its20 [style=filled, fillcolor=white, label=its];
+effectors21 -> its20  [label=poss];
+each18 -> effectors21  [label=prep_of];
+concentrations25 [style=filled, fillcolor=white, label=concentrations];
+the23 [style=filled, fillcolor=white, label=the];
+concentrations25 -> the23  [label=det];
+local24 [style=filled, fillcolor=white, label=local];
+concentrations25 -> local24  [label=amod];
+each18 -> concentrations25  [label=conj_and];
+effectors28 [style=filled, fillcolor=white, label=effectors];
+those27 [style=filled, fillcolor=white, label=those];
+effectors28 -> those27  [label=det];
+concentrations25 -> effectors28  [label=prep_of];
+}

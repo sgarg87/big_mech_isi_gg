@@ -1,0 +1,24 @@
+digraph "Other differences in frequency may reflect different biological properties of mutant proteins ." {
+label="Other differences in frequency may reflect different biological properties of
+mutant proteins .";
+differences2 [style=filled, fillcolor=white, label=differences];
+Other1 [style=filled, fillcolor=white, label=Other];
+differences2 -> Other1  [label=amod];
+reflect6 [style=filled, fillcolor=white, label=reflect];
+reflect6 -> differences2  [label=nsubj];
+frequency4 [style=filled, fillcolor=white, label=frequency];
+differences2 -> frequency4  [label=prep_in];
+may5 [style=filled, fillcolor=white, label=may];
+reflect6 -> may5  [label=aux];
+reflect6 -> reflect6  [label=root];
+properties9 [style=filled, fillcolor=white, label=properties];
+different7 [style=filled, fillcolor=white, label=different];
+properties9 -> different7  [label=amod];
+biological8 [style=filled, fillcolor=white, label=biological];
+properties9 -> biological8  [label=amod];
+reflect6 -> properties9  [label=dobj];
+proteins12 [style=filled, fillcolor=white, label=proteins];
+mutant11 [style=filled, fillcolor=white, label=mutant];
+proteins12 -> mutant11  [label=amod];
+properties9 -> proteins12  [label=prep_of];
+}

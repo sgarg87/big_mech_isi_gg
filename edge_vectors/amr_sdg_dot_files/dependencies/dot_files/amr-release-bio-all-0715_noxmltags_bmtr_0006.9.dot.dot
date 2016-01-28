@@ -1,0 +1,40 @@
+digraph "Although current methods do not allow for detection of nucleotide-free GTPases in vivo ,  our BiFC results provide additional support for our model ." {
+label="Although current methods do not allow for detection of nucleotide-free GTPases
+in vivo ,  our BiFC results provide additional support for our model .";
+allow6 [style=filled, fillcolor=white, label=allow];
+Although1 [style=filled, fillcolor=white, label=Although];
+allow6 -> Although1  [label=mark];
+methods3 [style=filled, fillcolor=white, label=methods];
+current2 [style=filled, fillcolor=white, label=current];
+methods3 -> current2  [label=amod];
+allow6 -> methods3  [label=nsubj];
+do4 [style=filled, fillcolor=white, label=do];
+allow6 -> do4  [label=aux];
+not5 [style=filled, fillcolor=white, label=not];
+allow6 -> not5  [label=neg];
+provide18 [style=filled, fillcolor=white, label=provide];
+provide18 -> allow6  [label=advcl];
+detection8 [style=filled, fillcolor=white, label=detection];
+allow6 -> detection8  [label=prep_for];
+GTPases11 [style=filled, fillcolor=white, label=GTPases];
+"nucleotide-free10" [style=filled, fillcolor=white, label="nucleotide-free"];
+GTPases11 -> "nucleotide-free10"  [label=amod];
+detection8 -> GTPases11  [label=prep_of];
+vivo13 [style=filled, fillcolor=white, label=vivo];
+GTPases11 -> vivo13  [label=prep_in];
+results17 [style=filled, fillcolor=white, label=results];
+our15 [style=filled, fillcolor=white, label=our];
+results17 -> our15  [label=poss];
+BiFC16 [style=filled, fillcolor=white, label=BiFC];
+results17 -> BiFC16  [label=amod];
+provide18 -> results17  [label=nsubj];
+provide18 -> provide18  [label=root];
+support20 [style=filled, fillcolor=white, label=support];
+additional19 [style=filled, fillcolor=white, label=additional];
+support20 -> additional19  [label=amod];
+provide18 -> support20  [label=dobj];
+model23 [style=filled, fillcolor=white, label=model];
+our22 [style=filled, fillcolor=white, label=our];
+model23 -> our22  [label=poss];
+support20 -> model23  [label=prep_for];
+}

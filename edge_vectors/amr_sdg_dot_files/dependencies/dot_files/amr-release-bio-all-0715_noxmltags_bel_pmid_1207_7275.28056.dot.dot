@@ -1,0 +1,62 @@
+digraph "At day 7 following infection ,  lung tissue from mice given hIL-17F Ad showed substantial increases in the mRNA for inflammatory cytokines and chemokines ,  including IL-6 ,  IFN-g ,  inflammatory protein 10 ,  and monokine induced by IFN-g ( Fig. 3 ) ." {
+label="At day 7 following infection ,  lung tissue from mice given hIL-17F Ad showed
+substantial increases in the mRNA for inflammatory cytokines and chemokines ,
+including IL-6 ,  IFN-g ,  inflammatory protein 10 ,  and monokine induced by
+IFN-g ( Fig. 3 ) .";
+infection5 [style=filled, fillcolor=white, label=infection];
+day2 [style=filled, fillcolor=white, label=day];
+infection5 -> day2  [label=nn];
+73 [style=filled, fillcolor=white, label=7];
+infection5 -> 73  [label=num];
+following4 [style=filled, fillcolor=white, label=following];
+infection5 -> following4  [label=nn];
+showed14 [style=filled, fillcolor=white, label=showed];
+showed14 -> infection5  [label=prep_at];
+tissue8 [style=filled, fillcolor=white, label=tissue];
+lung7 [style=filled, fillcolor=white, label=lung];
+tissue8 -> lung7  [label=nn];
+showed14 -> tissue8  [label=nsubj];
+mice10 [style=filled, fillcolor=white, label=mice];
+tissue8 -> mice10  [label=prep_from];
+given11 [style=filled, fillcolor=white, label=given];
+mice10 -> given11  [label=vmod];
+Ad13 [style=filled, fillcolor=white, label=Ad];
+"hIL-17F2" [style=filled, fillcolor=white, label="hIL-17F"];
+Ad13 -> "hIL-17F2"  [label=amod];
+given11 -> Ad13  [label=dobj];
+showed14 -> showed14  [label=root];
+increases16 [style=filled, fillcolor=white, label=increases];
+substantial15 [style=filled, fillcolor=white, label=substantial];
+increases16 -> substantial15  [label=amod];
+showed14 -> increases16  [label=dobj];
+mRNA19 [style=filled, fillcolor=white, label=mRNA];
+the18 [style=filled, fillcolor=white, label=the];
+mRNA19 -> the18  [label=det];
+showed14 -> mRNA19  [label=prep_in];
+cytokines22 [style=filled, fillcolor=white, label=cytokines];
+inflammatory21 [style=filled, fillcolor=white, label=inflammatory];
+cytokines22 -> inflammatory21  [label=amod];
+mRNA19 -> cytokines22  [label=prep_for];
+chemokines24 [style=filled, fillcolor=white, label=chemokines];
+cytokines22 -> chemokines24  [label=conj_and];
+"IL-627" [style=filled, fillcolor=white, label="IL-6"];
+showed14 -> "IL-627"  [label=prep_including];
+"IFN-g29" [style=filled, fillcolor=white, label="IFN-g"];
+"IL-627" -> "IFN-g29"  [label=conj_and];
+protein32 [style=filled, fillcolor=white, label=protein];
+inflammatory31 [style=filled, fillcolor=white, label=inflammatory];
+protein32 -> inflammatory31  [label=amod];
+"IL-627" -> protein32  [label=conj_and];
+1033 [style=filled, fillcolor=white, label=10];
+protein32 -> 1033  [label=dep];
+monokine36 [style=filled, fillcolor=white, label=monokine];
+"IL-627" -> monokine36  [label=conj_and];
+induced37 [style=filled, fillcolor=white, label=induced];
+monokine36 -> induced37  [label=vmod];
+"IFN-g39" [style=filled, fillcolor=white, label="IFN-g"];
+induced37 -> "IFN-g39"  [label=agent];
+342 [style=filled, fillcolor=white, label=3];
+"Fig.41" [style=filled, fillcolor=white, label="Fig."];
+342 -> "Fig.41"  [label=number];
+"IFN-g39" -> 342  [label=dep];
+}

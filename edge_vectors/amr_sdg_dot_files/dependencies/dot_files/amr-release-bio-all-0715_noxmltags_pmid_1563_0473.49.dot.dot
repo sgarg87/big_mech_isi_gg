@@ -1,0 +1,53 @@
+digraph "The range of developmental processes in which Snail family members have been implicated thus includes the type of epithelial remodeling that is observed in hair follicle bud formation ." {
+label="The range of developmental processes in which Snail family members have been
+implicated thus includes the type of epithelial remodeling that is observed in
+hair follicle bud formation .";
+range2 [style=filled, fillcolor=white, label=range];
+The1 [style=filled, fillcolor=white, label=The];
+range2 -> The1  [label=det];
+includes15 [style=filled, fillcolor=white, label=includes];
+includes15 -> range2  [label=nsubj];
+processes5 [style=filled, fillcolor=white, label=processes];
+developmental4 [style=filled, fillcolor=white, label=developmental];
+processes5 -> developmental4  [label=amod];
+range2 -> processes5  [label=prep_of];
+implicated13 [style=filled, fillcolor=white, label=implicated];
+which7 [style=filled, fillcolor=white, label=which];
+implicated13 -> which7  [label=prep_in];
+members10 [style=filled, fillcolor=white, label=members];
+Snail8 [style=filled, fillcolor=white, label=Snail];
+members10 -> Snail8  [label=nn];
+family9 [style=filled, fillcolor=white, label=family];
+members10 -> family9  [label=nn];
+implicated13 -> members10  [label=nsubjpass];
+have11 [style=filled, fillcolor=white, label=have];
+implicated13 -> have11  [label=aux];
+been12 [style=filled, fillcolor=white, label=been];
+implicated13 -> been12  [label=auxpass];
+processes5 -> implicated13  [label=rcmod];
+thus14 [style=filled, fillcolor=white, label=thus];
+implicated13 -> thus14  [label=advmod];
+includes15 -> includes15  [label=root];
+type17 [style=filled, fillcolor=white, label=type];
+the16 [style=filled, fillcolor=white, label=the];
+type17 -> the16  [label=det];
+includes15 -> type17  [label=dobj];
+remodeling20 [style=filled, fillcolor=white, label=remodeling];
+epithelial19 [style=filled, fillcolor=white, label=epithelial];
+remodeling20 -> epithelial19  [label=amod];
+type17 -> remodeling20  [label=prep_of];
+observed23 [style=filled, fillcolor=white, label=observed];
+that21 [style=filled, fillcolor=white, label=that];
+observed23 -> that21  [label=nsubjpass];
+is22 [style=filled, fillcolor=white, label=is];
+observed23 -> is22  [label=auxpass];
+type17 -> observed23  [label=rcmod];
+formation28 [style=filled, fillcolor=white, label=formation];
+hair25 [style=filled, fillcolor=white, label=hair];
+formation28 -> hair25  [label=nn];
+follicle26 [style=filled, fillcolor=white, label=follicle];
+formation28 -> follicle26  [label=nn];
+bud27 [style=filled, fillcolor=white, label=bud];
+formation28 -> bud27  [label=nn];
+observed23 -> formation28  [label=prep_in];
+}

@@ -1,0 +1,41 @@
+digraph "Contrary to the hypothesis ,  both IL-1beta and IL-6 treatment resulted in a significant decrease in OT receptor messenger RNA measured by ribonuclease protection analysis ." {
+label="Contrary to the hypothesis ,  both IL-1beta and IL-6 treatment resulted in a
+significant decrease in OT receptor messenger RNA measured by ribonuclease
+protection analysis .";
+hypothesis4 [style=filled, fillcolor=white, label=hypothesis];
+the3 [style=filled, fillcolor=white, label=the];
+hypothesis4 -> the3  [label=det];
+resulted11 [style=filled, fillcolor=white, label=resulted];
+resulted11 -> hypothesis4  [label=prep_contrary_to];
+treatment10 [style=filled, fillcolor=white, label=treatment];
+both6 [style=filled, fillcolor=white, label=both];
+treatment10 -> both6  [label=det];
+"IL-1beta7" [style=filled, fillcolor=white, label="IL-1beta"];
+treatment10 -> "IL-1beta7"  [label=amod];
+"IL-69" [style=filled, fillcolor=white, label="IL-6"];
+"IL-1beta7" -> "IL-69"  [label=conj_and];
+resulted11 -> treatment10  [label=nsubj];
+resulted11 -> resulted11  [label=root];
+decrease15 [style=filled, fillcolor=white, label=decrease];
+a13 [style=filled, fillcolor=white, label=a];
+decrease15 -> a13  [label=det];
+significant14 [style=filled, fillcolor=white, label=significant];
+decrease15 -> significant14  [label=amod];
+resulted11 -> decrease15  [label=prep_in];
+RNA20 [style=filled, fillcolor=white, label=RNA];
+OT17 [style=filled, fillcolor=white, label=OT];
+RNA20 -> OT17  [label=nn];
+receptor18 [style=filled, fillcolor=white, label=receptor];
+RNA20 -> receptor18  [label=nn];
+messenger19 [style=filled, fillcolor=white, label=messenger];
+RNA20 -> messenger19  [label=nn];
+resulted11 -> RNA20  [label=prep_in];
+measured21 [style=filled, fillcolor=white, label=measured];
+RNA20 -> measured21  [label=vmod];
+analysis25 [style=filled, fillcolor=white, label=analysis];
+ribonuclease23 [style=filled, fillcolor=white, label=ribonuclease];
+analysis25 -> ribonuclease23  [label=amod];
+protection24 [style=filled, fillcolor=white, label=protection];
+analysis25 -> protection24  [label=nn];
+measured21 -> analysis25  [label=agent];
+}

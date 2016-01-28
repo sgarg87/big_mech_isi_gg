@@ -1,0 +1,46 @@
+digraph "Immunoblot analyses confirm that Tyr-542 and Tyr-580 are the major sites of Shp2 tyrosyl phosphorylation and that Tyr-542 is the major Grb2 binding site ." {
+label="Immunoblot analyses confirm that Tyr-542 and Tyr-580 are the major sites of
+Shp2 tyrosyl phosphorylation and that Tyr-542 is the major Grb2 binding site .";
+analyses2 [style=filled, fillcolor=white, label=analyses];
+Immunoblot1 [style=filled, fillcolor=white, label=Immunoblot];
+analyses2 -> Immunoblot1  [label=amod];
+confirm3 [style=filled, fillcolor=white, label=confirm];
+confirm3 -> analyses2  [label=nsubj];
+confirm3 -> confirm3  [label=root];
+sites11 [style=filled, fillcolor=white, label=sites];
+that4 [style=filled, fillcolor=white, label=that];
+sites11 -> that4  [label=mark];
+"Tyr-542" [style=filled, fillcolor=white, label="Tyr-542"];
+sites11 -> "Tyr-542"  [label=nsubj];
+"Tyr-5807" [style=filled, fillcolor=white, label="Tyr-580"];
+"Tyr-542" -> "Tyr-5807"  [label=conj_and];
+are8 [style=filled, fillcolor=white, label=are];
+sites11 -> are8  [label=cop];
+the9 [style=filled, fillcolor=white, label=the];
+sites11 -> the9  [label=det];
+major10 [style=filled, fillcolor=white, label=major];
+sites11 -> major10  [label=amod];
+confirm3 -> sites11  [label=ccomp];
+phosphorylation15 [style=filled, fillcolor=white, label=phosphorylation];
+Shp213 [style=filled, fillcolor=white, label=Shp2];
+phosphorylation15 -> Shp213  [label=amod];
+tyrosyl14 [style=filled, fillcolor=white, label=tyrosyl];
+phosphorylation15 -> tyrosyl14  [label=amod];
+sites11 -> phosphorylation15  [label=prep_of];
+site24 [style=filled, fillcolor=white, label=site];
+that17 [style=filled, fillcolor=white, label=that];
+site24 -> that17  [label=mark];
+"Tyr-54218" [style=filled, fillcolor=white, label="Tyr-542"];
+site24 -> "Tyr-54218"  [label=nsubj];
+is19 [style=filled, fillcolor=white, label=is];
+site24 -> is19  [label=cop];
+the20 [style=filled, fillcolor=white, label=the];
+site24 -> the20  [label=det];
+major21 [style=filled, fillcolor=white, label=major];
+site24 -> major21  [label=amod];
+Grb2 [style=filled, fillcolor=white, label=Grb2];
+site24 -> Grb2  [label=amod];
+binding23 [style=filled, fillcolor=white, label=binding];
+site24 -> binding23  [label=amod];
+sites11 -> site24  [label=conj_and];
+}

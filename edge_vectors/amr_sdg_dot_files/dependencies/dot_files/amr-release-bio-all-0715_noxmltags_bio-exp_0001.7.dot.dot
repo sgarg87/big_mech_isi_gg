@@ -1,0 +1,45 @@
+digraph "Serial deletions identified a minimal HER3 promoter retaining transcriptional response to vemurafenib and AZD6244 ,  which was located between -401 and -42 bp ( Fig. 5C ) ." {
+label="Serial deletions identified a minimal HER3 promoter retaining transcriptional
+response to vemurafenib and AZD6244 ,  which was located between -401 and -42 bp
+( Fig. 5C ) .";
+deletions2 [style=filled, fillcolor=white, label=deletions];
+Serial1 [style=filled, fillcolor=white, label=Serial];
+deletions2 -> Serial1  [label=amod];
+identified3 [style=filled, fillcolor=white, label=identified];
+identified3 -> deletions2  [label=nsubj];
+identified3 -> identified3  [label=root];
+promoter7 [style=filled, fillcolor=white, label=promoter];
+a4 [style=filled, fillcolor=white, label=a];
+promoter7 -> a4  [label=det];
+minimal5 [style=filled, fillcolor=white, label=minimal];
+promoter7 -> minimal5  [label=amod];
+HER36 [style=filled, fillcolor=white, label=HER3];
+minimal5 -> HER36  [label=dep];
+identified3 -> promoter7  [label=dobj];
+retaining8 [style=filled, fillcolor=white, label=retaining];
+promoter7 -> retaining8  [label=vmod];
+response10 [style=filled, fillcolor=white, label=response];
+transcriptional9 [style=filled, fillcolor=white, label=transcriptional];
+response10 -> transcriptional9  [label=amod];
+retaining8 -> response10  [label=dobj];
+vemurafenib12 [style=filled, fillcolor=white, label=vemurafenib];
+retaining8 -> vemurafenib12  [label=prep_to];
+AZD62441 [style=filled, fillcolor=white, label=AZD6244];
+vemurafenib12 -> AZD62441  [label=conj_and];
+located18 [style=filled, fillcolor=white, label=located];
+which16 [style=filled, fillcolor=white, label=which];
+located18 -> which16  [label=nsubjpass];
+was17 [style=filled, fillcolor=white, label=was];
+located18 -> was17  [label=auxpass];
+vemurafenib12 -> located18  [label=rcmod];
+"-4012" [style=filled, fillcolor=white, label="-401"];
+located18 -> "-4012"  [label=prep_between];
+bp23 [style=filled, fillcolor=white, label=bp];
+"-42" [style=filled, fillcolor=white, label="-42"];
+bp23 -> "-42"  [label=num];
+"-4012" -> bp23  [label=conj_and];
+"5C26" [style=filled, fillcolor=white, label="5C"];
+"Fig.25" [style=filled, fillcolor=white, label="Fig."];
+"5C26" -> "Fig.25"  [label=number];
+promoter7 -> "5C26"  [label=dep];
+}

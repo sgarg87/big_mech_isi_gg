@@ -1,0 +1,42 @@
+digraph "Il6 ,  leukemia inhibitory factor -LSB- LIF -RCB- ,  and oncostatin M -LSB- OSM -RSB- are Il6-type cytokines that stimulate osteoclast formation and function" {
+label="Il6 ,  leukemia inhibitory factor -LSB- LIF -RCB- ,  and oncostatin M -LSB- OSM
+-RSB- are Il6-type cytokines that stimulate osteoclast formation and function";
+Il61 [style=filled, fillcolor=white, label=Il6];
+Il61 -> Il61  [label=root];
+leukemia3 [style=filled, fillcolor=white, label=leukemia];
+Il61 -> leukemia3  [label=dep];
+LIF7 [style=filled, fillcolor=white, label=LIF];
+inhibitory4 [style=filled, fillcolor=white, label=inhibitory];
+LIF7 -> inhibitory4  [label=amod];
+factor5 [style=filled, fillcolor=white, label=factor];
+LIF7 -> factor5  [label=nn];
+"-LSB-6" [style=filled, fillcolor=white, label="-LSB-"];
+LIF7 -> "-LSB-6"  [label=nn];
+Il61 -> LIF7  [label=dobj];
+oncostatin11 [style=filled, fillcolor=white, label=oncostatin];
+Il61 -> oncostatin11  [label=conj_and];
+"-RSB-15" [style=filled, fillcolor=white, label="-RSB-"];
+M12 [style=filled, fillcolor=white, label=M];
+"-RSB-15" -> M12  [label=nn];
+"-LSB-13" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-15" -> "-LSB-13"  [label=nn];
+OSM14 [style=filled, fillcolor=white, label=OSM];
+"-RSB-15" -> OSM14  [label=nn];
+cytokines18 [style=filled, fillcolor=white, label=cytokines];
+cytokines18 -> "-RSB-15"  [label=nsubj];
+are16 [style=filled, fillcolor=white, label=are];
+cytokines18 -> are16  [label=cop];
+"Il6-type17" [style=filled, fillcolor=white, label="Il6-type"];
+cytokines18 -> "Il6-type17"  [label=nn];
+oncostatin11 -> cytokines18  [label=ccomp];
+stimulate20 [style=filled, fillcolor=white, label=stimulate];
+that19 [style=filled, fillcolor=white, label=that];
+stimulate20 -> that19  [label=nsubj];
+cytokines18 -> stimulate20  [label=rcmod];
+formation22 [style=filled, fillcolor=white, label=formation];
+osteoclast21 [style=filled, fillcolor=white, label=osteoclast];
+formation22 -> osteoclast21  [label=amod];
+stimulate20 -> formation22  [label=dobj];
+function24 [style=filled, fillcolor=white, label=function];
+formation22 -> function24  [label=conj_and];
+}

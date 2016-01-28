@@ -1,0 +1,36 @@
+digraph "In Caco-BR cells N-cadherin expression is increased about 2-fold both at mRNA and protein levels ,  as compared to Caco-2 cells ." {
+label="In Caco-BR cells N-cadherin expression is increased about 2-fold both at mRNA
+and protein levels ,  as compared to Caco-2 cells .";
+cells3 [style=filled, fillcolor=white, label=cells];
+"Caco-BR2" [style=filled, fillcolor=white, label="Caco-BR"];
+cells3 -> "Caco-BR2"  [label=amod];
+increased7 [style=filled, fillcolor=white, label=increased];
+increased7 -> cells3  [label=prep_in];
+expression5 [style=filled, fillcolor=white, label=expression];
+"N-cadherin4" [style=filled, fillcolor=white, label="N-cadherin"];
+expression5 -> "N-cadherin4"  [label=amod];
+increased7 -> expression5  [label=nsubjpass];
+is6 [style=filled, fillcolor=white, label=is];
+increased7 -> is6  [label=auxpass];
+increased7 -> increased7  [label=root];
+"2-fold9" [style=filled, fillcolor=white, label="2-fold"];
+about8 [style=filled, fillcolor=white, label=about];
+"2-fold9" -> about8  [label=advmod];
+increased7 -> "2-fold9"  [label=acomp];
+both10 [style=filled, fillcolor=white, label=both];
+"2-fold9" -> both10  [label=dep];
+levels15 [style=filled, fillcolor=white, label=levels];
+mRNA12 [style=filled, fillcolor=white, label=mRNA];
+levels15 -> mRNA12  [label=nn];
+protein14 [style=filled, fillcolor=white, label=protein];
+mRNA12 -> protein14  [label=conj_and];
+"2-fold9" -> levels15  [label=prep_at];
+as17 [style=filled, fillcolor=white, label=as];
+"2-fold9" -> as17  [label=prep];
+to19 [style=filled, fillcolor=white, label=to];
+increased7 -> to19  [label=prepc_compared_to];
+cells21 [style=filled, fillcolor=white, label=cells];
+"Caco-20" [style=filled, fillcolor=white, label="Caco-2"];
+cells21 -> "Caco-20"  [label=nn];
+increased7 -> cells21  [label=pobj];
+}

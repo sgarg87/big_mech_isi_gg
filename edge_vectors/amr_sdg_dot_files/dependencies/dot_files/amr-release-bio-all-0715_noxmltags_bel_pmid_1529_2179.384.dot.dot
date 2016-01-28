@@ -1,0 +1,40 @@
+digraph "In ERK-1 + / + MEFs ,  hyperoxia stimulated phosphorylation of Nrf2 ( lane 4 ) ,  when compared with room air-exposed controls ( lane 3 ) ." {
+label="In ERK-1 + / + MEFs ,  hyperoxia stimulated phosphorylation of Nrf2 ( lane 4 )
+,  when compared with room air-exposed controls ( lane 3 ) .";
+"+3" [style=filled, fillcolor=white, label="+"];
+"ERK-12" [style=filled, fillcolor=white, label="ERK-1"];
+"+3" -> "ERK-12"  [label=nn];
+MEFs6 [style=filled, fillcolor=white, label=MEFs];
+MEFs6 -> "+3"  [label=prep_in];
+"/4" [style=filled, fillcolor=white, label="/"];
+MEFs6 -> "/4"  [label=punct];
+"+5" [style=filled, fillcolor=white, label="+"];
+MEFs6 -> "+5"  [label=nn];
+MEFs6 -> MEFs6  [label=root];
+hyperoxia8 [style=filled, fillcolor=white, label=hyperoxia];
+MEFs6 -> hyperoxia8  [label=appos];
+stimulated9 [style=filled, fillcolor=white, label=stimulated];
+hyperoxia8 -> stimulated9  [label=vmod];
+phosphorylation10 [style=filled, fillcolor=white, label=phosphorylation];
+stimulated9 -> phosphorylation10  [label=dobj];
+Nrf21 [style=filled, fillcolor=white, label=Nrf2];
+phosphorylation10 -> Nrf21  [label=prep_of];
+415 [style=filled, fillcolor=white, label=4];
+lane14 [style=filled, fillcolor=white, label=lane];
+415 -> lane14  [label=number];
+Nrf21 -> 415  [label=dep];
+compared19 [style=filled, fillcolor=white, label=compared];
+when18 [style=filled, fillcolor=white, label=when];
+compared19 -> when18  [label=advmod];
+stimulated9 -> compared19  [label=advcl];
+controls23 [style=filled, fillcolor=white, label=controls];
+room21 [style=filled, fillcolor=white, label=room];
+controls23 -> room21  [label=nn];
+"air-exposed22" [style=filled, fillcolor=white, label="air-exposed"];
+controls23 -> "air-exposed22"  [label=amod];
+compared19 -> controls23  [label=prep_with];
+326 [style=filled, fillcolor=white, label=3];
+lane25 [style=filled, fillcolor=white, label=lane];
+326 -> lane25  [label=number];
+controls23 -> 326  [label=dep];
+}

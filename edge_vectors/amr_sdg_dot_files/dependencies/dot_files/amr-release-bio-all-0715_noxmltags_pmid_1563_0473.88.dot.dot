@@ -1,0 +1,42 @@
+digraph "Additionally ,  however ,  was a marked and variable expansion of keratin 5 ( K5 ) ,  normally restricted to the innermost basal layer ( see Figure 3 ) ." {
+label="Additionally ,  however ,  was a marked and variable expansion of keratin 5 (
+K5 ) ,  normally restricted to the innermost basal layer ( see Figure 3 ) .";
+expansion10 [style=filled, fillcolor=white, label=expansion];
+Additionally1 [style=filled, fillcolor=white, label=Additionally];
+expansion10 -> Additionally1  [label=advmod];
+however3 [style=filled, fillcolor=white, label=however];
+expansion10 -> however3  [label=advmod];
+was5 [style=filled, fillcolor=white, label=was];
+expansion10 -> was5  [label=cop];
+a6 [style=filled, fillcolor=white, label=a];
+expansion10 -> a6  [label=det];
+marked7 [style=filled, fillcolor=white, label=marked];
+expansion10 -> marked7  [label=amod];
+variable9 [style=filled, fillcolor=white, label=variable];
+marked7 -> variable9  [label=conj_and];
+expansion10 -> expansion10  [label=root];
+keratin12 [style=filled, fillcolor=white, label=keratin];
+expansion10 -> keratin12  [label=prep_of];
+513 [style=filled, fillcolor=white, label=5];
+keratin12 -> 513  [label=num];
+K51 [style=filled, fillcolor=white, label=K5];
+keratin12 -> K51  [label=appos];
+restricted19 [style=filled, fillcolor=white, label=restricted];
+normally18 [style=filled, fillcolor=white, label=normally];
+restricted19 -> normally18  [label=advmod];
+keratin12 -> restricted19  [label=vmod];
+layer24 [style=filled, fillcolor=white, label=layer];
+the21 [style=filled, fillcolor=white, label=the];
+layer24 -> the21  [label=det];
+innermost22 [style=filled, fillcolor=white, label=innermost];
+layer24 -> innermost22  [label=amod];
+basal23 [style=filled, fillcolor=white, label=basal];
+layer24 -> basal23  [label=amod];
+restricted19 -> layer24  [label=prep_to];
+see26 [style=filled, fillcolor=white, label=see];
+layer24 -> see26  [label=dep];
+Figure27 [style=filled, fillcolor=white, label=Figure];
+see26 -> Figure27  [label=dobj];
+328 [style=filled, fillcolor=white, label=3];
+Figure27 -> 328  [label=num];
+}

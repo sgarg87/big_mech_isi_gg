@@ -1,0 +1,45 @@
+digraph "It has been previously shown that HRASG12V converts Caco-2 epithelial into mesenchymal cells by inducing loss of E-cadherin and overexpression of vimentin -LSB- 25 -RSB- ." {
+label="It has been previously shown that HRASG12V converts Caco-2 epithelial into
+mesenchymal cells by inducing loss of E-cadherin and overexpression of vimentin
+-LSB- 25 -RSB- .";
+shown5 [style=filled, fillcolor=white, label=shown];
+It1 [style=filled, fillcolor=white, label=It];
+shown5 -> It1  [label=nsubjpass];
+has2 [style=filled, fillcolor=white, label=has];
+shown5 -> has2  [label=aux];
+been3 [style=filled, fillcolor=white, label=been];
+shown5 -> been3  [label=auxpass];
+previously4 [style=filled, fillcolor=white, label=previously];
+shown5 -> previously4  [label=advmod];
+shown5 -> shown5  [label=root];
+converts8 [style=filled, fillcolor=white, label=converts];
+that6 [style=filled, fillcolor=white, label=that];
+converts8 -> that6  [label=mark];
+HRASG12V7 [style=filled, fillcolor=white, label=HRASG12V];
+converts8 -> HRASG12V7  [label=nsubj];
+shown5 -> converts8  [label=ccomp];
+epithelial10 [style=filled, fillcolor=white, label=epithelial];
+"Caco-29" [style=filled, fillcolor=white, label="Caco-2"];
+epithelial10 -> "Caco-29"  [label=nn];
+converts8 -> epithelial10  [label=dobj];
+cells13 [style=filled, fillcolor=white, label=cells];
+mesenchymal12 [style=filled, fillcolor=white, label=mesenchymal];
+cells13 -> mesenchymal12  [label=amod];
+converts8 -> cells13  [label=prep_into];
+inducing15 [style=filled, fillcolor=white, label=inducing];
+converts8 -> inducing15  [label=prepc_by];
+loss16 [style=filled, fillcolor=white, label=loss];
+inducing15 -> loss16  [label=dobj];
+"E-cadherin18" [style=filled, fillcolor=white, label="E-cadherin"];
+loss16 -> "E-cadherin18"  [label=prep_of];
+overexpression20 [style=filled, fillcolor=white, label=overexpression];
+loss16 -> overexpression20  [label=conj_and];
+"-RSB-25" [style=filled, fillcolor=white, label="-RSB-"];
+vimentin22 [style=filled, fillcolor=white, label=vimentin];
+"-RSB-25" -> vimentin22  [label=amod];
+"-LSB-23" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-25" -> "-LSB-23"  [label=nn];
+2524 [style=filled, fillcolor=white, label=25];
+"-RSB-25" -> 2524  [label=num];
+overexpression20 -> "-RSB-25"  [label=prep_of];
+}

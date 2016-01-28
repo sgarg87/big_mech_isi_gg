@@ -1,0 +1,38 @@
+digraph "( A ) Cos-7 cells were transfected with the indicated cDNAs ( Tfx ) ,  and treated with EGF ( 3 min ,  + ) or mock treated ( − ) ." {
+label="( A ) Cos-7 cells were transfected with the indicated cDNAs ( Tfx ) ,  and
+treated with EGF ( 3 min ,  + ) or mock treated ( − ) .";
+"Cos-74" [style=filled, fillcolor=white, label="Cos-7"];
+A2 [style=filled, fillcolor=white, label=A];
+"Cos-74" -> A2  [label=appos];
+cells5 [style=filled, fillcolor=white, label=cells];
+cells5 -> "Cos-74"  [label=nn];
+transfected7 [style=filled, fillcolor=white, label=transfected];
+transfected7 -> cells5  [label=nsubjpass];
+were6 [style=filled, fillcolor=white, label=were];
+transfected7 -> were6  [label=auxpass];
+transfected7 -> transfected7  [label=root];
+cDNAs11 [style=filled, fillcolor=white, label=cDNAs];
+the9 [style=filled, fillcolor=white, label=the];
+cDNAs11 -> the9  [label=det];
+indicated10 [style=filled, fillcolor=white, label=indicated];
+cDNAs11 -> indicated10  [label=amod];
+transfected7 -> cDNAs11  [label=prep_with];
+Tfx13 [style=filled, fillcolor=white, label=Tfx];
+cDNAs11 -> Tfx13  [label=appos];
+treated17 [style=filled, fillcolor=white, label=treated];
+transfected7 -> treated17  [label=conj_and];
+EGF19 [style=filled, fillcolor=white, label=EGF];
+treated17 -> EGF19  [label=prep_with];
+min22 [style=filled, fillcolor=white, label=min];
+321 [style=filled, fillcolor=white, label=3];
+min22 -> 321  [label=num];
+EGF19 -> min22  [label=appos];
+"+24" [style=filled, fillcolor=white, label="+"];
+min22 -> "+24"  [label=dep];
+treated28 [style=filled, fillcolor=white, label=treated];
+mock27 [style=filled, fillcolor=white, label=mock];
+treated28 -> mock27  [label=amod];
+EGF19 -> treated28  [label=conj_or];
+"−30" [style=filled, fillcolor=white, label="−"];
+EGF19 -> "−30"  [label=appos];
+}

@@ -1,0 +1,39 @@
+digraph "( F ) Transgene expression of excess Ajuba or the Grb-2-interacting domain ( pre-LIM ) of Ajuba in keratinocytes results in the activation of the Ras-MAPK pathway ." {
+label="( F ) Transgene expression of excess Ajuba or the Grb-2-interacting domain (
+pre-LIM ) of Ajuba in keratinocytes results in the activation of the Ras-MAPK
+pathway .";
+expression5 [style=filled, fillcolor=white, label=expression];
+F2 [style=filled, fillcolor=white, label=F];
+expression5 -> F2  [label=appos];
+Transgene4 [style=filled, fillcolor=white, label=Transgene];
+expression5 -> Transgene4  [label=amod];
+results20 [style=filled, fillcolor=white, label=results];
+results20 -> expression5  [label=nsubj];
+Ajuba8 [style=filled, fillcolor=white, label=Ajuba];
+excess7 [style=filled, fillcolor=white, label=excess];
+Ajuba8 -> excess7  [label=amod];
+expression5 -> Ajuba8  [label=prep_of];
+domain12 [style=filled, fillcolor=white, label=domain];
+the10 [style=filled, fillcolor=white, label=the];
+domain12 -> the10  [label=det];
+"Grb-2-interacting11" [style=filled, fillcolor=white, label="Grb-2-interacting"];
+domain12 -> "Grb-2-interacting11"  [label=nn];
+expression5 -> domain12  [label=conj_or];
+"pre-LIM14" [style=filled, fillcolor=white, label="pre-LIM"];
+domain12 -> "pre-LIM14"  [label=appos];
+Ajuba17 [style=filled, fillcolor=white, label=Ajuba];
+domain12 -> Ajuba17  [label=prep_of];
+keratinocytes19 [style=filled, fillcolor=white, label=keratinocytes];
+Ajuba17 -> keratinocytes19  [label=prep_in];
+results20 -> results20  [label=root];
+activation23 [style=filled, fillcolor=white, label=activation];
+the22 [style=filled, fillcolor=white, label=the];
+activation23 -> the22  [label=det];
+results20 -> activation23  [label=prep_in];
+pathway27 [style=filled, fillcolor=white, label=pathway];
+the25 [style=filled, fillcolor=white, label=the];
+pathway27 -> the25  [label=det];
+"Ras-MAPK26" [style=filled, fillcolor=white, label="Ras-MAPK"];
+pathway27 -> "Ras-MAPK26"  [label=nn];
+activation23 -> pathway27  [label=prep_of];
+}

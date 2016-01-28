@@ -1,0 +1,30 @@
+digraph "( C -- E ) Immunohistochemistry shows expression of Snail protein in the nuclei of cells within the hair and skin ." {
+label="( C -- E ) Immunohistochemistry shows expression of Snail protein in the nuclei
+of cells within the hair and skin .";
+shows7 [style=filled, fillcolor=white, label=shows];
+C2 [style=filled, fillcolor=white, label=C];
+shows7 -> C2  [label=nsubj];
+E4 [style=filled, fillcolor=white, label=E];
+C2 -> E4  [label=dep];
+Immunohistochemistry6 [style=filled, fillcolor=white, label=Immunohistochemistry];
+shows7 -> Immunohistochemistry6  [label=advmod];
+shows7 -> shows7  [label=root];
+expression8 [style=filled, fillcolor=white, label=expression];
+shows7 -> expression8  [label=dobj];
+protein11 [style=filled, fillcolor=white, label=protein];
+Snail10 [style=filled, fillcolor=white, label=Snail];
+protein11 -> Snail10  [label=nn];
+expression8 -> protein11  [label=prep_of];
+nuclei14 [style=filled, fillcolor=white, label=nuclei];
+the13 [style=filled, fillcolor=white, label=the];
+nuclei14 -> the13  [label=det];
+shows7 -> nuclei14  [label=prep_in];
+cells16 [style=filled, fillcolor=white, label=cells];
+nuclei14 -> cells16  [label=prep_of];
+hair19 [style=filled, fillcolor=white, label=hair];
+the18 [style=filled, fillcolor=white, label=the];
+hair19 -> the18  [label=det];
+cells16 -> hair19  [label=prep_within];
+skin21 [style=filled, fillcolor=white, label=skin];
+hair19 -> skin21  [label=conj_and];
+}

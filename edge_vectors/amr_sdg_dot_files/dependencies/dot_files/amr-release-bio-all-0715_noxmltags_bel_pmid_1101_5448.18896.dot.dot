@@ -1,0 +1,60 @@
+digraph "At days 8 ,  11 ,  20 ,  23 ,  and 26 after disease induction ,  splenocytes from CCR2-deficient mice also proliferated less robustly to Ag and secreted lower levels of IFN - -LCB- gamma -RCB- and IL-6 than splenocytes from wild-type controls" {
+label="At days 8 ,  11 ,  20 ,  23 ,  and 26 after disease induction ,  splenocytes
+from CCR2-deficient mice also proliferated less robustly to Ag and secreted
+lower levels of IFN - -LCB- gamma -RCB- and IL-6 than splenocytes from wild-type
+controls";
+At1 [style=filled, fillcolor=white, label=At];
+At1 -> At1  [label=root];
+days2 [style=filled, fillcolor=white, label=days];
+At1 -> days2  [label=pcomp];
+83 [style=filled, fillcolor=white, label=8];
+days2 -> 83  [label=num];
+115 [style=filled, fillcolor=white, label=11];
+days2 -> 115  [label=num];
+207 [style=filled, fillcolor=white, label=20];
+days2 -> 207  [label=num];
+239 [style=filled, fillcolor=white, label=23];
+days2 -> 239  [label=num];
+261 [style=filled, fillcolor=white, label=26];
+days2 -> 261  [label=conj_and];
+after13 [style=filled, fillcolor=white, label=after];
+days2 -> after13  [label=dep];
+induction15 [style=filled, fillcolor=white, label=induction];
+disease14 [style=filled, fillcolor=white, label=disease];
+induction15 -> disease14  [label=nn];
+after13 -> induction15  [label=pobj];
+splenocytes17 [style=filled, fillcolor=white, label=splenocytes];
+induction15 -> splenocytes17  [label=appos];
+mice20 [style=filled, fillcolor=white, label=mice];
+"CCR2-deficient19" [style=filled, fillcolor=white, label="CCR2-deficient"];
+mice20 -> "CCR2-deficient19"  [label=nn];
+splenocytes17 -> mice20  [label=prep_from];
+proliferated22 [style=filled, fillcolor=white, label=proliferated];
+also21 [style=filled, fillcolor=white, label=also];
+proliferated22 -> also21  [label=advmod];
+mice20 -> proliferated22  [label=vmod];
+robustly24 [style=filled, fillcolor=white, label=robustly];
+less23 [style=filled, fillcolor=white, label=less];
+robustly24 -> less23  [label=advmod];
+proliferated22 -> robustly24  [label=acomp];
+Ag26 [style=filled, fillcolor=white, label=Ag];
+robustly24 -> Ag26  [label=prep_to];
+secreted28 [style=filled, fillcolor=white, label=secreted];
+At1 -> secreted28  [label=conj_and];
+levels30 [style=filled, fillcolor=white, label=levels];
+lower29 [style=filled, fillcolor=white, label=lower];
+levels30 -> lower29  [label=amod];
+secreted28 -> levels30  [label=dobj];
+IFN32 [style=filled, fillcolor=white, label=IFN];
+levels30 -> IFN32  [label=prep_of];
+gamma35 [style=filled, fillcolor=white, label=gamma];
+levels30 -> gamma35  [label=dep];
+"IL-638" [style=filled, fillcolor=white, label="IL-6"];
+gamma35 -> "IL-638"  [label=conj_and];
+splenocytes40 [style=filled, fillcolor=white, label=splenocytes];
+secreted28 -> splenocytes40  [label=prep_than];
+controls43 [style=filled, fillcolor=white, label=controls];
+"wild-type42" [style=filled, fillcolor=white, label="wild-type"];
+controls43 -> "wild-type42"  [label=amod];
+secreted28 -> controls43  [label=prep_from];
+}

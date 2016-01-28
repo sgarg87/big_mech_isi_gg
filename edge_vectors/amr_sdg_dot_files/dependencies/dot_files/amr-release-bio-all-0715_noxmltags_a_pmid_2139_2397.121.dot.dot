@@ -1,0 +1,25 @@
+digraph "Therefore ,  we asked whether IR could induce YB-1 phosphorylation as well ." {
+label="Therefore ,  we asked whether IR could induce YB-1 phosphorylation as well .";
+asked4 [style=filled, fillcolor=white, label=asked];
+Therefore1 [style=filled, fillcolor=white, label=Therefore];
+asked4 -> Therefore1  [label=advmod];
+we3 [style=filled, fillcolor=white, label=we];
+asked4 -> we3  [label=nsubj];
+asked4 -> asked4  [label=root];
+induce8 [style=filled, fillcolor=white, label=induce];
+whether5 [style=filled, fillcolor=white, label=whether];
+induce8 -> whether5  [label=mark];
+IR6 [style=filled, fillcolor=white, label=IR];
+induce8 -> IR6  [label=nsubj];
+could7 [style=filled, fillcolor=white, label=could];
+induce8 -> could7  [label=aux];
+asked4 -> induce8  [label=ccomp];
+phosphorylation10 [style=filled, fillcolor=white, label=phosphorylation];
+"YB-19" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation10 -> "YB-19"  [label=nn];
+induce8 -> phosphorylation10  [label=dobj];
+well12 [style=filled, fillcolor=white, label=well];
+as11 [style=filled, fillcolor=white, label=as];
+well12 -> as11  [label=advmod];
+induce8 -> well12  [label=advmod];
+}

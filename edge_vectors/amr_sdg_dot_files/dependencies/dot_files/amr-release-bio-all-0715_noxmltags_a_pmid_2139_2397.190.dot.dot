@@ -1,0 +1,36 @@
+digraph "The results obtained by clonogenic assay indicate a differential response in terms of postirradiation survival of the cell lines analyzed ." {
+label="The results obtained by clonogenic assay indicate a differential response in
+terms of postirradiation survival of the cell lines analyzed .";
+results2 [style=filled, fillcolor=white, label=results];
+The1 [style=filled, fillcolor=white, label=The];
+results2 -> The1  [label=det];
+indicate7 [style=filled, fillcolor=white, label=indicate];
+indicate7 -> results2  [label=nsubj];
+obtained3 [style=filled, fillcolor=white, label=obtained];
+results2 -> obtained3  [label=vmod];
+assay6 [style=filled, fillcolor=white, label=assay];
+clonogenic5 [style=filled, fillcolor=white, label=clonogenic];
+assay6 -> clonogenic5  [label=amod];
+obtained3 -> assay6  [label=agent];
+indicate7 -> indicate7  [label=root];
+response10 [style=filled, fillcolor=white, label=response];
+a8 [style=filled, fillcolor=white, label=a];
+response10 -> a8  [label=det];
+differential9 [style=filled, fillcolor=white, label=differential];
+response10 -> differential9  [label=nn];
+analyzed20 [style=filled, fillcolor=white, label=analyzed];
+analyzed20 -> response10  [label=nsubj];
+terms12 [style=filled, fillcolor=white, label=terms];
+response10 -> terms12  [label=prep_in];
+survival15 [style=filled, fillcolor=white, label=survival];
+postirradiation14 [style=filled, fillcolor=white, label=postirradiation];
+survival15 -> postirradiation14  [label=nn];
+terms12 -> survival15  [label=prep_of];
+lines19 [style=filled, fillcolor=white, label=lines];
+the17 [style=filled, fillcolor=white, label=the];
+lines19 -> the17  [label=det];
+cell18 [style=filled, fillcolor=white, label=cell];
+lines19 -> cell18  [label=nn];
+survival15 -> lines19  [label=prep_of];
+indicate7 -> analyzed20  [label=ccomp];
+}

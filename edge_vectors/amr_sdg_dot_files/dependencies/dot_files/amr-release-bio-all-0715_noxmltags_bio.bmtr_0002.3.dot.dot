@@ -1,0 +1,49 @@
+digraph "We used tandem mass spectrometry to measure the effects of AZD6244 on phosphorylation of this JM domain threonine residue in both EGFR-mutant and HER2 - amplified cancer models ." {
+label="We used tandem mass spectrometry to measure the effects of AZD6244 on
+phosphorylation of this JM domain threonine residue in both EGFR-mutant and HER2
+- amplified cancer models .";
+used2 [style=filled, fillcolor=white, label=used];
+We1 [style=filled, fillcolor=white, label=We];
+used2 -> We1  [label=nsubj];
+used2 -> used2  [label=root];
+mass4 [style=filled, fillcolor=white, label=mass];
+tandem3 [style=filled, fillcolor=white, label=tandem];
+mass4 -> tandem3  [label=nn];
+used2 -> mass4  [label=dobj];
+spectrometry5 [style=filled, fillcolor=white, label=spectrometry];
+used2 -> spectrometry5  [label=advmod];
+measure7 [style=filled, fillcolor=white, label=measure];
+to6 [style=filled, fillcolor=white, label=to];
+measure7 -> to6  [label=aux];
+used2 -> measure7  [label=vmod];
+effects9 [style=filled, fillcolor=white, label=effects];
+the8 [style=filled, fillcolor=white, label=the];
+effects9 -> the8  [label=det];
+measure7 -> effects9  [label=dobj];
+AZD624411 [style=filled, fillcolor=white, label=AZD6244];
+effects9 -> AZD624411  [label=prep_of];
+phosphorylation13 [style=filled, fillcolor=white, label=phosphorylation];
+measure7 -> phosphorylation13  [label=prep_on];
+residue19 [style=filled, fillcolor=white, label=residue];
+this15 [style=filled, fillcolor=white, label=this];
+residue19 -> this15  [label=det];
+JM16 [style=filled, fillcolor=white, label=JM];
+residue19 -> JM16  [label=nn];
+domain17 [style=filled, fillcolor=white, label=domain];
+residue19 -> domain17  [label=nn];
+threonine18 [style=filled, fillcolor=white, label=threonine];
+residue19 -> threonine18  [label=nn];
+phosphorylation13 -> residue19  [label=prep_of];
+"EGFR-mutant22" [style=filled, fillcolor=white, label="EGFR-mutant"];
+both21 [style=filled, fillcolor=white, label=both];
+"EGFR-mutant22" -> both21  [label=preconj];
+measure7 -> "EGFR-mutant22"  [label=prep_in];
+HER224 [style=filled, fillcolor=white, label=HER2];
+"EGFR-mutant22" -> HER224  [label=conj_and];
+amplified26 [style=filled, fillcolor=white, label=amplified];
+used2 -> amplified26  [label=parataxis];
+models28 [style=filled, fillcolor=white, label=models];
+cancer27 [style=filled, fillcolor=white, label=cancer];
+models28 -> cancer27  [label=nn];
+amplified26 -> models28  [label=dobj];
+}

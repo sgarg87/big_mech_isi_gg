@@ -1,0 +1,30 @@
+digraph "We utilized an unbiased mass spectrometry - based approach to identify ubiquitination sites of Ras ." {
+label="We utilized an unbiased mass spectrometry - based approach to identify
+ubiquitination sites of Ras .";
+utilized2 [style=filled, fillcolor=white, label=utilized];
+We1 [style=filled, fillcolor=white, label=We];
+utilized2 -> We1  [label=nsubj];
+utilized2 -> utilized2  [label=root];
+spectrometry6 [style=filled, fillcolor=white, label=spectrometry];
+an3 [style=filled, fillcolor=white, label=an];
+spectrometry6 -> an3  [label=det];
+unbiased4 [style=filled, fillcolor=white, label=unbiased];
+spectrometry6 -> unbiased4  [label=amod];
+mass5 [style=filled, fillcolor=white, label=mass];
+spectrometry6 -> mass5  [label=nn];
+utilized2 -> spectrometry6  [label=dobj];
+based8 [style=filled, fillcolor=white, label=based];
+spectrometry6 -> based8  [label=vmod];
+approach9 [style=filled, fillcolor=white, label=approach];
+based8 -> approach9  [label=dobj];
+identify11 [style=filled, fillcolor=white, label=identify];
+to10 [style=filled, fillcolor=white, label=to];
+identify11 -> to10  [label=aux];
+based8 -> identify11  [label=vmod];
+sites13 [style=filled, fillcolor=white, label=sites];
+ubiquitination12 [style=filled, fillcolor=white, label=ubiquitination];
+sites13 -> ubiquitination12  [label=nn];
+identify11 -> sites13  [label=dobj];
+Ras15 [style=filled, fillcolor=white, label=Ras];
+sites13 -> Ras15  [label=prep_of];
+}

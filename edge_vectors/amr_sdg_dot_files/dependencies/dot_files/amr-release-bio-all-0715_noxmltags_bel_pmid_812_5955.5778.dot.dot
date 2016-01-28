@@ -1,0 +1,41 @@
+digraph "Stable transfection of activated Ha-ras into a number of murine cells correlated with a down-regulation of the expression of the NF1 genes NF1/CTF and NF1/X ." {
+label="Stable transfection of activated Ha-ras into a number of murine cells
+correlated with a down-regulation of the expression of the NF1 genes NF1/CTF and
+NF1/X .";
+transfection2 [style=filled, fillcolor=white, label=transfection];
+Stable1 [style=filled, fillcolor=white, label=Stable];
+transfection2 -> Stable1  [label=amod];
+transfection2 -> transfection2  [label=root];
+"Ha-ras5" [style=filled, fillcolor=white, label="Ha-ras"];
+activated4 [style=filled, fillcolor=white, label=activated];
+"Ha-ras5" -> activated4  [label=amod];
+transfection2 -> "Ha-ras5"  [label=prep_of];
+number8 [style=filled, fillcolor=white, label=number];
+a7 [style=filled, fillcolor=white, label=a];
+number8 -> a7  [label=det];
+transfection2 -> number8  [label=prep_into];
+cells11 [style=filled, fillcolor=white, label=cells];
+murine10 [style=filled, fillcolor=white, label=murine];
+cells11 -> murine10  [label=amod];
+transfection2 -> cells11  [label=prep_of];
+correlated12 [style=filled, fillcolor=white, label=correlated];
+transfection2 -> correlated12  [label=vmod];
+"down-regulation15" [style=filled, fillcolor=white, label="down-regulation"];
+a14 [style=filled, fillcolor=white, label=a];
+"down-regulation15" -> a14  [label=det];
+correlated12 -> "down-regulation15"  [label=prep_with];
+expression18 [style=filled, fillcolor=white, label=expression];
+the17 [style=filled, fillcolor=white, label=the];
+expression18 -> the17  [label=det];
+"down-regulation15" -> expression18  [label=prep_of];
+"NF1/CTF23" [style=filled, fillcolor=white, label="NF1/CTF"];
+the20 [style=filled, fillcolor=white, label=the];
+"NF1/CTF23" -> the20  [label=det];
+NF12 [style=filled, fillcolor=white, label=NF1];
+"NF1/CTF23" -> NF12  [label=nn];
+genes22 [style=filled, fillcolor=white, label=genes];
+"NF1/CTF23" -> genes22  [label=nn];
+expression18 -> "NF1/CTF23"  [label=prep_of];
+"NF1/X25" [style=filled, fillcolor=white, label="NF1/X"];
+"NF1/CTF23" -> "NF1/X25"  [label=conj_and];
+}

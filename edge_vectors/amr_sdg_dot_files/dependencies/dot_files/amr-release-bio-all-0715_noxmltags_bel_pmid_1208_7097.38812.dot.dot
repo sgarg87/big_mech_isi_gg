@@ -1,0 +1,39 @@
+digraph "the phosphorylation of Raf-1 on Ser-259 induced by paclitaxel he region surrounding Ser-259 in Raf-1 conforms to a consensus sequence for phosphorylation by Akt" {
+label="the phosphorylation of Raf-1 on Ser-259 induced by paclitaxel he region
+surrounding Ser-259 in Raf-1 conforms to a consensus sequence for
+phosphorylation by Akt";
+phosphorylation2 [style=filled, fillcolor=white, label=phosphorylation];
+the1 [style=filled, fillcolor=white, label=the];
+phosphorylation2 -> the1  [label=det];
+conforms16 [style=filled, fillcolor=white, label=conforms];
+conforms16 -> phosphorylation2  [label=nsubj];
+"Raf-14" [style=filled, fillcolor=white, label="Raf-1"];
+phosphorylation2 -> "Raf-14"  [label=prep_of];
+"Ser-2596" [style=filled, fillcolor=white, label="Ser-259"];
+"Raf-14" -> "Ser-2596"  [label=prep_on];
+induced7 [style=filled, fillcolor=white, label=induced];
+"Ser-2596" -> induced7  [label=vmod];
+"Ser-25913" [style=filled, fillcolor=white, label="Ser-259"];
+paclitaxel9 [style=filled, fillcolor=white, label=paclitaxel];
+"Ser-25913" -> paclitaxel9  [label=amod];
+he10 [style=filled, fillcolor=white, label=he];
+paclitaxel9 -> he10  [label=dep];
+region11 [style=filled, fillcolor=white, label=region];
+"Ser-25913" -> region11  [label=nn];
+surrounding12 [style=filled, fillcolor=white, label=surrounding];
+"Ser-25913" -> surrounding12  [label=amod];
+induced7 -> "Ser-25913"  [label=agent];
+"Raf-15" [style=filled, fillcolor=white, label="Raf-1"];
+"Ser-25913" -> "Raf-15"  [label=prep_in];
+conforms16 -> conforms16  [label=root];
+sequence20 [style=filled, fillcolor=white, label=sequence];
+a18 [style=filled, fillcolor=white, label=a];
+sequence20 -> a18  [label=det];
+consensus19 [style=filled, fillcolor=white, label=consensus];
+sequence20 -> consensus19  [label=nn];
+conforms16 -> sequence20  [label=prep_to];
+phosphorylation22 [style=filled, fillcolor=white, label=phosphorylation];
+sequence20 -> phosphorylation22  [label=prep_for];
+Akt24 [style=filled, fillcolor=white, label=Akt];
+conforms16 -> Akt24  [label=prep_by];
+}

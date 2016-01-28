@@ -1,0 +1,30 @@
+digraph "Similar to the data shown in Figure 1D ,  exposure to IR did not induce YB-1 phosphorylation ." {
+label="Similar to the data shown in Figure 1D ,  exposure to IR did not induce YB-1
+phosphorylation .";
+induce15 [style=filled, fillcolor=white, label=induce];
+Similar1 [style=filled, fillcolor=white, label=Similar];
+induce15 -> Similar1  [label=ccomp];
+data4 [style=filled, fillcolor=white, label=data];
+the3 [style=filled, fillcolor=white, label=the];
+data4 -> the3  [label=det];
+Similar1 -> data4  [label=prep_to];
+shown5 [style=filled, fillcolor=white, label=shown];
+data4 -> shown5  [label=vmod];
+Figure7 [style=filled, fillcolor=white, label=Figure];
+shown5 -> Figure7  [label=prep_in];
+"1D8" [style=filled, fillcolor=white, label="1D"];
+Figure7 -> "1D8"  [label=num];
+exposure10 [style=filled, fillcolor=white, label=exposure];
+induce15 -> exposure10  [label=nsubj];
+IR12 [style=filled, fillcolor=white, label=IR];
+exposure10 -> IR12  [label=prep_to];
+did13 [style=filled, fillcolor=white, label=did];
+induce15 -> did13  [label=aux];
+not14 [style=filled, fillcolor=white, label=not];
+induce15 -> not14  [label=neg];
+induce15 -> induce15  [label=root];
+phosphorylation17 [style=filled, fillcolor=white, label=phosphorylation];
+"YB-16" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation17 -> "YB-16"  [label=nn];
+induce15 -> phosphorylation17  [label=dobj];
+}

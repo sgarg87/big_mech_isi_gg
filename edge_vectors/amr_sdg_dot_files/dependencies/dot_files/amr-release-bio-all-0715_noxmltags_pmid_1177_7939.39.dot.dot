@@ -1,0 +1,66 @@
+digraph "To determine whether E3b1 mediates the interaction between Eps8 and Sos-1 ,  as it would be expected according to the tricomplex model ,  we performed coimmunoprecipitation experiments under conditions in which the association between Eps8 and E3b1 was disrupted ." {
+label="To determine whether E3b1 mediates the interaction between Eps8 and Sos-1 ,  as
+it would be expected according to the tricomplex model ,  we performed
+coimmunoprecipitation experiments under conditions in which the association
+between Eps8 and E3b1 was disrupted .";
+determine2 [style=filled, fillcolor=white, label=determine];
+To1 [style=filled, fillcolor=white, label=To];
+determine2 -> To1  [label=aux];
+performed25 [style=filled, fillcolor=white, label=performed];
+performed25 -> determine2  [label=advcl];
+mediates5 [style=filled, fillcolor=white, label=mediates];
+whether3 [style=filled, fillcolor=white, label=whether];
+mediates5 -> whether3  [label=mark];
+E3b14 [style=filled, fillcolor=white, label=E3b1];
+mediates5 -> E3b14  [label=nsubj];
+determine2 -> mediates5  [label=ccomp];
+interaction7 [style=filled, fillcolor=white, label=interaction];
+the6 [style=filled, fillcolor=white, label=the];
+interaction7 -> the6  [label=det];
+mediates5 -> interaction7  [label=dobj];
+Eps89 [style=filled, fillcolor=white, label=Eps8];
+interaction7 -> Eps89  [label=prep_between];
+"Sos-1" [style=filled, fillcolor=white, label="Sos-1"];
+Eps89 -> "Sos-1"  [label=conj_and];
+expected17 [style=filled, fillcolor=white, label=expected];
+as13 [style=filled, fillcolor=white, label=as];
+expected17 -> as13  [label=mark];
+it14 [style=filled, fillcolor=white, label=it];
+expected17 -> it14  [label=nsubjpass];
+would15 [style=filled, fillcolor=white, label=would];
+expected17 -> would15  [label=aux];
+be16 [style=filled, fillcolor=white, label=be];
+expected17 -> be16  [label=auxpass];
+mediates5 -> expected17  [label=advcl];
+to19 [style=filled, fillcolor=white, label=to];
+expected17 -> to19  [label=prepc_according_to];
+model22 [style=filled, fillcolor=white, label=model];
+the20 [style=filled, fillcolor=white, label=the];
+model22 -> the20  [label=det];
+tricomplex21 [style=filled, fillcolor=white, label=tricomplex];
+model22 -> tricomplex21  [label=nn];
+expected17 -> model22  [label=pobj];
+we24 [style=filled, fillcolor=white, label=we];
+performed25 -> we24  [label=nsubj];
+performed25 -> performed25  [label=root];
+experiments27 [style=filled, fillcolor=white, label=experiments];
+coimmunoprecipitation26 [style=filled, fillcolor=white, label=coimmunoprecipitation];
+experiments27 -> coimmunoprecipitation26  [label=nn];
+performed25 -> experiments27  [label=dobj];
+conditions29 [style=filled, fillcolor=white, label=conditions];
+performed25 -> conditions29  [label=prep_under];
+disrupted39 [style=filled, fillcolor=white, label=disrupted];
+which31 [style=filled, fillcolor=white, label=which];
+disrupted39 -> which31  [label=prep_in];
+association33 [style=filled, fillcolor=white, label=association];
+the32 [style=filled, fillcolor=white, label=the];
+association33 -> the32  [label=det];
+disrupted39 -> association33  [label=nsubjpass];
+Eps835 [style=filled, fillcolor=white, label=Eps8];
+association33 -> Eps835  [label=prep_between];
+E3b137 [style=filled, fillcolor=white, label=E3b1];
+Eps835 -> E3b137  [label=conj_and];
+was38 [style=filled, fillcolor=white, label=was];
+disrupted39 -> was38  [label=auxpass];
+conditions29 -> disrupted39  [label=rcmod];
+}

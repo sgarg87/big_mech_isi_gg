@@ -1,0 +1,23 @@
+digraph "The TGF-β2 knockout ( KO ) mouse was described in -LSB- 34 -RSB- ." {
+label="The TGF-β2 knockout ( KO ) mouse was described in -LSB- 34 -RSB- .";
+mouse7 [style=filled, fillcolor=white, label=mouse];
+The1 [style=filled, fillcolor=white, label=The];
+mouse7 -> The1  [label=det];
+"TGF-β2" [style=filled, fillcolor=white, label="TGF-β2"];
+mouse7 -> "TGF-β2"  [label=amod];
+knockout3 [style=filled, fillcolor=white, label=knockout];
+mouse7 -> knockout3  [label=nn];
+KO5 [style=filled, fillcolor=white, label=KO];
+mouse7 -> KO5  [label=appos];
+described9 [style=filled, fillcolor=white, label=described];
+described9 -> mouse7  [label=nsubjpass];
+was8 [style=filled, fillcolor=white, label=was];
+described9 -> was8  [label=auxpass];
+described9 -> described9  [label=root];
+3412 [style=filled, fillcolor=white, label=34];
+"-LSB-11" [style=filled, fillcolor=white, label="-LSB-"];
+3412 -> "-LSB-11"  [label=number];
+"-RSB-13" [style=filled, fillcolor=white, label="-RSB-"];
+"-RSB-13" -> 3412  [label=num];
+described9 -> "-RSB-13"  [label=prep_in];
+}

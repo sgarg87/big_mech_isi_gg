@@ -1,0 +1,36 @@
+digraph "This presents an opportunity for targeting the GDP-bound state and trapping it in the off state and so preventing recharging with GTP ." {
+label="This presents an opportunity for targeting the GDP-bound state and trapping it
+in the off state and so preventing recharging with GTP .";
+presents2 [style=filled, fillcolor=white, label=presents];
+This1 [style=filled, fillcolor=white, label=This];
+presents2 -> This1  [label=nsubj];
+presents2 -> presents2  [label=root];
+opportunity4 [style=filled, fillcolor=white, label=opportunity];
+an3 [style=filled, fillcolor=white, label=an];
+opportunity4 -> an3  [label=det];
+presents2 -> opportunity4  [label=dobj];
+targeting6 [style=filled, fillcolor=white, label=targeting];
+presents2 -> targeting6  [label=prepc_for];
+state9 [style=filled, fillcolor=white, label=state];
+the7 [style=filled, fillcolor=white, label=the];
+state9 -> the7  [label=det];
+"GDP-bound8" [style=filled, fillcolor=white, label="GDP-bound"];
+state9 -> "GDP-bound8"  [label=amod];
+targeting6 -> state9  [label=dobj];
+trapping11 [style=filled, fillcolor=white, label=trapping];
+targeting6 -> trapping11  [label=conj_and];
+it12 [style=filled, fillcolor=white, label=it];
+trapping11 -> it12  [label=dobj];
+state16 [style=filled, fillcolor=white, label=state];
+the14 [style=filled, fillcolor=white, label=the];
+state16 -> the14  [label=det];
+off15 [style=filled, fillcolor=white, label=off];
+state16 -> off15  [label=amod];
+trapping11 -> state16  [label=prep_in];
+preventing19 [style=filled, fillcolor=white, label=preventing];
+targeting6 -> preventing19  [label=conj_and];
+recharging20 [style=filled, fillcolor=white, label=recharging];
+preventing19 -> recharging20  [label=vmod];
+GTP22 [style=filled, fillcolor=white, label=GTP];
+recharging20 -> GTP22  [label=prep_with];
+}

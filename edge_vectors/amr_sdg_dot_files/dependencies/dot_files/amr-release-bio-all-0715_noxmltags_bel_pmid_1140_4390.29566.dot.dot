@@ -1,0 +1,32 @@
+digraph "The MAP kinase-Erk kinase ( MEK ) inhibitor PD 098059 inhibits the production of TNF-alpha induced by NGF" {
+label="The MAP kinase-Erk kinase ( MEK ) inhibitor PD 098059 inhibits the production
+of TNF-alpha induced by NGF";
+kinase4 [style=filled, fillcolor=white, label=kinase];
+The1 [style=filled, fillcolor=white, label=The];
+kinase4 -> The1  [label=det];
+MAP2 [style=filled, fillcolor=white, label=MAP];
+kinase4 -> MAP2  [label=nn];
+"kinase-Erk3" [style=filled, fillcolor=white, label="kinase-Erk"];
+kinase4 -> "kinase-Erk3"  [label=amod];
+inhibitor8 [style=filled, fillcolor=white, label=inhibitor];
+inhibitor8 -> kinase4  [label=nsubj];
+MEK6 [style=filled, fillcolor=white, label=MEK];
+kinase4 -> MEK6  [label=appos];
+inhibitor8 -> inhibitor8  [label=root];
+0980591 [style=filled, fillcolor=white, label=098059];
+PD9 [style=filled, fillcolor=white, label=PD];
+0980591 -> PD9  [label=nn];
+inhibits11 [style=filled, fillcolor=white, label=inhibits];
+inhibits11 -> 0980591  [label=nsubj];
+inhibitor8 -> inhibits11  [label=ccomp];
+production13 [style=filled, fillcolor=white, label=production];
+the12 [style=filled, fillcolor=white, label=the];
+production13 -> the12  [label=det];
+inhibits11 -> production13  [label=dobj];
+"TNF-alpha15" [style=filled, fillcolor=white, label="TNF-alpha"];
+production13 -> "TNF-alpha15"  [label=prep_of];
+induced16 [style=filled, fillcolor=white, label=induced];
+"TNF-alpha15" -> induced16  [label=vmod];
+NGF18 [style=filled, fillcolor=white, label=NGF];
+induced16 -> NGF18  [label=agent];
+}

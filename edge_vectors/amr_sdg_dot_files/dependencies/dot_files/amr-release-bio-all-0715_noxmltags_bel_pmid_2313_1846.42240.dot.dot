@@ -1,0 +1,36 @@
+digraph "PLD1 deficiency reduced basal phosphorylation of Ser473 in Akt and prevented VEGF-induced phosphorylation of Akt at Ser473 ( Fig. 3 ,  C and D ) ." {
+label="PLD1 deficiency reduced basal phosphorylation of Ser473 in Akt and prevented
+VEGF-induced phosphorylation of Akt at Ser473 ( Fig. 3 ,  C and D ) .";
+deficiency2 [style=filled, fillcolor=white, label=deficiency];
+PLD1 [style=filled, fillcolor=white, label=PLD1];
+deficiency2 -> PLD1  [label=nn];
+reduced3 [style=filled, fillcolor=white, label=reduced];
+reduced3 -> deficiency2  [label=nsubj];
+reduced3 -> reduced3  [label=root];
+phosphorylation5 [style=filled, fillcolor=white, label=phosphorylation];
+basal4 [style=filled, fillcolor=white, label=basal];
+phosphorylation5 -> basal4  [label=amod];
+reduced3 -> phosphorylation5  [label=dobj];
+Ser473 [style=filled, fillcolor=white, label=Ser473];
+phosphorylation5 -> Ser473  [label=prep_of];
+Akt9 [style=filled, fillcolor=white, label=Akt];
+Ser473 -> Akt9  [label=prep_in];
+prevented11 [style=filled, fillcolor=white, label=prevented];
+reduced3 -> prevented11  [label=conj_and];
+phosphorylation13 [style=filled, fillcolor=white, label=phosphorylation];
+"VEGF-induced12" [style=filled, fillcolor=white, label="VEGF-induced"];
+phosphorylation13 -> "VEGF-induced12"  [label=amod];
+prevented11 -> phosphorylation13  [label=dobj];
+Akt15 [style=filled, fillcolor=white, label=Akt];
+phosphorylation13 -> Akt15  [label=prep_of];
+Ser4731 [style=filled, fillcolor=white, label=Ser473];
+prevented11 -> Ser4731  [label=prep_at];
+"Fig.19" [style=filled, fillcolor=white, label="Fig."];
+Ser4731 -> "Fig.19"  [label=appos];
+320 [style=filled, fillcolor=white, label=3];
+"Fig.19" -> 320  [label=num];
+C22 [style=filled, fillcolor=white, label=C];
+"Fig.19" -> C22  [label=dep];
+D24 [style=filled, fillcolor=white, label=D];
+C22 -> D24  [label=conj_and];
+}

@@ -1,0 +1,42 @@
+digraph "Cyclin A : Cdk2 and Cyclin A : Cdc2 phosphorylate RPA2 ; the major site for Cdc2 has been mapped to Ser29 ( Niu et al. ,  1997 ) ." {
+label="Cyclin A : Cdk2 and Cyclin A : Cdc2 phosphorylate RPA2 ; the major site for
+Cdc2 has been mapped to Ser29 ( Niu et al. ,  1997 ) .";
+A2 [style=filled, fillcolor=white, label=A];
+Cyclin1 [style=filled, fillcolor=white, label=Cyclin];
+A2 -> Cyclin1  [label=nn];
+A2 -> A2  [label=root];
+Cdk24 [style=filled, fillcolor=white, label=Cdk2];
+A2 -> Cdk24  [label=dep];
+A7 [style=filled, fillcolor=white, label=A];
+Cyclin6 [style=filled, fillcolor=white, label=Cyclin];
+A7 -> Cyclin6  [label=nn];
+Cdk24 -> A7  [label=conj_and];
+RPA211 [style=filled, fillcolor=white, label=RPA2];
+Cdc29 [style=filled, fillcolor=white, label=Cdc2];
+RPA211 -> Cdc29  [label=amod];
+phosphorylate10 [style=filled, fillcolor=white, label=phosphorylate];
+RPA211 -> phosphorylate10  [label=nn];
+A2 -> RPA211  [label=dep];
+site15 [style=filled, fillcolor=white, label=site];
+the13 [style=filled, fillcolor=white, label=the];
+site15 -> the13  [label=det];
+major14 [style=filled, fillcolor=white, label=major];
+site15 -> major14  [label=amod];
+mapped20 [style=filled, fillcolor=white, label=mapped];
+mapped20 -> site15  [label=nsubjpass];
+Cdc217 [style=filled, fillcolor=white, label=Cdc2];
+site15 -> Cdc217  [label=prep_for];
+has18 [style=filled, fillcolor=white, label=has];
+mapped20 -> has18  [label=aux];
+been19 [style=filled, fillcolor=white, label=been];
+mapped20 -> been19  [label=auxpass];
+A2 -> mapped20  [label=dep];
+Ser29 [style=filled, fillcolor=white, label=Ser29];
+mapped20 -> Ser29  [label=prep_to];
+Niu24 [style=filled, fillcolor=white, label=Niu];
+Ser29 -> Niu24  [label=appos];
+"al.26" [style=filled, fillcolor=white, label="al."];
+Niu24 -> "al.26"  [label=conj_et];
+199728 [style=filled, fillcolor=white, label=1997];
+Niu24 -> 199728  [label=dep];
+}

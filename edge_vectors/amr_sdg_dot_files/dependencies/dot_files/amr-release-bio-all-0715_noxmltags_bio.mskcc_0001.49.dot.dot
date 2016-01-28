@@ -1,0 +1,36 @@
+digraph "For B-Raf ,  previous work by Brummer et al. ( 3 ) identified the C-terminal S750 and T753 residues as sites phosphorylated by activated ERK ." {
+label="For B-Raf ,  previous work by Brummer et al. ( 3 ) identified the C-terminal
+S750 and T753 residues as sites phosphorylated by activated ERK .";
+identified13 [style=filled, fillcolor=white, label=identified];
+"B-Raf2" [style=filled, fillcolor=white, label="B-Raf"];
+identified13 -> "B-Raf2"  [label=prep_for];
+work5 [style=filled, fillcolor=white, label=work];
+previous4 [style=filled, fillcolor=white, label=previous];
+work5 -> previous4  [label=amod];
+identified13 -> work5  [label=nsubj];
+Brummer7 [style=filled, fillcolor=white, label=Brummer];
+work5 -> Brummer7  [label=prep_by];
+"al.9" [style=filled, fillcolor=white, label="al."];
+Brummer7 -> "al.9"  [label=conj_et];
+311 [style=filled, fillcolor=white, label=3];
+Brummer7 -> 311  [label=appos];
+identified13 -> identified13  [label=root];
+S75016 [style=filled, fillcolor=white, label=S750];
+the14 [style=filled, fillcolor=white, label=the];
+S75016 -> the14  [label=det];
+"C-terminal15" [style=filled, fillcolor=white, label="C-terminal"];
+S75016 -> "C-terminal15"  [label=nn];
+identified13 -> S75016  [label=dobj];
+residues19 [style=filled, fillcolor=white, label=residues];
+T75318 [style=filled, fillcolor=white, label=T753];
+residues19 -> T75318  [label=nn];
+S75016 -> residues19  [label=conj_and];
+sites21 [style=filled, fillcolor=white, label=sites];
+identified13 -> sites21  [label=prep_as];
+phosphorylated22 [style=filled, fillcolor=white, label=phosphorylated];
+sites21 -> phosphorylated22  [label=vmod];
+ERK25 [style=filled, fillcolor=white, label=ERK];
+activated24 [style=filled, fillcolor=white, label=activated];
+ERK25 -> activated24  [label=nn];
+phosphorylated22 -> ERK25  [label=agent];
+}

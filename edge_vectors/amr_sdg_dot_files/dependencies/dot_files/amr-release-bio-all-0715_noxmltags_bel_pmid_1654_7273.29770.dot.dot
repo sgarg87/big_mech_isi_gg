@@ -1,0 +1,55 @@
+digraph "Levels of VCAM-1 in STAT-6-deficient MLF were somewhat reduced compared with those observed in wt MLF ,  however ,  the ability of mOSM or mTNF - -LCB- alpha -RCB- to induce VCAM-1 was maintained ( Fig. 7B ) ." {
+label="Levels of VCAM-1 in STAT-6-deficient MLF were somewhat reduced compared with
+those observed in wt MLF ,  however ,  the ability of mOSM or mTNF - -LCB- alpha
+-RCB- to induce VCAM-1 was maintained ( Fig. 7B ) .";
+reduced9 [style=filled, fillcolor=white, label=reduced];
+Levels1 [style=filled, fillcolor=white, label=Levels];
+reduced9 -> Levels1  [label=nsubjpass];
+"VCAM-13" [style=filled, fillcolor=white, label="VCAM-1"];
+Levels1 -> "VCAM-13"  [label=prep_of];
+MLF6 [style=filled, fillcolor=white, label=MLF];
+"STAT-6-deficient5" [style=filled, fillcolor=white, label="STAT-6-deficient"];
+MLF6 -> "STAT-6-deficient5"  [label=nn];
+"VCAM-13" -> MLF6  [label=prep_in];
+were7 [style=filled, fillcolor=white, label=were];
+reduced9 -> were7  [label=auxpass];
+somewhat8 [style=filled, fillcolor=white, label=somewhat];
+reduced9 -> somewhat8  [label=advmod];
+reduced9 -> reduced9  [label=root];
+with11 [style=filled, fillcolor=white, label=with];
+reduced9 -> with11  [label=prepc_compared_with];
+those12 [style=filled, fillcolor=white, label=those];
+reduced9 -> those12  [label=pobj];
+observed13 [style=filled, fillcolor=white, label=observed];
+those12 -> observed13  [label=rcmod];
+MLF16 [style=filled, fillcolor=white, label=MLF];
+wt15 [style=filled, fillcolor=white, label=wt];
+MLF16 -> wt15  [label=nn];
+observed13 -> MLF16  [label=prep_in];
+however18 [style=filled, fillcolor=white, label=however];
+observed13 -> however18  [label=advmod];
+ability21 [style=filled, fillcolor=white, label=ability];
+the20 [style=filled, fillcolor=white, label=the];
+ability21 -> the20  [label=det];
+observed13 -> ability21  [label=dobj];
+mOSM23 [style=filled, fillcolor=white, label=mOSM];
+ability21 -> mOSM23  [label=prep_of];
+mTNF25 [style=filled, fillcolor=white, label=mTNF];
+mOSM23 -> mTNF25  [label=conj_or];
+alpha28 [style=filled, fillcolor=white, label=alpha];
+ability21 -> alpha28  [label=dep];
+induce31 [style=filled, fillcolor=white, label=induce];
+to30 [style=filled, fillcolor=white, label=to];
+induce31 -> to30  [label=aux];
+alpha28 -> induce31  [label=vmod];
+maintained34 [style=filled, fillcolor=white, label=maintained];
+"VCAM-132" [style=filled, fillcolor=white, label="VCAM-1"];
+maintained34 -> "VCAM-132"  [label=nsubjpass];
+was33 [style=filled, fillcolor=white, label=was];
+maintained34 -> was33  [label=auxpass];
+induce31 -> maintained34  [label=ccomp];
+"7B3" [style=filled, fillcolor=white, label="7B"];
+"Fig.36" [style=filled, fillcolor=white, label="Fig."];
+"7B3" -> "Fig.36"  [label=nn];
+alpha28 -> "7B3"  [label=appos];
+}

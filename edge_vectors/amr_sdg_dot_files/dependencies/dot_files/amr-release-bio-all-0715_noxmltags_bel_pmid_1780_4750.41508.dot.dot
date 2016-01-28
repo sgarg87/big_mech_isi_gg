@@ -1,0 +1,66 @@
+digraph "RT-PCR analysis detected a 13-fold ( mean value of four independent experiments ) increase of Foxp3 mRNA expression in PANC-89 cells after a 48-h stimulation with TGF-h2 ,  whereas no such effect was evident after stimulation with TGF-h1 ( Fig. 3B ) ." {
+label="RT-PCR analysis detected a 13-fold ( mean value of four independent experiments
+) increase of Foxp3 mRNA expression in PANC-89 cells after a 48-h stimulation
+with TGF-h2 ,  whereas no such effect was evident after stimulation with TGF-h1
+( Fig. 3B ) .";
+analysis2 [style=filled, fillcolor=white, label=analysis];
+"RT-PCR1" [style=filled, fillcolor=white, label="RT-PCR"];
+analysis2 -> "RT-PCR1"  [label=nn];
+detected3 [style=filled, fillcolor=white, label=detected];
+detected3 -> analysis2  [label=nsubj];
+detected3 -> detected3  [label=root];
+increase14 [style=filled, fillcolor=white, label=increase];
+a4 [style=filled, fillcolor=white, label=a];
+increase14 -> a4  [label=det];
+"13-fold5" [style=filled, fillcolor=white, label="13-fold"];
+increase14 -> "13-fold5"  [label=amod];
+value8 [style=filled, fillcolor=white, label=value];
+mean7 [style=filled, fillcolor=white, label=mean];
+value8 -> mean7  [label=amod];
+"13-fold5" -> value8  [label=dep];
+experiments12 [style=filled, fillcolor=white, label=experiments];
+four10 [style=filled, fillcolor=white, label=four];
+experiments12 -> four10  [label=num];
+independent11 [style=filled, fillcolor=white, label=independent];
+experiments12 -> independent11  [label=amod];
+value8 -> experiments12  [label=prep_of];
+detected3 -> increase14  [label=dobj];
+expression18 [style=filled, fillcolor=white, label=expression];
+Foxp316 [style=filled, fillcolor=white, label=Foxp3];
+expression18 -> Foxp316  [label=amod];
+mRNA17 [style=filled, fillcolor=white, label=mRNA];
+expression18 -> mRNA17  [label=nn];
+increase14 -> expression18  [label=prep_of];
+cells21 [style=filled, fillcolor=white, label=cells];
+"PANC-8920" [style=filled, fillcolor=white, label="PANC-89"];
+cells21 -> "PANC-8920"  [label=nn];
+expression18 -> cells21  [label=prep_in];
+stimulation25 [style=filled, fillcolor=white, label=stimulation];
+a23 [style=filled, fillcolor=white, label=a];
+stimulation25 -> a23  [label=det];
+"48-h2" [style=filled, fillcolor=white, label="48-h"];
+stimulation25 -> "48-h2"  [label=amod];
+detected3 -> stimulation25  [label=prep_after];
+"TGF-h27" [style=filled, fillcolor=white, label="TGF-h2"];
+stimulation25 -> "TGF-h27"  [label=prep_with];
+evident34 [style=filled, fillcolor=white, label=evident];
+whereas29 [style=filled, fillcolor=white, label=whereas];
+evident34 -> whereas29  [label=mark];
+effect32 [style=filled, fillcolor=white, label=effect];
+no30 [style=filled, fillcolor=white, label=no];
+effect32 -> no30  [label=neg];
+such31 [style=filled, fillcolor=white, label=such];
+effect32 -> such31  [label=amod];
+evident34 -> effect32  [label=nsubj];
+was33 [style=filled, fillcolor=white, label=was];
+evident34 -> was33  [label=cop];
+detected3 -> evident34  [label=advcl];
+stimulation36 [style=filled, fillcolor=white, label=stimulation];
+evident34 -> stimulation36  [label=prep_after];
+"TGF-h138" [style=filled, fillcolor=white, label="TGF-h1"];
+evident34 -> "TGF-h138"  [label=prep_with];
+"3B41" [style=filled, fillcolor=white, label="3B"];
+"Fig.40" [style=filled, fillcolor=white, label="Fig."];
+"3B41" -> "Fig.40"  [label=number];
+"TGF-h138" -> "3B41"  [label=dep];
+}

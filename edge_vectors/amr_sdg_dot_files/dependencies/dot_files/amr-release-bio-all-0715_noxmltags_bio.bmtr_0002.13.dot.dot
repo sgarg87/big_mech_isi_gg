@@ -1,0 +1,36 @@
+digraph "We observed analogous results in CHO-KI cells expressing wild-type ERBB3 in combination with wild-type or T677A mutant HER2 ( Figure 6B ) ." {
+label="We observed analogous results in CHO-KI cells expressing wild-type ERBB3 in
+combination with wild-type or T677A mutant HER2 ( Figure 6B ) .";
+observed2 [style=filled, fillcolor=white, label=observed];
+We1 [style=filled, fillcolor=white, label=We];
+observed2 -> We1  [label=nsubj];
+observed2 -> observed2  [label=root];
+results4 [style=filled, fillcolor=white, label=results];
+analogous3 [style=filled, fillcolor=white, label=analogous];
+results4 -> analogous3  [label=amod];
+observed2 -> results4  [label=dobj];
+cells7 [style=filled, fillcolor=white, label=cells];
+"CHO-KI6" [style=filled, fillcolor=white, label="CHO-KI"];
+cells7 -> "CHO-KI6"  [label=amod];
+observed2 -> cells7  [label=prep_in];
+expressing8 [style=filled, fillcolor=white, label=expressing];
+observed2 -> expressing8  [label=xcomp];
+ERBB310 [style=filled, fillcolor=white, label=ERBB3];
+"wild-type9" [style=filled, fillcolor=white, label="wild-type"];
+ERBB310 -> "wild-type9"  [label=amod];
+expressing8 -> ERBB310  [label=dobj];
+combination12 [style=filled, fillcolor=white, label=combination];
+expressing8 -> combination12  [label=prep_in];
+HER218 [style=filled, fillcolor=white, label=HER2];
+"wild-type14" [style=filled, fillcolor=white, label="wild-type"];
+HER218 -> "wild-type14"  [label=amod];
+T677A1 [style=filled, fillcolor=white, label=T677A];
+"wild-type14" -> T677A1  [label=conj_or];
+mutant17 [style=filled, fillcolor=white, label=mutant];
+HER218 -> mutant17  [label=amod];
+combination12 -> HER218  [label=prep_with];
+Figure20 [style=filled, fillcolor=white, label=Figure];
+HER218 -> Figure20  [label=appos];
+"6B21" [style=filled, fillcolor=white, label="6B"];
+Figure20 -> "6B21"  [label=num];
+}

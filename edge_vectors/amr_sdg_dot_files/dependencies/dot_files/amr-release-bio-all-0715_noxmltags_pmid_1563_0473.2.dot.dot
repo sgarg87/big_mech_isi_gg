@@ -1,0 +1,41 @@
+digraph "In a common theme of organogenesis ,  certain cells within a multipotent epithelial sheet exchange signals with their neighbors and develop into a bud structure ." {
+label="In a common theme of organogenesis ,  certain cells within a multipotent
+epithelial sheet exchange signals with their neighbors and develop into a bud
+structure .";
+theme4 [style=filled, fillcolor=white, label=theme];
+a2 [style=filled, fillcolor=white, label=a];
+theme4 -> a2  [label=det];
+common3 [style=filled, fillcolor=white, label=common];
+theme4 -> common3  [label=amod];
+signals16 [style=filled, fillcolor=white, label=signals];
+signals16 -> theme4  [label=prep_in];
+organogenesis6 [style=filled, fillcolor=white, label=organogenesis];
+theme4 -> organogenesis6  [label=prep_of];
+cells9 [style=filled, fillcolor=white, label=cells];
+certain8 [style=filled, fillcolor=white, label=certain];
+cells9 -> certain8  [label=amod];
+signals16 -> cells9  [label=nsubj];
+exchange15 [style=filled, fillcolor=white, label=exchange];
+a11 [style=filled, fillcolor=white, label=a];
+exchange15 -> a11  [label=det];
+multipotent12 [style=filled, fillcolor=white, label=multipotent];
+exchange15 -> multipotent12  [label=amod];
+epithelial13 [style=filled, fillcolor=white, label=epithelial];
+exchange15 -> epithelial13  [label=amod];
+sheet14 [style=filled, fillcolor=white, label=sheet];
+exchange15 -> sheet14  [label=nn];
+cells9 -> exchange15  [label=prep_within];
+signals16 -> signals16  [label=root];
+neighbors19 [style=filled, fillcolor=white, label=neighbors];
+their18 [style=filled, fillcolor=white, label=their];
+neighbors19 -> their18  [label=poss];
+signals16 -> neighbors19  [label=prep_with];
+develop21 [style=filled, fillcolor=white, label=develop];
+signals16 -> develop21  [label=conj_and];
+structure25 [style=filled, fillcolor=white, label=structure];
+a23 [style=filled, fillcolor=white, label=a];
+structure25 -> a23  [label=det];
+bud24 [style=filled, fillcolor=white, label=bud];
+structure25 -> bud24  [label=nn];
+develop21 -> structure25  [label=prep_into];
+}

@@ -1,0 +1,40 @@
+digraph "No increase in the rate of GTP hydrolysis was observed for mUbRas in the presence of the same GAP-to Ras ratio ( Fig. 5b ) ." {
+label="No increase in the rate of GTP hydrolysis was observed for mUbRas in the
+presence of the same GAP-to Ras ratio ( Fig. 5b ) .";
+increase2 [style=filled, fillcolor=white, label=increase];
+No1 [style=filled, fillcolor=white, label=No];
+increase2 -> No1  [label=neg];
+observed10 [style=filled, fillcolor=white, label=observed];
+observed10 -> increase2  [label=nsubjpass];
+rate5 [style=filled, fillcolor=white, label=rate];
+the4 [style=filled, fillcolor=white, label=the];
+rate5 -> the4  [label=det];
+increase2 -> rate5  [label=prep_in];
+hydrolysis8 [style=filled, fillcolor=white, label=hydrolysis];
+GTP7 [style=filled, fillcolor=white, label=GTP];
+hydrolysis8 -> GTP7  [label=nn];
+rate5 -> hydrolysis8  [label=prep_of];
+was9 [style=filled, fillcolor=white, label=was];
+observed10 -> was9  [label=auxpass];
+observed10 -> observed10  [label=root];
+mUbRas12 [style=filled, fillcolor=white, label=mUbRas];
+observed10 -> mUbRas12  [label=prep_for];
+presence15 [style=filled, fillcolor=white, label=presence];
+the14 [style=filled, fillcolor=white, label=the];
+presence15 -> the14  [label=det];
+mUbRas12 -> presence15  [label=prep_in];
+ratio21 [style=filled, fillcolor=white, label=ratio];
+the17 [style=filled, fillcolor=white, label=the];
+ratio21 -> the17  [label=det];
+same18 [style=filled, fillcolor=white, label=same];
+ratio21 -> same18  [label=amod];
+"GAP-to19" [style=filled, fillcolor=white, label="GAP-to"];
+ratio21 -> "GAP-to19"  [label=nn];
+Ras20 [style=filled, fillcolor=white, label=Ras];
+ratio21 -> Ras20  [label=nn];
+presence15 -> ratio21  [label=prep_of];
+"5b24" [style=filled, fillcolor=white, label="5b"];
+"Fig.23" [style=filled, fillcolor=white, label="Fig."];
+"5b24" -> "Fig.23"  [label=nn];
+ratio21 -> "5b24"  [label=appos];
+}

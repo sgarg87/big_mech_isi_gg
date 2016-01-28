@@ -1,0 +1,32 @@
+digraph "In vivo production of VEGF and Th1 - and Th17-polarizing cytokines ( IL-12p70 and IL-6 ,  respectively ) were upregulated by airway exposure to LPS ." {
+label="In vivo production of VEGF and Th1 - and Th17-polarizing cytokines ( IL-12p70
+and IL-6 ,  respectively ) were upregulated by airway exposure to LPS .";
+upregulated20 [style=filled, fillcolor=white, label=upregulated];
+vivo2 [style=filled, fillcolor=white, label=vivo];
+upregulated20 -> vivo2  [label=prep_in];
+production3 [style=filled, fillcolor=white, label=production];
+upregulated20 -> production3  [label=nsubjpass];
+VEGF5 [style=filled, fillcolor=white, label=VEGF];
+production3 -> VEGF5  [label=prep_of];
+cytokines11 [style=filled, fillcolor=white, label=cytokines];
+Th17 [style=filled, fillcolor=white, label=Th1];
+cytokines11 -> Th17  [label=amod];
+"Th17-polarizing0" [style=filled, fillcolor=white, label="Th17-polarizing"];
+Th17 -> "Th17-polarizing0"  [label=conj_and];
+production3 -> cytokines11  [label=conj_and];
+"IL-12p703" [style=filled, fillcolor=white, label="IL-12p70"];
+cytokines11 -> "IL-12p703"  [label=dep];
+"IL-615" [style=filled, fillcolor=white, label="IL-6"];
+"IL-12p703" -> "IL-615"  [label=conj_and];
+respectively17 [style=filled, fillcolor=white, label=respectively];
+"IL-12p703" -> respectively17  [label=advmod];
+were19 [style=filled, fillcolor=white, label=were];
+upregulated20 -> were19  [label=auxpass];
+upregulated20 -> upregulated20  [label=root];
+exposure23 [style=filled, fillcolor=white, label=exposure];
+airway22 [style=filled, fillcolor=white, label=airway];
+exposure23 -> airway22  [label=amod];
+upregulated20 -> exposure23  [label=agent];
+LPS25 [style=filled, fillcolor=white, label=LPS];
+upregulated20 -> LPS25  [label=prep_to];
+}

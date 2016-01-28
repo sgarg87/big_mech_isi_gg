@@ -1,0 +1,49 @@
+digraph "we found that IL-33R signaling induced a time-dependent activation of Erk1/2 ,  protein kinase B ( PKB ) ,  JNK1/2 ,  NF-kB ,  and p38 ,  and degradation of IkB ( supplemental Figure 1B ) ." {
+label="we found that IL-33R signaling induced a time-dependent activation of Erk1/2 ,
+protein kinase B ( PKB ) ,  JNK1/2 ,  NF-kB ,  and p38 ,  and degradation of IkB
+( supplemental Figure 1B ) .";
+found2 [style=filled, fillcolor=white, label=found];
+we1 [style=filled, fillcolor=white, label=we];
+found2 -> we1  [label=nsubj];
+found2 -> found2  [label=root];
+induced6 [style=filled, fillcolor=white, label=induced];
+that3 [style=filled, fillcolor=white, label=that];
+induced6 -> that3  [label=mark];
+signaling5 [style=filled, fillcolor=white, label=signaling];
+"IL-33R4" [style=filled, fillcolor=white, label="IL-33R"];
+signaling5 -> "IL-33R4"  [label=nn];
+induced6 -> signaling5  [label=nsubj];
+found2 -> induced6  [label=ccomp];
+activation9 [style=filled, fillcolor=white, label=activation];
+a7 [style=filled, fillcolor=white, label=a];
+activation9 -> a7  [label=det];
+"time-dependent8" [style=filled, fillcolor=white, label="time-dependent"];
+activation9 -> "time-dependent8"  [label=amod];
+induced6 -> activation9  [label=dobj];
+"Erk1/2" [style=filled, fillcolor=white, label="Erk1/2"];
+activation9 -> "Erk1/2"  [label=prep_of];
+B15 [style=filled, fillcolor=white, label=B];
+protein13 [style=filled, fillcolor=white, label=protein];
+B15 -> protein13  [label=nn];
+kinase14 [style=filled, fillcolor=white, label=kinase];
+B15 -> kinase14  [label=nn];
+activation9 -> B15  [label=conj_and];
+PKB17 [style=filled, fillcolor=white, label=PKB];
+B15 -> PKB17  [label=appos];
+"JNK1/220" [style=filled, fillcolor=white, label="JNK1/2"];
+B15 -> "JNK1/220"  [label=appos];
+"NF-kB22" [style=filled, fillcolor=white, label="NF-kB"];
+"JNK1/220" -> "NF-kB22"  [label=num];
+p3825 [style=filled, fillcolor=white, label=p38];
+"JNK1/220" -> p3825  [label=conj_and];
+degradation28 [style=filled, fillcolor=white, label=degradation];
+activation9 -> degradation28  [label=conj_and];
+IkB30 [style=filled, fillcolor=white, label=IkB];
+degradation28 -> IkB30  [label=prep_of];
+Figure33 [style=filled, fillcolor=white, label=Figure];
+supplemental32 [style=filled, fillcolor=white, label=supplemental];
+Figure33 -> supplemental32  [label=amod];
+IkB30 -> Figure33  [label=dep];
+"1B34" [style=filled, fillcolor=white, label="1B"];
+Figure33 -> "1B34"  [label=dep];
+}

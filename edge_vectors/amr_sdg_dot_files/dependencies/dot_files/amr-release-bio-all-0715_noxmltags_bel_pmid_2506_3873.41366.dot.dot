@@ -1,0 +1,57 @@
+digraph "We isolated CD11b + MDSCs from the spleen of JSI-124-treated mice and found decreased expression of p-STAT3 ,  NIK ,  and IDO protein in CD11b + MDSCs compared with those isolated from the controls ( Fig. 6D ) ." {
+label="We isolated CD11b + MDSCs from the spleen of JSI-124-treated mice and found
+decreased expression of p-STAT3 ,  NIK ,  and IDO protein in CD11b + MDSCs
+compared with those isolated from the controls ( Fig. 6D ) .";
+isolated2 [style=filled, fillcolor=white, label=isolated];
+We1 [style=filled, fillcolor=white, label=We];
+isolated2 -> We1  [label=nsubj];
+isolated2 -> isolated2  [label=root];
+MDSCs5 [style=filled, fillcolor=white, label=MDSCs];
+CD11b3 [style=filled, fillcolor=white, label=CD11b];
+MDSCs5 -> CD11b3  [label=nn];
+"+4" [style=filled, fillcolor=white, label="+"];
+MDSCs5 -> "+4"  [label=nn];
+isolated2 -> MDSCs5  [label=dobj];
+spleen8 [style=filled, fillcolor=white, label=spleen];
+the7 [style=filled, fillcolor=white, label=the];
+spleen8 -> the7  [label=det];
+MDSCs5 -> spleen8  [label=prep_from];
+mice11 [style=filled, fillcolor=white, label=mice];
+"JSI-124-treated0" [style=filled, fillcolor=white, label="JSI-124-treated"];
+mice11 -> "JSI-124-treated0"  [label=nn];
+spleen8 -> mice11  [label=prep_of];
+found13 [style=filled, fillcolor=white, label=found];
+isolated2 -> found13  [label=conj_and];
+expression15 [style=filled, fillcolor=white, label=expression];
+decreased14 [style=filled, fillcolor=white, label=decreased];
+expression15 -> decreased14  [label=amod];
+found13 -> expression15  [label=dobj];
+"p-STAT317" [style=filled, fillcolor=white, label="p-STAT3"];
+expression15 -> "p-STAT317"  [label=prep_of];
+NIK19 [style=filled, fillcolor=white, label=NIK];
+"p-STAT317" -> NIK19  [label=conj_and];
+IDO22 [style=filled, fillcolor=white, label=IDO];
+"p-STAT317" -> IDO22  [label=conj_and];
+protein23 [style=filled, fillcolor=white, label=protein];
+isolated2 -> protein23  [label=dobj];
+MDSCs27 [style=filled, fillcolor=white, label=MDSCs];
+CD11b25 [style=filled, fillcolor=white, label=CD11b];
+MDSCs27 -> CD11b25  [label=nn];
+"+26" [style=filled, fillcolor=white, label="+"];
+MDSCs27 -> "+26"  [label=nn];
+isolated2 -> MDSCs27  [label=prep_in];
+with29 [style=filled, fillcolor=white, label=with];
+isolated2 -> with29  [label=prepc_compared_with];
+those30 [style=filled, fillcolor=white, label=those];
+isolated2 -> those30  [label=pobj];
+isolated31 [style=filled, fillcolor=white, label=isolated];
+those30 -> isolated31  [label=vmod];
+controls34 [style=filled, fillcolor=white, label=controls];
+the33 [style=filled, fillcolor=white, label=the];
+controls34 -> the33  [label=det];
+isolated31 -> controls34  [label=prep_from];
+"6D37" [style=filled, fillcolor=white, label="6D"];
+"Fig.36" [style=filled, fillcolor=white, label="Fig."];
+"6D37" -> "Fig.36"  [label=number];
+controls34 -> "6D37"  [label=dep];
+}

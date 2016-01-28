@@ -1,0 +1,45 @@
+digraph "Montero-Conde et al. `` Relief of feedback inhibition of HER3 transcription by RAF and MEK inhibitors attenuates their antitumor effects in BRAF mutant thyroid carcinomas .  ( PMC3651738 )" {
+label="Montero-Conde et al. `` Relief of feedback inhibition of HER3 transcription by
+RAF and MEK inhibitors attenuates their antitumor effects in BRAF mutant thyroid
+carcinomas .  ( PMC3651738 )";
+et2 [style=filled, fillcolor=white, label=et];
+"Montero-Conde1" [style=filled, fillcolor=white, label="Montero-Conde"];
+et2 -> "Montero-Conde1"  [label=nn];
+"al.3" [style=filled, fillcolor=white, label="al."];
+"al.3" -> et2  [label=nsubj];
+"al.3" -> "al.3"  [label=root];
+inhibitors16 [style=filled, fillcolor=white, label=inhibitors];
+Relief5 [style=filled, fillcolor=white, label=Relief];
+inhibitors16 -> Relief5  [label=nsubj];
+inhibition8 [style=filled, fillcolor=white, label=inhibition];
+feedback7 [style=filled, fillcolor=white, label=feedback];
+inhibition8 -> feedback7  [label=nn];
+Relief5 -> inhibition8  [label=prep_of];
+transcription11 [style=filled, fillcolor=white, label=transcription];
+HER310 [style=filled, fillcolor=white, label=HER3];
+transcription11 -> HER310  [label=num];
+inhibition8 -> transcription11  [label=prep_of];
+RAF13 [style=filled, fillcolor=white, label=RAF];
+transcription11 -> RAF13  [label=prep_by];
+MEK15 [style=filled, fillcolor=white, label=MEK];
+RAF13 -> MEK15  [label=conj_and];
+attenuates17 [style=filled, fillcolor=white, label=attenuates];
+attenuates17 -> inhibitors16  [label=dep];
+"al.3" -> attenuates17  [label=dep];
+effects20 [style=filled, fillcolor=white, label=effects];
+their18 [style=filled, fillcolor=white, label=their];
+effects20 -> their18  [label=poss];
+antitumor19 [style=filled, fillcolor=white, label=antitumor];
+effects20 -> antitumor19  [label=nn];
+attenuates17 -> effects20  [label=dobj];
+BRAF22 [style=filled, fillcolor=white, label=BRAF];
+attenuates17 -> BRAF22  [label=prep_in];
+carcinomas25 [style=filled, fillcolor=white, label=carcinomas];
+mutant23 [style=filled, fillcolor=white, label=mutant];
+carcinomas25 -> mutant23  [label=amod];
+thyroid24 [style=filled, fillcolor=white, label=thyroid];
+carcinomas25 -> thyroid24  [label=nn];
+attenuates17 -> carcinomas25  [label=nsubj];
+PMC365173829 [style=filled, fillcolor=white, label=PMC3651738];
+"al.3" -> PMC365173829  [label=dep];
+}

@@ -1,0 +1,30 @@
+digraph "Using Western blot analyses ,  cellular proteins were then analyzed for Snail ,  LEF-1 ,  β-catenin ,  and tubulin ." {
+label="Using Western blot analyses ,  cellular proteins were then analyzed for Snail ,
+LEF-1 ,  β-catenin ,  and tubulin .";
+analyzed10 [style=filled, fillcolor=white, label=analyzed];
+Using1 [style=filled, fillcolor=white, label=Using];
+analyzed10 -> Using1  [label=vmod];
+analyses4 [style=filled, fillcolor=white, label=analyses];
+Western2 [style=filled, fillcolor=white, label=Western];
+analyses4 -> Western2  [label=amod];
+blot3 [style=filled, fillcolor=white, label=blot];
+analyses4 -> blot3  [label=nn];
+Using1 -> analyses4  [label=dobj];
+proteins7 [style=filled, fillcolor=white, label=proteins];
+cellular6 [style=filled, fillcolor=white, label=cellular];
+proteins7 -> cellular6  [label=amod];
+analyzed10 -> proteins7  [label=nsubjpass];
+were8 [style=filled, fillcolor=white, label=were];
+analyzed10 -> were8  [label=auxpass];
+then9 [style=filled, fillcolor=white, label=then];
+analyzed10 -> then9  [label=advmod];
+analyzed10 -> analyzed10  [label=root];
+Snail12 [style=filled, fillcolor=white, label=Snail];
+analyzed10 -> Snail12  [label=prep_for];
+"LEF-14" [style=filled, fillcolor=white, label="LEF-1"];
+Snail12 -> "LEF-14"  [label=appos];
+"β-catenin16" [style=filled, fillcolor=white, label="β-catenin"];
+"LEF-14" -> "β-catenin16"  [label=conj_and];
+tubulin19 [style=filled, fillcolor=white, label=tubulin];
+"LEF-14" -> tubulin19  [label=conj_and];
+}

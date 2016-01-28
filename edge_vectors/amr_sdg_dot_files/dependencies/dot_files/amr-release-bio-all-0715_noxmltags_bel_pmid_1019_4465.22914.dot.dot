@@ -1,0 +1,26 @@
+digraph "Recently ,  phosphorylated p62dok was demonstrated to associate with the GTPase-activating protein ( GAP ) for Ras ." {
+label="Recently ,  phosphorylated p62dok was demonstrated to associate with the
+GTPase-activating protein ( GAP ) for Ras .";
+demonstrated6 [style=filled, fillcolor=white, label=demonstrated];
+Recently1 [style=filled, fillcolor=white, label=Recently];
+demonstrated6 -> Recently1  [label=advmod];
+p62dok4 [style=filled, fillcolor=white, label=p62dok];
+phosphorylated3 [style=filled, fillcolor=white, label=phosphorylated];
+p62dok4 -> phosphorylated3  [label=amod];
+demonstrated6 -> p62dok4  [label=nsubjpass];
+was5 [style=filled, fillcolor=white, label=was];
+demonstrated6 -> was5  [label=auxpass];
+demonstrated6 -> demonstrated6  [label=root];
+associate8 [style=filled, fillcolor=white, label=associate];
+demonstrated6 -> associate8  [label=prep_to];
+protein12 [style=filled, fillcolor=white, label=protein];
+the10 [style=filled, fillcolor=white, label=the];
+protein12 -> the10  [label=det];
+"GTPase-activating11" [style=filled, fillcolor=white, label="GTPase-activating"];
+protein12 -> "GTPase-activating11"  [label=amod];
+demonstrated6 -> protein12  [label=prep_with];
+GAP14 [style=filled, fillcolor=white, label=GAP];
+protein12 -> GAP14  [label=appos];
+Ras17 [style=filled, fillcolor=white, label=Ras];
+protein12 -> Ras17  [label=prep_for];
+}

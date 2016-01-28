@@ -1,0 +1,77 @@
+digraph "However ,  in CD4 + T cells from naive mice ,  IL-23 significantly increased the TGFbeta1/IL -6 - induced Th17 polarization ,  including elevated levels of IL-17A and IL-17F and decreased expression of T-bet and FoxP3 . Of note ,  the IL-23-induced increase in IL-17A and IL-17F levels was prevented in T-bet-deficient mice ." {
+label="However ,  in CD4 + T cells from naive mice ,  IL-23 significantly increased
+the TGFbeta1/IL -6 - induced Th17 polarization ,  including elevated levels of
+IL-17A and IL-17F and decreased expression of T-bet and FoxP3 . Of note ,  the
+IL-23-induced increase in IL-17A and IL-17F levels was prevented in T-bet-
+deficient mice .";
+prevented50 [style=filled, fillcolor=white, label=prevented];
+However1 [style=filled, fillcolor=white, label=However];
+prevented50 -> However1  [label=advmod];
+"+5" [style=filled, fillcolor=white, label="+"];
+CD4 [style=filled, fillcolor=white, label=CD4];
+"+5" -> CD4  [label=nn];
+T6 [style=filled, fillcolor=white, label=T];
+T6 -> "+5"  [label=nsubj];
+prevented50 -> T6  [label=prepc_in];
+cells7 [style=filled, fillcolor=white, label=cells];
+T6 -> cells7  [label=dobj];
+mice10 [style=filled, fillcolor=white, label=mice];
+naive9 [style=filled, fillcolor=white, label=naive];
+mice10 -> naive9  [label=amod];
+T6 -> mice10  [label=prep_from];
+increased14 [style=filled, fillcolor=white, label=increased];
+"IL-231" [style=filled, fillcolor=white, label="IL-23"];
+increased14 -> "IL-231"  [label=nsubj];
+significantly13 [style=filled, fillcolor=white, label=significantly];
+increased14 -> significantly13  [label=advmod];
+T6 -> increased14  [label=parataxis];
+"-617" [style=filled, fillcolor=white, label="-6"];
+the15 [style=filled, fillcolor=white, label=the];
+"-617" -> the15  [label=det];
+"TGFbeta1/IL16" [style=filled, fillcolor=white, label="TGFbeta1/IL"];
+"-617" -> "TGFbeta1/IL16"  [label=amod];
+induced19 [style=filled, fillcolor=white, label=induced];
+induced19 -> "-617"  [label=dep];
+increased14 -> induced19  [label=dep];
+polarization21 [style=filled, fillcolor=white, label=polarization];
+Th1720 [style=filled, fillcolor=white, label=Th17];
+polarization21 -> Th1720  [label=amod];
+induced19 -> polarization21  [label=dobj];
+levels25 [style=filled, fillcolor=white, label=levels];
+elevated24 [style=filled, fillcolor=white, label=elevated];
+levels25 -> elevated24  [label=amod];
+induced19 -> levels25  [label=prep_including];
+"IL-17A2" [style=filled, fillcolor=white, label="IL-17A"];
+levels25 -> "IL-17A2"  [label=prep_of];
+"IL-17F29" [style=filled, fillcolor=white, label="IL-17F"];
+"IL-17A2" -> "IL-17F29"  [label=conj_and];
+expression32 [style=filled, fillcolor=white, label=expression];
+decreased31 [style=filled, fillcolor=white, label=decreased];
+expression32 -> decreased31  [label=amod];
+levels25 -> expression32  [label=conj_and];
+"T-bet34" [style=filled, fillcolor=white, label="T-bet"];
+expression32 -> "T-bet34"  [label=prep_of];
+FoxP336 [style=filled, fillcolor=white, label=FoxP3];
+"T-bet34" -> FoxP336  [label=conj_and];
+note39 [style=filled, fillcolor=white, label=note];
+T6 -> note39  [label=prep_of];
+increase43 [style=filled, fillcolor=white, label=increase];
+the41 [style=filled, fillcolor=white, label=the];
+increase43 -> the41  [label=det];
+"IL-23-induced4" [style=filled, fillcolor=white, label="IL-23-induced"];
+increase43 -> "IL-23-induced4"  [label=nn];
+prevented50 -> increase43  [label=nsubjpass];
+levels48 [style=filled, fillcolor=white, label=levels];
+"IL-17A45" [style=filled, fillcolor=white, label="IL-17A"];
+levels48 -> "IL-17A45"  [label=nn];
+"IL-17F4" [style=filled, fillcolor=white, label="IL-17F"];
+"IL-17A45" -> "IL-17F4"  [label=conj_and];
+increase43 -> levels48  [label=prep_in];
+was49 [style=filled, fillcolor=white, label=was];
+prevented50 -> was49  [label=auxpass];
+prevented50 -> prevented50  [label=root];
+mice53 [style=filled, fillcolor=white, label=mice];
+"T-bet-deficient52" [style=filled, fillcolor=white, label="T-bet-deficient"];
+mice53 -> "T-bet-deficient52"  [label=amod];
+prevented50 -> mice53  [label=prep_in];
+}

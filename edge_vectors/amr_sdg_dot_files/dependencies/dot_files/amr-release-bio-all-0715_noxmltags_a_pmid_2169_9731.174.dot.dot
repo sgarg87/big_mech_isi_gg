@@ -1,0 +1,37 @@
+digraph "PI3K inhibition stimulated Erk1/2 phosphorylation from 4-24 hrs ,  and increased Akt phosphorylation throughout the treatment time-course ( Figure 9G ,  H ) ." {
+label="PI3K inhibition stimulated Erk1/2 phosphorylation from 4-24 hrs ,  and
+increased Akt phosphorylation throughout the treatment time-course ( Figure 9G ,
+H ) .";
+inhibition2 [style=filled, fillcolor=white, label=inhibition];
+PI3K1 [style=filled, fillcolor=white, label=PI3K];
+inhibition2 -> PI3K1  [label=nn];
+stimulated3 [style=filled, fillcolor=white, label=stimulated];
+stimulated3 -> inhibition2  [label=nsubj];
+stimulated3 -> stimulated3  [label=root];
+phosphorylation5 [style=filled, fillcolor=white, label=phosphorylation];
+"Erk1/24" [style=filled, fillcolor=white, label="Erk1/2"];
+phosphorylation5 -> "Erk1/24"  [label=amod];
+stimulated3 -> phosphorylation5  [label=dobj];
+hrs8 [style=filled, fillcolor=white, label=hrs];
+"4-247" [style=filled, fillcolor=white, label="4-24"];
+hrs8 -> "4-247"  [label=num];
+stimulated3 -> hrs8  [label=prep_from];
+increased11 [style=filled, fillcolor=white, label=increased];
+stimulated3 -> increased11  [label=conj_and];
+phosphorylation13 [style=filled, fillcolor=white, label=phosphorylation];
+Akt12 [style=filled, fillcolor=white, label=Akt];
+phosphorylation13 -> Akt12  [label=nn];
+increased11 -> phosphorylation13  [label=dobj];
+"time-course17" [style=filled, fillcolor=white, label="time-course"];
+the15 [style=filled, fillcolor=white, label=the];
+"time-course17" -> the15  [label=det];
+treatment16 [style=filled, fillcolor=white, label=treatment];
+"time-course17" -> treatment16  [label=nn];
+increased11 -> "time-course17"  [label=prep_throughout];
+Figure19 [style=filled, fillcolor=white, label=Figure];
+increased11 -> Figure19  [label=dep];
+"9G20" [style=filled, fillcolor=white, label="9G"];
+Figure19 -> "9G20"  [label=num];
+H22 [style=filled, fillcolor=white, label=H];
+Figure19 -> H22  [label=dep];
+}

@@ -1,0 +1,55 @@
+digraph "Moreover ,  we recently reported that intestinal epithelial cells expressing activated MEK1 clearly acquire an increased capacity to migrate as compared to wtMEK-expressing cells -LSB- 14 -RSB- ." {
+label="Moreover ,  we recently reported that intestinal epithelial cells expressing
+activated MEK1 clearly acquire an increased capacity to migrate as compared to
+wtMEK-expressing cells -LSB- 14 -RSB- .";
+reported5 [style=filled, fillcolor=white, label=reported];
+Moreover1 [style=filled, fillcolor=white, label=Moreover];
+reported5 -> Moreover1  [label=advmod];
+we3 [style=filled, fillcolor=white, label=we];
+reported5 -> we3  [label=nsubj];
+recently4 [style=filled, fillcolor=white, label=recently];
+reported5 -> recently4  [label=advmod];
+reported5 -> reported5  [label=root];
+"-LSB-25" [style=filled, fillcolor=white, label="-LSB-"];
+that6 [style=filled, fillcolor=white, label=that];
+"-LSB-25" -> that6  [label=mark];
+cells9 [style=filled, fillcolor=white, label=cells];
+intestinal7 [style=filled, fillcolor=white, label=intestinal];
+cells9 -> intestinal7  [label=amod];
+epithelial8 [style=filled, fillcolor=white, label=epithelial];
+cells9 -> epithelial8  [label=amod];
+"-LSB-25" -> cells9  [label=nsubj];
+expressing10 [style=filled, fillcolor=white, label=expressing];
+cells9 -> expressing10  [label=vmod];
+MEK112 [style=filled, fillcolor=white, label=MEK1];
+activated11 [style=filled, fillcolor=white, label=activated];
+MEK112 -> activated11  [label=nn];
+acquire14 [style=filled, fillcolor=white, label=acquire];
+acquire14 -> MEK112  [label=nsubj];
+clearly13 [style=filled, fillcolor=white, label=clearly];
+acquire14 -> clearly13  [label=advmod];
+expressing10 -> acquire14  [label=ccomp];
+capacity17 [style=filled, fillcolor=white, label=capacity];
+an15 [style=filled, fillcolor=white, label=an];
+capacity17 -> an15  [label=det];
+increased16 [style=filled, fillcolor=white, label=increased];
+capacity17 -> increased16  [label=amod];
+acquire14 -> capacity17  [label=dobj];
+migrate19 [style=filled, fillcolor=white, label=migrate];
+to18 [style=filled, fillcolor=white, label=to];
+migrate19 -> to18  [label=aux];
+acquire14 -> migrate19  [label=vmod];
+as20 [style=filled, fillcolor=white, label=as];
+migrate19 -> as20  [label=prep];
+to22 [style=filled, fillcolor=white, label=to];
+migrate19 -> to22  [label=prepc_compared_to];
+cells24 [style=filled, fillcolor=white, label=cells];
+"wtMEK-expressing23" [style=filled, fillcolor=white, label="wtMEK-expressing"];
+cells24 -> "wtMEK-expressing23"  [label=amod];
+migrate19 -> cells24  [label=pobj];
+reported5 -> "-LSB-25"  [label=ccomp];
+"-RSB-27" [style=filled, fillcolor=white, label="-RSB-"];
+1426 [style=filled, fillcolor=white, label=14];
+"-RSB-27" -> 1426  [label=num];
+"-LSB-25" -> "-RSB-27"  [label=dobj];
+}

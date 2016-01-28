@@ -1,0 +1,34 @@
+digraph "Survivin expression is up-regulated by IL-3 in Ba/F3 and CD34 + cells and inhibited by the Ras inhibitor ,  farnesylthiosalicylic acid ." {
+label="Survivin expression is up-regulated by IL-3 in Ba/F3 and CD34 + cells and
+inhibited by the Ras inhibitor ,  farnesylthiosalicylic acid .";
+expression2 [style=filled, fillcolor=white, label=expression];
+Survivin1 [style=filled, fillcolor=white, label=Survivin];
+expression2 -> Survivin1  [label=nn];
+"up-regulated4" [style=filled, fillcolor=white, label="up-regulated"];
+"up-regulated4" -> expression2  [label=nsubj];
+is3 [style=filled, fillcolor=white, label=is];
+"up-regulated4" -> is3  [label=cop];
+"up-regulated4" -> "up-regulated4"  [label=root];
+"IL-36" [style=filled, fillcolor=white, label="IL-3"];
+"up-regulated4" -> "IL-36"  [label=prep_by];
+"Ba/F38" [style=filled, fillcolor=white, label="Ba/F3"];
+"up-regulated4" -> "Ba/F38"  [label=prep_in];
+cells12 [style=filled, fillcolor=white, label=cells];
+CD3410 [style=filled, fillcolor=white, label=CD34];
+cells12 -> CD3410  [label=num];
+"+11" [style=filled, fillcolor=white, label="+"];
+cells12 -> "+11"  [label=amod];
+"Ba/F38" -> cells12  [label=conj_and];
+inhibited14 [style=filled, fillcolor=white, label=inhibited];
+"up-regulated4" -> inhibited14  [label=conj_and];
+inhibitor18 [style=filled, fillcolor=white, label=inhibitor];
+the16 [style=filled, fillcolor=white, label=the];
+inhibitor18 -> the16  [label=det];
+Ras17 [style=filled, fillcolor=white, label=Ras];
+inhibitor18 -> Ras17  [label=nn];
+inhibited14 -> inhibitor18  [label=prep_by];
+acid21 [style=filled, fillcolor=white, label=acid];
+farnesylthiosalicylic20 [style=filled, fillcolor=white, label=farnesylthiosalicylic];
+acid21 -> farnesylthiosalicylic20  [label=amod];
+inhibitor18 -> acid21  [label=appos];
+}

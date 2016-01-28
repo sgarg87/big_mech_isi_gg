@@ -1,0 +1,36 @@
+digraph "It is puzzling that these individuals do not succumb to malignancies associated with sporadic H-Ras mutations ( Table 1 ) ." {
+label="It is puzzling that these individuals do not succumb to malignancies associated
+with sporadic H-Ras mutations ( Table 1 ) .";
+puzzling3 [style=filled, fillcolor=white, label=puzzling];
+It1 [style=filled, fillcolor=white, label=It];
+puzzling3 -> It1  [label=nsubj];
+is2 [style=filled, fillcolor=white, label=is];
+puzzling3 -> is2  [label=cop];
+puzzling3 -> puzzling3  [label=root];
+succumb9 [style=filled, fillcolor=white, label=succumb];
+that4 [style=filled, fillcolor=white, label=that];
+succumb9 -> that4  [label=mark];
+individuals6 [style=filled, fillcolor=white, label=individuals];
+these5 [style=filled, fillcolor=white, label=these];
+individuals6 -> these5  [label=det];
+succumb9 -> individuals6  [label=nsubj];
+do7 [style=filled, fillcolor=white, label=do];
+succumb9 -> do7  [label=aux];
+not8 [style=filled, fillcolor=white, label=not];
+succumb9 -> not8  [label=neg];
+puzzling3 -> succumb9  [label=ccomp];
+malignancies11 [style=filled, fillcolor=white, label=malignancies];
+succumb9 -> malignancies11  [label=prep_to];
+associated12 [style=filled, fillcolor=white, label=associated];
+malignancies11 -> associated12  [label=vmod];
+mutations16 [style=filled, fillcolor=white, label=mutations];
+sporadic14 [style=filled, fillcolor=white, label=sporadic];
+mutations16 -> sporadic14  [label=amod];
+"H-Ras15" [style=filled, fillcolor=white, label="H-Ras"];
+mutations16 -> "H-Ras15"  [label=nn];
+associated12 -> mutations16  [label=prep_with];
+119 [style=filled, fillcolor=white, label=1];
+Table18 [style=filled, fillcolor=white, label=Table];
+119 -> Table18  [label=number];
+mutations16 -> 119  [label=dep];
+}

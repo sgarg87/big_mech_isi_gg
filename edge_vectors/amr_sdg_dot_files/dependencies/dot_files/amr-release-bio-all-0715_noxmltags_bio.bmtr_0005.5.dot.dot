@@ -1,0 +1,53 @@
+digraph "As RAS is upstream of several signalling cascades -LSB- 13 -RSB- ,  we queried whether the activity of ASPP2 is regulated by the activation of a RAS-mediated signalling pathway ." {
+label="As RAS is upstream of several signalling cascades -LSB- 13 -RSB- ,  we queried
+whether the activity of ASPP2 is regulated by the activation of a RAS-mediated
+signalling pathway .";
+"-LSB-9" [style=filled, fillcolor=white, label="-LSB-"];
+As1 [style=filled, fillcolor=white, label=As];
+"-LSB-9" -> As1  [label=mark];
+RAS2 [style=filled, fillcolor=white, label=RAS];
+"-LSB-9" -> RAS2  [label=nsubj];
+is3 [style=filled, fillcolor=white, label=is];
+"-LSB-9" -> is3  [label=aux];
+upstream4 [style=filled, fillcolor=white, label=upstream];
+"-LSB-9" -> upstream4  [label=advmod];
+cascades8 [style=filled, fillcolor=white, label=cascades];
+several6 [style=filled, fillcolor=white, label=several];
+cascades8 -> several6  [label=amod];
+signalling7 [style=filled, fillcolor=white, label=signalling];
+cascades8 -> signalling7  [label=nn];
+upstream4 -> cascades8  [label=prep_of];
+queried14 [style=filled, fillcolor=white, label=queried];
+queried14 -> "-LSB-9"  [label=advcl];
+"-RSB-11" [style=filled, fillcolor=white, label="-RSB-"];
+1310 [style=filled, fillcolor=white, label=13];
+"-RSB-11" -> 1310  [label=num];
+"-LSB-9" -> "-RSB-11"  [label=dobj];
+we13 [style=filled, fillcolor=white, label=we];
+queried14 -> we13  [label=nsubj];
+queried14 -> queried14  [label=root];
+regulated21 [style=filled, fillcolor=white, label=regulated];
+whether15 [style=filled, fillcolor=white, label=whether];
+regulated21 -> whether15  [label=mark];
+activity17 [style=filled, fillcolor=white, label=activity];
+the16 [style=filled, fillcolor=white, label=the];
+activity17 -> the16  [label=det];
+regulated21 -> activity17  [label=nsubjpass];
+ASPP219 [style=filled, fillcolor=white, label=ASPP2];
+activity17 -> ASPP219  [label=prep_of];
+is20 [style=filled, fillcolor=white, label=is];
+regulated21 -> is20  [label=auxpass];
+queried14 -> regulated21  [label=ccomp];
+activation24 [style=filled, fillcolor=white, label=activation];
+the23 [style=filled, fillcolor=white, label=the];
+activation24 -> the23  [label=det];
+regulated21 -> activation24  [label=agent];
+pathway29 [style=filled, fillcolor=white, label=pathway];
+a26 [style=filled, fillcolor=white, label=a];
+pathway29 -> a26  [label=det];
+"RAS-mediated27" [style=filled, fillcolor=white, label="RAS-mediated"];
+pathway29 -> "RAS-mediated27"  [label=amod];
+signalling28 [style=filled, fillcolor=white, label=signalling];
+pathway29 -> signalling28  [label=nn];
+activation24 -> pathway29  [label=prep_of];
+}

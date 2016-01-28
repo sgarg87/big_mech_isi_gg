@@ -1,0 +1,51 @@
+digraph "This finding is consistent with those of peptide binding studies conducted by Rushworth et al. ( 27 ) indicating that there are multiple points of contact between heterodimerized B-Raf and C-Raf proteins ." {
+label="This finding is consistent with those of peptide binding studies conducted by
+Rushworth et al. ( 27 ) indicating that there are multiple points of contact
+between heterodimerized B-Raf and C-Raf proteins .";
+finding2 [style=filled, fillcolor=white, label=finding];
+This1 [style=filled, fillcolor=white, label=This];
+finding2 -> This1  [label=det];
+consistent4 [style=filled, fillcolor=white, label=consistent];
+consistent4 -> finding2  [label=nsubj];
+is3 [style=filled, fillcolor=white, label=is];
+consistent4 -> is3  [label=cop];
+consistent4 -> consistent4  [label=root];
+those6 [style=filled, fillcolor=white, label=those];
+consistent4 -> those6  [label=prep_with];
+studies10 [style=filled, fillcolor=white, label=studies];
+peptide8 [style=filled, fillcolor=white, label=peptide];
+studies10 -> peptide8  [label=amod];
+binding9 [style=filled, fillcolor=white, label=binding];
+studies10 -> binding9  [label=amod];
+those6 -> studies10  [label=prep_of];
+conducted11 [style=filled, fillcolor=white, label=conducted];
+studies10 -> conducted11  [label=vmod];
+indicating19 [style=filled, fillcolor=white, label=indicating];
+Rushworth13 [style=filled, fillcolor=white, label=Rushworth];
+indicating19 -> Rushworth13  [label=nsubj];
+"al.15" [style=filled, fillcolor=white, label="al."];
+Rushworth13 -> "al.15"  [label=conj_et];
+271 [style=filled, fillcolor=white, label=27];
+Rushworth13 -> 271  [label=appos];
+conducted11 -> indicating19  [label=agent];
+are22 [style=filled, fillcolor=white, label=are];
+that20 [style=filled, fillcolor=white, label=that];
+are22 -> that20  [label=mark];
+there21 [style=filled, fillcolor=white, label=there];
+are22 -> there21  [label=expl];
+indicating19 -> are22  [label=ccomp];
+points24 [style=filled, fillcolor=white, label=points];
+multiple23 [style=filled, fillcolor=white, label=multiple];
+points24 -> multiple23  [label=amod];
+are22 -> points24  [label=nsubj];
+contact26 [style=filled, fillcolor=white, label=contact];
+points24 -> contact26  [label=prep_of];
+"B-Raf29" [style=filled, fillcolor=white, label="B-Raf"];
+heterodimerized28 [style=filled, fillcolor=white, label=heterodimerized];
+"B-Raf29" -> heterodimerized28  [label=amod];
+contact26 -> "B-Raf29"  [label=prep_between];
+proteins32 [style=filled, fillcolor=white, label=proteins];
+"C-Raf31" [style=filled, fillcolor=white, label="C-Raf"];
+proteins32 -> "C-Raf31"  [label=nn];
+"B-Raf29" -> proteins32  [label=conj_and];
+}

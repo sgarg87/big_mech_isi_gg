@@ -1,0 +1,32 @@
+digraph "This may serve as an additional pathway to specifically disrupt for therapeutic benefit ( Bivona et al. ,  2006 ) ." {
+label="This may serve as an additional pathway to specifically disrupt for therapeutic
+benefit ( Bivona et al. ,  2006 ) .";
+serve3 [style=filled, fillcolor=white, label=serve];
+This1 [style=filled, fillcolor=white, label=This];
+serve3 -> This1  [label=nsubj];
+may2 [style=filled, fillcolor=white, label=may];
+serve3 -> may2  [label=aux];
+serve3 -> serve3  [label=root];
+pathway7 [style=filled, fillcolor=white, label=pathway];
+an5 [style=filled, fillcolor=white, label=an];
+pathway7 -> an5  [label=det];
+additional6 [style=filled, fillcolor=white, label=additional];
+pathway7 -> additional6  [label=amod];
+serve3 -> pathway7  [label=prep_as];
+disrupt10 [style=filled, fillcolor=white, label=disrupt];
+to8 [style=filled, fillcolor=white, label=to];
+disrupt10 -> to8  [label=aux];
+specifically9 [style=filled, fillcolor=white, label=specifically];
+disrupt10 -> specifically9  [label=advmod];
+serve3 -> disrupt10  [label=xcomp];
+benefit13 [style=filled, fillcolor=white, label=benefit];
+therapeutic12 [style=filled, fillcolor=white, label=therapeutic];
+benefit13 -> therapeutic12  [label=amod];
+disrupt10 -> benefit13  [label=prep_for];
+Bivona15 [style=filled, fillcolor=white, label=Bivona];
+benefit13 -> Bivona15  [label=appos];
+"al.17" [style=filled, fillcolor=white, label="al."];
+Bivona15 -> "al.17"  [label=conj_et];
+200619 [style=filled, fillcolor=white, label=2006];
+Bivona15 -> 200619  [label=dep];
+}

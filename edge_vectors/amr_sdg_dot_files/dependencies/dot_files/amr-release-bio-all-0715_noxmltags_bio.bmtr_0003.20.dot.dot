@@ -1,0 +1,30 @@
+digraph "MAPK inhibition may dictate a chromatin redistribution of these repressors ,  and thus activate HER3 transcription ." {
+label="MAPK inhibition may dictate a chromatin redistribution of these repressors ,
+and thus activate HER3 transcription .";
+inhibition2 [style=filled, fillcolor=white, label=inhibition];
+MAPK1 [style=filled, fillcolor=white, label=MAPK];
+inhibition2 -> MAPK1  [label=nn];
+dictate4 [style=filled, fillcolor=white, label=dictate];
+dictate4 -> inhibition2  [label=nsubj];
+may3 [style=filled, fillcolor=white, label=may];
+dictate4 -> may3  [label=aux];
+dictate4 -> dictate4  [label=root];
+redistribution7 [style=filled, fillcolor=white, label=redistribution];
+a5 [style=filled, fillcolor=white, label=a];
+redistribution7 -> a5  [label=det];
+chromatin6 [style=filled, fillcolor=white, label=chromatin];
+redistribution7 -> chromatin6  [label=nn];
+dictate4 -> redistribution7  [label=dobj];
+transcription16 [style=filled, fillcolor=white, label=transcription];
+these9 [style=filled, fillcolor=white, label=these];
+transcription16 -> these9  [label=det];
+repressors10 [style=filled, fillcolor=white, label=repressors];
+transcription16 -> repressors10  [label=nn];
+activate14 [style=filled, fillcolor=white, label=activate];
+thus13 [style=filled, fillcolor=white, label=thus];
+activate14 -> thus13  [label=advmod];
+repressors10 -> activate14  [label=conj_and];
+HER315 [style=filled, fillcolor=white, label=HER3];
+transcription16 -> HER315  [label=nn];
+redistribution7 -> transcription16  [label=prep_of];
+}

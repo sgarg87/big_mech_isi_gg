@@ -1,0 +1,24 @@
+digraph "In the epidermis ,  Snail misexpression leads to hyperproliferation and a reduction in intercellular adhesion ." {
+label="In the epidermis ,  Snail misexpression leads to hyperproliferation and a
+reduction in intercellular adhesion .";
+epidermis3 [style=filled, fillcolor=white, label=epidermis];
+the2 [style=filled, fillcolor=white, label=the];
+epidermis3 -> the2  [label=det];
+leads7 [style=filled, fillcolor=white, label=leads];
+leads7 -> epidermis3  [label=prep_in];
+misexpression6 [style=filled, fillcolor=white, label=misexpression];
+Snail5 [style=filled, fillcolor=white, label=Snail];
+misexpression6 -> Snail5  [label=nn];
+leads7 -> misexpression6  [label=nsubj];
+leads7 -> leads7  [label=root];
+hyperproliferation9 [style=filled, fillcolor=white, label=hyperproliferation];
+leads7 -> hyperproliferation9  [label=prep_to];
+reduction12 [style=filled, fillcolor=white, label=reduction];
+a11 [style=filled, fillcolor=white, label=a];
+reduction12 -> a11  [label=det];
+hyperproliferation9 -> reduction12  [label=conj_and];
+adhesion15 [style=filled, fillcolor=white, label=adhesion];
+intercellular14 [style=filled, fillcolor=white, label=intercellular];
+adhesion15 -> intercellular14  [label=nn];
+leads7 -> adhesion15  [label=prep_in];
+}

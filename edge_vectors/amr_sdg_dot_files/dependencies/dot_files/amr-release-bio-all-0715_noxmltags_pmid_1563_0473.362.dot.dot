@@ -1,0 +1,53 @@
+digraph "Note that the reductions seen in E-cadherin and α-catenin are likely to be underestimates of the actual differences in affected regions ,  since the Tg skin expressed Snail mosaically ." {
+label="Note that the reductions seen in E-cadherin and α-catenin are likely to be
+underestimates of the actual differences in affected regions ,  since the Tg
+skin expressed Snail mosaically .";
+Note1 [style=filled, fillcolor=white, label=Note];
+Note1 -> Note1  [label=root];
+likely11 [style=filled, fillcolor=white, label=likely];
+that2 [style=filled, fillcolor=white, label=that];
+likely11 -> that2  [label=mark];
+reductions4 [style=filled, fillcolor=white, label=reductions];
+the3 [style=filled, fillcolor=white, label=the];
+reductions4 -> the3  [label=det];
+likely11 -> reductions4  [label=nsubj];
+seen5 [style=filled, fillcolor=white, label=seen];
+reductions4 -> seen5  [label=vmod];
+"E-cadherin7" [style=filled, fillcolor=white, label="E-cadherin"];
+seen5 -> "E-cadherin7"  [label=prep_in];
+"α-catenin9" [style=filled, fillcolor=white, label="α-catenin"];
+"E-cadherin7" -> "α-catenin9"  [label=conj_and];
+are10 [style=filled, fillcolor=white, label=are];
+likely11 -> are10  [label=cop];
+Note1 -> likely11  [label=ccomp];
+underestimates14 [style=filled, fillcolor=white, label=underestimates];
+to12 [style=filled, fillcolor=white, label=to];
+underestimates14 -> to12  [label=aux];
+be13 [style=filled, fillcolor=white, label=be];
+underestimates14 -> be13  [label=cop];
+likely11 -> underestimates14  [label=xcomp];
+differences18 [style=filled, fillcolor=white, label=differences];
+the16 [style=filled, fillcolor=white, label=the];
+differences18 -> the16  [label=det];
+actual17 [style=filled, fillcolor=white, label=actual];
+differences18 -> actual17  [label=amod];
+underestimates14 -> differences18  [label=prep_of];
+regions21 [style=filled, fillcolor=white, label=regions];
+affected20 [style=filled, fillcolor=white, label=affected];
+regions21 -> affected20  [label=amod];
+differences18 -> regions21  [label=prep_in];
+expressed27 [style=filled, fillcolor=white, label=expressed];
+since23 [style=filled, fillcolor=white, label=since];
+expressed27 -> since23  [label=mark];
+skin26 [style=filled, fillcolor=white, label=skin];
+the24 [style=filled, fillcolor=white, label=the];
+skin26 -> the24  [label=det];
+Tg25 [style=filled, fillcolor=white, label=Tg];
+skin26 -> Tg25  [label=nn];
+expressed27 -> skin26  [label=nsubj];
+underestimates14 -> expressed27  [label=advcl];
+Snail28 [style=filled, fillcolor=white, label=Snail];
+expressed27 -> Snail28  [label=dobj];
+mosaically29 [style=filled, fillcolor=white, label=mosaically];
+expressed27 -> mosaically29  [label=advmod];
+}

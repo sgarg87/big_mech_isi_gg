@@ -1,0 +1,34 @@
+digraph "Until now ,  it has been unclear how RAS could affect ASPP2 to enhance p53 function ." {
+label="Until now ,  it has been unclear how RAS could affect ASPP2 to enhance p53
+function .";
+unclear7 [style=filled, fillcolor=white, label=unclear];
+Until1 [style=filled, fillcolor=white, label=Until];
+unclear7 -> Until1  [label=prep];
+now2 [style=filled, fillcolor=white, label=now];
+Until1 -> now2  [label=pobj];
+it4 [style=filled, fillcolor=white, label=it];
+unclear7 -> it4  [label=nsubj];
+has5 [style=filled, fillcolor=white, label=has];
+unclear7 -> has5  [label=aux];
+been6 [style=filled, fillcolor=white, label=been];
+unclear7 -> been6  [label=cop];
+unclear7 -> unclear7  [label=root];
+affect11 [style=filled, fillcolor=white, label=affect];
+how8 [style=filled, fillcolor=white, label=how];
+affect11 -> how8  [label=advmod];
+RAS9 [style=filled, fillcolor=white, label=RAS];
+affect11 -> RAS9  [label=nsubj];
+could10 [style=filled, fillcolor=white, label=could];
+affect11 -> could10  [label=aux];
+unclear7 -> affect11  [label=ccomp];
+ASPP21 [style=filled, fillcolor=white, label=ASPP2];
+affect11 -> ASPP21  [label=dobj];
+enhance14 [style=filled, fillcolor=white, label=enhance];
+to13 [style=filled, fillcolor=white, label=to];
+enhance14 -> to13  [label=aux];
+affect11 -> enhance14  [label=xcomp];
+function16 [style=filled, fillcolor=white, label=function];
+p531 [style=filled, fillcolor=white, label=p53];
+function16 -> p531  [label=nn];
+enhance14 -> function16  [label=dobj];
+}

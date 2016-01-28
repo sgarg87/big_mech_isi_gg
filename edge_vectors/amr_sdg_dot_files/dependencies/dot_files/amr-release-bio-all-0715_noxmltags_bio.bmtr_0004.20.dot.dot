@@ -1,0 +1,30 @@
+digraph "This chemical ligation strategy will likely be useful for the study of other monoubiquitinated proteins ." {
+label="This chemical ligation strategy will likely be useful for the study of other
+monoubiquitinated proteins .";
+strategy4 [style=filled, fillcolor=white, label=strategy];
+This1 [style=filled, fillcolor=white, label=This];
+strategy4 -> This1  [label=det];
+chemical2 [style=filled, fillcolor=white, label=chemical];
+strategy4 -> chemical2  [label=amod];
+ligation3 [style=filled, fillcolor=white, label=ligation];
+strategy4 -> ligation3  [label=nn];
+useful8 [style=filled, fillcolor=white, label=useful];
+useful8 -> strategy4  [label=nsubj];
+will5 [style=filled, fillcolor=white, label=will];
+useful8 -> will5  [label=aux];
+likely6 [style=filled, fillcolor=white, label=likely];
+useful8 -> likely6  [label=advmod];
+be7 [style=filled, fillcolor=white, label=be];
+useful8 -> be7  [label=cop];
+useful8 -> useful8  [label=root];
+study11 [style=filled, fillcolor=white, label=study];
+the10 [style=filled, fillcolor=white, label=the];
+study11 -> the10  [label=det];
+useful8 -> study11  [label=prep_for];
+proteins15 [style=filled, fillcolor=white, label=proteins];
+other13 [style=filled, fillcolor=white, label=other];
+proteins15 -> other13  [label=amod];
+monoubiquitinated14 [style=filled, fillcolor=white, label=monoubiquitinated];
+proteins15 -> monoubiquitinated14  [label=amod];
+study11 -> proteins15  [label=prep_of];
+}

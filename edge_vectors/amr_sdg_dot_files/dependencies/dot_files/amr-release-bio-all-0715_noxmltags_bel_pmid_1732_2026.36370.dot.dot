@@ -1,0 +1,53 @@
+digraph "Since activation of NF-B in A549 cells is dependent on IKK2 ,  which phosphorylates serines 32 and 36 of IB as a prelude to IB degradation and activation of NF-B ( Catley et al. ,  2005" {
+label="Since activation of NF-B in A549 cells is dependent on IKK2 ,  which
+phosphorylates serines 32 and 36 of IB as a prelude to IB degradation and
+activation of NF-B ( Catley et al. ,  2005";
+dependent9 [style=filled, fillcolor=white, label=dependent];
+Since1 [style=filled, fillcolor=white, label=Since];
+dependent9 -> Since1  [label=mark];
+activation2 [style=filled, fillcolor=white, label=activation];
+dependent9 -> activation2  [label=nsubj];
+"NF-B4" [style=filled, fillcolor=white, label="NF-B"];
+activation2 -> "NF-B4"  [label=prep_of];
+cells7 [style=filled, fillcolor=white, label=cells];
+A5496 [style=filled, fillcolor=white, label=A549];
+cells7 -> A5496  [label=num];
+"NF-B4" -> cells7  [label=prep_in];
+is8 [style=filled, fillcolor=white, label=is];
+dependent9 -> is8  [label=cop];
+dependent9 -> dependent9  [label=root];
+IKK211 [style=filled, fillcolor=white, label=IKK2];
+dependent9 -> IKK211  [label=prep_on];
+phosphorylates14 [style=filled, fillcolor=white, label=phosphorylates];
+which13 [style=filled, fillcolor=white, label=which];
+phosphorylates14 -> which13  [label=nsubj];
+IKK211 -> phosphorylates14  [label=rcmod];
+serines15 [style=filled, fillcolor=white, label=serines];
+phosphorylates14 -> serines15  [label=dobj];
+3216 [style=filled, fillcolor=white, label=32];
+serines15 -> 3216  [label=num];
+3618 [style=filled, fillcolor=white, label=36];
+serines15 -> 3618  [label=conj_and];
+IB20 [style=filled, fillcolor=white, label=IB];
+serines15 -> IB20  [label=prep_of];
+prelude23 [style=filled, fillcolor=white, label=prelude];
+a22 [style=filled, fillcolor=white, label=a];
+prelude23 -> a22  [label=det];
+phosphorylates14 -> prelude23  [label=prep_as];
+IB25 [style=filled, fillcolor=white, label=IB];
+to24 [style=filled, fillcolor=white, label=to];
+IB25 -> to24  [label=aux];
+prelude23 -> IB25  [label=vmod];
+degradation26 [style=filled, fillcolor=white, label=degradation];
+IB25 -> degradation26  [label=dobj];
+activation28 [style=filled, fillcolor=white, label=activation];
+degradation26 -> activation28  [label=conj_and];
+"NF-B30" [style=filled, fillcolor=white, label="NF-B"];
+degradation26 -> "NF-B30"  [label=prep_of];
+Catley32 [style=filled, fillcolor=white, label=Catley];
+"NF-B30" -> Catley32  [label=dep];
+"al.34" [style=filled, fillcolor=white, label="al."];
+Catley32 -> "al.34"  [label=conj_et];
+200536 [style=filled, fillcolor=white, label=2005];
+Catley32 -> 200536  [label=dep];
+}

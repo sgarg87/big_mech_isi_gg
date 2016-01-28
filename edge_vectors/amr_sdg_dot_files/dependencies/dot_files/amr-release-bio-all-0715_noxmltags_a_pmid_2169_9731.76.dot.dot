@@ -1,0 +1,51 @@
+digraph "Both types of primary macrophages equally stimulated LM2 proliferation in the presence of serum ,  though the magnitude was reduced when compared to serum-free co-culture ( data not shown ) ." {
+label="Both types of primary macrophages equally stimulated LM2 proliferation in the
+presence of serum ,  though the magnitude was reduced when compared to serum-
+free co-culture ( data not shown ) .";
+types2 [style=filled, fillcolor=white, label=types];
+Both1 [style=filled, fillcolor=white, label=Both];
+types2 -> Both1  [label=det];
+stimulated7 [style=filled, fillcolor=white, label=stimulated];
+stimulated7 -> types2  [label=nsubj];
+macrophages5 [style=filled, fillcolor=white, label=macrophages];
+primary4 [style=filled, fillcolor=white, label=primary];
+macrophages5 -> primary4  [label=amod];
+types2 -> macrophages5  [label=prep_of];
+equally6 [style=filled, fillcolor=white, label=equally];
+stimulated7 -> equally6  [label=advmod];
+stimulated7 -> stimulated7  [label=root];
+proliferation9 [style=filled, fillcolor=white, label=proliferation];
+LM28 [style=filled, fillcolor=white, label=LM2];
+proliferation9 -> LM28  [label=nn];
+stimulated7 -> proliferation9  [label=dobj];
+presence12 [style=filled, fillcolor=white, label=presence];
+the11 [style=filled, fillcolor=white, label=the];
+presence12 -> the11  [label=det];
+stimulated7 -> presence12  [label=prep_in];
+serum14 [style=filled, fillcolor=white, label=serum];
+presence12 -> serum14  [label=prep_of];
+reduced20 [style=filled, fillcolor=white, label=reduced];
+though16 [style=filled, fillcolor=white, label=though];
+reduced20 -> though16  [label=mark];
+magnitude18 [style=filled, fillcolor=white, label=magnitude];
+the17 [style=filled, fillcolor=white, label=the];
+magnitude18 -> the17  [label=det];
+reduced20 -> magnitude18  [label=nsubjpass];
+was19 [style=filled, fillcolor=white, label=was];
+reduced20 -> was19  [label=auxpass];
+stimulated7 -> reduced20  [label=advcl];
+when21 [style=filled, fillcolor=white, label=when];
+reduced20 -> when21  [label=dobj];
+to23 [style=filled, fillcolor=white, label=to];
+reduced20 -> to23  [label=prepc_compared_to];
+"co-culture25" [style=filled, fillcolor=white, label="co-culture"];
+"serum-free24" [style=filled, fillcolor=white, label="serum-free"];
+"co-culture25" -> "serum-free24"  [label=amod];
+reduced20 -> "co-culture25"  [label=pobj];
+data27 [style=filled, fillcolor=white, label=data];
+"co-culture25" -> data27  [label=dep];
+shown29 [style=filled, fillcolor=white, label=shown];
+not28 [style=filled, fillcolor=white, label=not];
+shown29 -> not28  [label=neg];
+data27 -> shown29  [label=vmod];
+}

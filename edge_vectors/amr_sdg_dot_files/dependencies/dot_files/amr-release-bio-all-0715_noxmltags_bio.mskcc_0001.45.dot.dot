@@ -1,0 +1,64 @@
+digraph "Moreover ,  given their constitutive phosphorylation on S/TP sites ( Fig. 3D ) ,  these oncogenic B-Raf mutants were found to interact constitutively with Pin1 ( Fig. 7B ) ,  indicating that oncogenic B-Raf proteins are dephosphorylated and recycled ." {
+label="Moreover ,  given their constitutive phosphorylation on S/TP sites ( Fig. 3D )
+,  these oncogenic B-Raf mutants were found to interact constitutively with Pin1
+( Fig. 7B ) ,  indicating that oncogenic B-Raf proteins are dephosphorylated and
+recycled .";
+found20 [style=filled, fillcolor=white, label=found];
+Moreover1 [style=filled, fillcolor=white, label=Moreover];
+found20 -> Moreover1  [label=advmod];
+given3 [style=filled, fillcolor=white, label=given];
+found20 -> given3  [label=prep];
+phosphorylation6 [style=filled, fillcolor=white, label=phosphorylation];
+their4 [style=filled, fillcolor=white, label=their];
+phosphorylation6 -> their4  [label=poss];
+constitutive5 [style=filled, fillcolor=white, label=constitutive];
+phosphorylation6 -> constitutive5  [label=amod];
+given3 -> phosphorylation6  [label=pobj];
+sites9 [style=filled, fillcolor=white, label=sites];
+"S/TP8" [style=filled, fillcolor=white, label="S/TP"];
+sites9 -> "S/TP8"  [label=nn];
+phosphorylation6 -> sites9  [label=prep_on];
+"3D12" [style=filled, fillcolor=white, label="3D"];
+"Fig.11" [style=filled, fillcolor=white, label="Fig."];
+"3D12" -> "Fig.11"  [label=number];
+sites9 -> "3D12"  [label=dep];
+mutants18 [style=filled, fillcolor=white, label=mutants];
+these15 [style=filled, fillcolor=white, label=these];
+mutants18 -> these15  [label=det];
+oncogenic16 [style=filled, fillcolor=white, label=oncogenic];
+mutants18 -> oncogenic16  [label=amod];
+"B-Raf17" [style=filled, fillcolor=white, label="B-Raf"];
+mutants18 -> "B-Raf17"  [label=nn];
+found20 -> mutants18  [label=nsubjpass];
+were19 [style=filled, fillcolor=white, label=were];
+found20 -> were19  [label=auxpass];
+found20 -> found20  [label=root];
+interact22 [style=filled, fillcolor=white, label=interact];
+to21 [style=filled, fillcolor=white, label=to];
+interact22 -> to21  [label=aux];
+found20 -> interact22  [label=xcomp];
+constitutively23 [style=filled, fillcolor=white, label=constitutively];
+interact22 -> constitutively23  [label=advmod];
+Pin125 [style=filled, fillcolor=white, label=Pin1];
+interact22 -> Pin125  [label=prep_with];
+"7B28" [style=filled, fillcolor=white, label="7B"];
+"Fig.27" [style=filled, fillcolor=white, label="Fig."];
+"7B28" -> "Fig.27"  [label=nn];
+Pin125 -> "7B28"  [label=appos];
+indicating31 [style=filled, fillcolor=white, label=indicating];
+found20 -> indicating31  [label=xcomp];
+dephosphorylated37 [style=filled, fillcolor=white, label=dephosphorylated];
+that32 [style=filled, fillcolor=white, label=that];
+dephosphorylated37 -> that32  [label=mark];
+proteins35 [style=filled, fillcolor=white, label=proteins];
+oncogenic33 [style=filled, fillcolor=white, label=oncogenic];
+proteins35 -> oncogenic33  [label=amod];
+"B-Raf34" [style=filled, fillcolor=white, label="B-Raf"];
+proteins35 -> "B-Raf34"  [label=nn];
+dephosphorylated37 -> proteins35  [label=nsubjpass];
+are36 [style=filled, fillcolor=white, label=are];
+dephosphorylated37 -> are36  [label=auxpass];
+indicating31 -> dephosphorylated37  [label=ccomp];
+recycled39 [style=filled, fillcolor=white, label=recycled];
+dephosphorylated37 -> recycled39  [label=conj_and];
+}

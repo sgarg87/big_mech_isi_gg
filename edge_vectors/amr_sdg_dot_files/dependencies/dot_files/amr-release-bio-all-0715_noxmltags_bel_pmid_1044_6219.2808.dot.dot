@@ -1,0 +1,34 @@
+digraph "Stat3 is activated by phosphorylation on Tyr-705 ,  which leads to dimer formation ,  nuclear translocation ,  and regulation of gene expression ." {
+label="Stat3 is activated by phosphorylation on Tyr-705 ,  which leads to dimer
+formation ,  nuclear translocation ,  and regulation of gene expression .";
+activated3 [style=filled, fillcolor=white, label=activated];
+Stat31 [style=filled, fillcolor=white, label=Stat3];
+activated3 -> Stat31  [label=nsubjpass];
+is2 [style=filled, fillcolor=white, label=is];
+activated3 -> is2  [label=auxpass];
+activated3 -> activated3  [label=root];
+phosphorylation5 [style=filled, fillcolor=white, label=phosphorylation];
+activated3 -> phosphorylation5  [label=agent];
+"Tyr-705" [style=filled, fillcolor=white, label="Tyr-705"];
+activated3 -> "Tyr-705"  [label=prep_on];
+leads10 [style=filled, fillcolor=white, label=leads];
+which9 [style=filled, fillcolor=white, label=which];
+leads10 -> which9  [label=nsubj];
+"Tyr-705" -> leads10  [label=rcmod];
+dimer12 [style=filled, fillcolor=white, label=dimer];
+to11 [style=filled, fillcolor=white, label=to];
+dimer12 -> to11  [label=aux];
+leads10 -> dimer12  [label=xcomp];
+formation13 [style=filled, fillcolor=white, label=formation];
+dimer12 -> formation13  [label=dobj];
+translocation16 [style=filled, fillcolor=white, label=translocation];
+nuclear15 [style=filled, fillcolor=white, label=nuclear];
+translocation16 -> nuclear15  [label=amod];
+formation13 -> translocation16  [label=conj_and];
+regulation19 [style=filled, fillcolor=white, label=regulation];
+formation13 -> regulation19  [label=conj_and];
+expression22 [style=filled, fillcolor=white, label=expression];
+gene21 [style=filled, fillcolor=white, label=gene];
+expression22 -> gene21  [label=nn];
+regulation19 -> expression22  [label=prep_of];
+}

@@ -1,0 +1,42 @@
+digraph "Similarly ,  no Sos-1 could be recovered in anti-myc immunoprecipitates in the presence of the competing ,  but not of the control ,  peptide ( Fig. 1 C ) ." {
+label="Similarly ,  no Sos-1 could be recovered in anti-myc immunoprecipitates in the
+presence of the competing ,  but not of the control ,  peptide ( Fig. 1 C ) .";
+recovered7 [style=filled, fillcolor=white, label=recovered];
+Similarly1 [style=filled, fillcolor=white, label=Similarly];
+recovered7 -> Similarly1  [label=advmod];
+"Sos-14" [style=filled, fillcolor=white, label="Sos-1"];
+no3 [style=filled, fillcolor=white, label=no];
+"Sos-14" -> no3  [label=neg];
+recovered7 -> "Sos-14"  [label=nsubjpass];
+could5 [style=filled, fillcolor=white, label=could];
+recovered7 -> could5  [label=aux];
+be6 [style=filled, fillcolor=white, label=be];
+recovered7 -> be6  [label=auxpass];
+recovered7 -> recovered7  [label=root];
+"recovered7'" [style=filled, fillcolor=white, label=recovered];
+recovered7 -> "recovered7'"  [label=conj_negcc];
+immunoprecipitates10 [style=filled, fillcolor=white, label=immunoprecipitates];
+"anti-myc9" [style=filled, fillcolor=white, label="anti-myc"];
+immunoprecipitates10 -> "anti-myc9"  [label=amod];
+recovered7 -> immunoprecipitates10  [label=prep_in];
+presence13 [style=filled, fillcolor=white, label=presence];
+the12 [style=filled, fillcolor=white, label=the];
+presence13 -> the12  [label=det];
+recovered7 -> presence13  [label=prep_in];
+the15 [style=filled, fillcolor=white, label=the];
+presence13 -> the15  [label=prep_of];
+competing16 [style=filled, fillcolor=white, label=competing];
+the15 -> competing16  [label=amod];
+control22 [style=filled, fillcolor=white, label=control];
+the21 [style=filled, fillcolor=white, label=the];
+control22 -> the21  [label=det];
+"recovered7'" -> control22  [label=prep_of];
+peptide24 [style=filled, fillcolor=white, label=peptide];
+control22 -> peptide24  [label=appos];
+"Fig.26" [style=filled, fillcolor=white, label="Fig."];
+peptide24 -> "Fig.26"  [label=appos];
+C28 [style=filled, fillcolor=white, label=C];
+127 [style=filled, fillcolor=white, label=1];
+C28 -> 127  [label=number];
+"Fig.26" -> C28  [label=num];
+}

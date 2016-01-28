@@ -1,0 +1,22 @@
+digraph "We next considered the effect of Ras monoubiquitination on GAP-mediated hydrolysis ." {
+label="We next considered the effect of Ras monoubiquitination on GAP-mediated
+hydrolysis .";
+considered3 [style=filled, fillcolor=white, label=considered];
+We1 [style=filled, fillcolor=white, label=We];
+considered3 -> We1  [label=nsubj];
+next2 [style=filled, fillcolor=white, label=next];
+considered3 -> next2  [label=advmod];
+considered3 -> considered3  [label=root];
+effect5 [style=filled, fillcolor=white, label=effect];
+the4 [style=filled, fillcolor=white, label=the];
+effect5 -> the4  [label=det];
+considered3 -> effect5  [label=dobj];
+monoubiquitination8 [style=filled, fillcolor=white, label=monoubiquitination];
+Ras7 [style=filled, fillcolor=white, label=Ras];
+monoubiquitination8 -> Ras7  [label=nn];
+effect5 -> monoubiquitination8  [label=prep_of];
+hydrolysis11 [style=filled, fillcolor=white, label=hydrolysis];
+"GAP-mediated10" [style=filled, fillcolor=white, label="GAP-mediated"];
+hydrolysis11 -> "GAP-mediated10"  [label=amod];
+considered3 -> hydrolysis11  [label=prep_on];
+}

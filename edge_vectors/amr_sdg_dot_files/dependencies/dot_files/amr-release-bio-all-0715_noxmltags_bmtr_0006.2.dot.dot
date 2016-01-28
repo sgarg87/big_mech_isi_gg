@@ -1,0 +1,28 @@
+digraph "Ras ,  like all GTPases ,  cycles between an inactive GDP-bound state and an active GTP-bound state ." {
+label="Ras ,  like all GTPases ,  cycles between an inactive GDP-bound state and an
+active GTP-bound state .";
+Ras1 [style=filled, fillcolor=white, label=Ras];
+Ras1 -> Ras1  [label=root];
+GTPases5 [style=filled, fillcolor=white, label=GTPases];
+all4 [style=filled, fillcolor=white, label=all];
+GTPases5 -> all4  [label=det];
+Ras1 -> GTPases5  [label=prep_like];
+cycles7 [style=filled, fillcolor=white, label=cycles];
+Ras1 -> cycles7  [label=dobj];
+state12 [style=filled, fillcolor=white, label=state];
+an9 [style=filled, fillcolor=white, label=an];
+state12 -> an9  [label=det];
+inactive10 [style=filled, fillcolor=white, label=inactive];
+state12 -> inactive10  [label=amod];
+"GDP-bound11" [style=filled, fillcolor=white, label="GDP-bound"];
+state12 -> "GDP-bound11"  [label=amod];
+cycles7 -> state12  [label=prep_between];
+state17 [style=filled, fillcolor=white, label=state];
+an14 [style=filled, fillcolor=white, label=an];
+state17 -> an14  [label=det];
+active15 [style=filled, fillcolor=white, label=active];
+state17 -> active15  [label=amod];
+"GTP-bound16" [style=filled, fillcolor=white, label="GTP-bound"];
+state17 -> "GTP-bound16"  [label=amod];
+state12 -> state17  [label=conj_and];
+}

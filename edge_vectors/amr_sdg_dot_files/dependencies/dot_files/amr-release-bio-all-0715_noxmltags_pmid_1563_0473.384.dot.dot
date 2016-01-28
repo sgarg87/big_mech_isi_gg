@@ -1,0 +1,15 @@
+digraph "( B ) TGF-β2 can induce Snail protein ." {
+label="( B ) TGF-β2 can induce Snail protein .";
+"TGF-β24" [style=filled, fillcolor=white, label="TGF-β2"];
+B2 [style=filled, fillcolor=white, label=B];
+"TGF-β24" -> B2  [label=nn];
+induce6 [style=filled, fillcolor=white, label=induce];
+induce6 -> "TGF-β24"  [label=nsubj];
+can5 [style=filled, fillcolor=white, label=can];
+induce6 -> can5  [label=aux];
+induce6 -> induce6  [label=root];
+protein8 [style=filled, fillcolor=white, label=protein];
+Snail7 [style=filled, fillcolor=white, label=Snail];
+protein8 -> Snail7  [label=amod];
+induce6 -> protein8  [label=dobj];
+}

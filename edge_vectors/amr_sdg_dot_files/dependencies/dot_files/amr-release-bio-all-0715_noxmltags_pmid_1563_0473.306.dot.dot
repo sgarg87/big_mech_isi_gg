@@ -1,0 +1,19 @@
+digraph "( A ) In situ hybridizations with Snail sense or antisense cRNA probes ." {
+label="( A ) In situ hybridizations with Snail sense or antisense cRNA probes .";
+sense9 [style=filled, fillcolor=white, label=sense];
+A2 [style=filled, fillcolor=white, label=A];
+sense9 -> A2  [label=nsubj];
+hybridizations6 [style=filled, fillcolor=white, label=hybridizations];
+situ5 [style=filled, fillcolor=white, label=situ];
+hybridizations6 -> situ5  [label=amod];
+sense9 -> hybridizations6  [label=prep_in];
+Snail8 [style=filled, fillcolor=white, label=Snail];
+hybridizations6 -> Snail8  [label=prep_with];
+sense9 -> sense9  [label=root];
+antisense11 [style=filled, fillcolor=white, label=antisense];
+sense9 -> antisense11  [label=conj_or];
+probes13 [style=filled, fillcolor=white, label=probes];
+cRNA12 [style=filled, fillcolor=white, label=cRNA];
+probes13 -> cRNA12  [label=nn];
+sense9 -> probes13  [label=dobj];
+}

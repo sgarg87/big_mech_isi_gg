@@ -1,0 +1,47 @@
+digraph "( A ) Cos-7 cells were transfected with expression vectors for Sos-1 ( SosTfx ) or for Sos-1 ,  E3b1 ,  and Eps8 ( TripleTfx ) or with the corresponding empty vectors ( mock ) ." {
+label="( A ) Cos-7 cells were transfected with expression vectors for Sos-1 ( SosTfx )
+or for Sos-1 ,  E3b1 ,  and Eps8 ( TripleTfx ) or with the corresponding empty
+vectors ( mock ) .";
+"Cos-74" [style=filled, fillcolor=white, label="Cos-7"];
+A2 [style=filled, fillcolor=white, label=A];
+"Cos-74" -> A2  [label=appos];
+cells5 [style=filled, fillcolor=white, label=cells];
+cells5 -> "Cos-74"  [label=nn];
+transfected7 [style=filled, fillcolor=white, label=transfected];
+transfected7 -> cells5  [label=nsubjpass];
+were6 [style=filled, fillcolor=white, label=were];
+transfected7 -> were6  [label=auxpass];
+transfected7 -> transfected7  [label=root];
+vectors10 [style=filled, fillcolor=white, label=vectors];
+expression9 [style=filled, fillcolor=white, label=expression];
+vectors10 -> expression9  [label=nn];
+transfected7 -> vectors10  [label=prep_with];
+"vectors10'" [style=filled, fillcolor=white, label=vectors];
+vectors10 -> "vectors10'"  [label=conj_or];
+"vectors10''" [style=filled, fillcolor=white, label=vectors];
+vectors10 -> "vectors10''"  [label=conj_or];
+"Sos-12" [style=filled, fillcolor=white, label="Sos-1"];
+vectors10 -> "Sos-12"  [label=prep_for];
+SosTfx14 [style=filled, fillcolor=white, label=SosTfx];
+"Sos-12" -> SosTfx14  [label=appos];
+or16 [style=filled, fillcolor=white, label=or];
+vectors10 -> or16  [label=cc];
+"Sos-18" [style=filled, fillcolor=white, label="Sos-1"];
+"vectors10'" -> "Sos-18"  [label=prep_for];
+E3b120 [style=filled, fillcolor=white, label=E3b1];
+"Sos-18" -> E3b120  [label=conj_and];
+Eps823 [style=filled, fillcolor=white, label=Eps8];
+"Sos-18" -> Eps823  [label=conj_and];
+TripleTfx25 [style=filled, fillcolor=white, label=TripleTfx];
+"Sos-18" -> TripleTfx25  [label=appos];
+vectors32 [style=filled, fillcolor=white, label=vectors];
+the29 [style=filled, fillcolor=white, label=the];
+vectors32 -> the29  [label=det];
+corresponding30 [style=filled, fillcolor=white, label=corresponding];
+vectors32 -> corresponding30  [label=amod];
+empty31 [style=filled, fillcolor=white, label=empty];
+vectors32 -> empty31  [label=amod];
+"vectors10''" -> vectors32  [label=prep_with];
+mock34 [style=filled, fillcolor=white, label=mock];
+vectors32 -> mock34  [label=appos];
+}

@@ -1,0 +1,45 @@
+digraph "4 - Treatment of CRC cell lines with U0126 markedly reduced serpinE2 mRNA levels ,  indicating that expression of serpinE2 is likely dependent of ERK activity ." {
+label="4 - Treatment of CRC cell lines with U0126 markedly reduced serpinE2 mRNA
+levels ,  indicating that expression of serpinE2 is likely dependent of ERK
+activity .";
+41 [style=filled, fillcolor=white, label=4];
+41 -> 41  [label=root];
+indicating16 [style=filled, fillcolor=white, label=indicating];
+Treatment3 [style=filled, fillcolor=white, label=Treatment];
+indicating16 -> Treatment3  [label=dep];
+lines7 [style=filled, fillcolor=white, label=lines];
+CRC5 [style=filled, fillcolor=white, label=CRC];
+lines7 -> CRC5  [label=nn];
+cell6 [style=filled, fillcolor=white, label=cell];
+lines7 -> cell6  [label=nn];
+Treatment3 -> lines7  [label=prep_of];
+U01269 [style=filled, fillcolor=white, label=U0126];
+lines7 -> U01269  [label=prep_with];
+reduced11 [style=filled, fillcolor=white, label=reduced];
+markedly10 [style=filled, fillcolor=white, label=markedly];
+reduced11 -> markedly10  [label=advmod];
+levels14 [style=filled, fillcolor=white, label=levels];
+levels14 -> reduced11  [label=amod];
+serpinE21 [style=filled, fillcolor=white, label=serpinE2];
+levels14 -> serpinE21  [label=amod];
+mRNA13 [style=filled, fillcolor=white, label=mRNA];
+levels14 -> mRNA13  [label=nn];
+indicating16 -> levels14  [label=dep];
+41 -> indicating16  [label=dep];
+dependent23 [style=filled, fillcolor=white, label=dependent];
+that17 [style=filled, fillcolor=white, label=that];
+dependent23 -> that17  [label=mark];
+expression18 [style=filled, fillcolor=white, label=expression];
+dependent23 -> expression18  [label=nsubj];
+serpinE220 [style=filled, fillcolor=white, label=serpinE2];
+expression18 -> serpinE220  [label=prep_of];
+is21 [style=filled, fillcolor=white, label=is];
+dependent23 -> is21  [label=cop];
+likely22 [style=filled, fillcolor=white, label=likely];
+dependent23 -> likely22  [label=advmod];
+indicating16 -> dependent23  [label=ccomp];
+activity26 [style=filled, fillcolor=white, label=activity];
+ERK25 [style=filled, fillcolor=white, label=ERK];
+activity26 -> ERK25  [label=nn];
+dependent23 -> activity26  [label=prep_of];
+}

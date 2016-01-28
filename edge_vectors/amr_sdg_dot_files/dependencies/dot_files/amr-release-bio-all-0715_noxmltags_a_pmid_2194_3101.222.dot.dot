@@ -1,0 +1,53 @@
+digraph "Activation of Rac1 in Caco-H2 cells is in agreement with previous studies that correlate Rac1 with EMT and the inhibition of E-cadherin in mammary epithelial and pancreatic carcinoma cells respectively -LSB- 32 -RSB- ." {
+label="Activation of Rac1 in Caco-H2 cells is in agreement with previous studies that
+correlate Rac1 with EMT and the inhibition of E-cadherin in mammary epithelial
+and pancreatic carcinoma cells respectively -LSB- 32 -RSB- .";
+is7 [style=filled, fillcolor=white, label=is];
+Activation1 [style=filled, fillcolor=white, label=Activation];
+is7 -> Activation1  [label=nsubj];
+Rac13 [style=filled, fillcolor=white, label=Rac1];
+Activation1 -> Rac13  [label=prep_of];
+cells6 [style=filled, fillcolor=white, label=cells];
+"Caco-H25" [style=filled, fillcolor=white, label="Caco-H2"];
+cells6 -> "Caco-H25"  [label=nn];
+Rac13 -> cells6  [label=prep_in];
+is7 -> is7  [label=root];
+agreement9 [style=filled, fillcolor=white, label=agreement];
+is7 -> agreement9  [label=prep_in];
+studies12 [style=filled, fillcolor=white, label=studies];
+previous11 [style=filled, fillcolor=white, label=previous];
+studies12 -> previous11  [label=amod];
+agreement9 -> studies12  [label=prep_with];
+"-LSB-31" [style=filled, fillcolor=white, label="-LSB-"];
+that13 [style=filled, fillcolor=white, label=that];
+"-LSB-31" -> that13  [label=mark];
+Rac115 [style=filled, fillcolor=white, label=Rac1];
+correlate14 [style=filled, fillcolor=white, label=correlate];
+Rac115 -> correlate14  [label=amod];
+"-LSB-31" -> Rac115  [label=nsubj];
+EMT17 [style=filled, fillcolor=white, label=EMT];
+Rac115 -> EMT17  [label=prep_with];
+inhibition20 [style=filled, fillcolor=white, label=inhibition];
+the19 [style=filled, fillcolor=white, label=the];
+inhibition20 -> the19  [label=det];
+Rac115 -> inhibition20  [label=conj_and];
+"E-cadherin22" [style=filled, fillcolor=white, label="E-cadherin"];
+inhibition20 -> "E-cadherin22"  [label=prep_of];
+epithelial25 [style=filled, fillcolor=white, label=epithelial];
+mammary24 [style=filled, fillcolor=white, label=mammary];
+epithelial25 -> mammary24  [label=advmod];
+cells29 [style=filled, fillcolor=white, label=cells];
+cells29 -> epithelial25  [label=amod];
+pancreatic27 [style=filled, fillcolor=white, label=pancreatic];
+epithelial25 -> pancreatic27  [label=conj_and];
+carcinoma28 [style=filled, fillcolor=white, label=carcinoma];
+cells29 -> carcinoma28  [label=nn];
+"E-cadherin22" -> cells29  [label=prep_in];
+respectively30 [style=filled, fillcolor=white, label=respectively];
+"-LSB-31" -> respectively30  [label=advmod];
+is7 -> "-LSB-31"  [label=ccomp];
+"-RSB-33" [style=filled, fillcolor=white, label="-RSB-"];
+32 [style=filled, fillcolor=white, label=32];
+"-RSB-33" -> 32  [label=num];
+"-LSB-31" -> "-RSB-33"  [label=dobj];
+}

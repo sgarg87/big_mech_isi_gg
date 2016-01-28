@@ -1,0 +1,28 @@
+digraph "BRAFV600E enhances the ability of Caco-2 cells to migrate and invade in vitro through RhoA activation" {
+label="BRAFV600E enhances the ability of Caco-2 cells to migrate and invade in vitro
+through RhoA activation";
+enhances2 [style=filled, fillcolor=white, label=enhances];
+BRAFV600E1 [style=filled, fillcolor=white, label=BRAFV600E];
+enhances2 -> BRAFV600E1  [label=nsubj];
+enhances2 -> enhances2  [label=root];
+ability4 [style=filled, fillcolor=white, label=ability];
+the3 [style=filled, fillcolor=white, label=the];
+ability4 -> the3  [label=det];
+enhances2 -> ability4  [label=dobj];
+cells7 [style=filled, fillcolor=white, label=cells];
+"Caco-26" [style=filled, fillcolor=white, label="Caco-2"];
+cells7 -> "Caco-26"  [label=nn];
+ability4 -> cells7  [label=prep_of];
+migrate9 [style=filled, fillcolor=white, label=migrate];
+to8 [style=filled, fillcolor=white, label=to];
+migrate9 -> to8  [label=aux];
+enhances2 -> migrate9  [label=xcomp];
+invade11 [style=filled, fillcolor=white, label=invade];
+migrate9 -> invade11  [label=conj_and];
+activation16 [style=filled, fillcolor=white, label=activation];
+vitro13 [style=filled, fillcolor=white, label=vitro];
+activation16 -> vitro13  [label=amod];
+RhoA15 [style=filled, fillcolor=white, label=RhoA];
+vitro13 -> RhoA15  [label=prep_through];
+migrate9 -> activation16  [label=prep_in];
+}

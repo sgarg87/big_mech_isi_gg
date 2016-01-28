@@ -1,0 +1,41 @@
+digraph "CRH and cAMP induce Nur77 and Nurr1 expression and transcription at the NurRE site by protein kinase A ( PKA ) and calcium-dependent and - independent mechanisms ." {
+label="CRH and cAMP induce Nur77 and Nurr1 expression and transcription at the NurRE
+site by protein kinase A ( PKA ) and calcium-dependent and - independent
+mechanisms .";
+induce4 [style=filled, fillcolor=white, label=induce];
+CRH1 [style=filled, fillcolor=white, label=CRH];
+induce4 -> CRH1  [label=nsubj];
+cAMP3 [style=filled, fillcolor=white, label=cAMP];
+CRH1 -> cAMP3  [label=conj_and];
+induce4 -> induce4  [label=root];
+Nur775 [style=filled, fillcolor=white, label=Nur77];
+induce4 -> Nur775  [label=dobj];
+expression8 [style=filled, fillcolor=white, label=expression];
+Nurr17 [style=filled, fillcolor=white, label=Nurr1];
+expression8 -> Nurr17  [label=amod];
+Nur775 -> expression8  [label=conj_and];
+transcription10 [style=filled, fillcolor=white, label=transcription];
+induce4 -> transcription10  [label=conj_and];
+site14 [style=filled, fillcolor=white, label=site];
+the12 [style=filled, fillcolor=white, label=the];
+site14 -> the12  [label=det];
+NurRE13 [style=filled, fillcolor=white, label=NurRE];
+site14 -> NurRE13  [label=nn];
+transcription10 -> site14  [label=prep_at];
+A18 [style=filled, fillcolor=white, label=A];
+protein16 [style=filled, fillcolor=white, label=protein];
+A18 -> protein16  [label=nn];
+kinase17 [style=filled, fillcolor=white, label=kinase];
+A18 -> kinase17  [label=nn];
+transcription10 -> A18  [label=prep_by];
+PKA20 [style=filled, fillcolor=white, label=PKA];
+A18 -> PKA20  [label=appos];
+mechanisms27 [style=filled, fillcolor=white, label=mechanisms];
+"calcium-dependent23" [style=filled, fillcolor=white, label="calcium-dependent"];
+mechanisms27 -> "calcium-dependent23"  [label=amod];
+and24 [style=filled, fillcolor=white, label=and];
+"calcium-dependent23" -> and24  [label=cc];
+independent26 [style=filled, fillcolor=white, label=independent];
+mechanisms27 -> independent26  [label=amod];
+A18 -> mechanisms27  [label=conj_and];
+}

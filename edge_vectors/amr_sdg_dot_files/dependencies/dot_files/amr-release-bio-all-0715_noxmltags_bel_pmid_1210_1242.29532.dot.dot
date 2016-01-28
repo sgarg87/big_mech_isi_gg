@@ -1,0 +1,40 @@
+digraph "Indeed ,  TGF-beta1 mRNA was present at lower levels in unwounded back skin and in 1-day wounds of Nrf2 - / - mice ( Fig. 7 ) ." {
+label="Indeed ,  TGF-beta1 mRNA was present at lower levels in unwounded back skin and
+in 1-day wounds of Nrf2 - / - mice ( Fig. 7 ) .";
+present6 [style=filled, fillcolor=white, label=present];
+Indeed1 [style=filled, fillcolor=white, label=Indeed];
+present6 -> Indeed1  [label=advmod];
+mRNA4 [style=filled, fillcolor=white, label=mRNA];
+"TGF-beta13" [style=filled, fillcolor=white, label="TGF-beta1"];
+mRNA4 -> "TGF-beta13"  [label=nn];
+present6 -> mRNA4  [label=nsubj];
+was5 [style=filled, fillcolor=white, label=was];
+present6 -> was5  [label=cop];
+present6 -> present6  [label=root];
+"present6'" [style=filled, fillcolor=white, label=present];
+present6 -> "present6'"  [label=conj_and];
+levels9 [style=filled, fillcolor=white, label=levels];
+lower8 [style=filled, fillcolor=white, label=lower];
+levels9 -> lower8  [label=amod];
+present6 -> levels9  [label=prep_at];
+skin13 [style=filled, fillcolor=white, label=skin];
+unwounded11 [style=filled, fillcolor=white, label=unwounded];
+skin13 -> unwounded11  [label=amod];
+back12 [style=filled, fillcolor=white, label=back];
+skin13 -> back12  [label=amod];
+levels9 -> skin13  [label=prep_in];
+wounds17 [style=filled, fillcolor=white, label=wounds];
+"1-day6" [style=filled, fillcolor=white, label="1-day"];
+wounds17 -> "1-day6"  [label=amod];
+"present6'" -> wounds17  [label=prep_in];
+mice23 [style=filled, fillcolor=white, label=mice];
+Nrf219 [style=filled, fillcolor=white, label=Nrf2];
+mice23 -> Nrf219  [label=amod];
+"/21" [style=filled, fillcolor=white, label="/"];
+mice23 -> "/21"  [label=dep];
+wounds17 -> mice23  [label=prep_of];
+726 [style=filled, fillcolor=white, label=7];
+"Fig.25" [style=filled, fillcolor=white, label="Fig."];
+726 -> "Fig.25"  [label=number];
+present6 -> 726  [label=dep];
+}

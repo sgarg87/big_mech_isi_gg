@@ -1,0 +1,57 @@
+digraph "B9 clones expressing either wild-type FGFR3 at high levels or mutant FGFR3 displayed increased phosphorylation of STAT3 and higher levels of bcl-x ( L ) expression than did parental B9 cells after cytokine withdrawal ." {
+label="B9 clones expressing either wild-type FGFR3 at high levels or mutant FGFR3
+displayed increased phosphorylation of STAT3 and higher levels of bcl-x ( L )
+expression than did parental B9 cells after cytokine withdrawal .";
+clones2 [style=filled, fillcolor=white, label=clones];
+B91 [style=filled, fillcolor=white, label=B9];
+clones2 -> B91  [label=num];
+displayed13 [style=filled, fillcolor=white, label=displayed];
+displayed13 -> clones2  [label=nsubj];
+expressing3 [style=filled, fillcolor=white, label=expressing];
+clones2 -> expressing3  [label=vmod];
+FGFR36 [style=filled, fillcolor=white, label=FGFR3];
+either4 [style=filled, fillcolor=white, label=either];
+FGFR36 -> either4  [label=det];
+"wild-type5" [style=filled, fillcolor=white, label="wild-type"];
+FGFR36 -> "wild-type5"  [label=amod];
+expressing3 -> FGFR36  [label=dobj];
+levels9 [style=filled, fillcolor=white, label=levels];
+high8 [style=filled, fillcolor=white, label=high];
+levels9 -> high8  [label=amod];
+expressing3 -> levels9  [label=prep_at];
+FGFR312 [style=filled, fillcolor=white, label=FGFR3];
+mutant11 [style=filled, fillcolor=white, label=mutant];
+FGFR312 -> mutant11  [label=amod];
+levels9 -> FGFR312  [label=conj_or];
+displayed13 -> displayed13  [label=root];
+phosphorylation15 [style=filled, fillcolor=white, label=phosphorylation];
+increased14 [style=filled, fillcolor=white, label=increased];
+phosphorylation15 -> increased14  [label=amod];
+displayed13 -> phosphorylation15  [label=dobj];
+STAT317 [style=filled, fillcolor=white, label=STAT3];
+phosphorylation15 -> STAT317  [label=prep_of];
+levels20 [style=filled, fillcolor=white, label=levels];
+higher19 [style=filled, fillcolor=white, label=higher];
+levels20 -> higher19  [label=amod];
+phosphorylation15 -> levels20  [label=conj_and];
+expression26 [style=filled, fillcolor=white, label=expression];
+"bcl-x22" [style=filled, fillcolor=white, label="bcl-x"];
+expression26 -> "bcl-x22"  [label=amod];
+L24 [style=filled, fillcolor=white, label=L];
+expression26 -> L24  [label=appos];
+levels20 -> expression26  [label=prep_of];
+did28 [style=filled, fillcolor=white, label=did];
+than27 [style=filled, fillcolor=white, label=than];
+did28 -> than27  [label=mark];
+expression26 -> did28  [label=dep];
+cells31 [style=filled, fillcolor=white, label=cells];
+parental29 [style=filled, fillcolor=white, label=parental];
+cells31 -> parental29  [label=amod];
+B930 [style=filled, fillcolor=white, label=B9];
+cells31 -> B930  [label=nn];
+did28 -> cells31  [label=dobj];
+withdrawal34 [style=filled, fillcolor=white, label=withdrawal];
+cytokine33 [style=filled, fillcolor=white, label=cytokine];
+withdrawal34 -> cytokine33  [label=amod];
+did28 -> withdrawal34  [label=prep_after];
+}

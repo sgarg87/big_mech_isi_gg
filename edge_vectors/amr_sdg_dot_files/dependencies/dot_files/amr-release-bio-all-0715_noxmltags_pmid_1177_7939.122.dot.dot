@@ -1,0 +1,19 @@
+digraph "RTK activation differentially regulates the S/G and S/E/E8 complexes" {
+label="RTK activation differentially regulates the S/G and S/E/E8 complexes";
+activation2 [style=filled, fillcolor=white, label=activation];
+RTK1 [style=filled, fillcolor=white, label=RTK];
+activation2 -> RTK1  [label=nn];
+regulates4 [style=filled, fillcolor=white, label=regulates];
+regulates4 -> activation2  [label=nsubj];
+differentially3 [style=filled, fillcolor=white, label=differentially];
+regulates4 -> differentially3  [label=advmod];
+regulates4 -> regulates4  [label=root];
+complexes9 [style=filled, fillcolor=white, label=complexes];
+the5 [style=filled, fillcolor=white, label=the];
+complexes9 -> the5  [label=det];
+"S/G6" [style=filled, fillcolor=white, label="S/G"];
+complexes9 -> "S/G6"  [label=nn];
+"S/E/E8" [style=filled, fillcolor=white, label="S/E/E8"];
+"S/G6" -> "S/E/E8"  [label=conj_and];
+regulates4 -> complexes9  [label=dobj];
+}

@@ -1,0 +1,55 @@
+digraph "Not unexpectedly ,  for all of the oncogenic B-Raf proteins ,  the S729A mutation ,  which disrupts heterodimerization with C-Raf ,  caused a > 90 % decrease in C-Raf activity levels ( Fig. 5B ) ." {
+label="Not unexpectedly ,  for all of the oncogenic B-Raf proteins ,  the S729A
+mutation ,  which disrupts heterodimerization with C-Raf ,  caused a > 90 %
+decrease in C-Raf activity levels ( Fig. 5B ) .";
+unexpectedly2 [style=filled, fillcolor=white, label=unexpectedly];
+Not1 [style=filled, fillcolor=white, label=Not];
+unexpectedly2 -> Not1  [label=dep];
+caused22 [style=filled, fillcolor=white, label=caused];
+caused22 -> unexpectedly2  [label=advmod];
+all5 [style=filled, fillcolor=white, label=all];
+caused22 -> all5  [label=prep_for];
+proteins10 [style=filled, fillcolor=white, label=proteins];
+the7 [style=filled, fillcolor=white, label=the];
+proteins10 -> the7  [label=det];
+oncogenic8 [style=filled, fillcolor=white, label=oncogenic];
+proteins10 -> oncogenic8  [label=amod];
+"B-Raf9" [style=filled, fillcolor=white, label="B-Raf"];
+proteins10 -> "B-Raf9"  [label=num];
+all5 -> proteins10  [label=prep_of];
+mutation14 [style=filled, fillcolor=white, label=mutation];
+the12 [style=filled, fillcolor=white, label=the];
+mutation14 -> the12  [label=det];
+S729A13 [style=filled, fillcolor=white, label=S729A];
+mutation14 -> S729A13  [label=nn];
+caused22 -> mutation14  [label=nsubj];
+disrupts17 [style=filled, fillcolor=white, label=disrupts];
+which16 [style=filled, fillcolor=white, label=which];
+disrupts17 -> which16  [label=nsubj];
+mutation14 -> disrupts17  [label=rcmod];
+heterodimerization18 [style=filled, fillcolor=white, label=heterodimerization];
+disrupts17 -> heterodimerization18  [label=dobj];
+"C-Raf20" [style=filled, fillcolor=white, label="C-Raf"];
+disrupts17 -> "C-Raf20"  [label=prep_with];
+caused22 -> caused22  [label=root];
+decrease27 [style=filled, fillcolor=white, label=decrease];
+a23 [style=filled, fillcolor=white, label=a];
+decrease27 -> a23  [label=det];
+">24" [style=filled, fillcolor=white, label=">"];
+decrease27 -> ">24"  [label=amod];
+"%26" [style=filled, fillcolor=white, label="%"];
+9025 [style=filled, fillcolor=white, label=90];
+"%26" -> 9025  [label=number];
+decrease27 -> "%26"  [label=amod];
+caused22 -> decrease27  [label=dobj];
+levels31 [style=filled, fillcolor=white, label=levels];
+"C-Raf29" [style=filled, fillcolor=white, label="C-Raf"];
+levels31 -> "C-Raf29"  [label=amod];
+activity30 [style=filled, fillcolor=white, label=activity];
+levels31 -> activity30  [label=nn];
+caused22 -> levels31  [label=prep_in];
+"5B34" [style=filled, fillcolor=white, label="5B"];
+"Fig.33" [style=filled, fillcolor=white, label="Fig."];
+"5B34" -> "Fig.33"  [label=number];
+levels31 -> "5B34"  [label=dep];
+}

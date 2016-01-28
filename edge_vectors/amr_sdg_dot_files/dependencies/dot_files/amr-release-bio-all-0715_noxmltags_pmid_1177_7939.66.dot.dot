@@ -1,0 +1,66 @@
+digraph "We note that our mapping data are at variance with those recently reported by Fan and Goff ( 2000 ) ,  who concluded that ,  in vivo ,  the interaction between Sos-1 and E3b1 -- Abi-1 is mediated by the NH2-terminal portion of the latter ." {
+label="We note that our mapping data are at variance with those recently reported by
+Fan and Goff ( 2000 ) ,  who concluded that ,  in vivo ,  the interaction
+between Sos-1 and E3b1 -- Abi-1 is mediated by the NH2-terminal portion of the
+latter .";
+note2 [style=filled, fillcolor=white, label=note];
+We1 [style=filled, fillcolor=white, label=We];
+note2 -> We1  [label=nsubj];
+note2 -> note2  [label=root];
+are7 [style=filled, fillcolor=white, label=are];
+that3 [style=filled, fillcolor=white, label=that];
+are7 -> that3  [label=mark];
+data6 [style=filled, fillcolor=white, label=data];
+our4 [style=filled, fillcolor=white, label=our];
+data6 -> our4  [label=poss];
+mapping5 [style=filled, fillcolor=white, label=mapping];
+data6 -> mapping5  [label=nn];
+are7 -> data6  [label=nsubj];
+note2 -> are7  [label=ccomp];
+variance9 [style=filled, fillcolor=white, label=variance];
+are7 -> variance9  [label=prep_at];
+those11 [style=filled, fillcolor=white, label=those];
+are7 -> those11  [label=prep_with];
+reported13 [style=filled, fillcolor=white, label=reported];
+recently12 [style=filled, fillcolor=white, label=recently];
+reported13 -> recently12  [label=advmod];
+those11 -> reported13  [label=vmod];
+Fan15 [style=filled, fillcolor=white, label=Fan];
+reported13 -> Fan15  [label=agent];
+Goff17 [style=filled, fillcolor=white, label=Goff];
+Fan15 -> Goff17  [label=conj_and];
+200019 [style=filled, fillcolor=white, label=2000];
+Fan15 -> 200019  [label=appos];
+concluded23 [style=filled, fillcolor=white, label=concluded];
+who22 [style=filled, fillcolor=white, label=who];
+concluded23 -> who22  [label=nsubj];
+Fan15 -> concluded23  [label=rcmod];
+mediated38 [style=filled, fillcolor=white, label=mediated];
+that24 [style=filled, fillcolor=white, label=that];
+mediated38 -> that24  [label=mark];
+vivo27 [style=filled, fillcolor=white, label=vivo];
+mediated38 -> vivo27  [label=prep_in];
+interaction30 [style=filled, fillcolor=white, label=interaction];
+the29 [style=filled, fillcolor=white, label=the];
+interaction30 -> the29  [label=det];
+mediated38 -> interaction30  [label=nsubjpass];
+"Sos-132" [style=filled, fillcolor=white, label="Sos-1"];
+interaction30 -> "Sos-132"  [label=prep_between];
+E3b134 [style=filled, fillcolor=white, label=E3b1];
+"Sos-132" -> E3b134  [label=conj_and];
+"Abi-136" [style=filled, fillcolor=white, label="Abi-1"];
+mediated38 -> "Abi-136"  [label=nsubjpass];
+is37 [style=filled, fillcolor=white, label=is];
+mediated38 -> is37  [label=auxpass];
+concluded23 -> mediated38  [label=ccomp];
+portion42 [style=filled, fillcolor=white, label=portion];
+the40 [style=filled, fillcolor=white, label=the];
+portion42 -> the40  [label=det];
+"NH2-terminal41" [style=filled, fillcolor=white, label="NH2-terminal"];
+portion42 -> "NH2-terminal41"  [label=nn];
+mediated38 -> portion42  [label=agent];
+latter45 [style=filled, fillcolor=white, label=latter];
+the44 [style=filled, fillcolor=white, label=the];
+latter45 -> the44  [label=det];
+portion42 -> latter45  [label=prep_of];
+}

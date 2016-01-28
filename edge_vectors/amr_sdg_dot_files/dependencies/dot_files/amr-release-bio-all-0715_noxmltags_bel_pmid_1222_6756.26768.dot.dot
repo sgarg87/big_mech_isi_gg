@@ -1,0 +1,32 @@
+digraph "We conclude that endogenous RALT protein behaves as a bonafide feedback inhibitor of the ErbB-2 kinase ." {
+label="We conclude that endogenous RALT protein behaves as a bonafide feedback
+inhibitor of the ErbB-2 kinase .";
+conclude2 [style=filled, fillcolor=white, label=conclude];
+We1 [style=filled, fillcolor=white, label=We];
+conclude2 -> We1  [label=nsubj];
+conclude2 -> conclude2  [label=root];
+RALT5 [style=filled, fillcolor=white, label=RALT];
+that3 [style=filled, fillcolor=white, label=that];
+RALT5 -> that3  [label=mark];
+endogenous4 [style=filled, fillcolor=white, label=endogenous];
+RALT5 -> endogenous4  [label=nsubj];
+conclude2 -> RALT5  [label=ccomp];
+behaves7 [style=filled, fillcolor=white, label=behaves];
+protein6 [style=filled, fillcolor=white, label=protein];
+behaves7 -> protein6  [label=nsubj];
+RALT5 -> behaves7  [label=ccomp];
+inhibitor12 [style=filled, fillcolor=white, label=inhibitor];
+a9 [style=filled, fillcolor=white, label=a];
+inhibitor12 -> a9  [label=det];
+bonafide10 [style=filled, fillcolor=white, label=bonafide];
+inhibitor12 -> bonafide10  [label=amod];
+feedback11 [style=filled, fillcolor=white, label=feedback];
+inhibitor12 -> feedback11  [label=nn];
+behaves7 -> inhibitor12  [label=prep_as];
+kinase16 [style=filled, fillcolor=white, label=kinase];
+the14 [style=filled, fillcolor=white, label=the];
+kinase16 -> the14  [label=det];
+"ErbB-215" [style=filled, fillcolor=white, label="ErbB-2"];
+kinase16 -> "ErbB-215"  [label=nn];
+inhibitor12 -> kinase16  [label=prep_of];
+}

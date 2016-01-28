@@ -1,0 +1,30 @@
+digraph "Elevated levels of human TNF-alpha were accompanied by increases in synovial cell expression of murine IL-1beta and IL-6" {
+label="Elevated levels of human TNF-alpha were accompanied by increases in synovial
+cell expression of murine IL-1beta and IL-6";
+levels2 [style=filled, fillcolor=white, label=levels];
+Elevated1 [style=filled, fillcolor=white, label=Elevated];
+levels2 -> Elevated1  [label=amod];
+accompanied7 [style=filled, fillcolor=white, label=accompanied];
+accompanied7 -> levels2  [label=nsubjpass];
+"TNF-alpha5" [style=filled, fillcolor=white, label="TNF-alpha"];
+human4 [style=filled, fillcolor=white, label=human];
+"TNF-alpha5" -> human4  [label=amod];
+levels2 -> "TNF-alpha5"  [label=prep_of];
+were6 [style=filled, fillcolor=white, label=were];
+accompanied7 -> were6  [label=auxpass];
+accompanied7 -> accompanied7  [label=root];
+increases9 [style=filled, fillcolor=white, label=increases];
+accompanied7 -> increases9  [label=agent];
+expression13 [style=filled, fillcolor=white, label=expression];
+synovial11 [style=filled, fillcolor=white, label=synovial];
+expression13 -> synovial11  [label=amod];
+cell12 [style=filled, fillcolor=white, label=cell];
+expression13 -> cell12  [label=nn];
+increases9 -> expression13  [label=prep_in];
+"IL-1beta6" [style=filled, fillcolor=white, label="IL-1beta"];
+murine15 [style=filled, fillcolor=white, label=murine];
+"IL-1beta6" -> murine15  [label=amod];
+expression13 -> "IL-1beta6"  [label=prep_of];
+"IL-618" [style=filled, fillcolor=white, label="IL-6"];
+"IL-1beta6" -> "IL-618"  [label=conj_and];
+}

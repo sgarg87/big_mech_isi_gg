@@ -1,0 +1,62 @@
+digraph "Importantly the signaling enzymes encoded by PIK3CA and BRAF are ,  in part ,  regulated by direct binding to activated forms of the Ras proteins suggesting that dysregulation of this key step in signaling is critical for tumor formation ." {
+label="Importantly the signaling enzymes encoded by PIK3CA and BRAF are ,  in part ,
+regulated by direct binding to activated forms of the Ras proteins suggesting
+that dysregulation of this key step in signaling is critical for tumor formation
+.";
+are10 [style=filled, fillcolor=white, label=are];
+Importantly1 [style=filled, fillcolor=white, label=Importantly];
+are10 -> Importantly1  [label=advmod];
+enzymes4 [style=filled, fillcolor=white, label=enzymes];
+the2 [style=filled, fillcolor=white, label=the];
+enzymes4 -> the2  [label=det];
+signaling3 [style=filled, fillcolor=white, label=signaling];
+enzymes4 -> signaling3  [label=amod];
+are10 -> enzymes4  [label=nsubj];
+encoded5 [style=filled, fillcolor=white, label=encoded];
+enzymes4 -> encoded5  [label=vmod];
+PIK3CA7 [style=filled, fillcolor=white, label=PIK3CA];
+encoded5 -> PIK3CA7  [label=agent];
+BRAF9 [style=filled, fillcolor=white, label=BRAF];
+PIK3CA7 -> BRAF9  [label=conj_and];
+are10 -> are10  [label=root];
+part13 [style=filled, fillcolor=white, label=part];
+are10 -> part13  [label=prep_in];
+regulated15 [style=filled, fillcolor=white, label=regulated];
+are10 -> regulated15  [label=dep];
+proteins25 [style=filled, fillcolor=white, label=proteins];
+direct17 [style=filled, fillcolor=white, label=direct];
+proteins25 -> direct17  [label=amod];
+binding18 [style=filled, fillcolor=white, label=binding];
+proteins25 -> binding18  [label=amod];
+forms21 [style=filled, fillcolor=white, label=forms];
+activated20 [style=filled, fillcolor=white, label=activated];
+forms21 -> activated20  [label=amod];
+binding18 -> forms21  [label=prep_to];
+Ras24 [style=filled, fillcolor=white, label=Ras];
+the23 [style=filled, fillcolor=white, label=the];
+Ras24 -> the23  [label=det];
+forms21 -> Ras24  [label=prep_of];
+regulated15 -> proteins25  [label=prep_by];
+suggesting26 [style=filled, fillcolor=white, label=suggesting];
+proteins25 -> suggesting26  [label=vmod];
+critical36 [style=filled, fillcolor=white, label=critical];
+that27 [style=filled, fillcolor=white, label=that];
+critical36 -> that27  [label=mark];
+dysregulation28 [style=filled, fillcolor=white, label=dysregulation];
+critical36 -> dysregulation28  [label=nsubj];
+step32 [style=filled, fillcolor=white, label=step];
+this30 [style=filled, fillcolor=white, label=this];
+step32 -> this30  [label=det];
+key31 [style=filled, fillcolor=white, label=key];
+step32 -> key31  [label=amod];
+dysregulation28 -> step32  [label=prep_of];
+signaling34 [style=filled, fillcolor=white, label=signaling];
+step32 -> signaling34  [label=prepc_in];
+is35 [style=filled, fillcolor=white, label=is];
+critical36 -> is35  [label=cop];
+suggesting26 -> critical36  [label=ccomp];
+formation39 [style=filled, fillcolor=white, label=formation];
+tumor38 [style=filled, fillcolor=white, label=tumor];
+formation39 -> tumor38  [label=nn];
+critical36 -> formation39  [label=prep_for];
+}

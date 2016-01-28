@@ -1,0 +1,19 @@
+digraph "All displayed similar abnormalities ,  as did their offspring ." {
+label="All displayed similar abnormalities ,  as did their offspring .";
+displayed2 [style=filled, fillcolor=white, label=displayed];
+All1 [style=filled, fillcolor=white, label=All];
+displayed2 -> All1  [label=nsubj];
+displayed2 -> displayed2  [label=root];
+abnormalities4 [style=filled, fillcolor=white, label=abnormalities];
+similar3 [style=filled, fillcolor=white, label=similar];
+abnormalities4 -> similar3  [label=amod];
+displayed2 -> abnormalities4  [label=dobj];
+did7 [style=filled, fillcolor=white, label=did];
+as6 [style=filled, fillcolor=white, label=as];
+did7 -> as6  [label=mark];
+displayed2 -> did7  [label=advcl];
+offspring9 [style=filled, fillcolor=white, label=offspring];
+their8 [style=filled, fillcolor=white, label=their];
+offspring9 -> their8  [label=poss];
+did7 -> offspring9  [label=dobj];
+}

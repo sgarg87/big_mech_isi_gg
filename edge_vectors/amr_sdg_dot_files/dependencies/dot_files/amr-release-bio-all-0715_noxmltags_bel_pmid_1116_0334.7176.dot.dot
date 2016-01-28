@@ -1,0 +1,26 @@
+digraph "CXCR4 protein expression was also enhanced upon treatment with TNF-alpha and IL-1beta ( 2 - to 3-fold ) ." {
+label="CXCR4 protein expression was also enhanced upon treatment with TNF-alpha and
+IL-1beta ( 2 - to 3-fold ) .";
+expression3 [style=filled, fillcolor=white, label=expression];
+CXCR41 [style=filled, fillcolor=white, label=CXCR4];
+expression3 -> CXCR41  [label=num];
+protein2 [style=filled, fillcolor=white, label=protein];
+expression3 -> protein2  [label=nn];
+enhanced6 [style=filled, fillcolor=white, label=enhanced];
+enhanced6 -> expression3  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+enhanced6 -> was4  [label=auxpass];
+also5 [style=filled, fillcolor=white, label=also];
+enhanced6 -> also5  [label=advmod];
+enhanced6 -> enhanced6  [label=root];
+treatment8 [style=filled, fillcolor=white, label=treatment];
+enhanced6 -> treatment8  [label=prep_upon];
+"TNF-alpha10" [style=filled, fillcolor=white, label="TNF-alpha"];
+treatment8 -> "TNF-alpha10"  [label=prep_with];
+"IL-1beta2" [style=filled, fillcolor=white, label="IL-1beta"];
+treatment8 -> "IL-1beta2"  [label=conj_and];
+214 [style=filled, fillcolor=white, label=2];
+"IL-1beta2" -> 214  [label=dep];
+"3-fold17" [style=filled, fillcolor=white, label="3-fold"];
+214 -> "3-fold17"  [label=prep_to];
+}

@@ -1,0 +1,43 @@
+digraph "Consistent with our in vivo observations ,  transfected keratinocytes expressing Snail exhibited a substantial increase in pMAPK levels relative to control cells ( Figure 4D ) ." {
+label="Consistent with our in vivo observations ,  transfected keratinocytes
+expressing Snail exhibited a substantial increase in pMAPK levels relative to
+control cells ( Figure 4D ) .";
+exhibited12 [style=filled, fillcolor=white, label=exhibited];
+Consistent1 [style=filled, fillcolor=white, label=Consistent];
+exhibited12 -> Consistent1  [label=nsubj];
+keratinocytes9 [style=filled, fillcolor=white, label=keratinocytes];
+our3 [style=filled, fillcolor=white, label=our];
+keratinocytes9 -> our3  [label=poss];
+observations6 [style=filled, fillcolor=white, label=observations];
+vivo5 [style=filled, fillcolor=white, label=vivo];
+observations6 -> vivo5  [label=nn];
+keratinocytes9 -> observations6  [label=prep_in];
+transfected8 [style=filled, fillcolor=white, label=transfected];
+keratinocytes9 -> transfected8  [label=dep];
+Consistent1 -> keratinocytes9  [label=prep_with];
+expressing10 [style=filled, fillcolor=white, label=expressing];
+Consistent1 -> expressing10  [label=vmod];
+Snail11 [style=filled, fillcolor=white, label=Snail];
+expressing10 -> Snail11  [label=dobj];
+exhibited12 -> exhibited12  [label=root];
+increase15 [style=filled, fillcolor=white, label=increase];
+a13 [style=filled, fillcolor=white, label=a];
+increase15 -> a13  [label=det];
+substantial14 [style=filled, fillcolor=white, label=substantial];
+increase15 -> substantial14  [label=amod];
+exhibited12 -> increase15  [label=dobj];
+levels18 [style=filled, fillcolor=white, label=levels];
+pMAPK17 [style=filled, fillcolor=white, label=pMAPK];
+levels18 -> pMAPK17  [label=nn];
+exhibited12 -> levels18  [label=prep_in];
+relative19 [style=filled, fillcolor=white, label=relative];
+levels18 -> relative19  [label=advmod];
+cells22 [style=filled, fillcolor=white, label=cells];
+control21 [style=filled, fillcolor=white, label=control];
+cells22 -> control21  [label=nn];
+relative19 -> cells22  [label=prep_to];
+Figure24 [style=filled, fillcolor=white, label=Figure];
+levels18 -> Figure24  [label=appos];
+"4D25" [style=filled, fillcolor=white, label="4D"];
+Figure24 -> "4D25"  [label=num];
+}

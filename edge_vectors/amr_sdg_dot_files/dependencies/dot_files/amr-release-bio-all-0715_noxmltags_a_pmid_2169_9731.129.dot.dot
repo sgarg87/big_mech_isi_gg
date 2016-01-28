@@ -1,0 +1,53 @@
+digraph "MØCM from untreated tumor-educated macrophages did not stimulate LM2 growth significantly more than untreated naïve MØCM ( Figure 6C ,  grey bars ) ,  corresponding to previous co-culture results ( Figure 2B ) ." {
+label="MØCM from untreated tumor-educated macrophages did not stimulate LM2 growth
+significantly more than untreated naïve MØCM ( Figure 6C ,  grey bars ) ,
+corresponding to previous co-culture results ( Figure 2B ) .";
+stimulate8 [style=filled, fillcolor=white, label=stimulate];
+"MØCM1" [style=filled, fillcolor=white, label="MØCM"];
+stimulate8 -> "MØCM1"  [label=nsubj];
+"tumor-educated4" [style=filled, fillcolor=white, label="tumor-educated"];
+untreated3 [style=filled, fillcolor=white, label=untreated];
+"tumor-educated4" -> untreated3  [label=amod];
+macrophages5 [style=filled, fillcolor=white, label=macrophages];
+macrophages5 -> "tumor-educated4"  [label=amod];
+"MØCM1" -> macrophages5  [label=prep_from];
+did6 [style=filled, fillcolor=white, label=did];
+stimulate8 -> did6  [label=aux];
+not7 [style=filled, fillcolor=white, label=not];
+stimulate8 -> not7  [label=neg];
+stimulate8 -> stimulate8  [label=root];
+growth10 [style=filled, fillcolor=white, label=growth];
+LM29 [style=filled, fillcolor=white, label=LM2];
+growth10 -> LM29  [label=num];
+stimulate8 -> growth10  [label=dobj];
+more12 [style=filled, fillcolor=white, label=more];
+significantly11 [style=filled, fillcolor=white, label=significantly];
+more12 -> significantly11  [label=advmod];
+growth10 -> more12  [label=amod];
+"naïve15" [style=filled, fillcolor=white, label="naïve"];
+untreated14 [style=filled, fillcolor=white, label=untreated];
+"naïve15" -> untreated14  [label=amod];
+corresponding25 [style=filled, fillcolor=white, label=corresponding];
+corresponding25 -> "naïve15"  [label=amod];
+"MØCM16" [style=filled, fillcolor=white, label="MØCM"];
+corresponding25 -> "MØCM16"  [label=nn];
+Figure18 [style=filled, fillcolor=white, label=Figure];
+corresponding25 -> Figure18  [label=appos];
+"6C19" [style=filled, fillcolor=white, label="6C"];
+Figure18 -> "6C19"  [label=num];
+bars22 [style=filled, fillcolor=white, label=bars];
+grey21 [style=filled, fillcolor=white, label=grey];
+bars22 -> grey21  [label=amod];
+Figure18 -> bars22  [label=dep];
+stimulate8 -> corresponding25  [label=prep_than];
+results29 [style=filled, fillcolor=white, label=results];
+previous27 [style=filled, fillcolor=white, label=previous];
+results29 -> previous27  [label=amod];
+"co-culture28" [style=filled, fillcolor=white, label="co-culture"];
+results29 -> "co-culture28"  [label=amod];
+stimulate8 -> results29  [label=prep_to];
+Figure31 [style=filled, fillcolor=white, label=Figure];
+results29 -> Figure31  [label=appos];
+"2B3" [style=filled, fillcolor=white, label="2B"];
+Figure31 -> "2B3"  [label=num];
+}

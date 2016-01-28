@@ -1,0 +1,30 @@
+digraph "Devchand et al. ( 11 ) showed that absence of PPARa expression in mice prolonged the inflammatory response ." {
+label="Devchand et al. ( 11 ) showed that absence of PPARa expression in mice
+prolonged the inflammatory response .";
+showed7 [style=filled, fillcolor=white, label=showed];
+Devchand1 [style=filled, fillcolor=white, label=Devchand];
+showed7 -> Devchand1  [label=nsubj];
+"al.3" [style=filled, fillcolor=white, label="al."];
+Devchand1 -> "al.3"  [label=conj_et];
+115 [style=filled, fillcolor=white, label=11];
+Devchand1 -> 115  [label=appos];
+showed7 -> showed7  [label=root];
+absence9 [style=filled, fillcolor=white, label=absence];
+that8 [style=filled, fillcolor=white, label=that];
+absence9 -> that8  [label=det];
+showed7 -> absence9  [label=dobj];
+expression12 [style=filled, fillcolor=white, label=expression];
+PPARa11 [style=filled, fillcolor=white, label=PPARa];
+expression12 -> PPARa11  [label=nn];
+absence9 -> expression12  [label=prep_of];
+mice14 [style=filled, fillcolor=white, label=mice];
+showed7 -> mice14  [label=prep_in];
+prolonged15 [style=filled, fillcolor=white, label=prolonged];
+mice14 -> prolonged15  [label=vmod];
+response18 [style=filled, fillcolor=white, label=response];
+the16 [style=filled, fillcolor=white, label=the];
+response18 -> the16  [label=det];
+inflammatory17 [style=filled, fillcolor=white, label=inflammatory];
+response18 -> inflammatory17  [label=amod];
+prolonged15 -> response18  [label=dobj];
+}

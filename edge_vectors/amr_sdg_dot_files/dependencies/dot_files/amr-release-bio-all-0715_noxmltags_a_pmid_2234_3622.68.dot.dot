@@ -1,0 +1,15 @@
+digraph "Selumetinib in combination with TMZ enhances DNA damage" {
+label="Selumetinib in combination with TMZ enhances DNA damage";
+Selumetinib1 [style=filled, fillcolor=white, label=Selumetinib];
+Selumetinib1 -> Selumetinib1  [label=root];
+combination3 [style=filled, fillcolor=white, label=combination];
+Selumetinib1 -> combination3  [label=prep_in];
+damage8 [style=filled, fillcolor=white, label=damage];
+TMZ5 [style=filled, fillcolor=white, label=TMZ];
+damage8 -> TMZ5  [label=nn];
+enhances6 [style=filled, fillcolor=white, label=enhances];
+damage8 -> enhances6  [label=nn];
+DNA7 [style=filled, fillcolor=white, label=DNA];
+damage8 -> DNA7  [label=nn];
+Selumetinib1 -> damage8  [label=prep_with];
+}

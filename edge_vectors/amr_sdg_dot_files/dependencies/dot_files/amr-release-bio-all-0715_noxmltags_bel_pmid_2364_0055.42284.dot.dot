@@ -1,0 +1,32 @@
+digraph "The transcription of COX-2 ,  ERa ,  HIF-la ,  and TR$ 1 was increased in thyroid hormone-treated cells ( Fig. 4B ) ." {
+label="The transcription of COX-2 ,  ERa ,  HIF-la ,  and TR$ 1 was increased in
+thyroid hormone-treated cells ( Fig. 4B ) .";
+transcription2 [style=filled, fillcolor=white, label=transcription];
+The1 [style=filled, fillcolor=white, label=The];
+transcription2 -> The1  [label=det];
+increased14 [style=filled, fillcolor=white, label=increased];
+increased14 -> transcription2  [label=nsubjpass];
+"HIF-la8" [style=filled, fillcolor=white, label="HIF-la"];
+"COX-24" [style=filled, fillcolor=white, label="COX-2"];
+"HIF-la8" -> "COX-24"  [label=nn];
+ERa6 [style=filled, fillcolor=white, label=ERa];
+"HIF-la8" -> ERa6  [label=appos];
+transcription2 -> "HIF-la8"  [label=prep_of];
+"TR$11" [style=filled, fillcolor=white, label="TR$"];
+"HIF-la8" -> "TR$11"  [label=conj_and];
+112 [style=filled, fillcolor=white, label=1];
+"TR$11" -> 112  [label=num];
+was13 [style=filled, fillcolor=white, label=was];
+increased14 -> was13  [label=auxpass];
+increased14 -> increased14  [label=root];
+cells18 [style=filled, fillcolor=white, label=cells];
+thyroid16 [style=filled, fillcolor=white, label=thyroid];
+cells18 -> thyroid16  [label=amod];
+"hormone-treated17" [style=filled, fillcolor=white, label="hormone-treated"];
+cells18 -> "hormone-treated17"  [label=amod];
+increased14 -> cells18  [label=prep_in];
+"4B21" [style=filled, fillcolor=white, label="4B"];
+"Fig.20" [style=filled, fillcolor=white, label="Fig."];
+"4B21" -> "Fig.20"  [label=number];
+cells18 -> "4B21"  [label=dep];
+}

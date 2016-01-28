@@ -1,0 +1,44 @@
+digraph "Searching for genes specifically modulated by IL-9 ,  we observed that the 24P3 mRNA is strongly upregulated in BW5147 T lymphoma cells upon IL-9 stimulation ." {
+label="Searching for genes specifically modulated by IL-9 ,  we observed that the 24P3
+mRNA is strongly upregulated in BW5147 T lymphoma cells upon IL-9 stimulation .";
+observed10 [style=filled, fillcolor=white, label=observed];
+Searching1 [style=filled, fillcolor=white, label=Searching];
+observed10 -> Searching1  [label=vmod];
+genes3 [style=filled, fillcolor=white, label=genes];
+Searching1 -> genes3  [label=prep_for];
+modulated5 [style=filled, fillcolor=white, label=modulated];
+specifically4 [style=filled, fillcolor=white, label=specifically];
+modulated5 -> specifically4  [label=advmod];
+genes3 -> modulated5  [label=vmod];
+"IL-97" [style=filled, fillcolor=white, label="IL-9"];
+modulated5 -> "IL-97"  [label=agent];
+we9 [style=filled, fillcolor=white, label=we];
+observed10 -> we9  [label=nsubj];
+observed10 -> observed10  [label=root];
+upregulated17 [style=filled, fillcolor=white, label=upregulated];
+that11 [style=filled, fillcolor=white, label=that];
+upregulated17 -> that11  [label=mark];
+mRNA14 [style=filled, fillcolor=white, label=mRNA];
+the12 [style=filled, fillcolor=white, label=the];
+mRNA14 -> the12  [label=det];
+"24P31" [style=filled, fillcolor=white, label="24P3"];
+mRNA14 -> "24P31"  [label=num];
+upregulated17 -> mRNA14  [label=nsubjpass];
+is15 [style=filled, fillcolor=white, label=is];
+upregulated17 -> is15  [label=auxpass];
+strongly16 [style=filled, fillcolor=white, label=strongly];
+upregulated17 -> strongly16  [label=advmod];
+observed10 -> upregulated17  [label=ccomp];
+cells22 [style=filled, fillcolor=white, label=cells];
+BW514719 [style=filled, fillcolor=white, label=BW5147];
+cells22 -> BW514719  [label=nn];
+T20 [style=filled, fillcolor=white, label=T];
+cells22 -> T20  [label=nn];
+lymphoma21 [style=filled, fillcolor=white, label=lymphoma];
+cells22 -> lymphoma21  [label=nn];
+upregulated17 -> cells22  [label=prep_in];
+stimulation25 [style=filled, fillcolor=white, label=stimulation];
+"IL-924" [style=filled, fillcolor=white, label="IL-9"];
+stimulation25 -> "IL-924"  [label=nn];
+upregulated17 -> stimulation25  [label=prep_upon];
+}

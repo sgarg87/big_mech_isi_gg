@@ -1,0 +1,30 @@
+digraph "Expression of both IFN-a2 and IFN-b mRNA was found to be profoundly abrogated in TLR7-deficient mice" {
+label="Expression of both IFN-a2 and IFN-b mRNA was found to be profoundly abrogated
+in TLR7-deficient mice";
+found9 [style=filled, fillcolor=white, label=found];
+Expression1 [style=filled, fillcolor=white, label=Expression];
+found9 -> Expression1  [label=nsubjpass];
+mRNA7 [style=filled, fillcolor=white, label=mRNA];
+both3 [style=filled, fillcolor=white, label=both];
+mRNA7 -> both3  [label=det];
+"IFN-a24" [style=filled, fillcolor=white, label="IFN-a2"];
+mRNA7 -> "IFN-a24"  [label=amod];
+"IFN-b6" [style=filled, fillcolor=white, label="IFN-b"];
+"IFN-a24" -> "IFN-b6"  [label=conj_and];
+Expression1 -> mRNA7  [label=prep_of];
+was8 [style=filled, fillcolor=white, label=was];
+found9 -> was8  [label=auxpass];
+found9 -> found9  [label=root];
+abrogated13 [style=filled, fillcolor=white, label=abrogated];
+to10 [style=filled, fillcolor=white, label=to];
+abrogated13 -> to10  [label=aux];
+be11 [style=filled, fillcolor=white, label=be];
+abrogated13 -> be11  [label=cop];
+profoundly12 [style=filled, fillcolor=white, label=profoundly];
+abrogated13 -> profoundly12  [label=advmod];
+found9 -> abrogated13  [label=xcomp];
+mice16 [style=filled, fillcolor=white, label=mice];
+"TLR7-deficient15" [style=filled, fillcolor=white, label="TLR7-deficient"];
+mice16 -> "TLR7-deficient15"  [label=nn];
+abrogated13 -> mice16  [label=prep_in];
+}

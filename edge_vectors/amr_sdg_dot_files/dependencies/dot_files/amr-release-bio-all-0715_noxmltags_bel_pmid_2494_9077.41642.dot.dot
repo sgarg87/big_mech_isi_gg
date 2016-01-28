@@ -1,0 +1,51 @@
+digraph "The mRNA expression of Foxp3 and RORyt in the spleen was very low in the normal control group but significantly higher in the model control group ( P < 0.05 ) ." {
+label="The mRNA expression of Foxp3 and RORyt in the spleen was very low in the normal
+control group but significantly higher in the model control group ( P < 0.05 )
+.";
+expression3 [style=filled, fillcolor=white, label=expression];
+The1 [style=filled, fillcolor=white, label=The];
+expression3 -> The1  [label=det];
+mRNA2 [style=filled, fillcolor=white, label=mRNA];
+expression3 -> mRNA2  [label=nn];
+low13 [style=filled, fillcolor=white, label=low];
+low13 -> expression3  [label=nsubj];
+Foxp35 [style=filled, fillcolor=white, label=Foxp3];
+expression3 -> Foxp35  [label=prep_of];
+RORyt7 [style=filled, fillcolor=white, label=RORyt];
+Foxp35 -> RORyt7  [label=conj_and];
+spleen10 [style=filled, fillcolor=white, label=spleen];
+the9 [style=filled, fillcolor=white, label=the];
+spleen10 -> the9  [label=det];
+expression3 -> spleen10  [label=prep_in];
+was11 [style=filled, fillcolor=white, label=was];
+low13 -> was11  [label=cop];
+very12 [style=filled, fillcolor=white, label=very];
+low13 -> very12  [label=advmod];
+low13 -> low13  [label=root];
+group18 [style=filled, fillcolor=white, label=group];
+the15 [style=filled, fillcolor=white, label=the];
+group18 -> the15  [label=det];
+normal16 [style=filled, fillcolor=white, label=normal];
+group18 -> normal16  [label=amod];
+control17 [style=filled, fillcolor=white, label=control];
+group18 -> control17  [label=nn];
+low13 -> group18  [label=prep_in];
+higher21 [style=filled, fillcolor=white, label=higher];
+significantly20 [style=filled, fillcolor=white, label=significantly];
+higher21 -> significantly20  [label=advmod];
+low13 -> higher21  [label=conj_but];
+group26 [style=filled, fillcolor=white, label=group];
+the23 [style=filled, fillcolor=white, label=the];
+group26 -> the23  [label=det];
+model24 [style=filled, fillcolor=white, label=model];
+group26 -> model24  [label=nn];
+control25 [style=filled, fillcolor=white, label=control];
+group26 -> control25  [label=nn];
+low13 -> group26  [label=prep_in];
+"0.053" [style=filled, fillcolor=white, label="0.05"];
+P28 [style=filled, fillcolor=white, label=P];
+"0.053" -> P28  [label=nn];
+"<29" [style=filled, fillcolor=white, label="<"];
+"0.053" -> "<29"  [label=nn];
+group26 -> "0.053"  [label=appos];
+}

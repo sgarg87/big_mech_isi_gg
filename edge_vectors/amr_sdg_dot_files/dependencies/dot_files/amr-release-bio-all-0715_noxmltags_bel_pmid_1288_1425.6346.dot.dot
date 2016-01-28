@@ -1,0 +1,38 @@
+digraph "Here we demonstrate that Ser311 accounts for zetaPKC phosphorylation of RelA and that this site is phosphorylated in vivo in response to TNF-alpha ." {
+label="Here we demonstrate that Ser311 accounts for zetaPKC phosphorylation of RelA
+and that this site is phosphorylated in vivo in response to TNF-alpha .";
+demonstrate3 [style=filled, fillcolor=white, label=demonstrate];
+Here1 [style=filled, fillcolor=white, label=Here];
+demonstrate3 -> Here1  [label=advmod];
+we2 [style=filled, fillcolor=white, label=we];
+demonstrate3 -> we2  [label=nsubj];
+demonstrate3 -> demonstrate3  [label=root];
+accounts6 [style=filled, fillcolor=white, label=accounts];
+that4 [style=filled, fillcolor=white, label=that];
+accounts6 -> that4  [label=mark];
+Ser3115 [style=filled, fillcolor=white, label=Ser311];
+accounts6 -> Ser3115  [label=nsubj];
+demonstrate3 -> accounts6  [label=ccomp];
+phosphorylation9 [style=filled, fillcolor=white, label=phosphorylation];
+zetaPKC8 [style=filled, fillcolor=white, label=zetaPKC];
+phosphorylation9 -> zetaPKC8  [label=amod];
+accounts6 -> phosphorylation9  [label=prep_for];
+RelA11 [style=filled, fillcolor=white, label=RelA];
+phosphorylation9 -> RelA11  [label=prep_of];
+phosphorylated17 [style=filled, fillcolor=white, label=phosphorylated];
+that13 [style=filled, fillcolor=white, label=that];
+phosphorylated17 -> that13  [label=mark];
+site15 [style=filled, fillcolor=white, label=site];
+this14 [style=filled, fillcolor=white, label=this];
+site15 -> this14  [label=det];
+phosphorylated17 -> site15  [label=nsubjpass];
+is16 [style=filled, fillcolor=white, label=is];
+phosphorylated17 -> is16  [label=auxpass];
+accounts6 -> phosphorylated17  [label=conj_and];
+vivo19 [style=filled, fillcolor=white, label=vivo];
+phosphorylated17 -> vivo19  [label=prep_in];
+response21 [style=filled, fillcolor=white, label=response];
+vivo19 -> response21  [label=prep_in];
+"TNF-alpha23" [style=filled, fillcolor=white, label="TNF-alpha"];
+phosphorylated17 -> "TNF-alpha23"  [label=prep_to];
+}

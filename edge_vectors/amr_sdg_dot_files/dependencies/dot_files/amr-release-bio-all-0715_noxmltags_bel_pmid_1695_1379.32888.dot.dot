@@ -1,0 +1,32 @@
+digraph "Egr-1 has been characterized as a transcriptional regulator of both PDGF-A and PDGF-C gene expression ( 18 ,  19 ) ." {
+label="Egr-1 has been characterized as a transcriptional regulator of both PDGF-A and
+PDGF-C gene expression ( 18 ,  19 ) .";
+characterized4 [style=filled, fillcolor=white, label=characterized];
+"Egr-1" [style=filled, fillcolor=white, label="Egr-1"];
+characterized4 -> "Egr-1"  [label=nsubjpass];
+has2 [style=filled, fillcolor=white, label=has];
+characterized4 -> has2  [label=aux];
+been3 [style=filled, fillcolor=white, label=been];
+characterized4 -> been3  [label=auxpass];
+characterized4 -> characterized4  [label=root];
+regulator8 [style=filled, fillcolor=white, label=regulator];
+a6 [style=filled, fillcolor=white, label=a];
+regulator8 -> a6  [label=det];
+transcriptional7 [style=filled, fillcolor=white, label=transcriptional];
+regulator8 -> transcriptional7  [label=amod];
+characterized4 -> regulator8  [label=prep_as];
+expression15 [style=filled, fillcolor=white, label=expression];
+both10 [style=filled, fillcolor=white, label=both];
+expression15 -> both10  [label=det];
+"PDGF-A11" [style=filled, fillcolor=white, label="PDGF-A"];
+expression15 -> "PDGF-A11"  [label=amod];
+"PDGF-C13" [style=filled, fillcolor=white, label="PDGF-C"];
+"PDGF-A11" -> "PDGF-C13"  [label=conj_and];
+gene14 [style=filled, fillcolor=white, label=gene];
+expression15 -> gene14  [label=nn];
+regulator8 -> expression15  [label=prep_of];
+1817 [style=filled, fillcolor=white, label=18];
+expression15 -> 1817  [label=appos];
+19 [style=filled, fillcolor=white, label=19];
+1817 -> 19  [label=dep];
+}

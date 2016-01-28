@@ -1,0 +1,66 @@
+digraph "The hsp90beta gene promoter contains binding sites for the transcription factors nuclear factor IL-6 ( NF-IL6 ) and signal transducer and activator of transcription 3 ( STAT-3 ) ,  which are activated respectively by the mitogen-activated-protein-kinase and Jak-kinase pathways following IL-6 treatment ." {
+label="The hsp90beta gene promoter contains binding sites for the transcription
+factors nuclear factor IL-6 ( NF-IL6 ) and signal transducer and activator of
+transcription 3 ( STAT-3 ) ,  which are activated respectively by the mitogen-
+activated-protein-kinase and Jak-kinase pathways following IL-6 treatment .";
+promoter4 [style=filled, fillcolor=white, label=promoter];
+The1 [style=filled, fillcolor=white, label=The];
+promoter4 -> The1  [label=det];
+hsp90beta2 [style=filled, fillcolor=white, label=hsp90beta];
+promoter4 -> hsp90beta2  [label=amod];
+gene3 [style=filled, fillcolor=white, label=gene];
+promoter4 -> gene3  [label=nn];
+contains5 [style=filled, fillcolor=white, label=contains];
+contains5 -> promoter4  [label=nsubj];
+contains5 -> contains5  [label=root];
+sites7 [style=filled, fillcolor=white, label=sites];
+binding6 [style=filled, fillcolor=white, label=binding];
+sites7 -> binding6  [label=amod];
+contains5 -> sites7  [label=dobj];
+factors11 [style=filled, fillcolor=white, label=factors];
+the9 [style=filled, fillcolor=white, label=the];
+factors11 -> the9  [label=det];
+transcription10 [style=filled, fillcolor=white, label=transcription];
+factors11 -> transcription10  [label=nn];
+contains5 -> factors11  [label=prep_for];
+"IL-614" [style=filled, fillcolor=white, label="IL-6"];
+nuclear12 [style=filled, fillcolor=white, label=nuclear];
+"IL-614" -> nuclear12  [label=amod];
+factor13 [style=filled, fillcolor=white, label=factor];
+"IL-614" -> factor13  [label=nn];
+factors11 -> "IL-614"  [label=dep];
+"NF-IL61" [style=filled, fillcolor=white, label="NF-IL6"];
+"IL-614" -> "NF-IL61"  [label=appos];
+transducer20 [style=filled, fillcolor=white, label=transducer];
+signal19 [style=filled, fillcolor=white, label=signal];
+transducer20 -> signal19  [label=nn];
+factors11 -> transducer20  [label=conj_and];
+activator22 [style=filled, fillcolor=white, label=activator];
+transducer20 -> activator22  [label=conj_and];
+transcription24 [style=filled, fillcolor=white, label=transcription];
+transducer20 -> transcription24  [label=prep_of];
+325 [style=filled, fillcolor=white, label=3];
+transcription24 -> 325  [label=num];
+"STAT-327" [style=filled, fillcolor=white, label="STAT-3"];
+transcription24 -> "STAT-327"  [label=appos];
+activated32 [style=filled, fillcolor=white, label=activated];
+which30 [style=filled, fillcolor=white, label=which];
+activated32 -> which30  [label=nsubjpass];
+are31 [style=filled, fillcolor=white, label=are];
+activated32 -> are31  [label=auxpass];
+transcription24 -> activated32  [label=rcmod];
+respectively33 [style=filled, fillcolor=white, label=respectively];
+activated32 -> respectively33  [label=advmod];
+pathways39 [style=filled, fillcolor=white, label=pathways];
+the35 [style=filled, fillcolor=white, label=the];
+pathways39 -> the35  [label=det];
+"mitogen-activated-protein-kinase36" [style=filled, fillcolor=white, label="mitogen-activated-protein-kinase"];
+pathways39 -> "mitogen-activated-protein-kinase36"  [label=amod];
+"Jak-kinase38" [style=filled, fillcolor=white, label="Jak-kinase"];
+"mitogen-activated-protein-kinase36" -> "Jak-kinase38"  [label=conj_and];
+activated32 -> pathways39  [label=agent];
+treatment42 [style=filled, fillcolor=white, label=treatment];
+"IL-641" [style=filled, fillcolor=white, label="IL-6"];
+treatment42 -> "IL-641"  [label=nn];
+pathways39 -> treatment42  [label=prep_following];
+}

@@ -1,0 +1,38 @@
+digraph "As shown in Fig. 9A ,  TNF-a strongly stimulated both ERK1 and ERK2 phosphorylation in WT cells ( cf lanes 1 and 2 ) ." {
+label="As shown in Fig. 9A ,  TNF-a strongly stimulated both ERK1 and ERK2
+phosphorylation in WT cells ( cf lanes 1 and 2 ) .";
+shown2 [style=filled, fillcolor=white, label=shown];
+As1 [style=filled, fillcolor=white, label=As];
+shown2 -> As1  [label=mark];
+stimulated9 [style=filled, fillcolor=white, label=stimulated];
+stimulated9 -> shown2  [label=advcl];
+"Fig.4" [style=filled, fillcolor=white, label="Fig."];
+shown2 -> "Fig.4"  [label=prep_in];
+"9A5" [style=filled, fillcolor=white, label="9A"];
+"Fig.4" -> "9A5"  [label=num];
+"TNF-a7" [style=filled, fillcolor=white, label="TNF-a"];
+stimulated9 -> "TNF-a7"  [label=nsubj];
+strongly8 [style=filled, fillcolor=white, label=strongly];
+stimulated9 -> strongly8  [label=advmod];
+stimulated9 -> stimulated9  [label=root];
+phosphorylation14 [style=filled, fillcolor=white, label=phosphorylation];
+both10 [style=filled, fillcolor=white, label=both];
+phosphorylation14 -> both10  [label=preconj];
+ERK1 [style=filled, fillcolor=white, label=ERK1];
+phosphorylation14 -> ERK1  [label=nn];
+ERK213 [style=filled, fillcolor=white, label=ERK2];
+ERK1 -> ERK213  [label=conj_and];
+stimulated9 -> phosphorylation14  [label=dobj];
+cells17 [style=filled, fillcolor=white, label=cells];
+WT16 [style=filled, fillcolor=white, label=WT];
+cells17 -> WT16  [label=nn];
+stimulated9 -> cells17  [label=prep_in];
+lanes20 [style=filled, fillcolor=white, label=lanes];
+cf19 [style=filled, fillcolor=white, label=cf];
+lanes20 -> cf19  [label=dep];
+stimulated9 -> lanes20  [label=dep];
+12 [style=filled, fillcolor=white, label=1];
+lanes20 -> 12  [label=dep];
+223 [style=filled, fillcolor=white, label=2];
+12 -> 223  [label=conj_and];
+}

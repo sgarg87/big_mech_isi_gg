@@ -1,0 +1,24 @@
+digraph "ERK1/2 and JNK inactivation was associated with Ets-like transcription factor-1 ( ELK-1 ) dephosphorylation ." {
+label="ERK1/2 and JNK inactivation was associated with Ets-like transcription factor-1
+( ELK-1 ) dephosphorylation .";
+inactivation4 [style=filled, fillcolor=white, label=inactivation];
+"ERK1/2" [style=filled, fillcolor=white, label="ERK1/2"];
+inactivation4 -> "ERK1/2"  [label=nn];
+JNK3 [style=filled, fillcolor=white, label=JNK];
+"ERK1/2" -> JNK3  [label=conj_and];
+associated6 [style=filled, fillcolor=white, label=associated];
+associated6 -> inactivation4  [label=nsubjpass];
+was5 [style=filled, fillcolor=white, label=was];
+associated6 -> was5  [label=auxpass];
+associated6 -> associated6  [label=root];
+transcription9 [style=filled, fillcolor=white, label=transcription];
+"Ets-like8" [style=filled, fillcolor=white, label="Ets-like"];
+transcription9 -> "Ets-like8"  [label=amod];
+dephosphorylation14 [style=filled, fillcolor=white, label=dephosphorylation];
+dephosphorylation14 -> transcription9  [label=amod];
+"factor-10" [style=filled, fillcolor=white, label="factor-1"];
+dephosphorylation14 -> "factor-10"  [label=amod];
+"ELK-12" [style=filled, fillcolor=white, label="ELK-1"];
+dephosphorylation14 -> "ELK-12"  [label=appos];
+associated6 -> dephosphorylation14  [label=prep_with];
+}

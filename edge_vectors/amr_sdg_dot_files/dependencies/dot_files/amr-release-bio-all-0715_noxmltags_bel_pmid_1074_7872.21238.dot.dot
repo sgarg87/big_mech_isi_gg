@@ -1,0 +1,32 @@
+digraph "STAT3 ,  but not STAT5 ,  was activated in response to IGF-I in 293T cells cotransfected with IGF-IR and STAT expression vectors ." {
+label="STAT3 ,  but not STAT5 ,  was activated in response to IGF-I in 293T cells
+cotransfected with IGF-IR and STAT expression vectors .";
+activated8 [style=filled, fillcolor=white, label=activated];
+STAT31 [style=filled, fillcolor=white, label=STAT3];
+activated8 -> STAT31  [label=nsubjpass];
+STAT5 [style=filled, fillcolor=white, label=STAT5];
+STAT31 -> STAT5  [label=conj_negcc];
+was7 [style=filled, fillcolor=white, label=was];
+activated8 -> was7  [label=auxpass];
+activated8 -> activated8  [label=root];
+response10 [style=filled, fillcolor=white, label=response];
+activated8 -> response10  [label=prep_in];
+"IGF-I12" [style=filled, fillcolor=white, label="IGF-I"];
+to11 [style=filled, fillcolor=white, label=to];
+"IGF-I12" -> to11  [label=aux];
+activated8 -> "IGF-I12"  [label=xcomp];
+cells15 [style=filled, fillcolor=white, label=cells];
+"293T14" [style=filled, fillcolor=white, label="293T"];
+cells15 -> "293T14"  [label=num];
+"IGF-I12" -> cells15  [label=prep_in];
+cotransfected16 [style=filled, fillcolor=white, label=cotransfected];
+cells15 -> cotransfected16  [label=vmod];
+vectors22 [style=filled, fillcolor=white, label=vectors];
+"IGF-IR18" [style=filled, fillcolor=white, label="IGF-IR"];
+vectors22 -> "IGF-IR18"  [label=nn];
+STAT20 [style=filled, fillcolor=white, label=STAT];
+"IGF-IR18" -> STAT20  [label=conj_and];
+expression21 [style=filled, fillcolor=white, label=expression];
+vectors22 -> expression21  [label=nn];
+cotransfected16 -> vectors22  [label=prep_with];
+}

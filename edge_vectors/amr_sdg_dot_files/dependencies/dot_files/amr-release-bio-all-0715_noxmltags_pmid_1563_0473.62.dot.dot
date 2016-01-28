@@ -1,0 +1,43 @@
+digraph "Consistent with the in situ hybridization results ,  anti-Snail antibody labeled only hair buds and not follicles at more mature stages of development ( Figure 1E ) ." {
+label="Consistent with the in situ hybridization results ,  anti-Snail antibody
+labeled only hair buds and not follicles at more mature stages of development (
+Figure 1E ) .";
+labeled11 [style=filled, fillcolor=white, label=labeled];
+Consistent1 [style=filled, fillcolor=white, label=Consistent];
+labeled11 -> Consistent1  [label=ccomp];
+the3 [style=filled, fillcolor=white, label=the];
+Consistent1 -> the3  [label=prep_with];
+results7 [style=filled, fillcolor=white, label=results];
+situ5 [style=filled, fillcolor=white, label=situ];
+results7 -> situ5  [label=amod];
+hybridization6 [style=filled, fillcolor=white, label=hybridization];
+results7 -> hybridization6  [label=nn];
+the3 -> results7  [label=prep_in];
+antibody10 [style=filled, fillcolor=white, label=antibody];
+"anti-Snail9" [style=filled, fillcolor=white, label="anti-Snail"];
+antibody10 -> "anti-Snail9"  [label=amod];
+labeled11 -> antibody10  [label=nsubj];
+labeled11 -> labeled11  [label=root];
+buds14 [style=filled, fillcolor=white, label=buds];
+only12 [style=filled, fillcolor=white, label=only];
+buds14 -> only12  [label=amod];
+hair13 [style=filled, fillcolor=white, label=hair];
+buds14 -> hair13  [label=nn];
+labeled11 -> buds14  [label=dobj];
+follicles17 [style=filled, fillcolor=white, label=follicles];
+not16 [style=filled, fillcolor=white, label=not];
+follicles17 -> not16  [label=neg];
+labeled11 -> follicles17  [label=conj_and];
+mature20 [style=filled, fillcolor=white, label=mature];
+more19 [style=filled, fillcolor=white, label=more];
+mature20 -> more19  [label=advmod];
+stages21 [style=filled, fillcolor=white, label=stages];
+stages21 -> mature20  [label=amod];
+follicles17 -> stages21  [label=prep_at];
+development23 [style=filled, fillcolor=white, label=development];
+stages21 -> development23  [label=prep_of];
+Figure25 [style=filled, fillcolor=white, label=Figure];
+development23 -> Figure25  [label=appos];
+"1E26" [style=filled, fillcolor=white, label="1E"];
+Figure25 -> "1E26"  [label=num];
+}

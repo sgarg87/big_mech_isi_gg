@@ -1,0 +1,19 @@
+digraph "P Rich ,  proline rich region ; SH3 ,  SH3 domain ." {
+label="P Rich ,  proline rich region ; SH3 ,  SH3 domain .";
+Rich2 [style=filled, fillcolor=white, label=Rich];
+P1 [style=filled, fillcolor=white, label=P];
+Rich2 -> P1  [label=nn];
+Rich2 -> Rich2  [label=root];
+region6 [style=filled, fillcolor=white, label=region];
+proline4 [style=filled, fillcolor=white, label=proline];
+region6 -> proline4  [label=amod];
+rich5 [style=filled, fillcolor=white, label=rich];
+region6 -> rich5  [label=amod];
+Rich2 -> region6  [label=appos];
+SH38 [style=filled, fillcolor=white, label=SH3];
+Rich2 -> SH38  [label=dep];
+domain11 [style=filled, fillcolor=white, label=domain];
+SH310 [style=filled, fillcolor=white, label=SH3];
+domain11 -> SH310  [label=num];
+SH38 -> domain11  [label=appos];
+}

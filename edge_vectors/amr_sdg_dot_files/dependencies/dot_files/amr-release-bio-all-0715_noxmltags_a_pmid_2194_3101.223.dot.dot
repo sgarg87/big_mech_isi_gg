@@ -1,0 +1,57 @@
+digraph "In contrast ,  a weak effect on Rac1 GTPase was recorded in Caco-BR cells ( Figure 8A ) and could be explained by the known antagonistic effect that exists between RhoA and Rac1 -LSB- 33 -RSB- ." {
+label="In contrast ,  a weak effect on Rac1 GTPase was recorded in Caco-BR cells (
+Figure 8A ) and could be explained by the known antagonistic effect that exists
+between RhoA and Rac1 -LSB- 33 -RSB- .";
+recorded11 [style=filled, fillcolor=white, label=recorded];
+contrast2 [style=filled, fillcolor=white, label=contrast];
+recorded11 -> contrast2  [label=prep_in];
+effect6 [style=filled, fillcolor=white, label=effect];
+a4 [style=filled, fillcolor=white, label=a];
+effect6 -> a4  [label=det];
+weak5 [style=filled, fillcolor=white, label=weak];
+effect6 -> weak5  [label=amod];
+recorded11 -> effect6  [label=nsubjpass];
+GTPase9 [style=filled, fillcolor=white, label=GTPase];
+Rac18 [style=filled, fillcolor=white, label=Rac1];
+GTPase9 -> Rac18  [label=nn];
+effect6 -> GTPase9  [label=prep_on];
+was10 [style=filled, fillcolor=white, label=was];
+recorded11 -> was10  [label=auxpass];
+recorded11 -> recorded11  [label=root];
+cells14 [style=filled, fillcolor=white, label=cells];
+"Caco-BR13" [style=filled, fillcolor=white, label="Caco-BR"];
+cells14 -> "Caco-BR13"  [label=amod];
+recorded11 -> cells14  [label=prep_in];
+Figure16 [style=filled, fillcolor=white, label=Figure];
+cells14 -> Figure16  [label=appos];
+"8A17" [style=filled, fillcolor=white, label="8A"];
+Figure16 -> "8A17"  [label=num];
+explained22 [style=filled, fillcolor=white, label=explained];
+could20 [style=filled, fillcolor=white, label=could];
+explained22 -> could20  [label=aux];
+be21 [style=filled, fillcolor=white, label=be];
+explained22 -> be21  [label=auxpass];
+recorded11 -> explained22  [label=conj_and];
+effect27 [style=filled, fillcolor=white, label=effect];
+the24 [style=filled, fillcolor=white, label=the];
+effect27 -> the24  [label=det];
+known25 [style=filled, fillcolor=white, label=known];
+effect27 -> known25  [label=amod];
+antagonistic26 [style=filled, fillcolor=white, label=antagonistic];
+effect27 -> antagonistic26  [label=amod];
+explained22 -> effect27  [label=agent];
+exists29 [style=filled, fillcolor=white, label=exists];
+that28 [style=filled, fillcolor=white, label=that];
+exists29 -> that28  [label=nsubj];
+effect27 -> exists29  [label=rcmod];
+"-RSB-36" [style=filled, fillcolor=white, label="-RSB-"];
+RhoA31 [style=filled, fillcolor=white, label=RhoA];
+"-RSB-36" -> RhoA31  [label=nn];
+Rac133 [style=filled, fillcolor=white, label=Rac1];
+RhoA31 -> Rac133  [label=conj_and];
+"-LSB-34" [style=filled, fillcolor=white, label="-LSB-"];
+"-RSB-36" -> "-LSB-34"  [label=nn];
+3335 [style=filled, fillcolor=white, label=33];
+"-RSB-36" -> 3335  [label=num];
+exists29 -> "-RSB-36"  [label=prep_between];
+}

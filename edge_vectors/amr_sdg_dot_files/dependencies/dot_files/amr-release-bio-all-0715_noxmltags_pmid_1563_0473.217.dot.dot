@@ -1,0 +1,62 @@
+digraph "Additional contributing factors could be the multiplicity of Snail family members and their differential expression ,  the saturation ,  and/or diversity of regulatory mechanisms that govern AJ formation ,  migration ,  and proliferation in the follicle ORS ." {
+label="Additional contributing factors could be the multiplicity of Snail family
+members and their differential expression ,  the saturation ,  and/or diversity
+of regulatory mechanisms that govern AJ formation ,  migration ,  and
+proliferation in the follicle ORS .";
+factors3 [style=filled, fillcolor=white, label=factors];
+Additional1 [style=filled, fillcolor=white, label=Additional];
+factors3 -> Additional1  [label=amod];
+contributing2 [style=filled, fillcolor=white, label=contributing];
+factors3 -> contributing2  [label=amod];
+multiplicity7 [style=filled, fillcolor=white, label=multiplicity];
+multiplicity7 -> factors3  [label=nsubj];
+could4 [style=filled, fillcolor=white, label=could];
+multiplicity7 -> could4  [label=aux];
+be5 [style=filled, fillcolor=white, label=be];
+multiplicity7 -> be5  [label=cop];
+the6 [style=filled, fillcolor=white, label=the];
+multiplicity7 -> the6  [label=det];
+multiplicity7 -> multiplicity7  [label=root];
+members11 [style=filled, fillcolor=white, label=members];
+Snail9 [style=filled, fillcolor=white, label=Snail];
+members11 -> Snail9  [label=nn];
+family10 [style=filled, fillcolor=white, label=family];
+members11 -> family10  [label=nn];
+multiplicity7 -> members11  [label=prep_of];
+expression15 [style=filled, fillcolor=white, label=expression];
+their13 [style=filled, fillcolor=white, label=their];
+expression15 -> their13  [label=poss];
+differential14 [style=filled, fillcolor=white, label=differential];
+expression15 -> differential14  [label=nn];
+multiplicity7 -> expression15  [label=conj_and];
+saturation18 [style=filled, fillcolor=white, label=saturation];
+the17 [style=filled, fillcolor=white, label=the];
+saturation18 -> the17  [label=det];
+expression15 -> saturation18  [label=appos];
+diversity21 [style=filled, fillcolor=white, label=diversity];
+"and/or20" [style=filled, fillcolor=white, label="and/or"];
+diversity21 -> "and/or20"  [label=amod];
+expression15 -> diversity21  [label=appos];
+mechanisms24 [style=filled, fillcolor=white, label=mechanisms];
+regulatory23 [style=filled, fillcolor=white, label=regulatory];
+mechanisms24 -> regulatory23  [label=amod];
+diversity21 -> mechanisms24  [label=prep_of];
+govern26 [style=filled, fillcolor=white, label=govern];
+that25 [style=filled, fillcolor=white, label=that];
+govern26 -> that25  [label=nsubj];
+diversity21 -> govern26  [label=rcmod];
+formation28 [style=filled, fillcolor=white, label=formation];
+AJ27 [style=filled, fillcolor=white, label=AJ];
+formation28 -> AJ27  [label=nsubj];
+govern26 -> formation28  [label=xcomp];
+migration30 [style=filled, fillcolor=white, label=migration];
+formation28 -> migration30  [label=conj_and];
+proliferation33 [style=filled, fillcolor=white, label=proliferation];
+formation28 -> proliferation33  [label=conj_and];
+ORS37 [style=filled, fillcolor=white, label=ORS];
+the35 [style=filled, fillcolor=white, label=the];
+ORS37 -> the35  [label=det];
+follicle36 [style=filled, fillcolor=white, label=follicle];
+ORS37 -> follicle36  [label=amod];
+formation28 -> ORS37  [label=prep_in];
+}

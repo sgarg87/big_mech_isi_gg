@@ -1,0 +1,43 @@
+digraph "In previous studies ,  we showed that Sos-1 ,  E3b1 ,  and Eps8 could form a trimeric complex in vivo upon concomitant overexpression of the three proteins ." {
+label="In previous studies ,  we showed that Sos-1 ,  E3b1 ,  and Eps8 could form a
+trimeric complex in vivo upon concomitant overexpression of the three proteins
+.";
+studies3 [style=filled, fillcolor=white, label=studies];
+previous2 [style=filled, fillcolor=white, label=previous];
+studies3 -> previous2  [label=amod];
+showed6 [style=filled, fillcolor=white, label=showed];
+showed6 -> studies3  [label=prep_in];
+we5 [style=filled, fillcolor=white, label=we];
+showed6 -> we5  [label=nsubj];
+showed6 -> showed6  [label=root];
+form15 [style=filled, fillcolor=white, label=form];
+that7 [style=filled, fillcolor=white, label=that];
+form15 -> that7  [label=mark];
+"Sos-18" [style=filled, fillcolor=white, label="Sos-1"];
+form15 -> "Sos-18"  [label=nsubj];
+E3b110 [style=filled, fillcolor=white, label=E3b1];
+"Sos-18" -> E3b110  [label=conj_and];
+Eps813 [style=filled, fillcolor=white, label=Eps8];
+"Sos-18" -> Eps813  [label=conj_and];
+could14 [style=filled, fillcolor=white, label=could];
+form15 -> could14  [label=aux];
+showed6 -> form15  [label=ccomp];
+complex18 [style=filled, fillcolor=white, label=complex];
+a16 [style=filled, fillcolor=white, label=a];
+complex18 -> a16  [label=det];
+trimeric17 [style=filled, fillcolor=white, label=trimeric];
+complex18 -> trimeric17  [label=amod];
+form15 -> complex18  [label=dobj];
+vivo20 [style=filled, fillcolor=white, label=vivo];
+complex18 -> vivo20  [label=prep_in];
+overexpression23 [style=filled, fillcolor=white, label=overexpression];
+concomitant22 [style=filled, fillcolor=white, label=concomitant];
+overexpression23 -> concomitant22  [label=amod];
+form15 -> overexpression23  [label=prep_upon];
+proteins27 [style=filled, fillcolor=white, label=proteins];
+the25 [style=filled, fillcolor=white, label=the];
+proteins27 -> the25  [label=det];
+three26 [style=filled, fillcolor=white, label=three];
+proteins27 -> three26  [label=num];
+overexpression23 -> proteins27  [label=prep_of];
+}

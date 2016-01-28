@@ -1,0 +1,13 @@
+digraph "Targeting Ras Posttranslational Modification Pathways" {
+label="Targeting Ras Posttranslational Modification Pathways";
+Pathways5 [style=filled, fillcolor=white, label=Pathways];
+Targeting1 [style=filled, fillcolor=white, label=Targeting];
+Pathways5 -> Targeting1  [label=nn];
+Ras2 [style=filled, fillcolor=white, label=Ras];
+Pathways5 -> Ras2  [label=nn];
+Posttranslational3 [style=filled, fillcolor=white, label=Posttranslational];
+Pathways5 -> Posttranslational3  [label=nn];
+Modification4 [style=filled, fillcolor=white, label=Modification];
+Pathways5 -> Modification4  [label=nn];
+Pathways5 -> Pathways5  [label=root];
+}

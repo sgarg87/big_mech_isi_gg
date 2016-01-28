@@ -1,0 +1,40 @@
+digraph "In the case of C-Raf ,  six sites of feedback phosphorylation have been identified ,  five of which are direct targets of activated ERK ( 8 )" {
+label="In the case of C-Raf ,  six sites of feedback phosphorylation have been
+identified ,  five of which are direct targets of activated ERK ( 8 )";
+case3 [style=filled, fillcolor=white, label=case];
+the2 [style=filled, fillcolor=white, label=the];
+case3 -> the2  [label=det];
+identified14 [style=filled, fillcolor=white, label=identified];
+identified14 -> case3  [label=prep_in];
+"C-Raf5" [style=filled, fillcolor=white, label="C-Raf"];
+case3 -> "C-Raf5"  [label=prep_of];
+sites8 [style=filled, fillcolor=white, label=sites];
+six7 [style=filled, fillcolor=white, label=six];
+sites8 -> six7  [label=num];
+identified14 -> sites8  [label=nsubjpass];
+phosphorylation11 [style=filled, fillcolor=white, label=phosphorylation];
+feedback10 [style=filled, fillcolor=white, label=feedback];
+phosphorylation11 -> feedback10  [label=nn];
+sites8 -> phosphorylation11  [label=prep_of];
+have12 [style=filled, fillcolor=white, label=have];
+identified14 -> have12  [label=aux];
+been13 [style=filled, fillcolor=white, label=been];
+identified14 -> been13  [label=auxpass];
+identified14 -> identified14  [label=root];
+five16 [style=filled, fillcolor=white, label=five];
+identified14 -> five16  [label=dobj];
+targets21 [style=filled, fillcolor=white, label=targets];
+which18 [style=filled, fillcolor=white, label=which];
+targets21 -> which18  [label=nsubj];
+are19 [style=filled, fillcolor=white, label=are];
+targets21 -> are19  [label=cop];
+direct20 [style=filled, fillcolor=white, label=direct];
+targets21 -> direct20  [label=amod];
+five16 -> targets21  [label=prepc_of];
+ERK24 [style=filled, fillcolor=white, label=ERK];
+activated23 [style=filled, fillcolor=white, label=activated];
+ERK24 -> activated23  [label=amod];
+targets21 -> ERK24  [label=prep_of];
+826 [style=filled, fillcolor=white, label=8];
+ERK24 -> 826  [label=appos];
+}

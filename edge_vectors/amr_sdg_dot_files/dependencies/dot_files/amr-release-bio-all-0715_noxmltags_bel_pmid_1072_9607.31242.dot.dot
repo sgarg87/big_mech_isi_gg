@@ -1,0 +1,40 @@
+digraph "transforming growth factor-b2 ( TGF-b2 ) was shown to upregulate the transcription rate of PAFR transcript 1 in Ramos human lymphoblastoid cells" {
+label="transforming growth factor-b2 ( TGF-b2 ) was shown to upregulate the
+transcription rate of PAFR transcript 1 in Ramos human lymphoblastoid cells";
+transforming1 [style=filled, fillcolor=white, label=transforming];
+transforming1 -> transforming1  [label=root];
+"factor-b23" [style=filled, fillcolor=white, label="factor-b2"];
+growth2 [style=filled, fillcolor=white, label=growth];
+"factor-b23" -> growth2  [label=nn];
+transforming1 -> "factor-b23"  [label=dobj];
+"TGF-b25" [style=filled, fillcolor=white, label="TGF-b2"];
+"factor-b23" -> "TGF-b25"  [label=appos];
+shown8 [style=filled, fillcolor=white, label=shown];
+was7 [style=filled, fillcolor=white, label=was];
+shown8 -> was7  [label=auxpass];
+transforming1 -> shown8  [label=aux];
+upregulate10 [style=filled, fillcolor=white, label=upregulate];
+to9 [style=filled, fillcolor=white, label=to];
+upregulate10 -> to9  [label=aux];
+shown8 -> upregulate10  [label=xcomp];
+rate13 [style=filled, fillcolor=white, label=rate];
+the11 [style=filled, fillcolor=white, label=the];
+rate13 -> the11  [label=det];
+transcription12 [style=filled, fillcolor=white, label=transcription];
+rate13 -> transcription12  [label=nn];
+upregulate10 -> rate13  [label=dobj];
+transcript16 [style=filled, fillcolor=white, label=transcript];
+PAFR15 [style=filled, fillcolor=white, label=PAFR];
+transcript16 -> PAFR15  [label=amod];
+rate13 -> transcript16  [label=prep_of];
+117 [style=filled, fillcolor=white, label=1];
+transforming1 -> 117  [label=nsubj];
+cells22 [style=filled, fillcolor=white, label=cells];
+Ramos19 [style=filled, fillcolor=white, label=Ramos];
+cells22 -> Ramos19  [label=nn];
+human20 [style=filled, fillcolor=white, label=human];
+cells22 -> human20  [label=amod];
+lymphoblastoid21 [style=filled, fillcolor=white, label=lymphoblastoid];
+cells22 -> lymphoblastoid21  [label=nn];
+117 -> cells22  [label=prep_in];
+}

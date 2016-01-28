@@ -1,0 +1,40 @@
+digraph "However ,  serpinE2 silencing markedly reduced the size of foci ( Figure 2C ) suggesting a reduced capacity of these foci to grow ." {
+label="However ,  serpinE2 silencing markedly reduced the size of foci ( Figure 2C )
+suggesting a reduced capacity of these foci to grow .";
+reduced6 [style=filled, fillcolor=white, label=reduced];
+However1 [style=filled, fillcolor=white, label=However];
+reduced6 -> However1  [label=advmod];
+markedly5 [style=filled, fillcolor=white, label=markedly];
+serpinE23 [style=filled, fillcolor=white, label=serpinE2];
+markedly5 -> serpinE23  [label=amod];
+silencing4 [style=filled, fillcolor=white, label=silencing];
+markedly5 -> silencing4  [label=nn];
+reduced6 -> markedly5  [label=nsubj];
+reduced6 -> reduced6  [label=root];
+size8 [style=filled, fillcolor=white, label=size];
+the7 [style=filled, fillcolor=white, label=the];
+size8 -> the7  [label=det];
+reduced6 -> size8  [label=dobj];
+foci10 [style=filled, fillcolor=white, label=foci];
+size8 -> foci10  [label=prep_of];
+Figure12 [style=filled, fillcolor=white, label=Figure];
+foci10 -> Figure12  [label=appos];
+"2C13" [style=filled, fillcolor=white, label="2C"];
+Figure12 -> "2C13"  [label=num];
+suggesting15 [style=filled, fillcolor=white, label=suggesting];
+foci10 -> suggesting15  [label=vmod];
+capacity18 [style=filled, fillcolor=white, label=capacity];
+a16 [style=filled, fillcolor=white, label=a];
+capacity18 -> a16  [label=det];
+reduced17 [style=filled, fillcolor=white, label=reduced];
+capacity18 -> reduced17  [label=amod];
+suggesting15 -> capacity18  [label=dobj];
+foci21 [style=filled, fillcolor=white, label=foci];
+these20 [style=filled, fillcolor=white, label=these];
+foci21 -> these20  [label=det];
+capacity18 -> foci21  [label=prep_of];
+grow23 [style=filled, fillcolor=white, label=grow];
+to22 [style=filled, fillcolor=white, label=to];
+grow23 -> to22  [label=aux];
+foci21 -> grow23  [label=vmod];
+}

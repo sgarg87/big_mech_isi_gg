@@ -1,0 +1,28 @@
+digraph "Under physiological conditions ,  the rate of GDP or GTP release from the G - domain is slow ." {
+label="Under physiological conditions ,  the rate of GDP or GTP release from the G -
+domain is slow .";
+conditions3 [style=filled, fillcolor=white, label=conditions];
+physiological2 [style=filled, fillcolor=white, label=physiological];
+conditions3 -> physiological2  [label=amod];
+release11 [style=filled, fillcolor=white, label=release];
+release11 -> conditions3  [label=prep_under];
+rate6 [style=filled, fillcolor=white, label=rate];
+the5 [style=filled, fillcolor=white, label=the];
+rate6 -> the5  [label=det];
+release11 -> rate6  [label=nsubj];
+GDP8 [style=filled, fillcolor=white, label=GDP];
+rate6 -> GDP8  [label=prep_of];
+GTP10 [style=filled, fillcolor=white, label=GTP];
+GDP8 -> GTP10  [label=conj_or];
+release11 -> release11  [label=root];
+G14 [style=filled, fillcolor=white, label=G];
+the13 [style=filled, fillcolor=white, label=the];
+G14 -> the13  [label=det];
+release11 -> G14  [label=prep_from];
+slow18 [style=filled, fillcolor=white, label=slow];
+domain16 [style=filled, fillcolor=white, label=domain];
+slow18 -> domain16  [label=nsubj];
+is17 [style=filled, fillcolor=white, label=is];
+slow18 -> is17  [label=cop];
+release11 -> slow18  [label=parataxis];
+}

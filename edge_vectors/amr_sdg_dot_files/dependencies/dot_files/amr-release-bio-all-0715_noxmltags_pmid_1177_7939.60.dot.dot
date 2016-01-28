@@ -1,0 +1,26 @@
+digraph "This hypothesis was validated by a series of experiments performed both in vitro and in vivo ." {
+label="This hypothesis was validated by a series of experiments performed both in
+vitro and in vivo .";
+hypothesis2 [style=filled, fillcolor=white, label=hypothesis];
+This1 [style=filled, fillcolor=white, label=This];
+hypothesis2 -> This1  [label=det];
+validated4 [style=filled, fillcolor=white, label=validated];
+validated4 -> hypothesis2  [label=nsubjpass];
+was3 [style=filled, fillcolor=white, label=was];
+validated4 -> was3  [label=auxpass];
+validated4 -> validated4  [label=root];
+series7 [style=filled, fillcolor=white, label=series];
+a6 [style=filled, fillcolor=white, label=a];
+series7 -> a6  [label=det];
+validated4 -> series7  [label=agent];
+experiments9 [style=filled, fillcolor=white, label=experiments];
+series7 -> experiments9  [label=prep_of];
+performed10 [style=filled, fillcolor=white, label=performed];
+experiments9 -> performed10  [label=vmod];
+both11 [style=filled, fillcolor=white, label=both];
+performed10 -> both11  [label=preconj];
+vitro13 [style=filled, fillcolor=white, label=vitro];
+performed10 -> vitro13  [label=prep_in];
+vivo16 [style=filled, fillcolor=white, label=vivo];
+vitro13 -> vivo16  [label=conj_and];
+}

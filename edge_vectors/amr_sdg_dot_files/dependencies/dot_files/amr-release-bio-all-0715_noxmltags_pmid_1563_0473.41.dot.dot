@@ -1,0 +1,56 @@
+digraph "This exquisite pattern appears to be functionally relevant since altering it in vivo correspondingly affects features associated with hair bud formation ,  including down-regulation of E-cadherin ,  increased proliferation ,  and repressed terminal differentiation ." {
+label="This exquisite pattern appears to be functionally relevant since altering it in
+vivo correspondingly affects features associated with hair bud formation ,
+including down-regulation of E-cadherin ,  increased proliferation ,  and
+repressed terminal differentiation .";
+pattern3 [style=filled, fillcolor=white, label=pattern];
+This1 [style=filled, fillcolor=white, label=This];
+pattern3 -> This1  [label=det];
+exquisite2 [style=filled, fillcolor=white, label=exquisite];
+pattern3 -> exquisite2  [label=amod];
+appears4 [style=filled, fillcolor=white, label=appears];
+appears4 -> pattern3  [label=nsubj];
+affects15 [style=filled, fillcolor=white, label=affects];
+affects15 -> appears4  [label=dep];
+relevant8 [style=filled, fillcolor=white, label=relevant];
+to5 [style=filled, fillcolor=white, label=to];
+relevant8 -> to5  [label=aux];
+be6 [style=filled, fillcolor=white, label=be];
+relevant8 -> be6  [label=cop];
+functionally7 [style=filled, fillcolor=white, label=functionally];
+relevant8 -> functionally7  [label=advmod];
+appears4 -> relevant8  [label=xcomp];
+altering10 [style=filled, fillcolor=white, label=altering];
+relevant8 -> altering10  [label=prepc_since];
+it11 [style=filled, fillcolor=white, label=it];
+altering10 -> it11  [label=dobj];
+correspondingly14 [style=filled, fillcolor=white, label=correspondingly];
+vivo13 [style=filled, fillcolor=white, label=vivo];
+correspondingly14 -> vivo13  [label=nn];
+altering10 -> correspondingly14  [label=prep_in];
+affects15 -> affects15  [label=root];
+features16 [style=filled, fillcolor=white, label=features];
+affects15 -> features16  [label=nsubj];
+associated17 [style=filled, fillcolor=white, label=associated];
+features16 -> associated17  [label=vmod];
+formation21 [style=filled, fillcolor=white, label=formation];
+hair19 [style=filled, fillcolor=white, label=hair];
+formation21 -> hair19  [label=nn];
+bud20 [style=filled, fillcolor=white, label=bud];
+formation21 -> bud20  [label=nn];
+associated17 -> formation21  [label=prep_with];
+"down-regulation24" [style=filled, fillcolor=white, label="down-regulation"];
+associated17 -> "down-regulation24"  [label=prep_including];
+proliferation29 [style=filled, fillcolor=white, label=proliferation];
+"E-cadherin26" [style=filled, fillcolor=white, label="E-cadherin"];
+proliferation29 -> "E-cadherin26"  [label=amod];
+increased28 [style=filled, fillcolor=white, label=increased];
+proliferation29 -> increased28  [label=amod];
+"down-regulation24" -> proliferation29  [label=prep_of];
+terminal33 [style=filled, fillcolor=white, label=terminal];
+repressed32 [style=filled, fillcolor=white, label=repressed];
+terminal33 -> repressed32  [label=amod];
+differentiation34 [style=filled, fillcolor=white, label=differentiation];
+differentiation34 -> terminal33  [label=amod];
+features16 -> differentiation34  [label=conj_and];
+}

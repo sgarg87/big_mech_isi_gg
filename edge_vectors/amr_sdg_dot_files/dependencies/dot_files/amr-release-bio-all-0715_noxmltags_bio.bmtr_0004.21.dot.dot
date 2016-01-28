@@ -1,0 +1,30 @@
+digraph "Surprisingly ,  monoubiquitination did not alter the intrinsic activity of Ras ,  despite the size of the modification ." {
+label="Surprisingly ,  monoubiquitination did not alter the intrinsic activity of Ras
+,  despite the size of the modification .";
+alter6 [style=filled, fillcolor=white, label=alter];
+Surprisingly1 [style=filled, fillcolor=white, label=Surprisingly];
+alter6 -> Surprisingly1  [label=advmod];
+monoubiquitination3 [style=filled, fillcolor=white, label=monoubiquitination];
+alter6 -> monoubiquitination3  [label=nsubj];
+did4 [style=filled, fillcolor=white, label=did];
+alter6 -> did4  [label=aux];
+not5 [style=filled, fillcolor=white, label=not];
+alter6 -> not5  [label=neg];
+alter6 -> alter6  [label=root];
+activity9 [style=filled, fillcolor=white, label=activity];
+the7 [style=filled, fillcolor=white, label=the];
+activity9 -> the7  [label=det];
+intrinsic8 [style=filled, fillcolor=white, label=intrinsic];
+activity9 -> intrinsic8  [label=amod];
+alter6 -> activity9  [label=dobj];
+Ras11 [style=filled, fillcolor=white, label=Ras];
+activity9 -> Ras11  [label=prep_of];
+size15 [style=filled, fillcolor=white, label=size];
+the14 [style=filled, fillcolor=white, label=the];
+size15 -> the14  [label=det];
+alter6 -> size15  [label=prep_despite];
+modification18 [style=filled, fillcolor=white, label=modification];
+the17 [style=filled, fillcolor=white, label=the];
+modification18 -> the17  [label=det];
+size15 -> modification18  [label=prep_of];
+}

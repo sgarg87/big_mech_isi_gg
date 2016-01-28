@@ -1,0 +1,39 @@
+digraph "Lysates were immunoprecipitated ( IP ) with anti-PDGFR ( PDGFR ) or an irrelevant antibody as a control ( ctr ) and detected with the indicated antibodies ( WB ) ." {
+label="Lysates were immunoprecipitated ( IP ) with anti-PDGFR ( PDGFR ) or an
+irrelevant antibody as a control ( ctr ) and detected with the indicated
+antibodies ( WB ) .";
+immunoprecipitated3 [style=filled, fillcolor=white, label=immunoprecipitated];
+Lysates1 [style=filled, fillcolor=white, label=Lysates];
+immunoprecipitated3 -> Lysates1  [label=nsubjpass];
+were2 [style=filled, fillcolor=white, label=were];
+immunoprecipitated3 -> were2  [label=auxpass];
+immunoprecipitated3 -> immunoprecipitated3  [label=root];
+IP5 [style=filled, fillcolor=white, label=IP];
+immunoprecipitated3 -> IP5  [label=dobj];
+"anti-PDGFR8" [style=filled, fillcolor=white, label="anti-PDGFR"];
+IP5 -> "anti-PDGFR8"  [label=prep_with];
+PDGFR10 [style=filled, fillcolor=white, label=PDGFR];
+"anti-PDGFR8" -> PDGFR10  [label=appos];
+antibody15 [style=filled, fillcolor=white, label=antibody];
+an13 [style=filled, fillcolor=white, label=an];
+antibody15 -> an13  [label=det];
+irrelevant14 [style=filled, fillcolor=white, label=irrelevant];
+antibody15 -> irrelevant14  [label=amod];
+"anti-PDGFR8" -> antibody15  [label=conj_or];
+control18 [style=filled, fillcolor=white, label=control];
+a17 [style=filled, fillcolor=white, label=a];
+control18 -> a17  [label=det];
+immunoprecipitated3 -> control18  [label=prep_as];
+ctr20 [style=filled, fillcolor=white, label=ctr];
+control18 -> ctr20  [label=appos];
+detected23 [style=filled, fillcolor=white, label=detected];
+immunoprecipitated3 -> detected23  [label=conj_and];
+antibodies27 [style=filled, fillcolor=white, label=antibodies];
+the25 [style=filled, fillcolor=white, label=the];
+antibodies27 -> the25  [label=det];
+indicated26 [style=filled, fillcolor=white, label=indicated];
+antibodies27 -> indicated26  [label=amod];
+detected23 -> antibodies27  [label=prep_with];
+WB29 [style=filled, fillcolor=white, label=WB];
+antibodies27 -> WB29  [label=appos];
+}

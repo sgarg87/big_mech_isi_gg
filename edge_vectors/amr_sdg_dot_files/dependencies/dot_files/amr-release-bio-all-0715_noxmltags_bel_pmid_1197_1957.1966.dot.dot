@@ -1,0 +1,34 @@
+digraph "PKA also decreased Raf-1 serine 338 phosphorylation of Raf-1 ,  previously shown to be required for Raf-1 activation ." {
+label="PKA also decreased Raf-1 serine 338 phosphorylation of Raf-1 ,  previously
+shown to be required for Raf-1 activation .";
+decreased3 [style=filled, fillcolor=white, label=decreased];
+PKA1 [style=filled, fillcolor=white, label=PKA];
+decreased3 -> PKA1  [label=nsubj];
+also2 [style=filled, fillcolor=white, label=also];
+decreased3 -> also2  [label=advmod];
+decreased3 -> decreased3  [label=root];
+serine5 [style=filled, fillcolor=white, label=serine];
+"Raf-14" [style=filled, fillcolor=white, label="Raf-1"];
+serine5 -> "Raf-14"  [label=nsubj];
+decreased3 -> serine5  [label=ccomp];
+phosphorylation7 [style=filled, fillcolor=white, label=phosphorylation];
+3386 [style=filled, fillcolor=white, label=338];
+phosphorylation7 -> 3386  [label=num];
+serine5 -> phosphorylation7  [label=dobj];
+"Raf-19" [style=filled, fillcolor=white, label="Raf-1"];
+phosphorylation7 -> "Raf-19"  [label=prep_of];
+shown12 [style=filled, fillcolor=white, label=shown];
+previously11 [style=filled, fillcolor=white, label=previously];
+shown12 -> previously11  [label=advmod];
+phosphorylation7 -> shown12  [label=rcmod];
+required15 [style=filled, fillcolor=white, label=required];
+to13 [style=filled, fillcolor=white, label=to];
+required15 -> to13  [label=aux];
+be14 [style=filled, fillcolor=white, label=be];
+required15 -> be14  [label=auxpass];
+shown12 -> required15  [label=xcomp];
+activation18 [style=filled, fillcolor=white, label=activation];
+"Raf-17" [style=filled, fillcolor=white, label="Raf-1"];
+activation18 -> "Raf-17"  [label=nn];
+required15 -> activation18  [label=prep_for];
+}

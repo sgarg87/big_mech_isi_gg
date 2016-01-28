@@ -1,0 +1,45 @@
+digraph "We investigated the ability of the Spry mutants to bind to Grb2 . Both xSpry1Y53F and mSpry2Y55F failed to bind to Grb2 in response to FGF stimulation ( Fig. 5c ) ." {
+label="We investigated the ability of the Spry mutants to bind to Grb2 . Both
+xSpry1Y53F and mSpry2Y55F failed to bind to Grb2 in response to FGF stimulation
+( Fig. 5c ) .";
+investigated2 [style=filled, fillcolor=white, label=investigated];
+We1 [style=filled, fillcolor=white, label=We];
+investigated2 -> We1  [label=nsubj];
+investigated2 -> investigated2  [label=root];
+ability4 [style=filled, fillcolor=white, label=ability];
+the3 [style=filled, fillcolor=white, label=the];
+ability4 -> the3  [label=det];
+investigated2 -> ability4  [label=dobj];
+mutants8 [style=filled, fillcolor=white, label=mutants];
+the6 [style=filled, fillcolor=white, label=the];
+mutants8 -> the6  [label=det];
+Spry7 [style=filled, fillcolor=white, label=Spry];
+mutants8 -> Spry7  [label=nn];
+ability4 -> mutants8  [label=prep_of];
+bind10 [style=filled, fillcolor=white, label=bind];
+investigated2 -> bind10  [label=prep_to];
+Grb21 [style=filled, fillcolor=white, label=Grb2];
+investigated2 -> Grb21  [label=prep_to];
+xSpry1Y53F [style=filled, fillcolor=white, label=xSpry1Y53F];
+Both14 [style=filled, fillcolor=white, label=Both];
+xSpry1Y53F -> Both14  [label=preconj];
+failed18 [style=filled, fillcolor=white, label=failed];
+failed18 -> xSpry1Y53F  [label=nsubj];
+mSpry2Y55F17 [style=filled, fillcolor=white, label=mSpry2Y55F];
+xSpry1Y53F -> mSpry2Y55F17  [label=conj_and];
+Grb21 -> failed18  [label=rcmod];
+bind20 [style=filled, fillcolor=white, label=bind];
+failed18 -> bind20  [label=prep_to];
+Grb2 [style=filled, fillcolor=white, label=Grb2];
+failed18 -> Grb2  [label=prep_to];
+response24 [style=filled, fillcolor=white, label=response];
+Grb2 -> response24  [label=prep_in];
+stimulation27 [style=filled, fillcolor=white, label=stimulation];
+FGF26 [style=filled, fillcolor=white, label=FGF];
+stimulation27 -> FGF26  [label=nn];
+failed18 -> stimulation27  [label=prep_to];
+"5c30" [style=filled, fillcolor=white, label="5c"];
+"Fig.29" [style=filled, fillcolor=white, label="Fig."];
+"5c30" -> "Fig.29"  [label=nn];
+stimulation27 -> "5c30"  [label=appos];
+}

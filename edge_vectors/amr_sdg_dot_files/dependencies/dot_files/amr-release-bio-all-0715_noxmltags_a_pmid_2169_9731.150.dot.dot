@@ -1,0 +1,57 @@
+digraph "In order to determine if IGF-1 was a molecular mediator directly responsible for growth stimulated by MØCM ,  we decreased MØCM IGF-1 content through two independent avenues : immuno-depletion and siRNA interference ." {
+label="In order to determine if IGF-1 was a molecular mediator directly responsible
+for growth stimulated by MØCM ,  we decreased MØCM IGF-1 content through two
+independent avenues : immuno-depletion and siRNA interference .";
+determine4 [style=filled, fillcolor=white, label=determine];
+In1 [style=filled, fillcolor=white, label=In];
+determine4 -> In1  [label=mark];
+order2 [style=filled, fillcolor=white, label=order];
+determine4 -> order2  [label=dep];
+to3 [style=filled, fillcolor=white, label=to];
+determine4 -> to3  [label=aux];
+decreased20 [style=filled, fillcolor=white, label=decreased];
+decreased20 -> determine4  [label=advcl];
+mediator10 [style=filled, fillcolor=white, label=mediator];
+if5 [style=filled, fillcolor=white, label=if];
+mediator10 -> if5  [label=mark];
+"IGF-16" [style=filled, fillcolor=white, label="IGF-1"];
+mediator10 -> "IGF-16"  [label=nsubj];
+was7 [style=filled, fillcolor=white, label=was];
+mediator10 -> was7  [label=cop];
+a8 [style=filled, fillcolor=white, label=a];
+mediator10 -> a8  [label=det];
+molecular9 [style=filled, fillcolor=white, label=molecular];
+mediator10 -> molecular9  [label=amod];
+determine4 -> mediator10  [label=advcl];
+responsible12 [style=filled, fillcolor=white, label=responsible];
+directly11 [style=filled, fillcolor=white, label=directly];
+responsible12 -> directly11  [label=advmod];
+mediator10 -> responsible12  [label=amod];
+growth14 [style=filled, fillcolor=white, label=growth];
+responsible12 -> growth14  [label=prep_for];
+stimulated15 [style=filled, fillcolor=white, label=stimulated];
+growth14 -> stimulated15  [label=vmod];
+"MØCM17" [style=filled, fillcolor=white, label="MØCM"];
+stimulated15 -> "MØCM17"  [label=agent];
+we19 [style=filled, fillcolor=white, label=we];
+decreased20 -> we19  [label=nsubj];
+decreased20 -> decreased20  [label=root];
+"IGF-122" [style=filled, fillcolor=white, label="IGF-1"];
+"MØCM21" [style=filled, fillcolor=white, label="MØCM"];
+"IGF-122" -> "MØCM21"  [label=nn];
+content23 [style=filled, fillcolor=white, label=content];
+content23 -> "IGF-122"  [label=nsubj];
+decreased20 -> content23  [label=xcomp];
+avenues27 [style=filled, fillcolor=white, label=avenues];
+two25 [style=filled, fillcolor=white, label=two];
+avenues27 -> two25  [label=num];
+independent26 [style=filled, fillcolor=white, label=independent];
+avenues27 -> independent26  [label=amod];
+content23 -> avenues27  [label=prep_through];
+interference32 [style=filled, fillcolor=white, label=interference];
+"immuno-depletion29" [style=filled, fillcolor=white, label="immuno-depletion"];
+interference32 -> "immuno-depletion29"  [label=amod];
+siRNA31 [style=filled, fillcolor=white, label=siRNA];
+"immuno-depletion29" -> siRNA31  [label=conj_and];
+avenues27 -> interference32  [label=dep];
+}

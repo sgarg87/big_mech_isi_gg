@@ -1,0 +1,55 @@
+digraph "The brevity of Snail gene and protein induction in TGF-β2 treated cultured keratinocytes resembled the temporal appearance of Snail mRNA and protein at the initiation of hair follicle morphogenesis in embryonic mouse skin ." {
+label="The brevity of Snail gene and protein induction in TGF-β2 treated cultured
+keratinocytes resembled the temporal appearance of Snail mRNA and protein at the
+initiation of hair follicle morphogenesis in embryonic mouse skin .";
+brevity2 [style=filled, fillcolor=white, label=brevity];
+The1 [style=filled, fillcolor=white, label=The];
+brevity2 -> The1  [label=det];
+treated11 [style=filled, fillcolor=white, label=treated];
+treated11 -> brevity2  [label=nsubj];
+gene5 [style=filled, fillcolor=white, label=gene];
+Snail4 [style=filled, fillcolor=white, label=Snail];
+gene5 -> Snail4  [label=nn];
+brevity2 -> gene5  [label=prep_of];
+induction8 [style=filled, fillcolor=white, label=induction];
+protein7 [style=filled, fillcolor=white, label=protein];
+induction8 -> protein7  [label=nn];
+gene5 -> induction8  [label=conj_and];
+"TGF-β210" [style=filled, fillcolor=white, label="TGF-β2"];
+gene5 -> "TGF-β210"  [label=prep_in];
+treated11 -> treated11  [label=root];
+keratinocytes13 [style=filled, fillcolor=white, label=keratinocytes];
+cultured12 [style=filled, fillcolor=white, label=cultured];
+keratinocytes13 -> cultured12  [label=amod];
+resembled14 [style=filled, fillcolor=white, label=resembled];
+resembled14 -> keratinocytes13  [label=nsubj];
+treated11 -> resembled14  [label=ccomp];
+appearance17 [style=filled, fillcolor=white, label=appearance];
+the15 [style=filled, fillcolor=white, label=the];
+appearance17 -> the15  [label=det];
+temporal16 [style=filled, fillcolor=white, label=temporal];
+appearance17 -> temporal16  [label=amod];
+resembled14 -> appearance17  [label=xcomp];
+mRNA20 [style=filled, fillcolor=white, label=mRNA];
+Snail19 [style=filled, fillcolor=white, label=Snail];
+mRNA20 -> Snail19  [label=amod];
+appearance17 -> mRNA20  [label=prep_of];
+protein22 [style=filled, fillcolor=white, label=protein];
+mRNA20 -> protein22  [label=conj_and];
+initiation25 [style=filled, fillcolor=white, label=initiation];
+the24 [style=filled, fillcolor=white, label=the];
+initiation25 -> the24  [label=det];
+resembled14 -> initiation25  [label=prep_at];
+morphogenesis29 [style=filled, fillcolor=white, label=morphogenesis];
+hair27 [style=filled, fillcolor=white, label=hair];
+morphogenesis29 -> hair27  [label=nn];
+follicle28 [style=filled, fillcolor=white, label=follicle];
+morphogenesis29 -> follicle28  [label=nn];
+initiation25 -> morphogenesis29  [label=prep_of];
+skin33 [style=filled, fillcolor=white, label=skin];
+embryonic31 [style=filled, fillcolor=white, label=embryonic];
+skin33 -> embryonic31  [label=amod];
+mouse32 [style=filled, fillcolor=white, label=mouse];
+skin33 -> mouse32  [label=nn];
+resembled14 -> skin33  [label=prep_in];
+}

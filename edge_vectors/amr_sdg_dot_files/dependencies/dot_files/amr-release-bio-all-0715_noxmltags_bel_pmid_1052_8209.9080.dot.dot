@@ -1,0 +1,37 @@
+digraph "Mincle mRNA expression was strongly induced in response to several inflammatory stimuli ,  such as LPS ,  TNF-alpha ,  IL-6 ,  and IFN-gamma in wild-type macrophages ." {
+label="Mincle mRNA expression was strongly induced in response to several inflammatory
+stimuli ,  such as LPS ,  TNF-alpha ,  IL-6 ,  and IFN-gamma in wild-type
+macrophages .";
+expression3 [style=filled, fillcolor=white, label=expression];
+Mincle1 [style=filled, fillcolor=white, label=Mincle];
+expression3 -> Mincle1  [label=amod];
+mRNA2 [style=filled, fillcolor=white, label=mRNA];
+expression3 -> mRNA2  [label=nn];
+induced6 [style=filled, fillcolor=white, label=induced];
+induced6 -> expression3  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+induced6 -> was4  [label=auxpass];
+strongly5 [style=filled, fillcolor=white, label=strongly];
+induced6 -> strongly5  [label=advmod];
+induced6 -> induced6  [label=root];
+response8 [style=filled, fillcolor=white, label=response];
+induced6 -> response8  [label=prep_in];
+stimuli12 [style=filled, fillcolor=white, label=stimuli];
+several10 [style=filled, fillcolor=white, label=several];
+stimuli12 -> several10  [label=amod];
+inflammatory11 [style=filled, fillcolor=white, label=inflammatory];
+stimuli12 -> inflammatory11  [label=amod];
+response8 -> stimuli12  [label=prep_to];
+LPS16 [style=filled, fillcolor=white, label=LPS];
+response8 -> LPS16  [label=prep_such_as];
+"TNF-alpha18" [style=filled, fillcolor=white, label="TNF-alpha"];
+LPS16 -> "TNF-alpha18"  [label=conj_and];
+"IL-620" [style=filled, fillcolor=white, label="IL-6"];
+LPS16 -> "IL-620"  [label=conj_and];
+"IFN-gamma23" [style=filled, fillcolor=white, label="IFN-gamma"];
+LPS16 -> "IFN-gamma23"  [label=conj_and];
+macrophages26 [style=filled, fillcolor=white, label=macrophages];
+"wild-type25" [style=filled, fillcolor=white, label="wild-type"];
+macrophages26 -> "wild-type25"  [label=amod];
+induced6 -> macrophages26  [label=prep_in];
+}

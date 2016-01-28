@@ -1,0 +1,53 @@
+digraph "LM2 growth was equally stimulated by both naïve and tumor-educated BAL macrophages ,  while the growth of JF32 cells was enhanced slightly upon co-culture with tumor-educated BAL macrophages ( Figure 2C ) ." {
+label="LM2 growth was equally stimulated by both naïve and tumor-educated BAL
+macrophages ,  while the growth of JF32 cells was enhanced slightly upon co-
+culture with tumor-educated BAL macrophages ( Figure 2C ) .";
+growth2 [style=filled, fillcolor=white, label=growth];
+LM21 [style=filled, fillcolor=white, label=LM2];
+growth2 -> LM21  [label=nn];
+stimulated5 [style=filled, fillcolor=white, label=stimulated];
+stimulated5 -> growth2  [label=nsubjpass];
+was3 [style=filled, fillcolor=white, label=was];
+stimulated5 -> was3  [label=auxpass];
+equally4 [style=filled, fillcolor=white, label=equally];
+stimulated5 -> equally4  [label=advmod];
+stimulated5 -> stimulated5  [label=root];
+macrophages12 [style=filled, fillcolor=white, label=macrophages];
+both7 [style=filled, fillcolor=white, label=both];
+macrophages12 -> both7  [label=det];
+"naïve8" [style=filled, fillcolor=white, label="naïve"];
+macrophages12 -> "naïve8"  [label=amod];
+"tumor-educated10" [style=filled, fillcolor=white, label="tumor-educated"];
+"naïve8" -> "tumor-educated10"  [label=conj_and];
+BAL11 [style=filled, fillcolor=white, label=BAL];
+macrophages12 -> BAL11  [label=nn];
+stimulated5 -> macrophages12  [label=agent];
+enhanced21 [style=filled, fillcolor=white, label=enhanced];
+while14 [style=filled, fillcolor=white, label=while];
+enhanced21 -> while14  [label=mark];
+growth16 [style=filled, fillcolor=white, label=growth];
+the15 [style=filled, fillcolor=white, label=the];
+growth16 -> the15  [label=det];
+enhanced21 -> growth16  [label=nsubjpass];
+cells19 [style=filled, fillcolor=white, label=cells];
+JF3218 [style=filled, fillcolor=white, label=JF32];
+cells19 -> JF3218  [label=num];
+growth16 -> cells19  [label=prep_of];
+was20 [style=filled, fillcolor=white, label=was];
+enhanced21 -> was20  [label=auxpass];
+stimulated5 -> enhanced21  [label=advcl];
+slightly22 [style=filled, fillcolor=white, label=slightly];
+enhanced21 -> slightly22  [label=advmod];
+macrophages28 [style=filled, fillcolor=white, label=macrophages];
+"co-culture24" [style=filled, fillcolor=white, label="co-culture"];
+macrophages28 -> "co-culture24"  [label=amod];
+BAL27 [style=filled, fillcolor=white, label=BAL];
+"tumor-educated26" [style=filled, fillcolor=white, label="tumor-educated"];
+BAL27 -> "tumor-educated26"  [label=amod];
+"co-culture24" -> BAL27  [label=prep_with];
+enhanced21 -> macrophages28  [label=prep_upon];
+Figure30 [style=filled, fillcolor=white, label=Figure];
+macrophages28 -> Figure30  [label=appos];
+"2C31" [style=filled, fillcolor=white, label="2C"];
+Figure30 -> "2C31"  [label=num];
+}

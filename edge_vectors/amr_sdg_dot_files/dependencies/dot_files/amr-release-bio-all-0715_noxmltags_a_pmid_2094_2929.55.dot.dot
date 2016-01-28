@@ -1,0 +1,58 @@
+digraph "In order to determine the contribution of serpinE2 in intestinal transformation induced by activated MEK ,  foci from post-confluent caMEK-expressing IECs were retrieved by aspiration with a pipette and pooled as one caMEK-expressing cell population ." {
+label="In order to determine the contribution of serpinE2 in intestinal transformation
+induced by activated MEK ,  foci from post-confluent caMEK-expressing IECs were
+retrieved by aspiration with a pipette and pooled as one caMEK-expressing cell
+population .";
+determine4 [style=filled, fillcolor=white, label=determine];
+In1 [style=filled, fillcolor=white, label=In];
+determine4 -> In1  [label=mark];
+order2 [style=filled, fillcolor=white, label=order];
+determine4 -> order2  [label=dep];
+to3 [style=filled, fillcolor=white, label=to];
+determine4 -> to3  [label=aux];
+retrieved23 [style=filled, fillcolor=white, label=retrieved];
+retrieved23 -> determine4  [label=advcl];
+contribution6 [style=filled, fillcolor=white, label=contribution];
+the5 [style=filled, fillcolor=white, label=the];
+contribution6 -> the5  [label=det];
+determine4 -> contribution6  [label=dobj];
+serpinE28 [style=filled, fillcolor=white, label=serpinE2];
+contribution6 -> serpinE28  [label=prep_of];
+transformation11 [style=filled, fillcolor=white, label=transformation];
+intestinal10 [style=filled, fillcolor=white, label=intestinal];
+transformation11 -> intestinal10  [label=amod];
+determine4 -> transformation11  [label=prep_in];
+induced12 [style=filled, fillcolor=white, label=induced];
+transformation11 -> induced12  [label=vmod];
+MEK15 [style=filled, fillcolor=white, label=MEK];
+activated14 [style=filled, fillcolor=white, label=activated];
+MEK15 -> activated14  [label=nn];
+induced12 -> MEK15  [label=agent];
+foci17 [style=filled, fillcolor=white, label=foci];
+retrieved23 -> foci17  [label=nsubjpass];
+IECs21 [style=filled, fillcolor=white, label=IECs];
+"post-confluent19" [style=filled, fillcolor=white, label="post-confluent"];
+IECs21 -> "post-confluent19"  [label=amod];
+"caMEK-expressing20" [style=filled, fillcolor=white, label="caMEK-expressing"];
+IECs21 -> "caMEK-expressing20"  [label=amod];
+foci17 -> IECs21  [label=prep_from];
+were22 [style=filled, fillcolor=white, label=were];
+retrieved23 -> were22  [label=auxpass];
+retrieved23 -> retrieved23  [label=root];
+aspiration25 [style=filled, fillcolor=white, label=aspiration];
+retrieved23 -> aspiration25  [label=agent];
+pipette28 [style=filled, fillcolor=white, label=pipette];
+a27 [style=filled, fillcolor=white, label=a];
+pipette28 -> a27  [label=det];
+retrieved23 -> pipette28  [label=prep_with];
+pooled30 [style=filled, fillcolor=white, label=pooled];
+retrieved23 -> pooled30  [label=conj_and];
+population35 [style=filled, fillcolor=white, label=population];
+one32 [style=filled, fillcolor=white, label=one];
+population35 -> one32  [label=num];
+"caMEK-expressing33" [style=filled, fillcolor=white, label="caMEK-expressing"];
+population35 -> "caMEK-expressing33"  [label=nn];
+cell34 [style=filled, fillcolor=white, label=cell];
+population35 -> cell34  [label=nn];
+pooled30 -> population35  [label=prep_as];
+}

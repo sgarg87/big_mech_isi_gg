@@ -1,0 +1,30 @@
+digraph "The underlying reasons for different frequencies of specific activating mutations are not well understood either ." {
+label="The underlying reasons for different frequencies of specific activating
+mutations are not well understood either .";
+reasons3 [style=filled, fillcolor=white, label=reasons];
+The1 [style=filled, fillcolor=white, label=The];
+reasons3 -> The1  [label=det];
+underlying2 [style=filled, fillcolor=white, label=underlying];
+reasons3 -> underlying2  [label=amod];
+understood14 [style=filled, fillcolor=white, label=understood];
+understood14 -> reasons3  [label=nsubjpass];
+frequencies6 [style=filled, fillcolor=white, label=frequencies];
+different5 [style=filled, fillcolor=white, label=different];
+frequencies6 -> different5  [label=amod];
+reasons3 -> frequencies6  [label=prep_for];
+mutations10 [style=filled, fillcolor=white, label=mutations];
+specific8 [style=filled, fillcolor=white, label=specific];
+mutations10 -> specific8  [label=amod];
+activating9 [style=filled, fillcolor=white, label=activating];
+mutations10 -> activating9  [label=nn];
+frequencies6 -> mutations10  [label=prep_of];
+are11 [style=filled, fillcolor=white, label=are];
+understood14 -> are11  [label=auxpass];
+not12 [style=filled, fillcolor=white, label=not];
+understood14 -> not12  [label=neg];
+well13 [style=filled, fillcolor=white, label=well];
+understood14 -> well13  [label=advmod];
+understood14 -> understood14  [label=root];
+either15 [style=filled, fillcolor=white, label=either];
+understood14 -> either15  [label=advmod];
+}

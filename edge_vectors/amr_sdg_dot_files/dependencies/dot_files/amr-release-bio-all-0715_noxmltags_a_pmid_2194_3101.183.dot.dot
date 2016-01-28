@@ -1,0 +1,60 @@
+digraph "Regarding the importance of RhoA activation in the induced cell migration and invasion observed in Caco-BR cells ,  siRNA against RhoA was performed leading to significant protein depletion in both Caco-2 and Caco-BR13 cells ( Figure 5A ) ." {
+label="Regarding the importance of RhoA activation in the induced cell migration and
+invasion observed in Caco-BR cells ,  siRNA against RhoA was performed leading
+to significant protein depletion in both Caco-2 and Caco-BR13 cells ( Figure 5A
+) .";
+performed23 [style=filled, fillcolor=white, label=performed];
+Regarding1 [style=filled, fillcolor=white, label=Regarding];
+performed23 -> Regarding1  [label=vmod];
+importance3 [style=filled, fillcolor=white, label=importance];
+the2 [style=filled, fillcolor=white, label=the];
+importance3 -> the2  [label=det];
+Regarding1 -> importance3  [label=dobj];
+activation6 [style=filled, fillcolor=white, label=activation];
+RhoA5 [style=filled, fillcolor=white, label=RhoA];
+activation6 -> RhoA5  [label=nn];
+importance3 -> activation6  [label=prep_of];
+migration11 [style=filled, fillcolor=white, label=migration];
+the8 [style=filled, fillcolor=white, label=the];
+migration11 -> the8  [label=det];
+induced9 [style=filled, fillcolor=white, label=induced];
+migration11 -> induced9  [label=amod];
+cell10 [style=filled, fillcolor=white, label=cell];
+migration11 -> cell10  [label=nn];
+Regarding1 -> migration11  [label=prep_in];
+invasion13 [style=filled, fillcolor=white, label=invasion];
+migration11 -> invasion13  [label=conj_and];
+observed14 [style=filled, fillcolor=white, label=observed];
+migration11 -> observed14  [label=vmod];
+cells17 [style=filled, fillcolor=white, label=cells];
+"Caco-BR16" [style=filled, fillcolor=white, label="Caco-BR"];
+cells17 -> "Caco-BR16"  [label=amod];
+observed14 -> cells17  [label=prep_in];
+siRNA19 [style=filled, fillcolor=white, label=siRNA];
+performed23 -> siRNA19  [label=nsubjpass];
+RhoA21 [style=filled, fillcolor=white, label=RhoA];
+siRNA19 -> RhoA21  [label=prep_against];
+was22 [style=filled, fillcolor=white, label=was];
+performed23 -> was22  [label=auxpass];
+performed23 -> performed23  [label=root];
+leading24 [style=filled, fillcolor=white, label=leading];
+performed23 -> leading24  [label=xcomp];
+depletion28 [style=filled, fillcolor=white, label=depletion];
+significant26 [style=filled, fillcolor=white, label=significant];
+depletion28 -> significant26  [label=amod];
+protein27 [style=filled, fillcolor=white, label=protein];
+depletion28 -> protein27  [label=nn];
+leading24 -> depletion28  [label=prep_to];
+"Caco-231" [style=filled, fillcolor=white, label="Caco-2"];
+both30 [style=filled, fillcolor=white, label=both];
+"Caco-231" -> both30  [label=preconj];
+cells34 [style=filled, fillcolor=white, label=cells];
+cells34 -> "Caco-231"  [label=amod];
+"Caco-BR13" [style=filled, fillcolor=white, label="Caco-BR13"];
+"Caco-231" -> "Caco-BR13"  [label=conj_and];
+depletion28 -> cells34  [label=prep_in];
+Figure36 [style=filled, fillcolor=white, label=Figure];
+cells34 -> Figure36  [label=appos];
+"5A37" [style=filled, fillcolor=white, label="5A"];
+Figure36 -> "5A37"  [label=num];
+}

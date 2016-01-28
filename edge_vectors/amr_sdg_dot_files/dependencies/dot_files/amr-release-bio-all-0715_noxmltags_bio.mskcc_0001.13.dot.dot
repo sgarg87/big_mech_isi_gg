@@ -1,0 +1,49 @@
+digraph "Together ,  these findings indicate that Pin1 is needed for the efficient dephosphorylation of B-Raf and are consistent with the model that S/TP phosphorylation inhibits Raf signaling ." {
+label="Together ,  these findings indicate that Pin1 is needed for the efficient
+dephosphorylation of B-Raf and are consistent with the model that S/TP
+phosphorylation inhibits Raf signaling .";
+indicate5 [style=filled, fillcolor=white, label=indicate];
+Together1 [style=filled, fillcolor=white, label=Together];
+indicate5 -> Together1  [label=advmod];
+findings4 [style=filled, fillcolor=white, label=findings];
+these3 [style=filled, fillcolor=white, label=these];
+findings4 -> these3  [label=det];
+indicate5 -> findings4  [label=nsubj];
+indicate5 -> indicate5  [label=root];
+needed9 [style=filled, fillcolor=white, label=needed];
+that6 [style=filled, fillcolor=white, label=that];
+needed9 -> that6  [label=mark];
+Pin17 [style=filled, fillcolor=white, label=Pin1];
+needed9 -> Pin17  [label=nsubjpass];
+is8 [style=filled, fillcolor=white, label=is];
+needed9 -> is8  [label=auxpass];
+indicate5 -> needed9  [label=ccomp];
+dephosphorylation13 [style=filled, fillcolor=white, label=dephosphorylation];
+the11 [style=filled, fillcolor=white, label=the];
+dephosphorylation13 -> the11  [label=det];
+efficient12 [style=filled, fillcolor=white, label=efficient];
+dephosphorylation13 -> efficient12  [label=amod];
+needed9 -> dephosphorylation13  [label=prep_for];
+"B-Raf15" [style=filled, fillcolor=white, label="B-Raf"];
+dephosphorylation13 -> "B-Raf15"  [label=prep_of];
+consistent18 [style=filled, fillcolor=white, label=consistent];
+are17 [style=filled, fillcolor=white, label=are];
+consistent18 -> are17  [label=cop];
+needed9 -> consistent18  [label=conj_and];
+model21 [style=filled, fillcolor=white, label=model];
+the20 [style=filled, fillcolor=white, label=the];
+model21 -> the20  [label=det];
+consistent18 -> model21  [label=prep_with];
+inhibits25 [style=filled, fillcolor=white, label=inhibits];
+that22 [style=filled, fillcolor=white, label=that];
+inhibits25 -> that22  [label=mark];
+phosphorylation24 [style=filled, fillcolor=white, label=phosphorylation];
+"S/TP23" [style=filled, fillcolor=white, label="S/TP"];
+phosphorylation24 -> "S/TP23"  [label=nn];
+inhibits25 -> phosphorylation24  [label=nsubj];
+consistent18 -> inhibits25  [label=ccomp];
+Raf26 [style=filled, fillcolor=white, label=Raf];
+inhibits25 -> Raf26  [label=dobj];
+signaling27 [style=filled, fillcolor=white, label=signaling];
+Raf26 -> signaling27  [label=vmod];
+}

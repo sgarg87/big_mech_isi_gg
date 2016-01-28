@@ -1,0 +1,44 @@
+digraph "Our previous study indicated that IGF-1 could significantly increase IL-6 mRNA expression and protein production in PHA - activated cord blood MNC ( 12 ) ." {
+label="Our previous study indicated that IGF-1 could significantly increase IL-6 mRNA
+expression and protein production in PHA - activated cord blood MNC ( 12 ) .";
+study3 [style=filled, fillcolor=white, label=study];
+Our1 [style=filled, fillcolor=white, label=Our];
+study3 -> Our1  [label=poss];
+previous2 [style=filled, fillcolor=white, label=previous];
+study3 -> previous2  [label=amod];
+indicated4 [style=filled, fillcolor=white, label=indicated];
+indicated4 -> study3  [label=nsubj];
+indicated4 -> indicated4  [label=root];
+increase9 [style=filled, fillcolor=white, label=increase];
+that5 [style=filled, fillcolor=white, label=that];
+increase9 -> that5  [label=mark];
+"IGF-16" [style=filled, fillcolor=white, label="IGF-1"];
+increase9 -> "IGF-16"  [label=nsubj];
+could7 [style=filled, fillcolor=white, label=could];
+increase9 -> could7  [label=aux];
+significantly8 [style=filled, fillcolor=white, label=significantly];
+increase9 -> significantly8  [label=advmod];
+indicated4 -> increase9  [label=ccomp];
+expression12 [style=filled, fillcolor=white, label=expression];
+"IL-610" [style=filled, fillcolor=white, label="IL-6"];
+expression12 -> "IL-610"  [label=nn];
+mRNA11 [style=filled, fillcolor=white, label=mRNA];
+expression12 -> mRNA11  [label=nn];
+increase9 -> expression12  [label=dobj];
+production15 [style=filled, fillcolor=white, label=production];
+protein14 [style=filled, fillcolor=white, label=protein];
+production15 -> protein14  [label=nn];
+expression12 -> production15  [label=conj_and];
+PHA17 [style=filled, fillcolor=white, label=PHA];
+expression12 -> PHA17  [label=prep_in];
+MNC22 [style=filled, fillcolor=white, label=MNC];
+activated19 [style=filled, fillcolor=white, label=activated];
+MNC22 -> activated19  [label=amod];
+cord20 [style=filled, fillcolor=white, label=cord];
+MNC22 -> cord20  [label=nn];
+blood21 [style=filled, fillcolor=white, label=blood];
+MNC22 -> blood21  [label=nn];
+expression12 -> MNC22  [label=dep];
+1224 [style=filled, fillcolor=white, label=12];
+MNC22 -> 1224  [label=appos];
+}

@@ -1,0 +1,40 @@
+digraph "Phospho-S259 cRaf is another measure of Akt activity ,  and p-cRaf levels increased in all three cell lines with macrophage co-culture ( Figure 3A-C ) ." {
+label="Phospho-S259 cRaf is another measure of Akt activity ,  and p-cRaf levels
+increased in all three cell lines with macrophage co-culture ( Figure 3A-C ) .";
+cRaf2 [style=filled, fillcolor=white, label=cRaf];
+"Phospho-S2591" [style=filled, fillcolor=white, label="Phospho-S259"];
+cRaf2 -> "Phospho-S2591"  [label=amod];
+measure5 [style=filled, fillcolor=white, label=measure];
+measure5 -> cRaf2  [label=nsubj];
+is3 [style=filled, fillcolor=white, label=is];
+measure5 -> is3  [label=cop];
+another4 [style=filled, fillcolor=white, label=another];
+measure5 -> another4  [label=det];
+measure5 -> measure5  [label=root];
+activity8 [style=filled, fillcolor=white, label=activity];
+Akt7 [style=filled, fillcolor=white, label=Akt];
+activity8 -> Akt7  [label=nn];
+measure5 -> activity8  [label=prep_of];
+levels12 [style=filled, fillcolor=white, label=levels];
+"p-cRaf11" [style=filled, fillcolor=white, label="p-cRaf"];
+levels12 -> "p-cRaf11"  [label=amod];
+increased13 [style=filled, fillcolor=white, label=increased];
+increased13 -> levels12  [label=nsubj];
+measure5 -> increased13  [label=conj_and];
+lines18 [style=filled, fillcolor=white, label=lines];
+all15 [style=filled, fillcolor=white, label=all];
+lines18 -> all15  [label=det];
+three16 [style=filled, fillcolor=white, label=three];
+lines18 -> three16  [label=num];
+cell17 [style=filled, fillcolor=white, label=cell];
+lines18 -> cell17  [label=nn];
+increased13 -> lines18  [label=prep_in];
+"co-culture21" [style=filled, fillcolor=white, label="co-culture"];
+macrophage20 [style=filled, fillcolor=white, label=macrophage];
+"co-culture21" -> macrophage20  [label=amod];
+increased13 -> "co-culture21"  [label=prep_with];
+Figure23 [style=filled, fillcolor=white, label=Figure];
+"co-culture21" -> Figure23  [label=appos];
+"3A-C24" [style=filled, fillcolor=white, label="3A-C"];
+Figure23 -> "3A-C24"  [label=num];
+}

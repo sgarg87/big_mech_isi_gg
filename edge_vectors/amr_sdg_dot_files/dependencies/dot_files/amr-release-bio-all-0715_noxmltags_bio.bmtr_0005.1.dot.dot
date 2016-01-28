@@ -1,0 +1,26 @@
+digraph "Phosphorylation of ASPP2 by RAS/MAPK Pathway Is Critical for Its Full Pro-Apoptotic Function ( PMC3847091 )" {
+label="Phosphorylation of ASPP2 by RAS/MAPK Pathway Is Critical for Its Full Pro-
+Apoptotic Function ( PMC3847091 )";
+Critical8 [style=filled, fillcolor=white, label=Critical];
+Phosphorylation1 [style=filled, fillcolor=white, label=Phosphorylation];
+Critical8 -> Phosphorylation1  [label=nsubjpass];
+ASPP23 [style=filled, fillcolor=white, label=ASPP2];
+Phosphorylation1 -> ASPP23  [label=prep_of];
+Pathway6 [style=filled, fillcolor=white, label=Pathway];
+"RAS/MAPK5" [style=filled, fillcolor=white, label="RAS/MAPK"];
+Pathway6 -> "RAS/MAPK5"  [label=nn];
+ASPP23 -> Pathway6  [label=prep_by];
+Is7 [style=filled, fillcolor=white, label=Is];
+Critical8 -> Is7  [label=auxpass];
+Critical8 -> Critical8  [label=root];
+Function13 [style=filled, fillcolor=white, label=Function];
+Its10 [style=filled, fillcolor=white, label=Its];
+Function13 -> Its10  [label=poss];
+Full11 [style=filled, fillcolor=white, label=Full];
+Function13 -> Full11  [label=nn];
+"Pro-Apoptotic12" [style=filled, fillcolor=white, label="Pro-Apoptotic"];
+Function13 -> "Pro-Apoptotic12"  [label=nn];
+Critical8 -> Function13  [label=prep_for];
+PMC384709115 [style=filled, fillcolor=white, label=PMC3847091];
+Function13 -> PMC384709115  [label=appos];
+}

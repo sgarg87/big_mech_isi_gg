@@ -1,0 +1,57 @@
+digraph "As illustrated in Figure 6A ,  serpinE2 deficiency significantly reduced HCT116 ( not shown ) and LoVo cell migration to the undersurface of the membrane coated or not with fibronectin or vitronectin ( data not shown ) ." {
+label="As illustrated in Figure 6A ,  serpinE2 deficiency significantly reduced HCT116
+( not shown ) and LoVo cell migration to the undersurface of the membrane coated
+or not with fibronectin or vitronectin ( data not shown ) .";
+illustrated2 [style=filled, fillcolor=white, label=illustrated];
+As1 [style=filled, fillcolor=white, label=As];
+illustrated2 -> As1  [label=mark];
+reduced10 [style=filled, fillcolor=white, label=reduced];
+reduced10 -> illustrated2  [label=advcl];
+Figure4 [style=filled, fillcolor=white, label=Figure];
+illustrated2 -> Figure4  [label=prep_in];
+"6A5" [style=filled, fillcolor=white, label="6A"];
+Figure4 -> "6A5"  [label=num];
+deficiency8 [style=filled, fillcolor=white, label=deficiency];
+serpinE27 [style=filled, fillcolor=white, label=serpinE2];
+deficiency8 -> serpinE27  [label=amod];
+reduced10 -> deficiency8  [label=nsubj];
+significantly9 [style=filled, fillcolor=white, label=significantly];
+reduced10 -> significantly9  [label=advmod];
+reduced10 -> reduced10  [label=root];
+HCT116 [style=filled, fillcolor=white, label=HCT116];
+reduced10 -> HCT116  [label=dobj];
+shown14 [style=filled, fillcolor=white, label=shown];
+not13 [style=filled, fillcolor=white, label=not];
+shown14 -> not13  [label=neg];
+HCT116 -> shown14  [label=dep];
+migration19 [style=filled, fillcolor=white, label=migration];
+LoVo17 [style=filled, fillcolor=white, label=LoVo];
+migration19 -> LoVo17  [label=nn];
+cell18 [style=filled, fillcolor=white, label=cell];
+migration19 -> cell18  [label=nn];
+HCT116 -> migration19  [label=conj_and];
+"migration19'" [style=filled, fillcolor=white, label=migration];
+migration19 -> "migration19'"  [label=conj_or];
+undersurface22 [style=filled, fillcolor=white, label=undersurface];
+the21 [style=filled, fillcolor=white, label=the];
+undersurface22 -> the21  [label=det];
+migration19 -> undersurface22  [label=prep_to];
+coated26 [style=filled, fillcolor=white, label=coated];
+the24 [style=filled, fillcolor=white, label=the];
+coated26 -> the24  [label=det];
+membrane25 [style=filled, fillcolor=white, label=membrane];
+coated26 -> membrane25  [label=amod];
+undersurface22 -> coated26  [label=prep_of];
+not28 [style=filled, fillcolor=white, label=not];
+migration19 -> not28  [label=neg];
+fibronectin30 [style=filled, fillcolor=white, label=fibronectin];
+"migration19'" -> fibronectin30  [label=prep_with];
+vitronectin32 [style=filled, fillcolor=white, label=vitronectin];
+fibronectin30 -> vitronectin32  [label=conj_or];
+data34 [style=filled, fillcolor=white, label=data];
+migration19 -> data34  [label=dep];
+shown36 [style=filled, fillcolor=white, label=shown];
+not35 [style=filled, fillcolor=white, label=not];
+shown36 -> not35  [label=neg];
+data34 -> shown36  [label=vmod];
+}

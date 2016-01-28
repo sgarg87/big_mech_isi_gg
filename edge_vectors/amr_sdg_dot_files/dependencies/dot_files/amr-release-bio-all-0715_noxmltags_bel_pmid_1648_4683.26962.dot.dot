@@ -1,0 +1,66 @@
+digraph "We have used siRNA approaches to show that Fra-1 expression is critical to the expression of genes ,  such as cd44 and c-met ,  that are critical to migration and autocrine growth factor production in transformation and invasion of mesotheliomas ( 13 ) ." {
+label="We have used siRNA approaches to show that Fra-1 expression is critical to the
+expression of genes ,  such as cd44 and c-met ,  that are critical to migration
+and autocrine growth factor production in transformation and invasion of
+mesotheliomas ( 13 ) .";
+used3 [style=filled, fillcolor=white, label=used];
+We1 [style=filled, fillcolor=white, label=We];
+used3 -> We1  [label=nsubj];
+have2 [style=filled, fillcolor=white, label=have];
+used3 -> have2  [label=aux];
+used3 -> used3  [label=root];
+approaches5 [style=filled, fillcolor=white, label=approaches];
+siRNA4 [style=filled, fillcolor=white, label=siRNA];
+approaches5 -> siRNA4  [label=nn];
+used3 -> approaches5  [label=dobj];
+show7 [style=filled, fillcolor=white, label=show];
+to6 [style=filled, fillcolor=white, label=to];
+show7 -> to6  [label=aux];
+used3 -> show7  [label=vmod];
+critical12 [style=filled, fillcolor=white, label=critical];
+that8 [style=filled, fillcolor=white, label=that];
+critical12 -> that8  [label=mark];
+expression10 [style=filled, fillcolor=white, label=expression];
+"Fra-19" [style=filled, fillcolor=white, label="Fra-1"];
+expression10 -> "Fra-19"  [label=nn];
+critical12 -> expression10  [label=nsubj];
+is11 [style=filled, fillcolor=white, label=is];
+critical12 -> is11  [label=cop];
+show7 -> critical12  [label=ccomp];
+expression15 [style=filled, fillcolor=white, label=expression];
+the14 [style=filled, fillcolor=white, label=the];
+expression15 -> the14  [label=det];
+critical12 -> expression15  [label=prep_to];
+genes17 [style=filled, fillcolor=white, label=genes];
+expression15 -> genes17  [label=prep_of];
+cd4421 [style=filled, fillcolor=white, label=cd44];
+expression15 -> cd4421  [label=prep_such_as];
+"c-met23" [style=filled, fillcolor=white, label="c-met"];
+cd4421 -> "c-met23"  [label=conj_and];
+critical27 [style=filled, fillcolor=white, label=critical];
+that25 [style=filled, fillcolor=white, label=that];
+critical27 -> that25  [label=nsubj];
+are26 [style=filled, fillcolor=white, label=are];
+critical27 -> are26  [label=cop];
+cd4421 -> critical27  [label=rcmod];
+migration29 [style=filled, fillcolor=white, label=migration];
+to28 [style=filled, fillcolor=white, label=to];
+migration29 -> to28  [label=aux];
+critical27 -> migration29  [label=xcomp];
+autocrine31 [style=filled, fillcolor=white, label=autocrine];
+migration29 -> autocrine31  [label=conj_and];
+production34 [style=filled, fillcolor=white, label=production];
+growth32 [style=filled, fillcolor=white, label=growth];
+production34 -> growth32  [label=nn];
+factor33 [style=filled, fillcolor=white, label=factor];
+production34 -> factor33  [label=nn];
+migration29 -> production34  [label=dobj];
+transformation36 [style=filled, fillcolor=white, label=transformation];
+production34 -> transformation36  [label=prep_in];
+invasion38 [style=filled, fillcolor=white, label=invasion];
+transformation36 -> invasion38  [label=conj_and];
+mesotheliomas40 [style=filled, fillcolor=white, label=mesotheliomas];
+production34 -> mesotheliomas40  [label=prep_of];
+1342 [style=filled, fillcolor=white, label=13];
+mesotheliomas40 -> 1342  [label=appos];
+}

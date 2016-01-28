@@ -1,0 +1,51 @@
+digraph "To prove this point ,  we immunoprecipitated from SosTfx an amount of Sos-1 comparable to that present in anti-Eps8 immunoprecipitates from Triple Tfx ( Fig. 7 ,  A and B ,  lanes SosTfx1/10 ) ." {
+label="To prove this point ,  we immunoprecipitated from SosTfx an amount of Sos-1
+comparable to that present in anti-Eps8 immunoprecipitates from Triple Tfx (
+Fig. 7 ,  A and B ,  lanes SosTfx1/10 ) .";
+prove2 [style=filled, fillcolor=white, label=prove];
+To1 [style=filled, fillcolor=white, label=To];
+prove2 -> To1  [label=aux];
+immunoprecipitated7 [style=filled, fillcolor=white, label=immunoprecipitated];
+immunoprecipitated7 -> prove2  [label=advcl];
+point4 [style=filled, fillcolor=white, label=point];
+this3 [style=filled, fillcolor=white, label=this];
+point4 -> this3  [label=det];
+prove2 -> point4  [label=dobj];
+we6 [style=filled, fillcolor=white, label=we];
+immunoprecipitated7 -> we6  [label=nsubj];
+immunoprecipitated7 -> immunoprecipitated7  [label=root];
+SosTfx9 [style=filled, fillcolor=white, label=SosTfx];
+immunoprecipitated7 -> SosTfx9  [label=prep_from];
+amount11 [style=filled, fillcolor=white, label=amount];
+an10 [style=filled, fillcolor=white, label=an];
+amount11 -> an10  [label=det];
+immunoprecipitated7 -> amount11  [label=dobj];
+"Sos-13" [style=filled, fillcolor=white, label="Sos-1"];
+amount11 -> "Sos-13"  [label=prepc_of];
+comparable14 [style=filled, fillcolor=white, label=comparable];
+"Sos-13" -> comparable14  [label=acomp];
+present17 [style=filled, fillcolor=white, label=present];
+that16 [style=filled, fillcolor=white, label=that];
+present17 -> that16  [label=det];
+comparable14 -> present17  [label=prep_to];
+immunoprecipitates20 [style=filled, fillcolor=white, label=immunoprecipitates];
+"anti-Eps819" [style=filled, fillcolor=white, label="anti-Eps8"];
+immunoprecipitates20 -> "anti-Eps819"  [label=amod];
+present17 -> immunoprecipitates20  [label=prep_in];
+Tfx23 [style=filled, fillcolor=white, label=Tfx];
+Triple22 [style=filled, fillcolor=white, label=Triple];
+Tfx23 -> Triple22  [label=amod];
+"Sos-13" -> Tfx23  [label=prep_from];
+"Fig.25" [style=filled, fillcolor=white, label="Fig."];
+Tfx23 -> "Fig.25"  [label=appos];
+726 [style=filled, fillcolor=white, label=7];
+"Fig.25" -> 726  [label=num];
+A28 [style=filled, fillcolor=white, label=A];
+"Fig.25" -> A28  [label=dep];
+B30 [style=filled, fillcolor=white, label=B];
+A28 -> B30  [label=conj_and];
+"SosTfx1/1033" [style=filled, fillcolor=white, label="SosTfx1/10"];
+lanes32 [style=filled, fillcolor=white, label=lanes];
+"SosTfx1/1033" -> lanes32  [label=num];
+"Fig.25" -> "SosTfx1/1033"  [label=dep];
+}

@@ -1,0 +1,32 @@
+digraph "We then used the Triple Tfx and coimmunoprecipitated Sos-1 with anti-Eps8 antibodies ( Fig. 7 ,  A and B ) ." {
+label="We then used the Triple Tfx and coimmunoprecipitated Sos-1 with anti-Eps8
+antibodies ( Fig. 7 ,  A and B ) .";
+used3 [style=filled, fillcolor=white, label=used];
+We1 [style=filled, fillcolor=white, label=We];
+used3 -> We1  [label=nsubj];
+then2 [style=filled, fillcolor=white, label=then];
+used3 -> then2  [label=advmod];
+used3 -> used3  [label=root];
+"Sos-19" [style=filled, fillcolor=white, label="Sos-1"];
+the4 [style=filled, fillcolor=white, label=the];
+"Sos-19" -> the4  [label=det];
+Triple5 [style=filled, fillcolor=white, label=Triple];
+"Sos-19" -> Triple5  [label=amod];
+Tfx6 [style=filled, fillcolor=white, label=Tfx];
+"Sos-19" -> Tfx6  [label=amod];
+coimmunoprecipitated8 [style=filled, fillcolor=white, label=coimmunoprecipitated];
+Tfx6 -> coimmunoprecipitated8  [label=conj_and];
+used3 -> "Sos-19"  [label=dobj];
+antibodies12 [style=filled, fillcolor=white, label=antibodies];
+"anti-Eps811" [style=filled, fillcolor=white, label="anti-Eps8"];
+antibodies12 -> "anti-Eps811"  [label=amod];
+used3 -> antibodies12  [label=prep_with];
+"Fig.14" [style=filled, fillcolor=white, label="Fig."];
+antibodies12 -> "Fig.14"  [label=appos];
+715 [style=filled, fillcolor=white, label=7];
+"Fig.14" -> 715  [label=num];
+A17 [style=filled, fillcolor=white, label=A];
+"Fig.14" -> A17  [label=dep];
+B19 [style=filled, fillcolor=white, label=B];
+A17 -> B19  [label=conj_and];
+}

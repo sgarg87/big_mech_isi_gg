@@ -1,0 +1,51 @@
+digraph "To test this hypothesis ,  we transiently transfected CHO-KI cells ,  which do not express ERBB receptors endogenously ,  with wild-type ERBB3 with either wild-type EGFR or EGFR T669A ." {
+label="To test this hypothesis ,  we transiently transfected CHO-KI cells ,  which do
+not express ERBB receptors endogenously ,  with wild-type ERBB3 with either
+wild-type EGFR or EGFR T669A .";
+test2 [style=filled, fillcolor=white, label=test];
+To1 [style=filled, fillcolor=white, label=To];
+test2 -> To1  [label=aux];
+transfected8 [style=filled, fillcolor=white, label=transfected];
+transfected8 -> test2  [label=advcl];
+hypothesis4 [style=filled, fillcolor=white, label=hypothesis];
+this3 [style=filled, fillcolor=white, label=this];
+hypothesis4 -> this3  [label=det];
+test2 -> hypothesis4  [label=dobj];
+we6 [style=filled, fillcolor=white, label=we];
+transfected8 -> we6  [label=nsubj];
+transiently7 [style=filled, fillcolor=white, label=transiently];
+transfected8 -> transiently7  [label=advmod];
+transfected8 -> transfected8  [label=root];
+cells10 [style=filled, fillcolor=white, label=cells];
+"CHO-KI9" [style=filled, fillcolor=white, label="CHO-KI"];
+cells10 -> "CHO-KI9"  [label=amod];
+transfected8 -> cells10  [label=dobj];
+express15 [style=filled, fillcolor=white, label=express];
+which12 [style=filled, fillcolor=white, label=which];
+express15 -> which12  [label=nsubj];
+do13 [style=filled, fillcolor=white, label=do];
+express15 -> do13  [label=aux];
+not14 [style=filled, fillcolor=white, label=not];
+express15 -> not14  [label=neg];
+cells10 -> express15  [label=rcmod];
+receptors17 [style=filled, fillcolor=white, label=receptors];
+ERBB16 [style=filled, fillcolor=white, label=ERBB];
+receptors17 -> ERBB16  [label=nn];
+express15 -> receptors17  [label=dobj];
+endogenously18 [style=filled, fillcolor=white, label=endogenously];
+express15 -> endogenously18  [label=advmod];
+ERBB322 [style=filled, fillcolor=white, label=ERBB3];
+"wild-type21" [style=filled, fillcolor=white, label="wild-type"];
+ERBB322 -> "wild-type21"  [label=amod];
+express15 -> ERBB322  [label=prep_with];
+EGFR26 [style=filled, fillcolor=white, label=EGFR];
+either24 [style=filled, fillcolor=white, label=either];
+EGFR26 -> either24  [label=det];
+"wild-type25" [style=filled, fillcolor=white, label="wild-type"];
+EGFR26 -> "wild-type25"  [label=amod];
+ERBB322 -> EGFR26  [label=prep_with];
+T669A2 [style=filled, fillcolor=white, label=T669A];
+EGFR28 [style=filled, fillcolor=white, label=EGFR];
+T669A2 -> EGFR28  [label=nn];
+EGFR26 -> T669A2  [label=conj_or];
+}

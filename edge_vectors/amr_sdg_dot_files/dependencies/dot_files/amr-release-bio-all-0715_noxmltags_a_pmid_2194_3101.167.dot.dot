@@ -1,0 +1,66 @@
+digraph "More specifically ,  BRAFV600E and HRASG12V provided Caco-2 cells with highly migrating and invasive properties ,  some similar to those in DLD-1 cells ( Figure 3A ,  B ) ,  which is compatible with their more elongated morphology described earlier ( Figure 1 ) ." {
+label="More specifically ,  BRAFV600E and HRASG12V provided Caco-2 cells with highly
+migrating and invasive properties ,  some similar to those in DLD-1 cells (
+Figure 3A ,  B ) ,  which is compatible with their more elongated morphology
+described earlier ( Figure 1 ) .";
+specifically2 [style=filled, fillcolor=white, label=specifically];
+More1 [style=filled, fillcolor=white, label=More];
+specifically2 -> More1  [label=advmod];
+provided7 [style=filled, fillcolor=white, label=provided];
+provided7 -> specifically2  [label=advmod];
+BRAFV600E4 [style=filled, fillcolor=white, label=BRAFV600E];
+provided7 -> BRAFV600E4  [label=nsubj];
+HRASG12V6 [style=filled, fillcolor=white, label=HRASG12V];
+BRAFV600E4 -> HRASG12V6  [label=conj_and];
+provided7 -> provided7  [label=root];
+cells9 [style=filled, fillcolor=white, label=cells];
+"Caco-28" [style=filled, fillcolor=white, label="Caco-2"];
+cells9 -> "Caco-28"  [label=nn];
+provided7 -> cells9  [label=dobj];
+migrating12 [style=filled, fillcolor=white, label=migrating];
+highly11 [style=filled, fillcolor=white, label=highly];
+migrating12 -> highly11  [label=advmod];
+properties15 [style=filled, fillcolor=white, label=properties];
+properties15 -> migrating12  [label=amod];
+invasive14 [style=filled, fillcolor=white, label=invasive];
+migrating12 -> invasive14  [label=conj_and];
+provided7 -> properties15  [label=prep_with];
+cells23 [style=filled, fillcolor=white, label=cells];
+some17 [style=filled, fillcolor=white, label=some];
+cells23 -> some17  [label=det];
+similar18 [style=filled, fillcolor=white, label=similar];
+cells23 -> similar18  [label=amod];
+those20 [style=filled, fillcolor=white, label=those];
+similar18 -> those20  [label=prep_to];
+"DLD-122" [style=filled, fillcolor=white, label="DLD-1"];
+those20 -> "DLD-122"  [label=prep_in];
+provided7 -> cells23  [label=dobj];
+Figure25 [style=filled, fillcolor=white, label=Figure];
+cells23 -> Figure25  [label=appos];
+"3A26" [style=filled, fillcolor=white, label="3A"];
+Figure25 -> "3A26"  [label=num];
+B28 [style=filled, fillcolor=white, label=B];
+Figure25 -> B28  [label=dep];
+compatible33 [style=filled, fillcolor=white, label=compatible];
+which31 [style=filled, fillcolor=white, label=which];
+compatible33 -> which31  [label=nsubj];
+is32 [style=filled, fillcolor=white, label=is];
+compatible33 -> is32  [label=cop];
+cells23 -> compatible33  [label=rcmod];
+morphology38 [style=filled, fillcolor=white, label=morphology];
+their35 [style=filled, fillcolor=white, label=their];
+morphology38 -> their35  [label=poss];
+elongated37 [style=filled, fillcolor=white, label=elongated];
+more36 [style=filled, fillcolor=white, label=more];
+elongated37 -> more36  [label=advmod];
+morphology38 -> elongated37  [label=amod];
+compatible33 -> morphology38  [label=prep_with];
+described39 [style=filled, fillcolor=white, label=described];
+morphology38 -> described39  [label=vmod];
+earlier40 [style=filled, fillcolor=white, label=earlier];
+described39 -> earlier40  [label=advmod];
+Figure42 [style=filled, fillcolor=white, label=Figure];
+described39 -> Figure42  [label=dep];
+143 [style=filled, fillcolor=white, label=1];
+Figure42 -> 143  [label=num];
+}

@@ -1,0 +1,22 @@
+digraph "Unexpectedly ,  TGF-beta treatment also induced increased IL-6 production by pDC ." {
+label="Unexpectedly ,  TGF-beta treatment also induced increased IL-6 production by
+pDC .";
+increased7 [style=filled, fillcolor=white, label=increased];
+Unexpectedly1 [style=filled, fillcolor=white, label=Unexpectedly];
+increased7 -> Unexpectedly1  [label=advmod];
+treatment4 [style=filled, fillcolor=white, label=treatment];
+"TGF-beta3" [style=filled, fillcolor=white, label="TGF-beta"];
+treatment4 -> "TGF-beta3"  [label=amod];
+increased7 -> treatment4  [label=nsubj];
+induced6 [style=filled, fillcolor=white, label=induced];
+also5 [style=filled, fillcolor=white, label=also];
+induced6 -> also5  [label=advmod];
+treatment4 -> induced6  [label=vmod];
+increased7 -> increased7  [label=root];
+production9 [style=filled, fillcolor=white, label=production];
+"IL-68" [style=filled, fillcolor=white, label="IL-6"];
+production9 -> "IL-68"  [label=nn];
+increased7 -> production9  [label=dobj];
+pDC11 [style=filled, fillcolor=white, label=pDC];
+increased7 -> pDC11  [label=prep_by];
+}

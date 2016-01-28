@@ -1,0 +1,55 @@
+digraph "During development ,  specialized mesenchymal cells populate the skin in a spatially defined pattern to initiate the complex epithelial-mesenchymal crosstalk that will specify the bud -LSB- 3 -RSB- ." {
+label="During development ,  specialized mesenchymal cells populate the skin in a
+spatially defined pattern to initiate the complex epithelial-mesenchymal
+crosstalk that will specify the bud -LSB- 3 -RSB- .";
+populate7 [style=filled, fillcolor=white, label=populate];
+development2 [style=filled, fillcolor=white, label=development];
+populate7 -> development2  [label=prep_during];
+cells6 [style=filled, fillcolor=white, label=cells];
+specialized4 [style=filled, fillcolor=white, label=specialized];
+cells6 -> specialized4  [label=amod];
+mesenchymal5 [style=filled, fillcolor=white, label=mesenchymal];
+cells6 -> mesenchymal5  [label=amod];
+populate7 -> cells6  [label=nsubj];
+populate7 -> populate7  [label=root];
+skin9 [style=filled, fillcolor=white, label=skin];
+the8 [style=filled, fillcolor=white, label=the];
+skin9 -> the8  [label=det];
+populate7 -> skin9  [label=dobj];
+spatially12 [style=filled, fillcolor=white, label=spatially];
+a11 [style=filled, fillcolor=white, label=a];
+spatially12 -> a11  [label=det];
+skin9 -> spatially12  [label=prep_in];
+defined13 [style=filled, fillcolor=white, label=defined];
+spatially12 -> defined13  [label=vmod];
+pattern14 [style=filled, fillcolor=white, label=pattern];
+defined13 -> pattern14  [label=dobj];
+initiate16 [style=filled, fillcolor=white, label=initiate];
+to15 [style=filled, fillcolor=white, label=to];
+initiate16 -> to15  [label=aux];
+defined13 -> initiate16  [label=vmod];
+crosstalk20 [style=filled, fillcolor=white, label=crosstalk];
+the17 [style=filled, fillcolor=white, label=the];
+crosstalk20 -> the17  [label=det];
+complex18 [style=filled, fillcolor=white, label=complex];
+crosstalk20 -> complex18  [label=amod];
+"epithelial-mesenchymal19" [style=filled, fillcolor=white, label="epithelial-mesenchymal"];
+crosstalk20 -> "epithelial-mesenchymal19"  [label=amod];
+initiate16 -> crosstalk20  [label=dobj];
+specify23 [style=filled, fillcolor=white, label=specify];
+that21 [style=filled, fillcolor=white, label=that];
+specify23 -> that21  [label=nsubj];
+will22 [style=filled, fillcolor=white, label=will];
+specify23 -> will22  [label=aux];
+crosstalk20 -> specify23  [label=rcmod];
+bud25 [style=filled, fillcolor=white, label=bud];
+the24 [style=filled, fillcolor=white, label=the];
+bud25 -> the24  [label=det];
+specify23 -> bud25  [label=dobj];
+"-LSB-26" [style=filled, fillcolor=white, label="-LSB-"];
+bud25 -> "-LSB-26"  [label=vmod];
+"-RSB-28" [style=filled, fillcolor=white, label="-RSB-"];
+327 [style=filled, fillcolor=white, label=3];
+"-RSB-28" -> 327  [label=number];
+"-LSB-26" -> "-RSB-28"  [label=dobj];
+}

@@ -1,0 +1,51 @@
+digraph "We need a much deeper analysis of the molecular mechanisms underlying Ras regulation and effector engagement before we can expect to interfere with these mechanisms effectively ." {
+label="We need a much deeper analysis of the molecular mechanisms underlying Ras
+regulation and effector engagement before we can expect to interfere with these
+mechanisms effectively .";
+need2 [style=filled, fillcolor=white, label=need];
+We1 [style=filled, fillcolor=white, label=We];
+need2 -> We1  [label=nsubj];
+need2 -> need2  [label=root];
+analysis6 [style=filled, fillcolor=white, label=analysis];
+a3 [style=filled, fillcolor=white, label=a];
+analysis6 -> a3  [label=det];
+deeper5 [style=filled, fillcolor=white, label=deeper];
+much4 [style=filled, fillcolor=white, label=much];
+deeper5 -> much4  [label=advmod];
+analysis6 -> deeper5  [label=amod];
+need2 -> analysis6  [label=dobj];
+regulation13 [style=filled, fillcolor=white, label=regulation];
+the8 [style=filled, fillcolor=white, label=the];
+regulation13 -> the8  [label=det];
+molecular9 [style=filled, fillcolor=white, label=molecular];
+regulation13 -> molecular9  [label=amod];
+mechanisms10 [style=filled, fillcolor=white, label=mechanisms];
+regulation13 -> mechanisms10  [label=nn];
+underlying11 [style=filled, fillcolor=white, label=underlying];
+regulation13 -> underlying11  [label=amod];
+Ras12 [style=filled, fillcolor=white, label=Ras];
+regulation13 -> Ras12  [label=nn];
+analysis6 -> regulation13  [label=prep_of];
+engagement16 [style=filled, fillcolor=white, label=engagement];
+effector15 [style=filled, fillcolor=white, label=effector];
+engagement16 -> effector15  [label=nn];
+regulation13 -> engagement16  [label=conj_and];
+expect20 [style=filled, fillcolor=white, label=expect];
+before17 [style=filled, fillcolor=white, label=before];
+expect20 -> before17  [label=mark];
+we18 [style=filled, fillcolor=white, label=we];
+expect20 -> we18  [label=nsubj];
+can19 [style=filled, fillcolor=white, label=can];
+expect20 -> can19  [label=aux];
+need2 -> expect20  [label=advcl];
+interfere22 [style=filled, fillcolor=white, label=interfere];
+to21 [style=filled, fillcolor=white, label=to];
+interfere22 -> to21  [label=aux];
+expect20 -> interfere22  [label=xcomp];
+mechanisms25 [style=filled, fillcolor=white, label=mechanisms];
+these24 [style=filled, fillcolor=white, label=these];
+mechanisms25 -> these24  [label=det];
+interfere22 -> mechanisms25  [label=prep_with];
+effectively26 [style=filled, fillcolor=white, label=effectively];
+interfere22 -> effectively26  [label=advmod];
+}

@@ -1,0 +1,38 @@
+digraph "In both LM2 and JF32 cells ,  increased Akt phosphorylation corresponded to more phosphorylation of the Akt substrate ,  pGSK-3β ( Figure 9H and 9I ) ." {
+label="In both LM2 and JF32 cells ,  increased Akt phosphorylation corresponded to
+more phosphorylation of the Akt substrate ,  pGSK-3β ( Figure 9H and 9I ) .";
+cells6 [style=filled, fillcolor=white, label=cells];
+both2 [style=filled, fillcolor=white, label=both];
+cells6 -> both2  [label=preconj];
+LM23 [style=filled, fillcolor=white, label=LM2];
+cells6 -> LM23  [label=nn];
+JF325 [style=filled, fillcolor=white, label=JF32];
+LM23 -> JF325  [label=conj_and];
+corresponded11 [style=filled, fillcolor=white, label=corresponded];
+corresponded11 -> cells6  [label=prep_in];
+phosphorylation10 [style=filled, fillcolor=white, label=phosphorylation];
+increased8 [style=filled, fillcolor=white, label=increased];
+phosphorylation10 -> increased8  [label=amod];
+Akt9 [style=filled, fillcolor=white, label=Akt];
+phosphorylation10 -> Akt9  [label=nn];
+corresponded11 -> phosphorylation10  [label=nsubj];
+corresponded11 -> corresponded11  [label=root];
+phosphorylation14 [style=filled, fillcolor=white, label=phosphorylation];
+more13 [style=filled, fillcolor=white, label=more];
+phosphorylation14 -> more13  [label=amod];
+corresponded11 -> phosphorylation14  [label=prep_to];
+substrate18 [style=filled, fillcolor=white, label=substrate];
+the16 [style=filled, fillcolor=white, label=the];
+substrate18 -> the16  [label=det];
+Akt17 [style=filled, fillcolor=white, label=Akt];
+substrate18 -> Akt17  [label=nn];
+phosphorylation14 -> substrate18  [label=prep_of];
+"pGSK-3β20" [style=filled, fillcolor=white, label="pGSK-3β"];
+corresponded11 -> "pGSK-3β20"  [label=acomp];
+Figure22 [style=filled, fillcolor=white, label=Figure];
+"pGSK-3β20" -> Figure22  [label=dep];
+"9H23" [style=filled, fillcolor=white, label="9H"];
+Figure22 -> "9H23"  [label=num];
+"9I25" [style=filled, fillcolor=white, label="9I"];
+"9H23" -> "9I25"  [label=conj_and];
+}

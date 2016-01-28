@@ -1,0 +1,28 @@
+digraph "Thereafter ,  Snail promoter activity rapidly returned to the basal levels seen in unstimulated keratinocytes ." {
+label="Thereafter ,  Snail promoter activity rapidly returned to the basal levels seen
+in unstimulated keratinocytes .";
+returned7 [style=filled, fillcolor=white, label=returned];
+Thereafter1 [style=filled, fillcolor=white, label=Thereafter];
+returned7 -> Thereafter1  [label=advmod];
+activity5 [style=filled, fillcolor=white, label=activity];
+Snail3 [style=filled, fillcolor=white, label=Snail];
+activity5 -> Snail3  [label=nn];
+promoter4 [style=filled, fillcolor=white, label=promoter];
+activity5 -> promoter4  [label=nn];
+returned7 -> activity5  [label=nsubj];
+rapidly6 [style=filled, fillcolor=white, label=rapidly];
+returned7 -> rapidly6  [label=advmod];
+returned7 -> returned7  [label=root];
+levels11 [style=filled, fillcolor=white, label=levels];
+the9 [style=filled, fillcolor=white, label=the];
+levels11 -> the9  [label=det];
+basal10 [style=filled, fillcolor=white, label=basal];
+levels11 -> basal10  [label=amod];
+returned7 -> levels11  [label=prep_to];
+seen12 [style=filled, fillcolor=white, label=seen];
+levels11 -> seen12  [label=vmod];
+keratinocytes15 [style=filled, fillcolor=white, label=keratinocytes];
+unstimulated14 [style=filled, fillcolor=white, label=unstimulated];
+keratinocytes15 -> unstimulated14  [label=amod];
+seen12 -> keratinocytes15  [label=prep_in];
+}

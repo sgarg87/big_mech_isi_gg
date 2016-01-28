@@ -1,0 +1,53 @@
+digraph "In cells transfected with wild-type EGFR ,  MEK inhibition led to feedback activation of phospho-ERBB3 and phosho-EGFR ,  recapitulating the results we had observed in our panel of cancer cell lines ( Figure 6A ) ." {
+label="In cells transfected with wild-type EGFR ,  MEK inhibition led to feedback
+activation of phospho-ERBB3 and phosho-EGFR ,  recapitulating the results we had
+observed in our panel of cancer cell lines ( Figure 6A ) .";
+led10 [style=filled, fillcolor=white, label=led];
+cells2 [style=filled, fillcolor=white, label=cells];
+led10 -> cells2  [label=prep_in];
+transfected3 [style=filled, fillcolor=white, label=transfected];
+cells2 -> transfected3  [label=vmod];
+EGFR6 [style=filled, fillcolor=white, label=EGFR];
+"wild-type5" [style=filled, fillcolor=white, label="wild-type"];
+EGFR6 -> "wild-type5"  [label=amod];
+transfected3 -> EGFR6  [label=prep_with];
+inhibition9 [style=filled, fillcolor=white, label=inhibition];
+MEK8 [style=filled, fillcolor=white, label=MEK];
+inhibition9 -> MEK8  [label=nn];
+led10 -> inhibition9  [label=nsubj];
+led10 -> led10  [label=root];
+activation13 [style=filled, fillcolor=white, label=activation];
+feedback12 [style=filled, fillcolor=white, label=feedback];
+activation13 -> feedback12  [label=nn];
+led10 -> activation13  [label=prep_to];
+"phospho-ERBB315" [style=filled, fillcolor=white, label="phospho-ERBB3"];
+activation13 -> "phospho-ERBB315"  [label=prep_of];
+"phosho-EGFR17" [style=filled, fillcolor=white, label="phosho-EGFR"];
+"phospho-ERBB315" -> "phosho-EGFR17"  [label=conj_and];
+recapitulating19 [style=filled, fillcolor=white, label=recapitulating];
+led10 -> recapitulating19  [label=xcomp];
+results21 [style=filled, fillcolor=white, label=results];
+the20 [style=filled, fillcolor=white, label=the];
+results21 -> the20  [label=det];
+recapitulating19 -> results21  [label=dobj];
+observed24 [style=filled, fillcolor=white, label=observed];
+we22 [style=filled, fillcolor=white, label=we];
+observed24 -> we22  [label=nsubj];
+had23 [style=filled, fillcolor=white, label=had];
+observed24 -> had23  [label=aux];
+results21 -> observed24  [label=rcmod];
+panel27 [style=filled, fillcolor=white, label=panel];
+our26 [style=filled, fillcolor=white, label=our];
+panel27 -> our26  [label=poss];
+observed24 -> panel27  [label=prep_in];
+lines31 [style=filled, fillcolor=white, label=lines];
+cancer29 [style=filled, fillcolor=white, label=cancer];
+lines31 -> cancer29  [label=nn];
+cell30 [style=filled, fillcolor=white, label=cell];
+lines31 -> cell30  [label=nn];
+panel27 -> lines31  [label=prep_of];
+Figure33 [style=filled, fillcolor=white, label=Figure];
+lines31 -> Figure33  [label=appos];
+"6A34" [style=filled, fillcolor=white, label="6A"];
+Figure33 -> "6A34"  [label=num];
+}

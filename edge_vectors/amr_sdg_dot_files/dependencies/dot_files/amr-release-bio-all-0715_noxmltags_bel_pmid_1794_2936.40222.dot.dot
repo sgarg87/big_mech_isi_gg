@@ -1,0 +1,36 @@
+digraph "Additionally ,  IL-1R -- / -- tumor tissue had less IL-12p70 and more TGFh and IFNg than tumor tissue from wild-type BALB/c mice ." {
+label="Additionally ,  IL-1R -- / -- tumor tissue had less IL-12p70 and more TGFh and
+IFNg than tumor tissue from wild-type BALB/c mice .";
+had9 [style=filled, fillcolor=white, label=had];
+Additionally1 [style=filled, fillcolor=white, label=Additionally];
+had9 -> Additionally1  [label=advmod];
+"IL-1R3" [style=filled, fillcolor=white, label="IL-1R"];
+had9 -> "IL-1R3"  [label=nsubj];
+"/5" [style=filled, fillcolor=white, label="/"];
+"IL-1R3" -> "/5"  [label=dep];
+tissue8 [style=filled, fillcolor=white, label=tissue];
+tumor7 [style=filled, fillcolor=white, label=tumor];
+tissue8 -> tumor7  [label=nn];
+"/5" -> tissue8  [label=dep];
+had9 -> had9  [label=root];
+"IL-12p70" [style=filled, fillcolor=white, label="IL-12p70"];
+less10 [style=filled, fillcolor=white, label=less];
+"IL-12p70" -> less10  [label=advmod];
+TGFh14 [style=filled, fillcolor=white, label=TGFh];
+TGFh14 -> "IL-12p70"  [label=amod];
+more13 [style=filled, fillcolor=white, label=more];
+"IL-12p70" -> more13  [label=conj_and];
+had9 -> TGFh14  [label=dobj];
+IFNg16 [style=filled, fillcolor=white, label=IFNg];
+TGFh14 -> IFNg16  [label=conj_and];
+tissue19 [style=filled, fillcolor=white, label=tissue];
+tumor18 [style=filled, fillcolor=white, label=tumor];
+tissue19 -> tumor18  [label=nn];
+had9 -> tissue19  [label=prep_than];
+mice23 [style=filled, fillcolor=white, label=mice];
+"wild-type21" [style=filled, fillcolor=white, label="wild-type"];
+mice23 -> "wild-type21"  [label=amod];
+"BALB/c22" [style=filled, fillcolor=white, label="BALB/c"];
+mice23 -> "BALB/c22"  [label=amod];
+had9 -> mice23  [label=prep_from];
+}

@@ -1,0 +1,26 @@
+digraph "Similar results were found following treatment with the MEK inhibitor AZD6244 ( not shown ) ." {
+label="Similar results were found following treatment with the MEK inhibitor AZD6244 (
+not shown ) .";
+results2 [style=filled, fillcolor=white, label=results];
+Similar1 [style=filled, fillcolor=white, label=Similar];
+results2 -> Similar1  [label=amod];
+found4 [style=filled, fillcolor=white, label=found];
+found4 -> results2  [label=nsubjpass];
+were3 [style=filled, fillcolor=white, label=were];
+found4 -> were3  [label=auxpass];
+found4 -> found4  [label=root];
+treatment6 [style=filled, fillcolor=white, label=treatment];
+found4 -> treatment6  [label=prep_following];
+AZD624411 [style=filled, fillcolor=white, label=AZD6244];
+the8 [style=filled, fillcolor=white, label=the];
+AZD624411 -> the8  [label=det];
+MEK9 [style=filled, fillcolor=white, label=MEK];
+AZD624411 -> MEK9  [label=nn];
+inhibitor10 [style=filled, fillcolor=white, label=inhibitor];
+AZD624411 -> inhibitor10  [label=nn];
+treatment6 -> AZD624411  [label=prep_with];
+shown14 [style=filled, fillcolor=white, label=shown];
+not13 [style=filled, fillcolor=white, label=not];
+shown14 -> not13  [label=neg];
+AZD624411 -> shown14  [label=dep];
+}

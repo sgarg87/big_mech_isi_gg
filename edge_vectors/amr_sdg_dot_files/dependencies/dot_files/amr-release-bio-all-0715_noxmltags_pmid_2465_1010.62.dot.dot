@@ -1,0 +1,28 @@
+digraph "However ,  surprisingly ,  K-Ras-G13D-bearing colorectal cancers may show clinical benefit when treated with cetuximab ." {
+label="However ,  surprisingly ,  K-Ras-G13D-bearing colorectal cancers may show
+clinical benefit when treated with cetuximab .";
+show9 [style=filled, fillcolor=white, label=show];
+However1 [style=filled, fillcolor=white, label=However];
+show9 -> However1  [label=advmod];
+surprisingly3 [style=filled, fillcolor=white, label=surprisingly];
+show9 -> surprisingly3  [label=advmod];
+cancers7 [style=filled, fillcolor=white, label=cancers];
+"K-Ras-G13D-bearing5" [style=filled, fillcolor=white, label="K-Ras-G13D-bearing"];
+cancers7 -> "K-Ras-G13D-bearing5"  [label=nn];
+colorectal6 [style=filled, fillcolor=white, label=colorectal];
+cancers7 -> colorectal6  [label=nn];
+show9 -> cancers7  [label=nsubj];
+may8 [style=filled, fillcolor=white, label=may];
+show9 -> may8  [label=aux];
+show9 -> show9  [label=root];
+benefit11 [style=filled, fillcolor=white, label=benefit];
+clinical10 [style=filled, fillcolor=white, label=clinical];
+benefit11 -> clinical10  [label=amod];
+show9 -> benefit11  [label=dobj];
+treated13 [style=filled, fillcolor=white, label=treated];
+when12 [style=filled, fillcolor=white, label=when];
+treated13 -> when12  [label=advmod];
+show9 -> treated13  [label=advcl];
+cetuximab15 [style=filled, fillcolor=white, label=cetuximab];
+treated13 -> cetuximab15  [label=prep_with];
+}

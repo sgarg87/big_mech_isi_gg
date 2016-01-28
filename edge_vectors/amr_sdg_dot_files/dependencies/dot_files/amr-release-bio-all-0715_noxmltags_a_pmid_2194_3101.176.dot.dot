@@ -1,0 +1,51 @@
+digraph "Notably ,  an extra band of lower molecular weight is detected for RhoA in Caco-BR and DLD-1 cells ,  which potentially represents the main active GTPase form ( Figure 4A ) ." {
+label="Notably ,  an extra band of lower molecular weight is detected for RhoA in
+Caco-BR and DLD-1 cells ,  which potentially represents the main active GTPase
+form ( Figure 4A ) .";
+detected11 [style=filled, fillcolor=white, label=detected];
+Notably1 [style=filled, fillcolor=white, label=Notably];
+detected11 -> Notably1  [label=advmod];
+band5 [style=filled, fillcolor=white, label=band];
+an3 [style=filled, fillcolor=white, label=an];
+band5 -> an3  [label=det];
+extra4 [style=filled, fillcolor=white, label=extra];
+band5 -> extra4  [label=amod];
+detected11 -> band5  [label=nsubjpass];
+weight9 [style=filled, fillcolor=white, label=weight];
+lower7 [style=filled, fillcolor=white, label=lower];
+weight9 -> lower7  [label=amod];
+molecular8 [style=filled, fillcolor=white, label=molecular];
+weight9 -> molecular8  [label=amod];
+band5 -> weight9  [label=prep_of];
+is10 [style=filled, fillcolor=white, label=is];
+detected11 -> is10  [label=auxpass];
+detected11 -> detected11  [label=root];
+RhoA13 [style=filled, fillcolor=white, label=RhoA];
+detected11 -> RhoA13  [label=prep_for];
+cells18 [style=filled, fillcolor=white, label=cells];
+"Caco-BR15" [style=filled, fillcolor=white, label="Caco-BR"];
+cells18 -> "Caco-BR15"  [label=amod];
+"DLD-17" [style=filled, fillcolor=white, label="DLD-1"];
+"Caco-BR15" -> "DLD-17"  [label=conj_and];
+detected11 -> cells18  [label=prep_in];
+represents22 [style=filled, fillcolor=white, label=represents];
+which20 [style=filled, fillcolor=white, label=which];
+represents22 -> which20  [label=nsubj];
+potentially21 [style=filled, fillcolor=white, label=potentially];
+represents22 -> potentially21  [label=advmod];
+cells18 -> represents22  [label=rcmod];
+form27 [style=filled, fillcolor=white, label=form];
+the23 [style=filled, fillcolor=white, label=the];
+form27 -> the23  [label=det];
+main24 [style=filled, fillcolor=white, label=main];
+form27 -> main24  [label=amod];
+active25 [style=filled, fillcolor=white, label=active];
+form27 -> active25  [label=amod];
+GTPase26 [style=filled, fillcolor=white, label=GTPase];
+form27 -> GTPase26  [label=nn];
+represents22 -> form27  [label=dobj];
+Figure29 [style=filled, fillcolor=white, label=Figure];
+form27 -> Figure29  [label=appos];
+"4A30" [style=filled, fillcolor=white, label="4A"];
+Figure29 -> "4A30"  [label=num];
+}

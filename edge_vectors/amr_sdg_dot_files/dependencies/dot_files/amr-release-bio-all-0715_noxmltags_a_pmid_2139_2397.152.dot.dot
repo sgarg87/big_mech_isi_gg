@@ -1,0 +1,24 @@
+digraph "The efficiency of transfection was verified by immunoblotting as well ( Figure 3B ) ." {
+label="The efficiency of transfection was verified by immunoblotting as well ( Figure
+3B ) .";
+efficiency2 [style=filled, fillcolor=white, label=efficiency];
+The1 [style=filled, fillcolor=white, label=The];
+efficiency2 -> The1  [label=det];
+verified6 [style=filled, fillcolor=white, label=verified];
+verified6 -> efficiency2  [label=nsubjpass];
+transfection4 [style=filled, fillcolor=white, label=transfection];
+efficiency2 -> transfection4  [label=prep_of];
+was5 [style=filled, fillcolor=white, label=was];
+verified6 -> was5  [label=auxpass];
+verified6 -> verified6  [label=root];
+immunoblotting8 [style=filled, fillcolor=white, label=immunoblotting];
+verified6 -> immunoblotting8  [label=agent];
+well10 [style=filled, fillcolor=white, label=well];
+as9 [style=filled, fillcolor=white, label=as];
+well10 -> as9  [label=advmod];
+immunoblotting8 -> well10  [label=advmod];
+Figure12 [style=filled, fillcolor=white, label=Figure];
+well10 -> Figure12  [label=dep];
+"3B1" [style=filled, fillcolor=white, label="3B"];
+Figure12 -> "3B1"  [label=num];
+}

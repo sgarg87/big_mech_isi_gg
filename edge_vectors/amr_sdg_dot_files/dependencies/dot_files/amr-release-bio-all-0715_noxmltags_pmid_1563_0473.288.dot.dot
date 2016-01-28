@@ -1,0 +1,51 @@
+digraph "The pCRII-TOPO TA vector containing a region of the 3 ′ UTR of Snail was used as a template to generate digoxigenin-labeled sense and antisense riboprobes ( Roche ) ." {
+label="The pCRII-TOPO TA vector containing a region of the 3 ′ UTR of Snail was used
+as a template to generate digoxigenin-labeled sense and antisense riboprobes (
+Roche ) .";
+vector4 [style=filled, fillcolor=white, label=vector];
+The1 [style=filled, fillcolor=white, label=The];
+vector4 -> The1  [label=det];
+"pCRII-TOPO2" [style=filled, fillcolor=white, label="pCRII-TOPO"];
+vector4 -> "pCRII-TOPO2"  [label=amod];
+TA3 [style=filled, fillcolor=white, label=TA];
+vector4 -> TA3  [label=nn];
+used16 [style=filled, fillcolor=white, label=used];
+used16 -> vector4  [label=nsubjpass];
+containing5 [style=filled, fillcolor=white, label=containing];
+vector4 -> containing5  [label=vmod];
+region7 [style=filled, fillcolor=white, label=region];
+a6 [style=filled, fillcolor=white, label=a];
+region7 -> a6  [label=det];
+containing5 -> region7  [label=dobj];
+UTR12 [style=filled, fillcolor=white, label=UTR];
+the9 [style=filled, fillcolor=white, label=the];
+UTR12 -> the9  [label=det];
+310 [style=filled, fillcolor=white, label=3];
+UTR12 -> 310  [label=num];
+"′11" [style=filled, fillcolor=white, label="′"];
+UTR12 -> "′11"  [label=nn];
+region7 -> UTR12  [label=prep_of];
+Snail14 [style=filled, fillcolor=white, label=Snail];
+UTR12 -> Snail14  [label=prep_of];
+was15 [style=filled, fillcolor=white, label=was];
+used16 -> was15  [label=auxpass];
+used16 -> used16  [label=root];
+template19 [style=filled, fillcolor=white, label=template];
+a18 [style=filled, fillcolor=white, label=a];
+template19 -> a18  [label=det];
+used16 -> template19  [label=prep_as];
+generate21 [style=filled, fillcolor=white, label=generate];
+to20 [style=filled, fillcolor=white, label=to];
+generate21 -> to20  [label=aux];
+used16 -> generate21  [label=xcomp];
+sense23 [style=filled, fillcolor=white, label=sense];
+"digoxigenin-labeled22" [style=filled, fillcolor=white, label="digoxigenin-labeled"];
+sense23 -> "digoxigenin-labeled22"  [label=amod];
+generate21 -> sense23  [label=dobj];
+riboprobes26 [style=filled, fillcolor=white, label=riboprobes];
+antisense25 [style=filled, fillcolor=white, label=antisense];
+riboprobes26 -> antisense25  [label=nn];
+sense23 -> riboprobes26  [label=conj_and];
+Roche28 [style=filled, fillcolor=white, label=Roche];
+sense23 -> Roche28  [label=appos];
+}

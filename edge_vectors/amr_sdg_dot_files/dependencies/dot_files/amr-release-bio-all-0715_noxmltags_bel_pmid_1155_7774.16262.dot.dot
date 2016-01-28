@@ -1,0 +1,39 @@
+digraph "Furthermore ,  it has been shown that activation of PPARg by the thiozolidinedione ,  rosiglitazaone ,  decreased scavenger receptor class A expresion ." {
+label="Furthermore ,  it has been shown that activation of PPARg by the
+thiozolidinedione ,  rosiglitazaone ,  decreased scavenger receptor class A
+expresion .";
+shown6 [style=filled, fillcolor=white, label=shown];
+Furthermore1 [style=filled, fillcolor=white, label=Furthermore];
+shown6 -> Furthermore1  [label=advmod];
+it3 [style=filled, fillcolor=white, label=it];
+shown6 -> it3  [label=nsubjpass];
+has4 [style=filled, fillcolor=white, label=has];
+shown6 -> has4  [label=aux];
+been5 [style=filled, fillcolor=white, label=been];
+shown6 -> been5  [label=auxpass];
+shown6 -> shown6  [label=root];
+activation8 [style=filled, fillcolor=white, label=activation];
+that7 [style=filled, fillcolor=white, label=that];
+activation8 -> that7  [label=det];
+shown6 -> activation8  [label=dobj];
+PPARg10 [style=filled, fillcolor=white, label=PPARg];
+activation8 -> PPARg10  [label=prep_of];
+class20 [style=filled, fillcolor=white, label=class];
+the12 [style=filled, fillcolor=white, label=the];
+class20 -> the12  [label=det];
+thiozolidinedione13 [style=filled, fillcolor=white, label=thiozolidinedione];
+class20 -> thiozolidinedione13  [label=amod];
+rosiglitazaone15 [style=filled, fillcolor=white, label=rosiglitazaone];
+class20 -> rosiglitazaone15  [label=amod];
+decreased17 [style=filled, fillcolor=white, label=decreased];
+class20 -> decreased17  [label=amod];
+scavenger18 [style=filled, fillcolor=white, label=scavenger];
+class20 -> scavenger18  [label=nn];
+receptor19 [style=filled, fillcolor=white, label=receptor];
+class20 -> receptor19  [label=nn];
+shown6 -> class20  [label=agent];
+expresion22 [style=filled, fillcolor=white, label=expresion];
+A21 [style=filled, fillcolor=white, label=A];
+expresion22 -> A21  [label=det];
+class20 -> expresion22  [label=dep];
+}

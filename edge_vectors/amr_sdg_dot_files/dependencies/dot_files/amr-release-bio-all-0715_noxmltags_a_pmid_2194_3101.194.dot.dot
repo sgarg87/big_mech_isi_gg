@@ -1,0 +1,53 @@
+digraph "Alternative regulation of RhoA through the PI3K pathway was analysed in Caco-BR cells ,  and a mild effect on RhoA downstream components like p-Cofilin and p-Myl was observed ( Figure 5E ,  lower panel ) ." {
+label="Alternative regulation of RhoA through the PI3K pathway was analysed in Caco-BR
+cells ,  and a mild effect on RhoA downstream components like p-Cofilin and
+p-Myl was observed ( Figure 5E ,  lower panel ) .";
+regulation2 [style=filled, fillcolor=white, label=regulation];
+Alternative1 [style=filled, fillcolor=white, label=Alternative];
+regulation2 -> Alternative1  [label=nn];
+analysed10 [style=filled, fillcolor=white, label=analysed];
+analysed10 -> regulation2  [label=nsubjpass];
+RhoA4 [style=filled, fillcolor=white, label=RhoA];
+regulation2 -> RhoA4  [label=prep_of];
+pathway8 [style=filled, fillcolor=white, label=pathway];
+the6 [style=filled, fillcolor=white, label=the];
+pathway8 -> the6  [label=det];
+PI3K7 [style=filled, fillcolor=white, label=PI3K];
+pathway8 -> PI3K7  [label=nn];
+RhoA4 -> pathway8  [label=prep_through];
+was9 [style=filled, fillcolor=white, label=was];
+analysed10 -> was9  [label=auxpass];
+analysed10 -> analysed10  [label=root];
+cells13 [style=filled, fillcolor=white, label=cells];
+"Caco-BR12" [style=filled, fillcolor=white, label="Caco-BR"];
+cells13 -> "Caco-BR12"  [label=amod];
+analysed10 -> cells13  [label=prep_in];
+effect18 [style=filled, fillcolor=white, label=effect];
+a16 [style=filled, fillcolor=white, label=a];
+effect18 -> a16  [label=det];
+mild17 [style=filled, fillcolor=white, label=mild];
+effect18 -> mild17  [label=amod];
+observed28 [style=filled, fillcolor=white, label=observed];
+observed28 -> effect18  [label=nsubj];
+components22 [style=filled, fillcolor=white, label=components];
+RhoA20 [style=filled, fillcolor=white, label=RhoA];
+components22 -> RhoA20  [label=nn];
+downstream21 [style=filled, fillcolor=white, label=downstream];
+components22 -> downstream21  [label=amod];
+effect18 -> components22  [label=prep_on];
+"p-Cofilin24" [style=filled, fillcolor=white, label="p-Cofilin"];
+components22 -> "p-Cofilin24"  [label=prep_like];
+"p-Myl26" [style=filled, fillcolor=white, label="p-Myl"];
+"p-Cofilin24" -> "p-Myl26"  [label=conj_and];
+was27 [style=filled, fillcolor=white, label=was];
+observed28 -> was27  [label=cop];
+analysed10 -> observed28  [label=conj_and];
+Figure30 [style=filled, fillcolor=white, label=Figure];
+observed28 -> Figure30  [label=dep];
+"5E31" [style=filled, fillcolor=white, label="5E"];
+Figure30 -> "5E31"  [label=num];
+panel34 [style=filled, fillcolor=white, label=panel];
+lower33 [style=filled, fillcolor=white, label=lower];
+panel34 -> lower33  [label=amod];
+Figure30 -> panel34  [label=appos];
+}

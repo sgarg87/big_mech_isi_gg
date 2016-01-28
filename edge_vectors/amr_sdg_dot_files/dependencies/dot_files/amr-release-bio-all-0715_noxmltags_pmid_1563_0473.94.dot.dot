@@ -1,0 +1,42 @@
+digraph "Interestingly ,  similar types of alterations occur in the basement membrane in the hair bud of embryonic and newborn mice when Snail is normally expressed ." {
+label="Interestingly ,  similar types of alterations occur in the basement membrane in
+the hair bud of embryonic and newborn mice when Snail is normally expressed .";
+occur7 [style=filled, fillcolor=white, label=occur];
+Interestingly1 [style=filled, fillcolor=white, label=Interestingly];
+occur7 -> Interestingly1  [label=advmod];
+types4 [style=filled, fillcolor=white, label=types];
+similar3 [style=filled, fillcolor=white, label=similar];
+types4 -> similar3  [label=amod];
+occur7 -> types4  [label=nsubj];
+alterations6 [style=filled, fillcolor=white, label=alterations];
+types4 -> alterations6  [label=prep_of];
+occur7 -> occur7  [label=root];
+membrane11 [style=filled, fillcolor=white, label=membrane];
+the9 [style=filled, fillcolor=white, label=the];
+membrane11 -> the9  [label=det];
+basement10 [style=filled, fillcolor=white, label=basement];
+membrane11 -> basement10  [label=nn];
+occur7 -> membrane11  [label=prep_in];
+bud15 [style=filled, fillcolor=white, label=bud];
+the13 [style=filled, fillcolor=white, label=the];
+bud15 -> the13  [label=det];
+hair14 [style=filled, fillcolor=white, label=hair];
+bud15 -> hair14  [label=nn];
+membrane11 -> bud15  [label=prep_in];
+mice20 [style=filled, fillcolor=white, label=mice];
+embryonic17 [style=filled, fillcolor=white, label=embryonic];
+mice20 -> embryonic17  [label=amod];
+newborn19 [style=filled, fillcolor=white, label=newborn];
+embryonic17 -> newborn19  [label=conj_and];
+bud15 -> mice20  [label=prep_of];
+expressed25 [style=filled, fillcolor=white, label=expressed];
+when21 [style=filled, fillcolor=white, label=when];
+expressed25 -> when21  [label=advmod];
+Snail22 [style=filled, fillcolor=white, label=Snail];
+expressed25 -> Snail22  [label=nsubjpass];
+is23 [style=filled, fillcolor=white, label=is];
+expressed25 -> is23  [label=auxpass];
+normally24 [style=filled, fillcolor=white, label=normally];
+expressed25 -> normally24  [label=advmod];
+occur7 -> expressed25  [label=advcl];
+}

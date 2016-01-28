@@ -1,0 +1,34 @@
+digraph "IL-2-mediated hetero-dimerization of its receptor triggers a rapid increase in the recruitment of Jak3 and activation of both Jak1 and Jak3" {
+label="IL-2-mediated hetero-dimerization of its receptor triggers a rapid increase in
+the recruitment of Jak3 and activation of both Jak1 and Jak3";
+"hetero-dimerization2" [style=filled, fillcolor=white, label="hetero-dimerization"];
+"IL-2-mediated1" [style=filled, fillcolor=white, label="IL-2-mediated"];
+"hetero-dimerization2" -> "IL-2-mediated1"  [label=amod];
+triggers6 [style=filled, fillcolor=white, label=triggers];
+triggers6 -> "hetero-dimerization2"  [label=nsubj];
+receptor5 [style=filled, fillcolor=white, label=receptor];
+its4 [style=filled, fillcolor=white, label=its];
+receptor5 -> its4  [label=poss];
+"hetero-dimerization2" -> receptor5  [label=prep_of];
+triggers6 -> triggers6  [label=root];
+increase9 [style=filled, fillcolor=white, label=increase];
+a7 [style=filled, fillcolor=white, label=a];
+increase9 -> a7  [label=det];
+rapid8 [style=filled, fillcolor=white, label=rapid];
+increase9 -> rapid8  [label=amod];
+triggers6 -> increase9  [label=dobj];
+recruitment12 [style=filled, fillcolor=white, label=recruitment];
+the11 [style=filled, fillcolor=white, label=the];
+recruitment12 -> the11  [label=det];
+increase9 -> recruitment12  [label=prep_in];
+Jak314 [style=filled, fillcolor=white, label=Jak3];
+recruitment12 -> Jak314  [label=prep_of];
+activation16 [style=filled, fillcolor=white, label=activation];
+Jak314 -> activation16  [label=conj_and];
+Jak119 [style=filled, fillcolor=white, label=Jak1];
+both18 [style=filled, fillcolor=white, label=both];
+Jak119 -> both18  [label=preconj];
+increase9 -> Jak119  [label=prep_of];
+Jak321 [style=filled, fillcolor=white, label=Jak3];
+Jak119 -> Jak321  [label=conj_and];
+}

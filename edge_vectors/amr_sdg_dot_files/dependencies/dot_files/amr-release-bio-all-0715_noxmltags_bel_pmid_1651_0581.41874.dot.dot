@@ -1,0 +1,13 @@
+digraph "FBLN-3 and FBLN-5 antagonize angiogenesis in vivo ." {
+label="FBLN-3 and FBLN-5 antagonize angiogenesis in vivo .";
+antagonize4 [style=filled, fillcolor=white, label=antagonize];
+"FBLN-31" [style=filled, fillcolor=white, label="FBLN-3"];
+antagonize4 -> "FBLN-31"  [label=amod];
+"FBLN-53" [style=filled, fillcolor=white, label="FBLN-5"];
+"FBLN-31" -> "FBLN-53"  [label=conj_and];
+angiogenesis5 [style=filled, fillcolor=white, label=angiogenesis];
+angiogenesis5 -> antagonize4  [label=nsubj];
+angiogenesis5 -> angiogenesis5  [label=root];
+vivo7 [style=filled, fillcolor=white, label=vivo];
+angiogenesis5 -> vivo7  [label=prep_in];
+}

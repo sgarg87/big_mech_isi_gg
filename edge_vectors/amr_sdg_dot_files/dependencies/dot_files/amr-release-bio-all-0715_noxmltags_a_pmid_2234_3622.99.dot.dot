@@ -1,0 +1,36 @@
+digraph "Sequence scheduling of selumetinib and the Aurora B kinase inhibitor ,  barasertib ( AZD1152 ) ,  results in tumour regression and increased cell death" {
+label="Sequence scheduling of selumetinib and the Aurora B kinase inhibitor ,
+barasertib ( AZD1152 ) ,  results in tumour regression and increased cell death";
+Sequence1 [style=filled, fillcolor=white, label=Sequence];
+Sequence1 -> Sequence1  [label=root];
+scheduling2 [style=filled, fillcolor=white, label=scheduling];
+Sequence1 -> scheduling2  [label=dobj];
+selumetinib4 [style=filled, fillcolor=white, label=selumetinib];
+scheduling2 -> selumetinib4  [label=prep_of];
+inhibitor10 [style=filled, fillcolor=white, label=inhibitor];
+the6 [style=filled, fillcolor=white, label=the];
+inhibitor10 -> the6  [label=det];
+Aurora7 [style=filled, fillcolor=white, label=Aurora];
+inhibitor10 -> Aurora7  [label=nn];
+B8 [style=filled, fillcolor=white, label=B];
+inhibitor10 -> B8  [label=nn];
+kinase9 [style=filled, fillcolor=white, label=kinase];
+inhibitor10 -> kinase9  [label=nn];
+selumetinib4 -> inhibitor10  [label=conj_and];
+barasertib12 [style=filled, fillcolor=white, label=barasertib];
+selumetinib4 -> barasertib12  [label=conj_and];
+AZD115214 [style=filled, fillcolor=white, label=AZD1152];
+barasertib12 -> AZD115214  [label=appos];
+results17 [style=filled, fillcolor=white, label=results];
+selumetinib4 -> results17  [label=conj_and];
+regression20 [style=filled, fillcolor=white, label=regression];
+tumour19 [style=filled, fillcolor=white, label=tumour];
+regression20 -> tumour19  [label=nn];
+results17 -> regression20  [label=prep_in];
+death24 [style=filled, fillcolor=white, label=death];
+increased22 [style=filled, fillcolor=white, label=increased];
+death24 -> increased22  [label=amod];
+cell23 [style=filled, fillcolor=white, label=cell];
+death24 -> cell23  [label=nn];
+selumetinib4 -> death24  [label=conj_and];
+}

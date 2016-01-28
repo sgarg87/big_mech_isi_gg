@@ -1,0 +1,34 @@
+digraph "As seen in Figure 5c ,  monoubiquitinated K-Ras is less sensitive than the unmodified protein to GAP-mediated GTP hydrolysis ." {
+label="As seen in Figure 5c ,  monoubiquitinated K-Ras is less sensitive than the
+unmodified protein to GAP-mediated GTP hydrolysis .";
+seen2 [style=filled, fillcolor=white, label=seen];
+As1 [style=filled, fillcolor=white, label=As];
+seen2 -> As1  [label=mark];
+sensitive11 [style=filled, fillcolor=white, label=sensitive];
+sensitive11 -> seen2  [label=advcl];
+"5c" [style=filled, fillcolor=white, label="5c"];
+Figure4 [style=filled, fillcolor=white, label=Figure];
+"5c" -> Figure4  [label=nn];
+seen2 -> "5c"  [label=prep_in];
+"K-Ras8" [style=filled, fillcolor=white, label="K-Ras"];
+monoubiquitinated7 [style=filled, fillcolor=white, label=monoubiquitinated];
+"K-Ras8" -> monoubiquitinated7  [label=amod];
+sensitive11 -> "K-Ras8"  [label=nsubj];
+is9 [style=filled, fillcolor=white, label=is];
+sensitive11 -> is9  [label=cop];
+less10 [style=filled, fillcolor=white, label=less];
+sensitive11 -> less10  [label=advmod];
+sensitive11 -> sensitive11  [label=root];
+protein15 [style=filled, fillcolor=white, label=protein];
+the13 [style=filled, fillcolor=white, label=the];
+protein15 -> the13  [label=det];
+unmodified14 [style=filled, fillcolor=white, label=unmodified];
+protein15 -> unmodified14  [label=amod];
+sensitive11 -> protein15  [label=prep_than];
+hydrolysis19 [style=filled, fillcolor=white, label=hydrolysis];
+"GAP-mediated17" [style=filled, fillcolor=white, label="GAP-mediated"];
+hydrolysis19 -> "GAP-mediated17"  [label=amod];
+GTP18 [style=filled, fillcolor=white, label=GTP];
+hydrolysis19 -> GTP18  [label=nn];
+sensitive11 -> hydrolysis19  [label=prep_to];
+}

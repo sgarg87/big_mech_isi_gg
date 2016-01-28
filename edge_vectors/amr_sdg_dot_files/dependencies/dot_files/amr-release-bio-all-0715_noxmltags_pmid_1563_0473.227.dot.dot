@@ -1,0 +1,49 @@
+digraph "However ,  it is intriguing that K14-Snail Tg epidermis displayed a marked down-regulation in E-cadherin expression ,  thereby demonstrating its potential to do so in skin ." {
+label="However ,  it is intriguing that K14-Snail Tg epidermis displayed a marked
+down-regulation in E-cadherin expression ,  thereby demonstrating its potential
+to do so in skin .";
+intriguing5 [style=filled, fillcolor=white, label=intriguing];
+However1 [style=filled, fillcolor=white, label=However];
+intriguing5 -> However1  [label=advmod];
+it3 [style=filled, fillcolor=white, label=it];
+intriguing5 -> it3  [label=nsubj];
+is4 [style=filled, fillcolor=white, label=is];
+intriguing5 -> is4  [label=cop];
+intriguing5 -> intriguing5  [label=root];
+displayed10 [style=filled, fillcolor=white, label=displayed];
+that6 [style=filled, fillcolor=white, label=that];
+displayed10 -> that6  [label=mark];
+epidermis9 [style=filled, fillcolor=white, label=epidermis];
+"K14-Snail7" [style=filled, fillcolor=white, label="K14-Snail"];
+epidermis9 -> "K14-Snail7"  [label=nn];
+Tg8 [style=filled, fillcolor=white, label=Tg];
+epidermis9 -> Tg8  [label=nn];
+displayed10 -> epidermis9  [label=nsubj];
+intriguing5 -> displayed10  [label=ccomp];
+"down-regulation13" [style=filled, fillcolor=white, label="down-regulation"];
+a11 [style=filled, fillcolor=white, label=a];
+"down-regulation13" -> a11  [label=det];
+marked12 [style=filled, fillcolor=white, label=marked];
+"down-regulation13" -> marked12  [label=amod];
+displayed10 -> "down-regulation13"  [label=dobj];
+expression16 [style=filled, fillcolor=white, label=expression];
+"E-cadherin15" [style=filled, fillcolor=white, label="E-cadherin"];
+expression16 -> "E-cadherin15"  [label=amod];
+"down-regulation13" -> expression16  [label=prep_in];
+demonstrating19 [style=filled, fillcolor=white, label=demonstrating];
+thereby18 [style=filled, fillcolor=white, label=thereby];
+demonstrating19 -> thereby18  [label=advmod];
+displayed10 -> demonstrating19  [label=vmod];
+potential21 [style=filled, fillcolor=white, label=potential];
+its20 [style=filled, fillcolor=white, label=its];
+potential21 -> its20  [label=poss];
+demonstrating19 -> potential21  [label=dobj];
+do23 [style=filled, fillcolor=white, label=do];
+to22 [style=filled, fillcolor=white, label=to];
+do23 -> to22  [label=aux];
+potential21 -> do23  [label=vmod];
+so24 [style=filled, fillcolor=white, label=so];
+do23 -> so24  [label=advmod];
+skin26 [style=filled, fillcolor=white, label=skin];
+do23 -> skin26  [label=prep_in];
+}

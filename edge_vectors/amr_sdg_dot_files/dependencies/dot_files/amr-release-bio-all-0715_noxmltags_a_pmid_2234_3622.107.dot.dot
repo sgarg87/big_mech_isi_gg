@@ -1,0 +1,40 @@
+digraph "Interestingly ,  the tumours in the group where barasertib was administered before selumetinib ( schedule 1 ) tumour re-growth was delayed ( Figure 5B ) ." {
+label="Interestingly ,  the tumours in the group where barasertib was administered
+before selumetinib ( schedule 1 ) tumour re-growth was delayed ( Figure 5B ) .";
+delayed21 [style=filled, fillcolor=white, label=delayed];
+Interestingly1 [style=filled, fillcolor=white, label=Interestingly];
+delayed21 -> Interestingly1  [label=advmod];
+tumours4 [style=filled, fillcolor=white, label=tumours];
+the3 [style=filled, fillcolor=white, label=the];
+tumours4 -> the3  [label=det];
+delayed21 -> tumours4  [label=nsubjpass];
+group7 [style=filled, fillcolor=white, label=group];
+the6 [style=filled, fillcolor=white, label=the];
+group7 -> the6  [label=det];
+tumours4 -> group7  [label=prep_in];
+administered11 [style=filled, fillcolor=white, label=administered];
+where8 [style=filled, fillcolor=white, label=where];
+administered11 -> where8  [label=advmod];
+barasertib9 [style=filled, fillcolor=white, label=barasertib];
+administered11 -> barasertib9  [label=nsubjpass];
+was10 [style=filled, fillcolor=white, label=was];
+administered11 -> was10  [label=auxpass];
+group7 -> administered11  [label=rcmod];
+"re-growth19" [style=filled, fillcolor=white, label="re-growth"];
+selumetinib13 [style=filled, fillcolor=white, label=selumetinib];
+"re-growth19" -> selumetinib13  [label=amod];
+schedule15 [style=filled, fillcolor=white, label=schedule];
+selumetinib13 -> schedule15  [label=dep];
+116 [style=filled, fillcolor=white, label=1];
+schedule15 -> 116  [label=num];
+tumour18 [style=filled, fillcolor=white, label=tumour];
+"re-growth19" -> tumour18  [label=nn];
+administered11 -> "re-growth19"  [label=prep_before];
+was20 [style=filled, fillcolor=white, label=was];
+delayed21 -> was20  [label=auxpass];
+delayed21 -> delayed21  [label=root];
+Figure23 [style=filled, fillcolor=white, label=Figure];
+delayed21 -> Figure23  [label=dep];
+"5B24" [style=filled, fillcolor=white, label="5B"];
+Figure23 -> "5B24"  [label=num];
+}

@@ -1,0 +1,57 @@
+digraph "When the reporter plasmids with miR-494 mimics or the scrambled oligonucleotide were cotransfected to HEK-293 cells ,  we observed that the miR-494 mimics markedly decreased the luciferase activity ( Fig. 6B ) ." {
+label="When the reporter plasmids with miR-494 mimics or the scrambled oligonucleotide
+were cotransfected to HEK-293 cells ,  we observed that the miR-494 mimics
+markedly decreased the luciferase activity ( Fig. 6B ) .";
+cotransfected13 [style=filled, fillcolor=white, label=cotransfected];
+When1 [style=filled, fillcolor=white, label=When];
+cotransfected13 -> When1  [label=advmod];
+plasmids4 [style=filled, fillcolor=white, label=plasmids];
+the2 [style=filled, fillcolor=white, label=the];
+plasmids4 -> the2  [label=det];
+reporter3 [style=filled, fillcolor=white, label=reporter];
+plasmids4 -> reporter3  [label=nn];
+cotransfected13 -> plasmids4  [label=nsubjpass];
+mimics7 [style=filled, fillcolor=white, label=mimics];
+"miR-4946" [style=filled, fillcolor=white, label="miR-494"];
+mimics7 -> "miR-4946"  [label=amod];
+plasmids4 -> mimics7  [label=prep_with];
+oligonucleotide11 [style=filled, fillcolor=white, label=oligonucleotide];
+the9 [style=filled, fillcolor=white, label=the];
+oligonucleotide11 -> the9  [label=det];
+scrambled10 [style=filled, fillcolor=white, label=scrambled];
+oligonucleotide11 -> scrambled10  [label=amod];
+mimics7 -> oligonucleotide11  [label=conj_or];
+were12 [style=filled, fillcolor=white, label=were];
+cotransfected13 -> were12  [label=auxpass];
+observed19 [style=filled, fillcolor=white, label=observed];
+observed19 -> cotransfected13  [label=advcl];
+cells16 [style=filled, fillcolor=white, label=cells];
+"HEK-29315" [style=filled, fillcolor=white, label="HEK-293"];
+cells16 -> "HEK-29315"  [label=nn];
+cotransfected13 -> cells16  [label=prep_to];
+we18 [style=filled, fillcolor=white, label=we];
+observed19 -> we18  [label=nsubj];
+observed19 -> observed19  [label=root];
+mimics23 [style=filled, fillcolor=white, label=mimics];
+that20 [style=filled, fillcolor=white, label=that];
+mimics23 -> that20  [label=mark];
+"miR-49422" [style=filled, fillcolor=white, label="miR-494"];
+the21 [style=filled, fillcolor=white, label=the];
+"miR-49422" -> the21  [label=det];
+mimics23 -> "miR-49422"  [label=nsubj];
+observed19 -> mimics23  [label=ccomp];
+decreased25 [style=filled, fillcolor=white, label=decreased];
+markedly24 [style=filled, fillcolor=white, label=markedly];
+decreased25 -> markedly24  [label=advmod];
+activity28 [style=filled, fillcolor=white, label=activity];
+activity28 -> decreased25  [label=amod];
+the26 [style=filled, fillcolor=white, label=the];
+activity28 -> the26  [label=det];
+luciferase27 [style=filled, fillcolor=white, label=luciferase];
+activity28 -> luciferase27  [label=amod];
+mimics23 -> activity28  [label=dobj];
+"6B31" [style=filled, fillcolor=white, label="6B"];
+"Fig.30" [style=filled, fillcolor=white, label="Fig."];
+"6B31" -> "Fig.30"  [label=number];
+activity28 -> "6B31"  [label=dep];
+}

@@ -1,0 +1,26 @@
+digraph "increased Erk2 protein level under BMP2 inducement comes from BMP2-up-regulated Erk2 mRNA expression ." {
+label="increased Erk2 protein level under BMP2 inducement comes from BMP2-up-regulated
+Erk2 mRNA expression .";
+level4 [style=filled, fillcolor=white, label=level];
+increased1 [style=filled, fillcolor=white, label=increased];
+level4 -> increased1  [label=amod];
+Erk2 [style=filled, fillcolor=white, label=Erk2];
+level4 -> Erk2  [label=amod];
+protein3 [style=filled, fillcolor=white, label=protein];
+level4 -> protein3  [label=nn];
+comes8 [style=filled, fillcolor=white, label=comes];
+comes8 -> level4  [label=nsubj];
+inducement7 [style=filled, fillcolor=white, label=inducement];
+BMP26 [style=filled, fillcolor=white, label=BMP2];
+inducement7 -> BMP26  [label=nn];
+level4 -> inducement7  [label=prep_under];
+comes8 -> comes8  [label=root];
+expression13 [style=filled, fillcolor=white, label=expression];
+"BMP2-up-regulated10" [style=filled, fillcolor=white, label="BMP2-up-regulated"];
+expression13 -> "BMP2-up-regulated10"  [label=amod];
+Erk211 [style=filled, fillcolor=white, label=Erk2];
+expression13 -> Erk211  [label=amod];
+mRNA12 [style=filled, fillcolor=white, label=mRNA];
+expression13 -> mRNA12  [label=nn];
+comes8 -> expression13  [label=prep_from];
+}

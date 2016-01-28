@@ -1,0 +1,28 @@
+digraph "In smooth muscle cells ,  blocking ligand occupancy of aVb3 integrin reduces IGF-1-induced IRS-1 phosphorylation" {
+label="In smooth muscle cells ,  blocking ligand occupancy of aVb3 integrin reduces
+IGF-1-induced IRS-1 phosphorylation";
+cells4 [style=filled, fillcolor=white, label=cells];
+smooth2 [style=filled, fillcolor=white, label=smooth];
+cells4 -> smooth2  [label=amod];
+muscle3 [style=filled, fillcolor=white, label=muscle];
+cells4 -> muscle3  [label=nn];
+reduces12 [style=filled, fillcolor=white, label=reduces];
+reduces12 -> cells4  [label=prep_in];
+occupancy8 [style=filled, fillcolor=white, label=occupancy];
+blocking6 [style=filled, fillcolor=white, label=blocking];
+occupancy8 -> blocking6  [label=amod];
+ligand7 [style=filled, fillcolor=white, label=ligand];
+occupancy8 -> ligand7  [label=amod];
+reduces12 -> occupancy8  [label=nsubj];
+integrin11 [style=filled, fillcolor=white, label=integrin];
+aVb310 [style=filled, fillcolor=white, label=aVb3];
+integrin11 -> aVb310  [label=amod];
+occupancy8 -> integrin11  [label=prep_of];
+reduces12 -> reduces12  [label=root];
+"IRS-14" [style=filled, fillcolor=white, label="IRS-1"];
+"IGF-1-induced3" [style=filled, fillcolor=white, label="IGF-1-induced"];
+"IRS-14" -> "IGF-1-induced3"  [label=amod];
+phosphorylation15 [style=filled, fillcolor=white, label=phosphorylation];
+phosphorylation15 -> "IRS-14"  [label=amod];
+reduces12 -> phosphorylation15  [label=dobj];
+}

@@ -1,0 +1,41 @@
+digraph "Western blot analyses also detected reduced SHIP-1 activity ,  increased AKT-1 and BAD hyper-phosphorylation and up-regulation of BCL-2 expression in splenocytes from TB mice ." {
+label="Western blot analyses also detected reduced SHIP-1 activity ,  increased AKT-1
+and BAD hyper-phosphorylation and up-regulation of BCL-2 expression in
+splenocytes from TB mice .";
+analyses3 [style=filled, fillcolor=white, label=analyses];
+Western1 [style=filled, fillcolor=white, label=Western];
+analyses3 -> Western1  [label=amod];
+blot2 [style=filled, fillcolor=white, label=blot];
+analyses3 -> blot2  [label=nn];
+detected5 [style=filled, fillcolor=white, label=detected];
+detected5 -> analyses3  [label=nsubj];
+also4 [style=filled, fillcolor=white, label=also];
+detected5 -> also4  [label=advmod];
+detected5 -> detected5  [label=root];
+activity8 [style=filled, fillcolor=white, label=activity];
+reduced6 [style=filled, fillcolor=white, label=reduced];
+activity8 -> reduced6  [label=amod];
+"SHIP-17" [style=filled, fillcolor=white, label="SHIP-1"];
+activity8 -> "SHIP-17"  [label=nn];
+detected5 -> activity8  [label=dobj];
+"AKT-1" [style=filled, fillcolor=white, label="AKT-1"];
+increased10 [style=filled, fillcolor=white, label=increased];
+"AKT-1" -> increased10  [label=amod];
+activity8 -> "AKT-1"  [label=conj_and];
+"hyper-phosphorylation14" [style=filled, fillcolor=white, label="hyper-phosphorylation"];
+BAD13 [style=filled, fillcolor=white, label=BAD];
+"hyper-phosphorylation14" -> BAD13  [label=nn];
+activity8 -> "hyper-phosphorylation14"  [label=conj_and];
+"up-regulation16" [style=filled, fillcolor=white, label="up-regulation"];
+"hyper-phosphorylation14" -> "up-regulation16"  [label=conj_and];
+expression19 [style=filled, fillcolor=white, label=expression];
+"BCL-218" [style=filled, fillcolor=white, label="BCL-2"];
+expression19 -> "BCL-218"  [label=nn];
+"hyper-phosphorylation14" -> expression19  [label=prep_of];
+splenocytes21 [style=filled, fillcolor=white, label=splenocytes];
+detected5 -> splenocytes21  [label=prep_in];
+mice24 [style=filled, fillcolor=white, label=mice];
+TB23 [style=filled, fillcolor=white, label=TB];
+mice24 -> TB23  [label=nn];
+splenocytes21 -> mice24  [label=prep_from];
+}

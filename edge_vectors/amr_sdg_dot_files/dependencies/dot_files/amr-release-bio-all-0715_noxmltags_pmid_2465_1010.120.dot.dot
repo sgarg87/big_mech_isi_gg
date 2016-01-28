@@ -1,0 +1,44 @@
+digraph "This could be achieved by targeting specific hypervariable regions at the C terminus where the Ras proteins differ most widely ( Figure 3 ) ." {
+label="This could be achieved by targeting specific hypervariable regions at the C
+terminus where the Ras proteins differ most widely ( Figure 3 ) .";
+achieved4 [style=filled, fillcolor=white, label=achieved];
+This1 [style=filled, fillcolor=white, label=This];
+achieved4 -> This1  [label=nsubjpass];
+could2 [style=filled, fillcolor=white, label=could];
+achieved4 -> could2  [label=aux];
+be3 [style=filled, fillcolor=white, label=be];
+achieved4 -> be3  [label=auxpass];
+achieved4 -> achieved4  [label=root];
+targeting6 [style=filled, fillcolor=white, label=targeting];
+achieved4 -> targeting6  [label=agent];
+regions9 [style=filled, fillcolor=white, label=regions];
+specific7 [style=filled, fillcolor=white, label=specific];
+regions9 -> specific7  [label=amod];
+hypervariable8 [style=filled, fillcolor=white, label=hypervariable];
+regions9 -> hypervariable8  [label=nn];
+targeting6 -> regions9  [label=dobj];
+terminus13 [style=filled, fillcolor=white, label=terminus];
+the11 [style=filled, fillcolor=white, label=the];
+terminus13 -> the11  [label=det];
+C12 [style=filled, fillcolor=white, label=C];
+terminus13 -> C12  [label=nn];
+targeting6 -> terminus13  [label=prep_at];
+differ18 [style=filled, fillcolor=white, label=differ];
+where14 [style=filled, fillcolor=white, label=where];
+differ18 -> where14  [label=advmod];
+proteins17 [style=filled, fillcolor=white, label=proteins];
+the15 [style=filled, fillcolor=white, label=the];
+proteins17 -> the15  [label=det];
+Ras16 [style=filled, fillcolor=white, label=Ras];
+proteins17 -> Ras16  [label=nn];
+differ18 -> proteins17  [label=nsubj];
+terminus13 -> differ18  [label=rcmod];
+widely20 [style=filled, fillcolor=white, label=widely];
+most19 [style=filled, fillcolor=white, label=most];
+widely20 -> most19  [label=advmod];
+differ18 -> widely20  [label=advmod];
+Figure22 [style=filled, fillcolor=white, label=Figure];
+terminus13 -> Figure22  [label=appos];
+32 [style=filled, fillcolor=white, label=3];
+Figure22 -> 32  [label=num];
+}

@@ -1,0 +1,44 @@
+digraph "A major advance was our ability to easily generate mUbRas ,  modified at a single site ,  in a form suitable for detailed biophysical studies ." {
+label="A major advance was our ability to easily generate mUbRas ,  modified at a
+single site ,  in a form suitable for detailed biophysical studies .";
+advance3 [style=filled, fillcolor=white, label=advance];
+A1 [style=filled, fillcolor=white, label=A];
+advance3 -> A1  [label=det];
+major2 [style=filled, fillcolor=white, label=major];
+advance3 -> major2  [label=amod];
+ability6 [style=filled, fillcolor=white, label=ability];
+ability6 -> advance3  [label=nsubj];
+was4 [style=filled, fillcolor=white, label=was];
+ability6 -> was4  [label=cop];
+our5 [style=filled, fillcolor=white, label=our];
+ability6 -> our5  [label=poss];
+ability6 -> ability6  [label=root];
+generate9 [style=filled, fillcolor=white, label=generate];
+to7 [style=filled, fillcolor=white, label=to];
+generate9 -> to7  [label=aux];
+easily8 [style=filled, fillcolor=white, label=easily];
+generate9 -> easily8  [label=advmod];
+ability6 -> generate9  [label=vmod];
+mUbRas10 [style=filled, fillcolor=white, label=mUbRas];
+generate9 -> mUbRas10  [label=dobj];
+modified12 [style=filled, fillcolor=white, label=modified];
+mUbRas10 -> modified12  [label=vmod];
+site16 [style=filled, fillcolor=white, label=site];
+a14 [style=filled, fillcolor=white, label=a];
+site16 -> a14  [label=det];
+single15 [style=filled, fillcolor=white, label=single];
+site16 -> single15  [label=amod];
+modified12 -> site16  [label=prep_at];
+form20 [style=filled, fillcolor=white, label=form];
+a19 [style=filled, fillcolor=white, label=a];
+form20 -> a19  [label=det];
+mUbRas10 -> form20  [label=prep_in];
+suitable21 [style=filled, fillcolor=white, label=suitable];
+form20 -> suitable21  [label=amod];
+studies25 [style=filled, fillcolor=white, label=studies];
+detailed23 [style=filled, fillcolor=white, label=detailed];
+studies25 -> detailed23  [label=amod];
+biophysical24 [style=filled, fillcolor=white, label=biophysical];
+studies25 -> biophysical24  [label=amod];
+suitable21 -> studies25  [label=prep_for];
+}

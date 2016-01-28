@@ -1,0 +1,47 @@
+digraph "Since an inhibitor against SERCA induces apoptosis in some cell lines ( 76 ) ,  the IRS/SERCA complex might be involved in an insulin and IGF-1-dependent antiapoptotic effect ." {
+label="Since an inhibitor against SERCA induces apoptosis in some cell lines ( 76 ) ,
+the IRS/SERCA complex might be involved in an insulin and IGF-1-dependent
+antiapoptotic effect .";
+induces6 [style=filled, fillcolor=white, label=induces];
+Since1 [style=filled, fillcolor=white, label=Since];
+induces6 -> Since1  [label=mark];
+inhibitor3 [style=filled, fillcolor=white, label=inhibitor];
+an2 [style=filled, fillcolor=white, label=an];
+inhibitor3 -> an2  [label=det];
+induces6 -> inhibitor3  [label=nsubj];
+SERCA5 [style=filled, fillcolor=white, label=SERCA];
+inhibitor3 -> SERCA5  [label=prep_against];
+involved21 [style=filled, fillcolor=white, label=involved];
+involved21 -> induces6  [label=advcl];
+apoptosis7 [style=filled, fillcolor=white, label=apoptosis];
+induces6 -> apoptosis7  [label=dobj];
+lines11 [style=filled, fillcolor=white, label=lines];
+some9 [style=filled, fillcolor=white, label=some];
+lines11 -> some9  [label=det];
+cell10 [style=filled, fillcolor=white, label=cell];
+lines11 -> cell10  [label=nn];
+apoptosis7 -> lines11  [label=prep_in];
+7613 [style=filled, fillcolor=white, label=76];
+lines11 -> 7613  [label=appos];
+complex18 [style=filled, fillcolor=white, label=complex];
+the16 [style=filled, fillcolor=white, label=the];
+complex18 -> the16  [label=det];
+"IRS/SERCA17" [style=filled, fillcolor=white, label="IRS/SERCA"];
+complex18 -> "IRS/SERCA17"  [label=nn];
+involved21 -> complex18  [label=nsubjpass];
+might19 [style=filled, fillcolor=white, label=might];
+involved21 -> might19  [label=aux];
+be20 [style=filled, fillcolor=white, label=be];
+involved21 -> be20  [label=auxpass];
+involved21 -> involved21  [label=root];
+insulin24 [style=filled, fillcolor=white, label=insulin];
+an23 [style=filled, fillcolor=white, label=an];
+insulin24 -> an23  [label=det];
+involved21 -> insulin24  [label=prep_in];
+effect28 [style=filled, fillcolor=white, label=effect];
+"IGF-1-dependent26" [style=filled, fillcolor=white, label="IGF-1-dependent"];
+effect28 -> "IGF-1-dependent26"  [label=nn];
+antiapoptotic27 [style=filled, fillcolor=white, label=antiapoptotic];
+effect28 -> antiapoptotic27  [label=amod];
+insulin24 -> effect28  [label=conj_and];
+}

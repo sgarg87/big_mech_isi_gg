@@ -1,0 +1,53 @@
+digraph "The striking spike of Snail expression coincident with hair bud formation and enhanced proliferation prompted us to examine the consequences of ectopically expressing Snail elsewhere in mouse skin epidermis ." {
+label="The striking spike of Snail expression coincident with hair bud formation and
+enhanced proliferation prompted us to examine the consequences of ectopically
+expressing Snail elsewhere in mouse skin epidermis .";
+spike3 [style=filled, fillcolor=white, label=spike];
+The1 [style=filled, fillcolor=white, label=The];
+spike3 -> The1  [label=det];
+striking2 [style=filled, fillcolor=white, label=striking];
+spike3 -> striking2  [label=amod];
+prompted15 [style=filled, fillcolor=white, label=prompted];
+prompted15 -> spike3  [label=nsubj];
+coincident7 [style=filled, fillcolor=white, label=coincident];
+Snail5 [style=filled, fillcolor=white, label=Snail];
+coincident7 -> Snail5  [label=nn];
+expression6 [style=filled, fillcolor=white, label=expression];
+coincident7 -> expression6  [label=nn];
+spike3 -> coincident7  [label=prep_of];
+formation11 [style=filled, fillcolor=white, label=formation];
+hair9 [style=filled, fillcolor=white, label=hair];
+formation11 -> hair9  [label=nn];
+bud10 [style=filled, fillcolor=white, label=bud];
+formation11 -> bud10  [label=nn];
+coincident7 -> formation11  [label=prep_with];
+proliferation14 [style=filled, fillcolor=white, label=proliferation];
+enhanced13 [style=filled, fillcolor=white, label=enhanced];
+proliferation14 -> enhanced13  [label=amod];
+formation11 -> proliferation14  [label=conj_and];
+prompted15 -> prompted15  [label=root];
+us16 [style=filled, fillcolor=white, label=us];
+prompted15 -> us16  [label=dobj];
+examine18 [style=filled, fillcolor=white, label=examine];
+to17 [style=filled, fillcolor=white, label=to];
+examine18 -> to17  [label=aux];
+prompted15 -> examine18  [label=xcomp];
+consequences20 [style=filled, fillcolor=white, label=consequences];
+the19 [style=filled, fillcolor=white, label=the];
+consequences20 -> the19  [label=det];
+examine18 -> consequences20  [label=dobj];
+expressing23 [style=filled, fillcolor=white, label=expressing];
+ectopically22 [style=filled, fillcolor=white, label=ectopically];
+expressing23 -> ectopically22  [label=advmod];
+consequences20 -> expressing23  [label=prepc_of];
+Snail24 [style=filled, fillcolor=white, label=Snail];
+expressing23 -> Snail24  [label=dobj];
+elsewhere25 [style=filled, fillcolor=white, label=elsewhere];
+expressing23 -> elsewhere25  [label=advmod];
+epidermis29 [style=filled, fillcolor=white, label=epidermis];
+mouse27 [style=filled, fillcolor=white, label=mouse];
+epidermis29 -> mouse27  [label=nn];
+skin28 [style=filled, fillcolor=white, label=skin];
+epidermis29 -> skin28  [label=nn];
+expressing23 -> epidermis29  [label=prep_in];
+}

@@ -1,0 +1,75 @@
+digraph "Activation of Raf occurs via a complex ,  yet incompletely understood mechanism requiring membrane translocation ,  regulatory phosphorylation / dephosphorylation events and ,  crucially ,  allosteric activation in the context of a side-to-side dimer comprising two Raf molecules or a Raf and a Ksr molecule ." {
+label="Activation of Raf occurs via a complex ,  yet incompletely understood mechanism
+requiring membrane translocation ,  regulatory phosphorylation /
+dephosphorylation events and ,  crucially ,  allosteric activation in the
+context of a side-to-side dimer comprising two Raf molecules or a Raf and a Ksr
+molecule .";
+occurs4 [style=filled, fillcolor=white, label=occurs];
+Activation1 [style=filled, fillcolor=white, label=Activation];
+occurs4 -> Activation1  [label=nsubj];
+Raf3 [style=filled, fillcolor=white, label=Raf];
+Activation1 -> Raf3  [label=prep_of];
+occurs4 -> occurs4  [label=root];
+complex7 [style=filled, fillcolor=white, label=complex];
+a6 [style=filled, fillcolor=white, label=a];
+complex7 -> a6  [label=det];
+occurs4 -> complex7  [label=prep_via];
+understood11 [style=filled, fillcolor=white, label=understood];
+incompletely10 [style=filled, fillcolor=white, label=incompletely];
+understood11 -> incompletely10  [label=advmod];
+occurs4 -> understood11  [label=conj_yet];
+mechanism12 [style=filled, fillcolor=white, label=mechanism];
+understood11 -> mechanism12  [label=dobj];
+requiring13 [style=filled, fillcolor=white, label=requiring];
+understood11 -> requiring13  [label=xcomp];
+translocation15 [style=filled, fillcolor=white, label=translocation];
+membrane14 [style=filled, fillcolor=white, label=membrane];
+translocation15 -> membrane14  [label=amod];
+requiring13 -> translocation15  [label=dobj];
+events21 [style=filled, fillcolor=white, label=events];
+regulatory17 [style=filled, fillcolor=white, label=regulatory];
+events21 -> regulatory17  [label=amod];
+phosphorylation18 [style=filled, fillcolor=white, label=phosphorylation];
+events21 -> phosphorylation18  [label=nn];
+"/19" [style=filled, fillcolor=white, label="/"];
+events21 -> "/19"  [label=nn];
+dephosphorylation20 [style=filled, fillcolor=white, label=dephosphorylation];
+events21 -> dephosphorylation20  [label=nn];
+translocation15 -> events21  [label=appos];
+activation27 [style=filled, fillcolor=white, label=activation];
+and22 [style=filled, fillcolor=white, label=and];
+activation27 -> and22  [label=cc];
+crucially24 [style=filled, fillcolor=white, label=crucially];
+activation27 -> crucially24  [label=dep];
+allosteric26 [style=filled, fillcolor=white, label=allosteric];
+activation27 -> allosteric26  [label=amod];
+requiring13 -> activation27  [label=dep];
+context30 [style=filled, fillcolor=white, label=context];
+the29 [style=filled, fillcolor=white, label=the];
+context30 -> the29  [label=det];
+activation27 -> context30  [label=prep_in];
+dimer34 [style=filled, fillcolor=white, label=dimer];
+a32 [style=filled, fillcolor=white, label=a];
+dimer34 -> a32  [label=det];
+"side-to-side33" [style=filled, fillcolor=white, label="side-to-side"];
+dimer34 -> "side-to-side33"  [label=amod];
+context30 -> dimer34  [label=prep_of];
+comprising35 [style=filled, fillcolor=white, label=comprising];
+requiring13 -> comprising35  [label=vmod];
+molecules38 [style=filled, fillcolor=white, label=molecules];
+two36 [style=filled, fillcolor=white, label=two];
+molecules38 -> two36  [label=num];
+Raf37 [style=filled, fillcolor=white, label=Raf];
+molecules38 -> Raf37  [label=nn];
+comprising35 -> molecules38  [label=dobj];
+Raf41 [style=filled, fillcolor=white, label=Raf];
+a40 [style=filled, fillcolor=white, label=a];
+Raf41 -> a40  [label=det];
+molecules38 -> Raf41  [label=conj_or];
+molecule45 [style=filled, fillcolor=white, label=molecule];
+a43 [style=filled, fillcolor=white, label=a];
+molecule45 -> a43  [label=det];
+Ksr44 [style=filled, fillcolor=white, label=Ksr];
+molecule45 -> Ksr44  [label=nn];
+Raf41 -> molecule45  [label=conj_and];
+}

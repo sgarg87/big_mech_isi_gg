@@ -1,0 +1,30 @@
+digraph "The undulations were accompanied by partial dissolution of the underlying basement membrane ( Figure 3K and 3L ) ." {
+label="The undulations were accompanied by partial dissolution of the underlying
+basement membrane ( Figure 3K and 3L ) .";
+undulations2 [style=filled, fillcolor=white, label=undulations];
+The1 [style=filled, fillcolor=white, label=The];
+undulations2 -> The1  [label=det];
+accompanied4 [style=filled, fillcolor=white, label=accompanied];
+accompanied4 -> undulations2  [label=nsubjpass];
+were3 [style=filled, fillcolor=white, label=were];
+accompanied4 -> were3  [label=auxpass];
+accompanied4 -> accompanied4  [label=root];
+dissolution7 [style=filled, fillcolor=white, label=dissolution];
+partial6 [style=filled, fillcolor=white, label=partial];
+dissolution7 -> partial6  [label=amod];
+accompanied4 -> dissolution7  [label=agent];
+membrane12 [style=filled, fillcolor=white, label=membrane];
+the9 [style=filled, fillcolor=white, label=the];
+membrane12 -> the9  [label=det];
+underlying10 [style=filled, fillcolor=white, label=underlying];
+membrane12 -> underlying10  [label=amod];
+basement11 [style=filled, fillcolor=white, label=basement];
+membrane12 -> basement11  [label=nn];
+dissolution7 -> membrane12  [label=prep_of];
+Figure14 [style=filled, fillcolor=white, label=Figure];
+membrane12 -> Figure14  [label=appos];
+"3K15" [style=filled, fillcolor=white, label="3K"];
+Figure14 -> "3K15"  [label=num];
+"3L17" [style=filled, fillcolor=white, label="3L"];
+"3K15" -> "3L17"  [label=conj_and];
+}

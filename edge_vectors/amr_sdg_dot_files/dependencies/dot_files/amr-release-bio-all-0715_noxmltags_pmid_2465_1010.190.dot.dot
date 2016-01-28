@@ -1,0 +1,45 @@
+digraph "These issues complicate the development of in vitro assays for compounds that prevent Ras-dependent activation of Raf kinase ,  an obvious system for therapeutic intervention ." {
+label="These issues complicate the development of in vitro assays for compounds that
+prevent Ras-dependent activation of Raf kinase ,  an obvious system for
+therapeutic intervention .";
+issues2 [style=filled, fillcolor=white, label=issues];
+These1 [style=filled, fillcolor=white, label=These];
+issues2 -> These1  [label=det];
+complicate3 [style=filled, fillcolor=white, label=complicate];
+complicate3 -> issues2  [label=nsubj];
+complicate3 -> complicate3  [label=root];
+development5 [style=filled, fillcolor=white, label=development];
+the4 [style=filled, fillcolor=white, label=the];
+development5 -> the4  [label=det];
+complicate3 -> development5  [label=dobj];
+vitro8 [style=filled, fillcolor=white, label=vitro];
+in7 [style=filled, fillcolor=white, label=in];
+vitro8 -> in7  [label=dep];
+assays9 [style=filled, fillcolor=white, label=assays];
+assays9 -> vitro8  [label=amod];
+development5 -> assays9  [label=prep_of];
+compounds11 [style=filled, fillcolor=white, label=compounds];
+assays9 -> compounds11  [label=prep_for];
+prevent13 [style=filled, fillcolor=white, label=prevent];
+that12 [style=filled, fillcolor=white, label=that];
+prevent13 -> that12  [label=nsubj];
+compounds11 -> prevent13  [label=rcmod];
+activation15 [style=filled, fillcolor=white, label=activation];
+"Ras-dependent14" [style=filled, fillcolor=white, label="Ras-dependent"];
+activation15 -> "Ras-dependent14"  [label=amod];
+prevent13 -> activation15  [label=dobj];
+kinase18 [style=filled, fillcolor=white, label=kinase];
+Raf17 [style=filled, fillcolor=white, label=Raf];
+kinase18 -> Raf17  [label=nn];
+activation15 -> kinase18  [label=prep_of];
+system22 [style=filled, fillcolor=white, label=system];
+an20 [style=filled, fillcolor=white, label=an];
+system22 -> an20  [label=det];
+obvious21 [style=filled, fillcolor=white, label=obvious];
+system22 -> obvious21  [label=amod];
+kinase18 -> system22  [label=appos];
+intervention25 [style=filled, fillcolor=white, label=intervention];
+therapeutic24 [style=filled, fillcolor=white, label=therapeutic];
+intervention25 -> therapeutic24  [label=amod];
+system22 -> intervention25  [label=prep_for];
+}

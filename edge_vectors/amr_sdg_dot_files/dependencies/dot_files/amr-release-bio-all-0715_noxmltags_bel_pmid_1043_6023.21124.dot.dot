@@ -1,0 +1,77 @@
+digraph "ATM phosphorylates c-Abl on Ser465 and thereby activates the kinase ( Baskaran et al. ,  1997b ) . Phosphorylation by ATM activates c-Abl ( Baskaran et al. ,  1997b ) . c-Abl tyrosine kinase activity is stimulated in response to ionizing radiation ( IR ) ,  1-b-d-arabinofuransylcytosine ,  camptothecin ,  or etoposide ( Yuan et al. ,  1996 ,  1998 ) ." {
+label="ATM phosphorylates c-Abl on Ser465 and thereby activates the kinase ( Baskaran
+et al. ,  1997b ) . Phosphorylation by ATM activates c-Abl ( Baskaran et al. ,
+1997b ) . c-Abl tyrosine kinase activity is stimulated in response to ionizing
+radiation ( IR ) ,  1-b-d-arabinofuransylcytosine ,  camptothecin ,  or
+etoposide ( Yuan et al. ,  1996 ,  1998 ) .";
+"c-Abl3" [style=filled, fillcolor=white, label="c-Abl"];
+ATM1 [style=filled, fillcolor=white, label=ATM];
+"c-Abl3" -> ATM1  [label=aux];
+phosphorylates2 [style=filled, fillcolor=white, label=phosphorylates];
+"c-Abl3" -> phosphorylates2  [label=nsubj];
+stimulated37 [style=filled, fillcolor=white, label=stimulated];
+stimulated37 -> "c-Abl3"  [label=dep];
+Ser465 [style=filled, fillcolor=white, label=Ser465];
+"c-Abl3" -> Ser465  [label=prep_on];
+activates8 [style=filled, fillcolor=white, label=activates];
+thereby7 [style=filled, fillcolor=white, label=thereby];
+activates8 -> thereby7  [label=advmod];
+"c-Abl3" -> activates8  [label=conj_and];
+kinase10 [style=filled, fillcolor=white, label=kinase];
+the9 [style=filled, fillcolor=white, label=the];
+kinase10 -> the9  [label=det];
+activates8 -> kinase10  [label=dobj];
+Baskaran12 [style=filled, fillcolor=white, label=Baskaran];
+kinase10 -> Baskaran12  [label=appos];
+"al.14" [style=filled, fillcolor=white, label="al."];
+Baskaran12 -> "al.14"  [label=conj_et];
+"1997b16" [style=filled, fillcolor=white, label="1997b"];
+Baskaran12 -> "1997b16"  [label=dep];
+Phosphorylation19 [style=filled, fillcolor=white, label=Phosphorylation];
+"c-Abl3" -> Phosphorylation19  [label=dep];
+"c-Abl23" [style=filled, fillcolor=white, label="c-Abl"];
+ATM21 [style=filled, fillcolor=white, label=ATM];
+"c-Abl23" -> ATM21  [label=nn];
+activates22 [style=filled, fillcolor=white, label=activates];
+"c-Abl23" -> activates22  [label=nn];
+Phosphorylation19 -> "c-Abl23"  [label=prep_by];
+Baskaran25 [style=filled, fillcolor=white, label=Baskaran];
+"c-Abl23" -> Baskaran25  [label=appos];
+"al.27" [style=filled, fillcolor=white, label="al."];
+Baskaran25 -> "al.27"  [label=conj_et];
+"1997b2" [style=filled, fillcolor=white, label="1997b"];
+Baskaran25 -> "1997b2"  [label=dep];
+activity35 [style=filled, fillcolor=white, label=activity];
+"c-Abl32" [style=filled, fillcolor=white, label="c-Abl"];
+activity35 -> "c-Abl32"  [label=amod];
+tyrosine33 [style=filled, fillcolor=white, label=tyrosine];
+activity35 -> tyrosine33  [label=nn];
+kinase34 [style=filled, fillcolor=white, label=kinase];
+activity35 -> kinase34  [label=nn];
+stimulated37 -> activity35  [label=nsubjpass];
+is36 [style=filled, fillcolor=white, label=is];
+stimulated37 -> is36  [label=auxpass];
+stimulated37 -> stimulated37  [label=root];
+response39 [style=filled, fillcolor=white, label=response];
+stimulated37 -> response39  [label=prep_in];
+radiation42 [style=filled, fillcolor=white, label=radiation];
+ionizing41 [style=filled, fillcolor=white, label=ionizing];
+radiation42 -> ionizing41  [label=amod];
+stimulated37 -> radiation42  [label=prep_to];
+IR44 [style=filled, fillcolor=white, label=IR];
+radiation42 -> IR44  [label=appos];
+"1-b-d-arabinofuransylcytosine47" [style=filled, fillcolor=white, label="1-b-d-arabinofuransylcytosine"];
+radiation42 -> "1-b-d-arabinofuransylcytosine47"  [label=appos];
+camptothecin49 [style=filled, fillcolor=white, label=camptothecin];
+"1-b-d-arabinofuransylcytosine47" -> camptothecin49  [label=conj_or];
+etoposide52 [style=filled, fillcolor=white, label=etoposide];
+"1-b-d-arabinofuransylcytosine47" -> etoposide52  [label=conj_or];
+Yuan54 [style=filled, fillcolor=white, label=Yuan];
+"1-b-d-arabinofuransylcytosine47" -> Yuan54  [label=appos];
+"al.56" [style=filled, fillcolor=white, label="al."];
+Yuan54 -> "al.56"  [label=conj_et];
+199658 [style=filled, fillcolor=white, label=1996];
+Yuan54 -> 199658  [label=dep];
+199860 [style=filled, fillcolor=white, label=1998];
+Yuan54 -> 199860  [label=dep];
+}

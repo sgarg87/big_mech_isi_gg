@@ -1,0 +1,51 @@
+digraph "As shown in Figure 6I and 6J ,  both WT and TGF-β2 null buds exhibited nuclear LEF-1 and β-catenin localization ,  signs that the Wnt-noggin signaling pathway was intact ." {
+label="As shown in Figure 6I and 6J ,  both WT and TGF-β2 null buds exhibited nuclear
+LEF-1 and β-catenin localization ,  signs that the Wnt-noggin signaling pathway
+was intact .";
+shown2 [style=filled, fillcolor=white, label=shown];
+As1 [style=filled, fillcolor=white, label=As];
+shown2 -> As1  [label=mark];
+exhibited15 [style=filled, fillcolor=white, label=exhibited];
+exhibited15 -> shown2  [label=advcl];
+Figure4 [style=filled, fillcolor=white, label=Figure];
+shown2 -> Figure4  [label=prep_in];
+"6I5" [style=filled, fillcolor=white, label="6I"];
+Figure4 -> "6I5"  [label=num];
+"6J7" [style=filled, fillcolor=white, label="6J"];
+Figure4 -> "6J7"  [label=conj_and];
+WT10 [style=filled, fillcolor=white, label=WT];
+both9 [style=filled, fillcolor=white, label=both];
+WT10 -> both9  [label=preconj];
+exhibited15 -> WT10  [label=nsubj];
+buds14 [style=filled, fillcolor=white, label=buds];
+"TGF-β21" [style=filled, fillcolor=white, label="TGF-β2"];
+buds14 -> "TGF-β21"  [label=nn];
+null13 [style=filled, fillcolor=white, label=null];
+buds14 -> null13  [label=nn];
+WT10 -> buds14  [label=conj_and];
+exhibited15 -> exhibited15  [label=root];
+"LEF-17" [style=filled, fillcolor=white, label="LEF-1"];
+nuclear16 [style=filled, fillcolor=white, label=nuclear];
+"LEF-17" -> nuclear16  [label=amod];
+exhibited15 -> "LEF-17"  [label=dobj];
+localization20 [style=filled, fillcolor=white, label=localization];
+"β-catenin19" [style=filled, fillcolor=white, label="β-catenin"];
+localization20 -> "β-catenin19"  [label=amod];
+"LEF-17" -> localization20  [label=conj_and];
+signs22 [style=filled, fillcolor=white, label=signs];
+localization20 -> signs22  [label=appos];
+intact29 [style=filled, fillcolor=white, label=intact];
+that23 [style=filled, fillcolor=white, label=that];
+intact29 -> that23  [label=mark];
+pathway27 [style=filled, fillcolor=white, label=pathway];
+the24 [style=filled, fillcolor=white, label=the];
+pathway27 -> the24  [label=det];
+"Wnt-noggin25" [style=filled, fillcolor=white, label="Wnt-noggin"];
+pathway27 -> "Wnt-noggin25"  [label=nn];
+signaling26 [style=filled, fillcolor=white, label=signaling];
+pathway27 -> signaling26  [label=nn];
+intact29 -> pathway27  [label=nsubj];
+was28 [style=filled, fillcolor=white, label=was];
+intact29 -> was28  [label=cop];
+exhibited15 -> intact29  [label=ccomp];
+}

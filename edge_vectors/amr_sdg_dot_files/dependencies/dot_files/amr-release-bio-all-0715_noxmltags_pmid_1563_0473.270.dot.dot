@@ -1,0 +1,7 @@
+digraph "Cell culture" {
+label="Cell culture";
+culture2 [style=filled, fillcolor=white, label=culture];
+Cell1 [style=filled, fillcolor=white, label=Cell];
+culture2 -> Cell1  [label=amod];
+culture2 -> culture2  [label=root];
+}

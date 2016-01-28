@@ -1,0 +1,36 @@
+digraph "Loss of the Ras GTPase-activating protein ( GAP ) neurofibromin inculpates hyperactive wild-type Ras proteins as drivers in many more cancers ." {
+label="Loss of the Ras GTPase-activating protein ( GAP ) neurofibromin inculpates
+hyperactive wild-type Ras proteins as drivers in many more cancers .";
+inculpates11 [style=filled, fillcolor=white, label=inculpates];
+Loss1 [style=filled, fillcolor=white, label=Loss];
+inculpates11 -> Loss1  [label=nsubj];
+protein6 [style=filled, fillcolor=white, label=protein];
+the3 [style=filled, fillcolor=white, label=the];
+protein6 -> the3  [label=det];
+Ras4 [style=filled, fillcolor=white, label=Ras];
+protein6 -> Ras4  [label=nn];
+"GTPase-activating5" [style=filled, fillcolor=white, label="GTPase-activating"];
+protein6 -> "GTPase-activating5"  [label=nn];
+Loss1 -> protein6  [label=prep_of];
+GAP8 [style=filled, fillcolor=white, label=GAP];
+protein6 -> GAP8  [label=appos];
+neurofibromin10 [style=filled, fillcolor=white, label=neurofibromin];
+protein6 -> neurofibromin10  [label=vmod];
+inculpates11 -> inculpates11  [label=root];
+proteins15 [style=filled, fillcolor=white, label=proteins];
+hyperactive12 [style=filled, fillcolor=white, label=hyperactive];
+proteins15 -> hyperactive12  [label=amod];
+"wild-type13" [style=filled, fillcolor=white, label="wild-type"];
+proteins15 -> "wild-type13"  [label=amod];
+Ras14 [style=filled, fillcolor=white, label=Ras];
+proteins15 -> Ras14  [label=nn];
+inculpates11 -> proteins15  [label=dobj];
+drivers17 [style=filled, fillcolor=white, label=drivers];
+inculpates11 -> drivers17  [label=prep_as];
+cancers21 [style=filled, fillcolor=white, label=cancers];
+many19 [style=filled, fillcolor=white, label=many];
+cancers21 -> many19  [label=amod];
+more20 [style=filled, fillcolor=white, label=more];
+cancers21 -> more20  [label=amod];
+drivers17 -> cancers21  [label=prep_in];
+}

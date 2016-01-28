@@ -1,0 +1,51 @@
+digraph "In contrast ,  the number of BrdU-positive proliferating dermal fibroblasts at 1 week was significantly reduced in the anti-CD154 mAb -- treated group compared with the control IgG -- treated group" {
+label="In contrast ,  the number of BrdU-positive proliferating dermal fibroblasts at
+1 week was significantly reduced in the anti-CD154 mAb -- treated group compared
+with the control IgG -- treated group";
+reduced16 [style=filled, fillcolor=white, label=reduced];
+contrast2 [style=filled, fillcolor=white, label=contrast];
+reduced16 -> contrast2  [label=prep_in];
+number5 [style=filled, fillcolor=white, label=number];
+the4 [style=filled, fillcolor=white, label=the];
+number5 -> the4  [label=det];
+reduced16 -> number5  [label=nsubj];
+fibroblasts10 [style=filled, fillcolor=white, label=fibroblasts];
+"BrdU-positive7" [style=filled, fillcolor=white, label="BrdU-positive"];
+fibroblasts10 -> "BrdU-positive7"  [label=amod];
+proliferating8 [style=filled, fillcolor=white, label=proliferating];
+fibroblasts10 -> proliferating8  [label=amod];
+dermal9 [style=filled, fillcolor=white, label=dermal];
+fibroblasts10 -> dermal9  [label=amod];
+number5 -> fibroblasts10  [label=prep_of];
+week13 [style=filled, fillcolor=white, label=week];
+112 [style=filled, fillcolor=white, label=1];
+week13 -> 112  [label=num];
+fibroblasts10 -> week13  [label=prep_at];
+was14 [style=filled, fillcolor=white, label=was];
+reduced16 -> was14  [label=aux];
+significantly15 [style=filled, fillcolor=white, label=significantly];
+reduced16 -> significantly15  [label=advmod];
+reduced16 -> reduced16  [label=root];
+mAb20 [style=filled, fillcolor=white, label=mAb];
+the18 [style=filled, fillcolor=white, label=the];
+mAb20 -> the18  [label=det];
+"anti-CD1549" [style=filled, fillcolor=white, label="anti-CD154"];
+mAb20 -> "anti-CD1549"  [label=amod];
+reduced16 -> mAb20  [label=prep_in];
+treated22 [style=filled, fillcolor=white, label=treated];
+reduced16 -> treated22  [label=dep];
+group23 [style=filled, fillcolor=white, label=group];
+treated22 -> group23  [label=dobj];
+with25 [style=filled, fillcolor=white, label=with];
+treated22 -> with25  [label=prepc_compared_with];
+IgG28 [style=filled, fillcolor=white, label=IgG];
+the26 [style=filled, fillcolor=white, label=the];
+IgG28 -> the26  [label=det];
+control27 [style=filled, fillcolor=white, label=control];
+IgG28 -> control27  [label=nn];
+treated22 -> IgG28  [label=pobj];
+treated30 [style=filled, fillcolor=white, label=treated];
+reduced16 -> treated30  [label=dep];
+group31 [style=filled, fillcolor=white, label=group];
+reduced16 -> group31  [label=dobj];
+}

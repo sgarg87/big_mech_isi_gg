@@ -1,0 +1,34 @@
+digraph "Endothelial cells treated with heme ( 10 microM ) and IL-6 ( 25 ng/ml ) ,  increased HO-1 mRNA 15 - and 60-fold ,  respectively ." {
+label="Endothelial cells treated with heme ( 10 microM ) and IL-6 ( 25 ng/ml ) ,
+increased HO-1 mRNA 15 - and 60-fold ,  respectively .";
+cells2 [style=filled, fillcolor=white, label=cells];
+Endothelial1 [style=filled, fillcolor=white, label=Endothelial];
+cells2 -> Endothelial1  [label=amod];
+increased17 [style=filled, fillcolor=white, label=increased];
+increased17 -> cells2  [label=nsubj];
+treated3 [style=filled, fillcolor=white, label=treated];
+cells2 -> treated3  [label=vmod];
+heme5 [style=filled, fillcolor=white, label=heme];
+treated3 -> heme5  [label=prep_with];
+microM8 [style=filled, fillcolor=white, label=microM];
+107 [style=filled, fillcolor=white, label=10];
+microM8 -> 107  [label=num];
+heme5 -> microM8  [label=appos];
+"IL-611" [style=filled, fillcolor=white, label="IL-6"];
+heme5 -> "IL-611"  [label=conj_and];
+"ng/ml14" [style=filled, fillcolor=white, label="ng/ml"];
+2513 [style=filled, fillcolor=white, label=25];
+"ng/ml14" -> 2513  [label=num];
+heme5 -> "ng/ml14"  [label=appos];
+increased17 -> increased17  [label=root];
+mRNA19 [style=filled, fillcolor=white, label=mRNA];
+"HO-18" [style=filled, fillcolor=white, label="HO-1"];
+mRNA19 -> "HO-18"  [label=nn];
+increased17 -> mRNA19  [label=dobj];
+1520 [style=filled, fillcolor=white, label=15];
+mRNA19 -> 1520  [label=num];
+"60-fold23" [style=filled, fillcolor=white, label="60-fold"];
+mRNA19 -> "60-fold23"  [label=conj_and];
+respectively25 [style=filled, fillcolor=white, label=respectively];
+increased17 -> respectively25  [label=advmod];
+}

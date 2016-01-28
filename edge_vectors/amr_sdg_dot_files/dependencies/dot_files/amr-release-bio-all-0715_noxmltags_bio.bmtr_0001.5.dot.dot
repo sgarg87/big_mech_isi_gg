@@ -1,0 +1,17 @@
+digraph "His-ubiquitinated K-Ras was subsequently purified with anti-Flag resin ." {
+label="His-ubiquitinated K-Ras was subsequently purified with anti-Flag resin .";
+"K-Ras2" [style=filled, fillcolor=white, label="K-Ras"];
+"His-ubiquitinated1" [style=filled, fillcolor=white, label="His-ubiquitinated"];
+"K-Ras2" -> "His-ubiquitinated1"  [label=amod];
+purified5 [style=filled, fillcolor=white, label=purified];
+purified5 -> "K-Ras2"  [label=nsubjpass];
+was3 [style=filled, fillcolor=white, label=was];
+purified5 -> was3  [label=auxpass];
+subsequently4 [style=filled, fillcolor=white, label=subsequently];
+purified5 -> subsequently4  [label=advmod];
+purified5 -> purified5  [label=root];
+resin8 [style=filled, fillcolor=white, label=resin];
+"anti-Flag7" [style=filled, fillcolor=white, label="anti-Flag"];
+resin8 -> "anti-Flag7"  [label=amod];
+purified5 -> resin8  [label=prep_with];
+}

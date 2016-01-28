@@ -1,0 +1,38 @@
+digraph "In contrast ,  the closely related R-Ras proteins bind and activate PI3Ks but are rarely mutated in human cancer ( Rodriguez-Viciana et al. ,  2004 ) ." {
+label="In contrast ,  the closely related R-Ras proteins bind and activate PI3Ks but
+are rarely mutated in human cancer ( Rodriguez-Viciana et al. ,  2004 ) .";
+bind9 [style=filled, fillcolor=white, label=bind];
+contrast2 [style=filled, fillcolor=white, label=contrast];
+bind9 -> contrast2  [label=prep_in];
+proteins8 [style=filled, fillcolor=white, label=proteins];
+the4 [style=filled, fillcolor=white, label=the];
+proteins8 -> the4  [label=det];
+related6 [style=filled, fillcolor=white, label=related];
+closely5 [style=filled, fillcolor=white, label=closely];
+related6 -> closely5  [label=advmod];
+proteins8 -> related6  [label=amod];
+"R-Ras7" [style=filled, fillcolor=white, label="R-Ras"];
+proteins8 -> "R-Ras7"  [label=nn];
+bind9 -> proteins8  [label=nsubj];
+bind9 -> bind9  [label=root];
+activate11 [style=filled, fillcolor=white, label=activate];
+bind9 -> activate11  [label=conj_and];
+PI3Ks12 [style=filled, fillcolor=white, label=PI3Ks];
+bind9 -> PI3Ks12  [label=dobj];
+mutated16 [style=filled, fillcolor=white, label=mutated];
+are14 [style=filled, fillcolor=white, label=are];
+mutated16 -> are14  [label=auxpass];
+rarely15 [style=filled, fillcolor=white, label=rarely];
+mutated16 -> rarely15  [label=advmod];
+bind9 -> mutated16  [label=conj_but];
+cancer19 [style=filled, fillcolor=white, label=cancer];
+human18 [style=filled, fillcolor=white, label=human];
+cancer19 -> human18  [label=amod];
+mutated16 -> cancer19  [label=prep_in];
+"Rodriguez-Viciana21" [style=filled, fillcolor=white, label="Rodriguez-Viciana"];
+cancer19 -> "Rodriguez-Viciana21"  [label=appos];
+"al.23" [style=filled, fillcolor=white, label="al."];
+"Rodriguez-Viciana21" -> "al.23"  [label=conj_et];
+200425 [style=filled, fillcolor=white, label=2004];
+"Rodriguez-Viciana21" -> 200425  [label=dep];
+}

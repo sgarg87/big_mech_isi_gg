@@ -1,0 +1,7 @@
+digraph "Figure 8 ." {
+label="Figure 8 .";
+Figure1 [style=filled, fillcolor=white, label=Figure];
+Figure1 -> Figure1  [label=root];
+82 [style=filled, fillcolor=white, label=8];
+Figure1 -> 82  [label=num];
+}

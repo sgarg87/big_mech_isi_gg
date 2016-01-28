@@ -1,0 +1,38 @@
+digraph "These results are consistent with a greater fraction of ubiquitinated K-Ras being in the GTP state ( Fig. 2 ,  A and B ) ." {
+label="These results are consistent with a greater fraction of ubiquitinated K-Ras
+being in the GTP state ( Fig. 2 ,  A and B ) .";
+results2 [style=filled, fillcolor=white, label=results];
+These1 [style=filled, fillcolor=white, label=These];
+results2 -> These1  [label=det];
+consistent4 [style=filled, fillcolor=white, label=consistent];
+consistent4 -> results2  [label=nsubj];
+are3 [style=filled, fillcolor=white, label=are];
+consistent4 -> are3  [label=cop];
+consistent4 -> consistent4  [label=root];
+fraction8 [style=filled, fillcolor=white, label=fraction];
+a6 [style=filled, fillcolor=white, label=a];
+fraction8 -> a6  [label=det];
+greater7 [style=filled, fillcolor=white, label=greater];
+fraction8 -> greater7  [label=amod];
+being12 [style=filled, fillcolor=white, label=being];
+being12 -> fraction8  [label=nsubj];
+"K-Ras11" [style=filled, fillcolor=white, label="K-Ras"];
+ubiquitinated10 [style=filled, fillcolor=white, label=ubiquitinated];
+"K-Ras11" -> ubiquitinated10  [label=amod];
+fraction8 -> "K-Ras11"  [label=prep_of];
+consistent4 -> being12  [label=prepc_with];
+state16 [style=filled, fillcolor=white, label=state];
+the14 [style=filled, fillcolor=white, label=the];
+state16 -> the14  [label=det];
+GTP15 [style=filled, fillcolor=white, label=GTP];
+state16 -> GTP15  [label=nn];
+being12 -> state16  [label=prep_in];
+"Fig.18" [style=filled, fillcolor=white, label="Fig."];
+state16 -> "Fig.18"  [label=appos];
+219 [style=filled, fillcolor=white, label=2];
+"Fig.18" -> 219  [label=num];
+A21 [style=filled, fillcolor=white, label=A];
+"Fig.18" -> A21  [label=dep];
+B23 [style=filled, fillcolor=white, label=B];
+A21 -> B23  [label=conj_and];
+}

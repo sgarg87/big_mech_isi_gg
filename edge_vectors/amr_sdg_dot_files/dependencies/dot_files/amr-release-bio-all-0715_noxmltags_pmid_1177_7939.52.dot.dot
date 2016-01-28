@@ -1,0 +1,26 @@
+digraph "The adaptor molecules ,  E3b1 and Grb2 ,  compete for binding to Sos-1 both in vitro and in vivo" {
+label="The adaptor molecules ,  E3b1 and Grb2 ,  compete for binding to Sos-1 both in
+vitro and in vivo";
+molecules3 [style=filled, fillcolor=white, label=molecules];
+The1 [style=filled, fillcolor=white, label=The];
+molecules3 -> The1  [label=det];
+adaptor2 [style=filled, fillcolor=white, label=adaptor];
+molecules3 -> adaptor2  [label=nn];
+compete9 [style=filled, fillcolor=white, label=compete];
+compete9 -> molecules3  [label=nsubj];
+E3b15 [style=filled, fillcolor=white, label=E3b1];
+molecules3 -> E3b15  [label=appos];
+Grb27 [style=filled, fillcolor=white, label=Grb2];
+E3b15 -> Grb27  [label=conj_and];
+compete9 -> compete9  [label=root];
+binding11 [style=filled, fillcolor=white, label=binding];
+compete9 -> binding11  [label=prep_for];
+"Sos-13" [style=filled, fillcolor=white, label="Sos-1"];
+binding11 -> "Sos-13"  [label=prep_to];
+both14 [style=filled, fillcolor=white, label=both];
+compete9 -> both14  [label=preconj];
+vitro16 [style=filled, fillcolor=white, label=vitro];
+compete9 -> vitro16  [label=prep_in];
+vivo19 [style=filled, fillcolor=white, label=vivo];
+vitro16 -> vivo19  [label=conj_and];
+}

@@ -1,0 +1,47 @@
+digraph "This model explains why C-Raf mutants devoid of kinase activity can not function as activators ,  and why B-Raf can activate Mek directly as a homodimer ." {
+label="This model explains why C-Raf mutants devoid of kinase activity can not
+function as activators ,  and why B-Raf can activate Mek directly as a homodimer
+.";
+model2 [style=filled, fillcolor=white, label=model];
+This1 [style=filled, fillcolor=white, label=This];
+model2 -> This1  [label=det];
+explains3 [style=filled, fillcolor=white, label=explains];
+explains3 -> model2  [label=nsubj];
+explains3 -> explains3  [label=root];
+function13 [style=filled, fillcolor=white, label=function];
+why4 [style=filled, fillcolor=white, label=why];
+function13 -> why4  [label=advmod];
+devoid7 [style=filled, fillcolor=white, label=devoid];
+"C-Raf5" [style=filled, fillcolor=white, label="C-Raf"];
+devoid7 -> "C-Raf5"  [label=nn];
+mutants6 [style=filled, fillcolor=white, label=mutants];
+devoid7 -> mutants6  [label=nn];
+function13 -> devoid7  [label=nsubj];
+activity10 [style=filled, fillcolor=white, label=activity];
+kinase9 [style=filled, fillcolor=white, label=kinase];
+activity10 -> kinase9  [label=amod];
+devoid7 -> activity10  [label=prep_of];
+can11 [style=filled, fillcolor=white, label=can];
+function13 -> can11  [label=aux];
+not12 [style=filled, fillcolor=white, label=not];
+function13 -> not12  [label=neg];
+explains3 -> function13  [label=advcl];
+activators15 [style=filled, fillcolor=white, label=activators];
+function13 -> activators15  [label=prep_as];
+activate21 [style=filled, fillcolor=white, label=activate];
+why18 [style=filled, fillcolor=white, label=why];
+activate21 -> why18  [label=advmod];
+"B-Raf19" [style=filled, fillcolor=white, label="B-Raf"];
+activate21 -> "B-Raf19"  [label=nsubj];
+can20 [style=filled, fillcolor=white, label=can];
+activate21 -> can20  [label=aux];
+function13 -> activate21  [label=conj_and];
+Mek22 [style=filled, fillcolor=white, label=Mek];
+activate21 -> Mek22  [label=dobj];
+directly23 [style=filled, fillcolor=white, label=directly];
+activate21 -> directly23  [label=advmod];
+homodimer26 [style=filled, fillcolor=white, label=homodimer];
+a25 [style=filled, fillcolor=white, label=a];
+homodimer26 -> a25  [label=det];
+activate21 -> homodimer26  [label=prep_as];
+}

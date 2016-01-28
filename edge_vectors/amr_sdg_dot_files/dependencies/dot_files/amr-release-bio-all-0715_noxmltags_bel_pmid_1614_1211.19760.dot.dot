@@ -1,0 +1,40 @@
+digraph "These responses to TNFalpha were absent in TNFR2 - / - and TNFR1/2 - / - myofibroblasts ,  whereas TNFR1 - / - cells showed similar responses to WT ." {
+label="These responses to TNFalpha were absent in TNFR2 - / - and TNFR1/2 - / -
+myofibroblasts ,  whereas TNFR1 - / - cells showed similar responses to WT .";
+responses2 [style=filled, fillcolor=white, label=responses];
+These1 [style=filled, fillcolor=white, label=These];
+responses2 -> These1  [label=det];
+absent6 [style=filled, fillcolor=white, label=absent];
+absent6 -> responses2  [label=nsubj];
+TNFalpha4 [style=filled, fillcolor=white, label=TNFalpha];
+responses2 -> TNFalpha4  [label=prep_to];
+were5 [style=filled, fillcolor=white, label=were];
+absent6 -> were5  [label=cop];
+absent6 -> absent6  [label=root];
+TNFR28 [style=filled, fillcolor=white, label=TNFR2];
+absent6 -> TNFR28  [label=prep_in];
+cells24 [style=filled, fillcolor=white, label=cells];
+"/10" [style=filled, fillcolor=white, label="/"];
+cells24 -> "/10"  [label=amod];
+"TNFR1/213" [style=filled, fillcolor=white, label="TNFR1/2"];
+"/10" -> "TNFR1/213"  [label=conj_and];
+"/15" [style=filled, fillcolor=white, label="/"];
+"TNFR1/213" -> "/15"  [label=dep];
+TNFR120 [style=filled, fillcolor=white, label=TNFR1];
+myofibroblasts17 [style=filled, fillcolor=white, label=myofibroblasts];
+TNFR120 -> myofibroblasts17  [label=dep];
+whereas19 [style=filled, fillcolor=white, label=whereas];
+TNFR120 -> whereas19  [label=nn];
+"/15" -> TNFR120  [label=dep];
+"/22" [style=filled, fillcolor=white, label="/"];
+"/15" -> "/22"  [label=punct];
+showed25 [style=filled, fillcolor=white, label=showed];
+showed25 -> cells24  [label=nsubj];
+absent6 -> showed25  [label=parataxis];
+responses27 [style=filled, fillcolor=white, label=responses];
+similar26 [style=filled, fillcolor=white, label=similar];
+responses27 -> similar26  [label=amod];
+showed25 -> responses27  [label=dobj];
+WT29 [style=filled, fillcolor=white, label=WT];
+showed25 -> WT29  [label=prep_to];
+}

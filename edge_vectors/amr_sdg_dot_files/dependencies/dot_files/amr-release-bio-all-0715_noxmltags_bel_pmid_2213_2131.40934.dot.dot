@@ -1,0 +1,34 @@
+digraph "Western Blot results showed hyperphosphorylation of BAD at Ser112 in splenocytes from TB mice compared to control mice ( Figure 4c ) ." {
+label="Western Blot results showed hyperphosphorylation of BAD at Ser112 in
+splenocytes from TB mice compared to control mice ( Figure 4c ) .";
+results3 [style=filled, fillcolor=white, label=results];
+Western1 [style=filled, fillcolor=white, label=Western];
+results3 -> Western1  [label=nn];
+Blot2 [style=filled, fillcolor=white, label=Blot];
+results3 -> Blot2  [label=nn];
+showed4 [style=filled, fillcolor=white, label=showed];
+showed4 -> results3  [label=nsubj];
+showed4 -> showed4  [label=root];
+hyperphosphorylation5 [style=filled, fillcolor=white, label=hyperphosphorylation];
+showed4 -> hyperphosphorylation5  [label=dobj];
+BAD7 [style=filled, fillcolor=white, label=BAD];
+hyperphosphorylation5 -> BAD7  [label=prep_of];
+Ser1129 [style=filled, fillcolor=white, label=Ser112];
+showed4 -> Ser1129  [label=prep_at];
+splenocytes11 [style=filled, fillcolor=white, label=splenocytes];
+Ser1129 -> splenocytes11  [label=prep_in];
+mice14 [style=filled, fillcolor=white, label=mice];
+TB13 [style=filled, fillcolor=white, label=TB];
+mice14 -> TB13  [label=nn];
+showed4 -> mice14  [label=prep_from];
+to16 [style=filled, fillcolor=white, label=to];
+showed4 -> to16  [label=prepc_compared_to];
+mice18 [style=filled, fillcolor=white, label=mice];
+control17 [style=filled, fillcolor=white, label=control];
+mice18 -> control17  [label=nn];
+showed4 -> mice18  [label=pobj];
+Figure20 [style=filled, fillcolor=white, label=Figure];
+mice18 -> Figure20  [label=appos];
+"4c21" [style=filled, fillcolor=white, label="4c"];
+Figure20 -> "4c21"  [label=num];
+}

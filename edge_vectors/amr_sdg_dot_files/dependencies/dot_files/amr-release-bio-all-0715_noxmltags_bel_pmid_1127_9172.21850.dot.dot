@@ -1,0 +1,45 @@
+digraph "Constitutively active MKK6/3 mutants up-regulated GLUT1 expression and down-regulated GLUT4 expression ,  thereby significantly increasing basal glucose transport but diminishing transport induced by insulin ." {
+label="Constitutively active MKK6/3 mutants up-regulated GLUT1 expression and down-
+regulated GLUT4 expression ,  thereby significantly increasing basal glucose
+transport but diminishing transport induced by insulin .";
+active2 [style=filled, fillcolor=white, label=active];
+Constitutively1 [style=filled, fillcolor=white, label=Constitutively];
+active2 -> Constitutively1  [label=advmod];
+mutants4 [style=filled, fillcolor=white, label=mutants];
+mutants4 -> active2  [label=amod];
+"MKK6/3" [style=filled, fillcolor=white, label="MKK6/3"];
+mutants4 -> "MKK6/3"  [label=nn];
+"up-regulated5" [style=filled, fillcolor=white, label="up-regulated"];
+"up-regulated5" -> mutants4  [label=nsubj];
+"up-regulated5" -> "up-regulated5"  [label=root];
+expression7 [style=filled, fillcolor=white, label=expression];
+GLUT16 [style=filled, fillcolor=white, label=GLUT1];
+expression7 -> GLUT16  [label=num];
+"up-regulated5" -> expression7  [label=dobj];
+expression11 [style=filled, fillcolor=white, label=expression];
+"down-regulated9" [style=filled, fillcolor=white, label="down-regulated"];
+expression11 -> "down-regulated9"  [label=amod];
+GLUT410 [style=filled, fillcolor=white, label=GLUT4];
+expression11 -> GLUT410  [label=nn];
+expression7 -> expression11  [label=conj_and];
+increasing15 [style=filled, fillcolor=white, label=increasing];
+thereby13 [style=filled, fillcolor=white, label=thereby];
+increasing15 -> thereby13  [label=advmod];
+significantly14 [style=filled, fillcolor=white, label=significantly];
+increasing15 -> significantly14  [label=advmod];
+"up-regulated5" -> increasing15  [label=dep];
+transport18 [style=filled, fillcolor=white, label=transport];
+basal16 [style=filled, fillcolor=white, label=basal];
+transport18 -> basal16  [label=amod];
+glucose17 [style=filled, fillcolor=white, label=glucose];
+transport18 -> glucose17  [label=nn];
+increasing15 -> transport18  [label=dobj];
+diminishing20 [style=filled, fillcolor=white, label=diminishing];
+increasing15 -> diminishing20  [label=conj_but];
+transport21 [style=filled, fillcolor=white, label=transport];
+diminishing20 -> transport21  [label=dobj];
+induced22 [style=filled, fillcolor=white, label=induced];
+transport21 -> induced22  [label=vmod];
+insulin24 [style=filled, fillcolor=white, label=insulin];
+induced22 -> insulin24  [label=agent];
+}

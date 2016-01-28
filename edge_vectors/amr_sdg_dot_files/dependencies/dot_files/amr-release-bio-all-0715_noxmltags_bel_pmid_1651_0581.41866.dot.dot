@@ -1,0 +1,55 @@
+digraph "Figure 3A shows that relative to control cells ,  FBLN-3 and FBLN-5 both decreased MB114 cell expression of MMP-2 and MMP-3 while simultaneously increasing that of the MMP antagonists ,  TIMP-1 and TIMP-3 ." {
+label="Figure 3A shows that relative to control cells ,  FBLN-3 and FBLN-5 both
+decreased MB114 cell expression of MMP-2 and MMP-3 while simultaneously
+increasing that of the MMP antagonists ,  TIMP-1 and TIMP-3 .";
+shows3 [style=filled, fillcolor=white, label=shows];
+Figure1 [style=filled, fillcolor=white, label=Figure];
+shows3 -> Figure1  [label=nsubj];
+"3A2" [style=filled, fillcolor=white, label="3A"];
+Figure1 -> "3A2"  [label=num];
+shows3 -> shows3  [label=root];
+expression17 [style=filled, fillcolor=white, label=expression];
+that4 [style=filled, fillcolor=white, label=that];
+expression17 -> that4  [label=det];
+relative5 [style=filled, fillcolor=white, label=relative];
+expression17 -> relative5  [label=amod];
+cells8 [style=filled, fillcolor=white, label=cells];
+control7 [style=filled, fillcolor=white, label=control];
+cells8 -> control7  [label=nn];
+relative5 -> cells8  [label=prep_to];
+"FBLN-310" [style=filled, fillcolor=white, label="FBLN-3"];
+cells8 -> "FBLN-310"  [label=conj_and];
+MB11415 [style=filled, fillcolor=white, label=MB114];
+"FBLN-512" [style=filled, fillcolor=white, label="FBLN-5"];
+MB11415 -> "FBLN-512"  [label=nn];
+both13 [style=filled, fillcolor=white, label=both];
+"FBLN-512" -> both13  [label=dep];
+decreased14 [style=filled, fillcolor=white, label=decreased];
+"FBLN-512" -> decreased14  [label=conj];
+cells8 -> MB11415  [label=conj_and];
+cell16 [style=filled, fillcolor=white, label=cell];
+expression17 -> cell16  [label=nn];
+shows3 -> expression17  [label=dobj];
+antagonists29 [style=filled, fillcolor=white, label=antagonists];
+"MMP-219" [style=filled, fillcolor=white, label="MMP-2"];
+antagonists29 -> "MMP-219"  [label=amod];
+"MMP-321" [style=filled, fillcolor=white, label="MMP-3"];
+"MMP-219" -> "MMP-321"  [label=conj_and];
+increasing24 [style=filled, fillcolor=white, label=increasing];
+while22 [style=filled, fillcolor=white, label=while];
+increasing24 -> while22  [label=mark];
+simultaneously23 [style=filled, fillcolor=white, label=simultaneously];
+increasing24 -> simultaneously23  [label=advmod];
+"MMP-219" -> increasing24  [label=ccomp];
+that25 [style=filled, fillcolor=white, label=that];
+increasing24 -> that25  [label=dobj];
+MMP28 [style=filled, fillcolor=white, label=MMP];
+the27 [style=filled, fillcolor=white, label=the];
+MMP28 -> the27  [label=det];
+that25 -> MMP28  [label=prep_of];
+expression17 -> antagonists29  [label=prep_of];
+"TIMP-13" [style=filled, fillcolor=white, label="TIMP-1"];
+antagonists29 -> "TIMP-13"  [label=conj_and];
+"TIMP-3" [style=filled, fillcolor=white, label="TIMP-3"];
+antagonists29 -> "TIMP-3"  [label=conj_and];
+}

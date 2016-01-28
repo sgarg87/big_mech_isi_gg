@@ -1,0 +1,28 @@
+digraph "Again ,  the proliferation rate of these cell populations was assessed when cultured on plastic ." {
+label="Again ,  the proliferation rate of these cell populations was assessed when
+cultured on plastic .";
+assessed11 [style=filled, fillcolor=white, label=assessed];
+Again1 [style=filled, fillcolor=white, label=Again];
+assessed11 -> Again1  [label=advmod];
+rate5 [style=filled, fillcolor=white, label=rate];
+the3 [style=filled, fillcolor=white, label=the];
+rate5 -> the3  [label=det];
+proliferation4 [style=filled, fillcolor=white, label=proliferation];
+rate5 -> proliferation4  [label=nn];
+assessed11 -> rate5  [label=nsubjpass];
+populations9 [style=filled, fillcolor=white, label=populations];
+these7 [style=filled, fillcolor=white, label=these];
+populations9 -> these7  [label=det];
+cell8 [style=filled, fillcolor=white, label=cell];
+populations9 -> cell8  [label=nn];
+rate5 -> populations9  [label=prep_of];
+was10 [style=filled, fillcolor=white, label=was];
+assessed11 -> was10  [label=auxpass];
+assessed11 -> assessed11  [label=root];
+cultured13 [style=filled, fillcolor=white, label=cultured];
+when12 [style=filled, fillcolor=white, label=when];
+cultured13 -> when12  [label=advmod];
+assessed11 -> cultured13  [label=advcl];
+plastic15 [style=filled, fillcolor=white, label=plastic];
+cultured13 -> plastic15  [label=prep_on];
+}

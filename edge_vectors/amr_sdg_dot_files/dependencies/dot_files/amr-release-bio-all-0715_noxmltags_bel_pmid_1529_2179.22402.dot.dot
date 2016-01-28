@@ -1,0 +1,28 @@
+digraph "hyperoxia stimulated ERK-1 and ERK-2 phosphorylation -LCB- SE : Canonical ERK phosphorylation leading directly to activation -RCB-" {
+label="hyperoxia stimulated ERK-1 and ERK-2 phosphorylation -LCB- SE : Canonical ERK
+phosphorylation leading directly to activation -RCB-";
+stimulated2 [style=filled, fillcolor=white, label=stimulated];
+hyperoxia1 [style=filled, fillcolor=white, label=hyperoxia];
+stimulated2 -> hyperoxia1  [label=nsubj];
+stimulated2 -> stimulated2  [label=root];
+"ERK-13" [style=filled, fillcolor=white, label="ERK-1"];
+stimulated2 -> "ERK-13"  [label=dobj];
+phosphorylation6 [style=filled, fillcolor=white, label=phosphorylation];
+"ERK-25" [style=filled, fillcolor=white, label="ERK-2"];
+phosphorylation6 -> "ERK-25"  [label=nn];
+"ERK-13" -> phosphorylation6  [label=conj_and];
+SE8 [style=filled, fillcolor=white, label=SE];
+phosphorylation6 -> SE8  [label=dep];
+phosphorylation12 [style=filled, fillcolor=white, label=phosphorylation];
+Canonical10 [style=filled, fillcolor=white, label=Canonical];
+phosphorylation12 -> Canonical10  [label=nn];
+ERK11 [style=filled, fillcolor=white, label=ERK];
+phosphorylation12 -> ERK11  [label=nn];
+SE8 -> phosphorylation12  [label=dep];
+leading13 [style=filled, fillcolor=white, label=leading];
+phosphorylation12 -> leading13  [label=vmod];
+directly14 [style=filled, fillcolor=white, label=directly];
+leading13 -> directly14  [label=advmod];
+activation16 [style=filled, fillcolor=white, label=activation];
+leading13 -> activation16  [label=prep_to];
+}

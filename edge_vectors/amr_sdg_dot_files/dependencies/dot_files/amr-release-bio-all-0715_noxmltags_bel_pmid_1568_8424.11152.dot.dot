@@ -1,0 +1,40 @@
+digraph "We here report that the NFkappaB and C/EBP beta controlled gene IL6 is upregulated in DDIT3 - and FUS-DDIT3-expressing fibrosarcoma cell lines" {
+label="We here report that the NFkappaB and C/EBP beta controlled gene IL6 is
+upregulated in DDIT3 - and FUS-DDIT3-expressing fibrosarcoma cell lines";
+report3 [style=filled, fillcolor=white, label=report];
+We1 [style=filled, fillcolor=white, label=We];
+report3 -> We1  [label=nsubj];
+here2 [style=filled, fillcolor=white, label=here];
+report3 -> here2  [label=advmod];
+report3 -> report3  [label=root];
+controlled10 [style=filled, fillcolor=white, label=controlled];
+that4 [style=filled, fillcolor=white, label=that];
+controlled10 -> that4  [label=mark];
+beta9 [style=filled, fillcolor=white, label=beta];
+the5 [style=filled, fillcolor=white, label=the];
+beta9 -> the5  [label=det];
+NFkappaB6 [style=filled, fillcolor=white, label=NFkappaB];
+beta9 -> NFkappaB6  [label=nn];
+"C/EBP8" [style=filled, fillcolor=white, label="C/EBP"];
+NFkappaB6 -> "C/EBP8"  [label=conj_and];
+controlled10 -> beta9  [label=nsubj];
+report3 -> controlled10  [label=ccomp];
+IL612 [style=filled, fillcolor=white, label=IL6];
+gene11 [style=filled, fillcolor=white, label=gene];
+IL612 -> gene11  [label=nn];
+upregulated14 [style=filled, fillcolor=white, label=upregulated];
+upregulated14 -> IL612  [label=nsubjpass];
+is13 [style=filled, fillcolor=white, label=is];
+upregulated14 -> is13  [label=auxpass];
+controlled10 -> upregulated14  [label=ccomp];
+lines22 [style=filled, fillcolor=white, label=lines];
+DDIT316 [style=filled, fillcolor=white, label=DDIT3];
+lines22 -> DDIT316  [label=amod];
+"FUS-DDIT3-expressing19" [style=filled, fillcolor=white, label="FUS-DDIT3-expressing"];
+DDIT316 -> "FUS-DDIT3-expressing19"  [label=conj_and];
+fibrosarcoma20 [style=filled, fillcolor=white, label=fibrosarcoma];
+lines22 -> fibrosarcoma20  [label=amod];
+cell21 [style=filled, fillcolor=white, label=cell];
+lines22 -> cell21  [label=nn];
+upregulated14 -> lines22  [label=prep_in];
+}

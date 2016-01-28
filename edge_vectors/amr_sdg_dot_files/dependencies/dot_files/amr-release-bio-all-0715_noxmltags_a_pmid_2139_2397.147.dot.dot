@@ -1,0 +1,38 @@
+digraph "To investigate whether mutated K-RASV12 could upregulate YB-1 phosphorylation ,  we introduced mutated K-RAS into K-RASwt ,  SKBr3 and MCF-7 cells ." {
+label="To investigate whether mutated K-RASV12 could upregulate YB-1 phosphorylation ,
+we introduced mutated K-RAS into K-RASwt ,  SKBr3 and MCF-7 cells .";
+investigate2 [style=filled, fillcolor=white, label=investigate];
+To1 [style=filled, fillcolor=white, label=To];
+investigate2 -> To1  [label=aux];
+introduced12 [style=filled, fillcolor=white, label=introduced];
+introduced12 -> investigate2  [label=advcl];
+upregulate7 [style=filled, fillcolor=white, label=upregulate];
+whether3 [style=filled, fillcolor=white, label=whether];
+upregulate7 -> whether3  [label=mark];
+"K-RASV125" [style=filled, fillcolor=white, label="K-RASV12"];
+mutated4 [style=filled, fillcolor=white, label=mutated];
+"K-RASV125" -> mutated4  [label=nn];
+upregulate7 -> "K-RASV125"  [label=nsubj];
+could6 [style=filled, fillcolor=white, label=could];
+upregulate7 -> could6  [label=aux];
+investigate2 -> upregulate7  [label=ccomp];
+phosphorylation9 [style=filled, fillcolor=white, label=phosphorylation];
+"YB-18" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation9 -> "YB-18"  [label=nn];
+upregulate7 -> phosphorylation9  [label=dobj];
+we11 [style=filled, fillcolor=white, label=we];
+introduced12 -> we11  [label=nsubj];
+introduced12 -> introduced12  [label=root];
+"K-RAS14" [style=filled, fillcolor=white, label="K-RAS"];
+mutated13 [style=filled, fillcolor=white, label=mutated];
+"K-RAS14" -> mutated13  [label=nn];
+introduced12 -> "K-RAS14"  [label=dobj];
+cells21 [style=filled, fillcolor=white, label=cells];
+"K-RASwt16" [style=filled, fillcolor=white, label="K-RASwt"];
+cells21 -> "K-RASwt16"  [label=amod];
+SKBr318 [style=filled, fillcolor=white, label=SKBr3];
+"K-RASwt16" -> SKBr318  [label=conj_and];
+"MCF-720" [style=filled, fillcolor=white, label="MCF-7"];
+"K-RASwt16" -> "MCF-720"  [label=conj_and];
+introduced12 -> cells21  [label=prep_into];
+}

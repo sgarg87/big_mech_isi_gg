@@ -1,0 +1,32 @@
+digraph "Thus ,  the overexpression of E3b1 is sufficient to activate Rac and this effect is strictly dependent on Eps8 ." {
+label="Thus ,  the overexpression of E3b1 is sufficient to activate Rac and this
+effect is strictly dependent on Eps8 .";
+sufficient8 [style=filled, fillcolor=white, label=sufficient];
+Thus1 [style=filled, fillcolor=white, label=Thus];
+sufficient8 -> Thus1  [label=advmod];
+overexpression4 [style=filled, fillcolor=white, label=overexpression];
+the3 [style=filled, fillcolor=white, label=the];
+overexpression4 -> the3  [label=det];
+sufficient8 -> overexpression4  [label=nsubj];
+E3b16 [style=filled, fillcolor=white, label=E3b1];
+overexpression4 -> E3b16  [label=prep_of];
+is7 [style=filled, fillcolor=white, label=is];
+sufficient8 -> is7  [label=cop];
+sufficient8 -> sufficient8  [label=root];
+Rac11 [style=filled, fillcolor=white, label=Rac];
+activate10 [style=filled, fillcolor=white, label=activate];
+Rac11 -> activate10  [label=nn];
+sufficient8 -> Rac11  [label=prep_to];
+effect14 [style=filled, fillcolor=white, label=effect];
+this13 [style=filled, fillcolor=white, label=this];
+effect14 -> this13  [label=det];
+dependent17 [style=filled, fillcolor=white, label=dependent];
+dependent17 -> effect14  [label=nsubj];
+is15 [style=filled, fillcolor=white, label=is];
+dependent17 -> is15  [label=cop];
+strictly16 [style=filled, fillcolor=white, label=strictly];
+dependent17 -> strictly16  [label=advmod];
+sufficient8 -> dependent17  [label=conj_and];
+Eps819 [style=filled, fillcolor=white, label=Eps8];
+dependent17 -> Eps819  [label=prep_on];
+}

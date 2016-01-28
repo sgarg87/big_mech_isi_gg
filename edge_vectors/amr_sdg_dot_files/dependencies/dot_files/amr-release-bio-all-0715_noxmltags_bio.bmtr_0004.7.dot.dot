@@ -1,0 +1,26 @@
+digraph "Therefore ,  mUbRas is insensitive to GAP-mediated regulation ,  similar to an oncogenic Ras-G12V mutation ." {
+label="Therefore ,  mUbRas is insensitive to GAP-mediated regulation ,  similar to an
+oncogenic Ras-G12V mutation .";
+insensitive5 [style=filled, fillcolor=white, label=insensitive];
+Therefore1 [style=filled, fillcolor=white, label=Therefore];
+insensitive5 -> Therefore1  [label=advmod];
+mUbRas3 [style=filled, fillcolor=white, label=mUbRas];
+insensitive5 -> mUbRas3  [label=nsubj];
+is4 [style=filled, fillcolor=white, label=is];
+insensitive5 -> is4  [label=cop];
+insensitive5 -> insensitive5  [label=root];
+regulation8 [style=filled, fillcolor=white, label=regulation];
+"GAP-mediated7" [style=filled, fillcolor=white, label="GAP-mediated"];
+regulation8 -> "GAP-mediated7"  [label=amod];
+insensitive5 -> regulation8  [label=prep_to];
+similar10 [style=filled, fillcolor=white, label=similar];
+insensitive5 -> similar10  [label=acomp];
+mutation15 [style=filled, fillcolor=white, label=mutation];
+an12 [style=filled, fillcolor=white, label=an];
+mutation15 -> an12  [label=det];
+oncogenic13 [style=filled, fillcolor=white, label=oncogenic];
+mutation15 -> oncogenic13  [label=amod];
+"Ras-G12V4" [style=filled, fillcolor=white, label="Ras-G12V"];
+mutation15 -> "Ras-G12V4"  [label=nn];
+insensitive5 -> mutation15  [label=prep_to];
+}

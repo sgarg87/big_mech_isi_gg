@@ -1,0 +1,51 @@
+digraph "The pre-LIM domain of Ajuba was generated essentially as described -LSB- 9 -RSB- ,  but was fused to GFP by subcloning from the pEGFP-N1 20 vector ( BD Biosciences Clontech )" {
+label="The pre-LIM domain of Ajuba was generated essentially as described -LSB- 9
+-RSB- ,  but was fused to GFP by subcloning from the pEGFP-N1 20 vector ( BD
+Biosciences Clontech )";
+domain3 [style=filled, fillcolor=white, label=domain];
+The1 [style=filled, fillcolor=white, label=The];
+domain3 -> The1  [label=det];
+"pre-LIM2" [style=filled, fillcolor=white, label="pre-LIM"];
+domain3 -> "pre-LIM2"  [label=amod];
+generated7 [style=filled, fillcolor=white, label=generated];
+generated7 -> domain3  [label=nsubjpass];
+Ajuba5 [style=filled, fillcolor=white, label=Ajuba];
+domain3 -> Ajuba5  [label=prep_of];
+was6 [style=filled, fillcolor=white, label=was];
+generated7 -> was6  [label=auxpass];
+generated7 -> generated7  [label=root];
+essentially8 [style=filled, fillcolor=white, label=essentially];
+generated7 -> essentially8  [label=advmod];
+described10 [style=filled, fillcolor=white, label=described];
+as9 [style=filled, fillcolor=white, label=as];
+described10 -> as9  [label=mark];
+generated7 -> described10  [label=advcl];
+912 [style=filled, fillcolor=white, label=9];
+"-LSB-11" [style=filled, fillcolor=white, label="-LSB-"];
+912 -> "-LSB-11"  [label=number];
+"-RSB-13" [style=filled, fillcolor=white, label="-RSB-"];
+"-RSB-13" -> 912  [label=num];
+described10 -> "-RSB-13"  [label=dobj];
+fused17 [style=filled, fillcolor=white, label=fused];
+was16 [style=filled, fillcolor=white, label=was];
+fused17 -> was16  [label=auxpass];
+generated7 -> fused17  [label=conj_but];
+GFP19 [style=filled, fillcolor=white, label=GFP];
+fused17 -> GFP19  [label=prep_to];
+subcloning21 [style=filled, fillcolor=white, label=subcloning];
+fused17 -> subcloning21  [label=agent];
+vector26 [style=filled, fillcolor=white, label=vector];
+the23 [style=filled, fillcolor=white, label=the];
+vector26 -> the23  [label=det];
+"pEGFP-N124" [style=filled, fillcolor=white, label="pEGFP-N1"];
+vector26 -> "pEGFP-N124"  [label=amod];
+2025 [style=filled, fillcolor=white, label=20];
+"pEGFP-N124" -> 2025  [label=dep];
+subcloning21 -> vector26  [label=prep_from];
+Clontech30 [style=filled, fillcolor=white, label=Clontech];
+BD28 [style=filled, fillcolor=white, label=BD];
+Clontech30 -> BD28  [label=nn];
+Biosciences29 [style=filled, fillcolor=white, label=Biosciences];
+Clontech30 -> Biosciences29  [label=nn];
+vector26 -> Clontech30  [label=appos];
+}

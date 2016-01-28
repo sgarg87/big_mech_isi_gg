@@ -1,0 +1,51 @@
+digraph "In order to determine whether the growth effects of MØCM from samples generated in Figure 6B correlated with their IGF-1 content ,  MØCM was added to neoplastic LM2 cells ." {
+label="In order to determine whether the growth effects of MØCM from samples generated
+in Figure 6B correlated with their IGF-1 content ,  MØCM was added to neoplastic
+LM2 cells .";
+determine4 [style=filled, fillcolor=white, label=determine];
+In1 [style=filled, fillcolor=white, label=In];
+determine4 -> In1  [label=mark];
+order2 [style=filled, fillcolor=white, label=order];
+determine4 -> order2  [label=dep];
+to3 [style=filled, fillcolor=white, label=to];
+determine4 -> to3  [label=aux];
+added25 [style=filled, fillcolor=white, label=added];
+added25 -> determine4  [label=advcl];
+correlated17 [style=filled, fillcolor=white, label=correlated];
+whether5 [style=filled, fillcolor=white, label=whether];
+correlated17 -> whether5  [label=mark];
+effects8 [style=filled, fillcolor=white, label=effects];
+the6 [style=filled, fillcolor=white, label=the];
+effects8 -> the6  [label=det];
+growth7 [style=filled, fillcolor=white, label=growth];
+effects8 -> growth7  [label=nn];
+correlated17 -> effects8  [label=nsubj];
+"MØCM10" [style=filled, fillcolor=white, label="MØCM"];
+effects8 -> "MØCM10"  [label=prep_of];
+samples12 [style=filled, fillcolor=white, label=samples];
+"MØCM10" -> samples12  [label=prep_from];
+generated13 [style=filled, fillcolor=white, label=generated];
+samples12 -> generated13  [label=vmod];
+Figure15 [style=filled, fillcolor=white, label=Figure];
+generated13 -> Figure15  [label=prep_in];
+"6B1" [style=filled, fillcolor=white, label="6B"];
+Figure15 -> "6B1"  [label=num];
+determine4 -> correlated17  [label=ccomp];
+content21 [style=filled, fillcolor=white, label=content];
+their19 [style=filled, fillcolor=white, label=their];
+content21 -> their19  [label=poss];
+"IGF-120" [style=filled, fillcolor=white, label="IGF-1"];
+content21 -> "IGF-120"  [label=nn];
+correlated17 -> content21  [label=prep_with];
+"MØCM23" [style=filled, fillcolor=white, label="MØCM"];
+added25 -> "MØCM23"  [label=nsubjpass];
+was24 [style=filled, fillcolor=white, label=was];
+added25 -> was24  [label=auxpass];
+added25 -> added25  [label=root];
+cells29 [style=filled, fillcolor=white, label=cells];
+neoplastic27 [style=filled, fillcolor=white, label=neoplastic];
+cells29 -> neoplastic27  [label=amod];
+LM228 [style=filled, fillcolor=white, label=LM2];
+cells29 -> LM228  [label=nn];
+added25 -> cells29  [label=prep_to];
+}

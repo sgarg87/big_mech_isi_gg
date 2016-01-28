@@ -1,0 +1,51 @@
+digraph "Therefore ,  IL-4 was added to wells containing primary naïve and tumor-educated BAL macrophages to determine if alternative activation could increase IGF-1 production in either macrophage group ." {
+label="Therefore ,  IL-4 was added to wells containing primary naïve and tumor-
+educated BAL macrophages to determine if alternative activation could increase
+IGF-1 production in either macrophage group .";
+added5 [style=filled, fillcolor=white, label=added];
+Therefore1 [style=filled, fillcolor=white, label=Therefore];
+added5 -> Therefore1  [label=advmod];
+"IL-43" [style=filled, fillcolor=white, label="IL-4"];
+added5 -> "IL-43"  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+added5 -> was4  [label=auxpass];
+added5 -> added5  [label=root];
+wells7 [style=filled, fillcolor=white, label=wells];
+added5 -> wells7  [label=prep_to];
+containing8 [style=filled, fillcolor=white, label=containing];
+wells7 -> containing8  [label=vmod];
+"naïve10" [style=filled, fillcolor=white, label="naïve"];
+primary9 [style=filled, fillcolor=white, label=primary];
+"naïve10" -> primary9  [label=amod];
+containing8 -> "naïve10"  [label=dobj];
+macrophages14 [style=filled, fillcolor=white, label=macrophages];
+"tumor-educated12" [style=filled, fillcolor=white, label="tumor-educated"];
+macrophages14 -> "tumor-educated12"  [label=amod];
+BAL13 [style=filled, fillcolor=white, label=BAL];
+macrophages14 -> BAL13  [label=nn];
+"naïve10" -> macrophages14  [label=conj_and];
+determine16 [style=filled, fillcolor=white, label=determine];
+to15 [style=filled, fillcolor=white, label=to];
+determine16 -> to15  [label=aux];
+containing8 -> determine16  [label=vmod];
+increase21 [style=filled, fillcolor=white, label=increase];
+if17 [style=filled, fillcolor=white, label=if];
+increase21 -> if17  [label=mark];
+activation19 [style=filled, fillcolor=white, label=activation];
+alternative18 [style=filled, fillcolor=white, label=alternative];
+activation19 -> alternative18  [label=amod];
+increase21 -> activation19  [label=nsubj];
+could20 [style=filled, fillcolor=white, label=could];
+increase21 -> could20  [label=aux];
+determine16 -> increase21  [label=advcl];
+production23 [style=filled, fillcolor=white, label=production];
+"IGF-122" [style=filled, fillcolor=white, label="IGF-1"];
+production23 -> "IGF-122"  [label=nn];
+increase21 -> production23  [label=dobj];
+group27 [style=filled, fillcolor=white, label=group];
+either25 [style=filled, fillcolor=white, label=either];
+group27 -> either25  [label=det];
+macrophage26 [style=filled, fillcolor=white, label=macrophage];
+group27 -> macrophage26  [label=amod];
+increase21 -> group27  [label=prep_in];
+}

@@ -1,0 +1,53 @@
+digraph "Recently ,  Legius and colleagues ( Brems et al. ,  2007 ) discovered mutations in the Sprouty-related protein ,  SPRED1 ,  in a form of neurofibromatosis type I ( NF1 ) in which the neurofibromin gene is wild-type ." {
+label="Recently ,  Legius and colleagues ( Brems et al. ,  2007 ) discovered mutations
+in the Sprouty-related protein ,  SPRED1 ,  in a form of neurofibromatosis type
+I ( NF1 ) in which the neurofibromin gene is wild-type .";
+discovered13 [style=filled, fillcolor=white, label=discovered];
+Recently1 [style=filled, fillcolor=white, label=Recently];
+discovered13 -> Recently1  [label=advmod];
+Legius3 [style=filled, fillcolor=white, label=Legius];
+discovered13 -> Legius3  [label=nsubj];
+colleagues5 [style=filled, fillcolor=white, label=colleagues];
+Legius3 -> colleagues5  [label=conj_and];
+Brems7 [style=filled, fillcolor=white, label=Brems];
+Legius3 -> Brems7  [label=appos];
+"al.9" [style=filled, fillcolor=white, label="al."];
+Brems7 -> "al.9"  [label=conj_et];
+200711 [style=filled, fillcolor=white, label=2007];
+Brems7 -> 200711  [label=dep];
+discovered13 -> discovered13  [label=root];
+mutations14 [style=filled, fillcolor=white, label=mutations];
+discovered13 -> mutations14  [label=dobj];
+protein18 [style=filled, fillcolor=white, label=protein];
+the16 [style=filled, fillcolor=white, label=the];
+protein18 -> the16  [label=det];
+"Sprouty-related17" [style=filled, fillcolor=white, label="Sprouty-related"];
+protein18 -> "Sprouty-related17"  [label=amod];
+discovered13 -> protein18  [label=prep_in];
+SPRED120 [style=filled, fillcolor=white, label=SPRED1];
+protein18 -> SPRED120  [label=appos];
+form24 [style=filled, fillcolor=white, label=form];
+a23 [style=filled, fillcolor=white, label=a];
+form24 -> a23  [label=det];
+discovered13 -> form24  [label=prep_in];
+I28 [style=filled, fillcolor=white, label=I];
+neurofibromatosis26 [style=filled, fillcolor=white, label=neurofibromatosis];
+I28 -> neurofibromatosis26  [label=amod];
+type27 [style=filled, fillcolor=white, label=type];
+I28 -> type27  [label=nn];
+form24 -> I28  [label=prep_of];
+NF130 [style=filled, fillcolor=white, label=NF1];
+I28 -> NF130  [label=appos];
+"wild-type38" [style=filled, fillcolor=white, label="wild-type"];
+which33 [style=filled, fillcolor=white, label=which];
+"wild-type38" -> which33  [label=prep_in];
+gene36 [style=filled, fillcolor=white, label=gene];
+the34 [style=filled, fillcolor=white, label=the];
+gene36 -> the34  [label=det];
+neurofibromin35 [style=filled, fillcolor=white, label=neurofibromin];
+gene36 -> neurofibromin35  [label=nn];
+"wild-type38" -> gene36  [label=nsubj];
+is37 [style=filled, fillcolor=white, label=is];
+"wild-type38" -> is37  [label=cop];
+I28 -> "wild-type38"  [label=rcmod];
+}

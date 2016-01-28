@@ -1,0 +1,60 @@
+digraph "Transgenic mice ( both newborn and adult ) expressing the signalingdefective b4-integrin mutant showed a twofold decrease in the epidermal proliferative index ,  confirming that b4-integrin actually contributes to proliferation ( Nikolopoulos et al. ,  2005 ) ." {
+label="Transgenic mice ( both newborn and adult ) expressing the signalingdefective
+b4-integrin mutant showed a twofold decrease in the epidermal proliferative
+index ,  confirming that b4-integrin actually contributes to proliferation (
+Nikolopoulos et al. ,  2005 ) .";
+mice2 [style=filled, fillcolor=white, label=mice];
+Transgenic1 [style=filled, fillcolor=white, label=Transgenic];
+mice2 -> Transgenic1  [label=nn];
+showed14 [style=filled, fillcolor=white, label=showed];
+showed14 -> mice2  [label=nsubj];
+newborn5 [style=filled, fillcolor=white, label=newborn];
+both4 [style=filled, fillcolor=white, label=both];
+newborn5 -> both4  [label=preconj];
+mice2 -> newborn5  [label=dep];
+adult7 [style=filled, fillcolor=white, label=adult];
+newborn5 -> adult7  [label=conj_and];
+expressing9 [style=filled, fillcolor=white, label=expressing];
+mice2 -> expressing9  [label=vmod];
+mutant13 [style=filled, fillcolor=white, label=mutant];
+the10 [style=filled, fillcolor=white, label=the];
+mutant13 -> the10  [label=det];
+signalingdefective11 [style=filled, fillcolor=white, label=signalingdefective];
+mutant13 -> signalingdefective11  [label=amod];
+"b4-integrin12" [style=filled, fillcolor=white, label="b4-integrin"];
+mutant13 -> "b4-integrin12"  [label=amod];
+expressing9 -> mutant13  [label=dobj];
+showed14 -> showed14  [label=root];
+decrease17 [style=filled, fillcolor=white, label=decrease];
+a15 [style=filled, fillcolor=white, label=a];
+decrease17 -> a15  [label=det];
+twofold16 [style=filled, fillcolor=white, label=twofold];
+decrease17 -> twofold16  [label=amod];
+showed14 -> decrease17  [label=dobj];
+index22 [style=filled, fillcolor=white, label=index];
+the19 [style=filled, fillcolor=white, label=the];
+index22 -> the19  [label=det];
+epidermal20 [style=filled, fillcolor=white, label=epidermal];
+index22 -> epidermal20  [label=amod];
+proliferative21 [style=filled, fillcolor=white, label=proliferative];
+index22 -> proliferative21  [label=nn];
+showed14 -> index22  [label=prep_in];
+confirming24 [style=filled, fillcolor=white, label=confirming];
+showed14 -> confirming24  [label=vmod];
+contributes28 [style=filled, fillcolor=white, label=contributes];
+that25 [style=filled, fillcolor=white, label=that];
+contributes28 -> that25  [label=mark];
+"b4-integrin26" [style=filled, fillcolor=white, label="b4-integrin"];
+contributes28 -> "b4-integrin26"  [label=nsubj];
+actually27 [style=filled, fillcolor=white, label=actually];
+contributes28 -> actually27  [label=advmod];
+confirming24 -> contributes28  [label=ccomp];
+proliferation30 [style=filled, fillcolor=white, label=proliferation];
+contributes28 -> proliferation30  [label=prep_to];
+Nikolopoulos32 [style=filled, fillcolor=white, label=Nikolopoulos];
+proliferation30 -> Nikolopoulos32  [label=appos];
+"al.34" [style=filled, fillcolor=white, label="al."];
+Nikolopoulos32 -> "al.34"  [label=conj_et];
+200536 [style=filled, fillcolor=white, label=2005];
+Nikolopoulos32 -> 200536  [label=dep];
+}

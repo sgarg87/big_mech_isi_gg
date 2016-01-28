@@ -1,0 +1,51 @@
+digraph "H-Ras ,  on the other hand ,  is not geranylgeranylated ,  suggesting that tumors driven by mutant H-Ras ,  such as bladder cancer or thyroid cancer ,  might be susceptible to farnesyltransferase inhibition ." {
+label="H-Ras ,  on the other hand ,  is not geranylgeranylated ,  suggesting that
+tumors driven by mutant H-Ras ,  such as bladder cancer or thyroid cancer ,
+might be susceptible to farnesyltransferase inhibition .";
+geranylgeranylated10 [style=filled, fillcolor=white, label=geranylgeranylated];
+"H-Ras1" [style=filled, fillcolor=white, label="H-Ras"];
+geranylgeranylated10 -> "H-Ras1"  [label=nsubj];
+hand6 [style=filled, fillcolor=white, label=hand];
+the4 [style=filled, fillcolor=white, label=the];
+hand6 -> the4  [label=det];
+other5 [style=filled, fillcolor=white, label=other];
+hand6 -> other5  [label=amod];
+"H-Ras1" -> hand6  [label=prep_on];
+is8 [style=filled, fillcolor=white, label=is];
+geranylgeranylated10 -> is8  [label=cop];
+not9 [style=filled, fillcolor=white, label=not];
+geranylgeranylated10 -> not9  [label=neg];
+geranylgeranylated10 -> geranylgeranylated10  [label=root];
+suggesting12 [style=filled, fillcolor=white, label=suggesting];
+geranylgeranylated10 -> suggesting12  [label=xcomp];
+susceptible30 [style=filled, fillcolor=white, label=susceptible];
+that13 [style=filled, fillcolor=white, label=that];
+susceptible30 -> that13  [label=mark];
+tumors14 [style=filled, fillcolor=white, label=tumors];
+susceptible30 -> tumors14  [label=nsubj];
+driven15 [style=filled, fillcolor=white, label=driven];
+tumors14 -> driven15  [label=vmod];
+"H-Ras18" [style=filled, fillcolor=white, label="H-Ras"];
+mutant17 [style=filled, fillcolor=white, label=mutant];
+"H-Ras18" -> mutant17  [label=amod];
+driven15 -> "H-Ras18"  [label=agent];
+cancer23 [style=filled, fillcolor=white, label=cancer];
+bladder22 [style=filled, fillcolor=white, label=bladder];
+cancer23 -> bladder22  [label=nn];
+tumors14 -> cancer23  [label=prep_such_as];
+cancer26 [style=filled, fillcolor=white, label=cancer];
+thyroid25 [style=filled, fillcolor=white, label=thyroid];
+cancer26 -> thyroid25  [label=nn];
+cancer23 -> cancer26  [label=conj_or];
+might28 [style=filled, fillcolor=white, label=might];
+susceptible30 -> might28  [label=aux];
+be29 [style=filled, fillcolor=white, label=be];
+susceptible30 -> be29  [label=cop];
+suggesting12 -> susceptible30  [label=ccomp];
+farnesyltransferase32 [style=filled, fillcolor=white, label=farnesyltransferase];
+to31 [style=filled, fillcolor=white, label=to];
+farnesyltransferase32 -> to31  [label=aux];
+susceptible30 -> farnesyltransferase32  [label=xcomp];
+inhibition33 [style=filled, fillcolor=white, label=inhibition];
+farnesyltransferase32 -> inhibition33  [label=dobj];
+}

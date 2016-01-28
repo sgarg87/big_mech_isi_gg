@@ -1,0 +1,45 @@
+digraph "in view of the ability of H2O2 to inhibit protein tyrosine phosphatases ( PTPases ) ,  such as PTP-1B ( 68 ) ,  and SH-2 domain-containing tyrosine phosphatase ( SHP ) -2 ( 69 ) ," {
+label="in view of the ability of H2O2 to inhibit protein tyrosine phosphatases (
+PTPases ) ,  such as PTP-1B ( 68 ) ,  and SH-2 domain-containing tyrosine
+phosphatase ( SHP ) -2 ( 69 ) ,";
+in1 [style=filled, fillcolor=white, label=in];
+in1 -> in1  [label=root];
+view2 [style=filled, fillcolor=white, label=view];
+in1 -> view2  [label=pobj];
+ability5 [style=filled, fillcolor=white, label=ability];
+the4 [style=filled, fillcolor=white, label=the];
+ability5 -> the4  [label=det];
+view2 -> ability5  [label=prep_of];
+H2O27 [style=filled, fillcolor=white, label=H2O2];
+ability5 -> H2O27  [label=prep_of];
+inhibit9 [style=filled, fillcolor=white, label=inhibit];
+to8 [style=filled, fillcolor=white, label=to];
+inhibit9 -> to8  [label=aux];
+view2 -> inhibit9  [label=vmod];
+phosphatases12 [style=filled, fillcolor=white, label=phosphatases];
+protein10 [style=filled, fillcolor=white, label=protein];
+phosphatases12 -> protein10  [label=nn];
+tyrosine11 [style=filled, fillcolor=white, label=tyrosine];
+phosphatases12 -> tyrosine11  [label=nn];
+inhibit9 -> phosphatases12  [label=dobj];
+PTPases14 [style=filled, fillcolor=white, label=PTPases];
+phosphatases12 -> PTPases14  [label=appos];
+"PTP-1B9" [style=filled, fillcolor=white, label="PTP-1B"];
+phosphatases12 -> "PTP-1B9"  [label=prep_such_as];
+6821 [style=filled, fillcolor=white, label=68];
+phosphatases12 -> 6821  [label=appos];
+"SH-25" [style=filled, fillcolor=white, label="SH-2"];
+in1 -> "SH-25"  [label=conj_and];
+"domain-containing26" [style=filled, fillcolor=white, label="domain-containing"];
+"SH-25" -> "domain-containing26"  [label=dep];
+"-23" [style=filled, fillcolor=white, label="-2"];
+tyrosine27 [style=filled, fillcolor=white, label=tyrosine];
+"-23" -> tyrosine27  [label=nn];
+phosphatase28 [style=filled, fillcolor=white, label=phosphatase];
+"-23" -> phosphatase28  [label=nn];
+SHP30 [style=filled, fillcolor=white, label=SHP];
+"-23" -> SHP30  [label=appos];
+"domain-containing26" -> "-23"  [label=dobj];
+6934 [style=filled, fillcolor=white, label=69];
+"-23" -> 6934  [label=appos];
+}

@@ -1,0 +1,56 @@
+digraph "Trahey and McCormick discovered GAP while seeking to explain how relatively small changes in intrinsic GTPase between wild-type and mutant Ras proteins accounted for profound differences in transforming activity ( Trahey and McCormick ,  1987 ) ." {
+label="Trahey and McCormick discovered GAP while seeking to explain how relatively
+small changes in intrinsic GTPase between wild-type and mutant Ras proteins
+accounted for profound differences in transforming activity ( Trahey and
+McCormick ,  1987 ) .";
+discovered4 [style=filled, fillcolor=white, label=discovered];
+Trahey1 [style=filled, fillcolor=white, label=Trahey];
+discovered4 -> Trahey1  [label=nsubj];
+McCormick3 [style=filled, fillcolor=white, label=McCormick];
+Trahey1 -> McCormick3  [label=conj_and];
+discovered4 -> discovered4  [label=root];
+GAP5 [style=filled, fillcolor=white, label=GAP];
+discovered4 -> GAP5  [label=dobj];
+seeking7 [style=filled, fillcolor=white, label=seeking];
+discovered4 -> seeking7  [label=prepc_while];
+explain9 [style=filled, fillcolor=white, label=explain];
+to8 [style=filled, fillcolor=white, label=to];
+explain9 -> to8  [label=aux];
+seeking7 -> explain9  [label=xcomp];
+accounted23 [style=filled, fillcolor=white, label=accounted];
+how10 [style=filled, fillcolor=white, label=how];
+accounted23 -> how10  [label=advmod];
+small12 [style=filled, fillcolor=white, label=small];
+relatively11 [style=filled, fillcolor=white, label=relatively];
+small12 -> relatively11  [label=advmod];
+changes13 [style=filled, fillcolor=white, label=changes];
+changes13 -> small12  [label=amod];
+accounted23 -> changes13  [label=nsubj];
+GTPase16 [style=filled, fillcolor=white, label=GTPase];
+intrinsic15 [style=filled, fillcolor=white, label=intrinsic];
+GTPase16 -> intrinsic15  [label=nn];
+changes13 -> GTPase16  [label=prep_in];
+proteins22 [style=filled, fillcolor=white, label=proteins];
+"wild-type18" [style=filled, fillcolor=white, label="wild-type"];
+proteins22 -> "wild-type18"  [label=amod];
+mutant20 [style=filled, fillcolor=white, label=mutant];
+"wild-type18" -> mutant20  [label=conj_and];
+Ras21 [style=filled, fillcolor=white, label=Ras];
+proteins22 -> Ras21  [label=nn];
+GTPase16 -> proteins22  [label=prep_between];
+explain9 -> accounted23  [label=ccomp];
+differences26 [style=filled, fillcolor=white, label=differences];
+profound25 [style=filled, fillcolor=white, label=profound];
+differences26 -> profound25  [label=amod];
+accounted23 -> differences26  [label=prep_for];
+transforming28 [style=filled, fillcolor=white, label=transforming];
+accounted23 -> transforming28  [label=prepc_in];
+activity29 [style=filled, fillcolor=white, label=activity];
+transforming28 -> activity29  [label=dobj];
+Trahey31 [style=filled, fillcolor=white, label=Trahey];
+activity29 -> Trahey31  [label=appos];
+McCormick33 [style=filled, fillcolor=white, label=McCormick];
+Trahey31 -> McCormick33  [label=conj_and];
+198735 [style=filled, fillcolor=white, label=1987];
+Trahey31 -> 198735  [label=dep];
+}

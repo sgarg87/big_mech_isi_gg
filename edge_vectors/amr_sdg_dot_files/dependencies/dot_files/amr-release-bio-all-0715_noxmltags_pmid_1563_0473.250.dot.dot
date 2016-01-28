@@ -1,0 +1,49 @@
+digraph "The Snail antibody was generated in Guinea pigs by inoculating them with the N-terminal sequence of murine Snail fused to GST ( Covance ,  Princeton ,  New Jersey ,  United States ) ." {
+label="The Snail antibody was generated in Guinea pigs by inoculating them with the
+N-terminal sequence of murine Snail fused to GST ( Covance ,  Princeton ,  New
+Jersey ,  United States ) .";
+antibody3 [style=filled, fillcolor=white, label=antibody];
+The1 [style=filled, fillcolor=white, label=The];
+antibody3 -> The1  [label=det];
+Snail2 [style=filled, fillcolor=white, label=Snail];
+antibody3 -> Snail2  [label=nn];
+generated5 [style=filled, fillcolor=white, label=generated];
+generated5 -> antibody3  [label=nsubjpass];
+was4 [style=filled, fillcolor=white, label=was];
+generated5 -> was4  [label=auxpass];
+generated5 -> generated5  [label=root];
+pigs8 [style=filled, fillcolor=white, label=pigs];
+Guinea7 [style=filled, fillcolor=white, label=Guinea];
+pigs8 -> Guinea7  [label=nn];
+generated5 -> pigs8  [label=prep_in];
+inoculating10 [style=filled, fillcolor=white, label=inoculating];
+generated5 -> inoculating10  [label=agent];
+them11 [style=filled, fillcolor=white, label=them];
+inoculating10 -> them11  [label=dobj];
+sequence15 [style=filled, fillcolor=white, label=sequence];
+the13 [style=filled, fillcolor=white, label=the];
+sequence15 -> the13  [label=det];
+"N-terminal14" [style=filled, fillcolor=white, label="N-terminal"];
+sequence15 -> "N-terminal14"  [label=amod];
+inoculating10 -> sequence15  [label=prep_with];
+Snail18 [style=filled, fillcolor=white, label=Snail];
+murine17 [style=filled, fillcolor=white, label=murine];
+Snail18 -> murine17  [label=nn];
+sequence15 -> Snail18  [label=prep_of];
+fused19 [style=filled, fillcolor=white, label=fused];
+Snail18 -> fused19  [label=vmod];
+GST21 [style=filled, fillcolor=white, label=GST];
+fused19 -> GST21  [label=prep_to];
+Princeton25 [style=filled, fillcolor=white, label=Princeton];
+Covance23 [style=filled, fillcolor=white, label=Covance];
+Princeton25 -> Covance23  [label=nn];
+GST21 -> Princeton25  [label=appos];
+Jersey28 [style=filled, fillcolor=white, label=Jersey];
+New27 [style=filled, fillcolor=white, label=New];
+Jersey28 -> New27  [label=nn];
+Princeton25 -> Jersey28  [label=dep];
+States31 [style=filled, fillcolor=white, label=States];
+United30 [style=filled, fillcolor=white, label=United];
+States31 -> United30  [label=nn];
+Princeton25 -> States31  [label=dep];
+}

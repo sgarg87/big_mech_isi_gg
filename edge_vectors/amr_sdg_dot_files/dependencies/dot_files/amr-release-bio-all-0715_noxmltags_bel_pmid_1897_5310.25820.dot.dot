@@ -1,0 +1,45 @@
+digraph "Furthermore ,  the hydroxyproline content was significantly reduced in the anti-CD154 mAb -- treated group compared with the control IgG -- treated group ( Figure 5c ) ." {
+label="Furthermore ,  the hydroxyproline content was significantly reduced in the
+anti-CD154 mAb -- treated group compared with the control IgG -- treated group (
+Figure 5c ) .";
+reduced8 [style=filled, fillcolor=white, label=reduced];
+Furthermore1 [style=filled, fillcolor=white, label=Furthermore];
+reduced8 -> Furthermore1  [label=advmod];
+content5 [style=filled, fillcolor=white, label=content];
+the3 [style=filled, fillcolor=white, label=the];
+content5 -> the3  [label=det];
+hydroxyproline4 [style=filled, fillcolor=white, label=hydroxyproline];
+content5 -> hydroxyproline4  [label=amod];
+reduced8 -> content5  [label=nsubj];
+was6 [style=filled, fillcolor=white, label=was];
+reduced8 -> was6  [label=aux];
+significantly7 [style=filled, fillcolor=white, label=significantly];
+reduced8 -> significantly7  [label=advmod];
+reduced8 -> reduced8  [label=root];
+mAb12 [style=filled, fillcolor=white, label=mAb];
+the10 [style=filled, fillcolor=white, label=the];
+mAb12 -> the10  [label=det];
+"anti-CD154" [style=filled, fillcolor=white, label="anti-CD154"];
+mAb12 -> "anti-CD154"  [label=amod];
+reduced8 -> mAb12  [label=prep_in];
+treated14 [style=filled, fillcolor=white, label=treated];
+reduced8 -> treated14  [label=dep];
+group15 [style=filled, fillcolor=white, label=group];
+treated14 -> group15  [label=dobj];
+with17 [style=filled, fillcolor=white, label=with];
+treated14 -> with17  [label=prepc_compared_with];
+IgG20 [style=filled, fillcolor=white, label=IgG];
+the18 [style=filled, fillcolor=white, label=the];
+IgG20 -> the18  [label=det];
+control19 [style=filled, fillcolor=white, label=control];
+IgG20 -> control19  [label=nn];
+treated14 -> IgG20  [label=pobj];
+treated22 [style=filled, fillcolor=white, label=treated];
+reduced8 -> treated22  [label=dep];
+group23 [style=filled, fillcolor=white, label=group];
+treated22 -> group23  [label=dobj];
+Figure25 [style=filled, fillcolor=white, label=Figure];
+group23 -> Figure25  [label=appos];
+"5c26" [style=filled, fillcolor=white, label="5c"];
+Figure25 -> "5c26"  [label=num];
+}

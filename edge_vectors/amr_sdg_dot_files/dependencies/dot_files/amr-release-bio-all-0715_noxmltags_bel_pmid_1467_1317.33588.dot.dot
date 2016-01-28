@@ -1,0 +1,32 @@
+digraph "p57Kip2 ( Cdkn1c ) is expressed in postmitotic differentiating midbrain dopamine cells . Induction of p57Kip2 expression depends on Nurr1 ," {
+label="p57Kip2 ( Cdkn1c ) is expressed in postmitotic differentiating midbrain
+dopamine cells . Induction of p57Kip2 expression depends on Nurr1 ,";
+expressed6 [style=filled, fillcolor=white, label=expressed];
+p57Kip21 [style=filled, fillcolor=white, label=p57Kip2];
+expressed6 -> p57Kip21  [label=nsubjpass];
+Cdkn1c3 [style=filled, fillcolor=white, label=Cdkn1c];
+p57Kip21 -> Cdkn1c3  [label=appos];
+is5 [style=filled, fillcolor=white, label=is];
+expressed6 -> is5  [label=auxpass];
+expressed6 -> expressed6  [label=root];
+differentiating9 [style=filled, fillcolor=white, label=differentiating];
+postmitotic8 [style=filled, fillcolor=white, label=postmitotic];
+differentiating9 -> postmitotic8  [label=amod];
+cells12 [style=filled, fillcolor=white, label=cells];
+cells12 -> differentiating9  [label=amod];
+midbrain10 [style=filled, fillcolor=white, label=midbrain];
+cells12 -> midbrain10  [label=nn];
+dopamine11 [style=filled, fillcolor=white, label=dopamine];
+cells12 -> dopamine11  [label=nn];
+expressed6 -> cells12  [label=prep_in];
+Induction14 [style=filled, fillcolor=white, label=Induction];
+cells12 -> Induction14  [label=dep];
+expression17 [style=filled, fillcolor=white, label=expression];
+p57Kip216 [style=filled, fillcolor=white, label=p57Kip2];
+expression17 -> p57Kip216  [label=amod];
+Induction14 -> expression17  [label=prep_of];
+depends18 [style=filled, fillcolor=white, label=depends];
+cells12 -> depends18  [label=dep];
+Nurr120 [style=filled, fillcolor=white, label=Nurr1];
+depends18 -> Nurr120  [label=prep_on];
+}

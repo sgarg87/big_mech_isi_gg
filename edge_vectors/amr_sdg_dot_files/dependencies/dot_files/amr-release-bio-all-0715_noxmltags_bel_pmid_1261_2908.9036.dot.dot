@@ -1,0 +1,51 @@
+digraph "We found that liver from ICAM-1-deficient mice exhibited impaired regeneration after partial hepatectomy . This finding is associated with dramatic decrease in leukocyte recruitment and tissue TNF-alpha and IL-6 levels ." {
+label="We found that liver from ICAM-1-deficient mice exhibited impaired regeneration
+after partial hepatectomy . This finding is associated with dramatic decrease in
+leukocyte recruitment and tissue TNF-alpha and IL-6 levels .";
+found2 [style=filled, fillcolor=white, label=found];
+We1 [style=filled, fillcolor=white, label=We];
+found2 -> We1  [label=nsubj];
+associated18 [style=filled, fillcolor=white, label=associated];
+associated18 -> found2  [label=dep];
+exhibited8 [style=filled, fillcolor=white, label=exhibited];
+that3 [style=filled, fillcolor=white, label=that];
+exhibited8 -> that3  [label=mark];
+liver4 [style=filled, fillcolor=white, label=liver];
+exhibited8 -> liver4  [label=nsubj];
+mice7 [style=filled, fillcolor=white, label=mice];
+"ICAM-1-deficient6" [style=filled, fillcolor=white, label="ICAM-1-deficient"];
+mice7 -> "ICAM-1-deficient6"  [label=nn];
+liver4 -> mice7  [label=prep_from];
+found2 -> exhibited8  [label=ccomp];
+regeneration10 [style=filled, fillcolor=white, label=regeneration];
+impaired9 [style=filled, fillcolor=white, label=impaired];
+regeneration10 -> impaired9  [label=amod];
+exhibited8 -> regeneration10  [label=dobj];
+hepatectomy13 [style=filled, fillcolor=white, label=hepatectomy];
+partial12 [style=filled, fillcolor=white, label=partial];
+hepatectomy13 -> partial12  [label=amod];
+regeneration10 -> hepatectomy13  [label=prep_after];
+finding16 [style=filled, fillcolor=white, label=finding];
+This15 [style=filled, fillcolor=white, label=This];
+finding16 -> This15  [label=det];
+associated18 -> finding16  [label=nsubjpass];
+is17 [style=filled, fillcolor=white, label=is];
+associated18 -> is17  [label=auxpass];
+associated18 -> associated18  [label=root];
+decrease21 [style=filled, fillcolor=white, label=decrease];
+dramatic20 [style=filled, fillcolor=white, label=dramatic];
+decrease21 -> dramatic20  [label=amod];
+associated18 -> decrease21  [label=prep_with];
+recruitment24 [style=filled, fillcolor=white, label=recruitment];
+leukocyte23 [style=filled, fillcolor=white, label=leukocyte];
+recruitment24 -> leukocyte23  [label=amod];
+decrease21 -> recruitment24  [label=prep_in];
+"TNF-alpha27" [style=filled, fillcolor=white, label="TNF-alpha"];
+tissue26 [style=filled, fillcolor=white, label=tissue];
+"TNF-alpha27" -> tissue26  [label=nn];
+recruitment24 -> "TNF-alpha27"  [label=conj_and];
+levels30 [style=filled, fillcolor=white, label=levels];
+"IL-629" [style=filled, fillcolor=white, label="IL-6"];
+levels30 -> "IL-629"  [label=nn];
+recruitment24 -> levels30  [label=conj_and];
+}

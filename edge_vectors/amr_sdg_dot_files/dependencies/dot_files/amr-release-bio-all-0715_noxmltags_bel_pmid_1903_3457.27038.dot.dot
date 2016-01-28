@@ -1,0 +1,49 @@
+digraph "Significantly decreased mRNA levels of M-phase-promoting Cdc25B phosphatase ( Fig. 3B ) ,  a known transcriptional target of Foxm1 ( 15 ) ,  were observed in the lungs of epFoxm1 - / - mice ." {
+label="Significantly decreased mRNA levels of M-phase-promoting Cdc25B phosphatase (
+Fig. 3B ) ,  a known transcriptional target of Foxm1 ( 15 ) ,  were observed in
+the lungs of epFoxm1 - / - mice .";
+levels4 [style=filled, fillcolor=white, label=levels];
+Significantly1 [style=filled, fillcolor=white, label=Significantly];
+levels4 -> Significantly1  [label=amod];
+decreased2 [style=filled, fillcolor=white, label=decreased];
+levels4 -> decreased2  [label=amod];
+mRNA3 [style=filled, fillcolor=white, label=mRNA];
+levels4 -> mRNA3  [label=nn];
+observed25 [style=filled, fillcolor=white, label=observed];
+observed25 -> levels4  [label=nsubjpass];
+phosphatase8 [style=filled, fillcolor=white, label=phosphatase];
+"M-phase-promoting6" [style=filled, fillcolor=white, label="M-phase-promoting"];
+phosphatase8 -> "M-phase-promoting6"  [label=amod];
+Cdc25B7 [style=filled, fillcolor=white, label=Cdc25B];
+phosphatase8 -> Cdc25B7  [label=amod];
+levels4 -> phosphatase8  [label=prep_of];
+"3B11" [style=filled, fillcolor=white, label="3B"];
+"Fig.10" [style=filled, fillcolor=white, label="Fig."];
+"3B11" -> "Fig.10"  [label=number];
+phosphatase8 -> "3B11"  [label=dep];
+target17 [style=filled, fillcolor=white, label=target];
+a14 [style=filled, fillcolor=white, label=a];
+target17 -> a14  [label=det];
+known15 [style=filled, fillcolor=white, label=known];
+target17 -> known15  [label=amod];
+transcriptional16 [style=filled, fillcolor=white, label=transcriptional];
+target17 -> transcriptional16  [label=amod];
+levels4 -> target17  [label=appos];
+Foxm119 [style=filled, fillcolor=white, label=Foxm1];
+target17 -> Foxm119  [label=prep_of];
+152 [style=filled, fillcolor=white, label=15];
+target17 -> 152  [label=appos];
+were24 [style=filled, fillcolor=white, label=were];
+observed25 -> were24  [label=auxpass];
+observed25 -> observed25  [label=root];
+lungs28 [style=filled, fillcolor=white, label=lungs];
+the27 [style=filled, fillcolor=white, label=the];
+lungs28 -> the27  [label=det];
+observed25 -> lungs28  [label=prep_in];
+mice34 [style=filled, fillcolor=white, label=mice];
+epFoxm130 [style=filled, fillcolor=white, label=epFoxm1];
+mice34 -> epFoxm130  [label=amod];
+"/32" [style=filled, fillcolor=white, label="/"];
+mice34 -> "/32"  [label=dep];
+lungs28 -> mice34  [label=prep_of];
+}

@@ -1,0 +1,32 @@
+digraph "Sasaki et al. ,  `` Ubiquitination of Ras enhances activation and facilitates binding to select downstream effectors  ( PMC3437993 )" {
+label="Sasaki et al. ,  `` Ubiquitination of Ras enhances activation and facilitates
+binding to select downstream effectors  ( PMC3437993 )";
+et2 [style=filled, fillcolor=white, label=et];
+Sasaki1 [style=filled, fillcolor=white, label=Sasaki];
+et2 -> Sasaki1  [label=nn];
+"al.3" [style=filled, fillcolor=white, label="al."];
+"al.3" -> et2  [label=nsubj];
+"al.3" -> "al.3"  [label=root];
+enhances9 [style=filled, fillcolor=white, label=enhances];
+Ubiquitination6 [style=filled, fillcolor=white, label=Ubiquitination];
+enhances9 -> Ubiquitination6  [label=nsubj];
+Ras8 [style=filled, fillcolor=white, label=Ras];
+Ubiquitination6 -> Ras8  [label=prep_of];
+"al.3" -> enhances9  [label=ccomp];
+activation10 [style=filled, fillcolor=white, label=activation];
+enhances9 -> activation10  [label=dobj];
+facilitates12 [style=filled, fillcolor=white, label=facilitates];
+enhances9 -> facilitates12  [label=conj_and];
+binding13 [style=filled, fillcolor=white, label=binding];
+facilitates12 -> binding13  [label=acomp];
+select15 [style=filled, fillcolor=white, label=select];
+to14 [style=filled, fillcolor=white, label=to];
+select15 -> to14  [label=aux];
+binding13 -> select15  [label=xcomp];
+effectors17 [style=filled, fillcolor=white, label=effectors];
+downstream16 [style=filled, fillcolor=white, label=downstream];
+effectors17 -> downstream16  [label=amod];
+select15 -> effectors17  [label=dobj];
+PMC343799320 [style=filled, fillcolor=white, label=PMC3437993];
+select15 -> PMC343799320  [label=dep];
+}

@@ -1,0 +1,47 @@
+digraph "Mouse embryo fibroblasts were transfected ,  as indicated on the top ,  with expression vectors for either RasV12 or RacQL ,  together with ECFP-tagged versions of either E3b1 or the E3b1DY mutant ." {
+label="Mouse embryo fibroblasts were transfected ,  as indicated on the top ,  with
+expression vectors for either RasV12 or RacQL ,  together with ECFP-tagged
+versions of either E3b1 or the E3b1DY mutant .";
+fibroblasts3 [style=filled, fillcolor=white, label=fibroblasts];
+Mouse1 [style=filled, fillcolor=white, label=Mouse];
+fibroblasts3 -> Mouse1  [label=nn];
+embryo2 [style=filled, fillcolor=white, label=embryo];
+fibroblasts3 -> embryo2  [label=nn];
+transfected5 [style=filled, fillcolor=white, label=transfected];
+transfected5 -> fibroblasts3  [label=nsubjpass];
+were4 [style=filled, fillcolor=white, label=were];
+transfected5 -> were4  [label=auxpass];
+transfected5 -> transfected5  [label=root];
+indicated8 [style=filled, fillcolor=white, label=indicated];
+as7 [style=filled, fillcolor=white, label=as];
+indicated8 -> as7  [label=mark];
+transfected5 -> indicated8  [label=parataxis];
+top11 [style=filled, fillcolor=white, label=top];
+the10 [style=filled, fillcolor=white, label=the];
+top11 -> the10  [label=det];
+indicated8 -> top11  [label=prep_on];
+vectors15 [style=filled, fillcolor=white, label=vectors];
+expression14 [style=filled, fillcolor=white, label=expression];
+vectors15 -> expression14  [label=nn];
+indicated8 -> vectors15  [label=prep_with];
+RasV1218 [style=filled, fillcolor=white, label=RasV12];
+either17 [style=filled, fillcolor=white, label=either];
+RasV1218 -> either17  [label=preconj];
+vectors15 -> RasV1218  [label=prep_for];
+RacQL20 [style=filled, fillcolor=white, label=RacQL];
+RasV1218 -> RacQL20  [label=conj_or];
+versions25 [style=filled, fillcolor=white, label=versions];
+"ECFP-tagged24" [style=filled, fillcolor=white, label="ECFP-tagged"];
+versions25 -> "ECFP-tagged24"  [label=amod];
+transfected5 -> versions25  [label=prep_together_with];
+E3b128 [style=filled, fillcolor=white, label=E3b1];
+either27 [style=filled, fillcolor=white, label=either];
+E3b128 -> either27  [label=det];
+versions25 -> E3b128  [label=prep_of];
+mutant32 [style=filled, fillcolor=white, label=mutant];
+the30 [style=filled, fillcolor=white, label=the];
+mutant32 -> the30  [label=det];
+E3b1DY [style=filled, fillcolor=white, label=E3b1DY];
+mutant32 -> E3b1DY  [label=amod];
+E3b128 -> mutant32  [label=conj_or];
+}

@@ -1,0 +1,26 @@
+digraph "Macrophage conditioned media contains 3-10 kDa factors which stimulate neoplastic proliferation" {
+label="Macrophage conditioned media contains 3-10 kDa factors which stimulate
+neoplastic proliferation";
+media3 [style=filled, fillcolor=white, label=media];
+Macrophage1 [style=filled, fillcolor=white, label=Macrophage];
+media3 -> Macrophage1  [label=nn];
+conditioned2 [style=filled, fillcolor=white, label=conditioned];
+media3 -> conditioned2  [label=nn];
+contains4 [style=filled, fillcolor=white, label=contains];
+contains4 -> media3  [label=nsubj];
+contains4 -> contains4  [label=root];
+factors7 [style=filled, fillcolor=white, label=factors];
+"3-105" [style=filled, fillcolor=white, label="3-10"];
+factors7 -> "3-105"  [label=num];
+kDa6 [style=filled, fillcolor=white, label=kDa];
+factors7 -> kDa6  [label=nn];
+contains4 -> factors7  [label=dobj];
+stimulate9 [style=filled, fillcolor=white, label=stimulate];
+which8 [style=filled, fillcolor=white, label=which];
+stimulate9 -> which8  [label=nsubj];
+factors7 -> stimulate9  [label=rcmod];
+proliferation11 [style=filled, fillcolor=white, label=proliferation];
+neoplastic10 [style=filled, fillcolor=white, label=neoplastic];
+proliferation11 -> neoplastic10  [label=amod];
+stimulate9 -> proliferation11  [label=dobj];
+}

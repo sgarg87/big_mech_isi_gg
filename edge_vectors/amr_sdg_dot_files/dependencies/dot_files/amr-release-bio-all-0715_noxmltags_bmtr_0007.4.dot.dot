@@ -1,0 +1,17 @@
+digraph "To test the efficacy of the purified phospho-specific" {
+label="To test the efficacy of the purified phospho-specific";
+test2 [style=filled, fillcolor=white, label=test];
+To1 [style=filled, fillcolor=white, label=To];
+test2 -> To1  [label=aux];
+test2 -> test2  [label=root];
+efficacy4 [style=filled, fillcolor=white, label=efficacy];
+the3 [style=filled, fillcolor=white, label=the];
+efficacy4 -> the3  [label=det];
+test2 -> efficacy4  [label=dobj];
+"phospho-specific8" [style=filled, fillcolor=white, label="phospho-specific"];
+the6 [style=filled, fillcolor=white, label=the];
+"phospho-specific8" -> the6  [label=det];
+purified7 [style=filled, fillcolor=white, label=purified];
+"phospho-specific8" -> purified7  [label=amod];
+efficacy4 -> "phospho-specific8"  [label=prep_of];
+}

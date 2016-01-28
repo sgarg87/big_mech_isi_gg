@@ -1,0 +1,24 @@
+digraph "However ,  in MDA-MB-231 cells ,  a lack of IR-induced YB-1 phosphorylation was observed ." {
+label="However ,  in MDA-MB-231 cells ,  a lack of IR-induced YB-1 phosphorylation was
+observed .";
+observed14 [style=filled, fillcolor=white, label=observed];
+However1 [style=filled, fillcolor=white, label=However];
+observed14 -> However1  [label=advmod];
+cells5 [style=filled, fillcolor=white, label=cells];
+"MDA-MB-2314" [style=filled, fillcolor=white, label="MDA-MB-231"];
+cells5 -> "MDA-MB-2314"  [label=nn];
+observed14 -> cells5  [label=prep_in];
+lack8 [style=filled, fillcolor=white, label=lack];
+a7 [style=filled, fillcolor=white, label=a];
+lack8 -> a7  [label=det];
+observed14 -> lack8  [label=nsubj];
+phosphorylation12 [style=filled, fillcolor=white, label=phosphorylation];
+"IR-induced10" [style=filled, fillcolor=white, label="IR-induced"];
+phosphorylation12 -> "IR-induced10"  [label=amod];
+"YB-1" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation12 -> "YB-1"  [label=nn];
+lack8 -> phosphorylation12  [label=prep_of];
+was13 [style=filled, fillcolor=white, label=was];
+observed14 -> was13  [label=cop];
+observed14 -> observed14  [label=root];
+}

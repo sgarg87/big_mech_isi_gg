@@ -1,0 +1,50 @@
+digraph "Ras proteins are processed in several steps ( reviewed in Gysin et al. ,  2011 ) ,  including farnesylation ,  proteolytic cleavage at the C terminus by RCE1 ,  and carboxymethylation by isoprenylcysteine carboxyl methyltransferase ( ICMT ) ." {
+label="Ras proteins are processed in several steps ( reviewed in Gysin et al. ,  2011
+) ,  including farnesylation ,  proteolytic cleavage at the C terminus by RCE1 ,
+and carboxymethylation by isoprenylcysteine carboxyl methyltransferase ( ICMT )
+.";
+proteins2 [style=filled, fillcolor=white, label=proteins];
+Ras1 [style=filled, fillcolor=white, label=Ras];
+proteins2 -> Ras1  [label=nn];
+processed4 [style=filled, fillcolor=white, label=processed];
+processed4 -> proteins2  [label=nsubjpass];
+are3 [style=filled, fillcolor=white, label=are];
+processed4 -> are3  [label=auxpass];
+processed4 -> processed4  [label=root];
+steps7 [style=filled, fillcolor=white, label=steps];
+several6 [style=filled, fillcolor=white, label=several];
+steps7 -> several6  [label=amod];
+processed4 -> steps7  [label=prep_in];
+reviewed9 [style=filled, fillcolor=white, label=reviewed];
+steps7 -> reviewed9  [label=dep];
+Gysin11 [style=filled, fillcolor=white, label=Gysin];
+reviewed9 -> Gysin11  [label=prep_in];
+"al.13" [style=filled, fillcolor=white, label="al."];
+Gysin11 -> "al.13"  [label=conj_et];
+201115 [style=filled, fillcolor=white, label=2011];
+Gysin11 -> 201115  [label=num];
+cleavage22 [style=filled, fillcolor=white, label=cleavage];
+farnesylation19 [style=filled, fillcolor=white, label=farnesylation];
+cleavage22 -> farnesylation19  [label=amod];
+proteolytic21 [style=filled, fillcolor=white, label=proteolytic];
+cleavage22 -> proteolytic21  [label=amod];
+steps7 -> cleavage22  [label=prep_including];
+terminus26 [style=filled, fillcolor=white, label=terminus];
+the24 [style=filled, fillcolor=white, label=the];
+terminus26 -> the24  [label=det];
+C25 [style=filled, fillcolor=white, label=C];
+terminus26 -> C25  [label=nn];
+cleavage22 -> terminus26  [label=prep_at];
+RCE128 [style=filled, fillcolor=white, label=RCE1];
+terminus26 -> RCE128  [label=prep_by];
+carboxymethylation31 [style=filled, fillcolor=white, label=carboxymethylation];
+processed4 -> carboxymethylation31  [label=conj_and];
+methyltransferase35 [style=filled, fillcolor=white, label=methyltransferase];
+isoprenylcysteine33 [style=filled, fillcolor=white, label=isoprenylcysteine];
+methyltransferase35 -> isoprenylcysteine33  [label=amod];
+carboxyl34 [style=filled, fillcolor=white, label=carboxyl];
+methyltransferase35 -> carboxyl34  [label=amod];
+carboxymethylation31 -> methyltransferase35  [label=prep_by];
+ICMT37 [style=filled, fillcolor=white, label=ICMT];
+methyltransferase35 -> ICMT37  [label=appos];
+}

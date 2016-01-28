@@ -1,0 +1,32 @@
+digraph "( A ) Mouse embryo fibroblasts cells were treated with PDGF for 15 min ( + ) or mock treated ( − ) ." {
+label="( A ) Mouse embryo fibroblasts cells were treated with PDGF for 15 min ( + ) or
+mock treated ( − ) .";
+treated9 [style=filled, fillcolor=white, label=treated];
+A2 [style=filled, fillcolor=white, label=A];
+treated9 -> A2  [label=nsubjpass];
+cells7 [style=filled, fillcolor=white, label=cells];
+Mouse4 [style=filled, fillcolor=white, label=Mouse];
+cells7 -> Mouse4  [label=amod];
+embryo5 [style=filled, fillcolor=white, label=embryo];
+cells7 -> embryo5  [label=nn];
+fibroblasts6 [style=filled, fillcolor=white, label=fibroblasts];
+cells7 -> fibroblasts6  [label=nn];
+treated9 -> cells7  [label=nsubjpass];
+were8 [style=filled, fillcolor=white, label=were];
+treated9 -> were8  [label=auxpass];
+treated9 -> treated9  [label=root];
+PDGF11 [style=filled, fillcolor=white, label=PDGF];
+treated9 -> PDGF11  [label=prep_with];
+min14 [style=filled, fillcolor=white, label=min];
+1513 [style=filled, fillcolor=white, label=15];
+min14 -> 1513  [label=num];
+PDGF11 -> min14  [label=prep_for];
+"+16" [style=filled, fillcolor=white, label="+"];
+min14 -> "+16"  [label=appos];
+treated20 [style=filled, fillcolor=white, label=treated];
+mock19 [style=filled, fillcolor=white, label=mock];
+treated20 -> mock19  [label=amod];
+min14 -> treated20  [label=conj_or];
+"−22" [style=filled, fillcolor=white, label="−"];
+min14 -> "−22"  [label=appos];
+}

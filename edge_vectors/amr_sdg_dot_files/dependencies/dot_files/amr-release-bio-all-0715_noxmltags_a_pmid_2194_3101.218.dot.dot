@@ -1,0 +1,66 @@
+digraph "Following treatment with wortmanin at the most optimal treatment condition ,  as retrieved from inhibition of the active PI3K pathway in Caco-H2 cells that show high p-AKT levels ( Additional Figure 4 ) ,  resulted in reduced Cdc42 activity ." {
+label="Following treatment with wortmanin at the most optimal treatment condition ,
+as retrieved from inhibition of the active PI3K pathway in Caco-H2 cells that
+show high p-AKT levels ( Additional Figure 4 ) ,  resulted in reduced Cdc42
+activity .";
+resulted35 [style=filled, fillcolor=white, label=resulted];
+Following1 [style=filled, fillcolor=white, label=Following];
+resulted35 -> Following1  [label=prep];
+at5 [style=filled, fillcolor=white, label=at];
+treatment2 [style=filled, fillcolor=white, label=treatment];
+at5 -> treatment2  [label=npadvmod];
+wortmanin4 [style=filled, fillcolor=white, label=wortmanin];
+treatment2 -> wortmanin4  [label=prep_with];
+Following1 -> at5  [label=pcomp];
+condition10 [style=filled, fillcolor=white, label=condition];
+the6 [style=filled, fillcolor=white, label=the];
+condition10 -> the6  [label=det];
+optimal8 [style=filled, fillcolor=white, label=optimal];
+most7 [style=filled, fillcolor=white, label=most];
+optimal8 -> most7  [label=advmod];
+condition10 -> optimal8  [label=amod];
+treatment9 [style=filled, fillcolor=white, label=treatment];
+condition10 -> treatment9  [label=nn];
+at5 -> condition10  [label=pobj];
+retrieved13 [style=filled, fillcolor=white, label=retrieved];
+as12 [style=filled, fillcolor=white, label=as];
+retrieved13 -> as12  [label=mark];
+resulted35 -> retrieved13  [label=advcl];
+inhibition15 [style=filled, fillcolor=white, label=inhibition];
+retrieved13 -> inhibition15  [label=prep_from];
+pathway20 [style=filled, fillcolor=white, label=pathway];
+the17 [style=filled, fillcolor=white, label=the];
+pathway20 -> the17  [label=det];
+active18 [style=filled, fillcolor=white, label=active];
+pathway20 -> active18  [label=amod];
+PI3K19 [style=filled, fillcolor=white, label=PI3K];
+pathway20 -> PI3K19  [label=nn];
+inhibition15 -> pathway20  [label=prep_of];
+cells23 [style=filled, fillcolor=white, label=cells];
+"Caco-H2" [style=filled, fillcolor=white, label="Caco-H2"];
+cells23 -> "Caco-H2"  [label=nn];
+retrieved13 -> cells23  [label=prep_in];
+show25 [style=filled, fillcolor=white, label=show];
+that24 [style=filled, fillcolor=white, label=that];
+show25 -> that24  [label=nsubj];
+cells23 -> show25  [label=rcmod];
+levels28 [style=filled, fillcolor=white, label=levels];
+high26 [style=filled, fillcolor=white, label=high];
+levels28 -> high26  [label=amod];
+"p-AKT27" [style=filled, fillcolor=white, label="p-AKT"];
+levels28 -> "p-AKT27"  [label=amod];
+show25 -> levels28  [label=dobj];
+Figure31 [style=filled, fillcolor=white, label=Figure];
+Additional30 [style=filled, fillcolor=white, label=Additional];
+Figure31 -> Additional30  [label=amod];
+cells23 -> Figure31  [label=dep];
+432 [style=filled, fillcolor=white, label=4];
+Figure31 -> 432  [label=dep];
+resulted35 -> resulted35  [label=root];
+activity39 [style=filled, fillcolor=white, label=activity];
+reduced37 [style=filled, fillcolor=white, label=reduced];
+activity39 -> reduced37  [label=amod];
+Cdc4238 [style=filled, fillcolor=white, label=Cdc42];
+activity39 -> Cdc4238  [label=nn];
+resulted35 -> activity39  [label=prep_in];
+}

@@ -1,0 +1,26 @@
+digraph "Il6 can elicit proinflammatory or anti-inflammatory effects ,  depending on the in vivo environmental circumstances" {
+label="Il6 can elicit proinflammatory or anti-inflammatory effects ,  depending on the
+in vivo environmental circumstances";
+elicit3 [style=filled, fillcolor=white, label=elicit];
+Il61 [style=filled, fillcolor=white, label=Il6];
+elicit3 -> Il61  [label=nsubj];
+can2 [style=filled, fillcolor=white, label=can];
+elicit3 -> can2  [label=aux];
+elicit3 -> elicit3  [label=root];
+effects7 [style=filled, fillcolor=white, label=effects];
+proinflammatory4 [style=filled, fillcolor=white, label=proinflammatory];
+effects7 -> proinflammatory4  [label=amod];
+"anti-inflammatory6" [style=filled, fillcolor=white, label="anti-inflammatory"];
+proinflammatory4 -> "anti-inflammatory6"  [label=conj_or];
+elicit3 -> effects7  [label=dobj];
+on10 [style=filled, fillcolor=white, label=on];
+elicit3 -> on10  [label=prepc_depending_on];
+the11 [style=filled, fillcolor=white, label=the];
+elicit3 -> the11  [label=pobj];
+circumstances15 [style=filled, fillcolor=white, label=circumstances];
+vivo13 [style=filled, fillcolor=white, label=vivo];
+circumstances15 -> vivo13  [label=amod];
+environmental14 [style=filled, fillcolor=white, label=environmental];
+circumstances15 -> environmental14  [label=amod];
+the11 -> circumstances15  [label=prep_in];
+}

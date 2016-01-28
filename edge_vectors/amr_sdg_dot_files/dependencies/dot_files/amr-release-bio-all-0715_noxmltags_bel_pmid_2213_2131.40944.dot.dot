@@ -1,0 +1,44 @@
+digraph "These results correlate with our in vivo data and show that Panc 02.03 cells are able to suppress SHIP-1 mRNA and protein expression in vitro ." {
+label="These results correlate with our in vivo data and show that Panc 02.03 cells
+are able to suppress SHIP-1 mRNA and protein expression in vitro .";
+results2 [style=filled, fillcolor=white, label=results];
+These1 [style=filled, fillcolor=white, label=These];
+results2 -> These1  [label=det];
+correlate3 [style=filled, fillcolor=white, label=correlate];
+correlate3 -> results2  [label=nsubj];
+correlate3 -> correlate3  [label=root];
+our5 [style=filled, fillcolor=white, label=our];
+correlate3 -> our5  [label=prep_with];
+data8 [style=filled, fillcolor=white, label=data];
+vivo7 [style=filled, fillcolor=white, label=vivo];
+data8 -> vivo7  [label=nn];
+correlate3 -> data8  [label=prep_in];
+show10 [style=filled, fillcolor=white, label=show];
+correlate3 -> show10  [label=conj_and];
+able16 [style=filled, fillcolor=white, label=able];
+that11 [style=filled, fillcolor=white, label=that];
+able16 -> that11  [label=mark];
+cells14 [style=filled, fillcolor=white, label=cells];
+Panc12 [style=filled, fillcolor=white, label=Panc];
+cells14 -> Panc12  [label=nn];
+"02.031" [style=filled, fillcolor=white, label="02.03"];
+cells14 -> "02.031"  [label=num];
+able16 -> cells14  [label=nsubj];
+are15 [style=filled, fillcolor=white, label=are];
+able16 -> are15  [label=cop];
+show10 -> able16  [label=ccomp];
+suppress18 [style=filled, fillcolor=white, label=suppress];
+to17 [style=filled, fillcolor=white, label=to];
+suppress18 -> to17  [label=aux];
+able16 -> suppress18  [label=xcomp];
+mRNA20 [style=filled, fillcolor=white, label=mRNA];
+"SHIP-19" [style=filled, fillcolor=white, label="SHIP-1"];
+mRNA20 -> "SHIP-19"  [label=nn];
+suppress18 -> mRNA20  [label=dobj];
+expression23 [style=filled, fillcolor=white, label=expression];
+protein22 [style=filled, fillcolor=white, label=protein];
+expression23 -> protein22  [label=nn];
+mRNA20 -> expression23  [label=conj_and];
+vitro25 [style=filled, fillcolor=white, label=vitro];
+mRNA20 -> vitro25  [label=prep_in];
+}

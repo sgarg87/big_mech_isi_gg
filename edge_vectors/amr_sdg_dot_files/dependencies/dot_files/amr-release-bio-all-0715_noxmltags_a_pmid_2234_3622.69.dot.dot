@@ -1,0 +1,47 @@
+digraph "The combination of selumetinib and TMZ in the SW-620 human tumour xenograft model resulted in a significantly enhanced anti-tumour efficacy ( 103.5 % inhibition ; PPPFigure 2A ) ." {
+label="The combination of selumetinib and TMZ in the SW-620 human tumour xenograft
+model resulted in a significantly enhanced anti-tumour efficacy ( 103.5 %
+inhibition ; PPPFigure 2A ) .";
+combination2 [style=filled, fillcolor=white, label=combination];
+The1 [style=filled, fillcolor=white, label=The];
+combination2 -> The1  [label=det];
+resulted14 [style=filled, fillcolor=white, label=resulted];
+resulted14 -> combination2  [label=nsubj];
+selumetinib4 [style=filled, fillcolor=white, label=selumetinib];
+combination2 -> selumetinib4  [label=prep_of];
+TMZ6 [style=filled, fillcolor=white, label=TMZ];
+combination2 -> TMZ6  [label=conj_and];
+model13 [style=filled, fillcolor=white, label=model];
+the8 [style=filled, fillcolor=white, label=the];
+model13 -> the8  [label=det];
+"SW-6209" [style=filled, fillcolor=white, label="SW-620"];
+model13 -> "SW-6209"  [label=nn];
+human10 [style=filled, fillcolor=white, label=human];
+model13 -> human10  [label=amod];
+tumour11 [style=filled, fillcolor=white, label=tumour];
+model13 -> tumour11  [label=nn];
+xenograft12 [style=filled, fillcolor=white, label=xenograft];
+model13 -> xenograft12  [label=nn];
+TMZ6 -> model13  [label=prep_in];
+resulted14 -> resulted14  [label=root];
+efficacy20 [style=filled, fillcolor=white, label=efficacy];
+a16 [style=filled, fillcolor=white, label=a];
+efficacy20 -> a16  [label=det];
+enhanced18 [style=filled, fillcolor=white, label=enhanced];
+significantly17 [style=filled, fillcolor=white, label=significantly];
+enhanced18 -> significantly17  [label=advmod];
+efficacy20 -> enhanced18  [label=amod];
+"anti-tumour19" [style=filled, fillcolor=white, label="anti-tumour"];
+efficacy20 -> "anti-tumour19"  [label=amod];
+resulted14 -> efficacy20  [label=prep_in];
+inhibition24 [style=filled, fillcolor=white, label=inhibition];
+"103.522" [style=filled, fillcolor=white, label="103.5"];
+inhibition24 -> "103.522"  [label=num];
+"%23" [style=filled, fillcolor=white, label="%"];
+inhibition24 -> "%23"  [label=nn];
+efficacy20 -> inhibition24  [label=dep];
+PPPFigure26 [style=filled, fillcolor=white, label=PPPFigure];
+inhibition24 -> PPPFigure26  [label=dep];
+"2A27" [style=filled, fillcolor=white, label="2A"];
+PPPFigure26 -> "2A27"  [label=num];
+}

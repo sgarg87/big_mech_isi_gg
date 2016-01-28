@@ -1,0 +1,32 @@
+digraph "Indeed ,  low Cdc42 activity was recorded in Caco-BR and Caco-H cells where RhoA signaling is activated ." {
+label="Indeed ,  low Cdc42 activity was recorded in Caco-BR and Caco-H cells where
+RhoA signaling is activated .";
+recorded7 [style=filled, fillcolor=white, label=recorded];
+Indeed1 [style=filled, fillcolor=white, label=Indeed];
+recorded7 -> Indeed1  [label=advmod];
+activity5 [style=filled, fillcolor=white, label=activity];
+low3 [style=filled, fillcolor=white, label=low];
+activity5 -> low3  [label=amod];
+Cdc42 [style=filled, fillcolor=white, label=Cdc42];
+activity5 -> Cdc42  [label=amod];
+recorded7 -> activity5  [label=nsubjpass];
+was6 [style=filled, fillcolor=white, label=was];
+recorded7 -> was6  [label=auxpass];
+recorded7 -> recorded7  [label=root];
+cells12 [style=filled, fillcolor=white, label=cells];
+"Caco-BR9" [style=filled, fillcolor=white, label="Caco-BR"];
+cells12 -> "Caco-BR9"  [label=amod];
+"Caco-H11" [style=filled, fillcolor=white, label="Caco-H"];
+"Caco-BR9" -> "Caco-H11"  [label=conj_and];
+recorded7 -> cells12  [label=prep_in];
+activated17 [style=filled, fillcolor=white, label=activated];
+where13 [style=filled, fillcolor=white, label=where];
+activated17 -> where13  [label=advmod];
+signaling15 [style=filled, fillcolor=white, label=signaling];
+RhoA14 [style=filled, fillcolor=white, label=RhoA];
+signaling15 -> RhoA14  [label=nn];
+activated17 -> signaling15  [label=nsubjpass];
+is16 [style=filled, fillcolor=white, label=is];
+activated17 -> is16  [label=auxpass];
+recorded7 -> activated17  [label=advcl];
+}

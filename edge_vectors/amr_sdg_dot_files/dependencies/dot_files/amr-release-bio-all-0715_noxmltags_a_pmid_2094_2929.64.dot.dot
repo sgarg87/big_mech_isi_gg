@@ -1,0 +1,38 @@
+digraph "No difference was observed in the proliferation rate of subconfluent caMEK-expressing cells when serpinE2 expression was downregulated ( Figure 2B ) ." {
+label="No difference was observed in the proliferation rate of subconfluent caMEK-
+expressing cells when serpinE2 expression was downregulated ( Figure 2B ) .";
+difference2 [style=filled, fillcolor=white, label=difference];
+No1 [style=filled, fillcolor=white, label=No];
+difference2 -> No1  [label=neg];
+observed4 [style=filled, fillcolor=white, label=observed];
+observed4 -> difference2  [label=nsubjpass];
+was3 [style=filled, fillcolor=white, label=was];
+observed4 -> was3  [label=auxpass];
+observed4 -> observed4  [label=root];
+rate8 [style=filled, fillcolor=white, label=rate];
+the6 [style=filled, fillcolor=white, label=the];
+rate8 -> the6  [label=det];
+proliferation7 [style=filled, fillcolor=white, label=proliferation];
+rate8 -> proliferation7  [label=nn];
+observed4 -> rate8  [label=prep_in];
+cells12 [style=filled, fillcolor=white, label=cells];
+subconfluent10 [style=filled, fillcolor=white, label=subconfluent];
+cells12 -> subconfluent10  [label=amod];
+"caMEK-expressing11" [style=filled, fillcolor=white, label="caMEK-expressing"];
+cells12 -> "caMEK-expressing11"  [label=amod];
+rate8 -> cells12  [label=prep_of];
+downregulated17 [style=filled, fillcolor=white, label=downregulated];
+when13 [style=filled, fillcolor=white, label=when];
+downregulated17 -> when13  [label=advmod];
+expression15 [style=filled, fillcolor=white, label=expression];
+serpinE214 [style=filled, fillcolor=white, label=serpinE2];
+expression15 -> serpinE214  [label=amod];
+downregulated17 -> expression15  [label=nsubjpass];
+was16 [style=filled, fillcolor=white, label=was];
+downregulated17 -> was16  [label=auxpass];
+cells12 -> downregulated17  [label=rcmod];
+Figure19 [style=filled, fillcolor=white, label=Figure];
+cells12 -> Figure19  [label=appos];
+"2B20" [style=filled, fillcolor=white, label="2B"];
+Figure19 -> "2B20"  [label=num];
+}

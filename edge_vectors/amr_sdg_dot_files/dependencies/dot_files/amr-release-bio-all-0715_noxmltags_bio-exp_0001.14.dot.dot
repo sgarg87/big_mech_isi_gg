@@ -1,0 +1,37 @@
+digraph "Finally ,  CtBP1 and CtBP2 chromatin immunoprecipitation assays showed decreased binding to the HER3 promoter after treatment with PLX4032 ( Fig. 5F ) ." {
+label="Finally ,  CtBP1 and CtBP2 chromatin immunoprecipitation assays showed
+decreased binding to the HER3 promoter after treatment with PLX4032 ( Fig. 5F )
+.";
+showed9 [style=filled, fillcolor=white, label=showed];
+Finally1 [style=filled, fillcolor=white, label=Finally];
+showed9 -> Finally1  [label=advmod];
+CtBP13 [style=filled, fillcolor=white, label=CtBP1];
+showed9 -> CtBP13  [label=nsubj];
+assays8 [style=filled, fillcolor=white, label=assays];
+CtBP25 [style=filled, fillcolor=white, label=CtBP2];
+assays8 -> CtBP25  [label=amod];
+chromatin6 [style=filled, fillcolor=white, label=chromatin];
+assays8 -> chromatin6  [label=nn];
+immunoprecipitation7 [style=filled, fillcolor=white, label=immunoprecipitation];
+assays8 -> immunoprecipitation7  [label=nn];
+CtBP13 -> assays8  [label=conj_and];
+showed9 -> showed9  [label=root];
+decreased10 [style=filled, fillcolor=white, label=decreased];
+showed9 -> decreased10  [label=dobj];
+binding11 [style=filled, fillcolor=white, label=binding];
+decreased10 -> binding11  [label=amod];
+promoter15 [style=filled, fillcolor=white, label=promoter];
+the13 [style=filled, fillcolor=white, label=the];
+promoter15 -> the13  [label=det];
+HER314 [style=filled, fillcolor=white, label=HER3];
+promoter15 -> HER314  [label=nn];
+decreased10 -> promoter15  [label=prep_to];
+treatment17 [style=filled, fillcolor=white, label=treatment];
+showed9 -> treatment17  [label=prep_after];
+PLX403219 [style=filled, fillcolor=white, label=PLX4032];
+showed9 -> PLX403219  [label=prep_with];
+"5F22" [style=filled, fillcolor=white, label="5F"];
+"Fig.21" [style=filled, fillcolor=white, label="Fig."];
+"5F22" -> "Fig.21"  [label=number];
+PLX403219 -> "5F22"  [label=dep];
+}

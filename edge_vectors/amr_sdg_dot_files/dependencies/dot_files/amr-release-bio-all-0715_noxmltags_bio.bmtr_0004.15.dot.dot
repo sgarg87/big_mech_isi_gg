@@ -1,0 +1,45 @@
+digraph "These data support our in vitro findings that monoubiquitination increases the population of active ,  GTP-bound Ras through a defect in sensitivity to GAP-mediated regulation ." {
+label="These data support our in vitro findings that monoubiquitination increases the
+population of active ,  GTP-bound Ras through a defect in sensitivity to GAP-
+mediated regulation .";
+data2 [style=filled, fillcolor=white, label=data];
+These1 [style=filled, fillcolor=white, label=These];
+data2 -> These1  [label=det];
+support3 [style=filled, fillcolor=white, label=support];
+support3 -> data2  [label=nsubj];
+support3 -> support3  [label=root];
+findings7 [style=filled, fillcolor=white, label=findings];
+our4 [style=filled, fillcolor=white, label=our];
+findings7 -> our4  [label=poss];
+vitro6 [style=filled, fillcolor=white, label=vitro];
+in5 [style=filled, fillcolor=white, label=in];
+vitro6 -> in5  [label=dep];
+findings7 -> vitro6  [label=amod];
+support3 -> findings7  [label=dobj];
+increases10 [style=filled, fillcolor=white, label=increases];
+that8 [style=filled, fillcolor=white, label=that];
+increases10 -> that8  [label=mark];
+monoubiquitination9 [style=filled, fillcolor=white, label=monoubiquitination];
+increases10 -> monoubiquitination9  [label=nsubj];
+support3 -> increases10  [label=ccomp];
+population12 [style=filled, fillcolor=white, label=population];
+the11 [style=filled, fillcolor=white, label=the];
+population12 -> the11  [label=det];
+increases10 -> population12  [label=dobj];
+Ras17 [style=filled, fillcolor=white, label=Ras];
+active14 [style=filled, fillcolor=white, label=active];
+Ras17 -> active14  [label=amod];
+"GTP-bound16" [style=filled, fillcolor=white, label="GTP-bound"];
+Ras17 -> "GTP-bound16"  [label=amod];
+population12 -> Ras17  [label=prep_of];
+defect20 [style=filled, fillcolor=white, label=defect];
+a19 [style=filled, fillcolor=white, label=a];
+defect20 -> a19  [label=det];
+increases10 -> defect20  [label=prep_through];
+sensitivity22 [style=filled, fillcolor=white, label=sensitivity];
+defect20 -> sensitivity22  [label=prep_in];
+regulation25 [style=filled, fillcolor=white, label=regulation];
+"GAP-mediated24" [style=filled, fillcolor=white, label="GAP-mediated"];
+regulation25 -> "GAP-mediated24"  [label=amod];
+sensitivity22 -> regulation25  [label=prep_to];
+}

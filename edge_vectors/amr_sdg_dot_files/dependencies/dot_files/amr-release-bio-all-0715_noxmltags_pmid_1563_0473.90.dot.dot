@@ -1,0 +1,28 @@
+digraph "The changes in hyperproliferation and differentiation were not initially accompanied by gross signs of epithelial invaginations ." {
+label="The changes in hyperproliferation and differentiation were not initially
+accompanied by gross signs of epithelial invaginations .";
+changes2 [style=filled, fillcolor=white, label=changes];
+The1 [style=filled, fillcolor=white, label=The];
+changes2 -> The1  [label=det];
+accompanied10 [style=filled, fillcolor=white, label=accompanied];
+accompanied10 -> changes2  [label=nsubjpass];
+hyperproliferation4 [style=filled, fillcolor=white, label=hyperproliferation];
+changes2 -> hyperproliferation4  [label=prep_in];
+differentiation6 [style=filled, fillcolor=white, label=differentiation];
+hyperproliferation4 -> differentiation6  [label=conj_and];
+were7 [style=filled, fillcolor=white, label=were];
+accompanied10 -> were7  [label=auxpass];
+not8 [style=filled, fillcolor=white, label=not];
+accompanied10 -> not8  [label=neg];
+initially9 [style=filled, fillcolor=white, label=initially];
+accompanied10 -> initially9  [label=advmod];
+accompanied10 -> accompanied10  [label=root];
+signs13 [style=filled, fillcolor=white, label=signs];
+gross12 [style=filled, fillcolor=white, label=gross];
+signs13 -> gross12  [label=amod];
+accompanied10 -> signs13  [label=agent];
+invaginations16 [style=filled, fillcolor=white, label=invaginations];
+epithelial15 [style=filled, fillcolor=white, label=epithelial];
+invaginations16 -> epithelial15  [label=amod];
+signs13 -> invaginations16  [label=prep_of];
+}

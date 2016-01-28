@@ -1,0 +1,22 @@
+digraph "Furthermore ,  this outcome was specific to monoubiquitination at position 147 ." {
+label="Furthermore ,  this outcome was specific to monoubiquitination at position 147
+.";
+specific6 [style=filled, fillcolor=white, label=specific];
+Furthermore1 [style=filled, fillcolor=white, label=Furthermore];
+specific6 -> Furthermore1  [label=advmod];
+outcome4 [style=filled, fillcolor=white, label=outcome];
+this3 [style=filled, fillcolor=white, label=this];
+outcome4 -> this3  [label=det];
+specific6 -> outcome4  [label=nsubj];
+was5 [style=filled, fillcolor=white, label=was];
+specific6 -> was5  [label=cop];
+specific6 -> specific6  [label=root];
+monoubiquitination8 [style=filled, fillcolor=white, label=monoubiquitination];
+to7 [style=filled, fillcolor=white, label=to];
+monoubiquitination8 -> to7  [label=aux];
+specific6 -> monoubiquitination8  [label=xcomp];
+position10 [style=filled, fillcolor=white, label=position];
+monoubiquitination8 -> position10  [label=prep_at];
+147 [style=filled, fillcolor=white, label=147];
+position10 -> 147  [label=num];
+}

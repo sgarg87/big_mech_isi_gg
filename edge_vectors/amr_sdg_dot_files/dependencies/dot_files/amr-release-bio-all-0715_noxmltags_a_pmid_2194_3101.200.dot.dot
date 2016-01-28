@@ -1,0 +1,36 @@
+digraph "In several reported studies ,  treatment with a selective inhibitor may produce more adverse effect through interaction with other ( associated ) components ." {
+label="In several reported studies ,  treatment with a selective inhibitor may produce
+more adverse effect through interaction with other ( associated ) components .";
+studies4 [style=filled, fillcolor=white, label=studies];
+several2 [style=filled, fillcolor=white, label=several];
+studies4 -> several2  [label=amod];
+reported3 [style=filled, fillcolor=white, label=reported];
+studies4 -> reported3  [label=amod];
+produce12 [style=filled, fillcolor=white, label=produce];
+produce12 -> studies4  [label=prep_in];
+treatment6 [style=filled, fillcolor=white, label=treatment];
+produce12 -> treatment6  [label=nsubj];
+inhibitor10 [style=filled, fillcolor=white, label=inhibitor];
+a8 [style=filled, fillcolor=white, label=a];
+inhibitor10 -> a8  [label=det];
+selective9 [style=filled, fillcolor=white, label=selective];
+inhibitor10 -> selective9  [label=amod];
+treatment6 -> inhibitor10  [label=prep_with];
+may11 [style=filled, fillcolor=white, label=may];
+produce12 -> may11  [label=aux];
+produce12 -> produce12  [label=root];
+adverse14 [style=filled, fillcolor=white, label=adverse];
+more13 [style=filled, fillcolor=white, label=more];
+adverse14 -> more13  [label=advmod];
+effect15 [style=filled, fillcolor=white, label=effect];
+effect15 -> adverse14  [label=amod];
+produce12 -> effect15  [label=dobj];
+interaction17 [style=filled, fillcolor=white, label=interaction];
+produce12 -> interaction17  [label=prep_through];
+components23 [style=filled, fillcolor=white, label=components];
+other19 [style=filled, fillcolor=white, label=other];
+components23 -> other19  [label=amod];
+associated21 [style=filled, fillcolor=white, label=associated];
+components23 -> associated21  [label=appos];
+produce12 -> components23  [label=prep_with];
+}

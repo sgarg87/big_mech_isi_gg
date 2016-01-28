@@ -1,0 +1,39 @@
+digraph "Stimulation of cells with the ligand for CXCR4 ,  stromal cell-derived factor-1alpha ( SDF-1alpha ) ,  resulted in an elevation in intracellular Ca ( 2 + ) concentration" {
+label="Stimulation of cells with the ligand for CXCR4 ,  stromal cell-derived factor-
+1alpha ( SDF-1alpha ) ,  resulted in an elevation in intracellular Ca ( 2 + )
+concentration";
+resulted17 [style=filled, fillcolor=white, label=resulted];
+Stimulation1 [style=filled, fillcolor=white, label=Stimulation];
+resulted17 -> Stimulation1  [label=nsubj];
+cells3 [style=filled, fillcolor=white, label=cells];
+Stimulation1 -> cells3  [label=prep_of];
+ligand6 [style=filled, fillcolor=white, label=ligand];
+the5 [style=filled, fillcolor=white, label=the];
+ligand6 -> the5  [label=det];
+cells3 -> ligand6  [label=prep_with];
+CXCR48 [style=filled, fillcolor=white, label=CXCR4];
+ligand6 -> CXCR48  [label=prep_for];
+"factor-1alpha2" [style=filled, fillcolor=white, label="factor-1alpha"];
+stromal10 [style=filled, fillcolor=white, label=stromal];
+"factor-1alpha2" -> stromal10  [label=amod];
+"cell-derived11" [style=filled, fillcolor=white, label="cell-derived"];
+"factor-1alpha2" -> "cell-derived11"  [label=amod];
+Stimulation1 -> "factor-1alpha2"  [label=appos];
+"SDF-1alpha4" [style=filled, fillcolor=white, label="SDF-1alpha"];
+"factor-1alpha2" -> "SDF-1alpha4"  [label=appos];
+resulted17 -> resulted17  [label=root];
+elevation20 [style=filled, fillcolor=white, label=elevation];
+an19 [style=filled, fillcolor=white, label=an];
+elevation20 -> an19  [label=det];
+resulted17 -> elevation20  [label=prep_in];
+Ca23 [style=filled, fillcolor=white, label=Ca];
+intracellular22 [style=filled, fillcolor=white, label=intracellular];
+Ca23 -> intracellular22  [label=amod];
+concentration28 [style=filled, fillcolor=white, label=concentration];
+concentration28 -> Ca23  [label=amod];
+"+26" [style=filled, fillcolor=white, label="+"];
+225 [style=filled, fillcolor=white, label=2];
+"+26" -> 225  [label=number];
+concentration28 -> "+26"  [label=dep];
+resulted17 -> concentration28  [label=prep_in];
+}

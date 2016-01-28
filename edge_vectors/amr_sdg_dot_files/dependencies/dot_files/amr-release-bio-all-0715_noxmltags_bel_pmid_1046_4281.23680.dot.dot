@@ -1,0 +1,41 @@
+digraph "In-gel tryptic fragmentation and mass spectroscopy identified the major IL-6-dependent STAT3-co-shifted p60 protein as the chaperone GRP58/ER -60 / ERp57 ." {
+label="In-gel tryptic fragmentation and mass spectroscopy identified the major
+IL-6-dependent STAT3-co-shifted p60 protein as the chaperone GRP58/ER -60 /
+ERp57 .";
+fragmentation3 [style=filled, fillcolor=white, label=fragmentation];
+"In-gel1" [style=filled, fillcolor=white, label="In-gel"];
+fragmentation3 -> "In-gel1"  [label=amod];
+tryptic2 [style=filled, fillcolor=white, label=tryptic];
+fragmentation3 -> tryptic2  [label=amod];
+identified7 [style=filled, fillcolor=white, label=identified];
+identified7 -> fragmentation3  [label=nsubj];
+spectroscopy6 [style=filled, fillcolor=white, label=spectroscopy];
+mass5 [style=filled, fillcolor=white, label=mass];
+spectroscopy6 -> mass5  [label=amod];
+fragmentation3 -> spectroscopy6  [label=conj_and];
+identified7 -> identified7  [label=root];
+protein13 [style=filled, fillcolor=white, label=protein];
+the8 [style=filled, fillcolor=white, label=the];
+protein13 -> the8  [label=det];
+major9 [style=filled, fillcolor=white, label=major];
+protein13 -> major9  [label=amod];
+"IL-6-dependent10" [style=filled, fillcolor=white, label="IL-6-dependent"];
+protein13 -> "IL-6-dependent10"  [label=nn];
+"STAT3-co-shifted11" [style=filled, fillcolor=white, label="STAT3-co-shifted"];
+protein13 -> "STAT3-co-shifted11"  [label=nn];
+p6012 [style=filled, fillcolor=white, label=p60];
+protein13 -> p6012  [label=amod];
+identified7 -> protein13  [label=dobj];
+ERp5720 [style=filled, fillcolor=white, label=ERp57];
+the15 [style=filled, fillcolor=white, label=the];
+ERp5720 -> the15  [label=det];
+chaperone16 [style=filled, fillcolor=white, label=chaperone];
+ERp5720 -> chaperone16  [label=amod];
+"GRP58/ER17" [style=filled, fillcolor=white, label="GRP58/ER"];
+ERp5720 -> "GRP58/ER17"  [label=nn];
+"-6018" [style=filled, fillcolor=white, label="-60"];
+ERp5720 -> "-6018"  [label=num];
+"/19" [style=filled, fillcolor=white, label="/"];
+ERp5720 -> "/19"  [label=amod];
+identified7 -> ERp5720  [label=prep_as];
+}

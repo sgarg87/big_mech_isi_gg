@@ -1,0 +1,42 @@
+digraph "Thus ,  one might predict that a mutant of E3b1 unable to associate to Eps8 should function as a dominant negative on Ras-induced Rac-dependent ruffling ." {
+label="Thus ,  one might predict that a mutant of E3b1 unable to associate to Eps8
+should function as a dominant negative on Ras-induced Rac-dependent ruffling .";
+predict5 [style=filled, fillcolor=white, label=predict];
+Thus1 [style=filled, fillcolor=white, label=Thus];
+predict5 -> Thus1  [label=advmod];
+one3 [style=filled, fillcolor=white, label=one];
+predict5 -> one3  [label=nsubj];
+might4 [style=filled, fillcolor=white, label=might];
+predict5 -> might4  [label=aux];
+predict5 -> predict5  [label=root];
+function17 [style=filled, fillcolor=white, label=function];
+that6 [style=filled, fillcolor=white, label=that];
+function17 -> that6  [label=mark];
+mutant8 [style=filled, fillcolor=white, label=mutant];
+a7 [style=filled, fillcolor=white, label=a];
+mutant8 -> a7  [label=det];
+function17 -> mutant8  [label=nsubj];
+E3b110 [style=filled, fillcolor=white, label=E3b1];
+mutant8 -> E3b110  [label=prep_of];
+unable11 [style=filled, fillcolor=white, label=unable];
+E3b110 -> unable11  [label=amod];
+associate13 [style=filled, fillcolor=white, label=associate];
+unable11 -> associate13  [label=prep_to];
+Eps815 [style=filled, fillcolor=white, label=Eps8];
+associate13 -> Eps815  [label=prep_to];
+should16 [style=filled, fillcolor=white, label=should];
+function17 -> should16  [label=aux];
+predict5 -> function17  [label=ccomp];
+negative21 [style=filled, fillcolor=white, label=negative];
+a19 [style=filled, fillcolor=white, label=a];
+negative21 -> a19  [label=det];
+dominant20 [style=filled, fillcolor=white, label=dominant];
+negative21 -> dominant20  [label=amod];
+function17 -> negative21  [label=prep_as];
+ruffling25 [style=filled, fillcolor=white, label=ruffling];
+"Ras-induced23" [style=filled, fillcolor=white, label="Ras-induced"];
+ruffling25 -> "Ras-induced23"  [label=amod];
+"Rac-dependent24" [style=filled, fillcolor=white, label="Rac-dependent"];
+ruffling25 -> "Rac-dependent24"  [label=amod];
+negative21 -> ruffling25  [label=prep_on];
+}

@@ -1,0 +1,26 @@
+digraph "Measurements were done on a luminometer ( MGM Instruments ,  Hamden ,  Connecticut ,  United States ) ." {
+label="Measurements were done on a luminometer ( MGM Instruments ,  Hamden ,
+Connecticut ,  United States ) .";
+done3 [style=filled, fillcolor=white, label=done];
+Measurements1 [style=filled, fillcolor=white, label=Measurements];
+done3 -> Measurements1  [label=nsubjpass];
+were2 [style=filled, fillcolor=white, label=were];
+done3 -> were2  [label=auxpass];
+done3 -> done3  [label=root];
+luminometer6 [style=filled, fillcolor=white, label=luminometer];
+a5 [style=filled, fillcolor=white, label=a];
+luminometer6 -> a5  [label=det];
+done3 -> luminometer6  [label=prep_on];
+Instruments9 [style=filled, fillcolor=white, label=Instruments];
+MGM8 [style=filled, fillcolor=white, label=MGM];
+Instruments9 -> MGM8  [label=nn];
+luminometer6 -> Instruments9  [label=appos];
+Connecticut13 [style=filled, fillcolor=white, label=Connecticut];
+Hamden11 [style=filled, fillcolor=white, label=Hamden];
+Connecticut13 -> Hamden11  [label=nn];
+Instruments9 -> Connecticut13  [label=dep];
+States16 [style=filled, fillcolor=white, label=States];
+United15 [style=filled, fillcolor=white, label=United];
+States16 -> United15  [label=nn];
+Instruments9 -> States16  [label=dep];
+}

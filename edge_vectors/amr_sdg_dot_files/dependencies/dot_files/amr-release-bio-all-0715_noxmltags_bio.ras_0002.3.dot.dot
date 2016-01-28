@@ -1,0 +1,34 @@
+digraph "The enhancement of specific effector pathways plays a critical role in maintaining an appropriate biological response ( 8 ) ." {
+label="The enhancement of specific effector pathways plays a critical role in
+maintaining an appropriate biological response ( 8 ) .";
+enhancement2 [style=filled, fillcolor=white, label=enhancement];
+The1 [style=filled, fillcolor=white, label=The];
+enhancement2 -> The1  [label=det];
+plays7 [style=filled, fillcolor=white, label=plays];
+plays7 -> enhancement2  [label=nsubj];
+pathways6 [style=filled, fillcolor=white, label=pathways];
+specific4 [style=filled, fillcolor=white, label=specific];
+pathways6 -> specific4  [label=amod];
+effector5 [style=filled, fillcolor=white, label=effector];
+pathways6 -> effector5  [label=nn];
+enhancement2 -> pathways6  [label=prep_of];
+plays7 -> plays7  [label=root];
+role10 [style=filled, fillcolor=white, label=role];
+a8 [style=filled, fillcolor=white, label=a];
+role10 -> a8  [label=det];
+critical9 [style=filled, fillcolor=white, label=critical];
+role10 -> critical9  [label=amod];
+plays7 -> role10  [label=dobj];
+maintaining12 [style=filled, fillcolor=white, label=maintaining];
+plays7 -> maintaining12  [label=prepc_in];
+response16 [style=filled, fillcolor=white, label=response];
+an13 [style=filled, fillcolor=white, label=an];
+response16 -> an13  [label=det];
+appropriate14 [style=filled, fillcolor=white, label=appropriate];
+response16 -> appropriate14  [label=amod];
+biological15 [style=filled, fillcolor=white, label=biological];
+response16 -> biological15  [label=amod];
+maintaining12 -> response16  [label=dobj];
+81 [style=filled, fillcolor=white, label=8];
+response16 -> 81  [label=appos];
+}

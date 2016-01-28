@@ -1,0 +1,47 @@
+digraph "Treatment with TNF-a significantly decreased the intracellular GSH content of HS-24 cells . Pretreatment of this culture with DMSO recovered the TNF-a-induced decrease in GSH ( Table 1 ) ." {
+label="Treatment with TNF-a significantly decreased the intracellular GSH content of
+HS-24 cells . Pretreatment of this culture with DMSO recovered the TNF-a-induced
+decrease in GSH ( Table 1 ) .";
+decreased5 [style=filled, fillcolor=white, label=decreased];
+Treatment1 [style=filled, fillcolor=white, label=Treatment];
+decreased5 -> Treatment1  [label=nsubj];
+"TNF-a3" [style=filled, fillcolor=white, label="TNF-a"];
+Treatment1 -> "TNF-a3"  [label=prep_with];
+significantly4 [style=filled, fillcolor=white, label=significantly];
+decreased5 -> significantly4  [label=advmod];
+decreased5 -> decreased5  [label=root];
+content9 [style=filled, fillcolor=white, label=content];
+the6 [style=filled, fillcolor=white, label=the];
+content9 -> the6  [label=det];
+intracellular7 [style=filled, fillcolor=white, label=intracellular];
+content9 -> intracellular7  [label=amod];
+GSH8 [style=filled, fillcolor=white, label=GSH];
+content9 -> GSH8  [label=nn];
+recovered20 [style=filled, fillcolor=white, label=recovered];
+recovered20 -> content9  [label=nsubj];
+Pretreatment14 [style=filled, fillcolor=white, label=Pretreatment];
+"HS-2411" [style=filled, fillcolor=white, label="HS-24"];
+Pretreatment14 -> "HS-2411"  [label=nn];
+cells12 [style=filled, fillcolor=white, label=cells];
+Pretreatment14 -> cells12  [label=nn];
+content9 -> Pretreatment14  [label=prep_of];
+culture17 [style=filled, fillcolor=white, label=culture];
+this16 [style=filled, fillcolor=white, label=this];
+culture17 -> this16  [label=det];
+Pretreatment14 -> culture17  [label=prep_of];
+DMSO19 [style=filled, fillcolor=white, label=DMSO];
+culture17 -> DMSO19  [label=prep_with];
+decreased5 -> recovered20  [label=ccomp];
+decrease23 [style=filled, fillcolor=white, label=decrease];
+the21 [style=filled, fillcolor=white, label=the];
+decrease23 -> the21  [label=det];
+"TNF-a-induced22" [style=filled, fillcolor=white, label="TNF-a-induced"];
+decrease23 -> "TNF-a-induced22"  [label=amod];
+recovered20 -> decrease23  [label=dobj];
+GSH25 [style=filled, fillcolor=white, label=GSH];
+recovered20 -> GSH25  [label=prep_in];
+128 [style=filled, fillcolor=white, label=1];
+Table27 [style=filled, fillcolor=white, label=Table];
+128 -> Table27  [label=number];
+GSH25 -> 128  [label=dep];
+}

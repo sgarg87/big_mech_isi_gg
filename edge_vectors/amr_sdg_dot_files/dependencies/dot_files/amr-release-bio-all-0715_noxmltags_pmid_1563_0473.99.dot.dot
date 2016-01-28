@@ -1,0 +1,32 @@
+digraph "In contrast ,  the intensity of antibody staining for two other AJ proteins ,  β-catenin and Ajuba ,  was still strong ." {
+label="In contrast ,  the intensity of antibody staining for two other AJ proteins ,
+β-catenin and Ajuba ,  was still strong .";
+strong21 [style=filled, fillcolor=white, label=strong];
+contrast2 [style=filled, fillcolor=white, label=contrast];
+strong21 -> contrast2  [label=prep_in];
+intensity5 [style=filled, fillcolor=white, label=intensity];
+the4 [style=filled, fillcolor=white, label=the];
+intensity5 -> the4  [label=det];
+strong21 -> intensity5  [label=nsubj];
+staining8 [style=filled, fillcolor=white, label=staining];
+antibody7 [style=filled, fillcolor=white, label=antibody];
+staining8 -> antibody7  [label=nn];
+intensity5 -> staining8  [label=prep_of];
+proteins13 [style=filled, fillcolor=white, label=proteins];
+two10 [style=filled, fillcolor=white, label=two];
+proteins13 -> two10  [label=num];
+other11 [style=filled, fillcolor=white, label=other];
+proteins13 -> other11  [label=amod];
+AJ12 [style=filled, fillcolor=white, label=AJ];
+proteins13 -> AJ12  [label=nn];
+staining8 -> proteins13  [label=prep_for];
+"β-catenin15" [style=filled, fillcolor=white, label="β-catenin"];
+proteins13 -> "β-catenin15"  [label=appos];
+Ajuba17 [style=filled, fillcolor=white, label=Ajuba];
+"β-catenin15" -> Ajuba17  [label=conj_and];
+was19 [style=filled, fillcolor=white, label=was];
+strong21 -> was19  [label=cop];
+still20 [style=filled, fillcolor=white, label=still];
+strong21 -> still20  [label=advmod];
+strong21 -> strong21  [label=root];
+}

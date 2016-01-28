@@ -1,0 +1,20 @@
+digraph "Macrophage-conditioned media IGF-1 levels correlate to effects on neoplastic proliferation" {
+label="Macrophage-conditioned media IGF-1 levels correlate to effects on neoplastic
+proliferation";
+media2 [style=filled, fillcolor=white, label=media];
+"Macrophage-conditioned1" [style=filled, fillcolor=white, label="Macrophage-conditioned"];
+media2 -> "Macrophage-conditioned1"  [label=amod];
+media2 -> media2  [label=root];
+levels4 [style=filled, fillcolor=white, label=levels];
+"IGF-13" [style=filled, fillcolor=white, label="IGF-1"];
+levels4 -> "IGF-13"  [label=nn];
+media2 -> levels4  [label=dep];
+correlate5 [style=filled, fillcolor=white, label=correlate];
+levels4 -> correlate5  [label=amod];
+effects7 [style=filled, fillcolor=white, label=effects];
+correlate5 -> effects7  [label=prep_to];
+proliferation10 [style=filled, fillcolor=white, label=proliferation];
+neoplastic9 [style=filled, fillcolor=white, label=neoplastic];
+proliferation10 -> neoplastic9  [label=amod];
+effects7 -> proliferation10  [label=prep_on];
+}

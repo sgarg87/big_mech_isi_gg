@@ -1,0 +1,53 @@
+digraph "These brilliant experiments remind us that these proteins are in dynamic and flexible states that might present more opportunities for small molecule attack than was previously realized ." {
+label="These brilliant experiments remind us that these proteins are in dynamic and
+flexible states that might present more opportunities for small molecule attack
+than was previously realized .";
+experiments3 [style=filled, fillcolor=white, label=experiments];
+These1 [style=filled, fillcolor=white, label=These];
+experiments3 -> These1  [label=det];
+brilliant2 [style=filled, fillcolor=white, label=brilliant];
+experiments3 -> brilliant2  [label=amod];
+remind4 [style=filled, fillcolor=white, label=remind];
+remind4 -> experiments3  [label=nsubj];
+remind4 -> remind4  [label=root];
+us5 [style=filled, fillcolor=white, label=us];
+remind4 -> us5  [label=dobj];
+are9 [style=filled, fillcolor=white, label=are];
+that6 [style=filled, fillcolor=white, label=that];
+are9 -> that6  [label=mark];
+proteins8 [style=filled, fillcolor=white, label=proteins];
+these7 [style=filled, fillcolor=white, label=these];
+proteins8 -> these7  [label=det];
+are9 -> proteins8  [label=nsubj];
+remind4 -> are9  [label=ccomp];
+states14 [style=filled, fillcolor=white, label=states];
+dynamic11 [style=filled, fillcolor=white, label=dynamic];
+states14 -> dynamic11  [label=amod];
+flexible13 [style=filled, fillcolor=white, label=flexible];
+dynamic11 -> flexible13  [label=conj_and];
+are9 -> states14  [label=prep_in];
+present17 [style=filled, fillcolor=white, label=present];
+that15 [style=filled, fillcolor=white, label=that];
+present17 -> that15  [label=nsubj];
+might16 [style=filled, fillcolor=white, label=might];
+present17 -> might16  [label=aux];
+states14 -> present17  [label=rcmod];
+opportunities19 [style=filled, fillcolor=white, label=opportunities];
+more18 [style=filled, fillcolor=white, label=more];
+opportunities19 -> more18  [label=amod];
+present17 -> opportunities19  [label=dobj];
+attack23 [style=filled, fillcolor=white, label=attack];
+small21 [style=filled, fillcolor=white, label=small];
+attack23 -> small21  [label=amod];
+molecule22 [style=filled, fillcolor=white, label=molecule];
+attack23 -> molecule22  [label=nn];
+present17 -> attack23  [label=prep_for];
+realized27 [style=filled, fillcolor=white, label=realized];
+than24 [style=filled, fillcolor=white, label=than];
+realized27 -> than24  [label=mark];
+was25 [style=filled, fillcolor=white, label=was];
+realized27 -> was25  [label=auxpass];
+previously26 [style=filled, fillcolor=white, label=previously];
+realized27 -> previously26  [label=advmod];
+present17 -> realized27  [label=advcl];
+}

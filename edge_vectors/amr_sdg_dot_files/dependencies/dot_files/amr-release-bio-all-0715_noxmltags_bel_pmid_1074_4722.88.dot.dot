@@ -1,0 +1,55 @@
+digraph "As shown in Fig. 5B ,  immediately after - irradiation ,  the amount of threonine 68 - phosphorylated Chk2 increased ( lane 2 ) ,  and prior treatment of cells with caffeine markedly reduced this increase ( lane 4 ) ." {
+label="As shown in Fig. 5B ,  immediately after - irradiation ,  the amount of
+threonine 68 - phosphorylated Chk2 increased ( lane 2 ) ,  and prior treatment
+of cells with caffeine markedly reduced this increase ( lane 4 ) .";
+shown2 [style=filled, fillcolor=white, label=shown];
+As1 [style=filled, fillcolor=white, label=As];
+shown2 -> As1  [label=mark];
+increased20 [style=filled, fillcolor=white, label=increased];
+increased20 -> shown2  [label=advcl];
+"Fig.4" [style=filled, fillcolor=white, label="Fig."];
+shown2 -> "Fig.4"  [label=prep_in];
+"5B" [style=filled, fillcolor=white, label="5B"];
+"Fig.4" -> "5B"  [label=num];
+immediately7 [style=filled, fillcolor=white, label=immediately];
+increased20 -> immediately7  [label=advmod];
+Chk219 [style=filled, fillcolor=white, label=Chk2];
+irradiation10 [style=filled, fillcolor=white, label=irradiation];
+Chk219 -> irradiation10  [label=dep];
+amount13 [style=filled, fillcolor=white, label=amount];
+the12 [style=filled, fillcolor=white, label=the];
+amount13 -> the12  [label=det];
+irradiation10 -> amount13  [label=appos];
+681 [style=filled, fillcolor=white, label=68];
+threonine15 [style=filled, fillcolor=white, label=threonine];
+681 -> threonine15  [label=amod];
+amount13 -> 681  [label=prep_of];
+phosphorylated18 [style=filled, fillcolor=white, label=phosphorylated];
+Chk219 -> phosphorylated18  [label=amod];
+increased20 -> Chk219  [label=prep_after];
+increased20 -> increased20  [label=root];
+223 [style=filled, fillcolor=white, label=2];
+lane22 [style=filled, fillcolor=white, label=lane];
+223 -> lane22  [label=number];
+increased20 -> 223  [label=dobj];
+treatment28 [style=filled, fillcolor=white, label=treatment];
+prior27 [style=filled, fillcolor=white, label=prior];
+treatment28 -> prior27  [label=amod];
+223 -> treatment28  [label=conj_and];
+cells30 [style=filled, fillcolor=white, label=cells];
+treatment28 -> cells30  [label=prep_of];
+caffeine32 [style=filled, fillcolor=white, label=caffeine];
+increased20 -> caffeine32  [label=prep_with];
+reduced34 [style=filled, fillcolor=white, label=reduced];
+markedly33 [style=filled, fillcolor=white, label=markedly];
+reduced34 -> markedly33  [label=advmod];
+caffeine32 -> reduced34  [label=amod];
+increase36 [style=filled, fillcolor=white, label=increase];
+this35 [style=filled, fillcolor=white, label=this];
+increase36 -> this35  [label=det];
+increased20 -> increase36  [label=nsubj];
+439 [style=filled, fillcolor=white, label=4];
+lane38 [style=filled, fillcolor=white, label=lane];
+439 -> lane38  [label=number];
+increase36 -> 439  [label=dep];
+}

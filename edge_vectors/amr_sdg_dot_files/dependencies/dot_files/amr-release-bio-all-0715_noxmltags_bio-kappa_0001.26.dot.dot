@@ -1,0 +1,32 @@
+digraph "This series of reactions is reversed by rebinding of nucleotide ,  predominantly GTP ,  because of its higher concentration in the cell ." {
+label="This series of reactions is reversed by rebinding of nucleotide ,
+predominantly GTP ,  because of its higher concentration in the cell .";
+series2 [style=filled, fillcolor=white, label=series];
+This1 [style=filled, fillcolor=white, label=This];
+series2 -> This1  [label=det];
+reversed6 [style=filled, fillcolor=white, label=reversed];
+reversed6 -> series2  [label=nsubjpass];
+reactions4 [style=filled, fillcolor=white, label=reactions];
+series2 -> reactions4  [label=prep_of];
+is5 [style=filled, fillcolor=white, label=is];
+reversed6 -> is5  [label=auxpass];
+reversed6 -> reversed6  [label=root];
+rebinding8 [style=filled, fillcolor=white, label=rebinding];
+reversed6 -> rebinding8  [label=agent];
+nucleotide10 [style=filled, fillcolor=white, label=nucleotide];
+rebinding8 -> nucleotide10  [label=prep_of];
+GTP13 [style=filled, fillcolor=white, label=GTP];
+predominantly12 [style=filled, fillcolor=white, label=predominantly];
+GTP13 -> predominantly12  [label=advmod];
+rebinding8 -> GTP13  [label=amod];
+concentration19 [style=filled, fillcolor=white, label=concentration];
+its17 [style=filled, fillcolor=white, label=its];
+concentration19 -> its17  [label=poss];
+higher18 [style=filled, fillcolor=white, label=higher];
+concentration19 -> higher18  [label=amod];
+rebinding8 -> concentration19  [label=prep_because_of];
+cell22 [style=filled, fillcolor=white, label=cell];
+the21 [style=filled, fillcolor=white, label=the];
+cell22 -> the21  [label=det];
+rebinding8 -> cell22  [label=prep_in];
+}

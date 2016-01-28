@@ -1,0 +1,53 @@
+digraph "Immunohistochemistry with antibodies against the active ( phosphorylated ) form of MAPK ( pMAPK ) marked a subset of the proliferating ( Ki67-positive ) cells ,  and pMAPK-positive cells were enriched in the hair bud ( Figure 1G ) ." {
+label="Immunohistochemistry with antibodies against the active ( phosphorylated ) form
+of MAPK ( pMAPK ) marked a subset of the proliferating ( Ki67-positive ) cells ,
+and pMAPK-positive cells were enriched in the hair bud ( Figure 1G ) .";
+marked16 [style=filled, fillcolor=white, label=marked];
+Immunohistochemistry1 [style=filled, fillcolor=white, label=Immunohistochemistry];
+marked16 -> Immunohistochemistry1  [label=nsubj];
+antibodies3 [style=filled, fillcolor=white, label=antibodies];
+Immunohistochemistry1 -> antibodies3  [label=prep_with];
+form10 [style=filled, fillcolor=white, label=form];
+the5 [style=filled, fillcolor=white, label=the];
+form10 -> the5  [label=det];
+active6 [style=filled, fillcolor=white, label=active];
+form10 -> active6  [label=amod];
+phosphorylated8 [style=filled, fillcolor=white, label=phosphorylated];
+form10 -> phosphorylated8  [label=dep];
+antibodies3 -> form10  [label=prep_against];
+MAPK12 [style=filled, fillcolor=white, label=MAPK];
+form10 -> MAPK12  [label=prep_of];
+pMAPK14 [style=filled, fillcolor=white, label=pMAPK];
+MAPK12 -> pMAPK14  [label=appos];
+marked16 -> marked16  [label=root];
+subset18 [style=filled, fillcolor=white, label=subset];
+a17 [style=filled, fillcolor=white, label=a];
+subset18 -> a17  [label=det];
+marked16 -> subset18  [label=dobj];
+cells25 [style=filled, fillcolor=white, label=cells];
+the20 [style=filled, fillcolor=white, label=the];
+cells25 -> the20  [label=det];
+proliferating21 [style=filled, fillcolor=white, label=proliferating];
+cells25 -> proliferating21  [label=amod];
+"Ki67-positive23" [style=filled, fillcolor=white, label="Ki67-positive"];
+cells25 -> "Ki67-positive23"  [label=appos];
+subset18 -> cells25  [label=prep_of];
+cells29 [style=filled, fillcolor=white, label=cells];
+"pMAPK-positive28" [style=filled, fillcolor=white, label="pMAPK-positive"];
+cells29 -> "pMAPK-positive28"  [label=amod];
+enriched31 [style=filled, fillcolor=white, label=enriched];
+enriched31 -> cells29  [label=nsubjpass];
+were30 [style=filled, fillcolor=white, label=were];
+enriched31 -> were30  [label=auxpass];
+marked16 -> enriched31  [label=conj_and];
+bud35 [style=filled, fillcolor=white, label=bud];
+the33 [style=filled, fillcolor=white, label=the];
+bud35 -> the33  [label=det];
+hair34 [style=filled, fillcolor=white, label=hair];
+bud35 -> hair34  [label=nn];
+enriched31 -> bud35  [label=prep_in];
+Figure37 [style=filled, fillcolor=white, label=Figure];
+bud35 -> Figure37  [label=appos];
+"1G38" [style=filled, fillcolor=white, label="1G"];
+Figure37 -> "1G38"  [label=num];
+}

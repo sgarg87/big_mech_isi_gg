@@ -1,0 +1,21 @@
+digraph "It was not seen in later hair germ or peg stages ." {
+label="It was not seen in later hair germ or peg stages .";
+seen4 [style=filled, fillcolor=white, label=seen];
+It1 [style=filled, fillcolor=white, label=It];
+seen4 -> It1  [label=nsubjpass];
+was2 [style=filled, fillcolor=white, label=was];
+seen4 -> was2  [label=auxpass];
+not3 [style=filled, fillcolor=white, label=not];
+seen4 -> not3  [label=neg];
+seen4 -> seen4  [label=root];
+germ8 [style=filled, fillcolor=white, label=germ];
+later6 [style=filled, fillcolor=white, label=later];
+germ8 -> later6  [label=amod];
+hair7 [style=filled, fillcolor=white, label=hair];
+germ8 -> hair7  [label=nn];
+seen4 -> germ8  [label=prep_in];
+stages11 [style=filled, fillcolor=white, label=stages];
+peg10 [style=filled, fillcolor=white, label=peg];
+stages11 -> peg10  [label=nn];
+germ8 -> stages11  [label=conj_or];
+}

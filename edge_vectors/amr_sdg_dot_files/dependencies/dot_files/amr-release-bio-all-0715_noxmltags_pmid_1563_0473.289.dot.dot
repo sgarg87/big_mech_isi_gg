@@ -1,0 +1,19 @@
+digraph "The respective probes were obtained by XhoI and BamH1 digestions ." {
+label="The respective probes were obtained by XhoI and BamH1 digestions .";
+probes3 [style=filled, fillcolor=white, label=probes];
+The1 [style=filled, fillcolor=white, label=The];
+probes3 -> The1  [label=det];
+respective2 [style=filled, fillcolor=white, label=respective];
+probes3 -> respective2  [label=amod];
+obtained5 [style=filled, fillcolor=white, label=obtained];
+obtained5 -> probes3  [label=nsubjpass];
+were4 [style=filled, fillcolor=white, label=were];
+obtained5 -> were4  [label=auxpass];
+obtained5 -> obtained5  [label=root];
+XhoI7 [style=filled, fillcolor=white, label=XhoI];
+obtained5 -> XhoI7  [label=agent];
+digestions10 [style=filled, fillcolor=white, label=digestions];
+BamH19 [style=filled, fillcolor=white, label=BamH1];
+digestions10 -> BamH19  [label=amod];
+XhoI7 -> digestions10  [label=conj_and];
+}

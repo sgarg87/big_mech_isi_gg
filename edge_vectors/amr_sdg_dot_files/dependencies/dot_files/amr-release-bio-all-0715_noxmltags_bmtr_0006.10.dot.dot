@@ -1,0 +1,51 @@
+digraph "PI3KC2β preferentially interacts with Ras17N ,  which has a 30-fold lower affinity for nucleotide compared to wild type Ras and therefore should exist for longer periods in the nucleotide-free state ." {
+label="PI3KC2β preferentially interacts with Ras17N ,  which has a 30-fold lower
+affinity for nucleotide compared to wild type Ras and therefore should exist for
+longer periods in the nucleotide-free state .";
+interacts3 [style=filled, fillcolor=white, label=interacts];
+"PI3KC2β1" [style=filled, fillcolor=white, label="PI3KC2β"];
+interacts3 -> "PI3KC2β1"  [label=nsubj];
+preferentially2 [style=filled, fillcolor=white, label=preferentially];
+interacts3 -> preferentially2  [label=advmod];
+interacts3 -> interacts3  [label=root];
+Ras17N5 [style=filled, fillcolor=white, label=Ras17N];
+interacts3 -> Ras17N5  [label=prep_with];
+has8 [style=filled, fillcolor=white, label=has];
+which7 [style=filled, fillcolor=white, label=which];
+has8 -> which7  [label=nsubj];
+Ras17N5 -> has8  [label=rcmod];
+affinity12 [style=filled, fillcolor=white, label=affinity];
+a9 [style=filled, fillcolor=white, label=a];
+affinity12 -> a9  [label=det];
+"30-fold1" [style=filled, fillcolor=white, label="30-fold"];
+affinity12 -> "30-fold1"  [label=amod];
+lower11 [style=filled, fillcolor=white, label=lower];
+affinity12 -> lower11  [label=amod];
+has8 -> affinity12  [label=dobj];
+nucleotide14 [style=filled, fillcolor=white, label=nucleotide];
+affinity12 -> nucleotide14  [label=prep_for];
+to16 [style=filled, fillcolor=white, label=to];
+nucleotide14 -> to16  [label=prepc_compared_to];
+Ras19 [style=filled, fillcolor=white, label=Ras];
+wild17 [style=filled, fillcolor=white, label=wild];
+Ras19 -> wild17  [label=amod];
+type18 [style=filled, fillcolor=white, label=type];
+Ras19 -> type18  [label=nn];
+nucleotide14 -> Ras19  [label=pobj];
+exist23 [style=filled, fillcolor=white, label=exist];
+therefore21 [style=filled, fillcolor=white, label=therefore];
+exist23 -> therefore21  [label=advmod];
+should22 [style=filled, fillcolor=white, label=should];
+exist23 -> should22  [label=aux];
+has8 -> exist23  [label=conj_and];
+periods26 [style=filled, fillcolor=white, label=periods];
+longer25 [style=filled, fillcolor=white, label=longer];
+periods26 -> longer25  [label=amod];
+exist23 -> periods26  [label=prep_for];
+state30 [style=filled, fillcolor=white, label=state];
+the28 [style=filled, fillcolor=white, label=the];
+state30 -> the28  [label=det];
+"nucleotide-free29" [style=filled, fillcolor=white, label="nucleotide-free"];
+state30 -> "nucleotide-free29"  [label=amod];
+periods26 -> state30  [label=prep_in];
+}

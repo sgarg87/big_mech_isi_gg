@@ -1,0 +1,30 @@
+digraph "To corroborate this finding ,  we measure the activity of Ras by the GST-RBD pull-down assay ." {
+label="To corroborate this finding ,  we measure the activity of Ras by the GST-RBD
+pull-down assay .";
+corroborate2 [style=filled, fillcolor=white, label=corroborate];
+To1 [style=filled, fillcolor=white, label=To];
+corroborate2 -> To1  [label=aux];
+corroborate2 -> corroborate2  [label=root];
+finding4 [style=filled, fillcolor=white, label=finding];
+this3 [style=filled, fillcolor=white, label=this];
+finding4 -> this3  [label=det];
+corroborate2 -> finding4  [label=dobj];
+measure7 [style=filled, fillcolor=white, label=measure];
+we6 [style=filled, fillcolor=white, label=we];
+measure7 -> we6  [label=nsubj];
+corroborate2 -> measure7  [label=parataxis];
+activity9 [style=filled, fillcolor=white, label=activity];
+the8 [style=filled, fillcolor=white, label=the];
+activity9 -> the8  [label=det];
+measure7 -> activity9  [label=dobj];
+Ras11 [style=filled, fillcolor=white, label=Ras];
+activity9 -> Ras11  [label=prep_of];
+assay16 [style=filled, fillcolor=white, label=assay];
+the13 [style=filled, fillcolor=white, label=the];
+assay16 -> the13  [label=det];
+"GST-RBD14" [style=filled, fillcolor=white, label="GST-RBD"];
+assay16 -> "GST-RBD14"  [label=nn];
+"pull-down15" [style=filled, fillcolor=white, label="pull-down"];
+assay16 -> "pull-down15"  [label=amod];
+measure7 -> assay16  [label=prep_by];
+}

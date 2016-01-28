@@ -1,0 +1,36 @@
+digraph "Cyclin D binds PCNA directly and inhibits PCNA-dependent replication ( Matsuoka et al. ,  1994 ; Pagano et al. ,  1994 ) ." {
+label="Cyclin D binds PCNA directly and inhibits PCNA-dependent replication ( Matsuoka
+et al. ,  1994 ; Pagano et al. ,  1994 ) .";
+D2 [style=filled, fillcolor=white, label=D];
+Cyclin1 [style=filled, fillcolor=white, label=Cyclin];
+D2 -> Cyclin1  [label=nn];
+binds3 [style=filled, fillcolor=white, label=binds];
+binds3 -> D2  [label=nsubj];
+binds3 -> binds3  [label=root];
+PCNA4 [style=filled, fillcolor=white, label=PCNA];
+binds3 -> PCNA4  [label=dobj];
+directly5 [style=filled, fillcolor=white, label=directly];
+binds3 -> directly5  [label=advmod];
+inhibits7 [style=filled, fillcolor=white, label=inhibits];
+binds3 -> inhibits7  [label=conj_and];
+replication9 [style=filled, fillcolor=white, label=replication];
+"PCNA-dependent8" [style=filled, fillcolor=white, label="PCNA-dependent"];
+replication9 -> "PCNA-dependent8"  [label=amod];
+inhibits7 -> replication9  [label=dobj];
+et12 [style=filled, fillcolor=white, label=et];
+Matsuoka11 [style=filled, fillcolor=white, label=Matsuoka];
+et12 -> Matsuoka11  [label=nn];
+replication9 -> et12  [label=dep];
+"al.13" [style=filled, fillcolor=white, label="al."];
+et12 -> "al.13"  [label=num];
+199415 [style=filled, fillcolor=white, label=1994];
+et12 -> 199415  [label=num];
+et18 [style=filled, fillcolor=white, label=et];
+Pagano17 [style=filled, fillcolor=white, label=Pagano];
+et18 -> Pagano17  [label=nn];
+et12 -> et18  [label=dep];
+"al.19" [style=filled, fillcolor=white, label="al."];
+et18 -> "al.19"  [label=num];
+19942 [style=filled, fillcolor=white, label=1994];
+et18 -> 19942  [label=num];
+}

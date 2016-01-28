@@ -1,0 +1,43 @@
+digraph "Angiopoietin-1 stimulates association of SHP-2 to the phosphorylated Tie-2 receptor ( 47 ) ,  which in turn inhibits PI3 kinase-dependent signaling pathways leading to EC migration ." {
+label="Angiopoietin-1 stimulates association of SHP-2 to the phosphorylated Tie-2
+receptor ( 47 ) ,  which in turn inhibits PI3 kinase-dependent signaling
+pathways leading to EC migration .";
+stimulates2 [style=filled, fillcolor=white, label=stimulates];
+"Angiopoietin-1" [style=filled, fillcolor=white, label="Angiopoietin-1"];
+stimulates2 -> "Angiopoietin-1"  [label=nsubj];
+stimulates2 -> stimulates2  [label=root];
+association3 [style=filled, fillcolor=white, label=association];
+stimulates2 -> association3  [label=dobj];
+migration26 [style=filled, fillcolor=white, label=migration];
+"SHP-25" [style=filled, fillcolor=white, label="SHP-2"];
+migration26 -> "SHP-25"  [label=amod];
+receptor10 [style=filled, fillcolor=white, label=receptor];
+the7 [style=filled, fillcolor=white, label=the];
+receptor10 -> the7  [label=det];
+phosphorylated8 [style=filled, fillcolor=white, label=phosphorylated];
+receptor10 -> phosphorylated8  [label=amod];
+"Tie-29" [style=filled, fillcolor=white, label="Tie-2"];
+receptor10 -> "Tie-29"  [label=nn];
+"SHP-25" -> receptor10  [label=prep_to];
+4712 [style=filled, fillcolor=white, label=47];
+receptor10 -> 4712  [label=appos];
+inhibits18 [style=filled, fillcolor=white, label=inhibits];
+which15 [style=filled, fillcolor=white, label=which];
+inhibits18 -> which15  [label=nsubj];
+turn17 [style=filled, fillcolor=white, label=turn];
+inhibits18 -> turn17  [label=prep_in];
+receptor10 -> inhibits18  [label=rcmod];
+pathways22 [style=filled, fillcolor=white, label=pathways];
+PI319 [style=filled, fillcolor=white, label=PI3];
+pathways22 -> PI319  [label=num];
+"kinase-dependent20" [style=filled, fillcolor=white, label="kinase-dependent"];
+pathways22 -> "kinase-dependent20"  [label=amod];
+signaling21 [style=filled, fillcolor=white, label=signaling];
+pathways22 -> signaling21  [label=amod];
+inhibits18 -> pathways22  [label=dobj];
+leading23 [style=filled, fillcolor=white, label=leading];
+pathways22 -> leading23  [label=vmod];
+EC25 [style=filled, fillcolor=white, label=EC];
+leading23 -> EC25  [label=prep_to];
+association3 -> migration26  [label=prep_of];
+}

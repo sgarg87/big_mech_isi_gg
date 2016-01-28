@@ -1,0 +1,49 @@
+digraph "Furthermore ,  both IGF-1 and MØCM increased the fraction of BrdU + LM2 cells 12-24 hrs after treatment ,  corresponding with significantly increased cell numbers ( data not shown ) ." {
+label="Furthermore ,  both IGF-1 and MØCM increased the fraction of BrdU + LM2 cells
+12-24 hrs after treatment ,  corresponding with significantly increased cell
+numbers ( data not shown ) .";
+increased7 [style=filled, fillcolor=white, label=increased];
+Furthermore1 [style=filled, fillcolor=white, label=Furthermore];
+increased7 -> Furthermore1  [label=advmod];
+"IGF-14" [style=filled, fillcolor=white, label="IGF-1"];
+both3 [style=filled, fillcolor=white, label=both];
+"IGF-14" -> both3  [label=preconj];
+increased7 -> "IGF-14"  [label=nsubj];
+"MØCM6" [style=filled, fillcolor=white, label="MØCM"];
+"IGF-14" -> "MØCM6"  [label=conj_and];
+increased7 -> increased7  [label=root];
+fraction9 [style=filled, fillcolor=white, label=fraction];
+the8 [style=filled, fillcolor=white, label=the];
+fraction9 -> the8  [label=det];
+increased7 -> fraction9  [label=dobj];
+hrs16 [style=filled, fillcolor=white, label=hrs];
+BrdU11 [style=filled, fillcolor=white, label=BrdU];
+hrs16 -> BrdU11  [label=nn];
+"+12" [style=filled, fillcolor=white, label="+"];
+hrs16 -> "+12"  [label=nn];
+LM213 [style=filled, fillcolor=white, label=LM2];
+hrs16 -> LM213  [label=nn];
+cells14 [style=filled, fillcolor=white, label=cells];
+hrs16 -> cells14  [label=nn];
+"12-245" [style=filled, fillcolor=white, label="12-24"];
+hrs16 -> "12-245"  [label=nn];
+fraction9 -> hrs16  [label=prep_of];
+treatment18 [style=filled, fillcolor=white, label=treatment];
+increased7 -> treatment18  [label=prep_after];
+corresponding20 [style=filled, fillcolor=white, label=corresponding];
+treatment18 -> corresponding20  [label=appos];
+numbers25 [style=filled, fillcolor=white, label=numbers];
+significantly22 [style=filled, fillcolor=white, label=significantly];
+numbers25 -> significantly22  [label=advmod];
+increased23 [style=filled, fillcolor=white, label=increased];
+numbers25 -> increased23  [label=amod];
+cell24 [style=filled, fillcolor=white, label=cell];
+numbers25 -> cell24  [label=nn];
+corresponding20 -> numbers25  [label=prep_with];
+data27 [style=filled, fillcolor=white, label=data];
+numbers25 -> data27  [label=dep];
+shown29 [style=filled, fillcolor=white, label=shown];
+not28 [style=filled, fillcolor=white, label=not];
+shown29 -> not28  [label=neg];
+data27 -> shown29  [label=vmod];
+}

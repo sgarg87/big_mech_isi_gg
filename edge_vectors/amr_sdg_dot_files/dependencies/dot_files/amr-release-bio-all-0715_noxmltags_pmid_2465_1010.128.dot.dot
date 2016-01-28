@@ -1,0 +1,19 @@
+digraph "This approach to targeting Ras has therefore been abandoned ." {
+label="This approach to targeting Ras has therefore been abandoned .";
+approach2 [style=filled, fillcolor=white, label=approach];
+This1 [style=filled, fillcolor=white, label=This];
+approach2 -> This1  [label=det];
+abandoned9 [style=filled, fillcolor=white, label=abandoned];
+abandoned9 -> approach2  [label=nsubjpass];
+targeting4 [style=filled, fillcolor=white, label=targeting];
+approach2 -> targeting4  [label=prepc_to];
+Ras5 [style=filled, fillcolor=white, label=Ras];
+targeting4 -> Ras5  [label=dobj];
+has6 [style=filled, fillcolor=white, label=has];
+abandoned9 -> has6  [label=aux];
+therefore7 [style=filled, fillcolor=white, label=therefore];
+abandoned9 -> therefore7  [label=advmod];
+been8 [style=filled, fillcolor=white, label=been];
+abandoned9 -> been8  [label=auxpass];
+abandoned9 -> abandoned9  [label=root];
+}

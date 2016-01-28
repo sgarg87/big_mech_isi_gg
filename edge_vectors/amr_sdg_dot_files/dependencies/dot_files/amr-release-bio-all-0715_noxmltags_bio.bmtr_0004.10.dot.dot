@@ -1,0 +1,47 @@
+digraph "We measured the rate of GAP-mediated GTP hydrolysis and observed that the response of Ras ligated to Ubiquitin-C77 was identical to Ras ligated to Ubiquitin-G76C ( Fig. 5b ) ." {
+label="We measured the rate of GAP-mediated GTP hydrolysis and observed that the
+response of Ras ligated to Ubiquitin-C77 was identical to Ras ligated to
+Ubiquitin-G76C ( Fig. 5b ) .";
+measured2 [style=filled, fillcolor=white, label=measured];
+We1 [style=filled, fillcolor=white, label=We];
+measured2 -> We1  [label=nsubj];
+measured2 -> measured2  [label=root];
+rate4 [style=filled, fillcolor=white, label=rate];
+the3 [style=filled, fillcolor=white, label=the];
+rate4 -> the3  [label=det];
+measured2 -> rate4  [label=dobj];
+hydrolysis8 [style=filled, fillcolor=white, label=hydrolysis];
+"GAP-mediated6" [style=filled, fillcolor=white, label="GAP-mediated"];
+hydrolysis8 -> "GAP-mediated6"  [label=amod];
+GTP7 [style=filled, fillcolor=white, label=GTP];
+hydrolysis8 -> GTP7  [label=nn];
+rate4 -> hydrolysis8  [label=prep_of];
+observed10 [style=filled, fillcolor=white, label=observed];
+measured2 -> observed10  [label=conj_and];
+identical20 [style=filled, fillcolor=white, label=identical];
+that11 [style=filled, fillcolor=white, label=that];
+identical20 -> that11  [label=mark];
+response13 [style=filled, fillcolor=white, label=response];
+the12 [style=filled, fillcolor=white, label=the];
+response13 -> the12  [label=det];
+identical20 -> response13  [label=nsubj];
+Ras15 [style=filled, fillcolor=white, label=Ras];
+response13 -> Ras15  [label=prep_of];
+ligated16 [style=filled, fillcolor=white, label=ligated];
+Ras15 -> ligated16  [label=vmod];
+"Ubiquitin-C7718" [style=filled, fillcolor=white, label="Ubiquitin-C77"];
+ligated16 -> "Ubiquitin-C7718"  [label=prep_to];
+was19 [style=filled, fillcolor=white, label=was];
+identical20 -> was19  [label=cop];
+observed10 -> identical20  [label=ccomp];
+Ras22 [style=filled, fillcolor=white, label=Ras];
+identical20 -> Ras22  [label=prep_to];
+ligated23 [style=filled, fillcolor=white, label=ligated];
+Ras22 -> ligated23  [label=vmod];
+"Ubiquitin-G76C25" [style=filled, fillcolor=white, label="Ubiquitin-G76C"];
+ligated23 -> "Ubiquitin-G76C25"  [label=prep_to];
+"5b28" [style=filled, fillcolor=white, label="5b"];
+"Fig.27" [style=filled, fillcolor=white, label="Fig."];
+"5b28" -> "Fig.27"  [label=nn];
+"Ubiquitin-G76C25" -> "5b28"  [label=appos];
+}

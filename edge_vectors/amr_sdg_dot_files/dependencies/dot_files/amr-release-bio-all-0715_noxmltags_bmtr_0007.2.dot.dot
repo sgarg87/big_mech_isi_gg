@@ -1,0 +1,36 @@
+digraph "A synthetic peptide encoding amino acids 824-832 ,  with a phosphoserine at residue 827 ,  was used to raise antibodies ." {
+label="A synthetic peptide encoding amino acids 824-832 ,  with a phosphoserine at
+residue 827 ,  was used to raise antibodies .";
+"824-8327" [style=filled, fillcolor=white, label="824-832"];
+A1 [style=filled, fillcolor=white, label=A];
+"824-8327" -> A1  [label=det];
+synthetic2 [style=filled, fillcolor=white, label=synthetic];
+"824-8327" -> synthetic2  [label=amod];
+peptide3 [style=filled, fillcolor=white, label=peptide];
+"824-8327" -> peptide3  [label=amod];
+encoding4 [style=filled, fillcolor=white, label=encoding];
+"824-8327" -> encoding4  [label=nn];
+amino5 [style=filled, fillcolor=white, label=amino];
+"824-8327" -> amino5  [label=amod];
+acids6 [style=filled, fillcolor=white, label=acids];
+"824-8327" -> acids6  [label=nn];
+used17 [style=filled, fillcolor=white, label=used];
+used17 -> "824-8327"  [label=nsubjpass];
+phosphoserine11 [style=filled, fillcolor=white, label=phosphoserine];
+a10 [style=filled, fillcolor=white, label=a];
+phosphoserine11 -> a10  [label=det];
+"824-8327" -> phosphoserine11  [label=prep_with];
+residue13 [style=filled, fillcolor=white, label=residue];
+phosphoserine11 -> residue13  [label=prep_at];
+82714 [style=filled, fillcolor=white, label=827];
+residue13 -> 82714  [label=num];
+was16 [style=filled, fillcolor=white, label=was];
+used17 -> was16  [label=auxpass];
+used17 -> used17  [label=root];
+raise19 [style=filled, fillcolor=white, label=raise];
+to18 [style=filled, fillcolor=white, label=to];
+raise19 -> to18  [label=aux];
+used17 -> raise19  [label=xcomp];
+antibodies20 [style=filled, fillcolor=white, label=antibodies];
+raise19 -> antibodies20  [label=dobj];
+}

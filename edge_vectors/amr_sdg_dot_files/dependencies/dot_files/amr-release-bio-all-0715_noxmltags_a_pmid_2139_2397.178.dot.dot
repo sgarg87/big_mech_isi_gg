@@ -1,0 +1,28 @@
+digraph "These data indicate that phosphorylation of YB-1 due to mutation of K-RAS in part depends on activation of erbB1 ." {
+label="These data indicate that phosphorylation of YB-1 due to mutation of K-RAS in
+part depends on activation of erbB1 .";
+data2 [style=filled, fillcolor=white, label=data];
+These1 [style=filled, fillcolor=white, label=These];
+data2 -> These1  [label=det];
+indicate3 [style=filled, fillcolor=white, label=indicate];
+indicate3 -> data2  [label=nsubj];
+indicate3 -> indicate3  [label=root];
+depends15 [style=filled, fillcolor=white, label=depends];
+that4 [style=filled, fillcolor=white, label=that];
+depends15 -> that4  [label=mark];
+phosphorylation5 [style=filled, fillcolor=white, label=phosphorylation];
+depends15 -> phosphorylation5  [label=nsubj];
+"YB-17" [style=filled, fillcolor=white, label="YB-1"];
+phosphorylation5 -> "YB-17"  [label=prep_of];
+mutation10 [style=filled, fillcolor=white, label=mutation];
+"YB-17" -> mutation10  [label=prep_due_to];
+"K-RAS12" [style=filled, fillcolor=white, label="K-RAS"];
+mutation10 -> "K-RAS12"  [label=prep_of];
+part14 [style=filled, fillcolor=white, label=part];
+"YB-17" -> part14  [label=prep_in];
+indicate3 -> depends15  [label=ccomp];
+activation17 [style=filled, fillcolor=white, label=activation];
+depends15 -> activation17  [label=prep_on];
+erbB119 [style=filled, fillcolor=white, label=erbB1];
+activation17 -> erbB119  [label=prep_of];
+}

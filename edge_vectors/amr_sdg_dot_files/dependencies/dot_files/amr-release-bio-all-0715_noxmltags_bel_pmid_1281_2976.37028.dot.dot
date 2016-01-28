@@ -1,0 +1,45 @@
+digraph "In many cells PKA inhibits the extracellular receptor kinase ( ERK1/2 ) cascade of the mitogen-activated protein kinase ( MAPK ) pathway leading to inhibition of cell proliferation ." {
+label="In many cells PKA inhibits the extracellular receptor kinase ( ERK1/2 ) cascade
+of the mitogen-activated protein kinase ( MAPK ) pathway leading to inhibition
+of cell proliferation .";
+cells3 [style=filled, fillcolor=white, label=cells];
+many2 [style=filled, fillcolor=white, label=many];
+cells3 -> many2  [label=amod];
+inhibits5 [style=filled, fillcolor=white, label=inhibits];
+inhibits5 -> cells3  [label=prep_in];
+PKA4 [style=filled, fillcolor=white, label=PKA];
+inhibits5 -> PKA4  [label=nsubj];
+inhibits5 -> inhibits5  [label=root];
+cascade13 [style=filled, fillcolor=white, label=cascade];
+the6 [style=filled, fillcolor=white, label=the];
+cascade13 -> the6  [label=det];
+kinase9 [style=filled, fillcolor=white, label=kinase];
+extracellular7 [style=filled, fillcolor=white, label=extracellular];
+kinase9 -> extracellular7  [label=nn];
+receptor8 [style=filled, fillcolor=white, label=receptor];
+kinase9 -> receptor8  [label=nn];
+cascade13 -> kinase9  [label=nn];
+"ERK1/2" [style=filled, fillcolor=white, label="ERK1/2"];
+kinase9 -> "ERK1/2"  [label=appos];
+inhibits5 -> cascade13  [label=dobj];
+kinase18 [style=filled, fillcolor=white, label=kinase];
+the15 [style=filled, fillcolor=white, label=the];
+kinase18 -> the15  [label=det];
+"mitogen-activated16" [style=filled, fillcolor=white, label="mitogen-activated"];
+kinase18 -> "mitogen-activated16"  [label=amod];
+protein17 [style=filled, fillcolor=white, label=protein];
+kinase18 -> protein17  [label=nn];
+cascade13 -> kinase18  [label=prep_of];
+MAPK20 [style=filled, fillcolor=white, label=MAPK];
+kinase18 -> MAPK20  [label=appos];
+leading23 [style=filled, fillcolor=white, label=leading];
+pathway22 [style=filled, fillcolor=white, label=pathway];
+leading23 -> pathway22  [label=advmod];
+kinase18 -> leading23  [label=amod];
+inhibition25 [style=filled, fillcolor=white, label=inhibition];
+leading23 -> inhibition25  [label=prep_to];
+proliferation28 [style=filled, fillcolor=white, label=proliferation];
+cell27 [style=filled, fillcolor=white, label=cell];
+proliferation28 -> cell27  [label=nn];
+inhibition25 -> proliferation28  [label=prep_of];
+}

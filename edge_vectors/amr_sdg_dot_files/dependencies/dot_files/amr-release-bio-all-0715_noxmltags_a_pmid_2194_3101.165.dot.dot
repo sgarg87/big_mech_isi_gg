@@ -1,0 +1,66 @@
+digraph "To further explore oncogenic effects on the cell cytoskeleton with regard to oncogenic transformation ,  the invasive and migratory properties of the previously established oncogenic cell models and in colon cancer cell lines HT29 and DLD-1 were analyzed ." {
+label="To further explore oncogenic effects on the cell cytoskeleton with regard to
+oncogenic transformation ,  the invasive and migratory properties of the
+previously established oncogenic cell models and in colon cancer cell lines HT29
+and DLD-1 were analyzed .";
+explore3 [style=filled, fillcolor=white, label=explore];
+To1 [style=filled, fillcolor=white, label=To];
+explore3 -> To1  [label=aux];
+further2 [style=filled, fillcolor=white, label=further];
+explore3 -> further2  [label=advmod];
+"explore3'" [style=filled, fillcolor=white, label=explore];
+explore3 -> "explore3'"  [label=conj_and];
+analyzed38 [style=filled, fillcolor=white, label=analyzed];
+analyzed38 -> explore3  [label=dep];
+effects5 [style=filled, fillcolor=white, label=effects];
+oncogenic4 [style=filled, fillcolor=white, label=oncogenic];
+effects5 -> oncogenic4  [label=amod];
+explore3 -> effects5  [label=dobj];
+cytoskeleton9 [style=filled, fillcolor=white, label=cytoskeleton];
+the7 [style=filled, fillcolor=white, label=the];
+cytoskeleton9 -> the7  [label=det];
+cell8 [style=filled, fillcolor=white, label=cell];
+cytoskeleton9 -> cell8  [label=nn];
+effects5 -> cytoskeleton9  [label=prep_on];
+regard11 [style=filled, fillcolor=white, label=regard];
+explore3 -> regard11  [label=prep_with];
+transformation14 [style=filled, fillcolor=white, label=transformation];
+oncogenic13 [style=filled, fillcolor=white, label=oncogenic];
+transformation14 -> oncogenic13  [label=amod];
+explore3 -> transformation14  [label=prep_to];
+invasive17 [style=filled, fillcolor=white, label=invasive];
+the16 [style=filled, fillcolor=white, label=the];
+invasive17 -> the16  [label=det];
+transformation14 -> invasive17  [label=conj_and];
+properties20 [style=filled, fillcolor=white, label=properties];
+migratory19 [style=filled, fillcolor=white, label=migratory];
+properties20 -> migratory19  [label=amod];
+transformation14 -> properties20  [label=conj_and];
+models27 [style=filled, fillcolor=white, label=models];
+the22 [style=filled, fillcolor=white, label=the];
+models27 -> the22  [label=det];
+established24 [style=filled, fillcolor=white, label=established];
+previously23 [style=filled, fillcolor=white, label=previously];
+established24 -> previously23  [label=advmod];
+models27 -> established24  [label=amod];
+oncogenic25 [style=filled, fillcolor=white, label=oncogenic];
+models27 -> oncogenic25  [label=amod];
+cell26 [style=filled, fillcolor=white, label=cell];
+models27 -> cell26  [label=nn];
+properties20 -> models27  [label=prep_of];
+lines33 [style=filled, fillcolor=white, label=lines];
+colon30 [style=filled, fillcolor=white, label=colon];
+lines33 -> colon30  [label=nn];
+cancer31 [style=filled, fillcolor=white, label=cancer];
+lines33 -> cancer31  [label=nn];
+cell32 [style=filled, fillcolor=white, label=cell];
+lines33 -> cell32  [label=nn];
+"explore3'" -> lines33  [label=prep_in];
+HT2934 [style=filled, fillcolor=white, label=HT29];
+analyzed38 -> HT2934  [label=nsubjpass];
+"DLD-136" [style=filled, fillcolor=white, label="DLD-1"];
+HT2934 -> "DLD-136"  [label=conj_and];
+were37 [style=filled, fillcolor=white, label=were];
+analyzed38 -> were37  [label=auxpass];
+analyzed38 -> analyzed38  [label=root];
+}

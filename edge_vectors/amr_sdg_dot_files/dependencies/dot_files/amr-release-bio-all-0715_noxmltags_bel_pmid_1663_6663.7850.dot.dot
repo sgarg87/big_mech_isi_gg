@@ -1,0 +1,22 @@
+digraph "LMW-DSP2 overexpression in 293T cells suppressed IL-6-induced phosphorylation and activation of STAT3 ." {
+label="LMW-DSP2 overexpression in 293T cells suppressed IL-6-induced phosphorylation
+and activation of STAT3 .";
+overexpression2 [style=filled, fillcolor=white, label=overexpression];
+"LMW-DSP21" [style=filled, fillcolor=white, label="LMW-DSP2"];
+overexpression2 -> "LMW-DSP21"  [label=nn];
+suppressed6 [style=filled, fillcolor=white, label=suppressed];
+suppressed6 -> overexpression2  [label=nsubj];
+cells5 [style=filled, fillcolor=white, label=cells];
+"293T4" [style=filled, fillcolor=white, label="293T"];
+cells5 -> "293T4"  [label=num];
+overexpression2 -> cells5  [label=prep_in];
+suppressed6 -> suppressed6  [label=root];
+phosphorylation8 [style=filled, fillcolor=white, label=phosphorylation];
+"IL-6-induced7" [style=filled, fillcolor=white, label="IL-6-induced"];
+phosphorylation8 -> "IL-6-induced7"  [label=nn];
+suppressed6 -> phosphorylation8  [label=dobj];
+activation10 [style=filled, fillcolor=white, label=activation];
+phosphorylation8 -> activation10  [label=conj_and];
+STAT312 [style=filled, fillcolor=white, label=STAT3];
+phosphorylation8 -> STAT312  [label=prep_of];
+}

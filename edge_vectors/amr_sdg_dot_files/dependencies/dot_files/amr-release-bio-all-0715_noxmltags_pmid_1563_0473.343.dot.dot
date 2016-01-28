@@ -1,0 +1,36 @@
+digraph "Shown are affected areas of Tg skin ; in areas where Snail protein was not expressed ,  stainings were normal ." {
+label="Shown are affected areas of Tg skin ; in areas where Snail protein was not
+expressed ,  stainings were normal .";
+affected3 [style=filled, fillcolor=white, label=affected];
+Shown1 [style=filled, fillcolor=white, label=Shown];
+affected3 -> Shown1  [label=nsubjpass];
+are2 [style=filled, fillcolor=white, label=are];
+affected3 -> are2  [label=auxpass];
+affected3 -> affected3  [label=root];
+areas4 [style=filled, fillcolor=white, label=areas];
+affected3 -> areas4  [label=dobj];
+skin7 [style=filled, fillcolor=white, label=skin];
+Tg6 [style=filled, fillcolor=white, label=Tg];
+skin7 -> Tg6  [label=nn];
+areas4 -> skin7  [label=prep_of];
+normal20 [style=filled, fillcolor=white, label=normal];
+areas10 [style=filled, fillcolor=white, label=areas];
+normal20 -> areas10  [label=prep_in];
+expressed16 [style=filled, fillcolor=white, label=expressed];
+where11 [style=filled, fillcolor=white, label=where];
+expressed16 -> where11  [label=advmod];
+protein13 [style=filled, fillcolor=white, label=protein];
+Snail12 [style=filled, fillcolor=white, label=Snail];
+protein13 -> Snail12  [label=nn];
+expressed16 -> protein13  [label=nsubjpass];
+was14 [style=filled, fillcolor=white, label=was];
+expressed16 -> was14  [label=auxpass];
+not15 [style=filled, fillcolor=white, label=not];
+expressed16 -> not15  [label=neg];
+areas10 -> expressed16  [label=rcmod];
+stainings18 [style=filled, fillcolor=white, label=stainings];
+normal20 -> stainings18  [label=nsubj];
+were19 [style=filled, fillcolor=white, label=were];
+normal20 -> were19  [label=cop];
+affected3 -> normal20  [label=parataxis];
+}

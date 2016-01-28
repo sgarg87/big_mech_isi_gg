@@ -1,0 +1,9 @@
+digraph "Bar ,  10 μm ." {
+label="Bar ,  10 μm .";
+Bar1 [style=filled, fillcolor=white, label=Bar];
+Bar1 -> Bar1  [label=root];
+"μm4" [style=filled, fillcolor=white, label="μm"];
+103 [style=filled, fillcolor=white, label=10];
+"μm4" -> 103  [label=num];
+Bar1 -> "μm4"  [label=appos];
+}

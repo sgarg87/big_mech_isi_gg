@@ -1,0 +1,38 @@
+digraph "Western blot analyses did not detect phosphorylation of tyrosine 1020 on SHIP-1 ,  in splenocytes from TB compared to control mice ( Figure 4a ) ." {
+label="Western blot analyses did not detect phosphorylation of tyrosine 1020 on SHIP-1
+,  in splenocytes from TB compared to control mice ( Figure 4a ) .";
+analyses3 [style=filled, fillcolor=white, label=analyses];
+Western1 [style=filled, fillcolor=white, label=Western];
+analyses3 -> Western1  [label=amod];
+blot2 [style=filled, fillcolor=white, label=blot];
+analyses3 -> blot2  [label=nn];
+detect6 [style=filled, fillcolor=white, label=detect];
+detect6 -> analyses3  [label=nsubj];
+did4 [style=filled, fillcolor=white, label=did];
+detect6 -> did4  [label=aux];
+not5 [style=filled, fillcolor=white, label=not];
+detect6 -> not5  [label=neg];
+detect6 -> detect6  [label=root];
+phosphorylation7 [style=filled, fillcolor=white, label=phosphorylation];
+detect6 -> phosphorylation7  [label=dobj];
+1020 [style=filled, fillcolor=white, label=1020];
+tyrosine9 [style=filled, fillcolor=white, label=tyrosine];
+1020 -> tyrosine9  [label=amod];
+phosphorylation7 -> 1020  [label=prep_of];
+"SHIP-12" [style=filled, fillcolor=white, label="SHIP-1"];
+detect6 -> "SHIP-12"  [label=prep_on];
+splenocytes15 [style=filled, fillcolor=white, label=splenocytes];
+detect6 -> splenocytes15  [label=prep_in];
+TB17 [style=filled, fillcolor=white, label=TB];
+splenocytes15 -> TB17  [label=prep_from];
+to19 [style=filled, fillcolor=white, label=to];
+TB17 -> to19  [label=prepc_compared_to];
+mice21 [style=filled, fillcolor=white, label=mice];
+control20 [style=filled, fillcolor=white, label=control];
+mice21 -> control20  [label=nn];
+TB17 -> mice21  [label=pobj];
+Figure23 [style=filled, fillcolor=white, label=Figure];
+mice21 -> Figure23  [label=appos];
+"4a2" [style=filled, fillcolor=white, label="4a"];
+Figure23 -> "4a2"  [label=num];
+}

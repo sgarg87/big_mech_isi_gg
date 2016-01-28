@@ -1,0 +1,30 @@
+digraph "Several lentiviral constructs were generated and tested for their ability to knock down serpinE2 protein ." {
+label="Several lentiviral constructs were generated and tested for their ability to
+knock down serpinE2 protein .";
+constructs3 [style=filled, fillcolor=white, label=constructs];
+Several1 [style=filled, fillcolor=white, label=Several];
+constructs3 -> Several1  [label=amod];
+lentiviral2 [style=filled, fillcolor=white, label=lentiviral];
+constructs3 -> lentiviral2  [label=amod];
+generated5 [style=filled, fillcolor=white, label=generated];
+generated5 -> constructs3  [label=nsubjpass];
+were4 [style=filled, fillcolor=white, label=were];
+generated5 -> were4  [label=auxpass];
+generated5 -> generated5  [label=root];
+tested7 [style=filled, fillcolor=white, label=tested];
+generated5 -> tested7  [label=conj_and];
+ability10 [style=filled, fillcolor=white, label=ability];
+their9 [style=filled, fillcolor=white, label=their];
+ability10 -> their9  [label=poss];
+generated5 -> ability10  [label=prep_for];
+knock12 [style=filled, fillcolor=white, label=knock];
+to11 [style=filled, fillcolor=white, label=to];
+knock12 -> to11  [label=aux];
+ability10 -> knock12  [label=vmod];
+down13 [style=filled, fillcolor=white, label=down];
+knock12 -> down13  [label=prt];
+protein15 [style=filled, fillcolor=white, label=protein];
+serpinE214 [style=filled, fillcolor=white, label=serpinE2];
+protein15 -> serpinE214  [label=amod];
+knock12 -> protein15  [label=dobj];
+}

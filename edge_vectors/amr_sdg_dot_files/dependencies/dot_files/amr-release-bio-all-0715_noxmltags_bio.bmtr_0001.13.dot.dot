@@ -1,0 +1,41 @@
+digraph "These results are consistent with a model in which ubiquitination of Lys147 ( or Lys117 ) ,  destabilizes GDP binding ,  allowing spontaneous GDP/GTP exchange ." {
+label="These results are consistent with a model in which ubiquitination of Lys147 (
+or Lys117 ) ,  destabilizes GDP binding ,  allowing spontaneous GDP/GTP exchange
+.";
+results2 [style=filled, fillcolor=white, label=results];
+These1 [style=filled, fillcolor=white, label=These];
+results2 -> These1  [label=det];
+consistent4 [style=filled, fillcolor=white, label=consistent];
+consistent4 -> results2  [label=nsubj];
+are3 [style=filled, fillcolor=white, label=are];
+consistent4 -> are3  [label=cop];
+consistent4 -> consistent4  [label=root];
+model7 [style=filled, fillcolor=white, label=model];
+a6 [style=filled, fillcolor=white, label=a];
+model7 -> a6  [label=det];
+consistent4 -> model7  [label=prep_with];
+destabilizes18 [style=filled, fillcolor=white, label=destabilizes];
+which9 [style=filled, fillcolor=white, label=which];
+destabilizes18 -> which9  [label=prep_in];
+ubiquitination10 [style=filled, fillcolor=white, label=ubiquitination];
+destabilizes18 -> ubiquitination10  [label=nsubj];
+Lys14712 [style=filled, fillcolor=white, label=Lys147];
+ubiquitination10 -> Lys14712  [label=prep_of];
+Lys11715 [style=filled, fillcolor=white, label=Lys117];
+or14 [style=filled, fillcolor=white, label=or];
+Lys11715 -> or14  [label=cc];
+Lys14712 -> Lys11715  [label=dep];
+model7 -> destabilizes18  [label=rcmod];
+binding20 [style=filled, fillcolor=white, label=binding];
+GDP19 [style=filled, fillcolor=white, label=GDP];
+binding20 -> GDP19  [label=nsubj];
+destabilizes18 -> binding20  [label=xcomp];
+allowing22 [style=filled, fillcolor=white, label=allowing];
+destabilizes18 -> allowing22  [label=xcomp];
+exchange25 [style=filled, fillcolor=white, label=exchange];
+spontaneous23 [style=filled, fillcolor=white, label=spontaneous];
+exchange25 -> spontaneous23  [label=amod];
+"GDP/GTP24" [style=filled, fillcolor=white, label="GDP/GTP"];
+exchange25 -> "GDP/GTP24"  [label=nn];
+allowing22 -> exchange25  [label=dobj];
+}

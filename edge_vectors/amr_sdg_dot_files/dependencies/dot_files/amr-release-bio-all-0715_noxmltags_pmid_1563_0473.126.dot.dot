@@ -1,0 +1,51 @@
+digraph "Together ,  these data demonstrate that the reduction in α-catenin levels ,  either by Snail-mediated down-regulation of E-cadherin or by α-catenin conditional targeting ,  allows Ajuba to interact with Grb-2 / Sos ." {
+label="Together ,  these data demonstrate that the reduction in α-catenin levels ,
+either by Snail-mediated down-regulation of E-cadherin or by α-catenin
+conditional targeting ,  allows Ajuba to interact with Grb-2 / Sos .";
+demonstrate5 [style=filled, fillcolor=white, label=demonstrate];
+Together1 [style=filled, fillcolor=white, label=Together];
+demonstrate5 -> Together1  [label=advmod];
+data4 [style=filled, fillcolor=white, label=data];
+these3 [style=filled, fillcolor=white, label=these];
+data4 -> these3  [label=det];
+demonstrate5 -> data4  [label=nsubj];
+demonstrate5 -> demonstrate5  [label=root];
+allows25 [style=filled, fillcolor=white, label=allows];
+that6 [style=filled, fillcolor=white, label=that];
+allows25 -> that6  [label=mark];
+reduction8 [style=filled, fillcolor=white, label=reduction];
+the7 [style=filled, fillcolor=white, label=the];
+reduction8 -> the7  [label=det];
+allows25 -> reduction8  [label=nsubj];
+levels11 [style=filled, fillcolor=white, label=levels];
+"α-catenin10" [style=filled, fillcolor=white, label="α-catenin"];
+levels11 -> "α-catenin10"  [label=amod];
+reduction8 -> levels11  [label=prep_in];
+either13 [style=filled, fillcolor=white, label=either];
+reduction8 -> either13  [label=preconj];
+"down-regulation16" [style=filled, fillcolor=white, label="down-regulation"];
+"Snail-mediated15" [style=filled, fillcolor=white, label="Snail-mediated"];
+"down-regulation16" -> "Snail-mediated15"  [label=amod];
+reduction8 -> "down-regulation16"  [label=prep_by];
+"E-cadherin18" [style=filled, fillcolor=white, label="E-cadherin"];
+"down-regulation16" -> "E-cadherin18"  [label=prep_of];
+conditional22 [style=filled, fillcolor=white, label=conditional];
+"α-catenin21" [style=filled, fillcolor=white, label="α-catenin"];
+conditional22 -> "α-catenin21"  [label=amod];
+"down-regulation16" -> conditional22  [label=conj_or];
+targeting23 [style=filled, fillcolor=white, label=targeting];
+conditional22 -> targeting23  [label=amod];
+demonstrate5 -> allows25  [label=ccomp];
+Ajuba26 [style=filled, fillcolor=white, label=Ajuba];
+allows25 -> Ajuba26  [label=dobj];
+interact28 [style=filled, fillcolor=white, label=interact];
+to27 [style=filled, fillcolor=white, label=to];
+interact28 -> to27  [label=aux];
+allows25 -> interact28  [label=xcomp];
+Sos32 [style=filled, fillcolor=white, label=Sos];
+"Grb-230" [style=filled, fillcolor=white, label="Grb-2"];
+Sos32 -> "Grb-230"  [label=nn];
+"/31" [style=filled, fillcolor=white, label="/"];
+Sos32 -> "/31"  [label=nn];
+interact28 -> Sos32  [label=prep_with];
+}

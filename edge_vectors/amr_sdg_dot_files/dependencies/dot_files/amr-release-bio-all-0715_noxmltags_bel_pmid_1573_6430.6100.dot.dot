@@ -1,0 +1,45 @@
+digraph "Furthermore ,  Chk1 also phosphorylates Cdc25A on serine 123 which accelerates its degradation through the ubiquitin-proteasome pathway and arrests cells in late G2-phase after DNA damage ." {
+label="Furthermore ,  Chk1 also phosphorylates Cdc25A on serine 123 which accelerates
+its degradation through the ubiquitin-proteasome pathway and arrests cells in
+late G2-phase after DNA damage .";
+phosphorylates5 [style=filled, fillcolor=white, label=phosphorylates];
+Furthermore1 [style=filled, fillcolor=white, label=Furthermore];
+phosphorylates5 -> Furthermore1  [label=advmod];
+Chk13 [style=filled, fillcolor=white, label=Chk1];
+phosphorylates5 -> Chk13  [label=nsubj];
+also4 [style=filled, fillcolor=white, label=also];
+phosphorylates5 -> also4  [label=advmod];
+phosphorylates5 -> phosphorylates5  [label=root];
+Cdc25A6 [style=filled, fillcolor=white, label=Cdc25A];
+phosphorylates5 -> Cdc25A6  [label=dobj];
+1239 [style=filled, fillcolor=white, label=123];
+serine8 [style=filled, fillcolor=white, label=serine];
+1239 -> serine8  [label=amod];
+Cdc25A6 -> 1239  [label=prep_on];
+accelerates11 [style=filled, fillcolor=white, label=accelerates];
+which10 [style=filled, fillcolor=white, label=which];
+accelerates11 -> which10  [label=nsubj];
+Cdc25A6 -> accelerates11  [label=rcmod];
+degradation13 [style=filled, fillcolor=white, label=degradation];
+its12 [style=filled, fillcolor=white, label=its];
+degradation13 -> its12  [label=poss];
+accelerates11 -> degradation13  [label=dobj];
+pathway17 [style=filled, fillcolor=white, label=pathway];
+the15 [style=filled, fillcolor=white, label=the];
+pathway17 -> the15  [label=det];
+"ubiquitin-proteasome16" [style=filled, fillcolor=white, label="ubiquitin-proteasome"];
+pathway17 -> "ubiquitin-proteasome16"  [label=amod];
+accelerates11 -> pathway17  [label=prep_through];
+cells20 [style=filled, fillcolor=white, label=cells];
+arrests19 [style=filled, fillcolor=white, label=arrests];
+cells20 -> arrests19  [label=nn];
+pathway17 -> cells20  [label=conj_and];
+"G2-phase3" [style=filled, fillcolor=white, label="G2-phase"];
+late22 [style=filled, fillcolor=white, label=late];
+"G2-phase3" -> late22  [label=amod];
+cells20 -> "G2-phase3"  [label=prep_in];
+damage26 [style=filled, fillcolor=white, label=damage];
+DNA25 [style=filled, fillcolor=white, label=DNA];
+damage26 -> DNA25  [label=nn];
+accelerates11 -> damage26  [label=prep_after];
+}
