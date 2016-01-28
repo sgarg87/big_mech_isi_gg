@@ -1,7 +1,0 @@
-digraph "Main Text" {
-label="Main Text";
-Text2 [style=filled, fillcolor=white, label=Text];
-Main1 [style=filled, fillcolor=white, label=Main];
-Text2 -> Main1  [label=nn];
-Text2 -> Text2  [label=root];
-}

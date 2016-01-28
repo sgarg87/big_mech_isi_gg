@@ -1,5 +1,0 @@
-digraph "RT-PCR" {
-label="RT-PCR";
-"RT-PCR1" [style=filled, fillcolor=white, label="RT-PCR"];
-"RT-PCR1" -> "RT-PCR1"  [label=root];
-}

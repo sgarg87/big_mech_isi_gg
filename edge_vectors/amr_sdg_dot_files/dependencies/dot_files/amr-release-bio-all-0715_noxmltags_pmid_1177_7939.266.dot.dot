@@ -1,7 +1,0 @@
-digraph "Figure 6 ." {
-label="Figure 6 .";
-Figure1 [style=filled, fillcolor=white, label=Figure];
-Figure1 -> Figure1  [label=root];
-62 [style=filled, fillcolor=white, label=6];
-Figure1 -> 62  [label=num];
-}

@@ -1,9 +1,0 @@
-digraph "Analysis of RhoA-ROCK axis" {
-label="Analysis of RhoA-ROCK axis";
-Analysis1 [style=filled, fillcolor=white, label=Analysis];
-Analysis1 -> Analysis1  [label=root];
-axis4 [style=filled, fillcolor=white, label=axis];
-"RhoA-ROCK3" [style=filled, fillcolor=white, label="RhoA-ROCK"];
-axis4 -> "RhoA-ROCK3"  [label=nn];
-Analysis1 -> axis4  [label=prep_of];
-}

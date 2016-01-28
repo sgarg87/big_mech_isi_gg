@@ -1,9 +1,0 @@
-digraph "Western blot and immunoprecipitation" {
-label="Western blot and immunoprecipitation";
-blot2 [style=filled, fillcolor=white, label=blot];
-Western1 [style=filled, fillcolor=white, label=Western];
-blot2 -> Western1  [label=amod];
-blot2 -> blot2  [label=root];
-immunoprecipitation4 [style=filled, fillcolor=white, label=immunoprecipitation];
-blot2 -> immunoprecipitation4  [label=conj_and];
-}

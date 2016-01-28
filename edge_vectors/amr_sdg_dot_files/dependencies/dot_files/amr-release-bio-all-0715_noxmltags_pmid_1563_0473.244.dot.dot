@@ -1,7 +1,0 @@
-digraph "Materials and Methods" {
-label="Materials and Methods";
-Materials1 [style=filled, fillcolor=white, label=Materials];
-Materials1 -> Materials1  [label=root];
-Methods3 [style=filled, fillcolor=white, label=Methods];
-Materials1 -> Methods3  [label=conj_and];
-}

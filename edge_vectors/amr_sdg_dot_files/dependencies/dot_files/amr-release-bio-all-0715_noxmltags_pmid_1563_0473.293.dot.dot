@@ -1,7 +1,0 @@
-digraph "Immunofluorescence and immunohistochemistry" {
-label="Immunofluorescence and immunohistochemistry";
-Immunofluorescence1 [style=filled, fillcolor=white, label=Immunofluorescence];
-Immunofluorescence1 -> Immunofluorescence1  [label=root];
-immunohistochemistry3 [style=filled, fillcolor=white, label=immunohistochemistry];
-Immunofluorescence1 -> immunohistochemistry3  [label=conj_and];
-}

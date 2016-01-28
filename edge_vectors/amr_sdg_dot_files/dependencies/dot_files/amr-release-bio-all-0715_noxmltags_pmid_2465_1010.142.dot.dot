@@ -1,9 +1,0 @@
-digraph "Restoring GTP Hydrolysis" {
-label="Restoring GTP Hydrolysis";
-Hydrolysis3 [style=filled, fillcolor=white, label=Hydrolysis];
-Restoring1 [style=filled, fillcolor=white, label=Restoring];
-Hydrolysis3 -> Restoring1  [label=nn];
-GTP2 [style=filled, fillcolor=white, label=GTP];
-Hydrolysis3 -> GTP2  [label=nn];
-Hydrolysis3 -> Hydrolysis3  [label=root];
-}

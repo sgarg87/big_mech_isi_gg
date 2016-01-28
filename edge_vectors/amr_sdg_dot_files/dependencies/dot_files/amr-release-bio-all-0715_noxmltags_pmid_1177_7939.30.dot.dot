@@ -1,5 +1,0 @@
-digraph "Results" {
-label="Results";
-Results1 [style=filled, fillcolor=white, label=Results];
-Results1 -> Results1  [label=root];
-}
