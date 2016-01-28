@@ -1,16 +1,18 @@
 import copy
+
 import pydot as pd
-import constants_absolute_path as cap
-from constants import *
-from config import *
+
+from .. import constants_absolute_path as cap
+from .. import constants
+from .. import config
 import util as my_util
 
 
 class Node:
     def __init__(self, id, name, children=None, parents=None, is_root=False, weight=1):
         self.id = id
-        self.name = no_quotes_regexp.sub('', name)
-        self.type = no_quotes_regexp.sub('', name) #after processing of the nodes, the name is updated (say with protein name). Then type will represent if it is a protein, enzyme etc
+        self.name = constants.no_quotes_regexp.sub('', name)
+        self.type = constants.no_quotes_regexp.sub('', name) #after processing of the nodes, the name is updated (say with protein name). Then type will represent if it is a protein, enzyme etc
         #
         # this field is specifically for id (uniprot, chebi) of proteins, locations etc
         self.identifier = None
@@ -50,7 +52,7 @@ class Node:
         self.__descendants_list = None
 
     def reset_parent_children_none(self):
-        if debug:
+        if config.debug:
             print 'reseting parent children to none for a node with name', self.name
         self.parents = None
         self.children = None
@@ -106,15 +108,15 @@ class Node:
         assert (joint_name is not None)
         #
         # concept node
-        if not concept_regexp.sub('', joint_name):
-            joint_name = concept_num_regexp.sub('', joint_name)
+        if not constants.concept_regexp.sub('', joint_name):
+            joint_name = constants.concept_num_regexp.sub('', joint_name)
         return joint_name
 
     def get_name_formatted(self):
         name = self.name
         # concept node case
-        if not concept_regexp.sub('', name):
-            name = concept_num_regexp.sub('', name)
+        if not constants.concept_regexp.sub('', name):
+            name = constants.concept_num_regexp.sub('', name)
         return name
 
     def create_children_list(self):
@@ -342,7 +344,7 @@ def get_descendants_undirected(root_node, descendants=None):
 
 
 def get_ancestors(node, ancestors=None):
-    if debug:
+    if config.debug:
         print 'getting ancestors of : ', node.name
     if ancestors is None:
         ancestors = []
@@ -362,7 +364,7 @@ def get_ancestors(node, ancestors=None):
 def get_children_and_child_in_laws(children, parent):
     #basically, we are finding child-in-law of parent node
     child_in_laws = copy.copy(children)
-    if debug:
+    if config.debug:
         print 'children in law of parent ' + parent.name + ' are: '
     for child in children:
         grandchildren = child.create_children_list()
@@ -372,7 +374,7 @@ def get_children_and_child_in_laws(children, parent):
                     if child_in_law not in children and child_in_law != parent and child_in_law not in parent.create_ancestors_list():#todo:
                         child_in_law.dummy_label = child.dummy_label
                         child_in_laws.insert(child_in_laws.index(child)+1, child_in_law)
-                        if debug:
+                        if config.debug:
                             print 'child in law added: ', child_in_law.name + '/' + ('' if child_in_law.dummy_label is None else child_in_law.dummy_label)
     child_in_laws = my_util.unique_list(child_in_laws)
     # #that means, some child in laws are found
@@ -402,7 +404,7 @@ def build_nodes_tree_from_amr_dot_file(amr_dot_file_path):
         destination = edge.get_destination()
         # print 'destination: ', destination
         edge_label = edge.get_label()
-        edge_label = no_quotes_regexp.sub('', edge_label)
+        edge_label = constants.no_quotes_regexp.sub('', edge_label)
         # print 'edge_label: ', edge_label
         edge = None
         #source not in the nodes_list
@@ -417,8 +419,8 @@ def build_nodes_tree_from_amr_dot_file(amr_dot_file_path):
         if edge_label == 'TOP':
             if source != destination:
                 raise AssertionError
-            nodes[root] = nodes[source] #source and destination are same for TOP edge
-            nodes[root].is_root = True
+            nodes[constants.root] = nodes[source] #source and destination are same for TOP edge
+            nodes[constants.root].is_root = True
         else:
             #linking destination as child of source, there can be multiple children with a given edge_label
             if edge_label not in nodes[source].children:
@@ -483,14 +485,14 @@ def simplify_nodes_tree_names(nodes_map):
         if node_key in nodes_map:
             node = nodes_map[node_key]
             if node.name == 'name':
-                if debug:
+                if config.debug:
                     print 'node_key', node_key
                 name_str, list_node_ids_in_subgraph_to_remove = get_name_str(node)
-                if debug:
+                if config.debug:
                     print 'name_str', name_str
                 if 'name' in node.parents:
                     for parent in node.parents['name']: #caution: there can be multiple parents sharing same 'name' node
-                        if debug:
+                        if config.debug:
                             print 'parent', parent
                         parent.children.pop('name', None)
                         # parent.remove_parent_child_relationship(node, 'name')
@@ -499,5 +501,3 @@ def simplify_nodes_tree_names(nodes_map):
                 nodes_map.pop(node_key, None) #the node 'name' can be removed from the nodes_map tree now for the simplification
                 remove_list_of_nodes(list_node_ids=list_node_ids_in_subgraph_to_remove)
     return nodes_map
-
-

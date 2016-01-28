@@ -13,12 +13,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import read_dot_file as rdf
 import wordvec as wv
-import constants_absolute_path as cap
-from config import *
+from .. import constants_absolute_path as cap
+from .. import config
 import edge_labels as el
 
-
-debug = False
 
 backup_file_path = './lrn_wordvectors_edgelabels_obj_backup.pickle'
 
@@ -140,7 +138,7 @@ class EdgeLabelVectorsPropagation:
         #
         self.merge_duplicate_case_sensitive_edge_labels_in_edgelabel_nodes_map()
         #
-        if debug:
+        if config.debug:
             print self.edgelabel_nodes_map
 
     def merge_duplicate_case_sensitive_edge_labels_in_edgelabel_nodes_map(self):
@@ -204,7 +202,7 @@ class EdgeLabelVectorsPropagation:
         #
         self.merge_duplicate_case_sensitive_edge_labels_in_common_parent_edgelabel_pair_nodes_map()
         #
-        if debug:
+        if config.debug:
             print self.common_parent_edgelabel_nodes_pair
 
     def compute_sol_to_lin_equation_Y_eq_XA(self, X, Y):
@@ -329,10 +327,10 @@ class EdgeLabelVectorsPropagation:
             curr_error_list = np.linalg.norm(Z_diff, axis=1)
             print 'curr_error_list', curr_error_list
             curr_error = curr_error_list.sum()
-            if debug:
+            if config.debug:
                 print 'curr_edge_label_pair_error: {}, {}'.format(curr_edge_label_pair, curr_error)
             error_edge_label_pair_consistency += curr_error
-        if debug:
+        if config.debug:
             print 'error_edge_label_pair_consistency', error_edge_label_pair_consistency
         #
         self.error_edge_label_pair_consistency = error_edge_label_pair_consistency
@@ -355,10 +353,10 @@ class EdgeLabelVectorsPropagation:
             curr_error_list = np.linalg.norm(Y_diff, axis=1)
             print 'curr_error_list', curr_error_list
             curr_error = curr_error_list.sum()
-            if debug:
+            if config.debug:
                 print 'curr_edge_label_local_error: {}, {}'.format(curr_edge_label, curr_error)
             error_edge_label_local_consistency += curr_error
-        if debug:
+        if config.debug:
             print 'error_edge_label_local_consistency', error_edge_label_local_consistency
         #
         self.error_edge_label_local_consistency = error_edge_label_local_consistency
@@ -411,22 +409,22 @@ class EdgeLabelVectorsPropagation:
         #
         edge_labels_list = np.array(self.edge_labels_list)
         n = len(edge_labels_list)
-        if debug:
+        if config.debug:
             print self.G
             print edge_labels_list
         for curr_idx in range(n):
-            if debug:
+            if config.debug:
                 print '********************'
             curr_edge_label = self.edge_labels_list[curr_idx]
-            if debug:
+            if config.debug:
                 print 'curr_edge_label', curr_edge_label
-            if debug:
+            if config.debug:
                 print self.G[curr_idx]
                 print np.where(self.G[curr_idx] == 1)
             curr_neighbor_edge_labels = edge_labels_list[np.where(self.G[curr_idx] == 1)]
             if len(curr_neighbor_edge_labels) > self.num_neighbor_samples:
                 curr_neighbor_edge_labels = r.sample(curr_neighbor_edge_labels, self.num_neighbor_samples)
-            if debug:
+            if config.debug:
                 print 'curr_neighbor_edge_labels', curr_neighbor_edge_labels
             #
             if len(curr_neighbor_edge_labels) == 0:
@@ -485,7 +483,7 @@ class EdgeLabelVectorsPropagation:
         assert self.destination_vec_matrix_map is not None and self.destination_vec_matrix_map
         self.edge_label_local_consistency_matrices = {}
         for curr_edge_label in self.source_vec_matrix_map:
-            if debug:
+            if config.debug:
                 print 'curr_edge_label', curr_edge_label
             assert curr_edge_label in self.destination_vec_matrix_map
             #

@@ -7,13 +7,14 @@
 #
 #
 import time
+
 import scipy.signal as ss
 import wordsegment as ws
 import word2vec as wv
 
-from constants import *
-from config import *
-import constants_absolute_path as cap
+from .. import constants
+from .. import config
+from .. import constants_absolute_path as cap
 
 
 word2vec_model = None
@@ -35,7 +36,7 @@ def get_wordvector(word):
     word_upper = word.upper()
     try:
         if word_lower not in word_vectors_map:
-            if debug:
+            if config.debug:
                 print 'getting word vector for ', word
             if word in word2vec_model.vocab:
                 word_vectors_map[word_lower] = word2vec_model[word]
@@ -45,8 +46,8 @@ def get_wordvector(word):
             elif word_upper in word2vec_model.vocab:
                 word_vectors_map[word_lower] = word2vec_model[word_upper]
             else:
-                if not concept_regexp.sub('', word):
-                    return get_wordvector(alpha_regex.sub('', word))
+                if not constants.concept_regexp.sub('', word):
+                    return get_wordvector(constants.alpha_regex.sub('', word))
                 subwords = word.split()
                 if len(subwords) == 1:
                     subwords = word.split(',')
@@ -74,7 +75,7 @@ def get_wordvector(word):
                             else:
                                 start_time = time.time()
                                 curr_wordvec = ss.fftconvolve(curr_wordvec, curr_subword_vec, mode='same')
-                                if debug:
+                                if config.debug:
                                     print 'performed fast fourier transform convolution on word vectors in {} seconds.'.format(time.time()-start_time)
                     word_vectors_map[word_lower] = curr_wordvec
         return word_vectors_map[word_lower]

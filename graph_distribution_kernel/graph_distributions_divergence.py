@@ -7,9 +7,9 @@
 #
 
 
-import numpy as np
 import time
-from config import *
+import numpy as np
+from .. import config
 
 
 class GraphDistributionDivergence:
@@ -47,7 +47,7 @@ class GraphDistributionDivergence:
                 print 'Kij.mean()', Kij.mean()
                 print 'maximum_mean_discrepancy', maximum_mean_discrepancy
                 raise AssertionError
-        if coarse_debug:
+        if config.coarse_debug:
             print 'time to compute maximum mean discrepancy was {}'.format(time.time()-start_time)
         return maximum_mean_discrepancy
 
@@ -90,7 +90,7 @@ class GraphDistributionDivergence:
                 print 'kl_jj_ii', kl_jj_ii
                 print 'kl', kl
                 raise AssertionError
-        if coarse_debug:
+        if config.coarse_debug:
             print 'time to compute kl divergence with kernel density estimation was {}'.format(time.time()-start_time)
         return kl
 
