@@ -17,8 +17,8 @@ subdirectory path dot files data for AMR and SDG:
 ./amr_sdg_dot_files
 
 Shell scripts:
-
 mylocaljob_propagate_edge_vectors_amr.sh
+
 mylocaljob_propagate_edge_vectors_sdg.sh
 
 
