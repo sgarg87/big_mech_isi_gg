@@ -15,28 +15,18 @@ from config import *
 div_tol = 1e-2
 
 
-def eval_divergence(Kii, Kjj, Kij, algo):
+def evaluate_maximum_mean_discrepancy(Kii, Kjj, Kij):
     #
-    # kl divergence estimation using kernel density
-    # maximum mean discrepancy method
-    # cross kernels
+    # evaluate maximum mean discrepancy between two graph distribution
+    #
+    # Kii is graph kernel matrix on graph samples in distribution i
+    # Kjj is graph kernel matrix on graph samples in distribution j
+    # Kij is a matrix of graph kernels between samples of distribution i and samples of distribution j
     #
     assert Kii.shape[0] == Kii.shape[1] and len(Kii.shape) == 2
     assert Kjj.shape[0] == Kjj.shape[1] and len(Kjj.shape) == 2
     assert len(Kij.shape) == 2 and Kii.shape[0] == Kij.shape[0] and Kjj.shape[0] == Kij.shape[1]
-    # maximum mean discrepancy
-    if algo == 'mmd':
-        return eval_max_mean_discrepancy(Kii, Kjj, Kij)
-    if algo == 'k':
-        return eval_distribution_kernel(Kij)
-    # kl divergence with kernel density estimation
-    elif algo == 'kl_kd':
-        return eval_kl_div_kernel_density(Kii, Kjj, Kij)
-    else:
-        raise NotImplementedError
-
-
-def eval_max_mean_discrepancy(Kii, Kjj, Kij):
+    #
     start_time = time.time()
     print Kii
     print Kjj
@@ -61,14 +51,29 @@ def eval_max_mean_discrepancy(Kii, Kjj, Kij):
     return maximum_mean_discrepancy
 
 
-def eval_distribution_kernel(Kij):
-    # Cross kernels
-    # todo: rename the function as per the paper
+def evaluate_cross_kernels(Kij):
+    #
+    # evaluate Cross kernels divergence between two graph distributions
+    #
+    # Kij is a matrix of graph kernels between samples of distribution i and samples of distribution j
+    #
+    assert len(Kij.shape) == 2
     #
     return Kij.mean()
 
 
-def eval_kl_div_kernel_density(Kii, Kjj, Kij):
+def evaluate_kl_divergence_wd_graph_kernel_density(Kii, Kjj, Kij):
+    #
+    # evaluate KL divergence between two graph distributions using graph kernel density
+    #
+    # Kii is graph kernel matrix on graph samples in distribution i
+    # Kjj is graph kernel matrix on graph samples in distribution j
+    # Kij is a matrix of graph kernels between samples of distribution i and samples of distribution j
+    #
+    assert Kii.shape[0] == Kii.shape[1] and len(Kii.shape) == 2
+    assert Kjj.shape[0] == Kjj.shape[1] and len(Kjj.shape) == 2
+    assert len(Kij.shape) == 2 and Kii.shape[0] == Kij.shape[0] and Kjj.shape[0] == Kij.shape[1]
+    #
     start_time = time.time()
     const_epsilon = 1e-30
     kl_ii_jj = np.log(np.divide(Kii.mean(1)+const_epsilon, Kij.mean(1)+const_epsilon)).mean()
