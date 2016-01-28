@@ -7,3 +7,21 @@ https://code.google.com/archive/p/word2vec/
 
 path where the word2vec software should put the outfile
 ./wordvectors/pubmed.bin
+
+
+AMR and SDG are represented in their formats as per preferences of the respective researchers. Herein, we are relying on a common format for AMR and SDG, i.e. dot format graph. For each single AMR/SDG, there should be a single dot file. Using "pydot" package, our software reads these dot files into our own object format. Also, the software is not restricted to the AMR, SDG representations but useful for any directed graph. 
+
+For a preliminary test of the software, we have add approx. 3k AMR and SDG in dot representation at path below. The python module "edge_labels_propagation.py" loads these dot files and then automatically generates the pickeled files for edge vectors. Here, note that software is run on AMR and SDG independently. There is use of edge vectors in AMReven if one is not using AMR and SDG jointly. Same applies for SDG. The corresponding shell scripts files to generate these edge vectors are at paths mentioned below. 
+
+subdirectory path dot files data for AMR and SDG:
+./amr_sdg_dot_files
+
+Shell scripts:
+
+mylocaljob_propagate_edge_vectors_amr.sh
+mylocaljob_propagate_edge_vectors_sdg.sh
+
+
+For any queries, shoot an email at 
+sahilgar@usc.edu
+
